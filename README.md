@@ -1,2 +1,2 @@
 # sustainableweb-wsg
-home of Web Sustainability Guidelines 
+Home of Web Sustainability Guidelines 
