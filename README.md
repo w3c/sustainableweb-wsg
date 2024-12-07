@@ -1,6 +1,87 @@
 # Web Sustainability Guidelines (WSG)
-This is the home of the Web Sustainability Guidelines (WSG).
+Welcome to the repository of the [Web Sustainability Guidelines (WSG)](https://w3c.github.io/sustainableweb-wsg/).
 
-## See also
+If you would like to learn more about us and how to participate in this project, please check the readme in the [W3C Sustainable Web Interest Group](https://github.com/w3c/sustainableweb-ig) repository.
 
-* [W3C Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) ([GitHub](https://github.com/w3c/sustainableweb-ig)), the W3C Group developing these guidelines.
+## Statistics
+
+ - **94** Guidelines covering UX, Web Development, DevOps, & Business / Product Strategy.
+ - **254** Success Criteria to meet the guidelines on various aspects of sustainability.
+ - **100+** contributors from over **20** nations around the world.
+
+## Work
+
+The chartered focus of the [W3C Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) is the development of the Web Sustainability Guidelines (WSG) and its supplements.
+
+Links to relevant documents (based on the CG Draft Report) can be found below.
+
+**Guidelines:**
+| Name | Status | Date |
+|------|--------|------|
+| [Web Sustainability Guidelines](https://w3c.github.io/sustainableweb-wsg/) (WSG) | W3C Editors Draft | 06 Dec 2024 |
+
+**Other Deliverables:**
+| Name | Status | Date |
+|------|--------|------|
+| [Sustainable Tooling And Reporting](https://w3c.github.io/sustainableweb-wsg/star.html) (STAR) | W3C Editors Draft | 06 Dec 2024
+| [WSG At A Glance](https://w3c.github.io/sustainableweb-wsg/glance.html) | W3C Editors Draft | 06 Dec 2024 |
+| [Introduction to Web Sustainability](https://w3c.github.io/sustainableweb-wsg/intro.html) | W3C Editors Draft | 06 Dec 2024 |
+| [Web Sustainability Laws & Policies](https://w3c.github.io/sustainableweb-wsg/policies.html) | W3C Editors Draft | 06 Dec 2024 |
+| [Quick Reference for WSG](https://w3c.github.io/sustainableweb-wsg/quickref.html) & [Checklist](https://w3c.github.io/sustainableweb-wsg/checklist.pdf) (PDF) | W3C Editors Draft | 06 Dec 2024 |
+| [WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json) | JSON API | 06 Dec 2024 |
+| [STAR Test Suite](https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite) | Test Suite | 11 Apr 2024 |
+
+## Schedule
+
+Our schedule (and any associated goal deadlines) has yet to be determined, however we will still consider the [remaining proposed and planned updates](https://docs.google.com/presentation/d/1dcuSMLcAF8jTHNCovOfs31zrjCr3rtrwzTXRLSy3lAk/edit?usp=sharing) carried forward from the Sustainable Web Community Group (based on both W3C and CG member feedback).
+
+## Processes
+
+Work is planned in accordance with the [issues](https://github.com/w3c/sustainableweb-wsg/issues) requiring resolution.
+
+If you would like to contribute towards this specification, please refer to the [CONTRIBUTING.md](IG-CONTRIBUTING.md) document for details and refer to the guidance on the [W3C Sustainable Web Interest Group](https://github.com/w3c/sustainableweb-ig) repository readme regarding participation.
+
+Further guidance will be published in due course.
+
+## JSON API
+
+We have a [JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json) which is kept in sync with the changes occurring within our specification.
+
+This document is reachable via GitHub pages and can be queried using JavaScript to embed our data within your client of choice.
+
+The structure of the API is identical to that of the specification in its numbering scheme:
+
+```
+category[1][0].guideline = "Undertake Systemic Impacts Mapping"
+```
+
+## Test Suite
+
+We have a [Test Suite](https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite) which is used to showcase machine testability (as denoted in [STAR](https://w3c.github.io/sustainableweb-wsg/star.html)) for the Web Sustainability Guidelines (WSGs). The template structure for the file uses common W3C conventions for test cases to maintain interoperability for tooling that wishes to align our work with their own.
+
+Key concepts of note include:
+- Each title element contains a short identifier for the test.
+- The rel="author" link element contains details of who created that test.
+- The rel="help" link element links to the WSG guideline it relates to.
+- The name="flags" meta element identifies any requirements the test may have such as an external file (**asset**), scripting (**JavaScript**), user-involvement (**interaction**), or if it's trying to disprove something (**invalid**).
+- The name="assert" meta tag explains which **STAR** technique it relates to by title.
+- The conditions of passing are what requirements are necessary to pass the technique (and thus the success criteria).
+
+## Resources
+
+Below are some handy links for contributors to our project:
+
+ - [Charter Template](https://w3c.github.io/charter-drafts/charter-template.html) ([HTML Source](https://github.com/w3c/charter-drafts/blob/gh-pages/charter-template.html))
+ - [GRI Notebook](GRI.ipynb) ([Spreadsheet](https://docs.google.com/spreadsheets/d/12nGydnSv24fvmvCM-665_pFGPG9u3RgTwe1sCz4eiGk/edit?usp=sharing))
+ - [How to do Wide Review](https://www.w3.org/Guide/documentreview/)
+ - [Policies & legal information](https://www.w3.org/policies/)
+ - [Pubrules documentation](https://www.w3.org/pubrules/doc/)
+ - [QA Framework](https://www.w3.org/TR/qaframe-spec/)
+ - [Repository Templates](https://github.com/w3c/ash-nazg/tree/master/templates)
+ - [ReSpec Documentation](https://respec.org/docs/)
+ - [STAR Testability](https://docs.google.com/spreadsheets/d/1DKfIdm0mHkyzTVv41hogUdh41SnLkk9Uwkc8Nm6bqD4/edit?usp=sharing)
+ - [TAG Explainers](https://tag.w3.org/explainers/)
+ - [Title Case Converter](https://titlecaseconverter.com/)
+ - [The Art of Consensus](https://www.w3.org/Guide/)
+ - [W3C Manual of Style](https://www.w3.org/Guide/manual-of-style/)
+ - [W3C Process for Busy People](https://github.com/w3c/wg-effectiveness/blob/main/process.md)
