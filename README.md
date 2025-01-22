@@ -23,7 +23,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 **Other Deliverables:**
 | Name | Status | Date |
 |------|--------|------|
-| [Sustainable Tooling And Reporting](https://w3c.github.io/sustainableweb-wsg/star.html) (STAR) | W3C Editors Draft | 06 Dec 2024
+| [Sustainable Tooling And Reporting](https://w3c.github.io/sustainableweb-wsg/star.html) (STAR) | W3C Editors Draft | 06 Dec 2024 |
 | [WSG At A Glance](https://w3c.github.io/sustainableweb-wsg/glance.html) | W3C Editors Draft | 06 Dec 2024 |
 | [Introduction to Web Sustainability](https://w3c.github.io/sustainableweb-wsg/intro.html) | W3C Editors Draft | 06 Dec 2024 |
 | [Web Sustainability Laws & Policies](https://w3c.github.io/sustainableweb-wsg/policies.html) | W3C Editors Draft | 06 Dec 2024 |
@@ -33,7 +33,19 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 
 ## Schedule
 
-Our schedule (and any associated goal deadlines) has yet to be determined, however we will still consider the [remaining proposed and planned updates](https://docs.google.com/presentation/d/1dcuSMLcAF8jTHNCovOfs31zrjCr3rtrwzTXRLSy3lAk/edit?usp=sharing) carried forward from the Sustainable Web Community Group (based on both W3C and CG member feedback).
+|Name|Date|
+|----|----|
+|Initial Draft | 30 June 2025 |
+|Final Draft | December 31 2025 |
+|Measurability | 31 Mar 2026 |
+|W3C Draft Note | 22 Apr 2026 (*Earth Day*) |
+<!--
+|Horizontal Review | TBD |
+|W3C Note | TBD |
+|W3C Statement | TBD |
+-->
+
+**Note:** We will still consider the [remaining proposed and planned updates](https://docs.google.com/presentation/d/1dcuSMLcAF8jTHNCovOfs31zrjCr3rtrwzTXRLSy3lAk/edit?usp=sharing) carried forward from the Sustainable Web Community Group (based on both W3C and CG member feedback).
 
 ## Processes
 
