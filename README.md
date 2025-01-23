@@ -36,7 +36,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 |Name|Date|
 |----|----|
 |Initial Draft | 30 June 2025 |
-|Final Draft | December 31 2025 |
+|Final Draft | 31 December 2025 |
 |Measurability | 31 Mar 2026 |
 |W3C Draft Note | 22 Apr 2026 (*Earth Day*) |
 <!--
