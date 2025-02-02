@@ -4993,12 +4993,29 @@
 					</details>
 				</section>
 			</section>
-			<section> <!-- Include Files That Are Automatically Expected -->
-				<h3>Include Files That Are Automatically Expected</h3>
-				<p>Search engines and browsers regularly examine websites, requesting specific files by default (they expect them to exist). If the files don't exist, this will lead to potential errors and emissions being caused when they could be created, especially as the files offer SEO, user-experience, and other benefits to visitors.</p>
+			<section> <!-- Include Expected And Beneficial Files -->
+				<h3>Include Expected And Beneficial Files</h3>
+				<p>
+          Websites should include a range of expected and standard beneficial files to improve search engine optimization, user experience, transparency, and overall site health.
+          Search engines and browsers regularly request these files by default.
+          If they don't exist, this leads to unnecessary requests, potential errors, and increased emissions.
+          Including these files avoids these issues while also providing SEO, user-experience, and other benefits.
+          They each have a low carbon footprint, so while they do create emissions, it's worth including them for the benefits they provide.
+        </p>
 				<section class="notoc">
-					<h4>Success Criterion - Expected File Formats <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD18-1"><mark>(Machine Testable)</mark></a></h4>
-					<p>Include the favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml documents.</p>
+					<h4>Success Criterion - Include Expected Files <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD18-1"><mark>(Machine Testable)</mark></a></h4>
+					<p>
+            Include at least the favicon.ico and robots.txt files.
+            Where appropriate, also include sitemap.xml, opensearch.xml, site.webmanifest, and relevant documents.
+            Additionally, ensure that any new files defined in future web standards or specifications are included.
+          </p>
+				</section>
+				<section class="notoc">
+					<h4>Success Criterion - Include Beneficial Files <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1"><mark>(Machine Testable)</mark></a></h4>
+          <p>
+            Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt.
+            Additionally, ensure that any new files defined in future web standards or specifications are included.
+          </p>
 				</section>
 				<section class="notoc">
 					<h4>Additional Content</h4>
@@ -5012,11 +5029,25 @@
 							</dl>
 							<p class="subtitle"><strong>Benefits</strong></p>
 							<ul class="benefits">
-								<li><strong>Environmental:</strong> Search engines or browsers request certain files by default, ensuring they are in place will reduce loading errors, and may provide efficiency enhancements in how visitors find or interact with a site.</li>
-								<li><strong>Accessibility:</strong> OpenSearch enables the browser's default search box rather than a custom solution to be integrated with your website search, which may aid accessibility as it encourages the use of a browser native component (and / or keyboard shortcuts) rather than a website or application which may suit certain accessibility requirements better.</li>
-								<li><strong>Performance:</strong> Files that are expected will produce HTTP requests, ensuring they are met will satisfy the products making them and potentially reduce the requests once they are discovered.</li>
-								<li><strong>Economic:</strong> Robots and Sitemap files can be utilized by search engines to help make your website more findable, this could lead to more visitors and potentially more customers as a result.</li>
-								<li><strong>Conversion:</strong> Robots can be used to target specific search engines, helping to ensure content is correctly indexed to get a good placement so that visitors can find you easily.</li>
+								<li>
+                  <strong>Environmental:</strong> Search engines or browsers request certain files by default, ensuring they are in place will reduce loading errors, and may provide efficiency enhancements in how visitors find or interact with a site.
+                  Plaintext requires no rendering. If visitors (or search engines) know about these useful files (like carbon.txt) they can load quicker and with less CPU / GPU impact than any HTML website.
+                </li>
+								<li>
+                  <strong>Accessibility:</strong> OpenSearch enables the browser's default search box rather than a custom solution to be integrated with your website search, which may aid accessibility as it encourages the use of a browser native component (and / or keyboard shortcuts) rather than a website or application which may suit certain accessibility requirements better.
+                </li>
+								<li>
+                  <strong>Performance:</strong> Files that are expected will produce HTTP requests, ensuring they are met will satisfy the products making them and potentially reduce the requests once they are discovered.
+                  Plaintext files contain no links, no markup, and have no imprint. Putting credits (for example) in such a file will reduce data transfer and have a lower rendering footprint.
+                </li>
+								<li>
+                  <strong>Economic:</strong> Robots and Sitemap files can be utilized by search engines to help make your website more findable, this could lead to more visitors and potentially more customers as a result.
+                  The ads.txt file is part of a scheme to reduce advertising fraud, it could be useful.
+                </li>
+								<li>
+                  <strong>Conversion:</strong> Robots can be used to target specific search engines, helping to ensure content is correctly indexed to get a good placement so that visitors can find you easily.
+                </li>
+								<li><strong>Transparency:</strong> The humans file provides credit to people involved in a site's creation, and security offers critical points of contact if an issue is discovered. Both are valuable additions to a project.</li>
 							</ul>
 							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
 							<p>You can find details about complying with [[GRI]] through the body behind the standard.</p>
@@ -5026,69 +5057,13 @@
 								<dt>GRI 303: Water</dt><dd>Low</dd>
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
-							<p class="subtitle"><strong>Example</strong></p>
+							<p class="subtitle"><strong>Example 1</strong></p>
 							<pre class="nohighlight">
 								User-agent: *
 								Disallow: /cgi-bin/
 							</pre>
 							<p><strong>Source:</strong> <a href="https://www.robotstxt.org/robotstxt.html">About /robots.txt</a>.</p>
-							<p class="subtitle"><strong>Resources</strong></p>
-							<p>Resources are for information purposes only, no endorsement is implied.</p>
-							<ul class="resources">
-								<li><a href="https://www.robotstxt.org/robotstxt.html">About /robots.txt</a></li>
-								<li><a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en">Build and submit a sitemap</a></li>
-								<li><a href="https://developers.google.com/search/docs/appearance/favicon-in-search?hl=en">Define a favicon to show in search results</a></li>
-								<li><a href="https://realfavicongenerator.net/">Favicon Generator</a></li>
-								<li><a>[*]<span class="hidden">3.18</span></a> [[GPFEDS]]<ul>
-									<li>1.9 - Strategy (Interoperable Technologies)</li>
-								</ul></li>
-								<li><a href="https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en">How Google interprets the robots.txt specification</a></li>
-								<li><a href="https://en.wikipedia.org/wiki/OpenSearch">OpenSearch</a></li>
-								<li><a>[*]<span class="hidden">3.18</span></a> OpenSearch Protocol [[OSEARCH]]</li>
-								<li><a>[*]<span class="hidden">3.18</span></a> Sitemaps Protocol [[SITEMAP]]</li>
-								<li><a href="https://slashpages.net/">slash pages</a></li>
-								<li><a>[*]<span class="hidden">3.18</span></a> The Carbon Impact of Web Standards [[CIWS]]</li>
-								<li><a>[*]<span class="hidden">3.18</span></a> Web Application Manifest [[APPMANIFEST]]</li>
-							</ul>
-							<p class="subtitle"><strong>Tags</strong></p>
-							<p><mark>UI</mark>, <mark>Patterns</mark>, <mark>Compatibility</mark>, <mark>Assets</mark>, <mark>Marketing</mark></p>
-						</div>
-					</details>
-				</section>
-			</section>
-			<section> <!-- Use Plaintext Formats When Appropriate -->
-				<h3>Use Plaintext Formats When Appropriate</h3>
-				<p>Several small assets can be included within a website, conferring a range of benefits upon the website or application that utilizes them. They each have a low carbon footprint, so while they do create emissions, it's worth including them for the benefits they provide.</p>
-				<section class="notoc">
-					<h4>Success Criterion - Beneficial File Formats <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1"><mark>(Machine Testable)</mark></a></h4>
-					<p>Include standards such as ads.txt, carbon.txt, humans.txt, security.txt and robots.txt.</p>
-				</section>
-				<section class="notoc">
-					<h4>Additional Content</h4>
-					<details>
-						<summary>Show / Hide additional content to understand this guideline and its success criteria.</summary>
-						<div class="note">
-							<p><strong>Impact &amp; Effort</strong></p>
-							<dl class="rating">
-								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.19"> [*]<span class="hidden">3.19</span></dfn></dt><dd>Low</dd>
-								<dt><a href="#effort">Effort</a></dt><dd>Low</dd>
-							</dl>
-							<p class="subtitle"><strong>Benefits</strong></p>
-							<ul class="benefits">
-								<li><strong>Environmental:</strong> Plaintext requires no rendering. If visitors (or search engines) know about these useful files (like carbon.txt) they can load quicker and with less CPU / GPU impact than any HTML website.</li>
-								<li><strong>Transparency:</strong> The humans file provides credit to people involved in a site's creation, and security offers critical points of contact if an issue is discovered. Both are valuable additions to a project.</li>
-								<li><strong>Performance:</strong> Plaintext files contain no links, no markup, and have no imprint. Putting credits (for example) in such a file will reduce data transfer and have a lower rendering footprint.</li>
-								<li><strong>Economic:</strong> The ads.txt file is part of a scheme to reduce advertising fraud, it could be useful.</li>
-							</ul>
-							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
-							<p>You can find details about complying with [[GRI]] through the body behind the standard.</p>
-							<dl class="reporting">
-								<dt>GRI 301: Materials</dt><dd>Medium</dd>
-								<dt>GRI 302: Energy</dt><dd>Low</dd>
-								<dt>GRI 303: Water</dt><dd>Medium</dd>
-								<dt>GRI 305: Emissions</dt><dd>Low</dd>
-							</dl>
-							<p class="subtitle"><strong>Example</strong></p>
+              <p class="subtitle"><strong>Example 2</strong></p>
 							<pre class="nohighlight">
 								/* TEAM */
 								Your title: Your name.
@@ -5114,15 +5089,29 @@
 								<li><a href="https://codeburst.io/all-about-humans-humans-txt-actually-f571d37f92d2">All about humans. Humans.txt, actually</a></li>
 								<li><a href="https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en">How Google interprets the robots.txt specification</a></li>
 								<li><a href="https://en.wikipedia.org/wiki/Security.txt">security.txt</a></li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The ads.txt Standard [[ADS]]</li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The carbon.txt Proposed Standard [[CARBON]]</li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The Carbon Impact of Web Standards [[CIWS]]</li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The humans.txt Standard [[HUMANS]]</li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The llms.txt Standard [[LLMS]]</li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The security.txt Proposed Standard [[SECURITY]]</li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The ads.txt Standard [[ADS]]</li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The carbon.txt Proposed Standard [[CARBON]]</li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The Carbon Impact of Web Standards [[CIWS]]</li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The humans.txt Standard [[HUMANS]]</li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The llms.txt Standard [[LLMS]]</li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The security.txt Proposed Standard [[SECURITY]]</li>
+								<li><a href="https://www.robotstxt.org/robotstxt.html">About /robots.txt</a></li>
+								<li><a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en">Build and submit a sitemap</a></li>
+								<li><a href="https://developers.google.com/search/docs/appearance/favicon-in-search?hl=en">Define a favicon to show in search results</a></li>
+								<li><a href="https://realfavicongenerator.net/">Favicon Generator</a></li>
+								<li><a>[*]<span class="hidden">3.18</span></a> [[GPFEDS]]<ul>
+									<li>1.9 - Strategy (Interoperable Technologies)</li>
+								</ul></li>
+								<li><a href="https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en">How Google interprets the robots.txt specification</a></li>
+								<li><a href="https://en.wikipedia.org/wiki/OpenSearch">OpenSearch</a></li>
+								<li><a>[*]<span class="hidden">3.18</span></a> OpenSearch Protocol [[OSEARCH]]</li>
+								<li><a>[*]<span class="hidden">3.18</span></a> Sitemaps Protocol [[SITEMAP]]</li>
+								<li><a href="https://slashpages.net/">slash pages</a></li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The Carbon Impact of Web Standards [[CIWS]]</li>
+								<li><a>[*]<span class="hidden">3.18</span></a> Web Application Manifest [[APPMANIFEST]]</li>
 							</ul>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p><mark>Patterns</mark>, <mark>Security</mark></p>
+							<p><mark>UI</mark>, <mark>Patterns</mark>, <mark>Compatibility</mark>, <mark>Assets</mark>, <mark>Marketing</mark>, <mark>Security</mark></p>
 						</div>
 					</details>
 				</section>
