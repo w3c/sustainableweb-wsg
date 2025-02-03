@@ -11,7 +11,7 @@ If you would like to learn more about us and how to participate in this project,
 
 ## Work
 
-The chartered focus of the [W3C Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) is the development of the Web Sustainability Guidelines (WSG) and its supplements.
+The chartered focus of the [W3C Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) is the development of the Web Sustainability Guidelines (WSG) and its deliverables.
 
 Links to relevant documents (based on the CG Draft Report) can be found below.
 
@@ -52,8 +52,6 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 Work is planned in accordance with the [issues](https://github.com/w3c/sustainableweb-wsg/issues) requiring resolution.
 
 If you would like to contribute towards this specification, please refer to the [CONTRIBUTING.md](IG-CONTRIBUTING.md) document for details and refer to the guidance on the [W3C Sustainable Web Interest Group](https://github.com/w3c/sustainableweb-ig) repository readme regarding participation.
-
-Further guidance will be published in due course.
 
 ## JSON API
 
