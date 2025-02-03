@@ -16,16 +16,16 @@ The structure of the repository has been created to ensure ease of maintenance. 
 
 ```
 /test-suite/		- Test Suite & Assets
-GRI.ipynb			- GRI Impact Calculator
+GRI.ipynb		- GRI Impact Calculator
 checklist.pages		- PDF Checklist (Source)
 checklist.pdf		- PDF Checklist
-glance.html			- At-A-Glance
+glance.html		- At-A-Glance
 guidelines.json		- WSG JSON API
-index.html			- WSG Guidelines
-intro.html			- Introduction
+index.html		- WSG Guidelines
+intro.html		- Introduction
 policies.html		- Laws & Policies
 quickref.html		- Quick Reference
-star.html			- STAR
+star.html		- STAR
 ```
 
 You will notice duplication within the content of our work (as the JSON API for example must reflect the guidelines). This work is not currently auto-generated so while we appreciate it if individuals go to the effort to make adjustments to all affected files as required, time commitments may not allow for everyone to do so. As such, if you can only update a single document, as part of the approval process, a chair or editor will update all necessary documents to ensure parity with your change.
