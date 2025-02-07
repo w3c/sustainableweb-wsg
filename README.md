@@ -104,7 +104,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		</tr>
 		<tr>
 			<td>W3C Draft Note</td>
-			<td>22 Apr 2026 (*Earth Day*)</td>
+			<td>22 Apr 2026 (<i>Earth Day</i>)</td>
 		</tr>
 		<!--
 		<tr>
