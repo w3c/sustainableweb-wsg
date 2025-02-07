@@ -16,34 +16,112 @@ The chartered focus of the [W3C Sustainable Web Interest Group](https://www.w3.o
 Links to relevant documents (based on the CG Draft Report) can be found below.
 
 **Guidelines:**
-| Name | Status | Date |
-|------|--------|------|
-| [Web Sustainability Guidelines](https://w3c.github.io/sustainableweb-wsg/) (WSG) | W3C Editors Draft | 06 Dec 2024 |
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Status</th>
+			<th>Date</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>[Web Sustainability Guidelines](https://w3c.github.io/sustainableweb-wsg/) (WSG)</td>
+			<td>W3C Editors Draft</td>
+			<td>06 Dec 2024</td>
+		</tr>
+	</tbody>
+</table>
 
 **Other Deliverables:**
-| Name | Status | Date |
-|------|--------|------|
-| [Sustainable Tooling And Reporting](https://w3c.github.io/sustainableweb-wsg/star.html) (STAR) | W3C Editors Draft | 06 Dec 2024 |
-| [WSG At A Glance](https://w3c.github.io/sustainableweb-wsg/glance.html) | W3C Editors Draft | 06 Dec 2024 |
-| [Introduction to Web Sustainability](https://w3c.github.io/sustainableweb-wsg/intro.html) | W3C Editors Draft | 06 Dec 2024 |
-| [Web Sustainability Laws & Policies](https://w3c.github.io/sustainableweb-wsg/policies.html) | W3C Editors Draft | 06 Dec 2024 |
-| [Quick Reference for WSG](https://w3c.github.io/sustainableweb-wsg/quickref.html) & [Checklist](https://w3c.github.io/sustainableweb-wsg/checklist.pdf) (PDF) | W3C Editors Draft | 06 Dec 2024 |
-| [WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json) | JSON API | 06 Dec 2024 |
-| [STAR Test Suite](https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite) | Test Suite | 11 Apr 2024 |
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Status</th>
+			<th>Date</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>[Sustainable Tooling And Reporting](https://w3c.github.io/sustainableweb-wsg/star.html) (STAR)</td>
+			<td>W3C Editors Draft</td>
+			<td>06 Dec 2024</td>
+		</tr>
+		<tr>
+			<td>[WSG At A Glance](https://w3c.github.io/sustainableweb-wsg/glance.html)</td>
+			<td>W3C Editors Draft</td>
+			<td>06 Dec 2024</td>
+		</tr>
+		<tr>
+			<td>[Introduction to Web Sustainability](https://w3c.github.io/sustainableweb-wsg/intro.html)</td>
+			<td>W3C Editors Draft</td>
+			<td>06 Dec 2024</td>
+		</tr>
+		<tr>
+			<td>[Web Sustainability Laws & Policies](https://w3c.github.io/sustainableweb-wsg/policies.html)</td>
+			<td>W3C Editors Draft</td>
+			<td>06 Dec 2024</td>
+		</tr>
+		<tr>
+			<td>[Quick Reference for WSG](https://w3c.github.io/sustainableweb-wsg/quickref.html) & [Checklist](https://w3c.github.io/sustainableweb-wsg/checklist.pdf) (PDF)</td>
+			<td>W3C Editors Draft</td>
+			<td>06 Dec 2024</td>
+		</tr>
+		<tr>
+			<td>[WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json)</td>
+			<td>JSON API</td>
+			<td>06 Dec 2024</td>
+		</tr>
+		<tr>
+			<td>[STAR Test Suite](https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite)</td>
+			<td>Test Suite</td>
+			<td>11 Apr 2024</td>
+		</tr>
+	</tbody>
+</table>
 
 ## Schedule
-
-|Name|Date|
-|----|----|
-|Initial Draft | 30 June 2025 |
-|Final Draft | 31 December 2025 |
-|Measurability | 31 Mar 2026 |
-|W3C Draft Note | 22 Apr 2026 (*Earth Day*) |
-<!--
-|Horizontal Review | TBD |
-|W3C Note | TBD |
-|W3C Statement | TBD |
--->
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Date</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Initial Draft</td>
+			<td>30 June 2025</td>
+		</tr>
+		<tr>
+			<td>Final Draft</td>
+			<td>31 December 2025</td>
+		</tr>
+		<tr>
+			<td>Measurability</td>
+			<td>31 Mar 2026</td>
+		</tr>
+		<tr>
+			<td>W3C Draft Note</td>
+			<td>22 Apr 2026 (*Earth Day*)</td>
+		</tr>
+		<!--
+		<tr>
+			<td>Horizontal Review</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>W3C Note</td>
+			<td>TBD</td>
+		</tr>
+		<tr>
+			<td>W3C Statement</td>
+			<td>TBD</td>
+		</tr>
+		-->
+	</tbody>
+</table>
 
 **Note:** We will still consider the [remaining proposed and planned updates](https://docs.google.com/presentation/d/1dcuSMLcAF8jTHNCovOfs31zrjCr3rtrwzTXRLSy3lAk/edit?usp=sharing) carried forward from the Sustainable Web Community Group (based on both W3C and CG member feedback).
 
