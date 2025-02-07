@@ -26,7 +26,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 	</thead>
 	<tbody>
 		<tr>
-			<td>[Web Sustainability Guidelines](https://w3c.github.io/sustainableweb-wsg/) (WSG)</td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Editors Draft</td>
 			<td>06 Dec 2024</td>
 		</tr>
@@ -44,37 +44,37 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 	</thead>
 	<tbody>
 		<tr>
-			<td>[Sustainable Tooling And Reporting](https://w3c.github.io/sustainableweb-wsg/star.html) (STAR)</td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
 			<td>W3C Editors Draft</td>
 			<td>06 Dec 2024</td>
 		</tr>
 		<tr>
-			<td>[WSG At A Glance](https://w3c.github.io/sustainableweb-wsg/glance.html)</td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
 			<td>W3C Editors Draft</td>
 			<td>06 Dec 2024</td>
 		</tr>
 		<tr>
-			<td>[Introduction to Web Sustainability](https://w3c.github.io/sustainableweb-wsg/intro.html)</td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/intro.html">Introduction to Web Sustainability</a></td>
 			<td>W3C Editors Draft</td>
 			<td>06 Dec 2024</td>
 		</tr>
 		<tr>
-			<td>[Web Sustainability Laws & Policies](https://w3c.github.io/sustainableweb-wsg/policies.html)</td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws & Policies</a></td>
 			<td>W3C Editors Draft</td>
 			<td>06 Dec 2024</td>
 		</tr>
 		<tr>
-			<td>[Quick Reference for WSG](https://w3c.github.io/sustainableweb-wsg/quickref.html) & [Checklist](https://w3c.github.io/sustainableweb-wsg/checklist.pdf) (PDF)</td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">Quick Reference for WSG</a> & <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">Checklist</a> (PDF)</td>
 			<td>W3C Editors Draft</td>
 			<td>06 Dec 2024</td>
 		</tr>
 		<tr>
-			<td>[WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json)</td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
 			<td>JSON API</td>
 			<td>06 Dec 2024</td>
 		</tr>
 		<tr>
-			<td>[STAR Test Suite](https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite)</td>
+			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>
 			<td>Test Suite</td>
 			<td>11 Apr 2024</td>
 		</tr>
