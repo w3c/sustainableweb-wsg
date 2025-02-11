@@ -939,7 +939,7 @@
 					],
 					"example": [
 						{
-							"content": "CodePen's plain English [terms of service](https://blog.codepen.io/legal/terms-of-service/) agreement are easy to read."
+							"content": "CodePen's plain English [terms of service](https://blog.codepen.io/legal/terms-of-service/) agreement are easy-to-read."
 						}
 					],
 					"resources": [
@@ -1100,7 +1100,7 @@
 						{
 							"title": "Need For Media",
 							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX16-1)",
-							"description": "The need for video or sound usage (including only when they add visitor value) has been determined, and non-informative media (background media) including autoplaying functionality has been banned or removed."
+							"description": "The need for video or sound (when it adds visitor value, for example, to enhance accessibility) has been determined, and non-informative media (background media), including autoplaying functionality, has been banned or removed."
 						},
 						{
 							"title": "Optimize Media",
@@ -1129,7 +1129,7 @@
 						{
 							"Environmental": "Media assets like audio and video can be very resource-hungry. Reducing battery-draining events such as loading high-effort content until the moment it is required can have savings in terms of pure processing and displaying of the media.",
 							"Social Equity": "Providing alternatives to bandwidth-hungry media will assist those unable to benefit due to their environment.",
-							"Accessibility": "Delivering media assets in ways that convey information in an easy-to-read manner both visually and contextually (even if people are unable to for example see), will allow a wider audience to gain from your content.",
+							"Accessibility": "Delivering media assets in ways that convey information in an easy-to-perceive manner both visually and contextually (even if people are unable to for example see), will allow a wider audience to gain from your content.",
 							"Performance": "Catering your experience to the device, situation, and environment of the visitor will reduce wasted bandwidth (for example, sending a lower resolution for less capable devices). As such, the data savings will translate into a performance boost for those taking advantage of the reduced capabilities.",
 							"Economic": "Being able to avoid media entirely and rely on options such as transcripts will provide huge financial rewards for those who pay for the bandwidth they consume or serve."
 						}
@@ -5566,7 +5566,7 @@
 					"id": "13",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#document-future-updates-and-evolutions",
 					"guideline": "Document Future Updates and Evolutions",
-					"description": "Products or services are updated regularly. Ensure that additions, changes, deprecations, removals, fixes, or security patches are documented in an easy-to-read document with details that showcase how such changes affect the visitor (or how they can take advantage of new features).",
+					"description": "Products or services are updated regularly. Ensure that additions, changes, deprecations, removals, fixes, or security patches are documented in an easy-to-perceive document with details that showcase how such changes affect the visitor (or how they can take advantage of new features).",
 					"criteria": [
 						{
 							"title": "Feature Changes",
