@@ -5735,8 +5735,8 @@
 				<h3>Optimize Browser Caching</h3>
 				<p>Browser caching reduces the requirement for files to need to be constantly reloaded from the server, and in certain situations, it can even allow for files to be viewed offline (or in the case of a reverse proxy, send immediate recurring requests without additional calculation or computation from the server). As such, this will have sustainability and performance benefits (for instance by greatly reducing Time-To-First-Byte).</p>
 				<section class="notoc">
-					<h4>Success Criterion - Server-side Caching <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS02-1"><mark>(Machine Testable)</mark></a></h4>
-					<p>If using a CMS, install an applicable plugin to enable on-the-fly server-side caching. Otherwise, use the provided server configuration files to include and tweak the file-type cache expiration using expires, bfcache, or cache-control HTTP header. If using a language or framework that generates pages on request, cache responses for static pages so that they can be reused for future visitors.</p>
+					<h4>Success Criterion - Utilize Caching <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS02-1"><mark>(Machine Testable)</mark></a></h4>
+					<p>If using a CMS, install an applicable plugin to enable on-the-fly server-side caching. Otherwise, use the provided server configuration files to include and tweak the file-type cache expiration using expires, cache-control, Memcached, or Varnish. If using a language or framework that generates pages on request, cache responses for static pages so that they can be reused for future visitors. Also remember to cache static assets at the client-side where possible to reduce repeat server requests for frequently required assets using bfcache, Local Storage, and other available browser technologies.</p>
 				</section>
 				<section class="notoc">
 					<h4>Success Criterion - Offline Access <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS02-2"><mark>(Machine Testable)</mark></a></h4>
@@ -5833,7 +5833,7 @@
 				<p>Every file will take up a certain amount of room on a server's hard drive, and this data will need to be sent across the wire to each visitor. Doing so will consume resources, but by using compression algorithms you can shrink each file to make its journey less impactful.</p>
 				<section class="notoc">
 					<h4>Success Criterion - Server-side Compression <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS03-1"><mark>(Machine Testable)</mark></a></h4>
-					<p>If using a CMS, install an applicable plugin to enable on-the-fly server-side compression, such as Brotli or GZIP. Otherwise, use the provided server configuration files to include and tweak the performance-related features to the requirements.</p>
+					<p>If using a CMS (or <abbr title="Software as a Service">SaaS</abbr>), install an applicable plugin to enable on-the-fly server-side compression, such as Brotli or GZIP. Otherwise, use the provided server configuration files to include and tweak the performance-related features to the requirements.</p>
 				</section>
 				<section class="notoc">
 					<h4>Success Criterion - Media Compression <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS03-2"><mark>(Machine Testable)</mark></a></h4>
@@ -6251,14 +6251,14 @@
 			</section>
 			<section> <!-- Enable Asynchronous Processing and Communication -->
 				<h3>Enable Asynchronous Processing and Communication</h3>
-				<p>Depending on carbon intensity, some processes and communications should be delayed and sometimes batched. This could also be a way to reduce the workload on a server or Virtual Machine (<abbr title="Virtual Machine">VM</abbr>). In such cases, visitors should be warned that the process is asynchronous and notified when it is over.</p>
+				<p>Depending on carbon intensity, some processes and communications should be delayed and sometimes batched. Redundancy should be avoided wherever possible. This could also be a way to reduce the workload on a server or Virtual Machine (<abbr title="Virtual Machine">VM</abbr>). In such cases, visitors should be warned that the process is asynchronous and notified when it is over.</p>
 				<section class="notoc">
 					<h4>Success Criterion - Batch Processing <mark class="alert">(Human Testable)</mark></h4>
 					<p>By default, non-critical processes and communications are batched and launched only when carbon intensity is under a given threshold.</p>
 				</section>
 				<section class="notoc">
 					<h4>Success Criterion - Protocol Usage <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS09-2"><mark>(Machine Testable)</mark></a></h4>
-					<p>The communication protocols used are relevant to the visitor's needs and data transferred. Avoid using insecure protocols (HTTP, <abbr title="File Transfer Protocol">FTP</abbr>), and prioritize more efficient and privacy-aware data routes for visitors (<abbr title="Hypertext Transfer Protocol (Secure)">HTTPS</abbr>, <abbr title="Secure Shell">SSH</abbr>).</p>
+					<p>The communication protocols used are relevant to the visitor's needs and data transferred. Avoid using insecure protocols (HTTP, <abbr title="File Transfer Protocol">FTP</abbr>), and prioritize more efficient and privacy-aware data routes for visitors (<abbr title="Hypertext Transfer Protocol (Secure)">HTTPS</abbr>, <abbr title="Secure Shell">SSH</abbr>). Modern protocols such as HTTP/2 should be used to benefit from them (multiplexing) while keeping backward-compatibility in mind for older devices.</p>
 				</section>
 				<section class="notoc">
 					<h4>Success Criterion - Event-Driven Architecture <mark class="alert">(Human Testable)</mark></h4>
