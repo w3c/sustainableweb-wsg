@@ -3384,25 +3384,31 @@
 				},
 				{
 					"id": "18",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#include-files-that-are-automatically-expected",
-					"guideline": "Include Files That Are Automatically Expected",
-					"description": "Search engines and browsers regularly examine websites, requesting specific files by default (they expect them to exist). If the files don't exist, this will lead to potential errors and emissions being caused when they could be created, especially as the files offer SEO, user-experience, and other benefits to visitors.",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files",
+					"guideline": "Include Expected and Beneficial Files",
+					"description": "Websites should include a range of expected and standard beneficial files to improve search engine optimization, user experience, transparency, and overall site health. Search engines and browsers regularly request these files by default. If they don't exist, this leads to unnecessary requests, potential errors, and increased emissions. Including these files avoids these issues while also providing SEO, user-experience, and other benefits. They each have a low carbon footprint, so while they do create emissions, it's worth including them for the benefits they provide.",
 					"criteria": [
 						{
 							"title": "Expected File Formats",
 							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD18-1)",
-							"description": "Include the favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml documents."
+							"description": "Include the favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml documents. Additionally, ensure that any such files defined in future web standards or specifications are included."
+						},
+						{
+							"title": "Beneficial File Formats",
+							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD18-2)",
+							"description": "Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Additionally, ensure that any such files defined in future web standards or specifications are included."
 						}
 					],
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
 						{
-							"Environmental": "Search engines or browsers request certain files by default, ensuring they are in place will reduce loading errors, and may provide efficiency enhancements in how visitors find or interact with a site.",
+							"Environmental": "Search engines or browsers request certain files by default, ensuring they are in place will reduce loading errors, and may provide efficiency enhancements in how visitors find or interact with a site. Plaintext requires no rendering. If visitors (or search engines) know about these useful files (like carbon.txt) they can load quicker and with less CPU / GPU impact than any HTML website.",
 							"Accessibility": "OpenSearch enables the browser's default search box rather than a custom solution to be integrated with your website search, which may aid accessibility as it encourages the use of a browser native component (and / or keyboard shortcuts) rather than a website or application which may suit certain accessibility requirements better.",
-							"Performance": "Files that are expected will produce HTTP requests, ensuring they are met will satisfy the products making them and potentially reduce the requests once they are discovered.",
-							"Economic": "Robots and Sitemap files can be utilized by search engines to help make your website more findable, this could lead to more visitors and potentially more customers as a result.",
-							"Conversion": "Robots can be used to target specific search engines, helping to ensure content is correctly indexed to get a good placement so that visitors can find you easily."
+							"Performance": "Files that are expected will produce HTTP requests, ensuring they are met will satisfy the products making them and potentially reduce the requests once they are discovered. Plaintext files contain no links, no markup, and have no imprint. Putting credits (for example) in such a file will reduce data transfer and have a lower rendering footprint.",
+							"Economic": "Robots and Sitemap files can be utilized by search engines to help make your website more findable, this could lead to more visitors and potentially more customers as a result. The ads.txt file is part of a scheme to reduce advertising fraud, it could be useful.",
+							"Conversion": "Robots can be used to target specific search engines, helping to ensure content is correctly indexed to get a good placement so that visitors can find you easily.",
+							"Transparency": "The humans file provides credit to people involved in a site's creation, and security offers critical points of contact if an issue is discovered. Both are valuable additions to a project."
 						}
 					],
 					"GRI": [
@@ -3422,75 +3428,30 @@
 					"resources": [
 						{
 							"About /robots.txt": "https://www.robotstxt.org/robotstxt.html",
+							"Ads.txt guide": "https://support.google.com/adsense/answer/12171612?hl=en-GB&rd=1",
+							"The ads.txt Standard": "https://iabtechlab.com/ads-txt/",
+							"All about humans. Humans.txt, actually": "https://codeburst.io/all-about-humans-humans-txt-actually-f571d37f92d2",
 							"Build and submit a sitemap": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en",
+							"The carbon.txt Proposed Standard": "https://carbontxt.org/",
+							"The Carbon Impact of Web Standards (PDF)": "https://websitesustainability.com/cache/files/research23.pdf",
 							"Define a favicon to show in search results": "https://developers.google.com/search/docs/appearance/favicon-in-search?hl=en",
 							"Favicon Generator": "https://realfavicongenerator.net/",
 							"[GPFEDS] 1.9 - Strategy (Interoperable Technologies) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"How Google interprets the robots.txt specification": "https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en",
+							"The humans.txt Standard": "https://humanstxt.org/Standard.html",
 							"OpenSearch": "https://en.wikipedia.org/wiki/OpenSearch",
 							"OpenSearch Protocol": "https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md",
+							"security.txt": "https://en.wikipedia.org/wiki/Security.txt",
+							"The security.txt Proposed Standard": "https://securitytxt.org/",
 							"Sitemaps Protocol": "https://www.sitemaps.org/protocol.html",
 							"slash pages": "https://slashpages.net/",
-							"The Carbon Impact of Web Standards (PDF)": "https://websitesustainability.com/cache/files/research23.pdf",
 							"Web Application Manifest": "https://www.w3.org/TR/appmanifest/"
 						}
 					],
-					"tags": ["UI", "Patterns", "Compatibility", "Assets", "Marketing"]
+					"tags": ["UI", "Patterns", "Compatibility", "Assets", "Marketing", "Security"]
 				},
 				{
 					"id": "19",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#use-plaintext-formats-when-appropriate",
-					"guideline": "Use Plaintext Formats When Appropriate",
-					"description": "Several small assets can be included within a website, conferring a range of benefits upon the website or application that utilizes them. They each have a low carbon footprint, so while they do create emissions, it's worth including them for the benefits they provide.",
-					"criteria": [
-						{
-							"title": "Beneficial File Formats",
-							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1)",
-							"description": "Include standards such as ads.txt, carbon.txt, humans.txt, security.txt and robots.txt."
-						}
-					],
-					"impact": "Low",
-					"effort": "Low",
-					"benefits": [
-						{
-							"Environmental": "Plaintext requires no rendering. If visitors (or search engines) know about these useful files (like carbon.txt) they can load quicker and with less CPU / GPU impact than any HTML website.",
-							"Transparency": "The humans file provides credit to people involved in a site's creation, and security offers critical points of contact if an issue is discovered. Both are valuable additions to a project.",
-							"Performance": "Plaintext files contain no links, no markup, and have no imprint. Putting credits (for example) in such a file will reduce data transfer and have a lower rendering footprint.",
-							"Economic": "The ads.txt file is part of a scheme to reduce advertising fraud, it could be useful."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Low",
-							"water": "Medium",
-							"emissions": "Low"
-						}
-					],
-					"example": [
-						{
-							"code": "\/* TEAM *\/\r\nYour title: Your name.\r\nSite: email, link to a contact form, etc.\r\nTwitter: your Twitter username.\r\nLocation: City, Country.\r\n\r\n\/* THANKS *\/\r\nName: name or url\r\n\r\n\/* website *\/\r\nLast update: YYYY\/MM\/DD\r\nStandards: HTML5, CSS3,..\r\nComponents: Modernizr, jQuery, etc.\r\nSoftware: Software used for the development",
-							"content": "[Humans.txt Quick start](https://humanstxt.org/Standard.html)."
-						}
-					],
-					"resources": [
-						{
-							"About /robots.txt": "https://www.robotstxt.org/robotstxt.html",
-							"Ads.txt guide": "https://support.google.com/adsense/answer/12171612?hl=en-GB&rd=1",
-							"All about humans. Humans.txt, actually": "https://codeburst.io/all-about-humans-humans-txt-actually-f571d37f92d2",
-							"How Google interprets the robots.txt specification": "https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en",
-							"security.txt": "https://en.wikipedia.org/wiki/Security.txt",
-							"The ads.txt Standard": "https://iabtechlab.com/ads-txt/",
-							"The carbon.txt Proposed Standard": "https://carbontxt.org/",
-							"The Carbon Impact of Web Standards (PDF)": "https://websitesustainability.com/cache/files/research23.pdf",
-							"The humans.txt Standard": "https://humanstxt.org/Standard.html",
-							"The security.txt Proposed Standard": "https://securitytxt.org/"
-						}
-					],
-					"tags": ["Patterns", "Security"]
-				},
-				{
-					"id": "20",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-or-proprietary-code",
 					"guideline": "Avoid Using Deprecated or Proprietary Code",
 					"description": "The Web is full of dead, often proprietary code, created using standards that have been superseded or by groups that aren't recognized. By following recognized coding standards, you ensure that your code will be rendered properly by browsers (and reduce the potential for added emissions occurring from unmaintained rendering processes).",
@@ -3552,7 +3513,7 @@
 					"tags": ["Accessibility", "Compatibility", "HTML", "CSS", "JavaScript", "Performance"]
 				},
 				{
-					"id": "21",
+					"id": "20",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#align-technical-requirements-with-sustainability-goals",
 					"guideline": "Align Technical Requirements With Sustainability Goals",
 					"description": "Every product or service is different, and each will require a different set of tooling to accomplish the most sustainable result. Deciding whether to go with a bulky framework, Static Site Generator (SSG), or a Content Management System (CMS) takes careful planning based on client or service requirements.",
@@ -3638,7 +3599,7 @@
 					"tags": ["Ideation", "Compatibility", "Performance", "Strategy"]
 				},
 				{
-					"id": "22",
+					"id": "21",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version",
 					"guideline": "Use the Latest Stable Language Version",
 					"description": "Languages evolve regularly, and it's important for security and performance reasons to keep on top of the technology stack you are using. It's also important to consider whether the language you are using is appropriate or optimized for the task you wish to use it for.",
@@ -3691,7 +3652,7 @@
 					"tags": ["Compatibility", "Performance", "Security"]
 				},
 				{
-					"id": "23",
+					"id": "22",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features",
 					"guideline": "Take Advantage of Native Features",
 					"description": "Ensuring that your code is free of redundancy by using pre-existing functionality provided by the web browser is important as it will help you to reduce the amount of time wasted, re-creating the same components, this offers obvious sustainability benefits in terms of time in front of the screen.",
@@ -3744,7 +3705,7 @@
 					"tags": ["UI", "Patterns", "Compatibility", "HTML", "CSS", "JavaScript"]
 				},
 				{
-					"id": "24",
+					"id": "23",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#run-fewer-simpler-queries-as-possible",
 					"guideline": "Run Fewer, Simpler Queries As Possible",
 					"description": "Making multiple requests whether HTTP or within a database has a carbon cost as infrastructure has to send that information back and forth. As such, managing how you store and use data locally for a visitor will help reduce wasted cycles.",

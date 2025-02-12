@@ -5120,12 +5120,16 @@
 					</details>
 				</section>
 			</section>
-			<section> <!-- Include Files That Are Automatically Expected -->
-				<h3>Include Files That Are Automatically Expected</h3>
-				<p>Search engines and browsers regularly examine websites, requesting specific files by default (they expect them to exist). If the files don't exist, this will lead to potential errors and emissions being caused when they could be created, especially as the files offer SEO, user-experience, and other benefits to visitors.</p>
+			<section> <!-- Include Expected and Beneficial Files -->
+				<h3>Include Expected and Beneficial Files</h3>
+				<p>Websites should include a range of expected and standard beneficial files to improve search engine optimization, user experience, transparency, and overall site health. Search engines and browsers regularly request these files by default. If they don't exist, this leads to unnecessary requests, potential errors, and increased emissions. Including these files avoids these issues while also providing SEO, user-experience, and other benefits. They each have a low carbon footprint, so while they do create emissions, it's worth including them for the benefits they provide.</p>
 				<section class="notoc">
 					<h4>Success Criterion - Expected File Formats <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD18-1"><mark>(Machine Testable)</mark></a></h4>
-					<p>Include the favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml documents.</p>
+					<p>Include the favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml documents. Additionally, ensure that any such files defined in future web standards or specifications are included.</p>
+				</section>
+				<section class="notoc">
+					<h4>Success Criterion - Beneficial File Formats <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD8-2"><mark>(Machine Testable)</mark></a></h4>
+					<p>Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Additionally, ensure that any such files defined in future web standards or specifications are included.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional Content</h4>
@@ -5139,11 +5143,12 @@
 							</dl>
 							<p class="subtitle"><strong>Benefits</strong></p>
 							<ul class="benefits">
-								<li><strong>Environmental:</strong> Search engines or browsers request certain files by default, ensuring they are in place will reduce loading errors, and may provide efficiency enhancements in how visitors find or interact with a site.</li>
+								<li><strong>Environmental:</strong> Search engines or browsers request certain files by default, ensuring they are in place will reduce loading errors, and may provide efficiency enhancements in how visitors find or interact with a site. Plaintext requires no rendering. If visitors (or search engines) know about these useful files (like carbon.txt) they can load quicker and with less CPU / GPU impact than any HTML website.</li>
 								<li><strong>Accessibility:</strong> OpenSearch enables the browser's default search box rather than a custom solution to be integrated with your website search, which may aid accessibility as it encourages the use of a browser native component (and / or keyboard shortcuts) rather than a website or application which may suit certain accessibility requirements better.</li>
-								<li><strong>Performance:</strong> Files that are expected will produce HTTP requests, ensuring they are met will satisfy the products making them and potentially reduce the requests once they are discovered.</li>
-								<li><strong>Economic:</strong> Robots and Sitemap files can be utilized by search engines to help make your website more findable, this could lead to more visitors and potentially more customers as a result.</li>
+								<li><strong>Performance:</strong> Files that are expected will produce HTTP requests, ensuring they are met will satisfy the products making them and potentially reduce the requests once they are discovered. Plaintext files contain no links, no markup, and have no imprint. Putting credits (for example) in such a file will reduce data transfer and have a lower rendering footprint.</li>
+								<li><strong>Economic:</strong> Robots and Sitemap files can be utilized by search engines to help make your website more findable, this could lead to more visitors and potentially more customers as a result. The ads.txt file is part of a scheme to reduce advertising fraud, it could be useful.</li>
 								<li><strong>Conversion:</strong> Robots can be used to target specific search engines, helping to ensure content is correctly indexed to get a good placement so that visitors can find you easily.</li>
+								<li><strong>Transparency:</strong> The humans file provides credit to people involved in a site's creation, and security offers critical points of contact if an issue is discovered. Both are valuable additions to a project.</li>
 							</ul>
 							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
 							<p>You can find details about complying with [[GRI]] through the body behind the standard.</p>
@@ -5163,93 +5168,31 @@
 							<p>Resources are for information purposes only, no endorsement is implied.</p>
 							<ul class="resources">
 								<li><a href="https://www.robotstxt.org/robotstxt.html">About /robots.txt</a></li>
+								<li><a href="https://support.google.com/adsense/answer/12171612?hl=en-GB&rd=1">Ads.txt guide</a></li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The ads.txt Standard [[ADS]]</li>
+								<li><a href="https://codeburst.io/all-about-humans-humans-txt-actually-f571d37f92d2">All about humans. Humans.txt, actually</a></li>
 								<li><a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en">Build and submit a sitemap</a></li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The carbon.txt Proposed Standard [[CARBON]]</li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The Carbon Impact of Web Standards [[CIWS]]</li>
 								<li><a href="https://developers.google.com/search/docs/appearance/favicon-in-search?hl=en">Define a favicon to show in search results</a></li>
 								<li><a href="https://realfavicongenerator.net/">Favicon Generator</a></li>
 								<li><a>[*]<span class="hidden">3.18</span></a> [[GPFEDS]]<ul>
 									<li>1.9 - Strategy (Interoperable Technologies)</li>
 								</ul></li>
 								<li><a href="https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en">How Google interprets the robots.txt specification</a></li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The humans.txt Standard [[HUMANS]]</li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The llms.txt Standard [[LLMS]]</li>
 								<li><a href="https://en.wikipedia.org/wiki/OpenSearch">OpenSearch</a></li>
 								<li><a>[*]<span class="hidden">3.18</span></a> OpenSearch Protocol [[OSEARCH]]</li>
+								<li><a href="https://en.wikipedia.org/wiki/Security.txt">security.txt</a></li>
+								<li><a>[*]<span class="hidden">3.18</span></a> The security.txt Proposed Standard [[SECURITY]]</li>
 								<li><a>[*]<span class="hidden">3.18</span></a> Sitemaps Protocol [[SITEMAP]]</li>
 								<li><a href="https://slashpages.net/">slash pages</a></li>
 								<li><a>[*]<span class="hidden">3.18</span></a> The Carbon Impact of Web Standards [[CIWS]]</li>
 								<li><a>[*]<span class="hidden">3.18</span></a> Web Application Manifest [[APPMANIFEST]]</li>
 							</ul>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p><mark>UI</mark>, <mark>Patterns</mark>, <mark>Compatibility</mark>, <mark>Assets</mark>, <mark>Marketing</mark></p>
-						</div>
-					</details>
-				</section>
-			</section>
-			<section> <!-- Use Plaintext Formats When Appropriate -->
-				<h3>Use Plaintext Formats When Appropriate</h3>
-				<p>Several small assets can be included within a website, conferring a range of benefits upon the website or application that utilizes them. They each have a low carbon footprint, so while they do create emissions, it's worth including them for the benefits they provide.</p>
-				<section class="notoc">
-					<h4>Success Criterion - Beneficial File Formats <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1"><mark>(Machine Testable)</mark></a></h4>
-					<p>Include standards such as ads.txt, carbon.txt, humans.txt, security.txt and robots.txt.</p>
-				</section>
-				<section class="notoc">
-					<h4>Additional Content</h4>
-					<details>
-						<summary>Show / Hide additional content to understand this guideline and its success criteria.</summary>
-						<div class="note">
-							<p><strong>Impact &amp; Effort</strong></p>
-							<dl class="rating">
-								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.19"> [*]<span class="hidden">3.19</span></dfn></dt><dd>Low</dd>
-								<dt><a href="#effort">Effort</a></dt><dd>Low</dd>
-							</dl>
-							<p class="subtitle"><strong>Benefits</strong></p>
-							<ul class="benefits">
-								<li><strong>Environmental:</strong> Plaintext requires no rendering. If visitors (or search engines) know about these useful files (like carbon.txt) they can load quicker and with less CPU / GPU impact than any HTML website.</li>
-								<li><strong>Transparency:</strong> The humans file provides credit to people involved in a site's creation, and security offers critical points of contact if an issue is discovered. Both are valuable additions to a project.</li>
-								<li><strong>Performance:</strong> Plaintext files contain no links, no markup, and have no imprint. Putting credits (for example) in such a file will reduce data transfer and have a lower rendering footprint.</li>
-								<li><strong>Economic:</strong> The ads.txt file is part of a scheme to reduce advertising fraud, it could be useful.</li>
-							</ul>
-							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
-							<p>You can find details about complying with [[GRI]] through the body behind the standard.</p>
-							<dl class="reporting">
-								<dt>GRI 301: Materials</dt><dd>Medium</dd>
-								<dt>GRI 302: Energy</dt><dd>Low</dd>
-								<dt>GRI 303: Water</dt><dd>Medium</dd>
-								<dt>GRI 305: Emissions</dt><dd>Low</dd>
-							</dl>
-							<p class="subtitle"><strong>Example</strong></p>
-							<pre class="nohighlight">
-								/* TEAM */
-								Your title: Your name.
-								Site: email, link to a contact form, etc.
-								Twitter: your Twitter username.
-								Location: City, Country.
-
-								/* THANKS */
-								Name: name or url
-
-								/* website */
-								Last update: YYYY/MM/DD
-								Standards: HTML5, CSS3,..
-								Components: Modernizr, jQuery, etc.
-								Software: Software used for the development
-							</pre>
-							<p><strong>Source:</strong> <a href="https://humanstxt.org/Standard.html">Humans.txt Quick start</a>.</p>
-							<p class="subtitle"><strong>Resources</strong></p>
-							<p>Resources are for information purposes only, no endorsement is implied.</p>
-							<ul class="resources">
-								<li><a href="https://www.robotstxt.org/robotstxt.html">About /robots.txt</a></li>
-								<li><a href="https://support.google.com/adsense/answer/12171612?hl=en-GB&rd=1">Ads.txt guide</a></li>
-								<li><a href="https://codeburst.io/all-about-humans-humans-txt-actually-f571d37f92d2">All about humans. Humans.txt, actually</a></li>
-								<li><a href="https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en">How Google interprets the robots.txt specification</a></li>
-								<li><a href="https://en.wikipedia.org/wiki/Security.txt">security.txt</a></li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The ads.txt Standard [[ADS]]</li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The carbon.txt Proposed Standard [[CARBON]]</li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The Carbon Impact of Web Standards [[CIWS]]</li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The humans.txt Standard [[HUMANS]]</li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The llms.txt Standard [[LLMS]]</li>
-								<li><a>[*]<span class="hidden">3.19</span></a> The security.txt Proposed Standard [[SECURITY]]</li>
-							</ul>
-							<p class="subtitle"><strong>Tags</strong></p>
-							<p><mark>Patterns</mark>, <mark>Security</mark></p>
+							<p><mark>UI</mark>, <mark>Patterns</mark>, <mark>Compatibility</mark>, <mark>Assets</mark>, <mark>Marketing</mark>, <mark>Security</mark></p>
 						</div>
 					</details>
 				</section>
@@ -5258,11 +5201,11 @@
 				<h3>Avoid Using Deprecated or Proprietary Code</h3>
 				<p>The Web is full of dead, often proprietary code, created using standards that have been superseded or by groups that aren't recognized. By following recognized coding standards, you ensure that your code will be rendered properly by browsers (and reduce the potential for added emissions occurring from unmaintained rendering processes).</p>
 				<section class="notoc">
-					<h4>Success Criterion - Deprecated Code <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD20-1"><mark>(Machine Testable)</mark></a></h4>
+					<h4>Success Criterion - Deprecated Code <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Exclude deprecated formats and standards, the only exception being if consumer support demands maintaining older standards to provide a functional product.</p>
 				</section>
 				<section class="notoc">
-					<h4>Success Criterion - Outdated Code <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD20-2"><mark>(Machine Testable)</mark></a></h4>
+					<h4>Success Criterion - Outdated Code <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD19-2"><mark>(Machine Testable)</mark></a></h4>
 					<p>Don't use an older standard if a newer recommendation will do the same job as / or more effectively.</p>
 				</section>
 				<section class="notoc">
@@ -5272,7 +5215,7 @@
 						<div class="note">
 							<p><strong>Impact &amp; Effort</strong></p>
 							<dl class="rating">
-								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.20"> [*]<span class="hidden">3.20</span></dfn></dt><dd>Low</dd>
+								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.19"> [*]<span class="hidden">3.19</span></dfn></dt><dd>Low</dd>
 								<dt><a href="#effort">Effort</a></dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Benefits</strong></p>
@@ -5303,19 +5246,19 @@
 							<p>Resources are for information purposes only, no endorsement is implied.</p>
 							<ul class="resources">
 								<li><a href="https://dora.dev/capabilities/code-maintainability/">DevOps tech: Code maintainability</a></li>
-								<li><a>[*]<span class="hidden">3.20</span></a> [[GPFEDS]]<ul>
+								<li><a>[*]<span class="hidden">3.19</span></a> [[GPFEDS]]<ul>
 									<li>1.9 - Strategy (Interoperable Technologies)</li>
 									<li>2.9 - Specifications (Off-The-Shelf Components)</li>
 									<li>4.5 - UX and UI (Native Components)</li>
 								</ul></li>
-								<li><a>[*]<span class="hidden">3.20</span></a> [[GR491]]<ul>
+								<li><a>[*]<span class="hidden">3.19</span></a> [[GR491]]<ul>
 									<li><a href="https://gr491.isit-europe.org/en/crit.php?id=1-5005-frontend-the-best-development-standards-cover-a-large">1-5005</a> - Proven Development Standards</li>
 								</ul></li>
 								<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html">HTML5 Security Cheat Sheet</a></li>
 								<li><a href="https://www.imaginarycloud.com/blog/json-vs-xml/">JSON vs XML: which one is faster and more efficient?</a></li>
 								<li><a href="https://meiert.com/en/blog/maintainability-guide/">Maintainability Guide</a></li>
 								<li><a href="https://dequeuniversity.com/rules/axe/4.3/marquee">marquee elements are deprecated and must not be used</a></li>
-								<li><a>[*]<span class="hidden">3.20</span></a> The Carbon Impact of Web Standards [[CIWS]]</li>
+								<li><a>[*]<span class="hidden">3.19</span></a> The Carbon Impact of Web Standards [[CIWS]]</li>
 								<li><a href="https://meiert.com/en/blog/maintainability-guide-2/">The Compact Guide to Web Maintainability: 200 Tips and Resources</a></li>
 								<li><a href="https://garrettdimon.com/journal/posts/the-neverending-story">The Neverending Story</a></li>
 								<li><a href="https://www.genelify.com/blog/how-to-improve-php-performance#_7_Use_JSON_for_data_exchange">Use JSON for data exchange</a></li>
@@ -5332,7 +5275,7 @@
 				<h3>Align Technical Requirements With Sustainability Goals</h3>
 				<p>Every product or service is different, and each will require a different set of tooling to accomplish the most sustainable result. Deciding whether to go with a bulky framework, Static Site Generator (<abbr title="Static Site Generator">SSG</abbr>), or a Content Management System (<abbr title="Content Management System">CMS</abbr>) takes careful planning based on client or service requirements.</p>
 				<section class="notoc">
-					<h4>Success Criterion - Identify Requirements <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD21-1"><mark>(Machine Testable)</mark></a></h4>
+					<h4>Success Criterion - Identify Requirements <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD20-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Identify the requirements and from this, choose the implementation of the product or service. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources (and thereby produce more emissions upon render) but have a faster build-time (emitting less carbon during development).</p>
 				</section>
 				<section class="notoc">
@@ -5344,7 +5287,7 @@
 					<p>If choosing a code generation tool, use a Static Site Generator in preference to a bulky content management system. Because <abbr title="Static Site Generators">SSGs</abbr> often start using a minimalist content entry format (like markdown) and all of the compilation is done before the website is uploaded, the emissions benefit comes from the server not having to place as much effort into serving pages (as they are static) for each visitor. In the case of a CMS, the dynamic nature of a site will involve additional computation (server-side processing) and bulkier libraries.</p>
 				</section>
 				<section class="notoc">
-					<h4>Success Criterion - Expandability Considerations <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD21-4"><mark>(Machine Testable)</mark></a></h4>
+					<h4>Success Criterion - Expandability Considerations <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD20-4"><mark>(Machine Testable)</mark></a></h4>
 					<p>Plugins, extensions, and themes have been carefully reviewed and selected to maximize interoperability, accessibility, and performance. They are regularly audited over time to ensure continued compatibility.</p>
 				</section>
 				<section class="notoc">
@@ -5358,7 +5301,7 @@
 						<div class="note">
 							<p><strong>Impact &amp; Effort</strong></p>
 							<dl class="rating">
-								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.21"> [*]<span class="hidden">3.21</span></dfn></dt><dd>Medium</dd>
+								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.20"> [*]<span class="hidden">3.20</span></dfn></dt><dd>Medium</dd>
 								<dt><a href="#effort">Effort</a></dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Benefits</strong></p>
@@ -5384,7 +5327,7 @@
 							<p>Resources are for information purposes only, no endorsement is implied.</p>
 							<ul class="resources">
 								<li><a href="https://www.sitepoint.com/7-reasons-use-static-site-generator/">7 Reasons to Use a Static Site Generator</a></li>
-								<li><a>[*]<span class="hidden">3.21</span></a> [[AFNOR]] Spec 5.3.3 & 5.2.2 (<em>French</em>)</li>
+								<li><a>[*]<span class="hidden">3.20</span></a> [[AFNOR]] Spec 5.3.3 & 5.2.2 (<em>French</em>)</li>
 								<li><a href="https://sustainablevirtualdesign.wordpress.com/2016/01/13/are-content-management-systems-cms-sustainable/">Are Content Management Systems Sustainable?</a></li>
 								<li><a href="https://www.etive-mor.com/blog/creating-a-low-carbon-umbraco-website">Creating a Low Carbon Umbraco Website</a></li>
 								<li><a href="https://www.drupal.org/docs/getting-started/sustainability/getting-started-with-sustainability">Getting Started with Sustainability</a></li>
@@ -5392,7 +5335,7 @@
 									<li>1.5 - Strategy (Impact Goals)</li>
 									<li>3.1 - Architecture (Impact Reduction)</li>
 								</ul></li>
-								<li><a>[*]<span class="hidden">3.21</span></a> [[GR491]]<ul>
+								<li><a>[*]<span class="hidden">3.20</span></a> [[GR491]]<ul>
 									<li><a href="https://gr491.isit-europe.org/en/crit.php?id=3-5021-frontend-some-features-are-available-in-several-forms.">3-5021</a> - Functionality VS Native</li>
 									<li><a href="https://gr491.isit-europe.org/en/crit.php?id=6-3041-uxui-the-simpler-the-visual-theme-the-more">6-3041</a> - Sustainable IT Impact</li>
 									<li><a href="https://gr491.isit-europe.org/en/crit.php?id=8-3059-uxui-some-features-are-available-in-multiple-forms.">8-3059</a> - Native System Features</li>
@@ -5409,7 +5352,7 @@
 								<li>Solid Protocol [[SOLID]]</li>
 								<li><a href="https://css-tricks.com/striking-a-balance-between-native-and-custom-select-elements/">Striking a Balance Between Native and Custom Select Elements</a></li>
 								<li><a href="https://designsustainably.eu/uitools/">UI Tools</a></li>
-								<li><a>[*]<span class="hidden">3.21</span></a> Web Almanac: Sustainability [[ALMANAC]]</li>
+								<li><a>[*]<span class="hidden">3.20</span></a> Web Almanac: Sustainability [[ALMANAC]]</li>
 								<li><a href="https://www.keycdn.com/support/what-affects-cms-performance">What Affects CMS Performance?</a></li>
 								<li><a href="https://www.cloudflare.com/learning/performance/static-site-generator/">What is a static site generator?</a></li>
 							</ul>
@@ -5423,7 +5366,7 @@
 				<h3>Use the Latest Stable Language Version</h3>
 				<p>Languages evolve regularly, and it's important for security and performance reasons to keep on top of the technology stack you are using. It's also important to consider whether the language you are using is appropriate or optimized for the task you wish to use it for.</p>
 				<section class="notoc">
-					<h4>Success Criterion - Versioning <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD22-1"><mark>(Machine Testable)</mark></a></h4>
+					<h4>Success Criterion - Versioning <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD21-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Use the latest build of your chosen syntax language and its coupled framework.</p>
 				</section>
 				<section class="notoc">
@@ -5437,7 +5380,7 @@
 						<div class="note">
 							<p><strong>Impact &amp; Effort</strong></p>
 							<dl class="rating">
-								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.22"> [*]<span class="hidden">3.22</span></dfn></dt><dd>Medium</dd>
+								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.21"> [*]<span class="hidden">3.21</span></dfn></dt><dd>Medium</dd>
 								<dt><a href="#effort">Effort</a></dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Benefits</strong></p>
@@ -5461,7 +5404,7 @@
 							<p>Resources are for information purposes only, no endorsement is implied.</p>
 							<ul class="resources">
 								<li><a href="https://www.cloudways.com/blog/php-performance/">Best PHP Performance Tips From Community & Influencers</a></li>
-								<li><a>[*]<span class="hidden">3.22</span></a> Energy Efficiency across Programming Languages [[GREENCODE]]</li>
+								<li><a>[*]<span class="hidden">3.21</span></a> Energy Efficiency across Programming Languages [[GREENCODE]]</li>
 								<li><a href="https://www.altamira.ai/blog/php-5-vs-php-7-performance-comparison/">PHP 5.6 vs PHP 7 Performance Comparison</a></li>
 								<li><a href="https://attractivechaos.github.io/plb/">Programming Languages Benchmarks</a></li>
 								<li><a href="https://niklas-heer.github.io/speed-comparison/">Speed comparison</a></li>
@@ -5488,7 +5431,7 @@
 						<div class="note">
 							<p><strong>Impact &amp; Effort</strong></p>
 							<dl class="rating">
-								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.23"> [*]<span class="hidden">3.23</span></dfn></dt><dd>Medium</dd>
+								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.22"> [*]<span class="hidden">3.22</span></dfn></dt><dd>Medium</dd>
 								<dt><a href="#effort">Effort</a></dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Benefits</strong></p>
@@ -5530,14 +5473,14 @@
 							<p>Resources are for information purposes only, no endorsement is implied.</p>
 							<ul class="resources">
 								<li><a href="https://www.thegeekstuff.com/2014/04/optimize-php-code/">15 Tips to Optimize Your PHP Script for Better Performance for Developers</a></li>
-								<li><a>[*]<span class="hidden">3.23</span></a> Energy Efficiency across Programming Languages [[GREENCODE]]</li>
-								<li><a>[*]<span class="hidden">3.23</span></a> [[GPFEDS]]<ul>
+								<li><a>[*]<span class="hidden">3.22</span></a> Energy Efficiency across Programming Languages [[GREENCODE]]</li>
+								<li><a>[*]<span class="hidden">3.22</span></a> [[GPFEDS]]<ul>
 									<li>1.9 - Strategy (Interoperable Technologies)</li>
 									<li>4.5 - UX and UI (Native Components)</li>
 								</ul></li>
 								<li><a href="https://www.genelify.com/blog/how-to-improve-php-performance#8_Take_advantage_of_the_native_functions_of_PHP">How to improve PHP performance in your web application</a></li>
 								<li><a href="https://subscription.packtpub.com/book/game-development/9781849696029/1/ch01lvl1sec13/native-features-of-the-browser">Native features of the browser</a></li>
-								<li><a>[*]<span class="hidden">3.23</span></a> PHP Function and Method listing [[PHP-FM]]</li>
+								<li><a>[*]<span class="hidden">3.22</span></a> PHP Function and Method listing [[PHP-FM]]</li>
 								<li><a href="https://developer.mozilla.org/en-US/docs/Web/API">Web APIs</a></li>
 							</ul>
 							<p class="subtitle"><strong>Tags</strong></p>
@@ -5560,7 +5503,7 @@
 						<div class="note">
 							<p><strong>Impact &amp; Effort</strong></p>
 							<dl class="rating">
-								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.24"> [*]<span class="hidden">3.24</span></dfn></dt><dd>Medium</dd>
+								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.23"> [*]<span class="hidden">3.23</span></dfn></dt><dd>Medium</dd>
 								<dt><a href="#effort">Effort</a></dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Benefits</strong></p>
@@ -5585,7 +5528,7 @@
 							<p class="subtitle"><strong>Resources</strong></p>
 							<p>Resources are for information purposes only, no endorsement is implied.</p>
 							<ul class="resources">
-								<li><a>[*]<span class="hidden">3.24</span></a> [[GPFEDS]]<ul>
+								<li><a>[*]<span class="hidden">3.23</span></a> [[GPFEDS]]<ul>
 									<li>4.9 - UX and UI (Server Requests)</li>
 									<li>6.5 - Front-End (Upload Triggers)</li>
 									<li>7.3 - Back-End (Background Processing)</li>

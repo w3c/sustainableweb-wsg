@@ -3205,7 +3205,7 @@
 							<summary id="WD18-1">WD18-1: Provide the Expected Website Assets in Your Base Directory</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#include-files-that-are-automatically-expected">3.18 Include Files That Are Automatically Expected</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files">3.18 Include Expected and Beneficial Files</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>Ensure that the non-HTML files that are expected to be located within the base directory of a website can firstly be found and secondly are correctly formatted (using the right syntax) and match the expectations of the product or service that requires them to benefit the visitor with a better user-experience, increased accessibility, and sustainability.</p>
 								<p>For machine testability, tooling should aim to identify that the listed files are provided (if not flag these justifying the need for their inclusion). If they are included they should be examined to ensure they are semantically correct, especially if they are formed using a strict language such as XML. If they fail to validate correctly errors should constitute a failure to meet the success criteria.</p>
@@ -3230,12 +3230,12 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD19-1: Provide Useful Plaintext Website Assets in the Expected Locations -->
+					<li> <!-- WD18-2: Provide Beneficial Plaintext Website Assets in the Expected Locations -->
 						<details>
-							<summary id="WD19-1">WD19-1: Provide Useful Plaintext Website Assets in the Expected Locations</summary>
+							<summary id="WD18-2">WD18-2: Provide Beneficial Plaintext Website Assets in the Expected Locations</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-plaintext-formats-when-appropriate">3.19 Use Plaintext Formats When Appropriate</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files">3.18 Include Expected and Beneficial Files</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>Provide a mechanism for adding useful contextual information to a website or application within recognized locations in plaintext format (so that it doesn't impact the rest of the product or service). These standardized formats each have a defined beneficial purpose and are considered to be low-impact (sustainably speaking) so are safe to include.</p>
 								<p>This technique is most useful when the assets are formatted as per their specification for purposes of readability, it is how individuals and machines will be expected to understand them. For machine testability, using heuristics to scan for recognized features within the text should help you identify the instructions or any features of note that could be weighed in calculations.</p>
@@ -3259,12 +3259,12 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD20-1: Replace Deprecated Code With Suitable Alternative Syntax -->
+					<li> <!-- WD19-1: Replace Deprecated Code With Suitable Alternative Syntax -->
 						<details>
-							<summary id="WD20-1">WD20-1: Replace Deprecated Code With Suitable Alternative Syntax</summary>
+							<summary id="WD19-1">WD19-1: Replace Deprecated Code With Suitable Alternative Syntax</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-or-proprietary-code">3.20 Avoid Using Deprecated or Proprietary Code</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-or-proprietary-code">3.19 Avoid Using Deprecated or Proprietary Code</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>Identify any deprecated code that is no longer recommended for use within specifications. As older code is often not as highly optimized for performance (browser makers often cease to maintain abandoned and deprecated features), it can take longer to render and thrash hardware causing higher emissions so as a general rule, is worth resolving.</p>
 								<p>For machine testability, deprecations in languages can also be found within specifications from providers like the W3C. Documentation providers like MDN also provide extremely thorough coverage of syntax that has been deprecated such as within HTML, CSS, and JavaScript. If replacements for any techniques can be offered, provide them, otherwise recommend removal from your code.</p>
@@ -3285,12 +3285,12 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD20-2: Replace Outdated Web Standards With Suitable Alternatives -->
+					<li> <!-- WD19-2: Replace Outdated Web Standards With Suitable Alternatives -->
 						<details>
-							<summary id="WD20-2">WD20-2: Replace Outdated Web Standards With Suitable Alternatives</summary>
+							<summary id="WD19-2">WD19-2: Replace Outdated Web Standards With Suitable Alternatives</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-or-proprietary-code">3.20 Avoid Using Deprecated or Proprietary Code</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-or-proprietary-code">3.19 Avoid Using Deprecated or Proprietary Code</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>Identify technologies and web standards that may be in use but have been superseded by newer technologies and web standards. In certain cases, the standards in use may still be actively supported by web browsers and if there is a sustainability reason to retain the feature, continue. Otherwise, updating the code should be considered.</p>
 								<p>As with outdated and proprietary code, web browsers tend to stop providing optimizations for outdated practices and as such, using technologies that have a newer replacement may have inherent sustainability benefits. For machine testability, standards providers list current web standards and this can be matched against in-use technologies (which often can be detected in code).</p>
@@ -3311,12 +3311,12 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD21-1: Encourage the Use of More Sustainable Creation Toolchains -->
+					<li> <!-- WD20-1: Encourage the Use of More Sustainable Creation Toolchains -->
 						<details>
-							<summary id="WD21-1">WD21-1: Encourage the Use of More Sustainable Creation Toolchains</summary>
+							<summary id="WD20-1">WD20-1: Encourage the Use of More Sustainable Creation Toolchains</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#align-technical-requirements-with-sustainability-goals">3.21 Align Technical Requirements With Sustainability Goals</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#align-technical-requirements-with-sustainability-goals">3.20 Align Technical Requirements With Sustainability Goals</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>Provide a mechanism of choice when creators decide how to build their product or service. This technique aims to identify how they created their product or service (if possible) and make recommendations based on the sustainability of such methods. Build steps and tooling add additional complexity to a project and this should be weighed against other factors (such as individual / team ability) to enable sustainable creation toolchains.</p>
 								<p>For machine testability, internal access may be required if no traces of the creation tool have been left in the production code. If the production code does however contain fingerprints of the tool that created it, recommendations can be made to prioritize static over dynamic and flat-static over generated-static as reducing the processing effort on servers and client machines is meaningful.</p>
@@ -3337,12 +3337,12 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD21-4: Test All Third-Party Resources for Sustainability Impacts -->
+					<li> <!-- WD20-4: Test All Third-Party Resources for Sustainability Impacts -->
 						<details>
-							<summary id="WD21-4">WD21-4: Test All Third-Party Resources for Sustainability Impacts</summary>
+							<summary id="WD20-4">WD20-4: Test All Third-Party Resources for Sustainability Impacts</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#align-technical-requirements-with-sustainability-goals">3.21 Align Technical Requirements With Sustainability Goals</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#align-technical-requirements-with-sustainability-goals">3.20 Align Technical Requirements With Sustainability Goals</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>Provide a mechanism for testing third-party plugins, extensions, and themes (if such devices are used within a product or service's creation process) for any sustainability impacts they may have. These often are included within CMS software and are external assets that can add overheads to the website or application being rendered.</p>
 								<p>For machine testability, many CMS products provide trace details of included features within the source code of a page (as conditional comments) due to these having to be loaded as third-party resources. Internal access may be required to get a full picture of everything being loaded. Third-party resources should be tested against the WSGs separately to identify sustainability issues.</p>
@@ -3366,12 +3366,12 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD22-1: Ensure the Latest Version of a Syntax Language Is Being Used -->
+					<li> <!-- WD21-1: Ensure the Latest Version of a Syntax Language Is Being Used -->
 						<details>
-							<summary id="WD22-1">WD22-1: Ensure the Latest Version of a Syntax Language Is Being Used</summary>
+							<summary id="WD21-1">WD21-1: Ensure the Latest Version of a Syntax Language Is Being Used</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version">3.22 Use the Latest Stable Language Version</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version">3.21 Use the Latest Stable Language Version</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>Ensure that the product or service is making use of the latest version of the chosen syntax language. As with keeping dependencies up-to-date, having the latest version of a syntax language can have sustainability benefits in terms of performance and security enhancements as well as useful, optimized new features so it's worthwhile.</p>
 								<p>For machine testability, it will be difficult to verify the latest version of a syntax language is being used because, for security reasons (to avoid exploitation), most servers will not give out such information. As such, internal access will be required or a mixture of feature detection, source code examination, and the potential for asking the user of the tooling questions to establish versions.</p>
@@ -3391,12 +3391,12 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD23-1: Replace Code That Can Instead Use More Efficient Native APIs -->
+					<li> <!-- WD22-1: Replace Code That Can Instead Use More Efficient Native APIs -->
 						<details>
-							<summary id="WD23-1">WD23-1: Replace Code That Can Instead Use More Efficient Native APIs</summary>
+							<summary id="WD22-1">WD22-1: Replace Code That Can Instead Use More Efficient Native APIs</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features">3.23 Take Advantage of Native Features</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features">3.22 Take Advantage of Native Features</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>First identify and then determine if custom JavaScript functions could be replaced with a more optimal and established native API call. This will also apply to custom element creation over using established native features to the browser. With the evolution of JavaScript, the opportunity to optimize code with newer cleaner techniques occurs regularly.</p>
 								<p>It is preferable to measure both the newer method of implementation with the older method to identify if one provides a more optimized (via performance and sustainability metrics) implementation than the other before replacement. Also, this technique is most useful when considering if the custom component provides additional functionality that the native component does not and if such features weigh up beneficially against the cleaner native implementation.</p>
@@ -5404,7 +5404,7 @@
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD18-1.html">PASS</a></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD18-2.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5433,7 +5433,7 @@
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-5.html">PASS</a></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD19-1.html">PASS</a></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD19-2.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5462,10 +5462,10 @@
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD20-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD20-2.html">PASS</a></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD20-4.html">PASS</a></td>
+								<td class="red">FAIL</td>
 								<td></td>
 
 								<td></td>
@@ -5492,9 +5492,9 @@
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD21-1.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD21-4.html">PASS</a></td>
-								<td class="red">FAIL</td>
+								<td></td>
+								<td></td>
+								<td></td>
 								<td></td>
 
 								<td></td>
@@ -5520,7 +5520,7 @@
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD22-1.html">PASS</a></td>
-								<td class="red">FAIL</td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5548,7 +5548,7 @@
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX23-4.html">PASS</a></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD23-1.html">PASS</a></td>
+								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5577,7 +5577,7 @@
 								<td class="red">FAIL</td>
 								<td></td>
 
-								<td class="red">FAIL</td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
