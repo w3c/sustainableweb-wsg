@@ -3458,12 +3458,12 @@
 					"criteria": [
 						{
 							"title": "Deprecated Code",
-							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD20-1)",
+							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1)",
 							"description": "Exclude deprecated formats and standards, the only exception being if consumer support demands maintaining older standards to provide a functional product."
 						},
 						{
 							"title": "Outdated Code",
-							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD20-2)",
+							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD19-2)",
 							"description": "Don't use an older standard if a newer recommendation will do the same job as / or more effectively."
 						}
 					],
@@ -3520,7 +3520,7 @@
 					"criteria": [
 						{
 							"title": "Identify Requirements",
-							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD21-1)",
+							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD20-1)",
 							"description": "Identify the requirements and from this, choose the implementation of the product or service. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources (and thereby produce more emissions upon render) but have a faster build-time (emitting less carbon during development)."
 						},
 						{
@@ -3535,7 +3535,7 @@
 						},
 						{
 							"title": "Expandability Considerations",
-							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD21-4)",
+							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD20-4)",
 							"description": "Plugins, extensions, and themes have been carefully reviewed and selected to maximize interoperability, accessibility, and performance. They are regularly audited over time to ensure continued compatibility."
 						},
 						{
@@ -3606,7 +3606,7 @@
 					"criteria": [
 						{
 							"title": "Versioning",
-							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD22-1)",
+							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD21-1)",
 							"description": "Use the latest build of your chosen syntax language and its coupled framework."
 						},
 						{
@@ -3659,7 +3659,7 @@
 					"criteria": [
 						{
 							"title": "Native Over Custom",
-							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD23-1)",
+							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD22-1)",
 							"description": "Use native functions, APIs, and features over writing your own."
 						}
 					],
