@@ -5950,22 +5950,17 @@
 					"id": "20",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#promote-responsible-data-practices",
 					"guideline": "Promote Responsible Data Practices",
-					"description": "The organization has devised and implemented a responsible data strategy that prioritizes data privacy and promotes more ethical uses of data, including disposal and data sustainability practices.",
+					"description": "The organization commits to responsible data practices, prioritizing data privacy, security, and ethical use. This includes data minimization, purpose limitation, accuracy, storage limitation, integrity, confidentiality, and accountability. Publicly accessible documentation, such as Privacy Policies and Terms and Conditions, follows best practices for clarity and accessibility, avoiding technical jargon and complex legal language to ensure inclusivity for diverse users.",
 					"criteria": [
 						{
 							"title": "Privacy Policy",
 							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM20-1)",
-							"description": "The organization has a public-facing privacy policy in place and supports existing privacy laws such as the General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), and so on. This policy must be accessible for all visitors, including those with accessibility and reading comprehension needs, and abide by plain English best practices to avoid jargon, technical language, and legalese."
+							"description": "The organization maintains a publicly accessible Privacy Policy, Terms and Conditions, or any other documents required by local law, that adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. These documents are available in accessible formats and use clear, user-friendly language to ensure comprehension by all visitors, avoiding jargon, technical language, and legalese. The organization also supports emerging legislation and implements best practices related to data privacy, sustainability, and responsible data management."
 						},
 						{
 							"title": "Data Ownership",
 							"testable": "Human Testable",
-							"description": "The organization can show measurable progress over time on how it respects data privacy and ownership, including a visitor's \"right to be forgotten\" and provides the ability to export data."
-						},
-						{
-							"title": "Data Protection",
-							"testable": "Human Testable",
-							"description": "The organization supports new and emerging legislation related to data privacy, data sustainability, and responsible data practices."
+							"description": "The organization can show measurable progress over time in respecting data privacy and ownership. This will include how the organization handles data disposal and a visitor's \"right to be forgotten\", along with ownership rights and providing the ability to download / export data they have contributed into a non-proprietary format."
 						}
 					],
 					"impact": "High",
@@ -6009,11 +6004,13 @@
 							"State Of GDPR Part 1": "https://www.smashingmagazine.com/2021/02/state-gdpr-2021-key-updates/",
 							"State Of GDPR Part 2": "https://www.smashingmagazine.com/2021/03/state-gdpr-2021-cookie-consent-designers-developers/",
 							"The environmental benefits of privacy-focussed web design": "https://rootwebdesign.studio/articles/the-environmental-benefits-of-privacy-focussed-web-design/",
+							"Understanding Data Inequality": "https://www.mightybytes.com/blog/data-inequality/",
 							"Ultimate CCPA Compliance Checklist": "https://securiti.ai/blog/ccpa-compliance-checklist/",
 							"United Nations [SDGS] Goal 10 (Inequality)": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
 							"United Nations [SDGS] Goal 13 (Climate Change)": "https://sdgs.un.org/goals/goal13#targets_and_indicators",
 							"United Nations [SDGS] Goal 16 (Sustainable Society)": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
-							"United Nations [SDGS] Goal 17 (Global Partnership)": "https://sdgs.un.org/goals/goal17#targets_and_indicators"
+							"United Nations [SDGS] Goal 17 (Global Partnership)": "https://sdgs.un.org/goals/goal17#targets_and_indicators",
+							"What is Your Data Disposal Strategy?": "https://www.mightybytes.com/blog/what-is-your-data-disposal-strategy/"
 						}
 					],
 					"tags": ["Social Equity", "Content", "Privacy", "Governance"]
