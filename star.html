@@ -3259,48 +3259,25 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD19-1: Replace Deprecated Code With Suitable Alternative Syntax -->
+					<li> <!-- WD19-1: Replace Outdated Syntax With Suitable Alternatives -->
 						<details>
-							<summary id="WD19-1">WD19-1: Replace Deprecated Code With Suitable Alternative Syntax</summary>
+							<summary id="WD19-1">WD19-1: Replace Outdated Syntax With Suitable Alternatives</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-or-proprietary-code">3.19 Avoid Using Deprecated or Proprietary Code</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code">3.19 Avoid Using Deprecated, Proprietary, or Outdated Code</a>.</p>
 								<p><strong>Description</strong></p>
-								<p>Identify any deprecated code that is no longer recommended for use within specifications. As older code is often not as highly optimized for performance (browser makers often cease to maintain abandoned and deprecated features), it can take longer to render and thrash hardware causing higher emissions so as a general rule, is worth resolving.</p>
+								<p>Identify deprecated code, technologies and web standards that may be in use but have been superseded by newer technologies and web standards. In certain cases, the standards in use may still be actively supported by browsers and if there is a sustainability reason to retain the feature, continue. Otherwise, updating the code should be considered to ensure longevity and sustainability.</p>
 								<p>For machine testability, deprecations in languages can also be found within specifications from providers like the W3C. Documentation providers like MDN also provide extremely thorough coverage of syntax that has been deprecated such as within HTML, CSS, and JavaScript. If replacements for any techniques can be offered, provide them, otherwise recommend removal from your code.</p>
 								<p><strong>Examples</strong></p>
 								<ol>
 									<li>The <a href="https://www.spacejam.com/1996/">Space Jam website</a> is considered a classic piece of 90s Internet design with its total disregard for function over form, but if you look at the code - it gets even uglier with table-based layouts and deprecated code</li>
+									<li>The <a href="https://www.webdesignmuseum.org/flash-websites">Web Design Museum</a> houses a showcase of screenshots of websites that were built using the proprietary technology Adobe Flash. Along with Java Applets and Microsoft Silverlight they now no longer work.</li>
 								</ol>
 								<p><strong>Tests</strong></p>
 								<p>Procedure</p>
 								<ol>
 									<li>Check that the project doesn't contain any outdated layout techniques (such as table-based design).</li>
 									<li>Check that the website or application doesn't contain deprecated syntax features.</li>
-								</ol>
-								<p>Expected Results</p>
-								<ol>
-									<li>All checks above are true.</li>
-								</ol>
-							</div>
-						</details>
-					</li>
-					<li> <!-- WD19-2: Replace Outdated Web Standards With Suitable Alternatives -->
-						<details>
-							<summary id="WD19-2">WD19-2: Replace Outdated Web Standards With Suitable Alternatives</summary>
-							<div class="note" title="About This Technique">
-								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-or-proprietary-code">3.19 Avoid Using Deprecated or Proprietary Code</a>.</p>
-								<p><strong>Description</strong></p>
-								<p>Identify technologies and web standards that may be in use but have been superseded by newer technologies and web standards. In certain cases, the standards in use may still be actively supported by web browsers and if there is a sustainability reason to retain the feature, continue. Otherwise, updating the code should be considered.</p>
-								<p>As with outdated and proprietary code, web browsers tend to stop providing optimizations for outdated practices and as such, using technologies that have a newer replacement may have inherent sustainability benefits. For machine testability, standards providers list current web standards and this can be matched against in-use technologies (which often can be detected in code).</p>
-								<p><strong>Examples</strong></p>
-								<ol>
-									<li>The <a href="https://www.webdesignmuseum.org/flash-websites">Web Design Museum</a> houses a showcase of screenshots of websites that were built using the proprietary technology Adobe Flash. Along with Java Applets and Microsoft Silverlight they now no longer work.</li>
-								</ol>
-								<p><strong>Tests</strong></p>
-								<p>Procedure</p>
-								<ol>
 									<li>Check if the existing product or service uses outdated technologies (<abbr title="Vector Markup Language">VML</abbr> / <abbr title="Platform for Privacy Preferences">P3P</abbr>, etc) and if so recommend replacements (<abbr title="Extensible 3D">X3D</abbr> / <abbr title="Protocol for Web Description Resources">POWDER</abbr>, etc).</li>
 									<li>Check for proprietary web plugins (like Flash) and remove them until a replacement can be created.</li>
 								</ol>
@@ -5433,7 +5410,7 @@
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-5.html">PASS</a></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD19-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD19-2.html">PASS</a></td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>

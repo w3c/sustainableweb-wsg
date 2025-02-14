@@ -3452,19 +3452,14 @@
 				},
 				{
 					"id": "19",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-or-proprietary-code",
-					"guideline": "Avoid Using Deprecated or Proprietary Code",
-					"description": "The Web is full of dead, often proprietary code, created using standards that have been superseded or by groups that aren't recognized. By following recognized coding standards, you ensure that your code will be rendered properly by browsers (and reduce the potential for added emissions occurring from unmaintained rendering processes).",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code",
+					"guideline": "Avoid Using Deprecated, Proprietary, or Outdated Code",
+					"description": "The web is full of outdated or deprecated formats and web standards, and proprietary (non-standard custom) features that have been superseded. By adhering to up-to-date and widely recognized formats and web standards, developers can ensure better compatibility, user experience, and lower environmental impact.",
 					"criteria": [
 						{
-							"title": "Deprecated Code",
+							"title": "Preferred Code",
 							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1)",
-							"description": "Exclude deprecated formats and standards, the only exception being if consumer support demands maintaining older standards to provide a functional product."
-						},
-						{
-							"title": "Outdated Code",
-							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD19-2)",
-							"description": "Don't use an older standard if a newer recommendation will do the same job as / or more effectively."
+							"description": "Avoid the use of deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards that offer equivalent or improved functionality. Such code may be used to meet a documented customer need only if there is a justifable benefit that cannot otherwise be met (such as compatibility, accessibility, or emissions reduction)."
 						}
 					],
 					"impact": "Low",
