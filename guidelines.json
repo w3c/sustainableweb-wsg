@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-02-12",
+	"lastModified": "2025-02-14",
 	"category": [
 		{
 			"id": "1",
@@ -2653,19 +2653,19 @@
 				},
 				{
 					"id": "8",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#use-html-elements-correctly",
-					"guideline": "Use HTML Elements Correctly",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-use-of-html-elements",
+					"guideline": "Optimize Use of HTML Elements",
 					"description": "HTML semantics are important. They don't just play a key role in making the Web look the way it does, they have a function in accessibility, SEO, and even in sustainability. Ensuring that you markup your content correctly and avoid cluttering your markup wastefully will reduce emissions.",
 					"criteria": [
 						{
 							"title": "Semantic Code",
 							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD08-1)",
-							"description": "Content must be marked up semantically using the right HTML element for the right job."
+							"description": "Content must be accurately marked up according to the relevant standard(s)."
 						},
 						{
 							"title": "Optional Features",
 							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD08-2)",
-							"description": "Remove optional HTML tags (which aren't required for rendering), attribute quotes, or attributes that are set to their default value."
+							"description": "Remove optional HTML tags, attribute quotes, and default attributes only when they do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity (without compromising on performance), or ensure consistent browser rendering."
 						},
 						{
 							"title": "Avoid Non-standard Code",

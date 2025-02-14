@@ -2552,7 +2552,7 @@
 							<summary id="WD08-1">WD08-1: Validate Source Code for Semantic Accuracy</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-html-elements-correctly">3.8 Use HTML Elements Correctly</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-use-of-html-elements">3.8 Optimize Use of HTML Elements</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>Ensure that HTML uses accurate semantics (Semantic HTML). Use the correct semantic element for the correct purpose and avoid common syntax mistakes that could be easily correctable. In terms of web sustainability it is important to have code that remains as likely to stay functional in the future as possible.</p>
 								<p>For machine testability, examining code for correct element use is a primary step. Other features found in validation services such as ensuring elements are closed correctly and that HTML entities are correctly marked up help avoid rare issues that might occur during the rendering process such as web browsers accidentally interpreting data incorrectly.</p>
@@ -2579,7 +2579,7 @@
 							<summary id="WD08-2">WD08-2: Eliminate Optional Code To Reduce the Rendering Impact</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-html-elements-correctly">3.8 Use HTML Elements Correctly</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-use-of-html-elements">3.8 Optimize Use of HTML Elements</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>Provide a mechanism for eliminating further redundancy from source code which may not be strictly required for semantic reasons but can help reduce the amount of data being transferred and thereby improve web performance. This can be done by removing any optional code from a document that will not affect the rendering of the page.</p>
 								<p>This technique is most useful when subscribing to performance budgets and attempting to reach the smallest file size possible is of critical importance to reach PPP targets. Such optional code removal can be identified by machine and recommendations for where optimization can occur can be provided but there may be occasions (as with minification) in non-production to retain the data.</p>
@@ -2606,7 +2606,7 @@
 							<summary id="WD08-3">WD08-3: Replace Non-Standard Code With Suitable Alternative Syntax</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-html-elements-correctly">3.8 Use HTML Elements Correctly</a>.</p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-use-of-html-elements">3.8 Optimize Use of HTML Elements</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>Identify and eliminate any non-standard coding practices including but not limited to proprietary additions included by web browsers to test new functionality before potentially including it fully within the web browser (this isn't so common today but remnants still exist). As older code is often not as highly optimized for performance, it can take longer to render and thrash hardware causing higher emissions so is worth resolving.</p>
 								<p>For machine testability, lists of non-standard syntax are available within common specifications which can be used to identify within source code. In addition, browser-specific code can be identified by its prefix or on lists of techniques and hacks to resolve browser bugs. If replacements for these techniques can be offered, provide them, otherwise recommend removal from your code.</p>
