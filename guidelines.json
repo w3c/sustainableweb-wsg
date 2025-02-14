@@ -2675,7 +2675,7 @@
 						{
 							"title": "Custom Code",
 							"testable": "Human Testable",
-							"description": "Only use custom elements or Web Components if you cannot utilize native HTML elements or if you need tightly regulated control over the implementation of design system components."
+							"description": "Prefer using standard HTML elements and attributes. Only use custom elements or Web Components if you cannot utilize native HTML elements or if you need tightly regulated control over the implementation of design system components.."
 						}
 					],
 					"impact": "Medium",
