@@ -4382,7 +4382,7 @@
 						{
 							"title": "Client VS Server",
 							"testable": "Human Testable",
-							"description": "Redundant processing should be avoided wherever possible. When processing of data is required, the location of where such processing and / or delivery should occur from either the client or server-side must be determined based on efficiency, performance, and sustainability metrics (before implementation)."
+							"description": "Redundant processing should be avoided wherever possible. When processing of data is required, the location of whether such processing and / or delivery should occur from either the client or server-side must be determined based on efficiency, performance, and sustainability metrics (before implementation)."
 						}
 					],
 					"impact": "Medium",
