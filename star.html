@@ -3095,6 +3095,35 @@
 							</div>
 						</details>
 					</li>
+					<li> <!-- WD15-2: Ensure JavaScript APIs Are Correctly Applied -->
+						<details>
+							<summary id="WD15-2">WD15-2: Ensure JavaScript APIs Are Correctly Applied</summary>
+							<div class="note" title="About This Technique">
+								<p><strong>Applicability</strong></p>
+								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis">3.15 Use Beneficial JavaScript and Its APIs</a>.</p>
+								<p><strong>Description</strong></p>
+								<p>Provide mechanisms through JavaScript that minimize the visitor's energy consumption by either optimizing the performance of the website or application itself or improving functionality in such a way that it reduces the utilization of resources when they are not required by the visitor. Some JavaScript APIs can have explicit sustainability benefits, while others may improve other PPP benefits through accessibility (societal factors).</p>
+								<p>Each of the JavaScript APIs can be machine-identified through scripts and therefore can be tested against firstly for browser support, and secondly that the project provides some environmental consequence for using the script that will benefit the visitor and / or the ecosystem. The value of such scripts could be measured by triggering or emulating them.</p>
+								<p><strong>Examples</strong></p>
+								<ol>
+									<li><a href="https://developer.mozilla.org/en-US/docs/Web/API">MDN Provides a list of Web APIs</a> that can be implemented (with varying levels of browser support. Some of these provide enhanced functionality to the end-user, and others may tuned to provide the ecodesign benefits that will give your product or service an edge.</li>
+									<li>Custom APIs such as our <a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a> (<a href="https://github.com/w3c/sustainableweb-wsg/blob/main/guidelines.json">source</a>) can be used within your product or service to provide actionable sustainability information to your visitors that is maintained and kept up-to-date.</li>
+								</ol>
+								<p><strong>Tests</strong></p>
+								<p>Procedure</p>
+								<ol>
+									<li>Check for JavaScript APIs and that the effect they produce is beneficial.</li>
+									<li>Check that the API has enough support to be progressively implemented.</li>
+									<li>Check that the implementation cost is not greater than the amount it offsets.</li>
+									<li>If the API is dependent on third-parties, ensure they are sustainable and resilient.</li>
+								</ol>
+								<p>Expected Results</p>
+								<ol>
+									<li>All checks above are true.</li>
+								</ol>
+							</div>
+						</details>
+					</li>
 					<li> <!-- WD16-1: Ensure All Vulnerabilities Are Removed and Code Is Linted -->
 						<details>
 							<summary id="WD16-1">WD16-1: Ensure All Vulnerabilities Are Removed and Code Is Linted</summary>
@@ -5129,7 +5158,7 @@
 								<td class="red">FAIL</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS09-2.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td></td>
+								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 								
@@ -5294,7 +5323,7 @@
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX15-5.html">PASS</a></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD15-1.html">PASS</a></td>
-								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD15-2.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5515,7 +5544,7 @@
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
-								<td></td>
+								<td class="red">FAIL</td>
 							</tr>
 							<tr>
 								<td colspan="2">23</td>
