@@ -6,7 +6,7 @@ If you would like to learn more about us and how to participate in this project,
 ## Statistics
 
  - **94** Guidelines covering UX, Web Development, DevOps, & Business / Product Strategy.
- - **254** Success Criteria to meet the guidelines on various aspects of sustainability.
+ - **255** Success Criteria to meet the guidelines on various aspects of sustainability.
  - **100+** contributors from over **20** nations around the world.
 
 ## Work
