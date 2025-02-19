@@ -142,16 +142,16 @@ We have two JSON APIs which are kept in sync with the changes occurring within o
 
 These documents are reachable via GitHub pages and can be queried using JavaScript to embed our data within your client of choice.
 
-The structure of the APIs are identical to that of the WSG and STAR in their namesake numbering scheme:
-
 **WSG** (*guidelines.json*)
 ```
 category[1].guidelines[0].guideline = "Undertake Systemic Impacts Mapping"
 ```
 **STAR** (*star.json*)
 ```
-category[1].guidelines[0].title = "Produce a List of Variables To Monitor for Sustainability Impacts"
+category[1].techniques[0].title = "Produce a List of Variables To Monitor for Sustainability Impacts"
 ```
+
+**Note:** To match a WSG guideline to a STAR technique, you can match the guideline `testable` anchor hash to the technique `id`.
 
 ## Test Suite
 
