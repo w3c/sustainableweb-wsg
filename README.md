@@ -151,7 +151,7 @@ category[1].guidelines[0].guideline = "Undertake Systemic Impacts Mapping"
 category[1].techniques[0].title = "Produce a List of Variables To Monitor for Sustainability Impacts"
 ```
 
-**Note:** To match a WSG guideline to a STAR technique, you can match the guideline `testable` anchor hash to the technique `id`.
+**Note:** To match a WSG guideline to a STAR technique, you can match the guideline `testable` anchor hash (WSG JSON API) to the technique `id` (STAR JSON API).
 
 ## Test Suite
 
