@@ -74,6 +74,11 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td>17 Feb 2025</td>
 		</tr>
 		<tr>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
+			<td>JSON API</td>
+			<td>19 Feb 2025</td>
+		</tr>
+		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>
 			<td>Test Suite</td>
 			<td>17 Feb 2025</td>
@@ -131,16 +136,21 @@ Work is planned in accordance with the [issues](https://github.com/w3c/sustainab
 
 If you would like to contribute towards this specification, please refer to the [CONTRIBUTING.md](IG-CONTRIBUTING.md) document for details and refer to the guidance on the [W3C Sustainable Web Interest Group](https://github.com/w3c/sustainableweb-ig) repository readme regarding participation.
 
-## JSON API
+## JSON APIs
 
-We have a [JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json) which is kept in sync with the changes occurring within our specification.
+We have two JSON APIs which are kept in sync with the changes occurring within our [specification](https://w3c.github.io/sustainableweb-wsg/guidelines.json) and [STAR](https://w3c.github.io/sustainableweb-wsg/star.json).
 
-This document is reachable via GitHub pages and can be queried using JavaScript to embed our data within your client of choice.
+These documents are reachable via GitHub pages and can be queried using JavaScript to embed our data within your client of choice.
 
-The structure of the API is identical to that of the specification in its numbering scheme:
+The structure of the APIs are identical to that of the WSG and STAR in their namesake numbering scheme:
 
+**WSG** (*guidelines.json*)
 ```
 category[1][0].guideline = "Undertake Systemic Impacts Mapping"
+```
+**STAR** (*star.json*)
+```
+category[1][0].title = "Produce a List of Variables To Monitor for Sustainability Impacts"
 ```
 
 ## Test Suite

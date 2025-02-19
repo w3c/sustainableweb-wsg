@@ -12,7 +12,7 @@ We welcome fresh contributions and understand that this may pose difficulties fo
 
 ## File Structure
 
-The structure of the repository has been created to ensure ease of maintenance. The base directory contains living editions of the [guidelines](https://w3c.github.io/sustainableweb-wsg/), [at-a-glance](https://w3c.github.io/sustainableweb-wsg/glance.html), [introduction](https://w3c.github.io/sustainableweb-wsg/intro.html), [laws & policies](https://w3c.github.io/sustainableweb-wsg/policies.html), [quick reference](https://w3c.github.io/sustainableweb-wsg/quickref.html), [STAR](https://w3c.github.io/sustainableweb-wsg/star.html), [JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json), and other deliverables such as our test suite.
+The structure of the repository has been created to ensure ease of maintenance. The base directory contains living editions of the [guidelines](https://w3c.github.io/sustainableweb-wsg/), [at-a-glance](https://w3c.github.io/sustainableweb-wsg/glance.html), [introduction](https://w3c.github.io/sustainableweb-wsg/intro.html), [laws & policies](https://w3c.github.io/sustainableweb-wsg/policies.html), [quick reference](https://w3c.github.io/sustainableweb-wsg/quickref.html), [STAR](https://w3c.github.io/sustainableweb-wsg/star.html), [WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json), [STAR API](https://w3c.github.io/sustainableweb-wsg/star.json), and other deliverables such as our test suite.
 
 ```
 /test-suite/		- Test Suite & Assets
@@ -26,9 +26,10 @@ intro.html		- Introduction
 policies.html		- Laws & Policies
 quickref.html		- Quick Reference
 star.html		- STAR
+star.json		- STAR JSON API
 ```
 
-You will notice duplication within the content of our work (as the JSON API for example must reflect the guidelines). This work is not currently auto-generated so while we appreciate it if individuals go to the effort to make adjustments to all affected files as required, time commitments may not allow for everyone to do so. As such, if you can only update a single document, as part of the approval process, a chair or editor will update all necessary documents to ensure parity with your change.
+You will notice duplication within the content of our work (as the JSON APIs for example must reflect the guidelines). This work is not currently auto-generated so while we appreciate it if individuals go to the effort to make adjustments to all affected files as required, time commitments may not allow for everyone to do so. As such, if you can only update a single document, as part of the approval process, a chair or editor will update all necessary documents to ensure parity with your change.
 
 ## Pull Requests
 
