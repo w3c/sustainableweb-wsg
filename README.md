@@ -146,11 +146,11 @@ The structure of the APIs are identical to that of the WSG and STAR in their nam
 
 **WSG** (*guidelines.json*)
 ```
-category[1][0].guideline = "Undertake Systemic Impacts Mapping"
+category[1].guidelines[0].guideline = "Undertake Systemic Impacts Mapping"
 ```
 **STAR** (*star.json*)
 ```
-category[1][0].title = "Produce a List of Variables To Monitor for Sustainability Impacts"
+category[1].guidelines[0].title = "Produce a List of Variables To Monitor for Sustainability Impacts"
 ```
 
 ## Test Suite
