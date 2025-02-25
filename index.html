@@ -57,8 +57,7 @@
 				onHashChange()
 			}
 			window.addEventListener("load", (event) => {
-				window.addEventListener('hashchange', onHashChange);
-				onHashChange(); });
+				addMultipage(); });
 			function hashSection(hash) {
 				let arrayGrab = Array.from(document.querySelectorAll(hash));
 				let mapID = arrayGrab.map(el => el.getAttribute('id'));
