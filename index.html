@@ -58,8 +58,7 @@
 			}
 			window.addEventListener("load", (event) => {
 				window.addEventListener('hashchange', onHashChange);
-				window.addEventListener('click', toc);
-				onHashChange(); toc(); });
+				onHashChange(); });
 			function hashSection(hash) {
 				let arrayGrab = Array.from(document.querySelectorAll(hash));
 				let mapID = arrayGrab.map(el => el.getAttribute('id'));
@@ -140,13 +139,6 @@
 			function buttons(id) {
 				var d = document.querySelector('#' + id + ' table');
 				d.parentNode.appendChild(d); }
-			function toc() {
-				let classes = document.body.classList
-				if(classes.contains("toc-inline")){
-					document.getElementById("toc").classList.add('hide'); }
-				if(classes.contains("toc-sidebar")){
-					document.getElementById("toc").classList.remove('hide');
-					document.getElementById("toc").classList.add('show'); } }
 		</script>
 		<script class="remove">
 		var respecConfig = {
