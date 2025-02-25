@@ -21,9 +21,17 @@
 			.note .reporting dt { width: 85px; } .note .reporting dd { flex-basis: calc(50% - 85px); margin: 0; }
 			@media screen and (max-width: 500px) { .note .reporting dd { flex-basis: calc(100% - 85px); } }
 			/* Fix for Printing The Specification: https://github.com/w3c/sustainableweb-wsg/issues/92 */
-			@media print { section section:last-child h4, section section:last-child .self-link, section section:last-child summary, .summary { display: none; } body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
+			@media print { section section:last-child h4, section section:last-child .self-link, section section:last-child summary, .summary, .pageButtons { display: none !important; } body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustainableweb-wsg/issues/114 */
 			.summary details { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
+			/** Multipage Document: https://github.com/w3c/sustainableweb-wsg/issues/14#issuecomment-2662164386 */
+			.hide { height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
+			.show { height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; }
+			.pageButtons { margin-top: 2em; }
+			.pageButtons, .pageButtons tr, .pageButtons tbody, .pageButtons td { display: flex; flex: 1; gap: 10px; }
+			.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
+			.previousPage { justify-content: left; } .fullPage { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
+			@media (scripting: none) { .pageButtons { display: none; } }
 		</style>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer>
 		</script>
@@ -40,6 +48,102 @@
 						node.parentElement.parentElement.removeChild(node.parentElement);
 				});
 			}
+			// ReSpec Multipage: https://w3c.github.io/sustainableweb-ig/multipage.html
+			function addMultipage() {
+				window.addEventListener('hashchange', onHashChange);
+				onHashChange()
+			}
+			window.addEventListener("load", (event) => {
+				window.addEventListener('hashchange', onHashChange);
+				window.addEventListener('click', toc);
+				onHashChange(); toc(); });
+			function hashSection(hash) {
+				let arrayGrab = Array.from(document.querySelectorAll(hash));
+				let mapID = arrayGrab.map(el => el.getAttribute('id'));
+				let filtered = mapID.filter(function (el) { return el != null; });
+				return filtered; }
+			function onHashChange() {
+				let current = window.location.hash.substring(1);
+				let sections = hashSection('body > section');
+				// Assign your document sections here (to search for IDs)
+				let introduction = hashSection('#introduction *');
+				let ux = hashSection('#user-experience-design *');
+				let webdev = hashSection('#web-development *');
+				let infra = hashSection('#hosting-infrastructure-and-systems *');
+				let biz = hashSection('#business-strategy-and-product-management *');
+				let glossary = hashSection('#glossary');
+				let credits = hashSection('#acknowledgments section');
+				let refs = hashSection('#references section');
+				let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
+				if (window.location.hash) {
+					if (sections.includes(current) || "full-page") {
+						for (const value of sections) {
+							if ( value != current ) {
+								document.getElementById(value).classList.add('hide'); } else {
+								document.getElementById(value).classList.remove('hide');
+								document.getElementById(value).classList.add('show'); }}
+						if (current == "abstract" || current == "sotd") { header(); }
+						if (current == "references") {
+							if (document.getElementById('references').querySelector('.pageButtons') == null) {
+								document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<table class="pageButtons">
+								<tr>
+									<td><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></td>
+									<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+									<td></td>
+								</tr>
+							</table>`; } }
+						if (current == "full-page") {
+							for (const value of sections) {
+								document.getElementById(value).classList.remove('hide');
+								document.getElementById(value).classList.add('show'); }
+								document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide'));
+						window.scrollTo(0, 0); } else {
+								document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
+								document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); }
+						let check = false;
+						for (const value of all) {
+							if (current == value && check == false ) { check = true; } }
+						if (check == false) { header() } }
+					// Assign your headings here to do the above for more than just the main sections
+					heading(introduction,"introduction");
+					heading(ux,"user-experience-design");
+					heading(webdev,"web-development");
+					heading(infra,"hosting-infrastructure-and-systems");
+					heading(biz,"business-strategy-and-product-management");
+					heading(glossary,"glossary");
+					heading(credits,"acknowledgments");
+					heading(refs,"references"); } else {
+					for (const value of sections) {
+						document.getElementById(value).classList.add('hide'); }
+					header() } }
+			function heading(hash, string) {
+				let current = window.location.hash.substring(1);
+				let sections = hashSection('body > section');
+				if (hash.includes(current)) {
+					for (const value of sections) {
+						if (value == string) {
+							document.getElementById(value).classList.remove('hide');
+							document.getElementById(value).classList.add('show'); } else {
+							document.getElementById(value).classList.add('hide'); } } }
+				location.hash = "#" + current; }
+			function header() {
+				document.getElementById("abstract").classList.remove('hide');
+				document.getElementById("sotd").classList.remove('hide');
+				document.getElementById("abstract").classList.add('show');
+				document.getElementById("sotd").classList.add('show');
+				buttons("sotd");
+				document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
+				document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); }
+			function buttons(id) {
+				var d = document.querySelector('#' + id + ' table');
+				d.parentNode.appendChild(d); }
+			function toc() {
+				let classes = document.body.classList
+				if(classes.contains("toc-inline")){
+					document.getElementById("toc").classList.add('hide'); }
+				if(classes.contains("toc-sidebar")){
+					document.getElementById("toc").classList.remove('hide');
+					document.getElementById("toc").classList.add('show'); } }
 		</script>
 		<script class="remove">
 		var respecConfig = {
@@ -1098,7 +1202,7 @@
 				},
 			],
 			specStatus: "ED",
-			postProcess: [addChairs],
+			postProcess: [addChairs, addMultipage]
 		}
 		</script>
 	</head>
@@ -1111,6 +1215,13 @@
 			<p>This document has been reviewed by Interest Group members and interested parties. This is a draft document which may be updated, replaced, or obsoleted by other documents at any time. It is inappropriate to cite this document as other than a work in progress. The Interest Group's role in publishing is to draw attention to the specification and to promote its widespread deployment.</p>
 			<p>By publishing these guidelines, the Interest Group does not expect that the work produced in this specification will affect the work undertaken by other <abbr title="World Wide Web Consortium">W3C</abbr> sustainability, accessibility, or performance groups. The Interest Group will continue to track these Working, Interest, and Community Groups as appropriate. This specification closely aligns itself with the principles laid down for Web Platform Design [[design-principles]], Privacy [[privacy-principles]], the Ethical Web [[ethical-web-principles]], and Human Rights [[HR-Spec]].</p>
 			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. Comments received on the specification cannot result in changes to this version of the guidelines but may be addressed in errata or future versions of WSG. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available. There is currently no preliminary interoperability or implementation report, however one of the key tasks of this Interest Group is to examine the potential for better models for digital sustainability that can feed into tooling (and thus into large studies of implementations) that can be reported upon and fed back into guidance for the Web Sustainability Guidelines.</p>
+			<table class="pageButtons">
+				<tr>
+					<td></td>
+					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="nextPage" href="#introduction">Next page<br>Introduction</a></td>
+				</tr>
+			</table>
 		</section>
 		<section class="informative"> <!-- Introduction -->
 			<h2>Introduction</h2>
@@ -1250,6 +1361,13 @@
 				</ul>
 				-->
 			</section>
+			<table class="pageButtons">
+				<tr>
+					<td><a class="previousPage" href="#abstract">Previous page<br>Overview</a></td>
+					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="nextPage" href="#user-experience-design">Next page<br>User-Experience Design</a></td>
+				</tr>
+			</table>
 		</section>
 		<section> <!-- User-Experience Design -->
 			<h2>User-Experience Design</h2>
@@ -3679,6 +3797,13 @@
 					</details>
 				</section>
 			</section>
+			<table class="pageButtons">
+				<tr>
+					<td><a class="previousPage" href="#introduction">Previous page<br>Introduction</a></td>
+					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="nextPage" href="#web-development">Next page<br>Web Development</a></td>
+				</tr>
+			</table>
 		</section>
 		<section> <!-- Web Development -->
 			<h2>Web Development</h2>
@@ -5546,6 +5671,13 @@
 					</details>
 				</section>
 			</section>
+			<table class="pageButtons">
+				<tr>
+					<td><a class="previousPage" href="#user-experience-design">Previous page<br>User-Experience Design</a></td>
+					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="nextPage" href="#hosting-infrastructure-and-systems">Next page<br>Hosting, Infrastructure and Systems</a></td>
+				</tr>
+			</table>
 		</section>
 		<section> <!-- Hosting, Infrastructure and Systems -->
 			<h2>Hosting, Infrastructure and Systems</h2>
@@ -6624,6 +6756,13 @@
 					</details>
 				</section>
 			</section>
+			<table class="pageButtons">
+				<tr>
+					<td><a class="previousPage" href="#web-development">Previous page<br>Web Development</a></td>
+					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="nextPage" href="#business-strategy-and-product-management">Next page<br>Business Strategy and Product Management</a></td>
+				</tr>
+			</table>
 		</section>
 		<section> <!-- Business Strategy and Product Management -->
 			<h2>Business Strategy and Product Management</h2>
@@ -8827,6 +8966,13 @@
 					</details>
 				</section>
 			</section>
+			<table class="pageButtons">
+				<tr>
+					<td><a class="previousPage" href="#hosting-infrastructure-and-systems">Previous page<br>Hosting, Infrastructure and Systems</a></td>
+					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="nextPage" href="#glossary">Next page<br>Glossary</a></td>
+				</tr>
+			</table>
 		</section>
 		<section class="informative"> <!-- Glossary -->
 			<h2>Glossary</h2>
@@ -8873,6 +9019,13 @@
 					<p class="note">In many cases, visitor and user on the web are used interchangeably (and this is perfectly acceptable), but we have chosen to make this distinction to provide context that in certain cases, individuals (for privacy reasons or simply because certain users just glancing or certain websites having static content) may not be classified as a user (in the sense of a customer) as they are a window shopper (visitor).</p>
 				</dd>
 			</dl>
+			<table class="pageButtons">
+				<tr>
+					<td><a class="previousPage" href="#business-strategy-and-product-management">Previous page<br>Business Strategy and Product Management</a></td>
+					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="nextPage" href="#acknowledgments">Next page<br>Acknowledgments</a></td>
+				</tr>
+			</table>
 		</section>
 		<section class="appendix"> <!-- Acknowledgments -->
 			<h2>Acknowledgments</h2>
@@ -8885,6 +9038,13 @@
 				<h2>Other Active Participants, or Contributors to Supporting Resources</h2>
 				<p>Adam Newman, Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Andrew Wright, Anthony Vallée-Dubois, Antoine Abélard, Bee Flaherty, Boris Schapira, Brian Sharpe, Carine Bournez, Christian H Brown, Christophe Clouzeau, Christos Baharakis, Crystal Preston-Watson, Danielle Subject, Denis Didier, Dominique Hazael-Massieux, Edward Bender, Elise West, Florence Maurice, Gerry McGovern, Greg McDonald, Hannah Smith, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jeroen Hulscher, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Kazuhito Kidachi, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicolas Oren, Oliver Winks, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Ryan Sholin, Samuel Pitoňák, Sandra Pallier, Sarah Zama, Seb Solere, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
 			</section>
+			<table class="pageButtons">
+				<tr>
+					<td><a class="previousPage" href="#glossary">Previous page<br>Glossary</a></td>
+					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="nextPage" href="#references">Next page<br>References</a></td>
+				</tr>
+			</table>
 		</section>
 	</body>
 </html>
