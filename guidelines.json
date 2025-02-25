@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-02-17",
+	"lastModified": "2025-02-25",
 	"category": [
 		{
 			"id": "1",
@@ -1209,7 +1209,7 @@
 						{
 							"title": "Avoid Overburdening",
 							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX17-2)",
-							"description": "Progressively display an appropriate quantity of animation so as not to overburden the visitor or diminish expected device behavior."
+							"description": "Progressively display an appropriate number of animations to avoid overburden the visitor or diminish expected device behavior. This includes setting a maximum number of replays (iterations)."
 						},
 						{
 							"title": "Control Animation",
