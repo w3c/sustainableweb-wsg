@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-02-25",
+	"lastModified": "2025-02-26",
 	"category": [
 		{
 			"id": "1",
@@ -3129,7 +3129,7 @@
 					"example": [
 						{
 							"code": "@media screen and (min-width: 600px) {\r\n\tbody {\r\n\t\tcolor: red;\r\n\t}\r\n}",
-							"content": "[Beginner's guide to media queries](https://developer.mozilla.org/en-US/docs/Learn_web_development/CSS/CSS_layout/Media_queries#media_feature_rules)."
+							"content": "[Beginner's guide to media queries](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries)."
 						}
 					],
 					"resources": [
@@ -4431,7 +4431,7 @@
 				},
 				{
 					"id": "10",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#consider-cdn-s-and-edge-caching",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#consider-cdns-and-edge-caching",
 					"guideline": "Consider CDNs and Edge Caching",
 					"description": "Edge caching and CDN delivery can help optimize the sustainable delivery of digital services by optimizing how your website's traffic is transferred over the internet.",
 					"criteria": [
