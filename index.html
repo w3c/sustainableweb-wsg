@@ -26,7 +26,7 @@
 			.summary details { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
 			/** Multipage Document: https://github.com/w3c/sustainableweb-wsg/issues/14#issuecomment-2662164386 */
 			@media (scripting: enabled) {
-				.hide, #toc-jump { height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
+				.hide { height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
 				.show { height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 			.pageButtons { margin-top: 2em; }
 			.pageButtons, .pageButtons tr, .pageButtons tbody, .pageButtons td { display: flex; flex: 1; gap: 10px; }
@@ -54,9 +54,7 @@
 			// ReSpec Multipage: https://w3c.github.io/sustainableweb-ig/multipage.html
 			function addMultipage() {
 				window.addEventListener('hashchange', onHashChange);
-				window.addEventListener('click', toc);
-				onHashChange(); toc();
-			}
+				onHashChange() }
 			window.addEventListener("load", (event) => {
 				addMultipage(); });
 			function hashSection(hash) {
@@ -140,14 +138,6 @@
 			function buttons(id) {
 				var d = document.querySelector('#' + id + ' table');
 				d.parentNode.appendChild(d); }
-			function toc() {
-				let classes = document.body.classList
-				if(classes.contains("toc-inline")){
-					document.getElementById("toc").classList.add('hide'); }
-				if(classes.contains("toc-sidebar")){
-					document.getElementById("toc").classList.remove('hide');
-					document.getElementById("toc").classList.add('show'); } else {
-						document.getElementById("toc").classList.add('hide'); } }
 		</script>
 		<script class="remove">
 		var respecConfig = {
