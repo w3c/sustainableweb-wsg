@@ -16,11 +16,15 @@
 			summary { cursor: pointer; }
 			.summary pre { background-color: #fafafa;}
 			.summary .subtitle { margin-top: 2.5em; }
-			.summary .rating, .summary .reporting { display: flex; }
-			.summary .reporting { align-items: center; flex-wrap: wrap; row-gap: 1em; }
-			.summary .rating dt { flex-shrink: 0; } .summary .rating dd { flex-basis: 50%; }
+			.summary .rating, .summary .reporting { align-items: center; display: flex; flex-wrap: wrap; row-gap: 1em; }
+			.summary .rating dd { margin: 0; } .summary .rating dt { width: 83px; }
+			.summary .rating dt ~ dt { width: 53px; } .summary .rating dd { flex-basis: calc(50% - 83px); }
+			.summary .rating dd ~ dd { flex-basis: calc(50% - 53px); }
 			.summary .reporting dt { width: 85px; } .summary .reporting dd { flex-basis: calc(50% - 85px); margin: 0; }
-			@media screen and (max-width: 500px) { .summary .reporting dd { flex-basis: calc(100% - 85px); } }
+			@media screen and (max-width: 500px) {
+				.summary .rating dd { flex-basis: calc(100% - 83px); }
+				.summary .reporting dd { flex-basis: calc(100% - 85px); margin: 0; }
+				.summary .reporting dd { flex-basis: calc(100% - 85px); } }
 			/* Fix for Printing The Specification: https://github.com/w3c/sustainableweb-wsg/issues/92 */
 			@media print { section section:last-child h4, section section:last-child .self-link, section section:last-child summary, .summary, .pageButtons, #toc { display: none !important; } .full-page #toc { display: block !important; } body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustainableweb-wsg/issues/114 */
@@ -119,7 +123,10 @@
 					heading(refs,"references"); } else {
 					for (const value of sections) {
 						document.getElementById(value).classList.add('hide'); }
-					header() } }
+					header() }
+					// Scrolls to the correct section of the page once its rendered it
+					if (window.location.hash){
+						document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } }
 			function heading(hash, string) {
 				let current = window.location.hash.substring(1);
 				let sections = hashSection('body > section');
