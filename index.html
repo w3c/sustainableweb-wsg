@@ -90,8 +90,8 @@
 								document.getElementById(value).classList.remove('hide');
 								document.getElementById(value).classList.add('show'); }}
 						if (current == "abstract" || current == "sotd") { header(); }
-						if (current == "references") {
-							if (document.getElementById('references').querySelector('.pageButtons') == null) {
+						for (const value of refs) {
+							if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
 								document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<table class="pageButtons">
 								<tr>
 									<td><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></td>
@@ -125,9 +125,8 @@
 						document.getElementById(value).classList.add('hide'); }
 					header() }
 					// Scrolls to the correct section of the page once its rendered it
-					if (window.location.hash){
-						if (window.location.hash !="#full-page") {
-							document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } } }
+					if (window.location.hash && window.location.hash !="#full-page"){
+							document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } }
 			function heading(hash, string) {
 				let current = window.location.hash.substring(1);
 				let sections = hashSection('body > section');
@@ -9255,7 +9254,7 @@
 			</section>
 			<section> <!-- Meeting, Slack, Wiki, Etc Contributors -->
 				<h2>Other Active Participants, or Contributors to Supporting Resources</h2>
-				<p>Adam Newman, Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Andrew Wright, Anthony Vallée-Dubois, Antoine Abélard, Bee Flaherty, Boris Schapira, Brian Sharpe, Carine Bournez, Christian H Brown, Christophe Clouzeau, Christos Baharakis, Crystal Preston-Watson, Danielle Subject, Denis Didier, Dominique Hazael-Massieux, Edward Bender, Elise West, Florence Maurice, Gerry McGovern, Greg McDonald, Hannah Smith, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jeroen Hulscher, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicolas Oren, Oliver Winks, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Ryan Sholin, Samuel Pitoňák, Sandra Pallier, Sarah Zama, Seb Solere, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
+				<p>Adam Newman, Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Alisa Bonsignore, Andrew Wright, Anthony Vallée-Dubois, Antoine Abélard, Bee Flaherty, Boris Schapira, Brian Sharpe, Carine Bournez, Christian H Brown, Christophe Clouzeau, Christos Baharakis, Crystal Preston-Watson, Danielle Subject, Denis Didier, Dominique Hazael-Massieux, Edward Bender, Elise West, Florence Maurice, Gerry McGovern, Greg McDonald, Hannah Smith, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jeroen Hulscher, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicolas Oren, Oliver Winks, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Ryan Sholin, Samuel Pitoňák, Sandra Pallier, Sarah Zama, Seb Solere, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
 			</section>
 			<table class="pageButtons">
 				<tr>
