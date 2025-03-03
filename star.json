@@ -1783,7 +1783,7 @@
 					"id": "UX26-1",
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX26-1.html",
 					"title": "Establish Performance Testing Routines With Each New Release",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.26 Measure and test for performance and speed](https://w3c.github.io/sustainableweb-wsg/#measure-and-test-for-performance-and-speed).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.26 Measure and test for performance](https://w3c.github.io/sustainableweb-wsg/#measure-and-test-for-performance).",
 					"description": [
 						{
 							"1": "Encourage a routine to improve web performance within websites and applications due to the established link between web performance optimization and digital sustainability. Running regular benchmarks and working from checklists (either prefabricated or built from scratch) will encourage a schedule to identify potential bottlenecks.",
@@ -1814,7 +1814,7 @@
 					"id": "UX26-2",
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX26-2.html",
 					"title": "Provide Compliance Checks With Each Release for Relevant Legislation",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.26 Measure and test for performance and speed](https://w3c.github.io/sustainableweb-wsg/#measure-and-test-for-performance-and-speed).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.26 Measure and test for performance](https://w3c.github.io/sustainableweb-wsg/#measure-and-test-for-performance).",
 					"description": [
 						{
 							"1": "Provide a mechanism during the development process where businesses and individuals creating Web projects can verify that new work meets compliance targets for individual regulations. This technique is most useful when performed with each major milestone as there is a potential for feature (and compliance) breaking material to occur.",
