@@ -28,7 +28,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Editors Draft</td>
-			<td>17 Feb 2025</td>
+			<td>03 Mar 2025</td>
 		</tr>
 	</tbody>
 </table>
@@ -46,12 +46,12 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
 			<td>W3C Editors Draft</td>
-			<td>17 Feb 2025</td>
+			<td>03 Mar 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
 			<td>W3C Editors Draft</td>
-			<td>14 Feb 2025</td>
+			<td>03 Mar 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/intro.html">Introduction to Web Sustainability</a></td>
@@ -66,22 +66,22 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">Quick Reference for WSG</a> & <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">Checklist</a> (PDF)</td>
 			<td>W3C Editors Draft</td>
-			<td>17 Feb 2025</td>
+			<td>03 Mar 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
 			<td>JSON API</td>
-			<td>17 Feb 2025</td>
+			<td>03 Mar 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
 			<td>JSON API</td>
-			<td>19 Feb 2025</td>
+			<td>03 Mar 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>
 			<td>Test Suite</td>
-			<td>17 Feb 2025</td>
+			<td>03 Mar 2025</td>
 		</tr>
 	</tbody>
 </table>
