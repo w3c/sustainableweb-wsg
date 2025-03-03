@@ -144,7 +144,7 @@ These documents are reachable via GitHub pages and can be queried using JavaScri
 
 **WSG** (*guidelines.json*)
 ```
-category[1].guidelines[0].guideline = "Undertake Systemic Impacts Mapping"
+category[1].guidelines[0].guideline = "Display any variables that have a negative impact on your project"
 ```
 **STAR** (*star.json*)
 ```

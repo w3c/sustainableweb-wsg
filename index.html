@@ -83,35 +83,36 @@
 				let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
 				if (document.body.classList.contains('full-page')) { document.body.classList.remove('full-page'); }
 				if (window.location.hash) {
-					if (sections.includes(current) || "full-page") {
-						for (const value of sections) {
-							if ( value != current ) {
-								document.getElementById(value).classList.add('hide'); } else {
-								document.getElementById(value).classList.remove('hide');
-								document.getElementById(value).classList.add('show'); }}
-						if (current == "abstract" || current == "sotd") { header(); }
-						for (const value of refs) {
-							if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
-								document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<table class="pageButtons">
-								<tr>
-									<td><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></td>
-									<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
-									<td></td>
-								</tr>
-							</table>`; } }
-						if (current == "full-page") {
-							document.body.classList.add("full-page");
+					for (const value of sections) {
+						if (value == current || "full-page") {
 							for (const value of sections) {
-								document.getElementById(value).classList.remove('hide');
-								document.getElementById(value).classList.add('show'); }
-								document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide'));
-						window.scrollTo(0, 0); } else {
-								document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
-								document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); }
-						let check = false;
-						for (const value of all) {
-							if (current == value && check == false ) { check = true; } }
-						if (check == false) { header() } }
+								if ( value != current ) {
+									document.getElementById(value).classList.add('hide'); } else {
+									document.getElementById(value).classList.remove('hide');
+									document.getElementById(value).classList.add('show'); }}
+							if (current == "abstract" || current == "sotd") { header(); }
+							for (const value of refs) {
+								if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
+									document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<table class="pageButtons">
+									<tr>
+										<td><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></td>
+										<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+										<td></td>
+									</tr>
+								</table>`; } }
+							if (current == "full-page") {
+								document.body.classList.add("full-page");
+								for (const value of sections) {
+									document.getElementById(value).classList.remove('hide');
+									document.getElementById(value).classList.add('show'); }
+									document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide'));
+							window.scrollTo(0, 0); } else {
+									document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
+									document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); }
+							let check = false;
+							for (const value of all) {
+								if (current == value && check == false ) { check = true; } }
+							if (check == false) { header() } } }
 					// Assign your headings here to do the above for more than just the main sections
 					heading(introduction,"introduction");
 					heading(ux,"user-experience-design");
@@ -125,8 +126,9 @@
 						document.getElementById(value).classList.add('hide'); }
 					header() }
 					// Scrolls to the correct section of the page once its rendered it
-					if (window.location.hash && window.location.hash !="#full-page"){
-							document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } }
+					for (const value of all) {
+						if (window.location.hash && window.location.hash !="#full-page" && value == current){
+							document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } } }
 			function heading(hash, string) {
 				let current = window.location.hash.substring(1);
 				let sections = hashSection('body > section');
@@ -142,7 +144,7 @@
 				document.getElementById("sotd").classList.remove('hide');
 				document.getElementById("abstract").classList.add('show');
 				document.getElementById("sotd").classList.add('show');
-				buttons("sotd");
+				buttons("sotd"); window.scrollTo(0, 0);
 				if (window.location.hash != "#full-page") {
 					document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
 					document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); } }
@@ -1422,8 +1424,8 @@
 					</ul>
 				</details>
 			</div>
-			<section> <!-- Undertake Systemic Impacts Mapping -->
-				<h3>Undertake Systemic Impacts Mapping</h3>
+			<section> <!-- Display any variables that have a negative impact on your project -->
+				<h3>Display any variables that have a negative impact on your project</h3>
 				<section class="notoc">
 					<h4>Success Criterion - External Variables <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX01-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Any negative external variables affecting a product or service are displayed in a publicly available resource, identifying where your product's sustainable impact can be diminished (systemic design).</p>
@@ -1494,8 +1496,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Assess and Research Visitor Needs -->
-				<h3>Assess and Research Visitor Needs</h3>
+			<section> <!-- Understand visitor requirements or constraints, resolving barriers to access -->
+				<h3>Understand visitor requirements or constraints, resolving barriers to access</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Identify And Define <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX02-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Primary and secondary target visitors are identified, and their needs are defined through quantitative or qualitative research, testing, or analytics, ensuring your visitors and affected communities remain a close part of the research and testing process.</p>
@@ -1597,8 +1599,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Research Non-Visitor's Needs -->
-				<h3>Research Non-Visitor's Needs</h3>
+			<section> <!-- Understand the impact of non-visitors -->
+				<h3>Understand the impact of non-visitors</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Non-Human Impact <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX03-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>A plan of action has been established for non-users and other stakeholders who might be passively impacted by a digital product or service, such as neighbors accepting parcels, traffic jams due to deliveries, etc. Research their needs and understand how they might be affected.</p>
@@ -1659,8 +1661,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Consider Sustainability in Early Ideation -->
-				<h3>Consider Sustainability in Early Ideation</h3>
+			<section> <!-- Consider sustainability throughout the ideation process -->
+				<h3>Consider sustainability throughout the ideation process</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Wireframes And Prototypes <mark class="alert">(Human Testable)</mark></h4>
 					<p>Wireframes, and rapid prototyping are utilized to quickly build consensus, reduce risk, and lower the number of resources needed to build features.</p>
@@ -1720,8 +1722,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Account for Stakeholder Issues -->
-				<h3>Account for Stakeholder Issues</h3>
+			<section> <!-- Brainstorm ways to resolve any stakeholder issues -->
+				<h3>Brainstorm ways to resolve any stakeholder issues</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Human-Centered Brainstorming <mark class="alert">(Human Testable)</mark></h4>
 					<p>All stakeholders have been considered using a human-centered approach during the brainstorming process.</p>
@@ -1782,8 +1784,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Create a Lightweight Experience by Default -->
-				<h3>Create a Lightweight Experience by Default</h3>
+			<section> <!-- Minimize non-essential content, interactivity, or journeys -->
+				<h3>Minimize non-essential content, interactivity, or journeys</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Efficient Paths <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX06-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The path taken to access the service (the initial contact with the website or service) should be as efficient and as simple as possible (time required to complete an action displayed, reducing too much choice, ensuring visitors know what's required at the start of a complex set of steps, etc).</p>
@@ -1889,8 +1891,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Avoid Unnecessary or an Overabundance of Assets -->
-				<h3>Avoid Unnecessary or an Overabundance of Assets</h3>
+			<section> <!-- Use decorative design with care -->
+				<h3>Use decorative design with care</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Decorative Design <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX07-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Decorative design is used only when it improves the user-experience, and unnecessary assets or ones that fail to benefit the visitor or sustainability are removed (or rendered optional and disabled by default).</p>
@@ -1964,8 +1966,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Ensure Navigation and Way-Finding Are Well-Structured -->
-				<h3>Ensure Navigation and Way-Finding Are Well-Structured</h3>
+			<section> <!-- Ensure that navigation and way-finding are well-structured -->
+				<h3>Ensure that navigation and way-finding are well-structured</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Navigation And Search <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX08-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Provide an accessible, easy-to-use navigation menu with search features that help visitors easily find what they need.</p>
@@ -2038,8 +2040,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Respect the Visitor's Attention -->
-				<h3>Respect the Visitor's Attention</h3>
+			<section> <!-- Be attentive rather than distracting -->
+				<h3>Be attentive rather than distracting</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Respecting Attention <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX09-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The visitor can easily control how (and when) they receive information to both improve attention and respect with the visitor.</p>
@@ -2119,8 +2121,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use Recognized Design Patterns -->
-				<h3>Use Recognized Design Patterns</h3>
+			<section> <!-- Use established design patterns and appropriate components -->
+				<h3>Use established design patterns and appropriate components</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Design Patterns <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX10-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Provide only essential components visible at the time they are needed. Where appropriate, interfaces should deploy visual styles (patterns) that are easily recognized and used.</p>
@@ -2183,8 +2185,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Avoid Manipulative Patterns -->
-				<h3>Avoid Manipulative Patterns</h3>
+			<section> <!-- Avoid being manipulative or deceptive -->
+				<h3>Avoid being manipulative or deceptive</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Dark and Deceptive Design Patterns <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX11-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Avoid what are commonly known as dark patterns, deceptive design, or unethical coding techniques, which manipulate visitors into taking actions not necessarily in their best interest (anti-right click, no-copy, requiring an account to purchase, etc).</p>
@@ -2292,8 +2294,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Document and Share Project Outputs -->
-				<h3>Document and Share Project Outputs</h3>
+			<section> <!-- Enable others to understand and reuse your deliverables -->
+				<h3>Enable others to understand and reuse your deliverables</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Deliverables Reusability <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX12-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The deliverables output, including documentation, are used upstream of the project and produced in ways that will allow it to be reused in subsequent projects.</p>
@@ -2362,8 +2364,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use a Design System To Prioritize Interface Consistency -->
-				<h3>Use a Design System To Prioritize Interface Consistency</h3>
+			<section> <!-- Use a design system to prioritize interface consistency -->
+				<h3>Use a design system to prioritize interface consistency</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Design System <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX13-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>A design system is employed based on web standards and recognizable patterns to mutualize interface components and provide a consistent experience for visitors.</p>
@@ -2440,8 +2442,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Write With Purpose, in an Accessible, Easy To Understand Format -->
-				<h3>Write With Purpose, in an Accessible, Easy To Understand Format</h3>
+			<section> <!-- Write with purpose, in an accessible, easy-to-understand format -->
+				<h3>Write with purpose, in an accessible, easy-to-understand format</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Write Clearly <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX14-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Content is written clearly, using plain, inclusive language delivered at an easy-to-understand reading level considering accessibility and internationalization inclusions as required (for example, dyslexia).</p>
@@ -2531,8 +2533,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Take a More Sustainable Approach to Image Assets -->
-				<h3>Take a More Sustainable Approach to Image Assets</h3>
+			<section> <!-- All images must be optimized for sustainability -->
+				<h3>All images must be optimized for sustainability</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Need For Images <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX15-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The need for images has been determined considering the quantity, format, and size necessary for implementation.</p>
@@ -2658,8 +2660,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Take a More Sustainable Approach to Media Assets -->
-				<h3>Take a More Sustainable Approach to Media Assets</h3>
+			<section> <!-- All audio or video must be optimized for sustainability -->
+				<h3>All audio or video must be optimized for sustainability</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Need For Media <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX16-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The need for video or sound (when it adds visitor value, for example, to enhance accessibility) has been determined, and non-informative media (background media), including autoplaying functionality, has been banned or removed.</p>
@@ -2781,8 +2783,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Take a More Sustainable Approach to Animation -->
-				<h3>Take a More Sustainable Approach to Animation</h3>
+			<section> <!-- Animation must be proportionate and easy to control -->
+				<h3>Animation must be proportionate and easy to control</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Need For Animation <mark class="alert">(Human Testable)</mark></h4>
 					<p>Use animation only when it adds value to a visitor's experience, and not for decorative elements.</p>
@@ -2873,8 +2875,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Take a More Sustainable Approach to Typefaces -->
-				<h3>Take a More Sustainable Approach to Typefaces</h3>
+			<section> <!-- Web typography must be highly optimized and appropriate -->
+				<h3>Web typography must be highly optimized and appropriate</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Default Typefaces <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX18-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Use standard system-level (web-safe / pre-installed) fonts as much as possible.</p>
@@ -2959,8 +2961,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Provide Suitable Alternatives to Web Assets -->
-				<h3>Provide Suitable Alternatives to Web Assets</h3>
+			<section> <!-- Suitable alternatives to any provided format must be offered -->
+				<h3>Suitable alternatives to any provided format must be offered</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Open Formats <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX19-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>All proprietary file formats (such as PDF) are offered in HTML for accessibility and to ensure future availability.</p>
@@ -3059,8 +3061,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Provide Accessible, Usable, Minimal Web Forms -->
-				<h3>Provide Accessible, Usable, Minimal Web Forms</h3>
+			<section> <!-- Provide accessible, usable, minimal web forms -->
+				<h3>Provide accessible, usable, minimal web forms</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Form Simplicity <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX20-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Remove unnecessary forms and reduce form content to the bare minimum necessary to meet the visitor's needs and the organization's business goals. Clearly communicate why a form is necessary, what its value proposition is, how many steps it will take to complete, and what an organization will do with collected data (informed consent).</p>
@@ -3131,8 +3133,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Support Non-Graphic Ways To Interact With Content -->
-				<h3>Support Non-Graphic Ways To Interact With Content</h3>
+			<section> <!-- Consider the impact of visitors using non-visual browsers -->
+				<h3>Consider the impact of visitors using non-visual browsers</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Alternative Interactions <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX21-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Support speech browsing and other non-graphical ways to interact with content that provide alternatives to a visual interface.</p>
@@ -3197,8 +3199,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Provide Useful Notifications To Improve The Visitor's Journey -->
-				<h3>Provide Useful Notifications To Improve The Visitor's Journey</h3>
+			<section> <!-- Provide useful notifications to improve the visitor's journey -->
+				<h3>Provide useful notifications to improve the visitor's journey</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Notification Justification <mark class="alert">(Human Testable)</mark></h4>
 					<p>Remove non-essential notifications while justifying and reducing the practice of e-mailing or text messaging to what is strictly necessary. Useful notifications (such as alerts for new content) should be used with care and restraint.</p>
@@ -3278,8 +3280,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Reduce the Impact of Downloadable or Physical Documents -->
-				<h3>Reduce the Impact of Downloadable or Physical Documents</h3>
+			<section> <!-- Reduce the impact of downloadable or physical documents -->
+				<h3>Reduce the impact of downloadable or physical documents</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Printing Documents <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX23-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>If the production of paper documents is essential, it should be designed to limit its impact to the lowest possible. Create a CSS Print stylesheet and test it with different types of content. Ensure <abbr title="Portable Document Format">PDF</abbr> printing is encouraged over paper-based storage.</p>
@@ -3370,8 +3372,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Create a Stakeholder-Focused Testing & Prototyping Policy -->
-				<h3>Create a Stakeholder-Focused Testing & Prototyping Policy</h3>
+			<section> <!-- Policies and processes must exist to get stakeholders invested -->
+				<h3>Policies and processes must exist to get stakeholders invested</h3>
 				<section class="notoc">
 					<h4>Success Criterion - New Features And Perspectives <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX24-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization has outlined processes it uses to prototype and test new features, product ideas, and user-interface components when applicable with real users who represent various stakeholder perspectives, including people with slow connection, with disabilities, with difficulties using digital services, and so on.</p>
@@ -3454,8 +3456,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Conduct Regular Audits, Regression, and Non-Regression Tests -->
-				<h3>Conduct Regular Audits, Regression, and Non-Regression Tests</h3>
+			<section> <!-- Audit and test for bugs or issues that require resolving -->
+				<h3>Audit and test for bugs or issues that require resolving</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Regular Issue Testing <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX25-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The codebase has been checked for bugs, performance issues hav been identified, and accessibility or security problems have been accounted for at either monthly or quarterly timeframes (depending on your scheduling allowance).</p>
@@ -3544,8 +3546,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Incorporate Performance Testing Into Each Major Release-Cycle -->
-				<h3>Incorporate Performance Testing Into Each Major Release-Cycle</h3>
+			<section> <!-- Measure and test for performance and speed -->
+				<h3>Measure and test for performance and speed</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Performance Testing <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX26-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The performance of a website or application, to identify and resolve bottlenecks or issues in the underlying code or infrastructure which could ultimately impact the sustainability of a website or application, are regularly measured with each release-cycle (using tooling or through research and auditing).</p>
@@ -3625,8 +3627,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Incorporate Value Testing Into Each Major Release-Cycle -->
-				<h3>Incorporate Value Testing Into Each Major Release-Cycle</h3>
+			<section> <!-- Ensure features provide maximum value for their impact -->
+				<h3>Ensure features provide maximum value for their impact</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Usage Changes <mark class="alert">(Human Testable)</mark></h4>
 					<p>Visitor feedback, adoption, and churn rates are monitored of product or service features and their insights incorporated into future releases.</p>
@@ -3682,8 +3684,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Incorporate Usability Testing Into Each Minor Release-Cycle -->
-				<h3>Incorporate Usability Testing Into Each Minor Release-Cycle</h3>
+			<section> <!-- Verify that real-world users can successfully use your work -->
+				<h3>Verify that real-world users can successfully use your work</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Usability Testing <mark class="alert">(Human Testable)</mark></h4>
 					<p>Usability testing has been incorporated into product cycles and the impact of these tests is routinely measured for future releases.</p>
@@ -3746,8 +3748,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Incorporate Compatibility Testing Into Each Release-Cycle -->
-				<h3>Incorporate Compatibility Testing Into Each Release-Cycle</h3>
+			<section> <!-- Check for compatibility or platform-specific issues -->
+				<h3>Check for compatibility or platform-specific issues</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Compatibility Policy <a href="https://w3c.github.io/sustainableweb-wsg/star.html#UX29-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>A compatibility policy with obsolete devices and software versions, listing the supported devices brands, operating systems, and browsers (including versions) has been established.</p>
@@ -3917,8 +3919,8 @@
 					</ul>
 				</details>
 			</div>
-			<section> <!-- Identify Relevant Technical Indicators -->
-				<h3>Identify Relevant Technical Indicators</h3>
+			<section> <!-- Set goals based on potential impact considerations -->
+				<h3>Set goals based on potential impact considerations</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Performance Goals <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD01-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Explcit goals that impact the environment and performance of the service, for example, <abbr title="Hypertext Transfer Protocol">HTTP</abbr> requests, or the amount of <abbr title="Document Object Model">DOM</abbr> elements that need to be rendered are both set and met.</p>
@@ -4001,8 +4003,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Minify Your HTML, CSS, and JavaScript -->
-				<h3>Minify Your <abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading StyleSheets">CSS</abbr>, and JavaScript</h3>
+			<section> <!-- Remove unnecessary or redundant information -->
+				<h3>Remove unnecessary or redundant information</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Minify Code <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD02-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>All source code is minified upon compilation (including inline code).</p>
@@ -4055,8 +4057,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use Code-Splitting Within Projects -->
-				<h3>Use Code-Splitting Within Projects</h3>
+			<section> <!-- Modularize bandwidth-heavy components within projects -->
+				<h3>Modularize bandwidth-heavy components within projects</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Code Splitting <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD03-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Breakdown bandwidth-heavy components into segments that can be loaded as required.</p>
@@ -4119,11 +4121,11 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Apply Tree Shaking To Code -->
-				<h3>Apply Tree Shaking To Code</h3>
+			<section> <!-- Tree shaking should be used to remove unnecessary code -->
+				<h3>Tree shaking should be used to remove unnecessary code</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Remove Redundancy <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD04-1"><mark>(Machine Testable)</mark></a></h4>
-					<p>Identify and eliminate unused and dead code within CSS and JavaScript.</p>
+					<p>Identify and eliminate unused and dead code within <abbr title="Cascading StyleSheets">CSS</abbr> and JavaScript.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional Content</h4>
@@ -4182,8 +4184,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Ensure Your Solutions Are Accessible -->
-				<h3>Ensure Your Solutions Are Accessible</h3>
+			<section> <!-- Sustainable solutions must be accessible -->
+				<h3>Sustainable solutions must be accessible</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Accessibility Compliance <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD05-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Your website or application must conform to WCAG (at the necessary level), plus extend beyond to obey relevant laws and meet additional visitor accessibility requirements. Building inclusively means that people with permanent, temporary, or situational disabilities will be able to more quickly find what they are looking for, and not have to spend extra time searching for a way to use your product or service.</p>
@@ -4291,8 +4293,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Avoid Code Duplication -->
-				<h3>Avoid Code Duplication</h3>
+			<section> <!-- Redundancy and duplication in code should be avoided -->
+				<h3>Redundancy and duplication in code should be avoided</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Remove Or Simplify <mark class="alert">(Human Testable)</mark></h4>
 					<p>Remove or simplify (through rewriting for performance) your code to focus on essential features and have a cleaner, less redundant product (and codebase).</p>
@@ -4375,8 +4377,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Rigorously Assess Third-Party Services -->
-				<h3>Rigorously Assess Third-Party Services</h3>
+			<section> <!-- Third-party services should be assessed as first parties -->
+				<h3>Third-party services should be assessed as first parties</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Assess Third-Parties <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD07-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Third-party services (including plugins, widgets, feeds, maps, carousels, etc) have been assessed as early in the ideation or creation process as possible and as few of them are used as possible to reduce the product or service's overall ecological impact, including Scope 3 emissions.</p>
@@ -4499,15 +4501,15 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Optimize Use of HTML Elements -->
-				<h3>Optimize Use of HTML Elements</h3>
+			<section> <!-- Code must follow good semantic practices -->
+				<h3>Code must follow good semantic practices</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Semantic Code <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD08-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Content must be accurately marked up according to the relevant standard(s).</p>
 				</section>
 				<section class="notoc">
 					<h4>Success Criterion - Optional Features <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD08-2"><mark>(Machine Testable)</mark></a></h4>
-					<p>Remove optional HTML tags, attribute quotes, and default attributes only when they do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity (without compromising on performance), or ensure consistent browser rendering.</p>
+					<p>Remove optional <abbr title="Hypertext Markup Language">HTML</abbr> tags, attribute quotes, and default attributes only when they do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity (without compromising on performance), or ensure consistent browser rendering.</p>
 				</section>
 				<section class="notoc">
 					<h4>Success Criterion - Avoid Non-standard Code <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD08-3"><mark>(Machine Testable)</mark></a></h4>
@@ -4610,8 +4612,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Resolve Render Blocking Content -->
-				<h3>Resolve Render Blocking Content</h3>
+			<section> <!-- Render blocking should be resolved -->
+				<h3>Render blocking should be resolved</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Asynchronous Code <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD09-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>All external assets have been deferred or set to async (unless required) to avoid Flash Of Unstyled Content (FOUC).</p>
@@ -4677,8 +4679,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Provide Code-Based Way-Finding Mechanisms -->
-				<h3>Provide Code-Based Way-Finding Mechanisms</h3>
+			<section> <!-- Information to help understand the usefulness of a page should exist -->
+				<h3>Information to help understand the usefulness of a page should exist</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Metadata And Microdata <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD10-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Metadata and microdata for search engines and social media have been optimized.</p>
@@ -4760,8 +4762,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Validate Form Errors and External Input -->
-				<h3>Validate Form Errors and External Input</h3>
+			<section> <!-- Forms must validate for errors, accounting for tooling requirements -->
+				<h3>Forms must validate for errors, accounting for tooling requirements</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Error Validation <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD11-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Errors are identified through live validation as well as upon submission.</p>
@@ -4837,8 +4839,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use Metadata Correctly -->
-				<h3>Use Metadata Correctly</h3>
+			<section> <!-- Metadata is structured for machine readability -->
+				<h3>Metadata is structured for machine readability</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Required Elements <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD12-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Include the required title element, plus any optional HTML head elements (such as link).</p>
@@ -4926,8 +4928,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Adapt to User Preferences -->
-				<h3>Adapt to User Preferences</h3>
+			<section> <!-- Sustainable CSS user preference media queries are used -->
+				<h3>Sustainable CSS user preference media queries are used</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Media and Preference Queries <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD13-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Apply the monochrome, prefers-contrast, prefers-color-scheme, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion CSS preference queries if they will benefit your website or application. Use the print & scripting CSS media queries if they will improve the sustainability of your website.</p>
@@ -5012,8 +5014,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Develop a Device-Adaptable Layout -->
-				<h3>Develop a Device-Adaptable Layout</h3>
+			<section> <!-- Layouts work across devices and requirements -->
+				<h3>Layouts work across devices and requirements</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Device-Adaptable <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD14-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Allow a website or app to work and adapt seamlessly across a variety of devices and screen sizes, including mobile, desktop, smart TVs, and other emerging platforms. Ensures that content and functionality are accessible and optimized on both smaller mobile screens and larger displays without limiting accessibility, usability or design on any specific device type. It is essential to implement robust fallback strategies to ensure that the website or application will not fail if it encounters unsupported technologies.</p>
@@ -5132,8 +5134,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use Beneficial JavaScript and Its APIs -->
-				<h3>Use Beneficial JavaScript and Its <abbr title="Application Programming Interfaces">APIs</abbr></h3>
+			<section> <!-- Use beneficial JavaScript and its APIs -->
+				<h3>Use beneficial JavaScript and its <abbr title="Application Programming Interfaces">APIs</abbr></h3>
 				<section class="notoc">
 					<h4>Success Criterion - Beneficial JavaScript <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD15-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Improve sustainability through accessible and performant code implementations.</p>
@@ -5226,8 +5228,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Ensure Your Scripts Are Secure -->
-				<h3>Ensure Your Scripts Are Secure</h3>
+			<section> <!-- Ensure that your scripts are secure -->
+				<h3>Ensure that your scripts are secure</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Script Security <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD16-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Check the code for vulnerabilities, exploits, header issues, and code injection.</p>
@@ -5293,8 +5295,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Manage Dependencies Appropriately -->
-				<h3>Manage Dependencies Appropriately</h3>
+			<section> <!-- Dependencies are appropriately used and maintained -->
+				<h3>Dependencies are appropriately used and maintained</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Dependency Management <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD17-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Prevent developers from downloading and installing JavaScript libraries to run locally (client-side) when they are not needed by checking for unused dependencies and uninstalling those that aren't needed and removing them from your package.json file.</p>
@@ -5371,8 +5373,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Include Expected and Beneficial Files -->
-				<h3>Include Expected and Beneficial Files</h3>
+			<section> <!-- Include expected and beneficial files -->
+				<h3>Include expected and beneficial files</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Expected File Formats <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD18-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Include the favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml documents. Additionally, ensure that any such files defined in future web standards or specifications are included.</p>
@@ -5450,8 +5452,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Avoid Using Deprecated, Proprietary, or Outdated Code-->
-				<h3>Avoid Using Deprecated, Proprietary, or Outdated Code</h3>
+			<section> <!-- Avoid using deprecated, proprietary, or outdated code -->
+				<h3>Avoid using deprecated, proprietary, or outdated code</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Preferred Code <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Avoid the use of deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards that offer equivalent or improved functionality. Such code may be used to meet a documented customer need only if there is a justifable benefit that cannot otherwise be met (such as compatibility, accessibility, or emissions reduction).</p>
@@ -5522,8 +5524,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Align Technical Requirements With Sustainability Goals -->
-				<h3>Align Technical Requirements With Sustainability Goals</h3>
+			<section> <!-- Use the most efficient solution to implement your service -->
+				<h3>Use the most efficient solution to implement your service</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Identify Requirements <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD20-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Identify the requirements and from this, choose the implementation of the product or service. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources (and thereby produce more emissions upon render) but have a faster build-time (emitting less carbon during development).</p>
@@ -5615,8 +5617,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use the Latest Stable Language Version -->
-				<h3>Use the Latest Stable Language Version</h3>
+			<section> <!-- Use the latest stable language version -->
+				<h3>Use the latest stable language version</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Versioning <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD21-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Use the latest build of your chosen syntax language and its coupled framework.</p>
@@ -5672,8 +5674,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Take Advantage of Native Features -->
-				<h3>Take Advantage of Native Features</h3>
+			<section> <!-- Take advantage of native features and functionality -->
+				<h3>Take advantage of native features and functionality</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Native Over Custom <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD23-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Use native functions, APIs, and features over writing your own.</p>
@@ -5746,8 +5748,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Run Fewer, Simpler Queries As Possible -->
-				<h3>Run Fewer, Simpler Queries As Possible</h3>
+			<section> <!-- Run fewer, simpler queries as possible -->
+				<h3>Run fewer, simpler queries as possible</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Database Queries <mark class="alert">(Human Testable)</mark></h4>
 					<p>If you need information that is stored in a database, and you require it (or it's likely to be requested) more than once in your code, access the database only once, and store the data locally for subsequent processing. Also, avoid reliance on framework helpers that might defer filtering to later on in the process.</p>
@@ -5834,8 +5836,8 @@
 					</ul>
 				</details>
 			</div>
-			<section> <!-- Choose a Sustainable Hosting Provider -->
-				<h3>Choose a Sustainable Hosting Provider</h3>
+			<section> <!-- Choose a sustainable hosting provider -->
+				<h3>Choose a sustainable hosting provider</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Monitor Metrics <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS01-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>To assess the environmental impacts of hosting and detect overconsumption, some indicators are monitored: energy / water usage, CPU / Memory usage, allocation of servers and CPU cores, etc. These indicators are used to calculate metrics directly related to environmental impacts, such as Power Usage Effectiveness (<abbr title="Power Usage Effectiveness">PUE</abbr>), Water Usage Effectiveness (<abbr title="Water Usage Effectiveness">WUE</abbr>), and Carbon Usage Effectiveness (<abbr title="Carbon Usage Effectiveness">CUE</abbr>). They are displayed to visitors for transparency and monitoring reasons. If possible (to reduce redundancy) the ability to scale packages based on usage requirements is made available (manually or automatically) to reduce wasted resources.</p>
@@ -5999,8 +6001,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Optimize Browser Caching -->
-				<h3>Optimize Browser Caching</h3>
+			<section> <!-- Optimize caching with offline access supported -->
+				<h3>Optimize caching with offline access supported</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Utilize Caching <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS02-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>If using a CMS (or <abbr title="Software as a Service">SaaS</abbr>), install an applicable plugin to enable on-the-fly server-side caching. Otherwise, use the provided server configuration files to include and tweak the file-type cache expiration using expires or cache-control, utilizing tooling where appropriate such as Memcached, or Varnish. If using a language or framework that generates pages on request, cache responses for static pages so that they can be reused for future visitors. Also remember to cache frequently required static assets at the client-side where possible to reduce repeat server requests using bfcache, Local Storage, and other available browser technologies.</p>
@@ -6098,8 +6100,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Compress Your Files -->
-				<h3>Compress Your Files</h3>
+			<section> <!-- Compress files where it is beneficial -->
+				<h3>Compress files where it is beneficial</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Server-side Compression <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS03-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>If using a CMS (or <abbr title="Software as a Service">SaaS</abbr>), install an applicable plugin to enable on-the-fly server-side compression, such as Brotli or GZIP. Otherwise, use the provided server configuration files to include and tweak the performance-related features to the requirements.</p>
@@ -6202,8 +6204,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use Error Pages and Redirects Carefully -->
-				<h3>Use Error Pages and Redirects Carefully</h3>
+			<section> <!-- Setup necessary error pages and redirection links -->
+				<h3>Setup necessary error pages and redirection links</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Error Pages <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS04-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Maintain sites by ensuring links are correct, and if errors occur, provide suitable way-finding within optimized pages for each error type to ensure resources can be identified to help visitors complete the task they started.</p>
@@ -6271,8 +6273,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Limit Usage of Additional Environments -->
-				<h3>Limit Usage of Additional Environments</h3>
+			<section> <!-- Unless required, avoid utilizing unnecessary environments -->
+				<h3>Unless required, avoid utilizing unnecessary environments</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Unused Environments <mark class="alert">(Human Testable)</mark></h4>
 					<p>Ensure no unused environment is available, balancing the cost of deploying an environment with the cost of keeping it online while unused.</p>
@@ -6329,8 +6331,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Automate To Fit the Needs -->
-				<h3>Automate To Fit the Needs</h3>
+			<section> <!-- Allow automation but ensure it is tightly regulated -->
+				<h3>Allow automation but ensure it is tightly regulated</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Automate Tasks <mark class="alert">(Human Testable)</mark></h4>
 					<p>Every recurring task, such as deployment, testing, or compilation, is run automatically, as recommended by continuous integration / continuous delivery best practices.</p>
@@ -6420,8 +6422,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Maintain a Relevant Refresh Frequency -->
-				<h3>Maintain a Relevant Refresh Frequency</h3>
+			<section> <!-- Define the frequency of data refreshes -->
+				<h3>Define the frequency of data refreshes</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Refresh Frequency <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS07-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The frequency for refresh (of both the cache, locally stored data, and the page) is defined depending on visitor needs.</p>
@@ -6474,8 +6476,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Be Mindful of Duplicate Data -->
-				<h3>Be Mindful of Duplicate Data</h3>
+			<section> <!-- Backup critical data at routine intervals -->
+				<h3>Backup critical data at routine intervals</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Data Backups <mark class="alert">(Human Testable)</mark></h4>
 					<p>Backups of system and user data are both incremental and secure.</p>
@@ -6533,8 +6535,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Enable Asynchronous Processing and Communication -->
-				<h3>Enable Asynchronous Processing and Communication</h3>
+			<section> <!-- Processing of data considers impact and requirements -->
+				<h3>Processing of data considers impact and requirements</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Batch Processing <mark class="alert">(Human Testable)</mark></h4>
 					<p>By default, non-critical processes and communications are batched and launched only when carbon intensity is under a given threshold.</p>
@@ -6614,10 +6616,10 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Consider CDNs and Edge Caching -->
-				<h3>Consider <abbr title="Content Delivery Networks">CDNs</abbr> and Edge Caching</h3>
+			<section> <!-- CDN use must be proportionate and sustainable -->
+				<h3>CDN use must be proportionate and sustainable</h3>
 				<section class="notoc">
-					<h4>Success Criterion - Content Delivery Networks (CDNs) <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS10-1"><mark>(Machine Testable)</mark></a></h4>
+					<h4>Success Criterion - Content Delivery Networks (<abbr title="Content Delivery Networks">CDNs</abbr>) <a href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS10-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>When building for a globally distributed audience, use a <abbr title="Content Delivery Network">CDN</abbr> to store and serve simple read-only, pre-generated resources in a fast and efficient manner. Although they definitely can increase performance, it is also another layer of infrastructure that needs to be considered for sustainability.</p>
 				</section>
 				<section class="notoc">
@@ -6742,8 +6744,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use the Lowest Infrastructure Tier Meeting Business Requirements -->
-				<h3>Use the Lowest Infrastructure Tier Meeting Business Requirements</h3>
+			<section> <!-- Infrastructure decisions must meet business requirements -->
+				<h3>Infrastructure decisions must meet business requirements</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Lowest Requirements <mark class="alert">(Human Testable)</mark></h4>
 					<p>Select infrastructure elements with the lowest requirements tier, meeting your service-level agreements. Avoid over-provisioning multi-datacenter, multi-zone, or distributed deployments if standalone instances meet the requirements. Also avoid provisioning infrastructure that will be under-utilized by provisioning for established average loads, ensuring reasonable resource utilization and autoscaling occurs as needed. Avoid provisioning for peak loads.</p>
@@ -6805,8 +6807,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Store Data According to Visitor Needs -->
-				<h3>Store Data According to Visitor Needs</h3>
+			<section> <!-- Store data according to the needs of your users -->
+				<h3>Store data according to the needs of your users</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Reduce Redundancy <mark class="alert">(Human Testable)</mark></h4>
 					<p>Remove unnecessary and redundant data from your servers, whether it is single-use (dark data) or abandoned.</p>
@@ -6948,8 +6950,8 @@
 					</ul>
 				</details>
 			</div>
-			<section> <!-- Have an Ethical and Sustainability Product Strategy -->
-				<h3>Have an Ethical and Sustainability Product Strategy</h3>
+			<section> <!-- Have an ethical and sustainable product strategy -->
+				<h3>Have an ethical and sustainable product strategy</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Statement Availability <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization has published a publicly available Code of Ethics, Product Guidelines, Sustainability, or PPP Statement that includes language specific to digital products, services, policies, and programs.</p>
@@ -7067,8 +7069,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Assign a Sustainability Representative -->
-				<h3>Assign a Sustainability Representative</h3>
+			<section> <!-- Assign a sustainability representative -->
+				<h3>Assign a sustainability representative</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Ecological Referee <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM02-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>An ecological referee (with specific digital expertise) for the product or service within your organization has been assigned and empowered with the tools they require (resources, budget, time, etc.) to achieve their stated goals.</p>
@@ -7127,8 +7129,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Raise Awareness and Inform -->
-				<h3>Raise Awareness and Inform</h3>
+			<section> <!-- Inform, raise awareness, and train for sustainability -->
+				<h3>Inform, raise awareness, and train for sustainability</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Inform And Aware <mark class="alert">(Human Testable)</mark></h4>
 					<p>All project stakeholders, including product teams, colleagues, and organizational decision-makers (managers and clients) are informed about and trained in both general and digital climate literacy, including your business's use of sustainable technology.</p>
@@ -7201,8 +7203,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Communicate the Ecological Impact of User Choices -->
-				<h3>Communicate the Ecological Impact of User Choices</h3>
+			<section> <!-- Communicate the ecological impact of user choices -->
+				<h3>Communicate the ecological impact of user choices</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Impact Communication <mark class="alert">(Human Testable)</mark></h4>
 					<p>The ecological implications of visitor choices have been clearly communicated and visitors can configure settings based on those choices.</p>
@@ -7260,8 +7262,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Estimate a Product or Service's Environmental Impact -->
-				<h3>Estimate a Product or Service's Environmental Impact</h3>
+			<section> <!-- Estimate a product or service's environmental impact -->
+				<h3>Estimate a product or service's environmental impact</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Life-cycle Analysis <mark class="alert">(Human Testable)</mark></h4>
 					<p>A full life-cycle Analysis based on the functional unit defined in Guideline 5.15 has been conducted.</p>
@@ -7334,8 +7336,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Define Clear Organizational Sustainability Goals and Metrics -->
-				<h3>Define Clear Organizational Sustainability Goals and Metrics</h3>
+			<section> <!-- Define clear organizational sustainability goals and metrics -->
+				<h3>Define clear organizational sustainability goals and metrics</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Sustainability Goals <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM06-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization has defined and published a clear set of sustainability goals. It publicly communicates how it will meet these goals, including which performance metrics are important to help the organization and its various stakeholders thrive.</p>
@@ -7391,8 +7393,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Verify Your Efforts Using Established Third-Party Business Certifications -->
-				<h3>Verify Your Efforts Using Established Third-Party Business Certifications</h3>
+			<section> <!-- Verify your efforts using established third-party business certifications -->
+				<h3>Verify your efforts using established third-party business certifications</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Certification Achievement <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM07-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization has achieved one or more business sustainability certifications and incorporated operational policies and practices to support them.</p>
@@ -7453,8 +7455,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Implement Sustainability Onboarding Guidelines -->
-				<h3>Implement Sustainability Onboarding Guidelines</h3>
+			<section> <!-- Implement sustainability onboarding guidelines -->
+				<h3>Implement sustainability onboarding guidelines</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Training Materials <mark class="alert">(Human Testable)</mark></h4>
 					<p>The organization has dedicated training manuals, workshops, and materials that outline the PPP policies and practices it follows and how to implement them. While managing and maintaining these materials over time, adapting them as new policies and practices arise.</p>
@@ -7524,8 +7526,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Support Mandatory Disclosures and Reporting -->
-				<h3>Support Mandatory Disclosures and Reporting</h3>
+			<section> <!-- Support mandatory disclosures and reporting -->
+				<h3>Support mandatory disclosures and reporting</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Policies And Practices <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM09-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization has created and published policies and practices for disclosing the social and environmental impacts of its products, services, policies, and programs in line with existing reporting standards such as GRI Performance, <abbr title="Sustainability Accounting Standards Board">SASB</abbr>, etc.</p>
@@ -7606,8 +7608,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Create One or More Impact Business Models -->
-				<h3>Create One or More Impact Business Models</h3>
+			<section> <!-- Create one or more impact business models -->
+				<h3>Create one or more impact business models</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Theory Of Change <mark class="alert">(Human Testable)</mark></h4>
 					<p>The organization has completed (and operationalized) a Theory of Change process with requisite documentation to identify the impact it hopes to create, how it will generate revenue, shared, or added value from these activities, how it will measure results based on desired outcomes; or in the case of launched projects, is generating revenue, actively tracking and measuring progress against any desired outcomes.</p>
@@ -7666,8 +7668,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Follow a Product Management and Maintenance Strategy -->
-				<h3>Follow a Product Management and Maintenance Strategy</h3>
+			<section> <!-- Follow a product management and maintenance strategy -->
+				<h3>Follow a product management and maintenance strategy</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Management And Maintenance <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM11-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization has documented policies outlining how it approaches product management and maintenance.</p>
@@ -7754,8 +7756,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Implement Continuous Improvement Procedures -->
-				<h3>Implement Continuous Improvement Procedures</h3>
+			<section> <!-- Implement continuous improvement procedures -->
+				<h3>Implement continuous improvement procedures</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Continuous Improvement <mark class="alert">(Human Testable)</mark></h4>
 					<p>The organization has created policies and practices to enable continuous improvement and has resourced the organization appropriately to support these efforts over time.</p>
@@ -7872,8 +7874,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Document Future Updates and Evolutions -->
-				<h3>Document Future Updates and Evolutions</h3>
+			<section> <!-- Document future updates and evolutions -->
+				<h3>Document future updates and evolutions</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Feature Changes <mark class="alert">(Human Testable)</mark></h4>
 					<p>Adding, updating, or removing features are considered where appropriate to the user-experience of the product or service.</p>
@@ -7948,8 +7950,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Establish if a Digital Product or Service Is Necessary -->
-				<h3>Establish if a Digital Product or Service Is Necessary</h3>
+			<section> <!-- Establish if a digital product or service is necessary -->
+				<h3>Establish if a digital product or service is necessary</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Sustainable Development Goals <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM14-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The product or service identifies within a sustainability statement where it aligns with one of the <abbr title="United Nations">U.N.</abbr> (<abbr title="Sustainable Development Goals">SDG</abbr>s) and its appropriate targets.</p>
@@ -8018,8 +8020,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Determine the Functional Unit -->
-				<h3>Determine the Functional Unit</h3>
+			<section> <!-- Conduct a full life-cycle assessment -->
+				<h3>Conduct a full life-cycle assessment</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Life-cycle Assessment <mark class="alert">(Human Testable)</mark></h4>
 					<p>A life-cycle Assessment (<abbr title="life-cycle assessment">LCA</abbr>) has been conducted to define the requirements of your product's function throughout its lifecycle.</p>
@@ -8073,8 +8075,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Create a Supplier Standards of Practice -->
-				<h3>Create a Supplier Standards of Practice</h3>
+			<section> <!-- Provide a supplier standards of practice -->
+				<h3>Provide a supplier standards of practice</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Vetting Potential Partners <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM16-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization has created specific policies to vet potential partners in its supply chain based on PPP principles.</p>
@@ -8144,8 +8146,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Share Economic Benefits -->
-				<h3>Share Economic Benefits</h3>
+			<section> <!-- Share any economic benefits -->
+				<h3>Share any economic benefits</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Living Wage <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM17-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization is publicly committed to paying employees, contractors, and other stakeholders a living wage.</p>
@@ -8224,8 +8226,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Share Decision-Making Power With Appropriate Stakeholders -->
-				<h3>Share Decision-Making Power With Appropriate Stakeholders</h3>
+			<section> <!-- Share decision-making power with appropriate stakeholders -->
+				<h3>Share decision-making power with appropriate stakeholders</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Decision-Making <mark class="alert">(Human Testable)</mark></h4>
 					<p>The project team's goals are aligned with key business objectives, and project stakeholders (for example, project managers) have the power and autonomy to make key decisions on the organization's behalf.</p>
@@ -8276,7 +8278,7 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use Justice, Equity, Diversity, Inclusion (JEDI) Practices -->
+			<section> <!-- Use Justice, Equity, Diversity, Inclusion (JEDI) practices -->
 				<h3>Use Justice, Equity, Diversity, Inclusion (<abbr title="Justice, Equity, Diversity, Inclusion">JEDI</abbr>) Practices</h3>
 				<section class="notoc">
 					<h4>Success Criterion - JEDI Practices <mark class="alert">(Human Testable)</mark></h4>
@@ -8361,8 +8363,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Promote Responsible Data Practices -->
-				<h3>Promote Responsible Data Practices</h3>
+			<section> <!-- Promote responsible data practices -->
+				<h3>Promote responsible data practices</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Data Practices <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM20-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization maintains a publicly accessible Privacy Policy, Terms and Conditions, or any other documents required by local law, that adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. These documents are available in accessible formats and use clear, user-friendly language to ensure comprehension by all visitors, avoiding jargon, technical language, and legalese. The organization also supports emerging legislation and implements best practices related to data privacy, sustainability, and responsible data management.</p>
@@ -8437,8 +8439,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Implement Appropriate Data Management Procedures -->
-				<h3>Implement Appropriate Data Management Procedures</h3>
+			<section> <!-- Implement appropriate data management procedures -->
+				<h3>Implement appropriate data management procedures</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Outdated Content <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM21-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>Outdated or otherwise expired product content and data are archived and deleted via automated expiration dates and scheduled product audits. An archiving schedule with a lighter version of the old searchable content is made available.</p>
@@ -8520,8 +8522,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Promote and Implement Responsible Emerging Technology Practices -->
-				<h3>Promote and Implement Responsible Emerging Technology Practices</h3>
+			<section> <!-- Promote and implement responsible emerging technology practices -->
+				<h3>Promote and implement responsible emerging technology practices</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Emerging Technologies <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM22-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization has public-facing policies in place for emerging technologies, and all such technologies are ethically sourced, screened, validated, and implemented in a non-discriminatory, responsible manner.</p>
@@ -8656,8 +8658,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Include Responsible Financial Policies -->
-				<h3>Include Responsible Financial Policies</h3>
+			<section> <!-- Include responsible financial policies -->
+				<h3>Include responsible financial policies</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Fuel Divestment <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM23-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization has divested from fossil fuels and moved its banking, sponsorship, and other affiliations to more responsible partners.</p>
@@ -8719,8 +8721,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Include Organizational Philanthropy Policies -->
-				<h3>Include Organizational Philanthropy Policies</h3>
+			<section> <!-- Include organizational philanthropy policies -->
+				<h3>Include organizational philanthropy policies</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Philanthropy Policy <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM24-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization has a clear corporate giving policy and creates philanthropic partnerships with strategically aligned organizations.</p>
@@ -8778,8 +8780,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Plan for a Digital Product or Service's Care and End-of-Life -->
-				<h3>Plan for a Digital Product or Service's Care and End-of-Life</h3>
+			<section> <!-- Plan for a digital product or service's care and end-of-life -->
+				<h3>Plan for a digital product or service's care and end-of-life</h3>
 				<section class="notoc">
 					<h4>Success Criterion - End-of-life Care <mark class="alert">(Human Testable)</mark></h4>
 					<p>Clear, documented end-of-life guidelines exist that include data disposal, archiving, file deletion, etc guidance.</p>
@@ -8835,8 +8837,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Include E-Waste, Right-To-Repair, and Recycling Policies -->
-				<h3>Include E-Waste, Right-To-Repair, and Recycling Policies</h3>
+			<section> <!-- Include e-waste, right-to-repair, and recycling policies -->
+				<h3>Include e-waste, right-to-repair, and recycling policies</h3>
 				<section class="notoc">
 					<h4>Success Criterion - E-Waste Policy <mark class="alert">(Human Testable)</mark></h4>
 					<p>The organization has specific policies in place to recycle e-waste and repair owned technology products whenever possible.</p>
@@ -8914,8 +8916,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Define Performance and Environmental Budgets -->
-				<h3>Define Performance and Environmental Budgets</h3>
+			<section> <!-- Define performance and environmental budgets -->
+				<h3>Define performance and environmental budgets</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Environmental Budget <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM27-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The product team has defined, baselined, and documented clear sustainability and environmental budget criteria that cover the page, user-journey, and digital service levels and metrics (such as a CO2.js score) that are approved by relevant product stakeholders.</p>
@@ -9038,8 +9040,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use Open Source Tools -->
-				<h3>Use Open Source Tools</h3>
+			<section> <!-- Use open source where possible -->
+				<h3>Use open source where possible</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Open Source Policy <a href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM28-1"><mark>(Machine Testable)</mark></a></h4>
 					<p>The organization has a clear open source policy in place that outlines how it uses open source tools and the practices it supports surrounding open source development.</p>
@@ -9118,8 +9120,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Create a Business Continuity and Disaster Recovery Plan -->
-				<h3>Create a Business Continuity and Disaster Recovery Plan</h3>
+			<section> <!-- Create a business continuity and disaster recovery plan -->
+				<h3>Create a business continuity and disaster recovery plan</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Plan of Action <mark class="alert">(Human Testable)</mark></h4>
 					<p>The organization has created a plan of action that is regularly reviewed and occasionally tested to determine readiness in case of an incident and has procedures to quickly recover from such issues.</p>

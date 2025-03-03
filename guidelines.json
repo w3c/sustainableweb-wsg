@@ -15,8 +15,8 @@
 			"guidelines": [
 				{
 					"id": "1",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#undertake-systemic-impacts-mapping",
-					"guideline": "Undertake Systemic Impacts Mapping",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#display-any-variables-that-have-a-negative-impact-on-your-project",
+					"guideline": "Display any variables that have a negative impact on your project",
 					"criteria": [
 						{
 							"title": "External Variables",
@@ -76,8 +76,8 @@
 				},
 				{
 					"id": "2",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#assess-and-research-visitor-needs",
-					"guideline": "Assess and Research Visitor Needs",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access",
+					"guideline": "Understand visitor requirements or constraints, resolving barriers to access",
 					"criteria": [
 						{
 							"title": "Identify And Define",
@@ -170,8 +170,8 @@
 				},
 				{
 					"id": "3",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#research-non-visitor-s-needs",
-					"guideline": "Research Non-Visitor's Needs",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-of-non-visitors",
+					"guideline": "Understand the impact of non-visitors",
 					"criteria": [
 						{
 							"title": "Non-Human Impact",
@@ -223,8 +223,8 @@
 				},
 				{
 					"id": "4",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#consider-sustainability-in-early-ideation",
-					"guideline": "Consider Sustainability in Early Ideation",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#consider-sustainability-throughout-the-ideation-process",
+					"guideline": "Consider sustainability throughout the ideation process",
 					"criteria": [
 						{
 							"title": "Wireframes And Prototypes",
@@ -278,8 +278,8 @@
 				},
 				{
 					"id": "5",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#account-for-stakeholder-issues",
-					"guideline": "Account for Stakeholder Issues",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#brainstorm-ways-to-resolve-any-stakeholder-issues",
+					"guideline": "Brainstorm ways to resolve any stakeholder issues",
 					"criteria": [
 						{
 							"title": "Human-Centered Brainstorming",
@@ -330,8 +330,8 @@
 				},
 				{
 					"id": "6",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#create-a-lightweight-experience-by-default",
-					"guideline": "Create a Lightweight Experience by Default",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys",
+					"guideline": "Minimize non-essential content, interactivity, or journeys",
 					"criteria": [
 						{
 							"title": "Efficient Paths",
@@ -426,8 +426,8 @@
 				},
 				{
 					"id": "7",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-unnecessary-or-an-overabundance-of-assets",
-					"guideline": "Avoid Unnecessary or an Overabundance of Assets",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#use-decorative-design-with-care",
+					"guideline": "Use decorative design with care",
 					"criteria": [
 						{
 							"title": "Decorative Design",
@@ -484,8 +484,8 @@
 				},
 				{
 					"id": "8",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-navigation-and-way-finding-are-well-structured",
-					"guideline": "Ensure Navigation and Way-Finding Are Well-Structured",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-way-finding-are-well-structured",
+					"guideline": "Ensure that navigation and way-finding are well-structured",
 					"criteria": [
 						{
 							"title": "Navigation And Search",
@@ -549,8 +549,8 @@
 				},
 				{
 					"id": "9",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#respect-the-visitor-s-attention",
-					"guideline": "Respect the Visitor's Attention",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting",
+					"guideline": "Be attentive rather than distracting",
 					"criteria": [
 						{
 							"title": "Respecting Attention",
@@ -619,8 +619,8 @@
 				},
 				{
 					"id": "10",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#use-recognized-design-patterns",
-					"guideline": "Use Recognized Design Patterns",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#use-established-design-patterns-and-appropriate-components",
+					"guideline": "Use established design patterns and appropriate components",
 					"criteria": [
 						{
 							"title": "Design Patterns",
@@ -672,8 +672,8 @@
 				},
 				{
 					"id": "11",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-manipulative-patterns",
-					"guideline": "Avoid Manipulative Patterns",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive",
+					"guideline": "Avoid being manipulative or deceptive",
 					"criteria": [
 						{
 							"title": "Dark and Deceptive Design Patterns",
@@ -771,8 +771,8 @@
 				},
 				{
 					"id": "12",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#document-and-share-project-outputs",
-					"guideline": "Document and Share Project Outputs",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#enable-others-to-understand-and-reuse-your-deliverables",
+					"guideline": "Enable others to understand and reuse your deliverables",
 					"criteria": [
 						{
 							"title": "Deliverables Reusability",
@@ -833,7 +833,7 @@
 				{
 					"id": "13",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-to-prioritize-interface-consistency",
-					"guideline": "Use a Design System To Prioritize Interface Consistency",
+					"guideline": "Use a design system to prioritize interface consistency",
 					"criteria": [
 						{
 							"title": "Design System",
@@ -898,7 +898,7 @@
 				{
 					"id": "14",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#write-with-purpose-in-an-accessible-easy-to-understand-format",
-					"guideline": "Write With Purpose, in an Accessible, Easy To Understand Format",
+					"guideline": "Write with purpose, in an accessible, easy-to-understand format",
 					"criteria": [
 						{
 							"title": "Write Clearly",
@@ -979,8 +979,8 @@
 				},
 				{
 					"id": "15",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#take-a-more-sustainable-approach-to-image-assets",
-					"guideline": "Take a More Sustainable Approach to Image Assets",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability",
+					"guideline": "All images must be optimized for sustainability",
 					"criteria": [
 						{
 							"title": "Need For Images",
@@ -1093,8 +1093,8 @@
 				},
 				{
 					"id": "16",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#take-a-more-sustainable-approach-to-media-assets",
-					"guideline": "Take a More Sustainable Approach to Media Assets",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability",
+					"guideline": "All audio or video must be optimized for sustainability",
 					"criteria": [
 						{
 							"title": "Need For Media",
@@ -1197,8 +1197,8 @@
 				},
 				{
 					"id": "17",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#take-a-more-sustainable-approach-to-animation",
-					"guideline": "Take a More Sustainable Approach to Animation",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#animation-must-be-proportionate-and-easy-to-control",
+					"guideline": "Animation must be proportionate and easy to control",
 					"criteria": [
 						{
 							"title": "Need For Animation",
@@ -1266,8 +1266,8 @@
 				},
 				{
 					"id": "18",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#take-a-more-sustainable-approach-to-typefaces",
-					"guideline": "Take a More Sustainable Approach to Typefaces",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#web-typography-must-be-highly-optimized-and-appropriate",
+					"guideline": "Web typography must be highly optimized and appropriate",
 					"criteria": [
 						{
 							"title": "Default Typefaces",
@@ -1339,8 +1339,8 @@
 				},
 				{
 					"id": "19",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-suitable-alternatives-to-web-assets",
-					"guideline": "Provide Suitable Alternatives to Web Assets",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered",
+					"guideline": "Suitable alternatives to any provided format must be offered",
 					"criteria": [
 						{
 							"title": "Open Formats",
@@ -1431,7 +1431,7 @@
 				{
 					"id": "20",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-accessible-usable-minimal-web-forms",
-					"guideline": "Provide Accessible, Usable, Minimal Web Forms",
+					"guideline": "Provide accessible, usable, minimal web forms",
 					"criteria": [
 						{
 							"title": "Form Simplicity",
@@ -1492,8 +1492,8 @@
 				},
 				{
 					"id": "21",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#support-non-graphic-ways-to-interact-with-content",
-					"guideline": "Support Non-Graphic Ways To Interact With Content",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-of-visitors-using-non-visual-browsers",
+					"guideline": "Consider the impact of visitors using non-visual browsers",
 					"criteria": [
 						{
 							"title": "Alternative Interactions",
@@ -1541,7 +1541,7 @@
 				{
 					"id": "22",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#give-useful-notifications-to-improve-the-visitor-s-journey",
-					"guideline": "Provide Useful Notifications To Improve The Visitor's Journey",
+					"guideline": "Provide useful notifications to improve the visitor's journey",
 					"criteria": [
 						{
 							"title": "Notification Justification",
@@ -1607,7 +1607,7 @@
 				{
 					"id": "23",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents",
-					"guideline": "Reduce the Impact of Downloadable or Physical Documents",
+					"guideline": "Reduce the impact of downloadable or physical documents",
 					"criteria": [
 						{
 							"title": "Printing Documents",
@@ -1685,8 +1685,8 @@
 				},
 				{
 					"id": "24",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#create-a-stakeholder-focused-testing-prototyping-policy",
-					"guideline": "Create a Stakeholder-Focused Testing & Prototyping Policy",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#policies-and-processes-must-exist-to-get-stakeholders-invested",
+					"guideline": "Policies and processes must exist to get stakeholders invested",
 					"criteria": [
 						{
 							"title": "New Features And Perspectives",
@@ -1763,8 +1763,8 @@
 				},
 				{
 					"id": "25",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#conduct-regular-audits-regression-and-non-regression-tests",
-					"guideline": "Conduct Regular Audits, Regression, and Non-Regression Tests",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-that-require-resolving",
+					"guideline": "Audit and test for bugs or issues that require resolving",
 					"criteria": [
 						{
 							"title": "Regular Issue Testing",
@@ -1844,8 +1844,8 @@
 				},
 				{
 					"id": "26",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#incorporate-performance-testing-into-each-major-release-cycle",
-					"guideline": "Incorporate Performance Testing Into Each Major Release-Cycle",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#measure-and-test-for-performance-and-speed",
+					"guideline": "Measure and test for performance and speed",
 					"criteria": [
 						{
 							"title": "Performance Testing",
@@ -1915,8 +1915,8 @@
 				},
 				{
 					"id": "27",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#incorporate-value-testing-into-each-major-release-cycle",
-					"guideline": "Incorporate Value Testing Into Each Major Release-Cycle",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-features-provide-maximum-value-for-their-impact",
+					"guideline": "Ensure features provide maximum value for their impact",
 					"criteria": [
 						{
 							"title": "Usage Changes",
@@ -1963,8 +1963,8 @@
 				},
 				{
 					"id": "28",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#incorporate-usability-testing-into-each-minor-release-cycle",
-					"guideline": "Incorporate Usability Testing Into Each Minor Release-Cycle",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#verify-that-real-world-users-can-successfully-use-your-work",
+					"guideline": "Verify that real-world users can successfully use your work",
 					"criteria": [
 						{
 							"title": "Usability Testing",
@@ -2016,8 +2016,8 @@
 				},
 				{
 					"id": "29",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#incorporate-compatibility-testing-into-each-release-cycle",
-					"guideline": "Incorporate Compatibility Testing Into Each Release-Cycle",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues",
+					"guideline": "Check for compatibility or platform-specific issues",
 					"criteria": [
 						{
 							"title": "Compatibility Policy",
@@ -2153,8 +2153,8 @@
 			"guidelines": [
 				{
 					"id": "1",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#identify-relevant-technical-indicators",
-					"guideline": "Identify Relevant Technical Indicators",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#set-goals-based-on-potential-impact-considerations",
+					"guideline": "Set goals based on potential impact considerations",
 					"criteria": [
 						{
 							"title": "Performance Goals",
@@ -2227,8 +2227,8 @@
 				},
 				{
 					"id": "2",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#minify-your-html-css-and-javascript",
-					"guideline": "Minify Your HTML, CSS, and JavaScript",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-or-redundant-information",
+					"guideline": "Remove unnecessary or redundant information",
 					"criteria": [
 						{
 							"title": "Minify Code",
@@ -2274,8 +2274,8 @@
 				},
 				{
 					"id": "3",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#use-code-splitting-within-projects",
-					"guideline": "Use Code-Splitting Within Projects",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components-within-projects",
+					"guideline": "Modularize bandwidth-heavy components within projects",
 					"criteria": [
 						{
 							"title": "Code Splitting",
@@ -2322,8 +2322,8 @@
 				},
 				{
 					"id": "4",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#apply-tree-shaking-to-code",
-					"guideline": "Apply Tree Shaking To Code",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#tree-shaking-should-be-used-to-remove-unnecessary-code",
+					"guideline": "Tree shaking should be used to remove unnecessary code",
 					"criteria": [
 						{
 							"title": "Remove Redundancy",
@@ -2376,8 +2376,8 @@
 				},
 				{
 					"id": "5",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-your-solutions-are-accessible",
-					"guideline": "Ensure Your Solutions Are Accessible",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#sustainable-solutions-must-be-accessible",
+					"guideline": "Sustainable solutions must be accessible",
 					"criteria": [
 						{
 							"title": "Accessibility Compliance",
@@ -2474,8 +2474,8 @@
 				},
 				{
 					"id": "6",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-code-duplication",
-					"guideline": "Avoid Code Duplication",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#redundancy-and-duplication-in-code-should-be-avoided",
+					"guideline": "Redundancy and duplication in code should be avoided",
 					"criteria": [
 						{
 							"title": "Remove Or Simplify",
@@ -2539,8 +2539,8 @@
 				},
 				{
 					"id": "7",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#rigorously-assess-third-party-services",
-					"guideline": "Rigorously Assess Third-Party Services",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties",
+					"guideline": "Third-party services should be assessed as first parties",
 					"criteria": [
 						{
 							"title": "Assess Third-Parties",
@@ -2653,8 +2653,8 @@
 				},
 				{
 					"id": "8",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-use-of-html-elements",
-					"guideline": "Optimize Use of HTML Elements",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices",
+					"guideline": "Code must follow good semantic practices",
 					"criteria": [
 						{
 							"title": "Semantic Code",
@@ -2745,8 +2745,8 @@
 				},
 				{
 					"id": "9",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#resolve-render-blocking-content",
-					"guideline": "Resolve Render Blocking Content",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved",
+					"guideline": "Render blocking should be resolved",
 					"criteria": [
 						{
 							"title": "Asynchronous Code",
@@ -2806,8 +2806,8 @@
 				},
 				{
 					"id": "10",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-code-based-way-finding-mechanisms",
-					"guideline": "Provide Code-Based Way-Finding Mechanisms",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist",
+					"guideline": "Information to help understand the usefulness of a page should exist",
 					"criteria": [
 						{
 							"title": "Metadata And Microdata",
@@ -2878,8 +2878,8 @@
 				},
 				{
 					"id": "11",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#validate-form-errors-and-external-input",
-					"guideline": "Validate Form Errors and External Input",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements",
+					"guideline": "Forms must validate for errors, accounting for tooling requirements",
 					"criteria": [
 						{
 							"title": "Error Validation",
@@ -2943,8 +2943,8 @@
 				},
 				{
 					"id": "12",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#use-metadata-correctly",
-					"guideline": "Use Metadata Correctly",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability",
+					"guideline": "Metadata is structured for machine readability",
 					"criteria": [
 						{
 							"title": "Required Elements",
@@ -3011,8 +3011,8 @@
 				},
 				{
 					"id": "13",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#adapt-to-user-preferences",
-					"guideline": "Adapt to User Preferences",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#sustainable-css-user-preference-media-queries-are-used",
+					"guideline": "Sustainable CSS user preference media queries are used",
 					"criteria": [
 						{
 							"title": "Media and Preference Queries",
@@ -3081,8 +3081,8 @@
 				},
 				{
 					"id": "14",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#develop-a-device-adaptable-layout",
-					"guideline": "Develop a Device-Adaptable Layout",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements",
+					"guideline": "Layouts work across devices and requirements",
 					"criteria": [
 						{
 							"title": "Mobile-First",
@@ -3190,7 +3190,7 @@
 				{
 					"id": "15",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-api-s",
-					"guideline": "Use Beneficial JavaScript and Its APIs",
+					"guideline": "Use beneficial JavaScript and its APIs",
 					"criteria": [
 						{
 							"title": "Beneficial JavaScript",
@@ -3266,8 +3266,8 @@
 				},
 				{
 					"id": "16",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-your-scripts-are-secure",
-					"guideline": "Ensure Your Scripts Are Secure",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-scripts-are-secure",
+					"guideline": "Ensure that your scripts are secure",
 					"criteria": [
 						{
 							"title": "Script Security",
@@ -3322,8 +3322,8 @@
 				},
 				{
 					"id": "17",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#manage-dependencies-appropriately",
-					"guideline": "Manage Dependencies Appropriately",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained",
+					"guideline": "Dependencies are appropriately used and maintained",
 					"criteria": [
 						{
 							"title": "Dependency Management",
@@ -3390,7 +3390,7 @@
 				{
 					"id": "18",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files",
-					"guideline": "Include Expected and Beneficial Files",
+					"guideline": "Include expected and beneficial files",
 					"criteria": [
 						{
 							"title": "Expected File Formats",
@@ -3458,7 +3458,7 @@
 				{
 					"id": "19",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code",
-					"guideline": "Avoid Using Deprecated, Proprietary, or Outdated Code",
+					"guideline": "Avoid using deprecated, proprietary, or outdated code",
 					"criteria": [
 						{
 							"title": "Preferred Code",
@@ -3514,8 +3514,8 @@
 				},
 				{
 					"id": "20",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#align-technical-requirements-with-sustainability-goals",
-					"guideline": "Align Technical Requirements With Sustainability Goals",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service",
+					"guideline": "Use the most efficient solution to implement your service",
 					"criteria": [
 						{
 							"title": "Identify Requirements",
@@ -3601,7 +3601,7 @@
 				{
 					"id": "21",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version",
-					"guideline": "Use the Latest Stable Language Version",
+					"guideline": "Use the latest stable language version",
 					"criteria": [
 						{
 							"title": "Versioning",
@@ -3653,8 +3653,8 @@
 				},
 				{
 					"id": "22",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features",
-					"guideline": "Take Advantage of Native Features",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features-and-functionality",
+					"guideline": "Take advantage of native features and functionality",
 					"criteria": [
 						{
 							"title": "Native Over Custom",
@@ -3707,7 +3707,7 @@
 				{
 					"id": "23",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#run-fewer-simpler-queries-as-possible",
-					"guideline": "Run Fewer, Simpler Queries As Possible",
+					"guideline": "Run fewer, simpler queries as possible",
 					"criteria": [
 						{
 							"title": "Database Queries",
@@ -3764,7 +3764,7 @@
 				{
 					"id": "1",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider",
-					"guideline": "Choose a Sustainable Hosting Provider",
+					"guideline": "Choose a sustainable hosting provider",
 					"criteria": [
 						{
 							"title": "Monitor Metrics",
@@ -3919,8 +3919,8 @@
 				},
 				{
 					"id": "2",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-browser-caching",
-					"guideline": "Optimize Browser Caching",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported",
+					"guideline": "Optimize caching with offline access supported",
 					"criteria": [
 						{
 							"title": "Utilize Caching",
@@ -3997,8 +3997,8 @@
 				},
 				{
 					"id": "3",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#compress-your-files",
-					"guideline": "Compress Your Files",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial",
+					"guideline": "Compress files where it is beneficial",
 					"criteria": [
 						{
 							"title": "Server-side Compression",
@@ -4079,8 +4079,8 @@
 				},
 				{
 					"id": "4",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#use-error-pages-and-redirects-carefully",
-					"guideline": "Use Error Pages and Redirects Carefully",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#setup-necessary-error-pages-and-redirection-links",
+					"guideline": "Setup necessary error pages and redirection links",
 					"criteria": [
 						{
 							"title": "Error Pages",
@@ -4139,8 +4139,8 @@
 				},
 				{
 					"id": "5",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#limit-usage-of-additional-environments",
-					"guideline": "Limit Usage of Additional Environments",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#unless-required-avoid-utilizing-unnecessary-environments",
+					"guideline": "Unless required, avoid utilizing unnecessary environments",
 					"criteria": [
 						{
 							"title": "Unused Environments",
@@ -4184,8 +4184,8 @@
 				},
 				{
 					"id": "6",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#automate-to-fit-the-needs",
-					"guideline": "Automate To Fit the Needs",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#allow-automation-but-ensure-it-is-tightly-regulated",
+					"guideline": "Allow automation but ensure it is tightly regulated",
 					"criteria": [
 						{
 							"title": "Automate Tasks",
@@ -4265,8 +4265,8 @@
 				},
 				{
 					"id": "7",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#maintain-a-relevant-refresh-frequency",
-					"guideline": "Maintain a Relevant Refresh Frequency",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#define-the-frequency-of-data-refreshes",
+					"guideline": "Define the frequency of data refreshes",
 					"criteria": [
 						{
 							"title": "Refresh Frequency",
@@ -4312,8 +4312,8 @@
 				},
 				{
 					"id": "8",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#be-mindful-of-duplicate-data",
-					"guideline": "Be Mindful of Duplicate Data",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#backup-critical-data-at-routine-intervals",
+					"guideline": "Backup critical data at routine intervals",
 					"criteria": [
 						{
 							"title": "Data Backups",
@@ -4360,8 +4360,8 @@
 				},
 				{
 					"id": "9",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#enable-asynchronous-processing-and-communication",
-					"guideline": "Enable Asynchronous Processing and Communication",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#processing-of-data-considers-impact-and-requirements",
+					"guideline": "Processing of data considers impact and requirements",
 					"criteria": [
 						{
 							"title": "Batch Processing",
@@ -4431,8 +4431,8 @@
 				},
 				{
 					"id": "10",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#consider-cdns-and-edge-caching",
-					"guideline": "Consider CDNs and Edge Caching",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable",
+					"guideline": "CDN use must be proportionate and sustainable",
 					"criteria": [
 						{
 							"title": "Content Delivery Networks (CDNs)",
@@ -4548,8 +4548,8 @@
 				},
 				{
 					"id": "11",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#use-the-lowest-infrastructure-tier-meeting-business-requirements",
-					"guideline": "Use the Lowest Infrastructure Tier Meeting Business Requirements",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#infrastructure-decisions-must-meet-business-requirements",
+					"guideline": "Infrastructure decisions must meet business requirements",
 					"criteria": [
 						{
 							"title": "Lowest Requirements",
@@ -4600,8 +4600,8 @@
 				},
 				{
 					"id": "12",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-visitor-needs",
-					"guideline": "Store Data According to Visitor Needs",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users",
+					"guideline": "Store data according to the needs of your users",
 					"criteria": [
 						{
 							"title": "Reduce Redundancy",
@@ -4694,8 +4694,8 @@
 			"guidelines": [
 				{
 					"id": "1",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainability-product-strategy",
-					"guideline": "Have an Ethical and Sustainability Product Strategy",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy",
+					"guideline": "Have an ethical and sustainable product strategy",
 					"criteria": [
 						{
 							"title": "Statement Availability",
@@ -4808,7 +4808,7 @@
 				{
 					"id": "2",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#assign-a-sustainability-representative",
-					"guideline": "Assign a Sustainability Representative",
+					"guideline": "Assign a sustainability representative",
 					"criteria": [
 						{
 							"title": "Ecological Referee",
@@ -4858,8 +4858,8 @@
 				},
 				{
 					"id": "3",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#raise-awareness-and-inform",
-					"guideline": "Raise Awareness and Inform",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#inform-raise-awareness-and-train-for-sustainability",
+					"guideline": "Inform, raise awareness, and train for sustainability",
 					"criteria": [
 						{
 							"title": "Inform And Aware",
@@ -4924,7 +4924,7 @@
 				{
 					"id": "4",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#communicate-the-ecological-impact-of-user-choices",
-					"guideline": "Communicate the Ecological Impact of User Choices",
+					"guideline": "Communicate the ecological impact of user choices",
 					"criteria": [
 						{
 							"title": "Impact Communication",
@@ -4972,7 +4972,7 @@
 				{
 					"id": "5",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#estimate-a-product-or-service-s-environmental-impact",
-					"guideline": "Estimate a Product or Service's Environmental Impact",
+					"guideline": "Estimate a product or service's environmental impact",
 					"criteria": [
 						{
 							"title": "Life-cycle Analysis",
@@ -5037,7 +5037,7 @@
 				{
 					"id": "6",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#define-clear-organizational-sustainability-goals-and-metrics",
-					"guideline": "Define Clear Organizational Sustainability Goals and Metrics",
+					"guideline": "Define clear organizational sustainability goals and metrics",
 					"criteria": [
 						{
 							"title": "Sustainability Goals",
@@ -5088,7 +5088,7 @@
 				{
 					"id": "7",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#verify-your-efforts-using-established-third-party-business-certifications",
-					"guideline": "Verify Your Efforts Using Established Third-Party Business Certifications",
+					"guideline": "Verify your efforts using established third-party business certifications",
 					"criteria": [
 						{
 							"title": "Certification Achievement",
@@ -5146,7 +5146,7 @@
 				{
 					"id": "8",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#implement-sustainability-onboarding-guidelines",
-					"guideline": "Implement Sustainability Onboarding Guidelines",
+					"guideline": "Implement sustainability onboarding guidelines",
 					"criteria": [
 						{
 							"title": "Training Materials",
@@ -5210,7 +5210,7 @@
 				{
 					"id": "9",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#support-mandatory-disclosures-and-reporting",
-					"guideline": "Support Mandatory Disclosures and Reporting",
+					"guideline": "Support mandatory disclosures and reporting",
 					"criteria": [
 						{
 							"title": "Policies And Practices",
@@ -5288,7 +5288,7 @@
 				{
 					"id": "10",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#create-one-or-more-impact-business-models",
-					"guideline": "Create One or More Impact Business Models",
+					"guideline": "Create one or more impact business models",
 					"criteria": [
 						{
 							"title": "Theory Of Change",
@@ -5340,7 +5340,7 @@
 				{
 					"id": "11",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#follow-a-product-management-and-maintenance-strategy",
-					"guideline": "Follow a Product Management and Maintenance Strategy",
+					"guideline": "Follow a product management and maintenance strategy",
 					"criteria": [
 						{
 							"title": "Management And Maintenance",
@@ -5422,7 +5422,7 @@
 				{
 					"id": "12",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#implement-continuous-improvement-procedures",
-					"guideline": "Implement Continuous Improvement Procedures",
+					"guideline": "Implement continuous improvement procedures",
 					"criteria": [
 						{
 							"title": "Continuous Improvement",
@@ -5533,7 +5533,7 @@
 				{
 					"id": "13",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#document-future-updates-and-evolutions",
-					"guideline": "Document Future Updates and Evolutions",
+					"guideline": "Document future updates and evolutions",
 					"criteria": [
 						{
 							"title": "Feature Changes",
@@ -5581,7 +5581,7 @@
 				{
 					"id": "14",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#establish-if-a-digital-product-or-service-is-necessary",
-					"guideline": "Establish if a Digital Product or Service Is Necessary",
+					"guideline": "Establish if a digital product or service is necessary",
 					"criteria": [
 						{
 							"title": "Sustainable Development Goals",
@@ -5647,8 +5647,8 @@
 				},
 				{
 					"id": "15",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#determine-the-functional-unit",
-					"guideline": "Determine the Functional Unit",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#conduct-a-full-life-cycle-assessment",
+					"guideline": "Conduct a full life-cycle assessment",
 					"criteria": [
 						{
 							"title": "Life-cycle Assessment",
@@ -5696,7 +5696,7 @@
 				{
 					"id": "16",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#create-a-supplier-standards-of-practice",
-					"guideline": "Create a Supplier Standards of Practice",
+					"guideline": "Provide a supplier standards of practice",
 					"criteria": [
 						{
 							"title": "Vetting Potential Partners",
@@ -5759,8 +5759,8 @@
 				},
 				{
 					"id": "17",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#share-economic-benefits",
-					"guideline": "Share Economic Benefits",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#share-any-economic-benefits",
+					"guideline": "Share any economic benefits",
 					"criteria": [
 						{
 							"title": "Living Wage",
@@ -5834,7 +5834,7 @@
 				{
 					"id": "18",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#share-decision-making-power-with-appropriate-stakeholders",
-					"guideline": "Share Decision-Making Power With Appropriate Stakeholders",
+					"guideline": "Share decision-making power with appropriate stakeholders",
 					"criteria": [
 						{
 							"title": "Decision-Making",
@@ -5877,7 +5877,7 @@
 				{
 					"id": "19",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-justice-equity-diversity-inclusion-jedi-practices",
-					"guideline": "Use Justice, Equity, Diversity, Inclusion (JEDI) Practices",
+					"guideline": "Use Justice, Equity, Diversity, Inclusion (JEDI) practices",
 					"criteria": [
 						{
 							"title": "JEDI Practices",
@@ -5959,7 +5959,7 @@
 				{
 					"id": "20",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#promote-responsible-data-practices",
-					"guideline": "Promote Responsible Data Practices",
+					"guideline": "Promote responsible data practices",
 					"criteria": [
 						{
 							"title": "Privacy Policy",
@@ -6028,7 +6028,7 @@
 				{
 					"id": "21",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#implement-appropriate-data-management-procedures",
-					"guideline": "Implement Appropriate Data Management Procedures",
+					"guideline": "Implement appropriate data management procedures",
 					"criteria": [
 						{
 							"title": "Outdated Content",
@@ -6097,7 +6097,7 @@
 				{
 					"id": "22",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#promote-responsible-emerging-technology-practices",
-					"guideline": "Promote and Implement Responsible Emerging Technology Practices",
+					"guideline": "Promote and implement responsible emerging technology practices",
 					"criteria": [
 						{
 							"title": "Emerging Technologies",
@@ -6229,7 +6229,7 @@
 				{
 					"id": "23",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#include-responsible-financial-policies",
-					"guideline": "Include Responsible Financial Policies",
+					"guideline": "Include responsible financial policies",
 					"criteria": [
 						{
 							"title": "Fuel Divestment",
@@ -6286,7 +6286,7 @@
 				{
 					"id": "24",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#include-organizational-philanthropy-policies",
-					"guideline": "Include Organizational Philanthropy Policies",
+					"guideline": "Include organizational philanthropy policies",
 					"criteria": [
 						{
 							"title": "Philanthropy Policy",
@@ -6339,7 +6339,7 @@
 				{
 					"id": "25",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#plan-for-a-digital-product-or-service-s-care-and-end-of-life",
-					"guideline": "Plan for a Digital Product or Service's Care and End-of-Life",
+					"guideline": "Plan for a digital product or service's care and end-of-life",
 					"criteria": [
 						{
 							"title": "End-of-life Care",
@@ -6389,7 +6389,7 @@
 				{
 					"id": "26",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#include-e-waste-right-to-repair-and-recycling-policies",
-					"guideline": "Include E-Waste, Right-To-Repair, and Recycling Policies",
+					"guideline": "Include e-waste, right-to-repair, and recycling policies",
 					"criteria": [
 						{
 							"title": "E-Waste Policy",
@@ -6462,7 +6462,7 @@
 				{
 					"id": "27",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#define-performance-and-environmental-budgets",
-					"guideline": "Define Performance and Environmental Budgets",
+					"guideline": "Define performance and environmental budgets",
 					"criteria": [
 						{
 							"title": "Environmental Budget",
@@ -6558,8 +6558,8 @@
 				},
 				{
 					"id": "28",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#use-open-source-tools",
-					"guideline": "Use Open Source Tools",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#use-open-source-where-possible",
+					"guideline": "Use open source where possible",
 					"criteria": [
 						{
 							"title": "Open Source Policy",
@@ -6630,7 +6630,7 @@
 				{
 					"id": "29",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#create-a-business-continuity-and-disaster-recovery-plan",
-					"guideline": "Create a Business Continuity and Disaster Recovery Plan",
+					"guideline": "Create a business continuity and disaster recovery plan",
 					"criteria": [
 						{
 							"title": "Plan of Action",
