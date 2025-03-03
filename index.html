@@ -106,13 +106,13 @@
 									document.getElementById(value).classList.remove('hide');
 									document.getElementById(value).classList.add('show'); }
 									document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide'));
-							window.scrollTo(0, 0); } else {
+									window.scrollTo(0, 0); } else {
 									document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
 									document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); }
 							let check = false;
 							for (const value of all) {
 								if (current == value && check == false ) { check = true; } }
-							if (check == false) { setTimeout(header, 1); } } }
+							if (check == false) { header(); } } }
 					// Assign your headings here to do the above for more than just the main sections
 					heading(introduction,"introduction");
 					heading(ux,"user-experience-design");
@@ -124,7 +124,7 @@
 					heading(refs,"references"); } else {
 					for (const value of sections) {
 						document.getElementById(value).classList.add('hide'); }
-					setTimeout(header, 1); }
+					header(); }
 					// Scrolls to the correct section of the page once its rendered it
 					for (const value of all) {
 						if (window.location.hash && window.location.hash !="#full-page" && value == current){
