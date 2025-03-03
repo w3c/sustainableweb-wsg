@@ -112,7 +112,7 @@
 							let check = false;
 							for (const value of all) {
 								if (current == value && check == false ) { check = true; } }
-							if (check == false) { header() } } }
+							if (check == false) { setTimeout(header, 1); } } }
 					// Assign your headings here to do the above for more than just the main sections
 					heading(introduction,"introduction");
 					heading(ux,"user-experience-design");
