@@ -4007,7 +4007,7 @@
 				<h3>Remove unnecessary or redundant information</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Minify Code <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD02-1"><mark>(Machine Testable)</mark></a></h4>
-					<p>All source code is minified upon compilation (including inline code).</p>
+					<p>Remove unnecessary whitespace, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to HTML, CSS, JavaScript, JSON, SVG, and other relevant file types.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional Content</h4>
@@ -4016,7 +4016,7 @@
 							<summary>Show / Hide additional content to understand this guideline and its success criteria.</summary>
 							<p><em>This section is non-normative.</em></p>
 							<p class="subtitle"><strong>Intent</strong></p>
-							<p>Whitespace holds no value when it's being presented to the visitor (unless they view the source code), by using minification, valuable data savings can be made which will reduce loading times.</p>
+							<p>Minifying code is essential for creating efficient, performant, and sustainable web applications. Smaller codebases translate to faster load times, reduced bandwidth consumption, and easier maintenance. This principle applies to both front-end (client-side) and back-end (server-side) code, though the specific techniques may differ. Code should not be minified in not-for-production developer visible situations.</p>
 							<p><strong>Impact &amp; Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.2"> [*]<span class="hidden">3.2</span></dfn></dt><dd>Low</dd>
@@ -4061,7 +4061,7 @@
 				<h3>Modularize bandwidth-heavy components within projects</h3>
 				<section class="notoc">
 					<h4>Success Criterion - Code Splitting <a href="https://w3c.github.io/sustainableweb-wsg/star.html#WD03-1"><mark>(Machine Testable)</mark></a></h4>
-					<p>Breakdown bandwidth-heavy components into segments that can be loaded as required.</p>
+					<p>Breakdown bandwidth-heavy components, front-end and back-end into smaller, modular segments that can be loaded only when required.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional Content</h4>
@@ -4070,7 +4070,7 @@
 							<summary>Show / Hide additional content to understand this guideline and its success criteria.</summary>
 							<p><em>This section is non-normative.</em></p>
 							<p class="subtitle"><strong>Intent</strong></p>
-							<p>When dealing with heavy components (such as JavaScript), the ability to modularize them into smaller pieces that can be loaded as and when required reduces the amount of redundancy and serves as a great way to make your scripts more sustainable.</p>
+							<p>This approach is applicable across various programming languages and platforms, both client-side and server-side. By modularizing code and assets, you can ensure faster load times, better resource management, reduce redundancy, and improved scalability for your application. Additionally, reducing unnecessary data transfer and optimizing load times can contribute to more energy-efficient operations, helping to lower the environmental impact, improve the UX of your web application or service.</p>
 							<p><strong>Impact &amp; Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a><dfn data-lt="[*] 3.3"> [*]<span class="hidden">3.3</span></dfn></dt><dd>Medium</dd>
