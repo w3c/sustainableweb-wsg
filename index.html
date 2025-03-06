@@ -26,7 +26,7 @@
 				.summary .reporting dd { flex-basis: calc(100% - 85px); margin: 0; }
 				.summary .reporting dd { flex-basis: calc(100% - 85px); } }
 			/* Fix for Printing The Specification: https://github.com/w3c/sustainableweb-wsg/issues/92 */
-			@media print { section section:last-child h4, section section:last-child .self-link, section section:last-child summary, .summary, .pageButtons, #toc { display: none !important; } .full-page #toc { display: block !important; } body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
+			@media print { section section:last-child h4, section section:last-child .self-link, section section:last-child summary, .summary, .pageButtons, #toc { display: none !important; } .full-document #toc { display: block !important; } body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustainableweb-wsg/issues/114 */
 			.summary details { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
 			/** Multipage Document: https://github.com/w3c/sustainableweb-wsg/issues/14#issuecomment-2662164386 */
@@ -36,7 +36,7 @@
 			.pageButtons { margin-top: 2em; }
 			.pageButtons, .pageButtons tr, .pageButtons tbody, .pageButtons td { display: flex; flex: 1; gap: 10px; }
 			.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
-			.previousPage { justify-content: left; } .fullPage { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
+			.previousPage { justify-content: left; } .fullDocument { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
 			@media (scripting: none) {
 				@media print { #toc { display: none !important; } }
 				.pageButtons { display: none;}
@@ -81,10 +81,10 @@
 				let credits = hashSection('#acknowledgments section');
 				let refs = hashSection('#references section');
 				let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
-				if (document.body.classList.contains('full-page')) { document.body.classList.remove('full-page'); }
+				if (document.body.classList.contains('full-document')) { document.body.classList.remove('full-document'); }
 				if (window.location.hash) {
 					for (const value of sections) {
-						if (value == current || "full-page") {
+						if (value == current || "full-document") {
 							for (const value of sections) {
 								if ( value != current ) {
 									document.getElementById(value).classList.add('hide'); } else {
@@ -96,12 +96,12 @@
 									document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<table class="pageButtons">
 									<tr>
 										<td><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></td>
-										<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+										<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
 										<td></td>
 									</tr>
 								</table>`; } }
-							if (current == "full-page") {
-								document.body.classList.add("full-page");
+							if (current == "full-document") {
+								document.body.classList.add("full-document");
 								for (const value of sections) {
 									document.getElementById(value).classList.remove('hide');
 									document.getElementById(value).classList.add('show'); }
@@ -127,7 +127,7 @@
 					header(); }
 					// Scrolls to the correct section of the page once its rendered it
 					for (const value of all) {
-						if (window.location.hash && window.location.hash !="#full-page" && value == current){
+						if (window.location.hash && window.location.hash !="#full-document" && value == current){
 							document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } } }
 			function heading(hash, string) {
 				let current = window.location.hash.substring(1);
@@ -145,7 +145,7 @@
 				document.getElementById("abstract").classList.add('show');
 				document.getElementById("sotd").classList.add('show');
 				buttons("sotd"); window.scrollTo(0, 0);
-				if (window.location.hash != "#full-page") {
+				if (window.location.hash != "#full-document") {
 					document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
 					document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); } }
 			function buttons(id) {
@@ -1225,7 +1225,7 @@
 			<table class="pageButtons">
 				<tr>
 					<td></td>
-					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
 					<td><a class="nextPage" href="#introduction">Next page<br>Introduction</a></td>
 				</tr>
 			</table>
@@ -1396,7 +1396,7 @@
 			<table class="pageButtons">
 				<tr>
 					<td><a class="previousPage" href="#abstract">Previous page<br>Overview</a></td>
-					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
 					<td><a class="nextPage" href="#user-experience-design">Next page<br>User-Experience Design</a></td>
 				</tr>
 			</table>
@@ -3890,7 +3890,7 @@
 			<table class="pageButtons">
 				<tr>
 					<td><a class="previousPage" href="#introduction">Previous page<br>Introduction</a></td>
-					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
 					<td><a class="nextPage" href="#web-development">Next page<br>Web Development</a></td>
 				</tr>
 			</table>
@@ -5810,7 +5810,7 @@
 			<table class="pageButtons">
 				<tr>
 					<td><a class="previousPage" href="#user-experience-design">Previous page<br>User-Experience Design</a></td>
-					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
 					<td><a class="nextPage" href="#hosting-infrastructure-and-systems">Next page<br>Hosting, Infrastructure and Systems</a></td>
 				</tr>
 			</table>
@@ -6921,7 +6921,7 @@
 			<table class="pageButtons">
 				<tr>
 					<td><a class="previousPage" href="#web-development">Previous page<br>Web Development</a></td>
-					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
 					<td><a class="nextPage" href="#business-strategy-and-product-management">Next page<br>Business Strategy and Product Management</a></td>
 				</tr>
 			</table>
@@ -9189,7 +9189,7 @@
 			<table class="pageButtons">
 				<tr>
 					<td><a class="previousPage" href="#hosting-infrastructure-and-systems">Previous page<br>Hosting, Infrastructure and Systems</a></td>
-					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
 					<td><a class="nextPage" href="#glossary">Next page<br>Glossary</a></td>
 				</tr>
 			</table>
@@ -9242,7 +9242,7 @@
 			<table class="pageButtons">
 				<tr>
 					<td><a class="previousPage" href="#business-strategy-and-product-management">Previous page<br>Business Strategy and Product Management</a></td>
-					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
 					<td><a class="nextPage" href="#acknowledgments">Next page<br>Acknowledgments</a></td>
 				</tr>
 			</table>
@@ -9261,7 +9261,7 @@
 			<table class="pageButtons">
 				<tr>
 					<td><a class="previousPage" href="#glossary">Previous page<br>Glossary</a></td>
-					<td><a class="fullPage" href="index.html#full-page">Full page</a></td>
+					<td><a class="fullDocument" href="index.html#full-document">Full document</a></td>
 					<td><a class="nextPage" href="#references">Next page<br>References</a></td>
 				</tr>
 			</table>
