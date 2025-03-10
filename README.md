@@ -143,17 +143,17 @@ We have two JSON APIs which are kept in sync with the changes occurring within o
 These documents are reachable via GitHub pages and can be queried using JavaScript to embed our data within your client of choice.
 
 **WSG** (*guidelines.json*)
-```
+```js
 category[1].guidelines[0].guideline = "Display any variables that have a negative impact on your project"
 ```
 **STAR** (*star.json*)
-```
+```js
 category[1].techniques[0].title = "Produce a List of Variables To Monitor for Sustainability Impacts"
 ```
 
 One method of reaching the API could be through code similar to the below (customize to your requirements):
 
-```
+```js
 fetch("https://w3c.github.io/sustainableweb-wsg/guidelines.json")
   .then((res) => res.json())
   .then((data) => {
