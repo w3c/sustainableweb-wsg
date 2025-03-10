@@ -151,6 +151,15 @@ category[1].guidelines[0].guideline = "Display any variables that have a negativ
 category[1].techniques[0].title = "Produce a List of Variables To Monitor for Sustainability Impacts"
 ```
 
+One method of reaching the API could be through utilizing code similar to the below (customize to your requirements):
+
+```
+fetch("https://w3c.github.io/sustainableweb-wsg/guidelines.json")
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(`The First UX Guideline Title is ${data.category[1].guidelines[0].guideline}`); });
+```
+
 **Note:** To match a WSG guideline to a STAR technique, you can match the guideline `testable` anchor hash (WSG JSON API) to the technique `id` (STAR JSON API).
 
 ## Test Suite
