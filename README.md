@@ -76,7 +76,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
 			<td>JSON API</td>
-			<td>03 Mar 2025</td>
+			<td>10 Mar 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>
@@ -151,7 +151,7 @@ category[1].guidelines[0].guideline = "Display any variables that have a negativ
 category[1].techniques[0].title = "Produce a List of Variables To Monitor for Sustainability Impacts"
 ```
 
-One method of reaching the API could be through utilizing code similar to the below (customize to your requirements):
+One method of reaching the API could be through code similar to the below (customize to your requirements):
 
 ```
 fetch("https://w3c.github.io/sustainableweb-wsg/guidelines.json")
