@@ -179,13 +179,16 @@ Key concepts of note include:
 Below are some handy links for contributors to our project:
 
  - [Charter Template](https://w3c.github.io/charter-drafts/charter-template.html) ([HTML Source](https://github.com/w3c/charter-drafts/blob/gh-pages/charter-template.html))
+ - [Diff Text](https://difftext.com/)
+ - [Extract URLs](https://extracturls.huckbit.com/)
  - [GRI Notebook](GRI.ipynb) ([Spreadsheet](https://docs.google.com/spreadsheets/d/12nGydnSv24fvmvCM-665_pFGPG9u3RgTwe1sCz4eiGk/edit?usp=sharing))
  - [How to do Wide Review](https://www.w3.org/Guide/documentreview/)
  - [Policies & legal information](https://www.w3.org/policies/)
- - [Pubrules documentation](https://www.w3.org/pubrules/doc/)
+ - [Pubrules](https://www.w3.org/pubrules/) [documentation](https://www.w3.org/pubrules/doc/)
  - [QA Framework](https://www.w3.org/TR/qaframe-spec/)
  - [Repository Templates](https://github.com/w3c/ash-nazg/tree/master/templates)
  - [ReSpec Documentation](https://respec.org/docs/)
+ - [Sort My List](https://sortmylist.com/)
  - [STAR Testability](https://docs.google.com/spreadsheets/d/1DKfIdm0mHkyzTVv41hogUdh41SnLkk9Uwkc8Nm6bqD4/edit?usp=sharing)
  - [TAG Explainers](https://tag.w3.org/explainers/)
  - [Title Case Converter](https://titlecaseconverter.com/)
