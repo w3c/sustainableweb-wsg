@@ -2280,7 +2280,7 @@
 						{
 							"title": "Code Splitting",
 							"testable": "[Machine Testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD03-1)",
-							"description": "Breakdown bandwidth-heavy components, front-end and back-end into smaller, modular segments that can be loaded only when required."
+							"description": "Break down bandwidth-heavy components, front-end and back-end into smaller, modular segments that can be loaded only when required."
 						}
 					],
 					"intent": "This approach is applicable across various programming languages and platforms, both client-side and server-side. By modularizing code and assets, you can ensure faster load times, better resource management, reduce redundancy, and improved scalability for your application. Additionally, reducing unnecessary data transfer and optimizing load times can contribute to more energy-efficient operations, helping to lower the environmental impact, improve the UX of your web application or service.",
