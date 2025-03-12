@@ -60,7 +60,7 @@
 			// ReSpec Multipage: https://w3c.github.io/sustainableweb-ig/multipage.html
 			function addMultipage() {
 				window.addEventListener('hashchange', onHashChange);
-				onHashChange() }
+				onHashChange(); }
 			window.addEventListener("load", (event) => {
 				addMultipage(); });
 			function hashSection(hash) {
@@ -97,7 +97,7 @@
 										<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
 										<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
 										<li></li>
-					</ol>`; } }
+									</ol>`; } }
 							if (current == "full-document") {
 								document.body.classList.add("full-document");
 								for (const value of sections) {
@@ -123,7 +123,6 @@
 					for (const value of sections) {
 						document.getElementById(value).classList.add('hide'); }
 					header(); }
-					// Scrolls to the correct section of the page once its rendered it
 					for (const value of all) {
 						if (window.location.hash && window.location.hash !="#full-document" && value == current){
 							document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } } }
