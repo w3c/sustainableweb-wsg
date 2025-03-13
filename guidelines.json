@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-02-27",
+	"lastModified": "2025-03-13",
 	"category": [
 		{
 			"id": "1",
@@ -227,6 +227,11 @@
 					"guideline": "Consider sustainability throughout the ideation process",
 					"criteria": [
 						{
+							"title": "Sustainable Brand Development",
+							"testable": "Human Testable",
+							"description": "Branding materials and assets approved during the ideation process must be created and optimized in line with sustainability best practices before internal or external deployment. This also applies to brand refreshes, rebranding, and later enhancements. Branding guidelines detailing the sustainability impact and best-practice deployment of materials and assets should be made publicly available."
+						},
+						{
 							"title": "Wireframes And Prototypes",
 							"testable": "Human Testable",
 							"description": "Wireframes, and rapid prototyping are utilized to quickly build consensus, reduce risk, and lower the number of resources needed to build features."
@@ -262,14 +267,19 @@
 					],
 					"resources": [
 						{
+							"A Guide to Sustainable Branding": "https://medium.com/@NineBlaess/a-guide-to-sustainable-branding-76d1022eaf01",
 							"Activating sustainability in the design process": "https://www.degruyter.com/document/doi/10.1515/icom-2024-0037/html?lang=en",
 							"An introduction to radical participatory design": "https://www.cambridge.org/core/journals/design-science/article/an-introduction-to-radical-participatory-design-decolonising-participatory-design-processes/63F70ECC408844D3CD6C1A5AC7D35F4D",
+							"Branding Style Guides": "https://brandingstyleguides.com/",
+							"Build a More Sustainable Marketing Stack": "https://www.mightybytes.com/blog/sustainable-marketing-stack/",
 							"[GPFEDS] 2.6 - Specifications (Design Review) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"How Wireframes and Rapid Prototypes Improve Digital Projects": "https://www.mightybytes.com/blog/wireframes-and-prototypes-for-websites/",
 							"Importance of Wireframing & Prototyping in Web Design": "https://www.loop-digital.co.uk/the-importance-of-wireframing-prototyping-in-web-design/",
 							"L'idéation au service de l'éco-conception #1 : La méthode C.O.E.U.R. (French)": "https://www.lunaweb.fr/actualites/blog/atelier-ideation-eco-conception/",
 							"Lean UX ❤ Sustainability": "https://medium.com/design-bootcamp/lean-ux-sustainability-designing-for-people-planet-and-profit-4b1406564c81",
+							"Quick Guide to Sustainable Design Strategies": "https://medium.com/disruptive-design/quick-guide-to-sustainable-design-strategies-641765a86fb8",
 							"Rapid prototyping can be key to creating more sustainable products": "https://www.imeche.org/news/news-article/rapid-prototyping-can-be-key-to-creating-more-sustainable-products",
+							"Sustainability branding": "https://brandmasteracademy.com/sustainability-branding/",
 							"Sustainable UX design": "https://blog.adobe.com/en/publish/2021/09/24/sustainable-ux-design-what-is-it-and-how-can-it-benefit-your-organization",
 							"The Design Process": "https://sustainabilityguide.eu/methods/the-design-process/"
 						}
