@@ -2,7 +2,7 @@
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-02-19",
+	"lastModified": "2025-03-19",
 	"category": [
 		{
 			"id": "1",
@@ -10,7 +10,7 @@
 		},
 		{
 			"id": "2",
-			"name": "User-Experience Design",
+			"name": "User Experience Design",
 			"shortName": "UX Design",
 			"techniques": [
 				{
@@ -52,7 +52,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.2 Understand visitor requirements or constraints, resolving barriers to access](https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access).",
 					"description": [
 						{
-							"1": "Provide a mechanism for application and website owners to better curate their products and services around the needs of their visitors and those affected by what has been created and in doing so, reduce the PPP burden which can impact the sustainability of the website, especially around Social, people-centered (and user-experience) impacts.",
+							"1": "Provide a mechanism for application and website owners to better curate their products and services around the needs of their visitors and those affected by what has been created and in doing so, reduce the PPP burden which can impact the sustainability of the website, especially around Social, people-centered (and user experience) impacts.",
 							"2": "It should be noted that for machine automation, only quantitative feedback will be able to be processed (and therefore useful) and all information gathering must be done sustainably and ethically. It should also be noted that because information is being requested, internal access may be required to formally identify certain characteristics necessary for processing."
 						}
 					],
@@ -83,7 +83,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.2 Understand visitor requirements or constraints, resolving barriers to access](https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access).",
 					"description": [
 						{
-							"1": "Provide a mechanism so that websites and applications can offer contingency processes for visitors who have constraints such as an older device, an out-of-date operating system, an unusual or out-of-date browser, or a slow Internet connection. Other contingencies exist (such as geo-blocking or mobile data costs) and these can also be taken into account if detection is possible. Each of these issues can burden the user-experience and cause added conflict along the pipeline in terms of emissions.",
+							"1": "Provide a mechanism so that websites and applications can offer contingency processes for visitors who have constraints such as an older device, an out-of-date operating system, an unusual or out-of-date browser, or a slow Internet connection. Other contingencies exist (such as geo-blocking or mobile data costs) and these can also be taken into account if detection is possible. Each of these issues can burden the user experience and cause added conflict along the pipeline in terms of emissions.",
 							"2": "If detection is not available (such as in cases where the Internet is unavailable), Non-digital investigation should be conducted where possible (such as through the use of mail or telephone feedback). Once the constraint has been detected, it will often be up to the developer to create a solution that will involve compatibility features or reducing the load on the visitor's device to increase ease of access. If there are questions regarding the potential compatibility or availability of services due to a certain configuration, seek the manufacturer's advice for further guidance."
 						}
 					],
@@ -244,7 +244,7 @@
 					"description": [
 						{
 							"1": "Help increase the readability of content within a website or application by breaking down larger pieces of content into smaller constituent pieces. In the same way that a book is broken down into chapters, using progressive disclosure you can reveal sections when the reader is ready, avoiding information overload (the same can be done with long tasks).",
-							"2": "For machine testability, identification of such progressive disclosure markers can be found using the HTML details or dialog element, the CSS target selector (and its accompanying HTML ID attributes), the CSS checkbox hack, the use of JavaScript HashBangs, and also the use of state (and content) changes through various frameworks. Each of these can build a picture of how content displays on-screen during the user-experience, and some can load content only when it is requested which can reduce data transfer and rendering requests leading to sustainability improvements."
+							"2": "For machine testability, identification of such progressive disclosure markers can be found using the HTML details or dialog element, the CSS target selector (and its accompanying HTML ID attributes), the CSS checkbox hack, the use of JavaScript HashBangs, and also the use of state (and content) changes through various frameworks. Each of these can build a picture of how content displays on-screen during the user experience, and some can load content only when it is requested which can reduce data transfer and rendering requests leading to sustainability improvements."
 						}
 					],
 					"examples": [
@@ -274,7 +274,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.6 Minimize non-essential content, interactivity, or journeys](https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys).",
 					"description": [
 						{
-							"1": "Reduce problematic friction within the user-experience and help reduce the number of dark patterns which might occur onLoad and during the interaction process as these can cause considerable sustainability issues as a result of wasted emissions. By ensuring that the visitor remains in control of the interface and that websites and applications work as expected, a more ethical and optimized product or service is likely to result.",
+							"1": "Reduce problematic friction within the user experience and help reduce the number of dark patterns which might occur onLoad and during the interaction process as these can cause considerable sustainability issues as a result of wasted emissions. By ensuring that the visitor remains in control of the interface and that websites and applications work as expected, a more ethical and optimized product or service is likely to result.",
 							"2": "Machine testing can analyze JavaScript for the use of popup events, the appearance of \"_blank\" within hyperlinks or frames, or other functionality that exists that may produce overlays. It's important to question the acceptability of such usage for example, opening links in new windows may be acceptable for non-web formats like PDF, otherwise, it's best to advise against its use."
 						}
 					],
@@ -495,7 +495,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.9 Be attentive rather than distracting](https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting).",
 					"description": [
 						{
-							"1": "Allow the visitor to achieve the task they initially set out to do and not trigger unnecessary issues in the user-experience which would undermine their ability to complete the said task. Issues such as infinite scrolling can promote a need for continued browsing (which can load excessive data and have a sustainability impact on rendering) and loading overlays that deviate visitors from their path will have wider societal impacts on PPP targets which need to be considered.",
+							"1": "Allow the visitor to achieve the task they initially set out to do and not trigger unnecessary issues in the user experience which would undermine their ability to complete the said task. Issues such as infinite scrolling can promote a need for continued browsing (which can load excessive data and have a sustainability impact on rendering) and loading overlays that deviate visitors from their path will have wider societal impacts on PPP targets which need to be considered.",
 							"2": "Within this technique, machine testability can be considered by examining if common link pagination landmarks (previous, next, <numbers>, etc) exist within category listings and if overlays or attention-keeping features are detected for common patterns (such as those mentioned in the examples below). If screen addition mechanisms are determined to be in use within a website, this should be considered a failing mark against the related success criteria."
 						}
 					],
@@ -612,7 +612,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.11 Avoid being manipulative or deceptive](https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive).",
 					"description": [
 						{
-							"1": "Proof your code and content for practices that might detract from the user-experience but are done, purely in an attempt to gain higher rankings from within search engines. While getting such a position would be beneficial, using such techniques will often get the reputation of your site on these services tarnished and your rank will suffer significantly.",
+							"1": "Proof your code and content for practices that might detract from the user experience but are done, purely in an attempt to gain higher rankings from within search engines. While getting such a position would be beneficial, using such techniques will often get the reputation of your site on these services tarnished and your rank will suffer significantly.",
 							"2": "Your visibility in search engines and social media matters. Visibility is how people find you on the web. If people cannot find you or sections of your website or application, they will consume resources in that effort (or trying to find a replacement). Additionally, bad SEO practices targeting only machines consume visitor resources for rendering and produce excess emissions."
 						}
 					],
@@ -1156,7 +1156,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.17 Animation must be proportionate and easy to control](https://w3c.github.io/sustainableweb-wsg/#animation-must-be-proportionate-and-easy-to-control).",
 					"description": [
 						{
-							"1": "Determine if animation usage within an application or website will diminish the user-experience. By calculating the number of animations that occur and identifying if this number firstly can be reduced and then running each of them individually and identifying if they cause lagging on lower specification devices, offering a resolution will help reduce the CPU and GPU burden which can consume vast visitor resources.",
+							"1": "Determine if animation usage within an application or website will diminish the user experience. By calculating the number of animations that occur and identifying if this number firstly can be reduced and then running each of them individually and identifying if they cause lagging on lower specification devices, offering a resolution will help reduce the CPU and GPU burden which can consume vast visitor resources.",
 							"2": "It should be noted that the types of animations used can dramatically affect the rendering process. Certain CSS transitions and animations are more process efficient than others, and JavaScript animation can also have differing impacts on CSS in both the choice of animation and how it has been put together. This should be considered when testing to offer low-impact animations and effects."
 						}
 					],
@@ -2645,7 +2645,7 @@
 					],
 					"examples": [
 						{
-							"1": "[This article from TheGood](https://thegood.com/insights/form-design-examples/) showcases multiple examples of great form design not only from the point of the user-experience but also in the development to ensure that the ability to make mistakes is reduced."
+							"1": "[This article from TheGood](https://thegood.com/insights/form-design-examples/) showcases multiple examples of great form design not only from the point of the user experience but also in the development to ensure that the ability to make mistakes is reduced."
 						}
 					],
 					"tests": [
@@ -3133,7 +3133,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.18 Include expected and beneficial files](https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files).",
 					"description": [
 						{
-							"1": "Ensure that the non-HTML files that are expected to be located within the base directory of a website can firstly be found and secondly are correctly formatted (using the right syntax) and match the expectations of the product or service that requires them to benefit the visitor with a better user-experience, increased accessibility, and sustainability.",
+							"1": "Ensure that the non-HTML files that are expected to be located within the base directory of a website can firstly be found and secondly are correctly formatted (using the right syntax) and match the expectations of the product or service that requires them to benefit the visitor with a better user experience, increased accessibility, and sustainability.",
 							"2": "For machine testability, tooling should aim to identify that the listed files are provided (if not flag these justifying the need for their inclusion). If they are included they should be examined to ensure they are semantically correct, especially if they are formed using a strict language such as XML. If they fail to validate correctly errors should constitute a failure to meet the success criteria."
 						}
 					],
@@ -3438,7 +3438,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.2 Optimize caching with offline access supported](https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported).",
 					"description": [
 						{
-							"1": "Identify if techniques could be used to increase the performance within the user-experience. Examples of this could include identifying if cookies could (and should) be used within an interface or if the website or application could be transformed into a progressive web application to provide advantages (project-wide) such as offline availability.",
+							"1": "Identify if techniques could be used to increase the performance within the user experience. Examples of this could include identifying if cookies could (and should) be used within an interface or if the website or application could be transformed into a progressive web application to provide advantages (project-wide) such as offline availability.",
 							"2": "Machine testability to identify existing features is relatively straightforward as it simply requires identifying through the source code where cookies, local database requests, service, or web workers are implemented and ensuring that they are both proportionate and correctly marked up. If these don't exist it will require analyzing the page (or components) for potential opportunities for use."
 						}
 					],
@@ -3535,7 +3535,7 @@
 					],
 					"examples": [
 						{
-							"1": "HubSpot has [some great examples](https://blog.hubspot.com/blog/tabid/6307/bid/33766/10-clever-website-error-messages-from-creative-companies.aspx) of 404 (page not found) error pages showcasing good user-experience design in addition to providing a few helpful pieces of advice regarding how they should function.",
+							"1": "HubSpot has [some great examples](https://blog.hubspot.com/blog/tabid/6307/bid/33766/10-clever-website-error-messages-from-creative-companies.aspx) of 404 (page not found) error pages showcasing good user experience design in addition to providing a few helpful pieces of advice regarding how they should function.",
 							"2": "This [GitHub package](https://github.com/HttpErrorPages/HttpErrorPages) provides support for multiple servers and offers a decent boilerplate for anyone wishing to ensure coverage for a wide range of common errors that can occur during site browsing."
 						}
 					],
@@ -3824,7 +3824,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.12 Store data according to the needs of your users](https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
 						{
-							"1": "Increase findability within content by offering mechanisms within the page for visitors to filter the results of potential content they are seeking by category, tag, or other variables. How this feature is presented to visitors can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user-experience.",
+							"1": "Increase findability within content by offering mechanisms within the page for visitors to filter the results of potential content they are seeking by category, tag, or other variables. How this feature is presented to visitors can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.",
 							"2": "Machine testability for such features will involve examining the page's source code to identify repeating patterns across several pages (if correctly labeled, patterns such as tags or categories may be semantically easy to find). The sustainability of such implementations must account for the impact it has upon rendering across each page, against the benefit it has to the visitor experience."
 						}
 					],
