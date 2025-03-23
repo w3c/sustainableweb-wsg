@@ -2560,7 +2560,7 @@
 						{
 							"title": "Third-party Implementation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD07-2)",
-							"description": "Third-party content (including plugins, widgets, feeds, maps, carousels, etc) should be placed behind a click-to-load delay screen (using the \"import on interaction\" pattern), while alternatives to automated solutions such as chatbots should be offered."
+							"description": "Third-party content (including plugins, widgets, feeds, maps, carousels, chat widgets, etc) that loads or requests resources or functionality from a location outside of the primary location, should be placed behind a click-to-load delay screen (using the \"import on interaction\" pattern), while alternatives are offered, for instance a link to a contact form as an alternative for a chat widget."
 						},
 						{
 							"title": "Libraries And Frameworks",
