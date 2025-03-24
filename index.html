@@ -83,7 +83,7 @@
 				let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
 				if (document.body.classList.contains('full-document') || window.location.href.includes('pr-preview')) {
 					document.body.classList.remove('full-document'); }
-				if (window.location.hash) {
+				if (current) {
 					for (const value of sections) {
 						for (const value of sections) {
 							if ( value != current ) {
