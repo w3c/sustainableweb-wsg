@@ -85,33 +85,32 @@
 					document.body.classList.remove('full-document'); }
 				if (window.location.hash) {
 					for (const value of sections) {
-						if (value == current || window.location.hash == "#full-document") {
+						for (const value of sections) {
+							if ( value != current ) {
+								document.getElementById(value).classList.add('hide'); } else {
+								document.getElementById(value).classList.remove('hide');
+								document.getElementById(value).classList.add('show'); }}
+						if (current == "abstract" || current == "sotd") { header(); }
+						for (const value of refs) {
+							if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
+								document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">
+									<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
+									<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+									<li></li>
+								</ol>`; } }
+						if (current == "full-document" || window.location.href.includes('pr-preview')) {
+							document.body.classList.add("full-document");
 							for (const value of sections) {
-								if ( value != current ) {
-									document.getElementById(value).classList.add('hide'); } else {
-									document.getElementById(value).classList.remove('hide');
-									document.getElementById(value).classList.add('show'); }}
-							if (current == "abstract" || current == "sotd") { header(); }
-							for (const value of refs) {
-								if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
-									document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">
-										<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
-										<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
-										<li></li>
-									</ol>`; } }
-							if (current == "full-document" || window.location.href.includes('pr-preview')) {
-								document.body.classList.add("full-document");
-								for (const value of sections) {
-									document.getElementById(value).classList.remove('hide');
-									document.getElementById(value).classList.add('show'); }
-									document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide'));
-									window.scrollTo(0, 0); } else {
-									document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
-									document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); }
-							let check = false;
-							for (const value of all) {
-								if (current == value && check == false ) { check = true; } }
-							if (check == false) { header(); } } }
+								document.getElementById(value).classList.remove('hide');
+								document.getElementById(value).classList.add('show'); }
+								document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide'));
+								window.scrollTo(0, 0); } else {
+								document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
+								document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); }
+						let check = false;
+						for (const value of all) {
+							if (current == value && check == false ) { check = true; } }
+						if (check == false) { header(); } }
 					// Assign your headings here to do the above for more than just the main sections
 					heading(introduction,"introduction");
 					heading(ux,"user-experience-design");
