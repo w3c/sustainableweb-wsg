@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-03-19",
+	"lastModified": "2025-03-24",
 	"category": [
 		{
 			"id": "1",
@@ -479,7 +479,6 @@
 							"Implementing image sprites in CSS": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_images/Implementing_image_sprites_in_CSS",
 							"Less Data Doesn't Mean a Lesser Experience": "https://timkadlec.com/remembers/2019-08-30-less-data-doesnt-mean-a-lesser-experience/",
 							"Less is more: How stripping back can improve UX Design": "https://www.uxdesigninstitute.com/blog/improve-ux-design/",
-							"Mobile website Load Time Statistics": "https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/",
 							"Reduce Redundancy": "https://www.nngroup.com/articles/reduce-redundancydecrease-duplicated-design-decisions/",
 							"Reduce The Number Of Images": "https://www.giftofspeed.com/minimize-images/",
 							"Reducing Cognitive Overload": "https://www.lionandmason.com/ux-blog/reducing-cognitive-overload-declutter-your-design-for-better-ux/",
@@ -543,7 +542,6 @@
 							"An Excellent Beginner's Guide to Information Architecture": "https://careerfoundry.com/en/blog/ux-design/a-beginners-guide-to-information-architecture/",
 							"Build and submit a sitemap": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en",
 							"Building Accessible Menu Systems": "https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/",
-							"Find And Add Your Sitemap": "https://accessibleweb.com/user-guide/finding-and-adding-your-sitemap/",
 							"[GPFEDS] 4.3 - UX and UI (Optimized Clickstream) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"GreenIT (French) 4008 - Mettre en place un sitemap efficient": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_4008_fr.md",
 							"How To Achieve Instant Navigations On The Web": "https://www.debugbear.com/blog/instant-navigations",
@@ -1041,7 +1039,7 @@
 					"example": [
 						{
 							"code": "<img src=\"image.jpg\" alt=\"...\" loading=\"lazy\"\/>\r\n<iframe src=\"video-player.html\" title=\"...\" loading=\"lazy\"><\/iframe>",
-							"content": "[Lazy loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading)."
+							"content": "[Lazy loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading)."
 						}
 					],
 					"resources": [
@@ -1183,7 +1181,6 @@
 							"GreenIT (French) 112 - Adapter les sons aux contextes d'écoute": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_112_fr.md",
 							"GreenIT (French) 114 - Adapter les vidéos aux contextes de visualisation": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_114_fr.md",
 							"GreenIT (French) 4003 - Éviter la lecture et le chargement automatique des vidéos et des sons": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_4003_fr.md",
-							"Green Production Guide": "https://greenproductionguide.com/",
 							"Greening of Streaming": "https://www.greeningofstreaming.org/",
 							"How can we design sustainably?": "https://medium.com/@sandra.pallier/how-can-we-design-sustainably-3be7530a0f5b",
 							"How to Compress a Video File without Losing Quality": "https://www.youtube.com/watch?v=sgmE1T8A4UY",
@@ -1195,6 +1192,7 @@
 							"OpQuast 120 - Sounds are user-triggered.": "https://checklists.opquast.com/en/web-quality-assurance/sounds-are-user-triggered",
 							"Optimizing Video for the Web": "https://www.mightybytes.com/blog/optimizing-video/",
 							"Reduce the weight of a web page: which elements have the greatest impact?": "https://greenspector.com/en/reduce-the-weight-of-a-web-page-which-elements-have-the-greatest-impact/",
+							"Sustainable Entertainment Alliance": "https://www.sustainableentertainmentalliance.org/",
 							"The carbon footprint of streaming video: fact-checking the headlines": "https://www.iea.org/commentaries/the-carbon-footprint-of-streaming-video-fact-checking-the-headlines",
 							"UI Tools": "https://designsustainably.eu/uitools/",
 							"Video - an Environmental Monster?": "https://www.linkedin.com/pulse/video-environmental-monster-joe-jones/",
@@ -1590,7 +1588,7 @@
 					"example": [
 						{
 							"code": "<form>\r\n\t<label for=\"choose\">Would you prefer a banana or cherry? (required)<\/label>\r\n\t<input id=\"choose\" name=\"i-like\" required \/>\r\n\t<button>Submit<\/button>\r\n<\/form>",
-							"content": "[Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Forms/Form_validation)."
+							"content": "[Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)."
 						}
 					],
 					"resources": [
@@ -1765,7 +1763,6 @@
 							"Usability Testing 101": "https://www.nngroup.com/articles/usability-testing-101/",
 							"Web Accessibility": "https://www.udacity.com/course/web-accessibility--ud891",
 							"Web Accessibility Checklist": "https://www.webaccessibilitychecklist.com/",
-							"Website Accessibility: 25 Statistics that Prove It Matters": "https://blog.hubspot.com/website/accessibility-statistics",
 							"Why does speed matter?": "https://web.dev/learn/performance/why-speed-matters?hl=en"
 						}
 					],
@@ -1819,7 +1816,7 @@
 					"resources": [
 						{
 							"Access Guide": "https://www.accessguide.io/",
-							"Accessibility": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Accessibility",
+							"Accessibility": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
 							"AWS WAF: SEC11-BP02 - Automate testing throughout the development and release lifecycle": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_automate_testing_throughout_lifecycle.html",
 							"Building a Greener Digital Future: Catchpoint Launches Carbon Control": "https://www.catchpoint.com/blog/building-a-greener-digital-future-catchpoint-launches-carbon-control",
 							"Front-End Performance Checklist 2021": "https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/",
@@ -2124,7 +2121,7 @@
 							"Progressive enhancement brings everyone in": "https://thehistoryoftheweb.com/the-inclusive-web-of-progressive-enhancement/",
 							"Quel design pour un navigateur low-tech? (French)": "https://graphism.fr/quel-design-pour-un-navigateur-low-tech/",
 							"Resilient web design": "https://resilientwebdesign.com/",
-							"Responsive design": "https://developer.mozilla.org/en-US/docs/Learn_web_development/CSS/CSS_layout/Responsive_Design",
+							"Responsive design": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
 							"Responsive Design and Accessibility": "https://www.boia.org/blog/responsive-design-and-accessibility",
 							"Responsive Design Mode": "https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/",
 							"Responsive Web Design": "https://alistapart.com/article/responsive-web-design/",
@@ -2322,8 +2319,7 @@
 							"Code splitting": "https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting",
 							"Electricity Intensity of Internet Data Transmission": "https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630",
 							"How code splitting increases performance": "https://blog.jakoblind.no/how-code-splitting-increases-performance/",
-							"JavaScript performance": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Performance/JavaScript",
-							"Mobile website Load Time Statistics": "https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/mobile-site-load-time-statistics/",
+							"JavaScript performance": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/JavaScript",
 							"You Might Not Need": "https://youmightnotneed.com/",
 							"You Might Not Need that Framework": "https://frontendmasters.com/blog/you-might-not-need-that-framework/"
 						}
@@ -2539,7 +2535,7 @@
 							"Clean Code Explained": "https://www.freecodecamp.org/news/clean-coding-for-beginners/",
 							"Produce clean and maintainable code": "https://www.ncsc.gov.uk/collection/developers-collection/principles/produce-clean-maintainable-code",
 							"DRY CSS: How to Use Declarations Just Once, Effectively": "https://meiert.com/en/blog/dry-css/",
-							"Organizing your CSS": "https://developer.mozilla.org/en-US/docs/Learn_web_development/CSS/Building_blocks/Organizing#css_methodologies",
+							"Organizing your CSS": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Organizing",
 							"Stop Redesigning And Start Tuning Your website Instead": "https://www.smashingmagazine.com/2012/05/stop-redesigning-start-tuning-your-site/",
 							"United Nations [SDGS] Goal 12 (Consumption & Production)": "https://sdgs.un.org/goals/goal12#targets_and_indicators",
 							"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2022/sustainability"
@@ -2632,7 +2628,7 @@
 							"How efficient code increases sustainability in the enterprise": "https://venturebeat.com/programming-development/how-efficient-code-increases-sustainability-in-the-enterprise/",
 							"How large DOM sizes affect interactivity": "https://web.dev/articles/dom-size-and-interactivity?hl=en",
 							"How tracking pixels work": "https://jvns.ca/blog/how-tracking-pixels-work/",
-							"JavaScript performance": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Performance/JavaScript",
+							"JavaScript performance": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/JavaScript",
 							"Lighthouse: Lazy load third-party resources with facades": "https://gtmetrix.com/lazy-load-third-party-resources-with-facades.html",
 							"Make Better Ads (PDF)": "https://assets.ctfassets.net/ozc5on9ss4ee/1CY4ycGNINwaVU1efbjN9B/c4077a6d5fdac802838ff1d19be21b51/WeTransfer_Advertising_-_Make_better_ads_whitepaper_-_2023.pdf",
 							"MicroJS": "http://microjs.com/",
@@ -2724,7 +2720,7 @@
 							"[GPFEDS] 2.9 - Specifications (Off-The-Shelf Components) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"[GPFEDS] 4.5 - UX and UI (Native Components) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"[GR491] 1-4006 - Information Over Presentation": "https://gr491.isit-europe.org/en/crit.php?id=1-4006-contents-automatons-and-accessibility-assistants-use-tags-to",
-							"HTML: A good basis for accessibility": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Accessibility/HTML",
+							"HTML: A good basis for accessibility": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML",
 							"HTML First": "https://html-first.com/",
 							"HTML5 For Web Designers": "https://html5forwebdesigners.com/",
 							"Jumping HTML tags. Another reason to validate your markup": "https://pepelsbey.dev/articles/jumping-html-tags/",
@@ -2795,7 +2791,7 @@
 					],
 					"resources": [
 						{
-							"CSS performance optimization": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Performance/CSS",
+							"CSS performance optimization": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/CSS",
 							"Electricity Intensity of Internet Data Transmission": "https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630",
 							"Fast Load Times: Lazy-load images and video": "https://web.dev/explore/fast?hl=en#lazy-load-images-and-video",
 							"Fast Load Times: Optimize your resource delivery": "https://web.dev/explore/fast?hl=en#optimize-your-resource-delivery",
@@ -2804,12 +2800,12 @@
 							"Get All That Network Activity Under Control with Priority Hints": "https://macarthur.me/posts/priority-hints/",
 							"Islands Architecture": "https://www.patterns.dev/vanilla/islands-architecture",
 							"Lazy loading": "https://en.wikipedia.org/wiki/Lazy_loading",
-							"Lazy loading (Performance)": "https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading",
+							"Lazy loading (Performance)": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading",
 							"On the Impact of the Critical CSS Technique on the Performance and Energy Consumption of Mobile Browsers (PDF)": "https://www.ivanomalavolta.com/files/papers/EASE_2022_critical_css.pdf",
 							"Optimizing The Critical Rendering Path": "https://www.debugbear.com/blog/optimizing-the-critical-rendering-path",
 							"Tight Mode: Why Browsers Produce Different Performance Results": "https://www.smashingmagazine.com/2025/01/tight-mode-why-browsers-produce-different-performance-results/",
 							"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2022/sustainability",
-							"Web performance resources": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Performance/Web_Performance_Basics"
+							"Web performance resources": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/Web_Performance_Basics"
 						}
 					],
 					"tags": ["Assets", "CSS", "JavaScript", "Performance"]
@@ -2874,7 +2870,7 @@
 							"Learn about sitemaps": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview?hl=en",
 							"Ledger of Harms": "https://ledger.humanetech.com/",
 							"MetaExtensions": "https://wiki.whatwg.org/wiki/MetaExtensions",
-							"Perceived performance": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Performance/Perceived_performance",
+							"Perceived performance": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/Perceived_performance",
 							"Research Shows that Searching for Information at Work Wastes Time and Money": "https://www.articlecube.com/research-shows-searching-information-work-wastes-time-and-money",
 							"Sitemaps Protocol": "https://www.sitemaps.org/protocol.html",
 							"Skip Navigation Links": "https://webaim.org/techniques/skipnav/",
@@ -2934,7 +2930,7 @@
 					"resources": [
 						{
 							"48 Cart Abandonment Rate Statistics 2023": "https://baymard.com/lists/cart-abandonment-rate",
-							"Client-side form validation": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Forms/Form_validation",
+							"Client-side form validation": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation",
 							"Data Validation": "https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/",
 							"Designing for forgiveness": "https://uxdesign.cc/designing-for-forgiveness-how-to-create-error-tolerant-interfaces-af9146c8072b",
 							"[GPFEDS] 4.10 - UX and UI (Input Format) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -3176,7 +3172,7 @@
 							"Progressive enhancement brings everyone in": "https://thehistoryoftheweb.com/the-inclusive-web-of-progressive-enhancement/",
 							"Progressive Enhancement: What It Is, And How To Use It?": "https://www.smashingmagazine.com/2009/04/progressive-enhancement-what-it-is-and-how-to-use-it/",
 							"Resilient web design": "https://resilientwebdesign.com/",
-							"Responsive design": "https://developer.mozilla.org/en-US/docs/Learn_web_development/CSS/CSS_layout/Responsive_Design",
+							"Responsive design": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
 							"Responsive Design and Accessibility": "https://www.boia.org/blog/responsive-design-and-accessibility",
 							"Responsive Design Mode": "https://firefox-source-docs.mozilla.org/devtools-user/responsive_design_mode/",
 							"Responsive Web Design": "https://alistapart.com/article/responsive-web-design/",
@@ -3324,7 +3320,7 @@
 							"United Nations [SDGS] Goal 16 (Sustainable Society)": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
 							"United Nations [SDGS] Goal 17 (Global Partnership)": "https://sdgs.un.org/goals/goal17#targets_and_indicators",
 							"Web security": "https://developer.mozilla.org/en-US/docs/Web/Security",
-							"Website security": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Server-side/First_steps/Website_security",
+							"Website security": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/First_steps/Website_security",
 							"WordPress Security: How to Protect Your website from Attacks and Hackers": "https://www.mightybytes.com/blog/wordpress-security/"
 						}
 					],
@@ -3843,12 +3839,10 @@
 							"Carbon Awareness": "https://learn.greensoftware.foundation/carbon-awareness/",
 							"Carbon Credits vs Renewable Energy Credits": "https://impactful.ninja/carbon-credits-vs-renewable-energy-credits-differences/",
 							"Carbon Neutral Verification": "https://www.carbontrust.com/what-we-do/product-carbon-footprint-labelling/carbon-neutral-verification",
-							"Carbon Usage Effectiveness: A Green Grid Data Center Sustainability Metric": "https://www.thegreengrid.org/en/resources/library-and-tools/241-Carbon-Usage-Effectiveness-(CUE):-A-Green-Grid-Data-Center-Sustainability-Metric",
 							"Circular Economy": "https://sustainabilityguide.eu/sustainability/circular-economy/",
 							"Cloud Computing, Server Utilization, & the Environment": "https://aws.amazon.com/blogs/aws/cloud-computing-server-utilization-the-environment/",
 							"Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/documents/publications/jrc132576_jrc132576_jrc_2023_best_practice_guidelines_v14.1.0final_gt1.pdf",
 							"Data center emissions probably 662% higher than big tech claims. Can it keep up the ruse?": "https://www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech",
-							"Data Center Water Usage Effectiveness": "https://www.akcp.com/blog/data-center-water-usage-effectiveness-wue/",
 							"Data Centres and Data Transmission Networks": "https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks",
 							"Data Centres Code of Conduct": "https://e3p.jrc.ec.europa.eu/communities/data-centres-code-conduct",
 							"Digital Reset (PDF)": "https://digitalization-for-sustainability.com/digital-reset/",
@@ -3975,9 +3969,9 @@
 					"resources": [
 						{
 							"A Web Caching Primer": "https://www.researchgate.net/publication/2570397_A_Web_Caching_Primer",
-							"Apache Configuration: .htaccess": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Server-side/Apache_Configuration_htaccess",
+							"Apache Configuration: .htaccess": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Apache_Configuration_htaccess",
 							"Back/forward cache": "https://web.dev/articles/bfcache?hl=en",
-							"Client-side storage": "https://developer.mozilla.org/en-US/docs/Learn_web_development/JavaScript/Client-side_web_APIs/Client-side_storage",
+							"Client-side storage": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Client-side_storage",
 							"Front-End Performance 2021: Build Optimizations": "https://www.smashingmagazine.com/2021/01/front-end-performance-build-optimizations/",
 							"Future trends of Green All Optical Networks and ICT Infrastructure in a large context": "https://www.researchgate.net/publication/368690756_Future_trends_of_Green_All_Optical_Networks_and_ICT_Infrastructure_in_a_large_context_-_trends_to_2050",
 							"Going Offline": "https://goingoffline.adactio.com/",
@@ -4053,7 +4047,7 @@
 					"resources": [
 						{
 							"10 Steps to Avoid Enormous Network Payloads": "https://www.debugbear.com/blog/avoid-enormous-network-payloads",
-							"Apache Configuration: .htaccess": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Server-side/Apache_Configuration_htaccess",
+							"Apache Configuration: .htaccess": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Apache_Configuration_htaccess",
 							"Audacity": "https://www.audacityteam.org/",
 							"Cost of living: Impact of rising costs on disabled people": "https://lordslibrary.parliament.uk/cost-of-living-impact-of-rising-costs-on-disabled-people/",
 							"Does GZIP Save CO2?": "https://www.green-coding.io/case-studies/does-gzip-save-co2/",
@@ -4139,7 +4133,7 @@
 							"How Error Pages and Redirects Make Your Website More Sustainable": "https://www.mightybytes.com/blog/redirects-sustainability/",
 							"How to create great error pages": "https://uxdesign.cc/how-to-create-great-error-pages-b2de5e5daca8",
 							"How to Redirect a Web Page": "https://css-tricks.com/redirect-web-page/",
-							"HTTP response status codes": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status",
+							"HTTP response status codes": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status",
 							"When Online Content Disappears": "https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/",
 							"Why You Should Constantly Check for Broken Links in WordPress": "https://www.greengeeks.com/tutorials/why-you-should-constantly-check-for-broken-links-in-wordpress/",
 							"Why you should be testing your 404 pages web performance": "https://nooshu.com/blog/2020/08/25/you-should-be-testing-your-404-pages-web-performance/"
@@ -4504,7 +4498,7 @@
 							"Carbon Aware Computing: Next Green Breakthrough or New Greenwashing?": "https://hackernoon.com/carbon-aware-computing-next-green-breakthrough-or-new-greenwashing",
 							"CDN Compare": "https://www.cdnperf.com/cdn-compare",
 							"Cloud Computing, Server Utilization, & the Environment": "https://aws.amazon.com/blogs/aws/cloud-computing-server-utilization-the-environment/",
-							"Cross-Origin Resource Sharing (CORS)": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS",
+							"Cross-Origin Resource Sharing (CORS)": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
 							"Data center emissions probably 662% higher than big tech claims. Can it keep up the ruse?": "https://www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech",
 							"Double-keyed Caching: How Browser Cache Partitioning Changed the Web": "https://addyosmani.com/blog/double-keyed-caching/",
 							"Edge computing": "https://en.wikipedia.org/wiki/Edge_computing",
@@ -4784,7 +4778,7 @@
 							"[GPFEDS] 1.1 - Strategy (Assessment & Impact) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"[GR491] 2-3014 - Compliance Labelling": "https://gr491.isit-europe.org/en/crit.php?id=2-3014-uxui-a-number-of-resources-are-available-to",
 							"Green Web Checker": "https://www.thegreenwebfoundation.org/green-web-check/",
-							"How to amplify your sustainability efforts through your user experience": "https://www.thinkwithgoogle.com/intl/en-emea/future-of-marketing/creativity/sustainability-user-experience/",
+							"How to amplify your sustainability efforts through your user experience": "https://business.google.com/us/think/future-of-marketing/sustainability-user-experience/ability-user-experience/",
 							"How to Build Effective Sustainability Governance Structures": "https://www.bsr.org/en/blog/how-to-build-effective-sustainability-governance-structures",
 							"How To Write a Code of Ethics: 5 Steps to Follow": "https://www.contractscounsel.com/b/how-to-write-a-code-of-ethics",
 							"How to Write an Effective Product Requirements Documents": "https://www.jamasoftware.com/requirements-management-guide/writing-requirements/how-to-write-an-effective-product-requirements-document",
@@ -4919,9 +4913,8 @@
 							"[GR491] 2-3011 - Stakeholder Awareness": "https://gr491.isit-europe.org/en/crit.php?id=2-3011-uxui-to-accede-you-have-to-understand.-sustainable",
 							"[GR491] 2-3015 - Reference Materials": "https://gr491.isit-europe.org/en/crit.php?id=2-3015-uxui-users-posture-remains-one-of-the-points",
 							"Green Software Practitioner": "https://learn.greensoftware.foundation/",
-							"How to amplify your sustainability efforts through your user experience": "https://www.thinkwithgoogle.com/intl/en-emea/future-of-marketing/creativity/sustainability-user-experience/",
+							"How to amplify your sustainability efforts through your user experience": "https://business.google.com/us/think/future-of-marketing/sustainability-user-experience/ability-user-experience/",
 							"Make Sustainability Part of Everybody's Job": "https://techcommunity.microsoft.com/blog/greentechblog/make-sustainability-part-of-everybodys-job/3146718",
-							"Product For Net Zero": "https://productfornetzero.com/",
 							"Sustainable Web Development Strategies Within An Organization": "https://www.smashingmagazine.com/2022/10/sustainable-web-development-strategies-organization/",
 							"United Nations [SDGS] Goal 1 (Poverty)": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
 							"United Nations [SDGS] Goal 4 (Education)": "https://sdgs.un.org/goals/goal4#targets_and_indicators",
@@ -5130,7 +5123,7 @@
 					],
 					"example": [
 						{
-							"content": "A common form of certification in the Web development field for individuals valuing inclusive design is the [Certified Professional in Web Accessibility](https://www.accessibilityassociation.org/s/certification)."
+							"content": "A common form of certification in the Web development field for individuals valuing inclusive design is the [Certified Professional in Web Accessibility](https://www.accessibilityassociation.org/certification-overview)."
 						}
 					],
 					"resources": [
@@ -5281,7 +5274,6 @@
 							"More than values: The value-based sustainability reporting that investors want": "https://www.mckinsey.com/capabilities/sustainability/our-insights/more-than-values-the-value-based-sustainability-reporting-that-investors-want",
 							"Our Digital Greenwashing Guide": "https://www.mightybytes.com/blog/digital-greenwashing-guide/",
 							"Sustainability Accounting Standards Board": "https://sasb.ifrs.org/",
-							"Sustainability Reporting tips (PDF)": "https://www.pwc.com/gx/en/audit-services/corporate-reporting/sustainability-reporting/assets/pwc-sustainability-reporting-tips-private-sector.pdf",
 							"Task Force on Climate-related Financial Disclosures": "https://www.fsb-tcfd.org/",
 							"United Nations [SDGS] Goal 4 (Education)": "https://sdgs.un.org/goals/goal4#targets_and_indicators",
 							"United Nations [SDGS] Goal 8 (Economics & Work)": "https://sdgs.un.org/goals/goal8#targets_and_indicators",
@@ -5407,7 +5399,7 @@
 							"Code Refactoring: Meaning, Benefits and Best Practices": "https://maddevs.io/blog/code-refactoring/",
 							"Complete Website Maintenance Checklist": "https://www.dreamhost.com/blog/complete-website-maintenance-checklist/",
 							"Consequence Scanning": "https://doteveryone.org.uk/project/consequence-scanning/",
-							"Developing Killer Website Maintenance Plans": "https://www.thundertech.com/blog-news/september-2021/developing-website-maintenance-plans",
+							"Developing Killer Website Maintenance Plans": "https://www.thundertech.com/blog-news/developing-website-maintenance-plans",
 							"Digitalization for sustainable maintenance services": "https://www.sciencedirect.com/science/article/pii/S2666954421000107",
 							"[GPFEDS] 1.4 - Strategy (Regular Reviews) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"[GPFEDS] 2.6 - Specifications (Design Review) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -5417,7 +5409,6 @@
 							"Hacksplaning": "https://www.hacksplaining.com/lessons",
 							"How efficient code increases sustainability in the enterprise": "https://venturebeat.com/programming-development/how-efficient-code-increases-sustainability-in-the-enterprise/",
 							"OWASP Web Application Security Testing Checklist": "https://github.com/0xRadi/OWASP-Web-Checklist",
-							"Product Strategy: What It Is, How To Build One, and Examples": "https://blog.hubspot.com/sales/product-strategy",
 							"Technical Debt, Agile, and Sustainability": "https://www.mightybytes.com/blog/technical-debt-agile-and-sustainability/",
 							"The High-Risk Refactoring": "https://webup.org/blog/the-high-risk-refactoring/",
 							"The Key Sustainability Priorities for Technology Product Managers": "https://www.gartner.com/en/articles/sustainability-priorities-for-technology-product-managers",
@@ -5826,7 +5817,7 @@
 							"How to Ensure a Living Wage for All Employees, Globally and Regionally": "https://unglobalcompact.org/academy/how-to-ensure-a-living-wage-for-all-employees",
 							"How to Make Employee Benefits More Sustainable": "https://www.corporatewellnessmagazine.com/article/how-to-make-employee-benefits-more-sustainable",
 							"How to Motivate People Toward Sustainability": "https://nbs.net/how-to-motivate-people-toward-sustainability/",
-							"Living Wage Network": "https://www.livingwagenetwork.org/",
+							"Living Wage Network": "https://www.livingwage.org.uk/global-living-wage-network",
 							"Sustainability innovations and firm competitiveness": "https://www.sciencedirect.com/science/article/pii/S0959652620347594",
 							"The Real Living Wage Is A Core Part Of Any ESG Agenda": "https://livingwage.org.uk/news/real-living-wage-core-part-any-esg-agenda",
 							"United Nations [SDGS] Goal 1 (Poverty)": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
@@ -5875,7 +5866,7 @@
 					],
 					"resources": [
 						{
-							"Give the planet a seat at the table": "https://www.methods.co.uk/blog/give-the-planet-a-seat-at-the-table/",
+							"Give the planet a seat at the table": "https://www.bcs.org/articles-opinion-and-research/give-the-planet-a-seat-at-the-table/",
 							"Giving nature a seat on the board is a powerful way to make sure businesses protect our environment": "https://greenallianceblog.org.uk/2022/09/22/giving-nature-a-seat-on-the-board-is-a-powerful-way-to-make-sure-businesses-protect-our-environment/",
 							"[GR491] 1-3007 - Management Alignment": "https://gr491.isit-europe.org/en/crit.php?id=1-3007-uxui-for-the-sustainable-it-issue-to-be",
 							"United Nations [SDGS] Goal 5 (Gender Equality)": "https://sdgs.un.org/goals/goal5#targets_and_indicators",
@@ -5934,7 +5925,7 @@
 					],
 					"example": [
 						{
-							"content": "These websites have some good examples of [accessibility statements](https://mangrove-web.com/accessibility-statement/), [equality and inclusion](https://mangrove-web.com/diversity-equity-inclusion/), [diversity](https://www.navapbc.com/dei/2022), and, [general accessibility](https://civicactions.com/accessibility-statement)."
+							"content": "These websites have some good examples of [accessibility statements](https://mangrove-web.com/accessibility-statement/), [equality and inclusion](https://mangrove-web.com/diversity-equity-inclusion/), [diversity](https://www.navapbc.com/values), and, [general accessibility](https://civicactions.com/accessibility-statement)."
 						}
 					],
 					"resources": [
@@ -5944,7 +5935,6 @@
 							"Developing an Accessibility Statement": "https://www.w3.org/WAI/planning/statements/",
 							"Employers, Here Are 4 Ways You Can Advocate For Your Underrepresented Employees": "https://www.forbes.com/sites/heidilynnekurter/2020/09/16/employers-here-are-4-ways-you-can-advocate-for-your-underrepresented-employees/",
 							"Equal Rights Advocates": "https://www.equalrights.org/issue/economic-workplace-equality/equal-pay-today/",
-							"How to Write an Accessibility Statement: Everything You Need to Know": "https://blog.hubspot.com/website/accessibility-statements",
 							"JEDI Collaborative": "https://jedicollaborative.com/",
 							"JEDI Investing Toolkit": "https://www.jediinvesting.com/",
 							"Managers, Here's How to Advocate for Pay Equity": "https://hbr.org/2021/11/managers-heres-how-to-advocate-for-pay-equity",
@@ -6549,7 +6539,7 @@
 							"Performance Budget": "https://www.performancebudget.io/",
 							"Performance Budget Calculator": "https://perf-budget-calculator.firebaseapp.com/",
 							"Performance budget visualizer": "https://codepen.io/bradfrost/pen/EPQVBp/",
-							"Performance budgets": "https://developer.mozilla.org/en-US/docs/Web/Performance/Performance_budgets",
+							"Performance budgets": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Performance_budgets",
 							"Performance budgets 101": "https://web.dev/articles/performance-budgets-101?hl=en",
 							"Performance Budgets: The Easiest Way to a Faster Site": "https://calibreapp.com/blog/performance-budgets",
 							"Reduce Your Website's Environmental Impact With a Carbon Budget": "https://css-tricks.com/reduce-your-websites-environmental-impact-with-a-carbon-budget/",

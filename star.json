@@ -2,7 +2,7 @@
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-03-19",
+	"lastModified": "2025-03-24",
 	"category": [
 		{
 			"id": "1",
@@ -89,7 +89,7 @@
 					],
 					"examples": [
 						{
-							"1": "[Using](https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent) [UserAgent](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent) to identify visitor characteristics that might impact their experience when using your product or service such as an issue of compatibility or performance.",
+							"1": "[Using](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Browser_detection_using_the_user_agent) [UserAgent](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent) to identify visitor characteristics that might impact their experience when using your product or service such as an issue of compatibility or performance.",
 							"2": "Certain political situations may result in the inability for visitors to access your product or service hassle-free such as geo-blocking restrictions, the cost of bandwidth, or government-enacted firewalls, filters, or authentication requirements."
 						}
 					],
@@ -3475,7 +3475,7 @@
 					],
 					"examples": [
 						{
-							"1": "The [Solid Chocolate Company](https://www.solidchocolateco.com/) serves all of their content using GZIP compression headers ensuring that data gets to the visitor as quickly as possible (in addition to compressing image and media assets at source)."
+							"1": "The [Solid Chocolate Company](https://www.solidchocolates.com/) serves all of their content using GZIP compression headers ensuring that data gets to the visitor as quickly as possible (in addition to compressing image and media assets at source)."
 						}
 					],
 					"tests": [
@@ -4460,7 +4460,7 @@
 					],
 					"examples": [
 						{
-							"1": "[Fat Beehive is a great example](https://www.fatbeehive.com/join-our-team/) of a careers / life at work page done well that showcases the benefits that will be gained from working within the organization and also the benefits that will be gained outside of payment.",
+							"1": "[Wholegrain Digital is a great example](https://www.wholegraindigital.com/jobs/) of a careers / life at work page done well that showcases the benefits that will be gained from working within the organization and also the benefits that will be gained outside of payment.",
 							"2": "Rocketmakers provide information [about their values](https://www.rocketmakers.com/careers) (the benefits they hope to get from workers) as well as the benefits they offer (outside of the wage). It's a visually striking layout as well which helps sell the appeal."
 						}
 					],
