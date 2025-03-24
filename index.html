@@ -81,10 +81,11 @@
 				let credits = hashSection('#acknowledgments section');
 				let refs = hashSection('#references section');
 				let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
-				if (document.body.classList.contains('full-document')) { document.body.classList.remove('full-document'); }
+				if (document.body.classList.contains('full-document') || window.location.href.includes('pr-preview')) {
+					document.body.classList.remove('full-document'); }
 				if (window.location.hash) {
 					for (const value of sections) {
-						if (value == current || "full-document") {
+						if (value == current || window.location.hash == "#full-document") {
 							for (const value of sections) {
 								if ( value != current ) {
 									document.getElementById(value).classList.add('hide'); } else {
@@ -98,7 +99,7 @@
 										<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
 										<li></li>
 									</ol>`; } }
-							if (current == "full-document") {
+							if (current == "full-document" || window.location.href.includes('pr-preview')) {
 								document.body.classList.add("full-document");
 								for (const value of sections) {
 									document.getElementById(value).classList.remove('hide');
