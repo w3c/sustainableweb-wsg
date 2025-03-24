@@ -87,6 +87,7 @@
 					for (const value of sections) {
 						for (const value of sections) {
 							if ( value != current ) {
+								document.getElementById(value).classList.remove('show');
 								document.getElementById(value).classList.add('hide'); } else {
 								document.getElementById(value).classList.remove('hide');
 								document.getElementById(value).classList.add('show'); }}
