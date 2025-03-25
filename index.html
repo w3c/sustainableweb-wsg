@@ -59,10 +59,14 @@
 			}
 			// ReSpec Multipage: https://w3c.github.io/sustainableweb-ig/multipage.html
 			function addMultipage() {
-				window.addEventListener('hashchange', onHashChange);
-				onHashChange(); }
+				let truthy = window.location.href.includes('pr-preview');
+				if (truthy = true) {
+					document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide')); } else {
+					window.addEventListener('hashchange', onHashChange);
+					onHashChange(); } }
 			window.addEventListener("load", (event) => {
-				if (window.location.href.includes('pr-preview')) {
+				let truthy = window.location.href.includes('pr-preview');
+				if (truthy = true) {
 					document.body.querySelectorAll('details')
 					.forEach((e) => {(e.hasAttribute('open')) ?
 						e.removeAttribute('open') : e.setAttribute('open',true); }) }
@@ -85,7 +89,7 @@
 				let credits = hashSection('#acknowledgments section');
 				let refs = hashSection('#references section');
 				let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
-				if (document.body.classList.contains('full-document') || window.location.href.includes('pr-preview')) {
+				if (document.body.classList.contains('full-document')) {
 					document.body.classList.remove('full-document'); }
 				if (current) {
 					for (const value of sections) {
@@ -103,7 +107,7 @@
 									<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
 									<li></li>
 								</ol>`; } }
-						if (current == "full-document" || window.location.href.includes('pr-preview')) {
+						if (current == "full-document") {
 							document.body.classList.add("full-document");
 							for (const value of sections) {
 								document.getElementById(value).classList.remove('hide');
@@ -125,11 +129,10 @@
 					heading(glossary,"glossary");
 					heading(credits,"acknowledgments");
 					heading(refs,"references"); } else {
-					if (window.location.href.includes('pr-preview')) {} else {
-						for (const value of sections) {
-							document.getElementById(value).classList.remove('show');
-							document.getElementById(value).classList.add('hide'); } }
-						header(); }
+					for (const value of sections) {
+						document.getElementById(value).classList.remove('show');
+						document.getElementById(value).classList.add('hide'); }
+					header(); }
 					for (const value of all) {
 						if (window.location.hash && window.location.hash !="#full-document" && value == current){
 							document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } } }
@@ -298,7 +301,7 @@
 				"CCEEDC": {
 					title: "Code of Conduct for Energy Efficiency in Data Centres",
 					date: "01 January 2023",
-					href: "https://e3p.jrc.ec.europa.eu/sites/default/files/documents/publications/jrc132576_jrc132576_jrc_2023_best_practice_guidelines_v14.1.0final_gt1.pdf",
+					href: "https://joint-research-centre.ec.europa.eu/document/download/0549a8bc-02da-4b05-896d-4728a4a54ab4_en?filename=Brochure",
 					status: "Informational",
 					publisher: "Mark Acton, Paolo Bertoldi and John Booth",
 				},
@@ -462,17 +465,10 @@
 					status: "Informational",
 					publisher: "European Commission",
 				},
-				"ECDCCOC": {
-					title: "Data Centres Code of Conduct",
-					date: "4 November 2023",
-					href: "https://e3p.jrc.ec.europa.eu/communities/data-centres-code-conduct",
-					status: "Informational",
-					publisher: "European Commission",
-				},
 				"ECDCEE": {
 					title: "2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency",
 					date: "21 January 2020",
-					href: "https://e3p.jrc.ec.europa.eu/sites/default/files/documents/publications/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
+					href: "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
 					status: "Informational",
 					publisher: "European Commission",
 				},
@@ -542,7 +538,7 @@
 				"EFAI": {
 					title: "The growing energy footprint of artificial intelligence",
 					date: "10 October 2023",
-					href: "https://www.cell.com/joule/abstract/S2542-4351(23)00365-3",
+					href: "https://www.sciencedirect.com/science/article/pii/S2542435123003653",
 					status: "Informational",
 					publisher: "Alex de Vries",
 				},
@@ -781,7 +777,7 @@
 				"IEU": {
 					title: "New perspectives on internet electricity use in 2030",
 					date: "30 June 2020",
-					href: "https://pisrt.org/psr-press/journals/easl-vol-3-issue-2-2020/new-perspectives-on-internet-electricity-use-in-2030/",
+					href: "https://pisrt.org/psr-press/journals/easl/05-vol-3-2020-issue-2/new-perspectives-on-internet-electricity-use-in-2030/",
 					status: "Informational",
 					publisher: "Anders S.G. Andrae",
 				},
@@ -850,13 +846,6 @@
 					title: "Serve websites over HTTPS",
 					date: "22 November 2018",
 					href: "https://www.ncsc.gov.uk/information/page-removed",
-					status: "Informational",
-					publisher: "National Cyber Security Center, U.K. Government",
-				},
-				"NCSC-PP": {
-					title: "Let them paste passwords",
-					date: "22 November 2018",
-					href: "https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords",
 					status: "Informational",
 					publisher: "National Cyber Security Center, U.K. Government",
 				},
@@ -1177,7 +1166,7 @@
 				"WWU-BCG": {
 					title: "Let users pause/stop/hide animation",
 					date: "17 August 2022",
-					href: "https://urm.wwu.edu:443/accessibility/guide/pause-stop-hide-animation",
+					href: "https://marcom.wwu.edu/accessibility/guide/pause-stop-hide-animation",
 					status: "Informational",
 					publisher: "Western Washington University",
 				},
@@ -2283,7 +2272,7 @@
 								<li>OpQuast<ul>
 									<li><a href="https://checklists.opquast.com/en/web-quality-assurance/advertisements-and-sponsored-content-are-identified-as-such">8</a> - Advertisements and sponsored content are identified as such.</li>
 								</ul></li>
-								<li><a href="https://overlayfactsheet.com/">Overlay Fact Sheet</a></li>
+								<li><a href="https://overlayfactsheet.com/en/">Overlay Fact Sheet</a></li>
 								<li><a href="https://overlayfalseclaims.com/">Overlay False Claims</a></li>
 								<li><a href="https://www.mightybytes.com/blog/6-dark-patterns-to-avoid-on-your-website/">Six Dark Patterns to Avoid On Your Website</a></li>
 								<li><a href="https://societycentered.design/">Society Centered Design</a></li>
@@ -4164,7 +4153,7 @@
 								import { read } from 'utilities';
 								eventHandler = (e) => { read({ book: e.target.value })}
 							</pre>
-							<p><strong>Source:</strong> <a href="https://www.patterns.dev/posts/tree-shaking">Tree Shaking</a>.</p>
+							<p><strong>Source:</strong> <a href="https://www.patterns.dev/vanilla/tree-shaking/">Tree Shaking</a>.</p>
 							<p class="subtitle"><strong>Resources</strong></p>
 							<p>Resources are for information purposes only, no endorsement is implied.</p>
 							<ul class="resources">
@@ -4827,7 +4816,6 @@
 								</ul></li>
 								<li><a href="https://www.smashingmagazine.com/2018/02/gdpr-for-web-developers/">How GDPR Will Change The Way You Develop</a></li>
 								<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required">HTML attribute: required</a></li>
-								<li><a>[*]<span class="hidden">3.11</span></a> Let them paste passwords [[NCSC-PP]]</li>
 								<li><a href="https://www.troyhunt.com/the-cobra-effect-that-is-disabling/">The "Cobra Effect" that is disabling paste on password fields</a></li>
 								<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">The Label element</a></li>
 								<li>United Nations [[SDGS]]<ul>
@@ -4989,7 +4977,7 @@
 								<li><a href="https://css-tricks.com/css-based-fingerprinting/">CSS-Based Fingerprinting</a></li>
 								<li><a href="https://stephaniewalter.design/blog/dark-mode-accessibility-myth-debunked/">Dark mode & accessibility myth</a></li>
 								<li><a href="https://www.businessinsider.com/guides/tech/does-dark-mode-save-battery?r=US&IR=T">Dark mode can save battery, but only if your device has an OLED screen</a></li>
-								<li><a href="https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html">Dark mode may not save your phone's battery life as much as you think, but there are a few silver linings</a></li>
+								<li><a href="https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html,-but-there-are-a-few-silver-linings.html">Dark mode may not save your phone's battery life as much as you think, but there are a few silver linings</a></li>
 								<li><a href="https://www.boia.org/blog/dark-mode-can-improve-text-readability-but-not-for-everyone">Dark Mode Can Improve Text Readability — But Not for Everyone</a></li>
 								<li><a href="https://fingerprint.com/blog/disabling-javascript-wont-stop-fingerprinting/">Demo: Disabling JavaScript Won't Save You from Fingerprinting</a></li>
 								<li><a href="https://greentheweb.com/energy-efficient-color-palette-ideas/">Energy efficient color palette ideas</a></li>
@@ -5915,7 +5903,6 @@
 								<li><a>[*]<span class="hidden">4.1</span></a> Code of Conduct on Data Centre Energy Efficiency [[CCEEDC]]</li>
 								<li><a href="https://www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech">Data center emissions probably 662% higher than big tech claims. Can it keep up the ruse?</a></li>
 								<li><a>[*]<span class="hidden">4.1</span></a> Data Centres and Data Transmission Networks [[IEA]]</li>
-								<li><a>[*]<span class="hidden">4.1</span></a> Data Centres Code of Conduct [[ECDCCOC]]</li>
 								<li><a>[*]<span class="hidden">4.1</span></a> Digital and metal study [[DAMS]] (<em>French</em>) (<em>PDF</em>)</li>
 								<li><a href="https://digitalization-for-sustainability.com/digital-reset/">Digital Reset</a> (<em>PDF</em>)</li>
 								<li><a>[*]<span class="hidden">4.1</span></a> Electronics and obsolescence in a circular economy [[ETC-EO]]</li>

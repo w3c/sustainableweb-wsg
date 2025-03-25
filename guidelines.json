@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-03-24",
+	"lastModified": "2025-03-25",
 	"category": [
 		{
 			"id": "1",
@@ -763,7 +763,7 @@
 							"Ledger of Harms": "https://ledger.humanetech.com/",
 							"My solar-powered and self-hosted website": "https://dri.es/my-solar-powered-and-self-hosted-website",
 							"OpQuast 8 - Advertisements and sponsored content are identified as such.": "https://checklists.opquast.com/en/web-quality-assurance/advertisements-and-sponsored-content-are-identified-as-such",
-							"Overlay Fact Sheet": "https://overlayfactsheet.com/",
+							"Overlay Fact Sheet": "https://overlayfactsheet.com/en/",
 							"Overlay False Claims": "https://overlayfalseclaims.com/",
 							"Six Dark Patterns to Avoid On Your Website": "https://www.mightybytes.com/blog/6-dark-patterns-to-avoid-on-your-website/",
 							"Society Centered Design": "https://societycentered.design/",
@@ -1264,7 +1264,7 @@
 							"GreenIT (French) 4035 - Préférer la pagination au défilement infini": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_4035_fr.md",
 							"How can we design sustainably?": "https://medium.com/@sandra.pallier/how-can-we-design-sustainably-3be7530a0f5b",
 							"Humane By Design": "https://humanebydesign.com/principles/",
-							"Let users pause/stop/hide animation": "https://urm.wwu.edu:443/accessibility/guide/pause-stop-hide-animation",
+							"Let users pause/stop/hide animation": "https://marcom.wwu.edu/accessibility/guide/pause-stop-hide-animation",
 							"The ultimate guide to proper use of animation in UX": "https://uxdesign.cc/the-ultimate-guide-to-proper-use-of-animation-in-ux-10bd98614fa9",
 							"UI Animation: Please Use Responsibly": "https://uxdesign.cc/ui-animation-please-use-responsibly-e707dbdb12d5",
 							"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2022/sustainability"
@@ -2358,7 +2358,7 @@
 					"example": [
 						{
 							"code": "export function read(props) { return props.book }\r\nimport { read } from 'utilities';\r\neventHandler = (e) => { read({ book: e.target.value })}",
-							"content": "[Tree Shaking](https://www.patterns.dev/posts/tree-shaking)."
+							"content": "[Tree Shaking](https://www.patterns.dev/vanilla/tree-shaking/)."
 						}
 					],
 					"resources": [
@@ -2936,7 +2936,6 @@
 							"[GPFEDS] 4.10 - UX and UI (Input Format) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"How GDPR Will Change The Way You Develop": "https://www.smashingmagazine.com/2018/02/gdpr-for-web-developers/",
 							"HTML attribute: required": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required",
-							"Let them paste passwords": "https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords",
 							"The \"Cobra Effect\" that is disabling paste on password fields": "https://www.troyhunt.com/the-cobra-effect-that-is-disabling/",
 							"The Label element": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label",
 							"United Nations [SDGS] Goal 1 (Poverty)": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
@@ -3063,7 +3062,7 @@
 							"CSS-Based Fingerprinting": "https://css-tricks.com/css-based-fingerprinting/",
 							"Dark mode & accessibility myth": "https://stephaniewalter.design/blog/dark-mode-accessibility-myth-debunked/",
 							"Dark mode can save battery, but only if your device has an OLED screen": "https://www.businessinsider.com/guides/tech/does-dark-mode-save-battery?r=US&IR=T",
-							"Dark mode may not save your phone's battery life as much as you think, but there are a few silver linings": "https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html",
+							"Dark mode may not save your phone's battery life as much as you think, but there are a few silver linings": "https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html,-but-there-are-a-few-silver-linings.html",
 							"Dark Mode Can Improve Text Readability — But Not for Everyone": "https://www.boia.org/blog/dark-mode-can-improve-text-readability-but-not-for-everyone",
 							"Demo: Disabling JavaScript Won't Save You from Fingerprinting": "https://fingerprint.com/blog/disabling-javascript-wont-stop-fingerprinting/",
 							"Energy efficient color palette ideas": "https://greentheweb.com/energy-efficient-color-palette-ideas/",
@@ -3823,7 +3822,7 @@
 					"resources": [
 						{
 							"#3 Metrics for Datacenter Efficiency: PUE, CUE, and WUE": "https://submer.com/blog/pue-cue-and-wue-what-do-these-three-metrics-represent-and-which-is-one-is-the-most-important/",
-							"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/documents/publications/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
+							"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
 							"2024 Eco Web Hosting Review": "https://go.eco/news/2024-eco-web-hosting-review/",
 							"43% of major environmental websites make mass carbon emissions": "https://www.openaccessgovernment.org/43-of-major-environmental-websites-make-mass-carbon-emissions/134119/",
 							"An Even More Inconvenient Truth": "https://features.propublica.org/brazil-carbon-offsets/inconvenient-truth-carbon-credits-dont-work-deforestation-redd-acre-cambodia/",
@@ -3841,10 +3840,9 @@
 							"Carbon Neutral Verification": "https://www.carbontrust.com/what-we-do/product-carbon-footprint-labelling/carbon-neutral-verification",
 							"Circular Economy": "https://sustainabilityguide.eu/sustainability/circular-economy/",
 							"Cloud Computing, Server Utilization, & the Environment": "https://aws.amazon.com/blogs/aws/cloud-computing-server-utilization-the-environment/",
-							"Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/documents/publications/jrc132576_jrc132576_jrc_2023_best_practice_guidelines_v14.1.0final_gt1.pdf",
+							"Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://joint-research-centre.ec.europa.eu/document/download/0549a8bc-02da-4b05-896d-4728a4a54ab4_en?filename=Brochure",
 							"Data center emissions probably 662% higher than big tech claims. Can it keep up the ruse?": "https://www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech",
 							"Data Centres and Data Transmission Networks": "https://www.iea.org/energy-system/buildings/data-centres-and-data-transmission-networks",
-							"Data Centres Code of Conduct": "https://e3p.jrc.ec.europa.eu/communities/data-centres-code-conduct",
 							"Digital Reset (PDF)": "https://digitalization-for-sustainability.com/digital-reset/",
 							"Digital and metal study (French) (PDF)": "https://librairie.ademe.fr/economie-circulaire-et-dechets/7713-etude-numerique-et-metaux.html",
 							"Electronics and obsolescence in a circular economy": "https://www.eionet.europa.eu/etcs/etc-wmge/products/etc-wmge-reports/electronics-and-obsolescence-in-a-circular-economy",
@@ -3890,7 +3888,7 @@
 							"I Made My Blog Solar-Powered, Then Things Escalated": "https://louwrentius.com/i-made-my-blog-solar-powered-then-things-escalated.html",
 							"Is carbon compensation a real climate solution?": "https://genevasolutions.news/climate-environment/is-carbon-compensation-a-real-climate-solution",
 							"Measuring the Emissions & Energy Footprint of the ICT Sector": "https://documents1.worldbank.org/curated/en/099121223165540890/pdf/P17859712a98880541a4b71d57876048abb.pdf",
-							"New perspectives on internet electricity use in 2030": "https://pisrt.org/psr-press/journals/easl-vol-3-issue-2-2020/new-perspectives-on-internet-electricity-use-in-2030/",
+							"New perspectives on internet electricity use in 2030": "https://pisrt.org/psr-press/journals/easl/05-vol-3-2020-issue-2/new-perspectives-on-internet-electricity-use-in-2030/",
 							"Promoting product longevity (PDF)": "https://www.europarl.europa.eu/RegData/etudes/STUD/2020/648767/IPOL_STU(2020)648767_EN.pdf",
 							"Quick Guide to Sustainable Design Strategies": "https://medium.com/disruptive-design/quick-guide-to-sustainable-design-strategies-641765a86fb8",
 							"RECs, PPAs, Allowances and EECs": "https://offsetguide.org/understanding-carbon-offsets/other-instruments-for-claiming-emission-reductions/",
@@ -4237,7 +4235,7 @@
 					],
 					"resources": [
 						{
-							"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/documents/publications/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
+							"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
 							"AWS WAF: SEC11-BP02 - Automate testing throughout the development and release lifecycle": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_automate_testing_throughout_lifecycle.html",
 							"AWS WAF: SEC05-BP03 - Automate network protection": "https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/sec_network_protection_auto_protect.html",
 							"AWS WAF: SEC11-BP06 - Deploy software programmatically": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_deploy_software_programmatically.html",
@@ -4246,7 +4244,7 @@
 							"AWS WAF: SUS02-BP06 - Implement buffering or throttling to flatten the demand curve": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a7.html",
 							"AWS WAF: SUS03-BP01 - Optimize software and architecture for asynchronous and scheduled jobs": "https://docs.aws.amazon.com/wellarchitected/latest/framework/sus_sus_software_a2.html",
 							"Bot traffic: What it is and why you should care about it": "https://yoast.com/what-to-know-about-bot-traffic/",
-							"Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/documents/publications/jrc132576_jrc132576_jrc_2023_best_practice_guidelines_v14.1.0final_gt1.pdf",
+							"Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://joint-research-centre.ec.europa.eu/document/download/0549a8bc-02da-4b05-896d-4728a4a54ab4_en?filename=Brochure",
 							"Distribution of bot and human web traffic worldwide from 2014 to 2021": "https://www.statista.com/statistics/1264226/human-and-bot-web-traffic-share/",
 							"[GPFEDS] 3.2 - Architecture (Resource Tailoring) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"[GPFEDS] 6.1 - Front-End (Download Limits) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -5819,7 +5817,7 @@
 							"How to Motivate People Toward Sustainability": "https://nbs.net/how-to-motivate-people-toward-sustainability/",
 							"Living Wage Network": "https://www.livingwage.org.uk/global-living-wage-network",
 							"Sustainability innovations and firm competitiveness": "https://www.sciencedirect.com/science/article/pii/S0959652620347594",
-							"The Real Living Wage Is A Core Part Of Any ESG Agenda": "https://livingwage.org.uk/news/real-living-wage-core-part-any-esg-agenda",
+							"The Real Living Wage Is A Core Part Of Any ESG Agenda": "https://www.livingwage.org.uk/news/real-living-wage-core-part-any-esg-agenda",
 							"United Nations [SDGS] Goal 1 (Poverty)": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
 							"United Nations [SDGS] Goal 3 (Health & Well-being)": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
 							"United Nations [SDGS] Goal 5 (Gender Equality)": "https://sdgs.un.org/goals/goal5#targets_and_indicators",
@@ -6206,7 +6204,7 @@
 							"The carbon emissions of writing and illustrating are lower for AI than for humans": "https://www.nature.com/articles/s41598-024-54271-x",
 							"The cyber-consciousness of environmental assessment": "https://iopscience.iop.org/article/10.1088/1748-9326/ac413b",
 							"The Environmental Impacts of AI": "https://huggingface.co/blog/sasha/ai-environment-primer",
-							"The growing energy footprint of artificial intelligence": "https://www.cell.com/joule/abstract/S2542-4351(23)00365-3)",
+							"The growing energy footprint of artificial intelligence": "https://www.sciencedirect.com/science/article/pii/S2542435123003653",
 							"The role of artificial intelligence in achieving the Sustainable Development Goals": "https://www.nature.com/articles/s41467-019-14108-y",
 							"The Wholegrain guide to ethical use of AI": "https://www.wholegraindigital.com/blog/ethical-ai-guidelines/",
 							"Thinking about using AI?": "https://www.thegreenwebfoundation.org/publications/report-ai-environmental-impact/",
