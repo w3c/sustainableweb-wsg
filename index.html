@@ -62,6 +62,10 @@
 				window.addEventListener('hashchange', onHashChange);
 				onHashChange(); }
 			window.addEventListener("load", (event) => {
+				if (window.location.href.includes('pr-preview')) {
+					document.body.querySelectorAll('details')
+					.forEach((e) => {(e.hasAttribute('open')) ?
+						e.removeAttribute('open') : e.setAttribute('open',true); }) }
 				addMultipage(); });
 			function hashSection(hash) {
 				let arrayGrab = Array.from(document.querySelectorAll(hash));
@@ -121,10 +125,11 @@
 					heading(glossary,"glossary");
 					heading(credits,"acknowledgments");
 					heading(refs,"references"); } else {
-					for (const value of sections) {
-						document.getElementById(value).classList.remove('show');
-						document.getElementById(value).classList.add('hide'); }
-					header(); }
+					if (window.location.href.includes('pr-preview')) {} else {
+						for (const value of sections) {
+							document.getElementById(value).classList.remove('show');
+							document.getElementById(value).classList.add('hide'); } }
+						header(); }
 					for (const value of all) {
 						if (window.location.hash && window.location.hash !="#full-document" && value == current){
 							document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } } }
