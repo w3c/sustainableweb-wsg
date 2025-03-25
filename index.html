@@ -61,15 +61,13 @@
 			function addMultipage() {
 			let truthy = window.location.href.includes('pr-preview');
 				if (truthy = true) {
+					document.body.querySelectorAll('details')
+					.forEach((e) => {(e.hasAttribute('open')) ?
+						e.removeAttribute('open') : e.setAttribute('open',true); })
 					document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide')); } else {
 					window.addEventListener('hashchange', onHashChange);
 					onHashChange(); } }
 			window.addEventListener("load", (event) => {
-				if (truthy = true) {
-					alert();
-					document.body.querySelectorAll('details')
-					.forEach((e) => {(e.hasAttribute('open')) ?
-						e.removeAttribute('open') : e.setAttribute('open',true); }) }
 				addMultipage(); });
 			function hashSection(hash) {
 				let arrayGrab = Array.from(document.querySelectorAll(hash));
