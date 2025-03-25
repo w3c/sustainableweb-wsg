@@ -81,6 +81,10 @@
 				let credits = hashSection('#acknowledgments section');
 				let refs = hashSection('#references section');
 				let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
+				if (window.location.href.includes('pr-preview')) {
+					document.body.querySelectorAll('details')
+					.forEach((e) => {(e.hasAttribute('open')) ?
+						e.removeAttribute('open') : e.setAttribute('open',true); }) }
 				if (document.body.classList.contains('full-document') || window.location.href.includes('pr-preview')) {
 					document.body.classList.remove('full-document'); }
 				if (current) {
