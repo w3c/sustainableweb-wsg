@@ -14,6 +14,7 @@
 			.alert { background-color: #ff9fae; }
 			/* Fix for Specification Readability: https://github.com/w3c/sustainableweb-wsg/issues/92 */
 			summary { cursor: pointer; }
+			.credit { font-size: small; }
 			.summary pre { background-color: #fafafa;}
 			.summary .subtitle { margin-top: 2.5em; }
 			.summary .rating, .summary .reporting { align-items: center; display: flex; flex-wrap: wrap; row-gap: 1em; }
@@ -28,7 +29,7 @@
 			/* Fix for Printing The Specification: https://github.com/w3c/sustainableweb-wsg/issues/92 */
 			@media print { section section:last-child h4, section section:last-child .self-link, section section:last-child summary, .summary, .pageButtons, #toc { display: none !important; } .full-document #toc { display: block !important; } body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustainableweb-wsg/issues/114 */
-			.summary details { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
+			.summary { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
 			/** Multipage Document: https://github.com/w3c/sustainableweb-wsg/issues/14#issuecomment-2662164386 */
 			@media (scripting: enabled) {
 				.hide { display: inherit !important; height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
@@ -79,8 +80,9 @@
 				let biz = hashSection('#business-strategy-and-product-management *');
 				let glossary = hashSection('#glossary *');
 				let credits = hashSection('#acknowledgments section');
+				let changelog = hashSection('#changelog section');
 				let refs = hashSection('#references section');
-				let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary,credits, refs);
+				let all = sections.concat(sections, introduction, ux, webdev, infra, biz, glossary, credits, changelog, refs);
 				if (document.body.classList.contains('full-document')) {
 					document.body.classList.remove('full-document'); }
 				if (current) {
@@ -95,9 +97,9 @@
 						for (const value of refs) {
 							if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
 								document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">
-									<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
+									<li><a class="previousPage" href="#changelog">Previous page<br>Changelog</a></li>
 									<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
-									<li></li>
+									<li>
 								</ol>`; } }
 						if (current == "full-document") {
 							document.body.classList.add("full-document");
@@ -120,6 +122,7 @@
 					heading(biz,"business-strategy-and-product-management");
 					heading(glossary,"glossary");
 					heading(credits,"acknowledgments");
+					heading(changelog,"changelog");
 					heading(refs,"references"); } else {
 					for (const value of sections) {
 						document.getElementById(value).classList.remove('show');
@@ -1209,7 +1212,7 @@
 			<p>By publishing these guidelines, the Interest Group does not expect that the work produced in this specification will affect the work undertaken by other <abbr title="World Wide Web Consortium">W3C</abbr> sustainability, accessibility, or performance groups. The Interest Group will continue to track these Working, Interest, and Community Groups as appropriate. This specification closely aligns itself with the principles laid down for Web Platform Design [[design-principles]], Privacy [[privacy-principles]], the Ethical Web [[ethical-web-principles]], and Human Rights [[HR-Spec]].</p>
 			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. Comments received on the specification cannot result in changes to this version of the guidelines but may be addressed in errata or future versions of WSG. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available. There is currently no preliminary interoperability or implementation report, however one of the key tasks of this Interest Group is to examine the potential for better models for digital sustainability that can feed into tooling (and thus into large studies of implementations) that can be reported upon and fed back into guidance for the Web Sustainability Guidelines.</p>
 			<ol class="pageButtons">
-				<li></li>
+				<li>
 				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#introduction">Next page<br>Introduction</a></li>
 			</ol>
@@ -1220,8 +1223,8 @@
 				<details>
 					<summary>Plain language summary of <q>Introduction</q></summary>
 					<ul>
-						<li>The Web Sustainability Guidelines (WSGs) promote good sustainability best practices based on the latest evidence and research.</li>
-						<li>WSGs apply to applications, websites, and other Internet-related products and services.</li>
+						<li>The Web Sustainability Guidelines (WSG) promote good sustainability best practices based on the latest evidence and research.</li>
+						<li>WSG apply to applications, websites, and other Internet-related products and services.</li>
 						<li>The guidelines feature Success Criteria you MUST comply with, and provide other features that can help with decision-making and implementation.</li>
 						<li>Digital sustainability is a complex topic, so the best guidance may change over time, and other considerations (such as non-digital factors) should be taken into account.</li>
 					</ul>
@@ -1244,8 +1247,8 @@
 				<p>Web sustainability depends not only on sustainable websites and products but also on sustainable Web browsers and other user agents, examples include the performance of rendering and the accurate measuring of website energy use through developer tooling. Authoring tools also have an important role in Web sustainability, by ensuring performant code, reducing waste, and the results are served in the most sustainable way possible.</p>
 				<p>Significant challenges were encountered in finding existing research data to both identify and establish guidance for all the variables that affect Web sustainability, which came as no surprise with the subject being such an emerging and rapidly evolving field. Work will continue in this area in future versions of WSG.</p>
 				<div class="note">
-					<p>The WSGs were originally developed under the guidance of the <a href="https://www.w3.org/community/sustyweb/">Sustainable Web Design Community Group</a>. W3C Community Groups act as incubator hubs where ideas for new technologies and standards can be discussed without formal constraints.</p>
-					<p>Over two years with the help of over 100 subject matter experts from around the globe, the group created the first draft, and subsequently through GitHub and regular meetings continued over another year to progress the WSGs and its supplements to a level of maturity in which the group and its work were ready to become a part of the W3C family (where this specification continues being developed to this day).</p>
+					<p>The WSG were originally developed under the guidance of the <a href="https://www.w3.org/community/sustyweb/">Sustainable Web Design Community Group</a>. W3C Community Groups act as incubator hubs where ideas for new technologies and standards can be discussed without formal constraints.</p>
+					<p>Over two years with the help of over 100 subject matter experts from around the globe, the group created the first draft, and subsequently through GitHub and regular meetings continued over another year to progress the WSG and its supplements to a level of maturity in which the group and its work were ready to become a part of the W3C family (where this specification continues being developed to this day).</p>
 				</div>
 			</section>
 			<section> <!-- Layers -->
@@ -1255,7 +1258,7 @@
 				<section> <!-- Principles -->
 					<h4>Principles</h4>
 					<p>At the top are <a href="https://www.sustainablewebmanifesto.com/">six principles</a> that provide the foundation for <a>Web Sustainability</a>: clean, efficient, open, honest, regenerative, and resilient.</p>
-					<p>These guiding principles were chosen to act as the foundation of the <abbr title="Web Sustainability Guidelines">WSGs</abbr> on the basis that they opened the conversation as to what Web sustainability could and should mean for website or application creators and product owners attempting to make a change to benefit people and the planet.</p>
+					<p>These guiding principles were chosen to act as the foundation of the WSG on the basis that they opened the conversation as to what Web sustainability could and should mean for website or application creators and product owners attempting to make a change to benefit people and the planet.</p>
 					<p>While the primary focus of our guidelines is sustainability in the environmental impact sense, to avoid narrowing our definition, as with many frameworks this specification takes an <a>PPP approach</a> to sustainability. The benefit of this methodology is that while we do recognize the importance of energy / carbon accounting and reduction, we avoid carbon tunnel vision and seek to approach digital sustainability reductions through additional measures such as through the reduction of water waste and raw material conservation such as paper. We also are mindful of the social aspects of sustainability and the importance of people as well as the planet, thereby including important criteria, notes, and cross-links where appropriate to W3C work in accessibility, privacy, and other groups and including mentions of Corporate Digital Responsibility (<abbr title="Corporate Digital Responsibility">CDR</abbr>), ethical behavior, and other important disciplines.</p>
 					<p>Of course, principles on their own do not make for good testable guidelines, which is why our guidelines are as heavily evidence-weighted as possible, aligning with existing sustainability reporting frameworks and standards (such as GRI). We also have made every effort possible to map our work to comply with existing and upcoming worldwide regulatory frameworks to assist with compliance.</p>
 				</section>
@@ -1332,7 +1335,7 @@
 				<p>This section lists requirements for conformance to WSG. It also provides information about how to make optional conformance claims.</p>
 				<section> <!-- Requirements -->
 					<h4>Conformance Requirements</h4>
-					<p>The WSGs approach to conformance differs from WCAG in that in preference to having conformance levels, these guidelines are robustly built so that they can be implemented over time, in a non-specific order, and each will provide some measurable sustainability benefit. As such, conformance is measured upon the implementation of each guideline (and all of its success criteria being met) across the whole website or product.</p>
+					<p>The WSG approach to conformance differs from WCAG in that in preference to having conformance levels, these guidelines are robustly built so that they can be implemented over time, in a non-specific order, and each will provide some measurable sustainability benefit. As such, conformance is measured upon the implementation of each guideline (and all of its success criteria being met) across the whole website or product.</p>
 					<p class="note">Total conformance is achieved by meeting every Success Criteria for every guideline within the specification. As a general policy, most websites or products will not likely be able to satisfy all Success Criteria. This could be as a result of time commitments for refactoring code, or because certain guidelines and Success Criteria simply do not apply to your work. In these situations, it is not recommended that authors prioritize conformance over other important website features such as security updates. Pragmatism and progress over perfection should be considered paramount when implementing and conforming to these guidelines.</p>
 				</section>
 				<section> <!-- Claims -->
@@ -1353,7 +1356,7 @@
 					<ul>
 						<li>Do not claim the Web Sustainability Guidelines as a mark of total sustainability (as there will always be gaps in this document's coverage).</li>
 						<li>Only make claims that they can reasonably justify with evidence to back up such statements (and provide easy access to this).</li>
-						<li>If you come across an organization or individual making claims regarding the WSGs that appear unlikely or untrue, request the claims be justified, rectified, or removed.</li>
+						<li>If you come across an organization or individual making claims regarding the WSG that appear unlikely or untrue, request the claims be justified, rectified, or removed.</li>
 					</ul>
 					<p>Legislation exists (or is coming into force globally) providing coverage around sustainability claims and as such, penalties for greenwashing will not only be detrimental to your visitors but to your business.</p>
 				</section>
@@ -9229,6 +9232,86 @@
 			</section>
 			<ol class="pageButtons">
 				<li><a class="previousPage" href="#glossary">Previous page<br>Glossary</a></li>
+				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+				<li><a class="nextPage" href="#changelog">Next page<br>Changelog</a></li>
+			</ol>
+		</section>
+		<section class="appendix informative"> <!-- Changelog -->
+			<h2>Changelog</h2>
+			<p>Note that this <a href="https://github.com/w3c/sustainableweb-wsg/releases">change log</a> only identifies substantive changes since the final draft <a href="https://github.com/w3c/sustyweb/releases">Community Group Report</a> release dated <strong>Dec 6, 2024</strong>.</p>
+			<p>For a list of all issues addressed, refer to the <a href="https://github.com/w3c/sustainableweb-wsg/issues?q=is%3Aissue%20state%3Aclosed">Interest Group's</a> and former <a href="https://github.com/w3c/sustyweb/issues?q=is%3Aissue%20state%3Aclosed">Community Group</a> issue trackers.</p>
+			<div class="summary">
+				<details> <!-- Ongoing Release Notes -->
+					<summary>Ongoing Release Notes</summary>
+					<p><strong>Additions:</strong></p>
+					<ul>
+						<li>Living Changelog section has been added to the WSG (Github Releases will continue).<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
+					</ul>
+					<p><strong>Updates:</strong></p>
+					<ul>
+					</ul>
+					<p><strong>Fixes:</strong></p>
+					<ul>
+						<li>Fixed abbreviation usage to ensure alignment across the specification and deliverables.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>Resolved some outdated website references that existed within the <abbr title="Sustainable Tooling And Reporting">STAR</abbr> Test Suite.<br><span class="credit">@AlexDawsonUK</span></li>
+					</ul>
+					<!--
+						<li>Change.<br><span class="credit">@Github</span></li>
+					-->
+				</details>
+				<details> <!-- Q1 2025 Release Notes (31st March 2025) -->
+					<summary>Q1 2025 Release Notes (31<sup>st</sup> March 2025)</summary>
+					<p><strong>Additions:</strong></p>
+					<ul>
+						<li>A Jekyll configuration is provided for easy-to-read versions of the <a href="https://w3c.github.io/sustainableweb-ig/">IG</a> and <a href="https://w3c.github.io/sustainableweb-wsg/README.html">WSG</a> readmes.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>A ReSpec <a href="https://w3c.github.io/sustainableweb-ig/multipage.html">multiPage plug-in</a> was created for W3C Specifications, so WSG now has pagination.<br><span class="credit">@AlexDawsonUK, @hidde, @kazuhito-kidachi, & @TzviyaSiegman</span></li>
+						<li>New <a href="https://github.com/w3c/sustainableweb-ig/blob/main/README.md">IG Readme</a>, <a href="https://github.com/w3c/sustainableweb-wsg/blob/main/README.md">WSG Readme</a>, <a href="https://github.com/w3c/sustainableweb-wsg/blob/main/IG-CONTRIBUTING.md">Contributing</a> & <a href="https://github.com/w3c/sustainableweb-ig/blob/main/ie-policy.md">IE Policy</a> to reflect new W3C status.<br><span class="credit">@AlexDawsonUK, @ines-akrap, @mgifford, @timfrick, & @TzviyaSiegman</span></li>
+						<li>New Success Criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-sustainable-brand-development-human-testable">2.4</a> on Sustainable Brand Development and asset management.<br><span class="credit">@codewordcreative</span></li>
+						<li>New Success Criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-sustainable-apis-machine-testable">3.15</a> on Sustainable APIs that may be beneficial.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>New Success Criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-automated-tooling-human-testable">5.22</a> on Automated Tooling covering scraping technology.<br><span class="credit">@codewordcreative</span></li>
+						<li><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a> has been published with techniques and test suite URLs.<br><span class="credit">@AlexDawsonUK & @mgifford</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/15">#15</a>] A New Introduction section on <a href="https://w3c.github.io/sustainableweb-wsg/#relationships">Relationships</a> to other specifications (and bodies) is included.<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/17">#17</a>] New Success Criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-client-vs-server-human-testable">4.9</a> on Client VS Server covering Redundant processing.<br><span class="credit">@jyasskin</span></li>
+					</ul>
+					<p><strong>Updates:</strong></p>
+					<ul>
+						<li>Additional Information sections were redesigned to increase interaction visibility.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>Additional useful resources have been included within the specification.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>Guideline Titles have been expanded to be more explanatory of the actionable SCs.<br><span class="credit">@AlexDawsonUK & @torgo</span></li>
+						<li>The <a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Laws & Policies</a> document has additional legislation with references and fixes included.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-avoid-overburdening-machine-testable">2.17</a> now includes mentions of animation iterations.<br><span class="credit">@codewordcreative</span></li>
+						<li>Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-protocol-usage-machine-testable">4.9</a> now include improved Protocol Usage compatibility.<br><span class="credit">@ldevernay & @mgifford</span></li>
+						<li>Update to Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported">4.2</a> to be more inclusive of both client and server-side.<br><span class="credit">@ldevernay & @mgifford</span></li>
+						<li>WSG has been successfully transitioned from <a href="https://github.com/w3c/sustyweb/">CG</a> to the W3C <a href="https://github.com/w3c/sustainableweb-wsg/">IG</a> repository.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/4">#4</a>] Update to Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-need-for-media-machine-testable">2.16</a> SC among others to remove language ambiguity.<br><span class="credit">@timfrick</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>] Guideline Descriptions relabeled as Intent and temporarily moved to Additional Information.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/16">#16</a>] Former Guidelines <a href="https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files">3.18-19</a> have been merged into a single Guideline.<br><span class="credit">@andreadavanzo</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/20">#20</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/issues/24">#24</a>] Update to Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices">3.8</a> SCs to improve the criteria robustness.<br><span class="credit">@andreadavanzo & @hidde</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/21">#21</a>] Two Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code">3.19</a> have been merged into a single SC.<br><span class="credit">@andreadavanzo & @hidde</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/23">#23</a>] Two Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#promote-responsible-data-practices">5.20</a> have been merged.<br><span class="credit">@andreadavanzo</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/27">#27</a>] Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-or-redundant-information">3.2</a> now includes more detail about data types.<br><span class="credit">@andreadavanzo</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/28">#28</a>] Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components-within-projects">3.3</a> now includes modular front and back-end code.<br><span class="credit">@andreadavanzo</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/32">#32</a>] Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-third-party-implementation-machine-testable">3.7</a> are more extensively defined.<br><span class="credit">@fullo, @hidde, & @kazuhito-kidachi</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/35">#35</a>] Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code">3.19</a> now includes avoiding polyfills in modern browsers.<br><span class="credit">@AlexDawsonUK</span></li>
+					</ul>
+					<p><strong>Fixes:</strong></p>
+					<ul>
+						<li>Broken links and redirects have been resolved or removed.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>Group Status changed from a CG Draft to a W3C Editors Draft.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>Guideline headings are now in sentence case to improve readability.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>Missing test suite references in the table have now been resolved.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>References to SustyWeb changed to IG (and URLs updated to match).<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>Resolved some issues with citation conventions being incorrect.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>SustyWeb Community links & specifications now have superseded notice.<br><span class="credit">@AlexDawsonUK, @ianbjacobs, & @TzviyaSiegman</span></li>
+						<li>Versioning references removed to match living document status.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/26">#26</a>] Resolved some issues with internal references to material being incorrect.<br><span class="credit">@airbr</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/31">#31</a>] Multiple spelling and grammar fixes have been applied.<br><span class="credit">@AlexDawsonUK, @codewordcreative, & @hidde</span></li>
+					</ul>
+				</details>
+			</div>
+			<p>If you spot any new bugs, or have new content or ideas to include, <a href="https://github.com/w3c/sustainableweb-wsg/issues">submit an issue</a>.</p>
+			<ol class="pageButtons">
+				<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
 				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#references">Next page<br>References</a></li>
 			</ol>

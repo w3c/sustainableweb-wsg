@@ -28,7 +28,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Editors Draft</td>
-			<td>19 Mar 2025</td>
+			<td>01 Apr 2025</td>
 		</tr>
 	</tbody>
 </table>
@@ -46,22 +46,22 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
 			<td>W3C Editors Draft</td>
-			<td>19 Mar 2025</td>
+			<td>01 Apr 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
 			<td>W3C Editors Draft</td>
-			<td>03 Mar 2025</td>
+			<td>01 Apr 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/intro.html">Introduction to Web Sustainability</a></td>
 			<td>W3C Editors Draft</td>
-			<td>19 Mar 2025</td>
+			<td>01 Apr 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws & Policies</a></td>
 			<td>W3C Editors Draft</td>
-			<td>12 Feb 2025</td>
+			<td>01 Apr 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">Quick Reference for WSG</a> & <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">Checklist</a> (PDF)</td>
@@ -76,12 +76,12 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
 			<td>JSON API</td>
-			<td>19 Mar 2025</td>
+			<td>01 Apr 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>
 			<td>Test Suite</td>
-			<td>03 Mar 2025</td>
+			<td>01 Apr 2025</td>
 		</tr>
 	</tbody>
 </table>
@@ -164,7 +164,7 @@ fetch("https://w3c.github.io/sustainableweb-wsg/guidelines.json")
 
 ## Test Suite
 
-We have a [Test Suite](https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite) which is used to showcase machine testability (as denoted in [STAR](https://w3c.github.io/sustainableweb-wsg/star.html)) for the Web Sustainability Guidelines (WSGs). The template structure for the file uses common W3C conventions for test cases to maintain interoperability for tooling that wishes to align our work with their own.
+We have a [Test Suite](https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite) which is used to showcase machine testability (as denoted in [STAR](https://w3c.github.io/sustainableweb-wsg/star.html)) for the Web Sustainability Guidelines (WSG). The template structure for the file uses common W3C conventions for test cases to maintain interoperability for tooling that wishes to align our work with their own.
 
 Key concepts of note include:
 - Each title element contains a short identifier for the test.
