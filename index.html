@@ -34,7 +34,7 @@
 			@media (scripting: enabled) {
 				.hide { display: inherit !important; height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
 				.show { height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
-			.pageButtons { margin-top: 2em; }
+			.pageButtons { margin-top: 2em; padding-left: 0; }
 			.pageButtons, .pageButtons li, .pageButtons tbody { display: flex; flex: 1; gap: 10px; }
 			.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
 			.previousPage { justify-content: left; } .fullDocument { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
@@ -98,7 +98,7 @@
 							if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
 								document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">
 									<li><a class="previousPage" href="#changelog">Previous page<br>Changelog</a></li>
-									<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+									<li><a class="fullDocument" href="#full-document">Full document</a></li>
 									<li>
 								</ol>`; } }
 						if (current == "full-document") {
@@ -106,6 +106,7 @@
 							for (const value of sections) {
 								document.getElementById(value).classList.remove('hide');
 								document.getElementById(value).classList.add('show'); }
+								document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('show'));
 								document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide'));
 								window.scrollTo(0, 0); } else {
 								document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
@@ -1198,6 +1199,7 @@
 				},
 			],
 			specStatus: "ED",
+			lint: { "local-refs-exist": false, },
 			postProcess: [addChairs, addMultipage]
 		}
 		</script>
@@ -1213,7 +1215,7 @@
 			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. Comments received on the specification cannot result in changes to this version of the guidelines but may be addressed in errata or future versions of WSG. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available. There is currently no preliminary interoperability or implementation report, however one of the key tasks of this Interest Group is to examine the potential for better models for digital sustainability that can feed into tooling (and thus into large studies of implementations) that can be reported upon and fed back into guidance for the Web Sustainability Guidelines.</p>
 			<ol class="pageButtons">
 				<li>
-				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+				<li><a class="fullDocument" href="#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#introduction">Next page<br>Introduction</a></li>
 			</ol>
 		</section>
@@ -1382,7 +1384,7 @@
 			</section>
 			<ol class="pageButtons">
 				<li><a class="previousPage" href="#abstract">Previous page<br>Overview</a></li>
-				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+				<li><a class="fullDocument" href="#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#user-experience-design">Next page<br>User Experience Design</a></li>
 			</ol>
 		</section>
@@ -3880,7 +3882,7 @@
 			</section>
 			<ol class="pageButtons">
 				<li><a class="previousPage" href="#introduction">Previous page<br>Introduction</a></li>
-				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+				<li><a class="fullDocument" href="#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#web-development">Next page<br>Web Development</a></li>
 			</ol>
 		</section>
@@ -5796,7 +5798,7 @@
 			</section>
 			<ol class="pageButtons">
 				<li><a class="previousPage" href="#user-experience-design">Previous page<br>User Experience Design</a></li>
-				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+				<li><a class="fullDocument" href="#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#hosting-infrastructure-and-systems">Next page<br>Hosting, Infrastructure and Systems</a></li>
 			</ol>
 		</section>
@@ -6902,7 +6904,7 @@
 			</section>
 			<ol class="pageButtons">
 				<li><a class="previousPage" href="#web-development">Previous page<br>Web Development</a></li>
-				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+				<li><a class="fullDocument" href="#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#business-strategy-and-product-management">Next page<br>Business Strategy and Product Management</a></li>
 			</ol>
 		</section>
@@ -9164,11 +9166,11 @@
 			</section>
 			<ol class="pageButtons">
 				<li><a class="previousPage" href="#hosting-infrastructure-and-systems">Previous page<br>Hosting, Infrastructure and Systems</a></li>
-				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+				<li><a class="fullDocument" href="#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#glossary">Next page<br>Glossary</a></li>
 			</ol>
 		</section>
-		<section class="informative"> <!-- Glossary -->
+		<section class="appendix informative"> <!-- Glossary -->
 			<h2>Glossary</h2>
 			<dl id="terms">
 				<dt>Accessibility</dt>
@@ -9215,7 +9217,7 @@
 			</dl>
 			<ol class="pageButtons">
 				<li><a class="previousPage" href="#business-strategy-and-product-management">Previous page<br>Business Strategy and Product Management</a></li>
-				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+				<li><a class="fullDocument" href="#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#acknowledgments">Next page<br>Acknowledgments</a></li>
 			</ol>
 		</section>
@@ -9232,14 +9234,14 @@
 			</section>
 			<ol class="pageButtons">
 				<li><a class="previousPage" href="#glossary">Previous page<br>Glossary</a></li>
-				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+				<li><a class="fullDocument" href="#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#changelog">Next page<br>Changelog</a></li>
 			</ol>
 		</section>
 		<section class="appendix informative"> <!-- Changelog -->
 			<h2>Changelog</h2>
-			<p>Note that this <a href="https://github.com/w3c/sustainableweb-wsg/releases">change log</a> only identifies substantive changes since the final draft <a href="https://github.com/w3c/sustyweb/releases">Community Group Report</a> release dated <strong>Dec 6, 2024</strong>.</p>
-			<p>For a list of all issues addressed, refer to the <a href="https://github.com/w3c/sustainableweb-wsg/issues?q=is%3Aissue%20state%3Aclosed">Interest Group's</a> and former <a href="https://github.com/w3c/sustyweb/issues?q=is%3Aissue%20state%3Aclosed">Community Group</a> issue trackers.</p>
+			<p>Note that this <a href="https://github.com/w3c/sustainableweb-wsg/releases">changelog</a> only identifies substantive changes since the final draft <a href="https://github.com/w3c/sustyweb/releases">Community Group Report</a> dated <strong>Dec 6, 2024</strong>.</p>
+			<p>For a list of all issues addressed, refer to the <a href="https://github.com/w3c/sustainableweb-wsg/issues?q=is%3Aissue%20state%3Aclosed">Interest Group</a> and former <a href="https://github.com/w3c/sustyweb/issues?q=is%3Aissue%20state%3Aclosed">Community Group</a> issue trackers.</p>
 			<div class="summary">
 				<details> <!-- Ongoing Release Notes -->
 					<summary>Ongoing Release Notes</summary>
@@ -9254,6 +9256,8 @@
 					<p><strong>Fixes:</strong></p>
 					<ul>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/41">#41</a>] Fixed abbreviation usage to ensure alignment across the specification and deliverables.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>Fixed multiPage issues including left-padding on buttons and full-document refresh.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>Glossary now correctly appears as part of the index rather than the main WSG document.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/41">#41</a>] Resolved some outdated website references that existed within the <abbr title="Sustainable Tooling And Reporting">STAR</abbr> Test Suite.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
 					<!--
@@ -9313,7 +9317,7 @@
 			<p>If you spot any new bugs, or have new content or ideas to include, <a href="https://github.com/w3c/sustainableweb-wsg/issues">submit an issue</a>.</p>
 			<ol class="pageButtons">
 				<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
-				<li><a class="fullDocument" href="index.html#full-document">Full document</a></li>
+				<li><a class="fullDocument" href="#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#references">Next page<br>References</a></li>
 			</ol>
 		</section>
