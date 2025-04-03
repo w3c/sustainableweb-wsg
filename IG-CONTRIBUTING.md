@@ -57,7 +57,7 @@ Once a PR has been reviewed (for quality control purposes), it will either be ac
 
 ## Issues
 
-If you cannot submit a pull request, the preferred method is to create a [new issue](https://github.com/w3c/sustyweb/issues/new) with your comments or solutions. You can also comment on existing issue threads on [GitHub Issues](https://github.com/w3c/sustyweb/issues/).
+If you cannot submit a pull request, the preferred method is to create a [new issue](https://github.com/w3c/sustainableweb-wsg/issues/new) with your comments or solutions. You can also comment on existing issue threads on [GitHub Issues](https://github.com/w3c/sustainableweb-wsg/issues/).
 
 You can provide comments on technical errors (bugs) you have uncovered, new guidelines or success criteria you believe should be added, questions you have about existing or future content or an idea for a direction or feature we could / should utilize.
 
