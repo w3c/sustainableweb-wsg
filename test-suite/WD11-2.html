@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Form Labels</title>
+		<title>WSG Test: META Tags</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability">
 		<meta name="flags" content="">
-		<meta name="assert" content="Test Checks: Ensure That Form Elements Are Correctly Labeled">
+		<meta name="assert" content="Test Checks: Provide Relevant Metadata Using a Recognized Scheme">
+		<meta name="description" content="This website is so fun because we have lots of interesting content for you to read. Why not check us out and see for yourself?">
 		<style>
 
 		</style>
@@ -16,11 +17,6 @@
 		</script>
 	</head>
 	<body>
-		<form>
-			<label for="name">Name:</label><br><input type="text" id="name" name="user_name"><br>
-			<label for="mail">Email:</label><br><input type="email" id="mail" name="user_email"><br>
-			<label for="msg">Message:</label><br><textarea id="msg" name="user_message"></textarea>
-		</form>
-		<p>Test passes if the form elements are correctly labeled.</p>
+		<p>Test passes if META tags are both identified and recognized.</p>
 	</body>
 </html>

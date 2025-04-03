@@ -3,20 +3,22 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Progressive Enhancement</title>
+		<title>WSG Test: JavaScript APIs</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#develop-a-mobile-first-layout">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis">
 		<meta name="flags" content="">
-		<meta name="assert" content="Test Checks: Provide Progressive Enhancement Feature Testing Within Projects">
+		<meta name="assert" content="Test Checks: Ensure JavaScript APIs Are Correctly Applied">
 		<style>
-			img { border: 1px solid black; }
-		</style>
-		<script>
 
-		</script>
+		</style>
 	</head>
 	<body>
-		<img src="assets/map.jpg" alt="This is a map to buried treasure!">
-		<p>Test passes if the page functions with JavaScript, CSS, and then assets like images and media disabled.</p>
+		<audio controls src="https://mdn.github.io/webaudio-examples/audio-basics/outfoxing.mp3"></audio>
 	</body>
+	<script>
+		const audio = document.querySelector("audio");
+		document.addEventListener("visibilitychange", () => {
+			if (document.hidden) { audio.pause(); } else { audio.play(); }
+		});
+	</script>
 </html>

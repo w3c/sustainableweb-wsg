@@ -2107,6 +2107,7 @@
 									<li>Check to see if deliverables require internal access (if so, permission is given).</li>
 									<li>Check that the testing regime is available (internally or externally).</li>
 									<li>Identify all compatibility tests to perform during the testing process.</li>
+									<li>Check if additional legal compliance requirements are being met.</li>
 									<li>Report and resolve the findings within your auditing process.</li>
 								</ol>
 								<p>Expected Results</p>
@@ -2298,65 +2299,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD05-1: Conform to WCAG as a baseline level of acceptable accessibility -->
+					<li> <!-- WD05-3: Write code for performance removing duplication -->
 						<details>
-							<summary id="WD05-1">WD05-1: Conform to WCAG as a baseline level of acceptable accessibility</summary>
-							<div class="note" title="About This Technique">
-								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#sustainable-solutions-must-be-accessible">3.5 Sustainable solutions must be accessible</a>.</p>
-								<p><strong>Description</strong></p>
-								<p>Provide a mechanism for ensuring that a website meets a baseline level of accessibility compliance as recommended by the Web Content Accessibility Guidelines (WCAG). Having an inclusive product or service is at this point (in most places) a legal requirement and meets PPP (People) and societal factors in addition, so it becomes a sustainability compliance target.</p>
-								<p>Machine testability for accessibility exists on some level already through automated testing tools and this can potentially be integrated into a custom white-label product (or created from scratch) if required, by identifying the criteria set out in WCAG A-AAA and attempting to seek machine testability with the guidelines and success criteria (as you are doing with the WSG).</p>
-								<p><strong>Examples</strong></p>
-								<ol>
-									<li>Testing your product or service in several screen readers such as <a href="https://www.nvaccess.org/">NV Access</a> will help establish that individuals with vision impairments can more easily navigate around your content.</li>
-									<li>Tooling such as <a href="https://webhint.io/">WebHint</a>, <a href="https://github.com/dequelabs/axe-core">Axe Core</a>, or <a href="https://wave.webaim.org/">WAVE</a> helps product creators identify certain accessibility issues that can occur within a website or application though they can only test what can be identified by a machine.</li>
-								</ol>
-								<p><strong>Tests</strong></p>
-								<p>Procedure</p>
-								<ol>
-									<li>Check if the application or website meets a specified level of WCAG.</li>
-									<li>Check beyond WCAG for additional inclusive design requirements.</li>
-									<li>Check for compatibility with several different accessibility tools.</li>
-									<li>Check if an accessibility statement exists and testing is included.</li>
-									<li>Check if additional legal compliance requirements are being met.</li>
-								</ol>
-								<p>Expected Results</p>
-								<ol>
-									<li>All checks above are true.</li>
-								</ol>
-							</div>
-						</details>
-					</li>
-					<li> <!-- WD05-2: Provide ARIA enrichment to HTML only if deemed necessary -->
-						<details>
-							<summary id="WD05-2">WD05-2: Provide <abbr title="Accessible Rich Internet Applications">ARIA</abbr> enrichment to HTML only if deemed necessary</summary>
-							<div class="note" title="About This Technique">
-								<p><strong>Applicability</strong></p>
-								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#sustainable-solutions-must-be-accessible">3.5 Sustainable solutions must be accessible</a>.</p>
-								<p><strong>Description</strong></p>
-								<p>Provide a mechanism to identify firstly if ARIA support is required for assistance devices and secondly, if it is required, to implement that support if and only if it will enhance the solution to aid the accessibility of the product or service being given. The use of ARIA for code enrichment should only be utilized if no alternative can be utilized.</p>
-								<p>For machine testability, the use of heuristics to examine the code structure and if certain components require additional semantic clarification is technically possible. Certain HTML elements for example will have built-in semantic value and require no contextual clarifications while custom elements or components of complexity (such as those used in applications) may require enrichment.</p>
-								<p><strong>Examples</strong></p>
-								<ol>
-									<li><a href="https://www.aditus.io/aria/aria-current/">This document from Aditus</a> provides some general examples of ARIA in action showcasing how others have implemented it successfully within their projects (and naturally where it could be appropriate for use).</li>
-								</ol>
-								<p><strong>Tests</strong></p>
-								<p>Procedure</p>
-								<ol>
-									<li>Check if the application requires ARIA before implementation.</li>
-									<li>Check if the ARIA use is appropriate and correctly marked up.</li>
-								</ol>
-								<p>Expected Results</p>
-								<ol>
-									<li>All checks above are true.</li>
-								</ol>
-							</div>
-						</details>
-					</li>
-					<li> <!-- WD06-3: Write code for performance removing duplication -->
-						<details>
-							<summary id="WD06-3">WD06-3: Write code for performance removing duplication</summary>
+							<summary id="WD05-3">WD05-3: Write code for performance removing duplication</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#redundancy-and-duplication-in-code-should-be-avoided">3.6 Redundancy and duplication in code should be avoided</a>.</p>
@@ -2381,9 +2326,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD07-1: Determine and decision make upon third-party impacts -->
+					<li> <!-- WD06-1: Determine and decision make upon third-party impacts -->
 						<details>
-							<summary id="WD07-1">WD07-1: Determine and decision make upon third-party impacts</summary>
+							<summary id="WD06-1">WD06-1: Determine and decision make upon third-party impacts</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties">3.7 Third-party services should be assessed as first parties</a>.</p>
@@ -2410,9 +2355,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD07-2: Provide an import on interaction delay for third-party resources -->
+					<li> <!-- WD06-2: Provide an import on interaction delay for third-party resources -->
 						<details>
-							<summary id="WD07-2">WD07-2: Provide an import on interaction delay for third-party resources</summary>
+							<summary id="WD06-2">WD06-2: Provide an import on interaction delay for third-party resources</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties">3.7 Third-party services should be assessed as first parties</a>.</p>
@@ -2436,9 +2381,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD07-3: Identify lightweight alternatives to unsustainable third-party resources -->
+					<li> <!-- WD06-3: Identify lightweight alternatives to unsustainable third-party resources -->
 						<details>
-							<summary id="WD07-3">WD07-3: Identify lightweight alternatives to unsustainable third-party resources</summary>
+							<summary id="WD06-3">WD06-3: Identify lightweight alternatives to unsustainable third-party resources</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties">3.7 Third-party services should be assessed as first parties</a>.</p>
@@ -2465,9 +2410,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD07-4: Ensure that content is delivered through the most sustainable pathway -->
+					<li> <!-- WD06-4: Ensure that content is delivered through the most sustainable pathway -->
 						<details>
-							<summary id="WD07-4">WD07-4: Ensure that content is delivered through the most sustainable pathway</summary>
+							<summary id="WD06-4">WD06-4: Ensure that content is delivered through the most sustainable pathway</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties">3.7 Third-party services should be assessed as first parties</a>.</p>
@@ -2494,9 +2439,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD07-5: Create custom clickable icons and widgets for third-party services -->
+					<li> <!-- WD06-5: Create custom clickable icons and widgets for third-party services -->
 						<details>
-							<summary id="WD07-5">WD07-5: Create custom clickable icons and widgets for third-party services</summary>
+							<summary id="WD06-5">WD06-5: Create custom clickable icons and widgets for third-party services</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties">3.7 Third-party services should be assessed as first parties</a>.</p>
@@ -2520,9 +2465,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD07-6: Provide the ability to identify and choose third-party components to load -->
+					<li> <!-- WD06-6: Provide the ability to identify and choose third-party components to load -->
 						<details>
-							<summary id="WD07-6">WD07-6: Provide the ability to identify and choose third-party components to load</summary>
+							<summary id="WD06-6">WD06-6: Provide the ability to identify and choose third-party components to load</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties">3.7 Third-party services should be assessed as first parties</a>.</p>
@@ -2549,9 +2494,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD08-1: Validate source code for semantic accuracy -->
+					<li> <!-- WD07-1: Validate source code for semantic accuracy -->
 						<details>
-							<summary id="WD08-1">WD08-1: Validate source code for semantic accuracy</summary>
+							<summary id="WD07-1">WD07-1: Validate source code for semantic accuracy</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices">3.8 Code must follow good semantic practices</a>.</p>
@@ -2576,9 +2521,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD08-2: Eliminate optional code to reduce the rendering impact -->
+					<li> <!-- WD07-2: Eliminate optional code to reduce the rendering impact -->
 						<details>
-							<summary id="WD08-2">WD08-2: Eliminate optional code to reduce the rendering impact</summary>
+							<summary id="WD07-2">WD07-2: Eliminate optional code to reduce the rendering impact</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices">3.8 Code must follow good semantic practices</a>.</p>
@@ -2603,9 +2548,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD08-3: Replace non-standard code with suitable alternative syntax -->
+					<li> <!-- WD07-3: Replace non-standard code with suitable alternative syntax -->
 						<details>
-							<summary id="WD08-3">WD08-3: Replace non-standard code with suitable alternative syntax</summary>
+							<summary id="WD07-3">WD07-3: Replace non-standard code with suitable alternative syntax</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices">3.8 Code must follow good semantic practices</a>.</p>
@@ -2631,9 +2576,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD09-1: Set scripts to load either asynchronously or deferred -->
+					<li> <!-- WD08-1: Set scripts to load either asynchronously or deferred -->
 						<details>
-							<summary id="WD09-1">WD09-1: Set scripts to load either asynchronously or deferred</summary>
+							<summary id="WD08-1">WD08-1: Set scripts to load either asynchronously or deferred</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved">3.9 Render blocking should be resolved</a>.</p>
@@ -2657,9 +2602,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD09-2: Provide assets required at load with the correct delivery route -->
+					<li> <!-- WD08-2: Provide assets required at load with the correct delivery route -->
 						<details>
-							<summary id="WD09-2">WD09-2: Provide assets required at load with the correct delivery route</summary>
+							<summary id="WD08-2">WD08-2: Provide assets required at load with the correct delivery route</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved">3.9 Render blocking should be resolved</a>.</p>
@@ -2683,9 +2628,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD10-1: Provide accurate social metadata and microdata -->
+					<li> <!-- WD09-1: Provide accurate social metadata and microdata -->
 						<details>
-							<summary id="WD10-1">WD10-1: Provide accurate social Metadata and Microdata</summary>
+							<summary id="WD09-1">WD09-1: Provide accurate social Metadata and Microdata</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist">3.10 Information to help understand the usefulness of a page should exist</a>.</p>
@@ -2712,9 +2657,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD10-2: Provide a robots file that contains relevant indexing data -->
+					<li> <!-- WD09-2: Provide a robots file that contains relevant indexing data -->
 						<details>
-							<summary id="WD10-2">WD10-2: Provide a robots file that contains relevant indexing data</summary>
+							<summary id="WD09-2">WD09-2: Provide a robots file that contains relevant indexing data</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist">3.10 Information to help understand the usefulness of a page should exist</a>.</p>
@@ -2741,9 +2686,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD10-3: Add signposting within the page to direct visitors and accessibility Aids -->
+					<li> <!-- WD09-3: Add signposting within the page to direct visitors and accessibility Aids -->
 						<details>
-							<summary id="WD10-3">WD10-3: Add signposting within the page to direct visitors and accessibility Aids</summary>
+							<summary id="WD09-3">WD09-3: Add signposting within the page to direct visitors and accessibility Aids</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist">3.10 Information to help understand the usefulness of a page should exist</a>.</p>
@@ -2771,9 +2716,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD11-1: Ensure that form inputs correctly match and validate content expectations -->
+					<li> <!-- WD10-1: Ensure that form inputs correctly match and validate content expectations -->
 						<details>
-							<summary id="WD11-1">WD11-1: Ensure that form inputs correctly match and validate content expectations</summary>
+							<summary id="WD10-1">WD10-1: Ensure that form inputs correctly match and validate content expectations</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements">3.11 Forms must validate for errors, accounting for tooling requirements</a>.</p>
@@ -2800,9 +2745,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD11-2: Ensure that form elements are correctly labeled -->
+					<li> <!-- WD10-2: Ensure that form elements are correctly labeled -->
 						<details>
-							<summary id="WD11-2">WD11-2: Ensure that form elements are correctly labeled</summary>
+							<summary id="WD10-2">WD10-2: Ensure that form elements are correctly labeled</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements">3.11 Forms must validate for errors, accounting for tooling requirements</a>.</p>
@@ -2825,9 +2770,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD11-3: Reduce issues within data entry with manual third-party content -->
+					<li> <!-- WD10-3: Reduce issues within data entry with manual third-party content -->
 						<details>
-							<summary id="WD11-3">WD11-3: Reduce issues within data entry with manual third-party content</summary>
+							<summary id="WD10-3">WD10-3: Reduce issues within data entry with manual third-party content</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements">3.11 Forms must validate for errors, accounting for tooling requirements</a>.</p>
@@ -2852,9 +2797,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD12-1: Ensure that the required HTML elements are included -->
+					<li> <!-- WD11-1: Ensure that the required HTML elements are included -->
 						<details>
-							<summary id="WD12-1">WD12-1: Ensure that the required HTML elements are included</summary>
+							<summary id="WD11-1">WD11-1: Ensure that the required HTML elements are included</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability">3.12 Metadata is structured for machine readability</a>.</p>
@@ -2880,9 +2825,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD12-2: Provide relevant metadata using a recognized scheme -->
+					<li> <!-- WD11-2: Provide relevant metadata using a recognized scheme -->
 						<details>
-							<summary id="WD12-2">WD12-2: Provide relevant metadata using a recognized scheme</summary>
+							<summary id="WD11-2">WD11-2: Provide relevant metadata using a recognized scheme</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability">3.12 Metadata is structured for machine readability</a>.</p>
@@ -2907,9 +2852,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD12-3: Ensure content is structured using microdata -->
+					<li> <!-- WD11-3: Ensure content is structured using microdata -->
 						<details>
-							<summary id="WD12-3">WD12-3: Ensure content is structured using microdata</summary>
+							<summary id="WD11-3">WD11-3: Ensure content is structured using microdata</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability">3.12 Metadata is structured for machine readability</a>.</p>
@@ -2933,9 +2878,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD13-1: Ensure CSS preference media queries are correctly applied -->
+					<li> <!-- WD12-1: Ensure CSS preference media queries are correctly applied -->
 						<details>
-							<summary id="WD13-1">WD13-1: Ensure CSS preference media queries are correctly applied</summary>
+							<summary id="WD12-1">WD12-1: Ensure CSS preference media queries are correctly applied</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#sustainable-css-user-preference-media-queries-are-used">3.13 Sustainable CSS user preference media queries are used</a>.</p>
@@ -2961,9 +2906,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD14-1: Test against network speeds and visual resolution breakpoints -->
+					<li> <!-- WD13-1: Test against network speeds and visual resolution breakpoints -->
 						<details>
-							<summary id="WD14-1">WD14-1: Test against network speeds and visual resolution breakpoints</summary>
+							<summary id="WD13-1">WD13-1: Test against network speeds and visual resolution breakpoints</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements">3.14 Layouts work across devices and requirements</a>.</p>
@@ -2988,9 +2933,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD14-2: Provide progressive enhancement feature testing within projects -->
+					<li> <!-- WD13-2: Provide progressive enhancement feature testing within projects -->
 						<details>
-							<summary id="WD14-2">WD14-2: Provide progressive enhancement feature testing within projects</summary>
+							<summary id="WD13-2">WD13-2: Provide progressive enhancement feature testing within projects</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements">3.14 Layouts work across devices and requirements</a>.</p>
@@ -3016,9 +2961,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD14-3: Configure your project around carbon-aware situations -->
+					<li> <!-- WD13-3: Configure your project around carbon-aware situations -->
 						<details>
-							<summary id="WD14-3">WD14-3: Configure your project around carbon-aware situations</summary>
+							<summary id="WD13-3">WD13-3: Configure your project around carbon-aware situations</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements">3.14 Layouts work across devices and requirements</a>.</p>
@@ -3042,9 +2987,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD14-4: Provide low-impact, possibly delayed methods of interaction -->
+					<li> <!-- WD13-4: Provide low-impact, possibly delayed methods of interaction -->
 						<details>
-							<summary id="WD14-4">WD14-4: Provide low-impact, possibly delayed methods of interaction</summary>
+							<summary id="WD13-4">WD13-4: Provide low-impact, possibly delayed methods of interaction</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements">3.14 Layouts work across devices and requirements</a>.</p>
@@ -3068,9 +3013,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD15-1: Optimize a codebase through rewriting for performance -->
+					<li> <!-- WD14-1: Optimize a codebase through rewriting for performance -->
 						<details>
-							<summary id="WD15-1">WD15-1: Optimize a codebase through rewriting for performance</summary>
+							<summary id="WD14-1">WD14-1: Optimize a codebase through rewriting for performance</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis">3.15 Use beneficial JavaScript and its APIs</a>.</p>
@@ -3097,9 +3042,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD15-2: Ensure JavaScript APIs are correctly applied -->
+					<li> <!-- WD14-2: Ensure JavaScript APIs are correctly applied -->
 						<details>
-							<summary id="WD15-2">WD15-2: Ensure JavaScript APIs are correctly applied</summary>
+							<summary id="WD14-2">WD14-2: Ensure JavaScript APIs are correctly applied</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis">3.15 Use beneficial JavaScript and its APIs</a>.</p>
@@ -3126,9 +3071,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD16-1: Ensure all vulnerabilities are removed and code is linted -->
+					<li> <!-- WD15-1: Ensure all vulnerabilities are removed and code is linted -->
 						<details>
-							<summary id="WD16-1">WD16-1: Ensure all vulnerabilities are removed and code is linted</summary>
+							<summary id="WD15-1">WD15-1: Ensure all vulnerabilities are removed and code is linted</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-scripts-are-secure">3.16 Ensure that your scripts are secure</a>.</p>
@@ -3152,9 +3097,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD17-1: Identify and remove unused packages and dependencies -->
+					<li> <!-- WD16-1: Identify and remove unused packages and dependencies -->
 						<details>
-							<summary id="WD17-1">WD17-1: Identify and remove unused packages and dependencies</summary>
+							<summary id="WD16-1">WD16-1: Identify and remove unused packages and dependencies</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained">3.17 Dependencies are appropriately used and maintained</a>.</p>
@@ -3178,9 +3123,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD17-2: Implement modularized frameworks and libraries -->
+					<li> <!-- WD16-2: Implement modularized frameworks and libraries -->
 						<details>
-							<summary id="WD17-2">WD17-2: Implement modularized frameworks and libraries</summary>
+							<summary id="WD16-2">WD16-2: Implement modularized frameworks and libraries</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained">3.17 Dependencies are appropriately used and maintained</a>.</p>
@@ -3204,9 +3149,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD17-3: Ensure that dependencies are verified as up-to-date -->
+					<li> <!-- WD16-3: Ensure that dependencies are verified as up-to-date -->
 						<details>
-							<summary id="WD17-3">WD17-3: Ensure that dependencies are verified as up-to-date</summary>
+							<summary id="WD16-3">WD16-3: Ensure that dependencies are verified as up-to-date</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained">3.17 Dependencies are appropriately used and maintained</a>.</p>
@@ -3231,9 +3176,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD18-1: Provide the expected website assets in your base directory -->
+					<li> <!-- WD17-1: Provide the expected website assets in your base directory -->
 						<details>
-							<summary id="WD18-1">WD18-1: Provide the expected website assets in your base directory</summary>
+							<summary id="WD17-1">WD17-1: Provide the expected website assets in your base directory</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files">3.18 Include expected and beneficial files</a>.</p>
@@ -3261,9 +3206,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD18-2: Provide beneficial plaintext website assets in the expected locations -->
+					<li> <!-- WD17-2: Provide beneficial plaintext website assets in the expected locations -->
 						<details>
-							<summary id="WD18-2">WD18-2: Provide beneficial plaintext website assets in the expected locations</summary>
+							<summary id="WD17-2">WD17-2: Provide beneficial plaintext website assets in the expected locations</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files">3.18 Include expected and beneficial files</a>.</p>
@@ -3290,9 +3235,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD19-1: Replace outdated syntax with suitable alternatives -->
+					<li> <!-- WD18-1: Replace outdated syntax with suitable alternatives -->
 						<details>
-							<summary id="WD19-1">WD19-1: Replace outdated syntax with suitable alternatives</summary>
+							<summary id="WD18-1">WD18-1: Replace outdated syntax with suitable alternatives</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code">3.19 Avoid using deprecated, proprietary, or outdated code</a>.</p>
@@ -3319,9 +3264,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD20-1: Encourage the use of more sustainable creation toolchains -->
+					<li> <!-- WD19-1: Encourage the use of more sustainable creation toolchains -->
 						<details>
-							<summary id="WD20-1">WD20-1: Encourage the use of more sustainable creation toolchains</summary>
+							<summary id="WD19-1">WD19-1: Encourage the use of more sustainable creation toolchains</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service">3.20 Use the most efficient solution to implement your service</a>.</p>
@@ -3345,9 +3290,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD20-4: Test all third-party resources for sustainability impacts -->
+					<li> <!-- WD19-4: Test all third-party resources for sustainability impacts -->
 						<details>
-							<summary id="WD20-4">WD20-4: Test all third-party resources for sustainability impacts</summary>
+							<summary id="WD19-4">WD19-4: Test all third-party resources for sustainability impacts</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service">3.20 Use the most efficient solution to implement your service</a>.</p>
@@ -3374,9 +3319,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD21-1: Ensure the latest version of a syntax language is being used -->
+					<li> <!-- WD20-1: Ensure the latest version of a syntax language is being used -->
 						<details>
-							<summary id="WD21-1">WD21-1: Ensure the latest version of a syntax language is being used</summary>
+							<summary id="WD20-1">WD20-1: Ensure the latest version of a syntax language is being used</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version">3.21 Use the latest stable language version</a>.</p>
@@ -3399,9 +3344,9 @@
 							</div>
 						</details>
 					</li>
-					<li> <!-- WD22-1: Replace code that can instead use more efficient native APIs -->
+					<li> <!-- WD21-1: Replace code that can instead use more efficient native APIs -->
 						<details>
-							<summary id="WD22-1">WD22-1: Replace code that can instead use more efficient native APIs</summary>
+							<summary id="WD21-1">WD21-1: Replace code that can instead use more efficient native APIs</summary>
 							<div class="note" title="About This Technique">
 								<p><strong>Applicability</strong></p>
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features-and-functionality">3.22 Take advantage of native features and functionality</a>.</p>
@@ -5034,9 +4979,9 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD05-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD05-2.html">PASS</a></td>
 								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD05-3.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5063,12 +5008,12 @@
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX06-4.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX06-5.html">PASS</a></td>
 
-								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-2.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-3.html">PASS</a></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-4.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-5.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-6.html">PASS</a></td>
 
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
@@ -5095,9 +5040,9 @@
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-1.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-2.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-4.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-5.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-6.html">PASS</a></td>
+								<td class="red">FAIL</td>
+								<td></td>
+								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS07-1.html">PASS</a></td>
 								<td></td>
@@ -5123,8 +5068,8 @@
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD08-1.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD08-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD08-3.html">PASS</a></td>
-								<td class="red">FAIL</td>
+								<td></td>
+								<td></td>
 								<td></td>
 								<td></td>
 
@@ -5152,7 +5097,7 @@
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD09-1.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD09-2.html">PASS</a></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD09-3.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5238,8 +5183,8 @@
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD12-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD12-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD12-3.html">PASS</a></td>
+								<td></td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5267,9 +5212,9 @@
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-1.html">PASS</a></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-4.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
@@ -5297,8 +5242,8 @@
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD14-1.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD14-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD14-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD14-4.html">PASS</a></td>
+								<td class="red">FAIL</td>
+								<td></td>
 								<td></td>
 								<td></td>
 
@@ -5325,8 +5270,8 @@
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX15-5.html">PASS</a></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD15-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD15-2.html">PASS</a></td>
-								<td class="red">FAIL</td>
+								<td></td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5354,8 +5299,8 @@
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX16-5.html">PASS</a></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD16-1.html">PASS</a></td>
-								<td></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD16-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD16-3.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5384,7 +5329,7 @@
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD17-1.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD17-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD17-3.html">PASS</a></td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5412,7 +5357,7 @@
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD18-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD18-2.html">PASS</a></td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5441,10 +5386,10 @@
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-5.html">PASS</a></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD19-1.html">PASS</a></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD19-4.html">PASS</a></td>
+								<td class="red">FAIL</td>
 								<td></td>
 
 								<td></td>
@@ -5471,9 +5416,9 @@
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD20-1.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD20-4.html">PASS</a></td>
-								<td class="red">FAIL</td>
+								<td></td>
+								<td></td>
+								<td></td>
 								<td></td>
 
 								<td></td>
@@ -5527,7 +5472,7 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD22-1.html">PASS</a></td>
+								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -5556,7 +5501,7 @@
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX23-4.html">PASS</a></td>
 								<td></td>
 
-								<td class="red">FAIL</td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>

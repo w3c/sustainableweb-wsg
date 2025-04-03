@@ -3,19 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Required Elements</title>
+		<title>WSG Test: Preference Query</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#sustainable-css-user-preference-media-queries-are-used">
 		<meta name="flags" content="">
-		<meta name="assert" content="Test Checks: Ensure That the Required HTML Elements Are Included">
+		<meta name="assert" content="Test Checks: Ensure CSS Preference Media Queries Are Correctly Applied">
 		<style>
-
+			@media (scripting: none) {
+				p { display: none; }
+			}
 		</style>
 		<script>
 
 		</script>
 	</head>
 	<body>
-		<p>Test passes if all of the minimum required HTML elements are found in the document.</p>
+		<p>Test passes if preference media query is available, and scripting is enabled.</p>
 	</body>
 </html>
