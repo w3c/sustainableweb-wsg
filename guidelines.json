@@ -2600,7 +2600,7 @@
 					"benefits": [
 						{
 							"Environmental": "Sites with bloated markup waste data, also sites with broken markup could trigger memory leaks (performance issues) in apps, and following standards ensures sites will work the same across devices and platforms (reducing bugs, developer fix time, and resource waste).",
-							"Accessibility": "Semantic HTML is a great stepping stone towards making your content easier to navigate by assistive technologies. Many tags within HTML5 come with pre-loaded context about what is expected within them (reducing the need for ARIA or other descriptive features). This can also help browsers, search engines, social networks, and other \"blind\" technologies understand your websites or applications better. This can help you reduce barriers in terms of content navigability.",
+							"Accessibility": "Semantic HTML is a great stepping stone towards making your content easier to navigate by assistive technologies. Many tags within HTML come with pre-loaded context about what is expected within them (reducing the need for ARIA or other descriptive features). This can also help browsers, search engines, social networks, and other \"blind\" technologies understand your websites or applications better. This can help you reduce barriers in terms of content navigability.",
 							"Performance": "Deprecated code isn't optimized within rendering engines, and while Web components do outperform framework components, they won't beat the native HTML elements they build upon.",
 							"Economic": "Inaccessible sites can lead to lawsuits, avoiding these is beneficial to any website owner.",
 							"Conversion": "Poorly coded sites may break features for visitors, leading to website abandonment."
