@@ -2,7 +2,7 @@
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-02-19",
+	"lastModified": "2025-04-01",
 	"category": [
 		{
 			"id": "1",
@@ -10,7 +10,7 @@
 		},
 		{
 			"id": "2",
-			"name": "User-Experience Design",
+			"name": "User Experience Design",
 			"shortName": "UX Design",
 			"techniques": [
 				{
@@ -52,7 +52,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.2 Understand visitor requirements or constraints, resolving barriers to access](https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access).",
 					"description": [
 						{
-							"1": "Provide a mechanism for application and website owners to better curate their products and services around the needs of their visitors and those affected by what has been created and in doing so, reduce the PPP burden which can impact the sustainability of the website, especially around Social, people-centered (and user-experience) impacts.",
+							"1": "Provide a mechanism for application and website owners to better curate their products and services around the needs of their visitors and those affected by what has been created and in doing so, reduce the PPP burden which can impact the sustainability of the website, especially around Social, people-centered (and user experience) impacts.",
 							"2": "It should be noted that for machine automation, only quantitative feedback will be able to be processed (and therefore useful) and all information gathering must be done sustainably and ethically. It should also be noted that because information is being requested, internal access may be required to formally identify certain characteristics necessary for processing."
 						}
 					],
@@ -83,13 +83,13 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.2 Understand visitor requirements or constraints, resolving barriers to access](https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access).",
 					"description": [
 						{
-							"1": "Provide a mechanism so that websites and applications can offer contingency processes for visitors who have constraints such as an older device, an out-of-date operating system, an unusual or out-of-date browser, or a slow Internet connection. Other contingencies exist (such as geo-blocking or mobile data costs) and these can also be taken into account if detection is possible. Each of these issues can burden the user-experience and cause added conflict along the pipeline in terms of emissions.",
+							"1": "Provide a mechanism so that websites and applications can offer contingency processes for visitors who have constraints such as an older device, an out-of-date operating system, an unusual or out-of-date browser, or a slow Internet connection. Other contingencies exist (such as geo-blocking or mobile data costs) and these can also be taken into account if detection is possible. Each of these issues can burden the user experience and cause added conflict along the pipeline in terms of emissions.",
 							"2": "If detection is not available (such as in cases where the Internet is unavailable), Non-digital investigation should be conducted where possible (such as through the use of mail or telephone feedback). Once the constraint has been detected, it will often be up to the developer to create a solution that will involve compatibility features or reducing the load on the visitor's device to increase ease of access. If there are questions regarding the potential compatibility or availability of services due to a certain configuration, seek the manufacturer's advice for further guidance."
 						}
 					],
 					"examples": [
 						{
-							"1": "[Using](https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent) [UserAgent](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent) to identify visitor characteristics that might impact their experience when using your product or service such as an issue of compatibility or performance.",
+							"1": "[Using](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Browser_detection_using_the_user_agent) [UserAgent](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent) to identify visitor characteristics that might impact their experience when using your product or service such as an issue of compatibility or performance.",
 							"2": "Certain political situations may result in the inability for visitors to access your product or service hassle-free such as geo-blocking restrictions, the cost of bandwidth, or government-enacted firewalls, filters, or authentication requirements."
 						}
 					],
@@ -244,7 +244,7 @@
 					"description": [
 						{
 							"1": "Help increase the readability of content within a website or application by breaking down larger pieces of content into smaller constituent pieces. In the same way that a book is broken down into chapters, using progressive disclosure you can reveal sections when the reader is ready, avoiding information overload (the same can be done with long tasks).",
-							"2": "For machine testability, identification of such progressive disclosure markers can be found using the HTML details or dialog element, the CSS target selector (and its accompanying HTML ID attributes), the CSS checkbox hack, the use of JavaScript HashBangs, and also the use of state (and content) changes through various frameworks. Each of these can build a picture of how content displays on-screen during the user-experience, and some can load content only when it is requested which can reduce data transfer and rendering requests leading to sustainability improvements."
+							"2": "For machine testability, identification of such progressive disclosure markers can be found using the HTML details or dialog element, the CSS target selector (and its accompanying HTML ID attributes), the CSS checkbox hack, the use of JavaScript HashBangs, and also the use of state (and content) changes through various frameworks. Each of these can build a picture of how content displays on-screen during the user experience, and some can load content only when it is requested which can reduce data transfer and rendering requests leading to sustainability improvements."
 						}
 					],
 					"examples": [
@@ -274,7 +274,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.6 Minimize non-essential content, interactivity, or journeys](https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys).",
 					"description": [
 						{
-							"1": "Reduce problematic friction within the user-experience and help reduce the number of dark patterns which might occur onLoad and during the interaction process as these can cause considerable sustainability issues as a result of wasted emissions. By ensuring that the visitor remains in control of the interface and that websites and applications work as expected, a more ethical and optimized product or service is likely to result.",
+							"1": "Reduce problematic friction within the user experience and help reduce the number of dark patterns which might occur onLoad and during the interaction process as these can cause considerable sustainability issues as a result of wasted emissions. By ensuring that the visitor remains in control of the interface and that websites and applications work as expected, a more ethical and optimized product or service is likely to result.",
 							"2": "Machine testing can analyze JavaScript for the use of popup events, the appearance of \"_blank\" within hyperlinks or frames, or other functionality that exists that may produce overlays. It's important to question the acceptability of such usage for example, opening links in new windows may be acceptable for non-web formats like PDF, otherwise, it's best to advise against its use."
 						}
 					],
@@ -495,7 +495,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.9 Be attentive rather than distracting](https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting).",
 					"description": [
 						{
-							"1": "Allow the visitor to achieve the task they initially set out to do and not trigger unnecessary issues in the user-experience which would undermine their ability to complete the said task. Issues such as infinite scrolling can promote a need for continued browsing (which can load excessive data and have a sustainability impact on rendering) and loading overlays that deviate visitors from their path will have wider societal impacts on PPP targets which need to be considered.",
+							"1": "Allow the visitor to achieve the task they initially set out to do and not trigger unnecessary issues in the user experience which would undermine their ability to complete the said task. Issues such as infinite scrolling can promote a need for continued browsing (which can load excessive data and have a sustainability impact on rendering) and loading overlays that deviate visitors from their path will have wider societal impacts on PPP targets which need to be considered.",
 							"2": "Within this technique, machine testability can be considered by examining if common link pagination landmarks (previous, next, <numbers>, etc) exist within category listings and if overlays or attention-keeping features are detected for common patterns (such as those mentioned in the examples below). If screen addition mechanisms are determined to be in use within a website, this should be considered a failing mark against the related success criteria."
 						}
 					],
@@ -612,7 +612,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.11 Avoid being manipulative or deceptive](https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive).",
 					"description": [
 						{
-							"1": "Proof your code and content for practices that might detract from the user-experience but are done, purely in an attempt to gain higher rankings from within search engines. While getting such a position would be beneficial, using such techniques will often get the reputation of your site on these services tarnished and your rank will suffer significantly.",
+							"1": "Proof your code and content for practices that might detract from the user experience but are done, purely in an attempt to gain higher rankings from within search engines. While getting such a position would be beneficial, using such techniques will often get the reputation of your site on these services tarnished and your rank will suffer significantly.",
 							"2": "Your visibility in search engines and social media matters. Visibility is how people find you on the web. If people cannot find you or sections of your website or application, they will consume resources in that effort (or trying to find a replacement). Additionally, bad SEO practices targeting only machines consume visitor resources for rendering and produce excess emissions."
 						}
 					],
@@ -1156,7 +1156,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.17 Animation must be proportionate and easy to control](https://w3c.github.io/sustainableweb-wsg/#animation-must-be-proportionate-and-easy-to-control).",
 					"description": [
 						{
-							"1": "Determine if animation usage within an application or website will diminish the user-experience. By calculating the number of animations that occur and identifying if this number firstly can be reduced and then running each of them individually and identifying if they cause lagging on lower specification devices, offering a resolution will help reduce the CPU and GPU burden which can consume vast visitor resources.",
+							"1": "Determine if animation usage within an application or website will diminish the user experience. By calculating the number of animations that occur and identifying if this number firstly can be reduced and then running each of them individually and identifying if they cause lagging on lower specification devices, offering a resolution will help reduce the CPU and GPU burden which can consume vast visitor resources.",
 							"2": "It should be noted that the types of animations used can dramatically affect the rendering process. Certain CSS transitions and animations are more process efficient than others, and JavaScript animation can also have differing impacts on CSS in both the choice of animation and how it has been put together. This should be considered when testing to offer low-impact animations and effects."
 						}
 					],
@@ -1288,7 +1288,7 @@
 								{
 									"1": "Check that all non-native Web documents have an HTML alternative available.",
 									"2": "Check that available formats are clearly identified with text and / or icons.",
-									"3": "Check any generated HTML transcript meets the WSGs."
+									"3": "Check any generated HTML transcript meets the WSG."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -1377,7 +1377,7 @@
 							"procedure": [
 								{
 									"1": "Check for an HTML transcript either below the media file (labeled transcript) or linked to the media.",
-									"2": "Check any generated HTML transcript meets the WSGs."
+									"2": "Check any generated HTML transcript meets the WSG."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -1739,7 +1739,7 @@
 								{
 									"1": "Check that testing occurs hourly / daily / weekly to be considered active.",
 									"2": "Check that all publicly visible pages are included within the monitoring.",
-									"3": "Check that the facility providing the monitoring meets the WSGs.",
+									"3": "Check that the facility providing the monitoring meets the WSG.",
 									"4": "Check that a report of ongoing listed issues is publicly available until fully resolved.",
 									"5": "Provide resolutions for detected issues within a timely manner."
 								}
@@ -1769,7 +1769,7 @@
 							"procedure": [
 								{
 									"1": "Check that all publicly visible pages are included within the monitoring.",
-									"2": "Check for a wide variety of issues within the scope of the WSGs.",
+									"2": "Check for a wide variety of issues within the scope of the WSG.",
 									"3": "Check that a report of ongoing listed issues is publicly available until fully resolved.",
 									"4": "Provide resolutions for detected issues within a timely manner."
 								}
@@ -2133,7 +2133,7 @@
 					"description": [
 						{
 							"1": "Provide a mechanism for ensuring that a website meets a baseline level of accessibility compliance as recommended by the Web Content Accessibility Guidelines (WCAG). Having an inclusive product or service is at this point (in most places) a legal requirement and meets PPP (People) and societal factors in addition, so it becomes a sustainability compliance target.",
-							"2": "Machine testability for accessibility exists on some level already through automated testing tools and this can potentially be integrated into a custom white-label product (or created from scratch) if required, by identifying the criteria set out in WCAG A-AAA and attempting to seek machine testability with the guidelines and success criteria (as you are doing with the WSGs)."
+							"2": "Machine testability for accessibility exists on some level already through automated testing tools and this can potentially be integrated into a custom white-label product (or created from scratch) if required, by identifying the criteria set out in WCAG A-AAA and attempting to seek machine testability with the guidelines and success criteria (as you are doing with the WSG)."
 						}
 					],
 					"examples": [
@@ -2221,7 +2221,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
-							"1": "First identify any third-party components within a website or application, then analyze that feature as if it were a first-party product or service (against the WSGs) for sustainability. If the product or service is determined to be highly impactful in a negative way, the third-party should be replaced or removed; otherwise, it can be optimized, or stay as-is.",
+							"1": "First identify any third-party components within a website or application, then analyze that feature as if it were a first-party product or service (against the WSG) for sustainability. If the product or service is determined to be highly impactful in a negative way, the third-party should be replaced or removed; otherwise, it can be optimized, or stay as-is.",
 							"2": "As third-party components are hosted externally, machine testing these elements should involve isolating these components and testing them as separate from the product or service. This can be factored into any decision-making regarding inclusion as highly performant and sustainable third-party materials will ultimately be low impact (and the opposite is true for others)."
 						}
 					],
@@ -2236,7 +2236,7 @@
 							"procedure": [
 								{
 									"1": "Check if any third-party components exist within the page or application.",
-									"2": "Check that component against the WSGs for its sustainability compliance.",
+									"2": "Check that component against the WSG for its sustainability compliance.",
 									"3": "Check if high-impact third-party components offer self-hosted alternatives.",
 									"4": "Check that self-hosted alternatives are used if provided."
 								}
@@ -2645,7 +2645,7 @@
 					],
 					"examples": [
 						{
-							"1": "[This article from TheGood](https://thegood.com/insights/form-design-examples/) showcases multiple examples of great form design not only from the point of the user-experience but also in the development to ensure that the ability to make mistakes is reduced."
+							"1": "[This article from TheGood](https://thegood.com/insights/form-design-examples/) showcases multiple examples of great form design not only from the point of the user experience but also in the development to ensure that the ability to make mistakes is reduced."
 						}
 					],
 					"tests": [
@@ -3026,7 +3026,7 @@
 					],
 					"examples": [
 						{
-							"1": "RayGun [provides a great article](https://raygun.com/blog/js-security-vulnerabilities-best-practices/) about vulnerabilities and best practices when working with JavaScript. Some of the things mentioned are covered within the WSGs in other sections, all others can be followed here.",
+							"1": "RayGun [provides a great article](https://raygun.com/blog/js-security-vulnerabilities-best-practices/) about vulnerabilities and best practices when working with JavaScript. Some of the things mentioned are covered within the WSG in other sections, all others can be followed here.",
 							"2": "[Snyk](https://snyk.io/) is one of the most well-known providers of data regarding code vulnerabilities. They can be integrated within existing tooling or you can browse their [database of known security issues](https://security.snyk.io/) to be aware of."
 						}
 					],
@@ -3133,7 +3133,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.18 Include expected and beneficial files](https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files).",
 					"description": [
 						{
-							"1": "Ensure that the non-HTML files that are expected to be located within the base directory of a website can firstly be found and secondly are correctly formatted (using the right syntax) and match the expectations of the product or service that requires them to benefit the visitor with a better user-experience, increased accessibility, and sustainability.",
+							"1": "Ensure that the non-HTML files that are expected to be located within the base directory of a website can firstly be found and secondly are correctly formatted (using the right syntax) and match the expectations of the product or service that requires them to benefit the visitor with a better user experience, increased accessibility, and sustainability.",
 							"2": "For machine testability, tooling should aim to identify that the listed files are provided (if not flag these justifying the need for their inclusion). If they are included they should be examined to ensure they are semantically correct, especially if they are formed using a strict language such as XML. If they fail to validate correctly errors should constitute a failure to meet the success criteria."
 						}
 					],
@@ -3256,7 +3256,7 @@
 					"description": [
 						{
 							"1": "Provide a mechanism for testing third-party plugins, extensions, and themes (if such devices are used within a product or service's creation process) for any sustainability impacts they may have. These often are included within CMS software and are external assets that can add overheads to the website or application being rendered.",
-							"2": "For machine testability, many CMS products provide trace details of included features within the source code of a page (as conditional comments) due to these having to be loaded as third-party resources. Internal access may be required to get a full picture of everything being loaded. Third-party resources should be tested against the WSGs separately to identify sustainability issues."
+							"2": "For machine testability, many CMS products provide trace details of included features within the source code of a page (as conditional comments) due to these having to be loaded as third-party resources. Internal access may be required to get a full picture of everything being loaded. Third-party resources should be tested against the WSG separately to identify sustainability issues."
 						}
 					],
 					"examples": [
@@ -3270,7 +3270,7 @@
 								{
 									"1": "Check if any third-party resources exist within the page or application.",
 									"2": "If internal access is required to verify resource usage, grant it.",
-									"3": "Check that component against the WSGs for its sustainability compliance.",
+									"3": "Check that component against the WSG for its sustainability compliance.",
 									"4": "Check if high-impact third-party resources offer self-hosted alternatives.",
 									"5": "Check that self-hosted alternatives are used if provided."
 								}
@@ -3438,7 +3438,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.2 Optimize caching with offline access supported](https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported).",
 					"description": [
 						{
-							"1": "Identify if techniques could be used to increase the performance within the user-experience. Examples of this could include identifying if cookies could (and should) be used within an interface or if the website or application could be transformed into a progressive web application to provide advantages (project-wide) such as offline availability.",
+							"1": "Identify if techniques could be used to increase the performance within the user experience. Examples of this could include identifying if cookies could (and should) be used within an interface or if the website or application could be transformed into a progressive web application to provide advantages (project-wide) such as offline availability.",
 							"2": "Machine testability to identify existing features is relatively straightforward as it simply requires identifying through the source code where cookies, local database requests, service, or web workers are implemented and ensuring that they are both proportionate and correctly marked up. If these don't exist it will require analyzing the page (or components) for potential opportunities for use."
 						}
 					],
@@ -3475,7 +3475,7 @@
 					],
 					"examples": [
 						{
-							"1": "The [Solid Chocolate Company](https://www.solidchocolateco.com/) serves all of their content using GZIP compression headers ensuring that data gets to the visitor as quickly as possible (in addition to compressing image and media assets at source)."
+							"1": "The [Solid Chocolate Company](https://www.solidchocolates.com/) serves all of their content using GZIP compression headers ensuring that data gets to the visitor as quickly as possible (in addition to compressing image and media assets at source)."
 						}
 					],
 					"tests": [
@@ -3535,7 +3535,7 @@
 					],
 					"examples": [
 						{
-							"1": "HubSpot has [some great examples](https://blog.hubspot.com/blog/tabid/6307/bid/33766/10-clever-website-error-messages-from-creative-companies.aspx) of 404 (page not found) error pages showcasing good user-experience design in addition to providing a few helpful pieces of advice regarding how they should function.",
+							"1": "HubSpot has [some great examples](https://blog.hubspot.com/blog/tabid/6307/bid/33766/10-clever-website-error-messages-from-creative-companies.aspx) of 404 (page not found) error pages showcasing good user experience design in addition to providing a few helpful pieces of advice regarding how they should function.",
 							"2": "This [GitHub package](https://github.com/HttpErrorPages/HttpErrorPages) provides support for multiple servers and offers a decent boilerplate for anyone wishing to ensure coverage for a wide range of common errors that can occur during site browsing."
 						}
 					],
@@ -3709,7 +3709,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.10 CDN use must be proportionate and sustainable](https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable).",
 					"description": [
 						{
-							"1": "Test the sustainability of the CDN against the WSGs as a service provider as a third-party service in addition to any sustainability criteria and best practices that exist externally for infrastructure and hosting. This not only applies to the provider itself but to all of the nodes that it uses to supply distribution, and any third-parties it uses as part of its extended network. As such, calculating and vetting providers can be complex.",
+							"1": "Test the sustainability of the CDN against the WSG as a service provider as a third-party service in addition to any sustainability criteria and best practices that exist externally for infrastructure and hosting. This not only applies to the provider itself but to all of the nodes that it uses to supply distribution, and any third-parties it uses as part of its extended network. As such, calculating and vetting providers can be complex.",
 							"2": "For machine testability, providers should have information about sustainability offered within a sustainability statement along with details of compliance being met plus any sustainability features they provide that enhance their service. If this information is publicly available (and uses recognized sources), it could be parsed by machine, otherwise, a sustainable provider list should be sourced."
 						}
 					],
@@ -3724,7 +3724,7 @@
 								{
 									"1": "Check if the CDN provider has a sustainability statement in place.",
 									"2": "Check if the CDN provider meets any sustainability compliance obligations.",
-									"3": "Check that CDN against the WSGs for its sustainability compliance.",
+									"3": "Check that CDN against the WSG for its sustainability compliance.",
 									"4": "Check that the CDN supply network (nodes) are also as sustainable as the provider."
 								}
 							],
@@ -3824,7 +3824,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.12 Store data according to the needs of your users](https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
 						{
-							"1": "Increase findability within content by offering mechanisms within the page for visitors to filter the results of potential content they are seeking by category, tag, or other variables. How this feature is presented to visitors can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user-experience.",
+							"1": "Increase findability within content by offering mechanisms within the page for visitors to filter the results of potential content they are seeking by category, tag, or other variables. How this feature is presented to visitors can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.",
 							"2": "Machine testability for such features will involve examining the page's source code to identify repeating patterns across several pages (if correctly labeled, patterns such as tags or categories may be semantically easy to find). The sustainability of such implementations must account for the impact it has upon rendering across each page, against the benefit it has to the visitor experience."
 						}
 					],
@@ -3853,8 +3853,8 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.12 Store data according to the needs of your users](https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
 						{
-							"1": "Ensure that any third-party backup service provider is examined for sustainability impacts. This will involve examining the impact they have simply in hosting your data, but also how sustainable their platform is, as well as their business. If their model meets any obligations laid out and aligns well against the WSGs, it may meet success criteria.",
-							"2": "To identify how sustainable a service is, a list of recommended sustainable backup providers would be an ideal source to utilize (assuming that one exists and it is itself reputable). If no list exists, checking providers' claims, sustainability statements, and measuring their service against criteria such as the WSGs can be helpful to some extent, though utilizing established standards like the GRI and recommendations around infrastructure will also help."
+							"1": "Ensure that any third-party backup service provider is examined for sustainability impacts. This will involve examining the impact they have simply in hosting your data, but also how sustainable their platform is, as well as their business. If their model meets any obligations laid out and aligns well against the WSG, it may meet success criteria.",
+							"2": "To identify how sustainable a service is, a list of recommended sustainable backup providers would be an ideal source to utilize (assuming that one exists and it is itself reputable). If no list exists, checking providers' claims, sustainability statements, and measuring their service against criteria such as the WSG can be helpful to some extent, though utilizing established standards like the GRI and recommendations around infrastructure will also help."
 						}
 					],
 					"examples": [
@@ -3868,7 +3868,7 @@
 								{
 									"1": "Check if the backup provider has a sustainability statement in place.",
 									"2": "Check if the backup provider meets any sustainability compliance obligations.",
-									"3": "Check that backup provider against the WSGs for its sustainability compliance."
+									"3": "Check that backup provider against the WSG for its sustainability compliance."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -3922,14 +3922,14 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.1 Have an ethical and sustainable product strategy](https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy).",
 					"description": [
 						{
-							"1": "Provide a mechanism within a sustainability statement to identify actions that a product or service may have undertaken that go beyond the WSGs to become sustainable. These may include work from other specifications, supplementary materials to the WSGs, or third-party tooling that has been created by the organization to improve sustainability.",
-							"2": "Machine testability for such features would include identifying references to the documentation within a sustainability statement, also if tooling itself is aware of anything that is beyond the scope of the WSGs and feels it warrants inclusion for improving sustainability for people and the planet, this could also be identified within the tooling and calculated into the overall scoring metrics."
+							"1": "Provide a mechanism within a sustainability statement to identify actions that a product or service may have undertaken that go beyond the WSG to become sustainable. These may include work from other specifications, supplementary materials to the WSG, or third-party tooling that has been created by the organization to improve sustainability.",
+							"2": "Machine testability for such features would include identifying references to the documentation within a sustainability statement, also if tooling itself is aware of anything that is beyond the scope of the WSG and feels it warrants inclusion for improving sustainability for people and the planet, this could also be identified within the tooling and calculated into the overall scoring metrics."
 						}
 					],
 					"examples": [
 						{
-							"1": "Third-party testing tools such as [EcoGrader](https://ecograder.com/) or [Website Carbon](https://www.websitecarbon.com/) will have their own implementations of the WSGs and therefore may choose to not only score differently but potentially extend the criteria being tested.",
-							"2": "Other specifications such as those from the [W3C](https://www.w3.org/) or RFCs from the [IETF](https://www.ietf.org/) may choose to reference sustainability best practices within the scope of their own work, based on evidence and beyond the WSGs offerings."
+							"1": "Third-party testing tools such as [EcoGrader](https://ecograder.com/) or [Website Carbon](https://www.websitecarbon.com/) will have their own implementations of the WSG and therefore may choose to not only score differently but potentially extend the criteria being tested.",
+							"2": "Other specifications such as those from the [W3C](https://www.w3.org/) or RFCs from the [IETF](https://www.ietf.org/) may choose to reference sustainability best practices within the scope of their own work, based on evidence and beyond the WSG offerings."
 						}
 					],
 					"tests": [
@@ -3939,7 +3939,7 @@
 									"1": "Check for any third-party sustainability features beyond the WSG scope.",
 									"2": "Check that any such features are met in both guidelines and success criteria.",
 									"3": "Check that no conflicts are caused with existing WSG compliance.",
-									"4": "If conflicts do exist, prioritize the WSGs unless a higher classification of document exists (law, etc)."
+									"4": "If conflicts do exist, prioritize the WSG unless a higher classification of document exists (law, etc)."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -4069,12 +4069,12 @@
 					"description": [
 						{
 							"1": "Provide a sustainability benchmark of competitors to ensure that you maintain a regular schedule of improvements to your own work. This is something that is observed in many other aspects of business but is a great principle for having the edge over others who may want to lead the change on being environmentally friendly.",
-							"2": "It's important to consider any third-party service in isolation when analyzing services that are independent of your own. This means that you should run that product or service against the WSGs without consideration of your own results and only compare them once testing is complete. For machine testing, any competitors could be provided by the user after the website or application has been analyzed, scanned, and compared - and those sites could be then tested."
+							"2": "It's important to consider any third-party service in isolation when analyzing services that are independent of your own. This means that you should run that product or service against the WSG without consideration of your own results and only compare them once testing is complete. For machine testing, any competitors could be provided by the user after the website or application has been analyzed, scanned, and compared - and those sites could be then tested."
 						}
 					],
 					"examples": [
 						{
-							"1": "A manufacturer of bicycles analyzes how sustainable their website is compared to their competitors (knowing that they cannot optimize their manufacturing site any further), so they use the WSGs as a benchmark.",
+							"1": "A manufacturer of bicycles analyzes how sustainable their website is compared to their competitors (knowing that they cannot optimize their manufacturing site any further), so they use the WSG as a benchmark.",
 							"2": "Two businesses are about to merge but they do not know which website they should use to preserve their ethical reputation, so they run an analysis of both to identify things to take from each creation."
 						}
 					],
@@ -4082,8 +4082,8 @@
 						{
 							"procedure": [
 								{
-									"1": "Check your own product or service against the WSGs for a baseline score.",
-									"2": "Check competitor websites against the WSGs to identify where they sit sustainably.",
+									"1": "Check your own product or service against the WSG for a baseline score.",
+									"2": "Check competitor websites against the WSG to identify where they sit sustainably.",
 									"3": "Check again regularly over time to monitor potential changes that may occur."
 								}
 							],
@@ -4337,7 +4337,7 @@
 					"description": [
 						{
 							"1": "Provide additional compliance criteria for testing tools to ensure that sustainability goals are being met. As such testing tools can analyze websites to vet each product or service against the United Nations Sustainable Development Goals to decide if enough evidence exists within WSG compliance (and other criteria) to pass or fail applicable categories.",
-							"2": "Because the SDGs may have scope beyond the WSGs, both individuals and testing tools must develop criteria that meet the strict requirements of each category to be considered a compliance pass or fail. As such, it may require additional input from the tester, internal access, or additional measurements and evidence gathering undertaken (with scores adjusted)."
+							"2": "Because the SDGs may have scope beyond the WSG, both individuals and testing tools must develop criteria that meet the strict requirements of each category to be considered a compliance pass or fail. As such, it may require additional input from the tester, internal access, or additional measurements and evidence gathering undertaken (with scores adjusted)."
 						}
 					],
 					"examples": [
@@ -4364,7 +4364,7 @@
 					"description": [
 						{
 							"1": "Both increase transparency within an organization and to ensure that visitors and customers can see how suppliers and potential suppliers in the supply chain are vetted to ensure that they meet sustainable guidance set up by the organization. This can relate to the things purchased, or even the business and the way it operates.",
-							"2": "Machine testing a supplier policy first requires detection that the policy exists in a public area of a website or application. Once detected, the list of suppliers can be gathered and unless the provider has already been validated by a verified third-party, conditions for testing can be identified and listed by the tool. If not, consider testing that supplier as a first-party against the WSGs (if a digital service is given), otherwise, test against other compliance targets."
+							"2": "Machine testing a supplier policy first requires detection that the policy exists in a public area of a website or application. Once detected, the list of suppliers can be gathered and unless the provider has already been validated by a verified third-party, conditions for testing can be identified and listed by the tool. If not, consider testing that supplier as a first-party against the WSG (if a digital service is given), otherwise, test against other compliance targets."
 						}
 					],
 					"examples": [
@@ -4378,7 +4378,7 @@
 								{
 									"1": "Check that a publicly visible supplier policy exists on the website.",
 									"2": "Check that information covering all three aspects of PPP are covered.",
-									"3": "Check that third-party supplier against the WSGs for sustainability.",
+									"3": "Check that third-party supplier against the WSG for sustainability.",
 									"4": "If the supplier has a poor impact record post-testing, reconsider usage.",
 									"5": "Check that the content is written in plain English for readability."
 								}
@@ -4395,7 +4395,7 @@
 					"description": [
 						{
 							"1": "Provide a mechanism where members of the public who view a supplier policy document within your website can easily view the sustainability impact that working with each supplier will have on your product or service. This can be measured in many ways, but a detailed report of any benefits, issues, and solutions over time is helpful.",
-							"2": "Identifying that a list of partners exists is key, if a list of partners exists then attempting to verify the impact of those services should first be found on the website itself. If the information is not found, flagging the issue and attempting to test the partners individually against the WSGs would be an ideal next step (in a similar fashion to competitor analysis) to identify problematic relationships."
+							"2": "Identifying that a list of partners exists is key, if a list of partners exists then attempting to verify the impact of those services should first be found on the website itself. If the information is not found, flagging the issue and attempting to test the partners individually against the WSG would be an ideal next step (in a similar fashion to competitor analysis) to identify problematic relationships."
 						}
 					],
 					"examples": [
@@ -4409,7 +4409,7 @@
 								{
 									"1": "Check that all partnerships of the product or service are listed online.",
 									"2": "Check those partners against public lists of known greenwashers.",
-									"3": "Check those partners against the WSGs for sustainability conformance.",
+									"3": "Check those partners against the WSG for sustainability conformance.",
 									"4": "If the supplier has a poor impact record post-testing, reconsider usage."
 								}
 							],
@@ -4460,7 +4460,7 @@
 					],
 					"examples": [
 						{
-							"1": "[Fat Beehive is a great example](https://www.fatbeehive.com/join-our-team/) of a careers / life at work page done well that showcases the benefits that will be gained from working within the organization and also the benefits that will be gained outside of payment.",
+							"1": "[Wholegrain Digital is a great example](https://www.wholegraindigital.com/jobs/) of a careers / life at work page done well that showcases the benefits that will be gained from working within the organization and also the benefits that will be gained outside of payment.",
 							"2": "Rocketmakers provide information [about their values](https://www.rocketmakers.com/careers) (the benefits they hope to get from workers) as well as the benefits they offer (outside of the wage). It's a visually striking layout as well which helps sell the appeal."
 						}
 					],
@@ -4630,12 +4630,12 @@
 				},
 				{
 					"id": "BSPM23-1",
-					"title": "Verify All Partnerships and Sponsors Against the WSGs",
+					"title": "Verify All Partnerships and Sponsors Against the WSG",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.23 Include responsible financial policies](https://w3c.github.io/sustainableweb-wsg/#include-responsible-financial-policies).",
 					"description": [
 						{
 							"1": "Ensure that if an individual or organization is being endorsed or financed by an external group or organization, the influence that the group may provide is sustainably minded (and will not divert the product or service away from such activities). Ensuring all endorsements are sustainable can also help service providers avoid claims of greenwashing.",
-							"2": "Machine testing such variables will require firstly all partnerships and sponsors to be correctly labeled as such, if they are labeled within the product or service then the tester can test each of these services against the WSGs as a first-party (an isolated service) and verify how sustainable they are in comparison. If they score poorly, a warning of conflict of interest issues can be provided."
+							"2": "Machine testing such variables will require firstly all partnerships and sponsors to be correctly labeled as such, if they are labeled within the product or service then the tester can test each of these services against the WSG as a first-party (an isolated service) and verify how sustainable they are in comparison. If they score poorly, a warning of conflict of interest issues can be provided."
 						}
 					],
 					"examples": [
@@ -4650,7 +4650,7 @@
 									"1": "Check that all partnerships and sponsors are publicly listed on the website.",
 									"2": "Check that all listings are correctly marked up so they can be machine-read.",
 									"3": "Check that all partnerships and sponsors are vetted against public lists of known greenwashers.",
-									"4": "Check that all partnerships and sponsors are tested against the WSGs for sustainability.",
+									"4": "Check that all partnerships and sponsors are tested against the WSG for sustainability.",
 									"5": "If the supplier has a poor impact record post-testing, reconsider usage."
 								}
 							],
@@ -4701,7 +4701,7 @@
 					],
 					"examples": [
 						{
-							"1": "A video streaming service wishes to build a sustainability budget based on the WSGs so defines KPIs around each success criterion with a defined numerical value that must be achieved during machine testing stages."
+							"1": "A video streaming service wishes to build a sustainability budget based on the WSG so defines KPIs around each success criterion with a defined numerical value that must be achieved during machine testing stages."
 						}
 					],
 					"tests": [
