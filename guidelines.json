@@ -3468,7 +3468,7 @@
 						{
 							"title": "Preferred Code",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1)",
-							"description": "Avoid the use of deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards that offer equivalent or improved functionality. Such code may be used to meet a documented customer need only if there is a justifable benefit that cannot otherwise be met (such as compatibility, accessibility, or emissions reduction). Also, don't serve polyfills to modern browsers."
+							"description": "Avoid the use of deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards that offer equivalent or improved functionality. Such code may be used to meet a documented customer need only if there is a justifiable benefit that cannot otherwise be met (such as compatibility, accessibility, or emissions reduction). Also, don't serve polyfills to modern browsers."
 						}
 					],
 					"intent": "The web is full of outdated or deprecated formats and web standards, and proprietary (non-standard custom) features that have been superseded. By adhering to up-to-date and widely recognized formats and web standards, developers can ensure better compatibility, user experience, and lower environmental impact.",
