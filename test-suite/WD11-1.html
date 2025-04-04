@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Content Validation</title>
+		<title>WSG Test: Required Elements</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements">
-		<meta name="flags" content="interaction">
-		<meta name="assert" content="Test Checks: Ensure That Form Inputs Correctly Match and Validate Content Expectations">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability">
+		<meta name="flags" content="">
+		<meta name="assert" content="Test Checks: Ensure That the Required HTML Elements Are Included">
 		<style>
 
 		</style>
@@ -16,10 +16,6 @@
 		</script>
 	</head>
 	<body>
-		<form>
-			<label for="email">Email</label><input type="email" name="email" id="email" required>
-			<button type="submit">Submit</button>
-		</form>
-		<p>Test passes if input type is validated against the content upon submission.</p>
+		<p>Test passes if all of the minimum required HTML elements are found in the document.</p>
 	</body>
 </html>

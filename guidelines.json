@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-03-25",
+	"lastModified": "2025-04-04",
 	"category": [
 		{
 			"id": "1",
@@ -2007,7 +2007,6 @@
 							"[AFNOR] Spec 5.4.6 and 5.4.7 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
 							"[GPFEDS] 1.4 - Strategy (Regular Reviews) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"GreenIT (French) 4014 - S'assurer que les parcours utilisateurs permettent de réaliser leur action prévue": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_4014_fr.md",
-                            "Inclusive Design Principles": "https://inclusivedesignprinciples.org/",
                             "Playbook for Universal Design": "https://universaldesignguide.com/",
 							"Research-Based Web Design and Usability Guidelines (PDF)": "https://web.archive.org/web/20130112215348/http://www.usability.gov/guidelines/guidelines_book.pdf",
 							"Sustainable UX is more than reducing your website's footprint": "https://uxdesign.cc/sustainable-ux-and-ui-design-is-more-than-reducing-your-website-s-footprint-a99c336c151f",
@@ -2039,7 +2038,7 @@
 						{
 							"title": "Frequent Testing",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX29-3)",
-							"description": "The product or service regularly tests with weak, unstable, and slow connections, old browsers, and devices older than five years to ensure compatibility."
+							"description": "The product or service regularly tests with weak, unstable, restricted, and slow connections, old browsers, and devices older than five years to ensure compatibility, reduce digital inequalities, and minimize barriers for users."
 						},
 						{
 							"title": "Mobile Friendly",
@@ -2099,6 +2098,8 @@
 							"[GPFEDS] 2.3 - Specifications (Connection Issues) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"[GPFEDS] 2.4 - Specifications (Older Software) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"[GPFEDS] 2.5 - Specifications (Adaptive Design) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+							"[GR491] 3-3018 - Electronicism": "https://gr491.isit-europe.org/en/crit.php?id=3-3018-uxui-diminishing-inequalities-of-access-to-digital-service",
+							"[GR491] 3-3019 - The Digital Gap": "https://gr491.isit-europe.org/en/crit.php?id=3-3019-uxui-dealing-with-cases-of-digital-exclusion-is",
 							"[GR491] 3-3020 - Weak Connections": "https://gr491.isit-europe.org/en/crit.php?id=3-3020-uxui-development-and-testing-environments-are-often-efficient",
 							"[GR491] 3-3023 - Compatibility Policy": "https://gr491.isit-europe.org/en/crit.php?id=3-3023-uxui-technological-advances-are-increase-constantly--hardware",
 							"[GR491] 4-5028 - Compatibility Range": "https://gr491.isit-europe.org/en/crit.php?id=4-5028-frontend-user-equipment-is-increasingly-efficient.-when-digital",
@@ -2109,6 +2110,9 @@
 							"How Far Back in Time Can I Take My Website's Design": "https://ajxs.me/blog/How_Far_Back_in_Time_Can_I_Take_My_Websites_Design.html",
 							"How to Become an Eco Web Designer": "https://onextrapixel.com/how-to-become-an-eco-web-designer/",
 							"How web bloat impacts users with slow devices": "https://danluu.com/slow-device/",
+							"IBM Design For Sustainability (PDF)": "https://www.ibm.com/design/practices/design-for-sustainability/",
+							"Internet access, sustainability, and citizen participation": "https://www.opendemocracy.net/en/internet-access-sustainability-and-citizen-participation-electricity-as-prerequisite/",
+							"Internet Speeds by Country 2023": "https://worldpopulationreview.com/country-rankings/internet-speeds-by-country",
 							"Introducing Web Vitals": "https://blog.chromium.org/2020/05/introducing-web-vitals-essential-metrics.html",
 							"Investigating the correlation between performance scores and energy consumption of mobile web apps (PDF)": "https://www.ivanomalavolta.com/files/papers/EASE_2020.pdf",
 							"iOS 404": "https://ios404.com/",
@@ -2118,6 +2122,8 @@
 							"Mobile Web Best Practices": "https://www.w3.org/TR/mobile-bp/",
 							"Mobile-specific Best Practices": "https://github.com/cnumr/best-practices-mobile",
 							"Network Throttling in Chrome DevTools": "https://www.debugbear.com/blog/chrome-devtools-network-throttling",
+							"Performance Is Accessibility": "https://hookedoncode.com/2020/07/performance-is-accessibility/",
+							"The Performance Inequality Gap": "https://infrequently.org/series/performance-inequality/",
 							"Progressive enhancement brings everyone in": "https://thehistoryoftheweb.com/the-inclusive-web-of-progressive-enhancement/",
 							"Quel design pour un navigateur low-tech? (French)": "https://graphism.fr/quel-design-pour-un-navigateur-low-tech/",
 							"Resilient web design": "https://resilientwebdesign.com/",
@@ -2140,7 +2146,10 @@
 							"The state of the art in measurement-based experiments on the mobile web": "https://www.sciencedirect.com/science/article/pii/S095058492200091X",
 							"United Nations [SDGS] Goal 1 (Poverty)": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
 							"United Nations [SDGS] Goal 3 (Health & Well-being)": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
+							"United Nations [SDGS] Goal 4 (Education)": "https://sdgs.un.org/goals/goal4#targets_and_indicators",
 							"United Nations [SDGS] Goal 9 (Infrastructure)": "https://sdgs.un.org/goals/goal9#targets_and_indicators",
+							"United Nations [SDGS] Goal 10 (Inequality)": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
+							"United Nations [SDGS] Goal 16 (Sustainable Society)": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
 							"Using UX Design to Build a Sustainable Future": "https://uxmag.com/articles/using-ux-design-to-build-a-sustainable-future",
 							"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2022/sustainability",
 							"Web features explorer": "https://web-platform-dx.github.io/web-features-explorer/",
@@ -2382,104 +2391,6 @@
 				},
 				{
 					"id": "5",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#sustainable-solutions-must-be-accessible",
-					"guideline": "Sustainable solutions must be accessible",
-					"criteria": [
-						{
-							"title": "Accessibility Compliance",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD05-1)",
-							"description": "Your website or application must conform to WCAG (at the necessary level), plus extend beyond to obey relevant laws and meet additional visitor accessibility requirements. Building inclusively means that people with permanent, temporary, or situational disabilities will be able to more quickly find what they are looking for, and not have to spend extra time searching for a way to use your product or service."
-						},
-						{
-							"title": "Enhancing Accessibility",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD05-2)",
-							"description": "Enhance your website or application with Accessible Rich Internet Applications (ARIA) ONLY if applicable or necessary, and accessibility enhancing features when useful or beneficial."
-						},
-						{
-							"title": "Electronic Inequalities",
-							"testable": "Human-testable",
-							"description": "Deploy solutions that fight against electronic inequalities in products and services."
-						}
-					],
-					"intent": "Not everyone can access services equally, being sustainable is also about being accessible, fair, ethical, and ensuring that your product or service doesn't discriminate. As such, ensuring your website complies with best practices and relevant laws whilst meeting the needs of your visitors is critical as well as good business.",
-					"impact": "High",
-					"effort": "Medium",
-					"benefits": [
-						{
-							"Environmental": "Inclusive websites are often more sustainable due to the effort put into improving code quality, user experience, and limiting issues such as barriers to access that trigger waste in the service or product.",
-							"Social Equity": "There is a legal obligation to be accessible, and beyond this, turning away millions of potential visitors due to a lack of care is wasteful not only in time but also in digital and physical resources (e-waste).",
-							"Accessibility": "Adapting a digital product or service to be accessible by default will improve access to information for people with disabilities. This must be managed and maintained over time, as the sustainability benefits from reduced unnecessary friction add to the benefits of increasing your audience.",
-							"Performance": "An accessible website or application will typically be written using semantic, well-written code. While you may have more code to accommodate accessibility tooling (like ARIA), well-coded sites are usually less bloated, so they may have a performance edge that will reduce overall emissions.",
-							"Economic": "Improving the user experience through accessibility can also improve financial performance by reducing costs (through lawsuits), building capacity, increasing sales or donations (with new audiences), and making better use of available resources.",
-							"Conversion": "Better-equipped experiences across devices and platforms signal to visitors that you are making a concentrated effort to meet their specific needs. This increases trust and can improve conversion rates."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
-					"example": [
-						{
-							"code": "<img src=\"\/image.jpg\" alt=\"Christmas cards all lined up on a shelf.\">",
-							"content": "[Resources on Alternative Text for Images](https://www.w3.org/WAI/alt/)."
-						}
-					],
-					"resources": [
-						{
-							"A Designer's Guide to Documenting Accessibility & User Interactions": "https://stephaniewalter.design/blog/a-designers-guide-to-documenting-accessibility-user-interactions/",
-							"A Web Designer's Accessibility Advocacy Toolkit": "https://www.smashingmagazine.com/2024/02/web-designer-accessibility-advocacy-toolkit/",
-							"A11y Project Checklist": "https://www.a11yproject.com/checklist/",
-							"Access Guide": "https://www.accessguide.io/",
-							"Accessibility": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
-							"Accessibility and web performance are not features, they're the baseline": "https://css-tricks.com/accessibility-and-web-performance-are-not-features-theyre-the-baseline/",
-							"Accessibility Maturity Model": "https://www.w3.org/TR/maturity-model/",
-							"Accessibility Support": "https://a11ysupport.io/",
-							"Accessible Rich Internet Applications": "https://www.w3.org/TR/wai-aria-1.2/",
-							"ARIA, the good parts": "https://talks.hiddedevries.nl/hDiDOG/aria-the-good-parts",
-							"Bridging Web Accessibility and Sustainability for a Better Digital Future": "https://dodonut.com/blog/bridging-web-accessibility-and-sustainability/",
-							"Complete a VPAT": "https://www.deque.com/blog/understanding-vpat-and-acr/",
-							"Continuous Accessibility": "https://continuousaccessibility.com/",
-							"Creating an Accessibility Audit Report Template": "https://www.digitala11y.com/creating-an-accessibility-audit-template/",
-							"Disability and Health": "https://www.who.int/news-room/fact-sheets/detail/disability-and-health",
-							"[GPFEDS] 1.4 - Strategy (Regular Reviews) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-							"[GR491] 3-3018 - Electronicism": "https://gr491.isit-europe.org/en/crit.php?id=3-3018-uxui-diminishing-inequalities-of-access-to-digital-service",
-							"[GR491] 3-3019 - The Digital Gap": "https://gr491.isit-europe.org/en/crit.php?id=3-3019-uxui-dealing-with-cases-of-digital-exclusion-is",
-							"How do we work out the environmental savings from accessibility?": "https://www.thegreenwebfoundation.org/events/fosdem/",
-							"How to Write an Accessibility Statement": "https://www.digitala11y.com/how-to-write-an-accessibility-statement/",
-							"How Web Content Accessibility Guidelines Improve Digital Products": "https://www.mightybytes.com/blog/web-content-accessibility-guidelines/",
-							"IBM Design For Sustainability (PDF)": "https://www.ibm.com/design/practices/design-for-sustainability/",
-							"Inclusive Design Principles": "https://inclusivedesignprinciples.org/",
-							"Internet access, sustainability, and citizen participation": "https://www.opendemocracy.net/en/internet-access-sustainability-and-citizen-participation-electricity-as-prerequisite/",
-							"Internet Speeds by Country 2023": "https://worldpopulationreview.com/country-rankings/internet-speeds-by-country",
-							"Introduction to Web Accessibility": "https://www.edx.org/learn/web-accessibility/the-world-wide-web-consortium-w3c-introduction-to-web-accessibility",
-							"Learn Accessibility": "https://web.dev/learn/accessibility?hl=en",
-							"The Little Book of Accessibility": "https://uxdesign.cc/the-little-book-of-accessibility-a9b59d82b412",
-							"Making Content Usable for People with Cognitive and Learning Disabilities": "https://www.w3.org/TR/coga-usable/",
-							"Performance Is Accessibility": "https://hookedoncode.com/2020/07/performance-is-accessibility/",
-							"Principles Of Web Accessibility": "https://github.com/Heydon/principles-of-web-accessibility",
-							"The Performance Inequality Gap": "https://infrequently.org/series/performance-inequality/",
-							"This Is WCAG": "https://thisiswcag.com/",
-							"Understanding Accessibility": "https://www.understandingaccessibility.com/",
-							"United Nations [SDGS] Goal 1 (Poverty)": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
-							"United Nations [SDGS] Goal 3 (Health & Well-being)": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
-							"United Nations [SDGS] Goal 4 (Education)": "https://sdgs.un.org/goals/goal4#targets_and_indicators",
-							"United Nations [SDGS] Goal 10 (Inequality)": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-							"United Nations [SDGS] Goal 16 (Sustainable Society)": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
-							"United Nations [SDGS] Goal 17 (Global Partnership)": "https://sdgs.un.org/goals/goal17#targets_and_indicators",
-							"W3C Web Content Accessibility Guidelines": "https://www.w3.org/TR/WCAG22/",
-							"Web Accessibility": "https://www.udacity.com/course/web-accessibility--ud891",
-							"What is the law on accessibility?": "https://info.webusability.co.uk/blog/what-is-the-law-on-accessibility",
-							"Who Can Use": "https://www.whocanuse.com/"
-						}
-					],
-					"tags": ["Social Equity", "Accessibility", "Content", "UI", "Research", "Usability", "Compatibility", "Software", "KPIs"]
-				},
-				{
-					"id": "6",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#redundancy-and-duplication-in-code-should-be-avoided",
 					"guideline": "Redundancy and duplication in code should be avoided",
 					"criteria": [
@@ -2544,7 +2455,7 @@
 					"tags": ["Patterns", "CSS", "JavaScript", "Performance"]
 				},
 				{
-					"id": "7",
+					"id": "6",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties",
 					"guideline": "Third-party services should be assessed as first parties",
 					"criteria": [
@@ -2658,7 +2569,7 @@
 					"tags": ["UI", "Usability", "JavaScript", "Performance", "Software", "Security", "Privacy"]
 				},
 				{
-					"id": "8",
+					"id": "7",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices",
 					"guideline": "Code must follow good semantic practices",
 					"criteria": [
@@ -2689,7 +2600,7 @@
 					"benefits": [
 						{
 							"Environmental": "Sites with bloated markup waste data, also sites with broken markup could trigger memory leaks (performance issues) in apps, and following standards ensures sites will work the same across devices and platforms (reducing bugs, developer fix time, and resource waste).",
-							"Accessibility": "Semantic HTML is a great stepping stone towards making your content easier to navigate by assistive technologies. Many tags within HTML5 come with pre-loaded context about what is expected within them (reducing the need for ARIA or other descriptive features). This can also help browsers, search engines, social networks, and other \"blind\" technologies understand your websites or applications better. This can help you reduce barriers in terms of content navigability.",
+							"Accessibility": "Semantic HTML is a great stepping stone towards making your content easier to navigate by assistive technologies. Many tags within HTML come with pre-loaded context about what is expected within them (reducing the need for ARIA or other descriptive features). This can also help browsers, search engines, social networks, and other \"blind\" technologies understand your websites or applications better. This can help you reduce barriers in terms of content navigability.",
 							"Performance": "Deprecated code isn't optimized within rendering engines, and while Web components do outperform framework components, they won't beat the native HTML elements they build upon.",
 							"Economic": "Inaccessible sites can lead to lawsuits, avoiding these is beneficial to any website owner.",
 							"Conversion": "Poorly coded sites may break features for visitors, leading to website abandonment."
@@ -2750,7 +2661,7 @@
 					"tags": ["Social Equity", "Accessibility", "Content", "Usability", "Compatibility", "HTML"]
 				},
 				{
-					"id": "9",
+					"id": "8",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved",
 					"guideline": "Render blocking should be resolved",
 					"criteria": [
@@ -2811,7 +2722,7 @@
 					"tags": ["Assets", "CSS", "JavaScript", "Performance"]
 				},
 				{
-					"id": "10",
+					"id": "9",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist",
 					"guideline": "Information to help understand the usefulness of a page should exist",
 					"criteria": [
@@ -2883,7 +2794,7 @@
 					"tags": ["Accessibility", "UI", "Usability", "HTML", "Marketing"]
 				},
 				{
-					"id": "11",
+					"id": "10",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements",
 					"guideline": "Forms must validate for errors, accounting for tooling requirements",
 					"criteria": [
@@ -2947,7 +2858,7 @@
 					"tags": ["Accessibility", "UI", "Usability", "Compatibility", "HTML", "Security"]
 				},
 				{
-					"id": "12",
+					"id": "11",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability",
 					"guideline": "Metadata is structured for machine readability",
 					"criteria": [
@@ -3015,7 +2926,7 @@
 					"tags": ["Accessibility", "Usability", "HTML", "Marketing"]
 				},
 				{
-					"id": "13",
+					"id": "12",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#sustainable-css-user-preference-media-queries-are-used",
 					"guideline": "Sustainable CSS user preference media queries are used",
 					"criteria": [
@@ -3085,7 +2996,7 @@
 					"tags": ["Accessibility", "UI", "Usability", "Assets", "CSS"]
 				},
 				{
-					"id": "14",
+					"id": "13",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements",
 					"guideline": "Layouts work across devices and requirements",
 					"criteria": [
@@ -3193,7 +3104,7 @@
 					"tags": ["UI", "Usability", "Compatibility", "CSS", "Performance"]
 				},
 				{
-					"id": "15",
+					"id": "14",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-api-s",
 					"guideline": "Use beneficial JavaScript and its APIs",
 					"criteria": [
@@ -3270,7 +3181,7 @@
 					"tags": ["Accessibility", "JavaScript", "Security"]
 				},
 				{
-					"id": "16",
+					"id": "15",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-scripts-are-secure",
 					"guideline": "Ensure that your scripts are secure",
 					"criteria": [
@@ -3326,7 +3237,7 @@
 					"tags": ["Social Equity", "JavaScript", "Security", "Privacy"]
 				},
 				{
-					"id": "17",
+					"id": "16",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained",
 					"guideline": "Dependencies are appropriately used and maintained",
 					"criteria": [
@@ -3393,7 +3304,7 @@
 					"tags": ["Patterns", "JavaScript", "Performance", "Software", "Security"]
 				},
 				{
-					"id": "18",
+					"id": "17",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files",
 					"guideline": "Include expected and beneficial files",
 					"criteria": [
@@ -3461,7 +3372,7 @@
 					"tags": ["UI", "Patterns", "Compatibility", "Assets", "Marketing", "Security"]
 				},
 				{
-					"id": "19",
+					"id": "18",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code",
 					"guideline": "Avoid using deprecated, proprietary, or outdated code",
 					"criteria": [
@@ -3518,7 +3429,7 @@
 					"tags": ["Accessibility", "Compatibility", "HTML", "CSS", "JavaScript", "Performance"]
 				},
 				{
-					"id": "20",
+					"id": "19",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service",
 					"guideline": "Use the most efficient solution to implement your service",
 					"criteria": [
@@ -3604,7 +3515,7 @@
 					"tags": ["Ideation", "Compatibility", "Performance", "Strategy"]
 				},
 				{
-					"id": "21",
+					"id": "20",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version",
 					"guideline": "Use the latest stable language version",
 					"criteria": [
@@ -3657,7 +3568,7 @@
 					"tags": ["Compatibility", "Performance", "Security"]
 				},
 				{
-					"id": "22",
+					"id": "21",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features-and-functionality",
 					"guideline": "Take advantage of native features and functionality",
 					"criteria": [
@@ -3710,7 +3621,7 @@
 					"tags": ["UI", "Patterns", "Compatibility", "HTML", "CSS", "JavaScript"]
 				},
 				{
-					"id": "23",
+					"id": "22",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#run-fewer-simpler-queries-as-possible",
 					"guideline": "Run fewer, simpler queries as possible",
 					"criteria": [

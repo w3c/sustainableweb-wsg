@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Third-Party Friction</title>
+		<title>WSG Test: Semantic Markup</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements">
-		<meta name="flags" content="invalid">
-		<meta name="assert" content="Test Checks: Reduce Friction Within Data Entry With Manual Third-Party Content">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability">
+		<meta name="flags" content="">
+		<meta name="assert" content="Test Checks: Ensure Content Is Structured Using Microdata">
 		<style>
 
 		</style>
@@ -16,7 +16,22 @@
 		</script>
 	</head>
 	<body>
-		<textarea onpaste="return false;">Sorry, no pasting here!</textarea>
-		<p>Test passes if the friction-causing code is detected and flagged for removal.</p>
+		<div itemscope itemtype="https://schema.org/Person">
+			<span itemprop="name">Jane Doe</span>
+			<span itemprop="jobTitle">Professor</span>
+			<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+				<span itemprop="streetAddress">
+				20341 Whitworth Institute
+				405 N. Whitworth
+				</span>
+				<span itemprop="addressLocality">Seattle</span>,
+				<span itemprop="addressRegion">WA</span>
+				<span itemprop="postalCode">98052</span>
+			</div>
+			<span itemprop="telephone">(425) 123-4567</span>
+			<a href="mailto:jane-doe@xyz.edu" itemprop="email">
+				jane-doe@xyz.edu</a>
+		</div>
+		<p>Test passes if Microdata is identified and marked up correctly.</p>
 	</body>
 </html>
