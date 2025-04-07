@@ -2130,7 +2130,7 @@
 				{
 					"id": "WD05-3",
 					"title": "Write Code for Performance Removing Duplication",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Redundancy and duplication in code should be avoided](https://w3c.github.io/sustainableweb-wsg/#redundancy-and-duplication-in-code-should-be-avoided).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.5 Redundancy and duplication in code should be avoided](https://w3c.github.io/sustainableweb-wsg/#redundancy-and-duplication-in-code-should-be-avoided).",
 					"description": [
 						{
 							"1": "Provide a mechanism within projects to eliminate redundancy within your coding methodology. There will be occasions where the same solution is required for multiple events and in preference to repeating the code to achieve the same effect, referencing the code to perform on each occasion is more optimal as it reduces duplication and repetition.",
@@ -2159,7 +2159,7 @@
 				{
 					"id": "WD06-1",
 					"title": "Determine and Decision Make Upon Third-Party Impacts",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
 							"1": "First identify any third-party components within a website or application, then analyze that feature as if it were a first-party product or service (against the WSG) for sustainability. If the product or service is determined to be highly impactful in a negative way, the third-party should be replaced or removed; otherwise, it can be optimized, or stay as-is.",
@@ -2190,7 +2190,7 @@
 				{
 					"id": "WD06-2",
 					"title": "Provide an Import on Interaction Delay for Third-Party Resources",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
 							"1": "Provide a mechanism to delay third-party content from loading to the screen until the visitor has requested it. Because third-party content is sourced from outside the origin domain, the sustainability impacts of the third-party code are outside of the control of a project, and thus click-to-load delay screens using the import-on-interaction pattern is critical.",
@@ -2218,7 +2218,7 @@
 				{
 					"id": "WD06-3",
 					"title": "Identify Lightweight Alternatives to Unsustainable Third-Party Resources",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
 							"1": "Reduce the overhead of libraries and frameworks which may be used by the product or service but could be offered through lighter or less production-heavy alternatives. This will have significant sustainability benefits as replacing a heavyweight framework where only a small proportion of features are used with one that is potentially 1/5th of the size could not only improve performance but reduce the rendering load.",
@@ -2249,7 +2249,7 @@
 				{
 					"id": "WD06-4",
 					"title": "Ensure That Content Is Delivered Through the Most Sustainable Pathway",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
 							"1": "Identify the location of website content and determine the most suitable pathway for it to be consumed sustainably. With the rise in content being hosted on third-party blogging platforms, there is a risk of significant content loss if the platform disappears and therefore a need for self-hosting exists (especially to maintain control of sustainability impacts).",
@@ -2280,7 +2280,7 @@
 				{
 					"id": "WD06-5",
 					"title": "Create Custom Clickable Icons and Widgets for Third-Party Services",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
 							"1": "Provide a mechanism for interacting with third-party products and services through your own project without having to rely on a third-party solution that will inevitably have tied sustainability impacts that are bound to a third-party service. Creating these custom repeatable use objects can have either a single function use, or can serve multiple functions.",
@@ -2308,7 +2308,7 @@
 				{
 					"id": "WD06-6",
 					"title": "Provide the Ability To Identify and Choose Third-Party Components To Load",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
 							"1": "Provide visitors with the optimum level of control over sustainability impacts by not just allowing them to identify and load third-party controls upon click but to also control third-party services, libraries, and tooling used by the product or service (even at load) via a preference panel where individual third-parties (which may be impactful) can be refused access.",
@@ -2339,7 +2339,7 @@
 				{
 					"id": "WD07-1",
 					"title": "Validate Source Code for Semantic Accuracy",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.8 Code must follow good semantic practices](https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Code must follow good semantic practices](https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices).",
 					"description": [
 						{
 							"1": "Ensure that HTML uses accurate semantics (Semantic HTML). Use the correct semantic element for the correct purpose and avoid common syntax mistakes that could be easily correctable. In terms of web sustainability it is important to have code that remains as likely to stay functional in the future as possible.",
@@ -2368,7 +2368,7 @@
 				{
 					"id": "WD07-2",
 					"title": "Eliminate Optional Code To Reduce the Rendering Impact",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.8 Code must follow good semantic practices](https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Code must follow good semantic practices](https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices).",
 					"description": [
 						{
 							"1": "Provide a mechanism for eliminating further redundancy from source code which may not be strictly required for semantic reasons but can help reduce the amount of data being transferred and thereby improve web performance. This can be done by removing any optional code from a document that will not affect the rendering of the page.",
@@ -2397,7 +2397,7 @@
 				{
 					"id": "WD07-3",
 					"title": "Replace Non-Standard Code With Suitable Alternative Syntax",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.8 Code must follow good semantic practices](https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Code must follow good semantic practices](https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices).",
 					"description": [
 						{
 							"1": "Identify and eliminate any non-standard coding practices including but not limited to proprietary additions included by web browsers to test new functionality before potentially including it fully within the web browser (this isn't so common today but remnants still exist). As older code is often not as highly optimized for performance, it can take longer to render and thrash hardware causing higher emissions so is worth resolving.",
@@ -2427,7 +2427,7 @@
 				{
 					"id": "WD08-1",
 					"title": "Set Scripts To Load Either Asynchronously or Deferred",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.9 Render blocking should be resolved](https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.8 Render blocking should be resolved](https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved).",
 					"description": [
 						{
 							"1": "Provide a mechanism for JavaScript (and if possible StyleSheets) to be loaded asynchronously or deferred to avoid acting as render blocking events which can delay the loading of content. This will lessen the initial impact on visitors' hardware and thus can have PPP and web performance benefits which should be taken into account.",
@@ -2455,7 +2455,7 @@
 				{
 					"id": "WD08-2",
 					"title": "Provide Assets Required at Load With the Correct Delivery Route",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.9 Render blocking should be resolved](https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.8 Render blocking should be resolved](https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved).",
 					"description": [
 						{
 							"1": "Provide a mechanism for assets to be loaded at the correct time in the rendering process. With the ability to use preload, prefetch, and preconnect we can take resources such as web fonts and scripts that are necessary for the product or service to successfully be able to be displayed and ensure they are prioritized over other web assets.",
@@ -2483,7 +2483,7 @@
 				{
 					"id": "WD09-1",
 					"title": "",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.10 Information to help understand the usefulness of a page should exist](https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.9 Information to help understand the usefulness of a page should exist](https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist).",
 					"description": [
 						{
 							"1": "Provide a mechanism for social networks and search engines to first identify your website or application and then to be able to showcase it successfully within their products and services. Because each social network and search engine has its own requirements, it will involve a combination of different metadata and semantic markup to achieve results.",
@@ -2514,7 +2514,7 @@
 				{
 					"id": "WD09-2",
 					"title": "Provide a Robots File That Contains Relevant Indexing Data",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.10 Information to help understand the usefulness of a page should exist](https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.9 Information to help understand the usefulness of a page should exist](https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist).",
 					"description": [
 						{
 							"1": "Provide a mechanism of maintaining findability within products and services for search engines but also to attempt to (successfully or otherwise) reduce the amount of traffic from bad actors or unethical / unsustainable products that may impact your wider projects and service-users. This will be produced using the robots.txt document.",
@@ -2545,7 +2545,7 @@
 				{
 					"id": "WD09-3",
 					"title": "Add Signposting Within the Page To Direct Visitors and Accessibility Aids",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.10 Information to help understand the usefulness of a page should exist](https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.9 Information to help understand the usefulness of a page should exist](https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist).",
 					"description": [
 						{
 							"1": "Provide mechanisms to assist the visitor with finding and navigating through content within the page or application. This can come in the form of links that allow you to bypass blocks of content, which is especially useful when large vocal areas of navigation or other content exist. It could also be in the form of keyboard shortcuts that activate certain features within a complex application rather than having to click multiple steps.",
@@ -2577,7 +2577,7 @@
 				{
 					"id": "WD10-1",
 					"title": "Ensure That Form Inputs Correctly Match and Validate Content Expectations",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.11 Forms must validate for errors, accounting for tooling requirements](https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.10 Forms must validate for errors, accounting for tooling requirements](https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements).",
 					"description": [
 						{
 							"1": "Ensure that input types correctly match the type of content being placed within them, that content types like passwords are handled in a way that visitors can easily reveal them, and that the patterns attribute is used correctly to help reduce errors during data entry. In doing so, problematic friction encountered during form filling can be reduced as can erroneous submissions.",
@@ -2608,7 +2608,7 @@
 				{
 					"id": "WD10-2",
 					"title": "Ensure That Form Elements Are Correctly Labeled",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.11 Forms must validate for errors, accounting for tooling requirements](https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.10 Forms must validate for errors, accounting for tooling requirements](https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements).",
 					"description": [
 						{
 							"1": "Provide a mechanism for accessibility tooling to be able to accurately describe the content of form features and to provide visual aids for visitors aiming to identify what information is required to be entered. This technique requires all interactive elements within the form to have an associated label to describe the purpose and / or role of the item.",
@@ -2635,7 +2635,7 @@
 				{
 					"id": "WD10-3",
 					"title": "Reduce Issues Within Data Entry With Manual Third-Party Content",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.11 Forms must validate for errors, accounting for tooling requirements](https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.10 Forms must validate for errors, accounting for tooling requirements](https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements).",
 					"description": [
 						{
 							"1": "Provide a mechanism in which visitors can easily take content from third-party sources and use it within your product or service. Techniques such as the ability to paste into forms or the ability to drag and drop can act as shortcuts to avoid retyping or recreating (using system resources) which may be energy-intensive or time-intensive for the visitor.",
@@ -2664,7 +2664,7 @@
 				{
 					"id": "WD11-1",
 					"title": "Ensure That the Required HTML Elements Are Included",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.12 Metadata is structured for machine readability](https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.11 Metadata is structured for machine readability](https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability).",
 					"description": [
 						{
 							"1": "Ensure that minimum required features are present to render a website or application correctly. This includes a Doctype and a series of core HTML elements. While a page can technically render without them it is considered bad practice to not include these features.",
@@ -2694,7 +2694,7 @@
 				{
 					"id": "WD11-2",
 					"title": "Provide Relevant Metadata Using a Recognized Scheme",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.12 Metadata is structured for machine readability](https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.11 Metadata is structured for machine readability](https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability).",
 					"description": [
 						{
 							"1": "Provide the necessary metadata within the head of your website or application to ensure that search engines can index your content correctly. You can use several different mechanisms to achieve this as several different formatting schemes have been provided over the years and they have varying levels of support by different search providers.",
@@ -2723,7 +2723,7 @@
 				{
 					"id": "WD11-3",
 					"title": "Ensure Content Is Structured Using Microdata",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.12 Metadata is structured for machine readability](https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.11 Metadata is structured for machine readability](https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability).",
 					"description": [
 						{
 							"1": "Provide mechanisms for search engines and social networks (and sometimes even visitors and web browsers!) to take context-rich content from your website or application and re-use it for the benefit of your product or service elsewhere. Structuring your content successfully can take place (like metadata) using one of several formats.",
@@ -2751,7 +2751,7 @@
 				{
 					"id": "WD12-1",
 					"title": "Ensure CSS Preference Media Queries Are Correctly Applied",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.13 Sustainable CSS user preference media queries are used](https://w3c.github.io/sustainableweb-wsg/#sustainable-css-user-preference-media-queries-are-used).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.12 Sustainable CSS user preference media queries are used](https://w3c.github.io/sustainableweb-wsg/#sustainable-css-user-preference-media-queries-are-used).",
 					"description": [
 						{
 							"1": "Provide mechanisms through CSS that adhere to the visitor's preferences regarding how they may choose to browse a website or application. While some queries that exist in the language will hold little sustainability value, others could have PPP benefits through accessibility (societal factors), or environmental (reducing hardware or data usage).",
@@ -2781,7 +2781,7 @@
 				{
 					"id": "WD13-1",
 					"title": "",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.13 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
 					"description": [
 						{
 							"1": "Ensure that your product or service can be classified as device-adaptable (responsively designed) to hopefully assure the widest remit of device types, and at least some degree of visual compatibility with your website or application. While there are many ways to approach this task, this technique is focused on connection speeds and the potential window size.",
@@ -2810,7 +2810,7 @@
 				{
 					"id": "WD13-2",
 					"title": "Provide Progressive Enhancement Feature Testing Within Projects",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.13 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
 					"description": [
 						{
 							"1": "Provide a mechanism for providing features within your product or service only if they are supported and if not, providing alternatives. This can be done using feature detection and progressive enhancement which should be used as a priority over graceful degradation (as it is better to add useful extras rather than patch-critical - but broken content).",
@@ -2840,7 +2840,7 @@
 				{
 					"id": "WD13-3",
 					"title": "Configure Your Project Around Carbon-Aware Situations",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.13 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
 					"description": [
 						{
 							"1": "Provide a mechanism for identifying when the project might be at its most resource or energy-intensive (either at the consumer level or the system level - or both), and then decision make to delay or alter when a heavy script or operation occurs to perform it when there are fewer visitors or when the user is causing less hardware intensive activity.",
@@ -2868,7 +2868,7 @@
 				{
 					"id": "WD13-4",
 					"title": "Provide Low-Impact, Possibly Delayed Methods of Interaction",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.13 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
 					"description": [
 						{
 							"1": "Provide a mechanism for interacting with a website or application using more usual methods, but methods that often will have a reduced overall impact (such as having a reduced energy requirement). These indirect methods such as syndication feeds or the browser reader view can even eliminate the heavy impact of rendering that can affect hardware.",
@@ -2896,7 +2896,7 @@
 				{
 					"id": "WD14-1",
 					"title": "",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.15 Use beneficial JavaScript and its APIs](https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Use beneficial JavaScript and its APIs](https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis).",
 					"description": [
 						{
 							"1": "Improve the quality of JavaScript code by examining the contents and identifying any issues that could be deemed a matter of sustainability which could trigger a large load upon hardware resources (and thus put a strain on battery charge cycles). In addition to this, matters of accessibility and performance with such code can be considered.",
@@ -2927,7 +2927,7 @@
 				{
 					"id": "WD14-2",
 					"title": "Ensure JavaScript APIs Are Correctly Applied",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.15 Use beneficial JavaScript and its APIs](https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Use beneficial JavaScript and its APIs](https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis).",
 					"description": [
 						{
 							"1": "Provide mechanisms through JavaScript that minimize the visitor's energy consumption by either optimizing the performance of the website or application itself or improving functionality in such a way that it reduces the utilization of resources when they are not required by the visitor. Some JavaScript APIs can have explicit sustainability benefits, while others may improve other PPP benefits through accessibility (societal factors).",
@@ -2958,7 +2958,7 @@
 				{
 					"id": "WD15-1",
 					"title": "Ensure All Vulnerabilities Are Removed and Code Is Linted",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.16 Ensure that your scripts are secure](https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-scripts-are-secure).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.15 Ensure that your scripts are secure](https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-scripts-are-secure).",
 					"description": [
 						{
 							"1": "Scan the website or application's code for issues that may otherwise potentially leave a product or service vulnerable to exploitation. This will not only include first-party code that is created by the project owners but third-party tooling imported. Any third-party library or framework found to contain harmful code should be removed before production.",
@@ -2986,7 +2986,7 @@
 				{
 					"id": "WD16-1",
 					"title": "",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.17 Dependencies are appropriately used and maintained](https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.16 Dependencies are appropriately used and maintained](https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained).",
 					"description": [
 						{
 							"1": "Provide a mechanism for identifying if a library or framework is currently in use and if not, remove the said tooling and its unused dependencies from the production code. This will help reduce the PPP burden of the website as less bloat will reach the visitor which can have a large impact if they are on a low-powered device or a restricted data plan.",
@@ -3014,7 +3014,7 @@
 				{
 					"id": "WD16-2",
 					"title": "Implement Modularized Frameworks and Libraries",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.17 Dependencies are appropriately used and maintained](https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.16 Dependencies are appropriately used and maintained](https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained).",
 					"description": [
 						{
 							"1": "Provide a mechanism for determining how much of a library of framework you require for your website or application to function, and then requesting just that modularized segment to reduce the overall payload and load on the visitor's hardware during rendering. This is especially critical for third-party scripting but is also useful for CSS.",
@@ -3042,7 +3042,7 @@
 				{
 					"id": "WD16-3",
 					"title": "Ensure That Dependencies Are Verified As Up-to-Date",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.17 Dependencies are appropriately used and maintained](https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.16 Dependencies are appropriately used and maintained](https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained).",
 					"description": [
 						{
 							"1": "Ensure that the deliverables are current and up-to-date, thereby providing any necessary security patches or bug fixes that are required to remain operational. This is especially true when a website or application is dependent on third-party libraries or frameworks and has a complex toolchain. As such, verifying the maintenance status of work is critical.",
@@ -3071,7 +3071,7 @@
 				{
 					"id": "WD17-1",
 					"title": "Provide the Expected Website Assets in Your Base Directory",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.18 Include expected and beneficial files](https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.17 Include expected and beneficial files](https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files).",
 					"description": [
 						{
 							"1": "Ensure that the non-HTML files that are expected to be located within the base directory of a website can firstly be found and secondly are correctly formatted (using the right syntax) and match the expectations of the product or service that requires them to benefit the visitor with a better user experience, increased accessibility, and sustainability.",
@@ -3103,7 +3103,7 @@
 				{
 					"id": "WD17-2",
 					"title": "Provide Beneficial Plaintext Website Assets in the Expected Locations",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.18 Include expected and beneficial files](https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.17 Include expected and beneficial files](https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files).",
 					"description": [
 						{
 							"1": "Provide a mechanism for adding useful contextual information to a website or application within recognized locations in plaintext format (so that it doesn't impact the rest of the product or service). These standardized formats each have a defined beneficial purpose and are considered to be low-impact (sustainably speaking) so are safe to include.",
@@ -3134,7 +3134,7 @@
 				{
 					"id": "WD18-1",
 					"title": "Replace Outdated Syntax With Suitable Alternatives",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.19 Avoid using deprecated, proprietary, or outdated code](https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.18 Avoid using deprecated, proprietary, or outdated code](https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code).",
 					"description": [
 						{
 							"1": "Identify deprecated code, technologies and web standards that may be in use but have been superseded by newer technologies and web standards. In certain cases, the standards in use may still be actively supported by browsers and if there is a sustainability reason to retain the feature, continue. Otherwise, updating the code should be considered to ensure longevity and sustainability.",
@@ -3165,7 +3165,7 @@
 				{
 					"id": "WD19-1",
 					"title": "Encourage the Use of More Sustainable Creation Toolchains",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.20 Use the most efficient solution to implement your service](https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.19 Use the most efficient solution to implement your service](https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service).",
 					"description": [
 						{
 							"1": "Provide a mechanism of choice when creators decide how to build their product or service. This technique aims to identify how they created their product or service (if possible) and make recommendations based on the sustainability of such methods. Build steps and tooling add additional complexity to a project and this should be weighed against other factors (such as individual / team ability) to enable sustainable creation toolchains.",
@@ -3193,7 +3193,7 @@
 				{
 					"id": "WD19-4",
 					"title": "Test All Third-Party Resources for Sustainability Impacts",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.20 Use the most efficient solution to implement your service](https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.19 Use the most efficient solution to implement your service](https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service).",
 					"description": [
 						{
 							"1": "Provide a mechanism for testing third-party plugins, extensions, and themes (if such devices are used within a product or service's creation process) for any sustainability impacts they may have. These often are included within CMS software and are external assets that can add overheads to the website or application being rendered.",
@@ -3224,7 +3224,7 @@
 				{
 					"id": "WD20-1",
 					"title": "Ensure the Latest Version of a Syntax Language Is Being Used",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.21 Use the latest stable language version](https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.20 Use the latest stable language version](https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version).",
 					"description": [
 						{
 							"1": "Ensure that the product or service is making use of the latest version of the chosen syntax language. As with keeping dependencies up-to-date, having the latest version of a syntax language can have sustainability benefits in terms of performance and security enhancements as well as useful, optimized new features so it's worthwhile.",
@@ -3251,7 +3251,7 @@
 				{
 					"id": "WD21-1",
 					"title": "Replace Code That Can Instead Use More Efficient Native APIs",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.22 Take advantage of native features and functionality](https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features-and-functionality).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.21 Take advantage of native features and functionality](https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features-and-functionality).",
 					"description": [
 						{
 							"1": "First identify and then determine if custom JavaScript functions could be replaced with a more optimal and established native API call. This will also apply to custom element creation over using established native features to the browser. With the evolution of JavaScript, the opportunity to optimize code with newer cleaner techniques occurs regularly.",

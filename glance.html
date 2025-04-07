@@ -114,6 +114,11 @@
 			postProcess: [addChairs],
 		}
 		</script>
+		<style>
+			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
+			summary { cursor: pointer; }
+			.summary { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
+		</style>
 	</head>
 	<body>
 		<section id="abstract"> <!-- Abstract -->
@@ -135,36 +140,38 @@
 			<section> <!-- Highlights -->
 				<h3>Highlights</h3>
 				<p>Knowing where to start, especially with a document as long and dense as the WSG is quite a challenge. You may wish to scan through a supplement such as our <a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">quick reference</a> which provides a checklist-based overview of every guideline. Or if you just want a couple of important tasks you can dive right into them. If so, consider the below as a few of our highlights (though please note, that this doesn't reduce the importance of the others).</p>
-				<details>
-					<summary>Show / Hide highlights by category.</summary>
-					<p>The below will have a high impact on your product or service's digital sustainability:</p>
-					<dl>
-						<dt>User Experience Design</dt>
-						<dd><ul>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access">2.2</a> - Understand visitor requirements or constraints, resolving barriers to access</li>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys">2.6</a> - Minimize non-essential content, interactivity, or journeys</li>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues">2.29</a> - Check for compatibility or platform-specific issues</li>
-						</ul></dd>
-						<dt>Web Development</dt>
-						<dd><ul>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties">3.7</a> - Third-party services should be assessed as first parties</li>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained">3.17</a> - Dependencies are appropriately used and maintained</li>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service">3.21</a> - Use the most efficient solution to implement your service</li>
-						</ul></dd>
-						<dt>Hosting, Infrastructure and Systems</dt>
-						<dd><ul>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider">4.1</a> - Choose a sustainable hosting provider</li>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported">4.2</a> - Optimize caching with offline access supported</li>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial">4.3</a> - Compress files where it is beneficial</li>
-						</ul></dd>
-						<dt>Business Strategy and Product Management</dt>
-						<dd><ul>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy">5.1</a> - Have an ethical and sustainable product strategy</li>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#estimate-a-product-or-service-s-environmental-impact">5.5</a> - Estimate a product or service's environmental impact</li>
-							<li><a href="https://w3c.github.io/sustainableweb-wsg/#implement-continuous-improvement-procedures">5.12</a> - Implement continuous improvement procedures</li>
-						</ul></dd>
-					</dl>
-				</details>
+				<div class="summary">
+					<details>
+						<summary>Show / Hide highlights by category.</summary>
+						<p>The below will have a high impact on your product or service's digital sustainability:</p>
+						<dl>
+							<dt>User Experience Design</dt>
+							<dd><ul>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access">2.2</a> - Understand visitor requirements or constraints, resolving barriers to access</li>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys">2.6</a> - Minimize non-essential content, interactivity, or journeys</li>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues">2.29</a> - Check for compatibility or platform-specific issues</li>
+							</ul></dd>
+							<dt>Web Development</dt>
+							<dd><ul>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties">3.7</a> - Third-party services should be assessed as first parties</li>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained">3.17</a> - Dependencies are appropriately used and maintained</li>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service">3.21</a> - Use the most efficient solution to implement your service</li>
+							</ul></dd>
+							<dt>Hosting, Infrastructure and Systems</dt>
+							<dd><ul>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider">4.1</a> - Choose a sustainable hosting provider</li>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported">4.2</a> - Optimize caching with offline access supported</li>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial">4.3</a> - Compress files where it is beneficial</li>
+							</ul></dd>
+							<dt>Business Strategy and Product Management</dt>
+							<dd><ul>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy">5.1</a> - Have an ethical and sustainable product strategy</li>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#estimate-a-product-or-service-s-environmental-impact">5.5</a> - Estimate a product or service's environmental impact</li>
+								<li><a href="https://w3c.github.io/sustainableweb-wsg/#implement-continuous-improvement-procedures">5.12</a> - Implement continuous improvement procedures</li>
+							</ul></dd>
+						</dl>
+					</details>
+				</div>
 			</section>
 		</section>
 		<section id="sotd" class="override"></section> <!-- Ignore -->
@@ -174,101 +181,109 @@
 			<section> <!-- User Experience Design -->
 				<h3>User Experience Design</h3>
 				<p>Covering research and ideation, journey design, content and assets, and quality assurance.</p>
-				<details>
-					<summary>Show / Hide available guidance.</summary>
-					<p>In relation to <strong>research and ideation</strong>, make sure you:</p>
-					<ul>
-						<li>Map all areas where your digital product <a href="https://w3c.github.io/sustainableweb-wsg/#display-any-variables-that-have-a-negative-impact-on-your-project">could impact people and the planet</a>.</li>
-						<li>Assess all <a href="https://w3c.github.io/sustainableweb-wsg/#brainstorm-ways-to-resolve-any-stakeholder-issues">stakeholder issues</a> as well as <a href="https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access">visitor</a> and <a href="https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-of-non-visitors">non-visitor</a> needs; then define appropriate <a href="https://w3c.github.io/sustainableweb-wsg/#policies-and-processes-must-exist-to-get-stakeholders-invested">test policies</a>.</li>
-						<li>Consider the use of <a href="https://w3c.github.io/sustainableweb-wsg/#consider-sustainability-throughout-the-ideation-process">low-carbon tools during ideation</a>.</li>
-					</ul>
-					<p>In relation to <strong>journey design</strong>, make sure you:</p>
-					<ul>
-						<li>Create a <a href="https://w3c.github.io/sustainableweb-wsg/#create-a-frictionless-lightweight-experience-by-default">frictionless, lightweight experience</a>, using <a href="https://w3c.github.io/sustainableweb-wsg/#use-established-design-patterns-and-appropriate-components">recognized design patterns</a> that ensure navigation and way-finding <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-way-finding-are-well-structured">are well-structured</a>, the visitor's <a href="https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting">attention is respected</a> and <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive">visitors aren't manipulated</a>.</li>
-						<li>Implement forms that are <a href="https://w3c.github.io/sustainableweb-wsg/#provide-accessible-usable-minimal-web-forms">usable, accessible, and minimal</a> and <a href="https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements">assist visitors with errors</a>.</li>
-						<li>Only implement <a href="https://w3c.github.io/sustainableweb-wsg/#provide-useful-notifications-to-improve-the-visitor-s-journey">useful notifications</a> that improve the visitor's experience.</li>
-					</ul>
-					<p>In relation to <strong>content and assets</strong>, make sure you:</p>
-					<ul>
-						<li>Avoid <a href="https://w3c.github.io/sustainableweb-wsg/#use-decorative-design-with-care">unnecessary assets</a>, but when they are needed, take a sustainable approach to <a href="https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability">images</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability">media</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#animation-must-be-proportionate-and-easy-to-control">animations</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#web-typography-must-be-highly-optimized-and-appropriate">typefaces</a>, and <a href="https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents">documents</a>.</li>
-						<li>Provide <a href="https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered">alternatives to visual and audio content</a>, as well as facilitate <a href="https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-of-visitors-using-non-visual-browsers">speech-based browsing</a> of your content.</li>
-						<li><a href="https://w3c.github.io/sustainableweb-wsg/#write-with-purpose-in-an-accessible-easy-to-understand-format">Write with purpose, in an accessible, easy-to-understand format</a>.</li>
-					</ul>
-					<p>In relation to <strong>quality assurance</strong>, make sure you:</p>
-					<ul>
-						<li>Have <a href="https://w3c.github.io/sustainableweb-wsg/#enable-others-to-understand-and-reuse-your-deliverables">open working and documentation processes</a> such as <a href="https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-to-prioritize-interface-consistency">design systems</a>.</li>
-						<li>Conduct <a href="https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-that-require-resolving">regular audits and testing</a>, including <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-features-provide-maximum-value-for-their-impact">value</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#verify-that-real-world-users-can-successfully-use-your-work">usability</a>, and <a href="https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues">compatibility</a> testing into releases, as well as using inputs from visitor <a href="https://w3c.github.io/sustainableweb-wsg/#measure-and-test-for-performance">journey tracking</a> to identify issues / opportunities.</li>
-					</ul>
-				</details>
+				<div class="summary">
+					<details>
+						<summary>Show / Hide available guidance.</summary>
+						<p>In relation to <strong>research and ideation</strong>, make sure you:</p>
+						<ul>
+							<li>Map all areas where your digital product <a href="https://w3c.github.io/sustainableweb-wsg/#display-any-variables-that-have-a-negative-impact-on-your-project">could impact people and the planet</a>.</li>
+							<li>Assess all <a href="https://w3c.github.io/sustainableweb-wsg/#brainstorm-ways-to-resolve-any-stakeholder-issues">stakeholder issues</a> as well as <a href="https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access">visitor</a> and <a href="https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-of-non-visitors">non-visitor</a> needs; then define appropriate <a href="https://w3c.github.io/sustainableweb-wsg/#policies-and-processes-must-exist-to-get-stakeholders-invested">test policies</a>.</li>
+							<li>Consider the use of <a href="https://w3c.github.io/sustainableweb-wsg/#consider-sustainability-throughout-the-ideation-process">low-carbon tools during ideation</a>.</li>
+						</ul>
+						<p>In relation to <strong>journey design</strong>, make sure you:</p>
+						<ul>
+							<li>Create a <a href="https://w3c.github.io/sustainableweb-wsg/#create-a-frictionless-lightweight-experience-by-default">frictionless, lightweight experience</a>, using <a href="https://w3c.github.io/sustainableweb-wsg/#use-established-design-patterns-and-appropriate-components">recognized design patterns</a> that ensure navigation and way-finding <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-way-finding-are-well-structured">are well-structured</a>, the visitor's <a href="https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting">attention is respected</a> and <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive">visitors aren't manipulated</a>.</li>
+							<li>Implement forms that are <a href="https://w3c.github.io/sustainableweb-wsg/#provide-accessible-usable-minimal-web-forms">usable, accessible, and minimal</a> and <a href="https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements">assist visitors with errors</a>.</li>
+							<li>Only implement <a href="https://w3c.github.io/sustainableweb-wsg/#provide-useful-notifications-to-improve-the-visitor-s-journey">useful notifications</a> that improve the visitor's experience.</li>
+						</ul>
+						<p>In relation to <strong>content and assets</strong>, make sure you:</p>
+						<ul>
+							<li>Avoid <a href="https://w3c.github.io/sustainableweb-wsg/#use-decorative-design-with-care">unnecessary assets</a>, but when they are needed, take a sustainable approach to <a href="https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability">images</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability">media</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#animation-must-be-proportionate-and-easy-to-control">animations</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#web-typography-must-be-highly-optimized-and-appropriate">typefaces</a>, and <a href="https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents">documents</a>.</li>
+							<li>Provide <a href="https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered">alternatives to visual and audio content</a>, as well as facilitate <a href="https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-of-visitors-using-non-visual-browsers">speech-based browsing</a> of your content.</li>
+							<li><a href="https://w3c.github.io/sustainableweb-wsg/#write-with-purpose-in-an-accessible-easy-to-understand-format">Write with purpose, in an accessible, easy-to-understand format</a>.</li>
+						</ul>
+						<p>In relation to <strong>quality assurance</strong>, make sure you:</p>
+						<ul>
+							<li>Have <a href="https://w3c.github.io/sustainableweb-wsg/#enable-others-to-understand-and-reuse-your-deliverables">open working and documentation processes</a> such as <a href="https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-to-prioritize-interface-consistency">design systems</a>.</li>
+							<li>Conduct <a href="https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-that-require-resolving">regular audits and testing</a>, including <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-features-provide-maximum-value-for-their-impact">value</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#verify-that-real-world-users-can-successfully-use-your-work">usability</a>, and <a href="https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues">compatibility</a> testing into releases, as well as using inputs from visitor <a href="https://w3c.github.io/sustainableweb-wsg/#measure-and-test-for-performance">journey tracking</a> to identify issues / opportunities.</li>
+						</ul>
+					</details>
+				</div>
 			</section>
 			<section> <!-- Web Development -->
 				<h3>Web Development</h3>
 				<p>Covering development approach, code minimization, code coherence, and code security.</p>
-				<details>
-					<summary>Show / Hide available guidance.</summary>
-					<p>In relation to the <strong>development approach</strong>, make sure you:</p>
-					<ul>
-						<li>Identify indicators and metrics that will encourage sustainable development approaches, and use sustainability as a success criterion of your technical requirements.</li>
-					</ul>
-					<p>In relation to <strong>code minimization</strong>, make sure you:</p>
-					<ul>
-						<li>Focus on removing bottlenecks and reducing compute load on a visitor's device by <a href="https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved">removing rendering blockages</a>, using <a href="https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components-within-projects">code splitting</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained">managing dependencies</a>, taking advantage of <a href="https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features-and-functionality">native features</a>, rigorously assessing <a href="https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties">third-party code</a> / services, and <a href="https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-or-redundant-information">minifying everything</a>.</li>
-						<li>Hunt out valueless code by <a href="https://w3c.github.io/sustainableweb-wsg/#tree-shaking-should-be-used-to-remove-unnecessary-code">tree shaking your code</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#redundancy-and-duplication-in-code-should-be-avoided">avoiding duplication</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#run-fewer-simpler-queries-as-possible">fewer and simpler queries</a>, and (sparingly) <a href="https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-api-s">using the latest JavaScript and APIs</a>.</li>
-					</ul>
-					<p>In relation to <strong>code coherence</strong>, make sure you:</p>
-					<ul>
-						<li>Enable other tools to interpret your code by using <a href="https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices">HTML</a> and <a href="https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability">metadata</a> correctly enabling <a href="https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist">code-based way-finding</a>, avoiding <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code">deprecated or proprietary code</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files">providing expected files</a>, and using the latest standards in relation to website assets.</li>
-						<li>Facilitate your visitor's low-carbon choices by using a <a href="https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements">device-adaptable layout</a> and <a href="https://w3c.github.io/sustainableweb-wsg/#sustainable-css-user-preference-media-queries-are-used">adapting to user preferences</a>.</li>
-					</ul>
-					<p>In relation to <strong>code security</strong>, make sure you:</p>
-					<ul>
-						<li>Use the <a href="https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version">latest stable version</a> of your chosen code language and regularly ensure your <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-scripts-are-secure">scripts are secure</a>.</li>
-					</ul>
-				</details>
+				<div class="summary">
+					<details>
+						<summary>Show / Hide available guidance.</summary>
+						<p>In relation to the <strong>development approach</strong>, make sure you:</p>
+						<ul>
+							<li>Identify indicators and metrics that will encourage sustainable development approaches, and use sustainability as a success criterion of your technical requirements.</li>
+						</ul>
+						<p>In relation to <strong>code minimization</strong>, make sure you:</p>
+						<ul>
+							<li>Focus on removing bottlenecks and reducing compute load on a visitor's device by <a href="https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved">removing rendering blockages</a>, using <a href="https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components-within-projects">code splitting</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained">managing dependencies</a>, taking advantage of <a href="https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features-and-functionality">native features</a>, rigorously assessing <a href="https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties">third-party code</a> / services, and <a href="https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-or-redundant-information">minifying everything</a>.</li>
+							<li>Hunt out valueless code by <a href="https://w3c.github.io/sustainableweb-wsg/#tree-shaking-should-be-used-to-remove-unnecessary-code">tree shaking your code</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#redundancy-and-duplication-in-code-should-be-avoided">avoiding duplication</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#run-fewer-simpler-queries-as-possible">fewer and simpler queries</a>, and (sparingly) <a href="https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-api-s">using the latest JavaScript and APIs</a>.</li>
+						</ul>
+						<p>In relation to <strong>code coherence</strong>, make sure you:</p>
+						<ul>
+							<li>Enable other tools to interpret your code by using <a href="https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices">HTML</a> and <a href="https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability">metadata</a> correctly enabling <a href="https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist">code-based way-finding</a>, avoiding <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code">deprecated or proprietary code</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files">providing expected files</a>, and using the latest standards in relation to website assets.</li>
+							<li>Facilitate your visitor's low-carbon choices by using a <a href="https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements">device-adaptable layout</a> and <a href="https://w3c.github.io/sustainableweb-wsg/#sustainable-css-user-preference-media-queries-are-used">adapting to user preferences</a>.</li>
+						</ul>
+						<p>In relation to <strong>code security</strong>, make sure you:</p>
+						<ul>
+							<li>Use the <a href="https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version">latest stable version</a> of your chosen code language and regularly ensure your <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-scripts-are-secure">scripts are secure</a>.</li>
+						</ul>
+					</details>
+				</div>
 			</section>
 			<section> <!-- Hosting, Infrastructure and Systems -->
 				<h3>Hosting, Infrastructure and Systems</h3>
 				<p>Covering environment commissioning, minimizing environment and data, and minimizing human disruption.</p>
-				<details>
-					<summary>Show / Hide available guidance.</summary>
-					<p>Make sure you:</p>
-					<ul>
-						<li>Commission environments by selecting a <a href="https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider">sustainable hosting provider</a>, ensuring support of <a href="https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-and-requirements-of-processing-information">asynchronous processing</a>, using the <a href="https://w3c.github.io/sustainableweb-wsg/#infrastructure-decisions-must-meet-business-requirements">lowest appropriate infrastructure tier</a>, and minimizing the use of <a href="https://w3c.github.io/sustainableweb-wsg/#unless-required-avoid-utilizing-unnecessary-environments">additional environments</a>.</li>
-						<li>Minimize environments and reduce data transfer by <a href="https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial">compressing files</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#backup-critical-data-at-routine-intervals">managing duplicate data</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users">storing data</a> according to visitor needs, <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported">optimizing caching</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#define-the-frequency-of-data-refreshes">refreshing data</a> only when the visitor needs it, and using <a href="https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable">CDNs and edge caching</a>.</li>
-						<li>Reduce human disruption by <a href="https://w3c.github.io/sustainableweb-wsg/#allow-automation-but-ensure-it-is-tightly-regulated">automating where appropriate</a> and dealing with <a href="https://w3c.github.io/sustainableweb-wsg/#setup-necessary-error-pages-and-redirection-links">errors and redirects</a>.</li>
-					</ul>
-				</details>
+				<div class="summary">
+					<details>
+						<summary>Show / Hide available guidance.</summary>
+						<p>Make sure you:</p>
+						<ul>
+							<li>Commission environments by selecting a <a href="https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider">sustainable hosting provider</a>, ensuring support of <a href="https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-and-requirements-of-processing-information">asynchronous processing</a>, using the <a href="https://w3c.github.io/sustainableweb-wsg/#infrastructure-decisions-must-meet-business-requirements">lowest appropriate infrastructure tier</a>, and minimizing the use of <a href="https://w3c.github.io/sustainableweb-wsg/#unless-required-avoid-utilizing-unnecessary-environments">additional environments</a>.</li>
+							<li>Minimize environments and reduce data transfer by <a href="https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial">compressing files</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#backup-critical-data-at-routine-intervals">managing duplicate data</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users">storing data</a> according to visitor needs, <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported">optimizing caching</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#define-the-frequency-of-data-refreshes">refreshing data</a> only when the visitor needs it, and using <a href="https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable">CDNs and edge caching</a>.</li>
+							<li>Reduce human disruption by <a href="https://w3c.github.io/sustainableweb-wsg/#allow-automation-but-ensure-it-is-tightly-regulated">automating where appropriate</a> and dealing with <a href="https://w3c.github.io/sustainableweb-wsg/#setup-necessary-error-pages-and-redirection-links">errors and redirects</a>.</li>
+						</ul>
+					</details>
+				</div>
 			</section>
 			<section> <!-- Business Strategy and Product Management -->
 				<h3>Business Strategy and Product Management</h3>
 				<p>Covering reporting, disclosure, strategy, and policies from both an organizational and website / product level.</p>
-				<details>
-					<summary>Show / Hide available guidance.</summary>
-					<p>In relation to <strong>organizational level reporting and disclosure</strong>, make sure you:</p>
-					<ul>
-						<li>Assign <a href="https://w3c.github.io/sustainableweb-wsg/#assign-a-sustainability-representative">responsibility for sustainability</a> as a core part of people's roles.</li>
-						<li>Define clear sustainability <a href="https://w3c.github.io/sustainableweb-wsg/#define-clear-organizational-sustainability-goals-and-metrics">goals and metrics</a>, which are <a href="https://w3c.github.io/sustainableweb-wsg/#verify-your-efforts-using-established-third-party-business-certifications">verified</a> and upon which you <a href="https://w3c.github.io/sustainableweb-wsg/#support-mandatory-disclosures-and-reporting">report regularly</a> so that others can <a href="https://w3c.github.io/sustainableweb-wsg/#inform-raise-awareness-and-train-for-sustainability">follow in your footsteps</a>.</li>
-					</ul>
-					<p>In relation to <strong>organizational level strategy and policies</strong>, make sure you:</p>
-					<ul>
-						<li>Have <a href="https://w3c.github.io/sustainableweb-wsg/#create-one-or-more-impact-business-models">business models</a> based on positive impact, which <a href="https://w3c.github.io/sustainableweb-wsg/#share-decision-making-power-with-appropriate-stakeholders">actively listen to all stakeholders</a>, and ensure <a href="https://w3c.github.io/sustainableweb-wsg/#share-any-economic-benefits">economic benefits are shared</a> with employees, suppliers, and wider society.</li>
-						<li>Define and implement policies for <a href="https://w3c.github.io/sustainableweb-wsg/#use-justice-equity-diversity-inclusion-jedi-practices">Justice, Equity, Diversity and Inclusion</a>, ethical and responsible <a href="https://w3c.github.io/sustainableweb-wsg/#include-responsible-financial-policies">finance / investments</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#include-organizational-philanthropy-policies">philanthropy</a>, working with suppliers who <a href="https://w3c.github.io/sustainableweb-wsg/#create-a-supplier-standards-of-practice">align with your values</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#include-e-waste-right-to-repair-and-recycling-policies">reduction of e-waste</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#promote-responsible-data-practices">data privacy</a>, appropriate <a href="https://w3c.github.io/sustainableweb-wsg/#implement-appropriate-data-management-procedures">data management</a>, and considered use of <a href="https://w3c.github.io/sustainableweb-wsg/#promote-responsible-emerging-technology-practices">emerging technologies</a>.</li>
-						<li>Fully <a href="https://w3c.github.io/sustainableweb-wsg/#implement-sustainability-onboarding-guidelines">induct your employees</a> on all of the above.</li>
-					</ul>
-					<p>In relation to <strong>product or website-level strategy policies</strong>, make sure you:</p>
-					<ul>
-						<li>Establish <a href="https://w3c.github.io/sustainableweb-wsg/#establish-if-a-digital-product-or-service-is-necessary">if the product or website is needed</a>; if it is, then <a href="https://w3c.github.io/sustainableweb-wsg/#conduct-a-full-life-cycle-assessment">define its requirements</a>, design an ethical and sustainable <a href="https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy">product strategy</a> to guide it, <a href="https://w3c.github.io/sustainableweb-wsg/#estimate-a-product-or-service-s-environmental-impact">estimate its emissions</a>, put <a href="https://w3c.github.io/sustainableweb-wsg/#define-performance-and-environmental-budgets">budgets around those emissions</a>, and <a href="https://w3c.github.io/sustainableweb-wsg/#communicate-the-ecological-impact-of-user-choices">communicate to visitors</a> the impact their decisions will have.</li>
-						<li>Once live, follow a <a href="https://w3c.github.io/sustainableweb-wsg/#follow-a-product-management-and-maintenance-strategy">product management and maintenance strategy</a> to keep efficient, <a href="https://w3c.github.io/sustainableweb-wsg/#implement-continuous-improvement-procedures">continuously improve it</a>, openly and honestly <a href="https://w3c.github.io/sustainableweb-wsg/#document-future-updates-and-evolutions">communicate the changes you've made</a>, and <a href="https://w3c.github.io/sustainableweb-wsg/#plan-for-a-digital-product-or-service-s-care-and-end-of-life">plan for its end of life</a>.</li>
-						<li>Use <a href="https://w3c.github.io/sustainableweb-wsg/#use-open-source-where-possible">open source software</a>.</li>
-					</ul>
-				</details>
+				<div class="summary">
+					<details>
+						<summary>Show / Hide available guidance.</summary>
+						<p>In relation to <strong>organizational level reporting and disclosure</strong>, make sure you:</p>
+						<ul>
+							<li>Assign <a href="https://w3c.github.io/sustainableweb-wsg/#assign-a-sustainability-representative">responsibility for sustainability</a> as a core part of people's roles.</li>
+							<li>Define clear sustainability <a href="https://w3c.github.io/sustainableweb-wsg/#define-clear-organizational-sustainability-goals-and-metrics">goals and metrics</a>, which are <a href="https://w3c.github.io/sustainableweb-wsg/#verify-your-efforts-using-established-third-party-business-certifications">verified</a> and upon which you <a href="https://w3c.github.io/sustainableweb-wsg/#support-mandatory-disclosures-and-reporting">report regularly</a> so that others can <a href="https://w3c.github.io/sustainableweb-wsg/#inform-raise-awareness-and-train-for-sustainability">follow in your footsteps</a>.</li>
+						</ul>
+						<p>In relation to <strong>organizational level strategy and policies</strong>, make sure you:</p>
+						<ul>
+							<li>Have <a href="https://w3c.github.io/sustainableweb-wsg/#create-one-or-more-impact-business-models">business models</a> based on positive impact, which <a href="https://w3c.github.io/sustainableweb-wsg/#share-decision-making-power-with-appropriate-stakeholders">actively listen to all stakeholders</a>, and ensure <a href="https://w3c.github.io/sustainableweb-wsg/#share-any-economic-benefits">economic benefits are shared</a> with employees, suppliers, and wider society.</li>
+							<li>Define and implement policies for <a href="https://w3c.github.io/sustainableweb-wsg/#use-justice-equity-diversity-inclusion-jedi-practices">Justice, Equity, Diversity and Inclusion</a>, ethical and responsible <a href="https://w3c.github.io/sustainableweb-wsg/#include-responsible-financial-policies">finance / investments</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#include-organizational-philanthropy-policies">philanthropy</a>, working with suppliers who <a href="https://w3c.github.io/sustainableweb-wsg/#create-a-supplier-standards-of-practice">align with your values</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#include-e-waste-right-to-repair-and-recycling-policies">reduction of e-waste</a>, <a href="https://w3c.github.io/sustainableweb-wsg/#promote-responsible-data-practices">data privacy</a>, appropriate <a href="https://w3c.github.io/sustainableweb-wsg/#implement-appropriate-data-management-procedures">data management</a>, and considered use of <a href="https://w3c.github.io/sustainableweb-wsg/#promote-responsible-emerging-technology-practices">emerging technologies</a>.</li>
+							<li>Fully <a href="https://w3c.github.io/sustainableweb-wsg/#implement-sustainability-onboarding-guidelines">induct your employees</a> on all of the above.</li>
+						</ul>
+						<p>In relation to <strong>product or website-level strategy policies</strong>, make sure you:</p>
+						<ul>
+							<li>Establish <a href="https://w3c.github.io/sustainableweb-wsg/#establish-if-a-digital-product-or-service-is-necessary">if the product or website is needed</a>; if it is, then <a href="https://w3c.github.io/sustainableweb-wsg/#conduct-a-full-life-cycle-assessment">define its requirements</a>, design an ethical and sustainable <a href="https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy">product strategy</a> to guide it, <a href="https://w3c.github.io/sustainableweb-wsg/#estimate-a-product-or-service-s-environmental-impact">estimate its emissions</a>, put <a href="https://w3c.github.io/sustainableweb-wsg/#define-performance-and-environmental-budgets">budgets around those emissions</a>, and <a href="https://w3c.github.io/sustainableweb-wsg/#communicate-the-ecological-impact-of-user-choices">communicate to visitors</a> the impact their decisions will have.</li>
+							<li>Once live, follow a <a href="https://w3c.github.io/sustainableweb-wsg/#follow-a-product-management-and-maintenance-strategy">product management and maintenance strategy</a> to keep efficient, <a href="https://w3c.github.io/sustainableweb-wsg/#implement-continuous-improvement-procedures">continuously improve it</a>, openly and honestly <a href="https://w3c.github.io/sustainableweb-wsg/#document-future-updates-and-evolutions">communicate the changes you've made</a>, and <a href="https://w3c.github.io/sustainableweb-wsg/#plan-for-a-digital-product-or-service-s-care-and-end-of-life">plan for its end of life</a>.</li>
+							<li>Use <a href="https://w3c.github.io/sustainableweb-wsg/#use-open-source-where-possible">open source software</a>.</li>
+						</ul>
+					</details>
+				</div>
 			</section>
 		</section>
 		<section class="appendix"> <!-- Acknowledgments -->
 			<h2>Acknowledgments</h2>
 			<p>Additional information about participation in the Sustainable Web Interest Group can be found <a href="https://github.com/w3c/sustainableweb-ig/">within the GitHub repository</a> of the Interest Group.</p>
 			<section> <!-- Draft Contributors -->
-				<h2>Participants Active in the Development of This Document</h2>
+				<h2>Participants active in the development of this document</h2>
 				<p>Alexander Dawson, Andy Blum, Chris Wilson, Michelle Barker, Neil Clark, Tim Frick</p>
 			</section>
 		</section>
