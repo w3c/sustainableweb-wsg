@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-04-15",
+	"lastModified": "2025-04-18",
 	"category": [
 		{
 			"id": "1",
@@ -2742,7 +2742,7 @@
 							"description": "Accessibility and usability aids are provided to find content, such as skip links and signposts."
 						}
 					],
-					"intent": "Helping visitors avoid wasting their time can reduce the number of emissions from time spent in front of a screen. As such, by using existing technologies like metadata, robots files, and accessibility-friendly aids within the page, improvements to the experience can be made.",
+					"intent": "Helping visitors avoid wasting their time can reduce the number of emissions from time spent in front of a screen. As such, by using existing technologies like metadata, robots.txt files, and accessibility-friendly aids within the page, improvements to the experience can be made.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -3325,11 +3325,11 @@
 					"benefits": [
 						{
 							"Environmental": "Search engines or browsers request certain files by default, ensuring they are in place will reduce loading errors, and may provide efficiency enhancements in how visitors find or interact with a site. Plaintext requires no rendering. If visitors (or search engines) know about these useful files (like carbon.txt) they can load quicker and with less CPU / GPU impact than any HTML website.",
-							"Accessibility": "OpenSearch enables the browser's default search box rather than a custom solution to be integrated with your website search, which may aid accessibility as it encourages the use of a browser native component (and / or keyboard shortcuts) rather than a website or application which may suit certain accessibility requirements better.",
+							"Accessibility": "OpenSearch.xml enables the browser's default search box rather than a custom solution to be integrated with your website search, which may aid accessibility as it encourages the use of a browser native component (and / or keyboard shortcuts) rather than a website or application which may suit certain accessibility requirements better.",
 							"Performance": "Files that are expected will produce HTTP requests, ensuring they are met will satisfy the products making them and potentially reduce the requests once they are discovered. Plaintext files contain no links, no markup, and have no imprint. Putting credits (for example) in such a file will reduce data transfer and have a lower rendering footprint.",
-							"Economic": "Robots and Sitemap files can be utilized by search engines to help make your website more findable, this could lead to more visitors and potentially more customers as a result. The ads.txt file is part of a scheme to reduce advertising fraud, it could be useful.",
-							"Conversion": "Robots can be used to target specific search engines, helping to ensure content is correctly indexed to get a good placement so that visitors can find you easily.",
-							"Transparency": "The humans file provides credit to people involved in a site's creation, and security offers critical points of contact if an issue is discovered. Both are valuable additions to a project."
+							"Economic": "Robots.txt and Sitemap files can be utilized by search engines to help make your website more findable, this could lead to more visitors and potentially more customers as a result. The ads.txt file is part of a scheme to reduce advertising fraud, it could be useful.",
+							"Conversion": "Robots.txt files can be used to target specific search engines, helping to ensure content is correctly indexed to get a good placement so that visitors can find you easily.",
+							"Transparency": "The humans.txt file provides credit to people involved in a site's creation, and security offers critical points of contact if an issue is discovered. Both are valuable additions to a project."
 						}
 					],
 					"GRI": [

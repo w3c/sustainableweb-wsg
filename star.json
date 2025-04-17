@@ -2,7 +2,7 @@
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-04-04",
+	"lastModified": "2025-04-18",
 	"category": [
 		{
 			"id": "1",
@@ -2513,7 +2513,7 @@
 				},
 				{
 					"id": "WD09-2",
-					"title": "Provide a Robots File That Contains Relevant Indexing Data",
+					"title": "Provide a Robots.txt File That Contains Relevant Indexing Data",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.9 Information to help understand the usefulness of a page should exist](https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist).",
 					"description": [
 						{
@@ -2523,9 +2523,9 @@
 					],
 					"examples": [
 						{
-							"1": "[Google has a robots.txt file](Google Search Central has a document that provides working examples of the robots file and the properties you should consider including within it (plus examples and details of how they will function).) of their own that identifies to search engines what pages should be included within search results. Naturally, you don't want to copy this file exactly but it may serve as inspiration!",
-							"2": "[The Web Robots Pages website](https://www.robotstxt.org/robotstxt.html) is a resource dedicated to the robots exclusion standard and how it can be applied to websites including different examples and details about the robots file structure.",
-							"3": "[Google Search Central](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en) has a document that provides working examples of the robots file and the properties you should consider including within it (plus examples and details of how they will function)."
+							"1": "[Google has a robots.txt file](Google Search Central has a document that provides working examples of the robots.txt file and the properties you should consider including within it (plus examples and details of how they will function).) of their own that identifies to search engines what pages should be included within search results. Naturally, you don't want to copy this file exactly but it may serve as inspiration!",
+							"2": "[The Web Robots Pages website](https://www.robotstxt.org/robotstxt.html) is a resource dedicated to the robots exclusion standard and how it can be applied to websites including different examples and details about the robots.txt file structure.",
+							"3": "[Google Search Central](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en) has a document that provides working examples of the robots.txt file and the properties you should consider including within it (plus examples and details of how they will function)."
 						}
 					],
 					"tests": [
