@@ -2407,7 +2407,7 @@
 						{
 							"title": "Organize code arrangement",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD05-3)",
-							"description": "Within CSS and JavaScript, use methodologies (like BEM) and systems like DRY and WET to optimize the arrangement and output of your source code."
+							"description": "Within CSS and JavaScript, use an organizing methodology and systems like DRY and WET to optimize the arrangement and output of your source code."
 						}
 					],
 					"intent": "Redundancy is the enemy of sustainability. Having systems in place to ensure that everyone can work from established patterns, the website or application remains clean and easy to use, and iteration over redesign is firmly in the mindset that will help promote sustainable practices. It's also worth being wary of abstracting code too early (see AHA methodology) or incorrectly, as while good abstractions can be more efficient, poor ones can waste effort and introduce complexity, bloat, and bugs to your codebase which can lead to emissions.",
