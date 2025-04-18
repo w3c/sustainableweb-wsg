@@ -2,7 +2,7 @@
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-04-04",
+	"lastModified": "2025-04-18",
 	"category": [
 		{
 			"id": "1",
@@ -15,7 +15,7 @@
 			"techniques": [
 				{
 					"id": "UX01-1",
-					"title": "Produce a List of Variables To Monitor for Sustainability Impacts",
+					"title": "Produce a list of variables to monitor for sustainability impacts",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.1 Display any variables that have a negative impact on your project](https://w3c.github.io/sustainableweb-wsg/#display-any-variables-that-have-a-negative-impact-on-your-project).",
 					"description": [
 						{
@@ -48,7 +48,7 @@
 				},
 				{
 					"id": "UX02-1",
-					"title": "Use Quantitative Research To Measure the Needs of Visitors and Affected Communities",
+					"title": "Use quantitative research to measure the needs of visitors and affected communities",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.2 Understand visitor requirements or constraints, resolving barriers to access](https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access).",
 					"description": [
 						{
@@ -79,7 +79,7 @@
 				},
 				{
 					"id": "UX02-2",
-					"title": "Identify Visitor Constraints Using Browser Detection and the User-Agent",
+					"title": "Identify visitor constraints using browser detection and the User-Agent",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.2 Understand visitor requirements or constraints, resolving barriers to access](https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access).",
 					"description": [
 						{
@@ -111,7 +111,7 @@
 				},
 				{
 					"id": "UX02-3",
-					"title": "Test Against Specific Disability Profiles for More Calibrated Accessibility",
+					"title": "Test against specific disability profiles for more calibrated accessibility",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.2 Understand visitor requirements or constraints, resolving barriers to access](https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access).",
 					"description": [
 						{
@@ -143,7 +143,7 @@
 				},
 				{
 					"id": "UX03-1",
-					"title": "Use Third-Party APIs To Measure Any Passive External Impact",
+					"title": "Use third-party APIs to measure any passive external impact",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.3 Understand the impact of non-visitors](https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-of-non-visitors).",
 					"description": [
 						{
@@ -175,7 +175,7 @@
 				},
 				{
 					"id": "UX06-1",
-					"title": "Measure Interaction Cost To Reach Every Page in the Information Architecture",
+					"title": "Measure interaction cost to reach every page in the information architecture",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.6 Minimize non-essential content, interactivity, or journeys](https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys).",
 					"description": [
 						{
@@ -207,7 +207,7 @@
 				},
 				{
 					"id": "UX06-3",
-					"title": "Check for Content Obscuring Materials That Occur Upon PageLoad",
+					"title": "Check for Content Obscuring Materials That Occur Upon pageLoad",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.6 Minimize non-essential content, interactivity, or journeys](https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys).",
 					"description": [
 						{
@@ -239,7 +239,7 @@
 				},
 				{
 					"id": "UX06-4",
-					"title": "Break Large Pieces of Content Down Using Progressive Disclosure",
+					"title": "Break large pieces of content down using progressive disclosure",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.6 Minimize non-essential content, interactivity, or journeys](https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys).",
 					"description": [
 						{
@@ -270,7 +270,7 @@
 				},
 				{
 					"id": "UX06-5",
-					"title": "Remove Any Non-User Initiated Pop-Up or Model Windows",
+					"title": "Remove any non-user initiated pop-up or model windows",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.6 Minimize non-essential content, interactivity, or journeys](https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys).",
 					"description": [
 						{
@@ -299,7 +299,7 @@
 				},
 				{
 					"id": "UX07-1",
-					"title": "Decorative Design Elements Can Be Disabled if They Are Not Done So by Default",
+					"title": "Decorative design elements can be disabled if they are not done so by default",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.7 Use decorative design with care](https://w3c.github.io/sustainableweb-wsg/#use-decorative-design-with-care).",
 					"description": [
 						{
@@ -331,7 +331,7 @@
 				},
 				{
 					"id": "UX08-1",
-					"title": "Making Your Navigation Menu Accessible and Well-Structured",
+					"title": "Making your navigation menu accessible and well-structured",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.8 Ensure that navigation and way-finding are well-structured](https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-way-finding-are-well-structured).",
 					"description": [
 						{
@@ -362,7 +362,7 @@
 				},
 				{
 					"id": "UX08-2",
-					"title": "Provide a Human-Readable Sitemap To Improve the Information Architecture",
+					"title": "Provide a human-readable sitemap to improve the information architecture",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.8 Ensure that navigation and way-finding are well-structured](https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-way-finding-are-well-structured).",
 					"description": [
 						{
@@ -395,7 +395,7 @@
 				},
 				{
 					"id": "UX08-3",
-					"title": "Provide a Method of Keeping Up-to-Date With Product or Service Updates",
+					"title": "Provide a method of keeping up-to-date with product or service updates",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.8 Ensure that navigation and way-finding are well-structured](https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-way-finding-are-well-structured).",
 					"description": [
 						{
@@ -428,7 +428,7 @@
 				},
 				{
 					"id": "UX09-1",
-					"title": "Request Permission for Invasive Access To Interact With Content",
+					"title": "Request permission for invasive access to interact with content",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.9 Be attentive rather than distracting](https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting).",
 					"description": [
 						{
@@ -459,7 +459,7 @@
 				},
 				{
 					"id": "UX09-2",
-					"title": "Encourage Features That Help Visitors Achieve Tasks",
+					"title": "Encourage features that help visitors achieve tasks",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.9 Be attentive rather than distracting](https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting).",
 					"description": [
 						{
@@ -491,7 +491,7 @@
 				},
 				{
 					"id": "UX09-3",
-					"title": "Avoid Mechanisms That Promote Excessive Screen Time",
+					"title": "Avoid mechanisms that promote excessive screen time",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.9 Be attentive rather than distracting](https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting).",
 					"description": [
 						{
@@ -520,7 +520,7 @@
 				},
 				{
 					"id": "UX10-1",
-					"title": "Build Using Established Design Patterns That Use Known Conventions",
+					"title": "Build using established design patterns that use known conventions",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.10 Use established design patterns and appropriate components](https://w3c.github.io/sustainableweb-wsg/#use-established-design-patterns-and-appropriate-components).",
 					"description": [
 						{
@@ -550,7 +550,7 @@
 				},
 				{
 					"id": "UX11-1",
-					"title": "Eliminate Deceptive Design Patterns or Manipulative Techniques",
+					"title": "Eliminate deceptive design patterns or manipulative techniques",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.11 Avoid being manipulative or deceptive](https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive).",
 					"description": [
 						{
@@ -578,7 +578,7 @@
 				},
 				{
 					"id": "UX11-3",
-					"title": "Determine if Analytics Can Be Sustainably Improved or Removed",
+					"title": "Determine if analytics can be sustainably improved or removed",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.11 Avoid being manipulative or deceptive](https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive).",
 					"description": [
 						{
@@ -608,7 +608,7 @@
 				},
 				{
 					"id": "UX11-4",
-					"title": "Eliminate Any Manipulative SEO Techniques From Your Source Code",
+					"title": "Eliminate any manipulative SEO techniques from your source code",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.11 Avoid being manipulative or deceptive](https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive).",
 					"description": [
 						{
@@ -639,7 +639,7 @@
 				},
 				{
 					"id": "UX12-1",
-					"title": "Provide Deliverables in Reusable, Self-Isolated Components",
+					"title": "Provide deliverables in reusable, self-isolated components",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.12 Enable others to understand and reuse your deliverables](https://w3c.github.io/sustainableweb-wsg/#enable-others-to-understand-and-reuse-your-deliverables).",
 					"description": [
 						{
@@ -670,7 +670,7 @@
 				},
 				{
 					"id": "UX12-2",
-					"title": "Provide Documentation To Guide the Deliverables",
+					"title": "Provide documentation to guide the deliverables",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.12 Enable others to understand and reuse your deliverables](https://w3c.github.io/sustainableweb-wsg/#enable-others-to-understand-and-reuse-your-deliverables).",
 					"description": [
 						{
@@ -700,7 +700,7 @@
 				},
 				{
 					"id": "UX12-3",
-					"title": "Create Code Comments To Describe the Functionality of Features",
+					"title": "Create code comments to describe the functionality of features",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.12 Enable others to understand and reuse your deliverables](https://w3c.github.io/sustainableweb-wsg/#enable-others-to-understand-and-reuse-your-deliverables).",
 					"description": [
 						{
@@ -729,7 +729,7 @@
 				},
 				{
 					"id": "UX13-1",
-					"title": "Implement an Up-to-Date Design System",
+					"title": "Implement an up-to-date design system",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.13 Use a design system to prioritize interface consistency](https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-to-prioritize-interface-consistency).",
 					"description": [
 						{
@@ -760,7 +760,7 @@
 				},
 				{
 					"id": "UX14-1",
-					"title": "Increase the Readability of Content Using Common Metrics",
+					"title": "Increase the readability of content using common metrics",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.14 Write with purpose, in an accessible, easy-to-understand format](https://w3c.github.io/sustainableweb-wsg/#write-with-purpose-in-an-accessible-easy-to-understand-format).",
 					"description": [
 						{
@@ -793,7 +793,7 @@
 				},
 				{
 					"id": "UX14-2",
-					"title": "Break Long-Form Content Down Into a Simpler Structure",
+					"title": "Break long-form content down into a simpler structure",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.14 Write with purpose, in an accessible, easy-to-understand format](https://w3c.github.io/sustainableweb-wsg/#write-with-purpose-in-an-accessible-easy-to-understand-format).",
 					"description": [
 						{
@@ -822,7 +822,7 @@
 				},
 				{
 					"id": "UX14-3",
-					"title": "Produce a List of SEO Considerations To Improve Your Findability",
+					"title": "Produce a list of SEO considerations to improve your findability",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.14 Write with purpose, in an accessible, easy-to-understand format](https://w3c.github.io/sustainableweb-wsg/#write-with-purpose-in-an-accessible-easy-to-understand-format).",
 					"description": [
 						{
@@ -852,7 +852,7 @@
 				},
 				{
 					"id": "UX15-1",
-					"title": "Implement a Range of Images of the Appropriate Format and Size",
+					"title": "Implement a range of images of the appropriate format and size",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 All images must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability).",
 					"description": [
 						{
@@ -884,7 +884,7 @@
 				},
 				{
 					"id": "UX15-2",
-					"title": "Optimizing All Image Assets for a Variety of Different Resolutions",
+					"title": "Optimizing all image assets for a variety of different resolutions",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 All images must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability).",
 					"description": [
 						{
@@ -916,7 +916,7 @@
 				},
 				{
 					"id": "UX15-3",
-					"title": "Include Lazy-Loading With Images That Load Below-the-Fold",
+					"title": "Include lazy-loading with images that load below-the-fold",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 All images must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability).",
 					"description": [
 						{
@@ -945,7 +945,7 @@
 				},
 				{
 					"id": "UX15-4",
-					"title": "Provide the Option for Images To Be Disabled or a Low Fidelity Alternative",
+					"title": "Provide the option for images to be disabled or a low fidelity alternative",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 All images must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability).",
 					"description": [
 						{
@@ -975,7 +975,7 @@
 				},
 				{
 					"id": "UX15-5",
-					"title": "Add Details About Image Impacts to the Media Management and Use Policy",
+					"title": "Add details about image impacts to the media management and use policy",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 All images must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability).",
 					"description": [
 						{
@@ -1003,7 +1003,7 @@
 				},
 				{
 					"id": "UX16-1",
-					"title": "Remove Any Functionality That May Trigger Auto-Playing Animation",
+					"title": "Remove any functionality that may trigger auto-playing animation",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 All audio or video must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability).",
 					"description": [
 						{
@@ -1033,7 +1033,7 @@
 				},
 				{
 					"id": "UX16-2",
-					"title": "Optimizing All Audio and Video Assets for Speed and Compatibility",
+					"title": "Optimizing all audio and video assets for speed and compatibility",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 All audio or video must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability).",
 					"description": [
 						{
@@ -1063,7 +1063,7 @@
 				},
 				{
 					"id": "UX16-3",
-					"title": "Provide Facades for Media, Animated GIFs, and Third-Party Content",
+					"title": "Provide facades for media, animated GIFs, and third-party content",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 All audio or video must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability).",
 					"description": [
 						{
@@ -1092,7 +1092,7 @@
 				},
 				{
 					"id": "UX16-4",
-					"title": "Optimizing All Media Assets for a Variety of Different Resolutions",
+					"title": "Optimizing all media assets for a variety of different resolutions",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 All audio or video must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability).",
 					"description": [
 						{
@@ -1122,7 +1122,7 @@
 				},
 				{
 					"id": "UX16-5",
-					"title": "Add Details About Media Impacts to the Media Management and Use Policy",
+					"title": "Add details about media impacts to the media management and use policy",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 All audio or video must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability).",
 					"description": [
 						{
@@ -1152,7 +1152,7 @@
 				},
 				{
 					"id": "17-2",
-					"title": "Measure and Respond to High-Intensity Animation Usage",
+					"title": "Measure and respond to high-intensity animation usage",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.17 Animation must be proportionate and easy to control](https://w3c.github.io/sustainableweb-wsg/#animation-must-be-proportionate-and-easy-to-control).",
 					"description": [
 						{
@@ -1182,7 +1182,7 @@
 				},
 				{
 					"id": "17-3",
-					"title": "Include a Mechanism To Pause or Stop Page Animation",
+					"title": "Include a mechanism to pause or stop page animation",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.17 Animation must be proportionate and easy to control](https://w3c.github.io/sustainableweb-wsg/#animation-must-be-proportionate-and-easy-to-control).",
 					"description": [
 						{
@@ -1210,7 +1210,7 @@
 				},
 				{
 					"id": "UX18-1",
-					"title": "Provide Accessible Mechanisms Around Symbols in System Fonts",
+					"title": "Provide accessible mechanisms around symbols in system fonts",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.18 Web typography must be highly optimized and appropriate](https://w3c.github.io/sustainableweb-wsg/#web-typography-must-be-highly-optimized-and-appropriate).",
 					"description": [
 						{
@@ -1238,7 +1238,7 @@
 				},
 				{
 					"id": "UX18-2",
-					"title": "Use Modern, Efficient Custom Typefaces Within a Set Limit",
+					"title": "Use modern, efficient custom typefaces within a set limit",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.18 Web typography must be highly optimized and appropriate](https://w3c.github.io/sustainableweb-wsg/#web-typography-must-be-highly-optimized-and-appropriate).",
 					"description": [
 						{
@@ -1269,7 +1269,7 @@
 				},
 				{
 					"id": "UX19-1",
-					"title": "Ensure That Every PDF or Other Non-Web Document Has an HTML Alternative",
+					"title": "Ensure that every PDF or other non-web document has an HTML alternative",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Suitable alternatives to any provided format must be offered](https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered).",
 					"description": [
 						{
@@ -1298,7 +1298,7 @@
 				},
 				{
 					"id": "UX19-2",
-					"title": "Provide a Suitable Font Stack When Custom Typefaces Are Used",
+					"title": "Provide a suitable font stack when custom typefaces are used",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Suitable alternatives to any provided format must be offered](https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered).",
 					"description": [
 						{
@@ -1328,7 +1328,7 @@
 				},
 				{
 					"id": "UX19-3",
-					"title": "Provide Alternative Text or Figure Captions for Images",
+					"title": "Provide alternative text or figure captions for images",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Suitable alternatives to any provided format must be offered](https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered).",
 					"description": [
 						{
@@ -1359,7 +1359,7 @@
 				},
 				{
 					"id": "UX19-4",
-					"title": "Provide a Text Transcription of Media Files in an Open HTML Format",
+					"title": "Provide a text transcription of media files in an open HTML format",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Suitable alternatives to any provided format must be offered](https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered).",
 					"description": [
 						{
@@ -1387,7 +1387,7 @@
 				},
 				{
 					"id": "UX19-5",
-					"title": "Include WebVTT Closed Captions, Subtitles, and Sign Language Support",
+					"title": "Include WebVTT closed captions, subtitles, and sign language support",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Suitable alternatives to any provided format must be offered](https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered).",
 					"description": [
 						{
@@ -1416,7 +1416,7 @@
 				},
 				{
 					"id": "UX20-1",
-					"title": "Detect Form Requirements and Identify Data Collection Policies",
+					"title": "Detect form requirements and identify data collection policies",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.20 Provide accessible, usable, minimal web forms](https://w3c.github.io/sustainableweb-wsg/#provide-accessible-usable-minimal-web-forms).",
 					"description": [
 						{
@@ -1448,7 +1448,7 @@
 				},
 				{
 					"id": "UX20-2",
-					"title": "Allow For Data Entry With Automatic Assistance Settings",
+					"title": "Allow for data entry with automatic assistance settings",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.20 Provide accessible, usable, minimal web forms](https://w3c.github.io/sustainableweb-wsg/#provide-accessible-usable-minimal-web-forms).",
 					"description": [
 						{
@@ -1479,7 +1479,7 @@
 				},
 				{
 					"id": "UX21-1",
-					"title": "Provide Compatibility for Non-Visual Browsing Methods",
+					"title": "Provide compatibility for non-visual browsing methods",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.21 Consider the impact of visitors using non-visual browsers](https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-of-visitors-using-non-visual-browsers).",
 					"description": [
 						{
@@ -1508,7 +1508,7 @@
 				},
 				{
 					"id": "UX22-3",
-					"title": "Provide Error Detection When User Input Is Required",
+					"title": "Provide error detection when user input is required",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.22 Provide useful notifications to improve the visitor's journey](https://w3c.github.io/sustainableweb-wsg/#provide-useful-notifications-to-improve-the-visitor-s-journey).",
 					"description": [
 						{
@@ -1539,7 +1539,7 @@
 				},
 				{
 					"id": "UX23-1",
-					"title": "Add a Print-Friendly Media Query or Stylesheet",
+					"title": "Add a print-friendly media query or stylesheet",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable or physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents).",
 					"description": [
 						{
@@ -1570,7 +1570,7 @@
 				},
 				{
 					"id": "UX23-2",
-					"title": "Optimizing All Document Assets Across a Variety of Different Formats",
+					"title": "Optimizing all document assets across a variety of different formats",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable or physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents).",
 					"description": [
 						{
@@ -1600,7 +1600,7 @@
 				},
 				{
 					"id": "UX23-3",
-					"title": "Provide Pre-Generated Copies of Repeat-Use Physical Assets",
+					"title": "Provide pre-generated copies of repeat-use physical assets",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable or physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents).",
 					"description": [
 						{
@@ -1628,7 +1628,7 @@
 				},
 				{
 					"id": "UX23-4",
-					"title": "Provide Document Details Including a URL Within a Page",
+					"title": "Provide document details including a URL within a page",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable or physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents).",
 					"description": [
 						{
@@ -1657,7 +1657,7 @@
 				},
 				{
 					"id": "UX24-1",
-					"title": "Identify a Stakeholder-Focused Testing and Prototyping Policy",
+					"title": "Identify a stakeholder-focused testing and prototyping policy",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.24 Policies and processes must exist to get stakeholders invested](https://w3c.github.io/sustainableweb-wsg/#policies-and-processes-must-exist-to-get-stakeholders-invested).",
 					"description": [
 						{
@@ -1686,7 +1686,7 @@
 				},
 				{
 					"id": "UX25-1",
-					"title": "Produce a List of Checkpoints To Ensure Quality Control",
+					"title": "Produce a list of checkpoints to ensure quality control",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.25 Audit and test for bugs or issues that require resolving](https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-that-require-resolving).",
 					"description": [
 						{
@@ -1719,7 +1719,7 @@
 				},
 				{
 					"id": "UX25-2",
-					"title": "Provide Active Monitoring for Issues on a Frequent Schedule",
+					"title": "Provide active monitoring for issues on a frequent schedule",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.25 Audit and test for bugs or issues that require resolving](https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-that-require-resolving).",
 					"description": [
 						{
@@ -1751,7 +1751,7 @@
 				},
 				{
 					"id": "UX25-3",
-					"title": "Scan for Introduced Issues Upon the Completion of a New Release",
+					"title": "Scan for introduced issues upon the completion of a new release",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.25 Audit and test for bugs or issues that require resolving](https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-that-require-resolving).",
 					"description": [
 						{
@@ -1781,7 +1781,7 @@
 				},
 				{
 					"id": "UX26-1",
-					"title": "Establish Performance Testing Routines With Each New Release",
+					"title": "Establish performance testing routines with each new release",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.26 Measure and test for performance](https://w3c.github.io/sustainableweb-wsg/#measure-and-test-for-performance).",
 					"description": [
 						{
@@ -1812,7 +1812,7 @@
 				},
 				{
 					"id": "UX26-2",
-					"title": "Provide Compliance Checks With Each Release for Relevant Legislation",
+					"title": "Provide compliance checks with each release for relevant legislation",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.26 Measure and test for performance](https://w3c.github.io/sustainableweb-wsg/#measure-and-test-for-performance).",
 					"description": [
 						{
@@ -1844,7 +1844,7 @@
 				},
 				{
 					"id": "UX29-1",
-					"title": "Provide a Publicly Visible Compatibility Policy or Statement",
+					"title": "Provide a publicly visible compatibility policy or statement",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Check for compatibility or platform-specific issues](https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues).",
 					"description": [
 						{
@@ -1873,7 +1873,7 @@
 				},
 				{
 					"id": "UX29-2",
-					"title": "Provide Clarification When Updates Are Significant Over Minor Releases",
+					"title": "Provide clarification when updates are significant over minor releases",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Check for compatibility or platform-specific issues](https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues).",
 					"description": [
 						{
@@ -1902,7 +1902,7 @@
 				},
 				{
 					"id": "UX29-3",
-					"title": "Establish Compatibility Testing Routines With Each New Release",
+					"title": "Establish compatibility testing routines with each new release",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Check for compatibility or platform-specific issues](https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues).",
 					"description": [
 						{
@@ -1934,7 +1934,7 @@
 				},
 				{
 					"id": "UX29-5",
-					"title": "Provide a PWA if More Suitable Than Its Native Counterpart",
+					"title": "Provide a PWA if more suitable than its native counterpart",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Check for compatibility or platform-specific issues](https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues).",
 					"description": [
 						{
@@ -1974,7 +1974,7 @@
 			"techniques": [
 				{
 					"id": "WD01-1",
-					"title": "Profile Existing Projects To Identify Common Variables of Value",
+					"title": "Profile existing projects to identify common variables of value",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.1 Set goals based on potential impact considerations](https://w3c.github.io/sustainableweb-wsg/#set-goals-based-on-potential-impact-considerations).",
 					"description": [
 						{
@@ -2005,7 +2005,7 @@
 				},
 				{
 					"id": "WD01-2",
-					"title": "Calculate the Energy Intensity of Technologies for Existing Projects",
+					"title": "Calculate the energy intensity of technologies for existing projects",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.1 Set goals based on potential impact considerations](https://w3c.github.io/sustainableweb-wsg/#set-goals-based-on-potential-impact-considerations).",
 					"description": [
 						{
@@ -2036,7 +2036,7 @@
 				},
 				{
 					"id": "WD02-1",
-					"title": "Minify Your Front-End Code if It Is Public Facing",
+					"title": "Minify your front-end code if it is public facing",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.2 Remove unnecessary or redundant information](https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-or-redundant-information).",
 					"description": [
 						{
@@ -2067,7 +2067,7 @@
 				},
 				{
 					"id": "WD03-1",
-					"title": "Implement Code-Splitting Where Appropriate To Reduce Payloads",
+					"title": "Implement code-splitting where appropriate to reduce payloads",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.3 Modularize bandwidth-heavy components within projects](https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components-within-projects).",
 					"description": [
 						{
@@ -2099,7 +2099,7 @@
 				},
 				{
 					"id": "WD04-1",
-					"title": "Eliminate Redundant Code Through Coverage or Tree Shaking",
+					"title": "Eliminate redundant code through coverage or tree shaking",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.4 Tree shaking should be used to remove unnecessary code](https://w3c.github.io/sustainableweb-wsg/#tree-shaking-should-be-used-to-remove-unnecessary-code).",
 					"description": [
 						{
@@ -2129,24 +2129,24 @@
 				},
 				{
 					"id": "WD05-3",
-					"title": "Write Code for Performance Removing Duplication",
+					"title": "Write code for performance removing duplication",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.5 Redundancy and duplication in code should be avoided](https://w3c.github.io/sustainableweb-wsg/#redundancy-and-duplication-in-code-should-be-avoided).",
 					"description": [
 						{
 							"1": "Provide a mechanism within projects to eliminate redundancy within your coding methodology. There will be occasions where the same solution is required for multiple events and in preference to repeating the code to achieve the same effect, referencing the code to perform on each occasion is more optimal as it reduces duplication and repetition.",
-							"2": "In terms of machine testability, identifying a coding methodology within languages like CSS can be easily accomplished by the way naming schemes are formed (such as the BEM pattern). In terms of repeat coding, using DRY, repeated CSS property and value pairs (or in JavaScript, code that repeats the same action) can be identified and flagged for rearrangement."
+							"2": "In terms of machine testability, usage of DRY, repeated CSS property and value pairs (or in JavaScript, code that repeats the same action) can be identified and flagged as appropriate in cases where the implementation is correct or incorrect based upon the pattern. Where patterns add unnecessary bloat to a page (such as CSS methodologies), detection can be identified and flagged in such instances."
 						}
 					],
 					"examples": [
 						{
-							"1": "BEM ([Block Element Modifier](https://getbem.com/)) is a methodology that is commonly used within websites to assist with creating reusable components and patterns, using easier-to-name schemes within front-end development."
+							"1": "[DRY](https://csswizardry.com/2013/07/writing-dryer-vanilla-css/ is a methodology that is commonly used by creating reusable components and patterns, using easier-to-name schemes and most importantly, avoiding already established code."
 						}
 					],
 					"tests": [
 						{
 							"procedure": [
 								{
-									"1": "Check for a recognized naming methodology or pattern in CSS.",
+									"1": "Check for energy inefficient naming methodologies or patterns in CSS.",
 									"2": "Check for the absence of repeating code (DRY) within CSS.",
 									"3": "Check for duplicate functionality or names within your JavaScript."
 								}
@@ -2158,7 +2158,7 @@
 				},
 				{
 					"id": "WD06-1",
-					"title": "Determine and Decision Make Upon Third-Party Impacts",
+					"title": "Determine and decision make upon third-party impacts",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
@@ -2189,7 +2189,7 @@
 				},
 				{
 					"id": "WD06-2",
-					"title": "Provide an Import on Interaction Delay for Third-Party Resources",
+					"title": "Provide an import on interaction delay for third-party resources",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
@@ -2217,7 +2217,7 @@
 				},
 				{
 					"id": "WD06-3",
-					"title": "Identify Lightweight Alternatives to Unsustainable Third-Party Resources",
+					"title": "Identify lightweight alternatives to unsustainable third-party resources",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
@@ -2248,7 +2248,7 @@
 				},
 				{
 					"id": "WD06-4",
-					"title": "Ensure That Content Is Delivered Through the Most Sustainable Pathway",
+					"title": "Ensure that content is delivered through the most sustainable pathway",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
@@ -2279,7 +2279,7 @@
 				},
 				{
 					"id": "WD06-5",
-					"title": "Create Custom Clickable Icons and Widgets for Third-Party Services",
+					"title": "Create custom clickable icons and widgets for third-party services",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
@@ -2307,7 +2307,7 @@
 				},
 				{
 					"id": "WD06-6",
-					"title": "Provide the Ability To Identify and Choose Third-Party Components To Load",
+					"title": "Provide the ability to identify and choose third-party components to load",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.6 Third-party services should be assessed as first parties](https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties).",
 					"description": [
 						{
@@ -2338,7 +2338,7 @@
 				},
 				{
 					"id": "WD07-1",
-					"title": "Validate Source Code for Semantic Accuracy",
+					"title": "Validate source code for semantic accuracy",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Code must follow good semantic practices](https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices).",
 					"description": [
 						{
@@ -2367,7 +2367,7 @@
 				},
 				{
 					"id": "WD07-2",
-					"title": "Eliminate Optional Code To Reduce the Rendering Impact",
+					"title": "Eliminate optional code to reduce the rendering impact",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Code must follow good semantic practices](https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices).",
 					"description": [
 						{
@@ -2396,7 +2396,7 @@
 				},
 				{
 					"id": "WD07-3",
-					"title": "Replace Non-Standard Code With Suitable Alternative Syntax",
+					"title": "Replace non-standard code with suitable alternative syntax",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.7 Code must follow good semantic practices](https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices).",
 					"description": [
 						{
@@ -2426,7 +2426,7 @@
 				},
 				{
 					"id": "WD08-1",
-					"title": "Set Scripts To Load Either Asynchronously or Deferred",
+					"title": "Set scripts to load either asynchronously or deferred",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.8 Render blocking should be resolved](https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved).",
 					"description": [
 						{
@@ -2454,7 +2454,7 @@
 				},
 				{
 					"id": "WD08-2",
-					"title": "Provide Assets Required at Load With the Correct Delivery Route",
+					"title": "Provide assets required at load with the correct delivery route",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.8 Render blocking should be resolved](https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved).",
 					"description": [
 						{
@@ -2482,7 +2482,7 @@
 				},
 				{
 					"id": "WD09-1",
-					"title": "",
+					"title": "Provide accurate social Metadata and Microdata",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.9 Information to help understand the usefulness of a page should exist](https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist).",
 					"description": [
 						{
@@ -2513,7 +2513,7 @@
 				},
 				{
 					"id": "WD09-2",
-					"title": "Provide a Robots File That Contains Relevant Indexing Data",
+					"title": "Provide a robots.txt file that contains relevant indexing data",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.9 Information to help understand the usefulness of a page should exist](https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist).",
 					"description": [
 						{
@@ -2523,9 +2523,9 @@
 					],
 					"examples": [
 						{
-							"1": "[Google has a robots.txt file](Google Search Central has a document that provides working examples of the robots file and the properties you should consider including within it (plus examples and details of how they will function).) of their own that identifies to search engines what pages should be included within search results. Naturally, you don't want to copy this file exactly but it may serve as inspiration!",
-							"2": "[The Web Robots Pages website](https://www.robotstxt.org/robotstxt.html) is a resource dedicated to the robots exclusion standard and how it can be applied to websites including different examples and details about the robots file structure.",
-							"3": "[Google Search Central](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en) has a document that provides working examples of the robots file and the properties you should consider including within it (plus examples and details of how they will function)."
+							"1": "[Google has a robots.txt file](Google Search Central has a document that provides working examples of the robots.txt file and the properties you should consider including within it (plus examples and details of how they will function).) of their own that identifies to search engines what pages should be included within search results. Naturally, you don't want to copy this file exactly but it may serve as inspiration!",
+							"2": "[The Web Robots Pages website](https://www.robotstxt.org/robotstxt.html) is a resource dedicated to the robots exclusion standard and how it can be applied to websites including different examples and details about the robots.txt file structure.",
+							"3": "[Google Search Central](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en) has a document that provides working examples of the robots.txt file and the properties you should consider including within it (plus examples and details of how they will function)."
 						}
 					],
 					"tests": [
@@ -2544,7 +2544,7 @@
 				},
 				{
 					"id": "WD09-3",
-					"title": "Add Signposting Within the Page To Direct Visitors and Accessibility Aids",
+					"title": "Add signposting within the page to direct visitors and accessibility aids",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.9 Information to help understand the usefulness of a page should exist](https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist).",
 					"description": [
 						{
@@ -2576,7 +2576,7 @@
 				},
 				{
 					"id": "WD10-1",
-					"title": "Ensure That Form Inputs Correctly Match and Validate Content Expectations",
+					"title": "Ensure that form inputs correctly match and validate content expectations",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.10 Forms must validate for errors, accounting for tooling requirements](https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements).",
 					"description": [
 						{
@@ -2607,7 +2607,7 @@
 				},
 				{
 					"id": "WD10-2",
-					"title": "Ensure That Form Elements Are Correctly Labeled",
+					"title": "Ensure that form elements are correctly labeled",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.10 Forms must validate for errors, accounting for tooling requirements](https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements).",
 					"description": [
 						{
@@ -2634,7 +2634,7 @@
 				},
 				{
 					"id": "WD10-3",
-					"title": "Reduce Issues Within Data Entry With Manual Third-Party Content",
+					"title": "Reduce issues within data entry with manual third-party content",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.10 Forms must validate for errors, accounting for tooling requirements](https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements).",
 					"description": [
 						{
@@ -2663,7 +2663,7 @@
 				},
 				{
 					"id": "WD11-1",
-					"title": "Ensure That the Required HTML Elements Are Included",
+					"title": "Ensure that the required HTML elements are included",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.11 Metadata is structured for machine readability](https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability).",
 					"description": [
 						{
@@ -2693,7 +2693,7 @@
 				},
 				{
 					"id": "WD11-2",
-					"title": "Provide Relevant Metadata Using a Recognized Scheme",
+					"title": "Provide relevant metadata using a recognized scheme",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.11 Metadata is structured for machine readability](https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability).",
 					"description": [
 						{
@@ -2722,7 +2722,7 @@
 				},
 				{
 					"id": "WD11-3",
-					"title": "Ensure Content Is Structured Using Microdata",
+					"title": "Ensure content is structured using Microdata",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.11 Metadata is structured for machine readability](https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability).",
 					"description": [
 						{
@@ -2750,7 +2750,7 @@
 				},
 				{
 					"id": "WD12-1",
-					"title": "Ensure CSS Preference Media Queries Are Correctly Applied",
+					"title": "Ensure CSS preference media queries are correctly applied",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.12 Sustainable CSS user preference media queries are used](https://w3c.github.io/sustainableweb-wsg/#sustainable-css-user-preference-media-queries-are-used).",
 					"description": [
 						{
@@ -2780,7 +2780,7 @@
 				},
 				{
 					"id": "WD13-1",
-					"title": "",
+					"title": "Test against network speeds and visual resolution breakpoints",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.13 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
 					"description": [
 						{
@@ -2809,7 +2809,7 @@
 				},
 				{
 					"id": "WD13-2",
-					"title": "Provide Progressive Enhancement Feature Testing Within Projects",
+					"title": "Provide progressive enhancement feature testing within projects",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.13 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
 					"description": [
 						{
@@ -2839,7 +2839,7 @@
 				},
 				{
 					"id": "WD13-3",
-					"title": "Configure Your Project Around Carbon-Aware Situations",
+					"title": "Configure your project around carbon-aware situations",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.13 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
 					"description": [
 						{
@@ -2867,7 +2867,7 @@
 				},
 				{
 					"id": "WD13-4",
-					"title": "Provide Low-Impact, Possibly Delayed Methods of Interaction",
+					"title": "Provide low-impact, possibly delayed methods of interaction",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.13 Layouts work across devices and requirements](https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements).",
 					"description": [
 						{
@@ -2895,7 +2895,7 @@
 				},
 				{
 					"id": "WD14-1",
-					"title": "",
+					"title": "Optimize a codebase through rewriting for performance",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Use beneficial JavaScript and its APIs](https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis).",
 					"description": [
 						{
@@ -2926,7 +2926,7 @@
 				},
 				{
 					"id": "WD14-2",
-					"title": "Ensure JavaScript APIs Are Correctly Applied",
+					"title": "Ensure JavaScript APIs are correctly applied",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Use beneficial JavaScript and its APIs](https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis).",
 					"description": [
 						{
@@ -2957,7 +2957,7 @@
 				},
 				{
 					"id": "WD15-1",
-					"title": "Ensure All Vulnerabilities Are Removed and Code Is Linted",
+					"title": "Ensure all vulnerabilities are removed and code is Linted",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.15 Ensure that your scripts are secure](https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-scripts-are-secure).",
 					"description": [
 						{
@@ -2985,7 +2985,7 @@
 				},
 				{
 					"id": "WD16-1",
-					"title": "",
+					"title": "Identify and remove unused packages and dependencies",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.16 Dependencies are appropriately used and maintained](https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained).",
 					"description": [
 						{
@@ -3013,7 +3013,7 @@
 				},
 				{
 					"id": "WD16-2",
-					"title": "Implement Modularized Frameworks and Libraries",
+					"title": "Implement modularized frameworks and libraries",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.16 Dependencies are appropriately used and maintained](https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained).",
 					"description": [
 						{
@@ -3041,7 +3041,7 @@
 				},
 				{
 					"id": "WD16-3",
-					"title": "Ensure That Dependencies Are Verified As Up-to-Date",
+					"title": "Ensure that dependencies are verified as up-to-date",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.16 Dependencies are appropriately used and maintained](https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained).",
 					"description": [
 						{
@@ -3070,7 +3070,7 @@
 				},
 				{
 					"id": "WD17-1",
-					"title": "Provide the Expected Website Assets in Your Base Directory",
+					"title": "Provide the expected website assets in your base directory",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.17 Include expected and beneficial files](https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files).",
 					"description": [
 						{
@@ -3102,7 +3102,7 @@
 				},
 				{
 					"id": "WD17-2",
-					"title": "Provide Beneficial Plaintext Website Assets in the Expected Locations",
+					"title": "Provide beneficial plaintext website assets in the expected locations",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.17 Include expected and beneficial files](https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files).",
 					"description": [
 						{
@@ -3133,7 +3133,7 @@
 				},
 				{
 					"id": "WD18-1",
-					"title": "Replace Outdated Syntax With Suitable Alternatives",
+					"title": "Replace outdated syntax with suitable alternatives",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.18 Avoid using deprecated, proprietary, or outdated code](https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code).",
 					"description": [
 						{
@@ -3164,7 +3164,7 @@
 				},
 				{
 					"id": "WD19-1",
-					"title": "Encourage the Use of More Sustainable Creation Toolchains",
+					"title": "Encourage the use of more sustainable creation toolchains",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.19 Use the most efficient solution to implement your service](https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service).",
 					"description": [
 						{
@@ -3192,7 +3192,7 @@
 				},
 				{
 					"id": "WD19-4",
-					"title": "Test All Third-Party Resources for Sustainability Impacts",
+					"title": "Test all third-party resources for sustainability impacts",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.19 Use the most efficient solution to implement your service](https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service).",
 					"description": [
 						{
@@ -3223,7 +3223,7 @@
 				},
 				{
 					"id": "WD20-1",
-					"title": "Ensure the Latest Version of a Syntax Language Is Being Used",
+					"title": "Ensure the latest version of a syntax language is being used",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.20 Use the latest stable language version](https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version).",
 					"description": [
 						{
@@ -3250,7 +3250,7 @@
 				},
 				{
 					"id": "WD21-1",
-					"title": "Replace Code That Can Instead Use More Efficient Native APIs",
+					"title": "Replace code that can instead use more efficient native APIs",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.21 Take advantage of native features and functionality](https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features-and-functionality).",
 					"description": [
 						{
@@ -3281,12 +3281,12 @@
 		},
 		{
 			"id": "4",
-			"name": "Hosting, Infrastructure And Systems",
+			"name": "Hosting, Infrastructure, and Systems",
 			"shortName": "Hosting & Infrastructure",
 			"techniques": [
 				{
 					"id": "HIS01-1",
-					"title": "Publicly Disclose Relevant Sustainability Metrics to Visitors",
+					"title": "Publicly disclose relevant sustainability metrics to visitors",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.1 Choose a sustainable hosting provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider).",
 					"description": [
 						{
@@ -3317,7 +3317,7 @@
 				},
 				{
 					"id": "HIS01-4",
-					"title": "Ensure That the Project Is Hosted on a Sustainable Platform",
+					"title": "Ensure that the project is hosted on a sustainable platform",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.1 Choose a sustainable hosting provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider).",
 					"description": [
 						{
@@ -3347,8 +3347,37 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-4.html"
 				},
 				{
+					"id": "HIS01-6",
+					"title": "Ensure that the project uses a sustainable domain registrar",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.1 Choose a sustainable hosting provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider).",
+					"description": [
+						{
+							"1": "Ensure that emissions reports are published, with adequate frequency, considering (if possible) changes to DNS, subdomain allocation, multiple domain ownership, or other conditions that may impact the scope results. Also, be sure to provide calculations on an individual and collective domain level (where situations allow) to enable the best overview possible of total impact and most impactful domains. Having these metrics available for customers will increase public awareness, and allow registrants to meet reporting obligations as part of their compliance requirements.",
+							"2": "For machine testability customer accounts should have a method to view changes in emissions, this would require an account (of a registrar) to be made accessible within tooling or for generalized statistics that account for the total amount of users to be made publicly visible (so averages can be used). This would help estimate and account for the impact of domain use based on TLD choice and other variables that will be relevant to the measurement criteria. The methodology behind the calculations should also be provided in a centralized location."
+						}
+					],
+					"examples": [
+						{
+							"1": "The [Eco Registry](https://go.eco/news/climate-reporting-for-eco-domains/) provides climate reports for customers, allowing them to get an estimate of the emissions from operating the domain name over the lifetime of the registration period."
+						}
+					],
+					"tests": [
+						{
+							"procedure": [
+								{
+									"1": "Check that the provider has made available relevant impact metrics publicly.",
+									"2": "Account for factors that may affect domain impact (such as number of domains in use).",
+									"3": "Check that logging of past values over time is provided for calculating emissions."
+								}
+							],
+							"expectedResults": "All checks above are true."
+						}
+					],
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-4.html"
+				},
+				{
 					"id": "HIS02-1",
-					"title": "Provide Caching Responses To Optimize Page Reloads",
+					"title": "Provide caching responses to optimize page reloads",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.2 Optimize caching with offline access supported](https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported).",
 					"description": [
 						{
@@ -3375,7 +3404,7 @@
 				},
 				{
 					"id": "HIS02-2",
-					"title": "Identify the Potential for PWAs and Other Useful Features",
+					"title": "Identify the potential for PWAs and other useful features",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.2 Optimize caching with offline access supported](https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported).",
 					"description": [
 						{
@@ -3406,7 +3435,7 @@
 				},
 				{
 					"id": "HIS03-1",
-					"title": "Ensure That Files Are Compressed Correctly Before Serving",
+					"title": "Ensure that files are compressed correctly before serving",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.3 Compress files where it is beneficial](https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial).",
 					"description": [
 						{
@@ -3435,7 +3464,7 @@
 				},
 				{
 					"id": "HIS03-2",
-					"title": "Compress All Assets That Can Be Optimized Before CMS Submission",
+					"title": "Compress all assets that can be optimized before CMS submission",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.3 Compress files where it is beneficial](https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial).",
 					"description": [
 						{
@@ -3466,7 +3495,7 @@
 				},
 				{
 					"id": "HIS04-1",
-					"title": "Provide Custom Error Pages To Handle Unexpected Events",
+					"title": "Provide custom error pages to handle unexpected events",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.4 Setup necessary error pages and redirection links](https://w3c.github.io/sustainableweb-wsg/#setup-necessary-error-pages-and-redirection-links).",
 					"description": [
 						{
@@ -3498,7 +3527,7 @@
 				},
 				{
 					"id": "HIS04-2",
-					"title": "Resolve All Anchor References Which Trigger Errors or Redirects",
+					"title": "Resolve all anchor references which trigger errors or redirects",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.4 Setup necessary error pages and redirection links](https://w3c.github.io/sustainableweb-wsg/#setup-necessary-error-pages-and-redirection-links).",
 					"description": [
 						{
@@ -3529,7 +3558,7 @@
 				},
 				{
 					"id": "HIS06-4",
-					"title": "Check That Pages Have Not Been Subjected to Hijacking",
+					"title": "Check that pages have not been subjected to hijacking",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.6 Allow automation but ensure it is tightly regulated](https://w3c.github.io/sustainableweb-wsg/#allow-automation-but-ensure-it-is-tightly-regulated).",
 					"description": [
 						{
@@ -3560,7 +3589,7 @@
 				},
 				{
 					"id": "HIS07-1",
-					"title": "Ensure That Stored Data Has a Defined and Reasonable Expiry Date",
+					"title": "Ensure that stored data has a defined and reasonable expiry date",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.7 Define the frequency of data refreshes.](https://w3c.github.io/sustainableweb-wsg/#define-the-frequency-of-data-refreshes).",
 					"description": [
 						{
@@ -3589,7 +3618,7 @@
 				},
 				{
 					"id": "HIS09-2",
-					"title": "Deliver Content Using the Correct, Most Secure Protocol",
+					"title": "Deliver content using the correct, most secure protocol",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.9 Consider the impact and requirements of processing information](https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-and-requirements-of-processing-information).",
 					"description": [
 						{
@@ -3617,7 +3646,7 @@
 				},
 				{
 					"id": "HIS10-1",
-					"title": "Provide Distributed Access to Static Resources via a CDN",
+					"title": "Provide distributed access to static resources via a CDN",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.10 CDN use must be proportionate and sustainable](https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable).",
 					"description": [
 						{
@@ -3646,7 +3675,7 @@
 				},
 				{
 					"id": "HIS10-2",
-					"title": "Ensure That the CDN and Its Chain of Locations Are Sustainable",
+					"title": "Ensure that the CDN and its chain of locations are sustainable",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.10 CDN use must be proportionate and sustainable](https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable).",
 					"description": [
 						{
@@ -3676,7 +3705,7 @@
 				},
 				{
 					"id": "HIS10-3",
-					"title": "Provide a Copy of the Product or Service Close to the Visitor",
+					"title": "Provide a copy of the product or service close to the visitor",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.10 CDN use must be proportionate and sustainable](https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable).",
 					"description": [
 						{
@@ -3705,7 +3734,7 @@
 				},
 				{
 					"id": "HIS10-4",
-					"title": "Avoid Hosting Dynamic Resources or Third-Party Scripts on the CDN",
+					"title": "Avoid hosting dynamic resources or third-party scripts on the CDN",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.10 CDN use must be proportionate and sustainable](https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable).",
 					"description": [
 						{
@@ -3734,7 +3763,7 @@
 				},
 				{
 					"id": "12-2",
-					"title": "Provide a Review or Expiration Date on Website Content",
+					"title": "Provide a review or expiration date on website content",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.12 Store data according to the needs of your users](https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
 						{
@@ -3761,7 +3790,7 @@
 				},
 				{
 					"id": "12-3",
-					"title": "Provide a Classification Policy to Content if It's Deemed Sustainable",
+					"title": "Provide a classification policy to content if it’s deemed sustainable",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.12 Store data according to the needs of your users](https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
 						{
@@ -3790,7 +3819,7 @@
 				},
 				{
 					"id": "12-5",
-					"title": "Ensure That Backup Providers Are Classified As Sustainable",
+					"title": "Ensure that backup providers are classified as sustainable",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.12 Store data according to the needs of your users](https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
 						{
@@ -3826,7 +3855,7 @@
 			"techniques": [
 				{
 					"id": "BSPM01-1",
-					"title": "Provide a Publicly Visible Sustainability and / or Ethical Policy Statement",
+					"title": "Provide a publicly visible sustainability and / or ethical policy statement",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.1 Have an ethical and sustainable product strategy](https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy).",
 					"description": [
 						{
@@ -3859,7 +3888,7 @@
 				},
 				{
 					"id": "BSPM01-2",
-					"title": "Provide Details of Any Beyond-the-Scope Sustainability Features",
+					"title": "Provide details of any beyond-the-scope sustainability features",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.1 Have an ethical and sustainable product strategy](https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy).",
 					"description": [
 						{
@@ -3890,7 +3919,7 @@
 				},
 				{
 					"id": "BSPM01-5",
-					"title": "Provided Interactive Instructions for a Product or Service",
+					"title": "Provided interactive instructions for a product or service",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.1 Have an ethical and sustainable product strategy](https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy).",
 					"description": [
 						{
@@ -3920,7 +3949,7 @@
 				},
 				{
 					"id": "BSPM01-6",
-					"title": "Include Reliable Evidence for Any Sustainability Claims",
+					"title": "Include reliable evidence for any sustainability claims",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.1 Have an ethical and sustainable product strategy](https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy).",
 					"description": [
 						{
@@ -3949,7 +3978,7 @@
 				},
 				{
 					"id": "BSPM02-1",
-					"title": "Check That an Employee Is Assigned As the Sustainability Representative",
+					"title": "Check that an employee is assigned as the sustainability representative",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.2 Assign a sustainability representative](https://w3c.github.io/sustainableweb-wsg/#assign-a-sustainability-representative).",
 					"description": [
 						{
@@ -3976,7 +4005,7 @@
 				},
 				{
 					"id": "BSPM03-3",
-					"title": "Produce Awareness Raising Resources on Sustainability",
+					"title": "Produce awareness raising resources on sustainability",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.3 Inform, raise awareness, and train for sustainability](https://w3c.github.io/sustainableweb-wsg/#inform-raise-awareness-and-train-for-sustainability).",
 					"description": [
 						{
@@ -4005,7 +4034,7 @@
 				},
 				{
 					"id": "BSPM05-2",
-					"title": "Calculate the Environmental Impact of Your Competitors",
+					"title": "Calculate the environmental impact of your competitors",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.5 Estimate a product or service's environmental impact](https://w3c.github.io/sustainableweb-wsg/#estimate-a-product-or-service-s-environmental-impact).",
 					"description": [
 						{
@@ -4035,7 +4064,7 @@
 				},
 				{
 					"id": "BSPM06-1",
-					"title": "Have a Clearly Defined Set of Sustainability Goals",
+					"title": "Have a clearly defined set of sustainability goals",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.6 Define clear organizational sustainability goals and metrics](https://w3c.github.io/sustainableweb-wsg/#define-clear-organizational-sustainability-goals-and-metrics).",
 					"description": [
 						{
@@ -4068,7 +4097,7 @@
 				},
 				{
 					"id": "BSPM07-1",
-					"title": "Verify and Showcase Any Third-Party Sustainability Certifications",
+					"title": "Verify and showcase any third-party sustainability certifications",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.7 Verify your efforts using established third-party business certifications](https://w3c.github.io/sustainableweb-wsg/#verify-your-efforts-using-established-third-party-business-certifications).",
 					"description": [
 						{
@@ -4097,7 +4126,7 @@
 				},
 				{
 					"id": "BSPM09-1",
-					"title": "Check for Any Included Disclosure Reporting Policies",
+					"title": "Check for any included disclosure reporting policies",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.9 Support mandatory disclosures and reporting](https://w3c.github.io/sustainableweb-wsg/#support-mandatory-disclosures-and-reporting).",
 					"description": [
 						{
@@ -4125,7 +4154,7 @@
 				},
 				{
 					"id": "BSPM09-2",
-					"title": "Include Public Facing Carbon Reports on an Annual Basis",
+					"title": "Include public facing carbon reports on an annual basis",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.9 Support mandatory disclosures and reporting](https://w3c.github.io/sustainableweb-wsg/#support-mandatory-disclosures-and-reporting).",
 					"description": [
 						{
@@ -4155,7 +4184,7 @@
 				},
 				{
 					"id": "BSPM09-3",
-					"title": "Check for Any Compliance Related Disclosure Documentation",
+					"title": "Check for any compliance related disclosure documentation",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.9 Support mandatory disclosures and reporting](https://w3c.github.io/sustainableweb-wsg/#support-mandatory-disclosures-and-reporting).",
 					"description": [
 						{
@@ -4182,7 +4211,7 @@
 				},
 				{
 					"id": "BSPM11-1",
-					"title": "Provide a Product or Service Maintenance Agreement",
+					"title": "Provide a product or service maintenance agreement",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.11 Follow a product management and maintenance strategy](https://w3c.github.io/sustainableweb-wsg/#follow-a-product-management-and-maintenance-strategy).",
 					"description": [
 						{
@@ -4212,7 +4241,7 @@
 				},
 				{
 					"id": "BSPM12-3",
-					"title": "Identify the Iteration Record of the Website or Application",
+					"title": "Identify the iteration record of the website or application",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.12 Implement continuous improvement procedures](https://w3c.github.io/sustainableweb-wsg/#implement-continuous-improvement-procedures).",
 					"description": [
 						{
@@ -4242,7 +4271,7 @@
 				},
 				{
 					"id": "BSPM12-5",
-					"title": "Clearly Label Changes Using a Release Notes Feature",
+					"title": "Clearly label changes using a release notes feature",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.12 Implement continuous improvement procedures](https://w3c.github.io/sustainableweb-wsg/#implement-continuous-improvement-procedures).",
 					"description": [
 						{
@@ -4273,7 +4302,7 @@
 				},
 				{
 					"id": "BSPM14-1",
-					"title": "Align Product or Service Compliance With the SDGs",
+					"title": "Align product or service compliance with the SDGs",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.14 Establish if a digital product or service is necessary](https://w3c.github.io/sustainableweb-wsg/#establish-if-a-digital-product-or-service-is-necessary).",
 					"description": [
 						{
@@ -4300,7 +4329,7 @@
 				},
 				{
 					"id": "BSPM16-1",
-					"title": "Provide a Publicly Visible and Transparent Supplier Policy",
+					"title": "Provide a publicly visible and transparent supplier policy",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.16 Provide a supplier standards of practice](https://w3c.github.io/sustainableweb-wsg/#create-a-supplier-standards-of-practice).",
 					"description": [
 						{
@@ -4331,7 +4360,7 @@
 				},
 				{
 					"id": "BSPM16-3",
-					"title": "Publicly List the Sustainability Impact of Any Partnerships",
+					"title": "Publicly list the sustainability impact of any partnerships",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.16 Provide a supplier standards of practice](https://w3c.github.io/sustainableweb-wsg/#create-a-supplier-standards-of-practice).",
 					"description": [
 						{
@@ -4361,7 +4390,7 @@
 				},
 				{
 					"id": "BSPM17-1",
-					"title": "Ensure That the Business Is a Living Wage Employer",
+					"title": "Ensure that the business is a living wage employer",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.17 Share any economic benefits](https://w3c.github.io/sustainableweb-wsg/#share-any-economic-benefits).",
 					"description": [
 						{
@@ -4391,7 +4420,7 @@
 				},
 				{
 					"id": "BSPM17-3",
-					"title": "Ensure That the Business Provides Benefits for Employees",
+					"title": "Ensure that the business provides benefits for employees",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.17 Share any economic benefits](https://w3c.github.io/sustainableweb-wsg/#share-any-economic-benefits).",
 					"description": [
 						{
@@ -4421,7 +4450,7 @@
 				},
 				{
 					"id": "BSPM19-2",
-					"title": "Provide a Publicly Visible Accessibility Statement",
+					"title": "Provide a publicly visible accessibility statement",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.19 Use Justice, Equity, Diversity, Inclusion (JEDI) practices](https://w3c.github.io/sustainableweb-wsg/#use-justice-equity-diversity-inclusion-jedi-practices).",
 					"description": [
 						{
@@ -4453,7 +4482,7 @@
 				},
 				{
 					"id": "BSPM20-1",
-					"title": "Provide Links to the Privacy Policy and Relevant Legislation",
+					"title": "Provide links to the privacy policy and relevant legislation",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.20 Promote responsible data practices](https://w3c.github.io/sustainableweb-wsg/#promote-responsible-data-practices).",
 					"description": [
 						{
@@ -4484,7 +4513,7 @@
 				},
 				{
 					"id": "BSPM21-1",
-					"title": "Provide a Website Archive Containing Outdated or Old Versions",
+					"title": "Provide a website archive containing outdated or old versions",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.21 Implement appropriate data management procedures](https://w3c.github.io/sustainableweb-wsg/#implement-appropriate-data-management-procedures).",
 					"description": [
 						{
@@ -4514,7 +4543,7 @@
 				},
 				{
 					"id": "BSPM21-2",
-					"title": "Enable Users To Manage Their Accounts and Data",
+					"title": "Enable users to manage their accounts and data",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.21 Implement appropriate data management procedures](https://w3c.github.io/sustainableweb-wsg/#implement-appropriate-data-management-procedures).",
 					"description": [
 						{
@@ -4541,7 +4570,7 @@
 				},
 				{
 					"id": "BSPM22-1",
-					"title": "Provide a Publicly Facing Policy Around Emerging Technologies",
+					"title": "Provide a publicly facing policy around emerging technologies",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [Promote and implement responsible emerging technology practices](https://w3c.github.io/sustainableweb-wsg/#promote-and-implement-responsible-emerging-technology-practices).",
 					"description": [
 						{
@@ -4571,7 +4600,7 @@
 				},
 				{
 					"id": "BSPM23-1",
-					"title": "Verify All Partnerships and Sponsors Against the WSG",
+					"title": "Verify all partnerships and sponsors against the WSG",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.23 Include responsible financial policies](https://w3c.github.io/sustainableweb-wsg/#include-responsible-financial-policies).",
 					"description": [
 						{
@@ -4602,7 +4631,7 @@
 				},
 				{
 					"id": "BSPM24-1",
-					"title": "Verify and Showcase Any Third-Party Sustainability Projects",
+					"title": "Verify and showcase any third-party sustainability projects",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.24 Include organizational philanthropy policies](https://w3c.github.io/sustainableweb-wsg/#include-organizational-philanthropy-policies).",
 					"description": [
 						{
@@ -4632,7 +4661,7 @@
 				},
 				{
 					"id": "BSPM27-1",
-					"title": "Provide a Sustainability and Environmental Budget",
+					"title": "Provide a sustainability and environmental budget",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.27 Define performance and environmental budgets](https://w3c.github.io/sustainableweb-wsg/#define-performance-and-environmental-budgets).",
 					"description": [
 						{
@@ -4661,7 +4690,7 @@
 				},
 				{
 					"id": "BSPM27-2",
-					"title": "Provide a Performance Budget for Your Product or Service",
+					"title": "Provide a performance budget for your product or service",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.27 Define performance and environmental budgets](https://w3c.github.io/sustainableweb-wsg/#define-performance-and-environmental-budgets).",
 					"description": [
 						{
@@ -4690,7 +4719,7 @@
 				},
 				{
 					"id": "BSPM27-4",
-					"title": "Benchmark the Improvement in Revised Budget Achievements",
+					"title": "Benchmark the improvement in revised budget achievements",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.27 Define performance and environmental budgets](https://w3c.github.io/sustainableweb-wsg/#define-performance-and-environmental-budgets).",
 					"description": [
 						{
@@ -4722,7 +4751,7 @@
 				},
 				{
 					"id": "BSPM28-1",
-					"title": "Produce an Open Source Policy and Verify Licensing",
+					"title": "Produce an open source policy and verify licensing",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.28 Use open source where possible](https://w3c.github.io/sustainableweb-wsg/#use-open-source-where-possible).",
 					"description": [
 						{
@@ -4751,7 +4780,7 @@
 				},
 				{
 					"id": "BSPM28-3",
-					"title": "Identify Contributions Made to Open Source Projects",
+					"title": "Identify contributions made to open source projects",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.28 Use open source where possible](https://w3c.github.io/sustainableweb-wsg/#use-open-source-where-possible).",
 					"description": [
 						{
@@ -4780,7 +4809,7 @@
 				},
 				{
 					"id": "BSPM29-2",
-					"title": "Maintain Transparent Communication When Problems Occur",
+					"title": "Maintain transparent communication when problems occur",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [5.29 Create a business continuity and disaster recovery plan](https://w3c.github.io/sustainableweb-wsg/#create-a-business-continuity-and-disaster-recovery-plan).",
 					"description": [
 						{
