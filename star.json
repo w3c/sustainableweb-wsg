@@ -3347,6 +3347,35 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-4.html"
 				},
 				{
+					"id": "HIS01-6",
+					"title": "Ensure that the project uses a sustainable domain registrar",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.1 Choose a sustainable hosting provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider).",
+					"description": [
+						{
+							"1": "Ensure that emissions reports are published, with adequate frequency, considering (if possible) changes to DNS, subdomain allocation, multiple domain ownership, or other conditions that may impact the scope results. Also, be sure to provide calculations on an individual and collective domain level (where situations allow) to enable the best overview possible of total impact and most impactful domains. Having these metrics available for customers will increase public awareness, and allow registrants to meet reporting obligations as part of their compliance requirements.",
+							"2": "For machine testability customer accounts should have a method to view changes in emissions, this would require an account (of a registrar) to be made accessible within tooling or for generalized statistics that account for the total amount of users to be made publicly visible (so averages can be used). This would help estimate and account for the impact of domain use based on TLD choice and other variables that will be relevant to the measurement criteria. The methodology behind the calculations should also be provided in a centralized location."
+						}
+					],
+					"examples": [
+						{
+							"1": "The [Eco Registry](https://go.eco/news/climate-reporting-for-eco-domains/) provides climate reports for customers, allowing them to get an estimate of the emissions from operating the domain name over the lifetime of the registration period."
+						}
+					],
+					"tests": [
+						{
+							"procedure": [
+								{
+									"1": "Check that the provider has made available relevant impact metrics publicly.",
+									"2": "Account for factors that may affect domain impact (such as number of domains in use).",
+									"3": "Check that logging of past values over time is provided for calculating emissions."
+								}
+							],
+							"expectedResults": "All checks above are true."
+						}
+					],
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-4.html"
+				},
+				{
 					"id": "HIS02-1",
 					"title": "Provide Caching Responses To Optimize Page Reloads",
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.2 Optimize caching with offline access supported](https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported).",
