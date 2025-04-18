@@ -2307,15 +2307,15 @@
 								<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#redundancy-and-duplication-in-code-should-be-avoided">3.5 Redundancy and duplication in code should be avoided</a>.</p>
 								<p><strong>Description</strong></p>
 								<p>Provide a mechanism within projects to eliminate redundancy within your coding methodology. There will be occasions where the same solution is required for multiple events and in preference to repeating the code to achieve the same effect, referencing the code to perform on each occasion is more optimal as it reduces duplication and repetition.</p>
-								<p>In terms of machine testability, identifying a coding methodology within languages like CSS can be easily accomplished by the way naming schemes are formed (such as the <abbr title="Block Element Modifier">BEM</abbr> pattern). In terms of repeat coding, using <abbr title="Don't Repeat Yourself">DRY</abbr>, repeated CSS property and value pairs (or in JavaScript, code that repeats the same action) can be identified and flagged for rearrangement.</p>
+								<p>In terms of machine testability, usage of <abbr title="Don't Repeat Yourself">DRY</abbr>, repeated CSS property and value pairs (or in JavaScript, code that repeats the same action) can be identified and flagged as appropriate in cases where the implementation is correct or incorrect based upon the pattern. Where patterns add unnecessary bloat to a page (such as CSS methodologies), detection can be identified and flagged in such instances.</p>
 								<p><strong>Examples</strong></p>
 								<ol>
-									<li>BEM (<a href="https://getbem.com/">Block Element Modifier</a>) is a methodology that is commonly used within websites to assist with creating reusable components and patterns, using easier-to-name schemes within front-end development.</li>
+									<li><a href="https://csswizardry.com/2013/07/writing-dryer-vanilla-css/">DRY</a> is a methodology that is commonly used by creating reusable components and patterns, using easier-to-name schemes and most importantly, avoiding already established code.</li>
 								</ol>
 								<p><strong>Tests</strong></p>
 								<p>Procedure</p>
 								<ol>
-									<li>Check for a recognized naming methodology or pattern in CSS.</li>
+									<li>Check for energy inefficient naming methodologies or patterns in CSS.</li>
 									<li>Check for the absence of repeating code (DRY) within CSS.</li>
 									<li>Check for duplicate functionality or names within your JavaScript.</li>
 								</ol>

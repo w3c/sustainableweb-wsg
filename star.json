@@ -2134,19 +2134,19 @@
 					"description": [
 						{
 							"1": "Provide a mechanism within projects to eliminate redundancy within your coding methodology. There will be occasions where the same solution is required for multiple events and in preference to repeating the code to achieve the same effect, referencing the code to perform on each occasion is more optimal as it reduces duplication and repetition.",
-							"2": "In terms of machine testability, identifying a coding methodology within languages like CSS can be easily accomplished by the way naming schemes are formed (such as the BEM pattern). In terms of repeat coding, using DRY, repeated CSS property and value pairs (or in JavaScript, code that repeats the same action) can be identified and flagged for rearrangement."
+							"2": "In terms of machine testability, usage of DRY, repeated CSS property and value pairs (or in JavaScript, code that repeats the same action) can be identified and flagged as appropriate in cases where the implementation is correct or incorrect based upon the pattern. Where patterns add unnecessary bloat to a page (such as CSS methodologies), detection can be identified and flagged in such instances."
 						}
 					],
 					"examples": [
 						{
-							"1": "BEM ([Block Element Modifier](https://getbem.com/)) is a methodology that is commonly used within websites to assist with creating reusable components and patterns, using easier-to-name schemes within front-end development."
+							"1": "[DRY](https://csswizardry.com/2013/07/writing-dryer-vanilla-css/ is a methodology that is commonly used by creating reusable components and patterns, using easier-to-name schemes and most importantly, avoiding already established code."
 						}
 					],
 					"tests": [
 						{
 							"procedure": [
 								{
-									"1": "Check for a recognized naming methodology or pattern in CSS.",
+									"1": "Check for energy inefficient naming methodologies or patterns in CSS.",
 									"2": "Check for the absence of repeating code (DRY) within CSS.",
 									"3": "Check for duplicate functionality or names within your JavaScript."
 								}
