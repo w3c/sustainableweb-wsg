@@ -117,9 +117,9 @@
 				if (window.location.hash != "#full-document") {
 					document.querySelectorAll('.filter details').forEach(e => e.removeAttribute('open')); } }
 			function filterNote(name, attr) {
-					let countTotal = " (" + document.querySelectorAll(attr).length + ")";
-					if (document.getElementById(name).parentElement.innerHTML.includes(countTotal)) { } else {
-						document.getElementById(name).parentElement.innerHTML += countTotal; }
+				let countTotal = " (" + document.querySelectorAll(attr).length + ")";
+				if (document.getElementById(name).parentElement.innerHTML.includes(countTotal)) { } else {
+					document.getElementById(name).parentElement.innerHTML += countTotal; }
 				if (document.getElementById(name).checked == true) {
 					document.querySelectorAll(attr).forEach(function (elem) {
 						elem.classList.add(name); }); } else {
@@ -9315,7 +9315,7 @@
 					<summary>Ongoing Release Notes</summary>
 					<p><strong>Additions:</strong></p>
 					<ul>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>] Guideline filters (for <a href="#full-document">full-document</a> mode) now available, using data-attributes to disclose SC.<br><span class="credit">@airbr, @AlexDawsonUK, @ldevernay, @timfrick, & @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/issues/58">#58</a>] Guideline filters (for <a href="#full-document">full-document</a> mode) available, using data-attributes to disclose SC.<br><span class="credit">@airbr, @AlexDawsonUK, @ldevernay, @timfrick, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/41">#41</a>] Living Changelog section has been added to the WSG (Github Releases will continue).<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/53">#53</a>] New Success Criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-domain-names-machine-testable">4.1</a> providing coverage regarding the impact of Domain Names.<br><span class="credit">@codewordcreative & @exortech</span></li>
 					</ul>
