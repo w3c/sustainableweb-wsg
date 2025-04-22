@@ -49,9 +49,12 @@
 			.testable { flex-basis: 100%; }
 			.impact, .effort, .materials, .energy, .water, .emissions { flex-basis: calc(50% - 32px); }
 			.wrapper > fieldset, .option-inline { margin-top: 1em; }
-			.wrapper label { margin-right: 0.5em; }
-			@media screen and (max-width: 790px) { .wrapper fieldset { flex-basis: 100%; } }
-			@media screen and (max-width: 500px) { .wrapper fieldset { flex-direction: column; } }
+			.wrapper label { margin-right: 0.5em; white-space: nowrap; }
+			@media screen and (max-width: 860px) {
+				.wrapper fieldset, .option-inline { display: flex; flex-basis: 100%; } }
+			@media screen and (max-width: 540px) {
+				.wrapper fieldset, .option-inline { display: flex; flex-direction: column; min-width: unset; }
+				.wrapper label { margin-right: 0; } }
 			.filter, .option-inline div:has(#test:checked),
 			/* Hide All Non-SC Related Content Upon Filter Activation */
 			.filter:has(details[open]) ~ #abstract, .filter:has(details[open]) ~ #sotd, .filter:has(details[open]) ~ #introduction, .filter:has(details[open]) ~ section > p ~ section, .filter:has(details[open]) ~ section > p ~ section > section, .filter:has(details[open]) ~ #acknowledgments, .filter:has(details[open]) ~ section > div, .filter:has(details[open]) ~ section > p, .filter:has(details[open]) ~ section ul, .wrapper fieldset
@@ -114,12 +117,15 @@
 				if (window.location.hash != "#full-document") {
 					document.querySelectorAll('.filter details').forEach(e => e.removeAttribute('open')); } }
 			function filterNote(name, attr) {
-			if (document.getElementById(name).checked == true) {
-				document.querySelectorAll(attr).forEach(function (elem) {
-					elem.classList.add(name); }); } else {
-				document.querySelectorAll(attr).forEach(function (elem) {
-					elem.classList.remove(name); }); }
-			return(name + attr); }
+				let countTotal = " (" + document.querySelectorAll(attr).length + ")";
+				if (document.getElementById(name).parentElement.innerHTML.includes(countTotal)) { } else {
+					document.getElementById(name).parentElement.innerHTML += countTotal; }
+				if (document.getElementById(name).checked == true) {
+					document.querySelectorAll(attr).forEach(function (elem) {
+						elem.classList.add(name); }); } else {
+					document.querySelectorAll(attr).forEach(function (elem) {
+						elem.classList.remove(name); }); }
+				return(name + attr); }
 			// ReSpec Multipage: https://w3c.github.io/sustainableweb-ig/multipage.html
 			function addMultipage() {
 				window.addEventListener('hashchange', onHashChange);
@@ -9309,7 +9315,7 @@
 					<summary>Ongoing Release Notes</summary>
 					<p><strong>Additions:</strong></p>
 					<ul>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>] Guideline filters (for <a href="#full-document">full-document</a> mode) now available, using data-attributes to disclose SC.<br><span class="credit">@AlexDawsonUK, @ldevernay, @timfrick, & @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/58">#58</a>] Guideline filters (for <a href="#full-document">full-document</a> mode) available, using data-attributes to disclose SC.<br><span class="credit">@airbr, @AlexDawsonUK, @ldevernay, @timfrick, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/41">#41</a>] Living Changelog section has been added to the WSG (Github Releases will continue).<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/53">#53</a>] New Success Criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-domain-names-machine-testable">4.1</a> providing coverage regarding the impact of Domain Names.<br><span class="credit">@codewordcreative & @exortech</span></li>
 					</ul>
@@ -9317,7 +9323,7 @@
 					<ul>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/30">#30</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/issues/55">#55</a>] Former accessibility guideline 3.5 is removed. Useful material merged into SC for <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-frequent-testing-machine-testable">2.29</a>.<br><span class="credit">@airbr, @andreadavanzo, & @hidde</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/45">#45</a>] Success Criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-structured-data-machine-testable">3.11</a> updated to reflect more appropriate Structured Data use.<br><span class="credit">@hidde</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/51">#51</a>] Success Criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-organize-code-arrangement-machine-testable">3.5</a> updated on to avoid CSS methodology naming.<br><span class="credit">@airbr</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/51">#51</a>] Success Criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#success-criterion-organize-code-arrangement-machine-testable">3.5</a> updated on to avoid CSS methodology naming.<br><span class="credit">@airbr & @andreadavanzo</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/52">#52</a>] Deliverables updated to ensure case-use and interactive elements are consistant with WSG.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/56">#56</a>] Category intros have been re-written to include more material (subheadings, goals & benefits).<br><span class="credit">@AlexDawsonUK & @codewordcreative</span></li>
 					</ul>
