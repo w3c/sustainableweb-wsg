@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-04-18",
+	"lastModified": "2025-04-24",
 	"category": [
 		{
 			"id": "1",
@@ -2139,7 +2139,7 @@
 							"Runtime compatibility": "https://runtime-compat.unjs.io/",
 							"Slowfiles": "https://slowfil.es/",
 							"Software Maintenance Types: Corrective, Adaptive, Perfective, and Preventive": "https://hackernoon.com/what-do-you-need-to-know-about-software-maintenance-types-as-an-engineer-421335fl",
-							"Starbucks Ordering and Store Locator PWA": "https://commerce.nearform.com/work/starbucks-progressive-web-app/",
+							"Starbucks Ordering and Store Locator PWA": "https://nearform.com/work/starbucks-progressive-web-app/",
 							"Taking RWD To The Extreme": "https://www.smashingmagazine.com/2025/02/taking-rwd-to-the-extreme/",
 							"The Carbon Impact of Web Standards (PDF)": "https://websitesustainability.com/cache/files/research23.pdf",
 							"The State Of Mobile And Why Mobile Web Testing Matters": "https://www.smashingmagazine.com/2021/03/mobile-app-web-testing/",
@@ -2835,7 +2835,7 @@
 					"example": [
 						{
 							"code": "<label for=\"username\">Username: (3-16 characters)<\/label>\r\n<input name=\"username\" type=\"text\" value=\"Sasha\" pattern=\"\\w{3,16}\" required>\r\n<label for=\"pin\">PIN: (4 digits)<\/label>\r\n<input name=\"pin\" type=\"password\" pattern=\"\\d{4,4}\" required>",
-							"content": "[HTML attribute: pattern](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern)."
+							"content": "[HTML attribute: pattern](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern)."
 						}
 					],
 					"resources": [
@@ -2846,9 +2846,9 @@
 							"Designing for forgiveness": "https://uxdesign.cc/designing-for-forgiveness-how-to-create-error-tolerant-interfaces-af9146c8072b",
 							"[GPFEDS] 4.10 - UX and UI (Input Format) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"How GDPR Will Change The Way You Develop": "https://www.smashingmagazine.com/2018/02/gdpr-for-web-developers/",
-							"HTML attribute: required": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required",
+							"HTML attribute: required": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/required",
 							"The \"Cobra Effect\" that is disabling paste on password fields": "https://www.troyhunt.com/the-cobra-effect-that-is-disabling/",
-							"The Label element": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label",
+							"The Label element": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label",
 							"United Nations [SDGS] Goal 1 (Poverty)": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
 							"WCAG 2.2 Understanding Docs: Error Identification": "https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html",
 							"Validating Input": "https://www.w3.org/WAI/tutorials/forms/validation/",
@@ -2973,7 +2973,7 @@
 							"CSS-Based Fingerprinting": "https://css-tricks.com/css-based-fingerprinting/",
 							"Dark mode & accessibility myth": "https://stephaniewalter.design/blog/dark-mode-accessibility-myth-debunked/",
 							"Dark mode can save battery, but only if your device has an OLED screen": "https://www.businessinsider.com/guides/tech/does-dark-mode-save-battery?r=US&IR=T",
-							"Dark mode may not save your phone's battery life as much as you think, but there are a few silver linings": "https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html,-but-there-are-a-few-silver-linings.html",
+							"Dark mode may not save your phone's battery life as much as you think, but there are a few silver linings": "https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html",
 							"Dark Mode Can Improve Text Readability — But Not for Everyone": "https://www.boia.org/blog/dark-mode-can-improve-text-readability-but-not-for-everyone",
 							"Demo: Disabling JavaScript Won't Save You from Fingerprinting": "https://fingerprint.com/blog/disabling-javascript-wont-stop-fingerprinting/",
 							"Energy efficient color palette ideas": "https://greentheweb.com/energy-efficient-color-palette-ideas/",
@@ -3599,7 +3599,7 @@
 					"example": [
 						{
 							"code": "<button onclick=\"window.dialog.showModal()\">open dialog</button>\r\n<dialog id=\"dialog\">\r\n\t<p>I'm a dialog.</p>\r\n\t<form method=\"dialog\">\r\n\t\t<button>Close</button>\r\n\t</form>\r\n</dialog>",
-							"content": "HTML [dialog] (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) API [example](https://codepen.io/chriscoyier/pen/QWLRBVK)."
+							"content": "HTML [dialog] (https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog) API [example](https://codepen.io/chriscoyier/pen/QWLRBVK)."
 						},
 						{
 							"code": "<?php\r\n$ar1 = array(10, 100, 100, 0);\r\n$ar2 = array(1, 3, 2, 4);\r\narray_multisort($ar1, $ar2);\r\nvar_dump($ar1);\r\nvar_dump($ar2);\r\n?>",
@@ -3662,7 +3662,7 @@
 							"[GPFEDS] 6.5 - Front-End (Upload Triggers) (PDF)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 							"High Performance MySQL: Query Performance Optimization": "https://www.oreilly.com/library/view/high-performance-mysql/9780596101718/ch04.html",
 							"Improving PHP Performance for Web Applications": "https://www.keycdn.com/blog/php-performance#9-limit-your-database-hits",
-							"Minimizing SQL query response times": "https://www.ibm.com/docs/en/cognos-analytics/11.1.0?topic=performance-minimizing-sql-query-response-times",
+							"Minimizing SQL query response times": "https://www.ibm.com/docs/en/cognos-analytics/11.1.x?topic=performance-minimizing-sql-query-response-times",
 							"Performance Tuning SQL Queries": "https://mode.com/sql-tutorial/sql-performance-tuning/",
 							"Query optimization techniques in SQL Server": "https://www.sqlshack.com/query-optimization-techniques-in-sql-server-tips-and-tricks/",
 							"SQL Query Optimization": "https://codedamn.com/news/sql/sql-query-optimization-tips-tricks-faster-queries"
@@ -3989,7 +3989,7 @@
 							"Optimizing Encoding and Transfer Size of Text-Based Assets": "https://web.dev/articles/optimizing-content-efficiency-optimize-encoding-and-transfer?hl=en",
 							"Page bloat update": "https://www.speedcurve.com/blog/page-bloat-2025/",
 							"Reduce web font size": "https://web.dev/articles/reduce-webfont-size?hl=en",
-							"Responsive images": "https://developer.mozilla.org/en-US/docs/Web/HTML/Responsive_images",
+							"Responsive images": "https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images",
 							"Should I Use A Carousel": "https://shouldiuseacarousel.com/",
 							"Squoosh": "https://squoosh.app/",
 							"Supercharge compression efficiency with shared dictionaries": "https://developer.chrome.com/blog/shared-dictionary-compression?hl=en",
@@ -6123,7 +6123,7 @@
 							"How off-grid solar microgrids can power the AI race": "https://www.offgridai.us/",
 							"In battle against climate crisis, don't overlook the blockchain": "https://www.unep.org/news-and-stories/story/battle-against-climate-crisis-dont-overlook-blockchain",
 							"Let's talk about AI and end-to-end encryption": "https://blog.cryptographyengineering.com/2025/01/17/lets-talk-about-ai-and-end-to-end-encryption/",
-							"New Method Forecasts Computation, Energy Costs for Sustainable AI Models": "https://news.ncsu.edu/2025/01/13/forecasting-for-sustainable-ai/",
+							"New Method Forecasts Computation, Energy Costs for Sustainable AI Models": "https://news.ncsu.edu/2025/01/forecasting-for-sustainable-ai/",
 							"No bots allowed?": "https://www.wholegraindigital.com/blog/no-bots-allowed/",
 							"Sustainability of Bitcoin and its Impact on the Environment": "https://grc.studentorg.berkeley.edu/the-sustainability-of-bitcoin-and-its-impact-on-the-environment/",
 							"Sustainable Ux in VR (PPT)": "https://docs.google.com/presentation/d/1OTXaz3RuV0HWgM754PRMUC7d2KYVHH974s5hnAt53wk/edit",
@@ -6587,7 +6587,7 @@
 					],
 					"example": [
 						{
-							"content": "IBM provides some great examples of [disaster recovery planning](https://www.ibm.com/docs/en/i/7.5?topic=system-example-disaster-recovery-plan) for a range of different situations."
+							"content": "IBM provides some great examples of [disaster recovery planning](https://www.ibm.com/docs/en/i/7.5.0?topic=system-example-disaster-recovery-plan) for a range of different situations."
 						}
 					],
 					"resources": [

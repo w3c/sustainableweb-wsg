@@ -17,15 +17,11 @@
 			function addChairs() {
 				document.querySelectorAll("div.head dt").forEach(function (node) {
 					if (node.textContent.trim() == "Authors:")
-						node.textContent = "Chairs:";
-				});
-			}
+						node.textContent = "Chairs:"; }); }
 			function fixContributors() {
 				document.querySelectorAll("#gh-contributors li a").forEach(function (node) {
 					if (node.textContent.indexOf("[bot]") > 0)
-						node.parentElement.parentElement.removeChild(node.parentElement);
-				});
-			}
+						node.parentElement.parentElement.removeChild(node.parentElement); }); }
 		</script>
 		<script class="remove">
 		var respecConfig = {
@@ -1149,7 +1145,7 @@
 								<p><strong>Examples</strong></p>
 								<ol>
 									<li><a href="https://www.debugbear.com/blog/responsive-images">DebugBear</a> showcases how responsive images can be used to provide not just different optimized formats (for better compression) but different sizes to reduce the performance load on visitor's machines.</li>
-									<li><abbr title="Mozilla Developer Network">MDN</abbr> has a section on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Responsive_images">responsive images</a> that goes into detail (with examples) showcasing how they can be created to work well across a variety of different platforms using the HTML IMG element.</li>
+									<li><abbr title="Mozilla Developer Network">MDN</abbr> has a section on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images">responsive images</a> that goes into detail (with examples) showcasing how they can be created to work well across a variety of different platforms using the HTML IMG element.</li>
 								</ol>
 								<p><strong>Tests</strong></p>
 								<p>Procedure</p>
@@ -1562,7 +1558,7 @@
 								<p>Machine testability should flag any IMG element that has no alternative text unless it exists within a figure element that contains a figcaption element. There may be cases for decorative purposes where images do not require alternative text, however, these (arguably) should be identified as such and accessibility aids given the notification they can skip over them rather than being ignored.</p>
 								<p><strong>Examples</strong></p>
 								<ol>
-									<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">MDN provides documentation</a> and an example of how figcaption can be used to give contextual meaning to an image. While the example only uses an IMG element, you could embed a picture element for the same effect.</li>
+									<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figcaption">MDN provides documentation</a> and an example of how figcaption can be used to give contextual meaning to an image. While the example only uses an IMG element, you could embed a picture element for the same effect.</li>
 									<li>Web Development magazine <a href="https://alistapart.com/">A List Apart</a> provides alternative text on its images to ensure that those using assistive technologies can read the content without missing out on the context that they can provide.</li>
 								</ol>
 								<p><strong>Tests</strong></p>
@@ -4113,7 +4109,6 @@
 								<p>Machine testing such criteria should at least start with the existence of the sustainability statement, and the existence of a section on sustainability goals. If these exist then heuristic testing can identify key passages within the text relating to timeframes and potential mapped features (if these are listed), or if not, then at least bullet-pointing the number of goals being provided.</p>
 								<p><strong>Examples</strong></p>
 								<ol>
-									<li>Sportswear firm Adidas has a page that showcases their <a href="https://www.adidas-group.com/en/sustainability/focus-on-sustainability/our-targets">sustainability goals for the coming year</a> in short, well-defined paragraphs, along with links to previous reports and other sustainability-related information.</li>
 									<li>Computing giant Dell has a <a href="https://www.dell.com/en-us/dt/corporate/social-impact/reporting/goals.htm">dedicated page to sustainability</a> showcasing its commitments towards PPP targets and providing specific year-based deadlines to achieve them along with report links and their related blog.</li>
 									<li>United States Mega-brand Walmart <a href="https://corporate.walmart.com/content/corporate/en_us/purpose/sustainability.html/">has an extremely well crafted</a> sustainability hub and sub-section of their corporate website that provides interactive information on their challenge to become sustainable.</li>
 								</ol>
@@ -4197,7 +4192,7 @@
 								<p>For machine testability, these reports should be linked to from within the sustainability statement on your public-facing website, and if possible in an open format such as HTML (otherwise, an accessible PDF format should be used). Remember that such documents should be regularly maintained if new information that is important to your sustainability journey should come to light.</p>
 								<p><strong>Examples</strong></p>
 								<ol>
-									<li>Hilton offers an <a href="https://esg.hilton.com/our-progress/">interesting infographic approach</a> to carbon reporting by taking the essential information about how they have made reductions and lay it out in an PPP format (their evidence is available in table format).</li>
+									<li>Lego offers a <a href="https://www.lego.com/en-us/sustainability">vibrant sustainability section</a> of their website focusing on not just on their environmental responsibilities but also their social considerations as well. Their reports provide highlights that align to the UN SDGs.</li>
 								</ol>
 								<p><strong>Tests</strong></p>
 								<p>Procedure</p>

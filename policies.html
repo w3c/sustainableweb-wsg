@@ -16,15 +16,11 @@
 			function addChairs() {
 				document.querySelectorAll("div.head dt").forEach(function (node) {
 					if (node.textContent.trim() == "Authors:")
-						node.textContent = "Chairs:";
-				});
-			}
+						node.textContent = "Chairs:"; }); }
 			function fixContributors() {
 				document.querySelectorAll("#gh-contributors li a").forEach(function (node) {
 					if (node.textContent.indexOf("[bot]") > 0)
-						node.parentElement.parentElement.removeChild(node.parentElement);
-				});
-			}
+						node.parentElement.parentElement.removeChild(node.parentElement); }); }
 		</script>
 		<script class="remove">
 		var respecConfig = {
@@ -292,7 +288,7 @@
 					<td>France</td>
 					<td><a href="https://telechargement.afnor.info/standardization-afnor-spec-ai-frugal">General Frugal AI Guidelines</a></td>
 					<td>2024</td>
-					<td><a href="https://greentechinnovation.fr/frugal-ai/">Passed</a></td>
+					<td><a href="https://greentechinnovation.fr/en/frugal-ai/">Passed</a></td>
 					<td><a href="https://www.boutique.afnor.org/">Association Française de Normalisation (AFNOR)</a></td>
 				</tr>
 				<tr>

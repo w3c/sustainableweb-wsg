@@ -43,7 +43,7 @@
 				.pageButtons { display: none; }
 				.hide { display: block !important; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 			/* Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14 */
-			legend { font-weight: bold; }
+			legend { font-weight: bold; width: fit-content; }
 			.wrapper { display: flex; flex-wrap: wrap; }
 			.testable, .impact, .effort, .materials, .energy, .water, .emissions { min-width: 300px; }
 			.testable { flex-basis: 100%; }
@@ -78,7 +78,8 @@
 		</style>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer>
 		</script>
-		<script>
+		<script class="remove">
+			/* Chairs Listing */
 			function addChairs() {
 				document.querySelectorAll("div.head dt").forEach(function (node) {
 					if (node.textContent.trim() == "Authors:")
@@ -87,6 +88,8 @@
 				document.querySelectorAll("#gh-contributors li a").forEach(function (node) {
 					if (node.textContent.indexOf("[bot]") > 0)
 						node.parentElement.parentElement.removeChild(node.parentElement); }); }
+		</script>
+		<script>
 			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
 			function addFilter() {
 				window.addEventListener('change', filterData); filterData(); }
@@ -3996,7 +3999,7 @@
 								<li><a href="https://slowfil.es/">Slowfiles</a></li>
 								<li><a href="https://runtime-compat.unjs.io/">Runtime compatibility?</a></li>
 								<li><a href="https://hackernoon.com/what-do-you-need-to-know-about-software-maintenance-types-as-an-engineer-421335fl">Software Maintenance Types: Corrective, Adaptive, Perfective, and Preventive</a></li>
-								<li><a href="https://commerce.nearform.com/work/starbucks-progressive-web-app/">Starbucks Ordering and Store Locator PWA</a></li>
+								<li><a href="https://nearform.com/work/starbucks-progressive-web-app/">Starbucks Ordering and Store Locator PWA</a></li>
 								<li><a href="https://www.smashingmagazine.com/2025/02/taking-rwd-to-the-extreme/">Taking RWD To The Extreme</a></li>
 								<li><a>[*]<span class="hidden">2.29</span></a> The Carbon Impact of Web Standards [[CIWS]]</li>
 								<li><a href="https://www.smashingmagazine.com/2021/03/mobile-app-web-testing/">The State Of Mobile And Why Mobile Web Testing Matters</a></li>
@@ -4840,7 +4843,7 @@
 								&lt;label for="pin"&gt;PIN: (4 digits)&lt;/label&gt;
 								&lt;input name="pin" type="password" pattern="\d{4,4}" required&gt;
 							</pre>
-							<p><strong>Source:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern">HTML attribute: pattern</a>.</p>
+							<p><strong>Source:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern">HTML attribute: pattern</a>.</p>
 							<p class="subtitle"><strong>Resources</strong></p>
 							<p>Resources are for information purposes only, no endorsement is implied.</p>
 							<ul class="resources">
@@ -4852,9 +4855,9 @@
 									<li>4.10 - UX and UI (Input Format)</li>
 								</ul></li>
 								<li><a href="https://www.smashingmagazine.com/2018/02/gdpr-for-web-developers/">How GDPR Will Change The Way You Develop</a></li>
-								<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/required">HTML attribute: required</a></li>
+								<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/required">HTML attribute: required</a></li>
 								<li><a href="https://www.troyhunt.com/the-cobra-effect-that-is-disabling/">The "Cobra Effect" that is disabling paste on password fields</a></li>
-								<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">The Label element</a></li>
+								<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label">The Label element</a></li>
 								<li>United Nations [[SDGS]]<ul>
 									<li><a href="https://sdgs.un.org/goals/goal1#targets_and_indicators">Goal 1</a> - Poverty</li>
 								</ul></li>
@@ -5014,7 +5017,7 @@
 								<li><a href="https://css-tricks.com/css-based-fingerprinting/">CSS-Based Fingerprinting</a></li>
 								<li><a href="https://stephaniewalter.design/blog/dark-mode-accessibility-myth-debunked/">Dark mode & accessibility myth</a></li>
 								<li><a href="https://www.businessinsider.com/guides/tech/does-dark-mode-save-battery?r=US&IR=T">Dark mode can save battery, but only if your device has an OLED screen</a></li>
-								<li><a href="https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html,-but-there-are-a-few-silver-linings.html">Dark mode may not save your phone's battery life as much as you think, but there are a few silver linings</a></li>
+								<li><a href="https://www.purdue.edu/newsroom/archive/releases/2021/Q3/dark-mode-may-not-save-your-phones-battery-life-as-much-as-you-think,-but-there-are-a-few-silver-linings.html">Dark mode may not save your phone's battery life as much as you think, but there are a few silver linings</a></li>
 								<li><a href="https://www.boia.org/blog/dark-mode-can-improve-text-readability-but-not-for-everyone">Dark Mode Can Improve Text Readability — But Not for Everyone</a></li>
 								<li><a href="https://fingerprint.com/blog/disabling-javascript-wont-stop-fingerprinting/">Demo: Disabling JavaScript Won't Save You from Fingerprinting</a></li>
 								<li><a href="https://greentheweb.com/energy-efficient-color-palette-ideas/">Energy efficient color palette ideas</a></li>
@@ -5737,7 +5740,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Example</strong></p>
-							<p>HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">dialog</a> API <a href="https://codepen.io/chriscoyier/pen/QWLRBVK">example</a>.</p>
+							<p>HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog">dialog</a> API <a href="https://codepen.io/chriscoyier/pen/QWLRBVK">example</a>.</p>
 							<pre class="nohighlight">
 								&lt;button onclick="window.dialog.showModal();"&gt;open dialog&lt;/button&gt;
 								&lt;dialog id="dialog"&gt;
@@ -5825,7 +5828,7 @@
 								</ul></li>
 								<li><a href="https://www.oreilly.com/library/view/high-performance-mysql/9780596101718/ch04.html">High Performance MySQL: Query Performance Optimization</a></li>
 								<li><a href="https://www.keycdn.com/blog/php-performance#9-limit-your-database-hits">Improving PHP Performance for Web Applications</a></li>
-								<li><a href="https://www.ibm.com/docs/en/cognos-analytics/11.1.0?topic=performance-minimizing-sql-query-response-times">Minimizing <abbr title="Structured Query Language">SQL</abbr> query response times</a></li>
+								<li><a href="https://www.ibm.com/docs/en/cognos-analytics/11.1.x?topic=performance-minimizing-sql-query-response-times">Minimizing <abbr title="Structured Query Language">SQL</abbr> query response times</a></li>
 								<li><a href="https://mode.com/sql-tutorial/sql-performance-tuning/">Performance Tuning SQL Queries</a></li>
 								<li><a href="https://www.sqlshack.com/query-optimization-techniques-in-sql-server-tips-and-tricks/">Query optimization techniques in SQL Server</a></li>
 								<li><a href="https://codedamn.com/news/sql/sql-query-optimization-tips-tricks-faster-queries">SQL Query Optimization</a></li>
@@ -6230,7 +6233,7 @@
 								<li><a href="https://web.dev/articles/optimizing-content-efficiency-optimize-encoding-and-transfer?hl=en">Optimizing Encoding and Transfer Size of Text-Based Assets</a></li>
 								<li><a href="https://www.speedcurve.com/blog/page-bloat-2025/">Page bloat update</a></li>
 								<li><a href="https://web.dev/articles/reduce-webfont-size?hl=en">Reduce web font size</a></li>
-								<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Responsive_images">Responsive images</a></li>
+								<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images">Responsive images</a></li>
 								<li><a href="https://shouldiuseacarousel.com/">Should I Use A Carousel</a></li>
 								<li><a href="https://squoosh.app/">Squoosh</a></li>
 								<li><a href="https://developer.chrome.com/blog/shared-dictionary-compression?hl=en">Supercharge compression efficiency with shared dictionaries</a></li>
@@ -8672,7 +8675,7 @@
 								<li><a href="https://www.offgridai.us/">How off-grid solar microgrids can power the AI race</a></li>
 								<li><a href="https://www.unep.org/news-and-stories/story/battle-against-climate-crisis-dont-overlook-blockchain">In battle against climate crisis, don't overlook the blockchain</a></li>
 								<li><a href="https://blog.cryptographyengineering.com/2025/01/17/lets-talk-about-ai-and-end-to-end-encryption/">Let's talk about AI and end-to-end encryption</a></li>
-								<li><a href="https://news.ncsu.edu/2025/01/13/forecasting-for-sustainable-ai/">New Method Forecasts Computation, Energy Costs for Sustainable AI Models</a></li>
+								<li><a href="https://news.ncsu.edu/2025/01/forecasting-for-sustainable-ai/">New Method Forecasts Computation, Energy Costs for Sustainable AI Models</a></li>
 								<li><a href="https://www.wholegraindigital.com/blog/no-bots-allowed/">No bots allowed?</a></li>
 								<li><a href="https://docs.google.com/presentation/d/1OTXaz3RuV0HWgM754PRMUC7d2KYVHH974s5hnAt53wk/edit">Sustainable Ux in VR</a> (<em>PPT</em>)</li>
 								<li><a>[*]<span class="hidden">5.22</span></a> Sustainability of Bitcoin and its Impact on the Environment [[BITCOIN]]</li>
@@ -9204,7 +9207,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Example</strong></p>
-							<p>IBM provides some great examples of <a href="https://www.ibm.com/docs/en/i/7.5?topic=system-example-disaster-recovery-plan">disaster recovery planning</a> for a range of different situations.</p>
+							<p>IBM provides some great examples of <a href="https://www.ibm.com/docs/en/i/7.5.0?topic=system-example-disaster-recovery-plan">disaster recovery planning</a> for a range of different situations.</p>
 							<p class="subtitle"><strong>Resources</strong></p>
 							<p>Resources are for information purposes only, no endorsement is implied.</p>
 							<ul class="resources">
@@ -9335,6 +9338,7 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/42">#42</a>] Glossary now correctly appears as part of the index rather than the main WSG document.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/42">#42</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/43">#43</a>], & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/48">#48</a>] Multiple spelling and grammar fixes have been applied to the document.<br><span class="credit">@AlexDawsonUK & @hidde</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/50">#50</a>] Fixed the references to particular files by noting the full filename alongside.<br><span class="credit">@airbr</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/59">#59</a>] Broken links and redirects have been resolved or removed.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
 					<!--
 						<li>Change.<br><span class="credit">@Github</span></li>

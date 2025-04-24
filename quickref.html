@@ -9,15 +9,11 @@
 			function addChairs() {
 				document.querySelectorAll("div.head dt").forEach(function (node) {
 					if (node.textContent.trim() == "Authors:")
-						node.textContent = "Chairs:";
-				});
-			}
+						node.textContent = "Chairs:"; }); }
 			function fixContributors() {
 				document.querySelectorAll("#gh-contributors li a").forEach(function (node) {
 					if (node.textContent.indexOf("[bot]") > 0)
-						node.parentElement.parentElement.removeChild(node.parentElement);
-				});
-			}
+						node.parentElement.parentElement.removeChild(node.parentElement); }); }
 		</script>
 		<script class="remove">
 		var respecConfig = {

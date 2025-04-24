@@ -2,7 +2,7 @@
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-04-18",
+	"lastModified": "2025-04-24",
 	"category": [
 		{
 			"id": "1",
@@ -895,7 +895,7 @@
 					"examples": [
 						{
 							"1": "[DebugBear](https://www.debugbear.com/blog/responsive-images) showcases how responsive images can be used to provide not just different optimized formats (for better compression) but different sizes to reduce the performance load on visitor's machines.",
-							"2": "MDN has a section on [responsive images](https://developer.mozilla.org/en-US/docs/Web/HTML/Responsive_images) that goes into detail (with examples) showcasing how they can be created to work well across a variety of different platforms using the HTML IMG element."
+							"2": "MDN has a section on [responsive images](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images) that goes into detail (with examples) showcasing how they can be created to work well across a variety of different platforms using the HTML IMG element."
 						}
 					],
 					"tests": [
@@ -1338,7 +1338,7 @@
 					],
 					"examples": [
 						{
-							"1": "[MDN provides documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption) and an example of how figcaption can be used to give contextual meaning to an image. While the example only uses an IMG element, you could embed a picture element for the same effect.",
+							"1": "[MDN provides documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figcaption) and an example of how figcaption can be used to give contextual meaning to an image. While the example only uses an IMG element, you could embed a picture element for the same effect.",
 							"2": "Web Development magazine [A List Apart](https://alistapart.com/) provides alternative text on its images to ensure that those using assistive technologies can read the content without missing out on the context that they can provide."
 						}
 					],
@@ -4074,9 +4074,8 @@
 					],
 					"examples": [
 						{
-							"1": "Sportswear firm Adidas has a page that showcases their [sustainability goals for the coming year](https://www.adidas-group.com/en/sustainability/focus-on-sustainability/our-targets) in short, well-defined paragraphs, along with links to previous reports and other sustainability-related information.",
-							"2": "Computing giant Dell has a [dedicated page to sustainability](https://www.dell.com/en-us/dt/corporate/social-impact/reporting/goals.htm) showcasing its commitments towards PPP targets and providing specific year-based deadlines to achieve them along with report links and their related blog.",
-							"3": "United States Mega-brand Walmart has an [extremely well crafted](https://corporate.walmart.com/content/corporate/en_us/purpose/sustainability.html/) sustainability hub and sub-section of their corporate website that provides interactive information on their challenge to become sustainable."
+							"1": "Computing giant Dell has a [dedicated page to sustainability](https://www.dell.com/en-us/dt/corporate/social-impact/reporting/goals.htm) showcasing its commitments towards PPP targets and providing specific year-based deadlines to achieve them along with report links and their related blog.",
+							"2": "United States Mega-brand Walmart has an [extremely well crafted](https://corporate.walmart.com/content/corporate/en_us/purpose/sustainability.html/) sustainability hub and sub-section of their corporate website that provides interactive information on their challenge to become sustainable."
 						}
 					],
 					"tests": [
@@ -4164,7 +4163,7 @@
 					],
 					"examples": [
 						{
-							"1": "Hilton offers an [interesting infographic approach](https://esg.hilton.com/our-progress/) to carbon reporting by taking the essential information about how they have made reductions and lay it out in an PPP format (their evidence is available in table format)."
+							"1": "Lego offers a [vibrant sustainability section](https://www.lego.com/en-us/sustainability) of their website focusing on not just on their environmental responsibilities but also their social considerations as well. Their reports provide highlights that align to the UN SDGs."
 						}
 					],
 					"tests": [
