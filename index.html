@@ -79,15 +79,11 @@
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer>
 		</script>
 		<script class="remove">
-			/* Chairs Listing */
+			// Chairs Listing
 			function addChairs() {
 				document.querySelectorAll("div.head dt").forEach(function (node) {
 					if (node.textContent.trim() == "Authors:")
 						node.textContent = "Chairs:"; }); }
-			function fixContributors() {
-				document.querySelectorAll("#gh-contributors li a").forEach(function (node) {
-					if (node.textContent.indexOf("[bot]") > 0)
-						node.parentElement.parentElement.removeChild(node.parentElement); }); }
 		</script>
 		<script>
 			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
@@ -1848,7 +1844,7 @@
 								<li><a href="https://sustainabilityguide.eu/methods/the-design-process/">The Design Process</a></li>
 							</ul>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p><mark>UI</mark>, <mark>Ideation</mark>, <mark>Research</mark>, <mark>Software</mark>, <mark>Strategy</mark></p>
+							<p><mark>UI</mark>, <mark>Ideation</mark>, <mark>Research</mark>, <mark>Software</mark>, <mark>Strategy</mark>, <mark>Social Equity</mark></p>
 						</details>
 					</div>
 				</section>
@@ -5644,7 +5640,7 @@
 								<li><a href="https://www.cloudflare.com/learning/performance/static-site-generator/">What is a static site generator?</a></li>
 							</ul>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p><mark>Ideation</mark>, <mark>Compatibility</mark>, <mark>Performance</mark>, <mark>Strategy</mark></p>
+							<p><mark>Ideation</mark>, <mark>Compatibility</mark>, <mark>Performance</mark>, <mark>Strategy</mark>, <mark>Software</mark></p>
 						</details>
 					</div>
 				</section>
@@ -7309,7 +7305,7 @@
 								<li><a>[*]<span class="hidden">5.4</span></a> Web Almanac: Sustainability [[ALMANAC]]</li>
 							</ul>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p><mark>Content</mark>, <mark>Education</mark>, <mark>Reporting</mark></p>
+							<p><mark>Content</mark>, <mark>Education</mark>, <mark>Marketing</mark>, <mark>Reporting</mark></p>
 						</details>
 					</div>
 				</section>
@@ -7383,7 +7379,7 @@
 								</ul></li>
 							</ul>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p><mark>Social Equity</mark>, <mark>Ideation</mark>, <mark>Research</mark>, <mark>Strategy</mark>, <mark>KPIs</mark></p>
+							<p><mark>Social Equity</mark>, <mark>Ideation</mark>, <mark>Research</mark>, <mark>Strategy</mark>, <mark>KPIs</mark>, <mark>Software</mark></p>
 						</details>
 					</div>
 				</section>
@@ -8702,7 +8698,7 @@
 								<li><a href="https://social.hays.com/2022/09/29/why-we-need-to-be-upskilling-the-current-workforce-for-the-green-economy/">Why We Need To Be UpSkilling The Current Workforce For The Green Economy</a></li>
 							</ul>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p><mark>Social Equity</mark>, <mark>Content</mark>, <mark>Governance</mark></p>
+							<p><mark>E-Waste</mark>, <mark>Hardware</mark>, <mark>Networking</mark>, <mark>Security</mark>, <mark>Privacy</mark>, <mark>Performance</mark>, <mark>Software</mark>, <mark>Content</mark>, <mark>Governance</mark>, <mark>Social Equity</mark></p>
 						</details>
 					</div>
 				</section>
@@ -9339,6 +9335,8 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/42">#42</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/43">#43</a>], & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/48">#48</a>] Multiple spelling and grammar fixes have been applied to the document.<br><span class="credit">@AlexDawsonUK & @hidde</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/50">#50</a>] Fixed the references to particular files by noting the full filename alongside.<br><span class="credit">@airbr</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/59">#59</a>] Broken links and redirects have been resolved or removed.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/60">#60</a>] Removed obsolete JavaScript within the source code to improve performance.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/60">#60</a>] Updated some of the tags to reflect new and updated Success Criteria material.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
 					<!--
 						<li>Change.<br><span class="credit">@Github</span></li>
