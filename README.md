@@ -5,7 +5,7 @@ If you would like to learn more about us and how to participate in this project,
 
 ## Statistics
 
- - **92** Guidelines covering UX, Web Development, DevOps, & Business / Product Strategy.
+ - **92** Guidelines covering UX, Web Development, DevOps, and Business / Product Strategy.
  - **254** Success Criteria to meet the guidelines on various aspects of sustainability.
  - **150+** contributors from over **20** nations around the world.
 
@@ -59,12 +59,12 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td>24 Apr 2025</td>
 		</tr>
 		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws & Policies</a></td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws and Policies</a></td>
 			<td>W3C Editors Draft</td>
 			<td>24 Apr 2025</td>
 		</tr>
 		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">Quick Reference for WSG</a> & <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">Checklist</a> (PDF)</td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">Quick Reference for WSG</a> and <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">Checklist</a> (PDF)</td>
 			<td>W3C Editors Draft</td>
 			<td>24 Apr 2025</td>
 		</tr>
@@ -181,7 +181,7 @@ Below are some handy links for contributors to our project:
  - [Charter Template](https://w3c.github.io/charter-drafts/charter-template.html) ([HTML Source](https://github.com/w3c/charter-drafts/blob/gh-pages/charter-template.html))
  - [GRI Notebook](GRI.ipynb) ([Spreadsheet](https://docs.google.com/spreadsheets/d/12nGydnSv24fvmvCM-665_pFGPG9u3RgTwe1sCz4eiGk/edit?usp=sharing))
  - [How to do Wide Review](https://www.w3.org/Guide/documentreview/)
- - [Policies & legal information](https://www.w3.org/policies/)
+ - [Policies and legal information](https://www.w3.org/policies/)
  - [Pubrules](https://www.w3.org/pubrules/) ([Documentation](https://www.w3.org/pubrules/doc/))
  - [QA Framework](https://www.w3.org/TR/qaframe-spec/)
  - [Repository Templates](https://github.com/w3c/ash-nazg/tree/master/templates)
