@@ -25,6 +25,7 @@ index.html		- WSG Guidelines
 intro.html		- Introduction
 policies.html		- Laws and Policies
 quickref.html		- Quick Reference
+resources.html		- Resources (URLs)
 star.html		- STAR
 star.json		- STAR JSON API
 ```
