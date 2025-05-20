@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-05-17",
+	"lastModified": "2025-05-20",
 	"category": [
 		{
 			"id": "1",
@@ -2163,7 +2163,7 @@
 							"content": "A comprehensive usability testing [toolkit](https://www.userfocus.co.uk/articles/testplan.html)."
 						}
 					],
-					"tags": ["Accessibility", "Education", "Governance", "Ideation", "Research", "Social Equity", "UI", "Usability"]
+					"tags": ["Accessibility", "Education", "Governance", "Ideation", "Research", "Social Equity", "Strategy", "UI", "Usability"]
 				},
 				{
 					"id": "25",
@@ -2258,7 +2258,7 @@
 							"content": "It is important to automate measurements of page speed, time-to-first-byte, and page score to verify recent changes didn't increase these metrics. Automatic threshold alerts or anomalies on metrics help indicate regression. Identify target \"page weight budgets\" to help establish a baseline. Popular performance tools like Google Lighthouse can help too. Similarly, environmental metrics can be measured or assessed and evaluated against thresholds defined in a sustainability budget. Here is a [checklist](https://www.wordstream.com/blog/ws/2022/01/24/website-audit-checklist) for auditing a web design."
 						}
 					],
-					"tags": ["Accessibility", "Compatibility", "KPIs", "Performance", "Privacy", "Reporting", "Research", "Security", "Social Equity", "UI", "Usability"]
+					"tags": ["Accessibility", "Compatibility", "KPIs", "Performance", "Privacy", "Reporting", "Research", "Security", "Social Equity", "Strategy", "UI", "Usability"]
 				},
 				{
 					"id": "26",
@@ -4667,7 +4667,7 @@
 							"content": "Some hosting companies [display](https://pue.dc2.opcore.eu/en/) their PUE / WUE. In addition to being a good way for users and possible customers to get insight into this, it is also a good lever to incite competitors to do the same. The [Green Hosting Directory](https://www.thegreenwebfoundation.org/tools/directory/) from the Green Web Foundation offers a list of hosting companies that claim to use only renewable energies."
 						}
 					],
-					"tags": ["Hardware", "Networking", "Social Equity"]
+					"tags": ["E-Waste", "Hardware", "Networking", "Social Equity"]
 				},
 				{
 					"id": "2",
@@ -4751,7 +4751,7 @@
 							"content": "[htaccess Server MIME Type Control](https://github.com/h5bp/server-configs-apache/blob/main/dist/.htaccess). [Apache](https://github.com/h5bp/server-configs-apache) and [NGINX](https://github.com/h5bp/server-configs-nginx) boilerplates are available."
 						}
 					],
-					"tags": ["Assets", "HTML", "JavaScript", "Networking", "Performance"]
+					"tags": ["Assets", "HTML", "JavaScript", "Networking", "Performance", "Software"]
 				},
 				{
 					"id": "3",
