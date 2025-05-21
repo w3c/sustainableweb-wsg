@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-05-20",
+	"lastModified": "2025-05-21",
 	"category": [
 		{
 			"id": "1",
@@ -2354,7 +2354,7 @@
 							"content": "[Prefetch resources to speed up future navigations](https://web.dev/articles/link-prefetch?hl=en)."
 						}
 					],
-					"tags": ["Accessibility", "KPIs", "Networking", "Performance", "Research", "Strategy", "Usability"]
+					"tags": ["Accessibility", "KPIs", "Networking", "Performance", "Privacy", "Research", "Strategy", "Usability"]
 				},
 				{
 					"id": "27",
@@ -5073,7 +5073,7 @@
 							"content": "[Cleaning up bad bots](https://blog.cloudflare.com/cleaning-up-bad-bots/) can improve sustainability."
 						}
 					],
-					"tags": ["Performance", "Software"]
+					"tags": ["Performance", "Security", "Software"]
 				},
 				{
 					"id": "7",
