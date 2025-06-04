@@ -2,7 +2,7 @@
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-05-05",
+	"lastModified": "2025-06-04",
 	"category": [
 		{
 			"id": "1",
@@ -153,7 +153,7 @@
 					],
 					"examples": [
 						{
-							"1": "Using third-party tooling you can [calculate](https://www.cocooncarbon.co.uk/) the carbon emissions from logistics and delivery of physical shipping which can be integrated into your calculations. They also have a [public API](https://developer.cocoonfms.co.uk/) you can use as well.",
+							"1": "Using third-party tooling you can [calculate](https://cocooncarbon.co.uk/) the carbon emissions from logistics and delivery of physical shipping which can be integrated into your calculations. They also have a [public API](https://developer.cocoonfms.co.uk/) you can use as well.",
 							"2": "Non-users who are affected by a service can be identified by technical support teams and responses required are added to a list for the developers to machine test for compliance at the next release version."
 						}
 					],
@@ -2936,7 +2936,7 @@
 					],
 					"examples": [
 						{
-							"1": "[MDN Provides a list of Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) that can be implemented (with varying levels of browser support. Some of these provide enhanced functionality to the end-user, and others may tuned to provide the ecodesign benefits that will give your product or service an edge.",
+							"1": "[MDN Provides a list of Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) that can be implemented ([with varying levels of browser support](https://whatwebcando.today/). Some of these provide enhanced functionality to the end-user, and others may tuned to provide the ecodesign benefits that will give your product or service an edge.",
 							"2": "Custom APIs such as our [WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json) ([source](https://github.com/w3c/sustainableweb-wsg/blob/main/guidelines.json)) can be used within your product or service to provide actionable sustainability information to your visitors that is maintained and kept up-to-date."
 						}
 					],
