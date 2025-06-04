@@ -152,7 +152,9 @@
 				filterNote('usability', '[data-categories*="Usability"]');}
 			function filterStyles() {
 				if (window.location.hash != "#full-document") {
-					document.querySelectorAll('.filter details').forEach(e => e.removeAttribute('open')); } }
+					document.querySelectorAll('.summary')[0].setAttribute('inert','');
+					document.querySelectorAll('.filter details').forEach(e => e.removeAttribute('open')); } else {
+						document.querySelectorAll('.summary')[0].removeAttribute('inert'); } }
 			function filterNote(name, attr) {
 				let countTotal = " (" + document.querySelectorAll(attr).length + ")";
 				if (document.getElementById(name).parentElement.innerHTML.includes(countTotal)) { } else {
