@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-06-04",
+	"lastModified": "2025-06-18",
 	"category": [
 		{
 			"id": "1",
@@ -37,7 +37,6 @@
 									"Nachhaltige Websites? (German)": "https://www.websiteboosting.com/magazin/75/nachhaltige-websites-wie-wir-alle-mehr-fuer-die-umwelt-tun-koennen.html",
 									"Network energy use not directly proportional to data volume": "https://onlinelibrary.wiley.com/doi/10.1111/jiec.13512",
 									"Opquast Web Quality Assurance Checklist (PDF)": "https://checklists.opquast.com/en/web-quality-assurance/download/",
-									"Precisely specify the need": "http://www.ecometer.org/rules/precisely-specify-the-need.html",
 									"Reduce the weight of a web page: which elements have the greatest impact?": "https://greenspector.com/en/reduce-the-weight-of-a-web-page-which-elements-have-the-greatest-impact/",
 									"Scope 3 Emissions in Your Digital Supply Chain": "https://www.mightybytes.com/blog/scope-3-emissions-in-your-digital-supply-chain/",
 									"The Fog of Enactment": "https://www.thegreenwebfoundation.org/publications/report-fog-of-enactment/",
@@ -440,7 +439,6 @@
 									"Customer Experience Mapping": "https://www.startupgrind.com/blog/customer-experience-mapping-what-is-it-and-how-to-do-it/",
 									"GreenIT - 003 - Optimize the user journey": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_003_en.md",
 									"How can we design sustainably?": "https://medium.com/@sandra.pallier/how-can-we-design-sustainably-3be7530a0f5b",
-									"Improve the process flow": "http://www.ecometer.org/rules/improve-the-process-flow.html",
 									"OpQuast - 29 - A product or service can be purchased without creating an account.": "https://checklists.opquast.com/en/web-quality-assurance/a-product-or-service-can-be-purchased-without-creating-an-account",
 									"OpQuast - 33 - Product availability is indicated before final validation of the order.": "https://checklists.opquast.com/en/web-quality-assurance/product-availability-is-shown-before-final-order-placement",
 									"OpQuast - 84 - The user is alerted at the beginning of a complex process to the nature of the required data and document.": "https://checklists.opquast.com/en/web-quality-assurance/the-user-is-alerted-at-the-beginning-of-a-complex-process-to-the-nature-of-the-data-required",
@@ -500,7 +498,6 @@
 									"GreenIT - 001 - Eliminate non-essential features": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_001_en.md",
 									"How can we design sustainably?": "https://medium.com/@sandra.pallier/how-can-we-design-sustainably-3be7530a0f5b",
 									"How to Become an Eco Web Designer": "https://onextrapixel.com/how-to-become-an-eco-web-designer/",
-									"Remove non-essential features": "http://www.ecometer.org/rules/remove-non-essential-features.html",
 									"Remove non-essential features from the scope": "https://climateproductleaders.org/playbook/remove-non-essential-features-from-the-scope",
 									"Using UX Design to Build a Sustainable Future": "https://uxmag.com/articles/using-ux-design-to-build-a-sustainable-future",
 									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability"
@@ -515,7 +512,7 @@
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
 									"dialog: The Dialog element": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog",
-									"Improve the process flow": "http://www.ecometer.org/rules/improve-the-process-flow.html",
+									"Modal & Nonmodal Dialogs: When (& When Not) to Use Them": "https://www.nngroup.com/articles/modal-nonmodal-dialog/",
 									"OpQuast - 29 - A product or service can be purchased without creating an account.": "https://checklists.opquast.com/en/web-quality-assurance/a-product-or-service-can-be-purchased-without-creating-an-account",
 									"OpQuast - 33 - Product availability is indicated before final validation of the order.": "https://checklists.opquast.com/en/web-quality-assurance/product-availability-is-shown-before-final-order-placement",
 									"Popups: 10 Problematic Trends and Alternatives": "https://www.nngroup.com/articles/popups/",
@@ -790,7 +787,6 @@
 							"description": "Provide only essential components visible at the time they are needed. Where appropriate, interfaces should deploy visual styles (patterns) that are easily recognized and used.",
 							"resources": [
 								{
-									"Choose a design that is simple, clear and tailored to the web": "http://www.ecometer.org/rules/choose-a-design-that-is-simple.html",
 									"Dark Mode Can Improve Text Readability — But Not for Everyone": "https://www.boia.org/blog/dark-mode-can-improve-text-readability-but-not-for-everyone",
 									"Dark mode can save battery, but only if your device has an OLED screen": "https://www.businessinsider.com/guides/tech/does-dark-mode-save-battery?r=US&IR=T",
 									"Design patterns": "https://ui-patterns.com/patterns",
@@ -1122,13 +1118,11 @@
 							"description": "Content is written clearly, using plain, inclusive language delivered at an easy-to-understand reading level considering accessibility and internationalization inclusions as required (for example, dyslexia).",
 							"resources": [
 								{
-									"Adapt text for the web": "http://www.ecometer.org/rules/adapt-text-for-the-web.html",
 									"GR491 - 1-4004 - Facts and Opinions": "https://gr491.isit-europe.org/en/crit.php?id=1-4004-contents-when-the-information-provided-is-not-deemed",
 									"GR491 - 2-4014 - Internationalisation": "https://gr491.isit-europe.org/en/crit.php?id=2-4014-contents-multi-language-management-adds-a-substantial-volume-of",
 									"GR491 - 5-4046 - Useful Images and Links": "https://gr491.isit-europe.org/en/crit.php?id=5-4046-contents-content-uses-external-references-rather-than-duplicating",
 									"GreenIT - 113 - Adapt texts to the web": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_113_en.md",
 									"How screen readers read special characters: an update": "https://elevenways.be/en/articles/screenreaders-special-characters",
-									"How to Write for a Global Audience": "https://uxplanet.org/how-to-write-for-a-global-audience-d12c3a9cd46",
 									"Plain Language Writing — An Essential Part Of Accessibility": "https://www.forbes.com/sites/andrewpulrang/2020/10/22/plain-language-writing---an-essential-part-of-accessibility/",
 									"Readability Scoring System": "https://readabilityformulas.com/readability-scoring-system.php",
 									"Stop Writing Web Copy That Over Explains Everything": "https://www.mightybytes.com/blog/stop-writing-web-copy-that-over-explains/",
@@ -1154,7 +1148,6 @@
 									"GR491 - 5-4046 - Useful Images and Links": "https://gr491.isit-europe.org/en/crit.php?id=5-4046-contents-content-uses-external-references-rather-than-duplicating",
 									"GreenIT - 113 - Adapt texts to the web": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_113_en.md",
 									"How to Effectively Use Visual Hierarchy in Web Design": "https://speckyboy.com/visual-hierarchy-web-design/",
-									"How to Write for a Global Audience": "https://uxplanet.org/how-to-write-for-a-global-audience-d12c3a9cd46",
 									"How UX design can help tackle climate change": "https://www.cyber-duck.co.uk/insights/how-sustainable-design-can-help-climate-change",
 									"HTML: HyperText Markup Language": "https://developer.mozilla.org/en-US/docs/Web/HTML",
 									"Page Structure Tutorial": "https://www.w3.org/WAI/tutorials/page-structure/",
@@ -1224,7 +1217,6 @@
 							"resources": [
 								{
 									"20 ways to make your website more energy efficient": "https://www.wholegraindigital.com/blog/website-energy-efficiency/",
-									"Favor CSS over images": "http://www.ecometer.org/rules/favor-css-over-images.html",
 									"GPF - General Policy Framework (PDF) - 5.1 - Content (Image Suitability)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 2-4009 - Meaningful Images": "https://gr491.isit-europe.org/en/crit.php?id=2-4009-contents-the-weight-of-an-image-thus-its",
 									"GR491 - 2-4010 - Image Avoidance": "https://gr491.isit-europe.org/en/crit.php?id=2-4010-contents-the-weight-of-an-image-thus-its",
@@ -1245,7 +1237,6 @@
 								{
 									"20 ways to make your website more energy efficient": "https://www.wholegraindigital.com/blog/website-energy-efficiency/",
 									"Avoid Large Base64 data URLs in HTML and CSS": "https://www.debugbear.com/blog/base64-data-urls-html-css",
-									"Avoid using bitmap images for the interface": "http://www.ecometer.org/rules/avoid-using-bitmap-for-the-interface.html",
 									"Dithering Images": "https://www.greendesign.io/dithering-images",
 									"Fast load times: Optimize Your Images": "https://web.dev/explore/fast?hl=en#optimize-your-images",
 									"GPF - General Policy Framework (PDF) - 4.7 - UX and UI (Media Choices)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -1321,8 +1312,7 @@
 									"GR491 - 7-5053 - Convert and Resize": "https://gr491.isit-europe.org/en/crit.php?id=7-5053-frontend-image-transfers-introduce-peculiarities-related-to-the",
 									"GreenIT - 034 - Avoid resizing images in the browser": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_034_en.md",
 									"How to Optimize Images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
-									"OpQuast - 114 - Thumbnails and previews are not larger images resized on the client side.": "https://checklists.opquast.com/en/web-quality-assurance/thumbnails-and-previews-are-not-larger-images-resized-on-the-client-side",
-									"Resize images outside the browser": "http://www.ecometer.org/rules/dont-resize-image-in-browser.html"
+									"OpQuast - 114 - Thumbnails and previews are not larger images resized on the client side.": "https://checklists.opquast.com/en/web-quality-assurance/thumbnails-and-previews-are-not-larger-images-resized-on-the-client-side"
 								}
 							]
 						},
@@ -1403,8 +1393,6 @@
 							"description": "Compress the media according to the visitor's requirements, select the appropriate format, ensure it works across browsers, and avoid embedded player plugins.",
 							"resources": [
 								{
-									"Adapt sounds to the listening environment": "http://www.ecometer.org/rules/adapt-sounds-to-the-environment.html",
-									"Adapt videos to the viewing environment": "http://www.ecometer.org/rules/adapt-videos-to-the-environment.html",
 									"AFNOR Spec 5.4.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
 									"Factcheck: What is the carbon footprint of streaming video on Netflix?": "https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix/",
 									"GPF - General Policy Framework (PDF) - 5.3 - Content (Video Definition)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -1618,7 +1606,6 @@
 									"List of typefaces included with Microsoft Windows": "https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows",
 									"Matrix of fonts bundled with Mac and Windows operating systems, Microsoft Office and Adobe Creative Suite": "https://media.24ways.org/2007/17/fontmatrix.html",
 									"Modern Font Stacks": "https://modernfontstacks.com/",
-									"Use standard typefaces": "http://www.ecometer.org/rules/use-standard-typefaces.html",
 									"Using UX Design to Build a Sustainable Future": "https://uxmag.com/articles/using-ux-design-to-build-a-sustainable-future",
 									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
 									"Web fonts: when you need them, when you don't": "https://david-gilbertson.medium.com/web-fonts-when-you-need-them-when-you-dont-a3b4b39fe0ae"
@@ -1833,8 +1820,7 @@
 									"How to turn off form autocompletion": "https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Turning_off_form_autocompletion",
 									"How to turn off password managers for fields": "https://www.stefanjudis.com/snippets/turn-off-password-managers/",
 									"Making password managers play ball with your login form": "https://hidde.blog/making-password-managers-play-ball-with-your-login-form/",
-									"Reducing the impact of autocompletion": "https://greenspector.com/en/reducing-the-impact-of-autocompletion/",
-									"Use input help instead of autocomplete": "http://www.ecometer.org/rules/use-input-help-instead-of-autocomplete.html"
+									"Reducing the impact of autocompletion": "https://greenspector.com/en/reducing-the-impact-of-autocompletion/"
 								}
 							]
 						}
@@ -2030,14 +2016,13 @@
 							"resources": [
 								{
 									"Changing Paper Consumption": "http://www.greenschools.net/article.php-id=75.html",
-									"Compress documents": "http://www.ecometer.org/rules/compress-documents.html",
 									"GPF - General Policy Framework (PDF) - 4.11 - UX and UI (Inform Users)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 5.7 - Content (File Size Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 5-4052 - Downloadable Documents": "https://gr491.isit-europe.org/en/crit.php?id=5-4052-contents-the-documents-available-to-the-user-in",
 									"GR491 - 5-4053 - PDF Documents": "https://gr491.isit-europe.org/en/crit.php?id=5-4053-contents-large-documents-are-rarely-read-completely-by",
 									"GreenIT - 107 - Compress documents": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_107_en.md",
 									"GreenIT - 108 - Optimize PDF files": "https://github.com/cnumr/best-practices/blob/main/chapters/BP_108_en.md",
-									"Optimize PDFs": "http://www.ecometer.org/rules/optimize-pdfs.html",
+									"Optimizing PDFs for Web": "https://dev.to/revisepdf/optimizing-pdfs-for-web-best-practices-for-faster-loading-3b93",
 									"United Nations SDGS - Goal 11 - Human Habitats": "https://sdgs.un.org/goals/goal11#targets_and_indicators",
 									"United Nations SDGS - Goal 12 - Consumption & Production": "https://sdgs.un.org/goals/goal12#targets_and_indicators"
 								}
@@ -2739,7 +2724,6 @@
 									"Investigating the website sustainability of Finnish listed companies (PDF)": "https://lutpub.lut.fi/handle/10024/168850",
 									"Latency numbers every frontend developer should know": "https://vercel.com/blog/latency-numbers-every-web-developer-should-know",
 									"Platform Strategy and Its Discontents": "https://infrequently.org/2024/10/platforms-are-competitions/",
-									"Precisely specify the need": "http://www.ecometer.org/rules/precisely-specify-the-need.html",
 									"Rethinking Allocation in High-Baseload Systems (PDF)": "https://research-information.bris.ac.uk/ws/portalfiles/portal/348324297/Schien_rethinking_allocation.pdf",
 									"Systems thinking and efficiency under emissions constraints": "https://www.cell.com/patterns/fulltext/S2666-3899(23)00002-8",
 									"UI Tools": "https://designsustainably.eu/uitools/",
@@ -3115,7 +3099,6 @@
 									"The Cost of Javascript Frameworks": "https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/",
 									"United Nations SDGS - Goal 7 - Sustainable Energy": "https://sdgs.un.org/goals/goal7#targets_and_indicators",
 									"United Nations SDGS - Goal 12 - Consumption & Production": "https://sdgs.un.org/goals/goal12#targets_and_indicators",
-									"Use as few plugins as possible": "http://www.ecometer.org/rules/limit-plugins.html",
 									"You don't need JavaScript for that": "https://www.htmhell.dev/adventcalendar/2023/2/",
 									"You Might Not Need": "https://youmightnotneed.com/",
 									"You Might Not Need that Framework": "https://frontendmasters.com/blog/you-might-not-need-that-framework/"
@@ -3156,8 +3139,7 @@
 									"Simple Icons": "https://simpleicons.org/",
 									"The Cost of Javascript Frameworks": "https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/",
 									"United Nations SDGS - Goal 7 - Sustainable Energy": "https://sdgs.un.org/goals/goal7#targets_and_indicators",
-									"United Nations SDGS - Goal 12 - Consumption & Production": "https://sdgs.un.org/goals/goal12#targets_and_indicators",
-									"Use as few plugins as possible": "http://www.ecometer.org/rules/limit-plugins.html"
+									"United Nations SDGS - Goal 12 - Consumption & Production": "https://sdgs.un.org/goals/goal12#targets_and_indicators"
 								}
 							]
 						},
@@ -4695,7 +4677,6 @@
 									"GR491 - 6-8063 - Datacenter Certification": "https://gr491.isit-europe.org/en/crit.php?id=6-8063-hosting-the-characteristics-of-geographic-areas-may-require",
 									"Green Web Foundation Directory": "https://app.greenweb.org/directory/",
 									"How much water do data centres use?": "https://smartwatermagazine.com/news/h2o-building-services/how-much-water-do-data-centres-use",
-									"How to Choose the Best Green Web Hosting Provider": "https://dodonut.com/blog/how-to-choose-the-best-green-web-hosting-provider/",
 									"How to cut water usage in cloud data centers": "https://www.datacenterdynamics.com/en/opinions/how-to-cut-water-usage-in-cloud-data-centers/",
 									"I Made My Blog Solar-Powered, Then Things Escalated": "https://louwrentius.com/i-made-my-blog-solar-powered-then-things-escalated.html",
 									"Quick Guide to Sustainable Design Strategies": "https://medium.com/disruptive-design/quick-guide-to-sustainable-design-strategies-641765a86fb8",
@@ -4837,7 +4818,7 @@
 									"Implement caching, batching, and offline features": "https://climateproductleaders.org/playbook/implement-caching-batching-and-offline-features",
 									"Learn PWA": "https://web.dev/learn/pwa?hl=en",
 									"Local-first Landscape": "https://www.localfirst.fm/landscape",
-									"Local-first Software": "https://localfirstweb.dev/",
+									"Local-first Software": "https://lofi.so/",
 									"Offline UX design guidelines": "https://web.dev/articles/offline-ux-design-guidelines?hl=en",
 									"Progressive web apps": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
 									"Progressive Web Apps: Going Offline": "https://developers.google.com/codelabs/pwa-training/pwa03--going-offline?hl=en",
@@ -6277,7 +6258,7 @@
 									"Align business models with sustainability goals": "https://climateproductleaders.org/playbook/align-business-models-with-sustainability-goals",
 									"B Corperation Standards": "https://www.bcorporation.net/en-us/standards/",
 									"Corporate Digital Responsibility": "https://www.sciencedirect.com/science/article/pii/S0148296319305946",
-									"Corporate Digital Responsibility (PDF)": "https://www.strategie.gouv.fr/files/2025-01/fs-2020-corporate-digital-responsibility-juillet.pdf",
+									"Corporate Digital Responsibility (PDF)": "https://www.strategie-plan.gouv.fr/files/2025-01/fs-2020-corporate-digital-responsibility-juillet.pdf",
 									"Corporate Digital Responsibility Manifesto": "https://corporatedigitalresponsibility.net/cdr-manifesto",
 									"Creating A Modern Organizational Sustainability Strategy": "https://www.officernd.com/blog/organizational-sustainability-strategy/",
 									"Evolving Sustainable Business Models Through Digital Ecology and Transformation": "https://dodonut.com/blog/evolving-sustainable-business-models-through-digital-ecology-and-transformation/",
@@ -6713,7 +6694,7 @@
 									"How to Develop Key Risk Indicators (KRIs) to Fortify Your Business": "https://auditboard.com/blog/how-to-develop-key-risk-indicators-kris-to-fortify-business/",
 									"Key risk indicators (KRIs)": "https://fiveable.me/risk-assessment-and-management/unit-9/key-risk-indicators-kris/study-guide/PeIAgvBb6CvSRAMr",
 									"The importance of tying KPIs to KFIs + Applying this in life": "https://blog.mbelcevic.me/the-importance-of-tying-kpis-to-kfis-applying-this-in-life/",
-									"This is why your sustainability initiatives are failing": "https://www.ucem.ac.uk/whats-happening/articles/this-is-why-your-sustainability-initiatives-are-failing/",
+									"This is why your sustainability initiatives are failing": "https://www.ube.ac.uk/whats-happening/articles/this-is-why-your-sustainability-initiatives-are-failing/",
 									"What is issue tracking?": "https://sifterapp.com/academy/overview/why/"
 								}
 							]
@@ -6789,7 +6770,7 @@
 									"GPF - General Policy Framework (PDF) - 2.6 - Specifications (Design Review)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 2-3012 - Iterative Validation Process": "https://gr491.isit-europe.org/en/crit.php?id=2-3012-uxui-the-sustainable-it-approach-is-iterative-and",
 									"GR491 - 5-3031 - Decision Making": "https://gr491.isit-europe.org/en/crit.php?id=5-3031-uxui-monitoring-of-uses-allows-to-validate-the",
-									"How Often Are Sprint Reviews Conducted? A Guide to Timing and Best Practices": "https://www.itsdart.com/blog/how-often-are-sprint-reviews-conducted",
+									"How Often Are Sprint Reviews Conducted? A Guide to Timing and Best Practices": "https://www.dartai.com/blog/how-often-are-sprint-reviews-conducted",
 									"SCRUM Guide": "https://scrumguides.org/scrum-guide.html",
 									"Sprint length in Scrum": "https://www.knowledgehut.com/blog/agile/5-reasons-to-have-fixed-length-sprints",
 									"The Impact Of Agile Methodologies On Code Quality": "https://www.smashingmagazine.com/2023/05/impact-agile-methodologies-code-quality/"
@@ -7494,7 +7475,7 @@
 									"A privacy-friendly Do Not Track (DNT) Policy": "https://www.eff.org/dnt-policy",
 									"CodePen Terms of Service": "https://blog.codepen.io/legal/terms-of-service/",
 									"GPF - General Policy Framework (PDF) - 1.6 - Strategy (Data Collection)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"Learn How To Write a Privacy Policy in a Few Easy Steps": "https://dataprot.net/guides/how-to-write-a-privacy-policy/",
+									"Learn How To Write a Privacy Policy in a Few Easy Steps": "https://dataprot.net/blog/how-to-write-a-privacy-policy/",
 									"Sample Impressum Template": "https://www.privacypolicies.com/blog/sample-impressum-template/"
 								}
 							]

@@ -33,8 +33,8 @@
 			.summary { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
 			/* Multipage Document: https://github.com/w3c/sustainableweb-wsg/issues/14#issuecomment-2662164386 */
 			@media (scripting: enabled) {
-				.hide { display: inherit !important; height: 1px !important; left: -1000px !important; overflow: hidden !important; position: absolute !important; top: -1px !important; width: 1px !important; }
-				.show { height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
+				.hide { content-visibility: hidden; display: inherit !important; height: 1px !important; left: -1000px !important; overflow: hidden !important; position: absolute !important; top: -1px !important; width: 1px !important; }
+				.show { content-visibility: auto; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 			.pageButtons { margin-top: 2em; padding-left: 0; }
 			.pageButtons, .pageButtons li, .pageButtons tbody { display: flex; flex: 1; gap: 10px; }
 			.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
@@ -94,8 +94,6 @@
 			function addFilter() {
 				window.addEventListener('change', filterData); filterData(); }
 			function filterData() {
-				// Fix: If Dialog Closed (Flush below Classes!)
-				// Fix: Trigger Details Close / IF full-page ADD Hide|Show CSS Selectors ELSE Remove
 				filterNote('mt', '[data-testable="machine"]');
 				filterNote('ht', '[data-testable="human"]');
 				filterNote('ih', '[data-impact="high"]');
@@ -5738,7 +5736,7 @@
 			</section>
 			<section> <!-- Meeting, Slack, Wiki, Etc Contributors -->
 				<h2>Other active participants, or contributors to supporting resources</h2>
-				<p>Adam Newman, Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Alisa Bonsignore, Andrew Wright, Anthony Vallée-Dubois, Antoine Abélard, Asim Hussain, Bee Flaherty, Boris Schapira, Brian Sharpe, Carine Bournez, Christian H Brown, Christophe Clouzeau, Christos Bacharakis, Crystal Preston-Watson, Danielle Subject, Denis Didier, Dominique Hazael-Massieux, Edward Bender, Elise West, Eloisa Guerrero, Emma Horrell, Florence Maurice, Gerry McGovern, Greg McDonald, Hannah Smith, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jeroen Hulscher, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicolas Oren, Oliver Winks, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Ryan Sholin, Samuel Pitoňák, Sandra Pallier, Sarah Zama, Sarven Capadisli, Seb Solere, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
+				<p>Adam Newman, Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Alisa Bonsignore, Andrew Wright, Anthony Vallée-Dubois, Antoine Abélard, Asim Hussain, Bee Flaherty, Boris Schapira, Brian Sharpe, Carine Bournez, Christian H Brown, Christophe Clouzeau, Christos Bacharakis, Crystal Preston-Watson, Danielle Subject, Denis Didier, Dominique Hazael-Massieux, Edward Bender, Elise West, Eloisa Guerrero, Emma Horrell, Florence Maurice, Gerry McGovern, Greg McDonald, Hannah Smith, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jeroen Hulscher, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Katya Dreyer-Oren, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nick Lewis, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicolas Oren, Oliver Winks, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Ryan Sholin, Samuel Pitoňák, Sandra Pallier, Sarah Zama, Sarven Capadisli, Seb Solere, Susannah Hill, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
 			</section>
 			<ol class="pageButtons">
 				<li><a class="previousPage" href="#glossary">Previous page<br>Glossary</a></li>
@@ -5756,7 +5754,7 @@
 					<p><strong>Additions:</strong></p>
 					<ul>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/6#issuecomment-2580467320">#6</a>] New <a href="https://w3c.github.io/sustainableweb-wsg/resources.html">Resources supplement</a> that will serve as the repository for sustainability links.<br><span class="credit">@AlexDawsonUK</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/58">#58</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/67">#67</a>], & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/68">#68</a>] Guideline filters using data-attributes (for <a href="#full-document">full-document</a> mode) available.<br><span class="credit">@airbr, @AlexDawsonUK, @ldevernay, @timfrick, & @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/58">#58</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/67">#67</a>], & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/68">#68</a>] Guideline <a href="https://w3c.github.io/sustainableweb-ig/tagFilter.html">filters using data-attributes</a> (for <a href="#full-document">full-document</a> mode) available.<br><span class="credit">@airbr, @AlexDawsonUK, @ldevernay, @timfrick, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/41">#41</a>] Living Changelog section has been added to the WSG (Github Releases will continue).<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/53">#53</a>] New Success Criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#domain-names">4.1</a> providing coverage regarding the impact of Domain Names.<br><span class="credit">@codewordcreative & @exortech</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/68">#68</a>] New <a href="#considerations">Considerations</a> section with Accessibility, Privacy, and Security cross-references.<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
@@ -5780,11 +5778,13 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/42">#42</a>] Glossary now correctly appears as part of the index rather than the main WSG document.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/42">#42</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/43">#43</a>], & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/48">#48</a>] Multiple spelling and grammar fixes have been applied to the document.<br><span class="credit">@AlexDawsonUK & @hidde</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/50">#50</a>] Fixed the references to particular files by noting the full filename alongside.<br><span class="credit">@airbr</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/59">#59</a>] Broken links and redirects have been resolved or removed.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/59">#59</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/80">#80</a>] Broken links and redirects have been resolved or removed.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/60">#60</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/68">#68</a>] Removed obsolete CSS and JavaScript in the source code to improve performance.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/60">#60</a>] Updated some of the tags to reflect new and updated Success Criteria material.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/67">#67</a>] Further global grammatical fixes have been applied to improve the content quality.<br><span class="credit">@codewordcreative</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/67">#67</a>] Success Criteria have accurate identifiers sans external resources like testability.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/73">#73</a>] Fixed an issue that caused Firefox's in-page search to suffer multiPage issues.<br><span class="credit">@TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/80">#80</a>] Fixed an issue that caused searching in multi-page view to not work correctly.<br><span class="credit">@dontcallmedom</span></li>
 					</ul>
 					<!--
 						<li>Change.<br><span class="credit">@Github</span></li>
