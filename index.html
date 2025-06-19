@@ -33,8 +33,8 @@
 			.summary { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
 			/* Multipage Document: https://github.com/w3c/sustainableweb-wsg/issues/14#issuecomment-2662164386 */
 			@media (scripting: enabled) {
-				.hide { display: inherit !important; height: 1px !important; left: -1000px !important; overflow: hidden !important; position: absolute !important; top: -1px !important; width: 1px !important; }
-				.show { height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
+				.hide { content-visibility: hidden; display: inherit !important; height: 1px !important; left: -1000px !important; overflow: hidden !important; position: absolute !important; top: -1px !important; width: 1px !important; }
+				.show { content-visibility: auto; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 			.pageButtons { margin-top: 2em; padding-left: 0; }
 			.pageButtons, .pageButtons li, .pageButtons tbody { display: flex; flex: 1; gap: 10px; }
 			.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
@@ -5783,7 +5783,8 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/60">#60</a>] Updated some of the tags to reflect new and updated Success Criteria material.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/67">#67</a>] Further global grammatical fixes have been applied to improve the content quality.<br><span class="credit">@codewordcreative</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/67">#67</a>] Success Criteria have accurate identifiers sans external resources like testability.<br><span class="credit">@AlexDawsonUK</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/73">#73</a>] Fixed an issue that caused Firefox's in-page search to suffer multiPage issues.<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/73">#73</a>] Fixed an issue that caused Firefox's in-page search to suffer multiPage issues.<br><span class="credit">@TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/80">#80</a>] Fixed an issue that caused searching in multi-page view to not work correctly.<br><span class="credit">@dontcallmedom</span></li>
 					</ul>
 					<!--
 						<li>Change.<br><span class="credit">@Github</span></li>
