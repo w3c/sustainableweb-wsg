@@ -44,6 +44,8 @@
 				.pageButtons { display: none; }
 				.hide { display: block !important; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 			/* Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14 */
+			.filter details { scroll-margin-top: 25px; }
+			.filter details form { content-visibility: hidden; } .filter details[open] form { content-visibility: auto; }
 			legend { font-weight: bold; width: fit-content; }
 			.wrapper { display: flex; flex-wrap: wrap; }
 			.testable, .impact, .effort, .materials, .energy, .water, .emissions { min-width: 300px; }
@@ -61,7 +63,7 @@
 			.filter, .option-inline div:has(#test:checked),
 			/* Hide All Non-SC Related Content Upon Filter Activation */
 			.filter:has(details[open]) ~ #abstract, .filter:has(details[open]) ~ #sotd, .filter:has(details[open]) ~ #introduction, .filter:has(details[open]) ~ section > p ~ section, .filter:has(details[open]) ~ section > p ~ section > section, .filter:has(details[open]) ~ #acknowledgments, .filter:has(details[open]) ~ section > div, .filter:has(details[open]) ~ section > p, .filter:has(details[open]) ~ section ul, .wrapper fieldset
-			{ height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
+			{ content-visibility: hidden; height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
 			/* Show Filter Basics */
 			.full-document .filter, .filter:has(details[open]) ~ #glossary > div, .filter:has(details[open]) ~ #glossary > p,
 			/* Show Filter Categories */
@@ -77,7 +79,7 @@
 			.filter:has(details[open]) ~ section section:has(.afnor), .filter:has(details[open]) ~ section section:has(.aws), .filter:has(details[open]) ~ section section:has(.azure), .filter:has(details[open]) ~ section section:has(.gpf), .filter:has(details[open]) ~ section section:has(.gr491), .filter:has(details[open]) ~ section section:has(.greenit), .filter:has(details[open]) ~ section section:has(.opquast), .filter:has(details[open]) ~ section section:has(.sdgs), .filter:has(details[open]) ~ section section:has(.ca), .filter:has(details[open]) ~ section section:has(.cp), .filter:has(details[open]) ~ section section:has(.cs), .filter:has(details[open]) ~ section section:has(.assets), .filter:has(details[open]) ~ section section:has(.compatibility), .filter:has(details[open]) ~ section section:has(.content), .filter:has(details[open]) ~ section section:has(.css), .filter:has(details[open]) ~ section section:has(.e-waste), .filter:has(details[open]) ~ section section:has(.education), .filter:has(details[open]) ~ section section:has(.governance), .filter:has(details[open]) ~ section section:has(.hardware), .filter:has(details[open]) ~ section section:has(.html), .filter:has(details[open]) ~ section section:has(.ideation), .filter:has(details[open]) ~ section section:has(.javascript), .filter:has(details[open]) ~ section section:has(.kpis), .filter:has(details[open]) ~ section section:has(.marketing), .filter:has(details[open]) ~ section section:has(.networking), .filter:has(details[open]) ~ section section:has(.patterns), .filter:has(details[open]) ~ section section:has(.performance), .filter:has(details[open]) ~ section section:has(.report), .filter:has(details[open]) ~ section section:has(.research), .filter:has(details[open]) ~ section section:has(.equity), .filter:has(details[open]) ~ section section:has(.software), .filter:has(details[open]) ~ section section:has(.strategy), .filter:has(details[open]) ~ section section:has(.ui), .filter:has(details[open]) ~ section section:has(.usability),
 			.summary ul, .mt, .ht, .ih, .im, .il, .ih2, .im2, .il2, .mh, .mm, .ml, .eh, .em, .el, .wh, .wm, .wl, .ch, .cm, .cl, .afnor, .aws, .azure, .gpf, .gr491, .greenit, .opquast, .sdgs, .ca, .cp, .cs, .assets, .compatibility, .content, .css, .e-waste, .education, .governance, .hardware, .html, .ideation, .javascript, .kpis, .marketing, .networking, .patterns, .performance, .report, .research, .equity, .software, .strategy, .ui, .usability,
 			.mt ~ section:last-child, .ht ~ section:last-child, .ih ~ section:last-child, .im ~ section:last-child, .il ~ section:last-child, .ih2 ~ section:last-child, .im2 ~ section:last-child, .il2 ~ section:last-child, .mh ~ section:last-child, .mm ~ section:last-child, .ml ~ section:last-child, .eh ~ section:last-child, .em ~ section:last-child, .el ~ section:last-child, .wh ~ section:last-child, .wm ~ section:last-child, .wl ~ section:last-child, .ch ~ section:last-child, .cm ~ section:last-child, .cl ~ section:last-child , .afnor ~ section:last-child, .aws ~ section:last-child, .azure ~ section:last-child, .gpf ~ section:last-child, .gr491 ~ section:last-child, .greenit ~ section:last-child, .opquast ~ section:last-child, .sdgs ~ section:last-child, .ca ~ section:last-child, .cp ~ section:last-child, .cs ~ section:last-child, .assets ~ section:last-child, .compatibility ~ section:last-child, .content ~ section:last-child, .css ~ section:last-child, .e-waste ~ section:last-child, .education ~ section:last-child, .governance ~ section:last-child, .hardware ~ section:last-child, .html ~ section:last-child, .ideation ~ section:last-child, .javascript ~ section:last-child, .kpis ~ section:last-child, .marketing ~ section:last-child, .networking ~ section:last-child, .patterns ~ section:last-child, .performance ~ section:last-child, .report ~ section:last-child, .research ~ section:last-child, .equity ~ section:last-child, .software ~ section:last-child, .strategy ~ section:last-child, .ui ~ section:last-child, .usability ~ section:last-child
-			{ height: auto !important; left: auto !important; overflow: unset !important; position: static !important; top: auto !important; width: auto !important; }
+			{ content-visibility: auto !important; height: auto !important; left: auto !important; overflow: unset !important; position: static !important; top: auto !important; width: auto !important; }
 			@media (scripting: none) { .filter { display: none; } }
 		</style>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer>
@@ -92,7 +94,10 @@
 		<script>
 			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
 			function addFilter() {
-				window.addEventListener('change', filterData); filterData(); }
+				window.addEventListener('change', filterData); filterData();
+				let details = document.querySelectorAll('.filter details')[0];
+				details.addEventListener("toggle", function() {
+					if (details.hasAttribute('open')) { details.scrollIntoView(); } }) }
 			function filterData() {
 				filterNote('mt', '[data-testable="machine"]');
 				filterNote('ht', '[data-testable="human"]');
@@ -5732,11 +5737,11 @@
 			<p>Additional information about participation in the Sustainable Web Interest Group can be found <a href="https://github.com/w3c/sustainableweb-ig/">within the GitHub repository</a> of the Interest Group.</p>
 			<section> <!-- Draft Contributors -->
 				<h2>Participants active in the development of this document</h2>
-				<p>Alexander Dawson, Andrea Davanzo, Andy Blum, Anne Faubry, Arnaud Levy, Ben Clifford, Berwyn Powell, Brett Tackaberry, Brian Louis Ramirez, Chris Adams, Chris Augier, Chris Needham, Chris Sater, Chris Wilson, Claire Thornewill, Daniel Appelquist, David Jeanmonod, Dennis Lemm, Diogo Abrantes Da Silva, Dom Robinson, Emily Trotter, Fershad Irani, Francesco Fullone, François Burra, Gaël Duez, Hidde De Vries, Iain McClenaghan, Ian Jacobs, Ines Akrap, Ismael Velasco, Iulia Raluca Ionita, James Christie, Jeffrey Yasskin, Jennifer Strickland, Jens Oliver Meiert, Jim McCool, Josh Kim, Julien Wilhelm, Kazuhito Kidachi, Laurent Devernay Satyagraha, Len Dierickx, Leon Brocard, Łukasz Mastalerz, Marie Ototoi, Michelle Barker, Mike Gifford, Morgan Murrah, Nahuai Badiola, Neil Clark, Nick Doty, Nicola Bonotto, Orie Steele, Owen Barton, Philippe Le Hegaret, Romuald Priol, Rose Newell, Rudolf Van Der Berg, Sandy Dähnert, Shane Herath, Simon Perdrisat, Tantek Çelik, Thibaud Colas, Thorsten Jonas, Tim Frick, Tzviya Siegman, Youen Chéné, Yuna Orsini, Zoe Lopez-Latorre.</p>
+				<p>Alexander Dawson, Andrea Davanzo, Andy Blum, Anne Faubry, Arnaud Levy, Ben Clifford, Berwyn Powell, Brett Tackaberry, Brian Louis Ramirez, Chris Adams, Chris Augier, Chris Needham, Chris Sater, Chris Wilson, Claire Thornewill, Daniel Appelquist, David Jeanmonod, Dennis Lemm, Diogo Abrantes Da Silva, Dom Robinson, Emily Trotter, Fershad Irani, Francesco Fullone, François Burra, Gaël Duez, Hidde De Vries, Iain McClenaghan, Ian Jacobs, Ines Akrap, Ismael Velasco, Iulia Raluca Ionita, James Christie, Jeffrey Yasskin, Jennifer Strickland, Jens Oliver Meiert, Jim McCool, Josh Kim, Julien Wilhelm, Kazuhito Kidachi, Laurent Devernay Satyagraha, Len Dierickx, Leon Brocard, Łukasz Mastalerz, Marie Ototoi, Michelle Barker, Mike Gifford, Morgan Murrah, Nahuai Badiola, Neil Clark, Nick Doty, Nicola Bonotto, Orie Steele, Owen Barton, Owen Rogers, Philippe Le Hégaret, Romuald Priol, Rose Newell, Rudolf Van Der Berg, Sandy Dähnert, Shane Herath, Simon Perdrisat, Tantek Çelik, Thibaud Colas, Thorsten Jonas, Tim Frick, Tzviya Siegman, Youen Chéné, Yuna Orsini, Zoe Lopez-Latorre.</p>
 			</section>
 			<section> <!-- Meeting, Slack, Wiki, Etc Contributors -->
 				<h2>Other active participants, or contributors to supporting resources</h2>
-				<p>Adam Newman, Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Alisa Bonsignore, Andrew Wright, Anthony Vallée-Dubois, Antoine Abélard, Asim Hussain, Bee Flaherty, Boris Schapira, Brian Sharpe, Carine Bournez, Christian H Brown, Christophe Clouzeau, Christos Bacharakis, Crystal Preston-Watson, Danielle Subject, Denis Didier, Dominique Hazael-Massieux, Edward Bender, Elise West, Eloisa Guerrero, Emma Horrell, Florence Maurice, Gerry McGovern, Greg McDonald, Hannah Smith, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jeroen Hulscher, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Katya Dreyer-Oren, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nick Lewis, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicolas Oren, Oliver Winks, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Ryan Sholin, Samuel Pitoňák, Sandra Pallier, Sarah Zama, Sarven Capadisli, Seb Solere, Susannah Hill, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
+				<p>Adam Newman, Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Alisa Bonsignore, Andrew Wright, Anthony Vallée-Dubois, Antoine Abélard, Asim Hussain, Bee Flaherty, Boris Schapira, Brian Sharpe, Carine Bournez, Christian H Brown, Christophe Clouzeau, Christos Bacharakis, Crystal Preston-Watson, Danielle Subject, Denis Didier, Dominique Hazael-Massieux, Edward Bender, Elise West, Eloisa Guerrero, Emma Horrell, Florence Maurice, Gerry McGovern, Greg McDonald, Hannah Smith, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jeroen Hulscher, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Katya Dreyer-Oren, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nick Lewis, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicholas Oliveira, Nicolas Oren, Oliver Winks, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Ryan Sholin, Samuel Pitoňák, Sandra Pallier, Sarah Zama, Sarven Capadisli, Sebastien Solere, Susannah Hill, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
 			</section>
 			<ol class="pageButtons">
 				<li><a class="previousPage" href="#glossary">Previous page<br>Glossary</a></li>
@@ -5751,6 +5756,24 @@
 			<div class="summary">
 				<details> <!-- Ongoing Release Notes -->
 					<summary>Ongoing Release Notes</summary>
+					<p><strong>Additions:</strong></p>
+					<ul>
+						<li>None</li>
+					</ul>
+					<p><strong>Updates:</strong></p>
+					<ul>
+						<li>None</li>
+					</ul>
+					<p><strong>Fixes:</strong></p>
+					<ul>
+						<li>None</li>
+					</ul>
+					<!--
+						<li>Change.<br><span class="credit">@Github</span></li>
+					-->
+				</details>
+				<details> <!-- Q2 2025 Release Notes (30st June 2025) -->
+					<summary>Q2 2025 Release Notes  (30<sup>th</sup> June 2025)</summary>
 					<p><strong>Additions:</strong></p>
 					<ul>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/6#issuecomment-2580467320">#6</a>] New <a href="https://w3c.github.io/sustainableweb-wsg/resources.html">Resources supplement</a> that will serve as the repository for sustainability links.<br><span class="credit">@AlexDawsonUK</span></li>
@@ -5785,10 +5808,8 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/67">#67</a>] Success Criteria have accurate identifiers sans external resources like testability.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/73">#73</a>] Fixed an issue that caused Firefox's in-page search to suffer multiPage issues.<br><span class="credit">@TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/80">#80</a>] Fixed an issue that caused searching in multi-page view to not work correctly.<br><span class="credit">@dontcallmedom</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/81">#81</a>] Fixed a couple of rogue full-document in-page search issues that triggered filtering.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
-					<!--
-						<li>Change.<br><span class="credit">@Github</span></li>
-					-->
 				</details>
 				<details> <!-- Q1 2025 Release Notes (31st March 2025) -->
 					<summary>Q1 2025 Release Notes (31<sup>st</sup> March 2025)</summary>
