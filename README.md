@@ -9,6 +9,7 @@ If you would like to learn more about us and how to participate in this project,
  - **254** Success Criteria to meet the guidelines on various aspects of sustainability.
  - **160** advisory Techniques within STAR providing guidance to meet WSG Success Criteria.
  - **2,500+** Resources (URLs) to reinforce and assist with implementation of WSG guidelines.
+ - **500+** pages worth of sustainability material (**200+** of which exist within the WSG).
  - **150+** contributors from over **20** nations around the world.
 
 ## Work
@@ -48,22 +49,22 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
 			<td>W3C Editors Draft</td>
-			<td>18 June 2025</td>
+			<td>29 June 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/resources.html">Resources for WSG</a></td>
 			<td>W3C Editors Draft</td>
-			<td>18 June 2025</td>
+			<td>29 June 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws and Policies</a></td>
 			<td>W3C Editors Draft</td>
-			<td>18 June 2025</td>
+			<td>29 June 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/intro.html">Introduction to Web Sustainability</a></td>
 			<td>W3C Editors Draft</td>
-			<td>18 June 2025</td>
+			<td>29 June 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
@@ -78,12 +79,12 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
 			<td>JSON API</td>
-			<td>18 June 2025</td>
+			<td>29 June 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
 			<td>JSON API</td>
-			<td>18 June 2025</td>
+			<td>29 June 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>
