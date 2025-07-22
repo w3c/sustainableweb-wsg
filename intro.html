@@ -5,11 +5,15 @@
 		<title>Introduction to Web Sustainability</title>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
 		<script class="remove">
-			/* Chairs Listing */
-			function addChairs() {
+			/* Author Acknowledgement */
+			function authorRef() {
 				document.querySelectorAll("div.head dt").forEach(function (node) {
-					if (node.textContent.trim() == "Authors:")
-						node.textContent = "Chairs:"; }); }
+					if (node.textContent.trim() == "Feedback:") {
+						node.insertAdjacentHTML('beforebegin', `
+							<dt>Authors:</dt>
+							<dd>
+								See <a href="#acknowledgments">acknowledgments</a>
+							</dd> `); }}); }
 		</script>
 		<script class="remove">
 		var respecConfig = {
@@ -17,25 +21,8 @@
 				{
 					name: "Alexander Dawson",
 					url: "https://alexanderdawson.com/",
+					company: "Invited Expert",
 					w3cid: 49702,
-				},
-			],
-			authors: [
-				{
-					name: "Ines Akrap",
-					url: "https://inesakrap.com/",
-					company: "Storyblok",
-				},
-				{
-					name: "Mike Gifford",
-					url: "https://civicactions.com/",
-					company: "CivicActions",
-				},
-				{
-					name: "Tim Frick",
-					url: "https://www.mightybytes.com/",
-					company: "Mightybytes",
-					w3cid: 62394,
 				},
 			],
 			edDraftURI: "https://w3c.github.io/sustainableweb-wsg/intro.html",
@@ -98,7 +85,7 @@
 				},
 			},
 			specStatus: "ED",
-			postProcess: [addChairs],
+			postProcess: [authorRef],
 		}
 		</script>
 		<style>

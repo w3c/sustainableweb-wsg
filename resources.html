@@ -13,11 +13,15 @@
 		</style>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
 		<script class="remove">
-			/* Chairs Listing */
-			function addChairs() {
+			/* Author Acknowledgement */
+			function authorRef() {
 				document.querySelectorAll("div.head dt").forEach(function (node) {
-					if (node.textContent.trim() == "Authors:")
-						node.textContent = "Chairs:"; }); }
+					if (node.textContent.trim() == "Feedback:") {
+						node.insertAdjacentHTML('beforebegin', `
+							<dt>Authors:</dt>
+							<dd>
+								See <a href="#acknowledgments">acknowledgments</a>
+							</dd> `); }}); }
 		</script>
 		<script class="remove">
 		var respecConfig = {
@@ -25,25 +29,8 @@
 				{
 					name: "Alexander Dawson",
 					url: "https://alexanderdawson.com/",
+					company: "Invited Expert",
 					w3cid: 49702,
-				},
-			],
-			authors: [
-				{
-					name: "Ines Akrap",
-					url: "https://inesakrap.com/",
-					company: "Storyblok",
-				},
-				{
-					name: "Mike Gifford",
-					url: "https://civicactions.com/",
-					company: "CivicActions",
-				},
-				{
-					name: "Tim Frick",
-					url: "https://www.mightybytes.com/",
-					company: "Mightybytes",
-					w3cid: 62394,
 				},
 			],
 			edDraftURI: "https://w3c.github.io/sustainableweb-wsg/resources.html",
@@ -1159,19 +1146,11 @@
 				},
 			},
 			specStatus: "ED",
-			postProcess: [addChairs],
+			postProcess: [authorRef],
 		}
 		</script>
 	</head>
-	<!-- <span class="tag">Policy</span> -->
-	<!-- <span class="tag">Standard</span> -->
-	<!-- <span class="tag">Guidelines</span> -->
-	<!-- <span class="tag">Research</span> -->
-	<!-- <span class="tag">Case Study</span> -->
-	<!-- <span class="tag">Course</span> -->
-	<!-- <span class="tag">Article</span> -->
-	<!-- <span class="tag">Tool</span> -->
-	<!-- -->
+	<!-- <span class="tag">Policy / Standard / Guidelines / Research / Case Study / Course / Article / Tool</span> -->
 	<body>
 		<section id="abstract"> <!-- Abstract -->
 			<p>This document lists additional resources that reinforce the guidelines and Success Criteria within the <a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines</a> (<abbr title="Web Sustainability Guidelines">WSG</abbr>) specification.</p>
