@@ -152,7 +152,7 @@
 							]
 						},
 						{
-							"title": "Remove Barriers",
+							"title": "Barrier removal",
 							"testable": "Human-testable",
 							"description": "Remove identified barriers to access. These can include dark or deceptive design patterns, accessibility issues, or other pain points.",
 							"resources": [
@@ -526,7 +526,7 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "Streamlining a user experience to remove barriers and non-essential items (which eliminates waste from code and content) reduces the amount of time visitors spend on their devices trying to complete tasks or find information. This reduces the amount of energy used and lowers emissions.",
+							"Environment": "Streamlining a user experience to Barrier removal and non-essential items (which eliminates waste from code and content) reduces the amount of time visitors spend on their devices trying to complete tasks or find information. This reduces the amount of energy used and lowers emissions.",
 							"Privacy": "Collecting less information by hiding non-essential features will be beneficial for data protection as you can reduce how much information is presented to the visitor and, in turn, how much is exposed to a minimum (if any is needed during the experience).",
 							"Social Equity": "Lightweight experiences work better for people with older devices, those who live in low-bandwidth environments, and so on. The benefits for lower-powered devices are that fewer emissions will be generated, as the device's reduced capabilities will often have lower energy requirements.",
 							"Accessibility": "Intuitive, lightweight user experiences that are easy to understand improve accessibility, especially for people with cognitive disabilities, and will benefit sustainability in terms of less confusion which could impact the time spent on websites trying to find content.",
@@ -1208,7 +1208,7 @@
 				{
 					"id": "15",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability",
-					"guideline": "Optimize images for sustainability",
+					"guideline": "Optimized images for sustainability",
 					"criteria": [
 						{
 							"title": "Need for images",
@@ -1230,7 +1230,7 @@
 							]
 						},
 						{
-							"title": "Optimize images",
+							"title": "Optimized images",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX15-2)",
 							"description": "Resize, optimize, and compress each image. Provide images in appropriate sizes for different screen resolutions.",
 							"resources": [
@@ -1249,11 +1249,11 @@
 									"GR491 - 8-3061 - Optimized Images": "https://gr491.isit-europe.org/en/crit.php?id=8-3061-uxui-the-volume-of-data-exchanged-for-the",
 									"Greening The Web: A Study On Low-Carbon Image Formats": "https://michaelandersen93.substack.com/p/greening-the-web-a-study-on-low-carbon?r=3dzajs",
 									"GreenIT - 036 - Optimize vector images": "https://github.com/cnumr/best-practices/blob/main/chapters-source-to-delete/BP_036_en.md",
-									"GreenIT - 080 - Optimize images": "https://github.com/cnumr/best-practices/blob/main/chapters-source-to-delete/BP_080_en.md",
+									"GreenIT - 080 - Optimized images": "https://github.com/cnumr/best-practices/blob/main/chapters-source-to-delete/BP_080_en.md",
 									"How can we design sustainably?": "https://medium.com/@sandra.pallier/how-can-we-design-sustainably-3be7530a0f5b",
 									"How to Build a Low-tech Website?": "https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/",
 									"How To Efficiently Encode Images On Your Website": "https://www.debugbear.com/blog/efficiently-encode-images",
-									"How to Optimize Images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
+									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
 									"How to Properly Size Images to Improve Core Web Vitals": "https://www.debugbear.com/blog/properly-size-images",
 									"How UX design can help tackle climate change": "https://www.cyber-duck.co.uk/insights/how-sustainable-design-can-help-climate-change",
 									"Image Carbon": "https://www.imagecarbon.com/",
@@ -1311,7 +1311,7 @@
 									"GR491 - 7-5050 - Sizes and Formats": "https://gr491.isit-europe.org/en/crit.php?id=7-5050-frontend-front-end-operations-may-require-file-transfers-between",
 									"GR491 - 7-5053 - Convert and Resize": "https://gr491.isit-europe.org/en/crit.php?id=7-5053-frontend-image-transfers-introduce-peculiarities-related-to-the",
 									"GreenIT - 034 - Avoid resizing images in the browser": "https://github.com/cnumr/best-practices/blob/main/chapters-source-to-delete/BP_034_en.md",
-									"How to Optimize Images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
+									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
 									"OpQuast - 114 - Thumbnails and previews are not larger images resized on the client side.": "https://checklists.opquast.com/en/web-quality-assurance/thumbnails-and-previews-are-not-larger-images-resized-on-the-client-side"
 								}
 							]
@@ -1328,7 +1328,7 @@
 									"GR491 - 8-3057 - Media Management": "https://gr491.isit-europe.org/en/crit.php?id=8-3057-uxui-the-volume-of-data-transferred-increases-the",
 									"Green by Default": "https://screenspan.net/blog/green-by-default/",
 									"Image management": "https://www.frontify.com/en/guide/image-management",
-									"Optimize Images to Improve Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
+									"Optimized images to Improve Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
 									"Tips for Effective Image Management on Your Site": "https://profiletree.com/effective-image-management/"
 								}
 							]
@@ -1365,7 +1365,7 @@
 				{
 					"id": "16",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability",
-					"guideline": "Optimize media for sustainability",
+					"guideline": "Optimized media for sustainability",
 					"criteria": [
 						{
 							"title": "Need for media",
@@ -1388,7 +1388,7 @@
 							]
 						},
 						{
-							"title": "Optimize media",
+							"title": "Optimized media",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX16-2)",
 							"description": "Optimize and compress media appropriately. Provide media in compatible and appropriate formats. Avoid embedded media players.",
 							"resources": [
@@ -1786,7 +1786,7 @@
 					"guideline": "Provide accessible, user-friendly, minimal web forms",
 					"criteria": [
 						{
-							"title": "Simple Forms",
+							"title": "Simple forms",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX20-1)",
 							"description": "Remove unnecessary forms and reduce form content to the minimum necessary to meet the user needs while satisfying the organization's minimum requirements. Clearly communicate why a form is necessary, the value it provides, the number of steps required for completion, and what will be done with the collected data. Also disclose if the data will be shared with third parties.",
 							"resources": [
@@ -1988,7 +1988,7 @@
 					"guideline": "Reduce the impact of downloadable and physical documents",
 					"criteria": [
 						{
-							"title": "Printing documents",
+							"title": "Printed documents",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX23-1)",
 							"description": "Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a CSS print stylesheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.",
 							"resources": [
@@ -2010,7 +2010,7 @@
 							]
 						},
 						{
-							"title": "Optimize documents",
+							"title": "Optimized documents",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX23-2)",
 							"description": "Optimize and compress all downloadable documents. Make them available in a variety of accessible file formats.",
 							"resources": [
@@ -2029,7 +2029,7 @@
 							]
 						},
 						{
-							"title": "Optimize delivery",
+							"title": "Optimized delivery",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX23-3)",
 							"description": "Avoid duplicating effort. If a document will be reused, generate and save it once on the server side for reuse, ideally on a cookie-free domain.",
 							"resources": [
@@ -4888,7 +4888,7 @@
 									"GPF - General Policy Framework (PDF) - 1.7 - Strategy (Encryption)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 6.3 - Front-End (Resource Compression)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"How does data compression affect CO2 emission in Nginx?": "https://github.com/toirl/less-carbon-nginx",
-									"How to Optimize Images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
+									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
 									"How to tell if your site is gzipped": "https://gomakethings.com/how-to-tell-if-your-site-is-gzipped/",
 									"Impact of New and Emerging Internet Technologies on Climate Change and Human Rights (PDF)": "https://www.law.ox.ac.uk/sites/default/files/migrated/un_human_rights_council_advisory_committee_submission_-_new_and_emerging_technologies_-_allmann_hazas.pdf",
 									"Internet Speeds by Country 2023": "https://worldpopulationreview.com/country-rankings/internet-speeds-by-country",
@@ -4919,7 +4919,7 @@
 									"GPF - General Policy Framework (PDF) - 1.7 - Strategy (Encryption)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 6.3 - Front-End (Resource Compression)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"Handbrake": "https://handbrake.fr/",
-									"How to Optimize Images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
+									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
 									"Internet Speeds by Country 2023": "https://worldpopulationreview.com/country-rankings/internet-speeds-by-country",
 									"Page bloat update": "https://www.speedcurve.com/blog/page-bloat-2025/",
 									"Reduce web font size": "https://web.dev/articles/reduce-webfont-size?hl=en",
