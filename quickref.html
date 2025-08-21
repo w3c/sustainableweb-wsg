@@ -739,17 +739,17 @@
 			<table>
 				<tbody>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#set-goals-based-on-potential-impact-considerations">3.1</a></td>
-						<td colspan="5">Set goals based on potential impact considerations</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#set-goals-based-on-performance-and-energy-impact">3.1</a></td>
+						<td colspan="5">Set goals based on performance and energy impact</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.1a"></td><td colspan="5"><label for="3.1a">Explicit goals that impact the environment and performance of the service, for example, <abbr title="Hypertext Transfer Protocol">HTTP</abbr> requests, or the amount of <abbr title="General Data Protection Regulation">DOM</abbr> elements that need to be rendered are both set and met.</label></td>
+						<td><input type="checkbox" id="3.1a"></td><td colspan="5"><label for="3.1a">Set clear goals with performance and environmental impact in mind, then meet them. These could include, the number of requests or elements that must be rendered.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.1b"></td><td colspan="5"><label for="3.1b">Because the payload being delivered may not always be equal in terms of energy intensity, operators of websites and applications must ensure that consideration is given for the energy intensity (or unit being evaluated) of each component. For example, non-rendering text is less computational than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL.</label></td>
+						<td><input type="checkbox" id="3.1b"></td><td colspan="5"><label for="3.1b">Consider differences in the energy intensity or testable impact across each component. For example, unstyled text is less computationally intensive to render than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -778,14 +778,14 @@
 						<td>Low</td><td>Low</td><td>Low</td><td>Low</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components-within-projects">3.3</a></td>
-						<td colspan="5">Modularize bandwidth-heavy components within projects</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components">3.3</a></td>
+						<td colspan="5">Modularize bandwidth-heavy components</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.3a"></td><td colspan="5"><label for="3.3a">Break down bandwidth-heavy components, front-end and back-end into smaller, modular segments that can be loaded only when required.</label></td>
+						<td><input type="checkbox" id="3.3a"></td><td colspan="5"><label for="3.3a">Break down bandwidth-heavy components into smaller, modular segments that can be loaded only when required. This applies to both front-end and back-end code.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -796,14 +796,14 @@
 						<td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#tree-shaking-should-be-used-to-remove-unnecessary-code">3.4</a></td>
-						<td colspan="5">Tree shaking should be used to remove unnecessary code</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-code-with-tree-shaking-techniques">3.4</a></td>
+						<td colspan="5">Remove unnecessary code with tree shaking techniques</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.4a"></td><td colspan="5"><label for="3.4a">Identify and eliminate unused and dead code within CSS and JavaScript.</label></td>
+						<td><input type="checkbox" id="3.4a"></td><td colspan="5"><label for="3.4a">Identify and eliminate unused and dead code, commonly within CSS and JavaScript.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -814,20 +814,20 @@
 						<td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#redundancy-and-duplication-in-code-should-be-avoided">3.5</a></td>
-						<td colspan="5">Redundancy and duplication in code should be avoided</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#avoid-redundancy-and-duplication-in-code">3.5</a></td>
+						<td colspan="5">Avoid redundancy and duplication in code</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.5a"></td><td colspan="5"><label for="3.5a">Remove or simplify (through rewriting for performance) your code to focus on essential features and have a cleaner, less redundant product (and codebase).</label></td>
+						<td><input type="checkbox" id="3.5a"></td><td colspan="5"><label for="3.5a">Remove duplication and/or simplify and optimize your code for better performance, focusing on essential features so you have a cleaner, less redundant product and codebase.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.5b"></td><td colspan="5"><label for="3.5b">Improve (iterate) an existing creation rather than constantly redeveloping and redesigning products from scratch (duplication of coding effort) if possible to reduce visitor learning burden and developer impact.</label></td>
+						<td><input type="checkbox" id="3.5b"></td><td colspan="5"><label for="3.5b">Improve existing solutions rather than redeveloping and redesigning products from scratch, since the latter would duplicate the coding effort and maintenance burden for developers rather than reduce the learning burden for visitors.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.5c"></td><td colspan="5"><label for="3.5c">Within CSS and JavaScript, use an organizing methodology and systems like <abbr title="Don't Repeat Yourself">DRY</abbr> and <abbr title="Write Everything Twice">WET</abbr> to optimize the arrangement and output of your source code.</label></td>
+						<td><input type="checkbox" id="3.5c"></td><td colspan="5"><label for="3.5c">Use organization methodology and systems such as <abbr title="Don't Repeat Yourself">DRY</abbr> or <abbr title="Write Everything Twice">WET</abbr> to optimize the arrangement and output of your JavaScript and CSS.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -838,29 +838,29 @@
 						<td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties">3.6</a></td>
-						<td colspan="5">Third-party services should be assessed as first parties</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#give-third-parties-the-same-priority-as-first-parties-during-assessment">3.6</a></td>
+						<td colspan="5">Give third parties the same priority as first parties during assessment</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.6a"></td><td colspan="5"><label for="3.6a">Third-party services (including plugins, widgets, feeds, maps, carousels, etc) have been assessed as early in the ideation or creation process as possible and as few of them are used as possible to reduce the product or service's overall ecological impact, including Scope 3 emissions.</label></td>
+						<td><input type="checkbox" id="3.6a"></td><td colspan="5"><label for="3.6a">Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible to reduce the overall environmental impact, including Scope 3 emissions.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.6b"></td><td colspan="5"><label for="3.6b">Third-party content (including plugins, widgets, feeds, maps, carousels, chat widgets, etc) that loads or requests resources or functionality from a location outside of the primary location, should be placed behind a click-to-load delay screen (using the "import on interaction" pattern), while alternatives are offered, for instance a link to a contact form as an alternative for a chat widget.</label></td>
+						<td><input type="checkbox" id="3.6b"></td><td colspan="5"><label for="3.6b">Use click-to-load triggers based on an import on interaction pattern to prevent automatic loading of third-party content and/or services (see above). Offer suitable alternatives to third-party use, for example, a link to a contact form as an alternative to a chat widget.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.6c"></td><td colspan="5"><label for="3.6c">Large CSS libraries and JavaScript frameworks are only be used if a more performant alternative that achieves the same goal cannot be used instead.</label></td>
+						<td><input type="checkbox" id="3.6c"></td><td colspan="5"><label for="3.6c">Avoid using large libraries and frameworks. Integrate these only when unable to use a more performant alternative to achieve the same goal.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.6d"></td><td colspan="5"><label for="3.6d">Self-hosted content has been prioritized over embedded content from third-party services.</label></td>
+						<td><input type="checkbox" id="3.6d"></td><td colspan="5"><label for="3.6d">Prioritize self-hosted content over embedding content from third-party services.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.6e"></td><td colspan="5"><label for="3.6e">Your own clickable icons and widgets have been created, rather than relying on third-party services to host or allow embedding within your product or service.</label></td>
+						<td><input type="checkbox" id="3.6e"></td><td colspan="5"><label for="3.6e">Host icons and widgets on your own server, rather than relying on third-party services to host and deliver these or embed third-party functionality within your project.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.6f"></td><td colspan="5"><label for="3.6f">Third-party products, services, libraries, and frameworks are often a source of sustainability issues that cannot be controlled or managed by the first-party provider of a service. While many do provide benefits to a website, the need to justify their inclusion must be made not only by those creating the product or service but also be able to be controlled by the consumer. As showcased with cookies, websites or applications can provide a similar mechanism of disabling or refusing non-first-party features (with explanations of their purpose) - unless such features can be proven as critical for functionality.</label></td>
+						<td><input type="checkbox" id="3.6f"></td><td colspan="5"><label for="3.6f">Respect user preferences around the use of third-party products and services, similar to the implementation of cookie consent modals. Provide mechanisms to disable or refuse non-first-party features alongside explanations of their purpose unless it is possible to show these third-party features are critical for functionality.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -871,23 +871,23 @@
 						<td>High</td><td>High</td><td>High</td><td>High</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices">3.7</a></td>
-						<td colspan="5">Code must follow good semantic practices</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#ensure-code-follows-good-semantic-practices">3.7</a></td>
+						<td colspan="5">Ensure code follows good semantic practices</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.7a"></td><td colspan="5"><label for="3.7a">Content must be accurately marked up according to the relevant standard(s).</label></td>
+						<td><input type="checkbox" id="3.7a"></td><td colspan="5"><label for="3.7a">Use accurate markup according to the relevant standard(s).</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.7b"></td><td colspan="5"><label for="3.7b">Remove optional HTML tags, attribute quotes, and default attributes only when they do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity (without compromising on performance), or ensure consistent browser rendering.</label></td>
+						<td><input type="checkbox" id="3.7b"></td><td colspan="5"><label for="3.7b">Remove optional HTML elements, attribute quotes, and default attributes when these do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity without compromising on performance, or ensure consistent browser rendering.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.7c"></td><td colspan="5"><label for="3.7c">Avoid using non-standard elements or attributes.</label></td>
+						<td><input type="checkbox" id="3.7c"></td><td colspan="5"><label for="3.7c">Avoid using non-standard HTML elements or attributes.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.7d"></td><td colspan="5"><label for="3.7d">Prefer using standard HTML elements and attributes. Only use custom elements or Web Components if you cannot utilize native HTML elements or if you need tightly regulated control over the implementation of design system components..</label></td>
+						<td><input type="checkbox" id="3.7d"></td><td colspan="5"><label for="3.7d">Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use native elements or if you need to maintain tight control over the implementation of design system components.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -898,17 +898,17 @@
 						<td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved">3.8</a></td>
-						<td colspan="5">Render blocking should be resolved</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#defer-the-loading-of-non-critical-resources">3.8</a></td>
+						<td colspan="5">Defer the loading of non-critical resources</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.8a"></td><td colspan="5"><label for="3.8a">All external assets have been deferred or set to async (unless required) to avoid Flash Of Unstyled Content (<abbr title="Flash Of Unstyled Content">FOUC</abbr>).</label></td>
+						<td><input type="checkbox" id="3.8a"></td><td colspan="5"><label for="3.8a">Defer loading of non-essential external assets or set these to load asynchronously to avoid a Flash Of Unstyled Content (<abbr title="Flash Of Unstyled Content">FOUC</abbr>).</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.8b"></td><td colspan="5"><label for="3.8b">If external resources are required on load, their priorities (delivery route) are set correctly.</label></td>
+						<td><input type="checkbox" id="3.8b"></td><td colspan="5"><label for="3.8b">Where external resources are required to be used upon the documents load, optimize loading using resource and priority hints.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -919,20 +919,20 @@
 						<td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist">3.9</a></td>
-						<td colspan="5">Information to help understand the usefulness of a page should exist</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#provide-information-to-help-understand-the-usefulness-of-a-page">3.9</a></td>
+						<td colspan="5">Provide information to help understand the usefulness of a page</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.9a"></td><td colspan="5"><label for="3.9a">Metadata and microdata for search engines and social media have been optimized.</label></td>
+						<td><input type="checkbox" id="3.9a"></td><td colspan="5"><label for="3.9a">Optimize and only include suitable metadata and microdata.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.9b"></td><td colspan="5"><label for="3.9b">Search engines are not obstructed, while ill-intentioned robots and scripts are blocked.</label></td>
+						<td><input type="checkbox" id="3.9b"></td><td colspan="5"><label for="3.9b">Permit unobstructed access to search engines while blocking ill-intentioned robots and scripts.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.9c"></td><td colspan="5"><label for="3.9c">Accessibility and usability aids are provided to find content, such as skip links and signposts.</label></td>
+						<td><input type="checkbox" id="3.9c"></td><td colspan="5"><label for="3.9c">Provide accessibility and usability aids, such as skip links and signposts, to help users find and navigate content.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -943,20 +943,20 @@
 						<td>Low</td><td>Low</td><td>Low</td><td>Low</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements">3.10</a></td>
-						<td colspan="5">Forms must validate for errors, accounting for tooling requirements</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#validate-form-errors-and-account-for-tooling-requirements">3.10</a></td>
+						<td colspan="5">Validate form errors and account for tooling requirements</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.10a"></td><td colspan="5"><label for="3.10a">Errors are identified through live validation as well as upon submission.</label></td>
+						<td><input type="checkbox" id="3.10a"></td><td colspan="5"><label for="3.10a">Identify errors through live validation and with feedback on submission.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.10b"></td><td colspan="5"><label for="3.10b">Required elements are clearly identified and labeled (for the benefit of voice tools such as screen readers and virtual assistants), and optional elements (if unnecessary) removed.</label></td>
+						<td><input type="checkbox" id="3.10b"></td><td colspan="5"><label for="3.10b">Clearly label and identify required elements to ensure easy recognition for visitors using assistive technologies. Remove any unnecessary optional elements.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.10c"></td><td colspan="5"><label for="3.10c">Always allow the pasting of content (including passwords) from external sources.</label></td>
+						<td><input type="checkbox" id="3.10c"></td><td colspan="5"><label for="3.10c">Always allow the copying and pasting of content (including passwords) from external sources.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -967,20 +967,20 @@
 						<td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability">3.11</a></td>
-						<td colspan="5">Metadata is structured for machine readability</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#structure-metadata-for-machine-readability">3.11</a></td>
+						<td colspan="5">Structure metadata for machine readability</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.11a"></td><td colspan="5"><label for="3.11a">Include the required title element, plus any optional HTML head elements (such as link).</label></td>
+						<td><input type="checkbox" id="3.11a"></td><td colspan="5"><label for="3.11a">Include the required title element, plus any optional HTML head elements.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.11b"></td><td colspan="5"><label for="3.11b">Include necessary meta tag references that search engines and social networks recognize, using a recognized name scheme such as Dublin Core Metadata Initiative (<abbr title="Dublin Core Metadata Initiative">DCMI</abbr>), Friend Of A Friend (<abbr title="Friend Of A Friend">FOAF</abbr>), or <abbr title="Resource Description Framework in Attributes">RDFa</abbr>.</label></td>
+						<td><input type="checkbox" id="3.11b"></td><td colspan="5"><label for="3.11b">Include necessary meta tag references that are commonly recognized and used by user agents such as search engines. Follow recognized standards and vocabularies such as Dublin Core Metadata Initiative (<abbr title="Dublin Core Metadata Initiative">DCMI</abbr>), Friend of a Friend (<abbr title="Friend Of A Friend">FOAF</abbr>), or <abbr title="Resource Description Framework in Attributes">RDFa</abbr>.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.11c"></td><td colspan="5"><label for="3.11c">Use Microdata, Structured Data (Schema), or Microformats in content for which a widely used structured data format exists.</label></td>
+						<td><input type="checkbox" id="3.11c"></td><td colspan="5"><label for="3.11c">Use microdata, structured data (e.g., Schema.org), or microformats in content where a widely used structured data format exists.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -991,14 +991,14 @@
 						<td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#sustainable-css-user-preference-media-queries-are-used">3.12</a></td>
-						<td colspan="5">Sustainable CSS user preference media queries are used</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#use-sustainability-beneficial-user-preference-media-queries">3.12</a></td>
+						<td colspan="5">Use sustainability beneficial user preference media queries</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.12a"></td><td colspan="5"><label for="3.12a">Apply the monochrome, prefers-contrast, prefers-color-scheme, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion CSS preference queries if they will benefit your website or application. Use the print and scripting CSS media queries if they will improve the sustainability of your website.</label></td>
+						<td><input type="checkbox" id="3.12a"></td><td colspan="5"><label for="3.12a">Accommodate common user preferences, such as prefers-color-scheme, with corresponding CSS media queries. Consider accounting for additional user preferences, including monochrome, prefers-contrast, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion preference queries where these will benefit your users. Use print and scripting media queries when they can improve sustainability.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -1009,23 +1009,23 @@
 						<td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements">3.13</a></td>
-						<td colspan="5">Layouts work across devices and requirements</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#ensure-layouts-work-for-different-devices-and-requirements">3.13</a></td>
+						<td colspan="5">Ensure layouts work for different devices and requirements</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.13a"></td><td colspan="5"><label for="3.13a">Allow a website or app to work and adapt seamlessly across a variety of devices and screen sizes, including mobile, desktop, smart TVs, and other emerging platforms. Ensures that content and functionality are accessible and optimized on both smaller mobile screens and larger displays without limiting accessibility, usability or design on any specific device type. It is essential to implement robust fallback strategies to ensure that the website or application will not fail if it encounters unsupported technologies.</label></td>
+						<td><input type="checkbox" id="3.13a"></td><td colspan="5"><label for="3.13a">Allow your project to work and adapt seamlessly across a variety of devices and screen sizes, including smartphones, tablets, laptops, desktop computers, smart TVs, and other emerging platforms. This ensures that content and functionality can be easily accessed and are suitably optimized for display on both smaller mobile devices and larger displays without limiting accessibility, usability, or design features on any specific device type. Implement robust fallback strategies to ensure that the digital product or service will not fail if it encounters unsupported technologies.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.13b"></td><td colspan="5"><label for="3.13b">Regardless of the approach or combination of approaches used, such as Adaptive Design, Mobile-First Design, or Dynamic Serving, it's essential to ensure overall sustainability through progressive enhancement.</label></td>
+						<td><input type="checkbox" id="3.13b"></td><td colspan="5"><label for="3.13b">Use progressive enhancement to enhance overall sustainability. This can involve a single approach or a careful combination, such as adaptive design, mobile-first design, or dynamic serving.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.5d"></td><td colspan="5"><label for="3.5d">To maximize the use of renewable energy, adapt your website or service to electricity availability using carbon-aware design techniques. This should include using situational design to reduce the codebase disable non-essential functionality during high-intensity periods or adapting the user-interface to perform better in situations where scaling hardware resources can be avoided to reduce emissions. It can also include designing algorithms that can auto-disable features based on set thresholds.</label></td>
+						<td><input type="checkbox" id="3.5d"></td><td colspan="5"><label for="3.5d">Use carbon-aware design techniques to maximize your use of renewable energy. This is achieved by adapting the delivery of your project to current electricity availability and visitor grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.13c"></td><td colspan="5"><label for="3.13c">Support other indirect methods of interaction such as voice (speech), code (QR, etc), reader view (browser, application, or <abbr title="Really Simple Syndication">RSS</abbr>), or connected technology (watch, appliance, transport, etc).</label></td>
+						<td><input type="checkbox" id="3.13c"></td><td colspan="5"><label for="3.13c">Support additional indirect methods of interaction, such as voice (speech), code (<abbr title="Quick Response">QR</abbr>, etc.), reader view (browser, application, or <abbr title="Really Simple Syndication">RSS</abbr>), or connected technologies (watch, appliance, transport, etc.).</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -1037,19 +1037,19 @@
 					</tr>
 					<tr class="highlight">
 						<td><a href="https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-api-s">3.14</a></td>
-						<td colspan="5">Use beneficial JavaScript and its APIs</td>
+						<td colspan="5">Use beneficial JavaScript and its <abbr title="Application Programming Interfaces">APIs</abbr></td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.14a"></td><td colspan="5"><label for="3.14a">Improve sustainability through accessible and performant code implementations.</label></td>
+						<td><input type="checkbox" id="3.14a"></td><td colspan="5"><label for="3.14a">Improve sustainability through accessible and performant code.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.14b"></td><td colspan="5"><label for="3.14b">Apply potential energy-reducing <abbr title="Application Programming Interfaces">APIs</abbr> (such as Battery Status, Compression Streams, Page Visibility, and Vibration) if they can improve the eco-efficiency of your website or application.</label></td>
+						<td><input type="checkbox" id="3.14b"></td><td colspan="5"><label for="3.14b">Integrate energy-relevant APIs - such as Battery Status, Compression Streams, Page Visibility, or Vibration - where these can reduce energy consumption.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.14c"></td><td colspan="5"><label for="3.14c">When using an <abbr title="Application Programming Interface">API</abbr>, make sure you only call it when necessary. On the other side, make sure no unrequired data is sent by the API.</label></td>
+						<td><input type="checkbox" id="3.14c"></td><td colspan="5"><label for="3.14c">Call APIs only when necessary. Equally, ensure an <abbr title="Application Programming Interface">API</abbr> is optimized to only send data that is actually required.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -1060,14 +1060,14 @@
 						<td>High</td><td>High</td><td>High</td><td>High</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-scripts-are-secure">3.15</a></td>
-						<td colspan="5">Ensure that your scripts are secure</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-code-is-secure">3.15</a></td>
+						<td colspan="5">Ensure that your code is secure</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.15a"></td><td colspan="5"><label for="3.15a">Check the code for vulnerabilities, exploits, header issues, and code injection.</label></td>
+						<td><input type="checkbox" id="3.15a"></td><td colspan="5"><label for="3.15a">Check scripts and associated code for vulnerabilities, exploits, header issues, and code injection.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -1078,20 +1078,20 @@
 						<td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained">3.16</a></td>
-						<td colspan="5">Dependencies are appropriately used and maintained</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#use-dependencies-appropriately-and-ensure-maintenance">3.16</a></td>
+						<td colspan="5">Use dependencies appropriately and ensure maintenance</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.16a"></td><td colspan="5"><label for="3.16a">Prevent developers from downloading and installing JavaScript libraries to run locally (client-side) when they are not needed by checking for unused dependencies and uninstalling those that aren't needed and removing them from your package.json file.</label></td>
+						<td><input type="checkbox" id="3.16a"></td><td colspan="5"><label for="3.16a">Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that aren't needed and removing them from your package.json file.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.16b"></td><td colspan="5"><label for="3.16b">Only use libraries where necessary as this will reduce the amount of JavaScript that has to be downloaded and parsed by the browser. Consider whether you can use a native JavaScript API instead. Check the package size, and whether individual modules can be installed and imported rather than the whole library.</label></td>
+						<td><input type="checkbox" id="3.16b"></td><td colspan="5"><label for="3.16b">Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use vanilla code instead. Check the package size and whether individual modules can be installed and imported individually, as opposed to the entire library.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.16c"></td><td colspan="5"><label for="3.16c">Regularly check dependencies and keep them up-to-date.</label></td>
+						<td><input type="checkbox" id="3.16c"></td><td colspan="5"><label for="3.16c">Regularly check dependencies and keep them up to date.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -1109,10 +1109,10 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.17a"></td><td colspan="5"><label for="3.17a">Include the favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml documents. Additionally, ensure that any such files defined in future web standards or specifications are included.</label></td>
+						<td><input type="checkbox" id="3.17a"></td><td colspan="5"><label for="3.17a">Include favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml files by default. Also ensure that any similar files defined in future web standards or specifications are included.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.17b"></td><td colspan="5"><label for="3.17b">Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Additionally, ensure that any such files defined in future web standards or specifications are included.</label></td>
+						<td><input type="checkbox" id="3.17b"></td><td colspan="5"><label for="3.17b">Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Also ensure that any similar files defined in future web standards or specifications are included.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -1130,7 +1130,7 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.18a"></td><td colspan="5"><label for="3.18a">Avoid the use of deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards that offer equivalent or improved functionality. Such code may be used to meet a documented customer need only if there is a justifiable benefit that cannot otherwise be met (such as compatibility, accessibility, or emissions reduction). Also, don't serve polyfills to modern browsers.</label></td>
+						<td><input type="checkbox" id="3.18a"></td><td colspan="5"><label for="3.18a">Avoid using deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards. Only use deprecated, proprietary, or outdated code where this is required to meet a documented customer need and if there is a justifiable benefit that cannot otherwise be met. Justifiable reasons could include such as compatibility with essential legacy systems and/or hardware, accessibility, or emissions reduction. Do not serve polyfills to modern browsers.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -1141,26 +1141,26 @@
 						<td>Low</td><td>Low</td><td>Low</td><td>Low</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service">3.19</a></td>
-						<td colspan="5">Use the most efficient solution to implement your service</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-for-your-service">3.19</a></td>
+						<td colspan="5">Use the most efficient solution for your service</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.19a"></td><td colspan="5"><label for="3.19a">Identify the requirements and from this, choose the implementation of the product or service. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources (and thereby produce more emissions upon render) but have a faster build-time (emitting less carbon during development).</label></td>
+						<td><input type="checkbox" id="3.19a"></td><td colspan="5"><label for="3.19a">Identify the requirements and use this as a basis to help you select the most appropriate implementation for your project. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources and have a bigger emissions impact on render, but it could have a faster build time - meaning less carbon is emitted in development.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.19b"></td><td colspan="5"><label for="3.19b">As a general rule, coding from scratch is the best-performing methodology (though if an existing solution is actively maintained, it may be better optimized than what you could produce). Therefore, use native components and file systems to a <abbr title="What You See Is What You Get">WYSIWYG</abbr> editor or heavy framework, and be considerate of the impact of third-party solutions.</label></td>
+						<td><input type="checkbox" id="3.19b"></td><td colspan="5"><label for="3.19b">Use the most effective approach for your use case. Most of the time, coding from scratch will often provide the most performant results. Where an existing solution exists and is being actively maintained, this may be better optimized than what you can reasonably produce yourself. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors - including visual page builders - or other heavy frameworks. Be mindful of the impact of third-party solutions.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.19c"></td><td colspan="5"><label for="3.19c">If choosing a code generation tool, use a Static Site Generator in preference to a bulky content management system. Because SSGs often start using a minimalist content entry format (like markdown) and all of the compilation is done before the website is uploaded, the emissions benefit comes from the server not having to place as much effort into serving pages (as they are static) for each visitor. In the case of a <abbr title="Content Management System">CMS</abbr>, the dynamic nature of a site will involve additional computation (server-side processing) and bulkier libraries.</label></td>
+						<td><input type="checkbox" id="3.19c"></td><td colspan="5"><label for="3.19c">Deliver static content wherever possible. If you choose to use a code generation tool, a Static Site Generator is preferable to bulky content management systems. SSGs often start by using a minimalist content entry format, such as markdown, and all of the compilation is done before the code is uploaded. This reduces emissions by reducing the effort the server expends serving pages to each visitor. A <abbr title="Content Management System">CMS</abbr> is dynamic. The site will involve additional computation work with server-side processing and often bulkier libraries.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.19d"></td><td colspan="5"><label for="3.19d">Plugins, extensions, and themes have been carefully reviewed and selected to maximize interoperability, accessibility, and performance. They are regularly audited over time to ensure continued compatibility.</label></td>
+						<td><input type="checkbox" id="3.19d"></td><td colspan="5"><label for="3.19d">Carefully select and review plugins, extensions, and themes to maximize interoperability, accessibility, and performance. Audit these regularly over time to ensure continued compatibility.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.19e"></td><td colspan="5"><label for="3.19e">All the components of the user-interface are the subject of special attention in terms of its sustainability impact while respecting accessibility and the performance of such components.</label></td>
+						<td><input type="checkbox" id="3.19e"></td><td colspan="5"><label for="3.19e">Pay particular attention to user interface components with respect to their sustainability impact, while also paying due attention to accessibility, user experience, and the overall performance of such components.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -1181,7 +1181,7 @@
 						<td><input type="checkbox" id="3.20a"></td><td colspan="5"><label for="3.20a">Use the latest build of your chosen syntax language and its coupled framework.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.20b"></td><td colspan="5"><label for="3.20b">Use the most appropriate programming language for a task. Many tools and programming languages are optimized for performing particular tasks, and utilizing those most appropriate to the problem, especially if there is a reasonable visitor base involved justifies the time and effort, as long as it doesn't impact PPP factors such as the well-being of those involved or become too cost prohibitive.</label></td>
+						<td><input type="checkbox" id="3.20b"></td><td colspan="5"><label for="3.20b">Use the most appropriate programming language for the task. Many tools and programming languages are optimized for the performance of particular tasks. Applying the most appropriate tools to the problem can justify any time or effort involved in their adoption, especially if there is a reasonable user base, provided it does not impact the wellbeing of those involved or risk becoming cost-prohibitive.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -1210,14 +1210,14 @@
 						<td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td>
 					</tr>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#run-fewer-simpler-queries-as-possible">3.22</a></td>
-						<td colspan="5">Run fewer, simpler queries as possible</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#reduce-the-number-and-complexity-of-database-queries">3.22</a></td>
+						<td colspan="5">Reduce the number and complexity of database queries</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.22a"></td><td colspan="5"><label for="3.22a">If you need information that is stored in a database, and you require it (or it's likely to be requested) more than once in your code, access the database only once, and store the data locally for subsequent processing. Also, avoid reliance on framework helpers that might defer filtering to later on in the process.</label></td>
+						<td><input type="checkbox" id="3.22a"></td><td colspan="5"><label for="3.22a">Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>

@@ -2299,17 +2299,17 @@
 					</ul>
 				</details>
 			</div>
-			<section> <!-- Set goals based on potential impact considerations -->
-				<h3>Set goals based on potential impact considerations</h3>
+			<section> <!-- Set goals based on performance and energy impact -->
+				<h3>Set goals based on performance and energy impact</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491, SDGs" data-considerations="" data-categories="KPIs, Networking, Performance, Research, Social Equity, Strategy">
 					<h4 id="performance-goals">Success Criterion: Performance goals</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD01-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD01-1">Resources</a></p>
-					<p>Explicit goals that impact the environment and performance of the service, for example, <abbr title="Hypertext Transfer Protocol">HTTP</abbr> requests, or the amount of <abbr title="Document Object Model">DOM</abbr> elements that need to be rendered are both set and met.</p>
+					<p>Set clear goals with performance and environmental impact in mind, then meet them. These could include, the number of requests or elements that must be rendered.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="" data-categories="KPIs, Networking, Performance, Research, Social Equity, Strategy">
-					<h4 id="accountancy-types">Success Criterion: Accountancy types</h4>
+					<h4 id="energy-intensity">Success Criterion: Energy intensity</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD01-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD01-2">Resources</a></p>
-					<p>Because the payload being delivered may not always be equal in terms of energy intensity, operators of websites and applications must ensure that consideration is given for the energy intensity (or unit being evaluated) of each component. For example, non-rendering text is less computational than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL.</p>
+					<p>Consider differences in the energy intensity or testable impact across each component. For example, unstyled text is less computationally intensive to render than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2349,9 +2349,9 @@
 			<section> <!-- Remove unnecessary or redundant information -->
 				<h3>Remove unnecessary or redundant information</h3>
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="" data-categories="CSS, HTML, JavaScript, Performance">
-					<h4 id="minify-code">Success Criterion: Minify code</h4>
+					<h4 id="minified-code">Success Criterion: Minified code</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD02-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD02-1">Resources</a></p>
-					<p>Remove unnecessary whitespace, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to HTML, CSS, JavaScript, JSON, SVG, and other relevant file types.</p>
+					<p>Remove unnecessary whitespace, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to <abbr title="Hypertext Markup Language">HTML</abbr>, CSS, JavaScript, JSON, SVG, and other relevant file types.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2390,12 +2390,12 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Modularize bandwidth-heavy components within projects -->
-				<h3>Modularize bandwidth-heavy components within projects</h3>
+			<section> <!-- Modularize bandwidth-heavy components -->
+				<h3>Modularize bandwidth-heavy components</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="CSS, JavaScript, Performance">
 					<h4 id="code-splitting">Success Criterion: Code splitting</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD03-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD03-1">Resources</a></p>
-					<p>Break down bandwidth-heavy components, front-end and back-end into smaller, modular segments that can be loaded only when required.</p>
+					<p>Break down bandwidth-heavy components into smaller, modular segments that can be loaded only when required. This applies to both front-end and back-end code.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2444,12 +2444,12 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Tree shaking should be used to remove unnecessary code -->
-				<h3>Tree shaking should be used to remove unnecessary code</h3>
+			<section> <!-- Remove unnecessary code with tree shaking techniques -->
+				<h3>Remove unnecessary code with tree shaking techniques</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="CSS, JavaScript, Performance">
 					<h4 id="remove-redundancy">Success Criterion: Remove redundancy</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD04-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD04-1">Resources</a></p>
-					<p>Identify and eliminate unused and dead code within <abbr title="Cascading StyleSheets">CSS</abbr> and JavaScript.</p>
+					<p>Identify and eliminate unused and dead code, commonly within <abbr title="Cascading StyleSheets">CSS</abbr> and JavaScript.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2491,22 +2491,22 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Redundancy and duplication in code should be avoided -->
-				<h3>Redundancy and duplication in code should be avoided</h3>
+			<section> <!-- Avoid redundancy and duplication in code -->
+				<h3>Avoid redundancy and duplication in code</h3>
 				<section class="notoc" data-testable="human" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="" data-categories="CSS, JavaScript, Patterns, Performance">
 					<h4 id="remove-or-simplify">Success Criterion: Remove or simplify</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD05-1">Resources</a></p>
-					<p>Remove or simplify (through rewriting for performance) your code to focus on essential features and have a cleaner, less redundant product (and codebase).</p>
+					<p>Remove duplication and/or simplify and optimize your code for better performance, focusing on essential features so you have a cleaner, less redundant product and codebase.</p>
 				</section>
 				<section class="notoc" data-testable="human" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="" data-categories="CSS, JavaScript, Patterns, Performance">
 					<h4 id="iteration-over-recreation">Success Criterion: Iteration over recreation</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD05-2">Resources</a></p>
-					<p>Improve (iterate) an existing creation rather than constantly redeveloping and redesigning products from scratch (duplication of coding effort) if possible to reduce visitor learning burden and developer impact.</p>
+					<p>Improve existing solutions rather than redeveloping and redesigning products from scratch, since the latter would duplicate the coding effort and maintenance burden for developers rather than reduce the learning burden for visitors.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="CSS, JavaScript, Patterns, Performance">
 					<h4 id="organize-code-arrangement">Success Criterion: Organize code arrangement</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD05-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD05-3">Resources</a></p>
-					<p>Within CSS and JavaScript, use an organizing methodology and systems like <abbr title="Don't Repeat Yourself">DRY</abbr> and <abbr title="Write Everything Twice">WET</abbr> to optimize the arrangement and output of your source code.</p>
+					<p>Use organization methodology and systems such as <abbr title="Don't Repeat Yourself">DRY</abbr> or <abbr title="Write Everything Twice">WET</abbr> to optimize the arrangement and output of your JavaScript and CSS.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2559,37 +2559,37 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Third-party services should be assessed as first parties -->
-				<h3>Third-party services should be assessed as first parties</h3>
+			<section> <!-- Give third parties the same priority as first parties during assessment -->
+				<h3>Give third parties the same priority as first parties during assessment</h3>
 				<section class="notoc" data-testable="machine" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
-					<h4 id="assess-third-parties">Success Criterion: Assess third-parties</h4>
+					<h4 id="assess-and-reduce">Success Criterion: Assess and reduce</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD06-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD06-1">Resources</a></p>
-					<p>Third-party services (including plugins, widgets, feeds, maps, carousels, etc) have been assessed as early in the ideation or creation process as possible and as few of them are used as possible to reduce the product or service's overall ecological impact, including Scope 3 emissions.</p>
+					<p>Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible to reduce the overall environmental impact, including Scope 3 emissions.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GreenIT, SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="third-party-implementation">Success Criterion: Third-party implementation</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD06-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD06-2">Resources</a></p>
-					<p>Third-party content (including plugins, widgets, feeds, maps, carousels, chat widgets, etc) that loads or requests resources or functionality from a location outside of the primary location, should be placed behind a click-to-load delay screen (using the "import on interaction" pattern), while alternatives are offered, for instance a link to a contact form as an alternative for a chat widget.</p>
+					<p>Use click-to-load triggers based on an import on interaction pattern to prevent automatic loading of third-party content and/or services (see above). Offer suitable alternatives to third-party use, for example, a link to a contact form as an alternative to a chat widget.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="libraries-and-frameworks">Success Criterion: Libraries and frameworks</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD06-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD06-3">Resources</a></p>
-					<p>Large CSS libraries and JavaScript frameworks are only be used if a more performant alternative that achieves the same goal cannot be used instead.</p>
+					<p>Avoid using large libraries and frameworks. Integrate these only when unable to use a more performant alternative to achieve the same goal.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="self-hosting">Success Criterion: Self-hosting</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD06-4">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD06-4">Resources</a></p>
-					<p>Self-hosted content has been prioritized over embedded content from third-party services.</p>
+					<p>Prioritize self-hosted content over embedding content from third-party services.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GreenIT, SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
-					<h4 id="avoiding-dependency">Success Criterion: Avoiding dependency</h4>
+					<h4 id="avoid-dependancies">Success Criterion: Avoid dependencies</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD06-5">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD06-5">Resources</a></p>
-					<p>Your own clickable icons and widgets have been created, rather than relying on third-party services to host or allow embedding within your product or service.</p>
+					<p>Host icons and widgets on your own server, rather than relying on third-party services to host and deliver these or embed third-party functionality within your project.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GR491, SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="third-party-preferences">Success Criterion: Third-party preferences</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD06-6">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD06-6">Resources</a></p>
-					<p>Third-party products, services, libraries, and frameworks are often a source of sustainability issues that cannot be controlled or managed by the first-party provider of a service. While many do provide benefits to a website, the need to justify their inclusion must be made not only by those creating the product or service but also be able to be controlled by the consumer. As showcased with cookies, websites or applications can provide a similar mechanism of disabling or refusing non-first-party features (with explanations of their purpose) - unless such features can be proven as critical for functionality.</p>
+					<p>Respect user preferences around the use of third-party products and services, similar to the implementation of cookie consent modals. Provide mechanisms to disable or refuse non-first-party features alongside explanations of their purpose unless it is possible to show these third-party features are critical for functionality.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2629,27 +2629,27 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Code must follow good semantic practices -->
-				<h3>Code must follow good semantic practices</h3>
+			<section> <!-- Ensure code follows good semantic practices -->
+				<h3>Ensure code follows good semantic practices</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491, SDGs" data-considerations="Accessibility" data-categories="Compatibility, Content, HTML, Social Equity, Usability">
 					<h4 id="semantic-code">Success Criterion: Semantic code</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD07-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD07-1">Resources</a></p>
-					<p>Content must be accurately marked up according to the relevant standard(s).</p>
+					<p>Use accurate markup according to the relevant standard(s).</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="Accessibility" data-categories="Compatibility, Content, HTML, Social Equity, Usability">
 					<h4 id="optional-features">Success Criterion: Optional features</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD07-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD07-2">Resources</a></p>
-					<p>Remove optional <abbr title="Hypertext Markup Language">HTML</abbr> tags, attribute quotes, and default attributes only when they do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity (without compromising on performance), or ensure consistent browser rendering.</p>
+					<p>Remove optional HTML elements, attribute quotes, and default attributes when these do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity without compromising on performance, or ensure consistent browser rendering.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="Accessibility" data-categories="Compatibility, Content, HTML, Social Equity, Usability">
 					<h4 id="non-standard-code">Success Criterion: Non-standard code</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD07-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD07-3">Resources</a></p>
-					<p>Avoid using non-standard elements or attributes.</p>
+					<p>Avoid using non-standard HTML elements or attributes.</p>
 				</section>
 				<section class="notoc" data-testable="human" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="Accessibility" data-categories="Compatibility, Content, HTML, Social Equity, Usability">
 					<h4 id="custom-code">Success Criterion: Custom code</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD07-4">Resources</a></p>
-					<p>Prefer using standard HTML elements and attributes. Only use custom elements or Web Components if you cannot utilize native HTML elements or if you need tightly regulated control over the implementation of design system components..</p>
+					<p>Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use native elements or if you need to maintain tight control over the implementation of design system components.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2700,17 +2700,17 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Render blocking should be resolved -->
-				<h3>Render blocking should be resolved</h3>
+			<section> <!-- Defer the loading of non-critical resources -->
+				<h3>Defer the loading of non-critical resources</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="Assets, CSS, JavaScript, Performance">
 					<h4 id="asynchronous-code">Success Criterion: Asynchronous code</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD08-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD08-1">Resources</a></p>
-					<p>All external assets have been deferred or set to async (unless required) to avoid Flash Of Unstyled Content (FOUC).</p>
+					<p>Defer loading of non-essential external assets or set these to load asynchronously to avoid a Flash Of Unstyled Content (FOUC).</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="Assets, CSS, JavaScript, Performance">
-					<h4 id="priority-loading">Success Criterion: Priority loading</h4>
+					<h4 id="optimized-loading">Success Criterion: Optimized loading</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD08-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD08-2">Resources</a></p>
-					<p>If external resources are required on load, their priorities (delivery route) are set correctly.</p>
+					<p>Where external resources are required to be used upon the documents load, optimize loading using resource and priority hints.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2750,22 +2750,22 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Information to help understand the usefulness of a page should exist -->
-				<h3>Information to help understand the usefulness of a page should exist</h3>
+			<section> <!-- Provide information to help understand the usefulness of a page -->
+				<h3>Provide information to help understand the usefulness of a page</h3>
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility" data-categories="HTML, Marketing, UI, Usability">
 					<h4 id="metadata-and-microdata">Success Criterion: Metadata and microdata</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD09-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD09-1">Resources</a></p>
-					<p>Metadata and microdata for search engines and social media have been optimized.</p>
+					<p>Optimize and only include suitable metadata and microdata.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility" data-categories="HTML, Marketing, UI, Usability">
 					<h4 id="search-engines">Success Criterion: Search engines</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD09-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD09-2">Resources</a></p>
-					<p>Search engines are not obstructed, while ill-intentioned robots and scripts are blocked.</p>
+					<p>Permit unobstructed access to search engines while blocking ill-intentioned robots and scripts.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility" data-categories="HTML, Marketing, UI, Usability">
 					<h4 id="accessibility-aids">Success Criterion: Accessibility aids</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD09-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD09-3">Resources</a></p>
-					<p>Accessibility and usability aids are provided to find content, such as skip links and signposts.</p>
+					<p>Provide accessibility and usability aids, such as skip links and signposts, to help users find and navigate content.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2814,22 +2814,22 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Forms must validate for errors, accounting for tooling requirements -->
-				<h3>Forms must validate for errors, accounting for tooling requirements</h3>
+			<section> <!-- Validate form errors and account for tooling requirements -->
+				<h3>Validate form errors and account for tooling requirements</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="Accessibility, Security" data-categories="Compatibility, HTML, UI, Usability">
 					<h4 id="error-validation">Success Criterion: Error validation</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD10-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD10-1">Resources</a></p>
-					<p>Errors are identified through live validation as well as upon submission.</p>
+					<p>Identify errors through live validation and with feedback on submission.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, SDGs" data-considerations="Accessibility, Security" data-categories="Compatibility, HTML, UI, Usability">
 					<h4 id="label-elements">Success Criterion: Label elements</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD10-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD10-2">Resources</a></p>
-					<p>Required elements are clearly identified and labeled (for the benefit of voice tools such as screen readers and virtual assistants), and optional elements (if unnecessary) removed.</p>
+					<p>Clearly label and identify required elements to ensure easy recognition for visitors using assistive technologies. Remove any unnecessary optional elements.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="Accessibility, Security" data-categories="Compatibility, HTML, UI, Usability">
-					<h4 id="allow-paste">Success Criterion: Allow paste</h4>
+					<h4 id="allow-clipboard">Success Criterion: Allow clipboard</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD10-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD10-3">Resources</a></p>
-					<p>Always allow the pasting of content (including passwords) from external sources.</p>
+					<p>Always allow the copying and pasting of content (including passwords) from external sources.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2872,22 +2872,22 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Metadata is structured for machine readability -->
-				<h3>Metadata is structured for machine readability</h3>
+			<section> <!-- Structure metadata for machine readability -->
+				<h3>Structure metadata for machine readability</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="Accessibility" data-categories="HTML, Marketing, Usability">
 					<h4 id="required-elements">Success Criterion: Required elements</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD11-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD11-1">Resources</a></p>
-					<p>Include the required title element, plus any optional HTML head elements (such as link).</p>
+					<p>Include the required title element, plus any optional HTML head elements.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="Accessibility" data-categories="HTML, Marketing, Usability">
 					<h4 id="meta-tags">Success Criterion: Meta tags</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD11-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD11-2">Resources</a></p>
-					<p>Include necessary meta tag references that search engines and social networks recognize, using a recognized name scheme such as Dublin Core Metadata Initiative (<abbr title="Dublin Core Metadata Initiative">DCMI</abbr>), Friend Of A Friend (<abbr title="Friend Of A Friend">FOAF</abbr>), or <abbr title="Resource Description Framework in Attributes">RDFa</abbr>.</p>
+					<p>Include necessary meta tag references that are commonly recognized and used by user agents such as search engines. Follow recognized standards and vocabularies such as Dublin Core Metadata Initiative (<abbr title="Dublin Core Metadata Initiative">DCMI</abbr>), Friend of a Friend (<abbr title="Friend Of A Friend">FOAF</abbr>), or <abbr title="Resource Description Framework in Attributes">RDFa</abbr>.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="Accessibility" data-categories="HTML, Marketing, Usability">
 					<h4 id="structured-data">Success Criterion: Structured data</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD11-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD11-3">Resources</a></p>
-					<p>Use Microdata, Structured Data (Schema), or Microformats in content for which a widely used structured data format exists.</p>
+					<p>Use microdata, structured data (e.g., Schema.org), or microformats in content where a widely used structured data format exists.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2943,12 +2943,12 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Sustainable CSS user preference media queries are used -->
-				<h3>Sustainable CSS user preference media queries are used</h3>
+			<section> <!-- Use sustainability beneficial user preference media queries -->
+				<h3>Use sustainability beneficial user preference media queries</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, SDGs" data-considerations="Accessibility" data-categories="Assets, CSS, UI, Usability">
 					<h4 id="media-and-preference-queries">Success Criterion: Media and preference queries</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD12-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD12-1">Resources</a></p>
-					<p>Apply the monochrome, prefers-contrast, prefers-color-scheme, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion CSS preference queries if they will benefit your website or application. Use the print and scripting CSS media queries if they will improve the sustainability of your website.</p>
+					<p>Accommodate common user preferences, such as prefers-color-scheme, with corresponding CSS media queries. Consider accounting for additional user preferences, including monochrome, prefers-contrast, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion preference queries where these will benefit your users. Use print and scripting media queries when they can improve sustainability.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2996,27 +2996,27 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Layouts work across devices and requirements -->
-				<h3>Layouts work across devices and requirements</h3>
+			<section> <!-- Ensure layouts work for different devices and requirements -->
+				<h3>Ensure layouts work for different devices and requirements</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, SDGs" data-considerations="" data-categories="Compatibility, CSS, Performance, UI, Usability">
 					<h4 id="device-adaptable">Success Criterion: Device-adaptable</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD13-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD13-1">Resources</a></p>
-					<p>Allow a website or app to work and adapt seamlessly across a variety of devices and screen sizes, including mobile, desktop, smart TVs, and other emerging platforms. Ensures that content and functionality are accessible and optimized on both smaller mobile screens and larger displays without limiting accessibility, usability or design on any specific device type. It is essential to implement robust fallback strategies to ensure that the website or application will not fail if it encounters unsupported technologies.</p>
+					<p>Allow your project to work and adapt seamlessly across a variety of devices and screen sizes, including smartphones, tablets, laptops, desktop computers, smart TVs, and other emerging platforms. This ensures that content and functionality can be easily accessed and are suitably optimized for display on both smaller mobile devices and larger displays without limiting accessibility, usability, or design features on any specific device type. Implement robust fallback strategies to ensure that the digital product or service will not fail if it encounters unsupported technologies.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, SDGs" data-considerations="" data-categories="Compatibility, CSS, Performance, UI, Usability">
           			<h4 id="progressive-enhancement">Success Criterion: Progressive enhancement</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD13-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD13-2">Resources</a></p>
-					<p>Regardless of the approach or combination of approaches used, such as Adaptive Design, Mobile-First Design, or Dynamic Serving, it's essential to ensure overall sustainability through progressive enhancement.</p>
+					<p>Use progressive enhancement to enhance overall sustainability. This can involve a single approach or a careful combination, such as adaptive design, mobile-first design, or dynamic serving.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="SDGs" data-considerations="" data-categories="Compatibility, CSS, Performance, UI, Usability">
-					<h4 id="carbon-aware-design">Success Criterion: Carbon aware design</h4>
+					<h4 id="carbon-aware-design">Success Criterion: Carbon-aware design</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD13-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD13-3">Resources</a></p>
-					<p>To maximize the use of renewable energy, adapt your website or service to electricity availability using carbon-aware design techniques. This should include using situational design to reduce the codebase disable non-essential functionality during high-intensity periods or adapting the user-interface to perform better in situations where scaling hardware resources can be avoided to reduce emissions. It can also include designing algorithms that can auto-disable features based on set thresholds.</p>
+					<p>Use carbon-aware design techniques to maximize your use of renewable energy. This is achieved by adapting the delivery of your project to current electricity availability and visitor grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="SDGs" data-considerations="" data-categories="Compatibility, CSS, Performance, UI, Usability">
 					<h4 id="alternative-browsing">Success Criterion: Alternative browsing</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD13-4">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD13-4">Resources</a></p>
-					<p>Support other indirect methods of interaction such as voice (speech), code (<abbr title="Quick Response">QR</abbr>, etc), reader view (browser, application, or <abbr title="Really Simple Syndication">RSS</abbr>), or connected technology (watch, appliance, transport, etc).</p>
+					<p>Support additional indirect methods of interaction, such as voice (speech), code (<abbr title="Quick Response">QR</abbr>, etc.), reader view (browser, application, or <abbr title="Really Simple Syndication">RSS</abbr>), or connected technologies (watch, appliance, transport, etc.).</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3068,17 +3068,17 @@
 				<section class="notoc" data-testable="machine" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF" data-considerations="Accessibility, Security" data-categories="JavaScript">
 					<h4 id="beneficial-javascript">Success Criterion: Beneficial JavaScript</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD14-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD14-1">Resources</a></p>
-					<p>Improve sustainability through accessible and performant code implementations.</p>
+					<p>Improve sustainability through accessible and performant code.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF" data-considerations="Accessibility, Security" data-categories="JavaScript">
 					<h4 id="sustainable-apis">Success Criterion: Sustainable APIs</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD14-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD14-2">Resources</a></p>
-					<p>Apply potential energy-reducing APIs (such as Battery Status, Compression Streams, Page Visibility, and Vibration) if they can improve the eco-efficiency of your website or application.</p>
+					<p>Integrate energy-relevant APIs - such as Battery Status, Compression Streams, Page Visibility, or Vibration - where these can reduce energy consumption.</p>
 				</section>
 				<section class="notoc" data-testable="human" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF" data-considerations="Accessibility, Security" data-categories="JavaScript">
 					<h4 id="api-requests">Success Criterion: API requests</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD14-3">Resources</a></p>
-					<p>When using an API, make sure you only call it when necessary. On the other side, make sure no unrequired data is sent by the API.</p>
+					<p>Call APIs only when necessary. Equally, ensure an API is optimized to only send data that is actually required.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3130,12 +3130,12 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Ensure that your scripts are secure -->
-				<h3>Ensure that your scripts are secure</h3>
+			<section> <!-- Ensure that your code is secure -->
+				<h3>Ensure that your code is secure</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491, SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Social Equity">
-					<h4 id="script-security">Success Criterion: Script security</h4>
+					<h4 id="script-security">Success Criterion: Code security</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD15-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD15-1">Resources</a></p>
-					<p>Check the code for vulnerabilities, exploits, header issues, and code injection.</p>
+					<p>Check scripts and associated code for vulnerabilities, exploits, header issues, and code injection.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3173,22 +3173,22 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Dependencies are appropriately used and maintained -->
-				<h3>Dependencies are appropriately used and maintained</h3>
+			<section> <!-- Use dependencies appropriately and ensure maintenance -->
+				<h3>Use dependencies appropriately and ensure maintenance</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491, SDGs" data-considerations="Security" data-categories="JavaScript, Patterns, Performance, Software">
 					<h4 id="dependency-management">Success Criterion: Dependency management</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD16-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD16-1">Resources</a></p>
-					<p>Prevent developers from downloading and installing JavaScript libraries to run locally (client-side) when they are not needed by checking for unused dependencies and uninstalling those that aren't needed and removing them from your package.json file.</p>
+					<p>Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that aren't needed and removing them from your package.json file.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491, SDGs" data-considerations="Security" data-categories="JavaScript, Patterns, Performance, Software">
 					<h4 id="dependency-necessity">Success Criterion: Dependency necessity</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD16-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD16-2">Resources</a></p>
-					<p>Only use libraries where necessary as this will reduce the amount of JavaScript that has to be downloaded and parsed by the browser. Consider whether you can use a native JavaScript API instead. Check the package size, and whether individual modules can be installed and imported rather than the whole library.</p>
+					<p>Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use vanilla code instead. Check the package size and whether individual modules can be installed and imported individually, as opposed to the entire library.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, SDGs" data-considerations="Security" data-categories="JavaScript, Patterns, Performance, Software">
 					<h4 id="dependency-updates">Success Criterion: Dependency updates</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD16-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD16-3">Resources</a></p>
-					<p>Regularly check dependencies and keep them up-to-date.</p>
+					<p>Regularly check dependencies and keep them up to date.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3233,12 +3233,12 @@
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF" data-considerations="Security" data-categories="Assets, Compatibility, Marketing, Patterns, UI">
 					<h4 id="expected-file-formats">Success Criterion: Expected file formats</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD17-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD17-1">Resources</a></p>
-					<p>Include the favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml documents. Additionally, ensure that any such files defined in future web standards or specifications are included.</p>
+					<p>Include favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml files by default. Also ensure that any similar files defined in future web standards or specifications are included.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF" data-considerations="Security" data-categories="Assets, Compatibility, Marketing, Patterns, UI">
 					<h4 id="beneficial-file-formats">Success Criterion: Beneficial file formats</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD17-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD17-2">Resources</a></p>
-					<p>Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Additionally, ensure that any such files defined in future web standards or specifications are included.</p>
+					<p>Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Also ensure that any similar files defined in future web standards or specifications are included.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3287,7 +3287,7 @@
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="medium" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491" data-considerations="Accessibility" data-categories="Compatibility, CSS, HTML, JavaScript, Performance">
 					<h4 id="preferred-code">Success Criterion: Preferred code</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD18-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD18-1">Resources</a></p>
-					<p>Avoid the use of deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards that offer equivalent or improved functionality. Such code may be used to meet a documented customer need only if there is a justifiable benefit that cannot otherwise be met (such as compatibility, accessibility, or emissions reduction). Also, don't serve polyfills to modern browsers.</p>
+					<p>Avoid using deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards. Only use deprecated, proprietary, or outdated code where this is required to meet a documented customer need and if there is a justifiable benefit that cannot otherwise be met. Justifiable reasons could include such as compatibility with essential legacy systems and/or hardware, accessibility, or emissions reduction. Do not serve polyfills to modern browsers.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3332,32 +3332,32 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use the most efficient solution to implement your service -->
-				<h3>Use the most efficient solution to implement your service</h3>
+			<section> <!-- Use the most efficient solution for your service -->
+				<h3>Use the most efficient solution for your service</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
 					<h4 id="identify-requirements">Success Criterion: Identify requirements</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD19-1">Resources</a></p>
-					<p>Identify the requirements and from this, choose the implementation of the product or service. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources (and thereby produce more emissions upon render) but have a faster build-time (emitting less carbon during development).</p>
+					<p>Identify the requirements and use this as a basis to help you select the most appropriate implementation for your project. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources and have a bigger emissions impact on render, but it could have a faster build time - meaning less carbon is emitted in development.</p>
 				</section>
 				<section class="notoc" data-testable="human" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
 					<h4 id="optimized-methodology">Success Criterion: Optimized methodology</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD19-2">Resources</a></p>
-					<p>As a general rule, coding from scratch is the best-performing methodology (though if an existing solution is actively maintained, it may be better optimized than what you could produce). Therefore, use native components and file systems to a <abbr title="What You See Is What You Get">WYSIWYG</abbr> editor or heavy framework, and be considerate of the impact of third-party solutions.</p>
+					<p>Use the most effective approach for your use case. Most of the time, coding from scratch will often provide the most performant results. Where an existing solution exists and is being actively maintained, this may be better optimized than what you can reasonably produce yourself. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors - including visual page builders - or other heavy frameworks. Be mindful of the impact of third-party solutions.</p>
 				</section>
 				<section class="notoc" data-testable="human" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
-					<h4 id="static-vs-dynamic">Success Criterion: Static VS dynamic</h4>
+					<h4 id="static-over-dynamic">Success Criterion: Static over dynamic</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD19-3">Resources</a></p>
-					<p>If choosing a code generation tool, use a Static Site Generator in preference to a bulky content management system. Because <abbr title="Static Site Generators">SSGs</abbr> often start using a minimalist content entry format (like markdown) and all of the compilation is done before the website is uploaded, the emissions benefit comes from the server not having to place as much effort into serving pages (as they are static) for each visitor. In the case of a CMS, the dynamic nature of a site will involve additional computation (server-side processing) and bulkier libraries.</p>
+					<p>Deliver static content wherever possible. If you choose to use a code generation tool, a Static Site Generator is preferable to bulky content management systems. <abbr title="Static Site Generators">SSGs</abbr>  often start by using a minimalist content entry format, such as markdown, and all of the compilation is done before the code is uploaded. This reduces emissions by reducing the effort the server expends serving pages to each visitor. A CMS is dynamic. The site will involve additional computation work with server-side processing and often bulkier libraries.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
-					<h4 id="expandability-considerations">Success Criterion: Expandability considerations</h4>
+					<h4 id="extensions-and-plugins">Success Criterion: Extensions and plugins</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD19-4">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD19-4">Resources</a></p>
-					<p>Plugins, extensions, and themes have been carefully reviewed and selected to maximize interoperability, accessibility, and performance. They are regularly audited over time to ensure continued compatibility.</p>
+					<p>Carefully select and review plugins, extensions, and themes to maximize interoperability, accessibility, and performance. Audit these regularly over time to ensure continued compatibility.</p>
 				</section>
 				<section class="notoc" data-testable="human" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
-					<h4 id="interface-impact">Success Criterion: Interface impact</h4>
+					<h4 id="interface-components">Success Criterion: Interface components</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD19-5">Resources</a></p>
-					<p>All the components of the user-interface are the subject of special attention in terms of its sustainability impact while respecting accessibility and the performance of such components.</p>
+					<p>Pay particular attention to user interface components with respect to their sustainability impact, while also paying due attention to accessibility, user experience, and the overall performance of such components.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3407,7 +3407,7 @@
 				<section class="notoc" data-testable="human" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="Security" data-categories="Compatibility, Performance">
 					<h4 id="language-choice">Success Criterion: Language choice</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD20-2">Resources</a></p>
-					<p>Use the most appropriate programming language for a task. Many tools and programming languages are optimized for performing particular tasks, and utilizing those most appropriate to the problem, especially if there is a reasonable visitor base involved justifies the time and effort, as long as it doesn't impact PPP factors such as the well-being of those involved or become too cost prohibitive.</p>
+					<p>Use the most appropriate programming language for the task. Many tools and programming languages are optimized for the performance of particular tasks. Applying the most appropriate tools to the problem can justify any time or effort involved in their adoption, especially if there is a reasonable user base, provided it does not impact the wellbeing of those involved or risk becoming cost-prohibitive.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3506,12 +3506,12 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Run fewer, simpler queries as possible -->
-				<h3>Run fewer, simpler queries as possible</h3>
+			<section> <!-- Reduce the number and complexity of database queries -->
+				<h3>Reduce the number and complexity of database queries</h3>
 				<section class="notoc" data-testable="human" data-impact="medium" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF" data-considerations="" data-categories="Networking, Performance">
 					<h4 id="database-queries">Success Criterion: Database queries</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD22-1">Resources</a></p>
-					<p>If you need information that is stored in a database, and you require it (or it's likely to be requested) more than once in your code, access the database only once, and store the data locally for subsequent processing. Also, avoid reliance on framework helpers that might defer filtering to later on in the process.</p>
+					<p>Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -5867,11 +5867,11 @@
 					<li><a href="#measure-and-test-for-performance">2.26 Measure and test for performance</a></li>
 					<li><a href="#verify-that-real-world-users-can-successfully-use-your-work">2.28 Verify that real-world users can successfully use your work</a></li>
 					<li><a href="#verify-that-real-world-users-can-successfully-use-your-work">2.29 Check for compatibility or platform-specific issues</a></li>
-					<li><a href="#code-must-follow-good-semantic-practices">3.7 Code must follow good semantic practices</a></li>
-					<li><a href="#information-to-help-understand-the-usefulness-of-a-page-should-exist">3.9 Information to help understand the usefulness of a page should exist</a></li>
-					<li><a href="#forms-must-validate-for-errors-accounting-for-tooling-requirements">3.10 Forms must validate for errors, accounting for tooling requirements</a></li>
-					<li><a href="#metadata-is-structured-for-machine-readability">3.11 Metadata is structured for machine readability</a></li>
-					<li><a href="#sustainable-css-user-preference-media-queries-are-used">3.12 Sustainable CSS user preference media queries are used</a></li>
+					<li><a href="#ensure-code-follows-good-semantic-practices">3.7 Ensure code follows good semantic practices</a></li>
+					<li><a href="#provide-information-to-help-understand-the-usefulness-of-a-page">3.9 Provide information to help understand the usefulness of a page</a></li>
+					<li><a href="#validate-form-errors-and-account-for-tooling-requirements">3.10 Validate form errors and account for tooling requirements</a></li>
+					<li><a href="#structure-metadata-for-machine-readability">3.11 Structure metadata for machine readability</a></li>
+					<li><a href="#use-sustainability-beneficial-user-preference-media-queries">3.12 Use sustainability beneficial user preference media queries</a></li>
 					<li><a href="#use-beneficial-javascript-and-its-apis">3.14 Use beneficial JavaScript and its APIs</a></li>
 					<li><a href="#avoid-using-deprecated-proprietary-or-outdated-code">3.18 Avoid using deprecated, proprietary, or outdated code</a></li>
 					<li><a href="#use-justice-equity-diversity-inclusion-jedi-practices">5.19 Use Justice, Equity, Diversity, Inclusion (JEDI) Practices</a></li>
@@ -5887,8 +5887,8 @@
 					<li><a href="#provide-useful-notifications-to-improve-the-visitor-s-journey">2.22 Provide useful notifications to improve the visitor's journey</a></li>
 					<li><a href="#audit-and-test-for-bugs-or-issues-that-require-resolving">2.25 Audit and test for bugs or issues that require resolving</a></li>
 					<li><a href="#measure-and-test-for-performance">2.26 Measure and test for performance</a></li>
-					<li><a href="#third-party-services-should-be-assessed-as-first-parties">3.6 Third-party services should be assessed as first parties</a></li>
-					<li><a href="#ensure-that-your-scripts-are-secure">3.15 Ensure that your scripts are secure</a></li>
+					<li><a href="#give-third-parties-the-same-priority-as-first-parties-during-assessment">3.6 Give third parties the same priority as first parties during assessment</a></li>
+					<li><a href="#ensure-that-your-code-is-secure">3.15 Ensure that your code is secure</a></li>
 					<li><a href="#promote-responsible-data-practices">5.20 Promote responsible data practices</a></li>
 					<li><a href="#implement-appropriate-data-management-procedures">5.21 Implement appropriate data management procedures</a></li>
 					<li><a href="#promote-and-implement-responsible-emerging-technology-practices">5.22 Promote and implement responsible emerging technology practices</a></li>
@@ -5901,11 +5901,11 @@
 					<li><a href="#avoid-being-manipulative-or-deceptive">2.11 Avoid being manipulative or deceptive</a></li>
 					<li><a href="#audit-and-test-for-bugs-or-issues-that-require-resolving">2.25 Audit and test for bugs or issues that require resolving</a></li>
 					<li><a href="#verify-that-real-world-users-can-successfully-use-your-work">2.29 Check for compatibility or platform-specific issues</a></li>
-					<li><a href="#third-party-services-should-be-assessed-as-first-parties">3.6 Third-party services should be assessed as first parties</a></li>
-					<li><a href="#forms-must-validate-for-errors-accounting-for-tooling-requirements">3.10 Forms must validate for errors, accounting for tooling requirements</a></li>
+					<li><a href="#give-third-parties-the-same-priority-as-first-parties-during-assessment">3.6 Give third parties the same priority as first parties during assessment</a></li>
+					<li><a href="#validate-form-errors-and-account-for-tooling-requirements">3.10 Validate form errors and account for tooling requirements</a></li>
 					<li><a href="#use-beneficial-javascript-and-its-apis">3.14 Use beneficial JavaScript and its APIs</a></li>
-					<li><a href="#ensure-that-your-scripts-are-secure">3.15 Ensure that your scripts are secure</a></li>
-					<li><a href="#dependencies-are-appropriately-used-and-maintained">3.16 Dependencies are appropriately used and maintained</a></li>
+					<li><a href="#ensure-that-your-code-is-secure">3.15 Ensure that your code is secure</a></li>
+					<li><a href="#use-dependencies-appropriately-and-ensure-maintenance">3.16 Use dependencies appropriately and ensure maintenance</a></li>
 					<li><a href="#include-expected-and-beneficial-files">3.17 Include expected and beneficial files</a></li>
 					<li><a href="#use-the-latest-stable-language-version">3.20 Use the latest stable language version</a></li>
 					<li><a href="#allow-automation-but-ensure-it-is-tightly-regulated">4.6 Allow automation but ensure it is tightly regulated</a></li>
@@ -6009,6 +6009,7 @@
 					<ul>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/89">#89</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/90">#90</a>] Structure of the crossover links has been improved for accessibility.<br><span class="credit">@jenstrickland, @pkra, @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/90">#90</a>] Attribution for authors now conforms to pubRules with acknowledgements link.<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/104">#104</a>] Editorial improvements have been provided for the Web Dev Success Criteria.<br><span class="credit">@AlexDawsonUK, @codewordcreative, @fershad, @ryansholin, @TzviyaSiegman</span></li>
 					</ul>
 					<!--
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/">#</a>] Change.<br><span class="credit">@Github</span></li>
@@ -6080,11 +6081,11 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/4">#4</a>] Update to Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#need-for-media">2.16</a> SC among others to remove language ambiguity.<br><span class="credit">@timfrick</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>] Guideline Descriptions relabeled as Intent and temporarily moved to Additional Information.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/16">#16</a>] Former Guidelines <a href="https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files">3.18-19</a> have been merged into a single Guideline.<br><span class="credit">@andreadavanzo</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/20">#20</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/issues/24">#24</a>] Update to Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices">3.7</a> SCs to improve the criteria robustness.<br><span class="credit">@andreadavanzo & @hidde</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/20">#20</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/issues/24">#24</a>] Update to Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-code-follows-good-semantic-practices">3.7</a> SCs to improve the criteria robustness.<br><span class="credit">@andreadavanzo & @hidde</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/21">#21</a>] Two Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code">3.19</a> have been merged into a single SC.<br><span class="credit">@andreadavanzo & @hidde</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/23">#23</a>] Two Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#promote-responsible-data-practices">5.20</a> have been merged.<br><span class="credit">@andreadavanzo</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/27">#27</a>] Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-or-redundant-information">3.2</a> now includes more detail about data types.<br><span class="credit">@andreadavanzo</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/28">#28</a>] Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components-within-projects">3.3</a> now includes modular front and back-end code.<br><span class="credit">@andreadavanzo</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/28">#28</a>] Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components">3.3</a> now includes modular front and back-end code.<br><span class="credit">@andreadavanzo</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/32">#32</a>] Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#third-party-implementation">3.7</a> are more extensively defined.<br><span class="credit">@fullo, @hidde, & @kazuhito-kidachi</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/35">#35</a>] Success Criteria for Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code">3.19</a> now includes avoiding polyfills in modern browsers.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
