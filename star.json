@@ -1938,7 +1938,7 @@
 					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Check for compatibility or platform-specific issues](https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues).",
 					"description": [
 						{
-							"1": "Identify a web application that exists and then determine if turning the web application into a progressive web application would be more beneficial than providing a native offering. This would need to take into account current web capabilities (such as ServiceWorkers), methods of delivery (such as WASM), and the human aspect (audience requirements).",
+							"1": "Identify a web application that exists and then determine if turning the web application into a progressive web application would be more beneficial than providing a native offering. This would need to take into account current web capabilities (such as Service Workers), methods of delivery (such as WASM), and the human aspect (audience requirements).",
 							"2": "Machine testability can firstly examine the existing state of an application to determine how sustainable it is and what technology stack was used to develop it (and how sustainable it already performs for all), from there, data points can be used to identify an approximate cost of implementation for both a native or highly optimized web application endpoint and options can be provided."
 						}
 					],

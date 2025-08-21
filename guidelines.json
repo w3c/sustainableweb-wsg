@@ -4809,7 +4809,7 @@
 						{
 							"title": "Offline access",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS02-2)",
-							"description": "Client-side JavaScript uses a combination of ServiceWorkers, WebWorkers, storage Application Programming Interfaces (APIs), or cookies (if necessary) to streamline the user-journey. For example, through the use of a PWA (Progressive Web Application) to ensure that an offline version is available and accessible at all times to reduce inequality and improve accessibility.",
+							"description": "Client-side JavaScript uses a combination of Service Workers, Web Workers, storage Application Programming Interfaces (APIs), or cookies (if necessary) to streamline the user-journey. For example, through the use of a PWA (Progressive Web Application) to ensure that an offline version is available and accessible at all times to reduce inequality and improve accessibility.",
 							"resources": [
 								{
 									"Front-End Performance 2021: Build Optimizations": "https://www.smashingmagazine.com/2021/01/front-end-performance-build-optimizations/",
