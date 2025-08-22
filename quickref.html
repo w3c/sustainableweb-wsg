@@ -749,7 +749,7 @@
 						<td><input type="checkbox" id="3.1a"></td><td colspan="5"><label for="3.1a">Set clear goals with performance and environmental impact in mind, then meet them. These could include, the number of requests or elements that must be rendered.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.1b"></td><td colspan="5"><label for="3.1b">Consider differences in the energy intensity or testable impact across each component. For example, unstyled text is less computationally intensive to render than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL.</label></td>
+						<td><input type="checkbox" id="3.1b"></td><td colspan="5"><label for="3.1b">Consider differences in the energy intensity or testable impact across each component. For example, unstyled text is less computationally intensive to render than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL or 4K video.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -845,7 +845,7 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.6a"></td><td colspan="5"><label for="3.6a">Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible to reduce the overall environmental impact, including Scope 3 emissions.</label></td>
+						<td><input type="checkbox" id="3.6a"></td><td colspan="5"><label for="3.6a">Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="3.6b"></td><td colspan="5"><label for="3.6b">Use click-to-load triggers based on an import on interaction pattern to prevent automatic loading of third-party content and/or services (see above). Offer suitable alternatives to third-party use, for example, a link to a contact form as an alternative to a chat widget.</label></td>
@@ -887,7 +887,7 @@
 						<td><input type="checkbox" id="3.7c"></td><td colspan="5"><label for="3.7c">Avoid using non-standard HTML elements or attributes.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.7d"></td><td colspan="5"><label for="3.7d">Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use native elements or if you need to maintain tight control over the implementation of design system components.</label></td>
+						<td><input type="checkbox" id="3.7d"></td><td colspan="5"><label for="3.7d">Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use native elements or if you require them for the purposes of producing reusable design system components.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -929,7 +929,7 @@
 						<td><input type="checkbox" id="3.9a"></td><td colspan="5"><label for="3.9a">Optimize and only include suitable metadata and microdata.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.9b"></td><td colspan="5"><label for="3.9b">Permit unobstructed access to search engines while blocking ill-intentioned robots and scripts.</label></td>
+						<td><input type="checkbox" id="3.9b"></td><td colspan="5"><label for="3.9b">Permit unobstructed access to search engines while blocking unsustainable robots and scripts.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="3.9c"></td><td colspan="5"><label for="3.9c">Provide accessibility and usability aids, such as skip links and signposts, to help users find and navigate content.</label></td>
@@ -1085,7 +1085,7 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.16a"></td><td colspan="5"><label for="3.16a">Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that aren't needed and removing them from your package.json file.</label></td>
+						<td><input type="checkbox" id="3.16a"></td><td colspan="5"><label for="3.16a">Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that aren't needed.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="3.16b"></td><td colspan="5"><label for="3.16b">Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use vanilla code instead. Check the package size and whether individual modules can be installed and imported individually, as opposed to the entire library.</label></td>
@@ -1154,13 +1154,13 @@
 						<td><input type="checkbox" id="3.19b"></td><td colspan="5"><label for="3.19b">Use the most effective approach for your use case. Most of the time, coding from scratch will often provide the most performant results. Where an existing solution exists and is being actively maintained, this may be better optimized than what you can reasonably produce yourself. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors - including visual page builders - or other heavy frameworks. Be mindful of the impact of third-party solutions.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.19c"></td><td colspan="5"><label for="3.19c">Deliver static content wherever possible. If you choose to use a code generation tool, a Static Site Generator is preferable to bulky content management systems. SSGs often start by using a minimalist content entry format, such as markdown, and all of the compilation is done before the code is uploaded. This reduces emissions by reducing the effort the server expends serving pages to each visitor. A <abbr title="Content Management System">CMS</abbr> is dynamic. The site will involve additional computation work with server-side processing and often bulkier libraries.</label></td>
+						<td><input type="checkbox" id="3.19c"></td><td colspan="5"><label for="3.19c">Deliver static content wherever possible. If you choose to use a code generation tool, a Static Site Generator (<abbr title="Static Site Generator">SSG</abbr>) is preferable to bulky Content Management Systems (CMS). <abbr title="Static Site Generators">SSGs</abbr> often start by using a minimalist content entry format, such as Markdown, and all of the compilation is done before the code is uploaded. This reduces emissions by reducing the effort the server expends serving pages to each visitor. A <abbr title="Content Management System">CMS</abbr> is dynamic. The site will involve additional computation work with server-side processing and often bulkier libraries.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="3.19d"></td><td colspan="5"><label for="3.19d">Carefully select and review plugins, extensions, and themes to maximize interoperability, accessibility, and performance. Audit these regularly over time to ensure continued compatibility.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.19e"></td><td colspan="5"><label for="3.19e">Pay particular attention to user interface components with respect to their sustainability impact, while also paying due attention to accessibility, user experience, and the overall performance of such components.</label></td>
+						<td><input type="checkbox" id="3.19e"></td><td colspan="5"><label for="3.19e">Pay particular attention to user interface components with respect to their sustainability impact.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>

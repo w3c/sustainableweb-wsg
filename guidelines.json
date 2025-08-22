@@ -2738,7 +2738,7 @@
 						{
 							"title": "Energy intensity",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD01-2)",
-							"description": "Consider differences in the energy intensity or testable impact across each component. For example, unstyled text is less computationally intensive to render than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL.",
+							"description": "Consider differences in the energy intensity or testable impact across each component. For example, unstyled text is less computationally intensive to render than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL or 4K video.",
 							"resources": [
 								{
 									"Analysis of overconsumptions on a light website": "https://greenspector.com/en/analysis-of-overconsumptions-on-a-light-website-2/",
@@ -3030,7 +3030,7 @@
 						{
 							"title": "Assess and reduce",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-1)",
-							"description": "Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible to reduce the overall environmental impact, including Scope 3 emissions.",
+							"description": "Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions.",
 							"resources": [
 								{
 									"6 steps to reduce the carbon footprint of your website": "https://opensource.com/article/23/3/reduce-carbon-footprint-website",
@@ -3270,7 +3270,7 @@
 						{
 							"title": "Custom code",
 							"testable": "Human-testable",
-							"description": "Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use native elements or if you need to maintain tight control over the implementation of design system components.",
+							"description": "Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use native elements or if you require them for the purposes of producing reusable design system components.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.9 - Strategy (Interoperable Technologies)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -3409,7 +3409,7 @@
 						{
 							"title": "Search engines",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD09-2)",
-							"description": "Permit unobstructed access to search engines while blocking ill-intentioned robots and scripts.",
+							"description": "Permit unobstructed access to search engines while blocking unsustainable robots and scripts.",
 							"resources": [
 								{
 									"About /robots.txt": "https://www.robotstxt.org/robotstxt.html",
@@ -4003,7 +4003,7 @@
 						{
 							"title": "Dependency management",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD16-1)",
-							"description": "Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that aren't needed and removing them from your package.json file.",
+							"description": "Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that aren't needed.",
 							"resources": [
 								{
 									"Categorize Your Dependencies": "https://antfu.me/posts/categorize-deps",
@@ -4269,7 +4269,7 @@
 						{
 							"title": "Static over dynamic",
 							"testable": "Human-testable",
-							"description": "Deliver static content wherever possible. If you choose to use a code generation tool, a Static Site Generator is preferable to bulky content management systems. SSGs often start by using a minimalist content entry format, such as markdown, and all of the compilation is done before the code is uploaded. This reduces emissions by reducing the effort the server expends serving pages to each visitor. A CMS is dynamic. The site will involve additional computation work with server-side processing and often bulkier libraries.",
+							"description": "Deliver static content wherever possible. If you choose to use a code generation tool, a Static Site Generator (SSG) is preferable to bulky Content Management Systems (CMS). SSGs often start by using a minimalist content entry format, such as Markdown, and all of the compilation is done before the code is uploaded. This reduces emissions by reducing the effort the server expends serving pages to each visitor. A CMS is dynamic. The site will involve additional computation work with server-side processing and often bulkier libraries.",
 							"resources": [
 								{
 									"7 Reasons to Use a Static Site Generator": "https://www.sitepoint.com/7-reasons-use-static-site-generator/",
@@ -4312,7 +4312,7 @@
 						{
 							"title": "Interface components",
 							"testable": "Human-testable",
-							"description": "Pay particular attention to user interface components with respect to their sustainability impact, while also paying due attention to accessibility, user experience, and the overall performance of such components.",
+							"description": "Pay particular attention to user interface components with respect to their sustainability impact.",
 							"resources": [
 								{
 									"AFNOR Spec 5.3.3 & 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
