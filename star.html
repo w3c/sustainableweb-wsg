@@ -3235,7 +3235,7 @@
 					<details> <!-- HIS06-4: Check that pages have not been subjected to hijacking -->
 						<summary id="HIS06-4">HIS06-4: Check that pages have not been subjected to hijacking</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#allow-automation-but-ensure-it-is-tightly-regulated">4.6 Allow automation but ensure it is tightly regulated</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#use-automation-wisely">4.6 Use automation wisely</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for identifying compromised content within a page of a website or application. As having a secure product or service is critical to meeting the societal (people) aspect of PPP and compromised websites can place unnecessary burdens on hardware in certain circumstances, being able to identify and remove such materials is essential.</p>
 						<p>Machine testability for these events will require regular monitoring of pages for common features of hijacking events such as critical links suddenly redirecting outside of the primary domain, pages being redesigned with hacking notices, or simply being taken down and replaced with other data. Maintaining a library of established dangerous links, patterns, and features can help flag such issues.</p>
@@ -3287,7 +3287,7 @@
 					<details> <!-- HIS09-2: Deliver content using the correct, most secure protocol -->
 						<summary id="HIS09-2">HIS09-2: Deliver content using the correct, most secure protocol</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-and-requirements-of-processing-information">4.9 Consider the impact and requirements of processing information</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-and-requirements-of-data-processing">4.9 Consider the impact and requirements of data processing</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Guarantee that visitors who experience a website or application will have their experience delivered using a secure delivery route. Transmitting data using non-secure means (now that <abbr title="Secure Sockets Layer">SSL</abbr> certificates can be obtained free of charge) should never occur as there are inherent risks that can otherwise be avoided during the browsing session.</p>
 						<p>Machine testing for protocol testing will involve examining that the page is being served across <abbr title="Hypertext Transfer Protocol (Secure)">HTTPS</abbr> in opposition to HTTP (there should not be an occasion where both are available, especially if dynamic or interactive content exists). Furthermore, insecure protocols for non-browsing usage should be tested to verify they are disabled and replaced (if required) with more secure options.</p>
@@ -3311,7 +3311,7 @@
 					<details> <!-- HIS10-1: Provide distributed access to static resources via a CDN -->
 						<summary id="HIS10-1">HIS10-1: Provide distributed access to static resources via a <abbr title="Content Delivery Network">CDN</abbr></summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable">4.10 Consider <abbr title="Content Delivery Networks">CDNs</abbr> and Edge Caching</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#use-content-delivery-networks-cdns-appropriately">4.10 Consider <abbr title="Content Delivery Networks">CDNs</abbr> and Edge Caching</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Offer a mechanism for visitors to gain access to a static website or application assets in a location that is closer to them than the origin host. By utilizing a content delivery network, large media files, images, fonts, and other static assets can be distributed to regional locations so that visitors can access them quicker (as the route to the file is shorter).</p>
 						<p>Machine testing for content delivery networks should take into account the balance as to whether adding assets to multiple locations (for performance) incurs more of a sustainability cost than loading them quicker. If the value in faster loading is greater, and a CDN is in use, this qualifies as a pass. If no CDN is being used, or one is in use but the added value is neutral or negative, question its impact and whether the material should be instead hosted onsite.</p>
@@ -3334,7 +3334,7 @@
 					<details> <!-- HIS10-2: Ensure that the CDN and its chain of locations are sustainable -->
 						<summary id="HIS10-2">HIS10-2: Ensure that the CDN and its chain of locations are sustainable</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable">4.10 CDN use must be proportionate and sustainable</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#use-content-delivery-networks-cdns-appropriately">4.10 Use Content Delivery Networks (CDNs) appropriately</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Test the sustainability of the CDN against the WSG as a service provider as a third-party service in addition to any sustainability criteria and best practices that exist externally for infrastructure and hosting. This not only applies to the provider itself but to all of the nodes that it uses to supply distribution, and any third-parties it uses as part of its extended network. As such, calculating and vetting providers can be complex.</p>
 						<p>For machine testability, providers should have information about sustainability offered within a sustainability statement along with details of compliance being met plus any sustainability features they provide that enhance their service. If this information is publicly available (and uses recognized sources), it could be parsed by machine, otherwise, a sustainable provider list should be sourced.</p>
@@ -3358,7 +3358,7 @@
 					<details> <!-- HIS10-3: Provide a copy of the product or service close to the visitor -->
 						<summary id="HIS10-3">HIS10-3: Provide a copy of the product or service close to the visitor</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable">4.10 CDN use must be proportionate and sustainable</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#use-content-delivery-networks-cdns-appropriately">4.10 Use Content Delivery Networks (CDNs) appropriately</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for mirroring the content (website or application) as close to the visitor as possible to reduce the loading time as effectively as possible. This can be done using CDNs or by analyzing metrics data and deciding based on the locale of visitors where the origin host choice would be best placed (both can be useful methods).</p>
 						<p>Machine testing for this requires internal access to analytics logs to determine where visitor locations are and from this identify the best location to place information (if a CDN is used, this may be automatically done on your behalf meeting compliance requirements). If no internal access or data is available, general statistics about Internet usage could help identify trends.</p>
@@ -3381,7 +3381,7 @@
 					<details> <!-- HIS10-4: Avoid hosting dynamic resources or third-party scripts on the CDN -->
 						<summary id="HIS10-4">HIS10-4: Avoid hosting dynamic resources or third-party scripts on the CDN</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#cdn-use-must-be-proportionate-and-sustainable">4.10 CDN use must be proportionate and sustainable</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#use-content-delivery-networks-cdns-appropriately">4.10 Use Content Delivery Networks (CDNs) appropriately</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Prevent non-first-party dynamic resources from being loaded through a content delivery network. The justification behind this is due to browser mechanisms such as CORS and cache partitioning, unfavorable things can occur if you try to load dynamic resources from third-party websites (this is a security measure to prevent malicious code injection).</p>
 						<p>As this issue doesn't affect static resources such as HTML, CSS, or JSON, when testing against the criteria, these types of resources can be excluded. For more dynamic resources like JavaScript or server-side code, if the host URL differs from your own (this includes things like frameworks), flagging up an error and recommending self-hosting or integration with existing tooling should be done.</p>
