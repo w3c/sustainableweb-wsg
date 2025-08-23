@@ -101,7 +101,7 @@
 						{
 							"title": "Visitor constraints",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX02-2)",
-							"description": "Account for potential visitor constraints, such as the device age, operating system, version, browser, and connection speeds when designing and assessing the quality of user experiences.",
+							"description": "Account for potential visitor constraints, such as the device age, operating system, version, browser, VPN use, and connection speeds when designing and assessing the quality of user experiences.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -432,7 +432,7 @@
 						{
 							"title": "Efficient paths",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX06-1)",
-							"description": "Make access as simple and efficient as possible. Displaying the time required to complete an action, avoiding too much choice, and ensuring visitors understand requirements at the start of a journey can improve user efficiency.",
+							"description": "Make access as simple and efficient as possible. Displaying the time required to complete an action, reduction of choice, and ensuring visitors understand requirements at the start of a journey can improve user efficiency.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
