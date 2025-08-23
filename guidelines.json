@@ -5796,9 +5796,9 @@
 					"guideline": "Have an ethical and sustainable product strategy",
 					"criteria": [
 						{
-							"title": "Statement availability",
+							"title": "Public documents",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-1)",
-							"description": "The organization has published a publicly available Code of Ethics, Product Guidelines, Sustainability, or PPP Statement that includes language specific to digital products, services, policies, and programs.",
+							"description": "Develop, publish and maintain key policies, such as a code of ethics, product guidelines, sustainability statements, and/or other documents that include language specific to digital products, services, policies, and programs. Make these publicly accessible and transparently versioned formats.",
 							"resources": [
 								{
 									"A Guide To Developing Your Organization's Code of Ethics (PDF)": "https://www.shrm.org/content/dam/en/shrm/about/organization-coe.pdf",
@@ -5819,7 +5819,7 @@
 						{
 							"title": "Achievements and compliance",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-2)",
-							"description": "Achievements, features, compliance, and anything beyond the scope of these guidelines are published within a sustainability section of your product or service.",
+							"description": "Publish achievements, features, compliance, and anything beyond the scope of these guidelines within a dedicated sustainability section.",
 							"resources": [
 								{
 									"8 places to share your sustainability practices on your website": "https://www.sustain.life/blog/sustainability-practices-on-your-website",
@@ -5836,7 +5836,7 @@
 						{
 							"title": "Governance over time",
 							"testable": "Human-testable",
-							"description": "Evidence is provided by the organization showing how it effectively governs implemented digital sustainability, climate policies, and related PPP practices over time.",
+							"description": "Provide evidence to demonstrate how digital sustainability policies, climate policies, and related practices are effectively implemented, monitored, and governed over time.",
 							"resources": [
 								{
 									"Action Plan for Sustainable Planet in the Digital Age (PDF)": "https://www.sparkblue.org/codesactionplanlaunch",
@@ -5862,7 +5862,7 @@
 						{
 							"title": "Onboarding new members",
 							"testable": "Human-testable",
-							"description": "Training decks and workshops are provided by the organization for onboarding new team members on how it implements more sustainable product strategies.",
+							"description": "Provide training decks and workshops to support onboarding new team members in relation to sustainable product strategies.",
 							"resources": [
 								{
 									"Boring Web Development": "https://meiert.com/blog/boring-web-development/",
@@ -5886,7 +5886,7 @@
 						{
 							"title": "Documentation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-5)",
-							"description": "Your methodology has been documented through impact storytelling, documentation, and helping individuals make more informed decisions in order to raise awareness with your visitors.",
+							"description": "Document your methodology through impact storytelling, documentation, and creating resources to help individuals make more informed decisions and raise awareness among your visitors.",
 							"resources": [
 								{
 									"Boring Web Development": "https://meiert.com/blog/boring-web-development/",
@@ -5911,9 +5911,9 @@
 							]
 						},
 						{
-							"title": "Renewable showcasing",
+							"title": "Renewable evidence",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-6)",
-							"description": "The organization can show how it powers digital products and services with renewable energy.",
+							"description": "Demonstrate how digital products and services are powered using renewable energy.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.3 and 5.4.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -5963,13 +5963,13 @@
 				},
 				{
 					"id": "2",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#assign-a-sustainability-representative",
-					"guideline": "Assign a sustainability representative",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#assign-a-sustainability-advocate",
+					"guideline": "Assign a sustainability advocate",
 					"criteria": [
 						{
-							"title": "Ecological referee",
+							"title": "Advocate for sustainability",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM02-1)",
-							"description": "An ecological referee (with specific digital expertise) for the product or service within your organization has been assigned and empowered with the tools they require (resources, budget, time, etc.) to achieve their stated goals.",
+							"description": "Assign a sustainability advocate with specific digital expertise and provide them with the resources, budget, tools, and time they need to achieve their stated goals. In some organizations, expanding this into a climate working group comprising motivated individuals can add further benefits.",
 							"resources": [
 								{
 									"Chief sustainability officer": "https://en.wikipedia.org/wiki/Chief_sustainability_officer",
@@ -6020,7 +6020,7 @@
 						{
 							"title": "Inform and aware",
 							"testable": "Human-testable",
-							"description": "All project stakeholders, including product teams, colleagues, and organizational decision-makers (managers and clients) are informed about and trained in both general and digital climate literacy, including your business's use of sustainable technology.",
+							"description": "Inform and deliver training to all affected parties, including product teams, colleagues, and organizational decision-makers - both managers and clients - in both general and digital climate literacy, as well as your own sustainable technology policies.",
 							"resources": [
 								{
 									"AFNOR Spec 5.5.1 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -6035,9 +6035,9 @@
 							]
 						},
 						{
-							"title": "Trained and prepared",
+							"title": "Routine training",
 							"testable": "Human-testable",
-							"description": "Active and routine training is delivered where possible to develop, establish, and refresh skills in sustainability. This can be undertaken through in-house training, courses, workshops, events, webinars, meetups, or other ongoing or on-demand methods to empower your team to deliver on sustainability objectives.",
+							"description": "Provide active and routine training where possible to develop, establish, and refresh skills relating to sustainability. This can be delivered as in-house training, courses, workshops, events, webinars, meetups, or other ongoing or on-demand methods that support your team in achieving sustainability objectives.",
 							"resources": [
 								{
 									"AFNOR Spec 5.5.1 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -6055,7 +6055,7 @@
 						{
 							"title": "Active participation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM03-3)",
-							"description": "Stakeholders have been actively encouraged to reduce their environmental impact, share climate and sustainable initiatives and ideas, and resources on sustainable design, best practices, and concepts are provided to assist with this task.",
+							"description": "Encourage participants to reduce their environmental impact. Share climate and sustainable initiatives and ideas. Provide resources on sustainable design, best practices, and concepts to assist them.",
 							"resources": [
 								{
 									"Climate Voice": "https://climatevoice.org/",
@@ -6099,13 +6099,13 @@
 				},
 				{
 					"id": "4",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#communicate-the-ecological-impact-of-user-choices",
-					"guideline": "Communicate the ecological impact of user choices",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#communicate-the-environmental-impact-of-user-choices",
+					"guideline": "Communicate the environmental impact of user choices",
 					"criteria": [
 						{
-							"title": "Impact communication",
+							"title": "Communication of impact",
 							"testable": "Human-testable",
-							"description": "The ecological implications of visitor choices have been clearly communicated and visitors can configure settings based on those choices.",
+							"description": "Clearly communicate the environmental impact of different visitor choices and allow visitors to configure settings based on the information provided.",
 							"resources": [
 								{
 									"Communicating Sustainability": "https://www.researchgate.net/publication/308484180_Communicating_Sustainability_An_Operational_Model_for_Evaluating_Corporate_Websites",
@@ -6149,13 +6149,13 @@
 				},
 				{
 					"id": "5",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#estimate-a-product-or-service-s-environmental-impact",
-					"guideline": "Estimate a product or service's environmental impact",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#estimate-the-environmental-impact",
+					"guideline": "Estimate the environmental impact",
 					"criteria": [
 						{
 							"title": "Life-cycle analysis",
 							"testable": "Human-testable",
-							"description": "A full life-cycle Analysis based on the functional unit defined in Guideline 5.15 has been conducted.",
+							"description": "Conduct a full life-cycle analysis based on the functional unit defined under Guideline 5.15.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.3 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -6181,7 +6181,7 @@
 						{
 							"title": "Competitor impact",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM05-2)",
-							"description": "The environmental impact of your or a competitor's current service to inform decision-making (as a potential target goal) has been calculated.",
+							"description": "Calculate the environmental impact of your or a competitor's current service to inform decision-making targets.",
 							"resources": [
 								{
 									"Apples and oranges? The challenges of comparing sustainability reporting": "https://insights.ieseg.fr/en/resource-center/comparing-sustainability-reporting/",
@@ -6200,7 +6200,7 @@
 						{
 							"title": "Tooling impact",
 							"testable": "Human-testable",
-							"description": "When identifying the environmental impact of your product or service, you must include the impact (or estimates of) of any tooling used to create the product or service along with any third-party solutions utilized in the pipeline. While not created by you, the emissions they generate from production to maintenance are considered integral to your overall solution.",
+							"description": "Include the impact or estimated impact of any tooling or third-party solutions used at any stage in your pipeline. While not created by you, the emissions generated in production, maintenance, and use are also integral to your overall solution.",
 							"resources": [
 								{
 									"Best Practice: Limit the number of third-party services": "https://greenspector.com/en/best-practice-limit-the-number-of-third-party-services/",
@@ -6250,7 +6250,7 @@
 						{
 							"title": "Sustainability goals",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM06-1)",
-							"description": "The organization has defined and published a clear set of sustainability goals. It publicly communicates how it will meet these goals, including which performance metrics are important to help the organization and its various stakeholders thrive.",
+							"description": "Define and publish a clear set of sustainability goals. Publicly communicate how these goals can be met, including which performance metrics can be measured to help the organization and its various affected parties act more sustainably.",
 							"resources": [
 								{
 									"13 SMART Goals Examples for Environmental Sustainability": "https://successindepth.com/smart-goals-for-sustainability/",
@@ -6302,13 +6302,13 @@
 				},
 				{
 					"id": "7",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#verify-your-efforts-using-established-third-party-business-certifications",
-					"guideline": "Verify your efforts using established third-party business certifications",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#validate-your-efforts-using-established-third-party-certifications",
+					"guideline": "Validate efforts using established third-party certifications",
 					"criteria": [
 						{
-							"title": "Certification achievement",
+							"title": "Obtaining certifications",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM07-1)",
-							"description": "The organization has achieved one or more business sustainability certifications and incorporated operational policies and practices to support them.",
+							"description": "Obtain one or more sustainability certifications and incorporate operational policies and practices in alignment with their guidance.",
 							"resources": [
 								{
 									"10 different sustainability certifications to consider": "https://uk.indeed.com/career-advice/career-development/sustainability-certification",
@@ -6322,9 +6322,9 @@
 							]
 						},
 						{
-							"title": "Certification maintenance",
+							"title": "Maintaining certifications",
 							"testable": "Human-testable",
-							"description": "The organization maintains its certification through evolving policies and practices over time.",
+							"description": "Maintains sustainability certifications through continuing to meet their criteria and evolving policies and practices over time.",
 							"resources": [
 								{
 									"A Complete Guide to Starting a B Corp": "https://www.uschamber.com/co/start/strategy/b-corp-advantages-and-requirements",
@@ -6370,7 +6370,7 @@
 						{
 							"title": "Training materials",
 							"testable": "Human-testable",
-							"description": "The organization has dedicated training manuals, workshops, and materials that outline the PPP policies and practices it follows and how to implement them. While managing and maintaining these materials over time, adapting them as new policies and practices arise.",
+							"description": "Create and/or deliver dedicated training manuals, workshops, and materials to outline the sustainability policies and practices adopted and how to implement them. Manage and maintain these materials over time, adapting them as new policies and best practices arise.",
 							"resources": [
 								{
 									"An Introduction to Corporate Sustainability Training": "https://nexioprojects.com/an-introduction-to-corporate-sustainability-training/",
@@ -6386,9 +6386,9 @@
 							]
 						},
 						{
-							"title": "Progress incentivisation",
+							"title": "Incentivize progress",
 							"testable": "Human-testable",
-							"description": "The organization incentivizes leadership, teams, and stakeholders to make progress toward the goals outlined in their training, including time for sustainability activities, recognition for completion, and so on.",
+							"description": "Incentivize leadership, teams, and individuals to make progress toward the goals outlined in their training. Examples include dedicating time for sustainability-related activities, recognizing completion, and other benefits.",
 							"resources": [
 								{
 									"5 Business Management Strategies We Learned as a B Corp": "https://bthechange.com/5-business-management-strategies-we-learned-as-a-b-corp-42e91639c6ae",	
@@ -6410,7 +6410,7 @@
 						{
 							"title": "Negative variables",
 							"testable": "Human-testable",
-							"description": "The organization anticipates and maps potential negative external variables on the service, and acts to minimize their overall impact.",
+							"description": "Anticipate and map potential negative external variables and act to minimize their overall impact.",
 							"resources": [
 								{
 									"OWASP Top 10 Privacy Risks": "https://owasp.org/www-project-top-10-privacy-risks/",
@@ -6456,7 +6456,7 @@
 						{
 							"title": "Policies and practices",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM09-1)",
-							"description": "The organization has created and published policies and practices for disclosing the social and environmental impacts of its products, services, policies, and programs in line with existing reporting standards such as GRI Performance, SASB, etc.",
+							"description": "Create and publish policies and practices to disclose the social and environmental impacts of its products, programs, and services in line with existing reporting standards such as GRI, SASB, etc.",
 							"resources": [
 								{
 									"6 inspiring CSR report examples for CSRD compliance": "https://www.maglr.com/blog/6-inspiring-csr-report-examples-for-csrd-compliance",
@@ -6471,9 +6471,9 @@
 							]
 						},
 						{
-							"title": "Impact report",
+							"title": "Impact reports",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM09-2)",
-							"description": "The organization produces a publicly available impact report outlining its progress against previous reports on social and environmental goals at least once per year.",
+							"description": "Produce a publicly available impact report outlining progress compared to previous reports on social and environmental goals at least once per year.",
 							"resources": [
 								{
 									"2020 Impact Reports That Impacted Us": "https://unitofimpact.com/2020-impact-reports-that-impacted-us/",
@@ -6490,7 +6490,7 @@
 						{
 							"title": "Standards and policies",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM09-3)",
-							"description": "The organization publicly and transparently follows existing or emerging environmental standards and legislative policy that promotes mandatory disclosures and reporting for emissions. This is done alongside other social and environmental criteria in its impact reporting, maintaining these practices over time for future reports.",
+							"description": "Publicly and transparently demonstrate commitment over time to following and adopting existing and/or emerging environmental standards and legislative policy that promotes mandatory emissions disclosures and reporting. ",
 							"resources": [
 								{
 									"CSRD Essentials (PDF)": "https://www.globalreporting.org/media/nchpzct5/gri-csrd-essentials.pdf",
@@ -6510,7 +6510,7 @@
 						{
 							"title": "Impact reduction",
 							"testable": "Human-testable",
-							"description": "The organization clearly identifies how it reduces its environmental impact, avoiding double accounting, greenwashing, excluded data, or other manipulative techniques.",
+							"description": "Clearly identify how environmental impact is being reduced, with careful avoidance of double accounting, greenwashing, data exclusion, or other misleading or manipulative techniques.",
 							"resources": [
 								{
 									"Green digital sector": "https://digital-strategy.ec.europa.eu/en/policies/green-digital",
@@ -6560,7 +6560,7 @@
 						{
 							"title": "Theory of change",
 							"testable": "Human-testable",
-							"description": "The organization has completed (and operationalized) a Theory of Change process with requisite documentation to identify the impact it hopes to create, how it will generate revenue, shared, or added value from these activities, how it will measure results based on desired outcomes; or in the case of launched projects, is generating revenue, actively tracking and measuring progress against any desired outcomes.",
+							"description": "Complete and operationalize a theory of change process with requisite documentation to identify the impact the organization aspires to achieve, how it will generate revenue, how it will create shared or added value from these activities, and how it will measure results based on desired outcomes. In the case of projects already underway, how these are generating revenue and actively tracking and measuring progress against desired outcomes.",
 							"resources": [
 								{
 									"5 Steps to Calculating Your Sustainability ROI": "https://www.eco-coach.com/blog/2019/11/9/5-steps-to-calculating-your-sustainability-roi",
@@ -6614,7 +6614,7 @@
 						{
 							"title": "Management and maintenance",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM11-1)",
-							"description": "The organization has documented policies outlining how it approaches product management and maintenance.",
+							"description": "Produce and maintain documentation to outline how the organization approaches product management and maintenance.",
 							"resources": [
 								{
 									"21 Product Management Frameworks": "https://productfolio.com/21-product-management-frameworks/",
@@ -6630,7 +6630,7 @@
 						{
 							"title": "Planning strategy",
 							"testable": "Human-testable",
-							"description": "The organization has maintenance / security plans in place for all the digital products and services it manages.",
+							"description": "Establish maintenance and security plans for all digital products and services.",
 							"resources": [
 								{
 									"Complete Website Maintenance Checklist": "https://www.dreamhost.com/blog/complete-website-maintenance-checklist/",
@@ -6649,7 +6649,7 @@
 						{
 							"title": "Resourcing products",
 							"testable": "Human-testable",
-							"description": "The organization appropriately resources products over time via staffing and budgeting to support refactoring code, addressing technical debt, new product features, ongoing testing, and product or service maintenance plans to continue supporting its customers, visitors, and other stakeholders.",
+							"description": "Appropriately resource products over time via staffing and budgeting to support code refactoring, address technical debt, introduce new product features, test functionality, and produce product or service maintenance plans to continue supporting customers, visitors, and other affected parties.",
 							"resources": [
 								{
 									"Code Refactoring: Meaning, Benefits and Best Practices": "https://maddevs.io/blog/code-refactoring/",
@@ -6667,7 +6667,7 @@
 						{
 							"title": "Resource measurement",
 							"testable": "Human-testable",
-							"description": "The organization incorporates carbon and resource measurement into maintenance programs and can show measurable improvement over time.",
+							"description": "Incorporate carbon and resource measurement into maintenance programs and show measurable improvement over time.",
 							"resources": [
 								{
 									"Environmental Sustainability in Business Examples": "https://www.ecohedge.com/blog/environmental-sustainability-in-business-examples-a-guide/",
@@ -6687,7 +6687,7 @@
 						{
 							"title": "Failure indicators",
 							"testable": "Human-testable",
-							"description": "The organization has both identified and documented Key Failure Indicators (KFIs) and implements resolutions to prevent non-acceptable sustainability impacts from occurring.",
+							"description": "Identify and document Key Failure Indicators (KFIs) and implement resolutions to prevent negative sustainability impacts.",
 							"resources": [
 								{
 									"Consequence Scanning": "https://doteveryone.org.uk/project/consequence-scanning/",
@@ -6733,7 +6733,7 @@
 						{
 							"title": "Continuous improvement",
 							"testable": "Human-testable",
-							"description": "The organization has created policies and practices to enable continuous improvement and has resourced the organization appropriately to support these efforts over time.",
+							"description": "Establish policies and practices to enable continuous improvement and resource practices appropriately to support these efforts over time.",
 							"resources": [
 								{
 									"6 stages of continuous improvement and why it is important": "https://www.betterup.com/blog/continuous-improvement",
@@ -6761,9 +6761,9 @@
 							]
 						},
 						{
-							"title": "Agile reviews",
+							"title": "Retrospectives conducted",
 							"testable": "Human-testable",
-							"description": "Agile sprints and update frequency have gone through a review process to ensure project teams have enough time to conduct user-research, identify technical debt, and produce quality output.",
+							"description": "Review deliverables and update frequency to ensure project teams have enough time to conduct user research, identify technical debt, and produce high-quality output as well as share what they learned.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.4 - Strategy (Regular Reviews)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -6780,7 +6780,7 @@
 						{
 							"title": "Iterative consideration",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM12-3)",
-							"description": "A track record of continuous improvement (iteration) usage to analyze your website or application while also addressing the by-products and potential consequences of ongoing experimentation, such as technical debt, product performance, emissions, and related issues is clearly visible. Analytics are limited to only necessary features to aid with decision-making, encouraging visitor feedback, and comparing performance against business goals and visitor needs.",
+							"description": "Display a track record of continuous improvement (iteration) processes to analyze the digital product or service. Simultaneously address any potential consequences of ongoing experimentation, such as technical debt, product performance, and emissions. Analytics are limited to strictly necessary features that aid decision-making, encouraging visitor feedback, and comparing performance against business goals and visitor needs.",
 							"resources": [
 								{
 									"An Introduction to Growth Driven Design (PDF)": "https://cdn2.hubspot.net/hubfs/124445/docs/ebook-growth.pdf?t=1488562926580",
@@ -6804,7 +6804,7 @@
 						{
 							"title": "Functionality decisions",
 							"testable": "Human-testable",
-							"description": "The retention of existing features, the creation of new functionality, and the decommission or elimination of unused functionality, and unvisited pages through the product's life cycle have been justified and prioritized on a case by case basis.",
+							"description": "Justify and prioritize the retention of existing features, the creation of new functionality, and the decommissioning or elimination of unused functionality or low-traffic content throughout the product's life cycle on a case-by-case basis.",
 							"resources": [
 								{
 									"A guide to feature sunset and product decommissioning": "https://blog.logrocket.com/product-management/feature-sunset-product-decommissioning-guide/",
@@ -6826,7 +6826,7 @@
 						{
 							"title": "Security updates",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM12-5)",
-							"description": "Corrective security and policy updates during the product or service lifecycle are provided, while such improvements are distinguished from more extensive evolutionary updates.",
+							"description": "Provide corrective security and policy updates during the product or service life cycle. These should be distinguished from more extensive evolutionary updates.",
 							"resources": [
 								{
 									"Best Practices for Material Updates to Your Privacy Policy": "https://www.termsfeed.com/blog/best-practices-material-updates-privacy-policy/",
@@ -6846,7 +6846,7 @@
 						{
 							"title": "Skills and maintenance",
 							"testable": "Human-testable",
-							"description": "Sustainable product and data strategies have been developed with appropriate training techniques. These should help your team (managers, colleagues, etc) build capacity and learn new skills to manage and maintain products and services over time.",
+							"description": "Develop sustainable product and data strategies using appropriate training techniques. These should help your team build capacity and learn new skills to manage and maintain products and services over time.",
 							"resources": [
 								{
 									"An Introduction to Corporate Sustainability Training": "https://nexioprojects.com/an-introduction-to-corporate-sustainability-training/",
@@ -6903,7 +6903,7 @@
 						{
 							"title": "Feature changes",
 							"testable": "Human-testable",
-							"description": "Adding, updating, or removing features are considered where appropriate to the user experience of the product or service.",
+							"description": "Add, update, or remove features where this can improve user experience.",
 							"resources": [
 								{
 									"Common Changelog": "https://common-changelog.org/",
@@ -6953,7 +6953,7 @@
 						{
 							"title": "Sustainable Development Goals",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM14-1)",
-							"description": "The product or service identifies within a sustainability statement where it aligns with one of the U.N. (SDGs) and its appropriate targets.",
+							"description": "Identify where the product or service aligns with one of the UN (SDGs) and its appropriate targets within a sustainability statement.",
 							"resources": [
 								{
 									"10 Degrees Sustainability": "https://www.10degrees.uk/sustainability/",
@@ -6968,7 +6968,7 @@
 						{
 							"title": "Creation evaluation",
 							"testable": "Human-testable",
-							"description": "The product or service has been determined as necessary based upon desirability, feasibility, and viability factors.",
+							"description": "Determine that the product or service is necessary based upon desirability, feasibility, and viability factors.",
 							"resources": [
 								{
 									"14 Ways To Determine Need Before Launching A New Product Or Service": "https://www.forbes.com/councils/forbesbusinesscouncil/2021/07/06/14-ways-to-determine-need-before-launching-a-new-product-or-service/",
@@ -6984,7 +6984,7 @@
 						{
 							"title": "Avoid duplication",
 							"testable": "Human-testable",
-							"description": "No existing digital product or service offers the same value. An analysis has been conducted if necessary to understand the market for this requirement.",
+							"description": "Establish that no existing digital product or service offers the same value. Conduct an analysis to understand the market for this requirement.",
 							"resources": [
 								{
 									"Apples and oranges? The challenges of comparing sustainability reporting": "https://insights.ieseg.fr/en/resource-center/comparing-sustainability-reporting/",
@@ -6999,7 +6999,7 @@
 						{
 							"title": "Obstacle consideration",
 							"testable": "Human-testable",
-							"description": "Any obstacles to using a product or service, such as accessibility, equality, technical, or territorial have been overcome.",
+							"description": "Remove or alleviate any obstacles to using a product or service, such as accessibility, equality, technical, or territorial.",
 							"resources": [
 								{
 									"Digital divide": "https://en.wikipedia.org/wiki/Digital_divide",
@@ -7046,9 +7046,9 @@
 					"guideline": "Conduct a full life-cycle assessment",
 					"criteria": [
 						{
-							"title": "Life-cycle Assessment",
+							"title": "Life-cycle assessment",
 							"testable": "Human-testable",
-							"description": "A life-cycle Assessment (LCA) has been conducted to define the requirements of your product's function throughout its lifecycle.",
+							"description": "Conduct a Life-cycle assessment (LCA) to define sustainability-related functional impacts throughout a product's lifetime.",
 							"resources": [
 								{
 									"Building a Sustainable ICT Ecosystem (PDF)": "https://ictc-ctic.ca/media/830/download",
@@ -7094,13 +7094,13 @@
 				},
 				{
 					"id": "16",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#create-a-supplier-standards-of-practice",
-					"guideline": "Provide a supplier standards of practice",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-a-supplier-standards-of-practice-document",
+					"guideline": "Provide a supplier standards of practice document",
 					"criteria": [
 						{
 							"title": "Vetting potential partners",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM16-1)",
-							"description": "The organization has created specific policies to vet potential partners in its supply chain based on PPP principles.",
+							"description": "Create specific policies to vet potential partners along the supply chain based on sustainability principles.",
 							"resources": [
 								{
 									"Client, Partner, and Supplier Screening Tools for Positive Impact Supply Chains": "https://bthechange.com/client-partner-and-supplier-screening-tools-for-positive-impact-supply-chains-6edf0eb156fc",
@@ -7123,7 +7123,7 @@
 						{
 							"title": "Collaborative measurement",
 							"testable": "Human-testable",
-							"description": "The organization has partnered with suppliers to create, track, and measure collective impact on issues that impact their stakeholders.",
+							"description": "Partner with suppliers to create, track and measure impact on issues that impact affected parties.",
 							"resources": [
 								{
 									"Collaboration Is Key to a Sustainable Supply Chain": "https://www.industryweek.com/supply-chain/customer-relationships/article/21163771/collaboration-is-key-to-a-sustainable-supply-chain",
@@ -7144,7 +7144,7 @@
 						{
 							"title": "Informative partner promotion",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM16-3)",
-							"description": "The organization has promoted its partnerships in a publicly available place, along with information on how the partnership creates a collective impact.",
+							"description": "Promote and disclose partnerships in a publicly available place, along with information on how the partnership creates a collective impact.",
 							"resources": [
 								{
 									"GR491 - 1-3007 - Management Alignment": "https://gr491.isit-europe.org/en/crit.php?id=1-3007-uxui-for-the-sustainable-it-issue-to-be",
@@ -7186,13 +7186,13 @@
 				},
 				{
 					"id": "17",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#share-any-economic-benefits",
-					"guideline": "Share any economic benefits",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#share-economic-benefits",
+					"guideline": "Share economic benefits",
 					"criteria": [
 						{
 							"title": "Living wage",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM17-1)",
-							"description": "The organization is publicly committed to paying employees, contractors, and other stakeholders a living wage.",
+							"description": "Publicly commit to paying employees, contractors, and other affected parties a living wage.",
 							"resources": [
 								{
 									"GR491 - 2-8019 - Employee Salary Conditions": "https://gr491.isit-europe.org/en/crit.php?id=2-8019-hosting-the-24/7-supervision-needs-of-data-centers",
@@ -7211,7 +7211,7 @@
 						{
 							"title": "Incentivisation",
 							"testable": "Human-testable",
-							"description": "The organization has policies and practices in place to incentivize stakeholders, such as workers and contractors, to meet its impact goals.",
+							"description": "Have policies and practices to incentivize affected parties, such as workers and contractors, to meet impact goals.",
 							"resources": [
 								{
 									"7 Strategies to Motivate Lasting Sustainability Practices": "https://bthechange.com/7-strategies-to-motivate-lasting-sustainability-practices-2098a5fb72f2",
@@ -7227,7 +7227,7 @@
 						{
 							"title": "Employee benefits",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM17-3)",
-							"description": "The organization provides benefits to employees in accordance with its resources, including, where relevant, healthcare, retirement planning, flex time, profit sharing, and so on.",
+							"description": "Provide benefits to employees in accordance with resources, including, where relevant, healthcare, retirement planning, flex time, profit sharing, and more.",
 							"resources": [
 								{
 									"100 Unique Employee Benefits Ideas": "https://wellhub.com/en-uk/blog/wellness-and-benefits-programmes/unique-employee-benefit-ideas/",
@@ -7242,9 +7242,9 @@
 							]
 						},
 						{
-							"title": "Legislation advocation",
+							"title": "Legislation advocacy",
 							"testable": "Human-testable",
-							"description": "The organization advocates for responsible legislation that supports employment rights, transparency, and accountability related to sharing economic benefits.",
+							"description": "Advocate for responsible legislation that supports employment rights, transparency, and accountability related to sharing economic benefits.",
 							"resources": [
 								{
 									"Fair Labor": "https://www.fairlabor.org/",
@@ -7289,13 +7289,13 @@
 				},
 				{
 					"id": "18",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#share-decision-making-power-with-appropriate-stakeholders",
-					"guideline": "Share decision-making power with appropriate stakeholders",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#share-decision-making-power-with-affected-parties",
+					"guideline": "Share decision-making power with affected parties",
 					"criteria": [
 						{
 							"title": "Decision-making",
 							"testable": "Human-testable",
-							"description": "The project team's goals are aligned with key business objectives, and project stakeholders (for example, project managers) have the power and autonomy to make key decisions on the organization's behalf.",
+							"description": "Align the project team's goals with key business objectives, and affected parties (for example, project managers) have the power and autonomy to make key decisions on the organization's behalf.",
 							"resources": [
 								{
 									"Give the planet a seat at the table": "https://www.bcs.org/articles-opinion-and-research/give-the-planet-a-seat-at-the-table/",
@@ -7342,7 +7342,7 @@
 						{
 							"title": "JEDI practices",
 							"testable": "Human-testable",
-							"description": "The organization has documented its commitment to JEDI practices with clear policies on how it prioritizes marginalized or otherwise underserved communities, including Black, Indigenous, People of Color, LGBTQIA+, Women, Disabled, Veterans, Seniors, and so on.",
+							"description": "Document commitments to JEDI practices with clear policies on how marginalized or otherwise underserved communities are prioritized.",
 							"resources": [
 								{
 									"How to Create a Diversity & Inclusion Mission Statement": "https://www.cultureally.com/blog/howtocreateadiversityinclusionmissionstatement",
@@ -7362,7 +7362,7 @@
 						{
 							"title": "Accessibility policy",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM19-2)",
-							"description": "The organization has an accessibility policy for digital products and services and can show this via a verified accessible website, application, product, or service.",
+							"description": "Establish a publicly displayed accessibility policy and demonstrate this via accessible digital products or services.",
 							"resources": [
 								{
 									"Digital Product Accessibility Policy": "https://www.bbc.co.uk/accessibility/forproducts/policy/",
@@ -7379,7 +7379,7 @@
 						{
 							"title": "JEDI training",
 							"testable": "Human-testable",
-							"description": "The organization has JEDI-related training materials and schedules ongoing workshops related to how this topic manifests itself in digital products and services (algorithmic bias, digital divide, gig economy work, mis / disinformation, etc).",
+							"description": "Provide JEDI-related training materials and schedule regular workshops related to how this topic manifests itself in digital products and services, covering topics such as algorithmic bias, digital divide, employment, mis- and disinformation.",
 							"resources": [
 								{
 									"Digital divide": "https://en.wikipedia.org/wiki/Digital_divide",
@@ -7397,7 +7397,7 @@
 						{
 							"title": "JEDI improvements",
 							"testable": "Human-testable",
-							"description": "The organization can show measurable JEDI improvement over time in its hiring, leadership, and operations.",
+							"description": "Show measurable improvement over time across hiring, leadership, and operations.",
 							"resources": [
 								{
 									"Designing web services for people living in data poverty": "https://www.wholegraindigital.com/blog/designing-web-services-for-people-living-in-data-poverty/",
@@ -7418,7 +7418,7 @@
 						{
 							"title": "JEDI legislation",
 							"testable": "Human-testable",
-							"description": "The organization advocates for responsible legislation relating to JEDI practices, especially as related to digital products and services.",
+							"description": "Advocate for responsible legislation relating to JEDI practices, especially as they relate to digital products and services.",
 							"resources": [
 								{
 									"4 Powerful Ways Business Leaders Can Advocate for Women, Minority, and LGBTQ Workers": "https://www.inc.com/marcel-schwantes/4-powerful-ways-business-leaders-can-advocate-for-women-minority-lgbtq-workers.html",
@@ -7468,7 +7468,7 @@
 						{
 							"title": "Data practices",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM20-1)",
-							"description": "The organization maintains a publicly accessible Privacy Policy, Terms and Conditions, or any other documents required by local law, that adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. These documents are available in accessible formats and use clear, user-friendly language to ensure comprehension by all visitors, avoiding jargon, technical language, and legalese. The organization also supports emerging legislation and implements best practices related to data privacy, sustainability, and responsible data management.",
+							"description": "Maintain a publicly accessible privacy policy, terms and conditions, and any other documents as required by law in the jurisdictions in which the product or service operates. Adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. Provide documents in accessible formats and use clear, user-friendly language to ensure comprehension by all visitors. Avoid unnecessary jargon, technical language, and legalese. Support emerging legislation and implement best practices related to data privacy, sustainability, and responsible data management.",
 							"resources": [
 								{
 									"5 Essential Legal Pages Every Website Need": "https://www.codeconspirators.com/5-essential-legal-pages-every-website-need/",
@@ -7483,7 +7483,7 @@
 						{
 							"title": "Data ownership",
 							"testable": "Human-testable",
-							"description": "The organization can show measurable progress over time in respecting data privacy and ownership. This will include how the organization handles data disposal and a visitor's \"right to be forgotten\", along with ownership rights and providing the ability to download / export data they have contributed into a non-proprietary format.",
+							"description": "Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a visitor's \"right to be forgotten\" will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.",
 							"resources": [
 								{
 									"10 CCPA Compliance Tips For Web Developers": "https://dataoverhaulers.medium.com/10-ccpa-compliance-tips-for-web-developers-1ce8382c7286",
@@ -7544,7 +7544,7 @@
 						{
 							"title": "Outdated content",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM21-1)",
-							"description": "Outdated or otherwise expired product content and data are archived and deleted via automated expiration dates and scheduled product audits. An archiving schedule with a lighter version of the old searchable content is made available.",
+							"description": "Archive and delete outdated or otherwise expired product content and data via automated expiration dates and scheduled product audits. Publish the archiving schedule, ensuring a lightweight version of the old searchable content is maintained for those that may require it.",
 							"resources": [
 								{
 									"Evergreen Content is More Sustainable": "https://www.mightybytes.com/blog/content-governance-evergreen-content/",
@@ -7566,7 +7566,7 @@
 						{
 							"title": "Data controllers",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM21-2)",
-							"description": "Users can control, manage, and delete their data, subscriptions, and accounts.",
+							"description": "Allow users to control, manage, and delete their data, subscriptions, and accounts.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -7624,7 +7624,7 @@
 						{
 							"title": "Emerging technologies",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM22-1)",
-							"description": "The organization has public-facing policies in place for emerging technologies, and all such technologies are ethically sourced, screened, validated, and implemented in a non-discriminatory, responsible manner.",
+							"description": "Establish public-facing policies for emerging technologies. Ensure all such technologies and their datasets are ethically sourced, screened, validated, and implemented in a non-discriminatory, responsible manner.",
 							"resources": [
 								{
 									"AI transparency framework": "https://uxdesign.cc/ai-transparency-framework-cf89fa61dc1b",
@@ -7643,7 +7643,7 @@
 						{
 							"title": "Disruptive technology",
 							"testable": "Human-testable",
-							"description": "The organization shows how it up-skills workers as new technologies and practices potentially disrupt its business model.",
+							"description": "Show how workers are trained as new technologies and practices potentially disrupt its business model.",
 							"resources": [
 								{
 									"AI Overviews Reduce Clicks by 34.5%": "https://ahrefs.com/blog/ai-overviews-reduce-clicks/",
@@ -7665,7 +7665,7 @@
 						{
 							"title": "Technology legislation",
 							"testable": "Human-testable",
-							"description": "The organization supports and complies with responsible legislation related to automation and emerging technologies (such as the EU AI Act).",
+							"description": "Support and comply with responsible legislation related to emerging technologies.",
 							"resources": [
 								{
 									"AI Act is Here": "https://alvaromontoro.com/blog/68057/ai-act-is-here",
@@ -7683,7 +7683,7 @@
 						{
 							"title": "Environmental responsibilities",
 							"testable": "Human-testable",
-							"description": "Organizations must consider, audit, and account for any environmental considerations that may derive from the use of emerging technologies they wish to either promote or implement within a chosen setting. Also note that this should include third-party choices, the \"expense\" (in terms of waste or emissions) of the utilization of the technology to create a desired result and consequential issues to the environment that may arise from its deployment.",
+							"description": "Audit and account for any environmental considerations that may derive from the use of emerging technologies wishing to be promoted or implemented. This should include third-party choices, the expense in terms of waste or emissions of using the technology to create a desired result, and consequences that may arise from its deployment.",
 							"resources": [
 								{
 									"3rd Global CryptoAsset Benchmarking Study (PDF)": "https://www.jbs.cam.ac.uk/wp-content/uploads/2021/01/2021-ccaf-3rd-global-cryptoasset-benchmarking-study.pdf",
@@ -7764,7 +7764,7 @@
 						{
 							"title": "Automated tooling",
 							"testable": "Human-testable",
-							"description": "Automated tooling, scrapers, spiders, bots, Artificial Intelligence, and other forms of machine-assisted data gathering must abide by requests to opt out at the host, server, or website level. Providers must declare themselves as non-human when requesting within the user-agent / HTTP header. Providers must also publish impact reports relating to their gathering activities.",
+							"description": "Ensure all automated tooling, scrapers, spiders, bots, artificial intelligence, and other forms of machine-assisted data gathering abides by requests to opt out at the host, server, or website level. Providers must declare themselves as non-human within the user-agent/HTTP header. Providers must also publish impact reports relating to their gathering activities.",
 							"resources": [
 								{
 									"AI crawlers need to be more respectful": "https://about.readthedocs.com/blog/2024/07/ai-crawlers-abuse/",
@@ -7788,7 +7788,7 @@
 						{
 							"title": "Quantum resilience",
 							"testable": "Human-testable",
-							"description": "Don't roll out post-quantum encryption for high-traffic services that don't need resilience against harvest now, decrypt later.",
+							"description": "Do not roll out post-quantum encryption for high-traffic services that do not need resilience against harvest now, decrypt later attacks, where attackers steal encrypted data, anticipating that future quantum computers will be powerful enough to break the encryption and make the data readable at a later date.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.7 - Strategy (Encryption)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -7835,7 +7835,7 @@
 						{
 							"title": "Fuel divestment",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM23-1)",
-							"description": "The organization has divested from fossil fuels and moved its banking, sponsorship, and other affiliations to more responsible partners.",
+							"description": "Divest from fossil fuels and move banking, sponsorship, and other affiliations to more responsible partners.",
 							"resources": [
 								{
 									"A beginner's guide to fossil fuel divestment": "https://www.theguardian.com/environment/2015/jun/23/a-beginners-guide-to-fossil-fuel-divestment",
@@ -7852,7 +7852,7 @@
 						{
 							"title": "Responsible finance",
 							"testable": "Human-testable",
-							"description": "The organization engages in flexible financing and responsible budgeting for its digital products and services to accommodate long-term care and maintenance.",
+							"description": "Engage in flexible financing and responsible budgeting to accommodate long-term care and maintenance.",
 							"resources": [
 								{
 									"AdGreen": "https://www.weareadgreen.org/",
@@ -7908,7 +7908,7 @@
 						{
 							"title": "Philanthropy policy",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM24-1)",
-							"description": "The organization has a clear corporate giving policy and creates philanthropic partnerships with strategically aligned organizations.",
+							"description": "Establish a clear corporate giving policy and create philanthropic partnerships with strategically aligned organizations.",
 							"resources": [
 								{
 									"1% For The Planet": "https://www.onepercentfortheplanet.org/",
@@ -7927,7 +7927,7 @@
 						{
 							"title": "Voluntary work",
 							"testable": "Human-testable",
-							"description": "The organization engages in free or volunteer projects, which help its team learn new tools and tactics, while also helping charities and non-profit organizations build capacity.",
+							"description": "Engage in free or volunteer projects to help teams learn new tools and tactics, while also helping charities and non-profit organizations to build capacity.",
 							"resources": [
 								{
 									"7 business benefits of employee volunteering": "https://www.sage.com/en-gb/blog/benefits-volunteer-days-employee-engagement/",
@@ -7976,7 +7976,7 @@
 						{
 							"title": "End-of-life care",
 							"testable": "Human-testable",
-							"description": "Clear, documented end-of-life guidelines exist that include data disposal, archiving, file deletion, etc guidance.",
+							"description": "Provide clear, documented end-of-life guidelines that include data disposal, archiving, file deletion, and other relevant guidance.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.6 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -8024,12 +8024,12 @@
 				{
 					"id": "26",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#include-e-waste-right-to-repair-and-recycling-policies",
-					"guideline": "Include e-waste, right-to-repair, and recycling policies",
+					"guideline": "Include e-waste, right to repair, and recycling policies",
 					"criteria": [
 						{
-							"title": "E-Waste policy",
+							"title": "E-waste policy",
 							"testable": "Human-testable",
-							"description": "The organization has specific policies in place to recycle e-waste and repair owned technology products whenever possible.",
+							"description": "Establish specific policies around e-waste recycling and repair owned technology products whenever possible.",
 							"resources": [
 								{
 									"Electronic waste": "https://en.wikipedia.org/wiki/Electronic_waste",
@@ -8049,7 +8049,7 @@
 						{
 							"title": "Recycling and repairing",
 							"testable": "Human-testable",
-							"description": "The organization has formed relationships with local partners for e-waste recycling and repair.",
+							"description": "Form relationships with local partners for e-waste recycling and repair.",
 							"resources": [
 								{
 									"All 50 States Have Now Introduced Right to Repair Legislation": "https://www.404media.co/all-50-states-have-now-introduced-right-to-repair-legislation/",
@@ -8072,7 +8072,7 @@
 						{
 							"title": "Refurbishment strategy",
 							"testable": "Human-testable",
-							"description": "The organization buys refurbished equipment whenever possible.",
+							"description": "Buy refurbished equipment whenever possible.",
 							"resources": [
 								{
 									"21 Reasons Why Refurbished IT is the Future": "https://www.techbuyer.com/uk/blog/21-reasons-why-refurbished-it-is-the-future",
@@ -8089,9 +8089,9 @@
 							]
 						},
 						{
-							"title": "Right-to-repair",
+							"title": "Right to repair",
 							"testable": "Human-testable",
-							"description": "The organization allows consumers to repair (to the best of their ability) the consumables they purchase, offering (if possible at cost) replacement components and provides clear instructions to resolve faults that occur.",
+							"description": "Allow consumers to repair the consumables they purchase to the best of their ability, offering replacement components if possible at cost, and provide clear instructions to help resolve faults that occur.",
 							"resources": [
 								{
 									"Digitization and the Environment": "https://www.societybyte.swiss/en/2020/04/09/digitization-and-the-environment-opportunities-risks-and-the-need-for-action/",
@@ -8128,7 +8128,7 @@
 					],
 					"example": [
 						{
-							"content": "The [e-waste Policy Toolkit](https://www.itu.int/en/ITU-D/Environment/Pages/Toolbox/WEEE-Africa-Toolkit.aspx)."
+							"content": "The [E-waste policy Toolkit](https://www.itu.int/en/ITU-D/Environment/Pages/Toolbox/WEEE-Africa-Toolkit.aspx)."
 						}
 					],
 					"tags": ["Content", "E-Waste", "Governance", "Hardware", "Ideation", "Social Equity"]
@@ -8141,7 +8141,7 @@
 						{
 							"title": "Environmental budget",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM27-1)",
-							"description": "The product team has defined, baselined, and documented clear sustainability and environmental budget criteria that cover the page, user-journey, and digital service levels and metrics (such as a CO2.js score) that are approved by relevant product stakeholders.",
+							"description": "Define and document clear sustainability budget criteria that cover impacts from creation to consumption. Communicate these impacts to affected parties.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -8158,7 +8158,7 @@
 						{
 							"title": "Performance budget",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM27-2)",
-							"description": "Tools such as a performance budget exist to determine the maximum size (goals) your app or website can weigh to reduce the data transfer and HTTP request impact (using metrics like Google Lighthouse).",
+							"description": "Use a performance budget to set a target maximum size of your digital product or service to monitor and reduce impact of data transfer, file type size, and more.",
 							"resources": [
 								{
 									"A Complete Guide to Performance Budgets": "https://www.speedcurve.com/blog/performance-budgets/",
@@ -8185,7 +8185,7 @@
 						{
 							"title": "Human budget",
 							"testable": "Human-testable",
-							"description": "KPIs are defined around engineering hours, development time, or sprints keeping the health and wellbeing of your workers paramount. Consideration has been taken around optimizing your workflow sustainably to allow all tasks to be performed with care.",
+							"description": "Define KPIs around engineering hours, development time, or sprints while keeping the health and well-being of your workers paramount. Sustainably optimize workflows to allow all tasks to be performed with care.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.5 - Strategy (Impact Goals)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -8201,7 +8201,7 @@
 						{
 							"title": "Measurable improvements",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM27-4)",
-							"description": "The product team can measurably show how much the budgeting process improved performance and reduced emissions.",
+							"description": "Establish a baseline and measurement criteria to track improvements over time. Evidence of improvement claims must be verifiable.",
 							"resources": [
 								{
 									"Are there limits to growth in data traffic?": "https://www.researchgate.net/publication/303748253_Are_there_limits_to_growth_in_data_traffic_on_time_use_data_generation_and_speed",
@@ -8225,7 +8225,7 @@
 						{
 							"title": "Capacity and maintenance",
 							"testable": "Human-testable",
-							"description": "The product team invests in resources to build capacity and maintain the budgets over time.",
+							"description": "Invest in resources to build capacity and maintain budgets over time.",
 							"resources": [
 								{
 									"Capacity planning for product managers": "https://www.aha.io/roadmapping/guide/release-management/capacity-planning",
@@ -8273,7 +8273,7 @@
 						{
 							"title": "Open source policy",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM28-1)",
-							"description": "The organization has a clear open source policy in place that outlines how it uses open source tools and the practices it supports surrounding open source development.",
+							"description": "Establish a clear open source policy that outlines how open-source tools are used and any practices used to support open-source development.",
 							"resources": [
 								{
 									"Can OSSPledge Fix Open Source Sustainability?": "https://www.trevorlasn.com/blog/can-open-source-pledge-fix-open-source-sustainability",
@@ -8291,7 +8291,7 @@
 						{
 							"title": "Collaboration",
 							"testable": "Human-testable",
-							"description": "The organization has a track record of collaboration and community-building around open source principles.",
+							"description": "Show a track record of collaboration and building communities around open-source principles.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.8 - Strategy (Open Source)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -8314,7 +8314,7 @@
 						{
 							"title": "Contribution",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM28-3)",
-							"description": "The organization regularly contributes to open source community-based projects.",
+							"description": "Contribute regularly to open-source community-based projects.",
 							"resources": [
 								{
 									"FreeCodeCamp: How to Contribute to Open Source": "https://github.com/freeCodeCamp/how-to-contribute-to-open-source",
@@ -8370,7 +8370,7 @@
 						{
 							"title": "Plan of action",
 							"testable": "Human-testable",
-							"description": "The organization has created a plan of action that is regularly reviewed and occasionally tested to determine readiness in case of an incident and has procedures to quickly recover from such issues.",
+							"description": "Create, regularly review, and occasionally test a plan of action to determine readiness in case of an incident and establish procedures to quickly recover from any incident.",
 							"resources": [
 								{
 									"Downtime vs slowtime: Which costs you more?": "https://www.speedcurve.com/blog/downtime-vs-slowtime/",
@@ -8390,7 +8390,7 @@
 						{
 							"title": "Audience awareness",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM29-2)",
-							"description": "The organization regularly maintains transparent communication with its audience regarding issues that may affect service delivery or user data.",
+							"description": "Maintain regular and transparent communication with the audience regarding issues that may affect service delivery or user data.",
 							"resources": [
 								{
 									"7 excellent maintenance page examples from real websites": "https://www.atlassian.com/blog/statuspage/maintenance-page-examples",
