@@ -2031,7 +2031,7 @@
 					<details> <!-- WD04-1: Eliminate redundant code through coverage or tree shaking -->
 						<summary id="WD04-1">WD04-1: Eliminate redundant code through coverage or tree shaking</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-code-with-tree-shaking-techniques">3.4 Remove unnecessary code with tree shaking techniques</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>Success Criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-code">3.4 Remove unnecessary code</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Eliminate redundancy within an application or website that may have been either introduced previously or through error. By using browser development tooling such as DevTools coverage or techniques like tree shaking any code which is no longer associated with functionality can be identified as potentially fit for removal (always verify this is accurate).</p>
 						<p>For machine testability, redundant (orphaned / unused) code can be identified by its lack of association with existing components within the web page or application. Consideration will also need to be given to components that may be generated mid or post-render in addition to styles that only trigger when a certain state occurs (such as through hover or the target pseudo selector).</p>

@@ -2885,8 +2885,8 @@
 				},
 				{
 					"id": "4",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-code-with-tree-shaking-techniques",
-					"guideline": "Remove unnecessary code with tree shaking techniques",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-code",
+					"guideline": "Remove unnecessary code",
 					"criteria": [
 						{
 							"title": "Remove redundancy",
@@ -3409,7 +3409,7 @@
 						{
 							"title": "Search engines",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD09-2)",
-							"description": "Permit unobstructed access to search engines while blocking unsustainable robots and scripts.",
+							"description": "Permit appropriate access to search engines while blocking unsustainable robots and scripts.",
 							"resources": [
 								{
 									"About /robots.txt": "https://www.robotstxt.org/robotstxt.html",
@@ -4092,7 +4092,7 @@
 					"guideline": "Include expected and beneficial files",
 					"criteria": [
 						{
-							"title": "Expected file formats",
+							"title": "Expected files",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD17-1)",
 							"description": "Include favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml files by default. Also ensure that any similar files defined in future web standards or specifications are included.",
 							"resources": [
@@ -4113,7 +4113,7 @@
 							]
 						},
 						{
-							"title": "Beneficial file formats",
+							"title": "Beneficial files",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD17-2)",
 							"description": "Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Also ensure that any similar files defined in future web standards or specifications are included.",
 							"resources": [
@@ -4174,7 +4174,7 @@
 						{
 							"title": "Preferred code",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD18-1)",
-							"description": "Avoid using deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards. Only use deprecated, proprietary, or outdated code where this is required to meet a documented customer need and if there is a justifiable benefit that cannot otherwise be met. Justifiable reasons could include such as compatibility with essential legacy systems and/or hardware, accessibility, or emissions reduction. Do not serve polyfills to modern browsers.",
+							"description": "Avoid using deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards. Only use deprecated, proprietary, or outdated code where this is required to meet a documented customer need and if there is a justifiable benefit that cannot otherwise be met. Justifiable reasons could include compatibility with essential legacy systems and/or hardware, accessibility, or emissions reduction. Use polyfills only when necessary, and regularly audit code to see if they can be removed",
 							"resources": [
 								{
 									"Avoid serving legacy JavaScript to modern browsers": "https://www.debugbear.com/blog/avoid-legacy-js",
@@ -4250,7 +4250,7 @@
 						{
 							"title": "Optimized methodology",
 							"testable": "Human-testable",
-							"description": "Use the most effective approach for your use case. Most of the time, coding from scratch will often provide the most performant results. Where an existing solution exists and is being actively maintained, this may be better optimized than what you can reasonably produce yourself. Favor native components and file systems over WYSIWYG editors - including visual page builders - or other heavy frameworks. Be mindful of the impact of third-party solutions.",
+							"description": "Use the most effective approach for your use case. Most of the time, coding from scratch will often provide the most performant results. Where an existing solution is present and is being actively maintained, this may be better optimized than what you can reasonably produce yourself. Favor native components and file systems over WYSIWYG editors - including visual page builders - or other heavy frameworks. Be mindful of the impact of third-party solutions.",
 							"resources": [
 								{
 									"AFNOR Spec 5.3.3 & 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",

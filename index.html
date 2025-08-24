@@ -2444,8 +2444,8 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Remove unnecessary code with tree shaking techniques -->
-				<h3>Remove unnecessary code with tree shaking techniques</h3>
+			<section> <!-- Remove unnecessary code -->
+				<h3>Remove unnecessary code</h3>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="CSS, JavaScript, Performance">
 					<h4 id="remove-redundancy">Success Criterion: Remove redundancy</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD04-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD04-1">Resources</a></p>
@@ -2760,7 +2760,7 @@
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility" data-categories="HTML, Marketing, UI, Usability">
 					<h4 id="search-engines">Success Criterion: Search engines</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD09-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD09-2">Resources</a></p>
-					<p>Permit unobstructed access to search engines while blocking unsustainable robots and scripts.</p>
+					<p>Permit appropriate access to search engines while blocking unsustainable robots and scripts.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility" data-categories="HTML, Marketing, UI, Usability">
 					<h4 id="accessibility-aids">Success Criterion: Accessibility aids</h4>
@@ -3231,12 +3231,12 @@
 			<section> <!-- Include expected and beneficial files -->
 				<h3>Include expected and beneficial files</h3>
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF" data-considerations="Security" data-categories="Assets, Compatibility, Marketing, Patterns, UI">
-					<h4 id="expected-file-formats">Success Criterion: Expected file formats</h4>
+					<h4 id="expected-files">Success Criterion: Expected files</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD17-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD17-1">Resources</a></p>
 					<p>Include favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml files by default. Also ensure that any similar files defined in future web standards or specifications are included.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF" data-considerations="Security" data-categories="Assets, Compatibility, Marketing, Patterns, UI">
-					<h4 id="beneficial-file-formats">Success Criterion: Beneficial file formats</h4>
+					<h4 id="beneficial-files">Success Criterion: Beneficial files</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD17-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD17-2">Resources</a></p>
 					<p>Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Also ensure that any similar files defined in future web standards or specifications are included.</p>
 				</section>
@@ -3287,7 +3287,7 @@
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="medium" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491" data-considerations="Accessibility" data-categories="Compatibility, CSS, HTML, JavaScript, Performance">
 					<h4 id="preferred-code">Success Criterion: Preferred code</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD18-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD18-1">Resources</a></p>
-					<p>Avoid using deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards. Only use deprecated, proprietary, or outdated code where this is required to meet a documented customer need and if there is a justifiable benefit that cannot otherwise be met. Justifiable reasons could include such as compatibility with essential legacy systems and/or hardware, accessibility, or emissions reduction. Do not serve polyfills to modern browsers.</p>
+					<p>Avoid using deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards. Only use deprecated, proprietary, or outdated code where this is required to meet a documented customer need and if there is a justifiable benefit that cannot otherwise be met. Justifiable reasons could include compatibility with essential legacy systems and/or hardware, accessibility, or emissions reduction. Use polyfills only when necessary, and regularly audit code to see if they can be removed.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3342,7 +3342,7 @@
 				<section class="notoc" data-testable="human" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
 					<h4 id="optimized-methodology">Success Criterion: Optimized methodology</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD19-2">Resources</a></p>
-					<p>Use the most effective approach for your use case. Most of the time, coding from scratch will often provide the most performant results. Where an existing solution exists and is being actively maintained, this may be better optimized than what you can reasonably produce yourself. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors - including visual page builders - or other heavy frameworks. Be mindful of the impact of third-party solutions.</p>
+					<p>Use the most effective approach for your use case. Most of the time, coding from scratch will often provide the most performant results. Where an existing solution is present and is being actively maintained, this may be better optimized than what you can reasonably produce yourself. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors - including visual page builders - or other heavy frameworks. Be mindful of the impact of third-party solutions.</p>
 				</section>
 				<section class="notoc" data-testable="human" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
 					<h4 id="static-over-dynamic">Success Criterion: Static over dynamic</h4>
