@@ -101,7 +101,7 @@
 						{
 							"title": "Visitor constraints",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX02-2)",
-							"description": "Account for potential visitor constraints, such as the device age, operating system, version, browser, VPN use, and connection speeds when designing and assessing the quality of user experiences.",
+							"description": "Account for potential visitor constraints, such as the device age, operating system choice or version, browser, VPN use, and connection speeds when designing and assessing the quality of user experiences.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -232,8 +232,8 @@
 				},
 				{
 					"id": "3",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-of-non-users",
-					"guideline": "Understand the impact of non-users",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-for-non-users",
+					"guideline": "Understand the impact for non-users",
 					"criteria": [
 						{
 							"title": "Non-user impact",
@@ -714,7 +714,7 @@
 						{
 							"title": "Distraction",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX09-2)",
-							"description": "Prioritize features that assist rather than distract, not unnecessarily prolonging the time they spend engaging with your content.",
+							"description": "Prioritize features that assist rather than distract visitors, not unnecessarily prolonging the time they spend engaging with your content.",
 							"resources": [
 								{
 									"5 Website Features to Avoid (and how to fix them)": "https://medium.com/@lancerdesign/5-website-features-to-avoid-and-how-to-fix-them-2a4256f25b1f",
@@ -893,7 +893,7 @@
 						{
 							"title": "Analytics and tracking",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX11-3)",
-							"description": "Evaluate and remove unnecessary or unused analytics and tracking, including any operating without user consented.",
+							"description": "Evaluate and remove unnecessary or unused analytics and tracking, including any operating without user consent.",
 							"resources": [
 								{
 									"48 Cart Abandonment Rate Statistics 2023": "https://baymard.com/lists/cart-abandonment-rate",
@@ -1208,7 +1208,7 @@
 				{
 					"id": "15",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability",
-					"guideline": "Optimized images for sustainability",
+					"guideline": "Optimize images for sustainability",
 					"criteria": [
 						{
 							"title": "Need for images",
@@ -1365,7 +1365,7 @@
 				{
 					"id": "16",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability",
-					"guideline": "Optimized media for sustainability",
+					"guideline": "Optimize media for sustainability",
 					"criteria": [
 						{
 							"title": "Need for media",
@@ -1390,7 +1390,7 @@
 						{
 							"title": "Optimized media",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX16-2)",
-							"description": "Optimize and compress media appropriately. Provide media in compatible and appropriate formats. Avoid embedded media players.",
+							"description": "Optimize and compress media appropriately. Provide media in compatible and appropriate formats. Avoid non-native embedded media players.",
 							"resources": [
 								{
 									"AFNOR Spec 5.4.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -2649,7 +2649,7 @@
 						{
 							"title": "Progressive Web Applications (PWAs)",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX29-5)",
-							"description": "Select or reject a PWA over a native mobile application based on sustainability, interoperability, and compatibility.",
+							"description": "Use a PWA over a native mobile application if it meets sustainability, interoperability, and compatibility criteria.",
 							"resources": [
 								{
 									"Assessing the Impact of Service Workers on the Energy Efficiency of Progressive Web Apps (PDF)": "https://www.ivanomalavolta.com/files/papers/Mobilesoft_2017.pdf",

@@ -144,7 +144,7 @@
 				{
 					"id": "UX03-1",
 					"title": "Use third-party APIs to measure any passive external impact",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.3 Understand the impact of non-users](https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-of-non-users).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.3 Understand the impact for non-users](https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-for-non-users).",
 					"description": [
 						{
 							"1": "Utilize the tooling and resources provided by external parties to help you identify any efficiency and sustainability savings when having to use such services, or when non-digital forces come into play, such as if your product or service involves the physical delivery of goods.",
@@ -853,7 +853,7 @@
 				{
 					"id": "UX15-1",
 					"title": "Implement a range of images of the appropriate format and size",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimized images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimize images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
 					"description": [
 						{
 							"1": "Identify whether the images you are using are firstly necessary (which may be difficult to machine test), and secondly are using a format that is web appropriate. While these considerations may seem small they can dramatically lead to performance benefits that can reduce loading times and page bloat (which is an increasing issue on today's Internet).",
@@ -885,7 +885,7 @@
 				{
 					"id": "UX15-2",
 					"title": "Optimizing all image assets for a variety of different resolutions",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimized images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimize images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that images are not only served at the correct resolution and size for the device requesting them but also to make sure that the images being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the visitor, thereby improving multiple PPP variables and increasing performance.",
@@ -917,7 +917,7 @@
 				{
 					"id": "UX15-3",
 					"title": "Include lazy-loading with images that load below-the-fold",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimized images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimize images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
 					"description": [
 						{
 							"1": "Prevent image assets included within a website or application that are either visually below the fold or hidden due to progressive disclosure from being loaded until they appear in view of the visitor's screen. This can save bandwidth and the resulting processing of the image at the client-side which otherwise would occur and may not even be used if the visitor chooses to click elsewhere or close before reaching it.",
@@ -946,7 +946,7 @@
 				{
 					"id": "UX15-4",
 					"title": "Provide the option for images to be disabled or a low fidelity alternative",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimized images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimize images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that visitors with bandwidth restrictions or slow connections are given a mechanism to access your content when their ability to access critical information may be stressed. Providing such options may include an in-page solution (either by default or by choice), or through the offering of a highly optimized alternative for such requests.",
@@ -976,7 +976,7 @@
 				{
 					"id": "UX15-5",
 					"title": "Add details about image impacts to the media management and use policy",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimized images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimize images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that you provide details about any image reduction targets and techniques within a publicly available media management and use policy. This will help you to establish the criteria you will attempt to meet across your product or service and allow visitors to identify any failings if they spot them (which can be fixed during the product lifecycle).",
@@ -1004,7 +1004,7 @@
 				{
 					"id": "UX16-1",
 					"title": "Remove any functionality that may trigger auto-playing animation",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimized media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimize media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that media will only run within a website or application on the command of the visitor and not begin consuming resources and thrashing hardware from the immediacy of the page load event. Because this involves HTML (attributes and background media), JavaScript, and images (animated GIFs), a multi-functional approach is required.",
@@ -1034,7 +1034,7 @@
 				{
 					"id": "UX16-2",
 					"title": "Optimizing all audio and video assets for speed and compatibility",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimized media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimize media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that both the formats being used for media have widespread browser compatibility and that the audio and video being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the visitor, thereby improving multiple PPP variables and increasing performance.",
@@ -1064,7 +1064,7 @@
 				{
 					"id": "UX16-3",
 					"title": "Provide facades for media, animated GIFs, and third-party content",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimized media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimize media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
 					"description": [
 						{
 							"1": "Provide a mechanism that ensures visitors remain in control of when highly impactful (in terms of emissions) media or third-party materials begin to transmit to their devices. By having a static facade that upon clicking begins the render (and not simply hiding the video, audio or interactive element behind the static image), you ensure that the content has a lazy-load effect even if autoplay or the interaction is not active (as pre-buffering may occur during the render process).",
@@ -1093,7 +1093,7 @@
 				{
 					"id": "UX16-4",
 					"title": "Optimizing all media assets for a variety of different resolutions",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimized media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimize media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that videos are not only served at the correct resolution but also to identify assets that can help visitors make decisions before choosing to load the main video as to whether the media is correct for them. The location of these links should be connected to the embedded media, and either replace the original video upon click or downloadable for the visitor (they should not increase the number of embeds).",
@@ -1123,7 +1123,7 @@
 				{
 					"id": "UX16-5",
 					"title": "Add details about media impacts to the media management and use policy",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimized media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimize media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that you provide details about any audio or video reduction targets and techniques within a publicly available media management and use policy. This will help you to establish the criteria you will attempt to meet across your product or service and allow visitors to identify any failings if they spot them (which can be fixed during the product lifecycle).",
