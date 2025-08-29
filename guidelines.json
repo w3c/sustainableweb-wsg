@@ -6903,7 +6903,7 @@
 						{
 							"title": "Feature changes",
 							"testable": "Human-testable",
-							"description": "Add, update, or remove features where this can improve user experience.",
+							"description": "When a feature is added, updated, or removed to improve user experience, clear documentation of the changes is provided in a well structured, semantically versioned document.",
 							"resources": [
 								{
 									"Common Changelog": "https://common-changelog.org/",
@@ -8141,7 +8141,7 @@
 						{
 							"title": "Environmental budget",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM27-1)",
-							"description": "Define and document clear sustainability budget criteria that cover impacts from creation to consumption. Communicate these impacts to affected parties.",
+							"description": "Define and document clear sustainability budget criteria that covers impact from creation to consumption. Communicate this to affected parties.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -8201,7 +8201,7 @@
 						{
 							"title": "Measurable improvements",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM27-4)",
-							"description": "Establish a baseline and measurement criteria to track improvements over time. Evidence of improvement claims must be verifiable.",
+							"description": "Establish a baseline and measurement criteria to track improvements over time. Improvement claims must be evidenced and verifiable.",
 							"resources": [
 								{
 									"Are there limits to growth in data traffic?": "https://www.researchgate.net/publication/303748253_Are_there_limits_to_growth_in_data_traffic_on_time_use_data_generation_and_speed",
