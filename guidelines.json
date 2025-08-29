@@ -2629,9 +2629,9 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "Limiting the number of server requests and the size of the DOM decreases a product or service's environmental impact by reducing CPU and GPU cycles, and RAM usage which benefits energy consumption, reducing the need to recharge devices as frequently.",
-							"Performance": "Reducing the hardware utilization as denoted above will also improve performance metrics, as a device will suffer less consumption and thrashing of limited resources.",
-							"Conversion": "Search engines consider web performance in their ranking data, as such a faster website may lead to a higher rank and potentially better conversion rates."
+							"Conversion": "Page speed and web performance are confirmed ranking factors when it comes to SEO. A faster digital product or service may support an organization's efforts to rank higher on search engines. Combined with the better on-page user experience, this can lead to improved conversion rates.",
+							"Environment": "Limiting the number of server requests and the DOM size lessens the negative environmental impact of a product or service' by reducing CPU and GPU cycles and RAM usage. This brings down energy consumption, and reduces the need to recharge portable devices as frequently.",
+							"Performance": "Reducing the hardware load  improves overall performance. Devices are less likely to be overloaded or hit their limits with reduced resources."
 						}
 					],
 					"GRI": [
@@ -2673,8 +2673,8 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Performance": "Reduced loading times as a result of less data being transferred. Though this does not inherently have an ecological benefit as whitespace is ignored by rendering engines, it does help meet sustainability targets with visitor-based improvements in terms of loading times.",
-							"Conversion": "When a page loads quickly, visitors are less likely to abandon their journey or search for their information elsewhere."
+							"Conversion": "Faster page speeds improve user experience across the board. This makes visitors less likely to abandon their journey or search for their information elsewhere.",
+							"Performance": "Less data transferred means reduced loading times. Whitespace itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact."
 						}
 					],
 					"GRI": [
@@ -2719,9 +2719,9 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Performance": "Having smaller (modular) components allows for more optimized caching and loading only what code functions are required (which reduces the payload). Unused portions of a resource remain un-downloaded (potentially huge savings).",
-							"Economic": "Reducing the size of large files will result in lower bandwidth bills for service providers.",
-							"Conversion": "A faster website reduces the chance of abandonment (which is especially of concern for visitors of handheld devices)."
+							"Conversion": "Modularizing code can accelerate performance,  improving user experience while reducing the chance of abandonment. This is especially impact for users of low-resource devices, such as handhelds.",
+							"Economic": "Reducing the size of large files will reduce bandwidth expenses for service providers.",
+							"Performance": "Using smaller, modular components allows for more effective caching of commonly those reused components, while loading functions only when required reduces the payload. Unused portions of a larger resource will not be downloaded, which can have a considerable impact."
 						}
 					],
 					"GRI": [
@@ -2769,9 +2769,9 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "Removal of unused code eliminates wasted bytes from the rendering tree, which means less wasted download and potential processing time (which can be a battery-draining process).",
-							"Performance": "Unused code will not impact visitors, yet it takes up space in the cache, RAM, and takes extra time to download and render. Clearing wasted space frees' visitor resources.",
-							"Economic": "Unused code has a maintenance cost as it might affect other code, additionally, it's something else for developers to have to deal with unnecessarily."
+							"Economic": "Eliminating unused code means reducing maintenance work and expense. It can otherwise affect other code' or add unnecessary complexity.",
+							"Environment": "Removing unused code eliminates wasted bytes, reducing download size and potentially improving rendering time.",
+							"Performance": "Reducing downloaded code that otherwise offers no benefit to visitors frees up cache and RAM resources on their devices, while saving time."
 						}
 					],
 					"GRI": [
@@ -2849,10 +2849,10 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "While CSS methodologies increasingly add more code to your markup, they improve maintainability (reducing development time at scale), which can reduce energy usage.",
-							"Accessibility": "Developers with accessibility requirements may find the naming conventions used in CSS methodologies easier to work with than generic CSS selector identifiers.",
-							"Performance": "Avoiding repetitive code reduces waste in markup, which reduces the time sites take to download (and reduces server energy usage).",
-							"Economic": "An optimized codebase (that's reusable) can improve productivity and code quality."
+							"Accessibility": "Following naming conventions used in methodologies can be easier for developers with accessibility needs to follow and use compared to generic selector identifiers.",
+							"Economic": "Using an optimized and reusable codebase can enhance productivity and code quality leading to a better return on investment.",
+							"Environment": "Integrating certain methodologies can add code to your markup, but they also improve maintainability. This reduces development time at scale, and could reduce energy consumption as developers optimized workflows will reduce the time and energy spent on tasks.",
+							"Performance": "Avoiding repetitive code reduces waste in markup, which reduces the time it takes to download site data. This also reduces server-side impact."
 						}
 					],
 					"GRI": [
@@ -3019,9 +3019,9 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "Replacing heavy tooling and third-party services with lightweight tooling reduces visitor bandwidth usage considerably, despite having to learn a new way of doing things or reducing the visibility of such information. It can significantly reduce a page's (and data you have no control over) environmental impact, especially when it comes to Scope 3 emissions.",
-							"Privacy": "Visitors not interested in embedded content may identify the lack of third-party tracking (such as embedded pixels and tags) as a privacy benefit, as there are fewer chances that visitor data is exploited.",
-							"Performance": "Self-made widgets and controls work much faster than third-party content as you don't have to perform additional server requests, rendering requests, and such. You only include what features you require, and this reduces the overall size of the bandwidth usage (and emissions produced)."
+							"Environment": "Replacing heavy tooling and third-party services with lightweight tooling reduces visitor bandwidth usage and compute impact. It does require learning a new way of doing things or reducing the visibility of impactful features until they are requested. It can significantly reduce a page's overall 'environmental impact, including the data you have no control over. This is especially relevant when calculating Scope 3 emissions.",
+							"Performance": "Self-hosting fully self-contained services, features, and content are more performant by design. They avoid additional server and rendering requests or other complications associated with third-party content. You can  choose to only include the required features , further reducing overall bandwidth usage and associated emissions.",
+							"Privacy": "Choosing not to embed and automatically load third-party content may be perceived as a privacy benefit by privacy-conscious visitors, because this reduces opportunities for their visitor data to be exploited."
 						}
 					],
 					"GRI": [
@@ -3130,11 +3130,11 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "Sites with bloated markup waste data, also sites with broken markup could trigger memory leaks (performance issues) in apps, and following standards ensures sites will work the same across devices and platforms (reducing bugs, developer fix time, and resource waste).",
-							"Accessibility": "Semantic HTML is a great stepping stone towards making your content easier to navigate by assistive technologies. Many tags within HTML come with pre-loaded context about what is expected within them (reducing the need for ARIA or other descriptive features). This can also help browsers, search engines, social networks, and other \"blind\" technologies understand your websites or applications better. This can help you reduce barriers in terms of content navigability.",
-							"Performance": "Deprecated code isn't optimized within rendering engines, and while Web components do outperform framework components, they won't beat the native HTML elements they build upon.",
-							"Economic": "Inaccessible sites can lead to lawsuits, avoiding these is beneficial to any website owner.",
-							"Conversion": "Poorly coded sites may break features for visitors, leading to website abandonment."
+							"Accessibility": "Applying semantic approaches means your content will be easier to navigate via assistive technologies and keyboard. Many tags phave native semantics, reducing the need for additional tagging. This can also help technologies to better understand your content. better.",
+							"Conversion": "Ensuring your code is efficient and works reduces the risk of broken features and visitors giving up.",
+							"Economic": "Conforming to accessibility legislation and regulations avoid lawsuits and fines.",
+							"Environment": "Following standards ensures users have a coherent experience - reducing bugs, saving time spent fixing bugs, and avoiding wasted resources. Bloated markup can otherwise lead to waste data, while broken markup can even trigger memory leaks.",
+							"Performance": "Clean, modern code renders better than deprecated or poorly maintained code. While Web Components do outperform framework components, they cannot outperform the native elements they are built on."
 						}
 					],
 					"GRI": [
@@ -3202,9 +3202,9 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Environment": "Lazy loading videos and images ensures that they are only requested once the visitor needs them (not demanded even if they aren't viewed). This saves processing power which can help older devices or those with less battery capacity access your websites and applications barrier-free.",
-							"Performance": "Letting text render first makes your website feel like it's loading faster (as the remainder will appear in the background or on demand).",
-							"Economic": "Unused content will not contribute to your server's bandwidth bills."
+							"Economic": "If data is not loaded unless needed, you will reduce your server's bandwidth use.",
+							"Environment": "Lazy loading videos and images so that they are only loaded once required by the visitor. This reduces transferred data and the required processing power.",
+							"Performance": "Allowing text to render first make the user feel that everything is loading faster while, as the remaining content loads in the background or on demand."
 						}
 					],
 					"GRI": [
@@ -3279,12 +3279,11 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Environment": "People spend a lot of time searching for the information they want, and helping them get there quicker will reduce the drain on their device battery.",
-							"Social Equity": "Paradoxically as it may seem, the concept of getting people to spend more time on your website is not often beneficial. Visitors often want to accomplish a task and move on, yet we put great effort into keeping them on-site (time-wasting). This is a dark pattern that has consequences for sustainability (consumption of resources) and potentially the visitor's health and well-being.",
-							"Accessibility": "Skip links and other aids can accelerate a visitor's journey through your website, reducing the system resources their tooling requires, and assist them in finding the content they need.",
-							"Performance": "Finding information quickly is a perceived performance. It may not physically reduce the data transferred, but it will help reduce the steps required to achieve a goal; thus, the time on-screen is lessened.",
-							"Economic": "Quick visits may encourage repeat custom when the visitor has limited spare time.",
-							"Conversion": "A well-mapped website will index properly in search engines, leading to a good page rank."
+							"Accessibility": "Including skip links and other accessibility aids can accelerate the user journey, reducing system resources required and allowing them to find the content they need.",
+							"Conversion": "Providing clearly navigable structures and sitemaps ensure search engines are better able to index content.",
+							"Economic": "Enabling quicker visits that complete the visitor's objective can help to encourage return visits.",
+							"Environment": "Reducing the time people spend searching for the information they want and aiding them on their journey will reduce energy use, including battery drain.",
+							"Social Equity": "Allowing users to achieve  objectives faster reduces resource consumption while potentially enhancing visitor health and well-being."
 						}
 					],
 					"GRI": [
@@ -3356,9 +3355,9 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Security": "Allowing people to correct mistakes (and identifying errors early in the input process) on forms before submission can avoid costly mistakes during financial transactions and spend less time being wasted on tasks.",
-							"Performance": "Being able to fill in a form while addressing issues quickly reduces the barrier to entry and thereby avoids potentially having to refill a form or waste time going back and scrolling.",
-							"Economic": "Shopping cart abandonment happens when errors occur, fixing issues upfront can reduce such potential issues."
+							"Economic": "Fixing issues immediately and keeping people in the process can help to prevent abandonment.",
+							"Performance": "Enabling visitors to fill in forms more efficiently and avoid navigating back to where they were or refilling data on forms can increase the speed of necessary form filing and reduce errors in completion.",
+							"Security": "Allowing people to correct input errors, verify their input prior to submission, and identifying errors early in the process can help to prevent costly data protection mistakes."
 						}
 					],
 					"GRI": [
@@ -3430,11 +3429,9 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Environment": "Adding rich metadata allows your website to be indexed correctly within search engines and social networks, allowing visitors to find content from your website or product quicker (often without even requiring a visit), saving clicks and energy.",
-							"Transparency": "Used correctly, metadata can ensure clients find the correct site, and if they are just after contact details, potentially do not have to even visit the page (wasting bandwidth).",
-							"Performance": "Visitors spend less time jumping through pages, as they will likely land on the page they wish to browse through searching (if they came via a third-party tool).",
-							"Economic": "Increased awareness within a search engine or social network may lead to more visitors or customers.",
-							"Conversion": "Recognized microdata usage can lead to a better search engine position."
+							"Economic": "Improving metadata can make it easier for search engines, social networks, or other platforms to present your content appropriately. This can lead to better search engine visibility, more visitors, and potentially better conversion.",
+							"Performance": "Providing third-party tools and search engines with the information they need can direct people more quickly to the content they need.",
+							"Transparency": "Metadata ensures clients find the correct content fast. If users only require something basic, such as contact details, they may not even have to view the content directly - saving bandwidth."
 						}
 					],
 					"GRI": [
@@ -3499,12 +3496,12 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Environment": "Improving the experience for monochrome devices (using a monochrome preference query) could encourage more visitors to use these energy-efficient eInk devices. For OLED displays dark mode (prefers-color-scheme) will be more energy efficient. Animation and media have a significant impact on CPU and GPU, therefore reducing its usage (prefers-reduced-motion) will reduce energy usage. Finally, having a print-friendly stylesheet will save not only paper but also ink wastage.",
-							"Social Equity": "Media queries don't tell individuals how to experience the web, they follow the preferences of the visitor or a device's capabilities.",
-							"Accessibility": "Having a high contrast (prefers-contrast) version of a site will reduce the barriers to entry and time wasted for visually impaired visitors. Less motion may also assist people with accessibility requirements.",
-							"Performance": "Allowing visitors to have a Lo-Fi (prefers-reduced-data) version of a site could significantly reduce the carbon footprint they emit (which for individuals on a data plan would be beneficial). Additionally, by detecting if scripting is disabled and offering alternative content, you could save wasted effort and improve the performance of a product or service.",
-							"Economic": "Print media queries (or stylesheets) can save visitors additional ink and paper costs.",
-							"Conversion": "User preferences make an interface friendlier, encouraging repeat visitors."
+							"Accessibility": "Having a high contrast version of a site will reduce barriers to entry and time wasted for visually impaired visitors. Reduced motion can also accommodate other accessibility requirements.",
+							"Conversion": "Delivering better user experience by meeting their preferences can improve conversion and encourage repeat visits.",
+							"Economic": "Using print media queries within stylesheets can reduce visitors' ink use and paper costs.",
+							"Environment": "Accommodating dark mode when preferred will always be more energy efficient on OLED devices. Similarly, animation and media have a significant impact on CPU and GPU usage, so respecting a prefers reduced motion query will reduce energy consumption. The presence of a monochrome preference query could encourage greater adoption of energy-efficient e-ink devices.  A sustainability-optimized print stylesheet can save both paper and ink output.",
+							"Performance": "Allowing visitors to access a reduced-data version of a site could significantly reduce the data transferred and the resulting carbon footprint. This can improve performance and reduce costs for individuals on a metered data plan. Detecting if scripting is disabled and offering alternative content may save wasted effort and improve the performance of a project.",
+							"Social Equity": "Meeting visitor preferences is a positive shift: You aren't telling your visitors how they should 'experience your content, but following your visitors' preferences or a device' capabilities and the priority of constituencies."
 						}
 					],
 					"GRI": [
@@ -3629,12 +3626,10 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Environment": "Image optimization, minification, and efficient resource loading can improve performance and provide a streamlined experience for visitors. Additionally, smaller devices are often more underpowered than larger devices, so any hardware optimization could benefit both the user and the environment. Using less energy to power screens, for example, by adopting \"Dark Mode or Dark Background,\" can also offer many benefits.",
-							"Social Equity": "Low-powered devices are frequently used in developing nations, but ensuring that content works for older devices is paramount.",
-							"Accessibility": "Mobile websites usually incorporate large, touch-friendly buttons, simplified navigation menus, and clear readable fonts. This often makes it easier for individuals with visual or motor impairments to interact with than a traditional desktop layout and could prove to be beneficial for certain visitors to take advantage of. A device-adaptable strategy (considering approach limitations) maximizes accessibility and usability across all devices, enhancing accessibility and ensuring an optimized experience by reducing the need for users to adapt their experience to device-specific limitations.",
-							"Performance": "Using lazy-loading and other delayed rendering techniques can boost website speed for small visual capacity devices.",
-							"Economic": "Ensuring that your website or application works across not only desktop devices but also smartphones and other unique screen resolutions can benefit you financially as it allows individuals to make purchases while on the move (which can be more convenient), while potentially using little or no screen.",
-							"Conversion": "Products and services that work well across a wider range of platforms and devices can encourage a wider audience to use your website or application not only in one situation but in many you might not have envisaged."
+							"Accessibility": "Incorporating large, touch-friendly buttons, simplified navigation menus, and clear readable fonts on your mobile websites can make it easier for individuals with visual or motor impairments to interact with your content. A device-adaptable strategy that considers the limitations of each approach helps to maximize accessibility and usability across all devices, enhancing accessibility and optimizing experience.",
+							"Conversion": "Broadening the compatibility of your products and services can equally broaden their appeal and use, even in scenarios you may not have originally envisaged.",
+							"Economic": "Ensuring your website or application works well on desktop devices, smartphones, and other resolutions alike can provide a financial benefit by enabling individuals to make purchases wherever and whenever it suits them.",
+							"Social Equity": "Ensuring content works well on older and low-powered devices is important, as these are more frequently used in developing nations."
 						}
 					],
 					"GRI": [
@@ -3723,11 +3718,11 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "Removing unwatched distractions (Page Visibility API), for example, would reduce wasted visual effects such as animation from being processed in the background. This could potentially help visitors conserve battery if they leave multiple tabs open in their browser.",
-							"Privacy": "Allowing for script-free visitors can protect the privacy of visitors who may live in unsafe nations.",
-							"Performance": "Using modern APIs or low-code solutions often reduces heavy codebase usage. Having fallbacks for unavailable JavaScript allows older or less capable devices to still experience your products.",
-							"Economic": "If a product works in more situations, you can sell it to more people without it failing.",
-							"Conversion": "Fallbacks for technology that might fail can lead to sales that otherwise wouldn't exist."
+							"Conversion": "Creating fallbacks for technology that might fail can 'enable sales you'd otherwise miss out on.",
+							"Economic": "Providing easier, reliable access in more situations allows you to sell to more people.",
+							"Environment": "Reducing unnecessary visual effects - such as animations - when a page is not visible, helps to prevent wasted processing in background tabs. This can potentially help visitors who leave multiple tabs open conserve battery.",
+							"Performance": "Using low-impact scripting can reduce heavy codebase sizes. Providing fallbacks for unavailable JavaScript ensures older or less capable devices can still access your content.",
+							"Privacy": "Allowing script-free visitors to easily access your content can protect the privacy of visitors with increased privacy needs."
 						}
 					],
 					"GRI": [
@@ -3782,10 +3777,10 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "Websites that have no outstanding security issues are less likely to become a target for individuals who might exploit them (consuming vast amounts of data in the process).",
-							"Security": "Having a secure website can prevent personal information from being exploited.",
-							"Performance": "A secure website is less likely to have its infrastructure breached, which could lead to vast amounts of data being stolen, corrupted, or destroyed.",
-							"Economic": "Preventing security issues will help your project and visitors avoid financial crime."
+							"Economic": "Preventing security issues ahead of time c protects you and your visitors from financial crime.",
+							"Environment": "Securing your project against threats and closing vulnerabilities makes them a less likely target for individuals who might exploit them, consuming vast amounts of data in the process.",
+							"Performance": "Protecting your project against breaches reduces your risk of large amounts of data being stolen, corrupted, or destroyed.",
+							"Security": "Maintaining security helps to maintain trust and prevent personal information from being exposed and exploited."
 						}
 					],
 					"GRI": [
@@ -3868,9 +3863,9 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Environment": "Developer's machines do not need to waste energy installing and / or rendering packages that are not needed.",
-							"Security": "Third-party code can contain bugs and security issues. Keeping packages up-to-date and using fewer third-party libraries reduces the likelihood of security flaws.",
-							"Performance": "Reduction in client-side JavaScript normally results in faster websites."
+							"Environment": "Removing code packages developers or users do not need reduces wasted energy during rendering.",
+							"Performance": "Reducing client-side JavaScript reduces rendering time and ensures a faster, smoother user experience.",
+							"Security": "Keeping packages up-to-date and using fewer third-party libraries reduces the likelihood of security vulnerabilities."
 						}
 					],
 					"GRI": [
@@ -3940,12 +3935,12 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Environment": "Search engines or browsers request certain files by default, ensuring they are in place will reduce loading errors, and may provide efficiency enhancements in how visitors find or interact with a site. Plaintext requires no rendering. If visitors (or search engines) know about these useful files (like carbon.txt) they can load quicker and with less CPU / GPU impact than any HTML website.",
-							"Accessibility": "OpenSearch.xml enables the browser's default search box rather than a custom solution to be integrated with your website search, which may aid accessibility as it encourages the use of a browser native component (and / or keyboard shortcuts) rather than a website or application which may suit certain accessibility requirements better.",
-							"Performance": "Files that are expected will produce HTTP requests, ensuring they are met will satisfy the products making them and potentially reduce the requests once they are discovered. Plaintext files contain no links, no markup, and have no imprint. Putting credits (for example) in such a file will reduce data transfer and have a lower rendering footprint.",
-							"Economic": "Robots.txt and Sitemap files can be utilized by search engines to help make your website more findable, this could lead to more visitors and potentially more customers as a result. The ads.txt file is part of a scheme to reduce advertising fraud, it could be useful.",
-							"Conversion": "Robots.txt files can be used to target specific search engines, helping to ensure content is correctly indexed to get a good placement so that visitors can find you easily.",
-							"Transparency": "The humans.txt file provides credit to people involved in a site's creation, and security offers critical points of contact if an issue is discovered. Both are valuable additions to a project."
+							"Accessibility": "Integrating expected files enables the browser''s default search box to search a service, replacing any custom solution. This can increase accessibility as it encourages the use of a browser-native component and/or keyboard shortcuts, which can often better meet accessibility requirements.",
+							"Conversion": "Configuring robots.txt appropriately can help to ensure content is correctly indexed and users are better guided to appropriate content on your project.",
+							"Economic": "Including robots.txt and sitemap files helps search engines to discover and index your website. This can lead to more visitors and potentially more customers. The ads.txt file may reduce advertising fraud and could similarly benefit your business.",
+							"Environment": "Providing files expected by search engines or browsers will reduce loading errors and may improve efficiency in how visitors find or interact with a site. Plain text requires no rendering. If visitors or search engines are able to find these files, such as carbon.txt, they can load more quickly and with less CPU/GPU impact than any formatted webpage.",
+							"Performance": "Satisfying requests for expected files improves interactions with search engines or browsers requesting them, while also potentially avoiding additional requests once they are discovered. Plain text files contain no links, no markup, and has a low rendering impact. Including details such as site credits in such a file will reduce data transfer and have a lower rendering footprint.",
+							"Transparency": "Providing a humans.txt file allows you to credit the people involved in the creation process, while security.txt  provides critical points of contact if an issue is discovered. Both increase transparency."
 						}
 					],
 					"GRI": [
@@ -3998,10 +3993,10 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "Deprecated standards will not be optimized or supported by future browsers, which could lead to broken functionality or a slow experience, wasting time and visitor resources.",
-							"Security": "Old code can potentially be exploited if security issues arise (and browsers stop supporting the features). Ensuring you maintain standards should be a part of your processes.",
-							"Accessibility": "Deprecated web standards often have poor support in assistive technologies, avoiding them will help to provide a semantic experience that works well for everyone.",
-							"Performance": "Modern web standards are highly optimized, avoiding deprecated or less efficient standards will increase the longevity of your product and reduce the need for a carbon-intensive redesign."
+							"Accessibility": "Using modern web standards helps to ensure better support in assistive technologies.",
+							"Environment": "Avoiding deprecated standards ensures your code is optimized for and supported by modern browsers, ensuring full functionality and a smooth experience. This helps to reduce browsing time and associated energy use.",
+							"Performance": "Moving on from deprecated or less efficient standards increases the longevity of your digital product or service and reduces the need for a carbon-intensive redesign.",
+							"Security": "Keeping up with modern standards reduces the risk of security exploits."
 						}
 					],
 					"GRI": [
@@ -4120,12 +4115,12 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "Carefully considering long-term technology implications and taking the time to ensure they are optimized and efficiently utilized can help a team measurably reduce a product or service's environmental impact over time, which will reduce overall emissions.",
-							"Security": "Maintaining a software product over time and ensuring that the only third-party products you use are critical, and your service improves security.",
-							"Privacy": "Prioritizing security and user privacy helps an organization better comply with current and emerging related legislation.",
-							"Accessibility": "Making assistive technologies a core part of project specifications from the beginning and throughout a product or service's life-cycle improves access to information for people with disabilities.",
-							"Performance": "Avoiding unnecessary complexity in your infrastructure will increase the speed at which developers can work, but also reduce the overhead load of website performance, increasing the benefits relating to emission reduction.",
-							"Economic": "Avoiding tooling which may be overburdening the user experience may have financial savings, especially if certain tooling has maintenance costs or fees for software usage."
+							"Accessibility": "Making assistive technologies a core part of project specifications from the very start and throughout a product or service''s lifecycle improves access for people with disabilities.",
+							"Economic": "Avoiding tooling at risk of overburdening user experience may result in financial savings, especially if tooling has associated maintenance expenses, licensing fees, or subscription costs.",
+							"Environment": "Evaluating long-term technology implications and taking the time to ensure they are optimized and efficiently utilized helps a team measurably reduce the environmental impact of a product or service.",
+							"Performance": "Reducing complexity in your infrastructure will increase developer productivity, while also reducing  overhead. This further reduces emissions.",
+							"Privacy": "Prioritizing security and user privacy helps an organization better comply with current and emerging legislation.",
+							"Security": "Maintaining a software product and restricting your use of third-party solutions to the essential will improve overall security."
 						}
 					],
 					"GRI": [
@@ -4181,10 +4176,10 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "Using the latest language version may improve efficiency and reduce data center energy consumption. Verify benefits are worthwhile before major build upgrades.",
-							"Security": "Often, older versions may have security issues that could expose your website or app (and thereby your visitors) to harm. Maintaining an upgrade schedule is good for security.",
-							"Performance": "Language version updates are usually coupled with performance improvements. Regarding language choice, an algorithm implemented in a compiled language such as C or Rust, for example, can have greatly reduced execution time and energy usage compared to the same algorithm written in an interpreted language like Python or JavaScript.",
-							"Economic": "Using the latest and more performant language version could help hosting companies reduce their costs. That could be beneficial for the company and the visitor."
+							"Economic": "Using the latest and more performant language version can help hosting companies to reduce their costs. That could be beneficial for the company and customers alike.",
+							"Environment": "Using the latest language version can improve efficiency and reduce data center energy consumption. Although do verify that benefits are worthwhile before major build upgrades.",
+							"Performance": "Updating the language version will often offer performance improvements. Compiled languages, such as C or Rust, can have greatly reduced execution times and energy usage for algorthims compared to the same algorithms written in interpreted languages, such as Python or JavaScript.",
+							"Security": "Maintaining update and upgrade schedules is good for security, allowing you to reduce the risk of security vulnerabilities in older versions."
 						}
 					],
 					"GRI": [
@@ -4225,9 +4220,9 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Environment": "Avoiding repetition of pre-existing features improves efficiency, which ultimately will lead to less redundancy, less development time, and thereby emissions saving for the construction of the product or service.",
-							"Performance": "Native features will have been well optimized, it's unlikely a custom component will match this, therefore a native function will not only load quicker but will use fewer resources.",
-							"Economic": "Existing features don't require additional development time, so is a time saver."
+							"Economic": "Existing features don't require additional development time, so is a time saver.",
+							"Environment": "Avoiding repetition of pre-existing features improves efficiency, which ultimately will reduce redundancy, development time, and emissions associated with building the product or service.",
+							"Performance": "Using browser-native functionality and features allows you to take advantage of their natural optimization. They will generally load faster while using fewer resources. Custom components are unlikely to beat their performance."
 						}
 					],
 					"GRI": [
@@ -4272,9 +4267,9 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Environment": "Filtering out unneeded data at a deeper level of the application may reduce energy usage, as less processing is required for (de)serialization.",
-							"Performance": "By holding the data locally rather than remotely, you can avoid waiting for an additional HTTP request to occur to process the string. Relational databases and other specialist data stores are generally heavily optimized for data filtering and retrieval. Performing transformations at this level of the application may lead to reduced CPU time and faster responses.",
-							"Economic": "Rather than pushing multiple additional demands to the server (which could lead to stress failures and lost business), an optimized codebase can reduce bandwidth overheads."
+							"Economic": "Optimizing the codebase to avoid pushing multiple additional demands to the server reduces bandwidth overheads, while also reducing the risk of stress failures and lost business.",
+							"Environment": "Filtering out unneeded data at a deeper level of the application can reduce energy usage, as it reduces the processing required for (de)serialization.",
+							"Performance": "Holding the data locally rather than remotely eliminates the need to wait for additional requests to process the query. Relational databases and other specialist data stores are usually heavily optimized for data filtering and retrieval. Performing transformations at this level of the application creduces processing time and delivers responses faster."
 						}
 					],
 					"GRI": [
