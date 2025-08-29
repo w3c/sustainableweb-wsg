@@ -3556,7 +3556,7 @@
 						{
 							"title": "Required elements",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD11-1)",
-							"description": "Include the required title element, plus any optional HTML head elements.",
+							"description": "Include the required title element, plus any beneficial optional HTML head elements.",
 							"resources": [
 								{
 									"A simple guide to HTML head elements": "https://github.com/joshbuchea/HEAD",
@@ -3571,11 +3571,10 @@
 						{
 							"title": "Meta tags",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD11-2)",
-							"description": "Include necessary meta tag references that are commonly recognized and used by user agents such as search engines. Follow recognized standards and vocabularies such as Dublin Core Metadata Initiative (DCMI), Friend of a Friend (FOAF), or RDFa.",
+							"description": "Include necessary meta tag references that are commonly recognized and used by user agents such as search engines. Follow recognized standards and vocabularies such as Friend of a Friend (FOAF) or RDFa.",
 							"resources": [
 								{
 									"A simple guide to HTML head elements": "https://github.com/joshbuchea/HEAD",
-									"DCMI Metadata Terms": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
 									"Friend Of A Friend": "http://xmlns.com/foaf/spec/",
 									"Meta tags and attributes that Google supports": "https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=en",
 									"MetaExtensions": "https://wiki.whatwg.org/wiki/MetaExtensions",
@@ -4269,7 +4268,7 @@
 						{
 							"title": "Static over dynamic",
 							"testable": "Human-testable",
-							"description": "Deliver static content wherever possible. If you choose to use a code generation tool, a Static Site Generator (SSG) is preferable to bulky Content Management Systems (CMS). SSGs often start by using a minimalist content entry format, such as Markdown, and all of the compilation is done before the code is uploaded. This reduces emissions by reducing the effort the server expends serving pages to each visitor. A CMS is dynamic. The site will involve additional computation work with server-side processing and often bulkier libraries.",
+							"description": "Deliver static in place of dynamic content wherever possible. If you choose to use a code generation tool, then favor the most efficient tool available, such as Static Site Generators (SSGs). Content delivered by a dynamic CMS will involve much more server-side processing and uses bulkier libraries.",
 							"resources": [
 								{
 									"7 Reasons to Use a Static Site Generator": "https://www.sitepoint.com/7-reasons-use-static-site-generator/",
