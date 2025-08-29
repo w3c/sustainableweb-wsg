@@ -4530,13 +4530,13 @@
 			"guidelines": [
 				{
 					"id": "1",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider",
-					"guideline": "Choose a sustainable hosting provider",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider",
+					"guideline": "Choose a sustainable service provider",
 					"criteria": [
 						{
-							"title": "Sustainability Metrics",
+							"title": "Monitor Metrics",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS01-1)",
-							"description": "Monitor key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. These include energy and water usage, but also hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share, environmental impact metrics. Metrics should include Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE). Allow package scaling manually or automatically to reduce overconsumption.",
+							"description": "Monitor key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. These include energy and water usage, but also hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share, environmental impact metrics. Metrics should include Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE).",
 							"resources": [
 								{
 									"#3 Metrics for Datacenter Efficiency: PUE, CUE, and WUE": "https://submer.com/blog/pue-cue-and-wue-what-do-these-three-metrics-represent-and-which-is-one-is-the-most-important/",
@@ -4625,7 +4625,7 @@
 							]
 						},
 						{
-							"title": "Electronic waste management",
+							"title": "E-waste management",
 							"testable": "Human-testable",
 							"description": "Responsibly recycle or upcycle unwanted waste. Materials should be recovered and reused, where possible, or otherwise disposed of appropriately.",
 							"resources": [
@@ -4658,7 +4658,7 @@
 									"2024 Eco Web Hosting Review": "https://go.eco/news/2024-eco-web-hosting-review/",
 									"43% of major environmental websites make mass carbon emissions": "https://www.openaccessgovernment.org/43-of-major-environmental-websites-make-mass-carbon-emissions/134119/",
 									"Benefits of buying sustainable goods and services": "https://www.netregs.org.uk/environmental-topics/carbon-reduction-and-efficiency/buying-eco-friendly-goods-and-services/benefits-of-buying-sustainable-goods-and-services/",
-									"Choose a sustainable hosting provider": "https://climateproductleaders.org/playbook/choose-a-sustainable-hosting-provider",
+									"Choose a sustainable service provider": "https://climateproductleaders.org/playbook/choose-a-sustainable-service-provider",
 									"Digital data demand and renewable energy limits": "https://www.sciencedirect.com/science/article/pii/S0301421524004245",
 									"GPF - General Policy Framework (PDF) - 4.15 - UX and UI (Sustainability Tracking)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.1 - Hosting (Hosting Provider)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -4693,7 +4693,7 @@
 						{
 							"title": "Remaining emissions",
 							"testable": "Human-testable",
-							"description": "Balance unavoidable remaining carbon emissions with high-quality market based instruments or other evolving instruments from the voluntary carbon market, until additional renewable energy resources become available. high-quality market based instruments should be verified by non-profit third-party organizations and have evidence based viability.",
+							"description": "Balance unavoidable remaining carbon emissions with high-quality market based instruments or other evolving instruments from the voluntary carbon market, until additional renewable energy resources become available. The quality of market-based instruments should be verified by non-profit third-party organizations with sufficient supporting evidence.",
 							"resources": [
 								{
 									"Alternatives to Carbon Credits": "https://offsetguide.org/alternatives-to-carbon-credits/",
@@ -5152,7 +5152,7 @@
 						{
 							"title": "Suspicious activity filtering",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS06-4)",
-							"description": "Discourage unwanted and unnecessary third-party crawlers, user agents, unwanted visitors, bots, and scrapers from accessing or downloading your content by using best practices such as robots.txt, server access rules and security tools, while ensuring your content remains accessible to users, search engines and any helpful, welcome crawlers. Consider that scrapers may be used to inform and train large language models.",
+							"description": "Restrict the activity of unwanted and unnecessary third-party crawlers, suspicious user agents, unwanted visitors, bots, and scrapers from accessing or downloading your content. Follow best practices, such as server access rules and security tools, while ensuring your content remains accessible to users, search engines and any helpful, welcome crawlers. Consider that scrapers may be used to inform and train large language models.",
 							"resources": [
 								{
 									"63% of Websites Receive AI Traffic": "https://ahrefs.com/blog/ai-traffic-study/",
@@ -5415,7 +5415,7 @@
 						{
 							"title": "Global CDNs",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS10-1)",
-							"description": "Use a Content Delivery Network (CDN) on a case-by-case basis to deliver static content, assets, and other read-only resources efficiently. Carefully evaluate the environmental impact of any CDN service used, similar to a web hosting provider, only utilzing the CDN when the impact to your project will be sustainably beneficial.",
+							"description": "Deploy static content, assets, and other read-only resources via a Content Delivery Network (CDN) on a case-by-case basis, where judged to be beneficial. Carefully evaluate the environmental impact of any CDN service used, similar to a web hosting provider.",
 							"resources": [
 								{
 									"Caching on a Content Delivery Network (CDN)": "https://www.debugbear.com/blog/cdn-cache",
@@ -5553,7 +5553,7 @@
 						{
 							"title": "Close to the source",
 							"testable": "Human-testable",
-							"description": "Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources that will later be discarded.",
+							"description": "Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources.",
 							"resources": [
 								{
 									"3 Strategies for Achieving Data Efficiency in Modern Organizations": "https://www.confluent.io/blog/achieving-data-efficiency/",

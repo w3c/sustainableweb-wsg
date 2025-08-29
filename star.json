@@ -3287,7 +3287,7 @@
 				{
 					"id": "HIS01-1",
 					"title": "Publicly disclose relevant sustainability metrics to visitors",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.1 Choose a sustainable hosting provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.1 Choose a sustainable service provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider).",
 					"description": [
 						{
 							"1": "Ensure that anyone who wishes to compile an impact statement (as a consumer of your services) based on conditions such as PUE, WUE, and CUE can calculate the necessary energy utilization of a provider using each of the available data based upon any variables required. Making important metrics publicly visible to both customers and visitors, increases awareness, reduces the potential for greenwashing, and allows service providers to report with proof of compliance.",
@@ -3318,7 +3318,7 @@
 				{
 					"id": "HIS01-4",
 					"title": "Ensure that the project is hosted on a sustainable platform",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.1 Choose a sustainable hosting provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.1 Choose a sustainable service provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider).",
 					"description": [
 						{
 							"1": "Verify that the product or service is being served through a sustainable provider. If the hosting provider (for example) generates its electricity from renewables and can document other intensity reduction techniques (such as using natural cooling and offering auto-scaling packages), this can contribute towards passing the success criteria.",
@@ -3349,7 +3349,7 @@
 				{
 					"id": "HIS01-6",
 					"title": "Ensure that the project uses a sustainable domain registrar",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.1 Choose a sustainable hosting provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [4.1 Choose a sustainable service provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider).",
 					"description": [
 						{
 							"1": "Ensure that emissions reports are published, with adequate frequency, considering (if possible) changes to DNS, subdomain allocation, multiple domain ownership, or other conditions that may impact the scope results. Also, be sure to provide calculations on an individual and collective domain level (where situations allow) to enable the best overview possible of total impact and most impactful domains. Having these metrics available for customers will increase public awareness, and allow registrants to meet reporting obligations as part of their compliance requirements.",

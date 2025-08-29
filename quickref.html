@@ -1235,15 +1235,15 @@
 			<table>
 				<tbody>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-hosting-provider">4.1</a></td>
-						<td colspan="5">Choose a sustainable hosting provider</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider">4.1</a></td>
+						<td colspan="5">Choose a sustainable service provider</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="4.1a"></td><td colspan="5"><label for="4.1a">
-							Monitor key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. These include energy and water usage, but also hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and <abbr title="Central Processing Unit">CPU</abbr> cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share, environmental impact metrics. Metrics should include Power Usage Effectiveness (<abbr title="Power Usage Effectiveness">PUE</abbr>), Water Usage Effectiveness (<abbr title="Water Usage Effectiveness">WUE</abbr>), and Carbon Usage Effectiveness (<abbr title="Carbon Usage Effectiveness">CUE</abbr>). Allow package scaling manually or automatically to reduce overconsumption.</label></td>
+							Monitor key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. These include energy and water usage, but also hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and <abbr title="Central Processing Unit">CPU</abbr> cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share, environmental impact metrics. Metrics should include Power Usage Effectiveness (<abbr title="Power Usage Effectiveness">PUE</abbr>), Water Usage Effectiveness (<abbr title="Water Usage Effectiveness">WUE</abbr>), and Carbon Usage Effectiveness (<abbr title="Carbon Usage Effectiveness">CUE</abbr>).</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="4.1b"></td><td colspan="5"><label for="4.1b">Maintain hardware to extend its lifespan as long as possible. Use it efficiently at an appropriate capacity, and ensuring it has the necessary certifications. New purchases should be from reliable long-lifespan suppliers.</label></td>
@@ -1255,7 +1255,7 @@
 						<td><input type="checkbox" id="4.1d"></td><td colspan="5"><label for="4.1d">Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, including backup generators, in calculations.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="4.1e"></td><td colspan="5"><label for="4.1e">Balance unavoidable remaining carbon emissions with high-quality market based instruments or other evolving instruments from the voluntary carbon market, until additional renewable energy resources become available. high-quality market based instruments should be verified by non-profit third-party organizations and have evidence based viability.</label></td>
+						<td><input type="checkbox" id="4.1e"></td><td colspan="5"><label for="4.1e">Balance unavoidable remaining carbon emissions with high-quality market based instruments or other evolving instruments from the voluntary carbon market, until additional renewable energy resources become available. The quality of market-based instruments should be verified by non-profit third-party organizations with sufficient supporting evidence.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="4.1f"></td><td colspan="5"><label for="4.1f">The impact of domain names is disclosed by registries and registrars, and registrants consider and (where possible) mitigate against these environmental issues.</label></td>
@@ -1366,7 +1366,7 @@
 						<td><input type="checkbox" id="4.6c"></td><td colspan="5"><label for="4.6c">Use automated scaling to promptly adjust server capacity up or down based on demand, ensuring efficient resource allocation. Implement buffering and throttling to manage load and maintain performance without overprovisioning.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="4.6d"></td><td colspan="5"><label for="4.6d">Discourage unwanted and unnecessary third-party crawlers, user agents, unwanted visitors, bots, and scrapers from accessing or downloading your content by using best practices such as robots.txt, server access rules and security tools, while ensuring your content remains accessible to users, search engines and any helpful, welcome crawlers. Consider that scrapers may be used to inform and train large language models.</label></td>
+						<td><input type="checkbox" id="4.6d"></td><td colspan="5"><label for="4.6d">Restrict the activity of unwanted and unnecessary third-party crawlers, suspicious user agents, unwanted visitors, bots, and scrapers from accessing or downloading your content. Follow best practices, such as server access rules and security tools, while ensuring your content remains accessible to users, search engines and any helpful, welcome crawlers. Consider that scrapers may be used to inform and train large language models.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -1447,7 +1447,7 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="4.10a"></td><td colspan="5"><label for="4.10a">Use a Content Delivery Network (<abbr title="Content Delivery Network">CDN</abbr>) on a case-by-case basis to deliver static content, assets, and other read-only resources efficiently. Carefully evaluate the environmental impact of any CDN service used, similar to a web hosting provider, only utilzing the CDN when the impact to your project will be sustainably beneficial.</label></td>
+						<td><input type="checkbox" id="4.10a"></td><td colspan="5"><label for="4.10a">Deploy static content, assets, and other read-only resources via a Content Delivery Network (<abbr title="Content Delivery Network">CDN</abbr>) on a case-by-case basis, where judged to be beneficial. Carefully evaluate the environmental impact of any CDN service used, similar to a web hosting provider..</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="4.10b"></td><td colspan="5"><label for="4.10b">Select CDN providers that make commitments to sustainability and report on their progress.</label></td>
@@ -1459,7 +1459,7 @@
 						<td><input type="checkbox" id="4.10d"></td><td colspan="5"><label for="4.10d">Avoid deploying dynamic or frequently changing resources to a CDN. Browser behaviors such as cache partitioning and cross-origin resource sharing (<abbr title="Cross-Origin Resource Sharing">CORS</abbr>) can limit performance gains, hinder caching and interaction, and attempting to override these can introduce security or privacy risks. This does not apply to static assets or <abbr title="JavaScript Object Notation">JSON</abbr> files, which are well suited to CDN delivery.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="4.10e"></td><td colspan="5"><label for="4.10e">Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources that will later be discarded.</label></td>
+						<td><input type="checkbox" id="4.10e"></td><td colspan="5"><label for="4.10e">Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
