@@ -2896,7 +2896,7 @@
 				{
 					"id": "WD14-1",
 					"title": "Optimize a codebase through rewriting for performance",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Use beneficial JavaScript and its APIs](https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Use Standards-based JavaScript and APIs](https://w3c.github.io/sustainableweb-wsg/#use-standards-based-javascript-and-apis).",
 					"description": [
 						{
 							"1": "Improve the quality of JavaScript code by examining the contents and identifying any issues that could be deemed a matter of sustainability which could trigger a large load upon hardware resources (and thus put a strain on battery charge cycles). In addition to this, matters of accessibility and performance with such code can be considered.",
@@ -2927,7 +2927,7 @@
 				{
 					"id": "WD14-2",
 					"title": "Ensure JavaScript APIs are correctly applied",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Use beneficial JavaScript and its APIs](https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-apis).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [3.14 Use Standards-based JavaScript and APIs](https://w3c.github.io/sustainableweb-wsg/#use-standards-based-javascript-and-apis).",
 					"description": [
 						{
 							"1": "Provide mechanisms through JavaScript that minimize the visitor's energy consumption by either optimizing the performance of the website or application itself or improving functionality in such a way that it reduces the utilization of resources when they are not required by the visitor. Some JavaScript APIs can have explicit sustainability benefits, while others may improve other PPP benefits through accessibility (societal factors).",

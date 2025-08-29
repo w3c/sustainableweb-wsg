@@ -3838,10 +3838,10 @@
 				{
 					"id": "14",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-api-s",
-					"guideline": "Use beneficial JavaScript and its APIs",
+					"guideline": "Use Standards-based JavaScript and APIs",
 					"criteria": [
 						{
-							"title": "Beneficial JavaScript",
+							"title": "Sustainable JavaScript",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD14-1)",
 							"description": "Improve sustainability through accessible and performant code.",
 							"resources": [
@@ -3892,7 +3892,7 @@
 						{
 							"title": "API requests",
 							"testable": "Human-testable",
-							"description": "Call APIs only when necessary. Equally, ensure an API is optimized to only send data that is actually required.",
+							"description": "Call client- or server-side APIs only when necessary. Equally, ensure an API is optimized to only send data that is actually required.",
 							"resources": [
 								{
 									"9 Proven Strategies to Improve API Performance": "https://www.thegeekyminds.com/post/strategies-to-improve-api-performance",
