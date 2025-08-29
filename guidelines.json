@@ -2564,13 +2564,13 @@
 			"guidelines": [
 				{
 					"id": "1",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#set-goals-based-on-potential-impact-considerations",
-					"guideline": "Set goals based on potential impact considerations",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#set-goals-based-on-performance-and-energy-impact",
+					"guideline": "Set goals based on performance and energy impact",
 					"criteria": [
 						{
 							"title": "Performance goals",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD01-1)",
-							"description": "Explicit goals that impact the environment and performance of the service, for example, HTTP requests, or the amount of DOM elements that need to be rendered are both set and met.",
+							"description": "Set clear goals with performance and environmental impact in mind, then meet them. These could include, the number of requests or elements that must be rendered.",
 							"resources": [
 								{
 									"15 page speed optimizations that sites ignore (at their own risk)": "https://www.speedcurve.com/blog/15-neglected-page-speed-optimizations/",
@@ -2601,9 +2601,9 @@
 							]
 						},
 						{
-							"title": "Accountancy types",
+							"title": "Energy intensity",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD01-2)",
-							"description": "Because the payload being delivered may not always be equal in terms of energy intensity, operators of websites and applications must ensure that consideration is given for the energy intensity (or unit being evaluated) of each component. For example, non-rendering text is less computational than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL.",
+							"description": "Consider differences in the energy intensity or testable impact across each component. For example, unstyled text is less computationally intensive to render than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL or 4K video.",
 							"resources": [
 								{
 									"Analysis of overconsumptions on a light website": "https://greenspector.com/en/analysis-of-overconsumptions-on-a-light-website-2/",
@@ -2650,7 +2650,7 @@
 					"guideline": "Remove unnecessary or redundant information",
 					"criteria": [
 						{
-							"title": "Minify code",
+							"title": "Minified code",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD02-1)",
 							"description": "Remove unnecessary whitespace, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to HTML, CSS, JavaScript, JSON, SVG, and other relevant file types.",
 							"resources": [
@@ -2690,13 +2690,13 @@
 				},
 				{
 					"id": "3",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components-within-projects",
-					"guideline": "Modularize bandwidth-heavy components within projects",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components",
+					"guideline": "Modularize bandwidth-heavy components",
 					"criteria": [
 						{
 							"title": "Code splitting",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD03-1)",
-							"description": "Break down bandwidth-heavy components, front-end and back-end into smaller, modular segments that can be loaded only when required.",
+							"description": "Break down bandwidth-heavy components into smaller, modular segments that can be loaded only when required. This applies to both front-end and back-end code.",
 							"resources": [
 								{
 									"Bundling dependancies": "https://e18e.dev/blog/bundling-dependencies",
@@ -2737,13 +2737,13 @@
 				},
 				{
 					"id": "4",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#tree-shaking-should-be-used-to-remove-unnecessary-code",
-					"guideline": "Tree shaking should be used to remove unnecessary code",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-code",
+					"guideline": "Remove unnecessary code",
 					"criteria": [
 						{
 							"title": "Remove redundancy",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD04-1)",
-							"description": "Identify and eliminate unused and dead code within CSS and JavaScript.",
+							"description": "Identify and eliminate unused and dead code, commonly within CSS and JavaScript.",
 							"resources": [
 								{
 									"Browser Default Styles": "https://browserdefaultstyles.com/",
@@ -2787,13 +2787,13 @@
 				},
 				{
 					"id": "5",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#redundancy-and-duplication-in-code-should-be-avoided",
-					"guideline": "Redundancy and duplication in code should be avoided",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-redundancy-and-duplication-in-code",
+					"guideline": "Avoid redundancy and duplication in code",
 					"criteria": [
 						{
 							"title": "Remove or simplify",
 							"testable": "Human-testable",
-							"description": "Remove or simplify (through rewriting for performance) your code to focus on essential features and have a cleaner, less redundant product (and codebase).",
+							"description": "Remove duplication and/or simplify and optimize your code for better performance, focusing on essential features so you have a cleaner, less redundant product and codebase.",
 							"resources": [
 								{
 									"25 Techniques for Javascript Performance Optimization": "https://desalasworks.com/article/javascript-performance-techniques/",
@@ -2808,7 +2808,7 @@
 						{
 							"title": "Iteration over recreation",
 							"testable": "Human-testable",
-							"description": "Improve (iterate) an existing creation rather than constantly redeveloping and redesigning products from scratch (duplication of coding effort) if possible to reduce visitor learning burden and developer impact.",
+							"description": "Improve existing solutions rather than redeveloping and redesigning products from scratch, since the latter would duplicate the coding effort and maintenance burden for developers rather than reduce the learning burden for visitors.",
 							"resources": [
 								{
 									"A Sustainable Design Handbook": "https://www.sustainabledesignhandbook.com/design-development",
@@ -2824,7 +2824,7 @@
 						{
 							"title": "Organize code arrangement",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD05-3)",
-							"description": "Within CSS and JavaScript, use an organizing methodology and systems like DRY and WET to optimize the arrangement and output of your source code.",
+							"description": "Use organization methodology and systems such as DRY or WET to optimize the arrangement and output of your JavaScript and CSS.",
 							"resources": [
 								{
 									"3 software development principles I wish I knew earlier in my career": "https://thetshaped.dev/p/3-software-development-principles",
@@ -2868,13 +2868,13 @@
 				},
 				{
 					"id": "6",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#third-party-services-should-be-assessed-as-first-parties",
-					"guideline": "Third-party services should be assessed as first parties",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#give-third-parties-the-same-priority-as-first-parties-during-assessment",
+					"guideline": "Give third parties the same priority as first parties during assessment",
 					"criteria": [
 						{
-							"title": "Assess third-parties",
+							"title": "Assess and reduce",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-1)",
-							"description": "Third-party services (including plugins, widgets, feeds, maps, carousels, etc) have been assessed as early in the ideation or creation process as possible and as few of them are used as possible to reduce the product or service's overall ecological impact, including Scope 3 emissions.",
+							"description": "Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions.",
 							"resources": [
 								{
 									"6 steps to reduce the carbon footprint of your website": "https://opensource.com/article/23/3/reduce-carbon-footprint-website",
@@ -2901,7 +2901,7 @@
 						{
 							"title": "Third-party implementation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-2)",
-							"description": "Third-party content (including plugins, widgets, feeds, maps, carousels, chat widgets, etc) that loads or requests resources or functionality from a location outside of the primary location, should be placed behind a click-to-load delay screen (using the \"import on interaction\" pattern), while alternatives are offered, for instance a link to a contact form as an alternative for a chat widget.",
+							"description": "Use click-to-load triggers based on an import on interaction pattern to prevent automatic loading of third-party content and/or services (see above). Offer suitable alternatives to third-party use, for example, a link to a contact form as an alternative to a chat widget.",
 							"resources": [
 								{
 									"Are my third parties green?": "https://aremythirdpartiesgreen.com/",
@@ -2930,7 +2930,7 @@
 						{
 							"title": "Libraries and frameworks",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-3)",
-							"description": "Large CSS libraries and JavaScript frameworks are only be used if a more performant alternative that achieves the same goal cannot be used instead.",
+							"description": "Avoid using large libraries and frameworks. Integrate these only when unable to use a more performant alternative to achieve the same goal.",
 							"resources": [
 								{
 									"Boring Web Development": "https://meiert.com/blog/boring-web-development/",
@@ -2953,7 +2953,7 @@
 						{
 							"title": "Self-hosting",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-4)",
-							"description": "Self-hosted content has been prioritized over embedded content from third-party services.",
+							"description": "Prioritize self-hosted content over embedding content from third-party services.",
 							"resources": [
 								{
 									"Awesome-Selfhosted": "https://github.com/awesome-selfhosted/awesome-selfhosted",
@@ -2967,9 +2967,9 @@
 							]
 						},
 						{
-							"title": "Avoiding dependency",
+							"title": "Avoid dependencies",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-5)",
-							"description": "Your own clickable icons and widgets have been created, rather than relying on third-party services to host or allow embedding within your product or service.",
+							"description": "Host icons and widgets on your own server, rather than relying on third-party services to host and deliver these or embed third-party functionality within your project.",
 							"resources": [
 								{
 									"Boring Web Development": "https://meiert.com/blog/boring-web-development/",
@@ -2991,7 +2991,7 @@
 						{
 							"title": "Third-party preferences",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-6)",
-							"description": "Third-party products, services, libraries, and frameworks are often a source of sustainability issues that cannot be controlled or managed by the first-party provider of a service. While many do provide benefits to a website, the need to justify their inclusion must be made not only by those creating the product or service but also be able to be controlled by the consumer. As showcased with cookies, websites or applications can provide a similar mechanism of disabling or refusing non-first-party features (with explanations of their purpose) - unless such features can be proven as critical for functionality.",
+							"description": "Respect user preferences around the use of third-party products and services, similar to the implementation of cookie consent modals. Provide mechanisms to disable or refuse non-first-party features alongside explanations of their purpose unless it is possible to show these third-party features are critical for functionality.",
 							"resources": [
 								{
 									"An empirical study on the performance and energy costs of ads and analytics in mobile web apps": "https://www.sciencedirect.com/science/article/pii/S0950584923002252",
@@ -3037,13 +3037,13 @@
 				},
 				{
 					"id": "7",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#code-must-follow-good-semantic-practices",
-					"guideline": "Code must follow good semantic practices",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-code-follows-good-semantic-practices",
+					"guideline": "Ensure code follows good semantic practices",
 					"criteria": [
 						{
 							"title": "Semantic code",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD07-1)",
-							"description": "Content must be accurately marked up according to the relevant standard(s).",
+							"description": "Use accurate markup according to the relevant standard(s).",
 							"resources": [
 								{
 									"0.5% of the Global Top 200 Websites Use Valid HTML": "https://meiert.com/blog/html-conformance-2024/",
@@ -3079,7 +3079,7 @@
 						{
 							"title": "Optional features",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD07-2)",
-							"description": "Remove optional HTML tags, attribute quotes, and default attributes only when they do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity (without compromising on performance), or ensure consistent browser rendering.",
+							"description": "Remove optional HTML elements, attribute quotes, and default attributes when these do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity without compromising on performance, or ensure consistent browser rendering.",
 							"resources": [
 								{
 									"Almost, but not quite, entirely unlike": "https://www.htmhell.dev/adventcalendar/2024/7/",
@@ -3094,7 +3094,7 @@
 						{
 							"title": "Avoid non-standard code",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD07-3)",
-							"description": "Avoid using non-standard elements or attributes.",
+							"description": "Avoid using non-standard HTML elements or attributes.",
 							"resources": [
 								{
 									"A Node and Command Line Tool to Find Obsolete HTML": "https://meiert.com/blog/find-obsolete-html/",
@@ -3111,7 +3111,7 @@
 						{
 							"title": "Custom code",
 							"testable": "Human-testable",
-							"description": "Prefer using standard HTML elements and attributes. Only use custom elements or Web Components if you cannot utilize native HTML elements or if you need tightly regulated control over the implementation of design system components..",
+							"description": "Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use native elements or if you require them for the purposes of producing reusable design system components.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.9 - Strategy (Interoperable Technologies)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -3150,13 +3150,13 @@
 				},
 				{
 					"id": "8",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#render-blocking-should-be-resolved",
-					"guideline": "Render blocking should be resolved",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#defer-the-loading-of-non-critical-resources",
+					"guideline": "Defer the loading of non-critical resources",
 					"criteria": [
 						{
 							"title": "Asynchronous code",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD08-1)",
-							"description": "All external assets have been deferred or set to async (unless required) to avoid Flash Of Unstyled Content (FOUC).",
+							"description": "Defer loading of non-essential external assets or set these to load asynchronously to avoid a Flash Of Unstyled Content (FOUC).",
 							"resources": [
 								{
 									"Fast Load Times: Optimize your resource delivery": "https://web.dev/explore/fast?hl=en#optimize-your-resource-delivery",
@@ -3171,9 +3171,9 @@
 							]
 						},
 						{
-							"title": "Priority loading",
+							"title": "Optimized loading",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD08-2)",
-							"description": "If external resources are required on load, their priorities (delivery route) are set correctly.",
+							"description": "Where external resources are required to be used upon the documents load, optimize loading using resource and priority hints.",
 							"resources": [
 								{
 									"Assist the browser with resource hints": "https://web.dev/learn/performance/resource-hints",
@@ -3220,13 +3220,13 @@
 				},
 				{
 					"id": "9",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#information-to-help-understand-the-usefulness-of-a-page-should-exist",
-					"guideline": "Information to help understand the usefulness of a page should exist",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-information-to-help-understand-the-usefulness-of-a-page",
+					"guideline": "Provide information to help understand the usefulness of a page",
 					"criteria": [
 						{
 							"title": "Metadata and microdata",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD09-1)",
-							"description": "Metadata and microdata for search engines and social media have been optimized.",
+							"description": "Optimize and only include suitable metadata and microdata.",
 							"resources": [
 								{
 									"A simple guide to HTML head elements": "https://github.com/joshbuchea/HEAD",
@@ -3241,7 +3241,7 @@
 						{
 							"title": "Search engines",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD09-2)",
-							"description": "Search engines are not obstructed, while ill-intentioned robots and scripts are blocked.",
+							"description": "Permit appropriate access to search engines while blocking unsustainable robots and scripts.",
 							"resources": [
 								{
 									"About /robots.txt": "https://www.robotstxt.org/robotstxt.html",
@@ -3261,7 +3261,7 @@
 						{
 							"title": "Accessibility aids",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD09-3)",
-							"description": "Accessibility and usability aids are provided to find content, such as skip links and signposts.",
+							"description": "Provide accessibility and usability aids, such as skip links and signposts, to help users find and navigate content.",
 							"resources": [
 								{
 									"Breadcrumbs In Web Design": "https://www.smashingmagazine.com/2009/03/breadcrumbs-in-web-design-examples-and-best-practices/",
@@ -3299,13 +3299,13 @@
 				},
 				{
 					"id": "10",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#forms-must-validate-for-errors-accounting-for-tooling-requirements",
-					"guideline": "Forms must validate for errors, accounting for tooling requirements",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#validate-form-errors-and-account-for-tooling-requirements",
+					"guideline": "Validate form errors and account for tooling requirements",
 					"criteria": [
 						{
 							"title": "Error validation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD10-1)",
-							"description": "Errors are identified through live validation as well as upon submission.",
+							"description": "Identify errors through live validation and with feedback on submission.",
 							"resources": [
 								{
 									"48 Cart Abandonment Rate Statistics 2023": "https://baymard.com/lists/cart-abandonment-rate",
@@ -3322,7 +3322,7 @@
 						{
 							"title": "Label elements",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD10-2)",
-							"description": "Required elements are clearly identified and labeled (for the benefit of voice tools such as screen readers and virtual assistants), and optional elements (if unnecessary) removed.",
+							"description": "Clearly label and identify required elements to ensure easy recognition for visitors using assistive technologies. Remove any unnecessary optional elements.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 4.10 - UX and UI (Input Format)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -3335,9 +3335,9 @@
 							]
 						},
 						{
-							"title": "Allow paste",
+							"title": "Allow clipboard",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD10-3)",
-							"description": "Always allow the pasting of content (including passwords) from external sources.",
+							"description": "Always allow the copying and pasting of content (including passwords) from external sources.",
 							"resources": [
 								{
 									"Authentication Cheat Sheet": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
@@ -3373,13 +3373,13 @@
 				},
 				{
 					"id": "11",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#metadata-is-structured-for-machine-readability",
-					"guideline": "Metadata is structured for machine readability",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#structure-metadata-for-machine-readability",
+					"guideline": "Structure metadata for machine readability",
 					"criteria": [
 						{
 							"title": "Required elements",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD11-1)",
-							"description": "Include the required title element, plus any optional HTML head elements (such as link).",
+							"description": "Include the required title element, plus any beneficial optional HTML head elements.",
 							"resources": [
 								{
 									"A simple guide to HTML head elements": "https://github.com/joshbuchea/HEAD",
@@ -3394,11 +3394,10 @@
 						{
 							"title": "Meta tags",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD11-2)",
-							"description": "Include necessary meta tag references that search engines and social networks recognize, using a recognized name scheme such as Dublin Core Metadata Initiative (DCMI), Friend Of A Friend (FOAF), or RDFa.",
+							"description": "Include necessary meta tag references that are commonly recognized and used by user agents such as search engines. Follow recognized standards and vocabularies such as Friend of a Friend (FOAF) or RDFa.",
 							"resources": [
 								{
 									"A simple guide to HTML head elements": "https://github.com/joshbuchea/HEAD",
-									"DCMI Metadata Terms": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
 									"Friend Of A Friend": "http://xmlns.com/foaf/spec/",
 									"Meta tags and attributes that Google supports": "https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=en",
 									"MetaExtensions": "https://wiki.whatwg.org/wiki/MetaExtensions",
@@ -3409,7 +3408,7 @@
 						{
 							"title": "Structured data",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD11-3)",
-							"description": "Use Microdata, Structured Data (Schema), or Microformats in content for which a widely used structured data format exists.",
+							"description": "Use microdata, structured data (e.g., Schema.org), or microformats in content where a widely used structured data format exists.",
 							"resources": [
 								{
     								"GPF - General Policy Framework (PDF) - 1.9 - Strategy (Interoperable Technologies)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -3447,13 +3446,13 @@
 				},
 				{
 					"id": "12",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#sustainable-css-user-preference-media-queries-are-used",
-					"guideline": "Sustainable CSS user preference media queries are used",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#use-sustainability-beneficial-user-preference-media-queries",
+					"guideline": "Use sustainability beneficial user preference media queries",
 					"criteria": [
 						{
 							"title": "Media and preference queries",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD12-1)",
-							"description": "Apply the monochrome, prefers-contrast, prefers-color-scheme, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion CSS preference queries if they will benefit your website or application. Use the print and scripting CSS media queries if they will improve the sustainability of your website.",
+							"description": "Accommodate common user preferences, such as prefers-color-scheme, with corresponding CSS media queries. Consider accounting for additional user preferences, including monochrome, prefers-contrast, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion preference queries where these will benefit your users. Use print and scripting media queries when they can improve sustainability.",
 							"resources": [
 								{
 									"A Guide To The State Of Print Stylesheets In 2018": "https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/",
@@ -3517,13 +3516,13 @@
 				},
 				{
 					"id": "13",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#layouts-work-across-devices-and-requirements",
-					"guideline": "Layouts work across devices and requirements",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-layouts-work-for-different-devices-and-requirements",
+					"guideline": "Ensure layouts work for different devices and requirements",
 					"criteria": [
 						{
 							"title": "Device-adaptable",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD13-1)",
-							"description": "Allow a website or app to work and adapt seamlessly across a variety of devices and screen sizes, including mobile, desktop, smart TVs, and other emerging platforms. Ensures that content and functionality are accessible and optimized on both smaller mobile screens and larger displays without limiting accessibility, usability or design on any specific device type. It is essential to implement robust fallback strategies to ensure that the website or application will not fail if it encounters unsupported technologies.",
+							"description": "Allow your project to work and adapt seamlessly across a variety of devices and screen sizes, including smartphones, tablets, laptops, desktop computers, smart TVs, and other emerging platforms. This ensures that content and functionality can be easily accessed and are suitably optimized for display on both smaller mobile devices and larger displays without limiting accessibility, usability, or design features on any specific device type. Implement robust fallback strategies to ensure that the digital product or service will not fail if it encounters unsupported technologies.",
 							"resources": [
 								{
 									"Front-End Performance Checklist 2021": "https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/",
@@ -3554,7 +3553,7 @@
 						{
 							"title": "Progressive enhancement",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD13-2)",
-							"description": "Regardless of the approach or combination of approaches used, such as Adaptive Design, Mobile-First Design, or Dynamic Serving, it's essential to ensure overall sustainability through progressive enhancement.",
+							"description": "Use progressive enhancement to enhance overall sustainability. This can involve a single approach or a careful combination, such as adaptive design, mobile-first design, or dynamic serving.",
 							"resources": [
 								{
 									"Build for the Web, Build on the Web, Build with the Web": "https://csswizardry.com/2025/01/build-for-the-web-build-on-the-web-build-with-the-web/",
@@ -3584,9 +3583,9 @@
 							]
 						},
 						{
-							"title": "Carbon aware design",
+							"title": "Carbon-aware design",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD13-3)",
-							"description": "To maximize the use of renewable energy, adapt your website or service to electricity availability using carbon-aware design techniques. This should include using situational design to reduce the codebase disable non-essential functionality during high-intensity periods or adapting the user-interface to perform better in situations where scaling hardware resources can be avoided to reduce emissions. It can also include designing algorithms that can auto-disable features based on set thresholds.",
+							"description": "Use carbon-aware design techniques to maximize your use of renewable energy. This is achieved by adapting the delivery of your project to current electricity availability and visitor grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.",
 							"resources": [
 								{
 									"Carbon Aware Computing": "https://www.carbon-aware-computing.com/",
@@ -3608,7 +3607,7 @@
 						{
 							"title": "Alternative browsing",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD13-4)",
-							"description": "Support other indirect methods of interaction such as voice (speech), code (QR, etc), reader view (browser, application, or RSS), or connected technology (watch, appliance, transport, etc).",
+							"description": "Support additional indirect methods of interaction, such as voice (speech), code (QR, etc.), reader view (browser, application, or RSS), or connected technologies (watch, appliance, transport, etc.).",
 							"resources": [
 								{
 									"CSS Speech Module Level 1": "https://www.w3.org/TR/css-speech-1/",
@@ -3646,12 +3645,12 @@
 				{
 					"id": "14",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-beneficial-javascript-and-its-api-s",
-					"guideline": "Use beneficial JavaScript and its APIs",
+					"guideline": "Use Standards-based JavaScript and APIs",
 					"criteria": [
 						{
-							"title": "Beneficial JavaScript",
+							"title": "Sustainable JavaScript",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD14-1)",
-							"description": "Improve sustainability through accessible and performant code implementations.",
+							"description": "Improve sustainability through accessible and performant code.",
 							"resources": [
 								{
 									"A handful of reasons JavaScript won't be available": "https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available/",
@@ -3683,7 +3682,7 @@
 						{
 							"title": "Sustainable APIs",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD14-2)",
-							"description": "Apply potential energy-reducing APIs (such as Battery Status, Compression Streams, Page Visibility, and Vibration) if they can improve the eco-efficiency of your website or application.",
+							"description": "Integrate energy-relevant APIs - such as Battery Status, Compression Streams, Page Visibility, or Vibration - where these can reduce energy consumption.",
 							"resources": [
 								{
 									"API Green Score": "https://github.com/API-Green-Score/APIGreenScore",
@@ -3700,7 +3699,7 @@
 						{
 							"title": "API requests",
 							"testable": "Human-testable",
-							"description": "When using an API, make sure you only call it when necessary. On the other side, make sure no unrequired data is sent by the API.",
+							"description": "Call client- or server-side APIs only when necessary. Equally, ensure an API is optimized to only send data that is actually required.",
 							"resources": [
 								{
 									"9 Proven Strategies to Improve API Performance": "https://www.thegeekyminds.com/post/strategies-to-improve-api-performance",
@@ -3738,13 +3737,13 @@
 				},
 				{
 					"id": "15",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-scripts-are-secure",
-					"guideline": "Ensure that your scripts are secure",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-code-is-secure",
+					"guideline": "Ensure that your code is secure",
 					"criteria": [
 						{
-							"title": "Script security",
+							"title": "Code security",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD15-1)",
-							"description": "Check the code for vulnerabilities, exploits, header issues, and code injection.",
+							"description": "Check scripts and associated code for vulnerabilities, exploits, header issues, and code injection.",
 							"resources": [
 								{
 									"5 Ways to Keep Your website from Getting Hacked": "https://www.mightybytes.com/blog/5-ways-to-keep-site-from-getting-hacked/",
@@ -3795,13 +3794,13 @@
 				},
 				{
 					"id": "16",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#dependencies-are-appropriately-used-and-maintained",
-					"guideline": "Dependencies are appropriately used and maintained",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#use-dependencies-appropriately-and-ensure-maintenance",
+					"guideline": "Use dependencies appropriately and ensure maintenance",
 					"criteria": [
 						{
 							"title": "Dependency management",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD16-1)",
-							"description": "Prevent developers from downloading and installing JavaScript libraries to run locally (client-side) when they are not needed by checking for unused dependencies and uninstalling those that aren't needed and removing them from your package.json file.",
+							"description": "Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that aren't needed.",
 							"resources": [
 								{
 									"Categorize Your Dependencies": "https://antfu.me/posts/categorize-deps",
@@ -3821,7 +3820,7 @@
 						{
 							"title": "Dependency necessity",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD16-2)",
-							"description": "Only use libraries where necessary as this will reduce the amount of JavaScript that has to be downloaded and parsed by the browser. Consider whether you can use a native JavaScript API instead. Check the package size, and whether individual modules can be installed and imported rather than the whole library.",
+							"description": "Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use vanilla code instead. Check the package size and whether individual modules can be installed and imported individually, as opposed to the entire library.",
 							"resources": [
 								{
 									"Bundlephobia": "https://bundlephobia.com/",
@@ -3843,7 +3842,7 @@
 						{
 							"title": "Dependency updates",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD16-3)",
-							"description": "Regularly check dependencies and keep them up-to-date.",
+							"description": "Regularly check dependencies and keep them up to date.",
 							"resources": [
 								{
 									"Five Key Application Security Best Practices and Benefits for Maintaining Up-to-Date Dependencies": "https://www.mend.io/blog/five-key-application-security-best-practices-and-benefits-for-maintaining-up-to-date-dependencies/",
@@ -3885,9 +3884,9 @@
 					"guideline": "Include expected and beneficial files",
 					"criteria": [
 						{
-							"title": "Expected file formats",
+							"title": "Expected files",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD17-1)",
-							"description": "Include the favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml documents. Additionally, ensure that any such files defined in future web standards or specifications are included.",
+							"description": "Include favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml files by default. Also ensure that any similar files defined in future web standards or specifications are included.",
 							"resources": [
 								{
 									"About /robots.txt": "https://www.robotstxt.org/robotstxt.html",
@@ -3906,9 +3905,9 @@
 							]
 						},
 						{
-							"title": "Beneficial file formats",
+							"title": "Beneficial files",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD17-2)",
-							"description": "Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Additionally, ensure that any such files defined in future web standards or specifications are included.",
+							"description": "Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Also ensure that any similar files defined in future web standards or specifications are included.",
 							"resources": [
 								{
 									"Ads.txt guide": "https://support.google.com/adsense/answer/12171612?hl=en-GB&rd=1",
@@ -3962,7 +3961,7 @@
 						{
 							"title": "Preferred code",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD18-1)",
-							"description": "Avoid the use of deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards that offer equivalent or improved functionality. Such code may be used to meet a documented customer need only if there is a justifiable benefit that cannot otherwise be met (such as compatibility, accessibility, or emissions reduction). Also, don't serve polyfills to modern browsers.",
+							"description": "Avoid using deprecated, proprietary, or outdated formats and web standards. Always adopt up-to-date, widely recognized standards. Only use deprecated, proprietary, or outdated code where this is required to meet a documented customer need and if there is a justifiable benefit that cannot otherwise be met. Justifiable reasons could include compatibility with essential legacy systems and/or hardware, accessibility, or emissions reduction. Use polyfills only when necessary, and regularly audit code to see if they can be removed",
 							"resources": [
 								{
 									"Avoid serving legacy JavaScript to modern browsers": "https://www.debugbear.com/blog/avoid-legacy-js",
@@ -4011,13 +4010,13 @@
 				},
 				{
 					"id": "19",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-to-implement-your-service",
-					"guideline": "Use the most efficient solution to implement your service",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-for-your-service",
+					"guideline": "Use the most efficient solution for your service",
 					"criteria": [
 						{
 							"title": "Identify requirements",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1)",
-							"description": "Identify the requirements and from this, choose the implementation of the product or service. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources (and thereby produce more emissions upon render) but have a faster build-time (emitting less carbon during development).",
+							"description": "Identify the requirements and use this as a basis to help you select the most appropriate implementation for your project. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources and have a bigger emissions impact on render, but it could have a faster build time - meaning less carbon is emitted in development.",
 							"resources": [
 								{
 									"A Guide to Functional Requirements": "https://www.nuclino.com/articles/functional-requirements",
@@ -4032,7 +4031,7 @@
 						{
 							"title": "Optimized methodology",
 							"testable": "Human-testable",
-							"description": "As a general rule, coding from scratch is the best-performing methodology (though if an existing solution is actively maintained, it may be better optimized than what you could produce). Therefore, use native components and file systems to a WYSIWYG editor or heavy framework, and be considerate of the impact of third-party solutions.",
+							"description": "Use the most effective approach for your use case. Most of the time, coding from scratch will often provide the most performant results. Where an existing solution is present and is being actively maintained, this may be better optimized than what you can reasonably produce yourself. Favor native components and file systems over WYSIWYG editors - including visual page builders - or other heavy frameworks. Be mindful of the impact of third-party solutions.",
 							"resources": [
 								{
 									"AFNOR Spec 5.3.3 & 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -4049,9 +4048,9 @@
 							]
 						},
 						{
-							"title": "Static VS dynamic",
+							"title": "Static over dynamic",
 							"testable": "Human-testable",
-							"description": "If choosing a code generation tool, use a Static Site Generator in preference to a bulky content management system. Because SSGs often start using a minimalist content entry format (like markdown) and all of the compilation is done before the website is uploaded, the emissions benefit comes from the server not having to place as much effort into serving pages (as they are static) for each visitor. In the case of a CMS, the dynamic nature of a site will involve additional computation (server-side processing) and bulkier libraries.",
+							"description": "Deliver static in place of dynamic content wherever possible. If you choose to use a code generation tool, then favor the most efficient tool available, such as Static Site Generators (SSGs). Content delivered by a dynamic CMS will involve much more server-side processing and uses bulkier libraries.",
 							"resources": [
 								{
 									"7 Reasons to Use a Static Site Generator": "https://www.sitepoint.com/7-reasons-use-static-site-generator/",
@@ -4076,9 +4075,9 @@
 							]
 						},
 						{
-							"title": "Expandability considerations",
+							"title": "Extensions and plugins",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD19-4)",
-							"description": "Plugins, extensions, and themes have been carefully reviewed and selected to maximize interoperability, accessibility, and performance. They are regularly audited over time to ensure continued compatibility.",
+							"description": "Carefully select and review plugins, extensions, and themes to maximize interoperability, accessibility, and performance. Audit these regularly over time to ensure continued compatibility.",
 							"resources": [
 								{
 									"AFNOR Spec 5.3.3 & 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -4093,9 +4092,9 @@
 							]
 						},
 						{
-							"title": "Interface impact",
+							"title": "Interface components",
 							"testable": "Human-testable",
-							"description": "All the components of the user-interface are the subject of special attention in terms of its sustainability impact while respecting accessibility and the performance of such components.",
+							"description": "Pay particular attention to user interface components with respect to their sustainability impact.",
 							"resources": [
 								{
 									"AFNOR Spec 5.3.3 & 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -4157,7 +4156,7 @@
 						{
 							"title": "Language choice",
 							"testable": "Human-testable",
-							"description": "Use the most appropriate programming language for a task. Many tools and programming languages are optimized for performing particular tasks, and utilizing those most appropriate to the problem, especially if there is a reasonable visitor base involved justifies the time and effort, as long as it doesn't impact PPP factors such as the well-being of those involved or become too cost prohibitive.",
+							"description": "Use the most appropriate programming language for the task. Many tools and programming languages are optimized for the performance of particular tasks. Applying the most appropriate tools to the problem can justify any time or effort involved in their adoption, especially if there is a reasonable user base, provided it does not impact the wellbeing of those involved or risk becoming cost-prohibitive.",
 							"resources": [
 								{
 									"Best PHP Performance Tips From Community & Influencers": "https://www.cloudways.com/blog/php-performance/",
@@ -4238,13 +4237,13 @@
 				},
 				{
 					"id": "22",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#run-fewer-simpler-queries-as-possible",
-					"guideline": "Run fewer, simpler queries as possible",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#reduce-the-number-and-complexity-of-database-queries",
+					"guideline": "Reduce the number and complexity of database queries",
 					"criteria": [
 						{
 							"title": "Database queries",
 							"testable": "Human-testable",
-							"description": "If you need information that is stored in a database, and you require it (or it's likely to be requested) more than once in your code, access the database only once, and store the data locally for subsequent processing. Also, avoid reliance on framework helpers that might defer filtering to later on in the process.",
+							"description": "Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process.",
 							"resources": [
 								{
 									"get_post_meta": "https://developer.wordpress.org/reference/functions/get_post_meta/",
