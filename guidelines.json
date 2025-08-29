@@ -21,7 +21,7 @@
 						{
 							"title": "External variables",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX01-1)",
-							"description": "Any negative external variables affecting a product or service are displayed in a publicly available resource, identifying where your product's sustainable impact can be diminished (systemic design).",
+							"description": "Identify existing or potential negative external variables affecting a project. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.6 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -77,9 +77,9 @@
 					"guideline": "Understand visitor requirements or constraints, resolving barriers to access",
 					"criteria": [
 						{
-							"title": "Identify and define",
+							"title": "Audience evaluation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX02-1)",
-							"description": "Primary and secondary target visitors are identified, and their needs are defined through quantitative or qualitative research, testing, or analytics, ensuring your visitors and affected communities remain a close part of the research and testing process.",
+							"description": "Identify primary and secondary target visitors. Evaluate and define their needs through quantitative and/or qualitative research, testing, or analytics. Ensure your visitors and affected communities are consistently and closely involved in the research and testing process.",
 							"resources": [
 								{
 									"6 Powerful User Research Methods to Boost Hypothesis Validation": "https://uxplanet.org/6-powerful-user-research-methods-to-boost-hypothesis-validation-58c491461075",
@@ -99,7 +99,7 @@
 						{
 							"title": "Visitor constraints",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX02-2)",
-							"description": "Potential visitor constraints like the device age, operating system version, browser, and connection speeds are accounted for when designing user experiences.",
+							"description": "Account for potential visitor constraints, such as the device age, operating system choice or version, browser, VPN use, and connection speeds when designing and assessing the quality of user experiences.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -127,7 +127,7 @@
 						{
 							"title": "Barriers and access",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX02-3)",
-							"description": "The team has researched and identified whether a technical, material, or human constraint might require an adapted version of the product or service that reduces barriers or improves access to content.",
+							"description": "Conduct internal and user research to identify whether a technical, material, or human constraint might require adaptations to reduce barriers or improve access to content.",
 							"resources": [
 								{
 									"Access Guide": "https://www.accessguide.io/",
@@ -152,7 +152,7 @@
 						{
 							"title": "Barrier removal",
 							"testable": "Human-testable",
-							"description": "Barriers to access (pain points or dark / deceptive design patterns) have been identified in the user-research with visitors for removal.",
+							"description": "Remove identified barriers to access. These can include dark or deceptive design patterns, accessibility issues, or other pain points.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -184,7 +184,7 @@
 						{
 							"title": "Seat at the table",
 							"testable": "Human-testable",
-							"description": "All stakeholders including your visitors have been assigned an equitable role in the decision-making process when undertaking research, identifying needs, or conducting iterative design work.",
+							"description": "Assign all involved parties, including visitors, an equitable role in the decision-making process when undertaking research, identifying needs, or iterative design work.",
 							"resources": [
 								{
 									"Creating And Maintaining A Voice Of Customer Program": "https://www.smashingmagazine.com/2023/11/creating-maintaining-voice-customer-program/",
@@ -226,13 +226,13 @@
 				},
 				{
 					"id": "3",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-of-non-visitors",
-					"guideline": "Understand the impact of non-visitors",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-for-non-users",
+					"guideline": "Understand the impact for non-users",
 					"criteria": [
 						{
-							"title": "Non-human impact",
+							"title": "Non-user impact",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX03-1)",
-							"description": "A plan of action has been established for non-users and other stakeholders who might be passively impacted by a digital product or service, such as neighbors accepting parcels, traffic jams due to deliveries, etc. Research their needs and understand how they might be affected.",
+							"description": "Establish a plan of action for non-users and other affected parties who might be indirectly impacted by choices made in e-commerce, this can include neighbors accepting parcels or traffic jams due to deliveries. Other examples include the local health impacts of infrastructure emissions, or supply chain pressure. Research non-user needs, understand how they might be affected, and consider ways negative effects could be mitigated.",
 							"resources": [
 								{
 									"2030 Calculator": "https://www.2030calculator.com/",
@@ -275,13 +275,13 @@
 				},
 				{
 					"id": "4",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#consider-sustainability-throughout-the-ideation-process",
-					"guideline": "Consider sustainability throughout the ideation process",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#integrate-sustainability-into-every-stage-of-the-ideation-process",
+					"guideline": "Integrate sustainability into every stage of the ideation process",
 					"criteria": [
 						{
 							"title": "Sustainable brand development",
 							"testable": "Human-testable",
-							"description": "Branding materials and assets approved during the ideation process must be created and optimized in line with sustainability best practices before internal or external deployment. This also applies to brand refreshes, rebranding, and later enhancements. Branding guidelines detailing the sustainability impact and best-practice deployment of materials and assets should be made publicly available.",
+							"description": "Optimize all branding materials and assets approved during the ideation process in line with sustainability best practices prior to deployment. This also applies to brand refreshes, rebranding, and later enhancements. Make publicly available branding guidelines detailing the sustainability impact and best-practice deployment of materials and assets.",
 							"resources": [
 								{
 									"A Guide to Sustainable Branding": "https://medium.com/@NineBlaess/a-guide-to-sustainable-branding-76d1022eaf01",
@@ -298,7 +298,7 @@
 						{
 							"title": "Wireframes and prototypes",
 							"testable": "Human-testable",
-							"description": "Wireframes, and rapid prototyping are utilized to quickly build consensus, reduce risk, and lower the number of resources needed to build features.",
+							"description": "Use wireframes and rapid prototyping to quickly build consensus, reduce risk, and reduce the number of resources needed to build features. Evaluate the impact of all tools used.",
 							"resources": [
 								{
 									"Activating sustainability in the design process": "https://www.degruyterbrill.com/document/doi/10.1515/icom-2024-0037/html?lang=en",
@@ -314,7 +314,7 @@
 						{
 							"title": "Participation and testing",
 							"testable": "Human-testable",
-							"description": "Users are involved within the iteration and design process using participatory design, and when conducting user-testing reach out to your community to help improve your product by allowing them to apply their knowledge and experience to your product or service.",
+							"description": "Use the participatory design approach to involve users within the iteration and design process. When conducting user testing, reach out to your community to help improve your product. Provide opportunities for users to apply their knowledge and experience to your product or service.",
 							"resources": [
 								{
 									"An introduction to radical participatory design": "https://www.cambridge.org/core/journals/design-science/article/an-introduction-to-radical-participatory-design-decolonising-participatory-design-processes/63F70ECC408844D3CD6C1A5AC7D35F4D",
@@ -350,13 +350,13 @@
 				},
 				{
 					"id": "5",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#brainstorm-ways-to-resolve-any-stakeholder-issues",
-					"guideline": "Brainstorm ways to resolve any stakeholder issues",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#brainstorm-ways-to-resolve-any-affected-party-issues",
+					"guideline": "Brainstorm ways to resolve any affected party issues",
 					"criteria": [
 						{
 							"title": "Human-centered brainstorming",
 							"testable": "Human-testable",
-							"description": "All stakeholders have been considered using a human-centered approach during the brainstorming process.",
+							"description": "Use a human-centered approach in brainstorming to consider the needs, interests, and impact on directly and indirectly affected parties.",
 							"resources": [
 								{
 									"A Framework For Brainstorming Products": "https://www.smashingmagazine.com/2016/06/a-framework-for-brainstorming-products/",
@@ -372,7 +372,7 @@
 						{
 							"title": "Ecological brainstorming",
 							"testable": "Human-testable",
-							"description": "The planetary needs and ecological boundaries of a project have been taken into account during the brainstorming process. This can include creating non-users, non-human (animal, planet) personas, or climate-specific user stories and sprints.",
+							"description": "Consider planetary needs and ecological boundaries during the brainstorming process. This can include creating non-user, non-human (animal, planet) personas, or climate-specific user stories and sprints.",
 							"resources": [
 								{
 									"52 Sustainability Focused Ideation Brainstorm Cards for FREE": "https://www.explorerlabs.co/thinking/52-sustainability-focused-ideation-brainstorm-cards-for-free",
@@ -413,7 +413,7 @@
 						{
 							"title": "Efficient paths",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX06-1)",
-							"description": "The path taken to access the service (the initial contact with the website or service) should be as efficient and as simple as possible (time required to complete an action displayed, reducing too much choice, ensuring visitors know what's required at the start of a complex set of steps, etc).",
+							"description": "Make access as simple and efficient as possible. Displaying the time required to complete an action, reduction of choice, and ensuring visitors understand requirements at the start of a journey can improve user efficiency.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -434,7 +434,7 @@
 						{
 							"title": "Patterns for efficiency",
 							"testable": "Human-testable",
-							"description": "The users journey (when browsing an accessed website or service) should be as smooth as possible. User-research is key, as is building on established design patterns that people already understand.",
+							"description": "Ensure user journeys are as smooth as possible. It also helps to build on established design patterns that people already understand.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -452,7 +452,7 @@
 						{
 							"title": "Distraction-free design",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX06-3)",
-							"description": "Visitors can complete tasks without distractions or non-essential features getting in the way.",
+							"description": "Enable visitors to complete tasks without distractions or non-essential features getting in the way.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -469,7 +469,7 @@
 						{
 							"title": "Eliminate the non-essential",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX06-4)",
-							"description": "Visitors see only information that is relevant to their experience, without non-essential information being displayed on the screen.",
+							"description": "Only show visitors information that is relevant to their experience, hiding non-essential information from view.",
 							"resources": [
 								{
 									"A manifesto for small, static, web apps": "https://rosswintle.uk/2024/02/a-manifesto-for-small-static-web-apps/",
@@ -489,7 +489,7 @@
 						{
 							"title": "User-initiated actionable content",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX06-5)",
-							"description": "Ensure that actionable information such as pop-up or modal windows can only be initiated by the visitor.",
+							"description": "Ensure that disruptive actionable information, such as pop-up or modal windows, can only be initiated by the visitor.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -535,7 +535,7 @@
 						{
 							"title": "Decorative design",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX07-1)",
-							"description": "Decorative design is used only when it improves the user experience, and unnecessary assets or ones that fail to benefit the visitor or sustainability are removed (or rendered optional and disabled by default).",
+							"description": "Use decorative design only when it enhances user experience. Remove unnecessary assets or those that do not enhance user experience or sustainability. Alternatively, make these optional and disabled by default.",
 							"resources": [
 								{
 									"Best practices for fonts": "https://web.dev/articles/font-best-practices?hl=en",
@@ -580,13 +580,13 @@
 				},
 				{
 					"id": "8",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-way-finding-are-well-structured",
-					"guideline": "Ensure that navigation and way-finding are well-structured",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-wayfinding-are-well-structured",
+					"guideline": "Ensure that navigation and wayfinding are well-structured",
 					"criteria": [
 						{
 							"title": "Navigation and search",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX08-1)",
-							"description": "Provide an accessible, easy-to-use navigation menu with search features that help visitors easily find what they need.",
+							"description": "Provide an accessible, easy-to-use navigation menu with search features to help visitors easily find what they need.",
 							"resources": [
 								{
 									"Building Accessible Menu Systems": "https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/",
@@ -599,9 +599,9 @@
 							]
 						},
 						{
-							"title": "Navigable sitemaps",
+							"title": "Human-readable sitemaps",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX08-2)",
-							"description": "Implement an efficient (human-readable) sitemap that is organized and is regularly updated. This helps search engines better index website content, which helps visitors more quickly find what they are looking for.",
+							"description": "Consider implementing an efficient and regularly updated sitemap for human visitors. While guidance beyond the nav bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.",
 							"resources": [
 								{
 									"Build and submit a sitemap": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en",
@@ -616,7 +616,7 @@
 						{
 							"title": "New content",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX08-3)",
-							"description": "Implement a way for visitors to find out about new content and services.",
+							"description": "Implement lightweight and efficient means for visitors to learn about new content and services.",
 							"resources": [
 								{
 									"An Excellent Beginner's Guide to Information Architecture": "https://careerfoundry.com/en/blog/ux-design/a-beginners-guide-to-information-architecture/",
@@ -652,13 +652,13 @@
 				},
 				{
 					"id": "9",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting",
-					"guideline": "Be attentive rather than distracting",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#design-to-assist-and-not-to-distract",
+					"guideline": "Design to assist and not to distract",
 					"criteria": [
 						{
-							"title": "Respecting attention",
+							"title": "User attention",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX09-1)",
-							"description": "The visitor can easily control how (and when) they receive information to both improve attention and respect with the visitor.",
+							"description": "Ensure users can easily control how and when they receive information, with respect for their attention, focus, and mental energy.",
 							"resources": [
 								{
 									"4 practices for eco-friendly online purchase journeys": "https://www.bunnyfoot.com/2023/09/sustainable-ux-4-practices-for-eco-friendly-online-purchase-journeys/",
@@ -676,9 +676,9 @@
 							]
 						},
 						{
-							"title": "Avoid distraction",
+							"title": "Distraction",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX09-2)",
-							"description": "Features that don't distract people or unnecessarily lengthen the time they spend using the product or service have a higher priority than others.",
+							"description": "Prioritize features that assist rather than distract visitors, not unnecessarily prolonging the time they spend engaging with your content.",
 							"resources": [
 								{
 									"5 Website Features to Avoid (and how to fix them)": "https://medium.com/@lancerdesign/5-website-features-to-avoid-and-how-to-fix-them-2a4256f25b1f",
@@ -693,9 +693,9 @@
 							]
 						},
 						{
-							"title": "Avoid attention-keeping",
+							"title": "Engagement traps",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX09-3)",
-							"description": "Avoid using infinite scroll or related attention-keeping tactics.",
+							"description": "Avoid using design strategies intended to artificially prolong user attention, such as infinite scroll.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 4.2 - UX and UI (Infinite Scroll)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -742,7 +742,7 @@
 						{
 							"title": "Design patterns",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX10-1)",
-							"description": "Provide only essential components visible at the time they are needed. Where appropriate, interfaces should deploy visual styles (patterns) that are easily recognized and used.",
+							"description": "Display only essential components at the time they are needed. Where appropriate, use familiar patterns to maximize ease of use.",
 							"resources": [
 								{
 									"Dark Mode Can Improve Text Readability — But Not for Everyone": "https://www.boia.org/blog/dark-mode-can-improve-text-readability-but-not-for-everyone",
@@ -791,7 +791,7 @@
 						{
 							"title": "Dark and deceptive design patterns",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX11-1)",
-							"description": "Avoid what are commonly known as dark patterns, deceptive design, or unethical coding techniques, which manipulate visitors into taking actions not necessarily in their best interest (anti-right click, no-copy, requiring an account to purchase, etc).",
+							"description": "Avoid dark patterns, deceptive design, or unethical coding techniques that manipulate visitors into taking actions that are not in their best interest. Examples include anti-right click, copy prevention, requiring an account to purchase, etc.",
 							"resources": [
 								{
 									"10 Common Dark Patterns in UX and How to Avoid Them": "https://www.netsolutions.com/insights/dark-patterns-in-ux-disadvantages/",
@@ -825,9 +825,9 @@
 							]
 						},
 						{
-							"title": "Using advertisements",
+							"title": "Advertisements",
 							"testable": "Human-testable",
-							"description": "Advertisements and sponsorships are both ethical and clearly identified with the product or service, only presenting them when they provide real economic and ethical value and don't diminish a visitor's experience.",
+							"description": "Select, present, and label advertisements and sponsorships transparently and only implement where these provide economic and ethical value without diminishing user experience.",
 							"resources": [
 								{
 									"AdGreen": "https://www.weareadgreen.org/",
@@ -847,9 +847,9 @@
 							]
 						},
 						{
-							"title": "Page tracking",
+							"title": "Analytics and tracking",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX11-3)",
-							"description": "Remove unused and unconsented page tracking.",
+							"description": "Evaluate and remove unnecessary or unused analytics and tracking, including any operating without user consent.",
 							"resources": [
 								{
 									"48 Cart Abandonment Rate Statistics 2023": "https://baymard.com/lists/cart-abandonment-rate",
@@ -867,7 +867,7 @@
 						{
 							"title": "Search Engine Optimization",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX11-4)",
-							"description": "Optimization for search engines, social networks, and third-party services are organically led with good coding practices with user experience the focus, not manipulating the services to gain greater priority through obfuscating content, pages, websites, or applications with redundancy or non-useful and optimized (to the visitor) material.",
+							"description": "Focus on serving user intent through non-manipulative search and social media optimization. For example, do not misuse coding practices intended to support assistive technologies. This can include content with natural redundancy, or unhelpful or low-quality material designed only to manipulate search results.",
 							"resources": [
 								{
 									"Climate change SEO survey": "https://searchengineland.com/climate-change-seo-survey-making-web-more-sustainable-438209",
@@ -911,13 +911,13 @@
 				},
 				{
 					"id": "12",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#enable-others-to-understand-and-reuse-your-deliverables",
-					"guideline": "Enable others to understand and reuse your deliverables",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#make-deliverables-understandable-and-reusable",
+					"guideline": "Make deliverables understandable and reusable",
 					"criteria": [
 						{
-							"title": "Deliverables reusability",
+							"title": "Reusability",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX12-1)",
-							"description": "The deliverables output, including documentation, are used upstream of the project and produced in ways that will allow it to be reused in subsequent projects.",
+							"description": "Create deliverables, including documentation, in ways that facilitate later reuse.",
 							"resources": [
 								{
 									"4 Ways to Make Your Code More Reusable": "https://medium.com/@lanceharvieruntime/4-ways-to-make-your-code-more-reusable-bc20889c1e4",
@@ -935,9 +935,9 @@
 							]
 						},
 						{
-							"title": "Deliverables documentation",
+							"title": "Documentation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX12-2)",
-							"description": "Design functionality and technical specifications are documented so that deliverables are comprehensible by the project team and transferable to the development team.",
+							"description": "Document functionality and technical specifications so that they can be understood by everyone that needs to use them.",
 							"resources": [
 								{
 									"Creating effective technical documentation": "https://developer.mozilla.org/en-US/blog/technical-writing/",
@@ -951,9 +951,9 @@
 							]
 						},
 						{
-							"title": "Deliverables readability",
+							"title": "Readability",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX12-3)",
-							"description": "Developers have access to code comments and other View Source affordances which can reduce the burden to access, understand, maintain, and utilize production-ready code as this will reduce redundancy and foster an open source culture.",
+							"description": "Developers have access to code comments and have the ability to view source to make it easier to access, understand, maintain, and use code.",
 							"resources": [
 								{
 									"7 simple habits of the top 1% of engineers": "https://read.engineerscodex.com/p/7-simple-habits-of-the-top-1-of-engineers",
@@ -988,13 +988,13 @@
 				},
 				{
 					"id": "13",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-to-prioritize-interface-consistency",
-					"guideline": "Use a design system to prioritize interface consistency",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-for-interface-consistency",
+					"guideline": "Use a design system for interface consistency",
 					"criteria": [
 						{
 							"title": "Design system",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX13-1)",
-							"description": "A design system is employed based on web standards and recognizable patterns to mutualize interface components and provide a consistent experience for visitors.",
+							"description": "Use a design system based on web standards and established patterns to share interface components and ensure a consistent user experience.",
 							"resources": [
 								{
 									"4 Ways to Make Your Code More Reusable": "https://medium.com/@lanceharvieruntime/4-ways-to-make-your-code-more-reusable-bc20889c1e4",
@@ -1048,13 +1048,13 @@
 				},
 				{
 					"id": "14",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#write-with-purpose-in-an-accessible-easy-to-understand-format",
-					"guideline": "Write with purpose, in an accessible, easy-to-understand format",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-clear-inclusive-content-with-purpose",
+					"guideline": "Provide clear, inclusive content with purpose",
 					"criteria": [
 						{
-							"title": "Write clearly",
+							"title": "Clear content",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX14-1)",
-							"description": "Content is written clearly, using plain, inclusive language delivered at an easy-to-understand reading level considering accessibility and internationalization inclusions as required (for example, dyslexia).",
+							"description": "Write content using plain and inclusive language, at an appropriate reading level for your audience. Account for specific needs in relation to accessibility, native language, and internationalization.",
 							"resources": [
 								{
 									"GR491 - 1-4004 - Facts and Opinions": "https://gr491.isit-europe.org/en/crit.php?id=1-4004-contents-when-the-information-provided-is-not-deemed",
@@ -1076,7 +1076,7 @@
 						{
 							"title": "Content formatting",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX14-2)",
-							"description": "Content is formatted to support how people read online, including a clear document structure, visual hierarchy, headings, bulleted lists, line spacing, and so on.",
+							"description": "Use appropriate formatting for digital media. Provide a clear document structure with consideration of visual hierarchy. Use headings, bulleted lists, line spacing, and highlights appropriately. Provide information with appropriate formatting for the action users need to take.",
 							"resources": [
 								{
 									"Content design practices for sustainable communication in tech": "https://uxdesign.cc/content-design-practices-for-sustainable-communication-in-tech-cbfc679be0cc",
@@ -1097,7 +1097,7 @@
 						{
 							"title": "Search Engine Optimization (SEO)",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX14-3)",
-							"description": "SEO has been prioritized from the early design stages and throughout a product or service's lifecycle to improve content findability.",
+							"description": "Prioritize SEO from the early design stages and throughout the lifecycle to ensure content can be found and used.",
 							"resources": [
 								{
 									"Climate change SEO survey": "https://searchengineland.com/climate-change-seo-survey-making-web-more-sustainable-438209",
@@ -1141,13 +1141,13 @@
 				},
 				{
 					"id": "15",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability",
-					"guideline": "All images must be optimized for sustainability",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability",
+					"guideline": "Optimize images for sustainability",
 					"criteria": [
 						{
 							"title": "Need for images",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX15-1)",
-							"description": "The need for images has been determined considering the quantity, format, and size necessary for implementation.",
+							"description": "Determine the need for images with consideration of the quantity, format, and sizes required.",
 							"resources": [
 								{
 									"20 ways to make your website more energy efficient": "https://www.wholegraindigital.com/blog/website-energy-efficiency/",
@@ -1164,9 +1164,9 @@
 							]
 						},
 						{
-							"title": "Optimize images",
+							"title": "Optimized images",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX15-2)",
-							"description": "Resize, optimize, and compress each image (outside the browser), offering different sizes (for each image) for different screen resolutions.",
+							"description": "Resize, optimize, and compress each image. Provide images in appropriate sizes for different screen resolutions.",
 							"resources": [
 								{
 									"20 ways to make your website more energy efficient": "https://www.wholegraindigital.com/blog/website-energy-efficiency/",
@@ -1183,11 +1183,11 @@
 									"GR491 - 8-3061 - Optimized Images": "https://gr491.isit-europe.org/en/crit.php?id=8-3061-uxui-the-volume-of-data-exchanged-for-the",
 									"Greening The Web: A Study On Low-Carbon Image Formats": "https://michaelandersen93.substack.com/p/greening-the-web-a-study-on-low-carbon?r=3dzajs",
 									"GreenIT - 036 - Optimize vector images": "https://github.com/cnumr/best-practices/blob/main/chapters-source-to-delete/BP_036_en.md",
-									"GreenIT - 080 - Optimize images": "https://github.com/cnumr/best-practices/blob/main/chapters-source-to-delete/BP_080_en.md",
+									"GreenIT - 080 - Optimized images": "https://github.com/cnumr/best-practices/blob/main/chapters-source-to-delete/BP_080_en.md",
 									"How can we design sustainably?": "https://medium.com/@sandra.pallier/how-can-we-design-sustainably-3be7530a0f5b",
 									"How to Build a Low-tech Website?": "https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/",
 									"How To Efficiently Encode Images On Your Website": "https://www.debugbear.com/blog/efficiently-encode-images",
-									"How to Optimize Images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
+									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
 									"How to Properly Size Images to Improve Core Web Vitals": "https://www.debugbear.com/blog/properly-size-images",
 									"How UX design can help tackle climate change": "https://www.cyber-duck.co.uk/insights/how-sustainable-design-can-help-climate-change",
 									"Image Carbon": "https://www.imagecarbon.com/",
@@ -1214,7 +1214,7 @@
 						{
 							"title": "Lazy loading",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX15-3)",
-							"description": "Provide Lazy Loading to ensure image assets only load when they are required.",
+							"description": "Include lazy loading to ensure images only load when they are required.",
 							"resources": [
 								{
 									"Avoid hotlinking images with Cross-Origin-Resource-Policy": "https://www.sjoerdlangkemper.nl/2024/11/27/avoid-hotlinking-images-with-corp-cross-origin-resource-policy/",
@@ -1234,7 +1234,7 @@
 						{
 							"title": "Sizing and deactivation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX15-4)",
-							"description": "Let the visitor select the display size, and provide the option to deactivate images.",
+							"description": "Provide the option for images to be disabled or provide a low-fidelity alternative.",
 							"resources": [
 								{
 									"Fast load times: Optimize Your Images": "https://web.dev/explore/fast?hl=en#optimize-your-images",
@@ -1245,15 +1245,15 @@
 									"GR491 - 7-5050 - Sizes and Formats": "https://gr491.isit-europe.org/en/crit.php?id=7-5050-frontend-front-end-operations-may-require-file-transfers-between",
 									"GR491 - 7-5053 - Convert and Resize": "https://gr491.isit-europe.org/en/crit.php?id=7-5053-frontend-image-transfers-introduce-peculiarities-related-to-the",
 									"GreenIT - 034 - Avoid resizing images in the browser": "https://github.com/cnumr/best-practices/blob/main/chapters-source-to-delete/BP_034_en.md",
-									"How to Optimize Images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
+									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
 									"OpQuast - 114 - Thumbnails and previews are not larger images resized on the client side.": "https://checklists.opquast.com/en/web-quality-assurance/thumbnails-and-previews-are-not-larger-images-resized-on-the-client-side"
 								}
 							]
 						},
 						{
-							"title": "Management and usage",
+							"title": "Image management and use",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX15-5)",
-							"description": "Set up a media management and use policy to reduce the overall impact of images, with criteria for media compression and file formats.",
+							"description": "Set up a media management and use policy to reduce the overall impact of images. Include criteria for media compression and file formats.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.9 - Strategy (Interoperable Technologies)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -1262,7 +1262,7 @@
 									"GR491 - 8-3057 - Media Management": "https://gr491.isit-europe.org/en/crit.php?id=8-3057-uxui-the-volume-of-data-transferred-increases-the",
 									"Green by Default": "https://screenspan.net/blog/green-by-default/",
 									"Image management": "https://www.frontify.com/en/guide/image-management",
-									"Optimize Images to Improve Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
+									"Optimized images to Improve Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
 									"Tips for Effective Image Management on Your Site": "https://profiletree.com/effective-image-management/"
 								}
 							]
@@ -1292,13 +1292,13 @@
 				},
 				{
 					"id": "16",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability",
-					"guideline": "All audio or video must be optimized for sustainability",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability",
+					"guideline": "Optimize media for sustainability",
 					"criteria": [
 						{
 							"title": "Need for media",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX16-1)",
-							"description": "The need for video or sound (when it adds visitor value, for example, to enhance accessibility) has been determined, and non-informative media (background media), including autoplaying functionality, has been banned or removed.",
+							"description": "Do not include any video or audio unless it provides positive value. Disable auto-play functionality on audio and video.",
 							"resources": [
 								{
 									"20 ways to make your website more energy efficient": "https://www.wholegraindigital.com/blog/website-energy-efficiency/",
@@ -1316,9 +1316,9 @@
 							]
 						},
 						{
-							"title": "Optimize media",
+							"title": "Optimized media",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX16-2)",
-							"description": "Compress the media according to the visitor's requirements, select the appropriate format, ensure it works across browsers, and avoid embedded player plugins.",
+							"description": "Optimize and compress media appropriately. Provide media in compatible and appropriate formats. Avoid non-native embedded media players.",
 							"resources": [
 								{
 									"AFNOR Spec 5.4.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -1345,9 +1345,9 @@
 							]
 						},
 						{
-							"title": "Lazy loading",
+							"title": "Deferred loading",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX16-3)",
-							"description": "Any media requiring a lot of data to be downloaded on the client side (including the media itself) has been loaded behind a facade (a non-functional, static, representational element).",
+							"description": "Load data-intensive media on the client side, including the media itself, behind a facade - a non-functional and static representational element.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 4.1 - UX and UI (Autoplay)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -1363,7 +1363,7 @@
 						{
 							"title": "Labels and choice",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX16-4)",
-							"description": "Let the visitor control media deactivation, giving a choice of resolutions; all while providing alternative resolutions and formats. Also increase visitor awareness by informing them of the length, format, and weight of the media.",
+							"description": "Let the visitor control media, including a choice of resolutions and formats and the option to deactivate media. Inform users the length, format, and data intensity of the media.",
 							"resources": [
 								{
 									"Ditch 4K video and new tech to fight climate change": "https://www.bbc.co.uk/news/technology-55164410",
@@ -1384,7 +1384,7 @@
 						{
 							"title": "Management and usage",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX16-5)",
-							"description": "Set up a media management and use policy to reduce the overall impact of audio and video, with criteria for media compression and file formats.",
+							"description": "Establish media management and use policy to evaluate and reduce the overall impact of media, such as audio, video, or emerging media formats. Include criteria for media compression and file formats.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.9 - Strategy (Interoperable Technologies)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -1423,13 +1423,13 @@
 				},
 				{
 					"id": "17",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#animation-must-be-proportionate-and-easy-to-control",
-					"guideline": "Animation must be proportionate and easy to control",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-animation-is-proportionate-and-easy-to-control",
+					"guideline": "Ensure animation is proportionate and easy to control",
 					"criteria": [
 						{
 							"title": "Need for animation",
 							"testable": "Human-testable",
-							"description": "Use animation only when it adds value to a visitor's experience, and not for decorative elements.",
+							"description": "Use animation only when it adds value and not for decorative elements.",
 							"resources": [
 								{
 									"Climate Change Implications of Gaming Products and Services (PDF)": "https://openresearch.surrey.ac.uk/discovery/delivery/44SUR_INST:ResearchRepository/99512335802346#13140594990002346",
@@ -1444,9 +1444,9 @@
 							]
 						},
 						{
-							"title": "Avoid overburdening",
+							"title": "Avoiding overburdening",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX17-2)",
-							"description": "Progressively display an appropriate number of animations to avoid overburden the visitor or diminish expected device behavior. This includes setting a maximum number of replays (iterations).",
+							"description": "Progressively display an appropriate number of animations to avoid overburdening the visitor or negatively impacting device performance. This includes setting a maximum number of replays or iterations.",
 							"resources": [
 								{
 									"Equations relating total annual energy consumption and chips energy efficiency": "https://www.researchgate.net/publication/371938289_Equations_relating_total_annual_energy_consumption_and_chips_energy_efficiency",
@@ -1500,13 +1500,13 @@
 				},
 				{
 					"id": "18",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#web-typography-must-be-highly-optimized-and-appropriate",
-					"guideline": "Web typography must be highly optimized and appropriate",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#use-optimized-and-appropriate-web-typography",
+					"guideline": "Use optimized and appropriate web typography",
 					"criteria": [
 						{
-							"title": "Default typefaces",
+							"title": "Pre-installed typefaces",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX18-1)",
-							"description": "Use standard system-level (web-safe / pre-installed) fonts as much as possible.",
+							"description": "Use pre-installed, web-safe typefaces wherever possible.",
 							"resources": [
 								{
 									"Apple System Fonts": "https://developer.apple.com/fonts/system-fonts/",
@@ -1531,7 +1531,7 @@
 						{
 							"title": "Font optimization",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX18-2)",
-							"description": "The number of fonts, and the variants within typefaces (such as weight and characters) are limited within a project, using the most performant file format available.",
+							"description": "Limit the number of fonts used. Design or subset fonts to omit unnecessary or unused variations, such as font weight or characters. Use the most performant file format available.",
 							"resources": [
 								{
 									"Best practices for fonts": "https://web.dev/articles/font-best-practices?hl=en",
@@ -1573,13 +1573,13 @@
 				},
 				{
 					"id": "19",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered",
-					"guideline": "Suitable alternatives to any provided format must be offered",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#offer-suitable-alternatives-for-every-format-used",
+					"guideline": "Offer suitable alternatives for every format used",
 					"criteria": [
 						{
 							"title": "Open formats",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX19-1)",
-							"description": "All proprietary file formats (such as PDF) are offered in HTML for accessibility and to ensure future availability.",
+							"description": "Provide open alternatives, such as HTML, to proprietary file formats, such as PDF.",
 							"resources": [
 								{
 									"Are PDFs Hurting the Planet?": "https://medium.com/@thepdfspace/are-pdfs-hurting-the-planet-7c850655c98e",
@@ -1595,9 +1595,9 @@
 							]
 						},
 						{
-							"title": "Font subsetting",
+							"title": "Font stack fallbacks",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX19-2)",
-							"description": "All custom typefaces (using font-display) are subsetted and offered as part of a font stack with a system font as a backup.",
+							"description": "Provide a suitable font stack as a fallback when custom typefaces are used.",
 							"resources": [
 								{
 									"A New Way To Reduce Font Loading Impact: CSS Font Descriptors": "https://www.smashingmagazine.com/2021/05/reduce-font-loading-impact-css-descriptors/",
@@ -1613,7 +1613,7 @@
 						{
 							"title": "Alternative text",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX19-3)",
-							"description": "All images provide meaningful alternative text for screen reader users (or when images fail to load) accessibility.",
+							"description": "Provide meaningful alternative text for all descriptive images that are non-decorative and support the user's understanding of the content.",
 							"resources": [
 								{
 									"Alt Text: What to Write": "https://www.nngroup.com/articles/write-alt-text/",
@@ -1627,9 +1627,9 @@
 							]
 						},
 						{
-							"title": "Audio alternatives",
+							"title": "Transcripts and text",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX19-4)",
-							"description": "Audio provides text transcripts of conversations as an alternative to playing the media.",
+							"description": "Include transcripts and/or text versions of media files as an alternative to playing the media.",
 							"resources": [
 								{
 									"Audio accessibility": "https://userway.org/blog/audio-accessibility/",
@@ -1644,7 +1644,7 @@
 						{
 							"title": "Video alternatives",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX19-5)",
-							"description": "Video provides text transcripts (at minimum), subtitles (using WebVTT), and for accessibility best practice, offer closed captions and sign language options.",
+							"description": "Include WebVTT closed captions and subtitles support for videos. Provide localization as expected by your audience, including subtitles and sign language that meet the same standard.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 5.5 - Content (Video Alternative)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -1687,13 +1687,13 @@
 				},
 				{
 					"id": "20",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-accessible-usable-minimal-web-forms",
-					"guideline": "Provide accessible, usable, minimal web forms",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-accessible-user-friendly-minimal-web-forms",
+					"guideline": "Provide accessible, user-friendly, minimal web forms",
 					"criteria": [
 						{
-							"title": "Form simplicity",
+							"title": "Simple forms",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX20-1)",
-							"description": "Remove unnecessary forms and reduce form content to the bare minimum necessary to meet the visitor's needs and the organization's business goals. Clearly communicate why a form is necessary, what its value proposition is, how many steps it will take to complete, and what an organization will do with collected data (informed consent).",
+							"description": "Remove unnecessary forms and reduce form content to the minimum necessary to meet the user needs while satisfying the organization's minimum requirements. Clearly communicate why a form is necessary, the value it provides, the number of steps required for completion, and what will be done with the collected data. Also disclose if the data will be shared with third parties.",
 							"resources": [
 								{
 									"Accessible Forms: Tips and Techniques": "https://afixt.com/accessible-forms-tips-and-techniques/",
@@ -1713,9 +1713,9 @@
 							]
 						},
 						{
-							"title": "Form functionality",
+							"title": "Functional forms",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX20-2)",
-							"description": "Avoid auto-completion / auto-suggest if it would prove unhelpful (to conserve bandwidth) whilst allowing autofill for ease of repeat entry (including the use of helpful tooling such as password managers).",
+							"description": "Avoid using auto-completion or auto-suggest based on partial entry to conserve user bandwidth and reduce unnecessary server side requests. Support the use of helpful tooling, such as password managers, by not preventing autofill.",
 							"resources": [
 								{
 									"Autofill": "https://web.dev/learn/forms/autofill?hl=en",
@@ -1754,13 +1754,13 @@
 				},
 				{
 					"id": "21",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-of-visitors-using-non-visual-browsers",
-					"guideline": "Consider the impact of visitors using non-visual browsers",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#consider-the-experience-in-non-visual-browsers-and-interfaces",
+					"guideline": "Consider the experience in non-visual browsers and interfaces",
 					"criteria": [
 						{
 							"title": "Alternative interactions",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX21-1)",
-							"description": "Support speech browsing and other non-graphical ways to interact with content that provide alternatives to a visual interface.",
+							"description": "Support non-visual browsing methods and various non-graphical ways to interact with content. This includes anything from assistive technologies to voice agents. Consider and provide working alternatives to visual interfaces.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 2.5 - Specifications (Adaptive Design)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -1798,13 +1798,13 @@
 				},
 				{
 					"id": "22",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#give-useful-notifications-to-improve-the-visitor-s-journey",
-					"guideline": "Provide useful notifications to improve the visitor's journey",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-useful-notifications",
+					"guideline": "Provide useful notifications",
 					"criteria": [
 						{
-							"title": "Notification justification",
+							"title": "Need for notification",
 							"testable": "Human-testable",
-							"description": "Remove non-essential notifications while justifying and reducing the practice of e-mailing or text messaging to what is strictly necessary. Useful notifications (such as alerts for new content) should be used with care and restraint.",
+							"description": "Remove non-essential notifications. Justify and reduce email, text message (SMS), and other invasive or energy-intense notifications to what is strictly necessary. Useful notifications, such as alerts for new content should be used with care and restraint.",
 							"resources": [
 								{
 									"Biased By Design": "https://biasedbydesign.com/",
@@ -1818,9 +1818,9 @@
 							]
 						},
 						{
-							"title": "Notification control",
+							"title": "Notification settings",
 							"testable": "Human-testable",
-							"description": "Let the visitor control notifications (for example through the browser, SMS, or by email) and adjust messaging preferences, and the option to unsubscribe, logout, and close an account should be available and visible.",
+							"description": "Let the user adjust their own notification and messaging settings. Ensure the options to unsubscribe, log out, and close an account should be available and visible. Ensure it is possible for the user to change their contact details.",
 							"resources": [
 								{
 									"Can I email?": "https://www.caniemail.com/",
@@ -1837,7 +1837,7 @@
 						{
 							"title": "Prompts and responses",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX22-3)",
-							"description": "Clearly explain the result of a potential input through helpful prompts and messages that explain errors, next steps, and so on. This will help manage their expectations.",
+							"description": "Clearly explain the result of a potential input through helpful prompts and messages that explain errors, next steps, and other relevant information. This will help to manage users’ expectations.",
 							"resources": [
 								{
 									"Client-side form validation": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation",
@@ -1876,13 +1876,13 @@
 				},
 				{
 					"id": "23",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents",
-					"guideline": "Reduce the impact of downloadable or physical documents",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-and-physical-documents",
+					"guideline": "Reduce the impact of downloadable and physical documents",
 					"criteria": [
 						{
-							"title": "Printing documents",
+							"title": "Printed documents",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX23-1)",
-							"description": "If the production of paper documents is essential, it should be designed to limit its impact to the lowest possible. Create a CSS Print stylesheet and test it with different types of content. Ensure PDF printing is encouraged over paper-based storage.",
+							"description": "Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a CSS print stylesheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.",
 							"resources": [
 								{
 									"A Guide To The State Of Print Stylesheets In 2018": "https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/",
@@ -1903,9 +1903,9 @@
 							]
 						},
 						{
-							"title": "Optimize documents",
+							"title": "Optimized documents",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX23-2)",
-							"description": "Provide all downloadable documents in a state of being optimized, compressed, and in a variety of accessible file formats.",
+							"description": "Optimize and compress all downloadable documents. Make them available in a variety of accessible file formats.",
 							"resources": [
 								{
 									"Changing Paper Consumption": "http://www.greenschools.net/article.php-id=75.html",
@@ -1922,9 +1922,9 @@
 							]
 						},
 						{
-							"title": "Optimize delivery",
+							"title": "Optimized delivery",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX23-3)",
-							"description": "If a document is likely to be re-used, generate the document once on the server-side (preferably on a cookie-free domain) rather than forcing the effort to be duplicated.",
+							"description": "Avoid duplicating effort. If a document will be reused, generate and save it once on the server side for reuse, ideally on a cookie-free domain.",
 							"resources": [
 								{
 									"A full comparison of 6 JS libraries for generating PDFs": "https://dev.to/handdot/generate-a-pdf-in-js-summary-and-comparison-of-libraries-3k0p",
@@ -1939,7 +1939,7 @@
 						{
 							"title": "Labels and choice",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX23-4)",
-							"description": "Clearly display the document name, a summary, the file size, and the format, allowing the visitor a choice if possible of both the format, and the language (if not the same as the web page). Furthermore, be sure to avoid embedding the document within Web pages (provide a direct link to download or view within the browser instead).",
+							"description": "Display the document name, a summary, the file size, and the format prior to downloading. Allow users to choose the right format and language for their needs where possible. Avoid embedding documents directly; provide a link to download or view them within the browser instead.",
 							"resources": [
 								{
 									"Add file format and size to all download links and buttons": "https://www.accede-web.com/en/guidelines/html-css/complementary-guidelines/add-file-format-and-size-to-all-download-links-and-buttons/",
@@ -1976,13 +1976,13 @@
 				},
 				{
 					"id": "24",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#policies-and-processes-must-exist-to-get-stakeholders-invested",
-					"guideline": "Policies and processes must exist to get stakeholders invested",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#get-users-and-contributors-invested-in-the-project",
+					"guideline": "Get users and contributors invested in the project",
 					"criteria": [
 						{
 							"title": "New features and perspectives",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX24-1)",
-							"description": "The organization has outlined processes it uses to prototype and test new features, product ideas, and user-interface components when applicable with real users who represent various stakeholder perspectives, including people with slow connection, with disabilities, with difficulties using digital services, and so on.",
+							"description": "Outline processes used to prototype and test new features, product ideas, and user interface components. Test with real users who represent different perspectives and user constraints.",
 							"resources": [
 								{
 									"5 Common Low-Fidelity Prototypes and Their Best Practices": "https://www.interaction-design.org/literature/article/prototyping-learn-eight-common-methods-and-best-practices",
@@ -1998,7 +1998,7 @@
 						{
 							"title": "Resourcing and viability",
 							"testable": "Human-testable",
-							"description": "The organization has appropriately resourced these processes to support its long-term product viability.",
+							"description": "Ensure prototyping and testing processes are sufficiently resourced to support long-term viability and avoid project abandonment.",
 							"resources": [
 								{
 									"9 sustainable business practices + actionable examples": "https://fsc.org/en/blog/sustainable-business-practices",
@@ -2013,7 +2013,7 @@
 						{
 							"title": "Training and onboarding",
 							"testable": "Human-testable",
-							"description": "The organization has training materials to onboard new product team members to these practices.",
+							"description": "Produce or provide, training materials to properly educate and onboard new contributors.",
 							"resources": [
 								{
 									"An Introduction to Corporate Sustainability Training": "https://nexioprojects.com/an-introduction-to-corporate-sustainability-training/",
@@ -2034,7 +2034,7 @@
 						{
 							"title": "Testing and validation",
 							"testable": "Human-testable",
-							"description": "The organization regularly conducts extensive testing and user interviews to validate whether the released features are meeting both business goals and visitor needs.",
+							"description": "Conduct regular and extensive testing alongside user interviews to validate whether released features meet internal goals and audience needs.",
 							"resources": [
 								{
 									"A Complete Guide to Usability Testing": "https://www.uxmatters.com/mt/archives/2023/05/a-complete-guide-to-usability-testing.php",
@@ -2081,13 +2081,13 @@
 				},
 				{
 					"id": "25",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-that-require-resolving",
-					"guideline": "Audit and test for bugs or issues that require resolving",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-requiring-resolution",
+					"guideline": "Audit and test for bugs or issues requiring resolution",
 					"criteria": [
 						{
-							"title": "Regular issue testing",
+							"title": "Regular audit",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX25-1)",
-							"description": "The codebase has been checked for bugs, performance issues have been identified, and accessibility or security problems have been accounted for at either monthly or quarterly timeframes (depending on your scheduling allowance).",
+							"description": "Check the codebase for bugs, identify performance issues, and account for accessibility or security problems at appropriate regular intervals, such as every month or quarter.",
 							"resources": [
 								{
 									"Access Guide": "https://www.accessguide.io/",
@@ -2122,7 +2122,7 @@
 						{
 							"title": "Non-regression tests",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX25-2)",
-							"description": "Non-regression tests are implemented for all important functionality.",
+							"description": "Implement non-regression tests for all critical features.",
 							"resources": [
 								{
     								"AWS WAF - SEC11-BP02 - Automate testing throughout the development and release lifecycle": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_automate_testing_throughout_lifecycle.html",
@@ -2137,7 +2137,7 @@
 						{
 							"title": "Regression tests",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX25-3)",
-							"description": "Regression testing has been incorporated into each release cycle to ensure that new features don't introduce bugs or otherwise conflict with existing software functionality.",
+							"description": "Incorporate regression testing into each release cycle to ensure new features do not introduce bugs or otherwise conflict with existing functionality.",
 							"resources": [
 								{
 									"Difference Between Regression Testing And Unit Testing": "https://www.browserstack.com/guide/regression-testing-vs-unit-testing",
@@ -2179,7 +2179,7 @@
 						{
 							"title": "Performance testing",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX26-1)",
-							"description": "The performance of a website or application, to identify and resolve bottlenecks or issues in the underlying code or infrastructure which could ultimately impact the sustainability of a website or application, are regularly measured with each release-cycle (using tooling or through research and auditing).",
+							"description": "Identify and resolve bottlenecks or issues in the underlying code or infrastructure which could impact sustainability and performance. Consider both simulated and real-world metrics. Monitor performance across every release cycle using appropriate tooling or through research and auditing.",
 							"resources": [
 								{
 									"Addy Osmani's 18-Point Web Performance Checklist": "https://dev.to/ben/addy-osmanis-18-point-web-performance-checklist-2e1",
@@ -2211,9 +2211,9 @@
 							]
 						},
 						{
-							"title": "Measurement and compliance",
+							"title": "Compliant measurement",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX26-2)",
-							"description": "Only data required to provide a streamlined and effective user-journey, put policies in place to ensure strict adherence, and comply with relevant accessibility policies and privacy laws, such as the General Data Protection Regulation (GDPR) are collected.",
+							"description": "Collect only data required to provide a streamlined and effective user journey and comply with relevant accessibility and data protection legislation. Put policies in place to ensure strict adherence.",
 							"resources": [
 								{
 									"10 CCPA Compliance Tips For Web Developers": "https://dataoverhaulers.medium.com/10-ccpa-compliance-tips-for-web-developers-1ce8382c7286",
@@ -2268,13 +2268,13 @@
 				},
 				{
 					"id": "27",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-features-provide-maximum-value-for-their-impact",
-					"guideline": "Ensure features provide maximum value for their impact",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#evaluate-feature-use-value-and-impact",
+					"guideline": "Evaluate feature use, value, and impact",
 					"criteria": [
 						{
 							"title": "Usage changes",
 							"testable": "Human-testable",
-							"description": "Visitor feedback, adoption, and churn rates are monitored of product or service features and their insights incorporated into future releases.",
+							"description": "Monitor visitor feedback, adoption, and churn rates in relation to different features and incorporate these insights into future releases.",
 							"resources": [
 								{
 									"7 UX KPIs you should be measuring": "https://maze.co/collections/ux-management/kpis/",
@@ -2321,7 +2321,7 @@
 						{
 							"title": "Usability testing",
 							"testable": "Human-testable",
-							"description": "Usability testing has been incorporated into product cycles and the impact of these tests is routinely measured for future releases.",
+							"description": "Incorporate usability testing into product cycles and routinely measure the impact of these tests for future releases.",
 							"resources": [
 								{
 									"A Comprehensive Guide To User Testing": "https://www.smashingmagazine.com/2018/03/guide-user-testing/",
@@ -2365,13 +2365,13 @@
 				},
 				{
 					"id": "29",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues",
-					"guideline": "Check for compatibility or platform-specific issues",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#regularly-test-and-maintain-compatibility",
+					"guideline": "Regularly test and maintain compatibility",
 					"criteria": [
 						{
 							"title": "Compatibility policy",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX29-1)",
-							"description": "A compatibility policy with obsolete devices and software versions, listing the supported devices brands, operating systems, and browsers (including versions) has been established.",
+							"description": "Establish and maintain a compatibility policy which covers current and obsolete devices and software versions, listing the supported device brands, operating systems, and browsers (including versions). Update this regularly in line with new releases.",
 							"resources": [
 								{
 									"A Framework for Evaluating Browser Support": "https://www.joshwcomeau.com/css/browser-support/",
@@ -2390,7 +2390,7 @@
 						{
 							"title": "Maintaining compatibility",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX29-2)",
-							"description": "Planned obsolescence in software updates is routinely avoided, striving to maintain compatibility for as long as possible and clearly communicating whether an update is evolutionary (large updates that can significantly reduce performance) or corrective (smaller updates that fix bugs or improve security).",
+							"description": "Avoid planned obsolescence. Strive to maintain compatibility for as long as possible and communicate clearly whether an update is evolutionary, as in large updates that can significantly reduce performance, or corrective, as in smaller updates that fix bugs or improve security.",
 							"resources": [
 								{
 									"A Framework for Evaluating Browser Support": "https://www.joshwcomeau.com/css/browser-support/",
@@ -2420,7 +2420,7 @@
 						{
 							"title": "Frequent testing",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX29-3)",
-							"description": "The product or service regularly tests with weak, unstable, restricted, and slow connections, old browsers, and devices older than five years to ensure compatibility, reduce digital inequalities, and minimize barriers for users.",
+							"description": "Test performance in various scenarios to ensure compatibility. Testing should cover weak, unstable, restricted, or slow connections, old browsers, and devices older than five years.",
 							"resources": [
 								{
 									"Avoid obsolescence tactics": "https://climateproductleaders.org/playbook/avoid-obsolescence-tactics",
@@ -2469,7 +2469,7 @@
 						{
 							"title": "Mobile friendly",
 							"testable": "Human-testable",
-							"description": "Device-adaptable methods (such as responsive design) are utilized and interfaces are prototyped to ensure progressive enhancement, content prioritization, and improved accessibility.",
+							"description": "Use device-adaptable methods such as responsive design and prototype interfaces to support progressive enhancement and content prioritization.",
 							"resources": [
 								{
 									"Building a resilient frontend using progressive enhancement": "https://www.gov.uk/service-manual/technology/using-progressive-enhancement",
@@ -2517,7 +2517,7 @@
 						{
 							"title": "Progressive Web Applications (PWAs)",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX29-5)",
-							"description": "A PWA has been either chosen or rejected based on whether it be more sustainable and compatible over a native mobile application.",
+							"description": "Use a PWA over a native mobile application if it meets sustainability, interoperability, and compatibility criteria.",
 							"resources": [
 								{
 									"Assessing the Impact of Service Workers on the Energy Efficiency of Progressive Web Apps (PDF)": "https://www.ivanomalavolta.com/files/papers/Mobilesoft_2017.pdf",
@@ -4643,7 +4643,7 @@
 									"GPF - General Policy Framework (PDF) - 1.7 - Strategy (Encryption)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 6.3 - Front-End (Resource Compression)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"How does data compression affect CO2 emission in Nginx?": "https://github.com/toirl/less-carbon-nginx",
-									"How to Optimize Images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
+									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
 									"How to tell if your site is gzipped": "https://gomakethings.com/how-to-tell-if-your-site-is-gzipped/",
 									"HTTP Compression": "https://http.dev/compression",
 									"Impact of New and Emerging Internet Technologies on Climate Change and Human Rights (PDF)": "https://www.law.ox.ac.uk/sites/default/files/migrated/un_human_rights_council_advisory_committee_submission_-_new_and_emerging_technologies_-_allmann_hazas.pdf",
@@ -4676,7 +4676,7 @@
 									"GPF - General Policy Framework (PDF) - 1.7 - Strategy (Encryption)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 6.3 - Front-End (Resource Compression)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"Handbrake": "https://handbrake.fr/",
-									"How to Optimize Images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
+									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/blog/how-to-optimize-images/",
 									"Internet Speeds by Country 2023": "https://worldpopulationreview.com/country-rankings/internet-speeds-by-country",
 									"Page bloat update": "https://www.speedcurve.com/blog/page-bloat-2025/",
 									"Reduce web font size": "https://web.dev/articles/reduce-webfont-size?hl=en",

@@ -144,7 +144,7 @@
 				{
 					"id": "UX03-1",
 					"title": "Use third-party APIs to measure any passive external impact",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.3 Understand the impact of non-visitors](https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-of-non-visitors).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.3 Understand the impact for non-users](https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-for-non-users).",
 					"description": [
 						{
 							"1": "Utilize the tooling and resources provided by external parties to help you identify any efficiency and sustainability savings when having to use such services, or when non-digital forces come into play, such as if your product or service involves the physical delivery of goods.",
@@ -332,7 +332,7 @@
 				{
 					"id": "UX08-1",
 					"title": "Making your navigation menu accessible and well-structured",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.8 Ensure that navigation and way-finding are well-structured](https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-way-finding-are-well-structured).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.8 Ensure that navigation and wayfinding are well-structured](https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-wayfinding-are-well-structured).",
 					"description": [
 						{
 							"1": "Verify that your navigation menu is crafted in such a manner that it is both accessible to visitors and user-agents and functions correctly so that when implemented it doesn't lead to issues when attempting to browse the information architecture of a website or application. If the information architecture were to fail, this would lead to PPP failings as your visitors would no longer be able to use the product or service without encountering barriers to access and risk further emissions attempting to solve the issue.",
@@ -363,7 +363,7 @@
 				{
 					"id": "UX08-2",
 					"title": "Provide a human-readable sitemap to improve the information architecture",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.8 Ensure that navigation and way-finding are well-structured](https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-way-finding-are-well-structured).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.8 Ensure that navigation and wayfinding are well-structured](https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-wayfinding-are-well-structured).",
 					"description": [
 						{
 							"1": "Increase the findability of the content within your website among search engines and social networks. By creating a XML sitemap in the base directory of your website, and potentially having a human-readable) HTML sitemap to supplement it, you provide an index of all the publicly available pages. This acts as a potential signpost for individuals who may find themselves seeking information but not knowing exactly where it is stored.",
@@ -396,7 +396,7 @@
 				{
 					"id": "UX08-3",
 					"title": "Provide a method of keeping up-to-date with product or service updates",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.8 Ensure that navigation and way-finding are well-structured](https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-way-finding-are-well-structured).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.8 Ensure that navigation and wayfinding are well-structured](https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-wayfinding-are-well-structured).",
 					"description": [
 						{
 							"1": "Ensure that visitors and users of an application or website can monitor changes and events that occur over time. The need to be able to track such events is critical as customers become reliant on products and services. This reliance on such features means that time will have been invested into learning how to set up and use the product, which if it fails could have a sustainability impact not just for the product or service owner, but for those reliant on its ability to function.",
@@ -429,7 +429,7 @@
 				{
 					"id": "UX09-1",
 					"title": "Request permission for invasive access to interact with content",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.9 Be attentive rather than distracting](https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.9 Design to assist and not to distract](https://w3c.github.io/sustainableweb-wsg/#design-to-assist-and-not-to-distract).",
 					"description": [
 						{
 							"1": "Use the least amount of permission requests required to achieve a given task. Allowing the visitor to control when they receive information is critically important but it's also important not to burden them with requests to access hardware or do things that might prove invasive (such as triggering notifications or a pop-up window).",
@@ -460,7 +460,7 @@
 				{
 					"id": "UX09-2",
 					"title": "Encourage features that help visitors achieve tasks",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.9 Be attentive rather than distracting](https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.9 Design to assist and not to distract](https://w3c.github.io/sustainableweb-wsg/#design-to-assist-and-not-to-distract).",
 					"description": [
 						{
 							"1": "Lower the barriers to entry with content. When dealing with complex, multi-page websites it becomes increasingly important to have features in place to allow visitors to bypass repeated elements that they have already prefilled to achieve goals quicker (this is a key variable for sites who have large membership numbers).",
@@ -492,7 +492,7 @@
 				{
 					"id": "UX09-3",
 					"title": "Avoid mechanisms that promote excessive screen time",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.9 Be attentive rather than distracting](https://w3c.github.io/sustainableweb-wsg/#be-attentive-rather-than-distracting).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.9 Design to assist and not to distract](https://w3c.github.io/sustainableweb-wsg/#design-to-assist-and-not-to-distract).",
 					"description": [
 						{
 							"1": "Allow the visitor to achieve the task they initially set out to do and not trigger unnecessary issues in the user experience which would undermine their ability to complete the said task. Issues such as infinite scrolling can promote a need for continued browsing (which can load excessive data and have a sustainability impact on rendering) and loading overlays that deviate visitors from their path will have wider societal impacts on PPP targets which need to be considered.",
@@ -640,7 +640,7 @@
 				{
 					"id": "UX12-1",
 					"title": "Provide deliverables in reusable, self-isolated components",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.12 Enable others to understand and reuse your deliverables](https://w3c.github.io/sustainableweb-wsg/#enable-others-to-understand-and-reuse-your-deliverables).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.12 Make deliverables understandable and reusable](https://w3c.github.io/sustainableweb-wsg/#make-deliverables-understandable-and-reusable).",
 					"description": [
 						{
 							"1": "Allow for code that has been produced for an individual project to be re-used and reapplied across future work to reduce redundancy. This is most commonly seen in frameworks and libraries but isn't limited as such and can also apply to documentation and snippets.",
@@ -671,7 +671,7 @@
 				{
 					"id": "UX12-2",
 					"title": "Provide documentation to guide the deliverables",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.12 Enable others to understand and reuse your deliverables](https://w3c.github.io/sustainableweb-wsg/#enable-others-to-understand-and-reuse-your-deliverables).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.12 Make deliverables understandable and reusable](https://w3c.github.io/sustainableweb-wsg/#make-deliverables-understandable-and-reusable).",
 					"description": [
 						{
 							"1": "Guarantee that those without a working knowledge of an aspect of design or development will be provided with the information they require so that they can safely work with the files being presented to them during the creation and maintenance process.",
@@ -701,7 +701,7 @@
 				{
 					"id": "UX12-3",
 					"title": "Create code comments to describe the functionality of features",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.12 Enable others to understand and reuse your deliverables](https://w3c.github.io/sustainableweb-wsg/#enable-others-to-understand-and-reuse-your-deliverables).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.12 Make deliverables understandable and reusable](https://w3c.github.io/sustainableweb-wsg/#make-deliverables-understandable-and-reusable).",
 					"description": [
 						{
 							"1": "Provide internal or external developers with the information they require to understand the justification behind certain coding choices, and what individual pieces of code exist for. While such features can be itemized within the documentation, code comments are useful for providing a portable library of notes with the source code itself.",
@@ -730,7 +730,7 @@
 				{
 					"id": "UX13-1",
 					"title": "Implement an up-to-date design system",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.13 Use a design system to prioritize interface consistency](https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-to-prioritize-interface-consistency).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.13 Use a design system for interface consistency](https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-for-interface-consistency).",
 					"description": [
 						{
 							"1": "Ensure that stylistic choices made by the design and development team are based upon prescribed defaults. This will encourage consistency not just within the layout but also in terms of writing style, accessibility, sustainability, and other variables being monitored.",
@@ -761,7 +761,7 @@
 				{
 					"id": "UX14-1",
 					"title": "Increase the readability of content using common metrics",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.14 Write with purpose, in an accessible, easy-to-understand format](https://w3c.github.io/sustainableweb-wsg/#write-with-purpose-in-an-accessible-easy-to-understand-format).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.14 Provide clear, inclusive content with purpose](https://w3c.github.io/sustainableweb-wsg/#provide-clear-inclusive-content-with-purpose).",
 					"description": [
 						{
 							"1": "Make the content within your website or application more legible to individuals who may struggle with more technical language. Techniques such as lowering the reading age, removing industry terms (or clearly defining them), and having translations for international audiences can help get your message across.",
@@ -794,7 +794,7 @@
 				{
 					"id": "UX14-2",
 					"title": "Break long-form content down into a simpler structure",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.14 Write with purpose, in an accessible, easy-to-understand format](https://w3c.github.io/sustainableweb-wsg/#write-with-purpose-in-an-accessible-easy-to-understand-format).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.14 Provide clear, inclusive content with purpose](https://w3c.github.io/sustainableweb-wsg/#provide-clear-inclusive-content-with-purpose).",
 					"description": [
 						{
 							"1": "Avoid visitors being hit with a wall of text which risks abandonment of the page (and a wasted session with emissions attached). By taking large pieces of information and structuring them into more clean smaller chunks and utilizing a range of more friendlier features when appropriate such as lists and tables, the information will look less intimidating.",
@@ -823,7 +823,7 @@
 				{
 					"id": "UX14-3",
 					"title": "Produce a list of SEO considerations to improve your findability",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.14 Write with purpose, in an accessible, easy-to-understand format](https://w3c.github.io/sustainableweb-wsg/#write-with-purpose-in-an-accessible-easy-to-understand-format).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.14 Provide clear, inclusive content with purpose](https://w3c.github.io/sustainableweb-wsg/#provide-clear-inclusive-content-with-purpose).",
 					"description": [
 						{
 							"1": "Reduce the amount of time visitors and potential visitors spend churning through data attempting to locate you (or pages relating to you) through search engines or social media. These types of requests have an emissions impact from the hardware used to deal with the requests to the rendering of the results, therefore getting the right information to visitors as quickly as possible is critical to having a sustainable product.",
@@ -853,7 +853,7 @@
 				{
 					"id": "UX15-1",
 					"title": "Implement a range of images of the appropriate format and size",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 All images must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimize images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
 					"description": [
 						{
 							"1": "Identify whether the images you are using are firstly necessary (which may be difficult to machine test), and secondly are using a format that is web appropriate. While these considerations may seem small they can dramatically lead to performance benefits that can reduce loading times and page bloat (which is an increasing issue on today's Internet).",
@@ -885,7 +885,7 @@
 				{
 					"id": "UX15-2",
 					"title": "Optimizing all image assets for a variety of different resolutions",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 All images must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimize images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that images are not only served at the correct resolution and size for the device requesting them but also to make sure that the images being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the visitor, thereby improving multiple PPP variables and increasing performance.",
@@ -917,7 +917,7 @@
 				{
 					"id": "UX15-3",
 					"title": "Include lazy-loading with images that load below-the-fold",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 All images must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimize images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
 					"description": [
 						{
 							"1": "Prevent image assets included within a website or application that are either visually below the fold or hidden due to progressive disclosure from being loaded until they appear in view of the visitor's screen. This can save bandwidth and the resulting processing of the image at the client-side which otherwise would occur and may not even be used if the visitor chooses to click elsewhere or close before reaching it.",
@@ -946,7 +946,7 @@
 				{
 					"id": "UX15-4",
 					"title": "Provide the option for images to be disabled or a low fidelity alternative",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 All images must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimize images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that visitors with bandwidth restrictions or slow connections are given a mechanism to access your content when their ability to access critical information may be stressed. Providing such options may include an in-page solution (either by default or by choice), or through the offering of a highly optimized alternative for such requests.",
@@ -976,7 +976,7 @@
 				{
 					"id": "UX15-5",
 					"title": "Add details about image impacts to the media management and use policy",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 All images must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-images-must-be-optimized-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.15 Optimize images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that you provide details about any image reduction targets and techniques within a publicly available media management and use policy. This will help you to establish the criteria you will attempt to meet across your product or service and allow visitors to identify any failings if they spot them (which can be fixed during the product lifecycle).",
@@ -1004,7 +1004,7 @@
 				{
 					"id": "UX16-1",
 					"title": "Remove any functionality that may trigger auto-playing animation",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 All audio or video must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimize media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that media will only run within a website or application on the command of the visitor and not begin consuming resources and thrashing hardware from the immediacy of the page load event. Because this involves HTML (attributes and background media), JavaScript, and images (animated GIFs), a multi-functional approach is required.",
@@ -1034,7 +1034,7 @@
 				{
 					"id": "UX16-2",
 					"title": "Optimizing all audio and video assets for speed and compatibility",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 All audio or video must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimize media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that both the formats being used for media have widespread browser compatibility and that the audio and video being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the visitor, thereby improving multiple PPP variables and increasing performance.",
@@ -1064,7 +1064,7 @@
 				{
 					"id": "UX16-3",
 					"title": "Provide facades for media, animated GIFs, and third-party content",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 All audio or video must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimize media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
 					"description": [
 						{
 							"1": "Provide a mechanism that ensures visitors remain in control of when highly impactful (in terms of emissions) media or third-party materials begin to transmit to their devices. By having a static facade that upon clicking begins the render (and not simply hiding the video, audio or interactive element behind the static image), you ensure that the content has a lazy-load effect even if autoplay or the interaction is not active (as pre-buffering may occur during the render process).",
@@ -1093,7 +1093,7 @@
 				{
 					"id": "UX16-4",
 					"title": "Optimizing all media assets for a variety of different resolutions",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 All audio or video must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimize media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that videos are not only served at the correct resolution but also to identify assets that can help visitors make decisions before choosing to load the main video as to whether the media is correct for them. The location of these links should be connected to the embedded media, and either replace the original video upon click or downloadable for the visitor (they should not increase the number of embeds).",
@@ -1123,7 +1123,7 @@
 				{
 					"id": "UX16-5",
 					"title": "Add details about media impacts to the media management and use policy",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 All audio or video must be optimized for sustainability](https://w3c.github.io/sustainableweb-wsg/#all-audio-or-video-must-be-optimized-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.16 Optimize media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
 					"description": [
 						{
 							"1": "Ensure that you provide details about any audio or video reduction targets and techniques within a publicly available media management and use policy. This will help you to establish the criteria you will attempt to meet across your product or service and allow visitors to identify any failings if they spot them (which can be fixed during the product lifecycle).",
@@ -1153,7 +1153,7 @@
 				{
 					"id": "17-2",
 					"title": "Measure and respond to high-intensity animation usage",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.17 Animation must be proportionate and easy to control](https://w3c.github.io/sustainableweb-wsg/#animation-must-be-proportionate-and-easy-to-control).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.17 Ensure animation is proportionate and easy to control](https://w3c.github.io/sustainableweb-wsg/#ensure-animation-is-proportionate-and-easy-to-control).",
 					"description": [
 						{
 							"1": "Determine if animation usage within an application or website will diminish the user experience. By calculating the number of animations that occur and identifying if this number firstly can be reduced and then running each of them individually and identifying if they cause lagging on lower specification devices, offering a resolution will help reduce the CPU and GPU burden which can consume vast visitor resources.",
@@ -1183,7 +1183,7 @@
 				{
 					"id": "17-3",
 					"title": "Include a mechanism to pause or stop page animation",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.17 Animation must be proportionate and easy to control](https://w3c.github.io/sustainableweb-wsg/#animation-must-be-proportionate-and-easy-to-control).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.17 Ensure animation is proportionate and easy to control](https://w3c.github.io/sustainableweb-wsg/#ensure-animation-is-proportionate-and-easy-to-control).",
 					"description": [
 						{
 							"1": "Provide a mechanism to bypass animated effects that may be included within the page of a website or application. The buttons provided must include a stop / opt-out button as a mandatory option but may also include an option to pause and restart play as optional elements. These buttons must be visible at page load and before animation starts thereby giving the visitor time to action them before effects begin.",
@@ -1211,7 +1211,7 @@
 				{
 					"id": "UX18-1",
 					"title": "Provide accessible mechanisms around symbols in system fonts",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.18 Web typography must be highly optimized and appropriate](https://w3c.github.io/sustainableweb-wsg/#web-typography-must-be-highly-optimized-and-appropriate).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.18 Use optimized and appropriate web typography](https://w3c.github.io/sustainableweb-wsg/#use-optimized-and-appropriate-web-typography).",
 					"description": [
 						{
 							"1": "Avoid rendering issues surrounding emojis and symbol typefaces based on the operating system an individual may be using or the localization of their device. This can inherently cause accessibility issues which can reduce readability as well as the aforementioned visual glitches that can potentially have an impact on system hardware.",
@@ -1239,7 +1239,7 @@
 				{
 					"id": "UX18-2",
 					"title": "Use modern, efficient custom typefaces within a set limit",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.18 Web typography must be highly optimized and appropriate](https://w3c.github.io/sustainableweb-wsg/#web-typography-must-be-highly-optimized-and-appropriate).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.18 Use optimized and appropriate web typography](https://w3c.github.io/sustainableweb-wsg/#use-optimized-and-appropriate-web-typography).",
 					"description": [
 						{
 							"1": "Optimize a typeface to ensure that when custom fonts are provided, they are implemented as sustainably as possible requiring the fewest amount of resources to download and render as possible. By placing restrictions on the number of custom typefaces and using a highly optimized format (hopefully subsetted), you will have a highly compressed file.",
@@ -1270,7 +1270,7 @@
 				{
 					"id": "UX19-1",
 					"title": "Ensure that every PDF or other non-web document has an HTML alternative",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Suitable alternatives to any provided format must be offered](https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Offer suitable alternatives for every format used](https://w3c.github.io/sustainableweb-wsg/#offer-suitable-alternatives-for-every-format-used).",
 					"description": [
 						{
 							"1": "Expand the compatibility of non-native Web documents and to reduce the reliance on proprietary formats which can become an issue for visitors who may not have access to the software required to view the documents in question (either due to cost, the time expense of installing additional software, or the format no longer being maintained).",
@@ -1299,7 +1299,7 @@
 				{
 					"id": "UX19-2",
 					"title": "Provide a suitable font stack when custom typefaces are used",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Suitable alternatives to any provided format must be offered](https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Offer suitable alternatives for every format used](https://w3c.github.io/sustainableweb-wsg/#offer-suitable-alternatives-for-every-format-used).",
 					"description": [
 						{
 							"1": "Ensure cross-platform compatibility when custom fonts are utilized within a product or service. This should be done by providing at least three fallbacks across a variety of different desktop operating systems (Windows, Mac, and Linux), mobile platforms (Android and iOS), and finally offering a generic font family as a last resort to fall back upon.",
@@ -1329,7 +1329,7 @@
 				{
 					"id": "UX19-3",
 					"title": "Provide alternative text or figure captions for images",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Suitable alternatives to any provided format must be offered](https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Offer suitable alternatives for every format used](https://w3c.github.io/sustainableweb-wsg/#offer-suitable-alternatives-for-every-format-used).",
 					"description": [
 						{
 							"1": "Ensure that alternative text is available for descriptive images that are non-decorative and are important to the content of the website or application. Within HTML this can be provided either through the use of the alternative text attribute or through the use of figure captions (which are associated with an image providing added context).",
@@ -1360,7 +1360,7 @@
 				{
 					"id": "UX19-4",
 					"title": "Provide a text transcription of media files in an open HTML format",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Suitable alternatives to any provided format must be offered](https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Offer suitable alternatives for every format used](https://w3c.github.io/sustainableweb-wsg/#offer-suitable-alternatives-for-every-format-used).",
 					"description": [
 						{
 							"1": "Offer a transcript of the content of an audio file or video. This is especially useful within podcasts or shows that follow the linear progress of events that can be organized into chapters. How content is chosen to be written up is at the discretion of the author but to pass the criteria it must be accessible, understandable, and content complete.",
@@ -1388,7 +1388,7 @@
 				{
 					"id": "UX19-5",
 					"title": "Include WebVTT closed captions, subtitles, and sign language support",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Suitable alternatives to any provided format must be offered](https://w3c.github.io/sustainableweb-wsg/#suitable-alternatives-to-any-provided-format-must-be-offered).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.19 Offer suitable alternatives for every format used](https://w3c.github.io/sustainableweb-wsg/#offer-suitable-alternatives-for-every-format-used).",
 					"description": [
 						{
 							"1": "Enhance existing media that has been provided to ensure maximum legibility and comprehension. In doing so, the viewer is less likely to have issues in which they rewind content to attempt to understand dialog which they had difficulty understanding (which will in turn cause bursts of CPU and GPU activity during this media manipulation).",
@@ -1417,7 +1417,7 @@
 				{
 					"id": "UX20-1",
 					"title": "Detect form requirements and identify data collection policies",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.20 Provide accessible, usable, minimal web forms](https://w3c.github.io/sustainableweb-wsg/#provide-accessible-usable-minimal-web-forms).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.20 Provide accessible, user-friendly, minimal web forms](https://w3c.github.io/sustainableweb-wsg/#provide-accessible-user-friendly-minimal-web-forms).",
 					"description": [
 						{
 							"1": "Reduce the amount of inteference that occurs when information is required to be entered on a form control within a user-interface. Identify how many elements must be filled out (and those which are not mandatory being eliminated), clearly label how such components need to be filled out (and how many steps there are), plus have links to data collection policies.",
@@ -1449,7 +1449,7 @@
 				{
 					"id": "UX20-2",
 					"title": "Allow for data entry with automatic assistance settings",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.20 Provide accessible, usable, minimal web forms](https://w3c.github.io/sustainableweb-wsg/#provide-accessible-usable-minimal-web-forms).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.20 Provide accessible, user-friendly, minimal web forms](https://w3c.github.io/sustainableweb-wsg/#provide-accessible-user-friendly-minimal-web-forms).",
 					"description": [
 						{
 							"1": "Provide a mechanism within forms during necessary data entry to allow automated tooling to provide necessary assistance. Such data entry will cause visitors to spend less time onscreen and as such will generate fewer emissions in addition to less frustration from failed attempts that would otherwise lead to potential escalation of such emissions being triggered (while also conserving bandwidth).",
@@ -1480,7 +1480,7 @@
 				{
 					"id": "UX21-1",
 					"title": "Provide compatibility for non-visual browsing methods",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.21 Consider the impact of visitors using non-visual browsers](https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-of-visitors-using-non-visual-browsers).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.21 Consider the experience in non-visual browsers and interfaces](https://w3c.github.io/sustainableweb-wsg/#consider-the-experience-in-non-visual-browsers-and-interfaces).",
 					"description": [
 						{
 							"1": "Provide a mechanism for those not using a screen as a primary method of browsing to have an equal browsing experience. This is primarily due to screens being a high emitter of emissions in terms of energy usage, but also with the increase in speech-powered devices, the need for support mechanisms to be in place has increased in recent years.",
@@ -1509,7 +1509,7 @@
 				{
 					"id": "UX22-3",
 					"title": "Provide error detection when user input is required",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.22 Provide useful notifications to improve the visitor's journey](https://w3c.github.io/sustainableweb-wsg/#provide-useful-notifications-to-improve-the-visitor-s-journey).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.22 Provide useful notifications](https://w3c.github.io/sustainableweb-wsg/#provide-useful-notifications).",
 					"description": [
 						{
 							"1": "Provide a mechanism to notify the visitor if an issue has occurred during the form-filling process that may be remedied either before or after the submission process has occurred to resolve the issue before it reaches its intended location. Providing error detection and assistance can reduce screen time searching for answers.",
@@ -1540,7 +1540,7 @@
 				{
 					"id": "UX23-1",
 					"title": "Add a print-friendly media query or stylesheet",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable or physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable and physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
 						{
 							"1": "Reduce the amount of excessive paper and ink resource mineral waste produced from the physical printing of documents by visitors of your products and services. By creating a customized print stylesheet you can optimize the use of these resources and improve readability of the layout if the document is exported into a static format such as PDF.",
@@ -1571,7 +1571,7 @@
 				{
 					"id": "UX23-2",
 					"title": "Optimizing all document assets across a variety of different formats",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable or physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable and physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
 						{
 							"1": "Ensure that non-web documents are not only served in a range of compatible (suitable) formats for the device requesting them but also to make sure that the documents being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the visitor, thereby improving multiple PPP variables and increasing performance.",
@@ -1601,7 +1601,7 @@
 				{
 					"id": "UX23-3",
 					"title": "Provide pre-generated copies of repeat-use physical assets",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable or physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable and physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
 						{
 							"1": "Ensure that any document that is likely to be requested by visitors on multiple occasions is already compiled and generated at the source and available for download rather than generating a brand new asset upon each user request. This will reduce the emissions of having to repeat the same task over and over for unchanging content or materials that have little interaction potential.",
@@ -1629,7 +1629,7 @@
 				{
 					"id": "UX23-4",
 					"title": "Provide document details including a URL within a page",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable or physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-or-physical-documents).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.23 Reduce the impact of downloadable and physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
 						{
 							"1": "Provide a mechanism for individuals to access downloadable or embeddable documents without the material having been embedded within the document. Embedded content has an attributable carbon cost due to the rendering of the host applications processes as well as the content and there is a chance visitors clicked a link in error.",
@@ -1658,7 +1658,7 @@
 				{
 					"id": "UX24-1",
 					"title": "Identify a stakeholder-focused testing and prototyping policy",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.24 Policies and processes must exist to get stakeholders invested](https://w3c.github.io/sustainableweb-wsg/#policies-and-processes-must-exist-to-get-stakeholders-invested).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.24 Get users and contributors invested in the project](https://w3c.github.io/sustainableweb-wsg/#get-users-and-contributors-invested-in-the-project).",
 					"description": [
 						{
 							"1": "Identify the way new features, product ideas, and user-interface components will be tested among various stakeholder groups such as those with with accessibility issues. The main location for such an outline will be through a stakeholder-focused testing and prototyping policy and as such once implemented publicly, a link to the policy should be available.",
@@ -1687,7 +1687,7 @@
 				{
 					"id": "UX25-1",
 					"title": "Produce a list of checkpoints to ensure quality control",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.25 Audit and test for bugs or issues that require resolving](https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-that-require-resolving).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.25 Audit and test for bugs or issues requiring resolution](https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
 					"description": [
 						{
 							"1": "Produce a comprehensive maintainable list of quality assurance lists across a range of different categories not limited to bugs, security, web performance, accessibility, sustainability, etc. By having this list in place, everyone involved in the creation process can closely monitor the application or website against each checkpoint to identify resolutions either before, during, or after a product or service is launched.",
@@ -1720,7 +1720,7 @@
 				{
 					"id": "UX25-2",
 					"title": "Provide active monitoring for issues on a frequent schedule",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.25 Audit and test for bugs or issues that require resolving](https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-that-require-resolving).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.25 Audit and test for bugs or issues requiring resolution](https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
 					"description": [
 						{
 							"1": "Ensure that problems relating to the sustainability of a website can be picked up with more frequency and regularity. Within the scope of website and application testing, it is important to be actively monitoring for common failure points that build over time and upon being notified of said issues provide resolutions within a reasonable timeframe.",
@@ -1752,7 +1752,7 @@
 				{
 					"id": "UX25-3",
 					"title": "Scan for introduced issues upon the completion of a new release",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.25 Audit and test for bugs or issues that require resolving](https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-that-require-resolving).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.25 Audit and test for bugs or issues requiring resolution](https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
 					"description": [
 						{
 							"1": "Provide a mechanism for eliminating any potential new flaws that may have been introduced into a website or application upon the release of a new version that will have additional updates or features that could break functionality if not implemented correctly. As such, enforcing a sustainability scan across a series of variables is critical.",
@@ -1845,7 +1845,7 @@
 				{
 					"id": "UX29-1",
 					"title": "Provide a publicly visible compatibility policy or statement",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Check for compatibility or platform-specific issues](https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Regularly test and maintain compatibility](https://w3c.github.io/sustainableweb-wsg/#regularly-test-and-maintain-compatibility).",
 					"description": [
 						{
 							"1": "Ensure that visitors are made aware of (or able to find out) the limitations of a product or service before issuing a support request that will involve creating new emission sources. This compatibility policy can be listed amongst other policies on a website, however, it must contain detailed information about any factor that may have reduced capability.",
@@ -1874,7 +1874,7 @@
 				{
 					"id": "UX29-2",
 					"title": "Provide clarification when updates are significant over minor releases",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Check for compatibility or platform-specific issues](https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Regularly test and maintain compatibility](https://w3c.github.io/sustainableweb-wsg/#regularly-test-and-maintain-compatibility).",
 					"description": [
 						{
 							"1": "Provide a mechanism for introducing visitors to new features and capabilities within websites and applications upon a major release being triggered. This would include compatibility changes, any alterations that affect workflow, and bugs that have been resolved. It applies equally to both applications on upgrade paths and website redesigns.",
@@ -1903,7 +1903,7 @@
 				{
 					"id": "UX29-3",
 					"title": "Establish compatibility testing routines with each new release",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Check for compatibility or platform-specific issues](https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Regularly test and maintain compatibility](https://w3c.github.io/sustainableweb-wsg/#regularly-test-and-maintain-compatibility).",
 					"description": [
 						{
 							"1": "Ensure that compatibility issues resulting from visitor constraints (such as operating system or browser age / connection speed, availability, or cost) are factored into the testing process at each new release. Creators must have processes in place whether through checklists that are pre-created or crafted from scratch to ensure that a regime is in place.",
@@ -1935,7 +1935,7 @@
 				{
 					"id": "UX29-5",
 					"title": "Provide a PWA if more suitable than its native counterpart",
-					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Check for compatibility or platform-specific issues](https://w3c.github.io/sustainableweb-wsg/#check-for-compatibility-or-platform-specific-issues).",
+					"applicability": "This technique is **Advisory** to meet *Success Criteria* within [2.29 Regularly test and maintain compatibility](https://w3c.github.io/sustainableweb-wsg/#regularly-test-and-maintain-compatibility).",
 					"description": [
 						{
 							"1": "Identify a web application that exists and then determine if turning the web application into a progressive web application would be more beneficial than providing a native offering. This would need to take into account current web capabilities (such as ServiceWorkers), methods of delivery (such as WASM), and the human aspect (audience requirements).",
