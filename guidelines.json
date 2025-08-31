@@ -2,7 +2,7 @@
 	"title": "Web Sustainability Guidelines",
 	"version": "1.0",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-06-29",
+	"lastModified": "2025-08-31",
 	"category": [
 		{
 			"id": "1",
@@ -152,7 +152,7 @@
 						{
 							"title": "Barrier removal",
 							"testable": "Human-testable",
-							"description": "Remove identified barriers to access. These can include dark or deceptive design patterns, accessibility issues, or other pain points.",
+							"description": "Remove identified barriers to access. These can include deceptive design patterns, accessibility issues, or other pain points.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -350,13 +350,13 @@
 				},
 				{
 					"id": "5",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#brainstorm-ways-to-resolve-any-affected-party-issues",
-					"guideline": "Brainstorm ways to resolve any affected party issues",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#find-ways-to-resolve-any-affected-party-issues-prior-to-implementation",
+					"guideline": "Find ways to resolve any affected party issues prior to implementation",
 					"criteria": [
 						{
-							"title": "Human-centered brainstorming",
+							"title": "Human-centered ideation",
 							"testable": "Human-testable",
-							"description": "Use a human-centered approach in brainstorming to consider the needs, interests, and impact on directly and indirectly affected parties.",
+							"description": "Use a human-centered approach during ideation to consider the needs, interests, and impact on directly and indirectly affected parties.",
 							"resources": [
 								{
 									"A Framework For Brainstorming Products": "https://www.smashingmagazine.com/2016/06/a-framework-for-brainstorming-products/",
@@ -370,9 +370,9 @@
 							]
 						},
 						{
-							"title": "Ecological brainstorming",
+							"title": "Environmental ideation",
 							"testable": "Human-testable",
-							"description": "Consider planetary needs and ecological boundaries during the brainstorming process. This can include creating non-user, non-human (animal, planet) personas, or climate-specific user stories and sprints.",
+							"description": "Consider planetary needs and environmental boundaries during the ideation phase. This can include creating non-user, non-human (animal, planet) personas, or climate-specific user stories and sprints.",
 							"resources": [
 								{
 									"52 Sustainability Focused Ideation Brainstorm Cards for FREE": "https://www.explorerlabs.co/thinking/52-sustainability-focused-ideation-brainstorm-cards-for-free",
@@ -721,7 +721,7 @@
 							"Environment": "Using pagination rather than infinite scrolling allows individuals to request data on demand rather than encouraging overconsumption. This reduces carbon impact while encouraging healthy and sustainable browsing habits.",
 							"Performance": "Avoiding attention traps improves user experience by reducing the time spent clicking through, closing, or hiding these distractions. Presenting the information in less distracting ways makes the experience feel faster, reduces barriers to access, and improves user flow.",
 							"Social Equity": "Preserving user focus on their objectives reduces the potential for confusion, mistakes, and lapses in judgment.",
-							"Transparency": "Avoiding dark and deceptive patterns will boost trust and encourage users to return or recommend."
+							"Transparency": "Avoiding deceptive patterns will boost trust and encourage users to return or recommend."
 						}
 					],
 					"GRI": [
@@ -789,9 +789,9 @@
 					"guideline": "Avoid being manipulative or deceptive",
 					"criteria": [
 						{
-							"title": "Dark and deceptive design patterns",
+							"title": "Deceptive design patterns",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX11-1)",
-							"description": "Avoid dark patterns, deceptive design, or unethical coding techniques that manipulate visitors into taking actions that are not in their best interest. Examples include anti-right click, copy prevention, requiring an account to purchase, etc.",
+							"description": "Avoid deceptive design or unethical coding techniques that manipulate visitors into taking actions that are not in their best interest. Examples include anti-right click, copy prevention, requiring an account to purchase, etc.",
 							"resources": [
 								{
 									"10 Common Dark Patterns in UX and How to Avoid Them": "https://www.netsolutions.com/insights/dark-patterns-in-ux-disadvantages/",
@@ -892,8 +892,8 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Accessibility": "Avoiding dark and deceptive design patterns improves user experience for people using assistive technologies, as these can be especially disruptive when using a screen reader. This improves their trust and access to your content.",
-							"Conversion": "Avoiding dark and deceptive patterns can result in fewer complaints, reduce barriers, and improve conversion.",
+							"Accessibility": "Avoiding deceptive design patterns improves user experience for people using assistive technologies, as these can be especially disruptive when using a screen reader. This improves their trust and access to your content.",
+							"Conversion": "Avoiding deceptive patterns can result in fewer complaints, reduce barriers, and improve conversion.",
 							"Environment": "Avoiding deceptive design patterns reduces energy consumption because visitors do not waste time and energy trying to undo choices they never intended to make.",
 							"Performance": "Using ethical, non-disruptive practices will accelerate the user journey and perceived speed and reduce unnecessary friction.",
 							"Privacy": "Ensuring compliance with ethical privacy practices and avoiding dark and deceptive patterns reduces litigation risk. It also reduces data transmission between tracking and advertising services providers."
@@ -3500,7 +3500,7 @@
 							"Economic": "Using print media queries within stylesheets can reduce visitors' ink use and paper costs.",
 							"Environment": "Accommodating dark mode when preferred will always be more energy efficient on OLED devices. Similarly, animation and media have a significant impact on CPU and GPU usage, so respecting a prefers reduced motion query will reduce energy consumption. The presence of a monochrome preference query could encourage greater adoption of energy-efficient e-ink devices.  A sustainability-optimized print stylesheet can save both paper and ink output.",
 							"Performance": "Allowing visitors to access a reduced-data version of a site could significantly reduce the data transferred and the resulting carbon footprint. This can improve performance and reduce costs for individuals on a metered data plan. Detecting if scripting is disabled and offering alternative content may save wasted effort and improve the performance of a project.",
-							"Social Equity": "Meeting visitor preferences is a positive shift: You aren't telling your visitors how they should 'experience your content, but following your visitors' preferences or a device' capabilities and the priority of constituencies."
+							"Social Equity": "Meeting visitor preferences is a positive shift: You are not telling your visitors how they should 'experience your content, but following your visitors' preferences or a device' capabilities and the priority of constituencies."
 						}
 					],
 					"GRI": [
@@ -3585,7 +3585,7 @@
 						{
 							"title": "Carbon-aware design",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD13-3)",
-							"description": "Use carbon-aware design techniques to maximize your use of renewable energy. This is achieved by adapting the delivery of your project to current electricity availability and visitor grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.",
+							"description": "Use carbon-aware design techniques to maximize your use of carbon-free energy. This is achieved by adapting the delivery of your project to current electricity availability and visitor grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.",
 							"resources": [
 								{
 									"Carbon Aware Computing": "https://www.carbon-aware-computing.com/",
@@ -3717,7 +3717,7 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Conversion": "Creating fallbacks for technology that might fail can 'enable sales you'd otherwise miss out on.",
+							"Conversion": "Creating fallbacks for technology that might fail can 'enable sales you would otherwise miss out on.",
 							"Economic": "Providing easier, reliable access in more situations allows you to sell to more people.",
 							"Environment": "Reducing unnecessary visual effects - such as animations - when a page is not visible, helps to prevent wasted processing in background tabs. This can potentially help visitors who leave multiple tabs open conserve battery.",
 							"Performance": "Using low-impact scripting can reduce heavy codebase sizes. Providing fallbacks for unavailable JavaScript ensures older or less capable devices can still access your content.",
@@ -3800,7 +3800,7 @@
 						{
 							"title": "Dependency management",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD16-1)",
-							"description": "Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that aren't needed.",
+							"description": "Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that are not needed.",
 							"resources": [
 								{
 									"Categorize Your Dependencies": "https://antfu.me/posts/categorize-deps",
@@ -4219,7 +4219,7 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Economic": "Existing features don't require additional development time, so is a time saver.",
+							"Economic": "Using existing features means you do not need to invest more time in 'development or maintenance, which reduces costs.",
 							"Environment": "Avoiding repetition of pre-existing features improves efficiency, which ultimately will reduce redundancy, development time, and emissions associated with building the product or service.",
 							"Performance": "Using browser-native functionality and features allows you to take advantage of their natural optimization. They will generally load faster while using fewer resources. Custom components are unlikely to beat their performance."
 						}
@@ -4412,7 +4412,7 @@
 							]
 						},
 						{
-							"title": "Renewable electricity",
+							"title": "Carbon-free electricity",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS01-4)",
 							"description": "Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, including backup generators, in calculations.",
 							"resources": [
@@ -4455,7 +4455,7 @@
 						{
 							"title": "Remaining emissions",
 							"testable": "Human-testable",
-							"description": "Balance unavoidable remaining carbon emissions with high-quality market based instruments or other evolving instruments from the voluntary carbon market, until additional renewable energy resources become available. The quality of market-based instruments should be verified by non-profit third-party organizations with sufficient supporting evidence.",
+							"description": "Balance unavoidable remaining carbon emissions with high-quality market based instruments or other evolving instruments from the voluntary carbon market, until additional carbon-free energy resources become available. The quality of market-based instruments should be verified by non-profit third-party organizations with sufficient supporting evidence.",
 							"resources": [
 								{
 									"Alternatives to Carbon Credits": "https://offsetguide.org/alternatives-to-carbon-credits/",
@@ -4516,7 +4516,7 @@
 							"Conversion": "In cases where a badge or link about sustainable hosting providers appears on a website, visitors concerned about the issue may use and reuse the site preferentially.",
 							"Environment": "Using hosting providers that operate with lower emissions, better power efficiency, and more responsible electronic waste management reduces negative environmental impacts from websites and products.",
 							"Social Equity": "Hosting providers with transparent environmental sustainability are minimizing the negative impacts on their local communities.",
-							"Transparency": "Sharing the efficiency and renewable energy metrics of hosting services allows the public to verify and understand sustainable websites and products."
+							"Transparency": "Sharing the efficiency and carbon-free energy metrics of hosting services allows the public to verify and understand sustainable websites and products."
 						}
 					],
 					"GRI": [
@@ -5628,9 +5628,9 @@
 							]
 						},
 						{
-							"title": "Renewable evidence",
+							"title": "Carbon-free evidence",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-6)",
-							"description": "Demonstrate how digital products and services are powered using renewable energy.",
+							"description": "Demonstrate how digital products and services are powered using carbon-free energy.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.3 and 5.4.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -5656,10 +5656,10 @@
 						{
 							"Economic": "Communicating the ways you can share the economic benefits of your digital work raises awareness of social inequalities. Similarly, enabling visitors to make more informed decisions can ensure your project is more financially sustainable overall.",
 							"Environment": "Establishing clear sustainability statements should make it easier to align organizational policies and practices with measurable metrics and support goals. Integrating this early in the digital product strategy can improve efficiency and reduce environmental impact.",
-							"Operations": "Establishing ethical and sustainability policies can help to ensure product teams are more engaged in the work they're doing.",
+							"Operations": "Establishing ethical and sustainability policies can help to ensure product teams are more engaged in the work they are doing.",
 							"Privacy": "Reducing your emissions and explaining to your audience how you aim to keep to your sustainability commitments provides the opportunity to highlight other key issues of interest to your visitors, such as privacy and security. This can boost visitor trust in your brand.",
 							"Social Equity": "Highlighting intersectional social issues in documentation, storytelling, and marketing materials raises awareness of problems and potential solutions.",
-							"Transparency": "Maintaining clear and public-facing policies helps internal and external stakeholders to better understand an organization's sustainability commitments, while making it easier to report on the impact of these efforts."
+							"Transparency": "Maintaining clear and public-facing policies helps internal and external affected partys to better understand an organization's sustainability commitments, while making it easier to report on the impact of these efforts."
 						}
 					],
 					"GRI": [
@@ -5829,7 +5829,7 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Conversion": "Communicating the impact and allowing the visitor to set preferences with the environmental impact in mind can encourage more individuals to make ecologically friendly choices and improve your image among ethical consumers.",
+							"Conversion": "Communicating the impact and allowing the visitor to set preferences with the environmental impact in mind can encourage more individuals to make environmentally friendly choices and improve your image among ethical consumers.",
 							"Environment": "Allowing visitors to select more environmentally friendly settings within software naturally reduces the environmental impact.",
 							"Performance": "Reducing unnecessary or wasteful, less sustainable behaviors will often improve performance and accessibility, as these are often interlinked."
 						}
@@ -5852,7 +5852,7 @@
 						{
 							"title": "Life-cycle analysis",
 							"testable": "Human-testable",
-							"description": "Conduct a full life-cycle analysis based on the functional unit defined under Guideline 5.15.",
+							"description": "Conduct a full life-cycle analysis based on the functional unit defined under guideline 5.15.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.3 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -7511,7 +7511,7 @@
 					"benefits": [
 						{
 							"Economic": "Sourcing responsible financing for digital products and services improves their resilience and saves the organization time, money, and resources over time.",
-							"Environment": "Divesting from fossil fuels moves us more quickly to an economy that is powered by renewable energy, which can reduce the catastrophic impacts of climate change."
+							"Environment": "Divesting from fossil fuels moves us more quickly to an economy that is powered by carbon-free energy, which can reduce the catastrophic impacts of climate change."
 						}
 					],
 					"GRI": [
