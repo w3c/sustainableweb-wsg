@@ -1,6 +1,5 @@
 {
 	"title": "Sustainable Tooling And Reporting (STAR)",
-	"version": "1.0",
 	"edition": "Editor's Draft",
 	"lastModified": "2025-08-31",
 	"category": [
@@ -4096,7 +4095,7 @@
 				{
 					"id": "BSPM07-1",
 					"title": "Verify and showcase any third-party sustainability certifications",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.7 Validate efforts using established third-party certifications](https://w3c.github.io/sustainableweb-wsg/#validate-your-efforts-using-established-third-party-certifications).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.7 Validate efforts using established third-party certifications](https://w3c.github.io/sustainableweb-wsg/#validate-efforts-using-established-third-party-certifications).",
 					"description": [
 						{
 							"1": "Provide a mechanism for product or service owners who have achieved certifications either as an individual or as a business in a related sustainability field (with a recognized achievement or certification) to have that accounted for in the calculation of their sustainability journey. Any such certifications should be included within a statement.",
