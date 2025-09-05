@@ -40,7 +40,7 @@ Pull requests (PRs) should be made against the main branch.
 
 If you are not the sole contributor, please identify all fellow contributors in the pull request comment.
 
-To add a contributor (other than yourself, that's automatic), mark them one per line as follows:
+To add a contributor (other than yourself, that is automatic), mark them one per line as follows:
 
 ```
 +@github_username
@@ -60,10 +60,10 @@ Once a PR has been reviewed (for quality control purposes), it will either be ac
 
 If you cannot submit a pull request, the preferred method is to create a [new issue](https://github.com/w3c/sustainableweb-wsg/issues/new) with your comments or solutions. You can also comment on existing issue threads on [GitHub Issues](https://github.com/w3c/sustainableweb-wsg/issues/).
 
-You can provide comments on technical errors (bugs) you have uncovered, new guidelines or success criteria you believe should be added, questions you have about existing or future content or an idea for a direction or feature we could / should utilize.
+You can provide comments on technical errors (bugs) you have uncovered, new guidelines or success criteria you believe should be added, questions you have about existing or future content or an idea for a direction or feature we could/should utilize.
 
-Please check that your question hasn't already been posted first and provide as much detail as possible. We're all volunteers so please keep this in mind and try to be civil when commenting about our work.
+Please check that your question has not already been posted first and provide as much detail as possible. We are all volunteers so please keep this in mind and try to be civil when commenting about our work.
 
 ## Credit
 
-All contributors will receive credit (in the guidelines and our GitHub release notes) if their contributions make it into the document. Certain exclusions will apply such as those who do not provide their full names or those whose feedback is deemed as invalid, duplicate, or general questions that don't add to the guidelines or other deliverables.
+All contributors will receive credit (in the guidelines and our GitHub release notes) if their contributions make it into the document. Certain exclusions will apply such as those who do not provide their full names or those whose feedback is deemed as invalid, duplicate, or general questions that do not add to the guidelines or other deliverables.
