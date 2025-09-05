@@ -5,9 +5,9 @@ If you would like to learn more about us and how to participate in this project,
 
 ## Statistics
 
- - **92** Guidelines covering UX, Web Development, Infrastructure, and Business / Product Strategy.
- - **254** Success Criteria to meet the guidelines on various aspects of sustainability.
- - **160** advisory Techniques within STAR providing guidance to meet WSG Success Criteria.
+ - **92** Guidelines covering UX, Web Development, Infrastructure, and Business/Product Strategy.
+ - **254** success criteria to meet the guidelines on various aspects of sustainability.
+ - **160** advisory Techniques within STAR providing guidance to meet WSG success criteria.
  - **2,500+** Resources (URLs) to reinforce and assist with implementation of WSG guidelines.
  - **500+** pages worth of sustainability material (**200+** of which exist within the WSG).
  - **54** content filters based upon **6** different sustainability categories.
@@ -32,7 +32,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Editors Draft</td>
-			<td>22 July 2025</td>
+			<td>31 August 2025</td>
 		</tr>
 	</tbody>
 </table>
@@ -50,47 +50,47 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
 			<td>W3C Editors Draft</td>
-			<td>22 July 2025</td>
+			<td>31 August 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/resources.html">Resources for WSG</a></td>
 			<td>W3C Editors Draft</td>
-			<td>22 July 2025</td>
+			<td>31 August 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws and Policies</a></td>
 			<td>W3C Editors Draft</td>
-			<td>22 July 2025</td>
+			<td>31 August 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/intro.html">Introduction to Web Sustainability</a></td>
 			<td>W3C Editors Draft</td>
-			<td>22 July 2025</td>
+			<td>31 August 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
 			<td>W3C Editors Draft</td>
-			<td>22 July 2025</td>
+			<td>31 August 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">Quick Reference for WSG</a> and <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">Checklist</a> (PDF)</td>
 			<td>W3C Editors Draft</td>
-			<td>22 July 2025</td>
+			<td>31 August 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
 			<td>JSON API</td>
-			<td>29 June 2025</td>
+			<td>31 August 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
 			<td>JSON API</td>
-			<td>29 June 2025</td>
+			<td>31 August 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>
 			<td>Test Suite</td>
-			<td>18 June 2025</td>
+			<td>31 August 2025</td>
 		</tr>
 	</tbody>
 </table>
@@ -106,7 +106,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 	<tbody>
 		<tr>
 			<td>Initial Draft</td>
-			<td>30 June 2025</td>
+			<td>15 September 2025</td>
 		</tr>
 		<tr>
 			<td>Final Draft</td>
@@ -179,7 +179,7 @@ Key concepts of note include:
 - Each title element contains a short identifier for the test.
 - The rel="author" link element contains details of who created that test.
 - The rel="help" link element links to the WSG guideline it relates to.
-- The name="flags" meta element identifies any requirements the test may have such as an external file (**asset**), scripting (**JavaScript**), user-involvement (**interaction**), or if it's trying to disprove something (**invalid**).
+- The name="flags" meta element identifies any requirements the test may have such as an external file (**asset**), scripting (**JavaScript**), user-involvement (**interaction**), or if it is trying to disprove something (**invalid**).
 - The name="assert" meta tag explains which **STAR** technique it relates to by title.
 - The conditions of passing are what requirements are necessary to pass the technique (and thus the success criteria).
 
