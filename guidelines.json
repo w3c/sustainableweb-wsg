@@ -49,7 +49,7 @@
 							]
 						}
 					],
-					"intent": "Many variables can impact the user experience, and a bunch of these can impact how sustainable your website will be. Attempting to identify where you can make a difference to the visitor and give them a more sustainable experience will be beneficial.",
+					"intent": "Many variables can impact the user experience, and a bunch of these can impact how sustainable your website will be. Attempting to identify where you can make a difference to the user and give them a more sustainable experience will be beneficial.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -72,13 +72,13 @@
 				},
 				{
 					"id": "2",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#understand-visitor-requirements-or-constraints-resolving-barriers-to-access",
-					"guideline": "Understand visitor requirements or constraints, resolving barriers to access",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#understand-user-requirements-or-constraints-resolving-barriers-to-access",
+					"guideline": "Understand user requirements or constraints, resolving barriers to access",
 					"criteria": [
 						{
 							"title": "Audience evaluation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX02-1)",
-							"description": "Identify primary and secondary target visitors. Evaluate and define their needs through quantitative and/or qualitative research, testing, or analytics. Ensure your visitors and affected communities are consistently and closely involved in the research and testing process.",
+							"description": "Identify primary and secondary target users. Evaluate and define their needs through quantitative and/or qualitative research, testing, or analytics. Ensure your users and affected communities are consistently and closely involved in the research and testing process.",
 							"resources": [
 								{
 									"6 Powerful User Research Methods to Boost Hypothesis Validation": "https://uxplanet.org/6-powerful-user-research-methods-to-boost-hypothesis-validation-58c491461075",
@@ -96,9 +96,9 @@
 							]
 						},
 						{
-							"title": "Visitor constraints",
+							"title": "User constraints",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX02-2)",
-							"description": "Account for potential visitor constraints, such as the device age, operating system choice or version, browser, VPN use, and connection speeds when designing and assessing the quality of user experiences.",
+							"description": "Account for potential user constraints, such as the device age, operating system choice or version, browser, VPN use, and connection speeds when designing and assessing the quality of user experiences.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -183,7 +183,7 @@
 						{
 							"title": "Seat at the table",
 							"testable": "Human-testable",
-							"description": "Assign all involved parties, including visitors, an equitable role in the decision-making process when undertaking research, identifying needs, or iterative design work.",
+							"description": "Assign all involved parties, including users, an equitable role in the decision-making process when undertaking research, identifying needs, or iterative design work.",
 							"resources": [
 								{
 									"Creating And Maintaining A Voice Of Customer Program": "https://www.smashingmagazine.com/2023/11/creating-maintaining-voice-customer-program/",
@@ -199,7 +199,7 @@
 							]
 						}
 					],
-					"intent": "When creating a product or service, identifying your target audience through user-research, analytics, data collected using ethical anonymous methods, or feedback from and with visitors is important in being able to create a customized service for and with them that is tailor-made for their specific preferences, adapted for any needs they may have, and particularly useful in helping a website or application evolve its service to meet sustainability targets.",
+					"intent": "When creating a product or service, identifying your target audience through user-research, analytics, data collected using ethical anonymous methods, or feedback from and with users is important in being able to create a customized service for and with them that is tailor-made for their specific preferences, adapted for any needs they may have, and particularly useful in helping a website or application evolve its service to meet sustainability targets.",
 					"impact": "Medium",
 					"effort": "High",
 					"benefits": [
@@ -207,10 +207,10 @@
 							"Accessibility": "Understanding the needs of your audience through accessibility and trauma-informed research will help you prioritize design improvements to boost accessibility beyond the basics.",
 							"Conversion": "Meeting audience requirements increases the likelihood that they will use it regularly and recommend it to others, improving its adoption rate and reputation.",
 							"Economic": "Responding to the needs of your audience means they are more likely to convert and purchase.",
-							"Environment": "Undertaking research to identify real visitor needs and behaviour means developers can avoid wasting time, effort, and emissions on building unnecessary features.",
-							"Performance": "Use visitor research to identify UX bottlenecks that cause visitor abandonment. Fixes can be measured, tested, and evaluated to further improve performance and reduce emissions through removing those bottlenecks and inefficiencies.",
-							"Privacy": "Assessing visitor needs and being minimal with further information requests will help you comply with privacy legislation.",
-							"Social Equity": "Improving UX with compatibility in mind means products or services work better for visitors who might otherwise face various barriers to accessing content - such as older devices, low-bandwidth environments, or restrictive territories, language. This reduces e-waste and improves equity if older equipment meets needs for longer."
+							"Environment": "Undertaking research to identify real user needs and behaviour means developers can avoid wasting time, effort, and emissions on building unnecessary features.",
+							"Performance": "Use user research to identify UX bottlenecks that cause user abandonment. Fixes can be measured, tested, and evaluated to further improve performance and reduce emissions through removing those bottlenecks and inefficiencies.",
+							"Privacy": "Assessing user needs and being minimal with further information requests will help you comply with privacy legislation.",
+							"Social Equity": "Improving UX with compatibility in mind means products or services work better for users who might otherwise face various barriers to accessing content - such as older devices, low-bandwidth environments, or restrictive territories, language. This reduces e-waste and improves equity if older equipment meets needs for longer."
 						}
 					],
 					"GRI": [
@@ -384,14 +384,14 @@
 							]
 						}
 					],
-					"intent": "Brainstorming allows you to flush out ideas before you commit to pursuing a path. Being considerate of not just your visitors but other individuals who may be affected by your product or service (including non-humans, like the environment!) is a useful practical exercise as it may influence your decisions in how you scope your project.",
+					"intent": "Brainstorming allows you to flush out ideas before you commit to pursuing a path. Being considerate of not just your users but other individuals who may be affected by your product or service (including non-humans, like the environment!) is a useful practical exercise as it may influence your decisions in how you scope your project.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Understanding real-world accessibility requirements in the early development stages makes it possible to prioritize inclusive design throughout the entire lifecycle. This improves efficiency, as developers will not be prompted to add in accessibility later. It will also reduce emissions associated with the patching process.",
 							"Environment": "Helping key contributors to better understand the environmental impact makes it possible to track and reduce that impact throughout the lifecycle of a project.",
-							"Social Equity": "Accounting for the needs of visitors who might otherwise face various barriers to accessing content - on such as older devices, in low-bandwidth environments, or have other barriers to accessing information early in the process will reduce the need for costly redesigns or adding appropriate alternatives at a later date."
+							"Social Equity": "Accounting for the needs of users who might otherwise face various barriers to accessing content - on such as older devices, in low-bandwidth environments, or have other barriers to accessing information early in the process will reduce the need for costly redesigns or adding appropriate alternatives at a later date."
 						}
 					],
 					"GRI": [
@@ -412,7 +412,7 @@
 						{
 							"title": "Efficient paths",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX06-1)",
-							"description": "Make access as simple and efficient as possible. Displaying the time required to complete an action, reduction of choice, and ensuring visitors understand requirements at the start of a journey can improve user efficiency.",
+							"description": "Make access as simple and efficient as possible. Displaying the time required to complete an action, reduction of choice, and ensuring users understand requirements at the start of a journey can improve user efficiency.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -451,7 +451,7 @@
 						{
 							"title": "Distraction-free design",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX06-3)",
-							"description": "Enable visitors to complete tasks without distractions or non-essential features getting in the way.",
+							"description": "Enable users to complete tasks without distractions or non-essential features getting in the way.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -468,7 +468,7 @@
 						{
 							"title": "Eliminate the non-essential",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX06-4)",
-							"description": "Only show visitors information that is relevant to their experience, hiding non-essential information from view.",
+							"description": "Only show users information that is relevant to their experience, hiding non-essential information from view.",
 							"resources": [
 								{
 									"A manifesto for small, static, web apps": "https://rosswintle.uk/2024/02/a-manifesto-for-small-static-web-apps/",
@@ -488,7 +488,7 @@
 						{
 							"title": "User-initiated actionable content",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX06-5)",
-							"description": "Ensure that disruptive actionable information, such as pop-up or modal windows, can only be initiated by the visitor.",
+							"description": "Ensure that disruptive actionable information, such as pop-up or modal windows, can only be initiated by the user.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -509,11 +509,11 @@
 						{
 							"Accessibility": "Providing intuitive, lightweight user experiences improves understanding and accessibility, especially for people with cognitive disabilities. Reducing confusion, this can reduce the time spent trying to find content.",
 							"Conversion": "Following conventions and patterns with a clean, distraction-free layout reduces churn, page abandonment, and barriers to entry.",
-							"Economic": "Simplifying interfaces by reducing the amount of information can reduce the burden of choice and help to convert visitors during online decision-to-purchase processes. Reduced visitor choice will also reduce data payloads.",
-							"Environment": "Streamlining user experience to remove barriers and the non-essential reduces unnecessary code and content payloads and the amount of time visitors spend on their devices trying to complete tasks or find information. This reduces the amount of energy used and lowers emissions.",
+							"Economic": "Simplifying interfaces by reducing the amount of information can reduce the burden of choice and help to convert users during online decision-to-purchase processes. Reduced user choice will also reduce data payloads.",
+							"Environment": "Streamlining user experience to remove barriers and the non-essential reduces unnecessary code and content payloads and the amount of time users spend on their devices trying to complete tasks or find information. This reduces the amount of energy used and lowers emissions.",
 							"Performance": "Minimizing the amount of content on screen to what is genuinely required reduces bandwidth consumption over the lifecycle project and may make the user experience feel faster.",
 							"Privacy": "Hiding non-essential features can improve data protection by reducing overall data collection overall, especially that associated with the integration of third-party services.",
-							"Social Equity": "Reducing device and bandwidth requirements through providing more lightweight experiences can improve work better for visitors using older devices or located in low-bandwidth environments, and similar."
+							"Social Equity": "Reducing device and bandwidth requirements through providing more lightweight experiences can improve work better for users using older devices or located in low-bandwidth environments, and similar."
 						}
 					],
 					"GRI": [
@@ -585,7 +585,7 @@
 						{
 							"title": "Navigation and search",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX08-1)",
-							"description": "Provide an accessible, easy-to-use navigation menu with search features to help visitors easily find what they need.",
+							"description": "Provide an accessible, easy-to-use navigation menu with search features to help users easily find what they need.",
 							"resources": [
 								{
 									"Building Accessible Menu Systems": "https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/",
@@ -600,7 +600,7 @@
 						{
 							"title": "Human-readable sitemaps",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX08-2)",
-							"description": "Consider implementing an efficient and regularly updated sitemap for human visitors. While guidance beyond the nav bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.",
+							"description": "Consider implementing an efficient and regularly updated sitemap for human users. While guidance beyond the nav bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.",
 							"resources": [
 								{
 									"Build and submit a sitemap": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en",
@@ -615,7 +615,7 @@
 						{
 							"title": "New content",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX08-3)",
-							"description": "Implement lightweight and efficient means for visitors to learn about new content and services.",
+							"description": "Implement lightweight and efficient means for users to learn about new content and services.",
 							"resources": [
 								{
 									"An Excellent Beginner's Guide to Information Architecture": "https://careerfoundry.com/en/blog/ux-design/a-beginners-guide-to-information-architecture/",
@@ -628,7 +628,7 @@
 							]
 						}
 					],
-					"intent": "Information architecture is a central part of the Web development process, and how you structure a website ensures that people can way-find your content easily. Having appropriately marked-up links within your product or service allows visitors, search engines, and social networks to identify key information quickly.",
+					"intent": "Information architecture is a central part of the Web development process, and how you structure a website ensures that people can way-find your content easily. Having appropriately marked-up links within your product or service allows users, search engines, and social networks to identify key information quickly.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -677,7 +677,7 @@
 						{
 							"title": "Distraction",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX09-2)",
-							"description": "Prioritize features that assist rather than distract visitors, not unnecessarily prolonging the time they spend engaging with your content.",
+							"description": "Prioritize features that assist rather than distract users, not unnecessarily prolonging the time they spend engaging with your content.",
 							"resources": [
 								{
 									"5 Website Features to Avoid (and how to fix them)": "https://medium.com/@lancerdesign/5-website-features-to-avoid-and-how-to-fix-them-2a4256f25b1f",
@@ -711,7 +711,7 @@
 							]
 						}
 					],
-					"intent": "Time is precious, wasting a visitor's will cause frustration and lead to abandonment or resentment. Additionally, the more time a visitor spends in front of a screen, the more energy they utilize. As such, throwing stuff in front of the visitor vying for their attention might sound like good business (even though we know due to banner blindness it rarely works), but it mostly damages the environment and dissuades the visitor.",
+					"intent": "Time is precious, wasting a user's will cause frustration and lead to abandonment or resentment. Additionally, the more time a user spends in front of a screen, the more energy they utilize. As such, throwing stuff in front of the user vying for their attention might sound like good business (even though we know due to banner blindness it rarely works), but it mostly damages the environment and dissuades the user.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -762,14 +762,14 @@
 							]
 						}
 					],
-					"intent": "Visitors can identify patterns fairly easily, and they like browsing websites and apps and feeling as if they know what they are dealing with. As such, focusing your efforts on producing a product or service that is clean and has key components in easy-to-recognize locations (and visuals) will allow faster user experiences and fewer emissions.",
+					"intent": "Users can identify patterns fairly easily, and they like browsing websites and apps and feeling as if they know what they are dealing with. As such, focusing your efforts on producing a product or service that is clean and has key components in easy-to-recognize locations (and visuals) will allow faster user experiences and fewer emissions.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Using established design patterns makes it easier for all users to understand how to perform a task, especially those with greater accessibility needs.",
-							"Environment": "Building using recognized design components will reduce the amount of time visitors spend trying to perform a task. The less time visitors spend achieving their goals, the lower their energy usage and emissions.",
-							"Performance": "Using familiar design patterns that appear where visitors expect and only when appropriate can increase perceived performance due to more effective navigation."
+							"Environment": "Building using recognized design components will reduce the amount of time users spend trying to perform a task. The less time users spend achieving their goals, the lower their energy usage and emissions.",
+							"Performance": "Using familiar design patterns that appear where users expect and only when appropriate can increase perceived performance due to more effective navigation."
 						}
 					],
 					"GRI": [
@@ -790,7 +790,7 @@
 						{
 							"title": "Deceptive design patterns",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX11-1)",
-							"description": "Avoid deceptive design or unethical coding techniques that manipulate visitors into taking actions that are not in their best interest. Examples include anti-right click, copy prevention, requiring an account to purchase, etc.",
+							"description": "Avoid deceptive design or unethical coding techniques that manipulate users into taking actions that are not in their best interest. Examples include anti-right click, copy prevention, requiring an account to purchase, etc.",
 							"resources": [
 								{
 									"10 Common Dark Patterns in UX and How to Avoid Them": "https://www.netsolutions.com/insights/dark-patterns-in-ux-disadvantages/",
@@ -886,14 +886,14 @@
 							]
 						}
 					],
-					"intent": "Manipulating the visitor into doing things you want them to is a short-term gain, long-term loss tactic tool. It's ethically bad, unsustainable, and should be avoided at all costs.",
+					"intent": "Manipulating the user into doing things you want them to is a short-term gain, long-term loss tactic tool. It's ethically bad, unsustainable, and should be avoided at all costs.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Avoiding deceptive design patterns improves user experience for people using assistive technologies, as these can be especially disruptive when using a screen reader. This improves their trust and access to your content.",
 							"Conversion": "Avoiding deceptive patterns can result in fewer complaints, reduce barriers, and improve conversion.",
-							"Environment": "Avoiding deceptive design patterns reduces energy consumption because visitors do not waste time and energy trying to undo choices they never intended to make.",
+							"Environment": "Avoiding deceptive design patterns reduces energy consumption because users do not waste time and energy trying to undo choices they never intended to make.",
 							"Performance": "Using ethical, non-disruptive practices will accelerate the user journey and perceived speed and reduce unnecessary friction.",
 							"Privacy": "Ensuring compliance with ethical privacy practices and avoiding dark and deceptive patterns reduces litigation risk. It also reduces data transmission between tracking and advertising services providers."
 						}
@@ -1029,7 +1029,7 @@
 					"benefits": [
 						{
 							"Accessibility": "Using a design system with accessible components will improve access to information for people with disabilities. Building design features that integrate accessibility from the start  ensures everyone is always included.",
-							"Conversion": "Using design systems supports consistent user interfaces. This improves visitor trust because individuals will recognize familiar components and know how to use them. This can improve conversion rates as it will reduce frustration, abandonment, and possible complaints.",
+							"Conversion": "Using design systems supports consistent user interfaces. This improves user trust because individuals will recognize familiar components and know how to use them. This can improve conversion rates as it will reduce frustration, abandonment, and possible complaints.",
 							"Economic": "Using standardized components and avoiding redundancy can reduce development time and the associated costs. Familiarity makes the experience easier for users, reducing bounce rates.",
 							"Environment": "Following web standards to build consistent interfaces requires less energy and resources, because they are naturally more optimized. Design systems that incorporate environmental criteria can help to scale digital sustainability and reduce redundancy, reduced energy use and negative impact.",
 							"Performance": "Building design systems using standardized components reduces the need for repeat coding. This reduces developer coding time and can improve performance. Overall, sustainable patterns reduce emissions."
@@ -1270,7 +1270,7 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Economic": "Optimizing resources means visitors with data caps can preserve their resources. Providers can enjoy reduced hosting costs due to less data being transferred.",
+							"Economic": "Optimizing resources means users with data caps can preserve their resources. Providers can enjoy reduced hosting costs due to less data being transferred.",
 							"Environment": "Compressing and delivering images in lightweight formats can reduce the hardware burden on older devices. This can reduce overall consumer e-waste by slowing or eliminating forced upgrade cycles.",
 							"Performance": "Optimizing images can accelerate performance by reducing HTTP requests, data transfer, and the physical rendering effort. All of these have an impact on user experience and performance.",
 							"Social Equity": "Providing lightweight images makes it easier for users in low-bandwidth areas or those using older devices to access your content, provided these devices can support the formats used."
@@ -1359,7 +1359,7 @@
 						{
 							"title": "Labels and choice",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX16-4)",
-							"description": "Let the visitor control media, including a choice of resolutions and formats and the option to deactivate media. Inform users the length, format, and data intensity of the media.",
+							"description": "Let the user control media, including a choice of resolutions and formats and the option to deactivate media. Inform users the length, format, and data intensity of the media.",
 							"resources": [
 								{
 									"Ditch 4K video and new tech to fight climate change": "https://www.bbc.co.uk/news/technology-55164410",
@@ -1402,7 +1402,7 @@
 						{
 							"Economic": "Eliminating data-intensive media entirely and using alternatives such as transcripts reduce costs associated with hosting and data transfer.",
 							"Environment": "Reducing the battery drain associated with loading data-intensive content by preventing auto-loading or delaying it until the moment it is required reduces energy emissions associated with data transfer and renering.",
-							"Performance": "Tailoring user experience to the device, situation, and environment of the visitor by having different resolutions and quality formats available reduces wasted bandwidth. This can boost performance for users who make choices to reduce the data downloaded.",
+							"Performance": "Tailoring user experience to the device, situation, and environment of the user by having different resolutions and quality formats available reduces wasted bandwidth. This can boost performance for users who make choices to reduce the data downloaded.",
 							"Social Equity": "Providing alternatives to data-intensive media allows with limited bandwidth or older devices to access content."
 						}
 					],
@@ -1441,7 +1441,7 @@
 						{
 							"title": "Avoiding overburdening",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX17-2)",
-							"description": "Progressively display an appropriate number of animations to avoid overburdening the visitor or negatively impacting device performance. This includes setting a maximum number of replays or iterations.",
+							"description": "Progressively display an appropriate number of animations to avoid overburdening the user or negatively impacting device performance. This includes setting a maximum number of replays or iterations.",
 							"resources": [
 								{
 									"Equations relating total annual energy consumption and chips energy efficiency": "https://www.researchgate.net/publication/371938289_Equations_relating_total_annual_energy_consumption_and_chips_energy_efficiency",
@@ -1457,7 +1457,7 @@
 						{
 							"title": "Control animation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX17-3)",
-							"description": "Allow visitors to start, stop, pause, or otherwise control animated content.",
+							"description": "Allow users to start, stop, pause, or otherwise control animated content.",
 							"resources": [
 								{
 									"Accessible Web Animation": "https://css-tricks.com/accessible-web-animation-the-wcag-on-animation-explained/",
@@ -1665,7 +1665,7 @@
 							"Conversion": "Creating text alternatives to media, such as transcripts, means your content can be more easily found and indexed by search engines.",
 							"Economic": "Hosting and delivering text is less computationally expensive than media, so providing text-based content can reduce hosting and bandwidth costs.",
 							"Environment": "Offering low-impact alternatives to media formats reduces rendering and processing effort, and the associated emissions.",
-							"Performance": "Reducing interactivity can help visitors access what they need faster.",
+							"Performance": "Reducing interactivity can help users access what they need faster.",
 							"Social Equity": "Providing text alternatives for those who are not able to watch a video or listen to audio, even situationally, improves access and user experience."
 						}
 					],
@@ -1725,7 +1725,7 @@
 							]
 						}
 					],
-					"intent": "Understandably, businesses want to know more about their customers, but a key part of sustainability is being ethical towards visitors and as such, the right to privacy is considered paramount. Don't demand information when it's not required and not only will this help visitors complete transactions quicker (reducing emissions), it will help with legal compliance such as GDPR.",
+					"intent": "Understandably, businesses want to know more about their customers, but a key part of sustainability is being ethical towards users and as such, the right to privacy is considered paramount. Don't demand information when it's not required and not only will this help users complete transactions quicker (reducing emissions), it will help with legal compliance such as GDPR.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -1770,7 +1770,7 @@
 							]
 						}
 					],
-					"intent": "Certain visitors such as those with visual disabilities or speech agents (like Amazon Alexa) may rely on an experience without the graphical part of an interface. As such, they potentially may use less data or may have a different carbon impact on the Web.",
+					"intent": "Certain users such as those with visual disabilities or speech agents (like Amazon Alexa) may rely on an experience without the graphical part of an interface. As such, they potentially may use less data or may have a different carbon impact on the Web.",
 					"impact": "Low",
 					"effort": "Medium",
 					"benefits": [
@@ -1854,7 +1854,7 @@
 					"benefits": [
 						{
 							"Accessibility": "Signposting individuals to information through helpful notifications or error messages will reduce abandonment. All information must be presented in a way that does not discriminate, as this could exclude many potential users.",
-							"Environment": "Notifying visitors about important events can reduce the need to constantly refresh pages. These notifications provide a shortcut, ensuring content is loaded when it becomes available. This can save emissions.",
+							"Environment": "Notifying users about important events can reduce the need to constantly refresh pages. These notifications provide a shortcut, ensuring content is loaded when it becomes available. This can save emissions.",
 							"Privacy": "Using notifications appropriately ensures personalized content is only displayed on specific devices, reducing the risk of information exposure."
 						}
 					],
@@ -2143,7 +2143,7 @@
 							]
 						}
 					],
-					"intent": "Products and services at any stage of a project can suffer bugs or issues that need to be resolved. Fixing these regressions also generates additional development and environmental costs. By resolving such issues, you can reduce the chances of a visitor giving up on a session and thereby reduce the amount of wasted energy your website emits overall.",
+					"intent": "Products and services at any stage of a project can suffer bugs or issues that need to be resolved. Fixing these regressions also generates additional development and environmental costs. By resolving such issues, you can reduce the chances of a user giving up on a session and thereby reduce the amount of wasted energy your website emits overall.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -2236,15 +2236,15 @@
 							]
 						}
 					],
-					"intent": "Try to ethically measure how efficient a visitor's experience is by analyzing the performance of the website or application and how it has been constructed, by doing so you might be able to reduce any issues they may have encountered previously, decrease loading times, and reduce the burden of loading unnecessary pages.",
+					"intent": "Try to ethically measure how efficient a user's experience is by analyzing the performance of the website or application and how it has been constructed, by doing so you might be able to reduce any issues they may have encountered previously, decrease loading times, and reduce the burden of loading unnecessary pages.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
 						{
-							"Conversion": "Increasing page load speed can measurably improve conversion rates, as visitors will be less likely to abandon a product or service if the content appears instantaneously.",
+							"Conversion": "Increasing page load speed can measurably improve conversion rates, as users will be less likely to abandon a product or service if the content appears instantaneously.",
 							"Economic": "Storing and transferring less data reduces costs for content hosts and website and application owners.",
-							"Environment": "Improving performance of a website or application increases device longevity, as visitors will be less compelled to upgrade their devices.",
-							"Performance": "Loading less data improves performance. Lighter pages are rendered and available to visitors quicker, helping to improve the UX."
+							"Environment": "Improving performance of a website or application increases device longevity, as users will be less compelled to upgrade their devices.",
+							"Performance": "Loading less data improves performance. Lighter pages are rendered and available to users quicker, helping to improve the UX."
 						}
 					],
 					"GRI": [
@@ -2266,7 +2266,7 @@
 						{
 							"title": "Usage changes",
 							"testable": "Human-testable",
-							"description": "Monitor visitor feedback, adoption, and churn rates in relation to different features and incorporate these insights into future releases.",
+							"description": "Monitor user feedback, adoption, and churn rates in relation to different features and incorporate these insights into future releases.",
 							"resources": [
 								{
 									"7 UX KPIs you should be measuring": "https://maze.co/collections/ux-management/kpis/",
@@ -2342,7 +2342,7 @@
 					"benefits": [
 						{
 							"Accessibility": "Gathering feedback from people with disabilities can guide key improvements. This ensures your project can be used by the widest possible audience.",
-							"Environment": "Ensuring visitors can quickly and easily accomplish tasks or access information reduces the energy used searching for answers."
+							"Environment": "Ensuring users can quickly and easily accomplish tasks or access information reduces the energy used searching for answers."
 						}
 					],
 					"GRI": [
@@ -2524,7 +2524,7 @@
 							]
 						}
 					],
-					"intent": "Compatibility is a critical part of the sustainability mindset and should be prioritized through all products and services. If individuals wish to use older devices (or cannot upgrade due to cost) or do not wish to upgrade as frequently, it will reduce the amount of e-waste that enters the system. If something doesn't work, it's also likely to result in visitors suffering a wasted effort, potentially leading to refused access to your service (and thereby emitting further emissions).",
+					"intent": "Compatibility is a critical part of the sustainability mindset and should be prioritized through all products and services. If individuals wish to use older devices (or cannot upgrade due to cost) or do not wish to upgrade as frequently, it will reduce the amount of e-waste that enters the system. If something doesn't work, it's also likely to result in users suffering a wasted effort, potentially leading to refused access to your service (and thereby emitting further emissions).",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -2665,7 +2665,7 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Conversion": "Faster page speeds improve user experience across the board. This makes visitors less likely to abandon their journey or search for their information elsewhere.",
+							"Conversion": "Faster page speeds improve user experience across the board. This makes users less likely to abandon their journey or search for their information elsewhere.",
 							"Performance": "Less data transferred means reduced loading times. Whitespace itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact."
 						}
 					],
@@ -2763,7 +2763,7 @@
 						{
 							"Economic": "Eliminating unused code means reducing maintenance work and expense. It can otherwise affect other code' or add unnecessary complexity.",
 							"Environment": "Removing unused code eliminates wasted bytes, reducing download size and potentially improving rendering time.",
-							"Performance": "Reducing downloaded code that otherwise offers no benefit to visitors frees up cache and RAM resources on their devices, while saving time."
+							"Performance": "Reducing downloaded code that otherwise offers no benefit to users frees up cache and RAM resources on their devices, while saving time."
 						}
 					],
 					"GRI": [
@@ -2800,7 +2800,7 @@
 						{
 							"title": "Iteration over recreation",
 							"testable": "Human-testable",
-							"description": "Improve existing solutions rather than redeveloping and redesigning products from scratch, since the latter would duplicate the coding effort and maintenance burden for developers rather than reduce the learning burden for visitors.",
+							"description": "Improve existing solutions rather than redeveloping and redesigning products from scratch, since the latter would duplicate the coding effort and maintenance burden for developers rather than reduce the learning burden for users.",
 							"resources": [
 								{
 									"A Sustainable Design Handbook": "https://www.sustainabledesignhandbook.com/design-development",
@@ -3011,9 +3011,9 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Environment": "Replacing heavy tooling and third-party services with lightweight tooling reduces visitor bandwidth usage and compute impact. It does require learning a new way of doing things or reducing the visibility of impactful features until they are requested. It can significantly reduce a page's overall 'environmental impact, including the data you have no control over. This is especially relevant when calculating Scope 3 emissions.",
+							"Environment": "Replacing heavy tooling and third-party services with lightweight tooling reduces user bandwidth usage and compute impact. It does require learning a new way of doing things or reducing the visibility of impactful features until they are requested. It can significantly reduce a page's overall 'environmental impact, including the data you have no control over. This is especially relevant when calculating Scope 3 emissions.",
 							"Performance": "Self-hosting fully self-contained services, features, and content are more performant by design. They avoid additional server and rendering requests or other complications associated with third-party content. You can  choose to only include the required features , further reducing overall bandwidth usage and associated emissions.",
-							"Privacy": "Choosing not to embed and automatically load third-party content may be perceived as a privacy benefit by privacy-conscious visitors, because this reduces opportunities for their visitor data to be exploited."
+							"Privacy": "Choosing not to embed and automatically load third-party content may be perceived as a privacy benefit by privacy-conscious users, because this reduces opportunities for their user data to be exploited."
 						}
 					],
 					"GRI": [
@@ -3123,7 +3123,7 @@
 					"benefits": [
 						{
 							"Accessibility": "Applying semantic approaches means your content will be easier to navigate via assistive technologies and keyboard. Many tags phave native semantics, reducing the need for additional tagging. This can also help technologies to better understand your content. better.",
-							"Conversion": "Ensuring your code is efficient and works reduces the risk of broken features and visitors giving up.",
+							"Conversion": "Ensuring your code is efficient and works reduces the risk of broken features and users giving up.",
 							"Economic": "Conforming to accessibility legislation and regulations avoid lawsuits and fines.",
 							"Environment": "Following standards ensures users have a coherent experience - reducing bugs, saving time spent fixing bugs, and avoiding wasted resources. Bloated markup can otherwise lead to waste data, while broken markup can even trigger memory leaks.",
 							"Performance": "Clean, modern code renders better than deprecated or poorly maintained code. While Web Components do outperform framework components, they cannot outperform the native elements they are built on."
@@ -3195,7 +3195,7 @@
 					"benefits": [
 						{
 							"Economic": "If data is not loaded unless needed, you will reduce your server's bandwidth use.",
-							"Environment": "Lazy loading videos and images so that they are only loaded once required by the visitor. This reduces transferred data and the required processing power.",
+							"Environment": "Lazy loading videos and images so that they are only loaded once required by the user. This reduces transferred data and the required processing power.",
 							"Performance": "Allowing text to render first make the user feel that everything is loading faster while, as the remaining content loads in the background or on demand."
 						}
 					],
@@ -3266,16 +3266,16 @@
 							]
 						}
 					],
-					"intent": "Helping visitors avoid wasting their time can reduce the number of emissions from time spent in front of a screen. As such, by using existing technologies like metadata, robots.txt files, and accessibility-friendly aids within the page, improvements to the experience can be made.",
+					"intent": "Helping users avoid wasting their time can reduce the number of emissions from time spent in front of a screen. As such, by using existing technologies like metadata, robots.txt files, and accessibility-friendly aids within the page, improvements to the experience can be made.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Including skip links and other accessibility aids can accelerate the user journey, reducing system resources required and allowing them to find the content they need.",
 							"Conversion": "Providing clearly navigable structures and sitemaps ensure search engines are better able to index content.",
-							"Economic": "Enabling quicker visits that complete the visitor's objective can help to encourage return visits.",
+							"Economic": "Enabling quicker visits that complete the user's objective can help to encourage return visits.",
 							"Environment": "Reducing the time people spend searching for the information they want and aiding them on their journey will reduce energy use, including battery drain.",
-							"Social Equity": "Allowing users to achieve  objectives faster reduces resource consumption while potentially enhancing visitor health and well-being."
+							"Social Equity": "Allowing users to achieve  objectives faster reduces resource consumption while potentially enhancing user health and well-being."
 						}
 					],
 					"GRI": [
@@ -3314,7 +3314,7 @@
 						{
 							"title": "Label elements",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD10-2)",
-							"description": "Clearly label and identify required elements to ensure easy recognition for visitors using assistive technologies. Remove any unnecessary optional elements.",
+							"description": "Clearly label and identify required elements to ensure easy recognition for users using assistive technologies. Remove any unnecessary optional elements.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 4.10 - UX and UI (Input Format)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -3342,13 +3342,13 @@
 							]
 						}
 					],
-					"intent": "Entering information on a page can lead to problems. If a visitor makes a mistake along the way, it makes good sense to have systems in place to guide them through resolving the typos, confusion, and glitches that can occur which lead to abandonment and extra emissions through wasted device usage.",
+					"intent": "Entering information on a page can lead to problems. If a user makes a mistake along the way, it makes good sense to have systems in place to guide them through resolving the typos, confusion, and glitches that can occur which lead to abandonment and extra emissions through wasted device usage.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Fixing issues immediately and keeping people in the process can help to prevent abandonment.",
-							"Performance": "Enabling visitors to fill in forms more efficiently and avoid navigating back to where they were or refilling data on forms can increase the speed of necessary form filing and reduce errors in completion.",
+							"Performance": "Enabling users to fill in forms more efficiently and avoid navigating back to where they were or refilling data on forms can increase the speed of necessary form filing and reduce errors in completion.",
 							"Security": "Allowing people to correct input errors, verify their input prior to submission, and identifying errors early in the process can help to prevent costly data protection mistakes."
 						}
 					],
@@ -3420,7 +3420,7 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Economic": "Improving metadata can make it easier for search engines, social networks, or other platforms to present your content appropriately. This can lead to better search engine visibility, more visitors, and potentially better conversion.",
+							"Economic": "Improving metadata can make it easier for search engines, social networks, or other platforms to present your content appropriately. This can lead to better search engine visibility, more users, and potentially better conversion.",
 							"Performance": "Providing third-party tools and search engines with the information they need can direct people more quickly to the content they need.",
 							"Transparency": "Metadata ensures clients find the correct content fast. If users only require something basic, such as contact details, they may not even have to view the content directly - saving bandwidth."
 						}
@@ -3482,17 +3482,17 @@
 							]
 						}
 					],
-					"intent": "Sustainability benefits can be generated in numerous ways, by making sure that your website adheres to the requests made by a browser for specific conditions to be taken into account (such as CSS media and preference queries), you can unlock benefits for the visitor, and as a by-product reduce your emissions. It's worth noting that the introduction of user preferences and APIs has increased the risk of visitor fingerprinting and privacy issues.",
+					"intent": "Sustainability benefits can be generated in numerous ways, by making sure that your website adheres to the requests made by a browser for specific conditions to be taken into account (such as CSS media and preference queries), you can unlock benefits for the user, and as a by-product reduce your emissions. It's worth noting that the introduction of user preferences and APIs has increased the risk of user fingerprinting and privacy issues.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
 						{
-							"Accessibility": "Having a high contrast version of a site will reduce barriers to entry and time wasted for visually impaired visitors. Reduced motion can also accommodate other accessibility requirements.",
+							"Accessibility": "Having a high contrast version of a site will reduce barriers to entry and time wasted for visually impaired users. Reduced motion can also accommodate other accessibility requirements.",
 							"Conversion": "Delivering better user experience by meeting their preferences can improve conversion and encourage repeat visits.",
-							"Economic": "Using print media queries within stylesheets can reduce visitors' ink use and paper costs.",
+							"Economic": "Using print media queries within stylesheets can reduce users' ink use and paper costs.",
 							"Environment": "Accommodating dark mode when preferred will always be more energy efficient on OLED devices. Similarly, animation and media have a significant impact on CPU and GPU usage, so respecting a prefers reduced motion query will reduce energy consumption. The presence of a monochrome preference query could encourage greater adoption of energy-efficient e-ink devices.  A sustainability-optimized print stylesheet can save both paper and ink output.",
-							"Performance": "Allowing visitors to access a reduced-data version of a site could significantly reduce the data transferred and the resulting carbon footprint. This can improve performance and reduce costs for individuals on a metered data plan. Detecting if scripting is disabled and offering alternative content may save wasted effort and improve the performance of a project.",
-							"Social Equity": "Meeting visitor preferences is a positive shift: You are not telling your visitors how they should 'experience your content, but following your visitors' preferences or a device' capabilities and the priority of constituencies."
+							"Performance": "Allowing users to access a reduced-data version of a site could significantly reduce the data transferred and the resulting carbon footprint. This can improve performance and reduce costs for individuals on a metered data plan. Detecting if scripting is disabled and offering alternative content may save wasted effort and improve the performance of a project.",
+							"Social Equity": "Meeting user preferences is a positive shift: You are not telling your users how they should 'experience your content, but following your users' preferences or a device' capabilities and the priority of constituencies."
 						}
 					],
 					"GRI": [
@@ -3577,7 +3577,7 @@
 						{
 							"title": "Carbon-aware design",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD13-3)",
-							"description": "Use carbon-aware design techniques to maximize your use of carbon-free energy. This is achieved by adapting the delivery of your project to current electricity availability and visitor grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.",
+							"description": "Use carbon-aware design techniques to maximize your use of carbon-free energy. This is achieved by adapting the delivery of your project to current electricity availability and user grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.",
 							"resources": [
 								{
 									"Carbon Aware Computing": "https://www.carbon-aware-computing.com/",
@@ -3612,7 +3612,7 @@
 							]
 						}
 					],
-					"intent": "Visitors approach our products and services on a wide variety of devices these days. Ensuring that your device works on the widest range of devices and differing screen resolutions ensures that you will have a compatible website or application. A Device-Adaptable approach goal is to provide a consistent, adaptable experience across a full range of devices by considering all screen sizes and resolutions from the start, rather than primarily focusing on mobile scaling upward.",
+					"intent": "Users approach our products and services on a wide variety of devices these days. Ensuring that your device works on the widest range of devices and differing screen resolutions ensures that you will have a compatible website or application. A Device-Adaptable approach goal is to provide a consistent, adaptable experience across a full range of devices by considering all screen sizes and resolutions from the start, rather than primarily focusing on mobile scaling upward.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -3704,16 +3704,16 @@
 							]
 						}
 					],
-					"intent": "When new best practices or if beneficial scripting guidance exists that will improve the visitor experience, following it should be of the highest priority (only using scripts ethically should be promoted).",
+					"intent": "When new best practices or if beneficial scripting guidance exists that will improve the user experience, following it should be of the highest priority (only using scripts ethically should be promoted).",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
 						{
 							"Conversion": "Creating fallbacks for technology that might fail can 'enable sales you would otherwise miss out on.",
 							"Economic": "Providing easier, reliable access in more situations allows you to sell to more people.",
-							"Environment": "Reducing unnecessary visual effects - such as animations - when a page is not visible, helps to prevent wasted processing in background tabs. This can potentially help visitors who leave multiple tabs open conserve battery.",
+							"Environment": "Reducing unnecessary visual effects - such as animations - when a page is not visible, helps to prevent wasted processing in background tabs. This can potentially help users who leave multiple tabs open conserve battery.",
 							"Performance": "Using low-impact scripting can reduce heavy codebase sizes. Providing fallbacks for unavailable JavaScript ensures older or less capable devices can still access your content.",
-							"Privacy": "Allowing script-free visitors to easily access your content can protect the privacy of visitors with increased privacy needs."
+							"Privacy": "Allowing script-free users to easily access your content can protect the privacy of users with increased privacy needs."
 						}
 					],
 					"GRI": [
@@ -3768,7 +3768,7 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Economic": "Preventing security issues ahead of time c protects you and your visitors from financial crime.",
+							"Economic": "Preventing security issues ahead of time c protects you and your users from financial crime.",
 							"Environment": "Securing your project against threats and closing vulnerabilities makes them a less likely target for individuals who might exploit them, consuming vast amounts of data in the process.",
 							"Performance": "Protecting your project against breaches reduces your risk of large amounts of data being stolen, corrupted, or destroyed.",
 							"Security": "Maintaining security helps to maintain trust and prevent personal information from being exposed and exploited."
@@ -3928,8 +3928,8 @@
 						{
 							"Accessibility": "Integrating expected files enables the browser''s default search box to search a service, replacing any custom solution. This can increase accessibility as it encourages the use of a browser-native component and/or keyboard shortcuts, which can often better meet accessibility requirements.",
 							"Conversion": "Configuring robots.txt appropriately can help to ensure content is correctly indexed and users are better guided to appropriate content on your project.",
-							"Economic": "Including robots.txt and sitemap files helps search engines to discover and index your website. This can lead to more visitors and potentially more customers. The ads.txt file may reduce advertising fraud and could similarly benefit your business.",
-							"Environment": "Providing files expected by search engines or browsers will reduce loading errors and may improve efficiency in how visitors find or interact with a site. Plain text requires no rendering. If visitors or search engines are able to find these files, such as carbon.txt, they can load more quickly and with less CPU/GPU impact than any formatted webpage.",
+							"Economic": "Including robots.txt and sitemap files helps search engines to discover and index your website. This can lead to more users and potentially more customers. The ads.txt file may reduce advertising fraud and could similarly benefit your business.",
+							"Environment": "Providing files expected by search engines or browsers will reduce loading errors and may improve efficiency in how users find or interact with a site. Plain text requires no rendering. If users or search engines are able to find these files, such as carbon.txt, they can load more quickly and with less CPU/GPU impact than any formatted webpage.",
 							"Performance": "Satisfying requests for expected files improves interactions with search engines or browsers requesting them, while also potentially avoiding additional requests once they are discovered. Plain text files contain no links, no markup, and has a low rendering impact. Including details such as site credits in such a file will reduce data transfer and have a lower rendering footprint.",
 							"Transparency": "Providing a humans.txt file allows you to credit the people involved in the creation process, while security.txt  provides critical points of contact if an issue is discovered. Both increase transparency."
 						}
@@ -4253,7 +4253,7 @@
 							]
 						}
 					],
-					"intent": "Making multiple requests whether HTTP or within a database has a carbon cost as infrastructure has to send that information back and forth. As such, managing how you store and use data locally for a visitor will help reduce wasted cycles.",
+					"intent": "Making multiple requests whether HTTP or within a database has a carbon cost as infrastructure has to send that information back and forth. As such, managing how you store and use data locally for a user will help reduce wasted cycles.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -4504,7 +4504,7 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Conversion": "In cases where a badge or link about sustainable hosting providers appears on a website, visitors concerned about the issue may use and reuse the site preferentially.",
+							"Conversion": "In cases where a badge or link about sustainable hosting providers appears on a website, users concerned about the issue may use and reuse the site preferentially.",
 							"Environment": "Using hosting providers that operate with lower emissions, better power efficiency, and more responsible electronic waste management reduces negative environmental impacts from websites and products.",
 							"Social Equity": "Hosting providers with transparent environmental sustainability are minimizing the negative impacts on their local communities.",
 							"Transparency": "Sharing the efficiency and carbon-free energy metrics of hosting services allows the public to verify and understand sustainable websites and products."
@@ -4592,10 +4592,10 @@
 					"effort": "High",
 					"benefits": [
 						{
-							"Economic": "Bandwidth to serve visitors cost money and reducing the amount of data transfer saves money.",
+							"Economic": "Bandwidth to serve users cost money and reducing the amount of data transfer saves money.",
 							"Environment": "Caching enables websites to deliver content without unnecessary server requests, sparing the carbon emissions driven by networks and the data center.",
-							"Performance": "Enabling browser caching can reduce page reload speeds for return visitors and deliver better website performance.",
-							"Social Equity": "Optimizing browser caching often enables visitors to view content when their network connection has failed or when they must use a low quality network."
+							"Performance": "Enabling browser caching can reduce page reload speeds for return users and deliver better website performance.",
+							"Social Equity": "Optimizing browser caching often enables users to view content when their network connection has failed or when they must use a low quality network."
 						}
 					],
 					"GRI": [
@@ -4681,13 +4681,13 @@
 							]
 						}
 					],
-					"intent": "Every file will take up a certain amount of room on a server's hard drive, and this data will need to be sent across the wire to each visitor. Doing so will consume resources, but by using compression algorithms you can shrink each file to make its journey less impactful.",
+					"intent": "Every file will take up a certain amount of room on a server's hard drive, and this data will need to be sent across the wire to each user. Doing so will consume resources, but by using compression algorithms you can shrink each file to make its journey less impactful.",
 					"impact": "High",
 					"effort": "Low",
 					"benefits": [
 						{
 							"Environment": "Applying compression effectively reduces network demand, consequently lowering power consumption and carbon emissions.",
-							"Performance": "Reducing data transfer volumes and data consumption delivers faster performance to all visitors.",
+							"Performance": "Reducing data transfer volumes and data consumption delivers faster performance to all users.",
 							"Social Equity": "Reduced reliance on a high-speed connection (which in many locations is unavailable)."
 						}
 					],
@@ -4746,15 +4746,15 @@
 							]
 						}
 					],
-					"intent": "Navigation errors lead to mistakes, which lead to visitors wasting time trying to resolve them, or abandoning a website altogether. Anything that can be done to interject, predict, and way-find around potential problems will reduce emissions over time.",
+					"intent": "Navigation errors lead to mistakes, which lead to users wasting time trying to resolve them, or abandoning a website altogether. Anything that can be done to interject, predict, and way-find around potential problems will reduce emissions over time.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
 						{
-							"Accessibility": "Error pages and appropriate redirects matter because every visitor requires appropriate assistance to find their path. Navigation and signage that successfully support individuals with cognitive disabilities to find their path deliver the best design for all visitors.",
-							"Conversion": "Visitors who find their way out of an error quickly have a faster and more enjoyable experience that encourages return visits.",
+							"Accessibility": "Error pages and appropriate redirects matter because every user requires appropriate assistance to find their path. Navigation and signage that successfully support individuals with cognitive disabilities to find their path deliver the best design for all users.",
+							"Conversion": "Users who find their way out of an error quickly have a faster and more enjoyable experience that encourages return visits.",
 							"Economic": "Every page load costs money, so minimizing erroneous page loads saves money.",
-							"Environment": "When visitors load fewer pages on their way to desired content, a project becomes less carbon intensive."
+							"Environment": "When users load fewer pages on their way to desired content, a project becomes less carbon intensive."
 						}
 					],
 					"GRI": [
@@ -4881,7 +4881,7 @@
 						{
 							"title": "Suspicious activity filtering",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS06-4)",
-							"description": "Restrict the activity of unwanted and unnecessary third-party crawlers, suspicious user agents, unwanted visitors, bots, and scrapers from accessing or downloading your content. Follow best practices, such as server access rules and security tools, while ensuring your content remains accessible to users, search engines and any helpful, welcome crawlers. Consider that scrapers may be used to inform and train large language models.",
+							"description": "Restrict the activity of unwanted and unnecessary third-party crawlers, suspicious user agents, unwanted users, bots, and scrapers from accessing or downloading your content. Follow best practices, such as server access rules and security tools, while ensuring your content remains accessible to users, search engines and any helpful, welcome crawlers. Consider that scrapers may be used to inform and train large language models.",
 							"resources": [
 								{
 									"63% of Websites Receive AI Traffic": "https://ahrefs.com/blog/ai-traffic-study/",
@@ -4913,7 +4913,7 @@
 							"Economic": "Maximizing the number of tasks carried out rapidly by machine not only minimizes power use and carbon emissions, but also brings down maintenance and infrastructure costs.",
 							"Environment": "Optimizing workflows can reduce the amount of energy used during peak periods where it may be most costly or unsustainable to run.",
 							"Operations": "Automating repetitive tasks allows humans to focus on valuable, novel, and creative tasks that can offer greater job satisfaction and expand skills.",
-							"Security": "Evading unwanted bots, crawlers, and similar visitors protects websites from harm and avoids potential downtime."
+							"Security": "Evading unwanted bots, crawlers, and similar users protects websites from harm and avoids potential downtime."
 						}
 					],
 					"GRI": [
@@ -4949,7 +4949,7 @@
 							]
 						}
 					],
-					"intent": "Only send data from the server when the visitor needs it. As much as possible, you can rely on client-side or server-side cache and client-side / local storage. Rather than refreshing data on a given frequency, it might be up to the visitor to manually ask for a refresh.",
+					"intent": "Only send data from the server when the user needs it. As much as possible, you can rely on client-side or server-side cache and client-side / local storage. Rather than refreshing data on a given frequency, it might be up to the user to manually ask for a refresh.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -5045,7 +5045,7 @@
 						{
 							"title": "Protocols",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS09-2)",
-							"description": "Choose communication protocols appropriate to visitor needs and the type of data being transferred. Avoid insecure options such as HTTP and FTP, and prioritize secure, efficient alternatives such as HTTPS and SSH. Use modern protocols to take advantage of newer features, while maintaining backward compatibility for older devices.",
+							"description": "Choose communication protocols appropriate to user needs and the type of data being transferred. Avoid insecure options such as HTTP and FTP, and prioritize secure, efficient alternatives such as HTTPS and SSH. Use modern protocols to take advantage of newer features, while maintaining backward compatibility for older devices.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.7 - Strategy (Encryption)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -5104,7 +5104,7 @@
 							]
 						}
 					],
-					"intent": "Depending on carbon intensity, some processes and communications should be delayed and sometimes batched. Redundancy should be avoided wherever possible. This could also be a way to reduce the workload on a server or Virtual Machine (VM). In such cases, visitors should be warned that the process is asynchronous and notified when it is over.",
+					"intent": "Depending on carbon intensity, some processes and communications should be delayed and sometimes batched. Redundancy should be avoided wherever possible. This could also be a way to reduce the workload on a server or Virtual Machine (VM). In such cases, users should be warned that the process is asynchronous and notified when it is over.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -5462,7 +5462,7 @@
 							]
 						}
 					],
-					"intent": "Optimize storage of data according to what is most important, relevant, and required in service to visitors. This will help to avoid unnecessary storage of data that may not be useful or valuable, which will reduce required infrastructure, power, and data transfer.",
+					"intent": "Optimize storage of data according to what is most important, relevant, and required in service to users. This will help to avoid unnecessary storage of data that may not be useful or valuable, which will reduce required infrastructure, power, and data transfer.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -5594,7 +5594,7 @@
 						{
 							"title": "Documentation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-5)",
-							"description": "Document your methodology through impact storytelling, documentation, and creating resources to help individuals make more informed decisions and raise awareness among your visitors.",
+							"description": "Document your methodology through impact storytelling, documentation, and creating resources to help individuals make more informed decisions and raise awareness among your users.",
 							"resources": [
 								{
 									"Boring Web Development": "https://meiert.com/blog/boring-web-development/",
@@ -5645,10 +5645,10 @@
 					"effort": "High",
 					"benefits": [
 						{
-							"Economic": "Communicating the ways you can share the economic benefits of your digital work raises awareness of social inequalities. Similarly, enabling visitors to make more informed decisions can ensure your project is more financially sustainable overall.",
+							"Economic": "Communicating the ways you can share the economic benefits of your digital work raises awareness of social inequalities. Similarly, enabling users to make more informed decisions can ensure your project is more financially sustainable overall.",
 							"Environment": "Establishing clear sustainability statements should make it easier to align organizational policies and practices with measurable metrics and support goals. Integrating this early in the digital product strategy can improve efficiency and reduce environmental impact.",
 							"Operations": "Establishing ethical and sustainability policies can help to ensure product teams are more engaged in the work they are doing.",
-							"Privacy": "Reducing your emissions and explaining to your audience how you aim to keep to your sustainability commitments provides the opportunity to highlight other key issues of interest to your visitors, such as privacy and security. This can boost visitor trust in your brand.",
+							"Privacy": "Reducing your emissions and explaining to your audience how you aim to keep to your sustainability commitments provides the opportunity to highlight other key issues of interest to your users, such as privacy and security. This can boost user trust in your brand.",
 							"Social Equity": "Highlighting intersectional social issues in documentation, storytelling, and marketing materials raises awareness of problems and potential solutions.",
 							"Transparency": "Maintaining clear and public-facing policies helps internal and external affected partys to better understand an organization's sustainability commitments, while making it easier to report on the impact of these efforts."
 						}
@@ -5798,7 +5798,7 @@
 						{
 							"title": "Communication of impact",
 							"testable": "Human-testable",
-							"description": "Clearly communicate the environmental impact of different visitor choices and allow visitors to configure settings based on the information provided.",
+							"description": "Clearly communicate the environmental impact of different user choices and allow users to configure settings based on the information provided.",
 							"resources": [
 								{
 									"Communicating Sustainability": "https://www.researchgate.net/publication/308484180_Communicating_Sustainability_An_Operational_Model_for_Evaluating_Corporate_Websites",
@@ -5815,13 +5815,13 @@
 							]
 						}
 					],
-					"intent": "Allowing the visitor to take action to reduce their emissions is key to helping them play a part in becoming more sustainable. By helping them identify when choices they make could have an environmental impact (and by how much) and then providing them with the tooling choices to reduce their footprint, you can empower them to make a lasting difference.",
+					"intent": "Allowing the user to take action to reduce their emissions is key to helping them play a part in becoming more sustainable. By helping them identify when choices they make could have an environmental impact (and by how much) and then providing them with the tooling choices to reduce their footprint, you can empower them to make a lasting difference.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Conversion": "Communicating the impact and allowing the visitor to set preferences with the environmental impact in mind can encourage more individuals to make environmentally friendly choices and improve your image among ethical consumers.",
-							"Environment": "Allowing visitors to select more environmentally friendly settings within software naturally reduces the environmental impact.",
+							"Conversion": "Communicating the impact and allowing the user to set preferences with the environmental impact in mind can encourage more individuals to make environmentally friendly choices and improve your image among ethical consumers.",
+							"Environment": "Allowing users to select more environmentally friendly settings within software naturally reduces the environmental impact.",
 							"Performance": "Reducing unnecessary or wasteful, less sustainable behaviors will often improve performance and accessibility, as these are often interlinked."
 						}
 					],
@@ -6103,7 +6103,7 @@
 							]
 						}
 					],
-					"intent": "The organization has clear onboarding and training processes that include PPP policies and practices with explicit references to digital sustainability and responsibility. Ensure that onboarding utilizes a \"green by default\" process and avoids being an opt-in procedure. This applies equally at an organizational level and to visitors and consumers of your products and services.",
+					"intent": "The organization has clear onboarding and training processes that include PPP policies and practices with explicit references to digital sustainability and responsibility. Ensure that onboarding utilizes a \"green by default\" process and avoids being an opt-in procedure. This applies equally at an organizational level and to users and consumers of your products and services.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -6316,7 +6316,7 @@
 						{
 							"title": "Resourcing products",
 							"testable": "Human-testable",
-							"description": "Appropriately resource products over time via staffing and budgeting to support code refactoring, address technical debt, introduce new product features, test functionality, and produce product or service maintenance plans to continue supporting customers, visitors, and other affected parties.",
+							"description": "Appropriately resource products over time via staffing and budgeting to support code refactoring, address technical debt, introduce new product features, test functionality, and produce product or service maintenance plans to continue supporting customers, users, and other affected parties.",
 							"resources": [
 								{
 									"Code Refactoring: Meaning, Benefits and Best Practices": "https://maddevs.io/blog/code-refactoring/",
@@ -6441,7 +6441,7 @@
 						{
 							"title": "Iterative consideration",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM12-3)",
-							"description": "Display a track record of continuous improvement (iteration) processes to analyze the digital product or service. Simultaneously address any potential consequences of ongoing experimentation, such as technical debt, product performance, and emissions. Analytics are limited to strictly necessary features that aid decision-making, encouraging visitor feedback, and comparing performance against business goals and visitor needs.",
+							"description": "Display a track record of continuous improvement (iteration) processes to analyze the digital product or service. Simultaneously address any potential consequences of ongoing experimentation, such as technical debt, product performance, and emissions. Analytics are limited to strictly necessary features that aid decision-making, encouraging user feedback, and comparing performance against business goals and user needs.",
 							"resources": [
 								{
 									"An Introduction to Growth Driven Design (PDF)": "https://cdn2.hubspot.net/hubfs/124445/docs/ebook-growth.pdf?t=1488562926580",
@@ -6572,15 +6572,15 @@
 							]
 						}
 					],
-					"intent": "Products or services are updated regularly. Ensure that additions, changes, deprecations, removals, fixes, or security patches are documented in an easy-to-perceive document with details that showcase how such changes affect the visitor (or how they can take advantage of new features).",
+					"intent": "Products or services are updated regularly. Ensure that additions, changes, deprecations, removals, fixes, or security patches are documented in an easy-to-perceive document with details that showcase how such changes affect the user (or how they can take advantage of new features).",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Updating digital products and services regularly requires less development time and reduces the risk of negative consumer impact from the extended downtime that can result from needing to start from scratch if a product or service is otherwise left to become outdated beyond repair.",
-							"Environment": "Maintaining an intuitive, lightweight user experience while adding new features or updating software reduces frustration, churn, and the energy visitors expend when the interface performs in ways visitors do not expect.",
-							"Performance": "Maintaining an optimized user experience that is regularly updated in line with best practices usually means content and assets will load quickly and as expected by visitors.",
-							"Security": "Maintaining evergreen status often means fewer issues due to a strong release cycle. This involves making necessary changes and keeping visitors informed while maintaining transparency."
+							"Environment": "Maintaining an intuitive, lightweight user experience while adding new features or updating software reduces frustration, churn, and the energy users expend when the interface performs in ways users do not expect.",
+							"Performance": "Maintaining an optimized user experience that is regularly updated in line with best practices usually means content and assets will load quickly and as expected by users.",
+							"Security": "Maintaining evergreen status often means fewer issues due to a strong release cycle. This involves making necessary changes and keeping users informed while maintaining transparency."
 						}
 					],
 					"GRI": [
@@ -6663,7 +6663,7 @@
 							]
 						}
 					],
-					"intent": "Ensure that the product or service you are creating offers value to visitors and doesn't duplicate existing functionality (without bringing something new to the table) as this redundancy wastes digital and physical resources.",
+					"intent": "Ensure that the product or service you are creating offers value to users and doesn't duplicate existing functionality (without bringing something new to the table) as this redundancy wastes digital and physical resources.",
 					"impact": "High",
 					"effort": "Low",
 					"benefits": [
@@ -7094,7 +7094,7 @@
 						{
 							"title": "Data practices",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM20-1)",
-							"description": "Maintain a publicly accessible privacy policy, terms and conditions, and any other documents as required by law in the jurisdictions in which the product or service operates. Adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. Provide documents in accessible formats and use clear, user-friendly language to ensure comprehension by all visitors. Avoid unnecessary jargon, technical language, and legalese. Support emerging legislation and implement best practices related to data privacy, sustainability, and responsible data management.",
+							"description": "Maintain a publicly accessible privacy policy, terms and conditions, and any other documents as required by law in the jurisdictions in which the product or service operates. Adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. Provide documents in accessible formats and use clear, user-friendly language to ensure comprehension by all users. Avoid unnecessary jargon, technical language, and legalese. Support emerging legislation and implement best practices related to data privacy, sustainability, and responsible data management.",
 							"resources": [
 								{
 									"5 Essential Legal Pages Every Website Need": "https://www.codeconspirators.com/5-essential-legal-pages-every-website-need/",
@@ -7110,7 +7110,7 @@
 						{
 							"title": "Data ownership",
 							"testable": "Human-testable",
-							"description": "Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a visitor's \"right to be forgotten\" will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.",
+							"description": "Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a user's \"right to be forgotten\" will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.",
 							"resources": [
 								{
 									"10 CCPA Compliance Tips For Web Developers": "https://dataoverhaulers.medium.com/10-ccpa-compliance-tips-for-web-developers-1ce8382c7286",
@@ -7220,7 +7220,7 @@
 						{
 							"Economic": "Requiring less data reduces storage requirements, allowing organizations to scale down their hosting package or be charged less for pay-by-use infrastructure costs.",
 							"Environment": "Storing less data reduces the computing power required to maintain a service, reducing energy and infrastructure-related emissions.",
-							"Performance": "Moving older and less relevant content onto a smaller scaled-down version of your digital product or service will reduce your bandwidth usage. Archived information will have significantly fewer visitors, meaning this is unlikely to have a negative impact on their experience.",
+							"Performance": "Moving older and less relevant content onto a smaller scaled-down version of your digital product or service will reduce your bandwidth usage. Archived information will have significantly fewer users, meaning this is unlikely to have a negative impact on their experience.",
 							"Privacy": "Improving data management supports better data protection practices."
 						}
 					],
@@ -7609,7 +7609,7 @@
 							"Economic": "Removing redundancy in the product or service can generate savings in hosting, security costs, and other third-party subscriptions.",
 							"Environment": "Planning for end-of-life reduces long-term environmental impacts after a digital product or service is no longer needed. This eliminates waste and frees up resources.",
 							"Performance": "Removing unnecessary features, functions, and data of a service improves performance and resilience as the resources which were utilizing data will be better spent on more popular functionality, and the gains made from their elimination will be felt in terms of emissions through saved development time.",
-							"Privacy": "Incorporating clear end-of-life policies that include a visitor's right to be forgotten will benefit the visitor by explaining how you enforce data protection and comply with legislation.",
+							"Privacy": "Incorporating clear end-of-life policies that include a user's right to be forgotten will benefit the user by explaining how you enforce data protection and comply with legislation.",
 							"Security": "Providing regular maintenance, updates, and care on outdated software and data can significantly reduce security risks."
 						}
 					],
@@ -7841,8 +7841,8 @@
 					"benefits": [
 						{
 							"Conversion": "Improving performance will reduce churn and page abandonment. A website may also rank better on search engines thanks to performance being a key indicator in ranking algorithms.",
-							"Economic": "Reducing resource requirements means visitors will not have to keep upgrading devices to match the needs of digital products and services that are otherwise growing unchecked over time.",
-							"Environment": "Setting a strict sustainability or performance budget will reduce the chance of a digital product or service getting too large or resulting in pollution transfers, which will also ensure it has a minimal impact on a visitor's device. This has a direct impact on emissions by forcing businesses to choose where to make reductions and efficiency savings.  Visitors not having to upgrade devices as frequently will also reduce e-waste from discarded devices.",
+							"Economic": "Reducing resource requirements means users will not have to keep upgrading devices to match the needs of digital products and services that are otherwise growing unchecked over time.",
+							"Environment": "Setting a strict sustainability or performance budget will reduce the chance of a digital product or service getting too large or resulting in pollution transfers, which will also ensure it has a minimal impact on a user's device. This has a direct impact on emissions by forcing businesses to choose where to make reductions and efficiency savings. Users not having to upgrade devices as frequently will also reduce e-waste from discarded devices.",
 							"Performance": "Keeping realistic goals regarding delivery size will push developers to optimize resource-heavy projects and reconsider using large tooling in place of lightweight alternatives. A lower target budget for a product or service will also decrease the amount of time spent transferring and rendering data.",
 							"Social Equity": "By having a human or planetary budget, you can assign targets to improve services for impacted groups or those affected directly by your project."
 						}
