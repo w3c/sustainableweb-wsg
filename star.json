@@ -14,12 +14,12 @@
 			"techniques": [
 				{
 					"id": "UX01-1",
-					"title": "Produce a list of variables to monitor for sustainability impacts",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.1 Display any variables that have a negative impact on your project](https://w3c.github.io/sustainableweb-wsg/#display-any-variables-that-have-a-negative-impact-on-your-project).",
+					"title": "Produce a list of s to monitor for sustainability impacts",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.1 Display any s that have a negative impact on your project](https://w3c.github.io/sustainableweb-wsg/#display-any-s-that-have-a-negative-impact-on-your-project).",
 					"description": [
 						{
-							"1": "Create a maintainable list of different variables that may impact the sustainability of a product or service over time. By having this list in place, everyone in the creation process can closely monitor the application or website against each variable to determine if an PPP variable present on the list will require resolution either before, during, or after a product or service is launched.",
-							"2": "This list should be created during ideation if possible but can also be machine-generated from a pre-determined list of known PPP factors using evidence and research. The content of this material could be further tested through automation if such variables can be aligned with product capabilities however at a bare minimum, this list must be publicly visible (such as within a sustainability statement) and utilized in-house to enact sustainable change."
+							"1": "Create a maintainable list of different s that may impact the sustainability of a product or service over time. By having this list in place, everyone in the creation process can closely monitor the application or website against each  to determine if an PPP  present on the list will require resolution either before, during, or after a product or service is launched.",
+							"2": "This list should be created during ideation if possible but can also be machine-generated from a pre-determined list of known PPP factors using evidence and research. The content of this material could be further tested through automation if such s can be aligned with product capabilities however at a bare minimum, this list must be publicly visible (such as within a sustainability statement) and utilized in-house to enact sustainable change."
 						}
 					],
 					"examples": [
@@ -32,11 +32,11 @@
 						{
 							"procedure": [
 								{
-									"1": "Identify all machine-generated variables (hardware/software, etc).",
-									"2": "Identify all human-generated variables (business/user, etc).",
+									"1": "Identify all machine-generated s (hardware/software, etc).",
+									"2": "Identify all human-generated s (business/user, etc).",
 									"3": "Create a checklist to be published within sustainability processes.",
 									"4": "Circulate among employees as part of the testing workflow.",
-									"5": "Check that all variables have been accounted for before publication.",
+									"5": "Check that all s have been accounted for before publication.",
 									"6": "Report the findings within your sustainability statement."
 								}
 							],
@@ -67,7 +67,7 @@
 								{
 									"1": "Check to see if deliverables require internal access (if so, permission is given).",
 									"2": "Gather metrics data through browser APIs, analytics, or third-party software.",
-									"3": "Identify resolvable variables that are causing PPP issues.",
+									"3": "Identify resolvable s that are causing PPP issues.",
 									"4": "Once validated as accurate, test further using non-machine testable qualitative methods such as A/B measurement or feedback forms."
 								}
 							],
@@ -120,7 +120,7 @@
 					],
 					"examples": [
 						{
-							"1": "The use of a color-blind filter such as the one built into browser DevTools or another [third-party solution](https://github.com/interaktivarum/rgblind?tab=readme-ov-file) potentially helps to identify contrast issues that might not otherwise be detected within an existing website."
+							"1": "The use of a color blind filter such as the one built into browser DevTools or another [third-party solution](https://github.com/interaktivarum/rgblind?tab=readme-ov-file) potentially helps to identify contrast issues that might not otherwise be detected within an existing website."
 						}
 					],
 					"tests": [
@@ -243,7 +243,7 @@
 					"description": [
 						{
 							"1": "Help increase the readability of content within a website or application by breaking down larger pieces of content into smaller constituent pieces. In the same way that a book is broken down into chapters, using progressive disclosure you can reveal sections when the reader is ready, avoiding information overload (the same can be done with long tasks).",
-							"2": "For machine testability, identification of such progressive disclosure markers can be found using the HTML details or dialog element, the CSS target selector (and its accompanying HTML ID attributes), the CSS checkbox hack, the use of JavaScript HashBangs, and also the use of state (and content) changes through various frameworks. Each of these can build a picture of how content displays on-screen during the user experience, and some can load content only when it is requested which can reduce data transfer and rendering requests leading to sustainability improvements."
+							"2": "For machine testability, identification of such progressive disclosure markers can be found using the HTML details or dialog element, the CSS target selector (and its accompanying HTML ID attributes), the CSS checkbox hack, the use of JavaScript hash bangs, and also the use of state (and content) changes through various frameworks. Each of these can build a picture of how content displays on-screen during the user experience, and some can load content only when it is requested which can reduce data transfer and rendering requests leading to sustainability improvements."
 						}
 					],
 					"examples": [
@@ -274,12 +274,12 @@
 					"description": [
 						{
 							"1": "Reduce problematic friction within the user experience and help reduce the number of deceptive patterns which might occur onLoad and during the interaction process as these can cause considerable sustainability issues as a result of wasted emissions. By ensuring that the user remains in control of the interface and that websites and applications work as expected, a more ethical and optimized product or service is likely to result.",
-							"2": "Machine testing can analyze JavaScript for the use of popup events, the appearance of \"_blank\" within hyperlinks or frames, or other functionality that exists that may produce overlays. It is important to question the acceptability of such usage for example, opening links in new windows may be acceptable for non-web formats like PDF, otherwise, it is best to advise against its use."
+							"2": "Machine testing can analyze JavaScript for the use of pop up events, the appearance of \"_blank\" within hyperlinks or frames, or other functionality that exists that may produce overlays. It is important to question the acceptability of such usage for example, opening links in new windows may be acceptable for non-web formats like PDF, otherwise, it is best to advise against its use."
 						}
 					],
 					"examples": [
 						{
-							"1": "While not as common today, popup advertisements which appear in a new window or in a separate frame used to be a fixture of the early web and required heavy user management to close multiple banners that would trigger."
+							"1": "While not as common today, pop up advertisements which appear in a new window or in a separate frame used to be a fixture of the early web and required heavy user management to close multiple banners that would trigger."
 						}
 					],
 					"tests": [
@@ -287,7 +287,7 @@
 							"procedure": [
 								{
 									"1": "Check for CSS and JavaScript overlays that may occur onLoad and remove when identified.",
-									"2": "Check that any popup events can only be initiated with the user's consent.",
+									"2": "Check that any pop up events can only be initiated with the user's consent.",
 									"3": "Check all hyperlinks for new window opening triggers (and action as appropriate)."
 								}
 							],
@@ -462,13 +462,13 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.9 Design to assist and not to distract](https://w3c.github.io/sustainableweb-wsg/#design-to-assist-and-not-to-distract).",
 					"description": [
 						{
-							"1": "Lower the barriers to entry with content. When dealing with complex, multi-page websites it becomes increasingly important to have features in place to allow users to bypass repeated elements that they have already prefilled to achieve goals quicker (this is a key variable for sites who have large membership numbers).",
+							"1": "Lower the barriers to entry with content. When dealing with complex, multi-page websites it becomes increasingly important to have features in place to allow users to bypass repeated elements that they have already prefilled to achieve goals quicker (this is a key  for sites who have large membership numbers).",
 							"2": "There are functional ways to increase the flow through a website and allow users to accomplish a task that can also be machine-testable. This technique is most useful when dealing with complex pieces of content, multi-step products, or services that have a lot of functionality that may require shortcuts to allow faster decision-making under certain conditions."
 						}
 					],
 					"examples": [
 						{
-							"1": "[Read-It-Later](https://goodlinks.app/) software may be provided by third-parties but they allow for both offline access to content on a variety of platforms and customization of the materials visually based on the user's requirements.",
+							"1": "[read it later](https://goodlinks.app/) software may be provided by third-parties but they allow for both offline access to content on a variety of platforms and customization of the materials visually based on the user's requirements.",
 							"2": "Quick purchase features (such as Amazon's famous \"Buy Now\" button) allow for the immediate purchase of a product, skipping past the shopping basket steps and using prior purchase knowledge to reduce friction.",
 							"3": "Shortcut links and patterns can be used to skip ahead or over information and/or pages when it is recognized that the information may not be relevant or required in a multi-step process (such as form filling)."
 						}
@@ -477,7 +477,7 @@
 						{
 							"procedure": [
 								{
-									"1": "Check for read-it-later compatibility within articles.",
+									"1": "Check for read it later compatibility within articles.",
 									"2": "Check for purchasable products and the option to quickly purchase (bonus points if no login is required).",
 									"3": "Check if the HTML head contains landmark links of relevance to be identified.",
 									"4": "Check for recognized landmark shortcuts (skip links, etc) and that they are functional."
@@ -732,7 +732,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.13 Use a design system for interface consistency](https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-for-interface-consistency).",
 					"description": [
 						{
-							"1": "Ensure that stylistic choices made by the design and development team are based upon prescribed defaults. This will encourage consistency not just within the layout but also in terms of writing style, accessibility, sustainability, and other variables being monitored.",
+							"1": "Ensure that stylistic choices made by the design and development team are based upon prescribed defaults. This will encourage consistency not just within the layout but also in terms of writing style, accessibility, sustainability, and other s being monitored.",
 							"2": "There are already several established [design systems](https://designsystemsrepo.com/design-systems/), which provide a [good baseline](https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969) for what should should be included within them. Either deploy an existing open source solution or craft a custom model that meets the needs of your product or service. Machine testability will rely on identifying the design system and then verifying the materials are being used in the wild."
 						}
 					],
@@ -769,7 +769,7 @@
 					],
 					"examples": [
 						{
-							"1": "[Transport for London](https://tfl.gov.uk/info-for/suppliers-and-contractors/digital-design-toolkit/using-plain-english) has an editorial style guide that sets out to use Plain English throughout their website. The guide itself serves as a useful tool that others could adapt (including the terms in machine testability).",
+							"1": "[Transport for London](https://tfl.gov.uk/info-for/suppliers-and-contractors/digital-design-toolkit/using-plain-english) has an editorial style guide that sets out to use plain English throughout their website. The guide itself serves as a useful tool that others could adapt (including the terms in machine testability).",
 							"2": "There are lots of technical terms used in (for example) the web industry, Jens Oliver Meiert has created the [Web Glossary](https://webglossary.info/) as a dictionary of terminology which can help clarify confusing terminology.",
 							"3": "[Readability Formulas](https://readabilityformulas.com/readability-scoring-system.php) have an assessment tool that can use one of several different models to identify issues with content. As there is no agreed-upon assessment model, this can be particularly helpful."
 						}
@@ -778,7 +778,7 @@
 						{
 							"procedure": [
 								{
-									"1": "Check against a list of terms for the use of Plain English.",
+									"1": "Check against a list of terms for the use of plain English.",
 									"2": "Check that terminology is inclusive and non-discriminatory.",
 									"3": "Check that technical terms are identified and well-defined.",
 									"4": "Check that the content has an appropriate reading age.",
@@ -826,7 +826,7 @@
 					"description": [
 						{
 							"1": "Reduce the amount of time users and potential users spend churning through data attempting to locate you (or pages relating to you) through search engines or social media. These types of requests have an emissions impact from the hardware used to deal with the requests to the rendering of the results, therefore getting the right information to users as quickly as possible is critical to having a sustainable product.",
-							"2": "This list should be created as early as possible but could be machine-generated from a pre-determined list of SEO variables. The content of this material could be machine-tested against using automation if the variables can be aligned with what has been implemented. Additionally, publicly-facing social media handles that are identified within a product or service website can be detected."
+							"2": "This list should be created as early as possible but could be machine-generated from a pre-determined list of SEO s. The content of this material could be machine-tested against using automation if the s can be aligned with what has been implemented. Additionally, publicly-facing social media handles that are identified within a product or service website can be detected."
 						}
 					],
 					"examples": [
@@ -887,7 +887,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.15 Optimize images for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability).",
 					"description": [
 						{
-							"1": "Ensure that images are not only served at the correct resolution and size for the device requesting them but also to make sure that the images being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the user, thereby improving multiple PPP variables and increasing performance.",
+							"1": "Ensure that images are not only served at the correct resolution and size for the device requesting them but also to make sure that the images being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the user, thereby improving multiple PPP s and increasing performance.",
 							"2": "Compression tests can be run against every image to see if improvements can be made (above and beyond changing formats) without losing too much image quality that visibility becomes degraded and therefore a recognition issue. The use of the sizes attribute can also help provide alternative images for different resolutions as required by device requirements (though the default image should be set to a median value to balance size and weight)."
 						}
 					],
@@ -1036,13 +1036,13 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.16 Optimize media for sustainability](https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability).",
 					"description": [
 						{
-							"1": "Ensure that both the formats being used for media have widespread browser compatibility and that the audio and video being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the user, thereby improving multiple PPP variables and increasing performance.",
+							"1": "Ensure that both the formats being used for media have widespread browser compatibility and that the audio and video being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the user, thereby improving multiple PPP s and increasing performance.",
 							"2": "Compression tests can be run against every video and audio file to see if improvements can be made without losing too much quality that the artifact becomes degraded beyond usefulness. Audio and video formats to be embedded with browser compatibility issues can also be machine detected and recommendations for alternatives can be offered (and implemented)."
 						}
 					],
 					"examples": [
 						{
-							"1": "[BBC iPlayer](https://www.bbc.co.uk/iplayer) is an on-demand platform that can change the quality setting of the video being streamed. The quality being applied also changes based on variables impacting the environment.",
+							"1": "[BBC iPlayer](https://www.bbc.co.uk/iplayer) is an on-demand platform that can change the quality setting of the video being streamed. The quality being applied also changes based on s impacting the environment.",
 							"2": "[YouTube](https://www.youtube.com/) has a setting to alter the streaming quality of videos (where the quality can be lowered). Again this platform uses browser metrics to automatically adjust the stream quality based on the user's environment."
 						}
 					],
@@ -1072,7 +1072,7 @@
 					],
 					"examples": [
 						{
-							"1": "Jason Knight has provided some [simple but useful examples](https://codepen.io/jason-knight/pen/OJBjgNQ) of his own implementation of accessible HTML video facades which he developed as a solution to the performance (and sustainability) issues media can cause."
+							"1": "Jason Knight has provided some [simple but useful examples](https://codepen.io/jason-knight/pen/OJBjgNQ) of their own implementation of accessible HTML video facades which they developed as a solution to the performance (and sustainability) issues media can cause."
 						}
 					],
 					"tests": [
@@ -1214,7 +1214,7 @@
 					"description": [
 						{
 							"1": "Avoid rendering issues surrounding emojis and symbol typefaces based on the operating system an individual may be using or the localization of their device. This can inherently cause accessibility issues which can reduce readability as well as the aforementioned visual glitches that can potentially have an impact on system hardware.",
-							"2": "For machine testability, flagging of symbol fonts (and potentially Emojis where operating system compatibility differences may be an issue) will increase readability if resolutions are put in place. One consideration may be to avoid using symbol fonts without an explicit justification and to only use Emojis that have endured widespread operating system compatibility."
+							"2": "For machine testability, flagging of symbol fonts (and potentially emojis where operating system compatibility differences may be an issue) will increase readability if resolutions are put in place. One consideration may be to avoid using symbol fonts without an explicit justification and to only use emojis that have endured widespread operating system compatibility."
 						}
 					],
 					"examples": [
@@ -1226,8 +1226,8 @@
 						{
 							"procedure": [
 								{
-									"1": "Check that system fonts are replaced with accessible Emojis.",
-									"2": "Check that Emojis are implemented with compatibility in mind."
+									"1": "Check that system fonts are replaced with accessible emojis.",
+									"2": "Check that emojis are implemented with compatibility in mind."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -1242,7 +1242,7 @@
 					"description": [
 						{
 							"1": "Optimize a typeface to ensure that when custom fonts are provided, they are implemented as sustainably as possible requiring the fewest amount of resources to download and render as possible. By placing restrictions on the number of custom typefaces and using a highly optimized format (hopefully subsetted), you will have a highly compressed file.",
-							"2": "Multiple variables will contribute to the size of a typeface, as such, it is difficult to simply specify a hard number to aim for, but if (for example) you are not using international characters and you can subset your font, eliminating such waste could save precious resources from the fonts character table and reduce the file size considerably (reducing the system resource load upon rendering)."
+							"2": "Multiple s will contribute to the size of a typeface, as such, it is difficult to simply specify a hard number to aim for, but if (for example) you are not using international characters and you can subset your font, eliminating such waste could save precious resources from the fonts character table and reduce the file size considerably (reducing the system resource load upon rendering)."
 						}
 					],
 					"examples": [
@@ -1258,7 +1258,7 @@
 									"2": "Check that fonts are preloaded within the head of the HTML document.",
 									"3": "Check that no obsolete font formats are listed (such as EOT, TTF, SVG).",
 									"4": "Check that fonts are only provided using WOFF2 or WOFF as a fallback.",
-									"5": "Check that if a custom font is variable enabled (refer to font a preferred), remove other references (bold, italic, etc)."
+									"5": "Check that if a custom font is  enabled (refer to font a preferred), remove other references (bold, italic, etc)."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -1483,7 +1483,7 @@
 					"description": [
 						{
 							"1": "Provide a mechanism for those not using a screen as a primary method of browsing to have an equal browsing experience. This is primarily due to screens being a high emitter of emissions in terms of energy usage, but also with the increase in speech-powered devices, the need for support mechanisms to be in place has increased in recent years.",
-							"2": "Detection of such support can be clearly identified with good semantics and high-quality content as a foundation, however for machine testability, thresholds such as having a speech stylesheet in place (that can help with issues around pronunciation and tone) and testing projects within text browsers for fundamental mechanical issues are critical to establish a pass."
+							"2": "Detection of such support can be clearly identified with good semantics and high-quality content as a foundation, however for machine testability, thresholds such as having a speech style sheet in place (that can help with issues around pronunciation and tone) and testing projects within text browsers for fundamental mechanical issues are critical to establish a pass."
 						}
 					],
 					"examples": [
@@ -1496,7 +1496,7 @@
 						{
 							"procedure": [
 								{
-									"1": "Check for a speech stylesheet for indicators to clarify pronunciation issues.",
+									"1": "Check for a speech style sheet for indicators to clarify pronunciation issues.",
 									"2": "Check that your website or application functions correctly in a text-only environment."
 								}
 							],
@@ -1538,12 +1538,12 @@
 				},
 				{
 					"id": "UX23-1",
-					"title": "Add a print-friendly media query or stylesheet",
+					"title": "Add a print-friendly media query or style sheet",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.23 Reduce the impact of downloadable and physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
 						{
-							"1": "Reduce the amount of excessive paper and ink resource mineral waste produced from the physical printing of documents by users of your products and services. By creating a customized print stylesheet you can optimize the use of these resources and improve readability of the layout if the document is exported into a static format such as PDF.",
-							"2": "This technique is most useful when it covers a lot of issues that physical formats can suffer over their digital counterparts (such as no interactivity), the necessity of color usage or content, breaks in flow and pages, etc. Machine testability can examine the stylesheet for such feature handling as compliance with success criteria (link expansion, paper size support, CSS resets, etc)."
+							"1": "Reduce the amount of excessive paper and ink resource mineral waste produced from the physical printing of documents by users of your products and services. By creating a customized print style sheet you can optimize the use of these resources and improve readability of the layout if the document is exported into a static format such as PDF.",
+							"2": "This technique is most useful when it covers a lot of issues that physical formats can suffer over their digital counterparts (such as no interactivity), the necessity of color usage or content, breaks in flow and pages, etc. Machine testability can examine the style sheet for such feature handling as compliance with success criteria (link expansion, paper size support, CSS resets, etc)."
 						}
 					],
 					"examples": [
@@ -1555,7 +1555,7 @@
 						{
 							"procedure": [
 								{
-									"1": "Check that the website or application has a print-friendly media query (@print) or stylesheet.",
+									"1": "Check that the website or application has a print-friendly media query (@print) or style sheet.",
 									"2": "Check that the print CSS makes attribute content and URLs visible",
 									"3": "Check that the print CSS considers content color accuracy and monochrome options",
 									"4": "Check that the print CSS considers paper orientation, color, and size",
@@ -1573,7 +1573,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.23 Reduce the impact of downloadable and physical documents](https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
 						{
-							"1": "Ensure that non-web documents are not only served in a range of compatible (suitable) formats for the device requesting them but also to make sure that the documents being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the user, thereby improving multiple PPP variables and increasing performance.",
+							"1": "Ensure that non-web documents are not only served in a range of compatible (suitable) formats for the device requesting them but also to make sure that the documents being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the user, thereby improving multiple PPP s and increasing performance.",
 							"2": "Compression tests can be run against every document format to identify if improvements can be made without losing too much quality that visibility becomes degraded and therefore a recognition issue (in embedded images and media within). The primary format given to users should be the one with the widest compatibility for viewing within the browser plugin-free (usually PDF)."
 						}
 					],
@@ -1646,7 +1646,7 @@
 								{
 									"1": "Check that document pages do not embed large files (internally or with third-parties).",
 									"2": "Check that document links are clearly described with information about name, format, language, size, and potentially a summary.",
-									"3": "Check for choice options with format and language variables in documents."
+									"3": "Check for choice options with format and language s in documents."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -1674,7 +1674,7 @@
 						{
 							"procedure": [
 								{
-									"1": "Check if a Testing policy is both published and publicly visible.",
+									"1": "Check if a testing policy is both published and publicly visible.",
 									"2": "Check for key policy factors are presented within the text (optional)."
 								}
 							],
@@ -1754,7 +1754,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.25 Audit and test for bugs or issues requiring resolution](https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
 					"description": [
 						{
-							"1": "Provide a mechanism for eliminating any potential new flaws that may have been introduced into a website or application upon the release of a new version that will have additional updates or features that could break functionality if not implemented correctly. As such, enforcing a sustainability scan across a series of variables is critical.",
+							"1": "Provide a mechanism for eliminating any potential new flaws that may have been introduced into a website or application upon the release of a new version that will have additional updates or features that could break functionality if not implemented correctly. As such, enforcing a sustainability scan across a series of s is critical.",
 							"2": "For machine testability, the necessity of automation of running a scan could be triggered on the publication of each new release, or for more nuanced control (where active monitoring already exists and non-breaking features are being introduced), a scan could be triggered only where only a major release is issued when breaking changes are more likely to occur."
 						}
 					],
@@ -1973,7 +1973,7 @@
 			"techniques": [
 				{
 					"id": "WD01-1",
-					"title": "Profile existing projects to identify common variables of value",
+					"title": "Profile existing projects to identify common s of value",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.1 Set goals based on performance and energy impact](https://w3c.github.io/sustainableweb-wsg/#set-goals-based-on-performance-and-energy-impact).",
 					"description": [
 						{
@@ -2009,13 +2009,13 @@
 					"description": [
 						{
 							"1": "Distinguish different technologies and the role they play, identifying which are the most resource-intensive and providing either a mechanism to reduce the intensity of heavy payloads or to load-balance the most demanding aspects of these features. It is important to consider that in terms of rendering, data transfer is not the only consideration.",
-							"2": "In terms of machine testability, calculating the percentage of HTML, CSS, JavaScript, images, media, etc, is not enough. It is critical to weigh and calculate the energy requirements of each aspect of those languages on an atomic level to identify potential rendering issues from the browser as these will impact upon hardware (CPU, GPU, RAM, and other variables) having PPP implications."
+							"2": "In terms of machine testability, calculating the percentage of HTML, CSS, JavaScript, images, media, etc, is not enough. It is critical to weigh and calculate the energy requirements of each aspect of those languages on an atomic level to identify potential rendering issues from the browser as these will impact upon hardware (CPU, GPU, RAM, and other s) having PPP implications."
 						}
 					],
 					"examples": [
 						{
 							"1": "Primary [research exists](https://websitesustainability.com/#content) to calculate the energy intensity of front-end specifications and this could guide your ability to identify the energy intensity of components beyond the amount of data transferred.",
-							"2": "[Co2.js](https://www.thegreenwebfoundation.org/co2-js/) is a JavaScript library that can help developers estimate the relative carbon emissions of their applications, websites, and software using several variables (though it will not account for everything)."
+							"2": "[Co2.js](https://www.thegreenwebfoundation.org/co2-js/) is a JavaScript library that can help developers estimate the relative carbon emissions of their applications, websites, and software using several s (though it will not account for everything)."
 						}
 					],
 					"tests": [
@@ -2023,7 +2023,7 @@
 							"procedure": [
 								{
 									"1": "Check the energy intensity of the HTML elements and attributes used.",
-									"2": "Check the energy intensity of CSS At-Rules, Selectors, Pseudo's, Properties, and Values.",
+									"2": "Check the energy intensity of CSS at-rules, selectors, pseudo's, properties, and Values.",
 									"3": "Check the energy intensity of JavaScript, DOM, CSSOM, and API usage.",
 									"4": "Check the energy intensity of image and media usage."
 								}
@@ -2039,7 +2039,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.2 Remove unnecessary or redundant information](https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-or-redundant-information).",
 					"description": [
 						{
-							"1": "Provide a mechanism in which your production-ready source code can have unnecessary data such as code comments, whitespace data, and machine-detectable redundancy removed to deliver the smallest file payload possible to the user. This will improve both the speed of your site and lower screen usage (wait) time.",
+							"1": "Provide a mechanism in which your production-ready source code can have unnecessary data such as code comments, white space data, and machine-detectable redundancy removed to deliver the smallest file payload possible to the user. This will improve both the speed of your site and lower screen usage (wait) time.",
 							"2": "In terms of machine testability, the functions of a minification tool can be replicated for the languages HTML, CSS, and JavaScript using scripts and these can identify improvements to be made. Function names can be uglified (shortened to the smallest value) to reduce the size of the payload further and reporting tools can make recommendations based upon feedback."
 						}
 					],
@@ -2077,7 +2077,7 @@
 					"examples": [
 						{
 							"1": "MDN [provides a detailed guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) to JavaScript modules that are contained within many frameworks today to split them into separate component-based libraries to be called only when they are required by the user.",
-							"2": "Separating CSS into stylesheets based on arguments such as [media or preference queries](https://polypane.app/blog/the-complete-guide-to-css-media-queries/) (or in rarer instances using imports), allows for large stylistic libraries to be broken down and requested only if its necessary.",
+							"2": "Separating CSS into style sheets based on arguments such as [media or preference queries](https://polypane.app/blog/the-complete-guide-to-css-media-queries/) (or in rarer instances using imports), allows for large stylistic libraries to be broken down and requested only if its necessary.",
 							"3": "[Alpine](https://alpinejs.dev/) is a JavaScript framework that uses modules effectively to import the features it requires, and as such, remains fast and lightweight compared to competing frameworks that load everything in one go."
 						}
 					],
@@ -2086,7 +2086,7 @@
 							"procedure": [
 								{
 									"1": "Check the size of packages to determine the benefit of code-splitting.",
-									"2": "Check if CSS would benefit from being split into separate stylesheets based on queries.",
+									"2": "Check if CSS would benefit from being split into separate style sheets based on queries.",
 									"3": "Check if JavaScript can be modularized and imported when required.",
 									"4": "Check if obfuscation exists, if not code-split the source code."
 								}
@@ -2347,7 +2347,7 @@
 					],
 					"examples": [
 						{
-							"1": "The W3C provides markup validation services for [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/), [JSON](https://jsonlint.com/), as well as [feeds](https://validator.w3.org/feed/) to identify potential issues with the code. These tools can work with direct input as well as files and direct input.",
+							"1": "W3C provides markup validation services for [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/), [JSON](https://jsonlint.com/), as well as [feeds](https://validator.w3.org/feed/) to identify potential issues with the code. These tools can work with direct input as well as files and direct input.",
 							"2": "Linting tools can check (and be configured) to help you find and resolve common errors either while you code or during an auditing process. There are linting tools available for languages like [HTML](https://markuplint.dev/), [CSS](https://stylelint.io/), [JavaScript](https://eslint.org/)."
 						}
 					],
@@ -2385,7 +2385,7 @@
 							"procedure": [
 								{
 									"1": "Check that optional HTML elements that are unnecessary for rendering are removed.",
-									"2": "Check that browser default styles are not repeated in the stylesheets."
+									"2": "Check that browser default styles are not repeated in the style sheets."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -2429,7 +2429,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.8 Defer the loading of non-critical resources](https://w3c.github.io/sustainableweb-wsg/#defer-the-loading-of-non-critical-resources).",
 					"description": [
 						{
-							"1": "Provide a mechanism for JavaScript (and if possible StyleSheets) to be loaded asynchronously or deferred to avoid acting as render blocking events which can delay the loading of content. This will lessen the initial impact on users' hardware and thus can have PPP and web performance benefits which should be taken into account.",
+							"1": "Provide a mechanism for JavaScript (and if possible style sheets) to be loaded asynchronously or deferred to avoid acting as render blocking events which can delay the loading of content. This will lessen the initial impact on users' hardware and thus can have PPP and web performance benefits which should be taken into account.",
 							"2": "This technique is most useful when it is applied to all materials which will run upon the page load. In terms of testing for this technique, scripts can be identified by the attribute being provided within the HTML code. If the attribute is not provided, guidance can be offered to question if this was intentional or machine testing could analyze the code to verify if an issue will occur."
 						}
 					],
@@ -2533,7 +2533,7 @@
 								{
 									"1": "Check for the existence of a robots.txt within the base directory of a website or application.",
 									"2": "Check that the document is well formed and contains the correct property/value pairs.",
-									"3": "Check for a list of blacklisted bad actors and unsustainable products."
+									"3": "Check for a list of pre-selected blocked bad actors and unsustainable products."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -3111,7 +3111,7 @@
 					"examples": [
 						{
 							"1": "[WordPress has an ads.txt file](https://wordpress.com/ads.txt) at the base of their website, that contains details of the advertisers they work with (and tries to increase transparency by revealing where impressions are purchased and resold).",
-							"2": "Web Developer Sarah Tamsin has a [fun example of a humans.txt file](https://sarahtamsin.com/humans.txt) that provides some witty content and a few basic details about her (plus an ASCII image that makes for a nice easter egg bonus feature).",
+							"2": "Web Developer Sarah Tamsin has a [fun example of a humans.txt file](https://sarahtamsin.com/humans.txt) that provides some witty content and a few basic details about them (plus an ASCII image that makes for a nice easter egg bonus feature).",
 							"3": "The security.txt specification writers have [created a basic example](https://securitytxt.org/.well-known/security.txt) of what could be included within the file. As you can see from the example, the location of the document differs from other plaintext examples."
 						}
 					],
@@ -3136,7 +3136,7 @@
 					"description": [
 						{
 							"1": "Identify deprecated code, technologies and web standards that may be in use but have been superseded by newer technologies and web standards. In certain cases, the standards in use may still be actively supported by browsers and if there is a sustainability reason to retain the feature, continue. Otherwise, updating the code should be considered to ensure longevity and sustainability.",
-							"2": "For machine testability, deprecations in languages can also be found within specifications from providers like the W3C. Documentation providers like MDN also provide extremely thorough coverage of syntax that has been deprecated such as within HTML, CSS, and JavaScript. If replacements for any techniques can be offered, provide them, otherwise recommend removal from your code."
+							"2": "For machine testability, deprecations in languages can also be found within specifications from providers like W3C. Documentation providers like MDN also provide extremely thorough coverage of syntax that has been deprecated such as within HTML, CSS, and JavaScript. If replacements for any techniques can be offered, provide them, otherwise recommend removal from your code."
 						}
 					],
 					"examples": [
@@ -3288,13 +3288,13 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Choose a sustainable service provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider).",
 					"description": [
 						{
-							"1": "Ensure that anyone who wishes to compile an impact statement (as a consumer of your services) based on conditions such as PUE, WUE, and CUE can calculate the necessary energy utilization of a provider using each of the available data based upon any variables required. Making important metrics publicly visible to both customers and users, increases awareness, reduces the potential for greenwashing, and allows service providers to report with proof of compliance.",
-							"2": "For machine testability, this would require each customer account (of a hosting provider) to be equipped with a publicly visible stats page indicating resource utilization, including useful information on variables like CPU, GPU, RAM, and data usage, plus a calculation on equivalent water or other consumable resource utilization. This can be linked to from within the service status page. In addition, the methodology behind the calculations should also be provided in a centralized location."
+							"1": "Ensure that anyone who wishes to compile an impact statement (as a consumer of your services) based on conditions such as PUE, WUE, and CUE can calculate the necessary energy utilization of a provider using each of the available data based upon any s required. Making important metrics publicly visible to both customers and users, increases awareness, reduces the potential for greenwashing, and allows service providers to report with proof of compliance.",
+							"2": "For machine testability, this would require each customer account (of a hosting provider) to be equipped with a publicly visible stats page indicating resource utilization, including useful information on s like CPU, GPU, RAM, and data usage, plus a calculation on equivalent water or other consumable resource utilization. This can be linked to from within the service status page. In addition, the methodology behind the calculations should also be provided in a centralized location."
 						}
 					],
 					"examples": [
 						{
-							"1": "[OVHCloud](https://corporate.ovhcloud.com/en/sustainability/environment/) and [Opcore](https://pue.dc5.opcore.eu/en/) both showcase different ways of displaying data about their environmental impact and notably, the variables that make up that number (with calculations and individual metrics provided). Both dashboards and sustainability panels are equally useful tools for showcasing such information.",
+							"1": "[OVHCloud](https://corporate.ovhcloud.com/en/sustainability/environment/) and [Opcore](https://pue.dc5.opcore.eu/en/) both showcase different ways of displaying data about their environmental impact and notably, the s that make up that number (with calculations and individual metrics provided). Both dashboards and sustainability panels are equally useful tools for showcasing such information.",
 							"2": "A service provider could make the internal resource usage stats page that comes with many hosting packages publicly visible (upon request of the website or application provider), and include sustainability data within."
 						}
 					],
@@ -3320,7 +3320,7 @@
 					"description": [
 						{
 							"1": "Verify that the product or service is being served through a sustainable provider. If the hosting provider (for example) generates its electricity from carbon-free energy and can document other intensity reduction techniques (such as using natural cooling and offering auto-scaling packages), this can contribute towards passing the success criteria.",
-							"2": "Because many factors can go towards how sustainable a provider is, machine testing will need to be vigilant in accounting for several variables. As such, using an established directory of sustainable hosts could be one way to pass or fail, or running validation checks against factors that affect the sustainability of services could be another (this may require internal access or knowledge)."
+							"2": "Because many factors can go towards how sustainable a provider is, machine testing will need to be vigilant in accounting for several s. As such, using an established directory of sustainable hosts could be one way to pass or fail, or running validation checks against factors that affect the sustainability of services could be another (this may require internal access or knowledge)."
 						}
 					],
 					"examples": [
@@ -3351,7 +3351,7 @@
 					"description": [
 						{
 							"1": "Ensure that emissions reports are published, with adequate frequency, considering (if possible) changes to DNS, subdomain allocation, multiple domain ownership, or other conditions that may impact the scope results. Also, be sure to provide calculations on an individual and collective domain level (where situations allow) to enable the best overview possible of total impact and most impactful domains. Having these metrics available for customers will increase public awareness, and allow registrants to meet reporting obligations as part of their compliance requirements.",
-							"2": "For machine testability customer accounts should have a method to view changes in emissions, this would require an account (of a registrar) to be made accessible within tooling or for generalized statistics that account for the total amount of users to be made publicly visible (so averages can be used). This would help estimate and account for the impact of domain use based on TLD choice and other variables that will be relevant to the measurement criteria. The methodology behind the calculations should also be provided in a centralized location."
+							"2": "For machine testability customer accounts should have a method to view changes in emissions, this would require an account (of a registrar) to be made accessible within tooling or for generalized statistics that account for the total amount of users to be made publicly visible (so averages can be used). This would help estimate and account for the impact of domain use based on TLD choice and other s that will be relevant to the measurement criteria. The methodology behind the calculations should also be provided in a centralized location."
 						}
 					],
 					"examples": [
@@ -3536,7 +3536,7 @@
 					"examples": [
 						{
 							"1": "Open source products like [Link Checker](https://github.com/linkchecker/linkchecker) can verify the status of references across multiple pages. This can be a quick and easy way of locating issues that have built up across an entire product or service.",
-							"2": "The W3C has a simple [web-based interface](https://validator.w3.org/checklink) for validating links for errors on a page-by-page basis which can be helpful if you do not want to have to install applications or self-host packages to run tests."
+							"2": "W3C has a simple [web-based interface](https://validator.w3.org/checklink) for validating links for errors on a page-by-page basis which can be helpful if you do not want to have to install applications or self-host packages to run tests."
 						}
 					],
 					"tests": [
@@ -3792,14 +3792,14 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.12 Store data according to the needs of your users](https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
 						{
-							"1": "Increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other variables. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.",
+							"1": "Increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other s. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.",
 							"2": "Machine testability for such features will involve examining the page's source code to identify repeating patterns across several pages (if correctly labeled, patterns such as tags or categories may be semantically easy to find). The sustainability of such implementations must account for the impact it has upon rendering across each page, against the benefit it has to the user experience."
 						}
 					],
 					"examples": [
 						{
 							"1": "A List Apart [provides a topics page](https://alistapart.com/topics/) which groups various pieces of content (articles) into categories. By doing this it reduces the number of pages an individual will need to click through to find what they are after.",
-							"2": "Maggie Appleton has a [really visually appealing way](https://maggieappleton.com/garden) of laying out all of her different topics, content types, and even how well-developed her thoughts are. With all of this, you can filter her content accordingly."
+							"2": "Maggie Appleton has a [really visually appealing way](https://maggieappleton.com/garden) of laying out all of their different topics, content types, and even how well-developed their thoughts are. With all of this, you can filter their content accordingly."
 						}
 					],
 					"tests": [
@@ -3986,7 +3986,7 @@
 					],
 					"examples": [
 						{
-							"1": "Having a Digital Sustainability Lead or Sustainability Expert who is in charge of meeting compliance targets (in the same way that you would have accessibility experts in the team) can showcase your skill set."
+							"1": "Having a digital sustainability lead, advocate, or sustainability expert who is in charge of meeting compliance targets (in the same way that you would have accessibility experts in the team) can showcase your skill set."
 						}
 					],
 					"tests": [
@@ -4602,7 +4602,7 @@
 					"description": [
 						{
 							"1": "Ensure that if an individual or organization is being endorsed or financed by an external group or organization, the influence that the group may provide is sustainably minded (and will not divert the product or service away from such activities). Ensuring all endorsements are sustainable can also help service providers avoid claims of greenwashing.",
-							"2": "Machine testing such variables will require firstly all partnerships and sponsors to be correctly labeled as such, if they are labeled within the product or service then the tester can test each of these services against the WSG as a first-party (an isolated service) and verify how sustainable they are in comparison. If they score poorly, a warning of conflict of interest issues can be provided."
+							"2": "Machine testing such s will require firstly all partnerships and sponsors to be correctly labeled as such, if they are labeled within the product or service then the tester can test each of these services against the WSG as a first-party (an isolated service) and verify how sustainable they are in comparison. If they score poorly, a warning of conflict of interest issues can be provided."
 						}
 					],
 					"examples": [
@@ -4662,7 +4662,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.27 Define performance and environmental budgets](https://w3c.github.io/sustainableweb-wsg/#define-performance-and-environmental-budgets).",
 					"description": [
 						{
-							"1": "Provide a clearly defined set of targets to achieve when working to either make an existing project more sustainable or create a newly sustainable website or application. Just as with performance budgets, you can define the variables that are most achievable and iterate with more variables (and improvements) to be included over a project's lifecycle.",
+							"1": "Provide a clearly defined set of targets to achieve when working to either make an existing project more sustainable or create a newly sustainable website or application. Just as with performance budgets, you can define the s that are most achievable and iterate with more s (and improvements) to be included over a project's lifecycle.",
 							"2": "For machine testability, the budget (often provided in a format like JSON) will either be required to be submitted to the testing agent or be declared in some other manner to ensure that any results can be compared against the budget for alignment. If the budget is met, a pass can be given, if not, a warning can be issued with recommendations where potential improvements can be made."
 						}
 					],
@@ -4691,7 +4691,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.27 Define performance and environmental budgets](https://w3c.github.io/sustainableweb-wsg/#define-performance-and-environmental-budgets).",
 					"description": [
 						{
-							"1": "Provide a clearly defined set of targets to achieve when working to either make an existing project more performant or create a new website or application fast and optimized. As with a sustainability budget, you should define the variables that are most relevant to your project and consider targets that will make a sustainable difference to your users.",
+							"1": "Provide a clearly defined set of targets to achieve when working to either make an existing project more performant or create a new website or application fast and optimized. As with a sustainability budget, you should define the s that are most relevant to your project and consider targets that will make a sustainable difference to your users.",
 							"2": "For machine testability, the budget (often provided in a format like JSON) will either be required to be submitted to the testing agent or be declared in some other manner to ensure that any results can be compared against the budget for alignment. If the budget is met, a pass can be given, if not, a warning can be issued with recommendations where potential improvements can be made."
 						}
 					],
