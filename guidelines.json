@@ -14,14 +14,14 @@
 			"guidelines": [
 				{
 					"id": "1",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#display-any-variables-that-have-a-negative-impact-on-your-project",
-					"guideline": "Display any variables that have a negative impact on your project",
-					"subheading": "Identify, track, and publicly disclose negative external variables.",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#display-any-factors-that-have-a-negative-impact-on-your-project",
+					"guideline": "Display any factors that have a negative impact on your project",
+					"subheading": "Identify, track, and publicly disclose negative external factors.",
 					"criteria": [
 						{
-							"title": "External variables",
+							"title": "External factors",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX01-1)",
-							"description": "Identify existing or potential negative external variables affecting a project. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.",
+							"description": "Identify existing or potential negative external factors affecting a project. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.6 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -57,7 +57,7 @@
 							"Accessibility": "Understanding the audience can identify potential improvements that go beyond basic inclusive design practices.",
 							"Environment": "Constructing a plan to reduce emissions enables improvement over time.",
 							"Privacy": "Having an overview of components makes it easier to identify potential data protection risks.",
-							"Social Equity": "Auditing variables can reveal factors not commonly understood or covered in established best practices, enabling better support for underrepresented groups."
+							"Social Equity": "Auditing factors can reveal factors not commonly understood or covered in established best practices, enabling better support for underrepresented groups."
 						}
 					],
 					"GRI": [
@@ -99,7 +99,7 @@
 						{
 							"title": "User constraints",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX02-2)",
-							"description": "Account for potential user constraints, such as the device age, operating system choice or version, browser, VPN use, and connection speeds when designing and assessing the quality of user experiences.",
+							"description": "Account for potential user constraints, such as the device age, operating system choice or version, browser, Virtual Private Network (VPN) use, and connection speeds when designing and assessing the quality of user experiences.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -601,7 +601,7 @@
 						{
 							"title": "Human-readable sitemaps",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX08-2)",
-							"description": "Consider implementing an efficient and regularly updated sitemap for human users. While guidance beyond the nav bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.",
+							"description": "Consider implementing an efficient and regularly updated sitemap for human users. While guidance beyond the navigation bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.",
 							"resources": [
 								{
 									"Build and submit a sitemap": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en",
@@ -1028,7 +1028,7 @@
 					"effort": "Medium",
 					"benefits": [
 						{
-							"Accessibility": "Using a design system with accessible components will improve access to information for people with disabilities. Building design features that integrate accessibility from the start  ensures everyone is always included.",
+							"Accessibility": "Using a design system with accessible components will improve access to information for people with disabilities. Building design features that integrate accessibility from the start ensures everyone is always included.",
 							"Conversion": "Using design systems supports consistent user interfaces. This improves user trust because individuals will recognize familiar components and know how to use them. This can improve conversion rates as it will reduce frustration, abandonment, and possible complaints.",
 							"Economic": "Using standardized components and avoiding redundancy can reduce development time and the associated costs. Familiarity makes the experience easier for users, reducing bounce rates.",
 							"Environment": "Following web standards to build consistent interfaces requires less energy and resources, because they are naturally more optimized. Design systems that incorporate environmental criteria can help to scale digital sustainability and reduce redundancy, reduced energy use and negative impact.",
@@ -1800,7 +1800,7 @@
 						{
 							"title": "Need for notification",
 							"testable": "Human-testable",
-							"description": "Remove non-essential notifications. Justify and reduce email, text message (SMS), and other invasive or energy-intense notifications to what is strictly necessary. Useful notifications, such as alerts for new content should be used with care and restraint.",
+							"description": "Remove non-essential notifications. Justify and reduce email, text message (SMS), and other invasive or energy-intense notifications to what is strictly necessary. Useful notifications, such as alerts for new content should be used with care and restraint, having both the users understanding and informed consent.",
 							"resources": [
 								{
 									"Biased By Design": "https://biasedbydesign.com/",
@@ -1833,7 +1833,7 @@
 						{
 							"title": "Prompts and responses",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX22-3)",
-							"description": "Clearly explain the result of a potential input through helpful prompts and messages that explain errors, next steps, and other relevant information. This will help to manage users’ expectations.",
+							"description": "Clearly explain the result of a potential input through helpful prompts and messages that explain errors, next steps, and other relevant information. This will help to manage user's expectations.",
 							"resources": [
 								{
 									"Client-side form validation": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation",
@@ -1873,12 +1873,12 @@
 					"id": "23",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-and-physical-documents",
 					"guideline": "Reduce the impact of downloadable and physical documents",
-					"subheading": "Reduce the need for physical documents as much as possible by allowing the saving of well-labeled, optimized digital downloads and having a print stylesheet.",
+					"subheading": "Reduce the need for physical documents as much as possible by allowing the saving of well-labeled, optimized digital downloads and having a print style sheet.",
 					"criteria": [
 						{
 							"title": "Printed documents",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX23-1)",
-							"description": "Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a CSS print stylesheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.",
+							"description": "Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a CSS print style sheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.",
 							"resources": [
 								{
 									"A Guide To The State Of Print Stylesheets In 2018": "https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/",
@@ -2292,7 +2292,7 @@
 							"Conversion": "Acting on feedback often improves conversion rates because it ensures that your digital product or service reflects the needs of your audience.",
 							"Economic": "Avoiding wasted development time building features that bring little value to the consumer means resources can be focused where they deliver more value.",
 							"Environment": "Learning from feedback enables choices that improve environmental impact. An example of this would be making sure that the most frequently used features are placed higher in the visual hierarchy. This reduces the effort and time users must invest to achieve their goals.",
-							"Performance": "Performing user testing allows you to retain focus on goal and maintain good performance  without unnecessary complexity."
+							"Performance": "Performing user testing allows you to retain focus on goal and maintain good performance without unnecessary complexity."
 						}
 					],
 					"GRI": [
@@ -2623,7 +2623,7 @@
 						{
 							"Conversion": "Page speed and web performance are confirmed ranking factors when it comes to SEO. A faster digital product or service may support an organization's efforts to rank higher on search engines. Combined with the better on-page user experience, this can lead to improved conversion rates.",
 							"Environment": "Limiting the number of server requests and the DOM size lessens the negative environmental impact of a product or service' by reducing CPU and GPU cycles and RAM usage. This brings down energy consumption, and reduces the need to recharge portable devices as frequently.",
-							"Performance": "Reducing the hardware load  improves overall performance. Devices are less likely to be overloaded or hit their limits with reduced resources."
+							"Performance": "Reducing the hardware load improves overall performance. Devices are less likely to be overloaded or hit their limits with reduced resources."
 						}
 					],
 					"GRI": [
@@ -2645,7 +2645,7 @@
 						{
 							"title": "Minified code",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD02-1)",
-							"description": "Remove unnecessary whitespace, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to HTML, CSS, JavaScript, JSON, SVG, and other relevant file types.",
+							"description": "Remove unnecessary white space, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to HTML, CSS, JavaScript, JSON, SVG, and other relevant file types.",
 							"resources": [
 								{
 									"Electricity Intensity of Internet Data Transmission": "https://onlinelibrary.wiley.com/doi/full/10.1111/jiec.12630",
@@ -2666,7 +2666,7 @@
 					"benefits": [
 						{
 							"Conversion": "Faster page speeds improve user experience across the board. This makes users less likely to abandon their journey or search for their information elsewhere.",
-							"Performance": "Less data transferred means reduced loading times. Whitespace itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact."
+							"Performance": "Less data transferred means reduced loading times. White space itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact."
 						}
 					],
 					"GRI": [
@@ -2711,7 +2711,7 @@
 					"effort": "Low",
 					"benefits": [
 						{
-							"Conversion": "Modularizing code can accelerate performance,  improving user experience while reducing the chance of abandonment. This is especially impact for users of low-resource devices, such as handhelds.",
+							"Conversion": "Modularizing code can accelerate performance, improving user experience while reducing the chance of abandonment. This is especially impact for users of low-resource devices, such as handhelds.",
 							"Economic": "Reducing the size of large files will reduce bandwidth expenses for service providers.",
 							"Performance": "Using smaller, modular components allows for more effective caching of commonly those reused components, while loading functions only when required reduces the payload. Unused portions of a larger resource will not be downloaded, which can have a considerable impact."
 						}
@@ -2817,7 +2817,7 @@
 						{
 							"title": "Organize code arrangement",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD05-3)",
-							"description": "Use organization methodology and systems such as DRY or WET to optimize the arrangement and output of your JavaScript and CSS.",
+							"description": "Use organization methodology and systems such as Don't Repeat Yourself (DRY) or Write Everything Twice (WET) to optimize the arrangement and output of your JavaScript and CSS.",
 							"resources": [
 								{
 									"3 software development principles I wish I knew earlier in my career": "https://thetshaped.dev/p/3-software-development-principles",
@@ -3012,7 +3012,7 @@
 					"benefits": [
 						{
 							"Environment": "Replacing heavy tooling and third-party services with lightweight tooling reduces user bandwidth usage and compute impact. It does require learning a new way of doing things or reducing the visibility of impactful features until they are requested. It can significantly reduce a page's overall 'environmental impact, including the data you have no control over. This is especially relevant when calculating Scope 3 emissions.",
-							"Performance": "Self-hosting fully self-contained services, features, and content are more performant by design. They avoid additional server and rendering requests or other complications associated with third-party content. You can  choose to only include the required features , further reducing overall bandwidth usage and associated emissions.",
+							"Performance": "Self-hosting fully self-contained services, features, and content are more performant by design. They avoid additional server and rendering requests or other complications associated with third-party content. You can choose to only include the required features, further reducing overall bandwidth usage and associated emissions.",
 							"Privacy": "Choosing not to embed and automatically load third-party content may be perceived as a privacy benefit by privacy-conscious users, because this reduces opportunities for their user data to be exploited."
 						}
 					],
@@ -3077,7 +3077,7 @@
 								{
 									"Almost, but not quite, entirely unlike": "https://www.htmhell.dev/adventcalendar/2024/7/",
 									"Optional HTML: Everything You Need to Know": "https://meiert.com/blog/optional-html/",
-									"Some HTML is “Optional”": "https://css-tricks.com/some-html-is-optional/",
+									"Some HTML is Optional": "https://css-tricks.com/some-html-is-optional/",
 									"Stop Closing Void Elements": "https://meiert.com/blog/stop-closing-void-elements/",
 									"(Why) Some HTML is \"optional\"": "https://remysharp.com/2019/09/12/why-some-html-is-optional",
 									"You are not required to close your P, LI, IMG, or BR tags in HTML": "https://blog.novalistic.com/archives/2017/08/optional-end-tags-in-html/"
@@ -3275,7 +3275,7 @@
 							"Conversion": "Providing clearly navigable structures and sitemaps ensure search engines are better able to index content.",
 							"Economic": "Enabling quicker visits that complete the user's objective can help to encourage return visits.",
 							"Environment": "Reducing the time people spend searching for the information they want and aiding them on their journey will reduce energy use, including battery drain.",
-							"Social Equity": "Allowing users to achieve  objectives faster reduces resource consumption while potentially enhancing user health and well-being."
+							"Social Equity": "Allowing users to achieve objectives faster reduces resource consumption while potentially enhancing user health and well-being."
 						}
 					],
 					"GRI": [
@@ -3315,7 +3315,7 @@
 						{
 							"title": "Label elements",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD10-2)",
-							"description": "Clearly label and identify required elements to ensure easy recognition for users using assistive technologies. Remove any unnecessary optional elements.",
+							"description": "Clearly label and identify required elements to ensure easy recognition for users using assistive technologies.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 4.10 - UX and UI (Input Format)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -3489,8 +3489,8 @@
 						{
 							"Accessibility": "Having a high contrast version of a site will reduce barriers to entry and time wasted for visually impaired users. Reduced motion can also accommodate other accessibility requirements.",
 							"Conversion": "Delivering better user experience by meeting their preferences can improve conversion and encourage repeat visits.",
-							"Economic": "Using print media queries within stylesheets can reduce users' ink use and paper costs.",
-							"Environment": "Accommodating dark mode when preferred will always be more energy efficient on OLED devices. Similarly, animation and media have a significant impact on CPU and GPU usage, so respecting a prefers reduced motion query will reduce energy consumption. The presence of a monochrome preference query could encourage greater adoption of energy-efficient e-ink devices.  A sustainability-optimized print stylesheet can save both paper and ink output.",
+							"Economic": "Using print media queries within style sheets can reduce users' ink use and paper costs.",
+							"Environment": "Accommodating dark mode when preferred will always be more energy efficient on OLED devices. Similarly, animation and media have a significant impact on CPU and GPU usage, so respecting a prefers reduced motion query will reduce energy consumption. The presence of a monochrome preference query could encourage greater adoption of energy-efficient e-ink devices. A sustainability-optimized print style sheet can save both paper and ink output.",
 							"Performance": "Allowing users to access a reduced-data version of a site could significantly reduce the data transferred and the resulting carbon footprint. This can improve performance and reduce costs for individuals on a metered data plan. Detecting if scripting is disabled and offering alternative content may save wasted effort and improve the performance of a project.",
 							"Social Equity": "Meeting user preferences is a positive shift: You are not telling your users how they should 'experience your content, but following your users' preferences or a device' capabilities and the priority of constituencies."
 						}
@@ -3931,7 +3931,7 @@
 							"Economic": "Including robots.txt and sitemap files helps search engines to discover and index your website. This can lead to more users and potentially more customers. The ads.txt file may reduce advertising fraud and could similarly benefit your business.",
 							"Environment": "Providing files expected by search engines or browsers will reduce loading errors and may improve efficiency in how users find or interact with a site. Plain text requires no rendering. If users or search engines are able to find these files, such as carbon.txt, they can load more quickly and with less CPU/GPU impact than any formatted webpage.",
 							"Performance": "Satisfying requests for expected files improves interactions with search engines or browsers requesting them, while also potentially avoiding additional requests once they are discovered. Plain text files contain no links, no markup, and has a low rendering impact. Including details such as site credits in such a file will reduce data transfer and have a lower rendering footprint.",
-							"Transparency": "Providing a humans.txt file allows you to credit the people involved in the creation process, while security.txt  provides critical points of contact if an issue is discovered. Both increase transparency."
+							"Transparency": "Providing a humans.txt file allows you to credit the people involved in the creation process, while security.txt provides critical points of contact if an issue is discovered. Both increase transparency."
 						}
 					],
 					"GRI": [
@@ -4109,7 +4109,7 @@
 							"Accessibility": "Making assistive technologies a core part of project specifications from the very start and throughout a product or service''s lifecycle improves access for people with disabilities.",
 							"Economic": "Avoiding tooling at risk of overburdening user experience may result in financial savings, especially if tooling has associated maintenance expenses, licensing fees, or subscription costs.",
 							"Environment": "Evaluating long-term technology implications and taking the time to ensure they are optimized and efficiently utilized helps a team measurably reduce the environmental impact of a product or service.",
-							"Performance": "Reducing complexity in your infrastructure will increase developer productivity, while also reducing  overhead. This further reduces emissions.",
+							"Performance": "Reducing complexity in your infrastructure will increase developer productivity, while also reducing overhead. This further reduces emissions.",
 							"Privacy": "Prioritizing security and user privacy helps an organization better comply with current and emerging legislation.",
 							"Security": "Maintaining a software product and restricting your use of third-party solutions to the essential will improve overall security."
 						}
@@ -4888,7 +4888,7 @@
 									"63% of Websites Receive AI Traffic": "https://ahrefs.com/blog/ai-traffic-study/",
 									"AI bots are destroying Open Access": "https://go-to-hellman.blogspot.com/2025/03/ai-bots-are-destroying-open-access.html",
 									"AI crawlers cause Wikimedia Commons bandwidth demands to surge 50%": "https://techcrunch.com/2025/04/02/ai-crawlers-cause-wikimedia-commons-bandwidth-demands-to-surge-50/",
-									"Block the Bots that Feed “AI” Models by Scraping Your Website": "https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/",
+									"Block the Bots that Feed AI Models by Scraping Your Website": "https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/",
 									"Blockin bots": "https://ethanmarcotte.com/wrote/blockin-bots/",
 									"Blocking AI Bots": "https://frontendmasters.com/blog/blocking-ai-bots/",
 									"Bot traffic: What it is and why you should care about it": "https://yoast.com/what-to-know-about-bot-traffic/",
@@ -5295,7 +5295,7 @@
 					"benefits": [
 						{
 							"Economic": "Using a CDN may save money because their data transfer rates are often cheaper than hosting providers.",
-							"Environment": "Using a CDN to host content closer to users lowers network-related carbon emissions while also reducing user device energy use  because they can load content more quickly.",
+							"Environment": "Using a CDN to host content closer to users lowers network-related carbon emissions while also reducing user device energy use because they can load content more quickly.",
 							"Performance": "Using a CDN to locate content closer to users gives them faster access to content."
 						}
 					],
@@ -5912,7 +5912,7 @@
 					"benefits": [
 						{
 							"Accessibility": "Auditing for accessibility can be included as a key part of a digital Life-Cycle Assessment (LCA), provided the key parameters are defined up front and maintained throughout the project to eliminate barriers to access. These parameters can include conformity with WCAG guidance, including manual checks.",
-							"Environment": "Conducting a rigorous LCA can reveal significant opportunities to reduce overall environmental impact through the identification and elimination of variables and vectors of digital emissions such as water and e-waste.",
+							"Environment": "Conducting a rigorous LCA can reveal significant opportunities to reduce overall environmental impact through the identification and elimination of factors and vectors of digital emissions such as water and e-waste.",
 							"Performance": "Including a detailed overview of optimizations in your LCA provides a clear direction to improve sustainability and performance.",
 							"Social Equity": "Including intersectional social metrics in your LCA can provide an opportunity to simultaneously consider and work on issues such as inequality, which also affect sustainability."
 						}
@@ -6087,9 +6087,9 @@
 							]
 						},
 						{
-							"title": "Negative variables",
+							"title": "Negative factors",
 							"testable": "Human-testable",
-							"description": "Anticipate and map potential negative external variables and act to minimize their overall impact.",
+							"description": "Anticipate and map potential negative external factors and act to minimize their overall impact.",
 							"resources": [
 								{
 									"OWASP Top 10 Privacy Risks": "https://owasp.org/www-project-top-10-privacy-risks/",
@@ -7111,7 +7111,7 @@
 						{
 							"title": "Data ownership",
 							"testable": "Human-testable",
-							"description": "Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a user's \"right to be forgotten\" will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.",
+							"description": "Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a user's \"right to be forgotten\" or opt-out will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.",
 							"resources": [
 								{
 									"10 CCPA Compliance Tips For Web Developers": "https://dataoverhaulers.medium.com/10-ccpa-compliance-tips-for-web-developers-1ce8382c7286",
@@ -7387,7 +7387,7 @@
 							"resources": [
 								{
 									"AI crawlers need to be more respectful": "https://about.readthedocs.com/blog/2024/07/ai-crawlers-abuse/",
-									"Block the Bots that Feed “AI” Models by Scraping Your Website": "https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/",
+									"Block the Bots that Feed AI Models by Scraping Your Website": "https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/",
 									"Blockin bots": "https://ethanmarcotte.com/wrote/blockin-bots/",
 									"Blocking AI Bots": "https://frontendmasters.com/blog/blocking-ai-bots/",
 									"Bot traffic: What it is and why you should care about it": "https://yoast.com/what-to-know-about-bot-traffic/",
@@ -7788,7 +7788,7 @@
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.5 - Strategy (Impact Goals)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"How to Say “No” to an Excessive Workload as a Developer": "https://simpleprogrammer.com/developer-workload/",
+									"How to Say No to an Excessive Workload as a Developer": "https://simpleprogrammer.com/developer-workload/",
 									"Overcoming Overworking": "https://www.kornferry.com/careers/career-advice/overcoming-overworking-15-tips-for-taking-back-your-life",
 									"Overworked employees: 15 Tips to follow as a HR leader in 2024": "https://www.culturemonkey.io/employee-engagement/overworked-employees/",
 									"Stop Glamorizing Overwork and Prevent Software Engineer Burnout": "https://www.allstacks.com/blog/stop-glamorizing-overwork-and-prevent-software-engineer-burnout",
