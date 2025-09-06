@@ -16,12 +16,12 @@
 					"id": "1",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#display-any-factors-that-have-a-negative-impact-on-your-project",
 					"guideline": "Display any factors that have a negative impact on your project",
-					"subheading": "Identify, track, and publicly disclose negative External factors.",
+					"subheading": "Identify, track, and publicly disclose negative external factors.",
 					"criteria": [
 						{
 							"title": "External factors",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX01-1)",
-							"description": "Identify existing or potential negative External factors affecting a project. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.",
+							"description": "Identify existing or potential negative external factors affecting a project. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.6 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -3330,7 +3330,7 @@
 						{
 							"title": "Allow clipboard",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD10-3)",
-							"description": "Always allow the copying and pasting of content (including passwords) from External factorsources.",
+							"description": "Always allow the copying and pasting of content (including passwords) from external sources.",
 							"resources": [
 								{
 									"Authentication Cheat Sheet": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
@@ -6089,7 +6089,7 @@
 						{
 							"title": "Negative s",
 							"testable": "Human-testable",
-							"description": "Anticipate and map potential negative External factors and act to minimize their overall impact.",
+							"description": "Anticipate and map potential negative external factors and act to minimize their overall impact.",
 							"resources": [
 								{
 									"OWASP Top 10 Privacy Risks": "https://owasp.org/www-project-top-10-privacy-risks/",
