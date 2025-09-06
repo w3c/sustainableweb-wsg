@@ -15,13 +15,13 @@
 				{
 					"id": "1",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#display-any-s-that-have-a-negative-impact-on-your-project",
-					"guideline": "Display any s that have a negative impact on your project",
+					"guideline": "Display any variables that have a negative impact on your project",
 					"subheading": "Identify, track, and publicly disclose negative external s.",
 					"criteria": [
 						{
 							"title": "External s",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX01-1)",
-							"description": "Identify existing or potential negative external s affecting a project. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.",
+							"description": "Identify existing or potential negative external variables affecting a project. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.6 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -57,7 +57,7 @@
 							"Accessibility": "Understanding the audience can identify potential improvements that go beyond basic inclusive design practices.",
 							"Environment": "Constructing a plan to reduce emissions enables improvement over time.",
 							"Privacy": "Having an overview of components makes it easier to identify potential data protection risks.",
-							"Social Equity": "Auditing s can reveal factors not commonly understood or covered in established best practices, enabling better support for underrepresented groups."
+							"Social Equity": "Auditing variables can reveal factors not commonly understood or covered in established best practices, enabling better support for underrepresented groups."
 						}
 					],
 					"GRI": [
@@ -5912,7 +5912,7 @@
 					"benefits": [
 						{
 							"Accessibility": "Auditing for accessibility can be included as a key part of a digital Life-Cycle Assessment (LCA), provided the key parameters are defined up front and maintained throughout the project to eliminate barriers to access. These parameters can include conformity with WCAG guidance, including manual checks.",
-							"Environment": "Conducting a rigorous LCA can reveal significant opportunities to reduce overall environmental impact through the identification and elimination of s and vectors of digital emissions such as water and e-waste.",
+							"Environment": "Conducting a rigorous LCA can reveal significant opportunities to reduce overall environmental impact through the identification and elimination of variables and vectors of digital emissions such as water and e-waste.",
 							"Performance": "Including a detailed overview of optimizations in your LCA provides a clear direction to improve sustainability and performance.",
 							"Social Equity": "Including intersectional social metrics in your LCA can provide an opportunity to simultaneously consider and work on issues such as inequality, which also affect sustainability."
 						}
@@ -6089,7 +6089,7 @@
 						{
 							"title": "Negative s",
 							"testable": "Human-testable",
-							"description": "Anticipate and map potential negative external s and act to minimize their overall impact.",
+							"description": "Anticipate and map potential negative external variables and act to minimize their overall impact.",
 							"resources": [
 								{
 									"OWASP Top 10 Privacy Risks": "https://owasp.org/www-project-top-10-privacy-risks/",

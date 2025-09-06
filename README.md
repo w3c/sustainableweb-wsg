@@ -153,7 +153,7 @@ These documents are reachable via GitHub pages and can be queried using JavaScri
 
 **WSG** (*guidelines.json*)
 ```js
-category[1].guidelines[0].guideline = "Display any s that have a negative impact on your project"
+category[1].guidelines[0].guideline = "Display any variables that have a negative impact on your project"
 ```
 **STAR** (*star.json*)
 ```js
