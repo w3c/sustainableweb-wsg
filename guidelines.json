@@ -16,6 +16,7 @@
 					"id": "1",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#display-any-variables-that-have-a-negative-impact-on-your-project",
 					"guideline": "Display any variables that have a negative impact on your project",
+					"subheading": "Identify, track, and publicly disclose negative external variables.",
 					"criteria": [
 						{
 							"title": "External variables",
@@ -49,7 +50,6 @@
 							]
 						}
 					],
-					"intent": "Many variables can impact the user experience, and a bunch of these can impact how sustainable your website will be. Attempting to identify where you can make a difference to the user and give them a more sustainable experience will be beneficial.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -74,6 +74,7 @@
 					"id": "2",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#understand-user-requirements-or-constraints-resolving-barriers-to-access",
 					"guideline": "Understand user requirements or constraints, resolving barriers to access",
+          "subheading": "Understand the audience and their requirements, remove their constraints and barriers, and give them an equal role in decision making.",
 					"criteria": [
 						{
 							"title": "Audience evaluation",
@@ -199,7 +200,6 @@
 							]
 						}
 					],
-					"intent": "When creating a product or service, identifying your target audience through user-research, analytics, data collected using ethical anonymous methods, or feedback from and with users is important in being able to create a customized service for and with them that is tailor-made for their specific preferences, adapted for any needs they may have, and particularly useful in helping a website or application evolve its service to meet sustainability targets.",
 					"impact": "Medium",
 					"effort": "High",
 					"benefits": [
@@ -227,6 +227,7 @@
 					"id": "3",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-for-non-users",
 					"guideline": "Understand the impact for non-users",
+					"subheading": "Account for non-users who may be indirectly affected by the environmental impact of the project.",
 					"criteria": [
 						{
 							"title": "Non-user impact",
@@ -251,7 +252,6 @@
 							]
 						}
 					],
-					"intent": "If you provide physical goods or services, you may also have to account for the sustainability impact of delivery services. This can often be tricky, but courier companies may provide useful tooling to help you identify emissions data for routing.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -276,6 +276,7 @@
 					"id": "4",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#integrate-sustainability-into-every-stage-of-the-ideation-process",
 					"guideline": "Integrate sustainability into every stage of the ideation process",
+					"subheading": "Optimize materials created at every stage of the process and involve users in the creation process.",
 					"criteria": [
 						{
 							"title": "Sustainable brand development",
@@ -328,7 +329,6 @@
 							]
 						}
 					],
-					"intent": "While some things require the use of electricity, during the early ideation phase you could consider wireframing or rapid prototyping (using paper) among other offline tools to reduce energy consumption. Even the electronic versions of these may have a lower carbon cost than committing to building a full-blown experience for each idea.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -351,6 +351,7 @@
 					"id": "5",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#find-ways-to-resolve-any-affected-party-issues-prior-to-implementation",
 					"guideline": "Find ways to resolve any affected party issues prior to implementation",
+					"subheading": "Consider the needs of and impact on users, the planet, and other affected parties.",
 					"criteria": [
 						{
 							"title": "Human-centered ideation",
@@ -384,7 +385,6 @@
 							]
 						}
 					],
-					"intent": "Brainstorming allows you to flush out ideas before you commit to pursuing a path. Being considerate of not just your users but other individuals who may be affected by your product or service (including non-humans, like the environment!) is a useful practical exercise as it may influence your decisions in how you scope your project.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -408,6 +408,7 @@
 					"id": "6",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys",
 					"guideline": "Minimize non-essential content, interactivity, or journeys",
+					"subheading": "Use distraction and clutter-free design, showing the visitor only what they need without interruptions or wasted resource consumption.",
 					"criteria": [
 						{
 							"title": "Efficient paths",
@@ -502,7 +503,6 @@
 							]
 						}
 					],
-					"intent": "When providing the option to download, save, print, or access anything online, defaulting to the most lightweight, least featureful version will reduce emissions through passive browsing; with non-essential information removed from the screen either to be shown when it's required or eliminated.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -530,6 +530,7 @@
 					"id": "7",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-decorative-design-with-care",
 					"guideline": "Use decorative design with care",
+					"subheading": "Use decorative design only when it will enhance experiences rather than distracting or detracting from an interface.",
 					"criteria": [
 						{
 							"title": "Decorative design",
@@ -556,7 +557,6 @@
 							]
 						}
 					],
-					"intent": "It's great to have a pretty-looking website or application but to ensure a sustainable design, it's important to avoid cluttering up the interface with too many visuals (which aren't necessary to the content). Keeping a clean design will reduce website rendering, and thereby emissions.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -581,6 +581,7 @@
 					"id": "8",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-wayfinding-are-well-structured",
 					"guideline": "Ensure that navigation and wayfinding are well-structured",
+					"subheading": "Provide good information architecture that signposts visitors to what they need, both human and machine, so they can reach their destination as efficiently as possible.",
 					"criteria": [
 						{
 							"title": "Navigation and search",
@@ -628,7 +629,6 @@
 							]
 						}
 					],
-					"intent": "Information architecture is a central part of the Web development process, and how you structure a website ensures that people can way-find your content easily. Having appropriately marked-up links within your product or service allows users, search engines, and social networks to identify key information quickly.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -653,6 +653,7 @@
 					"id": "9",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#design-to-assist-and-not-to-distract",
 					"guideline": "Design to assist and not to distract",
+					"subheading": "Provide engagement that keeps the visitor's focus where it needs to be, avoiding anything that will either reduce efficiency or artificially prolong engagement.",
 					"criteria": [
 						{
 							"title": "User attention",
@@ -711,7 +712,6 @@
 							]
 						}
 					],
-					"intent": "Time is precious, wasting a user's will cause frustration and lead to abandonment or resentment. Additionally, the more time a user spends in front of a screen, the more energy they utilize. As such, throwing stuff in front of the user vying for their attention might sound like good business (even though we know due to banner blindness it rarely works), but it mostly damages the environment and dissuades the user.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -737,6 +737,7 @@
 					"id": "10",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-established-design-patterns-and-appropriate-components",
 					"guideline": "Use established design patterns and appropriate components",
+					"subheading": "Use established and recognizable patterns to increase the efficiency of the user journey.",
 					"criteria": [
 						{
 							"title": "Design patterns",
@@ -762,7 +763,6 @@
 							]
 						}
 					],
-					"intent": "Users can identify patterns fairly easily, and they like browsing websites and apps and feeling as if they know what they are dealing with. As such, focusing your efforts on producing a product or service that is clean and has key components in easy-to-recognize locations (and visuals) will allow faster user experiences and fewer emissions.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -786,6 +786,7 @@
 					"id": "11",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive",
 					"guideline": "Avoid being manipulative or deceptive",
+					"subheading": "Avoid using patterns, content, tools, or techniques that may artificially manipulate or deceive the visitor and waste energy.",
 					"criteria": [
 						{
 							"title": "Deceptive design patterns",
@@ -886,7 +887,6 @@
 							]
 						}
 					],
-					"intent": "Manipulating the user into doing things you want them to is a short-term gain, long-term loss tactic tool. It's ethically bad, unsustainable, and should be avoided at all costs.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -912,6 +912,7 @@
 					"id": "12",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#make-deliverables-understandable-and-reusable",
 					"guideline": "Make deliverables understandable and reusable",
+					"subheading": "Create well documented deliverables so that future users can find and make use of them without requiring assistance or expending unnecessary time and resources.",
 					"criteria": [
 						{
 							"title": "Reusability",
@@ -965,7 +966,6 @@
 							]
 						}
 					],
-					"intent": "Everything produced by designers, developers, writers, and those involved with a project should be in an open format, well maintained, and curated in a common format (so everyone is working from the same model).",
 					"impact": "Medium",
 					"effort": "High",
 					"benefits": [
@@ -989,6 +989,7 @@
 					"id": "13",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-for-interface-consistency",
 					"guideline": "Use a design system for interface consistency",
+					"subheading": "Keep the components of the project as consistent and clear as possible by using a design system to organize reusable features.",
 					"criteria": [
 						{
 							"title": "Design system",
@@ -1023,7 +1024,6 @@
 							]
 						}
 					],
-					"intent": "Design systems allow common components and patterns to be formalized and managed within a website or application. By using such a tool, designers and developers can avoid reinventing existing tooling and thereby reduce wasted time (and emissions).",
 					"impact": "Low",
 					"effort": "Medium",
 					"benefits": [
@@ -1049,6 +1049,7 @@
 					"id": "14",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-clear-inclusive-content-with-purpose",
 					"guideline": "Provide clear, inclusive content with purpose",
+					"subheading": "Provide content that meets the needs of the audience, ensuring it is formatted for readability and incorporating SEO for visibility.",
 					"criteria": [
 						{
 							"title": "Clear content",
@@ -1113,7 +1114,6 @@
 							]
 						}
 					],
-					"intent": "Everyone should be able to understand what you've written without wasting time staring at a screen or jumping from page to page looking for answers, whether they have accessibility requirements or not. This also means avoiding using technical language (without explanations) and including enough information to help direct people (and search engines) from page to page.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -1140,6 +1140,7 @@
 					"id": "15",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability",
 					"guideline": "Optimize images for sustainability",
+					"subheading": "Ensure images, if required, are optimized, correctly formatted, and sized, with lazy loading as appropriate, and are managed effectively.",
 					"criteria": [
 						{
 							"title": "Need for images",
@@ -1265,7 +1266,6 @@
 							]
 						}
 					],
-					"intent": "Of all the data that comprises the largest over-the-wire transfer rates within the average website or application, images are usually those that are responsible due to their quantity and usefulness. As such, doing all you can to reduce their size and unnecessary loading will be beneficial for sustainability.",
 					"impact": "High",
 					"effort": "Low",
 					"benefits": [
@@ -1291,6 +1291,7 @@
 					"id": "16",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability",
 					"guideline": "Optimize media for sustainability",
+					"subheading": "Ensure media, if required, are optimized, correctly formatted, and sized, with deferred loading as appropriate, and are managed effectively.",
 					"criteria": [
 						{
 							"title": "Need for media",
@@ -1395,7 +1396,6 @@
 							]
 						}
 					],
-					"intent": "Video and audio-heavy websites are often those that can have significant sustainability costs in terms of storage and carbon intensity for viewers who have to process the media with their devices to watch them (draining batteries). Optimizing such assets as much as possible is critical for a sustainable product or service.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -1420,6 +1420,7 @@
 					"id": "17",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-animation-is-proportionate-and-easy-to-control",
 					"guideline": "Ensure animation is proportionate and easy to control",
+					"subheading": "Ensure any animation deemed necessary is not overdone and that the user can control its ability to run.",
 					"criteria": [
 						{
 							"title": "Need for animation",
@@ -1472,7 +1473,6 @@
 							]
 						}
 					],
-					"intent": "Animation can be both CPU and GPU-intensive and have implications for accessibility. While visually appealing and useful in certain situations, care and attention should be taken when considering the use of a high emissions technology.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -1497,6 +1497,7 @@
 					"id": "18",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-optimized-and-appropriate-web-typography",
 					"guideline": "Use optimized and appropriate web typography",
+					"subheading": "Provide custom fonts in a highly optimized and correct format, but with a preference for pre-installed typefaces where possible.",
 					"criteria": [
 						{
 							"title": "Pre-installed typefaces",
@@ -1545,7 +1546,6 @@
 							]
 						}
 					],
-					"intent": "Since the advent of the modern web, the ability to include embedded fonts and provide a more customized experience has seen their use explode. They aren't always the most performant option (which poses emissions hazards) and come with a few issues such as Flash Of Unstyled Content (FOUC) / Flash Of Unstyled Text (FOUT) which should be addressed.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -1570,6 +1570,7 @@
 					"id": "19",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#offer-suitable-alternatives-for-every-format-used",
 					"guideline": "Offer suitable alternatives for every format used",
+					"subheading": "Integrate fallbacks so that if something cannot load or is not compatible, there is an accessible alternative to ensure equal access to the content.",
 					"criteria": [
 						{
 							"title": "Open formats",
@@ -1656,7 +1657,6 @@
 							]
 						}
 					],
-					"intent": "Media, images, fonts, and documents enrich the Internet. The problem is that people may not want to watch a video, listen to an audio file, look at an image, or use a specific application. By providing alternative formats to anything you embed, you ensure the widest possible audience can benefit from it (and reduced carbon output will occur as the alternative text will induce less consumer hardware thrashing than its rich media alternative).",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -1684,6 +1684,7 @@
 					"id": "20",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-accessible-user-friendly-minimal-web-forms",
 					"guideline": "Provide accessible, user-friendly, minimal web forms",
+					"subheading": "Ensure forms are as minimalistic and friction-free as possible, reducing the impact of submitting data.",
 					"criteria": [
 						{
 							"title": "Simple forms",
@@ -1725,7 +1726,6 @@
 							]
 						}
 					],
-					"intent": "Understandably, businesses want to know more about their customers, but a key part of sustainability is being ethical towards users and as such, the right to privacy is considered paramount. Don't demand information when it's not required and not only will this help users complete transactions quicker (reducing emissions), it will help with legal compliance such as GDPR.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -1751,6 +1751,7 @@
 					"id": "21",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#consider-the-experience-in-non-visual-browsers-and-interfaces",
 					"guideline": "Consider the experience in non-visual browsers and interfaces",
+					"subheading": "Ensure visitors who access your content using non-visual methods have an equal experience.",
 					"criteria": [
 						{
 							"title": "Alternative interactions",
@@ -1770,7 +1771,6 @@
 							]
 						}
 					],
-					"intent": "Certain users such as those with visual disabilities or speech agents (like Amazon Alexa) may rely on an experience without the graphical part of an interface. As such, they potentially may use less data or may have a different carbon impact on the Web.",
 					"impact": "Low",
 					"effort": "Medium",
 					"benefits": [
@@ -1795,6 +1795,7 @@
 					"id": "22",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-useful-notifications",
 					"guideline": "Provide useful notifications",
+					"subheading": "Ensure any required notifications or alerts are clearly explained before activation, and that the user can both control and change them.",
 					"criteria": [
 						{
 							"title": "Need for notification",
@@ -1848,7 +1849,6 @@
 							]
 						}
 					],
-					"intent": "Notifications whether through the browser or messaging can be potentially useful, but only used in moderation. Spam and the lack of control are contributing sources of Internet emissions and as such, businesses should aim to reduce such actions.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -1873,6 +1873,7 @@
 					"id": "23",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-and-physical-documents",
 					"guideline": "Reduce the impact of downloadable and physical documents",
+					"subheading": "Reduce the need for physical documents as much as possible by allowing the saving of well-labeled, optimized digital downloads and having a print stylesheet.",
 					"criteria": [
 						{
 							"title": "Printed documents",
@@ -1947,7 +1948,6 @@
 							]
 						}
 					],
-					"intent": "Printing or downloading documents can both be a net benefit and a net cost in terms of sustainability as it can reduce repeat requests to websites, but the act of printing (especially when unoptimized) wastes valuable ink and paper.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -1971,6 +1971,7 @@
 					"id": "24",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#get-users-and-contributors-invested-in-the-project",
 					"guideline": "Get users and contributors invested in the project",
+					"subheading": "Document how you test new features with real users and validate the results, ensuring resources and training are provided to maintain the project's viability.",
 					"criteria": [
 						{
 							"title": "New features and perspectives",
@@ -2052,7 +2053,6 @@
 							]
 						}
 					],
-					"intent": "The organization has policies and practices in place to incorporate stakeholder-focused testing and prototyping into its product development cycles.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -2076,6 +2076,7 @@
 					"id": "25",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-requiring-resolution",
 					"guideline": "Audit and test for bugs or issues requiring resolution",
+					"subheading": "Regularly audit for issues or problems, running tests at regular intervals to ensure stability of the project.",
 					"criteria": [
 						{
 							"title": "Regular audit",
@@ -2143,7 +2144,6 @@
 							]
 						}
 					],
-					"intent": "Products and services at any stage of a project can suffer bugs or issues that need to be resolved. Fixing these regressions also generates additional development and environmental costs. By resolving such issues, you can reduce the chances of a user giving up on a session and thereby reduce the amount of wasted energy your website emits overall.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -2168,6 +2168,7 @@
 					"id": "26",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#measure-and-test-for-performance",
 					"guideline": "Measure and test for performance",
+					"subheading": "Check for performance issues in both simulated and real-world scenarios while also accounting for compliance issues.",
 					"criteria": [
 						{
 							"title": "Performance testing",
@@ -2236,7 +2237,6 @@
 							]
 						}
 					],
-					"intent": "Try to ethically measure how efficient a user's experience is by analyzing the performance of the website or application and how it has been constructed, by doing so you might be able to reduce any issues they may have encountered previously, decrease loading times, and reduce the burden of loading unnecessary pages.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -2262,6 +2262,7 @@
 					"id": "27",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#evaluate-feature-use-value-and-impact",
 					"guideline": "Evaluate feature use, value, and impact",
+					"subheading": "Factor the ways people use the project into your decision making and consider how this can be optimized for both people and the planet.",
 					"criteria": [
 						{
 							"title": "Usage changes",
@@ -2284,7 +2285,6 @@
 							]
 						}
 					],
-					"intent": "Occasionally, you may find that features you have developed for a product or service have little to no active users or could be better implemented to bring better value. Undertaking research to identify redundancy allows you to optimize your codebase (and reduce emissions).",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -2309,6 +2309,7 @@
 					"id": "28",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#verify-that-real-world-users-can-successfully-use-your-work",
 					"guideline": "Verify that real-world users can successfully use your work",
+					"subheading": "Run usability tests to determine if the impact of the project can be further iterated to reduce friction points.",
 					"criteria": [
 						{
 							"title": "Usability testing",
@@ -2336,7 +2337,6 @@
 							]
 						}
 					],
-					"intent": "Researching a product or service and how it is used over time allows you to iterate and ensure the features and functionality being offered match how user-needs change over time. Doing so will help you reduce code redundancy further and reduce emissions through optimization.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -2359,6 +2359,7 @@
 					"id": "29",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#regularly-test-and-maintain-compatibility",
 					"guideline": "Regularly test and maintain compatibility",
+					"subheading": "Produce a regularly updated compatibility policy that details support levels, scenarios tested against, and technology used to benefit users.",
 					"criteria": [
 						{
 							"title": "Compatibility policy",
@@ -2524,7 +2525,6 @@
 							]
 						}
 					],
-					"intent": "Compatibility is a critical part of the sustainability mindset and should be prioritized through all products and services. If individuals wish to use older devices (or cannot upgrade due to cost) or do not wish to upgrade as frequently, it will reduce the amount of e-waste that enters the system. If something doesn't work, it's also likely to result in users suffering a wasted effort, potentially leading to refused access to your service (and thereby emitting further emissions).",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -2558,6 +2558,7 @@
 					"id": "1",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#set-goals-based-on-performance-and-energy-impact",
 					"guideline": "Set goals based on performance and energy impact",
+					"subheading": "Account for the difference in energy intensity that different types of content may have on a project and set goals based on what you would like to achieve.",
 					"criteria": [
 						{
 							"title": "Performance goals",
@@ -2616,7 +2617,6 @@
 							]
 						}
 					],
-					"intent": "Performance is a key part of the sustainability mindset as reductions in loading times can have a considerable impact on energy loads within CPU, GPU, RAM, and hard drive caching (among other variables), as such ensuring a performant product is essential.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -2640,6 +2640,7 @@
 					"id": "2",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-or-redundant-information",
 					"guideline": "Remove unnecessary or redundant information",
+					"subheading": "Remove redundant characters from code to reduce the amount of data being stored and transferred to devices.",
 					"criteria": [
 						{
 							"title": "Minified code",
@@ -2660,7 +2661,6 @@
 							]
 						}
 					],
-					"intent": "Minifying code is essential for creating efficient, performant, and sustainable web applications. Smaller codebases translate to faster load times, reduced bandwidth consumption, and easier maintenance. This principle applies to both front-end (client-side) and back-end (server-side) code, though the specific techniques may differ. Code should not be minified in not-for-production developer visible situations.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -2684,6 +2684,7 @@
 					"id": "3",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components",
 					"guideline": "Modularize bandwidth-heavy components",
+					"subheading": "Break down large components into smaller, self-contained pieces that can be requested only when required to save bandwidth.",
 					"criteria": [
 						{
 							"title": "Code splitting",
@@ -2706,7 +2707,6 @@
 							]
 						}
 					],
-					"intent": "This approach is applicable across various programming languages and platforms, both client-side and server-side. By modularizing code and assets, you can ensure faster load times, better resource management, reduce redundancy, and improved scalability for your application. Additionally, reducing unnecessary data transfer and optimizing load times can contribute to more energy-efficient operations, helping to lower the environmental impact, improve the UX of your web application or service.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -2731,6 +2731,7 @@
 					"id": "4",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-code",
 					"guideline": "Remove unnecessary code",
+					"subheading": "Clear out dead or unused code as it builds up in a project to reduce the amount of wasted data being transferred.",
 					"criteria": [
 						{
 							"title": "Remove redundancy",
@@ -2756,7 +2757,6 @@
 							]
 						}
 					],
-					"intent": "Often when coding, projects can accumulate clutter and functions that are no longer used (due to newer, more effective features being developed). By utilizing tree shaking techniques, all the \"dead wood\" will be automatically dropped upon compilation, reducing a file's size.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -2781,6 +2781,7 @@
 					"id": "5",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-redundancy-and-duplication-in-code",
 					"guideline": "Avoid redundancy and duplication in code",
+					"subheading": "Improve solutions rather than recreating them, using good organization strategies to simplify code where possible and reduce redundancy.",
 					"criteria": [
 						{
 							"title": "Remove or simplify",
@@ -2836,7 +2837,6 @@
 							]
 						}
 					],
-					"intent": "Redundancy is the enemy of sustainability. Having systems in place to ensure that everyone can work from established patterns, the website or application remains clean and easy to use, and iteration over redesign is firmly in the mindset that will help promote sustainable practices. It's also worth being wary of abstracting code too early (see AHA methodology) or incorrectly, as while good abstractions can be more efficient, poor ones can waste effort and introduce complexity, bloat, and bugs to your codebase which can lead to emissions.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -2862,6 +2862,7 @@
 					"id": "6",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#give-third-parties-the-same-priority-as-first-parties-during-assessment",
 					"guideline": "Give third parties the same priority as first parties during assessment",
+					"subheading": "Avoid using large third-party libraries and frameworks where possible, and where these must be used, self host, defer loading, allow the user to object, and provide alternatives.",
 					"criteria": [
 						{
 							"title": "Assess and reduce",
@@ -3006,7 +3007,6 @@
 							]
 						}
 					],
-					"intent": "Whether advertising, chatbots, maps, or other tooling; outsourcing your service to a third-party provider may be potentially useful in certain scenarios in reducing design or development time and redundancy (which can be a win for sustainability). Third-party services, however, come with issues, such as the lack of control over emissions, and they often can potentially suffer from latency and large file sizes which may not exist if you self-hosted or created the material.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -3031,6 +3031,7 @@
 					"id": "7",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-code-follows-good-semantic-practices",
 					"guideline": "Ensure code follows good semantic practices",
+					"subheading": "Use semantic markup free of optional or non-standard code, only using custom solutions when native ones are insufficient.",
 					"criteria": [
 						{
 							"title": "Semantic code",
@@ -3117,7 +3118,6 @@
 							]
 						}
 					],
-					"intent": "HTML semantics are important. They don't just play a key role in making the Web look the way it does, they have a function in accessibility, SEO, and even in sustainability. Ensuring that you markup your content correctly and avoid cluttering your markup wastefully will reduce emissions.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -3144,6 +3144,7 @@
 					"id": "8",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#defer-the-loading-of-non-critical-resources",
 					"guideline": "Defer the loading of non-critical resources",
+					"subheading": "Avoid render-blocking slowdowns by asynchronously loading, deferring, or prioritizing external resources as appropriate.",
 					"criteria": [
 						{
 							"title": "Asynchronous code",
@@ -3189,7 +3190,6 @@
 							]
 						}
 					],
-					"intent": "The ability to work around render-blocking issues is a great addition to the web. From deferring code, to lazy loading, to asynchronous loading, each has its use case and each can have the potential to reduce or give performance benefits to a website or application.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -3214,6 +3214,7 @@
 					"id": "9",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-information-to-help-understand-the-usefulness-of-a-page",
 					"guideline": "Provide information to help understand the usefulness of a page",
+					"subheading": "Ensure that search engines, as well as accessibility tooling, can access a project to reduce wasted journeys.",
 					"criteria": [
 						{
 							"title": "Metadata and microdata",
@@ -3266,7 +3267,6 @@
 							]
 						}
 					],
-					"intent": "Helping users avoid wasting their time can reduce the number of emissions from time spent in front of a screen. As such, by using existing technologies like metadata, robots.txt files, and accessibility-friendly aids within the page, improvements to the experience can be made.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -3293,6 +3293,7 @@
 					"id": "10",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#validate-form-errors-and-account-for-tooling-requirements",
 					"guideline": "Validate form errors and account for tooling requirements",
+					"subheading": "Label forms correctly while also checking for errors both prior to and during submission to reduce the impact of erroneous data entry.",
 					"criteria": [
 						{
 							"title": "Error validation",
@@ -3342,7 +3343,6 @@
 							]
 						}
 					],
-					"intent": "Entering information on a page can lead to problems. If a user makes a mistake along the way, it makes good sense to have systems in place to guide them through resolving the typos, confusion, and glitches that can occur which lead to abandonment and extra emissions through wasted device usage.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -3367,6 +3367,7 @@
 					"id": "11",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#structure-metadata-for-machine-readability",
 					"guideline": "Structure metadata for machine readability",
+					"subheading": "Include the required metadata and structured microdata to increase the visibility and findability of resources.",
 					"criteria": [
 						{
 							"title": "Required elements",
@@ -3415,7 +3416,6 @@
 							]
 						}
 					],
-					"intent": "Search engines and social networks make use of the content within a website, by ensuring that your metadata is correctly marked up, you can reduce emissions by improving way-finding.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -3440,6 +3440,7 @@
 					"id": "12",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-sustainability-beneficial-user-preference-media-queries",
 					"guideline": "Use sustainability beneficial user preference media queries",
+					"subheading": "Use sustainable media queries, such as dark mode and scripting media queries, to customize an interface to suit user preferences and reduce emissions.",
 					"criteria": [
 						{
 							"title": "Media and preference queries",
@@ -3482,7 +3483,6 @@
 							]
 						}
 					],
-					"intent": "Sustainability benefits can be generated in numerous ways, by making sure that your website adheres to the requests made by a browser for specific conditions to be taken into account (such as CSS media and preference queries), you can unlock benefits for the user, and as a by-product reduce your emissions. It's worth noting that the introduction of user preferences and APIs has increased the risk of user fingerprinting and privacy issues.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -3510,6 +3510,7 @@
 					"id": "13",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-layouts-work-for-different-devices-and-requirements",
 					"guideline": "Ensure layouts work for different devices and requirements",
+					"subheading": "Use a mix of carbon-aware design techniques to adapt to different layouts, different modes of interaction, and also progressively enhance content.",
 					"criteria": [
 						{
 							"title": "Device-adaptable",
@@ -3612,7 +3613,6 @@
 							]
 						}
 					],
-					"intent": "Users approach our products and services on a wide variety of devices these days. Ensuring that your device works on the widest range of devices and differing screen resolutions ensures that you will have a compatible website or application. A Device-Adaptable approach goal is to provide a consistent, adaptable experience across a full range of devices by considering all screen sizes and resolutions from the start, rather than primarily focusing on mobile scaling upward.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -3638,6 +3638,7 @@
 					"id": "14",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-standards-based-javascript-and-apis",
 					"guideline": "Use Standards-based JavaScript and APIs",
+					"subheading": "Use JavaScript in an energy-efficient and accessible way, only using APIs and making external calls when this enhances a project's sustainability.",
 					"criteria": [
 						{
 							"title": "Sustainable JavaScript",
@@ -3704,7 +3705,6 @@
 							]
 						}
 					],
-					"intent": "When new best practices or if beneficial scripting guidance exists that will improve the user experience, following it should be of the highest priority (only using scripts ethically should be promoted).",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -3731,6 +3731,7 @@
 					"id": "15",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-code-is-secure",
 					"guideline": "Ensure that your code is secure",
+					"subheading": "Regularly check code for exploitable security issues that could affect both users and hosting infrastructure.",
 					"criteria": [
 						{
 							"title": "Code security",
@@ -3763,7 +3764,6 @@
 							]
 						}
 					],
-					"intent": "The dangers of scripting are well known, and vulnerabilities are discovered with increasing regularity. As such, it's of ethical benefit for authors to ensure all code used regularly passes security processes.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -3788,6 +3788,7 @@
 					"id": "16",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-dependencies-appropriately-and-ensure-maintenance",
 					"guideline": "Use dependencies appropriately and ensure maintenance",
+					"subheading": "Use libraries and frameworks only where necessary, when vanilla code or smaller packages are inappropriate for the use case, and they are kept up to date.",
 					"criteria": [
 						{
 							"title": "Dependency management",
@@ -3849,7 +3850,6 @@
 							]
 						}
 					],
-					"intent": "While JavaScript may not cause the most website bloat, it can cause very high emissions in terms of CPU load due to the rendering process, thereby it makes sense to consider the use of dependencies and third-party code carefully.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -3874,6 +3874,7 @@
 					"id": "17",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files",
 					"guideline": "Include expected and beneficial files",
+					"subheading": "Always provide expected files and optionally offer environmentally or otherwise beneficial files to enhance the project.",
 					"criteria": [
 						{
 							"title": "Expected files",
@@ -3921,7 +3922,6 @@
 							]
 						}
 					],
-					"intent": "Websites should include a range of expected and standard beneficial files to improve search engine optimization, user experience, transparency, and overall site health. Search engines and browsers regularly request these files by default. If they don't exist, this leads to unnecessary requests, potential errors, and increased emissions. Including these files avoids these issues while also providing SEO, user experience, and other benefits. They each have a low carbon footprint, so while they do create emissions, it's worth including them for the benefits they provide.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -3949,6 +3949,7 @@
 					"id": "18",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-using-deprecated-proprietary-or-outdated-code",
 					"guideline": "Avoid using deprecated, proprietary, or outdated code",
+					"subheading": "Stick to the latest version of language specifications when coding unless you have a documented need to do otherwise.",
 					"criteria": [
 						{
 							"title": "Preferred code",
@@ -3979,7 +3980,6 @@
 							]
 						}
 					],
-					"intent": "The web is full of outdated or deprecated formats and web standards, and proprietary (non-standard custom) features that have been superseded. By adhering to up-to-date and widely recognized formats and web standards, developers can ensure better compatibility, user experience, and lower environmental impact.",
 					"impact": "Low",
 					"effort": "Medium",
 					"benefits": [
@@ -4004,6 +4004,7 @@
 					"id": "19",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-for-your-service",
 					"guideline": "Use the most efficient solution for your service",
+					"subheading": "Identify the project requirements, use the most efficient approach, aim for static over dynamic where possible, and consider the impact of extensions and components.",
 					"criteria": [
 						{
 							"title": "Identify requirements",
@@ -4101,7 +4102,6 @@
 							]
 						}
 					],
-					"intent": "Every product or service is different, and each will require a different set of tooling to accomplish the most sustainable result. Deciding whether to go with a bulky framework, Static Site Generator (SSG), or a Content Management System (CMS) takes careful planning based on client or service requirements.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -4128,6 +4128,7 @@
 					"id": "20",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version",
 					"guideline": "Use the latest stable language version",
+					"subheading": "Consider the environmental impact of the chosen syntax language, while always ensuring you use the latest build of any language or framework.",
 					"criteria": [
 						{
 							"title": "Versioning",
@@ -4162,7 +4163,6 @@
 							]
 						}
 					],
-					"intent": "Languages evolve regularly, and it's important for security and performance reasons to keep on top of the technology stack you are using. It's also important to consider whether the language you are using is appropriate or optimized for the task you wish to use it for.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -4187,6 +4187,7 @@
 					"id": "21",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#take-advantage-of-native-features-and-functionality",
 					"guideline": "Take advantage of native features and functionality",
+					"subheading": "Use native features and functionality that exist within languages before constructing new ones that may not be as optimized.",
 					"criteria": [
 						{
 							"title": "Native over custom",
@@ -4206,7 +4207,6 @@
 							]
 						}
 					],
-					"intent": "Ensuring that your code is free of redundancy by using pre-existing functionality provided by the web browser is important as it will help you to reduce the amount of time wasted, re-creating the same components, this offers obvious sustainability benefits in terms of time in front of the screen.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -4231,6 +4231,7 @@
 					"id": "22",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#reduce-the-number-and-complexity-of-database-queries",
 					"guideline": "Reduce the number and complexity of database queries",
+					"subheading": "Optimize any information provided via databases, both in terms of access schedules and how queries are sent and received.",
 					"criteria": [
 						{
 							"title": "Database queries",
@@ -4253,7 +4254,6 @@
 							]
 						}
 					],
-					"intent": "Making multiple requests whether HTTP or within a database has a carbon cost as infrastructure has to send that information back and forth. As such, managing how you store and use data locally for a user will help reduce wasted cycles.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -4285,6 +4285,7 @@
 					"id": "1",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider",
 					"guideline": "Choose a sustainable service provider",
+					"subheading": "Ensure hosting and domain service providers support monitoring of resource use, use carbon-free electricity, and maintain and recycle equipment properly.",
 					"criteria": [
 						{
 							"title": "Monitor Metrics",
@@ -4499,7 +4500,6 @@
 							]
 						}
 					],
-					"intent": "In addition to reducing the environmental impacts of a website, choose a hosting service that mitigates the remaining impacts. There are both hardware and software variables to consider, including virtual and real world impacts that need to be measured (and can result in beneficial outcomes if reduced).",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -4524,6 +4524,7 @@
 					"id": "2",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported",
 					"guideline": "Optimize caching with offline access supported",
+					"subheading": "Use caching on all appropriate resources, prioritizing the ability to use the resource offline if possible.",
 					"criteria": [
 						{
 							"title": "Utilize caching",
@@ -4587,7 +4588,6 @@
 							]
 						}
 					],
-					"intent": "Browser caching reduces the requirement for files to need to be constantly reloaded from the server, and in certain situations, it can even allow for files to be viewed offline (or in the case of a reverse proxy, send immediate recurring requests without additional calculation or computation from the server). As such, this will have sustainability and performance benefits (for instance by greatly reducing Time-To-First-Byte).",
 					"impact": "High",
 					"effort": "High",
 					"benefits": [
@@ -4613,6 +4613,7 @@
 					"id": "3",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial",
 					"guideline": "Compress files where it is beneficial",
+					"subheading": "Use compression on all appropriate resources either before or as part of the transfer process.",
 					"criteria": [
 						{
 							"title": "Server-side compression",
@@ -4681,7 +4682,6 @@
 							]
 						}
 					],
-					"intent": "Every file will take up a certain amount of room on a server's hard drive, and this data will need to be sent across the wire to each user. Doing so will consume resources, but by using compression algorithms you can shrink each file to make its journey less impactful.",
 					"impact": "High",
 					"effort": "Low",
 					"benefits": [
@@ -4706,6 +4706,7 @@
 					"id": "4",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#setup-necessary-error-pages-and-redirection-links",
 					"guideline": "Setup necessary error pages and redirection links",
+					"subheading": "Use error and redirection handling on projects to reduce the impact of wasted journeys or unhelpful detours.",
 					"criteria": [
 						{
 							"title": "Error pages",
@@ -4746,7 +4747,6 @@
 							]
 						}
 					],
-					"intent": "Navigation errors lead to mistakes, which lead to users wasting time trying to resolve them, or abandoning a website altogether. Anything that can be done to interject, predict, and way-find around potential problems will reduce emissions over time.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -4772,6 +4772,7 @@
 					"id": "5",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#avoid-maintaining-unnecessary-virtualized-environments-or-containers",
 					"guideline": "Avoid maintaining unnecessary virtualized environments or containers",
+					"subheading": "Reduce the number of unnecessary virtualized environments to save hardware utilization.",
 					"criteria": [
 						{
 							"title": "Unused environments",
@@ -4790,7 +4791,6 @@
 							]
 						}
 					],
-					"intent": "Decommission or switch off additional environments, such as testing / Quality Assurance QA) / re-production and other such environments when they are not useful.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -4814,6 +4814,7 @@
 					"id": "6",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-automation-wisely",
 					"guideline": "Use automation wisely",
+					"subheading": "Automate recurring tasks only where this saves resources, such as scaling services to reduce consumption or handling suspicious activity.",
 					"criteria": [
 						{
 							"title": "Automate tasks",
@@ -4905,7 +4906,6 @@
 							]
 						}
 					],
-					"intent": "Any tasks, especially repetitive, that can be automated should be automated (compilation, deployment, tests, etc.) to reduce time at the computer being wasted by people.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -4930,6 +4930,7 @@
 					"id": "7",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#define-the-frequency-of-data-refreshes",
 					"guideline": "Define the frequency of data refreshes",
+					"subheading": "Decide when to refresh data based on a balance of user and sustainability considerations.",
 					"criteria": [
 						{
 							"title": "Refresh frequency",
@@ -4949,7 +4950,6 @@
 							]
 						}
 					],
-					"intent": "Only send data from the server when the user needs it. As much as possible, you can rely on client-side or server-side cache and client-side / local storage. Rather than refreshing data on a given frequency, it might be up to the user to manually ask for a refresh.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -4974,6 +4974,7 @@
 					"id": "8",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#back-up-critical-data-at-routine-intervals",
 					"guideline": "Back up critical data at routine intervals",
+					"subheading": "Back up data at regular intervals to ensure that there are failsafes that can be relied upon should an issue occur.",
 					"criteria": [
 						{
 							"title": "Data backups",
@@ -4998,7 +4999,6 @@
 							]
 						}
 					],
-					"intent": "For security reasons and in accordance with a Service-Level Agreement (SLA), it is often recommended to duplicate data to make sure it remains available if a problem occurs. This should be balanced with the cost of such duplication. Not all data is critical and, rather than overcompensating with multiple saves, duplication should be designed with efficiency in mind.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -5023,6 +5023,7 @@
 					"id": "9",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-and-requirements-of-data-processing",
 					"guideline": "Consider the impact and requirements of data processing",
+					"subheading": "Account for the energy involved in data transfer, considering factors such as the protocol used, whether it is processed client- or server-side, and the environment used.",
 					"criteria": [
 						{
 							"title": "Batch processing",
@@ -5104,7 +5105,6 @@
 							]
 						}
 					],
-					"intent": "Depending on carbon intensity, some processes and communications should be delayed and sometimes batched. Redundancy should be avoided wherever possible. This could also be a way to reduce the workload on a server or Virtual Machine (VM). In such cases, users should be warned that the process is asynchronous and notified when it is over.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -5129,6 +5129,7 @@
 					"id": "10",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-content-delivery-networks-cdns-appropriately",
 					"guideline": "Use Content Delivery Networks (CDNs) appropriately",
+					"subheading": "Use CDNs where they bring a sustainability benefit, ensuring the provider itself is sustainable, has nodes local to an audience, and they are only used to serve static resources on them.",
 					"criteria": [
 						{
 							"title": "Global CDNs",
@@ -5289,7 +5290,6 @@
 							]
 						}
 					],
-					"intent": "Edge caching and CDN delivery can help optimize the sustainable delivery of digital services by optimizing how your website's traffic is transferred over the internet.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -5313,6 +5313,7 @@
 					"id": "11",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-infrastructure-fits-project-requirements",
 					"guideline": "Ensure infrastructure fits project requirements",
+					"subheading": "Maintain the infrastructure you require rather than over-provisioning and autoscale to meet demand instead to preserve hardware resources.",
 					"criteria": [
 						{
 							"title": "Lowest requirements",
@@ -5338,7 +5339,6 @@
 							]
 						}
 					],
-					"intent": "Select infrastructure with minimal specifications meeting business requirements of performance, availability, etc.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -5362,6 +5362,7 @@
 					"id": "12",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users",
 					"guideline": "Store data according to the needs of your users",
+					"subheading": "Set expiration dates on data so it can be archived, made available offline, or removed when no longer used or required, with the remaining content tagged for future management.",
 					"criteria": [
 						{
 							"title": "Reduce redundancy",
@@ -5462,7 +5463,6 @@
 							]
 						}
 					],
-					"intent": "Optimize storage of data according to what is most important, relevant, and required in service to users. This will help to avoid unnecessary storage of data that may not be useful or valuable, which will reduce required infrastructure, power, and data transfer.",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -5494,6 +5494,7 @@
 					"id": "1",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy",
 					"guideline": "Have an ethical and sustainable product strategy",
+					"subheading": "Produce policies and documents showcasing evidence, achievements, and onboarding underpinned by good governance.",
 					"criteria": [
 						{
 							"title": "Public documents",
@@ -5640,7 +5641,6 @@
 							]
 						}
 					],
-					"intent": "Create a publicly available statement in an easy-to-find location on your website that outlines a clear commitment to prioritize ethics and sustainability PPP standards that align with the organization's mission, vision, and values and include statements specific to digital products, services, policies, and programs. This should be done while actively promoting such efforts (with evidence) using social channels.",
 					"impact": "High",
 					"effort": "High",
 					"benefits": [
@@ -5667,6 +5667,7 @@
 					"id": "2",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#assign-a-sustainability-advocate",
 					"guideline": "Assign a sustainability advocate",
+					"subheading": "Appoint a sustainability advocate who is provided with what they require to speak about and for issues relating to sustainability.",
 					"criteria": [
 						{
 							"title": "Advocate for sustainability",
@@ -5688,7 +5689,6 @@
 							]
 						}
 					],
-					"intent": "Having someone within an organization who represents sustainability as a core agenda makes good sense due to the accessibility, performance, financial, and other benefits that can occur from following best practices. If the resources are available, a climate Working Group with willing participants could also be established.",
 					"impact": "Medium",
 					"effort": "Low",
 					"benefits": [
@@ -5713,6 +5713,7 @@
 					"id": "3",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#inform-raise-awareness-and-train-for-sustainability",
 					"guideline": "Inform, raise awareness, and train for sustainability",
+					"subheading": "Drive sustainability awareness both externally and internally with active encouragement and routine training offered where necessary.",
 					"criteria": [
 						{
 							"title": "Inform and aware",
@@ -5771,7 +5772,6 @@
 							]
 						}
 					],
-					"intent": "Businesses should not only reference their own materials showcasing how they are working towards becoming sustainable but cite existing sustainability best practices to help others looking to make similar changes within their own work or personal environments.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -5794,6 +5794,7 @@
 					"id": "4",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#communicate-the-environmental-impact-of-user-choices",
 					"guideline": "Communicate the environmental impact of user choices",
+					"subheading": "Empower visitors, allowing them to make decisions when their choices can influence the environmental impact they have.",
 					"criteria": [
 						{
 							"title": "Communication of impact",
@@ -5815,7 +5816,6 @@
 							]
 						}
 					],
-					"intent": "Allowing the user to take action to reduce their emissions is key to helping them play a part in becoming more sustainable. By helping them identify when choices they make could have an environmental impact (and by how much) and then providing them with the tooling choices to reduce their footprint, you can empower them to make a lasting difference.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -5839,6 +5839,7 @@
 					"id": "5",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#estimate-the-environmental-impact",
 					"guideline": "Estimate the environmental impact",
+					"subheading": "Calculate the environmental impact of the project and any tooling you use, and even that of a competitor, where possible, as this may be useful for comparison.",
 					"criteria": [
 						{
 							"title": "Life-cycle analysis",
@@ -5906,7 +5907,6 @@
 							]
 						}
 					],
-					"intent": "Being able to identify key issues with your website or application is essential, and while not a foolproof method, using tooling can help you achieve an overall idea about the state of your product or service's environmental state (as such tools can do for accessibility).",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -5931,6 +5931,7 @@
 					"id": "6",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#define-clear-organizational-sustainability-goals-and-metrics",
 					"guideline": "Define clear organizational sustainability goals and metrics",
+					"subheading": "Publish a set of sustainability goals that can be used to track progress over a period of time.",
 					"criteria": [
 						{
 							"title": "Sustainability goals",
@@ -5961,7 +5962,6 @@
 							]
 						}
 					],
-					"intent": "Define sustainability goals for the organization to meet and incorporate into its business model. Pair each goal with at least one clear, achievable metric or Key Performance Indicator (KPI).",
 					"impact": "Low",
 					"effort": "Medium",
 					"benefits": [
@@ -5985,6 +5985,7 @@
 					"id": "7",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#validate-efforts-using-established-third-party-certifications",
 					"guideline": "Validate efforts using established third-party certifications",
+					"subheading": "Obtain and maintain third-party certifications to externally validate progress toward sustainability goals.",
 					"criteria": [
 						{
 							"title": "Obtaining certifications",
@@ -6020,7 +6021,6 @@
 							]
 						}
 					],
-					"intent": "Business certifications can fill the gaps left by incomplete sustainability legislation. Ensuring a business complies with third-party certifications will help verify and apply an objective level of rigor to an organization's sustainability efforts.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -6043,6 +6043,7 @@
 					"id": "8",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#implement-sustainability-onboarding-guidelines",
 					"guideline": "Implement sustainability onboarding guidelines",
+					"subheading": "Provide training materials and incentives to encourage participation from members of the organisation toward meeting sustainability goals.",
 					"criteria": [
 						{
 							"title": "Training materials",
@@ -6103,7 +6104,6 @@
 							]
 						}
 					],
-					"intent": "The organization has clear onboarding and training processes that include PPP policies and practices with explicit references to digital sustainability and responsibility. Ensure that onboarding utilizes a \"green by default\" process and avoids being an opt-in procedure. This applies equally at an organizational level and to users and consumers of your products and services.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -6125,6 +6125,7 @@
 					"id": "9",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#support-mandatory-disclosures-and-reporting",
 					"guideline": "Support mandatory disclosures and reporting",
+					"subheading": "Create policies and documents showing evidence of commitment towards impact progress, how this is achieved, and any applicable regulations you are meeting.",
 					"criteria": [
 						{
 							"title": "Policies and practices",
@@ -6203,7 +6204,6 @@
 							]
 						}
 					],
-					"intent": "The organization discloses and reports its PPP impact on at least an annual basis.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -6227,6 +6227,7 @@
 					"id": "10",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#create-one-or-more-impact-business-models",
 					"guideline": "Create one or more impact business models",
+					"subheading": "Produce a document that shows how the organisation is taking steps to become as resilient as possible.",
 					"criteria": [
 						{
 							"title": "Theory of change",
@@ -6253,7 +6254,6 @@
 							]
 						}
 					],
-					"intent": "An Impact Business Model enables an organization to incorporate specific impact initiatives into one or more business models for generating revenue, often making them \"green by default\" and folding impact initiatives into the organization's operating system. Moreover, being able to calculate the return on investment in terms of sustainability your product or service will bring is important to identifying whether it poses a net-positive or net-negative effect on the environment.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -6276,6 +6276,7 @@
 					"id": "11",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#follow-a-product-management-and-maintenance-strategy",
 					"guideline": "Follow a product management and maintenance strategy",
+					"subheading": "Explain through documentation how projects will be maintained, managed, resourced, and note issues while tracking measurements over time.",
 					"criteria": [
 						{
 							"title": "Management and maintenance",
@@ -6367,7 +6368,6 @@
 							]
 						}
 					],
-					"intent": "The organization has clearly defined governance policies around how it manages and maintains digital products and services over time.",
 					"impact": "High",
 					"effort": "Low",
 					"benefits": [
@@ -6391,6 +6391,7 @@
 					"id": "12",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#implement-continuous-improvement-procedures",
 					"guideline": "Implement continuous improvement procedures",
+					"subheading": "Continuously improve projects through regular reviews and iteration, integrating technical debt and security management, determining if new or existing functionality is required.",
 					"criteria": [
 						{
 							"title": "Continuous improvement",
@@ -6524,7 +6525,6 @@
 							]
 						}
 					],
-					"intent": "The organization has policies and practices in place to embrace experimentation, foster a growth mindset, support organizational agility, and provide continuous improvement. Product creators should iterate, regularly, though never at the cost of getting things done (such as working on larger, long-term features).",
 					"impact": "High",
 					"effort": "High",
 					"benefits": [
@@ -6553,6 +6553,7 @@
 					"id": "13",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#document-future-updates-and-evolutions",
 					"guideline": "Document future updates and evolutions",
+					"subheading": "Provide documentation to help users find their way whenever functionality changes.",
 					"criteria": [
 						{
 							"title": "Feature changes",
@@ -6572,7 +6573,6 @@
 							]
 						}
 					],
-					"intent": "Products or services are updated regularly. Ensure that additions, changes, deprecations, removals, fixes, or security patches are documented in an easy-to-perceive document with details that showcase how such changes affect the user (or how they can take advantage of new features).",
 					"impact": "Low",
 					"effort": "Low",
 					"benefits": [
@@ -6598,6 +6598,7 @@
 					"id": "14",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#establish-if-a-digital-product-or-service-is-necessary",
 					"guideline": "Establish if a digital product or service is necessary",
+					"subheading": "Determine whether a project is necessary, avoiding duplication of existing efforts, creating obstacles for users, and aligning with SDGs and sustainability principles.",
 					"criteria": [
 						{
 							"title": "Sustainable Development Goals",
@@ -6663,7 +6664,6 @@
 							]
 						}
 					],
-					"intent": "Ensure that the product or service you are creating offers value to users and doesn't duplicate existing functionality (without bringing something new to the table) as this redundancy wastes digital and physical resources.",
 					"impact": "High",
 					"effort": "Low",
 					"benefits": [
@@ -6688,6 +6688,7 @@
 					"id": "15",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#conduct-a-full-life-cycle-assessment",
 					"guideline": "Conduct a full life-cycle assessment",
+					"subheading": "Identify the potential impact that a digital product or service will have throughout its lifetime by conducting an LCA.",
 					"criteria": [
 						{
 							"title": "Life-cycle assessment",
@@ -6711,7 +6712,6 @@
 							]
 						}
 					],
-					"intent": "The functional unit of a product is a quantified description of the performance requirements that the product fulfills. Ensure you identify the requirements of your product before development.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -6735,6 +6735,7 @@
 					"id": "16",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-a-supplier-standards-of-practice-document",
 					"guideline": "Provide a supplier standards of practice document",
+					"subheading": "Vet suppliers before onboarding, then collaborate to promote and encourage better sustainability practices.",
 					"criteria": [
 						{
 							"title": "Vetting potential partners",
@@ -6799,7 +6800,6 @@
 							]
 						}
 					],
-					"intent": "The organization collaborates with suppliers, authors, clients, and other partners on initiatives that are both mutually beneficial and create positive social and environmental outcomes.",
 					"impact": "High",
 					"effort": "High",
 					"benefits": [
@@ -6823,6 +6823,7 @@
 					"id": "17",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#share-economic-benefits",
 					"guideline": "Share economic benefits",
+					"subheading": "Share benefits associated with being sustainably resilient with workers, incentivizing efforts, and advocating for those involved to meet sustainability goals.",
 					"criteria": [
 						{
 							"title": "Living wage",
@@ -6899,7 +6900,6 @@
 							]
 						}
 					],
-					"intent": "The organization shares the economic benefits of its digital products, services, policies, and programs.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -6922,6 +6922,7 @@
 					"id": "18",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#share-decision-making-power-with-affected-parties",
 					"guideline": "Share decision-making power with affected parties",
+					"subheading": "Ensure that all affected parties have the opportunity to get involved in helping the organisation become more sustainable.",
 					"criteria": [
 						{
 							"title": "Decision-making",
@@ -6943,7 +6944,6 @@
 							]
 						}
 					],
-					"intent": "Ensuring that everyone has a seat at the table is important to promoting voices who may not otherwise have their voices heard, and potentially getting useful ideas from fresh sources.",
 					"impact": "Low",
 					"effort": "High",
 					"benefits": [
@@ -6966,6 +6966,7 @@
 					"id": "19",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-justice-equity-diversity-inclusion-jedi-practices",
 					"guideline": "Use Justice, Equity, Diversity, Inclusion (JEDI) practices",
+					"subheading": "Implement JEDI practices to foster inclusive hiring practices within an organization, showing evidence of improvement over time.",
 					"criteria": [
 						{
 							"title": "JEDI practices",
@@ -7067,7 +7068,6 @@
 							]
 						}
 					],
-					"intent": "The organization has public policies and practices supporting racial justice, inclusion, equity, and diversity in hiring and operations.",
 					"impact": "High",
 					"effort": "High",
 					"benefits": [
@@ -7090,6 +7090,7 @@
 					"id": "20",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#promote-responsible-data-practices",
 					"guideline": "Promote responsible data practices",
+					"subheading": "Provide publicly accessible versions of documents required by law in a sustainable, easy-to-consume format, while also observing ethical data retention practices.",
 					"criteria": [
 						{
 							"title": "Data practices",
@@ -7140,7 +7141,6 @@
 							]
 						}
 					],
-					"intent": "The organization commits to responsible data practices, prioritizing data privacy, security, and ethical use. This includes data minimization, purpose limitation, accuracy, storage limitation, integrity, confidentiality, and accountability. Publicly accessible documentation, such as Privacy Policies and Terms and Conditions, follows best practices for clarity and accessibility, avoiding technical jargon and complex legal language to ensure inclusivity for diverse users.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -7162,6 +7162,7 @@
 					"id": "21",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#implement-appropriate-data-management-procedures",
 					"guideline": "Implement appropriate data management procedures",
+					"subheading": "Allow users to manage, control, and delete their data upon request, while making outdated content searchable via a lightweight and simple archive.",
 					"criteria": [
 						{
 							"title": "Outdated content",
@@ -7213,7 +7214,6 @@
 							]
 						}
 					],
-					"intent": "Expired or unused data has a cost, takes up space, and requires maintenance. As such, the ability for customers to manage their own data and for service providers to manage older website material which no longer applies but might still have use will be a carbon benefit.",
 					"impact": "Low",
 					"effort": "High",
 					"benefits": [
@@ -7238,6 +7238,7 @@
 					"id": "22",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#promote-and-implement-responsible-emerging-technology-practices",
 					"guideline": "Promote and implement responsible emerging technology practices",
+					"subheading": "Implement policies, training, and auditing practices for new or emerging technologies to ensure sustainability upon implementation, while accounting for associated legal issues.",
 					"criteria": [
 						{
 							"title": "Emerging technologies",
@@ -7421,7 +7422,6 @@
 							]
 						}
 					],
-					"intent": "The organization has devised and implemented responsible policies related to artificial intelligence, the Internet of Things (IoT), Web3 (Decentralized Web, blockchain, etc), and related emerging technologies.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -7444,6 +7444,7 @@
 					"id": "23",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#include-responsible-financial-policies",
 					"guideline": "Include responsible financial policies",
+					"subheading": "Ensure that a project is suitably budgeted for and funded through sustainable and ethical sources.",
 					"criteria": [
 						{
 							"title": "Fuel divestment",
@@ -7490,7 +7491,6 @@
 							]
 						}
 					],
-					"intent": "The organization implements responsible finance strategies, including divesting from fossil fuels and appropriately resourcing digital products and services to account for long-term care and maintenance.",
 					"impact": "High",
 					"effort": "High",
 					"benefits": [
@@ -7513,6 +7513,7 @@
 					"id": "24",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#include-organizational-philanthropy-policies",
 					"guideline": "Include organizational philanthropy policies",
+					"subheading": "Provide the opportunity to give back to the community through charitable or volunteer efforts via your organisation.",
 					"criteria": [
 						{
 							"title": "Philanthropy policy",
@@ -7555,7 +7556,6 @@
 							]
 						}
 					],
-					"intent": "For-profit organizations have clear philanthropy policies and practices in place to help non-profit organizations build digital capacity and acumen while also engaging their own teams in meaningful work that promotes shared learning and stretch goals.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -7578,6 +7578,7 @@
 					"id": "25",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#plan-for-a-digital-product-or-service-s-care-and-end-of-life",
 					"guideline": "Plan for a digital product or service's care and end-of-life",
+					"subheading": "Produce documentation to ensure that when a project is shut down, visitors are made aware of what will happen to their data.",
 					"criteria": [
 						{
 							"title": "End-of-life care",
@@ -7601,7 +7602,6 @@
 							]
 						}
 					],
-					"intent": "Everything ends at some point, planning for if and when a product or service is finalized makes good ethical sense to ensure customers can be transitioned toward a replacement rather than losing access to their data.",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -7627,6 +7627,7 @@
 					"id": "26",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#include-e-waste-right-to-repair-and-recycling-policies",
 					"guideline": "Include e-waste, right to repair, and recycling policies",
+					"subheading": "Include policies and documentation explaining how sustainable e-waste, recycling, repairing, and refurbishment are handled.",
 					"criteria": [
 						{
 							"title": "E-waste policy",
@@ -7712,7 +7713,6 @@
 							]
 						}
 					],
-					"intent": "The organization addresses e-waste, right-to-repair, recycling, and related practices in its operations.",
 					"impact": "High",
 					"effort": "Medium",
 					"benefits": [
@@ -7735,6 +7735,7 @@
 					"id": "27",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#define-performance-and-environmental-budgets",
 					"guideline": "Define performance and environmental budgets",
+					"subheading": "Provide budgets, taking the people, planet, and performance into account alongside baselines, targets, evidence, and resources to help meet KPIs.",
 					"criteria": [
 						{
 							"title": "Environmental budget",
@@ -7835,7 +7836,6 @@
 							]
 						}
 					],
-					"intent": "Setting targets and limits regarding your product or service is important for keeping a sustainable mindset. Using budgets, you can declare the remits of which you will work within to ensure your emissions do not fall outside (and monitor your progress through development).",
 					"impact": "Medium",
 					"effort": "Medium",
 					"benefits": [
@@ -7862,6 +7862,7 @@
 					"id": "28",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-open-source-where-possible",
 					"guideline": "Use open source where possible",
+					"subheading": "Produce a policy around open collaboration and contribution to creating and sustaining open source projects.",
 					"criteria": [
 						{
 							"title": "Open source policy",
@@ -7932,7 +7933,6 @@
 							]
 						}
 					],
-					"intent": "The organization has clear policies about using open source tools, including how it gives back to the community and responsibly manages code repositories to reduce waste.",
 					"impact": "High",
 					"effort": "High",
 					"benefits": [
@@ -7955,6 +7955,7 @@
 					"id": "29",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#create-a-business-continuity-and-disaster-recovery-plan",
 					"guideline": "Create a business continuity and disaster recovery plan",
+					"subheading": "Create a plan of action with a system to recover from failure or alert users if or when a loss of service occurs.",
 					"criteria": [
 						{
 							"title": "Plan of action",
@@ -7995,7 +7996,6 @@
 							]
 						}
 					],
-					"intent": "Resilience of the product or service in case of a disaster or emergency should be ensured to restore and maintain operations in case of disruptions.",
 					"impact": "Low",
 					"effort": "Medium",
 					"benefits": [
