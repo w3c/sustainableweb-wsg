@@ -25,7 +25,7 @@
 					"examples": [
 						{
 							"1": "[The Variables of Website Sustainability](https://websitesustainability.com/cache/files/variables.pdf) provides a comprehensive map of the various carbon traps that exist on the Internet. From business and external elements to development and rendering, it provides a visual representation of the energy usage that can trigger emissions.",
-							"2": "The [(Proposed) Technology Carbon Standard](https://blog.scottlogic.com/2024/02/13/announcing-the-proposed-technology-carbon-standard.html) is an approach to classify an organization's technology carbon footprint. It is based on the Greenhouse Gas Protocol (GHG) and aligns with Scope 1, 2, and 3 emissions."
+							"2": "The [(Proposed) Technology Carbon Standard](https://blog.scottlogic.com/2024/02/13/announcing-the-proposed-technology-carbon-standard.html) is an approach to classify an organization's technology carbon footprint. It is based on the Greenhouse Gas (GHG) Protocol and aligns with Scope 1, 2, and 3 emissions."
 						}
 					],
 					"tests": [
@@ -114,7 +114,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.2 Understand user requirements or constraints, resolving barriers to access](https://w3c.github.io/sustainableweb-wsg/#understand-user-requirements-or-constraints-resolving-barriers-to-access).",
 					"description": [
 						{
-							"1": "Go beyond the remit of WCAG and accessibility by default and to encourage designers and developers of products to test their creations against a range of specific named types of disabilities to both better understand the conditions and to be able to more structurally and sustainably better test for the unique issues each disability brings to technology in terms of adaptation.",
+							"1": "Go beyond the remit of Web Content Accessibility Guidelines (WCAG) and accessibility by default and to encourage designers and developers of products to test their creations against a range of specific named types of disabilities to both better understand the conditions and to be able to more structurally and sustainably better test for the unique issues each disability brings to technology in terms of adaptation.",
 							"2": "It is strongly encouraged that teams work with individuals with disabilities when attempting this task as they will have the lived experience to help you better adapt your products and services to their needs. If this is not possible or you wish to theorize against certain pre-built profiles, you can refer to established medical texts to identify potential symptoms and refer these against issues that may cause technology issues, building solutions, and/or simulators (see color blindness) to help test for issues along the creation process."
 						}
 					],
@@ -873,7 +873,7 @@
 									"2": "Check for older image format usage (BMP/TIFF) and require replacement.",
 									"3": "Check for PNG and JPEG images and flag potential upgrades to AVIF or WebP.",
 									"4": "Provide fallbacks using the picture element on newer image formats to ensure compatibility.",
-									"5": "Check for GIF and flag static image upgrade to AVIF or WebP, or animated images to mp4."
+									"5": "Check for GIF and flag static image upgrade to AVIF or WebP, or animated images to MP4."
 								}
 							],
 							"expectedResults": "All checks above are true."

@@ -99,7 +99,7 @@
 						{
 							"title": "User constraints",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX02-2)",
-							"description": "Account for potential user constraints, such as the device age, operating system choice or version, browser, VPN use, and connection speeds when designing and assessing the quality of user experiences.",
+							"description": "Account for potential user constraints, such as the device age, operating system choice or version, browser, Virtual Private Network (VPN) use, and connection speeds when designing and assessing the quality of user experiences.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -2817,7 +2817,7 @@
 						{
 							"title": "Organize code arrangement",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD05-3)",
-							"description": "Use organization methodology and systems such as DRY or WET to optimize the arrangement and output of your JavaScript and CSS.",
+							"description": "Use organization methodology and systems such as Don't Repeat Yourself (DRY) or Write Everything Twice (WET) to optimize the arrangement and output of your JavaScript and CSS.",
 							"resources": [
 								{
 									"3 software development principles I wish I knew earlier in my career": "https://thetshaped.dev/p/3-software-development-principles",
