@@ -18,7 +18,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.1 Display any factors that have a negative impact on your project](https://w3c.github.io/sustainableweb-wsg/#display-any-factors-that-have-a-negative-impact-on-your-project).",
 					"description": [
 						{
-							"1": "Create a maintainable list of different factors that may impact the sustainability of a product or service over time. By having this list in place, everyone in the creation process can closely monitor the application or website against each  to determine if an PPP  present on the list will require resolution either before, during, or after a product or service is launched.",
+							"1": "Create a maintainable list of different factors that may impact the sustainability of a product or service over time. By having this list in place, everyone in the creation process can closely monitor the application or website against each factor to determine if an PPP factor present on the list will require resolution either before, during, or after a product or service is launched.",
 							"2": "This list should be created during ideation if possible but can also be machine-generated from a pre-determined list of known PPP factors using evidence and research. The content of this material could be further tested through automation if such factors can be aligned with product capabilities however at a bare minimum, this list must be publicly visible (such as within a sustainability statement) and utilized in-house to enact sustainable change."
 						}
 					],
@@ -462,7 +462,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.9 Design to assist and not to distract](https://w3c.github.io/sustainableweb-wsg/#design-to-assist-and-not-to-distract).",
 					"description": [
 						{
-							"1": "Lower the barriers to entry with content. When dealing with complex, multi-page websites it becomes increasingly important to have features in place to allow users to bypass repeated elements that they have already prefilled to achieve goals quicker (this is a key  for sites who have large membership numbers).",
+							"1": "Lower the barriers to entry with content. When dealing with complex, multi-page websites it becomes increasingly important to have features in place to allow users to bypass repeated elements that they have already prefilled to achieve goals quicker (this is a key factor for sites who have large membership numbers).",
 							"2": "There are functional ways to increase the flow through a website and allow users to accomplish a task that can also be machine-testable. This technique is most useful when dealing with complex pieces of content, multi-step products, or services that have a lot of functionality that may require shortcuts to allow faster decision-making under certain conditions."
 						}
 					],
@@ -826,7 +826,7 @@
 					"description": [
 						{
 							"1": "Reduce the amount of time users and potential users spend churning through data attempting to locate you (or pages relating to you) through search engines or social media. These types of requests have an emissions impact from the hardware used to deal with the requests to the rendering of the results, therefore getting the right information to users as quickly as possible is critical to having a sustainable product.",
-							"2": "This list should be created as early as possible but could be machine-generated from a pre-determined list of SEO s. The content of this material could be machine-tested against using automation if the factors can be aligned with what has been implemented. Additionally, publicly-facing social media handles that are identified within a product or service website can be detected."
+							"2": "This list should be created as early as possible but could be machine-generated from a pre-determined list of SEO factors. The content of this material could be machine-tested against using automation if the factors can be aligned with what has been implemented. Additionally, publicly-facing social media handles that are identified within a product or service website can be detected."
 						}
 					],
 					"examples": [
@@ -1258,7 +1258,7 @@
 									"2": "Check that fonts are preloaded within the head of the HTML document.",
 									"3": "Check that no obsolete font formats are listed (such as EOT, TTF, SVG).",
 									"4": "Check that fonts are only provided using WOFF2 or WOFF as a fallback.",
-									"5": "Check that if a custom font is  enabled (refer to font a preferred), remove other references (bold, italic, etc)."
+									"5": "Check that if a custom font is variable enabled (refer to font a preferred), remove other references (bold, italic, etc)."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -2009,7 +2009,7 @@
 					"description": [
 						{
 							"1": "Distinguish different technologies and the role they play, identifying which are the most resource-intensive and providing either a mechanism to reduce the intensity of heavy payloads or to load-balance the most demanding aspects of these features. It is important to consider that in terms of rendering, data transfer is not the only consideration.",
-							"2": "In terms of machine testability, calculating the percentage of HTML, CSS, JavaScript, images, media, etc, is not enough. It is critical to weigh and calculate the energy requirements of each aspect of those languages on an atomic level to identify potential rendering issues from the browser as these will impact upon hardware (CPU, GPU, RAM, and other s) having PPP implications."
+							"2": "In terms of machine testability, calculating the percentage of HTML, CSS, JavaScript, images, media, etc, is not enough. It is critical to weigh and calculate the energy requirements of each aspect of those languages on an atomic level to identify potential rendering issues from the browser as these will impact upon hardware (CPU, GPU, RAM, and other factors) having PPP implications."
 						}
 					],
 					"examples": [
@@ -3320,7 +3320,7 @@
 					"description": [
 						{
 							"1": "Verify that the product or service is being served through a sustainable provider. If the hosting provider (for example) generates its electricity from carbon-free energy and can document other intensity reduction techniques (such as using natural cooling and offering auto-scaling packages), this can contribute towards passing the success criteria.",
-							"2": "Because many factors can go towards how sustainable a provider is, machine testing will need to be vigilant in accounting for several s. As such, using an established directory of sustainable hosts could be one way to pass or fail, or running validation checks against factors that affect the sustainability of services could be another (this may require internal access or knowledge)."
+							"2": "Because many factors can go towards how sustainable a provider is, machine testing will need to be vigilant in accounting for several factors. As such, using an established directory of sustainable hosts could be one way to pass or fail, or running validation checks against factors that affect the sustainability of services could be another (this may require internal access or knowledge)."
 						}
 					],
 					"examples": [
@@ -3792,7 +3792,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.12 Store data according to the needs of your users](https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
 						{
-							"1": "Increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other s. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.",
+							"1": "Increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other factors. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.",
 							"2": "Machine testability for such features will involve examining the page's source code to identify repeating patterns across several pages (if correctly labeled, patterns such as tags or categories may be semantically easy to find). The sustainability of such implementations must account for the impact it has upon rendering across each page, against the benefit it has to the user experience."
 						}
 					],
