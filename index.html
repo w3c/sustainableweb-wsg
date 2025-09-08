@@ -2,21 +2,20 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
 		<title>Web Sustainability Guidelines (WSG)</title>
 		<style>
-			/* Fix for Visited Link Issue: https://github.com/w3c/sustyweb/issues/26 */
-			.resources a:visited:not(.bibref) { color: #717171; }
 			/* Fix for Testability Highlight Color Palette: https://github.com/w3c/sustyweb/issues/29 */
 			section section section[data-testable] { display: flex; flex-wrap: wrap; }
 			.external { align-items: end; display: flex; gap: 1em; position: relative; top: 0.1em; white-space: nowrap; width: fit-content; }
 			.machine, .human, .urls { border: 1px solid #A0A0A0; border-radius: 10px; display: block; font-weight: bold; padding: 0.25em 0.5em; }
-			.machine { background-color: #ffff00; }
-			.human { background-color: #ff9fae; }
-			.urls { background-color: #ffffff; }
+			.machine { background-color: #ffff00; color: var(--outdatedspec-text) !important; }
+			.human { background-color: #ff9fae; color: var(--outdatedspec-text); }
+			.urls { background-color: var(--tocsidebar-bg); }
 			/* Fix for Specification Readability: https://github.com/w3c/sustyweb/issues/92 */
 			.subheading { border-left: thick solid #d9d9d9; font-style: italic; padding: 0.5em 1em; }
 			.credit { font-size: small; }
-			.summary pre { background-color: #fafafa;}
+			.summary pre { background-color: var(--note-bg);}
 			.summary .subtitle { margin-top: 2.5em; }
 			.summary .rating, .summary .reporting { align-items: center; display: flex; flex-wrap: wrap; row-gap: 1em; }
 			.summary .rating dd { margin: 0; } .summary .rating dt { width: 83px; }
@@ -31,14 +30,14 @@
 			@media print { section section:last-child h4, section section:last-child .self-link, section section:last-child summary, .summary, .pageButtons, #toc { display: none !important; } .full-document #toc { display: block !important; } body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
-			.summary { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
+			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
 			/* Multipage Document: https://github.com/w3c/sustainableweb-wsg/issues/14#issuecomment-2662164386 */
 			@media (scripting: enabled) {
 				.hide { content-visibility: hidden; display: inherit !important; height: 1px !important; left: -1000px !important; overflow: hidden !important; position: absolute !important; top: -1px !important; width: 1px !important; }
 				.show { content-visibility: visible; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 			.pageButtons { margin-top: 2em; padding-left: 0; }
 			.pageButtons, .pageButtons li, .pageButtons tbody { display: flex; flex: 1; gap: 10px; }
-			.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
+			.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: var(--tocsidebar-bg); display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
 			.previousPage { justify-content: left; } .fullDocument { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
 			@media (scripting: none) {
 				@media print { #toc { display: none !important; } }
@@ -93,7 +92,7 @@
 						node.insertAdjacentHTML('beforebegin', `
 							<dt>Authors:</dt>
 							<dd>
-								See <a href="#acknowledgments">acknowledgments</a>
+								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
 		</script>
 		<script>
@@ -359,7 +358,7 @@
 		</script>
 	</head>
 	<body>
-		<div class="filter summary"> <!-- Filter Tool -->
+		<div id="filter" class="filter summary"> <!-- Filter Tool -->
 			<details>
 				<summary>Filter the available WSG success criteria upon certain settings</summary>
 				<form>
@@ -490,7 +489,7 @@
 			<section> <!-- Background -->
 				<h3>Background on WSG</h3>
 				<p>In 1999, Web Content Accessibility Guidelines [[WCAG22]] defined a set of baseline guidance for Web content developers and creators of authoring tools, with the primary goal of promoting Web accessibility through the adoption of inclusive strategies. Through a similar methodology, the Web Sustainability Guidelines promote planetary, people, and prosperity best practices based on measurable, evidence-based research; aimed at end-users, stakeholders, website or application creators, tool authors, tool authors, educators, students, policymakers, purchasing agents, product owners, managers, and decision-makers, with the primary goal of reducing harm to the wider ecosystem (regarding people and the planet) through sustainable Strategy adoption.</p>
-				<p>For those unfamiliar with sustainability issues relating to the Web, consider that many factors [[VARIABLES]] may contribute to waste or emissions being produced online.</p>
+				<p>For those unfamiliar with sustainability issues relating to the Web, consider that many variables [[VARIABLES]] may contribute to waste or emissions being produced online.</p>
 				<ul>
 					<li>The way data is sent or received between client and server.</li>
 					<li>Hosting, environments, arrays, and infrastructure.</li>
@@ -502,7 +501,7 @@
 				</ul>
 				<p>Web Sustainability Guidelines (WSG) is developed in cooperation with individuals and organizations around the world. It does so intending to provide a shared Strategy for Web sustainability that meets the needs of individuals, organizations, and governments internationally. WSG is designed to apply broadly to different existing Web technologies and to be testable with a combination of automated testing and human evaluation.</p>
 				<p>Web sustainability depends not only on sustainable websites and products but also on sustainable Web browsers and other user agents, examples include the performance of rendering and the accurate measuring of website energy use through developer tooling. Authoring tools also have an important role in Web sustainability, by ensuring performant code, reducing waste, and the results are served in the most sustainable way possible.</p>
-				<p>Significant challenges were encountered in finding existing research data to both identify and establish guidance for all the factors that affect Web sustainability, which came as no surprise with the subject being such an emerging and rapidly evolving field. Work will continue in this area in future versions of WSG.</p>
+				<p>Significant challenges were encountered in finding existing research data to both identify and establish guidance for all the variables that affect Web sustainability, which came as no surprise with the subject being such an emerging and rapidly evolving field. Work will continue in this area in future versions of WSG.</p>
 				<div class="note">
 					<p>The WSG were originally developed under the guidance of the <a href="https://www.w3.org/community/sustyweb/">Sustainable Web Design Community Group</a>. W3C Community Groups act as incubator hubs where ideas for new technologies and standards can be discussed without formal constraints.</p>
 					<p>Over two years with the help of over 100 subject matter experts from around the globe, the group created the first draft, and subsequently through GitHub and regular meetings continued over another year to progress the WSG and its supplements to a level of maturity in which the group and its work were ready to become a part of the W3C family (where this specification continues being developed to this day).</p>
@@ -521,7 +520,7 @@
 				</section>
 				<section> <!-- Guidelines -->
 					<h4>Guidelines</h4>
-					<p>Under the principles are guidelines. These guidelines provide the basic goals that authors should work toward to make content more sustainable. The guidelines provide the framework and overall objectives to help authors understand the success criteria, which are testable against, to implement better digital solutions. This specification groups guidelines within four categories (User Experience Design, Web Development, Infrastructure, Product and Business) that overarches various specialisms. It should, however, be noted that while many of these guidelines are curated into categories for simplicity, often they are not limited to a single group and can be utilized within other specialisms for a sustainability benefit. They also come equipped with tags that can be utilized by third-party user-agent tools to filter the criteria on journeys, categories, preferences, or additional factors to benefit the author during the implementation process.</p>
+					<p>Under the principles are guidelines. These guidelines provide the basic goals that authors should work toward to make content more sustainable. The guidelines provide the framework and overall objectives to help authors understand the success criteria, which are testable against, to implement better digital solutions. This specification groups guidelines within four categories (User Experience Design, Web Development, Infrastructure, Product and Business) that overarches various specialisms. It should, however, be noted that while many of these guidelines are curated into categories for simplicity, often they are not limited to a single group and can be utilized within other specialisms for a sustainability benefit. They also come equipped with tags that can be utilized by third-party user-agent tools to filter the criteria on journeys, categories, preferences, or additional variables to benefit the author during the implementation process.</p>
 				</section>
 				<section> <!-- Success -->
 					<h4>Success Criteria</h4>
@@ -558,10 +557,10 @@
 			</section>
 			<section> <!-- Interpretation -->
 				<h3>Interpretation</h3>
-				<p>It should be noted that the coverage of the Layers of Guidance, with particular emphasis on the impact and effort ratings, may be left open to interpretation, due to the broad and varying nature of how factors can benefit the wider ecosystem. For example, a guideline may have a low impact on preserving water but a high impact on preserving electricity. As such, the nature of benefits is nuanced and may require more in-depth analysis if authors wish to target specific environmental concerns such as water, paper, or mineral waste.</p>
+				<p>It should be noted that the coverage of the Layers of Guidance, with particular emphasis on the impact and effort ratings, may be left open to interpretation, due to the broad and varying nature of how variables can benefit the wider ecosystem. For example, a guideline may have a low impact on preserving water but a high impact on preserving electricity. As such, the nature of benefits is nuanced and may require more in-depth analysis if authors wish to target specific environmental concerns such as water, paper, or mineral waste.</p>
 				<p>Currently, the Web Sustainability Guidelines use a crude metric of human assessment from subject-matter experts and a stated calculation and methodology underpinning the GRI reporting. However, future versions of the specification will seek to expand upon this, emphasizing metric-based calculations and proven datasets through measurability to identify emissions (and other) related targets.</p>
 				<p>It should also be noted that a drawback of the sustainability sector is that unlike other forms of measurement in other fields (such as web performance and accessibility) where binary conversations can occur (something either "is" or "is not" happening), there is unlikely to be a situation where a product or service is never emitting or causing some sort of impact upon the environment by nature of it existing. As such, implementors need to come to terms with the fact that the aim of the Web Sustainability Guidelines should be to firstly reduce what you can, then for what you cannot (as emissions will likely always occur to some extent) compensate for these continuous emissions to ensure as minimal a footprint as possible.</p>
-				<p class="note">Coverage should not be restricted to what falls within the digital sector. While for this specification we primarily focus on Internet-related technologies (and the people and businesses that use them), sustainability factors exist beyond the scope of this work and as such, the impacts of these differing areas of concern should be addressed when meeting targets, reporting, and complying with relevant legislation.</p>
+				<p class="note">Coverage should not be restricted to what falls within the digital sector. While for this specification we primarily focus on Internet-related technologies (and the people and businesses that use them), sustainability variables exist beyond the scope of this work and as such, the impacts of these differing areas of concern should be addressed when meeting targets, reporting, and complying with relevant legislation.</p>
 			</section>
 			<section> <!-- Relationships -->
 				<h4>Relationships</h4>
@@ -662,7 +661,7 @@
 				<li>Improved accessibility, compatibility, and usability boosts social inclusion and cohesion.</li>
 				<li>Sustainable user experience design best practices will often also improve performance and SEO.</li>
 			</ul>
-			<div class="summary">
+			<div id="ux-summary" class="summary">
 				<details>
 					<summary>Plain language summary of User Experience Design</summary>
 					<ul>
@@ -2183,7 +2182,7 @@
 				<li>Lower abandonment rates thanks to optimized code on both the client and server-side means fewer errors, less downtime, and better user experience.</li>
 				<li>More efficient web services inevitably translate to better performance and technical SEO, boosting search engine visibility.</li>
 			</ul>
-			<div class="summary">
+			<div id="webdev-summary" class="summary">
 				<details>
 					<summary>Plain language summary of Web Development</summary>
 					<ul>
@@ -3400,7 +3399,7 @@
 				<li>Efficient, sustainable hosting, infrastructure, and systems can create new marketing opportunities for your business: impressing green-minded or privacy-driven customers.</li>
 				<li>Gain economic benefits in the form of reduced hardware investment and/or operational expenses and lower maintenance costs thanks to better processes and appropriate provisioning of resources.</li>
 			</ul>
-			<div class="summary">
+			<div id="hosting-summary" class="summary">
 				<details>
 					<summary>Plain language summary of Hosting, Infrastructure, and Systems</summary>
 					<ul>
@@ -4062,7 +4061,7 @@
 				<li>Clear policies and continuity planning build trust in your organization, while providing the opportunity to identify quantifiable risks and include relevant affected parties.</li>
 				<li>Appreciating users' time and resources can improve trust in a product or organization.</li>
 			</ul>
-			<div class="summary">
+			<div id="business-summary" class="summary">
 				<details>
 					<summary>Plain language summary of Business Strategy and Product Management</summary>
 					<ul>
@@ -4417,7 +4416,7 @@
 					<p>Incentivize leadership, teams, and individuals to make progress toward the goals outlined in their training. Examples include dedicating time for sustainability-related activities, recognizing completion, and other benefits.</p>
 				</section>
 				<section class="notoc" data-testable="human" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="" data-categories="Education, Strategy">
-					<h4 id="negative-s">Success Criterion: Negative factors</h4>
+					<h4 id="negative-factors">Success Criterion: Negative factors</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM08-3">Resources</a></p>
 					<p>Anticipate and map potential negative external factors and act to minimize their overall impact.</p>
 				</section>
@@ -5679,7 +5678,7 @@
 					<summary>Ongoing Release Notes</summary>
 					<p><strong>Additions:</strong></p>
 					<ul>
-						<li>None</li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/122">#122</a>] Added dark mode capability to the specification and supplements.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
 					<p><strong>Updates:</strong></p>
 					<ul>
@@ -5704,6 +5703,8 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/114">#114</a>] Editorial improvements have been provided for the examples.<br><span class="credit">@AlexDawsonUK, @codewordcreative, & @timfrick</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/118">#118</a>] Broken links and redirects have been resolved or removed.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/120">#120</a>] Resolved an issue around language use of normative in supporting documents.<br><span class="credit">@frivoal, @hidde, @tantek</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/121">#121</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/122">#122</a>] Alignment with W3C Principle Notes, Manual of Style, and QA Framework.<br><span class="credit">@AlexDawsonUK, @codewordcreative, & @hidde</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/122">#122</a>] Aligned all documents with mandatory pubRules requirements.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
 					<!--
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/">#</a>] Change.<br><span class="credit">@Github</span></li>

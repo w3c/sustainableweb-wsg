@@ -2,13 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
 		<title>Web Sustainability Laws and Policies</title>
 		<style>
 			/* Fix for ReSpec table layout and overflow issue. */
 			.center { text-align: center; }
 			.flow { overflow-x: auto; }
 			table { border-collapse:collapse; border-spacing:0; white-space: nowrap; }
-			td, th { border: 1px solid #000000; max-width: 100%; white-space: initial; }
+			td, th { border: 1px solid; max-width: 100%; white-space: initial; }
 		</style>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
 		<script class="remove">
@@ -19,7 +20,7 @@
 						node.insertAdjacentHTML('beforebegin', `
 							<dt>Authors:</dt>
 							<dd>
-								See <a href="#acknowledgments">acknowledgments</a>
+								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
 		</script>
 		<script class="remove">
@@ -47,7 +48,9 @@
 			<p>The information on this page is not legal advice. Please consult legal authorities for the appropriate jurisdiction. Neither the <abbr title="World Wide Web Consortium">W3C</abbr> nor the <a href="https://www.w3.org/groups/ig/sustainableweb/">Sustainable Web Interest Group</a> can guarantee the sustainability of these external resources.</p>
 			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
 		</section>
-		<section id="sotd" class="override"></section> <!-- Ignore -->
+		<section id="sotd"> <!-- Status of This Document -->
+			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. Comments received on the specification cannot result in changes to this version of the guidelines but may be addressed in errata or future versions of WSG. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
+		</section>
 		<section> <!-- Laws and policies -->
 			<h2>Laws and policies</h2>
 			<table class="flow">

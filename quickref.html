@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
 		<title>Quick Reference for Web Sustainability Guidelines (WSG)</title>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
 		<script class="remove">
@@ -12,7 +13,7 @@
 						node.insertAdjacentHTML('beforebegin', `
 							<dt>Authors:</dt>
 							<dd>
-								See <a href="#acknowledgments">acknowledgments</a>
+								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
 		</script>
 		<script class="remove">
@@ -29,6 +30,12 @@
 			github: "https://github.com/w3c/sustainableweb-wsg/",
 			group: "sustainableweb",
 			latestVersion: "https://w3c.github.io/sustainableweb-wsg/quickref.html",
+			alternateFormats: [
+				{
+					label: "PDF",
+					uri: "https://w3c.github.io/sustainableweb-wsg/checklist.pdf",
+				},
+			],
 			specStatus: "ED",
 			postProcess: [authorRef],
 		}
@@ -37,7 +44,7 @@
 			/* Fix for ReSpec table layout and overflow issue. */
 			table { border-collapse: collapse; border-spacing: 0; }
 			table tr { border: black solid 1px; padding: 0.5em 0.25em; }
-			.highlight { background-color: #fffe65; }
+			.highlight { background-color: var(--example-border); color: var(--outdatedspec-text); }
 		</style>
 	</head>
 	<body>
@@ -45,7 +52,9 @@
 			<p>This document provides a quick reference to the <a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines</a> (<abbr title="Web Sustainability Guidelines">WSG</abbr>) specification. The content is laid out in a table, with success criteria, Impact, Effort, and Global Reporting Initiative <abbr title="Global Reporting Initiative">GRI</abbr> ratings noted for each guideline. Checkboxes are provided for those individuals or groups wishing to work through the list (note your progress will not be saved), and a <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">print-friendly</a> (<abbr title="Portable Document Format">PDF</abbr>) version is also available to audit your work as part of an exercise.</p>
 			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
 		</section>
-		<section id="sotd" class="override"></section> <!-- Ignore -->
+		<section id="sotd"> <!-- Status of This Document -->
+			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. Comments received on the specification cannot result in changes to this version of the guidelines but may be addressed in errata or future versions of WSG. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
+		</section>
 		<section> <!-- User Experience Design -->
 			<h2>User Experience Design</h2>
 			<table>

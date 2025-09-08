@@ -2,11 +2,12 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
 		<title>Resources for Web Sustainability Guidelines (WSG)</title>
 		<style>
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
-			.summary { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
+			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
 			.summary:not(:last-child) { margin-bottom: 1em; }
 			/* Tagging Styles */
 			.tag { background: #d9d9d9; border-radius: 3px; color: #091832; display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-right: 0.5em; padding: 2px 8px 0 8px; vertical-align: middle; }
@@ -20,7 +21,7 @@
 						node.insertAdjacentHTML('beforebegin', `
 							<dt>Authors:</dt>
 							<dd>
-								See <a href="#acknowledgments">acknowledgments</a>
+								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
 		</script>
 		<script class="remove">
@@ -1151,7 +1152,9 @@
 			<p>Resources are for information purposes only, no endorsement is implied. Neither the <abbr title="World Wide Web Consortium">W3C</abbr> nor the <a href="https://www.w3.org/groups/ig/sustainableweb/">Sustainable Web Interest Group</a> can guarantee the sustainability of these external resources.</p>
 			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
 		</section>
-		<section id="sotd" class="override"></section> <!-- Ignore -->
+		<section id="sotd"> <!-- Status of This Document -->
+			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. Comments received on the specification cannot result in changes to this version of the guidelines but may be addressed in errata or future versions of WSG. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
+		</section>
 		<section class="informative"> <!-- Additional Resources -->
 			<h2>Additional Resources</h2>
 			<section> <!-- User Experience Design -->

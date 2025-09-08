@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
 		<title>Introduction to Web Sustainability</title>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
 		<script class="remove">
@@ -12,7 +13,7 @@
 						node.insertAdjacentHTML('beforebegin', `
 							<dt>Authors:</dt>
 							<dd>
-								See <a href="#acknowledgments">acknowledgments</a>
+								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
 		</script>
 		<script class="remove">
@@ -91,7 +92,7 @@
 		<style>
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
-			.summary { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
+			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
 		</style>
 	</head>
 	<body>
@@ -101,7 +102,9 @@
 			<p>This is a supplementary document created to showcase the need for such guidance, helping individuals and organizations better understand the current web landscape and how it is affected by sustainability issues. It also provides answers to common questions which may help those looking to become more environmentally friendly utilize the WSG and gain a broader awareness of the subject and its relevance to the Internet.</p>
 			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
 		</section>
-		<section id="sotd" class="override"></section> <!-- Ignore -->
+		<section id="sotd"> <!-- Status of This Document -->
+			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. Comments received on the specification cannot result in changes to this version of the guidelines but may be addressed in errata or future versions of WSG. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
+		</section>
 		<section> <!-- What is web sustainability? -->
 			<h2>What is web sustainability?</h2>
 			<p>Sustainability, as defined by the United Nations [[UN]], focuses on "meeting the needs of the present without compromising the ability of future generations to meet their own needs". web sustainability is the digital equivalent of this. It is an approach to designing digital products and services that puts people and the planet first [[MANIFESTO]].</p>

@@ -2,16 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
 		<title>Sustainable Tooling And Reporting (STAR)</title>
 		<style>
 			/* Fix for ReSpec table layout and overflow issue. */
 			.flow[open] { width: fit-content; }
-			.flow table { background-color: #ffffff; border-collapse:collapse; border-spacing:0; white-space: nowrap; }
-			.flow td, .flow th { border: 1px solid #000000; text-align: center; }
+			.flow table { border-collapse:collapse; border-spacing:0; white-space: nowrap; }
+			.flow td, .flow th { border: 1px solid; text-align: center; }
 			.red { color: #FF0000; }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
-			.summary { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
+			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
 			.summary:not(:last-child) { margin-bottom: 1em; }
 		</style>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
@@ -23,7 +24,7 @@
 						node.insertAdjacentHTML('beforebegin', `
 							<dt>Authors:</dt>
 							<dd>
-								See <a href="#acknowledgments">acknowledgments</a>
+								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
 		</script>
 		<script class="remove">
@@ -60,7 +61,9 @@
 			<p>For the full document, see <a href="https://w3c.github.io/sustainableweb-wsg/">https://w3c.github.io/sustainableweb-wsg/</a>.</p>
 			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
 		</section>
-		<section id="sotd" class="override"></section> <!-- Ignore -->
+		<section id="sotd"> <!-- Status of This Document -->
+			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. Comments received on the specification cannot result in changes to this version of the guidelines but may be addressed in errata or future versions of WSG. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
+		</section>
 		<section> <!-- Implementation -->
 			<h2>Implementation Advice</h2>
 			<p>The following section provides advisory guidance for other specification writers and external groups wishing to incorporate digital sustainability within their work (such as <abbr title="World Wide Web Consortium">W3C</abbr> Working and Community Groups). We are primarily a group dedicated to fostering sustainable change in web technologies associated with the creation of websites and applications. While it is outside of our group's scope to conduct horizontal reviews of other group's specifications, we may request or accept requests to collaborate with or assist in coordination with other groups to implement sustainable change.</p>
@@ -313,7 +316,7 @@
 						<p>This list should be created during ideation if possible but can also be machine-generated from a pre-determined list of known PPP factors using evidence and research. The content of this material could be further tested through automation if such factors can be aligned with product capabilities however at a bare minimum, this list must be publicly visible (such as within a sustainability statement) and utilized in-house to enact sustainable change.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
-							<li><a href="https://websitesustainability.com/cache/files/variables.pdf">The factors of Website Sustainability</a> provides a comprehensive map of the various carbon traps that exist on the Internet. From business and external elements to development and rendering, it provides a visual representation of the energy usage that can trigger emissions.</li>
+							<li><a href="https://websitesustainability.com/cache/files/variables.pdf">The Variables of Website Sustainability</a> provides a comprehensive map of the various carbon traps that exist on the Internet. From business and external elements to development and rendering, it provides a visual representation of the energy usage that can trigger emissions.</li>
 							<li>The <a href="https://blog.scottlogic.com/2024/02/13/announcing-the-proposed-technology-carbon-standard.html">(Proposed) Technology Carbon Standard</a> is an approach to classify an organization's technology carbon footprint. It is based on the Greenhouse Gas (<abbr title="Greenhouse Gas Protocol">GHG</abbr>) Protocol and aligns with Scope 1, 2, and 3 emissions.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
