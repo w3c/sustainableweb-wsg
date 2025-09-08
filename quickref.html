@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
 		<title>Quick Reference for Web Sustainability Guidelines (WSG)</title>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
 		<script class="remove">
@@ -12,7 +13,7 @@
 						node.insertAdjacentHTML('beforebegin', `
 							<dt>Authors:</dt>
 							<dd>
-								See <a href="#acknowledgments">acknowledgments</a>
+								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
 		</script>
 		<script class="remove">
@@ -29,6 +30,12 @@
 			github: "https://github.com/w3c/sustainableweb-wsg/",
 			group: "sustainableweb",
 			latestVersion: "https://w3c.github.io/sustainableweb-wsg/quickref.html",
+			alternateFormats: [
+				{
+					label: "PDF",
+					uri: "https://w3c.github.io/sustainableweb-wsg/checklist.pdf",
+				},
+			],
 			specStatus: "ED",
 			postProcess: [authorRef],
 		}
@@ -37,28 +44,30 @@
 			/* Fix for ReSpec table layout and overflow issue. */
 			table { border-collapse: collapse; border-spacing: 0; }
 			table tr { border: black solid 1px; padding: 0.5em 0.25em; }
-			.highlight { background-color: #fffe65; }
+			.highlight { background-color: var(--example-border); color: var(--outdatedspec-text); }
 		</style>
 	</head>
 	<body>
 		<section id="abstract"> <!-- Abstract -->
-			<p>This document provides a quick reference to the <a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines</a> (<abbr title="Web Sustainability Guidelines">WSG</abbr>) specification. The content is laid out in a table, with success criteria, Impact, Effort, and <abbr title="Global Reporting Initiative">GRI</abbr> ratings noted for each guideline. Checkboxes are provided for those individuals or groups wishing to work through the list (note your progress will not be saved), and a <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">print-friendly</a> (<abbr title="Portable Document Format">PDF</abbr>) version is also available to audit your work as part of an exercise.</p>
+			<p>This document provides a quick reference to the <a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines</a> (<abbr title="Web Sustainability Guidelines">WSG</abbr>) specification. The content is laid out in a table, with success criteria, Impact, Effort, and Global Reporting Initiative <abbr title="Global Reporting Initiative">GRI</abbr> ratings noted for each guideline. Checkboxes are provided for those individuals or groups wishing to work through the list (note your progress will not be saved), and a <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">print-friendly</a> (<abbr title="Portable Document Format">PDF</abbr>) version is also available to audit your work as part of an exercise.</p>
 			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
 		</section>
-		<section id="sotd" class="override"></section> <!-- Ignore -->
+		<section id="sotd"> <!-- Status of This Document -->
+			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. Comments received on the specification cannot result in changes to this version of the guidelines but may be addressed in errata or future versions of WSG. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
+		</section>
 		<section> <!-- User Experience Design -->
 			<h2>User Experience Design</h2>
 			<table>
 				<tbody>
 					<tr class="highlight">
-						<td><a href="https://w3c.github.io/sustainableweb-wsg/#display-any-variables-that-have-a-negative-impact-on-your-project">2.1</a></td>
-						<td colspan="5">Display any variables that have a negative impact on your project</td>
+						<td><a href="https://w3c.github.io/sustainableweb-wsg/#display-any-factors-that-have-a-negative-impact-on-your-project">2.1</a></td>
+						<td colspan="5">Display any factors that have a negative impact on your project</td>
 					</tr>
 					<tr>
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="2.1a"></td><td colspan="5"><label for="2.1a">Identify existing or potential negative external variables affecting a project. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.</label></td>
+						<td><input type="checkbox" id="2.1a"></td><td colspan="5"><label for="2.1a">Identify existing or potential negative external factors affecting a project. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -79,7 +88,7 @@
 						<td><input type="checkbox" id="2.2a"></td><td colspan="5"><label for="2.2a">Identify primary and secondary target users. Evaluate and define their needs through quantitative and/or qualitative research, testing, or analytics. Ensure your users and affected communities are consistently and closely involved in the research and testing process.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="2.2b"></td><td colspan="5"><label for="2.2b">Account for potential user constraints, such as the device age, operating system choice or version, browser, <abbr title="Virtual Private Network">VPN</abbr> use, and connection speeds when designing and assessing the quality of user experiences.</label></td>
+						<td><input type="checkbox" id="2.2b"></td><td colspan="5"><label for="2.2b">Account for potential user constraints, such as the device age, operating system choice or version, browser, Virtual Private Network (<abbr title="Virtual Private Network">VPN</abbr>) use, and connection speeds when designing and assessing the quality of user experiences.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="2.2c"></td><td colspan="5"><label for="2.2c">Conduct internal and user research to identify whether a technical, material, or human constraint might require adaptations to reduce barriers or improve access to content.</label></td>
@@ -220,7 +229,7 @@
 						<td><input type="checkbox" id="2.8a"></td><td colspan="5"><label for="2.8a">Provide an accessible, easy-to-use navigation menu with search features to help users easily find what they need.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="2.8b"></td><td colspan="5"><label for="2.8b">Consider implementing an efficient and regularly updated sitemap for human users. While guidance beyond the nav bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.</label></td>
+						<td><input type="checkbox" id="2.8b"></td><td colspan="5"><label for="2.8b">Consider implementing an efficient and regularly updated sitemap for human users. While guidance beyond the navigation bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="2.8c"></td><td colspan="5"><label for="2.8c">Implement lightweight and efficient means for users to learn about new content and services.</label></td>
@@ -550,13 +559,13 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="2.22a"></td><td colspan="5"><label for="2.22a">Remove non-essential notifications. Justify and reduce email, text message (<abbr title="Short Messaging Service">SMS</abbr>), and other invasive or energy-intense notifications to what is strictly necessary. Useful notifications, such as alerts for new content should be used with care and restraint.</label></td>
+						<td><input type="checkbox" id="2.22a"></td><td colspan="5"><label for="2.22a">Remove non-essential notifications. Justify and reduce email, text message (<abbr title="Short Messaging Service">SMS</abbr>), and other invasive or energy-intense notifications to what is strictly necessary. Useful notifications, such as alerts for new content should be used with care and restraint, having both the users understanding and informed consent.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="2.22b"></td><td colspan="5"><label for="2.22b">Let the user adjust their own notification and messaging settings. Ensure the options to unsubscribe, log out, and close an account should be available and visible. Ensure it is possible for the user to change their contact details.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="2.22c"></td><td colspan="5"><label for="2.22c">Clearly explain the result of a potential input through helpful prompts and messages that explain errors, next steps, and other relevant information. This will help to manage users’ expectations.</label></td>
+						<td><input type="checkbox" id="2.22c"></td><td colspan="5"><label for="2.22c">Clearly explain the result of a potential input through helpful prompts and messages that explain errors, next steps, and other relevant information. This will help to manage user's expectations.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -574,7 +583,7 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="2.23a"></td><td colspan="5"><label for="2.23a">Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a <abbr title="Cascading StyleSheets">CSS</abbr> print stylesheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.</label></td>
+						<td><input type="checkbox" id="2.23a"></td><td colspan="5"><label for="2.23a">Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a <abbr title="Cascading Style Sheets">CSS</abbr> print style sheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="2.23b"></td><td colspan="5"><label for="2.23b">Optimize and compress all downloadable documents. Make them available in a variety of accessible file formats.</label></td>
@@ -767,7 +776,7 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.2a"></td><td colspan="5"><label for="3.2a">Remove unnecessary whitespace, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to HTML, CSS, JavaScript, JSON, <abbr title="Scalable Vector Graphics">SVG</abbr>, and other relevant file types.</label></td>
+						<td><input type="checkbox" id="3.2a"></td><td colspan="5"><label for="3.2a">Remove unnecessary white space, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to HTML, CSS, JavaScript, JSON, <abbr title="Scalable Vector Graphics">SVG</abbr>, and other relevant file types.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -827,7 +836,7 @@
 						<td><input type="checkbox" id="3.5b"></td><td colspan="5"><label for="3.5b">Improve existing solutions rather than redeveloping and redesigning products from scratch, since the latter would duplicate the coding effort and maintenance burden for developers rather than reduce the learning burden for users.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.5c"></td><td colspan="5"><label for="3.5c">Use organization methodology and systems such as <abbr title="Don't Repeat Yourself">DRY</abbr> or <abbr title="Write Everything Twice">WET</abbr> to optimize the arrangement and output of your JavaScript and CSS.</label></td>
+						<td><input type="checkbox" id="3.5c"></td><td colspan="5"><label for="3.5c">Use organization methodology and systems such as Don't Repeat Yourself (<abbr title="Don't Repeat Yourself">DRY</abbr>) or Write Everything Twice (<abbr title="Write Everything Twice">WET</abbr>) to optimize the arrangement and output of your JavaScript and CSS.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -953,7 +962,7 @@
 						<td><input type="checkbox" id="3.10a"></td><td colspan="5"><label for="3.10a">Identify errors through live validation and with feedback on submission.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.10b"></td><td colspan="5"><label for="3.10b">Clearly label and identify required elements to ensure easy recognition for users using assistive technologies. Remove any unnecessary optional elements.</label></td>
+						<td><input type="checkbox" id="3.10b"></td><td colspan="5"><label for="3.10b">Clearly label and identify required elements to ensure easy recognition for users using assistive technologies.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="3.10c"></td><td colspan="5"><label for="3.10c">Always allow the copying and pasting of content (including passwords) from external sources.</label></td>
@@ -1697,7 +1706,7 @@
 						<td><input type="checkbox" id="5.8b"></td><td colspan="5"><label for="5.8b">Incentivize leadership, teams, and individuals to make progress toward the goals outlined in their training. Examples include dedicating time for sustainability-related activities, recognizing completion, and other benefits.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="5.8c"></td><td colspan="5"><label for="5.8c">Anticipate and map potential negative external variables and act to minimize their overall impact.</label></td>
+						<td><input type="checkbox" id="5.8c"></td><td colspan="5"><label for="5.8c">Anticipate and map potential negative external factors and act to minimize their overall impact.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>
@@ -1988,7 +1997,7 @@
 						<td><input type="checkbox" id="5.20a"></td><td colspan="5"><label for="5.20a">Maintain a publicly accessible privacy policy, terms and conditions, and any other documents as required by law in the jurisdictions in which the product or service operates. Adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. Provide documents in accessible formats and use clear, user-friendly language to ensure comprehension by all users. Avoid unnecessary jargon, technical language, and legalese. Support emerging legislation and implement best practices related to data privacy, sustainability, and responsible data management.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="5.20b"></td><td colspan="5"><label for="5.20b">Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a user's "right to be forgotten" will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.</label></td>
+						<td><input type="checkbox" id="5.20b"></td><td colspan="5"><label for="5.20b">Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a user's "right to be forgotten" or opt-out will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>Impact and Effort</strong></td>

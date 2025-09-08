@@ -2,11 +2,12 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
 		<title>Resources for Web Sustainability Guidelines (WSG)</title>
 		<style>
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
-			.summary { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
+			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
 			.summary:not(:last-child) { margin-bottom: 1em; }
 			/* Tagging Styles */
 			.tag { background: #d9d9d9; border-radius: 3px; color: #091832; display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-right: 0.5em; padding: 2px 8px 0 8px; vertical-align: middle; }
@@ -20,7 +21,7 @@
 						node.insertAdjacentHTML('beforebegin', `
 							<dt>Authors:</dt>
 							<dd>
-								See <a href="#acknowledgments">acknowledgments</a>
+								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
 		</script>
 		<script class="remove">
@@ -1151,15 +1152,17 @@
 			<p>Resources are for information purposes only, no endorsement is implied. Neither the <abbr title="World Wide Web Consortium">W3C</abbr> nor the <a href="https://www.w3.org/groups/ig/sustainableweb/">Sustainable Web Interest Group</a> can guarantee the sustainability of these external resources.</p>
 			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
 		</section>
-		<section id="sotd" class="override"></section> <!-- Ignore -->
-		<section class="informative"> <!-- Additional Resources -->
+		<section id="sotd"> <!-- Status of This Document -->
+			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. Comments received on the specification cannot result in changes to this version of the guidelines but may be addressed in errata or future versions of WSG. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
+		</section>
+		<section> <!-- Additional Resources -->
 			<h2>Additional Resources</h2>
 			<section> <!-- User Experience Design -->
 				<h3>User Experience Design</h3>
-				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#display-any-variables-that-have-a-negative-impact-on-your-project">2.1</a></strong>: Display any variables that have a negative impact on your project</p>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#display-any-factors-that-have-a-negative-impact-on-your-project">2.1</a></strong>: Display any factors that have a negative impact on your project</p>
 				<div class="summary">
-					<details> <!-- SC: External variables -->
-						<summary id="UX01-1">SC: External variables</summary>
+					<details> <!-- SC: External factors -->
+						<summary id="UX01-1">SC: External factors</summary>
 						<ul>
 							<li>[[AFNOR]] Spec 5.1.6 (<em>French</em>)</li>
 							<li><a href="https://climateproductleaders.org/playbook/anticipate-consequences">Anticipate consequences</a></li>
@@ -1534,7 +1537,7 @@
 							<li><a href="https://www.lionandmason.com/ux-blog/reducing-cognitive-overload-declutter-your-design-for-better-ux/">Reducing Cognitive Overload</a></li>
 							<li><a href="https://oliverjam.es/articles/svg-sprites">Simple icon systems using SVG sprites</a></li>
 							<li><a href="https://www.uxmatters.com/mt/archives/2015/07/simplify-your-ux-through-reduction.php">Simplify Your UX Through Reduction</a></li>
-							<li><a href="https://webdirections.org/blog/the-website-obesity-crisis/">The Website Obesity Crisis</a>  (<em>Video</em>)</li>
+							<li><a href="https://webdirections.org/blog/the-website-obesity-crisis/">The Website Obesity Crisis</a> (<em>Video</em>)</li>
 							<li>United Nations [[SDGS]]<ul>
 								<li><a href="https://sdgs.un.org/goals/goal7#targets_and_indicators">Goal 7</a> - Sustainable Energy</li>
 							</ul></li>
@@ -3212,7 +3215,7 @@
 							<li><a href="https://web.dev/explore/fast?hl=en#optimize-your-third-party-resources">Fast Load Times: Optimize your third-party resources</a></li>
 							<li><a href="https://www.smashingmagazine.com/2021/01/front-end-performance-defining-the-environment/">Front-End Performance 2021: Defining The Environment</a></li>
 							<li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/JavaScript">JavaScript performance</a></li>
-							<li>Measuring energy consumption of cross-platform frameworks for mobile applications [[FRAMEWORKS]]  (<em>PDF</em>)</li>
+							<li>Measuring energy consumption of cross-platform frameworks for mobile applications [[FRAMEWORKS]] (<em>PDF</em>)</li>
 							<li><a href="http://microjs.com/">MicroJS</a></li>
 							<li><a href="https://plainvanillaweb.com/">Plain Vanilla</a></li>
 							<li><a href="https://infrequently.org/2024/08/">Reckoning</a></li>
@@ -3341,7 +3344,7 @@
 						<ul>
 							<li><a href="https://www.htmhell.dev/adventcalendar/2024/7/">Almost, but not quite, entirely unlike</a></li>
 							<li><a href="https://meiert.com/blog/optional-html/">Optional HTML: Everything You Need to Know</a></li>
-							<li><a href="https://css-tricks.com/some-html-is-optional/">Some HTML is “Optional”</a></li>
+							<li><a href="https://css-tricks.com/some-html-is-optional/">Some HTML is Optional</a></li>
 							<li><a href="https://meiert.com/blog/stop-closing-void-elements/">Stop Closing Void Elements</a></li>
 							<li><a href="https://remysharp.com/2019/09/12/why-some-html-is-optional">(Why) Some HTML is "optional"</a></li>
 							<li><a href="https://blog.novalistic.com/archives/2017/08/optional-end-tags-in-html/">You are not required to close your P, LI, IMG, or BR tags in HTML</a></li>
@@ -4572,7 +4575,7 @@
 							<li><a href="https://ahrefs.com/blog/ai-traffic-study/">63% of Websites Receive AI Traffic</a></li>
 							<li><a href="https://go-to-hellman.blogspot.com/2025/03/ai-bots-are-destroying-open-access.html">AI bots are destroying Open Access</a></li>
 							<li><a href="https://techcrunch.com/2025/04/02/ai-crawlers-cause-wikimedia-commons-bandwidth-demands-to-surge-50/">AI crawlers cause Wikimedia Commons bandwidth demands to surge 50%</a></li>
-							<li><a href="https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/">Block the Bots that Feed “AI” Models by Scraping Your Website</a></li>
+							<li><a href="https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/">Block the Bots that Feed AI Models by Scraping Your Website</a></li>
 							<li><a href="https://ethanmarcotte.com/wrote/blockin-bots/">Blockin bots</a></li>
 							<li><a href="https://frontendmasters.com/blog/blocking-ai-bots/">Blocking AI Bots</a></li>
 							<li><a href="https://yoast.com/what-to-know-about-bot-traffic/">Bot traffic: What it is and why you should care about it</a></li>
@@ -5435,8 +5438,8 @@
 							</ul></li>
 						</ul>
 					</details>
-					<details> <!-- SC: Negative variables -->
-						<summary id="BSPM08-3">SC: Negative variables</summary>
+					<details> <!-- SC: Negative factors -->
+						<summary id="BSPM08-3">SC: Negative factors</summary>
 						<ul>
 							<li><a href="https://owasp.org/www-project-top-10-privacy-risks/">OWASP Top 10 Privacy Risks</a></li>
 							<li><a href="https://owasp.org/www-project-top-ten/">OWASP Top Ten</a></li>
@@ -6368,7 +6371,7 @@
 						<summary id="BSPM22-5">SC: Automated tooling</summary>
 						<ul>
 							<li><a href="https://about.readthedocs.com/blog/2024/07/ai-crawlers-abuse/">AI crawlers need to be more respectful</a></li>
-							<li><a href="https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/">Block the Bots that Feed “AI” Models by Scraping Your Website</a></li>
+							<li><a href="https://neil-clarke.com/block-the-bots-that-feed-ai-models-by-scraping-your-website/">Block the Bots that Feed AI Models by Scraping Your Website</a></li>
 							<li><a href="https://ethanmarcotte.com/wrote/blockin-bots/">Blockin bots</a></li>
 							<li><a href="https://frontendmasters.com/blog/blocking-ai-bots/">Blocking AI Bots</a></li>
 							<li><a href="https://yoast.com/what-to-know-about-bot-traffic/">Bot traffic: What it is and why you should care about it</a></li>
@@ -6654,7 +6657,7 @@
 							<li>[[GPF]] - General Policy Framework for the Ecodesign of Digital Services<ul>
 								<li>1.5 - Strategy (Impact Goals)</li>
 							</ul></li>
-							<li><a href="https://simpleprogrammer.com/developer-workload/">How to Say “No” to an Excessive Workload as a Developer</a></li>
+							<li><a href="https://simpleprogrammer.com/developer-workload/">How to Say No to an Excessive Workload as a Developer</a></li>
 							<li><a href="https://www.kornferry.com/careers/career-advice/overcoming-overworking-15-tips-for-taking-back-your-life">Overcoming Overworking</a></li>
 							<li><a href="https://www.culturemonkey.io/employee-engagement/overworked-employees/">Overworked employees: 15 Tips to follow as a HR leader in 2024</a></li>
 							<li><a href="https://www.allstacks.com/blog/stop-glamorizing-overwork-and-prevent-software-engineer-burnout">Stop Glamorizing Overwork and Prevent Software Engineer Burnout</a></li>

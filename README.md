@@ -153,11 +153,11 @@ These documents are reachable via GitHub pages and can be queried using JavaScri
 
 **WSG** (*guidelines.json*)
 ```js
-category[1].guidelines[0].guideline = "Display any variables that have a negative impact on your project"
+category[1].guidelines[0].guideline = "Display any factors that have a negative impact on your project"
 ```
 **STAR** (*star.json*)
 ```js
-category[1].techniques[0].title = "Produce a List of Variables To Monitor for Sustainability Impacts"
+category[1].techniques[0].title = "Produce a List of Factors To Monitor for Sustainability Impacts"
 ```
 
 One method of reaching the API could be through code similar to the below (customize to your requirements):

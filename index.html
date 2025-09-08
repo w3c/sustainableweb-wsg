@@ -2,21 +2,20 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
 		<title>Web Sustainability Guidelines (WSG)</title>
 		<style>
-			/* Fix for Visited Link Issue: https://github.com/w3c/sustyweb/issues/26 */
-			.resources a:visited:not(.bibref) { color: #717171; }
 			/* Fix for Testability Highlight Color Palette: https://github.com/w3c/sustyweb/issues/29 */
 			section section section[data-testable] { display: flex; flex-wrap: wrap; }
 			.external { align-items: end; display: flex; gap: 1em; position: relative; top: 0.1em; white-space: nowrap; width: fit-content; }
 			.machine, .human, .urls { border: 1px solid #A0A0A0; border-radius: 10px; display: block; font-weight: bold; padding: 0.25em 0.5em; }
-			.machine { background-color: #ffff00; }
-			.human { background-color: #ff9fae; }
-			.urls { background-color: #ffffff; }
+			.machine { background-color: #ffff00; color: var(--outdatedspec-text) !important; }
+			.human { background-color: #ff9fae; color: var(--outdatedspec-text); }
+			.urls { background-color: var(--tocsidebar-bg); }
 			/* Fix for Specification Readability: https://github.com/w3c/sustyweb/issues/92 */
 			.subheading { border-left: thick solid #d9d9d9; font-style: italic; padding: 0.5em 1em; }
 			.credit { font-size: small; }
-			.summary pre { background-color: #fafafa;}
+			.summary pre { background-color: var(--note-bg);}
 			.summary .subtitle { margin-top: 2.5em; }
 			.summary .rating, .summary .reporting { align-items: center; display: flex; flex-wrap: wrap; row-gap: 1em; }
 			.summary .rating dd { margin: 0; } .summary .rating dt { width: 83px; }
@@ -31,14 +30,14 @@
 			@media print { section section:last-child h4, section section:last-child .self-link, section section:last-child summary, .summary, .pageButtons, #toc { display: none !important; } .full-document #toc { display: block !important; } body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
-			.summary { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
+			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
 			/* Multipage Document: https://github.com/w3c/sustainableweb-wsg/issues/14#issuecomment-2662164386 */
 			@media (scripting: enabled) {
 				.hide { content-visibility: hidden; display: inherit !important; height: 1px !important; left: -1000px !important; overflow: hidden !important; position: absolute !important; top: -1px !important; width: 1px !important; }
 				.show { content-visibility: visible; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 			.pageButtons { margin-top: 2em; padding-left: 0; }
 			.pageButtons, .pageButtons li, .pageButtons tbody { display: flex; flex: 1; gap: 10px; }
-			.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: #F3F3F3; display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
+			.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: var(--tocsidebar-bg); display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
 			.previousPage { justify-content: left; } .fullDocument { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
 			@media (scripting: none) {
 				@media print { #toc { display: none !important; } }
@@ -93,7 +92,7 @@
 						node.insertAdjacentHTML('beforebegin', `
 							<dt>Authors:</dt>
 							<dd>
-								See <a href="#acknowledgments">acknowledgments</a>
+								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
 		</script>
 		<script>
@@ -359,7 +358,7 @@
 		</script>
 	</head>
 	<body>
-		<div class="filter summary"> <!-- Filter Tool -->
+		<div id="filter" class="filter summary"> <!-- Filter Tool -->
 			<details>
 				<summary>Filter the available WSG success criteria upon certain settings</summary>
 				<form>
@@ -662,7 +661,7 @@
 				<li>Improved accessibility, compatibility, and usability boosts social inclusion and cohesion.</li>
 				<li>Sustainable user experience design best practices will often also improve performance and SEO.</li>
 			</ul>
-			<div class="summary">
+			<div id="ux-summary" class="summary">
 				<details>
 					<summary>Plain language summary of User Experience Design</summary>
 					<ul>
@@ -675,20 +674,19 @@
 					</ul>
 				</details>
 			</div>
-			<section> <!-- Display any variables that have a negative impact on your project -->
-				<h3>Display any variables that have a negative impact on your project</h3>
-				<p class="subheading">Identify, track, and publicly disclose negative external variables.</p>
+			<section> <!-- Display any factors that have a negative impact on your project -->
+				<h3>Display any factors that have a negative impact on your project</h3>
+				<p class="subheading">Identify, track, and publicly disclose negative external factors.</p>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, SDGs" data-considerations="Accessibility" data-categories="Compatibility, Hardware, Ideation, Networking, Performance, Reporting, Research, Social Equity, Software">
-					<h4 id="external-variables">Success Criterion: External variables</h4>
+					<h4 id="external-factors">Success Criterion: External factors</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#UX01-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX01-1">Resources</a></p>
-					<p>Identify existing or potential negative external variables affecting a project. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.</p>
+					<p>Identify existing or potential negative external factors affecting a project. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -699,7 +697,7 @@
 								<li><strong>Accessibility:</strong> Understanding the audience can identify potential improvements that go beyond basic inclusive design practices.</li>
 								<li><strong>Environment:</strong> Constructing a plan to reduce emissions enables improvement over time.</li>
 								<li><strong>Privacy:</strong> Having an overview of components makes it easier to identify potential data protection risks.</li>
-								<li><strong>Social Equity:</strong> Auditing variables can reveal factors not commonly understood or covered in established best practices, enabling better support for underrepresented groups.</li>
+								<li><strong>Social Equity:</strong> Auditing factors can reveal factors not commonly understood or covered in established best practices, enabling better support for underrepresented groups.</li>
 							</ul>
 							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
 							<p>You can find details about complying with [[GRI]] through the body behind the standard.</p>
@@ -726,7 +724,7 @@
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="high" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, GreenIT, SDGs" data-considerations="Accessibility" data-categories="Compatibility, Ideation, KPIs, Patterns, Reporting, Research, Social Equity, UI, Usability">
 					<h4 id="user-constraints">Success Criterion: User constraints</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#UX02-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX02-2">Resources</a></p>
-					<p>Account for potential user constraints, such as the device age, operating system choice or version, browser, <abbr title="Virtual Private Network">VPN</abbr> use, and connection speeds when designing and assessing the quality of user experiences.</p>
+					<p>Account for potential user constraints, such as the device age, operating system choice or version, browser, Virtual Private Network <abbr title="Virtual Private Network">VPN</abbr> use, and connection speeds when designing and assessing the quality of user experiences.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="high" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, SDGs" data-considerations="Accessibility" data-categories="Compatibility, Ideation, KPIs, Patterns, Reporting, Research, Social Equity, UI, Usability">
 					<h4 id="barriers-and-access">Success Criterion: Barriers and access</h4>
@@ -748,7 +746,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -791,7 +788,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -841,7 +837,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -884,7 +879,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -943,7 +937,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -986,7 +979,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -1024,7 +1016,7 @@
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, GreenIT, OpQuast" data-considerations="Accessibility" data-categories="HTML, Marketing, UI, Usability">
 					<h4 id="human-readable-sitemaps">Success Criterion: Human-readable sitemaps</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#UX08-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX08-2">Resources</a></p>
-					<p>Consider implementing an efficient and regularly updated sitemap for human users. While guidance beyond the nav bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.</p>
+					<p>Consider implementing an efficient and regularly updated sitemap for human users. While guidance beyond the navigation bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="OpQuast" data-considerations="Accessibility" data-categories="HTML, Marketing, UI, Usability">
 					<h4 id="new-content">Success Criterion: New content</h4>
@@ -1036,7 +1028,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -1086,7 +1077,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -1127,7 +1117,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -1181,7 +1170,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -1232,7 +1220,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -1271,7 +1258,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -1279,7 +1265,7 @@
 							</dl>
 							<p class="subtitle"><strong>Benefits</strong></p>
 							<ul class="benefits">
-								<li><strong>Accessibility:</strong> Using a design system with accessible components will improve access to information for people with disabilities. Building design features that integrate accessibility from the start  ensures everyone is always included.</li>
+								<li><strong>Accessibility:</strong> Using a design system with accessible components will improve access to information for people with disabilities. Building design features that integrate accessibility from the start ensures everyone is always included.</li>
 								<li><strong>Conversion:</strong> Using design systems supports consistent user interfaces. This improves user trust because individuals will recognize familiar components and know how to use them. This can improve conversion rates as it will reduce frustration, abandonment, and possible complaints.</li>
 								<li><strong>Economic:</strong> Using standardized components and avoiding redundancy can reduce development time and the associated costs. Familiarity makes the experience easier for users, reducing bounce rates.</li>
 								<li><strong>Environment:</strong> Following web standards to build consistent interfaces requires less energy and resources, because they are naturally more optimized. Design systems that incorporate environmental criteria can help to scale digital sustainability and reduce redundancy, reduced energy use and negative impact.</li>
@@ -1322,7 +1308,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -1384,7 +1369,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -1449,7 +1433,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -1499,7 +1482,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -1559,7 +1541,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -1622,7 +1603,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -1680,7 +1660,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -1721,7 +1700,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -1762,7 +1740,7 @@
 				<section class="notoc" data-testable="human" data-impact="low" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, GR491" data-considerations="Privacy" data-categories="JavaScript, UI, Usability">
 					<h4 id="need-for-notification">Success Criterion: Need for notification</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX22-1">Resources</a></p>
-					<p>Remove non-essential notifications. Justify and reduce email, text message (<abbr title="Short Messaging Service">SMS</abbr>), and other invasive or energy-intense notifications to what is strictly necessary. Useful notifications, such as alerts for new content should be used with care and restraint.</p>
+					<p>Remove non-essential notifications. Justify and reduce email, text message (<abbr title="Short Messaging Service">SMS</abbr>), and other invasive or energy-intense notifications to what is strictly necessary. Useful notifications, such as alerts for new content should be used with care and restraint, having both the users understanding and informed consent.</p>
 				</section>
 				<section class="notoc" data-testable="human" data-impact="low" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GR491, GreenIT" data-considerations="Privacy" data-categories="JavaScript, UI, Usability">
 					<h4 id="notification-settings">Success Criterion: Notification settings</h4>
@@ -1772,14 +1750,13 @@
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GR491" data-considerations="Privacy" data-categories="JavaScript, UI, Usability">
 					<h4 id="prompts-and-responses">Success Criterion: Prompts and responses</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#UX22-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX22-3">Resources</a></p>
-					<p>Clearly explain the result of a potential input through helpful prompts and messages that explain errors, next steps, and other relevant information. This will help to manage users’ expectations.</p>
+					<p>Clearly explain the result of a potential input through helpful prompts and messages that explain errors, next steps, and other relevant information. This will help to manage user's expectations.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -1815,11 +1792,11 @@
 			</section>
 			<section> <!-- Reduce the impact of downloadable and physical documents -->
 				<h3>Reduce the impact of downloadable and physical documents</h3>
-				<p class="subheading">Reduce the need for physical documents as much as possible by allowing the saving of well-labeled, optimized digital downloads and having a print stylesheet.</p>
+				<p class="subheading">Reduce the need for physical documents as much as possible by allowing the saving of well-labeled, optimized digital downloads and having a print style sheet.</p>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GR491, GreenIT, OpQuast, SDGs" data-considerations="" data-categories="Assets, Compatibility, Content, E-Waste, Hardware, HTML, Performance, Software, UI, Usability">
 					<h4 id="printing-documents">Success Criterion: Printed documents</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#UX23-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX23-1">Resources</a></p>
-					<p>Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a CSS print stylesheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.</p>
+					<p>Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a CSS print style sheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, GR491, OpQuast, SDGs" data-considerations="" data-categories="Assets, Compatibility, Content, E-Waste, Hardware, HTML, Performance, Software, UI, Usability">
 					<h4 id="optimize-documents">Success Criterion: Optimized documents</h4>
@@ -1841,7 +1818,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -1895,7 +1871,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -1944,7 +1919,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -1989,7 +1963,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2033,7 +2006,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2044,7 +2016,7 @@
 								<li><strong>Conversion:</strong> Acting on feedback often improves conversion rates because it ensures that your digital product or service reflects the needs of your audience.</li>
 								<li><strong>Economic:</strong> Avoiding wasted development time building features that bring little value to the consumer means resources can be focused where they deliver more value.</li>
 								<li><strong>Environment:</strong> Learning from feedback enables choices that improve environmental impact. An example of this would be making sure that the most frequently used features are placed higher in the visual hierarchy. This reduces the effort and time users must invest to achieve their goals.</li>
-								<li><strong>Performance:</strong> Performing user testing allows you to retain focus on goal and maintain good performance  without unnecessary complexity.</li>
+								<li><strong>Performance:</strong> Performing user testing allows you to retain focus on goal and maintain good performance without unnecessary complexity.</li>
 							</ul>
 							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
 							<p>You can find details about complying with [[GRI]] through the body behind the standard.</p>
@@ -2073,7 +2045,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2131,7 +2102,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -2183,7 +2153,7 @@
 				<li>Lower abandonment rates thanks to optimized code on both the client and server-side means fewer errors, less downtime, and better user experience.</li>
 				<li>More efficient web services inevitably translate to better performance and technical SEO, boosting search engine visibility.</li>
 			</ul>
-			<div class="summary">
+			<div id="webdev-summary" class="summary">
 				<details>
 					<summary>Plain language summary of Web Development</summary>
 					<ul>
@@ -2215,7 +2185,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2225,7 +2194,7 @@
 							<ul class="benefits">
 								<li><strong>Conversion:</strong> Page speed and web performance are confirmed ranking factors when it comes to SEO. A faster digital product or service may support an organization's efforts to rank higher on search engines. Combined with the better on-page user experience, this can lead to improved conversion rates.</li>
 								<li><strong>Environment:</strong> Limiting the number of server requests and the <abbr title="Document Object Model">DOM</abbr> size lessens the negative environmental impact of a product or service' by reducing CPU and <abbr title="Graphics Processing Unit">GPU</abbr> cycles and <abbr title="Random Access Memory">RAM</abbr> usage. This brings down energy consumption, and reduces the need to recharge portable devices as frequently.</li>
-								<li><strong>Performance:</strong> Reducing the hardware load  improves overall performance. Devices are less likely to be overloaded or hit their limits with reduced resources.</li>
+								<li><strong>Performance:</strong> Reducing the hardware load improves overall performance. Devices are less likely to be overloaded or hit their limits with reduced resources.</li>
 							</ul>
 							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
 							<p>You can find details about complying with [[GRI]] through the body behind the standard.</p>
@@ -2247,14 +2216,13 @@
 				<section class="notoc" data-testable="machine" data-impact="low" data-effort="low" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="" data-categories="CSS, HTML, JavaScript, Performance">
 					<h4 id="minified-code">Success Criterion: Minified code</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD02-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD02-1">Resources</a></p>
-					<p>Remove unnecessary whitespace, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to <abbr title="Hypertext Markup Language">HTML</abbr>, CSS, JavaScript, JSON, <abbr title="Scalable Vector Graphics">SVG</abbr>, and other relevant file types.</p>
+					<p>Remove unnecessary white space, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to <abbr title="Hypertext Markup Language">HTML</abbr>, CSS, JavaScript, JSON, <abbr title="Scalable Vector Graphics">SVG</abbr>, and other relevant file types.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -2263,7 +2231,7 @@
 							<p class="subtitle"><strong>Benefits</strong></p>
 							<ul class="benefits">
 								<li><strong>Conversion:</strong> Faster page speeds improve user experience across the board. This makes users less likely to abandon their journey or search for their information elsewhere.</li>
-								<li><strong>Performance:</strong> Less data transferred means reduced loading times. Whitespace itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact.</li>
+								<li><strong>Performance:</strong> Less data transferred means reduced loading times. White space itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact.</li>
 							</ul>
 							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
 							<p>You can find details about complying with [[GRI]] through the body behind the standard.</p>
@@ -2296,7 +2264,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2304,7 +2271,7 @@
 							</dl>
 							<p class="subtitle"><strong>Benefits</strong></p>
 							<ul class="benefits">
-								<li><strong>Conversion:</strong> Modularizing code can accelerate performance,  improving user experience while reducing the chance of abandonment. This is especially impact for users of low-resource devices, such as handhelds.</li>
+								<li><strong>Conversion:</strong> Modularizing code can accelerate performance, improving user experience while reducing the chance of abandonment. This is especially impact for users of low-resource devices, such as handhelds.</li>
 								<li><strong>Economic:</strong> Reducing the size of large files will reduce bandwidth expenses for service providers.</li>
 								<li><strong>Performance:</strong> Using smaller, modular components allows for more effective caching of commonly those reused components, while loading functions only when required reduces the payload. Unused portions of a larger resource will not be downloaded, which can have a considerable impact.</li>
 							</ul>
@@ -2341,14 +2308,13 @@
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="CSS, JavaScript, Performance">
 					<h4 id="remove-redundancy">Success Criterion: Remove redundancy</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD04-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD04-1">Resources</a></p>
-					<p>Identify and eliminate unused and dead code, commonly within <abbr title="Cascading StyleSheets">CSS</abbr> and JavaScript.</p>
+					<p>Identify and eliminate unused and dead code, commonly within <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2396,14 +2362,13 @@
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="CSS, JavaScript, Patterns, Performance">
 					<h4 id="organize-code-arrangement">Success Criterion: Organize code arrangement</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD05-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD05-3">Resources</a></p>
-					<p>Use organization methodology and systems such as <abbr title="Don't Repeat Yourself">DRY</abbr> or <abbr title="Write Everything Twice">WET</abbr> to optimize the arrangement and output of your JavaScript and CSS.</p>
+					<p>Use organization methodology and systems such as Don't Repeat Yourself (<abbr title="Don't Repeat Yourself">DRY</abbr>) or Write Everything Twice (<abbr title="Write Everything Twice">WET</abbr>) to optimize the arrangement and output of your JavaScript and CSS.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2484,7 +2449,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -2493,7 +2457,7 @@
 							<p class="subtitle"><strong>Benefits</strong></p>
 							<ul class="benefits">
 								<li><strong>Environment:</strong> Replacing heavy tooling and third-party services with lightweight tooling reduces user bandwidth usage and compute impact. It does require learning a new way of doing things or reducing the visibility of impactful features until they are requested. It can significantly reduce a page's overall 'environmental impact, including the data you have no control over. This is especially relevant when calculating Scope 3 emissions.</li>
-								<li><strong>Performance:</strong> Self-hosting fully self-contained services, features, and content are more performant by design. They avoid additional server and rendering requests or other complications associated with third-party content. You can  choose to only include the required features , further reducing overall bandwidth usage and associated emissions.</li>
+								<li><strong>Performance:</strong> Self-hosting fully self-contained services, features, and content are more performant by design. They avoid additional server and rendering requests or other complications associated with third-party content. You can choose to only include the required features, further reducing overall bandwidth usage and associated emissions.</li>
 								<li><strong>Privacy:</strong> Choosing not to embed and automatically load third-party content may be perceived as a privacy benefit by privacy-conscious users, because this reduces opportunities for their user data to be exploited.</li>
 							</ul>
 							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
@@ -2542,7 +2506,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2601,7 +2564,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2654,7 +2616,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -2666,7 +2627,7 @@
 								<li><strong>Conversion:</strong> Providing clearly navigable structures and sitemaps ensure search engines are better able to index content.</li>
 								<li><strong>Economic:</strong> Enabling quicker visits that complete the user's objective can help to encourage return visits.</li>
 								<li><strong>Environment:</strong> Reducing the time people spend searching for the information they want and aiding them on their journey will reduce energy use, including battery drain.</li>
-								<li><strong>Social Equity:</strong> Allowing users to achieve  objectives faster reduces resource consumption while potentially enhancing user health and well-being.</li>
+								<li><strong>Social Equity:</strong> Allowing users to achieve objectives faster reduces resource consumption while potentially enhancing user health and well-being.</li>
 							</ul>
 							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
 							<p>You can find details about complying with [[GRI]] through the body behind the standard.</p>
@@ -2703,7 +2664,7 @@
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, SDGs" data-considerations="Accessibility, Security" data-categories="Compatibility, HTML, UI, Usability">
 					<h4 id="label-elements">Success Criterion: Label elements</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD10-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD10-2">Resources</a></p>
-					<p>Clearly label and identify required elements to ensure easy recognition for users using assistive technologies. Remove any unnecessary optional elements.</p>
+					<p>Clearly label and identify required elements to ensure easy recognition for users using assistive technologies.</p>
 				</section>
 				<section class="notoc" data-testable="machine" data-impact="medium" data-effort="low" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="Accessibility, Security" data-categories="Compatibility, HTML, UI, Usability">
 					<h4 id="allow-clipboard">Success Criterion: Allow clipboard</h4>
@@ -2715,7 +2676,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2771,7 +2731,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2828,7 +2787,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2838,8 +2796,8 @@
 							<ul class="benefits">
 								<li><strong>Accessibility:</strong> Having a high contrast version of a site will reduce barriers to entry and time wasted for visually impaired users. Reduced motion can also accommodate other accessibility requirements.</li>
 								<li><strong>Conversion:</strong> Delivering better user experience by meeting their preferences can improve conversion and encourage repeat visits.</li>
-								<li><strong>Economic:</strong> Using print media queries within stylesheets can reduce users' ink use and paper costs.</li>
-								<li><strong>Environment:</strong> Accommodating dark mode when preferred will always be more energy efficient on OLED devices. Similarly, animation and media have a significant impact on CPU and GPU usage, so respecting a prefers reduced motion query will reduce energy consumption. The presence of a monochrome preference query could encourage greater adoption of energy-efficient e-ink devices.  A sustainability-optimized print stylesheet can save both paper and ink output.</li>
+								<li><strong>Economic:</strong> Using print media queries within style sheets can reduce users' ink use and paper costs.</li>
+								<li><strong>Environment:</strong> Accommodating dark mode when preferred will always be more energy efficient on OLED devices. Similarly, animation and media have a significant impact on CPU and GPU usage, so respecting a prefers reduced motion query will reduce energy consumption. The presence of a monochrome preference query could encourage greater adoption of energy-efficient e-ink devices. A sustainability-optimized print style sheet can save both paper and ink output.</li>
 								<li><strong>Performance:</strong> Allowing users to access a reduced-data version of a site could significantly reduce the data transferred and the resulting carbon footprint. This can improve performance and reduce costs for individuals on a metered data plan. Detecting if scripting is disabled and offering alternative content may save wasted effort and improve the performance of a project.</li>
 								<li><strong>Social Equity:</strong> Meeting user preferences is a positive shift: You are not telling your users how they should 'experience your content, but following your users' preferences or a device' capabilities and the priority of constituencies.</li>
 							</ul>
@@ -2894,7 +2852,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -2952,7 +2909,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -3007,7 +2963,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -3057,7 +3012,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -3105,7 +3059,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -3118,7 +3071,7 @@
 								<li><strong>Economic:</strong> Including robots.txt and sitemap files helps search engines to discover and index your website. This can lead to more users and potentially more customers. The ads.txt file may reduce advertising fraud and could similarly benefit your business.</li>
 								<li><strong>Environment:</strong> Providing files expected by search engines or browsers will reduce loading errors and may improve efficiency in how users find or interact with a site. Plain text requires no rendering. If users or search engines are able to find these files, such as carbon.txt, they can load more quickly and with less CPU/GPU impact than any formatted webpage.</li>
 								<li><strong>Performance:</strong> Satisfying requests for expected files improves interactions with search engines or browsers requesting them, while also potentially avoiding additional requests once they are discovered. Plain text files contain no links, no markup, and has a low rendering impact. Including details such as site credits in such a file will reduce data transfer and have a lower rendering footprint.</li>
-								<li><strong>Transparency:</strong> Providing a humans.txt file allows you to credit the people involved in the creation process, while security.txt  provides critical points of contact if an issue is discovered. Both increase transparency.</li>
+								<li><strong>Transparency:</strong> Providing a humans.txt file allows you to credit the people involved in the creation process, while security.txt provides critical points of contact if an issue is discovered. Both increase transparency.</li>
 							</ul>
 							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
 							<p>You can find details about complying with [[GRI]] through the body behind the standard.</p>
@@ -3152,7 +3105,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -3212,7 +3164,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -3223,7 +3174,7 @@
 								<li><strong>Accessibility:</strong> Making assistive technologies a core part of project specifications from the very start and throughout a product or service''s lifecycle improves access for people with disabilities.</li>
 								<li><strong>Economic:</strong> Avoiding tooling at risk of overburdening user experience may result in financial savings, especially if tooling has associated maintenance expenses, licensing fees, or subscription costs.</li>
 								<li><strong>Environment:</strong> Evaluating long-term technology implications and taking the time to ensure they are optimized and efficiently utilized helps a team measurably reduce the environmental impact of a product or service.</li>
-								<li><strong>Performance:</strong> Reducing complexity in your infrastructure will increase developer productivity, while also reducing  overhead. This further reduces emissions.</li>
+								<li><strong>Performance:</strong> Reducing complexity in your infrastructure will increase developer productivity, while also reducing overhead. This further reduces emissions.</li>
 								<li><strong>Privacy:</strong> Prioritizing security and user privacy helps an organization better comply with current and emerging legislation.</li>
 								<li><strong>Security:</strong> Maintaining a software product and restricting your use of third-party solutions to the essential will improve overall security.</li>
 							</ul>
@@ -3259,7 +3210,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -3299,7 +3249,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -3348,7 +3297,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -3400,7 +3348,7 @@
 				<li>Efficient, sustainable hosting, infrastructure, and systems can create new marketing opportunities for your business: impressing green-minded or privacy-driven customers.</li>
 				<li>Gain economic benefits in the form of reduced hardware investment and/or operational expenses and lower maintenance costs thanks to better processes and appropriate provisioning of resources.</li>
 			</ul>
-			<div class="summary">
+			<div id="hosting-summary" class="summary">
 				<details>
 					<summary>Plain language summary of Hosting, Infrastructure, and Systems</summary>
 					<ul>
@@ -3450,7 +3398,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -3495,7 +3442,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -3552,7 +3498,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -3613,7 +3558,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -3657,7 +3601,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -3711,7 +3654,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -3751,7 +3693,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -3791,7 +3732,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -3846,7 +3786,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -3906,7 +3845,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -3915,7 +3853,7 @@
 							<p class="subtitle"><strong>Benefits</strong></p>
 							<ul class="benefits">
 								<li><strong>Economic:</strong> Using a CDN may save money because their data transfer rates are often cheaper than hosting providers.</li>
-								<li><strong>Environment:</strong> Using a CDN to host content closer to users lowers network-related carbon emissions while also reducing user device energy use  because they can load content more quickly.</li>
+								<li><strong>Environment:</strong> Using a CDN to host content closer to users lowers network-related carbon emissions while also reducing user device energy use because they can load content more quickly.</li>
 								<li><strong>Performance:</strong> Using a CDN to locate content closer to users gives them faster access to content.</li>
 							</ul>
 							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
@@ -3945,7 +3883,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -4009,7 +3946,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -4062,7 +3998,7 @@
 				<li>Clear policies and continuity planning build trust in your organization, while providing the opportunity to identify quantifiable risks and include relevant affected parties.</li>
 				<li>Appreciating users' time and resources can improve trust in a product or organization.</li>
 			</ul>
-			<div class="summary">
+			<div id="business-summary" class="summary">
 				<details>
 					<summary>Plain language summary of Business Strategy and Product Management</summary>
 					<ul>
@@ -4115,7 +4051,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -4157,7 +4092,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -4207,7 +4141,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -4245,7 +4178,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -4294,7 +4226,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -4303,7 +4234,7 @@
 							<p class="subtitle"><strong>Benefits</strong></p>
 							<ul class="benefits">
 								<li><strong>Accessibility:</strong> Auditing for accessibility can be included as a key part of a digital Life-Cycle Assessment (LCA), provided the key parameters are defined up front and maintained throughout the project to eliminate barriers to access. These parameters can include conformity with WCAG guidance, including manual checks.</li>
-								<li><strong>Environment:</strong> Conducting a rigorous LCA can reveal significant opportunities to reduce overall environmental impact through the identification and elimination of variables and vectors of digital emissions such as water and e-waste.</li>
+								<li><strong>Environment:</strong> Conducting a rigorous LCA can reveal significant opportunities to reduce overall environmental impact through the identification and elimination of factors and vectors of digital emissions such as water and e-waste.</li>
 								<li><strong>Performance:</strong> Including a detailed overview of optimizations in your LCA provides a clear direction to improve sustainability and performance.</li>
 								<li><strong>Social Equity:</strong> Including intersectional social metrics in your LCA can provide an opportunity to simultaneously consider and work on issues such as inequality, which also affect sustainability.</li>
 							</ul>
@@ -4334,7 +4265,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -4378,7 +4308,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -4417,16 +4346,15 @@
 					<p>Incentivize leadership, teams, and individuals to make progress toward the goals outlined in their training. Examples include dedicating time for sustainability-related activities, recognizing completion, and other benefits.</p>
 				</section>
 				<section class="notoc" data-testable="human" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="" data-categories="Education, Strategy">
-					<h4 id="negative-variables">Success Criterion: Negative variables</h4>
+					<h4 id="negative-factors">Success Criterion: Negative factors</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM08-3">Resources</a></p>
-					<p>Anticipate and map potential negative external variables and act to minimize their overall impact.</p>
+					<p>Anticipate and map potential negative external factors and act to minimize their overall impact.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -4478,7 +4406,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -4517,7 +4444,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -4575,7 +4501,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -4639,7 +4564,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -4683,7 +4607,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -4757,7 +4680,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -4797,7 +4719,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -4846,7 +4767,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -4900,7 +4820,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -4938,7 +4857,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -4996,7 +4914,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -5032,14 +4949,13 @@
 				<section class="notoc" data-testable="human" data-impact="high" data-effort="medium" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, SDGs" data-considerations="Privacy" data-categories="Content, Governance, Social Equity">
 					<h4 id="data-ownership">Success Criterion: Data ownership</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM20-2">Resources</a></p>
-					<p>Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a user's "right to be forgotten" will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.</p>
+					<p>Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a user's "right to be forgotten" or opt-out will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -5081,7 +4997,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -5146,7 +5061,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -5189,7 +5103,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -5232,7 +5145,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -5270,7 +5182,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -5326,7 +5237,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -5384,7 +5294,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Medium</dd>
@@ -5394,7 +5303,7 @@
 							<ul class="benefits">
 								<li><strong>Conversion:</strong> Improving performance will reduce churn and page abandonment. A website may also rank better on search engines thanks to performance being a key indicator in ranking algorithms.</li>
 								<li><strong>Economic:</strong> Reducing resource requirements means users will not have to keep upgrading devices to match the needs of digital products and services that are otherwise growing unchecked over time.</li>
-								<li><strong>Environment:</strong> Setting a strict sustainability or performance budget will reduce the chance of a digital product or service getting too large or resulting in pollution transfers, which will also ensure it has a minimal impact on a user's device. This has a direct impact on emissions by forcing businesses to choose where to make reductions and efficiency savings.  Users not having to upgrade devices as frequently will also reduce e-waste from discarded devices.</li>
+								<li><strong>Environment:</strong> Setting a strict sustainability or performance budget will reduce the chance of a digital product or service getting too large or resulting in pollution transfers, which will also ensure it has a minimal impact on a user's device. This has a direct impact on emissions by forcing businesses to choose where to make reductions and efficiency savings. Users not having to upgrade devices as frequently will also reduce e-waste from discarded devices.</li>
 								<li><strong>Performance:</strong> Keeping realistic goals regarding delivery size will push developers to optimize resource-heavy projects and reconsider using large tooling in place of lightweight alternatives. A lower target budget for a product or service will also decrease the amount of time spent transferring and rendering data.</li>
 								<li><strong>Social Equity:</strong> By having a human or planetary budget, you can assign targets to improve services for impacted groups or those affected directly by your project.</li>
 							</ul>
@@ -5457,7 +5366,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>High</dd>
@@ -5500,7 +5408,6 @@
 					<div class="summary">
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p><em>This section is non-normative.</em></p>
 							<p><strong>Impact and Effort</strong></p>
 							<dl class="rating">
 								<dt><a href="#impact">Impact</a></dt><dd>Low</dd>
@@ -5532,7 +5439,7 @@
 				<li><a class="nextPage" href="#considerations">Next page<br>Considerations</a></li>
 			</ol>
 		</section>
-		<section class="appendix informative"> <!-- Considerations -->
+		<section class="appendix"> <!-- Considerations -->
 			<h2>Considerations</h2>
 			<p>Guidelines within this specification which the Interest Group has identified possible implications for accessibility, privacy, or security, either by providing protections for end users or which are important for website providers to take in to consideration when implementing features designed to implement digital sustainability, are listed below. This list reflects the current understanding of the Interest Group but other guidelines may have implications that the Interest Group is not aware of at the time of publishing.</p>
 			<p>Individuals or organizations wishing to understand more about best practices relating to these objectives should read the relevant materials provided by <a href="https://www.w3.org/groups/">W3C Working and Interest Groups</a> in this area, as the result of good accessibility, privacy, and security, can benefit both people and the planet in measurable ways.</p>
@@ -5541,7 +5448,7 @@
 				<h3>Accessibility</h3>
 				<p>Guidelines within this specification that may relate to accessibility are:</p>
 				<ul>
-					<li><a href="#display-any-variables-that-have-a-negative-impact-on-your-project">2.1 Display any variables that have a negative impact on your project</a></li>
+					<li><a href="#display-any-factors-that-have-a-negative-impact-on-your-project">2.1 Display any factors that have a negative impact on your project</a></li>
 					<li><a href="#understand-user-requirements-or-constraints-resolving-barriers-to-access">2.2 Understand user requirements or constraints, resolving barriers to access</a></li>
 					<li><a href="#find-ways-to-resolve-any-affected-party-issues-prior-to-implementation">2.5 Find ways to resolve any affected party issues prior to implementation</a></li>
 					<li><a href="#ensure-that-navigation-and-wayfinding-are-well-structured">2.8 Ensure that navigation and wayfinding are well-structured</a></li>
@@ -5611,7 +5518,7 @@
 				<li><a class="nextPage" href="#glossary">Next page<br>Glossary</a></li>
 			</ol>
 		</section>
-		<section class="appendix informative"> <!-- Glossary -->
+		<section class="appendix"> <!-- Glossary -->
 			<h2>Glossary</h2>
 			<dl id="terms">
 				<dt>Accessibility</dt>
@@ -5622,7 +5529,7 @@
 				<dt><dfn data-lt="PPP approach">PPP</dfn></dt>
 				<dd>
 					<p>Planet, People, and Prosperity (PPP) is a set of principles that recommends considering each of these factors during the sustainability process.</p>
-					<p>This method of considering both people and the planet (alongside the needs of business) is known under other abbreviations with similar objectives such as Environmental, Social, and (corporate) Governance (<abbr title="Environment, Social, Governance">ESG</abbr>), which considers economic variables alongside; there is also Environment, Equity, and Economy (<abbr title="Environment, Equity, Economy">EEE</abbr>) that follow a similar pattern.</p>
+					<p>This method of considering both people and the planet (alongside the needs of business) is known under other abbreviations with similar objectives such as Environmental, Social, and (corporate) Governance (<abbr title="Environment, Social, Governance">ESG</abbr>), which considers economic factors alongside; there is also Environment, Equity, and Economy (<abbr title="Environment, Equity, Economy">EEE</abbr>) that follow a similar pattern.</p>
 					<div class="note">
 						<p>Such work is grounded within the three pillars of sustainability:</p>
 						<ol>
@@ -5670,7 +5577,7 @@
 				<li><a class="nextPage" href="#changelog">Next page<br>Changelog</a></li>
 			</ol>
 		</section>
-		<section class="appendix informative"> <!-- Changelog -->
+		<section class="appendix"> <!-- Changelog -->
 			<h2>Changelog</h2>
 			<p>Note that this <a href="https://github.com/w3c/sustainableweb-wsg/releases">changelog</a> only identifies substantive changes since the final draft <a href="https://github.com/w3c/sustyweb/releases">Community Group Report</a> dated <strong>Dec 6, 2024</strong>.</p>
 			<p>For a list of all issues addressed, refer to the <a href="https://github.com/w3c/sustainableweb-wsg/issues?q=is%3Aissue%20state%3Aclosed">Interest Group</a> and former <a href="https://github.com/w3c/sustyweb/issues?q=is%3Aissue%20state%3Aclosed">Community Group</a> issue trackers.</p>
@@ -5679,7 +5586,7 @@
 					<summary>Ongoing Release Notes</summary>
 					<p><strong>Additions:</strong></p>
 					<ul>
-						<li>None</li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/122">#122</a>] Added dark mode capability to the specification and supplements.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
 					<p><strong>Updates:</strong></p>
 					<ul>
@@ -5688,6 +5595,7 @@
 					<p><strong>Fixes:</strong></p>
 					<ul>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/70">#70</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/117">#117</a>] Global editorial improvements and bug fixes have been applied to the WSG.<br><span class="credit">@AlexDawsonUK, @codewordcreative, @jenstrickland, @mrchrisadams, & @ryansholin</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/79">#79</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/119">#119</a>] Intents have been updated, shortened, and turned into guideline subheadings.<br><span class="credit">@airbr, @AlexDawsonUK, Alisa Bonsignore, @andreadavanzo, @codewordcreative, Sarah Zama, @susannah-hill & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/89">#89</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/90">#90</a>] Structure of the crossover links has been improved for accessibility.<br><span class="credit">@jenstrickland, @pkra, @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/90">#90</a>] Attribution for authors now conforms to pubRules with acknowledgements link.<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/93">#93</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/issues/102">#102</a>], & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/104">#104</a>] Editorial improvements have been provided for the web dev success criteria.<br><span class="credit">@airbr, @AlexDawsonUK, @codewordcreative, @fershad, @hidde, @ryansholin, & @TzviyaSiegman</span></li>
@@ -5702,13 +5610,16 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/113">#113</a>] Editorial improvements have been provided for the business benefits.<br><span class="credit">@codewordcreative, @timfrick, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/114">#114</a>] Editorial improvements have been provided for the examples.<br><span class="credit">@AlexDawsonUK, @codewordcreative, & @timfrick</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/118">#118</a>] Broken links and redirects have been resolved or removed.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/120">#120</a>] Resolved an issue around language use of normative in supporting documents.<br><span class="credit">@frivoal, @hidde, @tantek</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/121">#121</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/122">#122</a>] Alignment with W3C Principle Notes, Manual of Style, and QA Framework.<br><span class="credit">@AlexDawsonUK, @codewordcreative, & @hidde</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/122">#122</a>] Aligned all documents with mandatory pubRules requirements.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
 					<!--
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/">#</a>] Change.<br><span class="credit">@Github</span></li>
 					-->
 				</details>
 				<details> <!-- Q2 2025 Release Notes (30st June 2025) -->
-					<summary>Q2 2025 Release Notes  (30<sup>th</sup> June 2025)</summary>
+					<summary>Q2 2025 Release Notes (30<sup>th</sup> June 2025)</summary>
 					<p><strong>Additions:</strong></p>
 					<ul>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/6#issuecomment-2580467320">#6</a>] New <a href="https://w3c.github.io/sustainableweb-wsg/resources.html">resources supplement</a> that will serve as the repository for sustainability links.<br><span class="credit">@AlexDawsonUK</span></li>
@@ -5769,7 +5680,7 @@
 						<li>Success criteria for guideline <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-overburdening">2.17</a> now includes mentions of animation iterations.<br><span class="credit">@codewordcreative</span></li>
 						<li>Success criteria for guideline <a href="https://w3c.github.io/sustainableweb-wsg/#protocol-usage">4.9</a> now include improved protocol usage compatibility.<br><span class="credit">@ldevernay & @mgifford</span></li>
 						<li>Update to guideline <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported">4.2</a> to be more inclusive of both client and server-side.<br><span class="credit">@ldevernay & @mgifford</span></li>
-						<li>WSG has been successfully transitioned from <a href="https://github.com/w3c/sustyweb/">CG</a> to the W3C <a href="https://github.com/w3c/sustainableweb-wsg/">IG</a> repository.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>WSG has been successfully transitioned from <a href="https://github.com/w3c/sustyweb/">CG</a> to W3C <a href="https://github.com/w3c/sustainableweb-wsg/">IG</a> repository.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/4">#4</a>] Update to guideline <a href="https://w3c.github.io/sustainableweb-wsg/#need-for-media">2.16</a> SC among others to remove language ambiguity.<br><span class="credit">@timfrick</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>] Guideline descriptions relabeled as Intent and temporarily moved to additional information.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/16">#16</a>] Former Guidelines <a href="https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files">3.18-19</a> have been merged into a single Guideline.<br><span class="credit">@andreadavanzo</span></li>

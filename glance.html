@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
 		<title>Web Sustainability Guidelines (WSG) at a Glance</title>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
 		<script class="remove">
@@ -12,7 +13,7 @@
 						node.insertAdjacentHTML('beforebegin', `
 							<dt>Authors:</dt>
 							<dd>
-								See <a href="#acknowledgments">acknowledgments</a>
+								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
 		</script>
 		<script class="remove">
@@ -108,7 +109,7 @@
 		<style>
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
-			.summary { background-color: #F3F3F3; border: medium solid #d9d9d9; padding: 1em; }
+			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
 		</style>
 	</head>
 	<body>
@@ -118,7 +119,10 @@
 			<p>While this document does provide a quick summary of numerous key aspects of the WSG specification, it must be established that it in no way should be used as a replacement for following the guidelines and success criteria as laid out in the complete, long-form specification. Reasons for this include that this summary is neither intended to be in-depth nor feature-complete. Therefore, its role as an overview to help orientate affected parties to the specification's purpose in no way provides conformance to Web Sustainability criteria.</p>
 			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
 		</section>
-		<section class="informative"> <!-- Introduction -->
+		<section id="sotd"> <!-- Status of This Document -->
+			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. Comments received on the specification cannot result in changes to this version of the guidelines but may be addressed in errata or future versions of WSG. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
+		</section>
+		<section> <!-- Introduction -->
 			<h2>Introduction</h2>
 			<section> <!-- Context -->
 				<h3>Context</h3>
@@ -177,7 +181,7 @@
 						<summary>Show / Hide available guidance.</summary>
 						<p>In relation to <strong>research and ideation</strong>, make sure you:</p>
 						<ul>
-							<li>Map all areas where your digital product <a href="https://w3c.github.io/sustainableweb-wsg/#display-any-variables-that-have-a-negative-impact-on-your-project">could impact people and the planet</a>.</li>
+							<li>Map all areas where your digital product <a href="https://w3c.github.io/sustainableweb-wsg/#display-any-factors-that-have-a-negative-impact-on-your-project">could impact people and the planet</a>.</li>
 							<li>Assess all <a href="https://w3c.github.io/sustainableweb-wsg/#find-ways-to-resolve-any-affected-party-issues-prior-to-implementation">affected party issues</a> as well as <a href="https://w3c.github.io/sustainableweb-wsg/#understand-user-requirements-or-constraints-resolving-barriers-to-access">user</a> and <a href="https://w3c.github.io/sustainableweb-wsg/#understand-the-impact-for-non-users">non-user</a> needs; then define appropriate <a href="https://w3c.github.io/sustainableweb-wsg/#get-users-and-contributors-invested-in-the-project">test policies</a>.</li>
 							<li>Consider the use of <a href="https://w3c.github.io/sustainableweb-wsg/#integrate-sustainability-into-every-stage-of-the-ideation-process">low-carbon tools during ideation</a>.</li>
 						</ul>
