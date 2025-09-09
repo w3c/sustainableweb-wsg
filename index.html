@@ -215,7 +215,7 @@
 								document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">
 									<li><a class="previousPage" href="#changelog">Previous page<br>Changelog</a></li>
 									<li><a class="fullDocument" href="#full-document">Full document</a></li>
-									<li>
+									<li></li>
 								</ol>`; } }
 						if (current == "full-document") {
 							document.body.classList.add("full-document");
@@ -468,7 +468,7 @@
 			<p>By publishing these guidelines, the Interest Group does not expect that the work produced in this specification will affect the work undertaken by other <abbr title="World Wide Web Consortium">W3C</abbr> sustainability, accessibility, or performance groups. The Interest Group will continue to track these Working, Interest, and Community Groups as appropriate. This specification closely aligns itself with the principles laid down for Web Platform Design [[design-principles]], Privacy [[privacy-principles]], the Ethical Web [[ethical-web-principles]], and Human Rights [[HR-Spec]].</p>
 			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available. There is currently no preliminary interoperability or implementation report, however one of the key tasks of this Interest Group is to examine the potential for better models for digital sustainability that can feed into tooling (and thus into large studies of implementations) that can be reported upon and fed back into guidance for the Web Sustainability Guidelines.</p>
 			<ol class="pageButtons">
-				<li>
+				<li></li>
 				<li><a class="fullDocument" href="#full-document">Full document</a></li>
 				<li><a class="nextPage" href="#introduction">Next page<br>Introduction</a></li>
 			</ol>
@@ -487,7 +487,7 @@
 				</details>
 			</div>
 			<section> <!-- Background -->
-        <h3>Background on WSG</h3>
+       			<h3>Background on WSG</h3>
 				<p>Web Sustainability Guidelines (WSG) define how to make web products and services more sustainable for people and the planet. Web sustainability addresses more than just environmental issues [[VARIABLES]]; intersectional issues such as accessibility, privacy, and security can impact the sustainability of a project. We have an <a href="https://w3c.github.io/sustainableweb-wsg/intro.html">introduction to web sustainability</a> if you would like to learn more about the subject. The Interest Group considers that WSG incrementally advances web sustainability in numerous areas, but underscores that not all environmental improvements are met by these guidelines, as sustainability is an emerging field and research gaps may exist in certain areas. These guidelines may make digital products and services more performant, usable, and improve other metrics for end-users as a by-product of being sustainable. WSG may also be helpful to comply with existing and upcoming worldwide regulatory frameworks, reporting schemes, and compliance requirements (<a href="https://w3c.github.io/sustainableweb-wsg/policies.html">laws and policies</a>).</p>
 				<p>Web Sustainability Guidelines (WSG) were developed in cooperation with individuals and organizations around the world. It does so, intending to provide a shared strategy for Web sustainability that meets the needs of individuals, organizations, and governments internationally. WSG is designed to apply broadly to different existing web technologies now and in the future and to be testable with a combination of automated testing and human evaluation. While content within WSG has been categorized for ease of readability, considering sustainability impacts beyond a field of interest is critical to increase awareness and collective action.</p>
 				<p>Web sustainability depends not only on sustainable products and services but also on sustainable Web browsers and other user agents. Examples include the performance of rendering and the accurate measuring of energy use through developer tooling. Authoring tools also have an important role in Web sustainability, by ensuring performant code, reducing waste, and serving the results in the most sustainable way possible.</p>
@@ -510,7 +510,7 @@
 				<p>While great care has been taken to make these guidelines as well-rounded and feature-complete as possible, there will likely be additional tasks implementers can perform to improve sustainability that this specification has failed to address.</p>
 				<p class="note">This specification offers interactivity. You can filter and see only the success criteria that apply to your interests/choices by viewing the <a href="#full-document">Full Document</a> mode of the WSG and clicking the interactive "Filter the available WSG success criteria upon certain settings" link at the top of the content. Your choices will reveal themselves upon selecting from the categories and checkboxes.</p>
 			</section>
-			<section> <!-- Measurability -->
+			<section class="measurability"> <!-- Measurability -->
 				<h3>Measurability</h3>
 				<p>The Web Sustainability Guidelines take the role of data and measurement seriously. All success criteria are evidence and best-practice backed, where possible through materials available in the <a href="https://w3c.github.io/sustainableweb-wsg/resources.html">resources document</a>.</p>
 				<p>Alongside supporting evidence, the Interest Group <span id="api-status">will offer</span> a JSON API that integrates live sustainability impact scores within this specification. Methods of calculating impact alongside details of the scope of measurability, limitations, and labels used to showcase scores <span id="api-status2">will be available once the Task Force concludes their work</span>. Available scores will be visible alongside success criteria and be updated by the Interest Group as appropriate.</p>
@@ -809,7 +809,7 @@
 			</section>
 			<section> <!-- Find ways to resolve any affected party issues prior to implementation -->
 				<h3>Find ways to resolve any affected party issues prior to implementation</h3>
-        <p class="subheading">Consider the needs of and impact on users, the planet, and other affected parties.</p>
+       			<p class="subheading">Consider the needs of and impact on users, the planet, and other affected parties.</p>
 				<section class="notoc" data-testable="human" data-impact="medium" data-effort="medium" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491" data-considerations="Accessibility" data-categories="Ideation, KPIs, Research, Social Equity, Strategy">
 					<h4 id="human-centered-ideation">Success Criterion: Human-centered ideation</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX05-1">Resources</a></p>
@@ -5511,7 +5511,7 @@
 			<p>Additional information about participation in the Sustainable Web Interest Group can be found <a href="https://github.com/w3c/sustainableweb-ig/">within the GitHub repository</a> of the Interest Group.</p>
 			<section> <!-- Draft Contributors -->
 				<h2>Participants active in the development of this document</h2>
-				<p>Alexander Dawson, Andrea Davanzo, Andrew Wright, Andy Blum, Anne Faubry, Arnaud Levy, Ben Clifford, Berwyn Powell, Brett Tackaberry, Brian Louis Ramirez, Chris Adams, Chris Augier, Chris Butterworth, Chris Needham, Chris Sater, Chris Wilson, Claire Thornewill, Daniel Appelquist, David Jeanmonod, Dennis Lemm, Diogo Abrantes Da Silva, Dom Robinson, Dominique Hazael-Massieux, Emily Trotter, Fershad Irani, Francesco Fullone, François Burra, Gaël Duez, Hidde De Vries, Iain McClenaghan, Ian Jacobs, Ines Akrap, Ismael Velasco, Iulia Raluca Ionita, James Christie, Jeffrey Yasskin, Jennifer Strickland, Jens Oliver Meiert, Jim McCool, Josh Kim, Julien Wilhelm, Kazuhito Kidachi, Laurent Devernay Satyagraha, Len Dierickx, Leon Brocard, Łukasz Mastalerz, Marie Ototoi, Michelle Barker, Mike Gifford, Morgan Murrah, Nahuai Badiola, Neil Clark, Nick Doty, Nicola Bonotto, Nick Lewis, Orie Steele, Owen Barton, Owen Rogers, Peter Krautzberger, Philippe Le Hégaret, Romuald Priol, Rose Newell, Rudolf Van Der Berg, Ryan Sholin, Sandy Dähnert, Sarah Zama, Shane Herath, Simon Perdrisat, Susannah Hill, Tantek Çelik, Thibaud Colas, Thorsten Jonas, Tim Frick, Tzviya Siegman, Youen Chéné, Yuna Orsini, Zoe Lopez-Latorre.</p>
+				<p>Alexander Dawson, Andrea Davanzo, Andrew Wright, Andy Blum, Anne Faubry, Arnaud Levy, Ben Clifford, Berwyn Powell, Brett Tackaberry, Brian Louis Ramirez, Chris Adams, Chris Augier, Chris Butterworth, Chris Needham, Chris Sater, Chris Wilson, Claire Thornewill, Daniel Appelquist, David Jeanmonod, Dennis Lemm, Diogo Abrantes Da Silva, Dom Robinson, Dominique Hazael-Massieux, Emily Trotter, Fershad Irani, Florian Rivoal, Francesco Fullone, François Burra, Gaël Duez, Hidde De Vries, Iain McClenaghan, Ian Jacobs, Ines Akrap, Ismael Velasco, Iulia Raluca Ionita, James Christie, Jeffrey Yasskin, Jennifer Strickland, Jens Oliver Meiert, Jim McCool, Josh Kim, Julien Wilhelm, Kazuhito Kidachi, Laurent Devernay Satyagraha, Len Dierickx, Leon Brocard, Łukasz Mastalerz, Marie Ototoi, Michelle Barker, Mike Gifford, Morgan Murrah, Nahuai Badiola, Neil Clark, Nick Doty, Nicola Bonotto, Nick Lewis, Orie Steele, Owen Barton, Owen Rogers, Peter Krautzberger, Philippe Le Hégaret, Romuald Priol, Rose Newell, Rudolf Van Der Berg, Ryan Sholin, Sandy Dähnert, Sarah Zama, Shane Herath, Simon Perdrisat, Susannah Hill, Tantek Çelik, Thibaud Colas, Thorsten Jonas, Tim Frick, Tzviya Siegman, Youen Chéné, Yuna Orsini, Zoe Lopez-Latorre.</p>
 			</section>
 			<section> <!-- Meeting, Slack, Wiki, Etc Contributors -->
 				<h2>Other active participants, or contributors to supporting resources</h2>
