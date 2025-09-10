@@ -915,7 +915,7 @@
 					"subheading": "Create well documented deliverables so that future users can find and make use of them without requiring assistance or expending unnecessary time and resources.",
 					"criteria": [
 						{
-							"title": "Reusability",
+							"title": "Deliverables Reusability",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX12-1)",
 							"description": "Create deliverables, including documentation, in ways that facilitate later reuse.",
 							"resources": [
@@ -935,7 +935,7 @@
 							]
 						},
 						{
-							"title": "Documentation",
+							"title": "Deliverables Documentation",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX12-2)",
 							"description": "Document functionality and technical specifications so that they can be understood by everyone that needs to use them.",
 							"resources": [
@@ -951,7 +951,7 @@
 							]
 						},
 						{
-							"title": "Readability",
+							"title": "Deliverables Readability",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX12-3)",
 							"description": "Developers have access to code comments and have the ability to view source to make it easier to access, understand, maintain, and use code.",
 							"resources": [
