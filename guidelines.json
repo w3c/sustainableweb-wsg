@@ -1,7 +1,7 @@
 {
 	"title": "Web Sustainability Guidelines",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-08-31",
+	"lastModified": "2025-09-11",
 	"category": [
 		{
 			"id": "1",
@@ -50,8 +50,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Understanding the audience can identify potential improvements that go beyond basic inclusive design practices.",
@@ -200,8 +198,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "High",
 					"benefits": [
 						{
 							"Accessibility": "Understanding the needs of your audience through accessibility and trauma-informed research will help you prioritize design improvements to boost accessibility beyond the basics.",
@@ -252,8 +248,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Including people who are not primary or secondary users, such as people with disabilities, in research means their specific needs can be addressed more effectively.",
@@ -329,8 +323,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Conversion": "Testing user interfaces usually leads to improved conversion rates as they can be optimized accordingly. This includes removing anything that causes friction and designing content in a way that optimizes user flow, reducing emissions while maximizing conversion.",
@@ -385,8 +377,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Understanding real-world accessibility requirements in the early development stages makes it possible to prioritize inclusive design throughout the entire lifecycle. This improves efficiency, as developers will not be prompted to add in accessibility later. It will also reduce emissions associated with the patching process.",
@@ -503,8 +493,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Providing intuitive, lightweight user experiences improves understanding and accessibility, especially for people with cognitive disabilities. Reducing confusion, this can reduce the time spent trying to find content.",
@@ -557,8 +545,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Focusing on clean design can reduce the negative intrusive or distracting feeling sometimes associated with decorative design.",
@@ -629,8 +615,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Enabling easier navigation makes content accessible to people with disabilities. Bringing people to their goal faster also reduces data consumption.",
@@ -712,8 +696,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Reducing unnecessary barriers can improve accessibility and navigation using assistive technologies.",
@@ -763,8 +745,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Using established design patterns makes it easier for all users to understand how to perform a task, especially those with greater accessibility needs.",
@@ -887,8 +867,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Avoiding deceptive design patterns improves user experience for people using assistive technologies, as these can be especially disruptive when using a screen reader. This improves their trust and access to your content.",
@@ -966,8 +944,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "High",
 					"benefits": [
 						{
 							"Conversion": "Using open and reusable formats lowers barriers to entry, as there will likely be no cost involved in participation. It can encourage users to play a more active role in the project.",
@@ -1024,8 +1000,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Using a design system with accessible components will improve access to information for people with disabilities. Building design features that integrate accessibility from the start ensures everyone is always included.",
@@ -1114,8 +1088,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Using plain-language makes content easier to understand and accessible to more users. Good structure that complies with standards and expectations works better alongside assistive technologies, such as screen readers.",
@@ -1266,8 +1238,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Optimizing resources means users with data caps can preserve their resources. Providers can enjoy reduced hosting costs due to less data being transferred.",
@@ -1396,8 +1366,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Eliminating data-intensive media entirely and using alternatives such as transcripts reduce costs associated with hosting and data transfer.",
@@ -1473,8 +1441,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Environment": "Disabling and reducing animation to the essential, with appropriate optimization and user control, reduces rendering impact and associated emissions.",
@@ -1546,8 +1512,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Environment": "Reducing the number and complexity of custom fonts used reduces data transfer and rendering effort, which lowers associated emissions.",
@@ -1657,8 +1621,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Providing content in multiple formats means users can choose the format that best supports their needs, helping to eliminate barriers.",
@@ -1726,8 +1688,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Labeling your forms correctly and testing for accessibility and compatibility with a range of different devices and inputs reduces barriers. Autocomplete improves ease of use and efficiency for all use, especially those with additional accessibility needs. Well-labeled and accessible forms are more likely to be successfully completed.",
@@ -1771,8 +1731,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Supporting non-visual browsing methods means people can access your content more easily when using specialized accessibility aids.",
@@ -1849,8 +1807,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Signposting individuals to information through helpful notifications or error messages will reduce abandonment. All information must be presented in a way that does not discriminate, as this could exclude many potential users.",
@@ -1948,8 +1904,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Providing a range of inclusively designed downloadable documents in a variety of formats benefits those with accessibility needs as they can choose the ideal format for their device and use case.",
@@ -2053,8 +2007,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Conversion": "Using a well-built, thoroughly tested interface is likely to reduce user frustration and churn.",
@@ -2144,8 +2096,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Maintaining inclusivity over time through regular audits and testing reduces outages, improves access to information, and creates a better experience for all users, not just those with accessibility needs.",
@@ -2237,8 +2187,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Conversion": "Increasing page load speed can measurably improve conversion rates, as users will be less likely to abandon a product or service if the content appears instantaneously.",
@@ -2285,8 +2233,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Conversion": "Acting on feedback often improves conversion rates because it ensures that your digital product or service reflects the needs of your audience.",
@@ -2337,8 +2283,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Gathering feedback from people with disabilities can guide key improvements. This ensures your project can be used by the widest possible audience.",
@@ -2525,8 +2469,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Incorporating accessibility into early prototypes ensures it remains a priority throughout the lifecycle. Broken code can also impact assistive technologies, such as screen readers, and how they describe content to individuals with visual disabilities. Semantic code can help to deliver an equal, error-free experience to all.",
@@ -2617,8 +2559,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Conversion": "Page speed and web performance are confirmed ranking factors when it comes to SEO. A faster digital product or service may support an organization's efforts to rank higher on search engines. Combined with the better on-page user experience, this can lead to improved conversion rates.",
@@ -2661,8 +2601,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Conversion": "Faster page speeds improve user experience across the board. This makes users less likely to abandon their journey or search for their information elsewhere.",
@@ -2707,8 +2645,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Conversion": "Modularizing code can accelerate performance, improving user experience while reducing the chance of abandonment. This is especially impact for users of low-resource devices, such as handhelds.",
@@ -2757,8 +2693,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Eliminating unused code means reducing maintenance work and expense. It can otherwise affect other code' or add unnecessary complexity.",
@@ -2837,8 +2771,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Following naming conventions used in methodologies can be easier for developers with accessibility needs to follow and use compared to generic selector identifiers.",
@@ -3007,8 +2939,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Environment": "Replacing heavy tooling and third-party services with lightweight tooling reduces user bandwidth usage and compute impact. It does require learning a new way of doing things or reducing the visibility of impactful features until they are requested. It can significantly reduce a page's overall 'environmental impact, including the data you have no control over. This is especially relevant when calculating Scope 3 emissions.",
@@ -3118,8 +3048,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Applying semantic approaches means your content will be easier to navigate via assistive technologies and keyboard. Many tags phave native semantics, reducing the need for additional tagging. This can also help technologies to better understand your content. better.",
@@ -3190,8 +3118,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "If data is not loaded unless needed, you will reduce your server's bandwidth use.",
@@ -3267,8 +3193,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Including skip links and other accessibility aids can accelerate the user journey, reducing system resources required and allowing them to find the content they need.",
@@ -3343,8 +3267,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Fixing issues immediately and keeping people in the process can help to prevent abandonment.",
@@ -3416,8 +3338,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Improving metadata can make it easier for search engines, social networks, or other platforms to present your content appropriately. This can lead to better search engine visibility, more users, and potentially better conversion.",
@@ -3483,8 +3403,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Having a high contrast version of a site will reduce barriers to entry and time wasted for visually impaired users. Reduced motion can also accommodate other accessibility requirements.",
@@ -3613,8 +3531,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Incorporating large, touch-friendly buttons, simplified navigation menus, and clear readable fonts on your mobile websites can make it easier for individuals with visual or motor impairments to interact with your content. A device-adaptable strategy that considers the limitations of each approach helps to maximize accessibility and usability across all devices, enhancing accessibility and optimizing experience.",
@@ -3705,8 +3621,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Conversion": "Creating fallbacks for technology that might fail can 'enable sales you would otherwise miss out on.",
@@ -3764,8 +3678,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Preventing security issues ahead of time c protects you and your users from financial crime.",
@@ -3850,8 +3762,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Environment": "Removing code packages developers or users do not need reduces wasted energy during rendering.",
@@ -3922,8 +3832,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Integrating expected files enables the browser''s default search box to search a service, replacing any custom solution. This can increase accessibility as it encourages the use of a browser-native component and/or keyboard shortcuts, which can often better meet accessibility requirements.",
@@ -3980,8 +3888,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Using modern web standards helps to ensure better support in assistive technologies.",
@@ -4102,8 +4008,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Making assistive technologies a core part of project specifications from the very start and throughout a product or service''s lifecycle improves access for people with disabilities.",
@@ -4163,8 +4067,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Using the latest and more performant language version can help hosting companies to reduce their costs. That could be beneficial for the company and customers alike.",
@@ -4207,8 +4109,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Using existing features means you do not need to invest more time in 'development or maintenance, which reduces costs.",
@@ -4254,8 +4154,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Optimizing the codebase to avoid pushing multiple additional demands to the server reduces bandwidth overheads, while also reducing the risk of stress failures and lost business.",
@@ -4500,8 +4398,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Conversion": "In cases where a badge or link about sustainable hosting providers appears on a website, users concerned about the issue may use and reuse the site preferentially.",
@@ -4588,8 +4484,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "High",
 					"benefits": [
 						{
 							"Economic": "Bandwidth to serve users cost money and reducing the amount of data transfer saves money.",
@@ -4682,8 +4576,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Environment": "Applying compression effectively reduces network demand, consequently lowering power consumption and carbon emissions.",
@@ -4747,8 +4639,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Error pages and appropriate redirects matter because every user requires appropriate assistance to find their path. Navigation and signage that successfully support individuals with cognitive disabilities to find their path deliver the best design for all users.",
@@ -4791,8 +4681,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Removing unnecessary environments reduces the resources that must be provisioned. This reduces infrastructure, maintenance, and process costs.",
@@ -4906,8 +4794,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Maximizing the number of tasks carried out rapidly by machine not only minimizes power use and carbon emissions, but also brings down maintenance and infrastructure costs.",
@@ -4950,8 +4836,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Conversion": "Eliminating unnecessary data refreshes delivers a better user experience that makes return visits more likely.",
@@ -4999,8 +4883,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Using efficient backup processes that are automated and include only incremental changes to critical data results in less storage being used, reducing costs.",
@@ -5105,8 +4987,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Improving the efficiency of data processing saves money due to energy and infrastructure needs.",
@@ -5290,8 +5170,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Using a CDN may save money because their data transfer rates are often cheaper than hosting providers.",
@@ -5339,8 +5217,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Environment": "Reducing provisioned resources reduces wasted energy and water costs, even when resources are not used to capacity.",
@@ -5463,8 +5339,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Storing less data reduces the expense of operating excessively large storage and archiving systems.",
@@ -5641,8 +5515,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "High",
 					"benefits": [
 						{
 							"Economic": "Communicating the ways you can share the economic benefits of your digital work raises awareness of social inequalities. Similarly, enabling users to make more informed decisions can ensure your project is more financially sustainable overall.",
@@ -5689,8 +5561,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Nominating a sustainability representative helps the organization remove barriers to access. These can inherently cost bandwidth, have monetary value, and carry potential legal implications.",
@@ -5772,8 +5642,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Environment": "Keeping your team informed and educated may promote systemic change in the way they build, the way they manage their work and technical infrastructure, and even the way they do business or live their day-to-day lives - even outside the workplace.",
@@ -5816,8 +5684,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Conversion": "Communicating the impact and allowing the user to set preferences with the environmental impact in mind can encourage more individuals to make environmentally friendly choices and improve your image among ethical consumers.",
@@ -5907,8 +5773,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Accessibility": "Auditing for accessibility can be included as a key part of a digital Life-Cycle Assessment (LCA), provided the key parameters are defined up front and maintained throughout the project to eliminate barriers to access. These parameters can include conformity with WCAG guidance, including manual checks.",
@@ -5962,8 +5826,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Aligning with existing standards or frameworks makes it easier for organizations to include digital impact in their overall sustainability reporting.",
@@ -6021,8 +5883,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Certifications, vetted for conflicts of interest, can operationalize sustainability principles and verify and endorse levels of social and environmental performance, accountability, and transparency.",
@@ -6104,8 +5964,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Providing sustainability training and onboarding practices has been shown to lead to higher retention rates, improved performance, and improved systems for maintaining business continuity."
@@ -6204,8 +6062,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Conversion": "Demonstrating transparency through regular reporting and showing measurable improvement over time can increase an organization's appeal to potential employees, partners, potential customers, investors, and suppliers who perceive shared values and an aligned mission.",
@@ -6254,8 +6110,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Environment": "Business models focused on the customer and the wider ecosystem rather than just financial indicators can benefit the environment such as through reducing overconsumption of resources and disencouraging incentives for unethical behavior, leading to a reduction of emissions.",
@@ -6368,8 +6222,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Maintaining performance can boost customer retention, and organizations with clear product maintenance and management practices tend to benefit from greater resilience in the face of digital disruption.",
@@ -6525,8 +6377,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "High",
 					"benefits": [
 						{
 							"Accessibility": "Adopting an iterative approach supports inclusive design, providing the agility and adaptability for organizations to expand their accessibility.",
@@ -6573,8 +6423,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Economic": "Updating digital products and services regularly requires less development time and reduces the risk of negative consumer impact from the extended downtime that can result from needing to start from scratch if a product or service is otherwise left to become outdated beyond repair.",
@@ -6664,8 +6512,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Low",
 					"benefits": [
 						{
 							"Accessibility": "Preventing unnecessary digital products or services from being created can make it easier to find and access existing information, provided an accessible replacement is available.",
@@ -6712,8 +6558,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Using a functional unit approach supports a robust product or service while avoiding unnecessary and potentially costly features.",
@@ -6800,8 +6644,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "High",
 					"benefits": [
 						{
 							"Economic": "Applying standards of practice can help an organization better align affected party needs with its mission, vision, and values, which builds trust and improves relationships.",
@@ -6900,8 +6742,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Collaborating with affected parties to coordinate mutually beneficial economic incentives builds stronger relationships.",
@@ -6944,8 +6784,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "High",
 					"benefits": [
 						{
 							"Environment": "Emissions can be reduced through group action and commitments at an organizational level.",
@@ -7068,8 +6906,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "High",
 					"benefits": [
 						{
 							"Accessibility": "Incorporating more diverse affected party perspectives leads to enacting more inclusive policies, often resulting in better products, services, and programs. JEDI practices boost an organization's resilience and ability to collaborate. This improves diversity in the tech sector and the overall accessibility of the web.",
@@ -7141,8 +6977,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Prioritizing data privacy and other responsible data practices reduces associated risk and costs, increases resilience, and often fosters better relationships with customers and other affected parties."
@@ -7214,8 +7048,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "High",
 					"benefits": [
 						{
 							"Economic": "Requiring less data reduces storage requirements, allowing organizations to scale down their hosting package or be charged less for pay-by-use infrastructure costs.",
@@ -7422,8 +7254,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Establishing clear policies related to digital disruption and emerging technologies makes organizations more resilient and better able to pivot quickly, and face less risk from various threats, including legal action.",
@@ -7491,8 +7321,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "High",
 					"benefits": [
 						{
 							"Economic": "Sourcing responsible financing for digital products and services improves their resilience and saves the organization time, money, and resources over time.",
@@ -7556,8 +7384,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Following clear philanthropic strategies means there is usually a system of checks and balances in place to support better financial practices overall.",
@@ -7602,8 +7428,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Removing redundancy in the product or service can generate savings in hosting, security costs, and other third-party subscriptions.",
@@ -7713,8 +7537,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Extending the shelf-life of hardware and clear e-waste and recycling policies reduce costs.",
@@ -7836,8 +7658,6 @@
 							]
 						}
 					],
-					"impact": "Medium",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Conversion": "Improving performance will reduce churn and page abandonment. A website may also rank better on search engines thanks to performance being a key indicator in ranking algorithms.",
@@ -7933,8 +7753,6 @@
 							]
 						}
 					],
-					"impact": "High",
-					"effort": "High",
 					"benefits": [
 						{
 							"Economic": "Using open-source tools can significantly reduce development time when managed properly.",
@@ -7996,8 +7814,6 @@
 							]
 						}
 					],
-					"impact": "Low",
-					"effort": "Medium",
 					"benefits": [
 						{
 							"Economic": "Limiting the extent of the disruption has obvious economic benefits.",
