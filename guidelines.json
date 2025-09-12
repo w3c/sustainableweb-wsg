@@ -1254,7 +1254,7 @@
 							"emissions": "High"
 						}
 					],
-					"example": "<img src=\"image.webp\" alt=\"...\" loading=\"lazy\"\/>\r\n<iframe src=\"video.html\" title=\"...\" loading=\"lazy\"><\/iframe>",
+					"example": "<picture> \n  <source type=\"image/avif\" srcset=\"image.avif\">\n  <source type=\"image/webp\" srcset=\"image.webp\">\n  <img width=\"100px\" height=\"100px\" src=\"image.jpg\" alt=\"\" loading=\"lazy\"/>\n</picture>",
 					"tags": ["Assets", "Content", "HTML", "Performance", "Software", "UI", "Usability"]
 				},
 				{

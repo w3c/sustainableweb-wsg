@@ -1261,8 +1261,11 @@
 							</dl>
 							<p class="subtitle"><strong>Example</strong></p>
 							<pre class="nohighlight">
-								&lt;img src="image.webp" alt="..." loading="lazy"/&gt;
-								&lt;iframe src="video.html" title="..." loading="lazy"&gt;&lt;/iframe&gt;
+								&lt;picture&gt; 
+									&lt;source type="image/avif" srcset="image.avif"&gt;
+									&lt;source type="image/webp" srcset="image.webp"&gt;
+									&lt;img width="100px" height="100px" src="image.jpg" alt="" loading="lazy"/&gt;
+								&lt;/picture&gt;
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
 							<p>Assets, Content, HTML, Performance, Software, UI, Usability</p>
@@ -5095,7 +5098,7 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/110">#110</a>] Editorial improvements have been provided for the hosting benefits.<br><span class="credit">@codewordcreative, @susannah-hill, @ryansholin, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/112">#112</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/118">#118</a>] Broken links and redirects have been resolved or removed.<br><span class="credit">@AlexDawsonUK & @ldevernay</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/113">#113</a>] Editorial improvements have been provided for the business benefits.<br><span class="credit">@codewordcreative, @timfrick, & @TzviyaSiegman</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/114">#114</a>] Editorial improvements have been provided for the examples.<br><span class="credit">@AlexDawsonUK, @codewordcreative, & @timfrick</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/114">#114</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/issues/132">#132</a>] Editorial improvements have been provided for the examples.<br><span class="credit">@AlexDawsonUK, @codewordcreative, @the-sustainabledev, & @timfrick</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/118">#118</a>] Broken links and redirects have been resolved or removed.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/120">#120</a>] Resolved an issue around language use of normative in supporting documents.<br><span class="credit">@frivoal, @hidde, @tantek</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/121">#121</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/122">#122</a>] Alignment with W3C Principle Notes, Manual of Style, and QA Framework.<br><span class="credit">@AlexDawsonUK, @codewordcreative, & @hidde</span></li>
