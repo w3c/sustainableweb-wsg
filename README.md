@@ -32,7 +32,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Editors Draft</td>
-			<td>31 August 2025</td>
+			<td>12 September 2025</td>
 		</tr>
 	</tbody>
 </table>
@@ -50,47 +50,47 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
 			<td>W3C Editors Draft</td>
-			<td>31 August 2025</td>
+			<td>12 September 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/resources.html">Resources for WSG</a></td>
 			<td>W3C Editors Draft</td>
-			<td>31 August 2025</td>
+			<td>12 September 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws and Policies</a></td>
 			<td>W3C Editors Draft</td>
-			<td>31 August 2025</td>
+			<td>12 September 2025</td>
 		</tr>
 		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/intro.html">Introduction to Web Sustainability</a></td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/overview.html">Overview of Web Sustainability</a></td>
 			<td>W3C Editors Draft</td>
-			<td>31 August 2025</td>
+			<td>12 September 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
 			<td>W3C Editors Draft</td>
-			<td>31 August 2025</td>
+			<td>12 September 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">Quick Reference for WSG</a> and <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">Checklist</a> (PDF)</td>
 			<td>W3C Editors Draft</td>
-			<td>31 August 2025</td>
+			<td>12 September 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
 			<td>JSON API</td>
-			<td>31 August 2025</td>
+			<td>11 September 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
 			<td>JSON API</td>
-			<td>31 August 2025</td>
+			<td>11 September 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>
 			<td>Test Suite</td>
-			<td>31 August 2025</td>
+			<td>11 September 2025</td>
 		</tr>
 	</tbody>
 </table>
