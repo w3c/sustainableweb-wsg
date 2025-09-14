@@ -10,6 +10,8 @@
 			.flow table { border-collapse:collapse; border-spacing:0; white-space: nowrap; }
 			.flow td, .flow th { border: 1px solid; text-align: center; }
 			.red { color: #FF0000; }
+			/* Fix for Printing The Specification: https://github.com/w3c/sustyweb/issues/92 */
+			@media print { .flow { display: none !important; } #test-suite::after { content: "To examine the test suite table, see the original Sustainable Tooling And Reporting (STAR) document.";} }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
 			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }

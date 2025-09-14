@@ -15,7 +15,7 @@
 			/* Fix for Specification Readability: https://github.com/w3c/sustyweb/issues/92 */
 			.subheading { border-left: thick solid #d9d9d9; font-style: italic; padding: 0.5em 1em; }
 			.credit { font-size: small; }
-			.summary pre { background-color: var(--note-bg);}
+			.summary pre { border: 1px solid; overflow: visible !important; padding: 0.5em; page-break-inside: avoid; white-space: pre-wrap !important; word-wrap: break-word !important; }
 			.summary .subtitle { margin-top: 2.5em; }
 			.summary .rating, .summary .reporting { align-items: center; display: flex; flex-wrap: wrap; row-gap: 1em; }
 			.summary .rating dd { margin: 0; } .summary .rating dt { width: 83px; }
@@ -27,7 +27,7 @@
 				.summary .reporting dd { flex-basis: calc(100% - 85px); margin: 0; }
 				.summary .reporting dd { flex-basis: calc(100% - 85px); } }
 			/* Fix for Printing The Specification: https://github.com/w3c/sustyweb/issues/92 */
-			@media print { section section:last-child h4, section section:last-child .self-link, section section:last-child summary, .summary, .pageButtons, #toc { display: none !important; } .full-document #toc { display: block !important; } body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
+			@media print { .pageButtons, .filter, body:not(.full-document) #toc { display: none !important; } body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
 			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
@@ -5074,6 +5074,24 @@
 					<summary>Ongoing Release Notes</summary>
 					<p><strong>Additions:</strong></p>
 					<ul>
+						<li>None</li>
+					</ul>
+					<p><strong>Updates:</strong></p>
+					<ul>
+						<li>None</li>
+					</ul>
+					<p><strong>Fixes:</strong></p>
+					<ul>
+						<li>None</li>
+					</ul>
+					<!--
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/">#</a>] Change.<br><span class="credit">@Github</span></li>
+					-->
+				</details>
+				<details> <!-- Q3 2025 Release Notes (15th September 2025) -->
+					<summary>Q3 2025 Release Notes (15<sup>th</sup> September 2025)</summary>
+					<p><strong>Additions:</strong></p>
+					<ul>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/122">#122</a>] Added dark mode capability to the specification and supplements.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
 					<p><strong>Updates:</strong></p>
@@ -5098,15 +5116,13 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/110">#110</a>] Editorial improvements have been provided for the hosting benefits.<br><span class="credit">@codewordcreative, @susannah-hill, @ryansholin, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/112">#112</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/118">#118</a>] Broken links and redirects have been resolved or removed.<br><span class="credit">@AlexDawsonUK & @ldevernay</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/113">#113</a>] Editorial improvements have been provided for the business benefits.<br><span class="credit">@codewordcreative, @timfrick, & @TzviyaSiegman</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/114">#114</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/issues/132">#132</a>] Editorial improvements have been provided for the examples.<br><span class="credit">@AlexDawsonUK, @codewordcreative, @the-sustainabledev, & @timfrick</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/114">#114</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/125">#125</a>], & [<a href="https://github.com/w3c/sustainableweb-wsg/issues/132">#132</a>] Editorial improvements have been provided for the examples.<br><span class="credit">@AlexDawsonUK, @codewordcreative, @the-sustainabledev, & @timfrick</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/118">#118</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/125">#125</a>] Broken links and redirects have been resolved or removed.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/120">#120</a>] Resolved an issue around language use of normative in supporting documents.<br><span class="credit">@frivoal, @hidde, @tantek</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/121">#121</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/122">#122</a>] Alignment with W3C Principle Notes, Manual of Style, and QA Framework.<br><span class="credit">@AlexDawsonUK, @codewordcreative, & @hidde</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/122">#122</a>] Aligned all documents with mandatory pubRules requirements.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/125">#125</a>] Fixed a minor bug related to the print style sheet.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
-					<!--
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/">#</a>] Change.<br><span class="credit">@Github</span></li>
-					-->
 				</details>
 				<details> <!-- Q2 2025 Release Notes (30st June 2025) -->
 					<summary>Q2 2025 Release Notes (30<sup>th</sup> June 2025)</summary>
