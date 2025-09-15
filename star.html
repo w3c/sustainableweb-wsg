@@ -10,6 +10,8 @@
 			.flow table { border-collapse:collapse; border-spacing:0; white-space: nowrap; }
 			.flow td, .flow th { border: 1px solid; text-align: center; }
 			.red { color: #FF0000; }
+			/* Fix for Printing The Specification: https://github.com/w3c/sustyweb/issues/92 */
+			@media print { .flow { display: none !important; } #test-suite::after { content: "To examine the test suite table, see the original Sustainable Tooling And Reporting (STAR) document.";} }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
 			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
@@ -62,7 +64,7 @@
 			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
 		</section>
 		<section id="sotd"> <!-- Status of This Document -->
-			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
+			<p>To provide feedback regarding this document, the preferred method is using GitHub. It is free to create a GitHub account to file issues. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
 		</section>
 		<section> <!-- Implementation -->
 			<h2>Implementation Advice</h2>
@@ -728,7 +730,7 @@
 					<details> <!-- UX10-1: Build using established design patterns that use known conventions -->
 						<summary id="UX10-1">UX10-1: Build using established design patterns that use known conventions</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-established-design-patterns-and-appropriate-components">2.10 Use established design patterns and appropriate components</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#use-established-design-patterns-and-essential-components">2.10 Use established design patterns and essential components</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Use repeating patterns that users are likely to recognize from visits to other websites to build a sense of comfort and identification with your products and services. By using established design patterns that are repeatable, recognizable, and testable, you can reduce the amount of confusion likely to occur within a user-interface and this will increase the speed of adaptability (which has sustainability benefits).</p>
 						<p>It should be noted that for machine testability, heuristic recognition (identification of patterns in code) will likely allow product creators to recognize the implementation of certain patterns, especially when libraries or design systems are utilized as the backbone of a product or service. Through this, recommendations can be made to improve layouts.</p>
@@ -1828,7 +1830,7 @@
 						<p>For machine testability, attempt to first establish that the policy exists and then try using heuristics (or identification of the headlines) to locate sections on what is both actively supported (those conditions tested upon), and those that are confirmed as unsupported (those conditions known to be broken but will not be fixed with reasons given). Ensure that a support method is also provided.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
-							<li>British cellphone provider GiffGaff provides a <a href="https://www.giffgaff.design/guidelines/browser-support-policy/">web browser support policy</a> that identifies which browsers they support and do not actively support plus they also offer the <a href="https://www.giffgaff.io/tech/creating-a-browser-support-policy">justification behind their decisions</a>.</li>
+							<li>British cellphone provider GiffGaff provides a <a href="https://www.giffgaff.design/guidelines/browser-support-policy/">web browser support policy</a> that identifies which browsers they support and do not actively support.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
@@ -5254,7 +5256,7 @@
 			<p>Additional information about participation in the Sustainable Web Interest Group can be found <a href="https://github.com/w3c/sustainableweb-ig/">within the GitHub repository</a> of the Interest Group.</p>
 			<section> <!-- Draft Contributors -->
 				<h2>Participants active in the development of this document</h2>
-				<p>Alexander Dawson, Andy Blum, Francesco Fullone, Hidde De Vries, Ian Jacobs, Laurent Devernay, Len Dierickx, Łukasz Mastalerz, Mike Gifford, Morgan Murrah, Thibaud Colas, Tim Frick, Tzviya Siegman, Zoe Lopez-Latorre</p>
+				<p>Alexander Dawson, Andy Blum, Francesco Fullone, Hidde de Vries, Ian Jacobs, Laurent Devernay, Len Dierickx, Łukasz Mastalerz, Mike Gifford, Morgan Murrah, Thibaud Colas, Tim Frick, Tzviya Siegman, Zoe Lopez-Latorre</p>
 			</section>
 		</section>
 	</body>

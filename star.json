@@ -1,7 +1,7 @@
 {
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-08-31",
+	"lastModified": "2025-09-11",
 	"category": [
 		{
 			"id": "1",
@@ -520,7 +520,7 @@
 				{
 					"id": "UX10-1",
 					"title": "Build using established design patterns that use known conventions",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.10 Use established design patterns and appropriate components](https://w3c.github.io/sustainableweb-wsg/#use-established-design-patterns-and-appropriate-components).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.10 Use established design patterns and essential components](https://w3c.github.io/sustainableweb-wsg/#use-established-design-patterns-and-essential-components).",
 					"description": [
 						{
 							"1": "Use repeating patterns that users are likely to recognize from visits to other websites to build a sense of comfort and identification with your products and services. By using established design patterns that are repeatable, recognizable, and testable, you can reduce the amount of confusion likely to occur within a user-interface and this will increase the speed of adaptability (which has sustainability benefits).",
@@ -1853,7 +1853,7 @@
 					],
 					"examples": [
 						{
-							"1": "British cellphone provider GiffGaff provides a [web browser support policy](https://www.giffgaff.design/guidelines/browser-support-policy/) that identifies which browsers they support and do not actively support plus they also offer the [justification behind their decisions](https://www.giffgaff.io/tech/creating-a-browser-support-policy)."
+							"1": "British cellphone provider GiffGaff provides a [web browser support policy](https://www.giffgaff.design/guidelines/browser-support-policy/) that identifies which browsers they support and do not actively support."
 						}
 					],
 					"tests": [
