@@ -105,12 +105,16 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 	</thead>
 	<tbody>
 		<tr>
-			<td>Initial Draft</td>
-			<td>15 September 2025</td>
+			<td>Content Organization</td>
+			<td>15 October 2025</td>
 		</tr>
 		<tr>
-			<td>Final Draft</td>
-			<td>31 December 2025</td>
+			<td>Overlapping Material</td>
+			<td>15 November 2025</td>
+		</tr>
+		<tr>
+			<td>Final Editor's Draft</td>
+			<td>15 December 2025</td>
 		</tr>
 		<tr>
 			<td>Measurability</td>
