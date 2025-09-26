@@ -63,7 +63,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td>12 September 2025</td>
 		</tr>
 		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/overview.html">Overview of Web Sustainability</a></td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/summary.html">Summary of Web Sustainability</a></td>
 			<td>W3C Editors Draft</td>
 			<td>12 September 2025</td>
 		</tr>
