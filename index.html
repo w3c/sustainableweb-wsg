@@ -40,7 +40,6 @@
 			.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: var(--tocsidebar-bg); display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
 			.previousPage { justify-content: left; } .fullDocument { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
 			@media (scripting: none) {
-				@media print { #toc { display: none !important; } }
 				.pageButtons { display: none; }
 				.hide { display: block !important; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 			/* Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14 */
@@ -343,7 +342,9 @@
 					],
 				},
 			],
-			specStatus: "ED",
+			specStatus: "DNOTE",
+			noRecTrack: true,
+			latestVersion: "https://www.w3.org/TR/sustainableweb-wsg/",
 			lint: { "local-refs-exist": false, },
 			postProcess: [authorRef, addMultipage, addFilter]
 		}
@@ -363,7 +364,7 @@
 					</div>
 					<div class="wrapper">
 						<fieldset class="testable">
-							<legend><a href="#success-criteria">Testable</a></legend>
+							<legend><a href="#wsg-layers-of-guidance">Testable</a></legend>
 							<label for="mt"><input type="checkbox" id="mt" name="test" value="Machine-testable">Machine-testable</label>
 							<label for="ht"><input type="checkbox" id="ht" name="test" value="Human-testable">Human-testable</label>
 						</fieldset>
@@ -500,7 +501,7 @@
 						<dt>Medium</dt><dd>This will have an impact worthy of consideration within a particular category.</dd>
 						<dt>High</dt><dd>This will have a considerable impact within a particular category.</dd>
 					</dl>
-					<p>When the JSON API with more accurate scores weighted against the GRI is published, the existing impact, effort, and reporting metrics will be deprecated and replaced. Until then, existing content may remain in the additional information.</p>
+					<p>When the JSON API with more accurate scores weighted against the GRI is published, the existing reporting metrics will be deprecated and replaced. Until then, existing content may remain in the additional information.</p>
 				</div>
 			</section>
 			<section class="override" id="conformance"> <!-- Conformance -->
@@ -4983,7 +4984,7 @@
 				<p>Guidelines within this specification that may relate to security are:</p>
 				<ul>
 					<li><a href="#avoid-being-manipulative-or-deceptive">2.11 Avoid being manipulative or deceptive</a></li>
-					<li><a href="#audit-and-test-for-bugs-or-issues-that-require-resolving">2.25 Audit and test for bugs or issues that require resolving</a></li>
+					<li><a href="#audit-and-test-for-bugs-or-issues-requiring-resolution">2.25 Audit and test for bugs or issues requiring resolution</a></li>
 					<li><a href="#verify-that-real-world-users-can-successfully-use-your-work">2.29 Check for compatibility or platform-specific issues</a></li>
 					<li><a href="#give-third-parties-the-same-priority-as-first-parties-during-assessment">3.6 Give third parties the same priority as first parties during assessment</a></li>
 					<li><a href="#validate-form-errors-and-account-for-tooling-requirements">3.10 Validate form errors and account for tooling requirements</a></li>
@@ -5175,7 +5176,7 @@
 						<li>New success criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#automated-tooling">5.22</a> on automated tooling covering scraping technology.<br><span class="credit">@codewordcreative</span></li>
 						<li><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a> has been published with techniques and test suite URLs.<br><span class="credit">@AlexDawsonUK & @mgifford</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/15">#15</a>] A New introduction section on <a href="https://w3c.github.io/sustainableweb-wsg/#relationships">relationships</a> to other specifications (and bodies) is included.<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/17">#17</a>] New success criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#processing-location">4.9</a> on Client vs server covering Redundant processing.<br><span class="credit">@jyasskin</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/17">#17</a>] New success criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#client-vs-server">4.9</a> on Client vs server covering Redundant processing.<br><span class="credit">@jyasskin</span></li>
 					</ul>
 					<p><strong>Updates:</strong></p>
 					<ul>
@@ -5184,7 +5185,7 @@
 						<li>Guideline titles have been expanded to be more explanatory of the actionable SCs.<br><span class="credit">@AlexDawsonUK & @torgo</span></li>
 						<li>The <a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Laws & Policies</a> document has additional legislation with references and fixes included.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>Success criteria for guideline <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-overburdening">2.17</a> now includes mentions of animation iterations.<br><span class="credit">@codewordcreative</span></li>
-						<li>Success criteria for guideline <a href="https://w3c.github.io/sustainableweb-wsg/#protocol-usage">4.9</a> now include improved protocol usage compatibility.<br><span class="credit">@ldevernay & @mgifford</span></li>
+						<li>Success criteria for guideline <a href="https://w3c.github.io/sustainableweb-wsg/#protocols">4.9</a> now include improved protocol usage compatibility.<br><span class="credit">@ldevernay & @mgifford</span></li>
 						<li>Update to guideline <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported">4.2</a> to be more inclusive of both client and server-side.<br><span class="credit">@ldevernay & @mgifford</span></li>
 						<li>WSG has been successfully transitioned from <a href="https://github.com/w3c/sustyweb/">CG</a> to W3C <a href="https://github.com/w3c/sustainableweb-wsg/">IG</a> repository.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/4">#4</a>] Update to guideline <a href="https://w3c.github.io/sustainableweb-wsg/#need-for-media">2.16</a> SC among others to remove language ambiguity.<br><span class="credit">@timfrick</span></li>
