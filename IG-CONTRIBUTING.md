@@ -12,7 +12,7 @@ We welcome fresh contributions and understand that this may pose difficulties fo
 
 ## File Structure
 
-The structure of the repository has been created to ensure ease of maintenance. The base directory contains living editions of the [guidelines](https://w3c.github.io/sustainableweb-wsg/), [at-a-glance](https://w3c.github.io/sustainableweb-wsg/glance.html), [overview](https://w3c.github.io/sustainableweb-wsg/overview.html), [laws and policies](https://w3c.github.io/sustainableweb-wsg/policies.html), [quick reference](https://w3c.github.io/sustainableweb-wsg/quickref.html), [STAR](https://w3c.github.io/sustainableweb-wsg/star.html), [WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json), [STAR API](https://w3c.github.io/sustainableweb-wsg/star.json), and other deliverables such as our test suite.
+The structure of the repository has been created to ensure ease of maintenance. The base directory contains living editions of the [guidelines](https://w3c.github.io/sustainableweb-wsg/), [at-a-glance](https://w3c.github.io/sustainableweb-wsg/glance.html), [Summary](https://w3c.github.io/sustainableweb-wsg/summary.html), [laws and policies](https://w3c.github.io/sustainableweb-wsg/policies.html), [quick reference](https://w3c.github.io/sustainableweb-wsg/quickref.html), [STAR](https://w3c.github.io/sustainableweb-wsg/star.html), [WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json), [STAR API](https://w3c.github.io/sustainableweb-wsg/star.json), and other deliverables such as our test suite.
 
 ```
 /test-suite/		- Test Suite and Assets
@@ -22,7 +22,7 @@ checklist.pdf		- PDF Checklist
 glance.html		- At-A-Glance
 guidelines.json		- WSG JSON API
 index.html		- WSG Guidelines
-overview.html		- Overview
+summary.html		- Summary
 policies.html		- Laws and Policies
 quickref.html		- Quick Reference
 resources.html		- Resources (URLs)
