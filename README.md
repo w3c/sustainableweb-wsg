@@ -1,5 +1,5 @@
 # Web Sustainability Guidelines (WSG)
-Welcome to the repository of the [Web Sustainability Guidelines (WSG)](https://w3c.github.io/sustainableweb-wsg/).
+Welcome to the repository of the [Web Sustainability Guidelines (WSG)]([https://w3c.github.io/sustainableweb-wsg/](https://www.w3.org/TR/web-sustainability-guidelines/)).
 
 If you would like to learn more about us and how to participate in this project, please check the readme in the [W3C Sustainable Web Interest Group](https://github.com/w3c/sustainableweb-ig) repository.
 
