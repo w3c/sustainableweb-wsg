@@ -30,7 +30,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines</a> (WSG)</td>
+			<td><a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Editors Draft</td>
 			<td>12 September 2025</td>
 		</tr>
@@ -174,6 +174,12 @@ fetch("https://w3c.github.io/sustainableweb-wsg/guidelines.json")
 ```
 
 **Note:** To match a WSG guideline to a STAR technique, you can match the guideline `testable` anchor hash (WSG JSON API) to the technique `id` (STAR JSON API).
+
+## Impact API
+
+We currently have an Impact API under development that will replace existing scoring metrics within WSG. It will outsource the task of setting measurement scores to a JSON file that will be maintained by the Interest Group's measurability Task Force. Within this JSON file exists capability to set scores for each success criteria and provide a labeling system with set thresholds. The information about both the labeling system and scores will be fed back to the specification upon availability. Details behind how calculations are drawn can be provided within a dedicated resource.
+
+For details of how this will work in practice, see [this slide deck](https://drive.google.com/file/d/1wk5270ryJuTiu-47CBCfNMa2jnyRZP67/view?usp=sharing) and review the measurability Task Force [meeting minutes](https://github.com/w3c/sustainableweb-ig/tree/main/metrics).
 
 ## Test Suite
 
