@@ -34,20 +34,20 @@
 			/* Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14 */
 			legend { font-weight: bold; width: fit-content; }
 			.switch form { display: flex; margin-bottom: 1.5em; margin-top: 1.5em; }
-			.switch label { box-sizing: border-box; border: medium solid var(--toclink-visited-underline); display: inline-block; min-width: 170px; padding: 0.5em 1em; text-align: center; }
-			.switch label:has(input:checked) { background-color: #d9d9d9; font-weight: bold; }
-			.switch label:first-child { border-right: 0; border-top-left-radius: 15px; border-bottom-left-radius: 15px; }
-			.switch label:last-child { border-top-right-radius: 15px; border-bottom-right-radius: 15px; }
+			.switch label { box-sizing: border-box; border: medium solid var(--toclink-visited-text); display: inline-block; padding: 0.5em; text-align: center; }
+			.switch label:has(input:checked) { background-color: #d9d9d9; color: #000000; font-weight: bold; }
+			.switch label:first-child { border-right: 0; border-top-left-radius: 15px; border-bottom-left-radius: 15px; min-width: 100px; }
+			.switch label:last-child { border-top-right-radius: 15px; border-bottom-right-radius: 15px; min-width: 100px; }
 			.filter h2 { position: static !important; }
 			.filter input { margin-bottom: 0.75em; margin-top: 0.75em; }
 			.filter label { margin-right: 0.5em; white-space: nowrap; }
 			.filter fieldset { border: medium solid #d9d9d9; margin-bottom: 1em; }
-			.filter fieldset:has(:checked) ~ .c .reset { border-color: var(--toclink-visited-underline); color: var(--toclink-text); }
+			.filter fieldset:has(:checked) ~ .c .reset { border-color: var(--toclink-visited-text); color: var(--toclink-text); }
 			.filter .c, .switch { max-width: fit-content; margin-left: auto; margin-right: auto; }
 			.filter .c .reset { background-color: var(--tocsidebar-bg); border: medium solid #d9d9d9; border-radius: 15px; color: #d9d9d9; font-size: 1em; font-weight: bold; margin-bottom: 2em; padding: 1.2em 3em; }
 			/* Hide All Non-SC Related Content Upon Filter Activation */
-			.hidden, .switch input, body:has(#filter :checked) #abstract, body:has(#filter :checked) #sotd, #toc:has(.filter :checked) ~ #introduction, #toc:has(.filter :checked) ~ #considerations, #toc:has(.filter :checked) ~ #acknowledgments, #toc:has(.filter :checked) ~ #changelog, #toc:has(.filter :checked) ~ section > p ~ section, #toc:has(.filter :checked) ~ section > p ~ section > section, #toc:has(.filter :checked) ~ section > div, #toc:has(.filter :checked) ~ section > p, #toc:has(.filter :checked) ~ section > ul, .switch:has(#contents:checked) ~ .filter, .switch:has(#filters:checked) ~ #table-of-contents, .switch:has(#filters:checked) ~ .toc
-			{ content-visibility: hidden; height: 1px; overflow: hidden; position: absolute; width: 1px; }
+			.hidden, .switch input, .switch:has(#contents:checked) ~ .filter, .switch:has(#filters:checked) ~ #table-of-contents, .switch:has(#filters:checked) ~ .toc, body:has(#filter :checked) #abstract, body:has(#filter :checked) #sotd, #toc:has(.filter :checked) ~ #introduction, #toc:has(.filter :checked) ~ #considerations, #toc:has(.filter :checked) ~ #acknowledgments, #toc:has(.filter :checked) ~ #changelog, #toc:has(.filter :checked) ~ section > p ~ section, #toc:has(.filter :checked) ~ section > p, #toc:has(.filter :checked) ~ section > ul, #toc:has(.filter :checked) ~ section > div, #toc:has(.filter :checked) ~ section > p ~ section > section
+			{ clip: rect(0,0,0,0) !important; content-visibility: hidden; height: 1px; overflow: hidden; position: absolute; width: 1px; }
 			/* Show Filtered Content */
 			#toc:has(.filter :checked) ~ section section:has(.mt), #toc:has(.filter :checked) ~ section section:has(.ht),
 			#toc:has(.filter :checked) ~ section section:has(.mh), #toc:has(.filter :checked) ~ section section:has(.mm), #toc:has(.filter :checked) ~ section section:has(.ml),
@@ -55,9 +55,9 @@
 			#toc:has(.filter :checked) ~ section section:has(.wh), #toc:has(.filter :checked) ~ section section:has(.wm), #toc:has(.filter :checked) ~ section section:has(.wl),
 			#toc:has(.filter :checked) ~ section section:has(.ch), #toc:has(.filter :checked) ~ section section:has(.cm), #toc:has(.filter :checked) ~ section section:has(.cl),
 			#toc:has(.filter :checked) ~ section section:has(.afnor), #toc:has(.filter :checked) ~ section section:has(.aws), #toc:has(.filter :checked) ~ section section:has(.azure), #toc:has(.filter :checked) ~ section section:has(.gpf), #toc:has(.filter :checked) ~ section section:has(.gr491), #toc:has(.filter :checked) ~ section section:has(.greenit), #toc:has(.filter :checked) ~ section section:has(.opquast), #toc:has(.filter :checked) ~ section section:has(.sdgs), #toc:has(.filter :checked) ~ section section:has(.ca), #toc:has(.filter :checked) ~ section section:has(.cp), #toc:has(.filter :checked) ~ section section:has(.cs), #toc:has(.filter :checked) ~ section section:has(.ai), #toc:has(.filter :checked) ~ section section:has(.assets), #toc:has(.filter :checked) ~ section section:has(.compatibility), #toc:has(.filter :checked) ~ section section:has(.content), #toc:has(.filter :checked) ~ section section:has(.css), #toc:has(.filter :checked) ~ section section:has(.e-waste), #toc:has(.filter :checked) ~ section section:has(.education), #toc:has(.filter :checked) ~ section section:has(.governance), #toc:has(.filter :checked) ~ section section:has(.hardware), #toc:has(.filter :checked) ~ section section:has(.html), #toc:has(.filter :checked) ~ section section:has(.ideation), #toc:has(.filter :checked) ~ section section:has(.javascript), #toc:has(.filter :checked) ~ section section:has(.kpis), #toc:has(.filter :checked) ~ section section:has(.marketing), #toc:has(.filter :checked) ~ section section:has(.networking), #toc:has(.filter :checked) ~ section section:has(.patterns), #toc:has(.filter :checked) ~ section section:has(.performance), #toc:has(.filter :checked) ~ section section:has(.report), #toc:has(.filter :checked) ~ section section:has(.research), #toc:has(.filter :checked) ~ section section:has(.equity), #toc:has(.filter :checked) ~ section section:has(.software), #toc:has(.filter :checked) ~ section section:has(.strategy), #toc:has(.filter :checked) ~ section section:has(.ui), #toc:has(.filter :checked) ~ section section:has(.usability),
-			.summary ul, .mt, .ht, .mh, .mm, .ml, .eh, .em, .el, .wh, .wm, .wl, .ch, .cm, .cl, .afnor, .aws, .azure, .gpf, .gr491, .greenit, .opquast, .sdgs, .ca, .cp, .cs, .ai, .assets, .compatibility, .content, .css, .e-waste, .education, .governance, .hardware, .html, .ideation, .javascript, .kpis, .marketing, .networking, .patterns, .performance, .report, .research, .equity, .software, .strategy, .ui, .usability,
+			.mt, .ht, .mh, .mm, .ml, .eh, .em, .el, .wh, .wm, .wl, .ch, .cm, .cl, .afnor, .aws, .azure, .gpf, .gr491, .greenit, .opquast, .sdgs, .ca, .cp, .cs, .ai, .assets, .compatibility, .content, .css, .e-waste, .education, .governance, .hardware, .html, .ideation, .javascript, .kpis, .marketing, .networking, .patterns, .performance, .report, .research, .equity, .software, .strategy, .ui, .usability,
 			.mt ~ section:last-child, .ht ~ section:last-child, .mh ~ section:last-child, .mm ~ section:last-child, .ml ~ section:last-child, .eh ~ section:last-child, .em ~ section:last-child, .el ~ section:last-child, .wh ~ section:last-child, .wm ~ section:last-child, .wl ~ section:last-child, .ch ~ section:last-child, .cm ~ section:last-child, .cl ~ section:last-child , .afnor ~ section:last-child, .aws ~ section:last-child, .azure ~ section:last-child, .gpf ~ section:last-child, .gr491 ~ section:last-child, .greenit ~ section:last-child, .opquast ~ section:last-child, .sdgs ~ section:last-child, .ca ~ section:last-child, .cp ~ section:last-child, .cs ~ section:last-child, .ai ~ section:last-child, .assets ~ section:last-child, .compatibility ~ section:last-child, .content ~ section:last-child, .css ~ section:last-child, .e-waste ~ section:last-child, .education ~ section:last-child, .governance ~ section:last-child, .hardware ~ section:last-child, .html ~ section:last-child, .ideation ~ section:last-child, .javascript ~ section:last-child, .kpis ~ section:last-child, .marketing ~ section:last-child, .networking ~ section:last-child, .patterns ~ section:last-child, .performance ~ section:last-child, .report ~ section:last-child, .research ~ section:last-child, .equity ~ section:last-child, .software ~ section:last-child, .strategy ~ section:last-child, .ui ~ section:last-child, .usability ~ section:last-child
-			{ content-visibility: visible !important; height: auto !important; overflow: unset !important; position: static !important; width: auto !important; }
+			{ clip: auto; content-visibility: visible !important; height: auto !important; overflow: unset !important; position: static !important; width: auto !important; }
 			@media (scripting: none) { .filter { display: none; } }
 		</style>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer>
@@ -80,8 +80,8 @@
 				const newItems = `
 				<section id="switch" class="switch">
 					<form>
-						<label for="contents"><input type="radio" id="contents" name="switcher" checked>Table of Contents</label>
-						<label for="filters"><input type="radio" id="filters" name="switcher">Content Filters</label>
+						<label for="contents"><input type="radio" id="contents" name="switcher" checked>Contents</label>
+						<label for="filters"><input type="radio" id="filters" name="switcher">Filters</label>
 					</form>
 				</section>
 				<section id="filter" class="filter">
@@ -229,8 +229,11 @@
 					toc.querySelectorAll('a').forEach(link => {
 						const str = link.href;
 						const result = str.split('#')[1];
-						if (section.id === result) {
-							link.classList.add('hidden'); } }); } } }); }
+						if (section.id === result || result === "abstract" || result === "sotd" || result === "considerations" || result === "acknowledgments" || result === "changelog") {
+							link.classList.add('hidden'); } else if (
+						result === "introduction") {
+							link.parentElement.classList.add('hidden');
+						} }); } } }); }
 			function filterNote(name, attr) {
 				let countTotal = " (" + document.querySelectorAll(attr).length + ")";
 				if (document.getElementById(name).parentElement.innerHTML.includes(countTotal)) { } else {
