@@ -34,11 +34,11 @@
 			/* Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14 */
 			legend { font-weight: bold; width: fit-content; }
 			.switch form { display: flex; margin-bottom: 1.5em; margin-top: 1.5em; }
-			.switch label { box-sizing: border-box; border: medium solid var(--toclink-visited-text); display: inline-block; padding: 0.5em; text-align: center; }
+			.switch label { box-sizing: border-box; border: medium solid var(--toclink-visited-text); display: flex; padding: 0.5em; justify-content: center; }
 			.switch label:has(input:checked) { background-color: #d9d9d9; color: #000000; font-weight: bold; }
-			.switch label:has(input:focus:checked) { outline: 2px solid #000000; }
+			.switch label:has(input:focus:checked) { outline: 4px solid var(--toclink-underline); }
 			.switch label:first-child { border-right: 0; border-top-left-radius: 15px; border-bottom-left-radius: 15px; min-width: 100px; }
-			.switch label:last-child { border-top-right-radius: 15px; border-bottom-right-radius: 15px; min-width: 100px; }
+			.switch label:last-child { border-left: 0; border-top-right-radius: 15px; border-bottom-right-radius: 15px; min-width: 100px; }
 			.filter h2 { position: static !important; }
 			.filter input { margin-bottom: 0.75em; margin-top: 0.75em; }
 			.filter label { margin-right: 0.5em; white-space: nowrap; }
