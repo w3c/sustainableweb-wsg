@@ -73,13 +73,9 @@
 							<dd>
 								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
-		</script>
-		<script>
-			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
-			window.addEventListener("load", (event) => { addFilter(); });
-			function addFilter() {
-				const toc = document.querySelector('#toc');
-				const newItems = `
+			function htmlInsert() {
+				let toc = document.querySelector('#toc');
+				let newItems = `
 				<section id="switch" class="switch">
 					<form>
 						<label for="contents"><input type="radio" id="contents" name="switcher" checked>Contents</label>
@@ -167,7 +163,12 @@
 						</div>
 					</form>
 				</section>`;
-				toc.insertAdjacentHTML('afterbegin', newItems);
+				toc.insertAdjacentHTML('afterbegin', newItems); }
+		</script>
+		<script>
+			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
+			window.addEventListener("load", (event) => { addFilter(); });
+			function addFilter() {
 				window.addEventListener('change', filterData); filterData(); }
 			function filterData() {
 				filterNote('mt', '[data-testable="machine"]');
@@ -331,7 +332,7 @@
 			noRecTrack: true,
 			shortName: "web-sustainability-guidelines",
 			latestVersion: "https://www.w3.org/TR/web-sustainability-guidelines/",
-			postProcess: [authorRef, addFilter]
+			postProcess: [authorRef, htmlInsert, addFilter]
 		}
 		</script>
 	</head>
