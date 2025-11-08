@@ -78,8 +78,6 @@
 			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
 			window.addEventListener("load", (event) => { addFilter(); });
 			function addFilter() {
-				try {
-				if (!document.querySelector('.switch')) {
 				const toc = document.querySelector('#toc');
 				const newItems = `
 				<section id="switch" class="switch">
@@ -169,7 +167,7 @@
 						</div>
 					</form>
 				</section>`;
-				toc.insertAdjacentHTML('afterbegin', newItems); } } catch {}
+				toc.insertAdjacentHTML('afterbegin', newItems);
 				window.addEventListener('change', filterData); filterData(); }
 			function filterData() {
 				filterNote('mt', '[data-testable="machine"]');
