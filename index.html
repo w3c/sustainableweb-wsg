@@ -87,7 +87,9 @@
 						<label for="contents"><input type="radio" id="contents" name="switcher" checked>Contents</label>
 						<label for="filters"><input type="radio" id="filters" name="switcher">Filters</label>
 					</form>
-				</section>
+				</section>`;
+				toc.insertAdjacentHTML('afterbegin', newItems);
+				let newItems2 = `
 				<section id="filter" class="filter">
 					<h2 class="introductory">Content Filters</h2>
 					<form>
@@ -169,7 +171,7 @@
 						</div>
 					</form>
 				</section>`;
-				toc.insertAdjacentHTML('afterbegin', newItems); }
+				toc.insertAdjacentHTML('beforeend', newItems2); }
 			function filterData() {
 				filterNote('mt', '[data-testable="machine"]');
 				filterNote('ht', '[data-testable="human"]');
@@ -237,8 +239,11 @@
 						if (section.id === result || result === "abstract" || result === "sotd" || result === "considerations" || result === "acknowledgments" || result === "changelog") {
 							link.classList.add('hidden'); } else if (
 						result === "introduction") {
-							link.parentElement.classList.add('hidden');
-						} }); } } }); }
+							link.parentElement.classList.add('hidden'); } }); } } });
+				document.querySelectorAll('a').forEach(a => {
+					if (a.classList.contains('hidden')) {
+						a.setAttribute('tabindex', '-1'); } else { a.removeAttribute('tabindex');
+					} }); }
 			function filterNote(name, attr) {
 				let countTotal = " (" + document.querySelectorAll(attr).length + ")";
 				if (document.getElementById(name).parentElement.innerHTML.includes(countTotal)) { } else {
