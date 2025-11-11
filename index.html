@@ -76,7 +76,9 @@
 		</script>
 		<script>
 			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
-			window.addEventListener("click", (event) => { addFilter(); });
+			window.addEventListener("click", (event) => { addFilter();
+			if (document.querySelector('.filter input:checked')) {
+				document.getElementById('user-experience-design').scrollIntoView({ behavior: 'smooth', block: 'start' }); } });
 			function addFilter() {
 				window.addEventListener('change', filterData); filterData(); }
 			function htmlInsert() {
