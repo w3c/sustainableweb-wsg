@@ -76,9 +76,7 @@
 		</script>
 		<script>
 			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
-			window.addEventListener("click", (event) => { addFilter();
-			if (document.querySelector('.filter input:checked')) {
-				document.getElementById('user-experience-design').scrollIntoView({ behavior: 'smooth', block: 'start' }); } });
+			window.addEventListener("click", (event) => { addFilter(); }); autoScroll();
 			function addFilter() {
 				window.addEventListener('change', filterData); filterData(); }
 			function htmlInsert() {
@@ -174,6 +172,13 @@
 					</form>
 				</section>`;
 				toc.insertAdjacentHTML('beforeend', newItems2); }
+			function autoScroll() {
+				document.addEventListener('click', event => {
+				if (event.target.matches('.filter input')) {
+					document.getElementById('user-experience-design').scrollIntoView({ behavior: 'smooth', block: 'start' });
+					const inputs = document.querySelectorAll('.filter input');
+					const noneChecked = ![...inputs].some(input => input.checked);
+					if (noneChecked) { window.scrollTo({ top: 0, behavior: 'smooth' }); } } }); }
 			function filterData() {
 				filterNote('mt', '[data-testable="machine"]');
 				filterNote('ht', '[data-testable="human"]');
