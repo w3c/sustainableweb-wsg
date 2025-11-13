@@ -77,7 +77,8 @@
 		</script>
 		<script>
 			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
-			window.addEventListener("click", (event) => { addFilter(); }); autoScroll();
+			window.addEventListener("click", (event) => { addFilter(); updateQueryString(); }); autoScroll();
+			window.addEventListener("load", function() { queryFilter();});
 			function addFilter() {
 				window.addEventListener('change', filterData); filterData(); }
 			function htmlInsert() {
@@ -262,31 +263,11 @@
 					document.querySelectorAll(attr).forEach(function (elem) {
 						elem.classList.remove(name); }); }
 				return(name + attr); }
-			function queryFilter() {
-				// Query String Filtering onLoad
-				const queryParams = window.location.search.substring(1).toLowerCase().split('&');
-				const labels = document.querySelectorAll('.filter label');
-				document.querySelectorAll('.filter label').forEach(label => {
-				const id = label.childNodes[0].id || ''; let result;
-				const text = label.textContent.trim().toLowerCase().replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
-				if (["high", "medium", "low"].includes(text)) {
-					result = `${id}-${text}`; } else { result = `${text}`; }
-				result = "filter=" + result;
-				if (queryParams.includes(result)) {
-					const input = label.querySelector('input');
-					if (input) { input.checked = true; } else { input.checked = false; } } });
-				const clickEvent = new MouseEvent('click', { view: window, bubbles: true, cancelable: true });
-				document.dispatchEvent(clickEvent); }
-			function queryString() {
-				document.querySelectorAll('.filter input').forEach(input => {
-					input.addEventListener('change', updateQueryString); });
-					document.addEventListener('reset', function(event) { setTimeout(updateQueryString, 0); }); }
 			function getQueryValue(input) {
 				let labelText = input.parentElement.textContent.trim().toLowerCase().toLowerCase().replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
 				if (["high", "medium", "low"].includes(labelText)) {
 					return `${input.id}-${labelText}`;
-				} else { return `${labelText}`; }
-			}
+				} else { return `${labelText}`; } }
 			function updateQueryString() {
 				const url = new URL(window.location);
 				const params = new URLSearchParams(url.search);
@@ -294,7 +275,20 @@
 				document.querySelectorAll('.filter input').forEach(input => {
 					if (input.checked) { const value = getQueryValue(input); params.append('filter', value); } });
 				window.history.replaceState({}, '', `${url.pathname}?${params.toString()}`); }
-			window.addEventListener('DOMContentLoaded', () => { queryString(); });
+			function queryFilter() {
+				// Query String Filtering onLoad
+				document.querySelectorAll('.filter input').forEach(input => {
+					input.addEventListener('change', updateQueryString); });
+					document.addEventListener('reset', function(event) { setTimeout(updateQueryString, 0); });
+				const queryParams = window.location.search.substring(1).toLowerCase().split('&');
+				document.querySelectorAll('.filter label').forEach(label => {
+					const input = label.querySelector('input');
+					if (!input) return;
+					let text = label.textContent.trim().toLowerCase().replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
+					let result = ["high", "medium", "low"].includes(text) ? `${input.id}-${text}` : text;
+					result = `filter=${result}`;
+					if (queryParams.includes(result)) { input.checked = true; } else { input.checked = false; } });	
+					filterData(); }			
 		</script>
 		<script class="remove">
 		var respecConfig = {
@@ -378,7 +372,7 @@
 			noRecTrack: true,
 			shortName: "web-sustainability-guidelines",
 			latestVersion: "https://www.w3.org/TR/web-sustainability-guidelines/",
-			postProcess: [authorRef, htmlInsert, addFilter, queryFilter, queryString]
+			postProcess: [authorRef, htmlInsert, addFilter, queryFilter]
 		}
 		</script>
 	</head>
