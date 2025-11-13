@@ -277,18 +277,24 @@
 				window.history.replaceState({}, '', `${url.pathname}?${params.toString()}`); }
 			function queryFilter() {
 				// Query String Filtering onLoad
-				document.querySelectorAll('.filter input').forEach(input => {
-					input.addEventListener('change', updateQueryString); });
-					document.addEventListener('reset', function(event) { setTimeout(updateQueryString, 0); });
-				const queryParams = window.location.search.substring(1).toLowerCase().split('&');
-				document.querySelectorAll('.filter label').forEach(label => {
-					const input = label.querySelector('input');
-					if (!input) return;
-					let text = label.textContent.trim().toLowerCase().replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
-					let result = ["high", "medium", "low"].includes(text) ? `${input.id}-${text}` : text;
-					result = `filter=${result}`;
-					if (queryParams.includes(result)) { input.checked = true; } else { input.checked = false; } });	
-					filterData(); }			
+				    const filters = document.querySelectorAll('.filter');
+					if (!filters.length) return;
+					document.querySelectorAll('.filter input').forEach(input => {
+						input.addEventListener('change', updateQueryString); });
+					document.querySelectorAll('form').forEach(form => {
+						form.addEventListener('reset', () => setTimeout(updateQueryString, 0)); });
+					const queryParams = window.location.search.substring(1).toLowerCase().split('&').filter(Boolean);
+					document.querySelectorAll('.filter label').forEach(label => {
+						const input = label.querySelector('input');
+						if (!input || !input.id) return;
+						const rawText = Array.from(label.childNodes).filter(node => node.nodeType === Node.TEXT_NODE).map(node => node.textContent).join(' ').trim().toLowerCase();
+						let text = rawText.replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
+						let result = ["high", "medium", "low"].includes(text)
+							? `${input.id}-${text}`
+							: text;
+						result = `filter=${result}`;
+						input.checked = queryParams.includes(result); });
+					if (typeof filterData === 'function') { filterData(); } }			
 		</script>
 		<script class="remove">
 		var respecConfig = {
