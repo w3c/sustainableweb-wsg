@@ -42,7 +42,8 @@
 			.filter h2 { position: static !important; }
 			.filter input { margin-bottom: 0.75em; margin-top: 0.75em; }
 			.filter label { margin-right: 0.5em; white-space: nowrap; }
-			.filter fieldset { border: medium solid #d9d9d9; margin-bottom: 1em; }
+			.standards label, .considerations label, .categories label { flex-basis: 50%; margin-right: 0; }
+			.filter fieldset { border: medium solid #d9d9d9; display: flex; flex-wrap: wrap; margin-bottom: 1em; }
 			.filter fieldset:has(:checked) ~ .c .reset { border-color: var(--toclink-visited-text); color: var(--toclink-text); }
 			.filter .c, .switch { max-width: fit-content; margin-left: auto; margin-right: auto; }
 			.filter .c .reset { background-color: var(--tocsidebar-bg); border: medium solid #d9d9d9; border-radius: 15px; color: #d9d9d9; font-size: 1em; font-weight: bold; margin-bottom: 2em; padding: 1.2em 3em; }
@@ -59,7 +60,7 @@
 			.mt, .ht, .mh, .mm, .ml, .eh, .em, .el, .wh, .wm, .wl, .ch, .cm, .cl, .afnor, .aws, .azure, .gpf, .gr491, .greenit, .opquast, .sdgs, .ca, .cp, .cs, .ai, .assets, .compatibility, .content, .css, .e-waste, .education, .governance, .hardware, .html, .ideation, .javascript, .kpis, .marketing, .networking, .patterns, .performance, .report, .research, .equity, .software, .strategy, .ui, .usability,
 			.mt ~ section:last-child, .ht ~ section:last-child, .mh ~ section:last-child, .mm ~ section:last-child, .ml ~ section:last-child, .eh ~ section:last-child, .em ~ section:last-child, .el ~ section:last-child, .wh ~ section:last-child, .wm ~ section:last-child, .wl ~ section:last-child, .ch ~ section:last-child, .cm ~ section:last-child, .cl ~ section:last-child , .afnor ~ section:last-child, .aws ~ section:last-child, .azure ~ section:last-child, .gpf ~ section:last-child, .gr491 ~ section:last-child, .greenit ~ section:last-child, .opquast ~ section:last-child, .sdgs ~ section:last-child, .ca ~ section:last-child, .cp ~ section:last-child, .cs ~ section:last-child, .ai ~ section:last-child, .assets ~ section:last-child, .compatibility ~ section:last-child, .content ~ section:last-child, .css ~ section:last-child, .e-waste ~ section:last-child, .education ~ section:last-child, .governance ~ section:last-child, .hardware ~ section:last-child, .html ~ section:last-child, .ideation ~ section:last-child, .javascript ~ section:last-child, .kpis ~ section:last-child, .marketing ~ section:last-child, .networking ~ section:last-child, .patterns ~ section:last-child, .performance ~ section:last-child, .report ~ section:last-child, .research ~ section:last-child, .equity ~ section:last-child, .software ~ section:last-child, .strategy ~ section:last-child, .ui ~ section:last-child, .usability ~ section:last-child
 			{ clip: auto; content-visibility: visible !important; height: auto !important; overflow: unset !important; position: static !important; width: auto !important; }
-			@media (scripting: none) { .filter { display: none; } }
+			@media (scripting: none) { .switch, .filter { display: none; } }
 		</style>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer>
 		</script>
