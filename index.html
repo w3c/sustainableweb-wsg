@@ -294,7 +294,7 @@
 				document.querySelectorAll('.filter input').forEach(input => {
 					if (input.checked) { const value = getQueryValue(input); params.append('filter', value); } });
 				window.history.replaceState({}, '', `${url.pathname}?${params.toString()}`); }
-			window.addEventListener('DOMContentLoaded', () => { queryFilter(); queryString(); });
+			window.addEventListener('DOMContentLoaded', () => { queryString(); });
 		</script>
 		<script class="remove">
 		var respecConfig = {
