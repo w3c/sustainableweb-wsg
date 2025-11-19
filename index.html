@@ -74,6 +74,19 @@
 							<dd>
 								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
+			function editorRef() {
+				/* Editor Resolution */	
+				const ddToRemove = document.querySelector('dd[data-editor-id="49702"]');
+				if (ddToRemove) { ddToRemove.remove(); }
+				document.querySelectorAll('.head dt').forEach(dt => {
+					if (dt.textContent.trim() === 'Editors:') {
+						dt.textContent = "Editor:";
+						const htmlToInsert = `
+						<dt>Lead Editor:</dt>
+						<dd class="editor p-author h-card vcard" data-editor-id="49702">
+								<a class="u-url url p-name fn" href="https://alexanderdawson.com/">Alexander Dawson</a> (<span class="p-org org h-org">Invited Expert</span>)
+						</dd>`;
+						dt.insertAdjacentHTML('beforebegin', htmlToInsert); } } ); }
 		</script>
 		<script>
 			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
@@ -308,6 +321,12 @@
 					company: "Invited Expert",
 					w3cid: 49702,
 				},
+				{
+					name: "Rose Newell",
+					url: "https://englishroseberlin.com/",
+					company: "Invited Expert",
+					w3cid: 164418,
+				},
 			],
 			github: "https://github.com/w3c/sustainableweb-wsg",
 			group: "sustainableweb",
@@ -381,7 +400,7 @@
 			noRecTrack: true,
 			shortName: "web-sustainability-guidelines",
 			latestVersion: "https://www.w3.org/TR/web-sustainability-guidelines/",
-			postProcess: [authorRef, htmlInsert, addFilter, queryFilter]
+			postProcess: [authorRef, editorRef, htmlInsert, addFilter, queryFilter]
 		}
 		</script>
 	</head>
@@ -4988,14 +5007,15 @@
 					<p><strong>Updates:</strong></p>
 					<ul>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Filter system is more visible within TOC and multiPage removed.<br><span class="credit">@AlexDawsonUK, @kfranqueiro, @timfrick, @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] TOC updates and query strings in URL update to reflect active filters.<br><span class="credit">@AlexDawsonUK & @fershad</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Intro clarifications provided RE standards references.<br><span class="credit">@TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Update to relationships to include W3C WebML WG Ethical Principles spec.<br><span class="credit">@TzviyaSiegman</span></li>
 					</ul>
 					<p><strong>Fixes:</strong></p>
 					<ul>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Additional fixes for pubRules prior to draft note status.<br><span class="credit">@AlexDawsonUK, @plehegar, & @TzviyaSiegman</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Filtering appearance has been improved and multiPage has been removed by consensus.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Fixed some redundancy issues within the specification.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Updated editor roles and credit for @codewordcreative Q3-2025 contributions.<br><span class="credit">@AlexDawsonUK, @ines-akrap, @mgifford, @timfrick, & @TzviyaSiegman</span></li>
 					</ul>
 					<!--
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/">#</a>] Change.<br><span class="credit">@Github</span></li>
