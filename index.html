@@ -27,57 +27,40 @@
 				.summary .reporting dd { flex-basis: calc(100% - 85px); margin: 0; }
 				.summary .reporting dd { flex-basis: calc(100% - 85px); } }
 			/* Fix for Printing The Specification: https://github.com/w3c/sustyweb/issues/92 */
-			@media print { .pageButtons, .filter, body:not(.full-document) #toc { display: none !important; } body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
+			@media print { .pageButtons, .filter, body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
 			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
-			/* Multipage Document: https://github.com/w3c/sustainableweb-wsg/issues/14#issuecomment-2662164386 */
-			@media (scripting: enabled) {
-				.hide { content-visibility: hidden; display: inherit !important; height: 1px !important; left: -1000px !important; overflow: hidden !important; position: absolute !important; top: -1px !important; width: 1px !important; }
-				.show { content-visibility: visible; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
-			.pageButtons { margin-top: 2em; padding-left: 0; }
-			.pageButtons, .pageButtons li, .pageButtons tbody { display: flex; flex: 1; gap: 10px; }
-			.pageButtons a { align-items: center; border: medium solid #d9d9d9; background-color: var(--tocsidebar-bg); display: flex; font-weight: bold; flex: 1; padding: 0.5em 1em; }
-			.previousPage { justify-content: left; } .fullDocument { justify-content: center; } .nextPage { justify-content: right; text-align: right; }
-			@media (scripting: none) {
-				.pageButtons { display: none; }
-				.hide { display: block !important; height: auto; left: auto; overflow: unset; position: static; top: auto; width: auto; } }
 			/* Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14 */
-			.filter details { scroll-margin-top: 25px; }
-			.filter details form { content-visibility: hidden; } .filter details[open] form { content-visibility: visible; }
 			legend { font-weight: bold; width: fit-content; }
-			.wrapper { display: flex; flex-wrap: wrap; }
-			.testable, .impact, .effort, .materials, .energy, .water, .emissions { min-width: 300px; }
-			.categories, .considerations, .standards, .testable { flex-basis: 100%; }
-			.impact, .effort, .materials, .energy, .water, .emissions { flex-basis: calc(50% - 32px); }
-			.wrapper > fieldset, .option-inline { margin-top: 1em; }
-			.wrapper label { margin-right: 0.5em; white-space: nowrap; }
-			@media screen and (max-width: 860px) {
-				.wrapper fieldset, .option-inline { display: flex; flex-basis: 100%; flex-wrap: wrap; } }
-			@media screen and (max-width: 700px) {
-				.option-inline { display: flex; flex-direction: column; min-width: unset; }
-				.wrapper label { margin-right: 0; } }
-			@media screen and (max-width: 550px) {
-				.wrapper fieldset { display: flex; flex-direction: column; min-width: unset; } }
-			.filter, .option-inline div:has(#test:checked),
+			.switch form { display: flex; margin-bottom: 1.5em; margin-top: 1.5em; }
+			.switch label { box-sizing: border-box; border: medium solid var(--toclink-visited-text); display: flex; padding: 0.5em; justify-content: center; }
+			.switch label:has(input:checked) { background-color: #d9d9d9; color: #000000; font-weight: bold; }
+			.switch label:has(input:focus:checked) { outline: 4px solid var(--toclink-underline); }
+			.switch label:first-child { border-right: 0; border-top-left-radius: 15px; border-bottom-left-radius: 15px; min-width: 100px; }
+			.switch label:last-child { border-left: 0; border-top-right-radius: 15px; border-bottom-right-radius: 15px; min-width: 100px; }
+			.filter h2 { position: static !important; }
+			.filter input { margin-bottom: 0.75em; margin-top: 0.75em; }
+			.filter label { margin-right: 0.5em; white-space: nowrap; }
+			.standards label, .considerations label, .categories label { flex-basis: 50%; margin-right: 0; }
+			.filter fieldset { border: medium solid #d9d9d9; display: flex; flex-wrap: wrap; margin-bottom: 1em; }
+			.filter fieldset:has(:checked) ~ .c .reset { border-color: var(--toclink-visited-text); color: var(--toclink-text); }
+			.filter .c, .switch { max-width: fit-content; margin-left: auto; margin-right: auto; }
+			.filter .c .reset { background-color: var(--tocsidebar-bg); border: medium solid #d9d9d9; border-radius: 15px; color: #d9d9d9; font-size: 1em; font-weight: bold; margin-bottom: 2em; padding: 1.2em 3em; }
 			/* Hide All Non-SC Related Content Upon Filter Activation */
-			.filter:has(details[open]) ~ #abstract, .filter:has(details[open]) ~ #sotd, .filter:has(details[open]) ~ #introduction, .filter:has(details[open]) ~ section > p ~ section, .filter:has(details[open]) ~ section > p ~ section > section, .filter:has(details[open]) ~ #acknowledgments, .filter:has(details[open]) ~ section > div, .filter:has(details[open]) ~ section > p, .filter:has(details[open]) ~ section > ul, .wrapper fieldset
-			{ content-visibility: hidden; height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
-			/* Show Filter Basics */
-			.full-document .filter, .filter:has(details[open]) ~ #glossary > div, .filter:has(details[open]) ~ #glossary > p,
-			/* Show Filter Categories */
-			.option-inline:has(#test:checked) ~ .wrapper .testable, .option-inline:has(#planet:checked) ~ .wrapper .materials, .option-inline:has(#planet:checked) ~ .wrapper .energy, .option-inline:has(#planet:checked) ~ .wrapper .water, .option-inline:has(#planet:checked) ~ .wrapper .emissions, .option-inline:has(#standards:checked) ~ .wrapper .standards, .option-inline:has(#consideration:checked) ~ .wrapper .considerations, .option-inline:has(#categories:checked) ~ .wrapper .categories,
+			.hidden, .switch input, .switch:has(#contents:checked) ~ .filter, .switch:has(#filters:checked) ~ #table-of-contents, .switch:has(#filters:checked) ~ .toc, body:has(#filter :checked) #abstract, body:has(#filter :checked) #sotd, #toc:has(.filter :checked) ~ #introduction, #toc:has(.filter :checked) ~ #considerations, #toc:has(.filter :checked) ~ #acknowledgments, #toc:has(.filter :checked) ~ #changelog, #toc:has(.filter :checked) ~ section > p ~ section, #toc:has(.filter :checked) ~ section > p, #toc:has(.filter :checked) ~ section > ul, #toc:has(.filter :checked) ~ section > .summary, #toc:has(.filter :checked) ~ section > p ~ section > section
+			{ clip: rect(0,0,0,0) !important; content-visibility: hidden; height: 1px; overflow: hidden; position: absolute; width: 1px; }
 			/* Show Filtered Content */
-			.filter:has(details[open]) ~ section section:has(.mt), .filter:has(details[open]) ~ section section:has(.ht),
-			.filter:has(details[open]) ~ section section:has(.mh), .filter:has(details[open]) ~ section section:has(.mm), .filter:has(details[open]) ~ section section:has(.ml),
-			.filter:has(details[open]) ~ section section:has(.eh), .filter:has(details[open]) ~ section section:has(.em), .filter:has(details[open]) ~ section section:has(.el),
-			.filter:has(details[open]) ~ section section:has(.wh), .filter:has(details[open]) ~ section section:has(.wm), .filter:has(details[open]) ~ section section:has(.wl),
-			.filter:has(details[open]) ~ section section:has(.ch), .filter:has(details[open]) ~ section section:has(.cm), .filter:has(details[open]) ~ section section:has(.cl),
-			.filter:has(details[open]) ~ section section:has(.afnor), .filter:has(details[open]) ~ section section:has(.aws), .filter:has(details[open]) ~ section section:has(.azure), .filter:has(details[open]) ~ section section:has(.gpf), .filter:has(details[open]) ~ section section:has(.gr491), .filter:has(details[open]) ~ section section:has(.greenit), .filter:has(details[open]) ~ section section:has(.opquast), .filter:has(details[open]) ~ section section:has(.sdgs), .filter:has(details[open]) ~ section section:has(.ca), .filter:has(details[open]) ~ section section:has(.cp), .filter:has(details[open]) ~ section section:has(.cs), .filter:has(details[open]) ~ section section:has(.assets), .filter:has(details[open]) ~ section section:has(.compatibility), .filter:has(details[open]) ~ section section:has(.content), .filter:has(details[open]) ~ section section:has(.css), .filter:has(details[open]) ~ section section:has(.e-waste), .filter:has(details[open]) ~ section section:has(.education), .filter:has(details[open]) ~ section section:has(.governance), .filter:has(details[open]) ~ section section:has(.hardware), .filter:has(details[open]) ~ section section:has(.html), .filter:has(details[open]) ~ section section:has(.ideation), .filter:has(details[open]) ~ section section:has(.javascript), .filter:has(details[open]) ~ section section:has(.kpis), .filter:has(details[open]) ~ section section:has(.marketing), .filter:has(details[open]) ~ section section:has(.networking), .filter:has(details[open]) ~ section section:has(.patterns), .filter:has(details[open]) ~ section section:has(.performance), .filter:has(details[open]) ~ section section:has(.report), .filter:has(details[open]) ~ section section:has(.research), .filter:has(details[open]) ~ section section:has(.equity), .filter:has(details[open]) ~ section section:has(.software), .filter:has(details[open]) ~ section section:has(.strategy), .filter:has(details[open]) ~ section section:has(.ui), .filter:has(details[open]) ~ section section:has(.usability),
-			.summary ul, .mt, .ht, .mh, .mm, .ml, .eh, .em, .el, .wh, .wm, .wl, .ch, .cm, .cl, .afnor, .aws, .azure, .gpf, .gr491, .greenit, .opquast, .sdgs, .ca, .cp, .cs, .assets, .compatibility, .content, .css, .e-waste, .education, .governance, .hardware, .html, .ideation, .javascript, .kpis, .marketing, .networking, .patterns, .performance, .report, .research, .equity, .software, .strategy, .ui, .usability,
-			.mt ~ section:last-child, .ht ~ section:last-child, .mh ~ section:last-child, .mm ~ section:last-child, .ml ~ section:last-child, .eh ~ section:last-child, .em ~ section:last-child, .el ~ section:last-child, .wh ~ section:last-child, .wm ~ section:last-child, .wl ~ section:last-child, .ch ~ section:last-child, .cm ~ section:last-child, .cl ~ section:last-child , .afnor ~ section:last-child, .aws ~ section:last-child, .azure ~ section:last-child, .gpf ~ section:last-child, .gr491 ~ section:last-child, .greenit ~ section:last-child, .opquast ~ section:last-child, .sdgs ~ section:last-child, .ca ~ section:last-child, .cp ~ section:last-child, .cs ~ section:last-child, .assets ~ section:last-child, .compatibility ~ section:last-child, .content ~ section:last-child, .css ~ section:last-child, .e-waste ~ section:last-child, .education ~ section:last-child, .governance ~ section:last-child, .hardware ~ section:last-child, .html ~ section:last-child, .ideation ~ section:last-child, .javascript ~ section:last-child, .kpis ~ section:last-child, .marketing ~ section:last-child, .networking ~ section:last-child, .patterns ~ section:last-child, .performance ~ section:last-child, .report ~ section:last-child, .research ~ section:last-child, .equity ~ section:last-child, .software ~ section:last-child, .strategy ~ section:last-child, .ui ~ section:last-child, .usability ~ section:last-child
-			{ content-visibility: visible !important; height: auto !important; left: auto !important; overflow: unset !important; position: static !important; top: auto !important; width: auto !important; }
-			@media (scripting: none) { .filter { display: none; } }
+			#toc:has(.filter :checked) ~ section section:has(.mt), #toc:has(.filter :checked) ~ section section:has(.ht),
+			#toc:has(.filter :checked) ~ section section:has(.mh), #toc:has(.filter :checked) ~ section section:has(.mm), #toc:has(.filter :checked) ~ section section:has(.ml),
+			#toc:has(.filter :checked) ~ section section:has(.eh), #toc:has(.filter :checked) ~ section section:has(.em), #toc:has(.filter :checked) ~ section section:has(.el),
+			#toc:has(.filter :checked) ~ section section:has(.wh), #toc:has(.filter :checked) ~ section section:has(.wm), #toc:has(.filter :checked) ~ section section:has(.wl),
+			#toc:has(.filter :checked) ~ section section:has(.ch), #toc:has(.filter :checked) ~ section section:has(.cm), #toc:has(.filter :checked) ~ section section:has(.cl),
+			#toc:has(.filter :checked) ~ section section:has(.afnor), #toc:has(.filter :checked) ~ section section:has(.aws), #toc:has(.filter :checked) ~ section section:has(.azure), #toc:has(.filter :checked) ~ section section:has(.gpf), #toc:has(.filter :checked) ~ section section:has(.gr491), #toc:has(.filter :checked) ~ section section:has(.greenit), #toc:has(.filter :checked) ~ section section:has(.opquast), #toc:has(.filter :checked) ~ section section:has(.sdgs), #toc:has(.filter :checked) ~ section section:has(.ca), #toc:has(.filter :checked) ~ section section:has(.cp), #toc:has(.filter :checked) ~ section section:has(.cs), #toc:has(.filter :checked) ~ section section:has(.ai), #toc:has(.filter :checked) ~ section section:has(.assets), #toc:has(.filter :checked) ~ section section:has(.compatibility), #toc:has(.filter :checked) ~ section section:has(.content), #toc:has(.filter :checked) ~ section section:has(.css), #toc:has(.filter :checked) ~ section section:has(.e-waste), #toc:has(.filter :checked) ~ section section:has(.education), #toc:has(.filter :checked) ~ section section:has(.governance), #toc:has(.filter :checked) ~ section section:has(.hardware), #toc:has(.filter :checked) ~ section section:has(.html), #toc:has(.filter :checked) ~ section section:has(.ideation), #toc:has(.filter :checked) ~ section section:has(.javascript), #toc:has(.filter :checked) ~ section section:has(.kpis), #toc:has(.filter :checked) ~ section section:has(.marketing), #toc:has(.filter :checked) ~ section section:has(.networking), #toc:has(.filter :checked) ~ section section:has(.patterns), #toc:has(.filter :checked) ~ section section:has(.performance), #toc:has(.filter :checked) ~ section section:has(.report), #toc:has(.filter :checked) ~ section section:has(.research), #toc:has(.filter :checked) ~ section section:has(.equity), #toc:has(.filter :checked) ~ section section:has(.software), #toc:has(.filter :checked) ~ section section:has(.strategy), #toc:has(.filter :checked) ~ section section:has(.ui), #toc:has(.filter :checked) ~ section section:has(.usability),
+			.mt, .ht, .mh, .mm, .ml, .eh, .em, .el, .wh, .wm, .wl, .ch, .cm, .cl, .afnor, .aws, .azure, .gpf, .gr491, .greenit, .opquast, .sdgs, .ca, .cp, .cs, .ai, .assets, .compatibility, .content, .css, .e-waste, .education, .governance, .hardware, .html, .ideation, .javascript, .kpis, .marketing, .networking, .patterns, .performance, .report, .research, .equity, .software, .strategy, .ui, .usability,
+			.mt ~ section:last-child, .ht ~ section:last-child, .mh ~ section:last-child, .mm ~ section:last-child, .ml ~ section:last-child, .eh ~ section:last-child, .em ~ section:last-child, .el ~ section:last-child, .wh ~ section:last-child, .wm ~ section:last-child, .wl ~ section:last-child, .ch ~ section:last-child, .cm ~ section:last-child, .cl ~ section:last-child , .afnor ~ section:last-child, .aws ~ section:last-child, .azure ~ section:last-child, .gpf ~ section:last-child, .gr491 ~ section:last-child, .greenit ~ section:last-child, .opquast ~ section:last-child, .sdgs ~ section:last-child, .ca ~ section:last-child, .cp ~ section:last-child, .cs ~ section:last-child, .ai ~ section:last-child, .assets ~ section:last-child, .compatibility ~ section:last-child, .content ~ section:last-child, .css ~ section:last-child, .e-waste ~ section:last-child, .education ~ section:last-child, .governance ~ section:last-child, .hardware ~ section:last-child, .html ~ section:last-child, .ideation ~ section:last-child, .javascript ~ section:last-child, .kpis ~ section:last-child, .marketing ~ section:last-child, .networking ~ section:last-child, .patterns ~ section:last-child, .performance ~ section:last-child, .report ~ section:last-child, .research ~ section:last-child, .equity ~ section:last-child, .software ~ section:last-child, .strategy ~ section:last-child, .ui ~ section:last-child, .usability ~ section:last-child
+			{ clip: auto; content-visibility: visible !important; height: auto !important; overflow: unset !important; position: static !important; width: auto !important; }
+			@media (scripting: none) { .switch, .filter { display: none; } }
 		</style>
 		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer>
 		</script>
@@ -91,14 +74,126 @@
 							<dd>
 								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
+			function editorRef() {
+				/* Editor Resolution */	
+				const ddToRemove = document.querySelector('dd[data-editor-id="49702"]');
+				if (ddToRemove) { ddToRemove.remove(); }
+				document.querySelectorAll('.head dt').forEach(dt => {
+					if (dt.textContent.trim() === 'Editors:') {
+						dt.textContent = "Editor:";
+						const htmlToInsert = `
+						<dt>Lead Editor:</dt>
+						<dd class="editor p-author h-card vcard" data-editor-id="49702">
+								<a class="u-url url p-name fn" href="https://alexanderdawson.com/">Alexander Dawson</a> (<span class="p-org org h-org">Invited Expert</span>)
+						</dd>`;
+						dt.insertAdjacentHTML('beforebegin', htmlToInsert); } } ); }
 		</script>
 		<script>
 			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
+			window.addEventListener("click", (event) => { addFilter(); updateQueryString(); });
+			window.addEventListener("load", function() { queryFilter(); });
 			function addFilter() {
-				window.addEventListener('change', filterData); filterData();
-				let details = document.querySelectorAll('.filter details')[0];
-				details.addEventListener("toggle", function() {
-					if (details.hasAttribute('open')) { details.scrollIntoView(); } }) }
+				window.addEventListener('change', filterData); filterData(); }
+			function htmlInsert() {
+				let toc = document.querySelector('#toc');
+				let newItems = `
+				<section id="switch" class="switch">
+					<form>
+						<label for="contents"><input type="radio" id="contents" name="switcher" checked>Contents</label>
+						<label for="filters"><input type="radio" id="filters" name="switcher">Filters</label>
+					</form>
+				</section>`;
+				toc.insertAdjacentHTML('afterbegin', newItems);
+				let newItems2 = `
+				<section id="filter" class="filter">
+					<h2 class="introductory">Content Filters</h2>
+					<form>
+						<fieldset class="testable">
+							<legend><a href="#wsg-layers-of-guidance">Testable</a></legend>
+							<label for="mt"><input type="checkbox" id="mt" name="test">Machine-testable</label>
+							<label for="ht"><input type="checkbox" id="ht" name="test">Human-testable</label>
+						</fieldset>
+						<fieldset class="materials">
+							<legend><a href="#reporting">Materials</a></legend>
+							<label for="mh"><input type="checkbox" id="mh" name="materials">High</label>
+							<label for="mm"><input type="checkbox" id="mm" name="materials">Medium</label>
+							<label for="ml"><input type="checkbox" id="ml" name="materials">Low</label>
+						</fieldset>
+						<fieldset class="energy">
+							<legend><a href="#reporting">Energy</a></legend>
+							<label for="eh"><input type="checkbox" id="eh" name="energy">High</label>
+							<label for="em"><input type="checkbox" id="em" name="energy">Medium</label>
+							<label for="el"><input type="checkbox" id="el" name="energy">Low</label>
+						</fieldset>
+						<fieldset class="water">
+							<legend><a href="#reporting">Water</a></legend>
+							<label for="wh"><input type="checkbox" id="wh" name="water">High</label>
+							<label for="wm"><input type="checkbox" id="wm" name="water">Medium</label>
+							<label for="wl"><input type="checkbox" id="wl" name="water">Low</label>
+						</fieldset>
+						<fieldset class="emissions">
+							<legend><a href="#reporting">Emissions</a></legend>
+							<label for="ch"><input type="checkbox" id="ch" name="emissions">High</label>
+							<label for="cm"><input type="checkbox" id="cm" name="emissions">Medium</label>
+							<label for="cl"><input type="checkbox" id="cl" name="emissions">Low</label>
+						</fieldset>
+						<fieldset class="standards">
+							<legend><a href="#relationships">Standards</a></legend>
+							<label for="afnor"><input type="checkbox" id="afnor" name="standard">AFNOR</label>
+							<label for="aws"><input type="checkbox" id="aws" name="standard"><abbr title="Amazon Web Services">AWS</abbr> <abbr title="Well-Architected Framework">WAF</abbr></label>
+							<label for="azure"><input type="checkbox" id="azure" name="standard"><abbr title="Microsoft Azure">Azure</abbr> WAF</label>
+							<label for="gpf"><input type="checkbox" id="gpf" name="standard"><abbr title="General Policy Framework for the Ecodesign of Digital Services">GPF</abbr></label>
+							<label for="gr491"><input type="checkbox" id="gr491" name="standard">GR491</label>
+							<label for="greenit"><input type="checkbox" id="greenit" name="standard">GreenIT</label>
+							<label for="opquast"><input type="checkbox" id="opquast" name="standard">OpQuast</label>
+							<label for="sdgs"><input type="checkbox" id="sdgs" name="standard"><abbr title="United Nations">UN</abbr> SDGs</label>
+						</fieldset>
+						<fieldset class="considerations">
+							<legend><a href="#considerations">Considerations</a></legend>
+							<label for="ca"><input type="checkbox" id="ca" name="considerations">Accessibility</label>
+							<label for="cp"><input type="checkbox" id="cp" name="considerations">Privacy</label>
+							<label for="cs"><input type="checkbox" id="cs" name="considerations">Security</label>
+						</fieldset>
+						<fieldset class="categories">
+							<legend>Categories</legend>
+							<label for="ai"><input type="checkbox" id="ai" name="category">AI</label>
+							<label for="assets"><input type="checkbox" id="assets" name="category">Assets</label>
+							<label for="compatibility"><input type="checkbox" id="compatibility" name="category">Compatibility</label>
+							<label for="content"><input type="checkbox" id="content" name="category">Content</label>
+							<label for="css"><input type="checkbox" id="css" name="category">CSS</label>
+							<label for="e-waste"><input type="checkbox" id="e-waste" name="category">E-Waste</label>
+							<label for="education"><input type="checkbox" id="education" name="category">Education</label>
+							<label for="governance"><input type="checkbox" id="governance" name="category">Governance</label>
+							<label for="hardware"><input type="checkbox" id="hardware" name="category">Hardware</label>
+							<label for="html"><input type="checkbox" id="html" name="category">HTML</label>
+							<label for="ideation"><input type="checkbox" id="ideation" name="category">Ideation</label>
+							<label for="javascript"><input type="checkbox" id="javascript" name="category">JavaScript</label>
+							<label for="kpis"><input type="checkbox" id="kpis" name="category">KPIs</label>
+							<label for="marketing"><input type="checkbox" id="marketing" name="category">Marketing</label>
+							<label for="networking"><input type="checkbox" id="networking" name="category">Networking</label>
+							<label for="patterns"><input type="checkbox" id="patterns" name="category">Patterns</label>
+							<label for="performance"><input type="checkbox" id="performance" name="category">Performance</label>
+							<label for="report"><input type="checkbox" id="report" name="category">Reporting</label>
+							<label for="research"><input type="checkbox" id="research" name="category">Research</label>
+							<label for="equity"><input type="checkbox" id="equity" name="category">Social Equity</label>
+							<label for="software"><input type="checkbox" id="software" name="category">Software</label>
+							<label for="strategy"><input type="checkbox" id="strategy" name="category">Strategy</label>
+							<label for="ui"><input type="checkbox" id="ui" name="category">UI</label>
+							<label for="usability"><input type="checkbox" id="usability" name="category">Usability</label>
+						</fieldset>
+						<div class="c">
+							<input class="reset" type="reset" value="Reset the filters">
+						</div>
+					</form>
+				</section>`;
+				toc.insertAdjacentHTML('beforeend', newItems2); }
+			function autoScroll() {
+				document.addEventListener('click', event => {
+				if (event.target.matches('.filter input')) {
+					document.getElementById('user-experience-design').scrollIntoView({ behavior: 'smooth', block: 'start' });
+					const inputs = document.querySelectorAll('.filter input');
+					const noneChecked = ![...inputs].some(input => input.checked);
+					if (noneChecked) { window.scrollTo({ top: 0, behavior: 'smooth' }); } } }); }
 			function filterData() {
 				filterNote('mt', '[data-testable="machine"]');
 				filterNote('ht', '[data-testable="human"]');
@@ -125,6 +220,7 @@
 				filterNote('ca', '[data-considerations*="Accessibility"]');
 				filterNote('cp', '[data-considerations*="Privacy"]');
 				filterNote('cs', '[data-considerations*="Security"]');
+				filterNote('ai', '[data-categories*="AI"]');
 				filterNote('assets', '[data-categories*="Assets"]');
 				filterNote('compatibility', '[data-categories*="Compatibility"]');
 				filterNote('content', '[data-categories*="Content"]');
@@ -147,12 +243,29 @@
 				filterNote('software', '[data-categories*="Software"]');
 				filterNote('strategy', '[data-categories*="Strategy"]');
 				filterNote('ui', '[data-categories*="UI"]');
-				filterNote('usability', '[data-categories*="Usability"]');}
-			function filterStyles() {
-				if (window.location.hash != "#full-document") {
-					document.querySelectorAll('.summary')[0].setAttribute('inert','');
-					document.querySelectorAll('.filter details').forEach(e => e.removeAttribute('open')); } else {
-						document.querySelectorAll('.summary')[0].removeAttribute('inert'); } }
+				filterNote('usability', '[data-categories*="Usability"]');
+
+				// Updates TOC based on filters
+				const toc = document.querySelector('#toc > .toc');
+				if (toc) { toc.querySelectorAll('a').forEach(link => {
+					link.parentElement.classList.remove('hidden');
+					link.classList.remove('hidden'); }); }
+				document.querySelectorAll('body > section > section').forEach(section => {
+				let style = window.getComputedStyle(section);
+				if (style.position === 'absolute') {
+					const toc = document.querySelector('#toc > .toc');
+					if (toc) {
+					toc.querySelectorAll('a').forEach(link => {
+						const str = link.href;
+						const result = str.split('#')[1];
+						if (section.id === result || result === "abstract" || result === "sotd" || result === "considerations" || result === "acknowledgments" || result === "changelog") {
+							link.classList.add('hidden'); } else if (
+						result === "introduction") {
+							link.parentElement.classList.add('hidden'); } }); } } });
+				document.querySelectorAll('a').forEach(a => {
+					if (a.classList.contains('hidden')) {
+						a.setAttribute('tabindex', '-1'); } else { a.removeAttribute('tabindex');
+					} }); }
 			function filterNote(name, attr) {
 				let countTotal = " (" + document.querySelectorAll(attr).length + ")";
 				if (document.getElementById(name).parentElement.innerHTML.includes(countTotal)) { } else {
@@ -163,106 +276,41 @@
 					document.querySelectorAll(attr).forEach(function (elem) {
 						elem.classList.remove(name); }); }
 				return(name + attr); }
-			// ReSpec Multipage: https://w3c.github.io/sustainableweb-ig/multipage.html
-			function addMultipage() {
-				window.addEventListener('hashchange', onHashChange);
-				onHashChange(); }
-			window.addEventListener("load", (event) => {
-				addMultipage(); addFilter(); });
-			function hashSection(hash) {
-				let arrayGrab = Array.from(document.querySelectorAll(hash));
-				let mapID = arrayGrab.map(el => el.getAttribute('id'));
-				let filtered = mapID.filter(function (el) { return el != null; });
-				return filtered; }
-			function onHashChange() {
-				filterStyles()
-				let current = window.location.hash.substring(1);
-				let sections = hashSection('body > section');
-				// Assign your document sections here (to search for IDs)
-				let introduction = hashSection('#introduction *');
-				let ux = hashSection('#user-experience-design *');
-				let webdev = hashSection('#web-development *');
-				let infra = hashSection('#hosting-infrastructure-and-systems *');
-				let biz = hashSection('#business-strategy-and-product-management *');
-				let considerations = hashSection('#considerations section');
-				let glossary = hashSection('#glossary *');
-				let credits = hashSection('#acknowledgments section');
-				let changelog = hashSection('#changelog section');
-				let refs = hashSection('#references *');
-				let all = sections.concat(sections, introduction, ux, webdev, infra, biz, considerations, glossary, credits, changelog, refs);
-				if (document.body.classList.contains('full-document')) {
-					document.body.classList.remove('full-document'); }
-				if (current) {
-					for (const value of sections) {
-						for (const value of sections) {
-							if ( value != current ) {
-								document.getElementById(value).classList.remove('show');
-								document.getElementById(value).classList.add('hide'); } else {
-								document.getElementById(value).classList.remove('hide');
-								document.getElementById(value).classList.add('show'); }}
-						if (current == "abstract" || current == "sotd") { header(); }
-						for (const value of refs) {
-							if ( value != current && document.getElementById('references').querySelector('.pageButtons') == null ) {
-								document.getElementById('references').innerHTML = document.getElementById('references').innerHTML + `<ol class="pageButtons">
-									<li><a class="previousPage" href="#changelog">Previous page<br>Changelog</a></li>
-									<li><a class="fullDocument" href="#full-document">Full document</a></li>
-									<li></li>
-								</ol>`; } }
-						if (current == "full-document") {
-							document.body.classList.add("full-document");
-							for (const value of sections) {
-								document.getElementById(value).classList.remove('hide');
-								document.getElementById(value).classList.add('show'); }
-								document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('show'));
-								document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('hide'));
-								window.scrollTo(0, 0); } else {
-								document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
-								document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); }
-						let check = false;
-						for (const value of all) {
-							if (current == value && check == false ) { check = true; } }
-						if (check == false) { header(); } }
-					// Assign your headings here to do the above for more than just the main sections
-					heading(introduction,"introduction");
-					heading(ux,"user-experience-design");
-					heading(webdev,"web-development");
-					heading(infra,"hosting-infrastructure-and-systems");
-					heading(biz,"business-strategy-and-product-management");
-					heading(considerations,"considerations");
-					heading(glossary,"glossary");
-					heading(credits,"acknowledgments");
-					heading(changelog,"changelog");
-					heading(refs,"references"); } else {
-					for (const value of sections) {
-						document.getElementById(value).classList.remove('show');
-						document.getElementById(value).classList.add('hide'); }
-					header(); }
-					for (const value of all) {
-						if (window.location.hash && window.location.hash !="#full-document" && value == current){
-							document.getElementById(window.location.hash.substring(1)).scrollIntoView(); } } }
-			function heading(hash, string) {
-				let current = window.location.hash.substring(1);
-				let sections = hashSection('body > section');
-				if (hash.includes(current)) {
-					for (const value of sections) {
-						if (value == string) {
-							document.getElementById(value).classList.remove('hide');
-							document.getElementById(value).classList.add('show'); } else {
-							document.getElementById(value).classList.remove('show');
-							document.getElementById(value).classList.add('hide'); } } }
-				location.hash = "#" + current; }
-			function header() {
-				document.getElementById("abstract").classList.remove('hide');
-				document.getElementById("sotd").classList.remove('hide');
-				document.getElementById("abstract").classList.add('show');
-				document.getElementById("sotd").classList.add('show');
-				buttons("sotd"); window.scrollTo(0, 0);
-				if (window.location.hash != "#full-document") {
-					document.querySelectorAll('.pageButtons').forEach(e => e.classList.remove('hide'));
-					document.querySelectorAll('.pageButtons').forEach(e => e.classList.add('show')); } }
-			function buttons(id) {
-				var d = document.querySelector('#' + id + ' ol');
-				d.parentNode.appendChild(d); }
+			function getQueryValue(input) {
+				let labelText = input.parentElement.textContent.trim().toLowerCase().toLowerCase().replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
+				if (["high", "medium", "low"].includes(labelText)) {
+					return `${input.id}-${labelText}`;
+				} else { return `${labelText}`; } }
+			function updateQueryString() {
+				autoScroll();
+				const params = new URLSearchParams(window.location.search);
+				params.delete('filter');
+				document.querySelectorAll('.filter input:checked').forEach(input => params.append('filter', getQueryValue(input)));
+				const query = params.toString();
+				const hash = window.location.hash;
+				let newUrl = window.location.pathname;
+				if (window.location.search || query) { newUrl += '?' + query; }
+				history.replaceState(null, '', newUrl += hash); }
+			function queryFilter() {
+				// Query String Filtering onLoad
+				const filters = document.querySelectorAll('.filter');
+				if (!filters.length) return;
+				document.querySelectorAll('.filter input').forEach(input => {
+					input.addEventListener('change', updateQueryString); });
+				document.querySelectorAll('form').forEach(form => {
+					form.addEventListener('reset', () => setTimeout(updateQueryString, 0)); });
+				const queryParams = window.location.search.substring(1).toLowerCase().split('&').filter(Boolean);
+				document.querySelectorAll('.filter label').forEach(label => {
+					const input = label.querySelector('input');
+					if (!input || !input.id) return;
+					const rawText = Array.from(label.childNodes).filter(node => node.nodeType === Node.TEXT_NODE).map(node => node.textContent).join(' ').trim().toLowerCase();
+					let text = rawText.replace(/\s+/g, '-').replace(/\(.*?\)/g, '').replace(/-$/, '');
+					let result = ["high", "medium", "low"].includes(text)
+						? `${input.id}-${text}`
+						: text;
+					result = `filter=${result}`;
+					input.checked = queryParams.includes(result); });
+				if (typeof filterData === 'function') { filterData(); } }
 		</script>
 		<script class="remove">
 		var respecConfig = {
@@ -272,6 +320,12 @@
 					url: "https://alexanderdawson.com/",
 					company: "Invited Expert",
 					w3cid: 49702,
+				},
+				{
+					name: "Rose Newell",
+					url: "https://englishroseberlin.com/",
+					company: "Invited Expert",
+					w3cid: 164418,
 				},
 			],
 			github: "https://github.com/w3c/sustainableweb-wsg",
@@ -346,101 +400,11 @@
 			noRecTrack: true,
 			shortName: "web-sustainability-guidelines",
 			latestVersion: "https://www.w3.org/TR/web-sustainability-guidelines/",
-			publishDate: "2025-10-02",
-			lint: { "local-refs-exist": false, },
-			postProcess: [authorRef, addMultipage, addFilter]
+			postProcess: [authorRef, editorRef, htmlInsert, addFilter, queryFilter]
 		}
 		</script>
 	</head>
 	<body>
-		<div id="filter" class="filter summary"> <!-- Filter Tool -->
-			<details>
-				<summary>Filter the available WSG success criteria upon certain settings</summary>
-				<form>
-					<div class="option-inline">
-						<label for="test"><input type="radio" id="test" name="option" value="Testable" checked>Testable</label>
-						<label for="planet"><input type="radio" id="planet" name="option" value="Planetary">Planetary</label>
-						<label for="standards"><input type="radio" id="standards" name="option" value="Standards">Standards</label>
-						<label for="consideration"><input type="radio" id="consideration" name="option" value="considerations">Considerations</label>
-						<label for="categories"><input type="radio" id="categories" name="option" value="categories">Categories</label>
-					</div>
-					<div class="wrapper">
-						<fieldset class="testable">
-							<legend><a href="#wsg-layers-of-guidance">Testable</a></legend>
-							<label for="mt"><input type="checkbox" id="mt" name="test" value="Machine-testable">Machine-testable</label>
-							<label for="ht"><input type="checkbox" id="ht" name="test" value="Human-testable">Human-testable</label>
-						</fieldset>
-						<fieldset class="materials">
-							<legend><a href="#reporting">Materials</a></legend>
-							<label for="mh"><input type="checkbox" id="mh" name="materials" value="High">High</label>
-							<label for="mm"><input type="checkbox" id="mm" name="materials" value="Medium">Medium</label>
-							<label for="ml"><input type="checkbox" id="ml" name="materials" value="Low">Low</label>
-						</fieldset>
-						<fieldset class="energy">
-							<legend><a href="#reporting">Energy</a></legend>
-							<label for="eh"><input type="checkbox" id="eh" name="energy" value="High">High</label>
-							<label for="em"><input type="checkbox" id="em" name="energy" value="Medium">Medium</label>
-							<label for="el"><input type="checkbox" id="el" name="energy" value="Low">Low</label>
-						</fieldset>
-						<fieldset class="water">
-							<legend><a href="#reporting">Water</a></legend>
-							<label for="wh"><input type="checkbox" id="wh" name="water" value="High">High</label>
-							<label for="wm"><input type="checkbox" id="wm" name="water" value="Medium">Medium</label>
-							<label for="wl"><input type="checkbox" id="wl" name="water" value="Low">Low</label>
-						</fieldset>
-						<fieldset class="emissions">
-							<legend><a href="#reporting">Emissions</a></legend>
-							<label for="ch"><input type="checkbox" id="ch" name="emissions" value="High">High</label>
-							<label for="cm"><input type="checkbox" id="cm" name="emissions" value="Medium">Medium</label>
-							<label for="cl"><input type="checkbox" id="cl" name="emissions" value="Low">Low</label>
-						</fieldset>
-						<fieldset class="standards">
-							<legend><a href="#relationships">Standards</a></legend>
-							<label for="afnor"><input type="checkbox" id="afnor" name="standard" value="Human-testable">AFNOR</label>
-							<label for="aws"><input type="checkbox" id="aws" name="standard" value="Human-testable"><abbr title="Amazon Web Services">AWS</abbr> <abbr title="Well-Architected Framework">WAF</abbr></label>
-							<label for="azure"><input type="checkbox" id="azure" name="standard" value="Human-testable"><abbr title="Microsoft Azure">Azure</abbr> WAF</label>
-							<label for="gpf"><input type="checkbox" id="gpf" name="standard" value="Human-testable"><abbr title="General Policy Framework for the Ecodesign of Digital Services">GPF</abbr></label>
-							<label for="gr491"><input type="checkbox" id="gr491" name="standard" value="Human-testable">GR491</label>
-							<label for="greenit"><input type="checkbox" id="greenit" name="standard" value="Human-testable">GreenIT</label>
-							<label for="opquast"><input type="checkbox" id="opquast" name="standard" value="Human-testable">OpQuast</label>
-							<label for="sdgs"><input type="checkbox" id="sdgs" name="standard" value="Human-testable"><abbr title="United Nations">UN</abbr> SDGs</label>
-						</fieldset>
-						<fieldset class="considerations">
-							<legend><a href="#considerations">Considerations</a></legend>
-							<label for="ca"><input type="checkbox" id="ca" name="considerations" value="High">Accessibility</label>
-							<label for="cp"><input type="checkbox" id="cp" name="considerations" value="Medium">Privacy</label>
-							<label for="cs"><input type="checkbox" id="cs" name="considerations" value="Low">Security</label>
-						</fieldset>
-						<fieldset class="categories">
-							<legend>Categories</legend>
-							<label for="assets"><input type="checkbox" id="assets" name="category" value="High">Assets</label>
-							<label for="compatibility"><input type="checkbox" id="compatibility" name="category" value="High">Compatibility</label>
-							<label for="content"><input type="checkbox" id="content" name="category" value="High">Content</label>
-							<label for="css"><input type="checkbox" id="css" name="category" value="High">CSS</label>
-							<label for="e-waste"><input type="checkbox" id="e-waste" name="category" value="High">E-Waste</label>
-							<label for="education"><input type="checkbox" id="education" name="category" value="High">Education</label>
-							<label for="governance"><input type="checkbox" id="governance" name="category" value="High">Governance</label>
-							<label for="hardware"><input type="checkbox" id="hardware" name="category" value="High">Hardware</label>
-							<label for="html"><input type="checkbox" id="html" name="category" value="High">HTML</label>
-							<label for="ideation"><input type="checkbox" id="ideation" name="category" value="High">Ideation</label>
-							<label for="javascript"><input type="checkbox" id="javascript" name="category" value="High">JavaScript</label>
-							<label for="kpis"><input type="checkbox" id="kpis" name="category" value="High">KPIs</label>
-							<label for="marketing"><input type="checkbox" id="marketing" name="category" value="High">Marketing</label>
-							<label for="networking"><input type="checkbox" id="networking" name="category" value="High">Networking</label>
-							<label for="patterns"><input type="checkbox" id="patterns" name="category" value="High">Patterns</label>
-							<label for="performance"><input type="checkbox" id="performance" name="category" value="High">Performance</label>
-							<label for="report"><input type="checkbox" id="report" name="category" value="High">Reporting</label>
-							<label for="research"><input type="checkbox" id="research" name="category" value="High">Research</label>
-							<label for="equity"><input type="checkbox" id="equity" name="category" value="High">Social Equity</label>
-							<label for="software"><input type="checkbox" id="software" name="category" value="High">Software</label>
-							<label for="strategy"><input type="checkbox" id="strategy" name="category" value="High">Strategy</label>
-							<label for="ui"><input type="checkbox" id="ui" name="category" value="High">UI</label>
-							<label for="usability"><input type="checkbox" id="usability" name="category" value="High">Usability</label>
-						</fieldset>
-					</div>
-				</form>
-			</details>
-		</div>
 		<section id="abstract"> <!-- Abstract -->
 			<p>The Web Sustainability Guidelines (<abbr title="Web Sustainability Guidelines">WSG</abbr>) cover a wide range of recommendations to make web products and services more sustainable. These guidelines use planetary, people, and prosperity principles (the <a><abbr title="Planet, People, and Prosperity">PPP</abbr> approach</a>) throughout the decision-making process, allowing users to minimize their environmental impact in various ways. These include user-centered design, performant web development, carbon-free infrastructure, sustainable business strategy, and, supported by measurability data, various combinations thereof. It should be noted that these guidelines will not address every possible mechanism or strategy to become more sustainable. These guidelines,  which are notably web-focused, should be seen as the starting point of a sustainability journey that may ultimately cover other areas beyond the current scope, for example manufacturing or shipping of physical products. Following these guidelines will often make web content and services more accessible, usable, performant, and secure as a by-product.</p>
 			<p>It is highly recommended that you take a methodical approach in applying these guidelines. Rather than working through the entire document and broadly attempting to apply everything to your digital project or service, scroll through the table of contents to find a guideline that appeals to your skill set or that you feel comfortable in attempting to apply. Sustainable change is measured in progress over perfection. By breaking down the specification into achievable goals based on clear guidelines or even success criteria, you can more easily make progress toward long-term sustainability targets. Guideline examples and resources may also provide implementation guidance, while diverse benefits can help justify the effort and commitment to management.</p>
@@ -449,11 +413,6 @@
 			<p>This document has been reviewed by Interest Group members and interested parties. This is a draft document which may be updated, replaced, or obsoleted by other documents at any time. It is inappropriate to cite this document as other than a work in progress. The Interest Group's role in publishing is to draw attention to the specification and to promote its widespread deployment.</p>
 			<p>By publishing these guidelines, the Interest Group does not expect that the work produced in this specification will affect the work undertaken by other <abbr title="World Wide Web Consortium">W3C</abbr> sustainability, accessibility, or performance groups. The Interest Group will continue to track these Working, Interest, and Community Groups as appropriate.</p>
 			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available. There is currently no preliminary interoperability or implementation report, however one of the key tasks of this Interest Group is to examine the potential for better models for digital sustainability that can feed into tooling (and thus into large studies of implementations) that can be reported upon and fed back into guidance for the Web Sustainability Guidelines.</p>
-			<ol class="pageButtons">
-				<li></li>
-				<li><a class="fullDocument" href="#full-document">Full document</a></li>
-				<li><a class="nextPage" href="#introduction">Next page<br>Introduction</a></li>
-			</ol>
 		</section>
 		<section> <!-- Introduction -->
 			<h2>Introduction</h2>
@@ -485,12 +444,15 @@
 				<ul>
 					<li><strong>Principles</strong>: At the top are <a href="https://www.sustainablewebmanifesto.com/">six principles</a> that provide the foundation for <a>web sustainability</a>: clean, efficient, open, honest, regenerative, and resilient.</li>
 					<li><strong>Guidelines</strong>: Under the principles are guidelines. These guidelines provide the overarching goals that implementers should work toward to make products and services more sustainable. The guidelines provide the framework and overall objectives to help implementers understand the success criteria against which they are testable, and to implement better digital solutions.</li>
-					<li><strong>Success Criteria</strong>: For each guideline, impact ratings, where available, and links to supporting resources are listed against the success criteria. WSG success criteria are written as testable statements with details of machine testability provided with a link to a suitable <a href="https://w3c.github.io/sustainableweb-wsg/star.html#wsg-techniques">STAR technique</a>.</li>
+					<li><strong>Success Criteria</strong>: For each guideline, success criteria are provided as testable statements to fulfill. Impact ratings, where available are also included to assist with decision making. Details of machine testability are provided with a link to a suitable <a href="https://w3c.github.io/sustainableweb-wsg/star.html#wsg-techniques">STAR technique</a>. Links to supporting resources are also included</li>
 					<li><strong>Additional Information</strong>: These guidelines come with a list of benefits to justify the adoption of success criteria with clients, colleagues, and leadership. Examples, where possible, are also provided to showcase how a success criteria within a guideline could be addressed. Tags are also provided in order to help individuals and tooling identify the relationships that occur between our material and particular groups.</li>
 				</ul>
 				<p>All of these layers of guidance (principles, guidelines, success criteria, and additional information) work together to guide how to make content more sustainable. Implementers are encouraged to view and apply all layers that they are able to, to make their project as sustainable as it can become.</p>
 				<p>While great care has been taken to make these guidelines as well-rounded and feature-complete as possible, there will likely be additional tasks implementers can perform to improve sustainability that this specification has failed to address.</p>
-				<p class="note">This specification offers interactivity. You can filter and see only the success criteria that apply to your interests/choices by viewing the <a href="#full-document">Full Document</a> mode of the WSG and clicking the interactive "Filter the available WSG success criteria upon certain settings" link at the top of the content. Your choices will reveal themselves upon selecting from the categories and checkboxes.</p>
+				<div class="note">
+					<p>This specification offers interactivity. You can filter and see only the success criteria that apply to your interests/choices by selecting the <strong>filter</strong> button in the Table of Contents of the WSG. Your choices will reveal themselves upon selecting from the categories and checkboxes.</p>
+					<p>Most of the filters align to content you will find within the specification such as machine testability, GRI within Addtional Information (material, energy, water, and emission levels) and tags (considerations and categories), however, for standards, those listed and mentioned within <a href="#relationships">relationships</a> note specifications and other bodies work, cross-referenced within our <a href="https://w3c.github.io/sustainableweb-wsg/resources.html">resources</a> document.</p>
+				</div>
 			</section>
 			<section class="measurability"> <!-- Measurability -->
 				<h3>Measurability</h3>
@@ -524,7 +486,8 @@
 						<li><strong>Conformance</strong>: A concise description of sustainability commitments and a list of the guidelines and/or success criteria adhered to.</li>
 						<li><strong>Other</strong>: In addition to the required components of a conformance claim above, provide additional information to assist users, such as additional steps taken (beyond the specification) to improve sustainability or statistics (metrics) that show the effect of changes that have already been made.</li>
 					</ol>
-					<p class="note">Recording conformance claims within a sustainability statement may be helpful as a method of proving that you are meeting sustainability reduction targets, such as for internal scope accounting or meeting regulatory requirements.</p>				</section>
+					<p class="note">Recording conformance claims within a sustainability statement may be helpful as a method of proving that you are meeting sustainability reduction targets, such as for internal scope accounting or meeting regulatory requirements.</p>
+				</section>
 				<section><!-- Greenwashing -->
 					<h4>Greenwashing</h4>
 					<p>In the field of sustainability, greenwashing (misappropriation or deliberately misinterpreting our work to appear greener than you are) is a very real threat. Within other fields of the tech industry, such as web accessibility, false claims can lead to harm to users. In sustainability, harm can occur not only to users of a product or service but also to the wider ecosystem.</p>
@@ -549,6 +512,8 @@
 					<dd>The Autorité de Régulation des Communications Électroniques, des Postes et de la Distribution de la Presse is the regulatory authority for telecommunications in France. Explicit comparison notes from guidelines that match (for compliance purposes), pointing to the <a href="https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf">General Policy Framework for the Ecodesign of Digital Services</a> inside each WSG relevant guideline reference section, have been provided.</dd>
 					<dt>Relationship to AWS and Microsoft Azure WAF</dt>
 					<dd><a href="https://docs.aws.amazon.com/wellarchitected/">Amazon</a> and <a href="https://learn.microsoft.com/en-us/azure/well-architected/">Microsoft Azure</a> both provide a Well-Architected Framework offering a set of best practices that help protect digital products from consuming excessive resources. Where sustainability measures match the evidence and guidelines within the WSG, cross-links have been placed within guideline resources.</dd>
+					<dt>Relationship to Ethical Principles for Web Machine Learning</dt>
+					<dd>The W3C Ethical Principles for Web Machine Learning [[webmachinelearning-ethics]] discusses ethical issues associated with using Machine Learning and outlines considerations for web technologies that enable related use cases. As Artificial Intelligence and related technologies play a key role in digital sustainability, guidance relating to the subjects underpinned by this resource can be found throughout WSG.</dd>
 					<dt>Relationship to Ethical Web Principles</dt>
 					<dd>The W3C Ethical Web Principles sets out ethical principles that the W3C are working towards [[ethical-web-principles]]. Within the document is a principle (2.9) "The web is an environmentally sustainable platform", this aligns with the message with the WSG and what the guidelines strive to achieve.</dd>
 					<dt>Relationship to <abbr title="Handbook of Sustainable Design of Digital Services">GR491</abbr></dt>
@@ -586,11 +551,6 @@
 				</ul>
 				<p>See the Interest Groups <a href="https://github.com/w3c/sustainableweb-ig/">GitHub repository</a> for further supporting materials, including education resources relating to WSG. Additional resources covering topics such as tooling may also be noted on a case-by-case basis.</p>
 			</section>
-			<ol class="pageButtons">
-				<li><a class="previousPage" href="#abstract">Previous page<br>Overview</a></li>
-				<li><a class="fullDocument" href="#full-document">Full document</a></li>
-				<li><a class="nextPage" href="#user-experience-design">Next page<br>User Experience Design</a></li>
-			</ol>
 		</section>
 		<section> <!-- User Experience Design -->
 			<h2>User Experience Design</h2>
@@ -1936,11 +1896,6 @@
 					</div>
 				</section>
 			</section>
-			<ol class="pageButtons">
-				<li><a class="previousPage" href="#introduction">Previous page<br>Introduction</a></li>
-				<li><a class="fullDocument" href="#full-document">Full document</a></li>
-				<li><a class="nextPage" href="#web-development">Next page<br>Web Development</a></li>
-			</ol>
 		</section>
 		<section> <!-- Web Development -->
 			<h2>Web Development</h2>
@@ -2367,7 +2322,7 @@
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD09-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD09-1">Resources</a></p>
 					<p>Optimize and only include suitable metadata and microdata.</p>
 				</section>
-				<section class="notoc" data-testable="machine" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility" data-categories="HTML, Marketing, UI, Usability">
+				<section class="notoc" data-testable="machine" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility" data-categories="AI, HTML, Marketing, UI, Usability">
 					<h4 id="search-engines">Success Criterion: Search engines</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD09-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD09-2">Resources</a></p>
 					<p>Permit appropriate access to search engines while blocking unsustainable robots and scripts.</p>
@@ -2409,7 +2364,7 @@
 								&lt;/urlset&gt;
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Accessibility, HTML, Marketing, UI, Usability</p>
+							<p>Accessibility, AI, HTML, Marketing, UI, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -2477,7 +2432,7 @@
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD11-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD11-2">Resources</a></p>
 					<p>Include necessary meta tag references that are commonly recognized and used by user agents such as search engines. Follow recognized standards and vocabularies such as Friend of a Friend (<abbr title="Friend Of A Friend">FOAF</abbr>) or <abbr title="Resource Description Framework in Attributes">RDFa</abbr>.</p>
 				</section>
-				<section class="notoc" data-testable="machine" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="Accessibility" data-categories="HTML, Marketing, Usability">
+				<section class="notoc" data-testable="machine" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="Accessibility" data-categories="AI, HTML, Marketing, Usability">
 					<h4 id="structured-data">Success Criterion: Structured data</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD11-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD11-3">Resources</a></p>
 					<p>Use microdata, structured data (e.g., Schema.org), or microformats in content where a widely used structured data format exists.</p>
@@ -2520,7 +2475,7 @@
 								&lt;/html&gt;
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Accessibility, HTML, Marketing, Usability</p>
+							<p>Accessibility, AI, HTML, Marketing, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -2588,7 +2543,7 @@
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD13-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD13-3">Resources</a></p>
 					<p>Use carbon-aware design techniques to maximize your use of carbon-free energy. This is achieved by adapting the delivery of your project to current electricity availability and user grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.</p>
 				</section>
-				<section class="notoc" data-testable="machine" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="SDGs" data-considerations="" data-categories="Compatibility, CSS, Performance, UI, Usability">
+				<section class="notoc" data-testable="machine" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="SDGs" data-considerations="" data-categories="AI, Compatibility, CSS, Performance, UI, Usability">
 					<h4 id="alternative-browsing">Success Criterion: Alternative browsing</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#WD13-4">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD13-4">Resources</a></p>
 					<p>Support additional indirect methods of interaction, such as voice (speech), code (<abbr title="Quick Response">QR</abbr>, etc.), reader view (browser, application, or <abbr title="Really Simple Syndication">RSS</abbr>), or connected technologies (watch, appliance, transport, etc.).</p>
@@ -2622,7 +2577,7 @@
 								}
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Compatibility, CSS, Performance, UI, Usability</p>
+							<p>AI, Compatibility, CSS, Performance, UI, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -3022,11 +2977,6 @@
 					</div>
 				</section>
 			</section>
-			<ol class="pageButtons">
-				<li><a class="previousPage" href="#user-experience-design">Previous page<br>User Experience Design</a></li>
-				<li><a class="fullDocument" href="#full-document">Full document</a></li>
-				<li><a class="nextPage" href="#hosting-infrastructure-and-systems">Next page<br>Hosting, Infrastructure, and Systems</a></li>
-			</ol>
 		</section>
 		<section> <!-- Hosting, Infrastructure, and Systems -->
 			<h2>Hosting, Infrastructure, and Systems</h2>
@@ -3059,27 +3009,27 @@
 			<section> <!-- Choose a sustainable service provider -->
 				<h3>Choose a sustainable service provider</h3>
 				<p class="subheading">Ensure hosting and domain service providers support monitoring of resource use, use carbon-free electricity, and maintain and recycle equipment properly.</p>
-				<section class="notoc" data-testable="machine" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491" data-considerations="" data-categories="E-Waste, Hardware, Networking, Social Equity">
+				<section class="notoc" data-testable="machine" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491" data-considerations="" data-categories="AI, E-Waste, Hardware, Networking, Social Equity">
 					<h4 id="monitor-metrics">Success Criterion: Monitor Metrics</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS01-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS01-1">Resources</a></p>
 					<p>Monitor key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. These include energy and water usage, but also hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share, environmental impact metrics. Metrics should include Power Usage Effectiveness (<abbr title="Power Usage Effectiveness">PUE</abbr>), Water Usage Effectiveness (<abbr title="Water Usage Effectiveness">WUE</abbr>), and Carbon Usage Effectiveness (<abbr title="Carbon Usage Effectiveness">CUE</abbr>).</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, GPF, GR491, SDGs" data-considerations="" data-categories="E-Waste, Hardware, Networking, Social Equity">
+				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, GPF, GR491, SDGs" data-considerations="" data-categories="AI, E-Waste, Hardware, Networking, Social Equity">
 					<h4 id="equipment-longevity">Success Criterion: Equipment longevity</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS01-2">Resources</a></p>
 					<p>Maintain hardware to extend its lifespan as long as possible. Use it efficiently at an appropriate capacity, and ensuring it has the necessary certifications. New purchases should be from reliable long-lifespan suppliers.</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491, SDGs" data-considerations="" data-categories="E-Waste, Hardware, Networking, Social Equity">
+				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491, SDGs" data-considerations="" data-categories="AI, E-Waste, Hardware, Networking, Social Equity">
 					<h4 id="e-waste-management">Success Criterion: E-waste management</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS01-3">Resources</a></p>
 					<p>Responsibly recycle or upcycle unwanted waste. Materials should be recovered and reused, where possible, or otherwise disposed of appropriately.</p>
 				</section>
-				<section class="notoc" data-testable="machine" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491, SDGs" data-considerations="" data-categories="E-Waste, Hardware, Networking, Social Equity">
+				<section class="notoc" data-testable="machine" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491, SDGs" data-considerations="" data-categories="AI, E-Waste, Hardware, Networking, Social Equity">
 					<h4 id="carbon-free-electricity">Success Criterion: Carbon-free electricity</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS01-4">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS01-4">Resources</a></p>
 					<p>Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, including backup generators, in calculations.</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491, SDGs" data-considerations="" data-categories="E-Waste, Hardware, Networking, Social Equity">
+				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491, SDGs" data-considerations="" data-categories="AI, E-Waste, Hardware, Networking, Social Equity">
 					<h4 id="remaining-emissions">Success Criterion: Remaining emissions</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS01-5">Resources</a></p>
 					<p>Balance unavoidable remaining carbon emissions with high-quality market based instruments or other evolving instruments from the voluntary carbon market, until additional carbon-free energy resources become available. The quality of market-based instruments should be verified by non-profit third-party organizations with sufficient supporting evidence.</p>
@@ -3110,7 +3060,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>E-Waste, Hardware, Networking, Social Equity</p>
+							<p>AI, E-Waste, Hardware, Networking, Social Equity</p>
 						</details>
 					</div>
 				</section>
@@ -3267,7 +3217,7 @@
 			<section> <!-- Avoid maintaining unnecessary virtualized environments or containers -->
 				<h3>Avoid maintaining unnecessary virtualized environments or containers</h3>
 				<p class="subheading">Reduce the number of unnecessary virtualized environments to save hardware utilization.</p>
-				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, GPF, GR491, SDGs" data-considerations="" data-categories="Hardware, Networking, Performance, Software">
+				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, GPF, GR491, SDGs" data-considerations="" data-categories="AI, Hardware, Networking, Performance, Software">
 					<h4 id="unused-environments">Success Criterion: Unused environments</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS05-1">Resources</a></p>
 					<p>Minimize the number of active environments, including virtualized environments (such as containers). Audit codebases for unused branches and environments and remove them as appropriate.</p>
@@ -3292,7 +3242,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Hardware, Networking, Performance, Software</p>
+							<p>AI, Hardware, Networking, Performance, Software</p>
 						</details>
 					</div>
 				</section>
@@ -3300,12 +3250,12 @@
 			<section> <!-- Use automation wisely -->
 				<h3>Use automation wisely</h3>
 				<p class="subheading">Automate recurring tasks only where this saves resources, such as scaling services to reduce consumption or handling suspicious activity.</p>
-				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, Azure WAF, GPF" data-considerations="Security" data-categories="Performance, Software">
+				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, Azure WAF, GPF" data-considerations="Security" data-categories="AI, Performance, Software">
 					<h4 id="automate-tasks">Success Criterion: Automate tasks</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS06-1">Resources</a></p>
 					<p>Automate recurring tasks, such as deployment, testing, and compilation in alignment with continuous integration and continuous delivery best practices.</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, Azure WAF, GPF" data-considerations="Security" data-categories="Performance, Software">
+				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, Azure WAF, GPF" data-considerations="Security" data-categories="AI, Performance, Software">
 					<h4 id="qualify-tasks">Success Criterion: Qualify tasks</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS06-2">Resources</a></p>
 					<p>Run automated tasks only when necessary to reduce unnecessary resource utilisation.</p>
@@ -3315,7 +3265,7 @@
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS06-3">Resources</a></p>
 					<p>Use automated scaling to promptly adjust server capacity up or down based on demand, ensuring efficient resource allocation. Implement buffering and throttling to manage load and maintain performance without overprovisioning.</p>
 				</section>
-				<section class="notoc" data-testable="machine" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Security" data-categories="Performance, Software">
+				<section class="notoc" data-testable="machine" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Security" data-categories="AI, Performance, Software">
 					<h4 id="suspicious-activity-filtering">Success Criterion: Suspicious activity filtering</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS06-4">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS06-4">Resources</a></p>
 					<p>Restrict the activity of unwanted and unnecessary third-party crawlers, suspicious user agents, unwanted users, bots, and scrapers from accessing or downloading your content. Follow best practices, such as server access rules and security tools, while ensuring your content remains accessible to users, search engines and any helpful, welcome crawlers. Consider that scrapers may be used to inform and train large language models.</p>
@@ -3341,7 +3291,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Performance, Security, Software</p>
+							<p>AI, Performance, Security, Software</p>
 						</details>
 					</div>
 				</section>
@@ -3417,7 +3367,7 @@
 			<section> <!-- Consider the impact and requirements of data processing -->
 				<h3>Consider the impact and requirements of data processing</h3>
 				<p class="subheading">Account for the energy involved in data transfer, considering factors such as the protocol used, whether it is processed client- or server-side, and the environment used.</p>
-				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="Azure WAF, GPF, GR491" data-considerations="" data-categories="JavaScript, Networking, Performance">
+				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="Azure WAF, GPF, GR491" data-considerations="" data-categories="AI, JavaScript, Networking, Performance">
 					<h4 id="batch-processing">Success Criterion: Batch processing</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS09-1">Resources</a></p>
 					<p>Use existing and supported carbon-aware computing methods to automate batching and scheduling according to real-time electrical grid carbon intensity data or shift workloads to lower-carbon regions to optimize sustainability while maintaining performance.</p>
@@ -3458,7 +3408,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>JavaScript, Networking, Performance</p>
+							<p>AI, JavaScript, Networking, Performance</p>
 						</details>
 					</div>
 				</section>
@@ -3486,7 +3436,7 @@
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#HIS10-4">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS10-4">Resources</a></p>
 					<p>Avoid deploying dynamic or frequently changing resources to a CDN. Browser behaviors such as cache partitioning and cross-origin resource sharing (<abbr title="Cross-Origin Resource Sharing">CORS</abbr>) can limit performance gains, hinder caching and interaction, and attempting to override these can introduce security or privacy risks. This does not apply to static assets or <abbr title="JavaScript Object Notation">JSON</abbr> files, which are well suited to CDN delivery.</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="GPF, SDGs" data-considerations="" data-categories="Content, Hardware, Networking, Performance">
+				<section class="notoc" data-testable="human" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="GPF, SDGs" data-considerations="" data-categories="AI, Content, Hardware, Networking, Performance">
 					<h4 id="close-to-the-source">Success Criterion: Close to the source</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS10-5">Resources</a></p>
 					<p>Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources.</p>
@@ -3511,7 +3461,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Content, Hardware, Networking, Performance</p>
+							<p>AI, Content, Hardware, Networking, Performance</p>
 						</details>
 					</div>
 				</section>
@@ -3611,11 +3561,6 @@
 					</div>
 				</section>
 			</section>
-			<ol class="pageButtons">
-				<li><a class="previousPage" href="#web-development">Previous page<br>Web Development</a></li>
-				<li><a class="fullDocument" href="#full-document">Full document</a></li>
-				<li><a class="nextPage" href="#business-strategy-and-product-management">Next page<br>Business Strategy and Product Management</a></li>
-			</ol>
 		</section>
 		<section> <!-- Business Strategy and Product Management -->
 			<h2>Business Strategy and Product Management</h2>
@@ -3652,17 +3597,17 @@
 			<section> <!-- Have an ethical and sustainable product strategy -->
 				<h3>Have an ethical and sustainable product strategy</h3>
 				<p class="subheading">Produce policies and documents showcasing evidence, achievements, and onboarding underpinned by good governance.</p>
-				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, SDGs" data-considerations="" data-categories="Education, Ideation, KPIs, Research, Social Equity, Strategy">
+				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, SDGs" data-considerations="" data-categories="AI, Education, Ideation, KPIs, Research, Social Equity, Strategy">
 					<h4 id="public-documents">Success Criterion: Public documents</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM01-1">Resources</a></p>
 					<p>Develop, publish and maintain key policies, such as a code of ethics, product guidelines, sustainability statements, and/or other documents that include language specific to digital products, services, policies, and programs. Make these publicly accessible and transparently versioned formats.</p>
 				</section>
-				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, GR491, SDGs" data-considerations="" data-categories="Education, Ideation, KPIs, Research, Social Equity, Strategy">
+				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, GR491, SDGs" data-considerations="" data-categories="AI, Education, Ideation, KPIs, Research, Social Equity, Strategy">
 					<h4 id="achievements-and-compliance">Success Criterion: Achievements and compliance</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM01-2">Resources</a></p>
 					<p>Publish achievements, features, compliance, and anything beyond the scope of these guidelines within a dedicated sustainability section.</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, GPF, SDGs" data-considerations="" data-categories="Education, Ideation, KPIs, Research, Social Equity, Strategy">
+				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, GPF, SDGs" data-considerations="" data-categories="AI, Education, Ideation, KPIs, Research, Social Equity, Strategy">
 					<h4 id="governance-over-time">Success Criterion: Governance over time</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM01-3">Resources</a></p>
 					<p>Provide evidence to demonstrate how digital sustainability policies, climate policies, and related practices are effectively implemented, monitored, and governed over time.</p>
@@ -3677,7 +3622,7 @@
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-5">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM01-5">Resources</a></p>
 					<p>Document your methodology through impact storytelling, documentation, and creating resources to help individuals make more informed decisions and raise awareness among your users.</p>
 				</section>
-				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, GPF, SDGs" data-considerations="" data-categories="Education, Ideation, KPIs, Research, Social Equity, Strategy">
+				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, GPF, SDGs" data-considerations="" data-categories="AI, Education, Ideation, KPIs, Research, Social Equity, Strategy">
 					<h4 id="carbon-free-evidence">Success Criterion: Carbon-free evidence</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-6">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM01-6">Resources</a></p>
 					<p>Demonstrate how digital products and services are powered using carbon-free energy.</p>
@@ -3705,7 +3650,7 @@
 								<dt>GRI 305: Emissions</dt><dd>High</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Education, Ideation, KPIs, Research, Social Equity, Strategy</p>
+							<p>AI, Education, Ideation, KPIs, Research, Social Equity, Strategy</p>
 						</details>
 					</div>
 				</section>
@@ -3822,7 +3767,7 @@
 			<section> <!-- Estimate the environmental impact -->
 				<h3>Estimate the environmental impact</h3>
 				<p class="subheading">Calculate the environmental impact of the project and any tooling you use, and even that of a competitor, where possible, as this may be useful for comparison.</p>
-				<section class="notoc" data-testable="human" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GreenIT, SDGs" data-considerations="" data-categories="Ideation, KPIs, Research, Social Equity, Software, Strategy">
+				<section class="notoc" data-testable="human" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GreenIT, SDGs" data-considerations="" data-categories="AI, Ideation, KPIs, Research, Social Equity, Software, Strategy">
 					<h4 id="life-cycle-analysis">Success Criterion: Life-cycle analysis</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM05-1">Resources</a></p>
 					<p>Conduct a full life-cycle analysis based on the functional unit defined under guideline 5.15.</p>
@@ -3832,7 +3777,7 @@
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM05-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM05-2">Resources</a></p>
 					<p>Calculate the environmental impact of your or a competitor's current service to inform decision-making targets.</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, SDGs" data-considerations="" data-categories="Ideation, KPIs, Research, Social Equity, Software, Strategy">
+				<section class="notoc" data-testable="human" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, SDGs" data-considerations="" data-categories="AI, Ideation, KPIs, Research, Social Equity, Software, Strategy">
 					<h4 id="tooling-impact">Success Criterion: Tooling impact</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM05-3">Resources</a></p>
 					<p>Include the impact or estimated impact of any tooling or third-party solutions used at any stage in your pipeline. While not created by you, the emissions generated in production, maintenance, and use are also integral to your overall solution.</p>
@@ -3858,7 +3803,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Ideation, KPIs, Research, Social Equity, Software, Strategy</p>
+							<p>AI, Ideation, KPIs, Research, Social Equity, Software, Strategy</p>
 						</details>
 					</div>
 				</section>
@@ -3866,7 +3811,7 @@
 			<section> <!-- Define clear organizational sustainability goals and metrics -->
 				<h3>Define clear organizational sustainability goals and metrics</h3>
 				<p class="subheading">Publish a set of sustainability goals that can be used to track progress over a period of time.</p>
-				<section class="notoc" data-testable="machine" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="SDGs" data-considerations="" data-categories="Governance, Ideation, KPIs, Research, Social Equity">
+				<section class="notoc" data-testable="machine" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="SDGs" data-considerations="" data-categories="AI, Governance, Ideation, KPIs, Research, Social Equity">
 					<h4 id="sustainability-goals">Success Criterion: Sustainability goals</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM06-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM06-1">Resources</a></p>
 					<p>Define and publish a clear set of sustainability goals. Publicly communicate how these goals can be met, including which performance metrics can be measured to help the organization and its various affected parties act more sustainably.</p>
@@ -3891,7 +3836,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Governance, Ideation, KPIs, Research, Social Equity</p>
+							<p>AI, Governance, Ideation, KPIs, Research, Social Equity</p>
 						</details>
 					</div>
 				</section>
@@ -3977,22 +3922,22 @@
 			<section> <!-- Support mandatory disclosures and reporting -->
 				<h3>Support mandatory disclosures and reporting</h3>
 				<p class="subheading">Create policies and documents showing evidence of commitment towards impact progress, how this is achieved, and any applicable regulations you are meeting.</p>
-				<section class="notoc" data-testable="machine" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="" data-categories="Content, KPIs, Reporting">
+				<section class="notoc" data-testable="machine" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="" data-categories="AI, Content, KPIs, Reporting">
 					<h4 id="policies-and-practices">Success Criterion: Policies and practices</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM09-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM09-1">Resources</a></p>
 					<p>Create and publish policies and practices to disclose the social and environmental impacts of its products, programs, and services in line with existing reporting standards such as GRI, <abbr title="Sustainability Accounting Standards Board">SASB</abbr>, etc.</p>
 				</section>
-				<section class="notoc" data-testable="machine" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="" data-categories="Content, KPIs, Reporting">
+				<section class="notoc" data-testable="machine" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="" data-categories="AI, Content, KPIs, Reporting">
 					<h4 id="impact-reports">Success Criterion: Impact reports</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM09-2">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM09-2">Resources</a></p>
 					<p>Produce a publicly available impact report outlining progress compared to previous reports on social and environmental goals at least once per year.</p>
 				</section>
-				<section class="notoc" data-testable="machine" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="" data-categories="Content, KPIs, Reporting">
+				<section class="notoc" data-testable="machine" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="" data-categories="AI, Content, KPIs, Reporting">
 					<h4 id="standards-and-policies">Success Criterion: Standards and policies</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM09-3">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM09-3">Resources</a></p>
 					<p>Publicly and transparently demonstrate commitment over time to following and adopting existing and/or emerging environmental standards and legislative policy that promotes mandatory emissions disclosures and reporting. </p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="" data-categories="Content, KPIs, Reporting">
+				<section class="notoc" data-testable="human" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="" data-categories="AI, Content, KPIs, Reporting">
 					<h4 id="impact-reduction">Success Criterion: Impact reduction</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM09-4">Resources</a></p>
 					<p>Clearly identify how environmental impact is being reduced, with careful avoidance of double accounting, greenwashing, data exclusion, or other misleading or manipulative techniques.</p>
@@ -4017,7 +3962,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Content, KPIs, Reporting</p>
+							<p>AI, Content, KPIs, Reporting</p>
 						</details>
 					</div>
 				</section>
@@ -4110,7 +4055,7 @@
 			<section> <!-- Implement continuous improvement procedures -->
 				<h3>Implement continuous improvement procedures</h3>
 				<p class="subheading">Continuously improve projects through regular reviews and iteration, integrating technical debt and security management, determining if new or existing functionality is required.</p>
-				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GR491, SDGs" data-considerations="Security" data-categories="Compatibility, KPIs, Performance, Strategy, UI">
+				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GR491, SDGs" data-considerations="Security" data-categories="AI, Compatibility, KPIs, Performance, Strategy, UI">
 					<h4 id="continuous-improvement">Success Criterion: Continuous improvement</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM12-1">Resources</a></p>
 					<p>Establish policies and practices to enable continuous improvement and resource practices appropriately to support these efforts over time.</p>
@@ -4165,7 +4110,7 @@
 								<dt>GRI 305: Emissions</dt><dd>High</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Compatibility, KPIs, Performance, Security, Strategy, UI</p>
+							<p>AI, Compatibility, KPIs, Performance, Security, Strategy, UI</p>
 						</details>
 					</div>
 				</section>
@@ -4226,12 +4171,12 @@
 			<section> <!-- Establish if a digital product or service is necessary -->
 				<h3>Establish if a digital product or service is necessary</h3>
 				<p class="subheading">Determine whether a project is necessary, avoiding duplication of existing efforts, creating obstacles for users, and aligning with SDGs and sustainability principles.</p>
-				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="" data-considerations="" data-categories="E-Waste, Ideation, Reporting, Software">
+				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="" data-considerations="" data-categories="AI, E-Waste, Ideation, Reporting, Software">
 					<h4 id="sustainable-development-goals">Success Criterion: Sustainable Development Goals</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM14-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM14-1">Resources</a></p>
 					<p>Identify where the product or service aligns with one of the <abbr title="United Nations">U.N.</abbr> (<abbr title="Sustainable Development Goals">SDG</abbr>s) and its appropriate targets within a sustainability statement.</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR" data-considerations="" data-categories="E-Waste, Ideation, Reporting, Software">
+				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR" data-considerations="" data-categories="AI, E-Waste, Ideation, Reporting, Software">
 					<h4 id="creation-evaluation">Success Criterion: Creation evaluation</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM14-2">Resources</a></p>
 					<p>Determine that the product or service is necessary based upon desirability, feasibility, and viability factors.</p>
@@ -4267,7 +4212,7 @@
 								<dt>GRI 305: Emissions</dt><dd>High</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>E-Waste, Ideation, Reporting, Software</p>
+							<p>AI, E-Waste, Ideation, Reporting, Software</p>
 						</details>
 					</div>
 				</section>
@@ -4275,7 +4220,7 @@
 			<section> <!-- Conduct a full life-cycle assessment -->
 				<h3>Conduct a full life-cycle assessment</h3>
 				<p class="subheading">Identify the potential impact that a digital product or service will have throughout its lifetime by conducting an LCA.</p>
-				<section class="notoc" data-testable="human" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="" data-categories="Ideation, Reporting, Research">
+				<section class="notoc" data-testable="human" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="" data-categories="AI, Ideation, Reporting, Research">
 					<h4 id="life-cycle-assessment">Success Criterion: Life-cycle assessment</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM15-1">Resources</a></p>
 					<p>Conduct a life-cycle assessment (<abbr title="life-cycle assessment">LCA</abbr>) to define sustainability-related functional impacts throughout a product's lifetime.</p>
@@ -4300,7 +4245,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Ideation, Reporting, Research</p>
+							<p>AI, Ideation, Reporting, Research</p>
 						</details>
 					</div>
 				</section>
@@ -4308,7 +4253,7 @@
 			<section> <!-- Provide a supplier standards of practice document -->
 				<h3>Provide a supplier standards of practice document</h3>
 				<p class="subheading">Vet suppliers before onboarding, then collaborate to promote and encourage better sustainability practices.</p>
-				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, SDGs" data-considerations="" data-categories="Content, Governance, Hardware, Ideation, Social Equity">
+				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, SDGs" data-considerations="" data-categories="AI, Content, Governance, Hardware, Ideation, Social Equity">
 					<h4 id="vetting-potential-partners">Success Criterion: Vetting potential partners</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM16-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM16-1">Resources</a></p>
 					<p>Create specific policies to vet potential partners along the supply chain based on sustainability principles.</p>
@@ -4343,7 +4288,7 @@
 								<dt>GRI 305: Emissions</dt><dd>High</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Content, Governance, Hardware, Ideation, Social Equity</p>
+							<p>AI, Content, Governance, Hardware, Ideation, Social Equity</p>
 						</details>
 					</div>
 				</section>
@@ -4482,7 +4427,7 @@
 			<section> <!-- Promote responsible data practices -->
 				<h3>Promote responsible data practices</h3>
 				<p class="subheading">Provide publicly accessible versions of documents required by law in a sustainable, easy-to-consume format, while also observing ethical data retention practices.</p>
-				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF" data-considerations="Privacy" data-categories="Content, Governance, Social Equity">
+				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF" data-considerations="Privacy" data-categories="AI, Content, Governance, Social Equity">
 					<h4 id="data-practices">Success Criterion: Data practices</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM20-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM20-1">Resources</a></p>
 					<p>Maintain a publicly accessible privacy policy, terms and conditions, and any other documents as required by law in the jurisdictions in which the product or service operates. Adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. Provide documents in accessible formats and use clear, user-friendly language to ensure comprehension by all users. Avoid unnecessary jargon, technical language, and legalese. Support emerging legislation and implement best practices related to data privacy, sustainability, and responsible data management.</p>
@@ -4510,7 +4455,7 @@
 								<dt>GRI 305: Emissions</dt><dd>High</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Content, Governance, Privacy, Social Equity</p>
+							<p>AI, Content, Governance, Privacy, Social Equity</p>
 						</details>
 					</div>
 				</section>
@@ -4557,32 +4502,32 @@
 			<section> <!-- Promote and implement responsible emerging technology practices -->
 				<h3>Promote and implement responsible emerging technology practices</h3>
 				<p class="subheading">Implement policies, training, and auditing practices for new or emerging technologies to ensure sustainability upon implementation, while accounting for associated legal issues.</p>
-				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
+				<section class="notoc" data-testable="machine" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
 					<h4 id="emerging-technologies">Success Criterion: Emerging technologies</h4>
 					<p class="external"><a class="machine" href="https://w3c.github.io/sustainableweb-wsg/star.html#BSPM22-1">Machine-testable</a> <span class="hide">and </span><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM22-1">Resources</a></p>
 					<p>Establish public-facing policies for emerging technologies. Ensure all such technologies and their datasets are ethically sourced, screened, validated, and implemented in a non-discriminatory, responsible manner.</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
+				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
 					<h4 id="disruptive-technology">Success Criterion: Disruptive technology</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM22-2">Resources</a></p>
 					<p>Show how workers are trained as new technologies and practices potentially disrupt an organizations business model.</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
+				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
 					<h4 id="technology-legislation">Success Criterion: Technology legislation</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM22-3">Resources</a></p>
 					<p>Support and comply with responsible legislation related to emerging technologies</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
+				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
 					<h4 id="environmental-responsibilities">Success Criterion: Environmental responsibilities</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM22-4">Resources</a></p>
 					<p>Audit and account for any environmental considerations that may derive from the use of emerging technologies wishing to be promoted or implemented. This should include third-party choices, the expense in terms of waste or emissions of using the technology to create a desired result, and consequences that may arise from its deployment.</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
+				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
 					<h4 id="automated-tooling">Success Criterion: Automated tooling</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM22-5">Resources</a></p>
 					<p>Ensure all automated tooling, scrapers, spiders, bots, artificial intelligence, and other forms of machine-assisted data gathering abides by requests to opt out at the host, server, or website level. Providers must declare themselves as non-human within the user-agent/HTTP header. Providers must also publish impact reports relating to their gathering activities.</p>
 				</section>
-				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GR491" data-considerations="Privacy, Security" data-categories="Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
+				<section class="notoc" data-testable="human" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GR491" data-considerations="Privacy, Security" data-categories="AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
 					<h4 id="quantum-resilience">Success Criterion: Quantum resilience</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM22-6">Resources</a></p>
 					<p>Do not roll out post-quantum encryption for high-traffic services that do not need resilience against harvest now, decrypt later attacks, where attackers steal encrypted data, anticipating that future quantum computers will be powerful enough to break the encryption and make the data readable at a later date.</p>
@@ -4606,7 +4551,7 @@
 								<dt>GRI 305: Emissions</dt><dd>High</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Content, E-Waste, Governance, Hardware, Networking, Performance, Privacy, Security, Social Equity, Software</p>
+							<p>AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Privacy, Security, Social Equity, Software</p>
 						</details>
 					</div>
 				</section>
@@ -4889,7 +4834,7 @@
 			<section> <!-- Create a business continuity and disaster recovery plan -->
 				<h3>Create a business continuity and disaster recovery plan</h3>
 				<p class="subheading">Create a plan of action with a system to recover from failure or alert users if or when a loss of service occurs.</p>
-				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491, SDGs" data-considerations="Security" data-categories="Governance, Strategy">
+				<section class="notoc" data-testable="human" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491, SDGs" data-considerations="Security" data-categories="AI, Governance, Strategy">
 					<h4 id="plan-of-action">Success Criterion: Plan of action</h4>
 					<p class="external"><span class="human">Human-testable</span> <span class="hide">and </span> <a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM29-1">Resources</a></p>
 					<p>Create, regularly review, and occasionally test a plan of action to determine readiness in case of an incident and establish procedures to quickly recover from any incident.</p>
@@ -4919,16 +4864,11 @@
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Governance, Security, Strategy</p>
+							<p>AI, Governance, Security, Strategy</p>
 						</details>
 					</div>
 				</section>
 			</section>
-			<ol class="pageButtons">
-				<li><a class="previousPage" href="#hosting-infrastructure-and-systems">Previous page<br>Hosting, Infrastructure, and Systems</a></li>
-				<li><a class="fullDocument" href="#full-document">Full document</a></li>
-				<li><a class="nextPage" href="#considerations">Next page<br>Considerations</a></li>
-			</ol>
 		</section>
 		<section class="appendix"> <!-- Considerations -->
 			<h2>Considerations</h2>
@@ -5003,11 +4943,6 @@
 					<li><a href="#create-a-business-continuity-and-disaster-recovery-plan">5.29 Create a business continuity and disaster recovery plan</a></li>
 				</ul>
 			</section>
-			<ol class="pageButtons">
-				<li><a class="previousPage" href="#business-strategy-and-product-management">Previous page<br>Business Strategy and Product Management</a></li>
-				<li><a class="fullDocument" href="#full-document">Full document</a></li>
-				<li><a class="nextPage" href="#glossary">Next page<br>Glossary</a></li>
-			</ol>
 		</section>
 		<section class="appendix"> <!-- Glossary -->
 			<h2>Glossary</h2>
@@ -5045,28 +4980,18 @@
 					<p class="note">Aiming for a clean (hosted using carbon-free energy), efficient (using the fewest resources possible), open (accessible and user-controlled data), honest (avoiding misleading or exploiting users), regenerative (support people and the planet), and resilient (function under any circumstances) service or product.</p>
 				</dd>
 			</dl>
-			<ol class="pageButtons">
-				<li><a class="previousPage" href="#considerations">Previous page<br>Considerations</a></li>
-				<li><a class="fullDocument" href="#full-document">Full document</a></li>
-				<li><a class="nextPage" href="#acknowledgments">Next page<br>Acknowledgments</a></li>
-			</ol>
 		</section>
 		<section class="appendix"> <!-- Acknowledgments -->
 			<h2>Acknowledgments</h2>
 			<p>Additional information about participation in the Sustainable Web Interest Group can be found <a href="https://github.com/w3c/sustainableweb-ig/">within the GitHub repository</a> of the Interest Group.</p>
 			<section> <!-- Draft Contributors -->
 				<h2>Participants active in the development of this document</h2>
-				<p>Alexander Dawson, Alisa Bonsignore, Andrea Davanzo, Andrew Wright, Andy Blum, Anne Faubry, Arnaud Levy, Ben Clifford, Berwyn Powell, Brett Tackaberry, Brian Louis Ramirez, Chris Adams, Chris Augier, Chris Butterworth, Chris Needham, Chris Sater, Chris Wilson, Claire Thornewill, Daniel Appelquist, David Jeanmonod, Dennis Lemm, Diogo Abrantes Da Silva, Dom Robinson, Dominique Hazael-Massieux, Emily Trotter, Fershad Irani, Florian Rivoal, Francesco Fullone, François Burra, Gaël Duez, Hidde de Vries, Iain McClenaghan, Ian Jacobs, Ines Akrap, Ismael Velasco, Iulia Raluca Ionita, James Christie, Jeffrey Yasskin, Jennifer Strickland, Jens Oliver Meiert, Jim McCool, Josh Kim, Julien Wilhelm, Kazuhito Kidachi, Laurent Devernay Satyagraha, Len Dierickx, Leon Brocard, Łukasz Mastalerz, Marie Ototoi, Michelle Barker, Mike Gifford, Morgan Murrah, Nahuai Badiola, Neil Clark, Nick Doty, Nick Lewis, Nicola Bonotto, Orie Steele, Owen Barton, Owen Rogers, Peter Krautzberger, Philippe Le Hégaret, Romuald Priol, Rose Newell, Rudolf Van Der Berg, Ryan Sholin, Sandy Dähnert, Sarah Zama, Shane Herath, Siddhesh Wagle, Simon Perdrisat, Susannah Hill, Tantek Çelik, Thibaud Colas, Thorsten Jonas, Tim Frick, Tzviya Siegman, Youen Chéné, Yuna Orsini, Zoe Lopez-Latorre.</p>
+				<p>Alexander Dawson, Alisa Bonsignore, Andrea Davanzo, Andrew Wright, Andy Blum, Anne Faubry, Arnaud Levy, Ben Clifford, Berwyn Powell, Brett Tackaberry, Brian Louis Ramirez, Chris Adams, Chris Augier, Chris Butterworth, Chris Needham, Chris Sater, Chris Wilson, Claire Thornewill, Daniel Appelquist, David Jeanmonod, Dennis Lemm, Diogo Abrantes Da Silva, Dom Robinson, Dominique Hazael-Massieux, Emily Trotter, Fershad Irani, Florian Rivoal, Francesco Fullone, François Burra, Gaël Duez, Hidde de Vries, Iain McClenaghan, Ian Jacobs, Ines Akrap, Ismael Velasco, Iulia Raluca Ionita, James Christie, Jeffrey Yasskin, Jennifer Strickland, Jens Oliver Meiert, Jim McCool, Josh Kim, Julien Wilhelm, Kazuhito Kidachi, Kenneth G. Franqueiro, Laurent Devernay Satyagraha, Len Dierickx, Leon Brocard, Łukasz Mastalerz, Marie Ototoi, Michelle Barker, Mike Gifford, Morgan Murrah, Nahuai Badiola, Neil Clark, Nick Doty, Nick Lewis, Nicola Bonotto, Orie Steele, Owen Barton, Owen Rogers, Peter Krautzberger, Philippe Le Hégaret, Romuald Priol, Rose Newell, Rudolf Van Der Berg, Ryan Sholin, Sandy Dähnert, Sarah Zama, Shane Herath, Siddhesh Wagle, Simon Perdrisat, Susannah Hill, Tantek Çelik, Thibaud Colas, Thorsten Jonas, Tim Frick, Tzviya Siegman, Youen Chéné, Yuna Orsini, Zoe Lopez-Latorre.</p>
 			</section>
 			<section> <!-- Meeting, Slack, Wiki, Etc Contributors -->
 				<h2>Other active participants, or contributors to supporting resources</h2>
 				<p>Adam Newman, Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Anthony Vallée-Dubois, Antoine Abélard, Asim Hussain, Bee Flaherty, Boris Schapira, Brian Sharpe, Carine Bournez, Christian H Brown, Christophe Clouzeau, Christos Bacharakis, Crystal Preston-Watson, Danielle Subject, Denis Didier, Edward Bender, Elise West, Eloisa Guerrero, Emma Horrell, Florence Maurice, Gerry McGovern, Greg McDonald, Hannah Smith, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jeroen Hulscher, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Katya Dreyer-Oren, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicholas Oliveira, Nicolas Oren, Oliver Winks, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Samuel Pitoňák, Sandra Pallier, Sarven Capadisli, Sebastien Solere, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
 			</section>
-			<ol class="pageButtons">
-				<li><a class="previousPage" href="#glossary">Previous page<br>Glossary</a></li>
-				<li><a class="fullDocument" href="#full-document">Full document</a></li>
-				<li><a class="nextPage" href="#changelog">Next page<br>Changelog</a></li>
-			</ol>
 		</section>
 		<section class="appendix"> <!-- Changelog -->
 			<h2>Changelog</h2>
@@ -5077,15 +5002,20 @@
 					<summary>Ongoing Release Notes</summary>
 					<p><strong>Additions:</strong></p>
 					<ul>
-						<li>None</li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Added an AI tag to the filter system for relevant content.<br><span class="credit">@TzviyaSiegman</span></li>
 					</ul>
 					<p><strong>Updates:</strong></p>
 					<ul>
-						<li>None</li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Filter system is more visible within TOC and multiPage removed.<br><span class="credit">@AlexDawsonUK, @kfranqueiro, @timfrick, @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] TOC updates and query strings in URL update to reflect active filters.<br><span class="credit">@AlexDawsonUK & @fershad</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Intro clarifications provided RE standards references.<br><span class="credit">@TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Update to relationships to include W3C WebML WG Ethical Principles spec.<br><span class="credit">@TzviyaSiegman</span></li>
 					</ul>
 					<p><strong>Fixes:</strong></p>
 					<ul>
-						<li>None</li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Additional fixes for pubRules prior to draft note status.<br><span class="credit">@AlexDawsonUK, @plehegar, & @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Fixed some redundancy issues within the specification.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Updated editor roles and credit for @codewordcreative Q3-2025 contributions.<br><span class="credit">@AlexDawsonUK, @ines-akrap, @mgifford, @timfrick, & @TzviyaSiegman</span></li>
 					</ul>
 					<!--
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/">#</a>] Change.<br><span class="credit">@Github</span></li>
@@ -5132,7 +5062,7 @@
 					<p><strong>Additions:</strong></p>
 					<ul>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/6#issuecomment-2580467320">#6</a>] New <a href="https://w3c.github.io/sustainableweb-wsg/resources.html">resources supplement</a> that will serve as the repository for sustainability links.<br><span class="credit">@AlexDawsonUK</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/58">#58</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/67">#67</a>], & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/68">#68</a>] Guideline <a href="https://w3c.github.io/sustainableweb-ig/tagFilter.html">filters using data-attributes</a> (for <a href="#full-document">full-document</a> mode) available.<br><span class="credit">@airbr, @AlexDawsonUK, @ldevernay, @timfrick, & @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/58">#58</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/67">#67</a>], & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/68">#68</a>] Guideline <a href="https://w3c.github.io/sustainableweb-ig/tagFilter.html">filters using data-attributes</a> (for full-document mode) available.<br><span class="credit">@airbr, @AlexDawsonUK, @ldevernay, @timfrick, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/41">#41</a>] Living changelog section has been added to the WSG (Github releases will continue).<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/53">#53</a>] New success criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#domain-names">4.1</a> providing coverage regarding the impact of domain names.<br><span class="credit">@codewordcreative & @exortech</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/68">#68</a>] New <a href="#considerations">considerations</a> section with accessibility, privacy, and security cross-references.<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
@@ -5217,11 +5147,6 @@
 				</details>
 			</div>
 			<p>If you spot any new bugs, or have new content or ideas to include, <a href="https://github.com/w3c/sustainableweb-wsg/issues">submit an issue</a>.</p>
-			<ol class="pageButtons">
-				<li><a class="previousPage" href="#acknowledgments">Previous page<br>Acknowledgments</a></li>
-				<li><a class="fullDocument" href="#full-document">Full document</a></li>
-				<li><a class="nextPage" href="#references">Next page<br>References</a></li>
-			</ol>
 		</section>
 	</body>
 </html>

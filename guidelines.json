@@ -1,7 +1,7 @@
 {
 	"title": "Web Sustainability Guidelines",
-	"edition": "Editor's Draft",
-	"lastModified": "2025-09-11",
+	"edition": "Draft Note",
+	"lastModified": "2025-11-08",
 	"category": [
 		{
 			"id": "1",
@@ -3209,7 +3209,7 @@
 						}
 					],
 					"example": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<urlset xmlns=\"http:\/\/www.sitemaps.org\/schemas\/sitemap\/0.9\">\r\n\t<url>\r\n\t\t<loc>https:\/\/www.example.com\/foo.html<\/loc>\r\n\t\t<lastmod>2022-06-04<\/lastmod>\r\n\t<\/url>\r\n<\/urlset>",
-					"tags": ["Accessibility", "HTML", "Marketing", "UI", "Usability"]
+					"tags": ["Accessibility", "AI", "HTML", "Marketing", "UI", "Usability"]
 				},
 				{
 					"id": "10",
@@ -3352,7 +3352,7 @@
 						}
 					],
 					"example": "<html>\r\n\t<head>\r\n\t\t<title>Example: A website about Examples<\/title>\r\n\t\t<script type=\"application\/ld+json\">\r\n\t\t{\r\n\t\t\t\"@context\" : \"https:\/\/schema.org\",\r\n\t\t\t\"@type\" : \"WebSite\",\r\n\t\t\t\"name\" : \"Example\",\r\n\t\t\t\"url\" : \"https:\/\/example.com\/\"\r\n\t\t}\r\n\t<\/script>\r\n\t<\/head>\r\n\t<body>\r\n\t<\/body>\r\n<\/html>",
-					"tags": ["Accessibility", "HTML", "Marketing", "Usability"]
+					"tags": ["Accessibility", "AI", "HTML", "Marketing", "Usability"]
 				},
 				{
 					"id": "12",
@@ -3546,7 +3546,7 @@
 						}
 					],
 					"example": "@media screen and (min-width: 600px) {\r\n\tbody {\r\n\t\tcolor: red;\r\n\t}\r\n}",
-					"tags": ["Compatibility", "CSS", "Performance", "UI", "Usability"]
+					"tags": ["AI", "Compatibility", "CSS", "Performance", "UI", "Usability"]
 				},
 				{
 					"id": "14",
@@ -4412,7 +4412,7 @@
 							"emissions": "Low"
 						}
 					],
-					"tags": ["E-Waste", "Hardware", "Networking", "Social Equity"]
+					"tags": ["AI", "E-Waste", "Hardware", "Networking", "Social Equity"]
 				},
 				{
 					"id": "2",
@@ -4694,7 +4694,7 @@
 							"emissions": "Low"
 						}
 					],
-					"tags": ["Hardware", "Networking", "Performance", "Software"]
+					"tags": ["AI", "Hardware", "Networking", "Performance", "Software"]
 				},
 				{
 					"id": "6",
@@ -4808,7 +4808,7 @@
 							"emissions": "Low"
 						}
 					],
-					"tags": ["Performance", "Security", "Software"]
+					"tags": ["AI", "Performance", "Security", "Software"]
 				},
 				{
 					"id": "7",
@@ -5001,7 +5001,7 @@
 							"emissions": "Low"
 						}
 					],
-					"tags": ["JavaScript", "Networking", "Performance"]
+					"tags": ["AI", "JavaScript", "Networking", "Performance"]
 				},
 				{
 					"id": "10",
@@ -5181,7 +5181,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Content", "Hardware", "Networking", "Performance"]
+					"tags": ["AI", "Content", "Hardware", "Networking", "Performance"]
 				},
 				{
 					"id": "11",
@@ -5527,7 +5527,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["Education", "Ideation", "KPIs", "Research", "Social Equity", "Strategy"]
+					"tags": ["AI", "Education", "Ideation", "KPIs", "Research", "Social Equity", "Strategy"]
 				},
 				{
 					"id": "2",
@@ -5783,7 +5783,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Ideation", "KPIs", "Research", "Social Equity", "Software", "Strategy"]
+					"tags": ["AI", "Ideation", "KPIs", "Research", "Social Equity", "Software", "Strategy"]
 				},
 				{
 					"id": "6",
@@ -5835,7 +5835,7 @@
 							"emissions": "Low"
 						}
 					],
-					"tags": ["Governance", "Ideation", "KPIs", "Research", "Social Equity"]
+					"tags": ["AI", "Governance", "Ideation", "KPIs", "Research", "Social Equity"]
 				},
 				{
 					"id": "7",
@@ -6071,7 +6071,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Content", "KPIs", "Reporting"]
+					"tags": ["AI", "Content", "KPIs", "Reporting"]
 				},
 				{
 					"id": "10",
@@ -6390,7 +6390,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["Compatibility", "KPIs", "Performance", "Security", "Strategy", "UI"]
+					"tags": ["AI", "Compatibility", "KPIs", "Performance", "Security", "Strategy", "UI"]
 				},
 				{
 					"id": "13",
@@ -6521,7 +6521,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["E-Waste", "Ideation", "Reporting", "Software"]
+					"tags": ["AI", "E-Waste", "Ideation", "Reporting", "Software"]
 				},
 				{
 					"id": "15",
@@ -6566,7 +6566,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Ideation", "Reporting", "Research"]
+					"tags": ["AI", "Ideation", "Reporting", "Research"]
 				},
 				{
 					"id": "16",
@@ -6652,7 +6652,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["Content", "Governance", "Hardware", "Ideation", "Social Equity"]
+					"tags": ["AI", "Content", "Governance", "Hardware", "Ideation", "Social Equity"]
 				},
 				{
 					"id": "17",
@@ -6983,7 +6983,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["Content", "Governance", "Privacy", "Social Equity"]
+					"tags": ["AI", "Content", "Governance", "Privacy", "Social Equity"]
 				},
 				{
 					"id": "21",
@@ -7259,7 +7259,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["Content", "E-Waste", "Governance", "Hardware", "Networking", "Performance", "Privacy", "Security", "Social Equity", "Software"]
+					"tags": ["AI", "Content", "E-Waste", "Governance", "Hardware", "Networking", "Performance", "Privacy", "Security", "Social Equity", "Software"]
 				},
 				{
 					"id": "23",
@@ -7819,7 +7819,7 @@
 							"emissions": "Low"
 						}
 					],
-					"tags": ["Governance", "Security", "Strategy"]
+					"tags": ["AI", "Governance", "Security", "Strategy"]
 				}
 			]
 		}
