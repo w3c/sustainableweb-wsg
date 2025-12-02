@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Simple Structure</title>
+		<title>WSG Test: Media Compression</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#provide-clear-inclusive-content-with-purpose">
-		<meta name="flags" content="">
-		<meta name="assert" content="Test Checks: Break Long-Form Content Down Into a Simpler Structure">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability">
+		<meta name="flags" content="asset">
+		<meta name="assert" content="Test Checks: Optimizing All Audio and Video Assets for Speed and Compatibility">
 		<style>
 
 		</style>
@@ -16,14 +16,10 @@
 		</script>
 	</head>
 	<body>
-		<h1>Information about Web Standards</h1>
-		<p>Unlike traditional programming, creating a website uses a range of different languages. Each of those languages has its purpose and goal.</p>
-		<ul>
-			<li>HTML for example defines the structure of the website and holds the content in an accessible format.</li>
-			<li>CSS visually coordinates everything into a customized design.</li>
-			<li>JavaScript provides interactive features and functionality.</li>
-		</ul>
-		<p>Web browsers have existed for a long time also, they attempt to read the code that developers have produced and interpret that data into a visual representation of those instructions. This is what the user will see when they browse a page.</p>
-		<p>Test passes if paragraphs are broken into easier to read blocks.</p>
+		<video controls>
+			<source src="assets/flower.webm" type="video/webm">
+			Your browser does not support the video tag.
+		</video>
+		<p>Test passes if the media file cannot be compressed further than it already is (without quality loss).</p>
 	</body>
 </html>

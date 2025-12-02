@@ -3,29 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Navigation Menu</title>
+		<title>WSG Test: Interaction Permissions</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-wayfinding-are-well-structured">
-		<meta name="flags" content="">
-		<meta name="assert" content="Test Checks: Making Your Navigation Menu Accessible and Well-Structured">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#design-to-assist-and-not-to-distract">
+		<meta name="flags" content="javascript">
+		<meta name="assert" content="Test Checks: Request Permission for Invasive Access To Interact With Content">
 		<style>
-
+			
 		</style>
 		<script>
-
+			function getLocation() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition);
+				} else { 
+					document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+				}
+			}
+			function showPosition(position) {
+				document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+			}
 		</script>
 	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">About</a></li>
-				</ul>
-			</nav>
-		</header>
-		<p>Test passes if the navigation menu is well structured and accessible.</p>
+	<body onload="getLocation()">
+		<p id="demo"></p>
+		<p>Test passes if permissions are requested and if so, can be blocked or a user-invoked alternative is provided.</p>
 	</body>
 </html>

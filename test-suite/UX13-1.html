@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Design System</title>
+		<title>WSG Test: Image Formats</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-for-interface-consistency">
-		<meta name="flags" content="invalid">
-		<meta name="assert" content="Test Checks: Implement an Up-to-Date Design System">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability">
+		<meta name="flags" content="asset">
+		<meta name="assert" content="Test Checks: Implement a Range of Images of the Appropriate Format and Size">
 		<style>
 
 		</style>
@@ -16,8 +16,10 @@
 		</script>
 	</head>
 	<body>
-		<h1>Sustainability Statement</h1>
-		<p>Currently, we do not use a design system for our product, this is something we hope to change in the future to increase the reusability of components and to reduce wasted effort and machine time. As such, this has an increased carbon impact on our development cycles and we have increased offsetting attempts in other areas to compensate.</p>
-		<p>Test passes if it is noted that no design system was identified as a central source of truth.</p>
+		<picture>
+			<source srcset="assets/city.avif" />
+			<img src="assets/city.jpg" alt="Tower Blocks" />
+		</picture>
+		<p>Test passes if alternative image formats can be provided (where compatible).</p>
 	</body>
 </html>

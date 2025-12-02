@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Image Resolutions</title>
+		<title>WSG Test: Animation Usage</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability">
-		<meta name="flags" content="asset">
-		<meta name="assert" content="Test Checks: Optimizing All Image Assets for a Variety of Different Resolutions">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#ensure-animation-is-proportionate-and-easy-to-control">
+		<meta name="flags" content="">
+		<meta name="assert" content="Test Checks: Measure and Respond to High-Intensity Animation Usage">
 		<style>
 
 		</style>
@@ -16,10 +16,8 @@
 		</script>
 	</head>
 	<body>
-		<picture>
-			<source srcset="assets/city2.jpg" media="(min-width: 450px)" />
-			<img src="assets/city.jpg" alt="City of Buildings" />
-		</picture>
-		<p>Test passes if a responsive image is displayed on the screen.</p>
+		<h1>Animation-free Page!</h1>
+		<p>While animation can be exciting, we have decided not to include any on this page to increase the performance of our website. It has reduced the size of our codebase considerably and it has not impacted the user-experience. There are other ways we can enrich the experience for users without potentially causing accessibility issues so we shall do that instead.</p>
+		<p>Test passes if the number of animations does not exceed a stated limit.</p>
 	</body>
 </html>

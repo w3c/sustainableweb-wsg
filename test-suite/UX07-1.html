@@ -3,25 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Decorative Design</title>
+		<title>WSG Test: Navigation Menu</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#use-decorative-design-with-care">
-		<meta name="flags" content="invalid">
-		<meta name="assert" content="Test Checks: Decorative Design Elements Can Be Disabled if They Are Not Done So by Default">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-wayfinding-are-well-structured">
+		<meta name="flags" content="">
+		<meta name="assert" content="Test Checks: Making Your Navigation Menu Accessible and Well-Structured">
 		<style>
-			p {
-				cursor: pointer;
-				overflow-x: scroll;
-				scrollbar-color: red orange;
-				scrollbar-width: thin;
-				width: 20%;
-			}
+
 		</style>
 		<script>
 
 		</script>
 	</head>
 	<body>
-		<p>Test passes if the decorative design elements are identified and flagged.</p>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+		</header>
+		<p>Test passes if the navigation menu is well structured and accessible.</p>
 	</body>
 </html>

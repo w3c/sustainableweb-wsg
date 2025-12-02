@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Content Delivery</title>
+		<title>WSG Test: Choose Loading</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
 		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#give-third-parties-the-same-priority-as-first-parties-during-assessment">
 		<meta name="flags" content="">
-		<meta name="assert" content="Test Checks: Ensure That Content Is Delivered Through the Most Sustainable Pathway">
+		<meta name="assert" content="Test Checks: Provide the Ability To Identify and Choose Third-Party Components To Load">
 		<style>
 
 		</style>
@@ -16,8 +16,11 @@
 		</script>
 	</head>
 	<body>
-		<h1>Website Blog</h1>
-		<p>Welcome to my blog about cooking, this is a section of the website dedicated to all of the things I have learned how to bake. I am hosting it all on a subsection of my website as that way I can keep adding new content regularly for members.</p>
-		<p>Test passes if regular content and comments are being delivered through the first-party website.</p>
+		<section style="background-color: chartreuse;">
+			<h3>We use cookies</h3>
+			<p>Cookies are little files used to store information about your browsing session, and we are required to ask for your consent before we start storing such information locally on your machine, do you give us permission?</p>
+			<button>I Agree</button><button>I Disagree</button>
+		</section>
+		<p>Test passes if the ability to decide if components are loaded onto a machine exists.</p>
 	</body>
 </html>

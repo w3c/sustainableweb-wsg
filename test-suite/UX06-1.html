@@ -3,24 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: IA Interaction Cost</title>
+		<title>WSG Test: Decorative Design</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys">
-		<meta name="flags" content="interaction">
-		<meta name="assert" content="Test Checks: Measure Interaction Cost To Reach Every Page in the Information Architecture">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#use-decorative-design-with-care">
+		<meta name="flags" content="invalid">
+		<meta name="assert" content="Test Checks: Decorative Design Elements Can Be Disabled if They Are Not Done So by Default">
 		<style>
-
+			p {
+				cursor: pointer;
+				overflow-x: scroll;
+				scrollbar-color: red orange;
+				scrollbar-width: thin;
+				width: 20%;
+			}
 		</style>
 		<script>
 
 		</script>
 	</head>
 	<body>
-		<header>
-			<p><a href="#">Home</a> > <a href="#">News</a> > <a href="#">2024</a> > <a href="#">June</a> > <a href="#">Article about Fish</a></p>
-		</header>
-		<h1>Article About Fish</h1>
-		<p>Fish live underwater!</p>
-		<p>Test passes if the information architecture contains shortcuts, user flow is well-established, and choices are not overly complex.</p>
+		<p>Test passes if the decorative design elements are identified and flagged.</p>
 	</body>
 </html>
