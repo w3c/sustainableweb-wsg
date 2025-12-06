@@ -1312,7 +1312,7 @@
 					"description": [
 						{
 							"1": "Offer a transcript of the content of an audio file or video. This is especially useful within podcasts or shows that follow the linear progress of events that can be organized into chapters. How content is chosen to be written up is at the discretion of the author but to pass the criteria it must be accessible, understandable, and content complete.",
-							"2": "As with all generated external HTML documents, for machine testability (this will include other examples such as UX51), the generated content must itself pass the WSG guidelines in being sustainable (meeting the success criteria as an HTML document that generates emissions). The document can be tested against the techniques laid down in this reference."
+							"2": "As with all generated external HTML documents, for machine testability (this will include other examples), the generated content must itself pass the WSG guidelines in being sustainable (meeting the success criteria as an HTML document that generates emissions). The document can be tested against the techniques laid down in this reference."
 						}
 					],
 					"examples": [
@@ -2929,7 +2929,8 @@
 					"examples": [
 						{
 							"1": "Amazon has a highly recognizable brand and they [provide a favicon](https://www.amazon.com/favicon.ico) in the base of their website so that when people visit them, their icon will show correctly in the top left of the tab or window (browser dependent).",
-							"2": "Developer tool Can I Use [provide an opensearch.xml file](https://caniuse.com/opensearch.xml) in the base of their website so that if people visit their project, users can rapidly search the website in the future using a keyword and tab combination."
+							"2": "Developer tool Can I Use [provide an opensearch.xml file](https://caniuse.com/opensearch.xml) in the base of their website so that if people visit their project, users can rapidly search the website in the future using a keyword and tab combination.",
+							"3": "[Google has a robots.txt file](https://www.google.com/robots.txt) that identifies to search engines what pages should be included within search results. You can also look to [Web Robots Pages](https://www.robotstxt.org/robotstxt.html) and [Google Search Central](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en) for implementation inspiration."
 						}
 					],
 					"tests": [

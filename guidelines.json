@@ -21,7 +21,7 @@
 						{
 							"title": "External factors",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX01-1)",
-							"description": "Anticipate and identify existing or potential negative external factors. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals, acting where possible to minimize their overall impact.",
+							"description": "Anticipate and identify existing or potential negative external factors. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.6 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -662,7 +662,7 @@
 					"criteria": [
 						{
 							"title": "Deceptive design patterns",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX9-1)",
+							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX09-1)",
 							"description": "Avoid deceptive design or unethical coding techniques that manipulate users into taking actions that are not in their best interest. Examples include anti-right click, copy prevention, requiring an account to purchase, etc.",
 							"resources": [
 								{
@@ -719,7 +719,7 @@
 						},
 						{
 							"title": "Analytics and tracking",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX9-3)",
+							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX09-3)",
 							"description": "Evaluate and remove unnecessary or unused analytics and tracking, including any operating without user consent.",
 							"resources": [
 								{
@@ -737,7 +737,7 @@
 						},
 						{
 							"title": "Search Engine Optimization",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX9-4)",
+							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX09-4)",
 							"description": "Focus on serving user intent through non-manipulative search and social media optimization. For example, do not misuse coding practices intended to support assistive technologies. This can include content with natural redundancy, or unhelpful or low-quality material designed only to manipulate search results.",
 							"resources": [
 								{
@@ -1461,7 +1461,7 @@
 						{
 							"title": "Open formats",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX17-1)",
-							"description": "Provide open alternatives, such as HTML, to proprietary file formats, such as PDF.",
+							"description": "Provide open alternatives, such as HTML, to proprietary file formats.",
 							"resources": [
 								{
 									"Are PDFs Hurting the Planet?": "https://medium.com/@thepdfspace/are-pdfs-hurting-the-planet-7c850655c98e",
@@ -1526,7 +1526,7 @@
 						{
 							"title": "Video alternatives",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX17-5)",
-							"description": "Include WebVTT closed captions and subtitles support for videos. Provide localization as expected by your audience, including subtitles and sign language that meet the same standard.",
+							"description": "Include WebVTT closed captions and subtitles along with transcripts for videos. Provide localization as expected by your audience, including subtitles and sign language that meet the same standard.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 5.5 - Content (Video Alternative)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -1981,7 +1981,7 @@
 					],
 					"benefits": [
 						{
-							"Accessibility": "Maintaining inclusivity over time through regular audits and testing reduces outages, improves access to information, and creates a better experience for all users, not just those with accessibility needs.",
+							"Accessibility": "Tracking accessibility compliance information over time makes it easier for users to understand how acccessibility has been addressed in the past.",
 							"Conversion": "Increasing page load speed can measurably improve conversion rates, as users will be less likely to abandon a product or service if the content appears instantaneously.",
 							"Economic": "Performing ongoing regression testing improves security, which reduces risk and its associated costs.",
 							"Environment": "Carrying out regular service audits reduces technical debt, which improves performance and environmental sustainability. Regression analysis also supports continuous improvement and lowers resource use over time, which in turn reduces emissions.",
@@ -2604,7 +2604,7 @@
 						{
 							"title": "Self-hosting",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-3)",
-							"description": "Prioritize self-hosting content and assets, such as icons and widgets, rather than relying on third-party services to host, deliver, or embed any associated functionality within your project.",
+							"description": "Host your content and assets, such as icons and widgets, directly on your own site rather than relying on third-party services to store, deliver, or embed those features.",
 							"resources": [
 								{
 									"Awesome-Selfhosted": "https://github.com/awesome-selfhosted/awesome-selfhosted",
@@ -2676,7 +2676,7 @@
 					"id": "7",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-code-follows-good-semantic-practices",
 					"guideline": "Ensure code follows good semantic practices",
-					"subheading": "Use semantic markup free of optional or non-standard code, use the latest version of language specifications, and only using custom solutions when native ones are insufficient.",
+					"subheading": "Use semantic markup free of optional or non-standard code, use the latest version of technical specifications, and only using custom solutions when native ones are insufficient.",
 					"criteria": [
 						{
 							"title": "Semantic code",
@@ -2766,7 +2766,7 @@
 						{
 							"title": "Custom code",
 							"testable": "Human-testable",
-							"description": "Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use native elements or if you require them for the purposes of producing reusable design system components.",
+							"description": "Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use pre-existing elements or if you require them for the purposes of producing reusable design system components.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.9 - Strategy (Interoperable Technologies)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -2780,9 +2780,9 @@
 							]
 						},
 						{
-							"title": "Native over custom",
+							"title": "Built-in over custom",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD07-5)",
-							"description": "Use native functions, APIs, and features over writing your own.",
+							"description": "Use web platform features and APIs over writing your own.",
 							"resources": [
 								{
 									"15 Tips to Optimize Your PHP Script for Better Performance for Developers": "https://www.thegeekstuff.com/2014/04/optimize-php-code/",
@@ -2799,7 +2799,7 @@
 					],
 					"benefits": [
 						{
-							"Accessibility": "Applying semantic approaches means your content will be easier to navigate via assistive technologies and keyboard. Many tags have native semantics, reducing the need for additional tagging. This can also help technologies to better understand your content. better.",
+							"Accessibility": "Applying semantic approaches means your content will be easier to navigate via assistive technologies and keyboard. Many tags have built-in semantics, reducing the need for additional attributes. This can also improve compatibility of your content with a broad range of technologies.",
 							"Conversion": "Ensuring your code is efficient and works reduces the risk of broken features and users giving up.",
 							"Economic": "Conforming to accessibility legislation and regulations avoid lawsuits and fines.",
 							"Environment": "Following standards ensures users have a coherent experience - reducing bugs, saving time spent fixing bugs, and avoiding wasted resources. Bloated markup can otherwise lead to waste data, while broken markup can even trigger memory leaks.",
@@ -2890,7 +2890,7 @@
 					"id": "9",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#provide-information-to-help-understand-the-usefulness-of-a-page",
 					"guideline": "Provide information to help understand the usefulness of a page",
-					"subheading": "Ensure that accessibility tooling can access a project to reduce wasted journeys.",
+					"subheading": "Ensure that accessibility tooling can access a project to reduce unnecessary journeys.",
 					"criteria": [
 						{
 							"title": "Accessibility aids",
@@ -3150,7 +3150,7 @@
 						{
 							"title": "Device-adaptable",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD13-1)",
-							"description": "Use responsive and adaptive design techniques to ensure your project natively supports an appropriate range of devices and screen sizes, including smartphones, tablets, laptops, desktop computers, smart TVs, and other emerging platforms. Implement robust fallback strategies to ensure that the digital product or service will not fail if it encounters unsupported technologies.",
+							"description": "Use responsive and adaptive design techniques to ensure your project supports an wide range of devices and screen sizes, including smartphones, tablets, laptops, desktop computers, smart TVs, and other emerging platforms. Implement robust fallback strategies to ensure that the digital product or service will not fail if it encounters unsupported technologies.",
 							"resources": [
 								{
 									"Building a resilient frontend using progressive enhancement": "https://www.gov.uk/service-manual/technology/using-progressive-enhancement",
@@ -3449,7 +3449,7 @@
 					"id": "16",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#use-dependencies-appropriately-and-ensure-maintenance",
 					"guideline": "Use dependencies appropriately and ensure maintenance",
-					"subheading": "Use libraries and frameworks only where necessary, when vanilla code or smaller packages are inappropriate for the use case, and they are kept up to date.",
+					"subheading": "Use libraries and frameworks only where necessary, when plain code or smaller packages are inappropriate for the use case, and they are kept up to date.",
 					"criteria": [
 						{
 							"title": "Dependency management",
@@ -3474,7 +3474,7 @@
 						{
 							"title": "Dependency necessity",
 							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD16-2)",
-							"description": "Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use vanilla code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library.",
+							"description": "Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library.",
 							"resources": [
 								{
 									"Boring Web Development": "https://meiert.com/blog/boring-web-development/",
@@ -4250,7 +4250,7 @@
 					"id": "4",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#setup-necessary-error-pages-and-redirection-links",
 					"guideline": "Setup necessary error pages and redirection links",
-					"subheading": "Use error and redirection handling on projects to reduce the impact of wasted journeys or unhelpful detours.",
+					"subheading": "Use error and redirection handling on projects to reduce the impact of unnecessary journeys or unhelpful detours.",
 					"criteria": [
 						{
 							"title": "Error pages",
@@ -6069,7 +6069,7 @@
 					"id": "13",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#establish-if-a-digital-product-or-service-is-necessary",
 					"guideline": "Establish if a digital product or service is necessary",
-					"subheading": "Determine whether a project is necessary, creating obstacles for users, and aligning with SDGs and sustainability principles.",
+					"subheading": "Determine whether a project is necessary, eliminating obstacles for users, and aligning with SDGs and sustainability principles.",
 					"criteria": [
 						{
 							"title": "Sustainable Development Goals",

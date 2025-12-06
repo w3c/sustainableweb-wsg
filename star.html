@@ -90,7 +90,7 @@
 				<h3>Methodology</h3>
 				<p>With the above considerations taken into account, a good next step is to consider sustainability within content and treat sustainability as any other impact target (such as accessibility or performance) by trying to drive change through metrics data. If research exists to back a particular technique as more performant, it is likely to be more sustainable. Often there will be cases where evidence does not exist as web sustainability is an evolving field and as such, a common sense approach (considering the factors that can impact people and the planet) will be the best method if metrics data cannot be provided to identify the most sustainable option.</p>
 				<p>Every body of work will have its approach to this and a progress over-perfection methodology is preferred (as doing something is ultimately better than waiting for an ideal fix), but as a general consideration for those who are creating documents that are relied upon by large numbers of individuals, the Planet, People, and Prosperity <abbr title="Planet, People, and Prosperity">PPP</abbr> model which does not just account for emissions and the environmental impact but also and human factors and issues surrounding good governance are an ideal template to work from. In the context of the Internet this accounts for everyday (but important) factors such as performance, accessibility, privacy by design, security, and reducing waste which all as a by-product have an environmental impact.</p>
-				<p>It is also important to note that different bodies will have their sustainability challenges, for example, those working on native <abbr title="Application Programming Interfaces">APIs</abbr> are more likely to encounter hardware resource consumption (energy usage), whereas language standards will be more considerate of implementors, accessibility, and improving developer workflows. As such, it is worth coordinating with other groups with aligned goals and discussing their sustainability approaches to align work and help improve theirs, accounting for different factors.</p>
+				<p>It is also important to note that different bodies will have their sustainability challenges, for example, those working on platform <abbr title="Application Programming Interfaces">APIs</abbr> are more likely to encounter hardware resource consumption (energy usage), whereas language standards will be more considerate of implementors, accessibility, and improving developer workflows. As such, it is worth coordinating with other groups with aligned goals and discussing their sustainability approaches to align work and help improve theirs, accounting for different factors.</p>
 				<p class="note">Providing sustainability guidance within work can be presented in many ways. One option is to integrate it within existing guidance or specifications (amending the content). Another is to provide notes or in-page sections dedicated to sustainability providing coverage. Or to gently guide individuals into the subject, a dedicated supplement that will be adapted or merged into the specification at the next major version (giving individuals time to adapt) could be created.</p>
 			</section>
 		</section>
@@ -1127,7 +1127,7 @@
 						<ol>
 							<li>Check for compression potential against every available audio and video asset.</li>
 							<li>Provide optimized solutions if audio or video problems have been detected.</li>
-							<li>Check for third-party non-native media player usage and recommend native options (if possible).</li>
+							<li>Check for third-party media player usage and recommend pre-existing solutions (if possible).</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -1382,7 +1382,7 @@
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#offer-suitable-alternatives-for-every-format-used">2.17 Offer suitable alternatives for every format used</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Offer a transcript of the content of an audio file or video. This is especially useful within podcasts or shows that follow the linear progress of events that can be organized into chapters. How content is chosen to be written up is at the discretion of the author but to pass the criteria it must be accessible, understandable, and content complete.</p>
-						<p>As with all generated external HTML documents, for machine testability (this will include other examples such as UX51), the generated content must itself pass the WSG guidelines in being sustainable (meeting the success criteria as an HTML document that generates emissions). The document can be tested against the techniques laid down in this reference.</p>
+						<p>As with all generated external HTML documents, for machine testability (this will include other examples), the generated content must itself pass the WSG guidelines in being sustainable (meeting the success criteria as an HTML document that generates emissions). The document can be tested against the techniques laid down in this reference.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>The <a href="https://99percentinvisible.org/episode/roman-mars-describes-chicago-as-it-is/transcript">99% Invisible podcast</a> provides text transcripts of its episodes using a paper icon to indicate availability. The speaker is clearly identified within each episode and credits are also provided alongside.</li>
@@ -2192,23 +2192,23 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD07-5: Replace code that can instead use more efficient native APIs -->
-						<summary id="WD07-5">WD07-5: Replace code that can instead use more efficient native APIs</summary>	
+					<details> <!-- WD07-5: Replace code that can instead use more efficient web platform APIs -->
+						<summary id="WD07-5">WD07-5: Replace code that can instead use more efficient web platform APIs</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-code-follows-good-semantic-practices">3.7 Ensure code follows good semantic practices</a>.</p>
 						<p><strong>Description</strong></p>
-						<p>First identify and then determine if custom JavaScript functions could be replaced with a more optimal and established native API call. This will also apply to custom element creation over using established native features to the browser. With the evolution of JavaScript, the opportunity to optimize code with newer cleaner techniques occurs regularly.</p>
-						<p>It is preferable to measure both the newer method of implementation with the older method to identify if one provides a more optimized (via performance and sustainability metrics) implementation than the other before replacement. Also, this technique is most useful when considering if the custom component provides additional functionality that the native component does not and if such features weigh up beneficially against the cleaner native implementation.</p>
+						<p>First identify and then determine if custom JavaScript functions could be replaced with a more optimal and established web platform API call. This will also apply to custom element creation over using established web platform features to the browser. With the evolution of JavaScript, the opportunity to optimize code with newer cleaner techniques occurs regularly.</p>
+						<p>It is preferable to measure both the newer method of implementation with the older method to identify if one provides a more optimized (via performance and sustainability metrics) implementation than the other before replacement. Also, this technique is most useful when considering if the custom component provides additional functionality that the component does not and if such features weigh up beneficially against the cleaner default implementation.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
-							<li>MDN provides a <a href="https://developer.mozilla.org/en-US/docs/Web/API">great list of native web APIs</a> for JavaScript including the interfaces that can be used to call them. Within each of those items, you will find detailed documentation along with examples of usage.</li>
+							<li>MDN provides a <a href="https://developer.mozilla.org/en-US/docs/Web/API">great list of web platform APIs</a> for JavaScript including the interfaces that can be used to call them. Within each of those items, you will find detailed documentation along with examples of usage.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
 						<ol>
-							<li>Check if the benefits of a native browser control exceed creating a custom element.</li>
-							<li>Check if a native API exists that could replace custom calls, methods, or functions.</li>
-							<li>In either of these instances, if the answer is yes, check that the native option is used.</li>
+							<li>Check if the benefits of a default browser control exceed creating a custom element.</li>
+							<li>Check if a web platform API exists that could replace custom calls, methods, or functions.</li>
+							<li>In either of these instances, if the answer is yes, check that the default option is used.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -2667,7 +2667,7 @@
 						<ol>
 							<li><a href="https://bundlephobia.com/">Bundlephobia</a> and <a href="https://pkg-size.dev/">pkg-size</a> allow you to find the true size of a package on NPM by calculating not just the size of the item you wish to install but all of the dependencies the item requires to function.</li>
 							<li><a href="https://youmightnotneedjquery.com/">You Might Not Need jQuery</a> provides information about potential replacements for the longstanding JavaScript framework that could be more performant and lightweight while offering the same functionality.</li>
-							<li><a href="https://github.com/camsong/You-Dont-Need-jQuery">You (Might) Don't Need jQuery</a> showcases a series of examples of how pre-existing jQuery functionality can now be replaced with native functionality and as such, the framework could be eliminated.</li>
+							<li><a href="https://github.com/camsong/You-Dont-Need-jQuery">You (Might) Don't Need jQuery</a> showcases a series of examples of how pre-existing jQuery functionality can now be replaced with platform functionality and as such, the framework could be eliminated.</li>
 							<li><a href="http://microjs.com/#">MicroJS</a> is a list of tiny JavaScript frameworks that serve a single purpose and if you utilize a single large framework for this very reason, could be swapped out to reduce the environmental impact of your work.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
@@ -2676,7 +2676,7 @@
 							<li>Check the package size to determine at what size breaking into modular components should occur.</li>
 							<li>Check the function sizes to identify if refactoring to smaller functions should also occur.</li>
 							<li>Check if CSS libraries could be replaced with smaller alternatives or custom code.</li>
-							<li>Check if JavaScript frameworks could be replaced with smaller alternatives or native code.</li>
+							<li>Check if JavaScript frameworks could be replaced with smaller alternatives or pre-existing solutions.</li>
 							<li>If replacements can be made, then replacements should be introduced.</li>
 						</ol>
 						<p>Expected Results</p>
@@ -2720,6 +2720,7 @@
 						<ol>
 							<li>Amazon has a highly recognizable brand and they <a href="https://www.amazon.com/favicon.ico">provide a favicon</a> in the base of their website so that when people visit them, their icon will show correctly in the top left of the tab or window (browser dependent).</li>
 							<li>Developer tool Can I Use <a href="https://caniuse.com/opensearch.xml">provide an opensearch.xml file</a> in the base of their website so that if people visit their project, users can rapidly search the website in the future using a keyword and tab combination.</li>
+							<li><a href="https://www.google.com/robots.txt">Google has a robots.txt file</a> that identifies to search engines what pages should be included within search results. You can also look to <a href="https://www.robotstxt.org/robotstxt.html">Web Robots Pages</a> and <a href="https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en">Google Search Central</a> for implementation inspiration.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
