@@ -20,7 +20,6 @@
 					"criteria": [
 						{
 							"title": "External factors",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX01-1)",
 							"description": "Anticipate and identify existing or potential negative external factors. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.",
 							"resources": [
 								{
@@ -82,7 +81,6 @@
 					"criteria": [
 						{
 							"title": "Audience evaluation",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX02-1)",
 							"description": "Identify primary and secondary target users. Evaluate and define their needs through quantitative and/or qualitative research, testing, or analytics. Ensure your users and affected communities are consistently and closely involved in the research and testing process.",
 							"resources": [
 								{
@@ -102,7 +100,6 @@
 						},
 						{
 							"title": "Barriers and access",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX02-2)",
 							"description": "Conduct internal and user research to identify whether a technical, material, or human constraint might require adaptations to reduce barriers or improve access to content.",
 							"resources": [
 								{
@@ -127,7 +124,6 @@
 						},
 						{
 							"title": "Barrier removal",
-							"testable": "Human-testable",
 							"description": "Remove identified barriers to access. These can include deceptive design patterns, accessibility issues, or other pain points.",
 							"resources": [
 								{
@@ -187,7 +183,6 @@
 					"criteria": [
 						{
 							"title": "Non-user impact",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX03-1)",
 							"description": "Establish a plan of action for non-users and other affected parties who might be indirectly impacted by choices made in e-commerce, this can include neighbors accepting parcels or traffic jams due to deliveries. Other examples include the local health impacts of infrastructure emissions, or supply chain pressure. Research non-user needs, understand how they might be affected, and consider ways negative effects could be mitigated.",
 							"resources": [
 								{
@@ -234,7 +229,6 @@
 					"criteria": [
 						{
 							"title": "Sustainable brand development",
-							"testable": "Human-testable",
 							"description": "Optimize all branding materials and assets approved during the ideation process in line with sustainability best practices prior to deployment. This also applies to brand refreshes, rebranding, and later enhancements. Make publicly available branding guidelines detailing the sustainability impact and best-practice deployment of materials and assets.",
 							"resources": [
 								{
@@ -251,7 +245,6 @@
 						},
 						{
 							"title": "Wireframes and prototypes",
-							"testable": "Human-testable",
 							"description": "Use wireframes and rapid prototyping to quickly build consensus, reduce risk, and reduce the number of resources needed to build features. Evaluate the impact of all tools used.",
 							"resources": [
 								{
@@ -267,7 +260,6 @@
 						},
 						{
 							"title": "Participation and testing",
-							"testable": "Human-testable",
 							"description": "Use the participatory design approach to involve users within the iteration and design process. When conducting user testing, reach out to your community to help improve your product. Provide opportunities for users to apply their knowledge and experience to your product or service.",
 							"resources": [
 								{
@@ -284,7 +276,6 @@
 						},
 						{
 							"title": "Human-centered ideation",
-							"testable": "Human-testable",
 							"description": "Use a human-centered approach during ideation to consider the needs, interests, and impact on directly and indirectly affected parties.",
 							"resources": [
 								{
@@ -300,7 +291,6 @@
 						},
 						{
 							"title": "Environmental ideation",
-							"testable": "Human-testable",
 							"description": "Consider planetary needs and the environmental boundaries during the ideation phase. This can include creating non-user, non-human (animal, planet) personas, or climate-specific user stories and sprints.",
 							"resources": [
 								{
@@ -341,7 +331,6 @@
 					"criteria": [
 						{
 							"title": "Efficient paths",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX05-1)",
 							"description": "Make access as simple and efficient as possible. Displaying the time required to complete an action, reduction of choice, and ensuring users understand requirements at the start of a journey can improve user efficiency.",
 							"resources": [
 								{
@@ -362,7 +351,6 @@
 						},
 						{
 							"title": "Patterns for efficiency",
-							"testable": "Human-testable",
 							"description": "Ensure user journeys are as smooth as possible. It also helps to build on established design patterns that people already understand.",
 							"resources": [
 								{
@@ -380,7 +368,6 @@
 						},
 						{
 							"title": "Distraction-free design",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX05-3)",
 							"description": "Enable users to complete tasks without distractions or non-essential features getting in the way.",
 							"resources": [
 								{
@@ -397,7 +384,6 @@
 						},
 						{
 							"title": "Eliminate the non-essential",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX05-4)",
 							"description": "Only show users information that is relevant to their experience, hiding non-essential information from view.",
 							"resources": [
 								{
@@ -417,7 +403,6 @@
 						},
 						{
 							"title": "User-initiated actionable content",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX05-5)",
 							"description": "Ensure that disruptive actionable information, such as pop-up or modal windows, can only be initiated by the user.",
 							"resources": [
 								{
@@ -461,7 +446,6 @@
 					"criteria": [
 						{
 							"title": "Decorative design",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX06-1)",
 							"description": "Use decorative design only when it enhances user experience. Remove unnecessary assets or those that do not enhance user experience or sustainability. Alternatively, make these optional and disabled by default.",
 							"resources": [
 								{
@@ -510,7 +494,6 @@
 					"criteria": [
 						{
 							"title": "Navigation and search",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX07-1)",
 							"description": "Provide an accessible, easy-to-use navigation menu with search features to help users easily find what they need.",
 							"resources": [
 								{
@@ -525,7 +508,6 @@
 						},
 						{
 							"title": "Human-readable sitemaps",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX07-2)",
 							"description": "Consider implementing an efficient and regularly updated sitemap for human users. While guidance beyond the navigation bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.",
 							"resources": [
 								{
@@ -540,7 +522,6 @@
 						},
 						{
 							"title": "New content",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX07-3)",
 							"description": "Implement lightweight and efficient means for users to learn about new content and services.",
 							"resources": [
 								{
@@ -580,7 +561,6 @@
 					"criteria": [
 						{
 							"title": "User attention",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX08-1)",
 							"description": "Ensure users can easily control how and when they receive information, with respect for their attention, focus, and mental energy.",
 							"resources": [
 								{
@@ -600,7 +580,6 @@
 						},
 						{
 							"title": "Distraction",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX08-2)",
 							"description": "Prioritize features that assist rather than distract users, not unnecessarily prolonging the time they spend engaging with your content.",
 							"resources": [
 								{
@@ -617,7 +596,6 @@
 						},
 						{
 							"title": "Engagement traps",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX08-3)",
 							"description": "Avoid using design strategies intended to artificially prolong user attention, such as infinite scroll.",
 							"resources": [
 								{
@@ -662,7 +640,6 @@
 					"criteria": [
 						{
 							"title": "Deceptive design patterns",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX09-1)",
 							"description": "Avoid deceptive design or unethical coding techniques that manipulate users into taking actions that are not in their best interest. Examples include anti-right click, copy prevention, requiring an account to purchase, etc.",
 							"resources": [
 								{
@@ -698,7 +675,6 @@
 						},
 						{
 							"title": "Advertisements",
-							"testable": "Human-testable",
 							"description": "Select, present, and label advertisements and sponsorships transparently and only implement where these provide economic and ethical value without diminishing user experience.",
 							"resources": [
 								{
@@ -719,7 +695,6 @@
 						},
 						{
 							"title": "Analytics and tracking",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX09-3)",
 							"description": "Evaluate and remove unnecessary or unused analytics and tracking, including any operating without user consent.",
 							"resources": [
 								{
@@ -737,7 +712,6 @@
 						},
 						{
 							"title": "Search Engine Optimization",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX09-4)",
 							"description": "Focus on serving user intent through non-manipulative search and social media optimization. For example, do not misuse coding practices intended to support assistive technologies. This can include content with natural redundancy, or unhelpful or low-quality material designed only to manipulate search results.",
 							"resources": [
 								{
@@ -785,7 +759,6 @@
 					"criteria": [
 						{
 							"title": "Deliverables Reusability",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX10-1)",
 							"description": "Create deliverables, including documentation, in ways that facilitate later reuse.",
 							"resources": [
 								{
@@ -805,7 +778,6 @@
 						},
 						{
 							"title": "Deliverables Documentation",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX10-2)",
 							"description": "Document functionality and technical specifications by creating easy to understand resources.",
 							"resources": [
 								{
@@ -839,7 +811,6 @@
 						},
 						{
 							"title": "Deliverables Readability",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX10-3)",
 							"description": "Developers have access to code comments and have the ability to view source to make it easier to access, understand, maintain, and use code.",
 							"resources": [
 								{
@@ -878,7 +849,6 @@
 					"criteria": [
 						{
 							"title": "Design system",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX11-1)",
 							"description": "Use a design system based on web standards and established, familiar patterns to reuse common interface components and ensure a consistent user experience.",
 							"resources": [
 								{
@@ -949,7 +919,6 @@
 					"criteria": [
 						{
 							"title": "Clear content",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX12-1)",
 							"description": "Write content using plain and inclusive language, at an appropriate reading level for your audience. Account for specific needs in relation to accessibility, native language, and internationalization.",
 							"resources": [
 								{
@@ -970,7 +939,6 @@
 						},
 						{
 							"title": "Content formatting",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX12-2)",
 							"description": "Use appropriate formatting for digital media. Provide a clear document structure with consideration of visual hierarchy. Use headings, bulleted lists, line spacing, and highlights appropriately. Provide information with appropriate formatting for the action users need to take.",
 							"resources": [
 								{
@@ -990,7 +958,6 @@
 						},
 						{
 							"title": "Search Engine Optimization (SEO)",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX12-3)",
 							"description": "Prioritize SEO from the early design stages and throughout the lifecycle to ensure content can be found and used.",
 							"resources": [
 								{
@@ -1038,7 +1005,6 @@
 					"criteria": [
 						{
 							"title": "Need for images",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX13-1)",
 							"description": "Do not include images unless they provide positive value. Consider the quantity, format, and sizes required.",
 							"resources": [
 								{
@@ -1057,7 +1023,6 @@
 						},
 						{
 							"title": "Optimized images",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX13-2)",
 							"description": "Resize, optimize, and compress each image. Provide images in appropriate sizes for different screen resolutions.",
 							"resources": [
 								{
@@ -1105,7 +1070,6 @@
 						},
 						{
 							"title": "Lazy loading",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX13-3)",
 							"description": "Include lazy loading to ensure images only load when they are required.",
 							"resources": [
 								{
@@ -1125,7 +1089,6 @@
 						},
 						{
 							"title": "Sizing and deactivation",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX13-4)",
 							"description": "Provide the option for images to be disabled or provide a low-fidelity alternative.",
 							"resources": [
 								{
@@ -1144,7 +1107,6 @@
 						},
 						{
 							"title": "Image management and use",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX13-5)",
 							"description": "Set up a media management and use policy to reduce the overall impact of images. Include criteria for media compression and file formats.",
 							"resources": [
 								{
@@ -1187,7 +1149,6 @@
 					"criteria": [
 						{
 							"title": "Need for media",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX14-1)",
 							"description": "Do not include any video or audio unless it provides positive value. Disable auto-play functionality on audio and video.",
 							"resources": [
 								{
@@ -1207,7 +1168,6 @@
 						},
 						{
 							"title": "Optimized media",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX14-2)",
 							"description": "Optimize and compress media appropriately. Provide media in compatible and appropriate formats. Avoid non-native embedded media players.",
 							"resources": [
 								{
@@ -1236,7 +1196,6 @@
 						},
 						{
 							"title": "Deferred loading",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX14-3)",
 							"description": "Load data-intensive media on the client side, including the media itself, behind a facade - a non-functional and static representational element.",
 							"resources": [
 								{
@@ -1251,7 +1210,6 @@
 						},
 						{
 							"title": "Labels and choice",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX14-4)",
 							"description": "Let the user control media, including a choice of resolutions and formats and the option to deactivate media. Inform users the length, format, and data intensity of the media.",
 							"resources": [
 								{
@@ -1271,7 +1229,6 @@
 						},
 						{
 							"title": "Management and usage",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX14-5)",
 							"description": "Establish media management and use policy to evaluate and reduce the overall impact of media, such as audio, video, or emerging media formats. Include criteria for media compression and file formats.",
 							"resources": [
 								{
@@ -1314,7 +1271,6 @@
 					"criteria": [
 						{
 							"title": "Need for animation",
-							"testable": "Human-testable",
 							"description": "Use animation only when it adds value and not for decorative elements.",
 							"resources": [
 								{
@@ -1331,7 +1287,6 @@
 						},
 						{
 							"title": "Avoiding overburdening",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX15-2)",
 							"description": "Progressively display an appropriate number of animations to avoid overburdening the user or negatively impacting device performance. This includes setting a maximum number of replays or iterations.",
 							"resources": [
 								{
@@ -1347,7 +1302,6 @@
 						},
 						{
 							"title": "Control animation",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX15-3)",
 							"description": "Allow users to start, stop, pause, or otherwise control animated content.",
 							"resources": [
 								{
@@ -1389,7 +1343,6 @@
 					"criteria": [
 						{
 							"title": "Pre-installed typefaces",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX16-1)",
 							"description": "Use pre-installed, web-safe typefaces wherever possible.",
 							"resources": [
 								{
@@ -1414,7 +1367,6 @@
 						},
 						{
 							"title": "Font optimization",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX16-2)",
 							"description": "Limit the number of fonts used. Design or subset fonts to omit unnecessary or unused variations, such as font weight or characters. Use the most performant file format available.",
 							"resources": [
 								{
@@ -1460,7 +1412,6 @@
 					"criteria": [
 						{
 							"title": "Open formats",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX17-1)",
 							"description": "Provide open alternatives, such as HTML, to proprietary file formats.",
 							"resources": [
 								{
@@ -1478,7 +1429,6 @@
 						},
 						{
 							"title": "Font stack fallbacks",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX17-2)",
 							"description": "Provide a suitable font stack as a fallback when custom typefaces are used.",
 							"resources": [
 								{
@@ -1494,7 +1444,6 @@
 						},
 						{
 							"title": "Alternative text",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX17-3)",
 							"description": "Provide meaningful alternative text for all descriptive images that are non-decorative and support the user's understanding of the content.",
 							"resources": [
 								{
@@ -1510,7 +1459,6 @@
 						},
 						{
 							"title": "Transcripts and text",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX17-4)",
 							"description": "Include transcripts and/or text versions of media files as an alternative to playing the media.",
 							"resources": [
 								{
@@ -1525,7 +1473,6 @@
 						},
 						{
 							"title": "Video alternatives",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX17-5)",
 							"description": "Include WebVTT closed captions and subtitles along with transcripts for videos. Provide localization as expected by your audience, including subtitles and sign language that meet the same standard.",
 							"resources": [
 								{
@@ -1572,7 +1519,6 @@
 					"criteria": [
 						{
 							"title": "Simple forms",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX18-1)",
 							"description": "Remove unnecessary forms and reduce form content to the minimum necessary to meet the user needs while satisfying the organization's minimum requirements. Clearly communicate why a form is necessary, the value it provides, the number of steps required for completion, and what will be done with the collected data. Also disclose if the data will be shared with third parties.",
 							"resources": [
 								{
@@ -1594,7 +1540,6 @@
 						},
 						{
 							"title": "Functional forms",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX18-2)",
 							"description": "Avoid using auto-completion or auto-suggest based on partial entry to conserve user bandwidth and reduce unnecessary server side requests. Support the use of helpful tooling, such as password managers, by not preventing autofill.",
 							"resources": [
 								{
@@ -1637,7 +1582,6 @@
 					"criteria": [
 						{
 							"title": "Need for notification",
-							"testable": "Human-testable",
 							"description": "Remove non-essential notifications. Justify and reduce email, text message (SMS), and other invasive or energy-intense notifications to what is strictly necessary. Useful notifications, such as alerts for new content should be used with care and restraint, having both the users understanding and informed consent.",
 							"resources": [
 								{
@@ -1653,7 +1597,6 @@
 						},
 						{
 							"title": "Notification settings",
-							"testable": "Human-testable",
 							"description": "Let the user adjust their own notification and messaging settings. Ensure the options to unsubscribe, log out, and close an account should be available and visible. Ensure it is possible for the user to change their contact details.",
 							"resources": [
 								{
@@ -1670,7 +1613,6 @@
 						},
 						{
 							"title": "Prompts and responses",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX19-3)",
 							"description": "Clearly explain the result of a potential input through helpful prompts and messages that explain errors, next steps, and other relevant information. This will help to manage user's expectations.",
 							"resources": [
 								{
@@ -1713,7 +1655,6 @@
 					"criteria": [
 						{
 							"title": "Printed documents",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX20-1)",
 							"description": "Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a CSS print style sheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.",
 							"resources": [
 								{
@@ -1736,7 +1677,6 @@
 						},
 						{
 							"title": "Optimized documents",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX20-2)",
 							"description": "Optimize and compress all downloadable documents. Make them available in a variety of accessible file formats.",
 							"resources": [
 								{
@@ -1753,7 +1693,6 @@
 						},
 						{
 							"title": "Optimized delivery",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX20-3)",
 							"description": "Avoid duplicating effort. If a document will be reused, generate and save it once on the server side for reuse, ideally on a cookie-free domain.",
 							"resources": [
 								{
@@ -1768,7 +1707,6 @@
 						},
 						{
 							"title": "Labels and choice",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX20-4)",
 							"description": "Display the document name, a summary, the file size, and the format prior to downloading. Allow users to choose the right format and language for their needs where possible. Avoid embedding documents directly; provide a link to download or view them within the browser instead.",
 							"resources": [
 								{
@@ -1809,7 +1747,6 @@
 					"criteria": [
 						{
 							"title": "New features and perspectives",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX21-1)",
 							"description": "Outline processes used to prototype and test new features, product ideas, and user interface components. Test with real users who represent different perspectives and user constraints.",
 							"resources": [
 								{
@@ -1849,7 +1786,6 @@
 					"criteria": [
 						{
 							"title": "Regular audit",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX22-1)",
 							"description": "Check the codebase for bugs, identify performance issues, and account for accessibility or security problems at appropriate regular intervals, such as every month or quarter.",
 							"resources": [
 								{
@@ -1884,7 +1820,6 @@
 						},
 						{
 							"title": "Non-regression tests",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX22-2)",
 							"description": "Implement non-regression tests for all critical features.",
 							"resources": [
 								{
@@ -1899,7 +1834,6 @@
 						},
 						{
 							"title": "Regression tests",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX22-3)",
 							"description": "Incorporate regression testing into each release cycle to ensure new features do not introduce bugs or otherwise conflict with existing functionality.",
 							"resources": [
 								{
@@ -1914,7 +1848,6 @@
 						},
 						{
 							"title": "Performance testing",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX22-4)",
 							"description": "Identify and resolve bottlenecks or issues in the underlying code or infrastructure which could impact sustainability and performance. Consider both simulated and real-world metrics. Monitor performance across every release cycle using appropriate tooling or through research and auditing.",
 							"resources": [
 								{
@@ -1947,7 +1880,6 @@
 						},
 						{
 							"title": "Compliant measurement",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX22-5)",
 							"description": "Collect only data required to provide a streamlined and effective user journey and comply with relevant accessibility and data protection legislation. Put policies in place to ensure strict adherence.",
 							"resources": [
 								{
@@ -2008,7 +1940,6 @@
 					"criteria": [
 						{
 							"title": "Usage changes",
-							"testable": "Human-testable",
 							"description": "Monitor user feedback, adoption, and churn rates in relation to different features and incorporate these insights into future releases.",
 							"resources": [
 								{
@@ -2028,7 +1959,6 @@
 						},
 						{
 							"title": "Usability testing",
-							"testable": "Human-testable",
 							"description": "Incorporate extensive usability testing and user interviews into product cycles and routinely measure the impact of these tests for future releases. Validate whether released features meet internal goals and audience needs.",
 							"resources": [
 								{
@@ -2093,7 +2023,6 @@
 					"criteria": [
 						{
 							"title": "Compatibility policy",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX24-1)",
 							"description": "Establish and maintain a compatibility policy which covers current and obsolete devices and software versions, listing the supported device brands, operating systems, and browsers (including versions). Update this regularly in line with new releases.",
 							"resources": [
 								{
@@ -2112,7 +2041,6 @@
 						},
 						{
 							"title": "Maintaining compatibility",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX24-2)",
 							"description": "Avoid planned obsolescence. Strive to maintain compatibility for as long as possible and communicate clearly whether an update is evolutionary, as in large updates that can significantly reduce performance, or corrective, as in smaller updates that fix bugs or improve security.",
 							"resources": [
 								{
@@ -2142,7 +2070,6 @@
 						},
 						{
 							"title": "User constraints",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX24-3)",
 							"description": "Account for potential user constraints in various scenarios to ensure compatibility. Testing should cover weak, unstable, restricted, or slow connections, Virtual Private Network (VPN) use, operating system choice or version, browser, and the device age.",
 							"resources": [
 								{
@@ -2203,7 +2130,6 @@
 						},
 						{
 							"title": "Progressive Web Applications (PWAs)",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#UX24-4)",
 							"description": "Use a PWA over a native mobile application if it meets sustainability, interoperability, and compatibility criteria.",
 							"resources": [
 								{
@@ -2254,7 +2180,6 @@
 					"criteria": [
 						{
 							"title": "Performance goals",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD01-1)",
 							"description": "Set clear goals with performance and environmental impact in mind, then meet them. These could include, the number of requests or elements that must be rendered.",
 							"resources": [
 								{
@@ -2287,7 +2212,6 @@
 						},
 						{
 							"title": "Energy intensity",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD01-2)",
 							"description": "Consider differences in the energy intensity or testable impact across each component. For example, unstyled text is less computationally intensive to render than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL or 4K video.",
 							"resources": [
 								{
@@ -2334,7 +2258,6 @@
 					"criteria": [
 						{
 							"title": "Minified code",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD02-1)",
 							"description": "Remove unnecessary white space, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to HTML, CSS, JavaScript, JSON, SVG, and other relevant file types.",
 							"resources": [
 								{
@@ -2376,7 +2299,6 @@
 					"criteria": [
 						{
 							"title": "Code splitting",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD03-1)",
 							"description": "Break down bandwidth-heavy components into smaller, modular segments that can be loaded only when required. This applies to both front-end and back-end code.",
 							"resources": [
 								{
@@ -2421,7 +2343,6 @@
 					"criteria": [
 						{
 							"title": "Remove redundancy",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD04-1)",
 							"description": "Identify and eliminate unused and dead code, commonly within CSS and JavaScript.",
 							"resources": [
 								{
@@ -2469,7 +2390,6 @@
 					"criteria": [
 						{
 							"title": "Remove or simplify",
-							"testable": "Human-testable",
 							"description": "Remove duplication and/or simplify and optimize your code for better performance, focusing on essential features so you have a cleaner, less redundant product and codebase.",
 							"resources": [
 								{
@@ -2484,7 +2404,6 @@
 						},
 						{
 							"title": "Iteration over recreation",
-							"testable": "Human-testable",
 							"description": "Improve existing solutions rather than redeveloping and redesigning products from scratch, since the latter would duplicate the coding effort and maintenance burden for developers rather than reduce the learning burden for users.",
 							"resources": [
 								{
@@ -2500,7 +2419,6 @@
 						},
 						{
 							"title": "Organize code arrangement",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD05-3)",
 							"description": "Use organization methodology and systems such as Don't Repeat Yourself (DRY) or Write Everything Twice (WET) to optimize the arrangement and output of your JavaScript and CSS.",
 							"resources": [
 								{
@@ -2548,7 +2466,6 @@
 					"criteria": [
 						{
 							"title": "Assess and reduce",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-1)",
 							"description": "Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions.",
 							"resources": [
 								{
@@ -2574,7 +2491,6 @@
 						},
 						{
 							"title": "Third-party implementation",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-2)",
 							"description": "Use click-to-load triggers based on an import on interaction pattern to prevent automatic loading of third-party content and/or services (see above). Offer suitable alternatives to third-party use, for example, a link to a contact form as an alternative to a chat widget.",
 							"resources": [
 								{
@@ -2603,7 +2519,6 @@
 						},
 						{
 							"title": "Self-hosting",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-3)",
 							"description": "Host your content and assets, such as icons and widgets, directly on your own site rather than relying on third-party services to store, deliver, or embed those features.",
 							"resources": [
 								{
@@ -2630,7 +2545,6 @@
 						},
 						{
 							"title": "Third-party preferences",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD06-4)",
 							"description": "Respect user preferences around the use of third-party products and services, similar to the implementation of cookie consent modals. Provide mechanisms to disable or refuse non-first-party features alongside explanations of their purpose unless it is possible to show these third-party features are critical for functionality.",
 							"resources": [
 								{
@@ -2680,7 +2594,6 @@
 					"criteria": [
 						{
 							"title": "Semantic code",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD07-1)",
 							"description": "Use accurate markup according to the relevant standard(s).",
 							"resources": [
 								{
@@ -2716,7 +2629,6 @@
 						},
 						{
 							"title": "Optional features",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD07-2)",
 							"description": "Remove optional HTML elements, attribute quotes, and default attributes when these do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity without compromising on performance, or ensure consistent browser rendering.",
 							"resources": [
 								{
@@ -2731,7 +2643,6 @@
 						},
 						{
 							"title": "Avoid non-standard code",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD07-3)",
 							"description": "Avoid using non-standard, deprecated, proprietary, or outdated formats and web standards. Only use such code where this is required to meet a documented customer need and if there is a justifiable benefit that cannot otherwise be met. Justifiable reasons could include compatibility with essential legacy systems and/or hardware, accessibility, or emissions reduction. Use polyfills only when necessary, and regularly audit code to see if they can be removed.",
 							"resources": [
 								{
@@ -2765,7 +2676,6 @@
 						},
 						{
 							"title": "Custom code",
-							"testable": "Human-testable",
 							"description": "Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use pre-existing elements or if you require them for the purposes of producing reusable design system components.",
 							"resources": [
 								{
@@ -2781,7 +2691,6 @@
 						},
 						{
 							"title": "Built-in over custom",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD07-5)",
 							"description": "Use web platform features and APIs over writing your own.",
 							"resources": [
 								{
@@ -2826,7 +2735,6 @@
 					"criteria": [
 						{
 							"title": "Asynchronous code",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD08-1)",
 							"description": "Defer loading of non-essential external assets or set these to load asynchronously to avoid a Flash Of Unstyled Content (FOUC).",
 							"resources": [
 								{
@@ -2843,7 +2751,6 @@
 						},
 						{
 							"title": "Optimized loading",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD08-2)",
 							"description": "Where external resources are required to be used upon the documents load, optimize loading using resource and priority hints.",
 							"resources": [
 								{
@@ -2894,7 +2801,6 @@
 					"criteria": [
 						{
 							"title": "Accessibility aids",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD09-1)",
 							"description": "Provide accessibility and usability aids, such as skip links and signposts, to help users find and navigate content.",
 							"resources": [
 								{
@@ -2935,7 +2841,6 @@
 					"criteria": [
 						{
 							"title": "Error validation",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD10-1)",
 							"description": "Identify errors through live validation and with feedback on submission.",
 							"resources": [
 								{
@@ -2952,7 +2857,6 @@
 						},
 						{
 							"title": "Label elements",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD10-2)",
 							"description": "Clearly label and identify required elements to ensure easy recognition for users using assistive technologies.",
 							"resources": [
 								{
@@ -2967,7 +2871,6 @@
 						},
 						{
 							"title": "Allow clipboard",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD10-3)",
 							"description": "Always allow the copying and pasting of content (including passwords) from external sources.",
 							"resources": [
 								{
@@ -3007,7 +2910,6 @@
 					"criteria": [
 						{
 							"title": "Required elements",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD11-1)",
 							"description": "Include the required title element, plus any beneficial optional HTML head elements.",
 							"resources": [
 								{
@@ -3022,7 +2924,6 @@
 						},
 						{
 							"title": "Meta tags",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD11-2)",
 							"description": "Include necessary meta tag references that are commonly recognized and used by user agents such as search engines. Follow recognized standards and vocabularies such as Friend of a Friend (FOAF) or RDFa.",
 							"resources": [
 								{
@@ -3036,7 +2937,6 @@
 						},
 						{
 							"title": "Structured data",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD11-3)",
 							"description": "Use microdata, structured data (e.g., Schema.org), or microformats in content where a widely used structured data format exists.",
 							"resources": [
 								{
@@ -3081,7 +2981,6 @@
 					"criteria": [
 						{
 							"title": "Media and preference queries",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD12-1)",
 							"description": "Accommodate common user preferences, such as prefers-color-scheme, with corresponding CSS media queries. Consider accounting for additional user preferences, including monochrome, prefers-contrast, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion preference queries where these will benefit your users. Use print and scripting media queries when they can improve sustainability.",
 							"resources": [
 								{
@@ -3149,7 +3048,6 @@
 					"criteria": [
 						{
 							"title": "Device-adaptable",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD13-1)",
 							"description": "Use responsive and adaptive design techniques to ensure your project supports an wide range of devices and screen sizes, including smartphones, tablets, laptops, desktop computers, smart TVs, and other emerging platforms. Implement robust fallback strategies to ensure that the digital product or service will not fail if it encounters unsupported technologies.",
 							"resources": [
 								{
@@ -3204,7 +3102,6 @@
 						},
 						{
 							"title": "Progressive enhancement",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD13-2)",
 							"description": "Use progressive enhancement to enhance overall sustainability. This starts with baseline HTML, and increases the user experience without reliance on style and interaction to ensure a robust project.",
 							"resources": [
 								{
@@ -3236,7 +3133,6 @@
 						},
 						{
 							"title": "Carbon-aware design",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD13-3)",
 							"description": "Use carbon-aware design techniques to maximize your use of carbon-free energy. This is achieved by adapting the delivery of your project to current electricity availability and user grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.",
 							"resources": [
 								{
@@ -3258,7 +3154,6 @@
 						},
 						{
 							"title": "Alternative browsing",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD13-4)",
 							"description": "Support non-visual/indirect methods of interaction. This includes assistive technologies, voice agents, scanned input (QR, etc.), reader view (browser, application, or RSS), or connected devices.",
 							"resources": [
 								{
@@ -3307,7 +3202,6 @@
 					"criteria": [
 						{
 							"title": "Sustainable JavaScript",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD14-1)",
 							"description": "Improve sustainability through accessible and performant code.",
 							"resources": [
 								{
@@ -3339,7 +3233,6 @@
 						},
 						{
 							"title": "Sustainable APIs",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD14-2)",
 							"description": "Integrate energy-relevant APIs - such as Battery Status, Compression Streams, Page Visibility, or Vibration - where these can reduce energy consumption.",
 							"resources": [
 								{
@@ -3356,7 +3249,6 @@
 						},
 						{
 							"title": "API requests",
-							"testable": "Human-testable",
 							"description": "Call client- or server-side APIs only when necessary. Equally, ensure an API is optimized to only send data that is actually required.",
 							"resources": [
 								{
@@ -3398,7 +3290,6 @@
 					"criteria": [
 						{
 							"title": "Code security",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD15-1)",
 							"description": "Check scripts and associated code for vulnerabilities, exploits, header issues, and code injection.",
 							"resources": [
 								{
@@ -3453,7 +3344,6 @@
 					"criteria": [
 						{
 							"title": "Dependency management",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD16-1)",
 							"description": "Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that are not needed.",
 							"resources": [
 								{
@@ -3473,7 +3363,6 @@
 						},
 						{
 							"title": "Dependency necessity",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD16-2)",
 							"description": "Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library.",
 							"resources": [
 								{
@@ -3508,7 +3397,6 @@
 						},
 						{
 							"title": "Dependency updates",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD16-3)",
 							"description": "Regularly check dependencies and keep them up to date.",
 							"resources": [
 								{
@@ -3550,7 +3438,6 @@
 					"criteria": [
 						{
 							"title": "Expected files",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD17-1)",
 							"description": "Include favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml files by default. Also ensure that any similar files defined in future web standards or specifications are included.",
 							"resources": [
 								{
@@ -3572,7 +3459,6 @@
 						},
 						{
 							"title": "Beneficial files",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD17-2)",
 							"description": "Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Also ensure that any similar files defined in future web standards or specifications are included.",
 							"resources": [
 								{
@@ -3624,7 +3510,6 @@
 					"criteria": [
 						{
 							"title": "Identify requirements",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1)",
 							"description": "Identify the requirements and use this as a basis to help you select the most appropriate implementation for your project. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources and have a bigger emissions impact on render, but it could have a faster build time - meaning less carbon is emitted in development.",
 							"resources": [
 								{
@@ -3639,7 +3524,6 @@
 						},
 						{
 							"title": "Optimized methodology",
-							"testable": "Human-testable",
 							"description": "Use the most effective approach for your use case. Most of the time, coding from scratch will often provide the most performant results. Where an existing solution is present and is being actively maintained, this may be better optimized than what you can reasonably produce yourself. Favor native components and file systems over WYSIWYG editors - including visual page builders - or other heavy frameworks. Be mindful of the impact of third-party solutions.",
 							"resources": [
 								{
@@ -3658,7 +3542,6 @@
 						},
 						{
 							"title": "Static over dynamic",
-							"testable": "Human-testable",
 							"description": "Deliver static in place of dynamic content wherever possible. If you choose to use a code generation tool, then favor the most efficient tool available, such as Static Site Generators (SSGs). Content delivered by a dynamic CMS will involve much more server-side processing and uses bulkier libraries.",
 							"resources": [
 								{
@@ -3685,7 +3568,6 @@
 						},
 						{
 							"title": "Extensions and plugins",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD19-4)",
 							"description": "Carefully select and review plugins, extensions, and themes to maximize interoperability, accessibility, and performance. Audit these regularly over time to ensure continued compatibility.",
 							"resources": [
 								{
@@ -3702,7 +3584,6 @@
 						},
 						{
 							"title": "Interface components",
-							"testable": "Human-testable",
 							"description": "Pay particular attention to user interface components with respect to their sustainability impact.",
 							"resources": [
 								{
@@ -3746,7 +3627,6 @@
 					"criteria": [
 						{
 							"title": "Versioning",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#WD19-1)",
 							"description": "Use the latest build of your chosen syntax language and its coupled framework.",
 							"resources": [
 								{
@@ -3762,7 +3642,6 @@
 						},
 						{
 							"title": "Language choice",
-							"testable": "Human-testable",
 							"description": "Use the most appropriate programming language for the task. Many tools and programming languages are optimized for the performance of particular tasks. Applying the most appropriate tools to the problem can justify any time or effort involved in their adoption, especially if there is a reasonable user base, provided it does not impact the wellbeing of those involved or risk becoming cost-prohibitive.",
 							"resources": [
 								{
@@ -3803,7 +3682,6 @@
 					"criteria": [
 						{
 							"title": "Database queries",
-							"testable": "Human-testable",
 							"description": "Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process.",
 							"resources": [
 								{
@@ -3855,7 +3733,6 @@
 					"criteria": [
 						{
 							"title": "Monitor Metrics",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS01-1)",
 							"description": "Monitor key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. These include energy and water usage, but also hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share, environmental impact metrics. Metrics should include Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE).",
 							"resources": [
 								{
@@ -3900,7 +3777,6 @@
 						},
 						{
 							"title": "Equipment longevity",
-							"testable": "Human-testable",
 							"description": "Maintain hardware to extend its lifespan as long as possible. Use it efficiently at an appropriate capacity, and ensuring it has the necessary certifications. New purchases should be from reliable long-lifespan suppliers.",
 							"resources": [
 								{
@@ -3946,7 +3822,6 @@
 						},
 						{
 							"title": "Carbon-free electricity",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS01-3)",
 							"description": "Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate, in publicly available, evidence-based documentation, the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, including backup generators, in calculations.",
 							"resources": [
 								{
@@ -3996,7 +3871,6 @@
 						},
 						{
 							"title": "Remaining emissions",
-							"testable": "Human-testable",
 							"description": "Balance unavoidable remaining carbon emissions with high-quality market based instruments or other evolving instruments from the voluntary carbon market, until additional carbon-free energy resources become available. The quality of market-based instruments should be verified by non-profit third-party organizations with sufficient supporting evidence.",
 							"resources": [
 								{
@@ -4027,7 +3901,6 @@
 						},
 						{
 							"title": "Domain names",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS01-5)",
 							"description": "The impact of domain names is disclosed by registries and registrars, and registrants consider and (where possible) mitigate against these environmental issues.",
 							"resources": [
 								{
@@ -4076,7 +3949,6 @@
 					"criteria": [
 						{
 							"title": "Utilize caching",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS02-1)",
 							"description": "Use server-side caching where possible to reduce processing time and repeated database lookups or API calls. Configure caching via server settings to control file-type expiration using appropriate headers, such as Expires or Cache-Control. Cache dynamic page responses where possible to serve static versions to future users. Support client-side caching of frequently used static assets to minimize repeat server requests.",
 							"resources": [
 								{
@@ -4110,7 +3982,6 @@
 						},
 						{
 							"title": "Offline access",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS02-2)",
 							"description": "Ensure resources remain available and accessible even if the user is disconnected, using methods such as JavaScript Service Workers, Web Workers, and browser local storage features.",
 							"resources": [
 								{
@@ -4163,7 +4034,6 @@
 					"criteria": [
 						{
 							"title": "Server-side compression",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS03-1)",
 							"description": "Use server-side compression to reduce file sizes before delivery. Server-side compression settings and tools can be used to compress most commonly used file types, reducing energy consumption while minimizing load times, saving bandwidth, and improving overall performance.",
 							"resources": [
 								{
@@ -4203,7 +4073,6 @@
 						},
 						{
 							"title": "Media compression",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS03-2)",
 							"description": "Use media compression tools to reduce the file size of images, videos, audio, and any other media before uploading to a server.",
 							"resources": [
 								{
@@ -4254,7 +4123,6 @@
 					"criteria": [
 						{
 							"title": "Error pages",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS04-1)",
 							"description": "Set up proper error handling and error pages to clearly inform users when something goes wrong, guide them back to useful content, and maintain a consistent, trustworthy experience.",
 							"resources": [
 								{
@@ -4276,7 +4144,6 @@
 						},
 						{
 							"title": "redirection",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS04-2)",
 							"description": "Regularly audit to check for broken and outdated links. Update these as necessary and add redirects to guide users and search engines to the correct content to ensure efficient browsing and protect SEO value. Test all redirects to ensure they function as intended and avoid impactful redirect loops. Favor the most efficient redirection system for your setup (e.g., server rules over database lookups).",
 							"resources": [
 								{
@@ -4318,7 +4185,6 @@
 					"criteria": [
 						{
 							"title": "Unused environments",
-							"testable": "Human-testable",
 							"description": "Minimize the number of active environments, including virtualized environments (such as containers). Audit codebases for unused branches and environments and remove them as appropriate.",
 							"resources": [
 								{
@@ -4358,7 +4224,6 @@
 					"criteria": [
 						{
 							"title": "Automate tasks",
-							"testable": "Human-testable",
 							"description": "Automate recurring tasks, such as deployment, testing, and compilation in alignment with continuous integration and continuous delivery best practices.",
 							"resources": [
 								{
@@ -4379,7 +4244,6 @@
 						},
 						{
 							"title": "Qualify tasks",
-							"testable": "Human-testable",
 							"description": "Run automated tasks only when necessary to reduce unnecessary resource utilisation.",
 							"resources": [
 								{
@@ -4399,7 +4263,6 @@
 						},
 						{
 							"title": "Automated scaling",
-							"testable": "Human-testable",
 							"description": "Use automated scaling to promptly adjust server capacity up or down based on demand, ensuring efficient resource allocation. Implement buffering and throttling to manage load and maintain performance without overprovisioning.",
 							"resources": [
 								{
@@ -4421,7 +4284,6 @@
 						},
 						{
 							"title": "Suspicious activity filtering",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS06-4)",
 							"description": "Restrict the activity of unwanted and unnecessary third-party crawlers, suspicious user agents, unwanted users, bots, and scrapers from accessing or downloading your content. Follow best practices, such as server access rules and security tools, while ensuring your content remains accessible to users, search engines and any helpful, welcome crawlers. Consider that scrapers may be used to inform and train large language models.",
 							"resources": [
 								{
@@ -4477,7 +4339,6 @@
 					"criteria": [
 						{
 							"title": "Refresh frequency",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS07-1)",
 							"description": "Define the revalidation and refresh frequency for the cache, local data, and page content based on user needs, balancing performance, data accuracy, and resource efficiency.",
 							"resources": [
 								{
@@ -4519,7 +4380,6 @@
 					"criteria": [
 						{
 							"title": "Data backups",
-							"testable": "Human-testable",
 							"description": "Ensure backups of system and user data are secure and incremental to minimize storage use, reduce backup time, and protect against data loss or breaches.",
 							"resources": [
 								{
@@ -4566,7 +4426,6 @@
 					"criteria": [
 						{
 							"title": "Batch processing",
-							"testable": "Human-testable",
 							"description": "Use existing and supported carbon-aware computing methods to automate batching and scheduling according to real-time electrical grid carbon intensity data or shift workloads to lower-carbon regions to optimize sustainability while maintaining performance.",
 							"resources": [
 								{
@@ -4584,7 +4443,6 @@
 						},
 						{
 							"title": "Protocols",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS09-2)",
 							"description": "Choose communication protocols appropriate to user needs and the type of data being transferred. Avoid insecure options such as HTTP and FTP, and prioritize secure, efficient alternatives such as HTTPS and SSH. Use modern protocols to take advantage of newer features, while maintaining backward compatibility for older devices.",
 							"resources": [
 								{
@@ -4603,7 +4461,6 @@
 						},
 						{
 							"title": "Event-driven architecture",
-							"testable": "Human-testable",
 							"description": "Consider using event-driven architecture and microservices when building products with state changes that do not require full page refreshes. Favor these where they offer a more energy-efficient alternative to traditional APIs based on performance, power, and processing factors. Choose the approach that reduces server workload and environmental impact.",
 							"resources": [
 								{
@@ -4626,7 +4483,6 @@
 						},
 						{
 							"title": "Client vs server",
-							"testable": "Human-testable",
 							"description": "Avoid redundant processing. When data processing is necessary, carefully compare the relative effects of client- versus server-side processing based on efficiency, performance, security, and sustainability metrics to make an informed decision.",
 							"resources": [
 								{
@@ -4670,7 +4526,6 @@
 					"criteria": [
 						{
 							"title": "Global CDNs",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS10-1)",
 							"description": "Deploy static content, assets, and other read-only resources via a Content Delivery Network (CDN) on a case-by-case basis, where judged to be beneficial. Carefully evaluate the environmental impact of any CDN service used, similar to a web hosting provider.",
 							"resources": [
 								{
@@ -4738,7 +4593,6 @@
 						},
 						{
 							"title": "Sustainability commitment",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS10-2)",
 							"description": "Select CDN providers that make commitments to sustainability and report on their progress.",
 							"resources": [
 								{
@@ -4754,7 +4608,6 @@
 						},
 						{
 							"title": "Local servers",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS10-3)",
 							"description": "When serving an exclusively local audience, consider whether a CDN is required at all. Instead, select hosting providers with servers close to your target audience.",
 							"resources": [
 								{
@@ -4789,7 +4642,6 @@
 						},
 						{
 							"title": "Inappropriate resources",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS10-4)",
 							"description": "Avoid deploying dynamic or frequently changing resources to a CDN. Browser behaviors such as cache partitioning and cross-origin resource sharing (CORS) can limit performance gains, hinder caching and interaction, and attempting to override these can introduce security or privacy risks. This does not apply to static assets or JSON files, which are well suited to CDN delivery.",
 							"resources": [
 								{
@@ -4807,7 +4659,6 @@
 						},
 						{
 							"title": "Close to the source",
-							"testable": "Human-testable",
 							"description": "Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources.",
 							"resources": [
 								{
@@ -4850,7 +4701,6 @@
 					"criteria": [
 						{
 							"title": "Lowest requirements",
-							"testable": "Human-testable",
 							"description": "Select infrastructure that meets your requirements and customer agreements without over-provisioning. Favor standalone instances over multi-zone or distributed setups when requirements allow. Provision for average loads rather than peaks to ensure efficient resource use. Use autoscaling to handle fluctuations without underutilizing infrastructure.",
 							"resources": [
 								{
@@ -4896,7 +4746,6 @@
 					"criteria": [
 						{
 							"title": "Reduce redundancy",
-							"testable": "Human-testable",
 							"description": "Regularly audit for and delete redundant, abandoned, or single-use data - often referred to as dark data - to reduce storage demand and energy use.",
 							"resources": [
 								{
@@ -4914,7 +4763,6 @@
 						},
 						{
 							"title": "Expiration dates",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS12-2)",
 							"description": "Assign expiration and/or maximum retention dates to stored data where appropriate, treating excess data as a form of technical debt. Simultaneously observe any applicable minimum data retention periods. Make data cleanup an established organization-wide routine to prevent long-term data accumulation.",
 							"resources": [
 								{
@@ -4930,7 +4778,6 @@
 						},
 						{
 							"title": "Classify and tag",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS12-3)",
 							"description": "Implement a data classification and tagging policy to improve visibility, simplify management, and enable efficient removal of outdated or unused data.",
 							"resources": [
 								{
@@ -4945,7 +4792,6 @@
 						},
 						{
 							"title": "Justify storage",
-							"testable": "Human-testable",
 							"description": "Store data only when it cannot be easily or accurately regenerated.",
 							"resources": [
 								{
@@ -4961,7 +4807,6 @@
 						},
 						{
 							"title": "Optimize logging",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#HIS12-5)",
 							"description": "Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers.",
 							"resources": [
 								{
@@ -4978,7 +4823,6 @@
 						},
 						{
 							"title": "Asset downloads",
-							"testable": "Human-testable",
 							"description": "Make large, long-term assets available for easy download in order to provide users with regular offline access without requiring persistant server resources.",
 							"resources": [
 								{
@@ -5025,7 +4869,6 @@
 					"criteria": [
 						{
 							"title": "Public documents",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-1)",
 							"description": "Develop, publish and maintain key policies, such as a code of ethics, product guidelines, sustainability statements, and/or other documents that include language specific to digital products, services, policies, and programs. Make these publicly accessible and transparently versioned formats.",
 							"resources": [
 								{
@@ -5054,7 +4897,6 @@
 						},
 						{
 							"title": "Achievements and compliance",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM01-2)",
 							"description": "Publish achievements, features, compliance, and anything beyond the scope of these guidelines within a dedicated sustainability section.",
 							"resources": [
 								{
@@ -5071,7 +4913,6 @@
 						},
 						{
 							"title": "Governance over time",
-							"testable": "Human-testable",
 							"description": "Provide evidence to demonstrate how digital sustainability policies, climate policies, and related practices are effectively implemented, monitored, and governed over time.",
 							"resources": [
 								{
@@ -5097,7 +4938,6 @@
 						},
 						{
 							"title": "Technology legislation",
-							"testable": "Human-testable",
 							"description": "Advocate for and comply with responsible legislation that supports employment rights, transparency, and accountability related to sharing economic benefits, along with policies that impact your organization in relation to emerging technologies and/or digital sustainability.",
 							"resources": [
 								{
@@ -5156,7 +4996,6 @@
 					"criteria": [
 						{
 							"title": "Advocate for sustainability",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM02-1)",
 							"description": "Assign a sustainability advocate with specific digital expertise and provide them with the resources, budget, tools, and time they need to achieve their stated goals. In some organizations, expanding this into a climate working group comprising motivated individuals can add further benefits.",
 							"resources": [
 								{
@@ -5200,7 +5039,6 @@
 					"criteria": [
 						{
 							"title": "Inform and aware",
-							"testable": "Human-testable",
 							"description": "Produce, provide, and/or facilitate the delivery of onboarding materials and workshops to everyone connected to your project. This includes team members, contributors, colleagues, and organizational decision-makers - both within and external to the organization - to properly educate all regarding general and digital climate literacy, as well as your own sustainable technology policies.",
 							"resources": [
 								{
@@ -5241,7 +5079,6 @@
 						},
 						{
 							"title": "Routine training",
-							"testable": "Human-testable",
 							"description": "Provide active and routine training where possible to develop, establish, and refresh skills relating to sustainability. This can be delivered as in-house training, courses, workshops, events, webinars, meetups, or other ongoing or on-demand methods that support your team in achieving sustainability objectives.",
 							"resources": [
 								{
@@ -5259,7 +5096,6 @@
 						},
 						{
 							"title": "Active participation",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM03-3)",
 							"description": "Encourage participants to reduce their environmental impact. Share climate and sustainable initiatives and ideas. Provide resources on sustainable design, best practices, and concepts to assist them.",
 							"resources": [
 								{
@@ -5279,7 +5115,6 @@
 						},
 						{
 							"title": "Training materials",
-							"testable": "Human-testable",
 							"description": "Create and/or deliver dedicated training manuals, workshops, and materials to outline the sustainability policies and practices adopted and how to implement them. Manage and maintain these materials over time, adapting them as new policies and best practices arise.",
 							"resources": [
 								{
@@ -5298,7 +5133,6 @@
 						},
 						{
 							"title": "Incentivize progress",
-							"testable": "Human-testable",
 							"description": "Incentivize leadership, teams, and individuals to make progress toward the goals outlined in their training. Examples include dedicating time for sustainability-related activities, recognizing completion, and other benefits.",
 							"resources": [
 								{
@@ -5344,7 +5178,6 @@
 					"criteria": [
 						{
 							"title": "Communication of impact",
-							"testable": "Human-testable",
 							"description": "Clearly communicate the environmental impact of different user choices and allow users to configure settings based on the information provided.",
 							"resources": [
 								{
@@ -5387,7 +5220,6 @@
 					"criteria": [
 						{
 							"title": "Life-cycle assessment",
-							"testable": "Human-testable",
 							"description": "Conduct a life-cycle analysis/assessment (LCA) to define sustainability-related functional unit impacts throughout a project's lifetime.",
 							"resources": [
 								{
@@ -5425,7 +5257,6 @@
 						},
 						{
 							"title": "Competitor impact",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM05-2)",
 							"description": "Calculate the environmental impact of your project compared to that of market alternatives to inform decision-making targets. Establish the need for your product by comparing the value offered by your project compared to these same alternatives.",
 							"resources": [
 								{
@@ -5447,7 +5278,6 @@
 						},
 						{
 							"title": "Tooling impact",
-							"testable": "Human-testable",
 							"description": "Include the impact or estimated impact of any tooling or third-party solutions used at any stage in your pipeline. While not created by you, the emissions generated in production, maintenance, and use are also integral to your overall solution.",
 							"resources": [
 								{
@@ -5491,7 +5321,6 @@
 					"criteria": [
 						{
 							"title": "Sustainability goals",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM06-1)",
 							"description": "Define and publish a clear set of sustainability goals. Publicly communicate how these goals can be met, including which performance metrics can be measured to help the organization and its various affected parties act more sustainably.",
 							"resources": [
 								{
@@ -5543,7 +5372,6 @@
 					"criteria": [
 						{
 							"title": "Obtaining certifications",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM07-1)",
 							"description": "Obtain one or more sustainability certifications and incorporate operational policies and practices in alignment with their guidance.",
 							"resources": [
 								{
@@ -5560,7 +5388,6 @@
 						},
 						{
 							"title": "Maintaining certifications",
-							"testable": "Human-testable",
 							"description": "Maintains sustainability certifications through continuing to meet their criteria and evolving policies and practices over time.",
 							"resources": [
 								{
@@ -5599,7 +5426,6 @@
 					"criteria": [
 						{
 							"title": "Policies and practices",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM08-1)",
 							"description": "Create and publish policies and practices to disclose the social and environmental impacts of its products, programs, and services in line with existing reporting standards such as GRI, SASB, etc.",
 							"resources": [
 								{
@@ -5618,7 +5444,6 @@
 						},
 						{
 							"title": "Impact reports",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM08-2)",
 							"description": "Produce a publicly available impact report outlining progress compared to previous reports on social and environmental goals at least once per year.",
 							"resources": [
 								{
@@ -5635,7 +5460,6 @@
 						},
 						{
 							"title": "Standards and policies",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM08-3)",
 							"description": "Publicly and transparently demonstrate commitment over time to following and adopting existing and/or emerging environmental standards and legislative policy that promotes mandatory emissions disclosures and reporting. ",
 							"resources": [
 								{
@@ -5655,7 +5479,6 @@
 						},
 						{
 							"title": "Impact reduction",
-							"testable": "Human-testable",
 							"description": "Clearly identify how environmental impact is being reduced, with careful avoidance of double accounting, greenwashing, data exclusion, or other misleading or manipulative techniques.",
 							"resources": [
 								{
@@ -5699,7 +5522,6 @@
 					"criteria": [
 						{
 							"title": "Theory of change",
-							"testable": "Human-testable",
 							"description": "Complete and operationalize a theory of change process with requisite documentation to identify the impact the organization aspires to achieve, how it will generate revenue, how it will create shared or added value from these activities, and how it will measure results based on desired outcomes. In the case of projects already underway, how these are generating revenue and actively tracking and measuring progress against desired outcomes.",
 							"resources": [
 								{
@@ -5746,7 +5568,6 @@
 					"criteria": [
 						{
 							"title": "Management and maintenance",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM10-1)",
 							"description": "Produce and maintain documentation to outline how the organization approaches product management and maintenance.",
 							"resources": [
 								{
@@ -5763,7 +5584,6 @@
 						},
 						{
 							"title": "Planning strategy",
-							"testable": "Human-testable",
 							"description": "Establish maintenance and security plans for all digital products and services.",
 							"resources": [
 								{
@@ -5782,7 +5602,6 @@
 						},
 						{
 							"title": "Resourcing products",
-							"testable": "Human-testable",
 							"description": "Ensure that products, prototypes, testing, and supporting processes are sufficiently resourced over time - including staffing and budgeting - so that teams can maintain capacity, address technical debt, refactor code, introduce new features, support long-term care and maintenance, and avoid project abandonment for customers, users, and all affected parties.",
 							"resources": [
 								{
@@ -5812,7 +5631,6 @@
 						},
 						{
 							"title": "Resource measurement",
-							"testable": "Human-testable",
 							"description": "Incorporate carbon and resource measurement into maintenance programs and show measurable improvement over time.",
 							"resources": [
 								{
@@ -5831,7 +5649,6 @@
 						},
 						{
 							"title": "Failure indicators",
-							"testable": "Human-testable",
 							"description": "Identify and document Key Failure Indicators (KFIs) and implement resolutions to prevent negative sustainability impacts.",
 							"resources": [
 								{
@@ -5870,7 +5687,6 @@
 					"criteria": [
 						{
 							"title": "Continuous improvement",
-							"testable": "Human-testable",
 							"description": "Establish policies and practices to enable continuous improvement and resource practices appropriately to support these efforts over time.",
 							"resources": [
 								{
@@ -5899,7 +5715,6 @@
 						},
 						{
 							"title": "Retrospectives conducted",
-							"testable": "Human-testable",
 							"description": "Review deliverables and update frequency to ensure project teams have enough time to conduct user research, identify technical debt, and produce high-quality output as well as share what they learned.",
 							"resources": [
 								{
@@ -5916,7 +5731,6 @@
 						},
 						{
 							"title": "Iterative consideration",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM11-3)",
 							"description": "Display a track record of continuous improvement (iteration) processes to analyze the digital product or service. Simultaneously address any potential consequences of ongoing experimentation, such as technical debt, product performance, and emissions. Analytics are limited to strictly necessary features that aid decision-making, encouraging user feedback, and comparing performance against business goals and user needs.",
 							"resources": [
 								{
@@ -5938,7 +5752,6 @@
 						},
 						{
 							"title": "Functionality decisions",
-							"testable": "Human-testable",
 							"description": "Justify and prioritize the retention of existing features, the creation of new functionality, and the decommissioning or elimination of unused functionality or low-traffic content throughout the product's life cycle on a case-by-case basis.",
 							"resources": [
 								{
@@ -5960,7 +5773,6 @@
 						},
 						{
 							"title": "Security updates",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM11-5)",
 							"description": "Provide corrective security and policy updates during the product or service life cycle. These should be distinguished from more extensive evolutionary updates.",
 							"resources": [
 								{
@@ -5980,7 +5792,6 @@
 						},
 						{
 							"title": "Skills and maintenance",
-							"testable": "Human-testable",
 							"description": "Develop sustainable product and data strategies using appropriate training techniques. These should help your team build capacity and learn new skills to manage and maintain products and services over time.",
 							"resources": [
 								{
@@ -6030,7 +5841,6 @@
 					"criteria": [
 						{
 							"title": "Feature changes",
-							"testable": "Human-testable",
 							"description": "When a feature is added, updated, or removed to improve user experience, clear documentation of the changes is provided in a well structured, semantically versioned document.",
 							"resources": [
 								{
@@ -6073,7 +5883,6 @@
 					"criteria": [
 						{
 							"title": "Sustainable Development Goals",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM13-1)",
 							"description": "Identify where the product or service aligns with one of the UN (SDGs) and its appropriate targets within a sustainability statement.",
 							"resources": [
 								{
@@ -6088,7 +5897,6 @@
 						},
 						{
 							"title": "Creation evaluation",
-							"testable": "Human-testable",
 							"description": "Determine that the product or service is necessary based upon desirability, feasibility, and viability factors.",
 							"resources": [
 								{
@@ -6104,7 +5912,6 @@
 						},
 						{
 							"title": "Obstacle consideration",
-							"testable": "Human-testable",
 							"description": "Remove or alleviate any obstacles to using a product or service, such as accessibility, equality, technical, or territorial.",
 							"resources": [
 								{
@@ -6145,7 +5952,6 @@
 					"criteria": [
 						{
 							"title": "Vetting potential partners",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM14-1)",
 							"description": "Create specific policies to vet potential partners along the supply chain based on sustainability principles.",
 							"resources": [
 								{
@@ -6169,7 +5975,6 @@
 						},
 						{
 							"title": "Collaborative measurement",
-							"testable": "Human-testable",
 							"description": "Partner with suppliers to create, track and measure impact on issues that impact affected parties.",
 							"resources": [
 								{
@@ -6190,7 +5995,6 @@
 						},
 						{
 							"title": "Informative partner promotion",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM14-3)",
 							"description": "Promote and disclose partnerships in a publicly available place, along with information on how the partnership creates a collective impact.",
 							"resources": [
 								{
@@ -6231,7 +6035,6 @@
 					"criteria": [
 						{
 							"title": "Living wage",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM15-1)",
 							"description": "Publicly commit to paying employees, contractors, and other affected parties a living wage.",
 							"resources": [
 								{
@@ -6250,7 +6053,6 @@
 						},
 						{
 							"title": "Incentivisation",
-							"testable": "Human-testable",
 							"description": "Have policies and practices to incentivize affected parties, such as workers and contractors, to meet impact goals.",
 							"resources": [
 								{
@@ -6266,7 +6068,6 @@
 						},
 						{
 							"title": "Employee benefits",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM15-3)",
 							"description": "Provide benefits to employees in accordance with resources, including, where relevant, healthcare, retirement planning, flex time, profit sharing, and more.",
 							"resources": [
 								{
@@ -6307,7 +6108,6 @@
 					"criteria": [
 						{
 							"title": "Decision-making",
-							"testable": "Human-testable",
 							"description": "Assign all affected parties, from users to project managers, an equitable role in the decision-making process. Ensure all internal involved parties have the necessary power and autonomy to make key decisions on the organization's behalf.",
 							"resources": [
 								{
@@ -6353,7 +6153,6 @@
 					"criteria": [
 						{
 							"title": "JEDI practices",
-							"testable": "Human-testable",
 							"description": "Document commitments to JEDI practices with clear policies on how marginalized or otherwise underserved communities are prioritized.",
 							"resources": [
 								{
@@ -6373,7 +6172,6 @@
 						},
 						{
 							"title": "Accessibility policy",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM17-2)",
 							"description": "Establish a publicly displayed accessibility policy and demonstrate this via accessible digital products or services.",
 							"resources": [
 								{
@@ -6393,7 +6191,6 @@
 						},
 						{
 							"title": "JEDI training",
-							"testable": "Human-testable",
 							"description": "Provide JEDI-related training materials and schedule regular workshops related to how this topic manifests itself in digital products and services, covering topics such as algorithmic bias, digital divide, employment, mis- and disinformation.",
 							"resources": [
 								{
@@ -6411,7 +6208,6 @@
 						},
 						{
 							"title": "JEDI improvements",
-							"testable": "Human-testable",
 							"description": "Show measurable improvement over time across hiring, leadership, and operations.",
 							"resources": [
 								{
@@ -6455,7 +6251,6 @@
 					"criteria": [
 						{
 							"title": "Data practices",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM18-1)",
 							"description": "Maintain a publicly accessible privacy policy, terms and conditions, and any other documents as required by law in the jurisdictions in which the product or service operates. Adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. Provide documents in accessible formats and use clear, user-friendly language to ensure comprehension by all users. Avoid unnecessary jargon, technical language, and legalese. Support emerging legislation and implement best practices related to data privacy, sustainability, and responsible data management.",
 							"resources": [
 								{
@@ -6471,7 +6266,6 @@
 						},
 						{
 							"title": "Data ownership",
-							"testable": "Human-testable",
 							"description": "Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a user's \"right to be forgotten\" or opt-out will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.",
 							"resources": [
 								{
@@ -6525,7 +6319,6 @@
 					"criteria": [
 						{
 							"title": "Outdated content",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM19-1)",
 							"description": "Archive and delete outdated or otherwise expired product content and data via automated expiration dates and scheduled product audits. Publish the archiving schedule, ensuring a lightweight version of the old searchable content is maintained for those that may require it.",
 							"resources": [
 								{
@@ -6548,7 +6341,6 @@
 						},
 						{
 							"title": "Data controllers",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM19-2)",
 							"description": "Allow users to control, manage, and delete their data, subscriptions, and accounts.",
 							"resources": [
 								{
@@ -6599,7 +6391,6 @@
 					"criteria": [
 						{
 							"title": "Emerging technologies",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM20-1)",
 							"description": "Establish public-facing policies for emerging technologies. Ensure all such technologies and their datasets are ethically sourced, screened, validated, and implemented in a non-discriminatory, responsible manner.",
 							"resources": [
 								{
@@ -6618,7 +6409,6 @@
 						},
 						{
 							"title": "Disruptive technology",
-							"testable": "Human-testable",
 							"description": "Show how workers are trained as new technologies and practices potentially disrupt an organizations business model.",
 							"resources": [
 								{
@@ -6639,7 +6429,6 @@
 						},
 						{
 							"title": "Environmental responsibilities",
-							"testable": "Human-testable",
 							"description": "Audit and account for any environmental considerations that may derive from the use of emerging technologies wishing to be promoted or implemented. This should include third-party choices, the expense in terms of waste or emissions of using the technology to create a desired result, and consequences that may arise from its deployment.",
 							"resources": [
 								{
@@ -6719,7 +6508,6 @@
 						},
 						{
 							"title": "Automated tooling",
-							"testable": "Human-testable",
 							"description": "Ensure all automated tooling, scrapers, spiders, bots, artificial intelligence, and other forms of machine-assisted data gathering abides by requests to opt out at the host, server, or website level. Providers must declare themselves as non-human within the user-agent/HTTP header. Providers must also publish impact reports relating to their gathering activities.",
 							"resources": [
 								{
@@ -6743,7 +6531,6 @@
 						},
 						{
 							"title": "Quantum resilience",
-							"testable": "Human-testable",
 							"description": "Do not roll out post-quantum encryption for high-traffic services that do not need resilience against harvest now, decrypt later attacks, where attackers steal encrypted data, anticipating that future quantum computers will be powerful enough to break the encryption and make the data readable at a later date.",
 							"resources": [
 								{
@@ -6783,7 +6570,6 @@
 					"criteria": [
 						{
 							"title": "Fuel divestment",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM21-1)",
 							"description": "Divest from fossil fuels and move banking, sponsorship, and other affiliations to more responsible partners.",
 							"resources": [
 								{
@@ -6801,7 +6587,6 @@
 						},
 						{
 							"title": "Responsible finance",
-							"testable": "Human-testable",
 							"description": "Engage in flexible financing and responsible budgeting to accommodate long-term care and maintenance.",
 							"resources": [
 								{
@@ -6849,7 +6634,6 @@
 					"criteria": [
 						{
 							"title": "Philanthropy policy",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM22-1)",
 							"description": "Establish a clear corporate giving policy and create philanthropic partnerships with strategically aligned organizations.",
 							"resources": [
 								{
@@ -6869,7 +6653,6 @@
 						},
 						{
 							"title": "Voluntary work",
-							"testable": "Human-testable",
 							"description": "Engage in free or volunteer projects to help teams learn new tools and tactics, while also helping charities and non-profit organizations to build capacity.",
 							"resources": [
 								{
@@ -6912,7 +6695,6 @@
 					"criteria": [
 						{
 							"title": "End-of-life care",
-							"testable": "Human-testable",
 							"description": "Provide clear, documented end-of-life guidelines that include data disposal, archiving, file deletion, and other relevant guidance.",
 							"resources": [
 								{
@@ -6959,7 +6741,6 @@
 					"criteria": [
 						{
 							"title": "E-waste management",
-							"testable": "Human-testable",
 							"description": "Responsibly recycle or upcycle unwanted waste. Materials should be recovered and reused, where possible, or otherwise disposed of appropriately.",
 							"resources": [
 								{
@@ -6984,7 +6765,6 @@
 						},
 						{
 							"title": "E-waste policy",
-							"testable": "Human-testable",
 							"description": "Establish specific policies around e-waste recycling and repair owned technology products whenever possible.",
 							"resources": [
 								{
@@ -7005,7 +6785,6 @@
 						},
 						{
 							"title": "Recycling and repairing",
-							"testable": "Human-testable",
 							"description": "Form relationships with local partners for e-waste recycling and repair.",
 							"resources": [
 								{
@@ -7028,7 +6807,6 @@
 						},
 						{
 							"title": "Refurbishment strategy",
-							"testable": "Human-testable",
 							"description": "Buy refurbished equipment whenever possible.",
 							"resources": [
 								{
@@ -7047,7 +6825,6 @@
 						},
 						{
 							"title": "Right to repair",
-							"testable": "Human-testable",
 							"description": "Allow consumers to repair the consumables they purchase to the best of their ability, offering replacement components if possible at cost, and provide clear instructions to help resolve faults that occur.",
 							"resources": [
 								{
@@ -7090,7 +6867,6 @@
 					"criteria": [
 						{
 							"title": "Environmental budget",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM25-1)",
 							"description": "Define and document clear sustainability budget criteria that covers impact from creation to consumption. Communicate this to affected parties.",
 							"resources": [
 								{
@@ -7107,7 +6883,6 @@
 						},
 						{
 							"title": "Performance budget",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM25-2)",
 							"description": "Use a performance budget to set a target maximum size of your digital product or service to monitor and reduce impact of data transfer, file type size, and more.",
 							"resources": [
 								{
@@ -7134,7 +6909,6 @@
 						},
 						{
 							"title": "Human budget",
-							"testable": "Human-testable",
 							"description": "Define KPIs around engineering hours, development time, or sprints while keeping the health and well-being of your workers paramount. Sustainably optimize workflows to allow all tasks to be performed with care.",
 							"resources": [
 								{
@@ -7149,7 +6923,6 @@
 						},
 						{
 							"title": "Measurable improvements",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM25-4)",
 							"description": "Establish a baseline and measurement criteria to track improvements over time. Improvement claims must be evidenced and verifiable.",
 							"resources": [
 								{
@@ -7200,7 +6973,6 @@
 					"criteria": [
 						{
 							"title": "Open source policy",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM26-1)",
 							"description": "Establish a clear open source policy that outlines how open-source tools are used and any practices used to support open-source development.",
 							"resources": [
 								{
@@ -7219,7 +6991,6 @@
 						},
 						{
 							"title": "Collaboration",
-							"testable": "Human-testable",
 							"description": "Show a track record of collaboration and building communities around open-source principles.",
 							"resources": [
 								{
@@ -7242,7 +7013,6 @@
 						},
 						{
 							"title": "Contribution",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM26-3)",
 							"description": "Contribute regularly in terms of code, human-time, and/or financially, to open-source community-based projects.",
 							"resources": [
 								{
@@ -7291,7 +7061,6 @@
 					"criteria": [
 						{
 							"title": "Plan of action",
-							"testable": "Human-testable",
 							"description": "Create, regularly review, and occasionally test a plan of action to determine readiness in case of an incident and establish procedures to quickly recover from any incident.",
 							"resources": [
 								{
@@ -7312,7 +7081,6 @@
 						},
 						{
 							"title": "Audience awareness",
-							"testable": "[Machine-testable](https://w3c.github.io/sustainableweb-wsg/star.html#BSPM27-2)",
 							"description": "Maintain regular and transparent communication with the audience regarding issues that may affect service delivery or user data.",
 							"resources": [
 								{
