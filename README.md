@@ -53,14 +53,19 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td>06 December 2025</td>
 		</tr>
 		<tr>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/benefits.html">Benefits for WSG</a></td>
+			<td>W3C Editors Draft</td>
+			<td>06 December 2025</td>
+		</tr>
+		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/resources.html">Resources for WSG</a></td>
 			<td>W3C Editors Draft</td>
-			<td>29 November 2025</td>
+			<td>06 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws and Policies</a></td>
 			<td>W3C Editors Draft</td>
-			<td>12 September 2025</td>
+			<td>06 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/summary.html">Summary of Web Sustainability</a></td>
@@ -70,7 +75,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
 			<td>W3C Editors Draft</td>
-			<td>29 November 2025</td>
+			<td>06 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">Quick Reference for WSG</a> and <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">Checklist</a> (PDF)</td>
