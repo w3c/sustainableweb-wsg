@@ -1199,7 +1199,7 @@
 						},
 						{
 							"title": "Font optimization",
-							"description": "Limit the number and complexity of fonts downloaded. Subset fonts to omit unnecessary or unused variations, such as font weight or characters, only where static content with a confirmed character set will apply, ensuring dynamically changing content or input defaults to a non-subsetted typeface that supports international user needs. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.",
+							"description": "Limit the number and complexity of fonts downloaded. Design or subset fonts to omit unnecessary or unused stylistic variations, such as font weight or italics. Additionally design or subset to omit unused characters only where you and not the user or a third party control the input and output and can be sure only the confirmed Unicode range or character set will be used. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.",
 							"resources": [
 								{
 									"A Guide to Understanding What Makes a Typeface Accessible": "https://medium.com/the-readability-group/a-guide-to-understanding-what-makes-a-typeface-accessible-and-how-to-make-informed-decisions-9e5c0b9040a0",
