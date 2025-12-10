@@ -3,22 +3,30 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: SEO Findability</title>
+		<title>WSG Test: Stop Animation</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#provide-clear-inclusive-content-with-purpose">
-		<meta name="flags" content="">
-		<meta name="assert" content="Test Checks: Produce a List of SEO Considerations To Improve Your Findability">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#ensure-animation-is-proportionate-and-easy-to-control">
+		<meta name="flags" content="invalid">
+		<meta name="assert" content="Test Checks: Include a Mechanism To Pause or Stop Page Animation">
 		<style>
-
+			div {
+			width: 100px;
+			height: 100px;
+			background: red;
+			position: relative;
+			animation: mymove 5s infinite;
+			}
+			@keyframes mymove {
+			from {left: 0px;}
+			to {left: 200px;}
+			}
 		</style>
 		<script>
 
 		</script>
 	</head>
 	<body>
-		<footer>
-			<p class="social">You can find us on: <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Mastodon</a></p>
-		</footer>
-		<p>Test passes if methods to increase findability can be detected.</p>
+		<div></div>
+		<p>Test passes if it recognizes and warns that this animation cannot be stopped or paused.</p>
 	</body>
 </html>

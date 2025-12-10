@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: IA Interaction Cost</title>
+		<title>WSG Test: Navigation Menu</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys">
-		<meta name="flags" content="interaction">
-		<meta name="assert" content="Test Checks: Measure Interaction Cost To Reach Every Page in the Information Architecture">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-wayfinding-are-well-structured">
+		<meta name="flags" content="">
+		<meta name="assert" content="Test Checks: Making Your Navigation Menu Accessible and Well-Structured">
 		<style>
 
 		</style>
@@ -17,10 +17,15 @@
 	</head>
 	<body>
 		<header>
-			<p><a href="#">Home</a> > <a href="#">News</a> > <a href="#">2024</a> > <a href="#">June</a> > <a href="#">Article about Fish</a></p>
+			<nav>
+				<ul>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
 		</header>
-		<h1>Article About Fish</h1>
-		<p>Fish live underwater!</p>
-		<p>Test passes if the information architecture contains shortcuts, user flow is well-established, and choices are not overly complex.</p>
+		<p>Test passes if the navigation menu is well structured and accessible.</p>
 	</body>
 </html>

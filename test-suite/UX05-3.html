@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Obscuring Material</title>
+		<title>WSG Test: News Updates</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys">
-		<meta name="flags" content="interaction">
-		<meta name="assert" content="Test Checks: Check for Content Obscuring Materials That Occur Upon PageLoad">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-wayfinding-are-well-structured">
+		<meta name="flags" content="asset">
+		<meta name="assert" content="Test Checks: Provide a Method of Keeping Up-to-Date With Product or Service Updates">
+		<link rel="alternate" type="application/rss+xml" href="assets/feed.xml">
 		<style>
 
 		</style>
@@ -16,13 +17,19 @@
 		</script>
 	</head>
 	<body>
-		<h1>Welcome to this page about the zoo</h1>
-		<p>At our zoo, we have lots of animals including lions, tigers, penguins, and even a giraffe! They all have their own habitat where they live out their days and choose to spend their time and we feed them regularly. If you want to come and visit them you are more than welcome to. They like seeing new faces, especially friendly ones!</p>
-		<p>We have different tickets available including family passes which are discounted to enable larger groups to be able to join us, please choose a date that is convenient for you though remember that the summer months tend to be the busiest.</p>
-		<form>
-			<input type="button" value="Purchase Ticket (Single)" onmousedown="alert('Added to Basket!')"><br>
-			<input type="button" value="Purchase Ticket (Family)" onmousedown="alert('Added to Basket!')">
-		</form>
-		<p>Test passes if no content is obscured or clipped without a scrollbar, all links and buttons function and all disclosing materials function upon user-request and can be removed.</p>
+		<h1>News Page</h1>
+		<a href="#">
+			<h2>News Item</h2>
+			<p>This is some content that will be written about.</p>
+		</a>
+		<a href="#">
+			<h2>News Item</h2>
+			<p>This is some content that will be written about.</p>
+		</a>
+		<a href="#">
+			<h2>News Item</h2>
+			<p>This is some content that will be written about.</p>
+		</a>
+		<p>Test passes if a method of keeping up-to-date is provided.</p>
 	</body>
 </html>

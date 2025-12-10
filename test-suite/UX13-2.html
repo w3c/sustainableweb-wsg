@@ -3,23 +3,26 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Image Resolutions</title>
+		<title>WSG Test: WOFF Typefaces</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#optimize-images-for-sustainability">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#use-optimized-and-appropriate-web-typography">
 		<meta name="flags" content="asset">
-		<meta name="assert" content="Test Checks: Optimizing All Image Assets for a Variety of Different Resolutions">
+		<meta name="assert" content="Test Checks: Provide Only WOFF Custom Typefaces Within a Set Limit">
+		<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/Roboto.woff2">
 		<style>
-
+			@font-face {
+				font-family:"Roboto";
+				src:url("assets/Roboto.woff2") format("woff2");
+				font-style:normal;
+				font-weight:400;
+			}
+			body { font-family: 'Roboto', sans-serif; }
 		</style>
 		<script>
 
 		</script>
 	</head>
 	<body>
-		<picture>
-			<source srcset="assets/city2.jpg" media="(min-width: 450px)" />
-			<img src="assets/city.jpg" alt="City of Buildings" />
-		</picture>
-		<p>Test passes if a responsive image is displayed on the screen.</p>
+		<p>Test passes if less than five, preloaded, WOFF typefaces exist within the structure.</p>
 	</body>
 </html>

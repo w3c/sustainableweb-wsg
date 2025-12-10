@@ -3,29 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Navigation Menu</title>
+		<title>WSG Test: Deceptive Design</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-wayfinding-are-well-structured">
-		<meta name="flags" content="">
-		<meta name="assert" content="Test Checks: Making Your Navigation Menu Accessible and Well-Structured">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive">
+		<meta name="flags" content="invalid">
+		<meta name="assert" content="Test Checks: Eliminate Deceptive Design Patterns or Manipulative Techniques">
 		<style>
-
+			body { user-select: none; }
 		</style>
 		<script>
-
+			document.addEventListener('contextmenu', event => {
+				event.preventDefault();
+			});
 		</script>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">About</a></li>
-				</ul>
-			</nav>
-		</header>
-		<p>Test passes if the navigation menu is well structured and accessible.</p>
+		<p>Test passes if anti-patterns are identified and flagged for removal.</p>
 	</body>
 </html>

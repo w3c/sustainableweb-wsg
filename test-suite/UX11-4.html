@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Auto-Playing Animation</title>
+		<title>WSG Test: Optimize Assets</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
 		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability">
-		<meta name="flags" content="invalid">
-		<meta name="assert" content="Test Checks: Remove Any Functionality That May Trigger Auto-Playing Animation">
+		<meta name="flags" content="asset">
+		<meta name="assert" content="Test Checks: Optimizing All Media Assets for a Variety of Different Resolutions">
 		<style>
 
 		</style>
@@ -16,10 +16,11 @@
 		</script>
 	</head>
 	<body>
-		<video controls autoplay muted>
+		<video controls>
 			<source src="assets/flower.webm" type="video/webm">
 			Your browser does not support the video tag.
 		</video>
-		<p>Test passes if the auto-playing animation is detected and flagged.</p>
+		<p>Don't want to keep streaming? <a download="flower.webm" class="download" href="assets/flower.webm">Download the Video</a> (WebM) instead.</p>
+		<p>Test passes if alternative methods of consumption are provided.</p>
 	</body>
 </html>

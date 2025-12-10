@@ -3,29 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Interaction Permissions</title>
+		<title>WSG Test: Component Reusability</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#design-to-assist-and-not-to-distract">
-		<meta name="flags" content="javascript">
-		<meta name="assert" content="Test Checks: Request Permission for Invasive Access To Interact With Content">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#make-deliverables-understandable-and-reusable">
+		<meta name="flags" content="asset">
+		<meta name="assert" content="Test Checks: Provide Deliverables in Reusable, Self-Isolated Components">
 		<style>
-			
+			@import url("assets/reboot.css");
 		</style>
 		<script>
-			function getLocation() {
-				if (navigator.geolocation) {
-					navigator.geolocation.getCurrentPosition(showPosition);
-				} else { 
-					document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
-				}
-			}
-			function showPosition(position) {
-				document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
-			}
+
 		</script>
 	</head>
-	<body onload="getLocation()">
-		<p id="demo"></p>
-		<p>Test passes if permissions are requested and if so, can be blocked or a user-invoked alternative is provided.</p>
+	<body>
+		<p>Test passes if a component of a larger library or framework is imported.</p>
 	</body>
 </html>

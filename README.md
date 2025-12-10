@@ -32,7 +32,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Editors Draft</td>
-			<td>06 December 2025</td>
+			<td>09 December 2025</td>
 		</tr>
 	</tbody>
 </table>
@@ -50,52 +50,52 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
 			<td>W3C Editors Draft</td>
-			<td>06 December 2025</td>
+			<td>09 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/benefits.html">Benefits for WSG</a></td>
 			<td>W3C Editors Draft</td>
-			<td>06 December 2025</td>
+			<td>09 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/resources.html">Resources for WSG</a></td>
 			<td>W3C Editors Draft</td>
-			<td>06 December 2025</td>
+			<td>09 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws and Policies</a></td>
 			<td>W3C Editors Draft</td>
-			<td>06 December 2025</td>
+			<td>09 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/summary.html">Summary of Web Sustainability</a></td>
 			<td>W3C Editors Draft</td>
-			<td>12 September 2025</td>
+			<td>09 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
 			<td>W3C Editors Draft</td>
-			<td>06 December 2025</td>
+			<td>09 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">Quick Reference for WSG</a> and <a href="https://w3c.github.io/sustainableweb-wsg/checklist.pdf">Checklist</a> (PDF)</td>
 			<td>W3C Editors Draft</td>
-			<td>06 December 2025</td>
+			<td>09 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
 			<td>JSON API</td>
-			<td>06 December 2025</td>
+			<td>09 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
 			<td>JSON API</td>
-			<td>06 December 2025</td>
+			<td>09 December 2025</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>
 			<td>Test Suite</td>
-			<td>29 November 2025</td>
+			<td>09 December 2025</td>
 		</tr>
 	</tbody>
 </table>
@@ -154,7 +154,7 @@ These documents are reachable via GitHub pages and can be queried using JavaScri
 
 **WSG** (*guidelines.json*)
 ```js
-category[1].guidelines[0].guideline = "Display any factors that have a negative impact on your project"
+category[1].guidelines[0].guideline = "Examine and disclose any external factors interacting with your project"
 ```
 **STAR** (*star.json*)
 ```js
