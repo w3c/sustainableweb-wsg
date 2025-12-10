@@ -2270,12 +2270,12 @@
 		<section> <!-- Hosting, Infrastructure, and Systems -->
 			<h2>Hosting, Infrastructure, and Systems</h2>
 			<p><strong>Even data has a home. Whether you are developing tools, processing data, maintaining online systems, operating websites or something else - conscious choices in this area can have an enormous impact.</strong></p>
-			<p>Sustainable or green web hosting, infrastructure, and systems covers the energy our data centers use, but it ultimately goes much further: It is also about where and what data is processed or stored and the technologies used. Conscious provisioning choices and best practices can improve both sustainability and operational efficiency.</p>
+			<p>Development operations teams and hosting providers work to ensure that infrastructure and systems meet requirements. Improving sustainability depends upon important decisions about where and how content, code, and data are stored and processed, and how end users interact with them.</p>
 			<p>Goals include:</p>
 			<ul>
 				<li>Find sustainable providers for hosting, CDNs, and other third-party solutions.</li>
-				<li>Adjust back-end settings to ensure proper caching, compression, and error handling.</li>
-				<li>Ensure your processes reflect best practices to maximize efficiency and sustainability.</li>
+				<li>Manage configurations for caching, compression, error handling, logging, and other features.</li>
+				<li>Handle tasks optimally with established processes that work.</li>
 			</ul>
 			<p>Benefits include:</p>
 			<ul>
@@ -2299,24 +2299,24 @@
 				<h3>Choose a sustainable service provider</h3>
 				<p class="subheading">Ensure hosting and domain service providers support monitoring of resource use, use carbon-free electricity, and maintain and recycle equipment properly.</p>
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491" data-considerations="" data-categories="AI, E-Waste, Hardware, Networking, Social Equity">
-					<h4 id="monitor-metrics">Success Criterion: Monitor Metrics</h4>
+					<h4 id="sustainability-metrics">Success Criterion: Sustainability metrics</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS01-1">Resources</a></p>
-					<p>Monitor key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. These include energy and water usage, but also hardware factors, such as <abbr title="Central Processing Unit">CPU</abbr> usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share, environmental impact metrics. Metrics should include Power Usage Effectiveness (<abbr title="Power Usage Effectiveness">PUE</abbr>), Water Usage Effectiveness (<abbr title="Water Usage Effectiveness">WUE</abbr>), and Carbon Usage Effectiveness (<abbr title="Carbon Usage Effectiveness">CUE</abbr>).</p>
+					<p>Monitor, request, and track key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. These include energy and water usage, even if you are using an "all-in-one" full service hosting provider. For people who set up and configure their hosting, but also hardware factors, such as <abbr title="Central Processing Unit">CPU</abbr> usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share, environmental impact metrics. Metrics should include Power Usage Effectiveness (<abbr title="Power Usage Effectiveness">PUE</abbr>), Water Usage Effectiveness (<abbr title="Water Usage Effectiveness">WUE</abbr>), and Carbon Usage Effectiveness (<abbr title="Carbon Usage Effectiveness">CUE</abbr>).</p>
 				</section>
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, GPF, GR491, SDGs" data-considerations="" data-categories="AI, E-Waste, Hardware, Networking, Social Equity">
 					<h4 id="equipment-longevity">Success Criterion: Equipment longevity</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS01-2">Resources</a></p>
-					<p>Maintain hardware to extend its lifespan as long as possible. Use it efficiently at an appropriate capacity, and ensuring it has the necessary certifications. New purchases should be from reliable long-lifespan suppliers.</p>
+					<p>Both hosting providers and consumers should maintain hardware to extend its lifespan as long as possible, use it efficiently at an appropriate capacity, verify it has up-to-date security patches, and ensure it has the necessary certifications with new purchases should be from reliable long-lifespan suppliers. Hosting providers should have a policy for extending hardware lifetime.</p>
 				</section>
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AFNOR, GPF, GR491, SDGs" data-considerations="" data-categories="AI, E-Waste, Hardware, Networking, Social Equity">
 					<h4 id="carbon-free-electricity">Success Criterion: Carbon-free electricity</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS01-3">Resources</a></p>
-					<p>Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate, in publicly available, evidence-based documentation, the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, including backup generators, in calculations.</p>
+					<p>Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, including backup generators, including storage systems in calculations.</p>
 				</section>
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491, SDGs" data-considerations="" data-categories="AI, E-Waste, Hardware, Networking, Social Equity">
 					<h4 id="remaining-emissions">Success Criterion: Remaining emissions</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS01-4">Resources</a></p>
-					<p>Balance unavoidable remaining carbon emissions with high-quality market based instruments or other evolving instruments from the voluntary carbon market, until additional carbon-free energy resources become available. The quality of market-based instruments should be verified by non-profit third-party organizations with sufficient supporting evidence.</p>
+					<p>Select a hosting provider that follows the GHG Protocol Scope 2 guidance on market-based carbon emissions accounting, seeking to match its remaining location-based emissions from electricity consumption with purchases of carbon-free electricity.</p>
 				</section>
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="SDGs" data-considerations="" data-categories="E-Waste, Hardware, Networking, Social Equity">
 					<h4 id="domain-names">Success Criterion: Domain names</h4>
@@ -2446,7 +2446,7 @@
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491" data-considerations="" data-categories="Compatibility, Content, Marketing, Networking, UI, Usability">
 					<h4 id="redirection">Success Criterion: Redirection</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS04-2">Resources</a></p>
-					<p>Regularly audit to check for broken and outdated links. Update these as necessary and add redirects to guide users and search engines to the correct content to ensure efficient browsing and protect SEO value. Test all redirects to ensure they function as intended and avoid impactful redirect loops. Favor the most efficient redirection system for your setup (e.g., server rules over database lookups).</p>
+					<p>Regularly audit to check for broken and outdated links. Update these as necessary and add redirects to guide users and search engines to the correct content to ensure efficient browsing and protect SEO value. Test all redirects to ensure they function as intended and avoid impactful redirect loops. Favor the most efficient redirection system for your platform.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2514,7 +2514,7 @@
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, Azure WAF, GR491" data-considerations="Security" data-categories="Performance, Software">
 					<h4 id="automated-scaling">Success Criterion: Automated scaling</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS06-3">Resources</a></p>
-					<p>Use automated scaling to promptly adjust server capacity up or down based on demand, ensuring efficient resource allocation. Implement buffering and throttling to manage load and maintain performance without overprovisioning.</p>
+					<p>Use automated scaling to adjust server capacity based on demand, ensuring efficient resource allocation during traffic spikes. Implement buffering and throttling to manage load and maintain performance without overprovisioning. Also use automation to promptly scale resources back down based on demand.</p>
 				</section>
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Security" data-categories="AI, Performance, Software">
 					<h4 id="suspicious-activity-filtering">Success Criterion: Suspicious activity filtering</h4>
@@ -2546,7 +2546,7 @@
 				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="" data-categories="JavaScript, Networking, Performance, Usability">
 					<h4 id="refresh-frequency">Success Criterion: Refresh frequency</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS07-1">Resources</a></p>
-					<p>Define the revalidation and refresh frequency for the cache, local data, and page content based on user needs, balancing performance, data accuracy, and resource efficiency.</p>
+					<p>Define the refresh frequency for the cache, local data, and page content based on user needs, balancing performance, data accuracy, and resource efficiency.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2605,7 +2605,7 @@
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF" data-considerations="" data-categories="JavaScript, Networking, Performance">
 					<h4 id="protocols">Success Criterion: Protocols</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS09-2">Resources</a></p>
-					<p>Choose communication protocols appropriate to user needs and the type of data being transferred. Avoid insecure options such as <abbr title="Hypertext Transfer Protocol">HTTP</abbr> and <abbr title="File Transfer Protocol">FTP</abbr>, and prioritize secure, efficient alternatives such as <abbr title="Hypertext Transfer Protocol (Secure)">HTTPS</abbr> and <abbr title="Secure Shell">SSH</abbr>. Use modern protocols to take advantage of newer features, while maintaining backward compatibility for older devices.</p>
+					<p>Choose communication protocols appropriate to user needs and the type of data being transferred. Avoid insecure options such as <abbr title="Hypertext Transfer Protocol">HTTP</abbr> and <abbr title="File Transfer Protocol">FTP</abbr>, and prioritize secure, efficient alternatives such as <abbr title="Hypertext Transfer Protocol (Secure)">HTTPS</abbr> and <abbr title="Secure Shell">SSH</abbr>. Use modern protocols to take advantage of newer sustainability features, while maintaining backward compatibility for older devices.</p>
 				</section>
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, Azure WAF, GPF, GR491" data-considerations="" data-categories="JavaScript, Networking, Performance">
 					<h4 id="event-driven-architecture">Success Criterion: Event-driven architecture</h4>
@@ -2741,7 +2741,7 @@
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Security" data-categories="Content, E-Waste, Hardware, Performance">
 					<h4 id="asset-downloads">Success Criterion: Asset downloads</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS12-6">Resources</a></p>
-					<p>Make large, long-term assets available for easy download in order to provide users with regular offline access without requiring persistant server resources.</p>
+					<p>Make large, long-term assets available for easy download when in persistent use rather than needing to be accessed via the server each time they are used.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3640,7 +3640,7 @@
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491, SDGs" data-considerations="" data-categories="AI, Content, E-Waste, Governance, Hardware, Ideation, Social Equity">
 					<h4 id="e-waste-management">Success Criterion: E-waste management</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM24-1">Resources</a></p>
-					<p>Responsibly recycle or upcycle unwanted waste. Materials should be recovered and reused, where possible, or otherwise disposed of appropriately.</p>
+					<p>Responsibly recycle or upcycle unwanted hardware or materials. Materials should be recovered, redeployment, and reused, where possible, or otherwise disposed of sustainably. Service providers should have a policy for responsible e-waste management.</p>
 				</section>
 				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="" data-categories="Content, E-Waste, Governance, Hardware, Ideation, Social Equity">
 					<h4 id="e-waste-policy">Success Criterion: E-waste policy</h4>
@@ -3954,8 +3954,9 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] TOC updates and query strings in URL update to reflect active filters.<br><span class="credit">@AlexDawsonUK & @fershad</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Intro clarifications provided RE standards references.<br><span class="credit">@TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/192">#192</a>] Update to relationships to include W3C WebML WG Ethical Principles spec.<br><span class="credit">@TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/194">#194</a>] Multiple updates to the Hosting section applied by Infrastructure Task Force.<br><span class="credit">@AlexDawsonUK, @codewordcreative, @ryansholin & @susannah-hill, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/195">#195</a>] Benefits have moved into a dedicated supplement for further refining.<br><span class="credit">@AlexDawsonUK, @codewordcreative, @fershad, @nigelmegitt</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/197">#1957</a>] Multiple updates to the User Experience section applied by UX Task Force.<br><span class="credit">@aphillips, @AlexDawsonUK, @awright1979-alt, @AnneFaubry, @ChrisButterworth, @fantasai, @ehorrell, @fershad, @hidde, @ines-akrap, @JamesChristie-SustainableUX, @jenstrickland, @kazuhito-kidachi, @mgifford, @airbr, @the-sustainabledev, @nigelmegitt, @r12a, @codewordcreative, Sarah Zama, @systemstree, @thorstenjonas, @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/197">#197</a>] Multiple updates to the User Experience section applied by UX Task Force.<br><span class="credit">@aphillips, @AlexDawsonUK, @awright1979-alt, @AnneFaubry, @ChrisButterworth, @fantasai, @ehorrell, @fershad, @hidde, @ines-akrap, @JamesChristie-SustainableUX, @jenstrickland, @kazuhito-kidachi, @mgifford, @airbr, @the-sustainabledev, @nigelmegitt, @r12a, @codewordcreative, Sarah Zama, @systemstree, @thorstenjonas, & @TzviyaSiegman</span></li>
 					</ul>
 					<p><strong>Fixes:</strong></p>
 					<ul>

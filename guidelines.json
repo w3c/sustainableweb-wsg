@@ -1,7 +1,7 @@
 {
 	"title": "Web Sustainability Guidelines",
 	"edition": "Draft Note",
-	"lastModified": "2025-12-09",
+	"lastModified": "2025-12-10",
 	"category": [
 		{
 			"id": "1",
@@ -3554,8 +3554,8 @@
 					"subheading": "Ensure hosting and domain service providers support monitoring of resource use, use carbon-free electricity, and maintain and recycle equipment properly.",
 					"criteria": [
 						{
-							"title": "Monitor Metrics",
-							"description": "Monitor key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. These include energy and water usage, but also hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share, environmental impact metrics. Metrics should include Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE).",
+							"title": "Sustainability metrics",
+							"description": "Monitor, request, and track key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. These include energy and water usage, even if you are using an \"all-in-one\" full service hosting provider. For people who set up and configure their hosting, but also hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share, environmental impact metrics. Metrics should include Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE).",
 							"resources": [
 								{
 									"#3 Metrics for Datacenter Efficiency: PUE, CUE, and WUE": "https://submer.com/blog/pue-cue-and-wue-what-do-these-three-metrics-represent-and-which-is-one-is-the-most-important/",
@@ -3599,7 +3599,7 @@
 						},
 						{
 							"title": "Equipment longevity",
-							"description": "Maintain hardware to extend its lifespan as long as possible. Use it efficiently at an appropriate capacity, and ensuring it has the necessary certifications. New purchases should be from reliable long-lifespan suppliers.",
+							"description": "Both hosting providers and consumers should maintain hardware to extend its lifespan as long as possible, use it efficiently at an appropriate capacity, verify it has up-to-date security patches, and ensure it has the necessary certifications with new purchases should be from reliable long-lifespan suppliers. Hosting providers should have a policy for extending hardware lifetime.",
 							"resources": [
 								{
 									"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
@@ -3644,7 +3644,7 @@
 						},
 						{
 							"title": "Carbon-free electricity",
-							"description": "Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate, in publicly available, evidence-based documentation, the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, including backup generators, in calculations.",
+							"description": "Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, including backup generators, including storage systems in calculations.",
 							"resources": [
 								{
 									"2024 Eco Web Hosting Review": "https://go.eco/news/2024-eco-web-hosting-review/",
@@ -3693,7 +3693,7 @@
 						},
 						{
 							"title": "Remaining emissions",
-							"description": "Balance unavoidable remaining carbon emissions with high-quality market based instruments or other evolving instruments from the voluntary carbon market, until additional carbon-free energy resources become available. The quality of market-based instruments should be verified by non-profit third-party organizations with sufficient supporting evidence.",
+							"description": "Select a hosting provider that follows the GHG Protocol Scope 2 guidance on market-based carbon emissions accounting, seeking to match its remaining location-based emissions from electricity consumption with purchases of carbon-free electricity.",
 							"resources": [
 								{
 									"Alternatives to Carbon Credits": "https://offsetguide.org/alternatives-to-carbon-credits/",
@@ -3747,9 +3747,9 @@
 					],
 					"benefits": [
 						{
-							"Conversion": "In cases where a badge or link about sustainable hosting providers appears on a website, users concerned about the issue may use and reuse the site preferentially.",
+							"Conversion": "Using sustainable hosting and sharing sustainability metrics with visitors may increase preference and loyalty.",
 							"Environment": "Using hosting providers that operate with lower emissions, better power efficiency, and more responsible electronic waste management reduces negative environmental impacts from websites and products.",
-							"Social Equity": "Hosting providers with transparent environmental sustainability are minimizing the negative impacts on their local communities.",
+							"Social Equity": "Minimizing the environmental impact of your website's hosting infrastructure reduces its negative impacts on communities.",
 							"Transparency": "Sharing the efficiency and carbon-free energy metrics of hosting services allows the public to verify and understand sustainable websites and products."
 						}
 					],
@@ -3966,7 +3966,7 @@
 						},
 						{
 							"title": "redirection",
-							"description": "Regularly audit to check for broken and outdated links. Update these as necessary and add redirects to guide users and search engines to the correct content to ensure efficient browsing and protect SEO value. Test all redirects to ensure they function as intended and avoid impactful redirect loops. Favor the most efficient redirection system for your setup (e.g., server rules over database lookups).",
+							"description": "Regularly audit to check for broken and outdated links. Update these as necessary and add redirects to guide users and search engines to the correct content to ensure efficient browsing and protect SEO value. Test all redirects to ensure they function as intended and avoid impactful redirect loops. Favor the most efficient redirection system for your platform.",
 							"resources": [
 								{
 									"Avoid Multiple Page Redirects": "https://www.debugbear.com/blog/avoid-multiple-page-redirects",
@@ -3984,7 +3984,7 @@
 						{
 							"Accessibility": "Error pages and appropriate redirects matter because every user requires appropriate assistance to find their path. Navigation and signage that successfully support individuals with cognitive disabilities to find their path deliver the best design for all users.",
 							"Conversion": "Users who find their way out of an error quickly have a faster and more enjoyable experience that encourages return visits.",
-							"Economic": "Every page load costs money, so minimizing erroneous page loads saves money.",
+							"Economic": "Minimizing erroneous page loads saves money.",
 							"Environment": "When users load fewer pages on their way to desired content, a project becomes less carbon intensive."
 						}
 					],
@@ -4085,7 +4085,7 @@
 						},
 						{
 							"title": "Automated scaling",
-							"description": "Use automated scaling to promptly adjust server capacity up or down based on demand, ensuring efficient resource allocation. Implement buffering and throttling to manage load and maintain performance without overprovisioning.",
+							"description": "Use automated scaling to adjust server capacity based on demand, ensuring efficient resource allocation during traffic spikes. Implement buffering and throttling to manage load and maintain performance without overprovisioning. Also use automation to promptly scale resources back down based on demand.",
 							"resources": [
 								{
 									"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
@@ -4161,7 +4161,7 @@
 					"criteria": [
 						{
 							"title": "Refresh frequency",
-							"description": "Define the revalidation and refresh frequency for the cache, local data, and page content based on user needs, balancing performance, data accuracy, and resource efficiency.",
+							"description": "Define the refresh frequency for the cache, local data, and page content based on user needs, balancing performance, data accuracy, and resource efficiency.",
 							"resources": [
 								{
 									"A Review on Green Caching Strategies for Next Generation Communication Networks": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9272291",
@@ -4265,7 +4265,7 @@
 						},
 						{
 							"title": "Protocols",
-							"description": "Choose communication protocols appropriate to user needs and the type of data being transferred. Avoid insecure options such as HTTP and FTP, and prioritize secure, efficient alternatives such as HTTPS and SSH. Use modern protocols to take advantage of newer features, while maintaining backward compatibility for older devices.",
+							"description": "Choose communication protocols appropriate to user needs and the type of data being transferred. Avoid insecure options such as HTTP and FTP, and prioritize secure, efficient alternatives such as HTTPS and SSH. Use modern protocols to take advantage of newer sustainability features, while maintaining backward compatibility for older devices.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.7 - Strategy (Encryption)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -4326,8 +4326,8 @@
 						{
 							"Economic": "Improving the efficiency of data processing saves money due to energy and infrastructure needs.",
 							"Environment": "Running servers for less time reduces carbon emissions.",
-							"Performance": "Processing data in energy efficient batches can reduce thrashing of hardware during high-intensity periods, maintaining performance stability.",
-							"Social Equity": "Reducing data processing demand means the resources that data centres demand, and can place a strain on local communities can also be reduced."
+							"Performance": "Efficient content delivery and data processing decreases page load times, improving performance and user experience.",
+							"Social Equity": "Reducing data processing demand means communities near data centers suffer less from noise, air pollution, and water and power overconsumption."
 						}
 					],
 					"GRI": [
@@ -4645,7 +4645,7 @@
 						},
 						{
 							"title": "Asset downloads",
-							"description": "Make large, long-term assets available for easy download in order to provide users with regular offline access without requiring persistant server resources.",
+							"description": "Make large, long-term assets available for easy download when in persistent use rather than needing to be accessed via the server each time they are used.",
 							"resources": [
 								{
 									"Going Offline": "https://goingoffline.adactio.com/",
@@ -6563,7 +6563,7 @@
 					"criteria": [
 						{
 							"title": "E-waste management",
-							"description": "Responsibly recycle or upcycle unwanted waste. Materials should be recovered and reused, where possible, or otherwise disposed of appropriately.",
+							"description": "Responsibly recycle or upcycle unwanted hardware or materials. Materials should be recovered, redeployment, and reused, where possible, or otherwise disposed of sustainably. Service providers should have a policy for responsible e-waste management.",
 							"resources": [
 								{
 									"Circular Economy": "https://sustainabilityguide.eu/sustainability/circular-economy/",
