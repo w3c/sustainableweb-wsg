@@ -1,7 +1,7 @@
 {
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-12-09",
+	"lastModified": "2025-12-11",
 	"category": [
 		{
 			"id": "1",
@@ -57,7 +57,7 @@
 					],
 					"examples": [
 						{
-							"1": "Using third-party tooling you can [calculate](https://www.cocooncarbon.co.uk/) the carbon emissions from logistics and delivery of physical shipping which can be integrated into your calculations. They also have a [public API](https://developer.cocoonfms.co.uk/) you can use as well.",
+							"1": "Using third-party tooling you can [calculate](https://www.cocooncarbon.co.uk/) the carbon emissions from logistics and delivery of physical shipping which can be integrated into your calculations. They also have a [public API](https://developer.cocoonfms.com/) you can use as well.",
 							"2": "Non-users who are affected by a service can be identified by technical support teams and responses required are added to a list for the developers to machine test for compliance at the next release version."
 						}
 					],
@@ -89,7 +89,7 @@
 					],
 					"examples": [
 						{
-							"1": "[Quantitative data analysis](https://www.hotjar.com/quantitative-data-analysis/software/) allows you to identify how your website or application is doing, find patterns in user behavior, and make decisions that can benefit your users and optimize your product or service to reduce emissions over time.",
+							"1": "[Quantitative data analysis](https://contentsquare.com/guides/quantitative-data-analysis/software/) allows you to identify how your website or application is doing, find patterns in user behavior, and make decisions that can benefit your users and optimize your product or service to reduce emissions over time.",
 							"2": "[Feedback forms](https://www.nngroup.com/articles/user-feedback/) are a great way to get qualitative measurements to reinforce the numbers to ensure that any changes you are considering are wanted, satisfy the needs of users, and meet the sustainability challenge."
 						}
 					],
@@ -277,7 +277,7 @@
 					"examples": [
 						{
 							"1": "Web browsers can [change CSS cursors](https://csscursor.info/), and while there may be functional reasons to do so under certain circumstances, such as to indicate loading progress, zoom, or click-ability, in most circumstances, you should leave it at the system default as this is the expected behavior.",
-							"2": "CSS scrollbars [can be customized](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_scrollbars_styling) or replaced but this can be problematic for users. Changes in scroll speed or its mechanics can affect impact readability and the way things render, and color changes can impact visibility and affect overflow regions within elements of the page. In such cases, the system default always functions better than a custom solution."
+							"2": "CSS scrollbars [can be customized](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scrollbars_styling) or replaced but this can be problematic for users. Changes in scroll speed or its mechanics can affect impact readability and the way things render, and color changes can impact visibility and affect overflow regions within elements of the page. In such cases, the system default always functions better than a custom solution."
 						}
 					],
 					"tests": [
@@ -1634,7 +1634,7 @@
 					"examples": [
 						{
 							"1": "[Browser Stack](https://www.browserstack.com/) and [LambadaTest](https://www.lambdatest.com/) provide virtual testing (which can be automated) amongst a variety of common web browsers allowing testers to identify flaws in their website or application's compatibility.",
-							"2": "[Can I Use](https://caniuse.com/) provides a comprehensive guide to browser implementations of web standards, including known bugs, and thereby can help guide implementors with decision making when deciding how to progressively enhance their product or service.",
+							"2": "[Can I Use](https://caniuse.com/) and [Can I WebView](https://caniwebview.com/) provide a comprehensive guide to browser implementations of web standards, including known bugs, and thereby can help guide implementors with decision making when deciding how to progressively enhance their product or service.",
 							"3": "Certain political situations may result in the inability for users to access your product or service hassle-free such as geo-blocking restrictions, the cost of bandwidth, or government-enacted firewalls, filters, or authentication requirements."
 						}
 					],
@@ -2487,7 +2487,7 @@
 					],
 					"examples": [
 						{
-							"1": "[Electricity Maps](https://app.electricitymaps.com/map?solar=false&remote=true&wind=false) provides an application that could be utilized to help make decisions as to where data is being served (based upon the intensity and level of carbon-free energy being offered in particular regions)."
+							"1": "[Electricity Maps](https://app.electricitymaps.com/) provides an application that could be utilized to help make decisions as to where data is being served (based upon the intensity and level of carbon-free energy being offered in particular regions)."
 						}
 					],
 					"tests": [
@@ -2539,7 +2539,7 @@
 				{
 					"id": "WD14-1",
 					"title": "Optimize a codebase through rewriting for performance",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.14 Use Standards-based JavaScript and APIs](https://w3c.github.io/sustainableweb-wsg/#use-standards-based-javascript-and-apis).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.14 Use standards-based JavaScript and APIs](https://w3c.github.io/sustainableweb-wsg/#use-standards-based-javascript-and-apis).",
 					"description": [
 						{
 							"1": "Improve the quality of JavaScript code by examining the contents and identifying any issues that could be deemed a matter of sustainability which could trigger a large load upon hardware resources (and thus put a strain on battery charge cycles). In addition to this, matters of accessibility and performance with such code can be considered.",
@@ -2570,7 +2570,7 @@
 				{
 					"id": "WD14-2",
 					"title": "Ensure JavaScript APIs are correctly applied",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.14 Use Standards-based JavaScript and APIs](https://w3c.github.io/sustainableweb-wsg/#use-standards-based-javascript-and-apis).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.14 Use standards-based JavaScript and APIs](https://w3c.github.io/sustainableweb-wsg/#use-standards-based-javascript-and-apis).",
 					"description": [
 						{
 							"1": "Provide mechanisms through JavaScript that minimize the user's energy consumption by either optimizing the performance of the website or application itself or improving functionality in such a way that it reduces the utilization of resources when they are not required by the user. Some JavaScript APIs can have explicit sustainability benefits, while others may improve other PPP benefits through accessibility (societal factors).",
@@ -2732,7 +2732,7 @@
 						{
 							"1": "Amazon has a highly recognizable brand and they [provide a favicon](https://www.amazon.com/favicon.ico) in the base of their website so that when people visit them, their icon will show correctly in the top left of the tab or window (browser dependent).",
 							"2": "Developer tool Can I Use [provide an opensearch.xml file](https://caniuse.com/opensearch.xml) in the base of their website so that if people visit their project, users can rapidly search the website in the future using a keyword and tab combination.",
-							"3": "[Google has a robots.txt file](https://www.google.com/robots.txt) that identifies to search engines what pages should be included within search results. You can also look to [Web Robots Pages](https://www.robotstxt.org/robotstxt.html) and [Google Search Central](https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt?hl=en) for implementation inspiration."
+							"3": "[Google has a robots.txt file](https://www.google.com/robots.txt) that identifies to search engines what pages should be included within search results. You can also look to [Web Robots Pages](https://www.robotstxt.org/robotstxt.html) and [Google Search Central](https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec?hl=en) for implementation inspiration."
 						}
 					],
 					"tests": [
@@ -3161,7 +3161,7 @@
 					],
 					"examples": [
 						{
-							"1": "[Compromised websites](https://kinsta.com/knowledgebase/the-site-ahead-contains-malware/) may present in many forms, but if they are [detected by Google](https://transparencyreport.google.com/safe-browsing/search), the search giant will intercept the user before they get exposed to the problem code and present them with an error."
+							"1": "[Compromised websites](https://kinsta.com/blog/the-site-ahead-contains-malware/) may present in many forms, but if they are [detected by Google](https://transparencyreport.google.com/safe-browsing/search), the search giant will intercept the user before they get exposed to the problem code and present them with an error."
 						}
 					],
 					"tests": [
@@ -4104,7 +4104,7 @@
 				{
 					"id": "BSPM20-1",
 					"title": "Provide a publicly facing policy around emerging technologies",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.20 Promote and implement responsible emerging technology practices](https://w3c.github.io/sustainableweb-wsg/#promote-and-implement-responsible-emerging-technology-practices).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.20 Establish responsible practices around AI and emerging or disruptive technologies](https://w3c.github.io/sustainableweb-wsg/#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies).",
 					"description": [
 						{
 							"1": "Offer a document that describes in detail any mechanisms that a product or service has in place regarding emerging technologies such as artificial intelligence, cryptocurrencies, or other impactful (sustainably speaking) aspects of the web. If none of these features are likely to be used by you or your suppliers, state so, otherwise, provide details.",
