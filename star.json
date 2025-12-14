@@ -1,7 +1,7 @@
 {
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"edition": "Editor's Draft",
-	"lastModified": "2025-12-11",
+	"lastModified": "2025-12-14",
 	"category": [
 		{
 			"id": "1",
@@ -2487,7 +2487,7 @@
 					],
 					"examples": [
 						{
-							"1": "[Electricity Maps](https://app.electricitymaps.com/) provides an application that could be utilized to help make decisions as to where data is being served (based upon the intensity and level of carbon-free energy being offered in particular regions)."
+							"1": "[Electricity Maps](https://app.electricitymaps.com/) provides an application that could be utilized to help make decisions as to where data is being served (based upon the intensity and level of low-carbon energy being offered in particular regions)."
 						}
 					],
 					"tests": [
@@ -2878,7 +2878,7 @@
 				{
 					"id": "HIS01-1",
 					"title": "Publicly disclose relevant sustainability metrics to users",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Choose a sustainable service provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Use sustainable hosting](https://w3c.github.io/sustainableweb-wsg/#use-sustainable-hosting).",
 					"description": [
 						{
 							"1": "Ensure that anyone who wishes to compile an impact statement (as a consumer of your services) based on conditions such as PUE, WUE, and CUE can calculate the necessary energy utilization of a provider using each of the available data based upon any factors required. Making important metrics publicly visible to both customers and users, increases awareness, reduces the potential for greenwashing, and allows service providers to report with proof of compliance.",
@@ -2909,10 +2909,10 @@
 				{
 					"id": "HIS01-3",
 					"title": "Ensure that the project is hosted on a sustainable platform",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Choose a sustainable service provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Use sustainable hosting](https://w3c.github.io/sustainableweb-wsg/#use-sustainable-hosting).",
 					"description": [
 						{
-							"1": "Verify that the product or service is being served through a sustainable provider. If the hosting provider (for example) generates its electricity from carbon-free energy and can document other intensity reduction techniques (such as using natural cooling and offering auto-scaling packages), this can contribute towards passing the success criteria.",
+							"1": "Verify that the product or service is being served through a sustainable provider. If the hosting provider (for example) generates its electricity from low-carbon energy and can document other intensity reduction techniques (such as using natural cooling and offering auto-scaling packages), this can contribute towards passing the success criteria.",
 							"2": "Because many factors can go towards how sustainable a provider is, machine testing will need to be vigilant in accounting for several factors. As such, using an established directory of sustainable hosts could be one way to pass or fail, or running validation checks against factors that affect the sustainability of services could be another (this may require internal access or knowledge)."
 						}
 					],
@@ -2927,7 +2927,7 @@
 							"procedure": [
 								{
 									"1": "Check that the hosting provider has a sustainability statement.",
-									"2": "Check that the hosting is powered by 100% carbon-free energy.",
+									"2": "Check that the hosting is powered by 100% low-carbon energy.",
 									"3": "Check that the hosting platform does not use carbon credits to offset its energy requirements.",
 									"4": "Check for recognized green initiatives that the platform may be subscribed to.",
 									"5": "Check if sustainability-related keywords or claims are made.",
@@ -2942,7 +2942,7 @@
 				{
 					"id": "HIS01-5",
 					"title": "Ensure that the project uses a sustainable domain registrar",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Choose a sustainable service provider](https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Use sustainable hosting](https://w3c.github.io/sustainableweb-wsg/#use-sustainable-hosting).",
 					"description": [
 						{
 							"1": "Ensure that emissions reports are published, with adequate frequency, considering (if possible) changes to DNS, subdomain allocation, multiple domain ownership, or other conditions that may impact the scope results. Also, be sure to provide calculations on an individual and collective domain level (where situations allow) to enable the best overview possible of total impact and most impactful domains. Having these metrics available for customers will increase public awareness, and allow registrants to meet reporting obligations as part of their compliance requirements.",
@@ -2971,7 +2971,7 @@
 				{
 					"id": "HIS02-1",
 					"title": "Provide caching responses to optimize page reloads",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.2 Optimize caching with offline access supported](https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.2 Optimize caching and support offline access](https://w3c.github.io/sustainableweb-wsg/#optimize-caching-and-support-offline-access).",
 					"description": [
 						{
 							"1": "Provide a mechanism for websites and applications to ensure that content is cached for the correct length of time, with the intention of reusability. Because certain types of content will change and need to be reloaded more frequently than others, it makes sense to cache those that change the least for the longest period (to reduce data transfer rates).",
@@ -2998,7 +2998,7 @@
 				{
 					"id": "HIS02-2",
 					"title": "Identify the potential for PWAs and other useful features",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.2 Optimize caching with offline access supported](https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.2 Optimize caching and support offline access](https://w3c.github.io/sustainableweb-wsg/#optimize-caching-and-support-offline-access).",
 					"description": [
 						{
 							"1": "Identify if techniques could be used to increase the performance within the user experience. Examples of this could include identifying if cookies could (and should) be used within an interface or if the website or application could be transformed into a progressive web application to provide advantages (project-wide) such as offline availability.",
@@ -3029,7 +3029,7 @@
 				{
 					"id": "HIS03-1",
 					"title": "Ensure that files are compressed correctly before serving",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.3 Compress files where it is beneficial](https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.3 Reduce data transfer with compression](https://w3c.github.io/sustainableweb-wsg/#reduce-data-transfer-with-compression).",
 					"description": [
 						{
 							"1": "Provide a mechanism to serve content correctly using a recognized encoding method to reduce the payload size of websites and applications. While this means there will be an additional rendering effort on the client-side (decoding the file), the increased speed in loading such files has an PPP benefit that justifies the added effort.",
@@ -3058,7 +3058,7 @@
 				{
 					"id": "HIS03-2",
 					"title": "Compress all assets that can be optimized before CMS submission",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.3 Compress files where it is beneficial](https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.3 Reduce data transfer with compression](https://w3c.github.io/sustainableweb-wsg/#reduce-data-transfer-with-compression).",
 					"description": [
 						{
 							"1": "Provide additional mechanisms in place for non-technical users so that the potential for compression is just only checked once files are in place within a website or application's structure (uploaded), but also during the upload process, thereby taking the opportunity to meet sustainability criteria on-the-fly as part of the content management system.",

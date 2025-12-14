@@ -2371,7 +2371,7 @@
 						<p>For machine testability, this could be particularly tricky to implement as it will rely on data to which the project owner will need to gain access such as when user numbers are at their lowest (or when the task can be achieved at its quickest). This may require internal access, but if granted the use of such data could allow for redesigning the site to perform better during busy periods.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
-							<li><a href="https://app.electricitymaps.com/">Electricity Maps</a> provides an application that could be utilized to help make decisions as to where data is being served (based upon the intensity and level of carbon-free energy being offered in particular regions).</li>
+							<li><a href="https://app.electricitymaps.com/">Electricity Maps</a> provides an application that could be utilized to help make decisions as to where data is being served (based upon the intensity and level of low-carbon energy being offered in particular regions).</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
@@ -2698,7 +2698,7 @@
 					<details> <!-- HIS01-1: Publicly disclose relevant sustainability metrics to users -->
 						<summary id="HIS01-1">HIS01-1: Publicly disclose relevant sustainability metrics to users</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider">4.1 Choose a sustainable service provider</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#use-sustainable-hosting">4.1 Use sustainable hosting</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Ensure that anyone who wishes to compile an impact statement (as a consumer of your services) based on conditions such as <abbr title="Power Usage Effectiveness">PUE</abbr>, <abbr title="Water Usage Effectiveness">WUE</abbr>, and <abbr title="Carbon Usage Effectiveness">CUE</abbr> can calculate the necessary energy utilization of a provider using each of the available data based upon any factors required. Making important metrics publicly visible to both customers and users, increases awareness, reduces the potential for greenwashing, and allows service providers to report with proof of compliance.</p>
 						<p>For machine testability, this would require each customer account (of a hosting provider) to be equipped with a publicly visible stats page indicating resource utilization, including useful information on factors like CPU, GPU, RAM, and data usage, plus a calculation on equivalent water or other consumable resource utilization. This can be linked to from within the service status page. In addition, the methodology behind the calculations should also be provided in a centralized location.</p>
@@ -2723,9 +2723,9 @@
 					<details> <!-- HIS01-3: Ensure that the project is hosted on a sustainable platform -->
 						<summary id="HIS01-3">HIS01-3: Ensure that the project is hosted on a sustainable platform</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider">4.1 Choose a sustainable service provider</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#use-sustainable-hosting">4.1 Use sustainable hosting</a>.</p>
 						<p><strong>Description</strong></p>
-						<p>Verify that the product or service is being served through a sustainable provider. If the hosting provider (for example) generates its electricity from carbon-free energy and can document other intensity reduction techniques (such as using natural cooling and offering auto-scaling packages), this can contribute towards passing the success criteria.</p>
+						<p>Verify that the product or service is being served through a sustainable provider. If the hosting provider (for example) generates its electricity from low-carbon energy and can document other intensity reduction techniques (such as using natural cooling and offering auto-scaling packages), this can contribute towards passing the success criteria.</p>
 						<p>Because many factors can go towards how sustainable a provider is, machine testing will need to be vigilant in accounting for several factors. As such, using an established directory of sustainable hosts could be one way to pass or fail, or running validation checks against factors that affect the sustainability of services could be another (this may require internal access or knowledge).</p>
 						<p><strong>Examples</strong></p>
 						<ol>
@@ -2736,7 +2736,7 @@
 						<p>Procedure</p>
 						<ol>
 							<li>Check that the hosting provider has a sustainability statement.</li>
-							<li>Check that the hosting is powered by 100% carbon-free energy.</li>
+							<li>Check that the hosting is powered by 100% low-carbon energy.</li>
 							<li>Check that the hosting platform does not use carbon credits to offset its energy requirements.</li>
 							<li>Check for recognized green initiatives that the platform may be subscribed to.</li>
 							<li>Check if sustainability-related keywords or claims are made.</li>
@@ -2750,7 +2750,7 @@
 					<details> <!-- HIS01-5: Ensure that the project uses a sustainable domain registrar -->
 						<summary id="HIS01-5">HIS01-5: Ensure that the project uses a sustainable domain registrar</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider">4.1 Choose a sustainable service provider</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#use-sustainable-hosting">4.1 Use sustainable hosting</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Ensure that emissions reports are published, with adequate frequency, considering (if possible) changes to DNS, subdomain allocation, multiple domain ownership, or other conditions that may impact the scope results. Also, be sure to provide calculations on an individual and collective domain level (where situations allow) to enable the best overview possible of total impact and most impactful domains. Having these metrics available for customers will increase public awareness, and allow registrants to meet reporting obligations as part of their compliance requirements.</p>
 						<p>For machine testability customer accounts should have a method to view changes in emissions, this would require an account (of a registrar) to be made accessible within tooling or for generalized statistics that account for the total amount of users to be made publicly visible (so averages can be used). This would help estimate and account for the impact of domain use based on <abbr title="Top-Level Domain">TLD</abbr> choice and other factors that will be relevant to the measurement criteria. The methodology behind the calculations should also be provided in a centralized location.</p>
@@ -2775,7 +2775,7 @@
 					<details> <!-- HIS02-1: Provide caching responses to optimize page reloads -->
 						<summary id="HIS02-1">HIS02-1: Provide caching responses to optimize page reloads</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported">4.2 Optimize caching with offline access supported</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-and-support-offline-access">4.2 Optimize caching and support offline access</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for websites and applications to ensure that content is cached for the correct length of time, with the intention of reusability. Because certain types of content will change and need to be reloaded more frequently than others, it makes sense to cache those that change the least for the longest period (to reduce data transfer rates).</p>
 						<p>For machine testability, identifying cache response times for various file formats can be done by checking the cache-control headers for various files as they are requested from the server. If the length of time the content is being held does not appear to be long enough (or is too long for dynamic content), then recommendations can be made to improve the used formula.</p>
@@ -2796,7 +2796,7 @@
 					<details> <!-- HIS02-2: Identify the potential for PWAs and other useful features -->
 						<summary id="HIS02-2">HIS02-2: Identify the potential for <abbr title="Progressive Web Applications">PWAs</abbr> and other useful features</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported">4.2 Optimize caching with offline access supported</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-and-support-offline-access">4.2 Optimize caching and support offline access</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Identify if techniques could be used to increase the performance within the user experience. Examples of this could include identifying if cookies could (and should) be used within an interface or if the website or application could be transformed into a progressive web application to provide advantages (project-wide) such as offline availability.</p>
 						<p>Machine testability to identify existing features is relatively straightforward as it simply requires identifying through the source code where cookies, local database requests, service, or web workers are implemented and ensuring that they are both proportionate and correctly marked up. If these do not exist it will require analyzing the page (or components) for potential opportunities for use.</p>
@@ -2823,7 +2823,7 @@
 					<details> <!-- HIS03-1: Ensure that files are compressed correctly before serving -->
 						<summary id="HIS03-1">HIS03-1: Ensure that files are compressed correctly before serving</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial">4.3 Compress files where it is beneficial</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#reduce-data-transfer-with-compression">4.3 Reduce data transfer with compression</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism to serve content correctly using a recognized encoding method to reduce the payload size of websites and applications. While this means there will be an additional rendering effort on the client-side (decoding the file), the increased speed in loading such files has an PPP benefit that justifies the added effort.</p>
 						<p>For machine testability, identifying content encoding methods for file formats can be done by checking the content-encoding headers for various files as they are requested from the server. This can be achieved on an individual basis or through server configuration files. If the content is not being encoded (unless it has been encoded at the source and no further optimization can be made), recommendations can be made to use a compatible compression technique.</p>
@@ -2846,7 +2846,7 @@
 					<details> <!-- HIS03-2: Compress all assets that can be optimized before CMS submission -->
 						<summary id="HIS03-2">HIS03-2: Compress all assets that can be optimized before <abbr title="Content Management System">CMS</abbr> submission</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial">4.3 Compress files where it is beneficial</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://w3c.github.io/sustainableweb-wsg/#reduce-data-transfer-with-compression">4.3 Reduce data transfer with compression</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide additional mechanisms in place for non-technical users so that the potential for compression is just only checked once files are in place within a website or application's structure (uploaded), but also during the upload process, thereby taking the opportunity to meet sustainability criteria on-the-fly as part of the content management system.</p>
 						<p>To pass this success criterion, a CMS (or <abbr title="Software as a Service">SaaS</abbr>) would need to take assets that are uploaded and identify compression that could be applied either by changing file formats or by applying algorithms to it (or both). If improvements can be made, these should replace the original files by default. Machines can verify this is occurring by identifying if the best format is used or if further compression could be applied (this could form part of a tools sustainability rating).</p>

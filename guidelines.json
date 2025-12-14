@@ -1,7 +1,7 @@
 {
 	"title": "Web Sustainability Guidelines",
 	"edition": "Draft Note",
-	"lastModified": "2025-12-11",
+	"lastModified": "2025-12-14",
 	"category": [
 		{
 			"id": "1",
@@ -991,7 +991,6 @@
 									"How to Build a Low-tech Website?": "https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/",
 									"How to Compress a Video File without Losing Quality (Video)": "https://www.youtube.com/watch?v=sgmE1T8A4UY",
 									"How To Efficiently Encode Images On Your Website": "https://www.debugbear.com/blog/efficiently-encode-images",
-									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/insights/how-to-optimize-images/",
 									"How to Properly Size Images to Improve Core Web Vitals": "https://www.debugbear.com/blog/properly-size-images",
 									"How UX design can help tackle climate change": "https://www.cyber-duck.co.uk/insights/how-sustainable-design-can-help-climate-change",
 									"Image Carbon": "https://www.imagecarbon.com/",
@@ -1000,6 +999,7 @@
 									"Model, estimate or measure? What matters in video energy use": "https://davidmytton.blog/model-estimate-or-measure-what-matters-in-video-energy-use/",
 									"Modern way of serving images": "https://kurtextrem.de/posts/modern-way-of-img",
 									"My solar-powered and self-hosted website": "https://dri.es/my-solar-powered-and-self-hosted-website",
+									"Optimize Images to Improve Sustainability": "https://www.mightybytes.com/insights/how-to-optimize-images/",
 									"Optimize multimedia files": "https://climateproductleaders.org/playbook/optimize-multimedia-files",
 									"Optimizing Video For Size And Quality": "https://www.smashingmagazine.com/2021/02/optimizing-video-size-quality/",
 									"Optimizing Video for the Web": "https://www.mightybytes.com/insights/optimizing-video/",
@@ -1063,11 +1063,11 @@
 									"GR491 - 7-5053 - Convert and Resize": "https://gr491.isit-europe.org/en/crit.php?id=7-5053-frontend-image-transfers-introduce-peculiarities-related-to-the",
 									"GreenIT - 034 - Avoid resizing images in the browser": "https://rweb.greenit.fr/en/fiches/RWEB_0034-avoid-resizing-images-in-the-browser",
 									"GreenIT - 112 - Adapt audio formats to listening contexts": "https://rweb.greenit.fr/en/fiches/RWEB_0112-adapt-sounds-to-the-listening-context",
-									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/insights/how-to-optimize-images/",
 									"OpQuast - 114 - Thumbnails and previews are not larger images resized on the client side.": "https://checklists.opquast.com/en/web-quality-assurance/thumbnails-and-previews-are-not-larger-images-resized-on-the-client-side",
 									"OpQuast - 118 - The length of video and audio content is indicated.": "https://checklists.opquast.com/en/web-quality-assurance/the-length-of-video-and-audio-content-is-displayed",
 									"OpQuast - 119 - Videos are user-triggered.": "https://checklists.opquast.com/en/web-quality-assurance/videos-are-user-triggered",
 									"OpQuast - 120 - Sounds are user-triggered.": "https://checklists.opquast.com/en/web-quality-assurance/sounds-are-user-triggered",
+									"Optimize Images to Improve Sustainability": "https://www.mightybytes.com/insights/how-to-optimize-images/",
 									"Video performance": "https://web.dev/learn/performance/video-performance?hl=en"
 								}
 							]
@@ -3017,7 +3017,7 @@
 						},
 						{
 							"title": "Carbon-aware design",
-							"description": "Use carbon-aware design techniques to maximize your use of carbon-free energy. This is achieved by adapting the delivery of your project to current electricity availability and user grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.",
+							"description": "Use carbon-aware design techniques to maximize your use of low-carbon energy. This is achieved by adapting the delivery of your project to current electricity availability and user grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.",
 							"resources": [
 								{
 									"A Carbon-Aware Internet": "https://branch.climateaction.tech/issues/issue-2/a-carbon-aware-internet/",
@@ -3631,13 +3631,13 @@
 			"guidelines": [
 				{
 					"id": "1",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#choose-a-sustainable-service-provider",
-					"guideline": "Choose a sustainable service provider",
-					"subheading": "Ensure hosting and domain service providers support monitoring of resource use, use carbon-free electricity, and maintain and recycle equipment properly.",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#use-sustainable-hosting",
+					"guideline": "Use sustainable hosting",
+					"subheading": "Ensure that hosting and domain infrastructure and service providers offer monitoring of resource use capabilities, low-carbon operations, and proper equipment maintenance and disposal.",
 					"criteria": [
 						{
 							"title": "Sustainability metrics",
-							"description": "Monitor, request, and track key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. These include energy and water usage, even if you are using an \"all-in-one\" full service hosting provider. For people who set up and configure their hosting, but also hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share, environmental impact metrics. Metrics should include Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE).",
+							"description": "Monitor, request, and track key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. Prioritize indicators of energy and water usage, even if you are using an \"all-in-one\" full service hosting provider. For people who set up and configure their hosting, track hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share environmental impact metrics. Metrics should include Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE).",
 							"resources": [
 								{
 									"#3 Metrics for Datacenter Efficiency: PUE, CUE, and WUE": "https://submer.com/blog/pue-cue-and-wue-what-do-these-three-metrics-represent-and-which-is-one-is-the-most-important/",
@@ -3683,7 +3683,7 @@
 						},
 						{
 							"title": "Equipment longevity",
-							"description": "Both hosting providers and consumers should maintain hardware to extend its lifespan as long as possible, use it efficiently at an appropriate capacity, verify it has up-to-date security patches, and ensure it has the necessary certifications with new purchases should be from reliable long-lifespan suppliers. Hosting providers should have a policy for extending hardware lifetime.",
+							"description": "Both hosting providers and consumers should maintain hardware to extend its lifespan as long as possible. Use it efficiently at an appropriate capacity, verify it has up-to-date security patches, and ensure it has the necessary certifications. New purchases should be from reliable long-lifespan suppliers. Hosting providers should have a policy for extending hardware lifetime.",
 							"resources": [
 								{
 									"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
@@ -3728,8 +3728,8 @@
 							]
 						},
 						{
-							"title": "Carbon-free electricity",
-							"description": "Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, including backup generators, including storage systems in calculations.",
+							"title": "Low-carbon electricity",
+							"description": "Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, backup generators, and storage systems in calculations.",
 							"resources": [
 								{
 									"2025 Eco Web Hosting Review": "https://go.eco/news/2025-eco-web-hosting-review/",
@@ -3739,7 +3739,7 @@
 									"Are my third parties green?": "https://aremythirdpartiesgreen.com/",
 									"Benefits of buying sustainable goods and services": "https://www.netregs.org.uk/environmental-topics/carbon-reduction-and-efficiency/buying-eco-friendly-goods-and-services/benefits-of-buying-sustainable-goods-and-services/",
 									"Built With": "https://builtwith.com/",
-									"Choose a sustainable service provider": "https://climateproductleaders.org/playbook/choose-a-sustainable-hosting-provider",
+									"Choose a sustainable hosting provider": "https://climateproductleaders.org/playbook/choose-a-sustainable-hosting-provider",
 									"D4 Project": "https://d4project.org/technical-guide/",
 									"Data Center Boom Risks Health of Already Vulnerable Communities": "https://www.techpolicy.press/data-center-boom-risks-health-of-already-vulnerable-communities/",
 									"Datacenters in space are a terrible, horrible, no good idea": "https://taranis.ie/datacenters-in-space-are-a-terrible-horrible-no-good-idea/",
@@ -3789,7 +3789,7 @@
 						},
 						{
 							"title": "Remaining emissions",
-							"description": "Select a hosting provider that follows the GHG Protocol Scope 2 guidance on market-based carbon emissions accounting, seeking to match its remaining location-based emissions from electricity consumption with purchases of carbon-free electricity.",
+							"description": "Work to ensure hosting and infrastructure adheres to GHG Protocol Scope 2 guidance on market-based carbon emissions accounting, seeking to match the time and location of location-based emissions from electricity consumption with purchases of low-carbon electricity.",
 							"resources": [
 								{
 									"Alternatives to Carbon Credits": "https://offsetguide.org/alternatives-to-carbon-credits/",
@@ -3819,7 +3819,7 @@
 						},
 						{
 							"title": "Domain names",
-							"description": "The impact of domain names is disclosed by registries and registrars, and registrants consider and (where possible) mitigate against these environmental issues.",
+							"description": "The impact of domain names is disclosed by domain registries and registrars. Registrants should consider and (where possible) mitigate environmental impact when making registration decisions.",
 							"resources": [
 								{
 									".eco Greenhouse Gas Emissions Report - 2024": "https://go.eco/impact/ghg-report-2024/",
@@ -3846,7 +3846,7 @@
 							"Conversion": "Using sustainable hosting and sharing sustainability metrics with visitors may increase preference and loyalty.",
 							"Environment": "Using hosting providers that operate with lower emissions, better power efficiency, and more responsible electronic waste management reduces negative environmental impacts from websites and products.",
 							"Social Equity": "Minimizing the environmental impact of your website's hosting infrastructure reduces its negative impacts on communities.",
-							"Transparency": "Sharing the efficiency and carbon-free energy metrics of hosting services allows the public to verify and understand sustainable websites and products."
+							"Transparency": "Sharing the efficiency and low-carbon energy metrics of hosting services allows the public to verify and understand sustainable websites and products."
 						}
 					],
 					"GRI": [
@@ -3861,12 +3861,12 @@
 				},
 				{
 					"id": "2",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-caching-with-offline-access-supported",
-					"guideline": "Optimize caching with offline access supported",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#optimize-caching-and-support-offline-access",
+					"guideline": "Optimize caching and support offline access",
 					"subheading": "Use caching on all appropriate resources, prioritizing the ability to use the resource offline if possible.",
 					"criteria": [
 						{
-							"title": "Utilize caching",
+							"title": "Caching resources",
 							"description": "Use server-side caching where possible to reduce processing time and repeated database lookups or API calls. Configure caching via server settings to control file-type expiration using appropriate headers, such as Expires or Cache-Control. Cache dynamic page responses where possible to serve static versions to future users. Support client-side caching of frequently used static assets to minimize repeat server requests.",
 							"resources": [
 								{
@@ -3950,8 +3950,8 @@
 				},
 				{
 					"id": "3",
-					"url": "https://w3c.github.io/sustainableweb-wsg/#compress-files-where-it-is-beneficial",
-					"guideline": "Compress files where it is beneficial",
+					"url": "https://w3c.github.io/sustainableweb-wsg/#reduce-data-transfer-with-compression",
+					"guideline": "Reduce data transfer with compression",
 					"subheading": "Use compression on all appropriate resources either before or as part of the transfer process.",
 					"criteria": [
 						{
@@ -3972,12 +3972,13 @@
 									"GPF - General Policy Framework (PDF) - 1.7 - Strategy (Encryption)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 6.3 - Front-End (Resource Compression)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"How does data compression affect CO2 emission in Nginx?": "https://github.com/toirl/less-carbon-nginx",
-									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/insights/how-to-optimize-images/",
+									"How to load CSS (fast)": "https://calendar.perfplanet.com/2025/how-to-load-css-fast/",
 									"How to tell if your site is gzipped": "https://gomakethings.com/how-to-tell-if-your-site-is-gzipped/",
 									"HTTP Compression": "https://http.dev/compression",
 									"Impact of New and Emerging Internet Technologies on Climate Change and Human Rights (PDF)": "https://www.law.ox.ac.uk/sites/default/files/migrated/un_human_rights_council_advisory_committee_submission_-_new_and_emerging_technologies_-_allmann_hazas.pdf",
 									"Internet Speeds by Country 2023": "https://worldpopulationreview.com/country-rankings/internet-speeds-by-country",
 									"NginX Server Configs": "https://github.com/h5bp/server-configs-nginx",
+									"Optimize Images to Improve Sustainability": "https://www.mightybytes.com/insights/how-to-optimize-images/",
 									"Optimizing Encoding and Transfer Size of Text-Based Assets": "https://web.dev/articles/optimizing-content-efficiency-optimize-encoding-and-transfer?hl=en",
 									"Page bloat update": "https://www.speedcurve.com/blog/page-bloat-2025/",
 									"Reduce web font size": "https://web.dev/articles/reduce-webfont-size?hl=en",
@@ -4004,8 +4005,8 @@
 									"GPF - General Policy Framework (PDF) - 1.7 - Strategy (Encryption)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 6.3 - Front-End (Resource Compression)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"Handbrake": "https://handbrake.fr/",
-									"How to Optimized images for Faster Load Times and Sustainability": "https://www.mightybytes.com/insights/how-to-optimize-images/",
 									"Internet Speeds by Country 2023": "https://worldpopulationreview.com/country-rankings/internet-speeds-by-country",
+									"Optimize Images to Improve Sustainability": "https://www.mightybytes.com/insights/how-to-optimize-images/",
 									"Page bloat update": "https://www.speedcurve.com/blog/page-bloat-2025/",
 									"Reduce web font size": "https://web.dev/articles/reduce-webfont-size?hl=en",
 									"Squoosh": "https://squoosh.app/",
@@ -4145,7 +4146,7 @@
 					"subheading": "Automate recurring tasks only where this saves resources, such as scaling services to reduce consumption or handling suspicious activity.",
 					"criteria": [
 						{
-							"title": "Automate tasks",
+							"title": "Task automation",
 							"description": "Automate recurring tasks, such as deployment, testing, and compilation in alignment with continuous integration and continuous delivery best practices.",
 							"resources": [
 								{
@@ -4165,8 +4166,8 @@
 							]
 						},
 						{
-							"title": "Qualify tasks",
-							"description": "Run automated tasks only when necessary to reduce unnecessary resource utilisation.",
+							"title": "Necessary tasks",
+							"description": "Run automated tasks only when necessary to reduce unnecessary resources/resource utlisation/processing cycles.",
 							"resources": [
 								{
 									"AWS WAF - SEC11-BP02 - Automate testing throughout the development and release lifecycle": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_automate_testing_throughout_lifecycle.html",
@@ -4205,7 +4206,7 @@
 							]
 						},
 						{
-							"title": "Suspicious activity filtering",
+							"title": "Suspicious activity management",
 							"description": "Restrict the activity of unwanted and unnecessary third-party crawlers, suspicious user agents, unwanted users, bots, and scrapers from accessing or downloading your content. Follow best practices, such as server access rules and security tools, while ensuring your content remains accessible to users, search engines and any helpful, welcome crawlers. Consider that scrapers may be used to inform and train large language models.",
 							"resources": [
 								{
@@ -4264,7 +4265,7 @@
 					"criteria": [
 						{
 							"title": "Refresh frequency",
-							"description": "Define the refresh frequency for the cache, local data, and page content based on user needs, balancing performance, data accuracy, and resource efficiency.",
+							"description": "Define the refresh frequency for the cache, local data, and page content based on user needs. Verify performance, data accuracy, and resource efficiency.",
 							"resources": [
 								{
 									"A Review on Green Caching Strategies for Next Generation Communication Networks": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9272291",
@@ -4407,7 +4408,7 @@
 							]
 						},
 						{
-							"title": "Client vs server",
+							"title": "Data processing efficiency",
 							"description": "Avoid redundant processing. When data processing is necessary, carefully compare the relative effects of client- versus server-side processing based on efficiency, performance, security, and sustainability metrics to make an informed decision.",
 							"resources": [
 								{
@@ -4584,7 +4585,7 @@
 							]
 						},
 						{
-							"title": "Close to the source",
+							"title": "Efficient location",
 							"description": "Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources.",
 							"resources": [
 								{
@@ -4623,7 +4624,7 @@
 					"id": "11",
 					"url": "https://w3c.github.io/sustainableweb-wsg/#ensure-infrastructure-fits-project-requirements",
 					"guideline": "Ensure infrastructure fits project requirements",
-					"subheading": "Maintain the infrastructure you require rather than over-provisioning and autoscale to meet demand instead to preserve hardware resources.",
+					"subheading": "Maintain the infrastructure you require rather than over-provisioning. Autoscale to meet demand and preserve hardware resources.",
 					"criteria": [
 						{
 							"title": "Lowest requirements",
@@ -4672,7 +4673,7 @@
 					"criteria": [
 						{
 							"title": "Reduce redundancy",
-							"description": "Regularly audit for and delete redundant, abandoned, or single-use data - often referred to as dark data - to reduce storage demand and energy use.",
+							"description": "Regularly audit for and delete so-called \"dark data\" that is single-use, redundant, or abandoned in order to reduce storage demand and energy use.",
 							"resources": [
 								{
 									"A Call for Research on Storage Emissions (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final126.pdf",
@@ -4691,7 +4692,7 @@
 						},
 						{
 							"title": "Expiration dates",
-							"description": "Assign expiration and/or maximum retention dates to stored data where appropriate, treating excess data as a form of technical debt. Simultaneously observe any applicable minimum data retention periods. Make data cleanup an established organization-wide routine to prevent long-term data accumulation.",
+							"description": "Assign expiration and/or maximum retention dates to stored data where appropriate, treating excess data as a form of technical debt. Observe any applicable minimum data retention periods. Make data cleanup an established organization-wide routine to prevent long-term data accumulation.",
 							"resources": [
 								{
 									"AWS WAF - SUS04-BP03 - Use policies to manage the lifecycle of your datasets": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_data_a4.html",
@@ -4719,7 +4720,7 @@
 							]
 						},
 						{
-							"title": "Justify storage",
+							"title": "Efficient storage",
 							"description": "Store data only when it cannot be easily or accurately regenerated.",
 							"resources": [
 								{
@@ -4734,7 +4735,7 @@
 							]
 						},
 						{
-							"title": "Optimize logging",
+							"title": "Optimized logging",
 							"description": "Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers.",
 							"resources": [
 								{
@@ -4751,7 +4752,7 @@
 						},
 						{
 							"title": "Asset downloads",
-							"description": "Make large, long-term assets available for easy download when in persistent use rather than needing to be accessed via the server each time they are used.",
+							"description": "Make large, long-term assets available for easy download when in persistent use so users are not required to re-access the server for repeat downloads.",
 							"resources": [
 								{
 									"Going Offline": "https://goingoffline.adactio.com/",
@@ -6602,7 +6603,7 @@
 					"benefits": [
 						{
 							"Economic": "Sourcing responsible financing for digital products and services improves their resilience and saves the organization time, money, and resources over time.",
-							"Environment": "Divesting from fossil fuels moves us more quickly to an economy that is powered by carbon-free energy, which can reduce the catastrophic impacts of climate change."
+							"Environment": "Divesting from fossil fuels moves us more quickly to an economy that is powered by low-carbon energy, which can reduce the catastrophic impacts of climate change."
 						}
 					],
 					"GRI": [
