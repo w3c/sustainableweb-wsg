@@ -39,4 +39,4 @@ For content organisation, currently by discipline, we previously considered orga
 
 ## Accessibility, Internationalization, Privacy, and Security Considerations
 
-Where applicable, accessibility, internationalisation, privacy, and security have been considered throughout development of the Web Sustainability Guidelines. [A list of guidelines to these areas](https://w3c.github.io/sustainableweb-wsg/#considerations) is available.
+Where applicable, accessibility, internationalization, privacy, and security have been considered throughout the development of the Web Sustainability Guidelines. [A list of guidelines to these areas](https://w3c.github.io/sustainableweb-wsg/#considerations) is available.
