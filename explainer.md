@@ -35,7 +35,7 @@ The guidelines can be used by individuals and organisations to improve products,
 
 n/a 
 
-For content organisation, currently by discipline, we previously considered organising by what's tested (website, system, tool), and by [principle](https://drive.google.com/file/d/1Fsw38rJ0IgF_Vhln6IrSG5YmO6zWk9Fu/view), like the Web Content Accessibility Guidelines’ POUR principles. We decided against those, as we considered a filtering system to be the best way for people to find what they want.
+For content organization, currently by discipline, we previously considered organising by what's tested (website, system, tool), and by [principle](https://drive.google.com/file/d/1Fsw38rJ0IgF_Vhln6IrSG5YmO6zWk9Fu/view), like the Web Content Accessibility Guidelines’ POUR principles. We decided against those, as we considered a filtering system to be the best way for people to find what they want.
 
 ## Accessibility, Internationalization, Privacy, and Security Considerations
 
