@@ -29,7 +29,7 @@ The guidelines can be used by individuals and organisations to improve products,
 | People making digital products and services (including web developers, user experience designers, infrastructure and system engineers, business strategists, product managers) | …make their products and services more sustainable. |
 | Organizations responsible for digital products and services, sustainability program leaders | …track their progress in improving sustainability. |
 | Authoring Tools and User Agents | …build tooling that helps improve sustainability into their products. |
-| Regulators and policy makers | …have a standardised way to understand what improving sustainability looks like. |
+| Regulators and policy makers | …have a standardized way to understand what improving sustainability looks like. |
 
 ## Alternatives Considered
 
