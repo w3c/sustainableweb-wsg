@@ -12,7 +12,7 @@ The digital industry has a significant sustainability impact, which affects peop
 
 There is plenty of opportunity to reduce that impact, and many organizations want to do so. Reasons include cost-saving, legal compliance and corporate responsibility.
 
-Hands-on advice on how to make digital products and services more sustainable is not currently available in a systematic, widely reviewed, openly developed, and standardised format.
+Hands-on advice on how to make digital products and services more sustainable is not currently available in a systematic, widely reviewed, openly developed, and standardized format.
 
 ## Approach
 
