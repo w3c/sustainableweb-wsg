@@ -10,7 +10,7 @@ The digital industry has a significant sustainability impact, which affects peop
 - since the Paris Agreement, average web page sizes have increased by over **70%** on desktop and **140%** on mobile \[[PAGE-WEIGHT](https://w3c.github.io/sustainableweb-wsg/glance.html#bib-page-weight)\].   
 - between 2015 and 2021, internet users increased by **60%**, whilst internet traffic increased by **440%** \[[DATA](https://w3c.github.io/sustainableweb-wsg/glance.html#bib-data)\]. 
 
-There is plenty of opportunity to reduce that impact, and many organisations want to do so. Reasons include cost-saving, legal compliance and corporate responsibility.
+There is plenty of opportunity to reduce that impact, and many organizations want to do so. Reasons include cost-saving, legal compliance and corporate responsibility.
 
 Hands-on advice on how to make digital products and services more sustainable is not currently available in a systematic, widely reviewed, openly developed, and standardised format.
 
