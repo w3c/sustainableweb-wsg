@@ -16,9 +16,9 @@ Hands-on advice on how to make digital products and services more sustainable is
 
 ## Approach
 
-The Web Sustainability Guidelines are guidelines for designing and implementing digital products and services that are more sustainable, by putting people and the planet first. 
+The Web Sustainability Guidelines (WSG) help design and implement digital products and services that are more sustainable.
 
-The WSG are best practices based on measurable, evidence-based research. They are also aligned with open standards from Global Reporting Initiative ([GRI](https://w3c.github.io/sustainableweb-wsg/summary.html#bib-gri)) and with work on carbon intensity metrics from the Green Software Foundation ([SCI-Web](https://github.com/w3c/sustainableweb-wsg/pull/199)).
+The WSG are designed to put people and planet first. They are best practices based on measurable, evidence-based research. They are also aligned with open standards from Global Reporting Initiative ([GRI](https://w3c.github.io/sustainableweb-wsg/summary.html#bib-gri)) and with work on carbon intensity metrics from the Green Software Foundation ([SCI-Web](https://github.com/w3c/sustainableweb-wsg/pull/199)).
 
 The guidelines can be used by individuals and organisations to improve products, and to show progress in their road to becoming more sustainable (the aim is “progress over perfection”).
 
@@ -27,7 +27,7 @@ The guidelines can be used by individuals and organisations to improve products,
 | Audience | They can use WSG to… |
 | :---- | :---- |
 | People making digital products and services (including web developers, user experience designers, infrastructure and system engineers, business strategists, product managers) | …make their products and services more sustainable. |
-| Organisations responsible for digital products and services | …track their progress in improving sustainability. |
+| Organisations responsible for digital products and services, sustainability program leaders | …track their progress in improving sustainability. |
 | Authoring Tools and User Agents | …build tooling that helps improve sustainability into their products. |
 | Regulators and policy makers | …have a standardised way to understand what improving sustainability looks like. |
 
