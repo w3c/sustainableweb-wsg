@@ -22,6 +22,19 @@
 							<dd>
 								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
+			function editorRef() {
+				/* Editor Resolution */	
+				const ddToRemove = document.querySelector('dd[data-editor-id="49702"]');
+				if (ddToRemove) { ddToRemove.remove(); }
+				document.querySelectorAll('.head dt').forEach(dt => {
+					if (dt.textContent.trim() === 'Editors:') {
+						dt.textContent = "Editor:";
+						const htmlToInsert = `
+						<dt>Lead Editor:</dt>
+						<dd class="editor p-author h-card vcard" data-editor-id="49702">
+								<a class="u-url url p-name fn" href="https://alexanderdawson.com/">Alexander Dawson</a> (<span class="p-org org h-org">Invited Expert</span>)
+						</dd>`;
+						dt.insertAdjacentHTML('beforebegin', htmlToInsert); } } ); }
 		</script>
 		<script class="remove">
 		var respecConfig = {
@@ -32,13 +45,19 @@
 					company: "Invited Expert",
 					w3cid: 49702,
 				},
+				{
+					name: "Rose Newell",
+					url: "https://rosenewell.co.uk/",
+					company: "Invited Expert",
+					w3cid: 164418,
+				},
 			],
 			edDraftURI: "https://w3c.github.io/sustainableweb-wsg/policies.html",
 			github: "https://github.com/w3c/sustainableweb-wsg/",
 			group: "sustainableweb",
 			latestVersion: "https://w3c.github.io/sustainableweb-wsg/policies.html",
 			specStatus: "ED",
-			postProcess: [authorRef],
+			postProcess: [authorRef, editorRef],
 		}
 		</script>
 	</head>
@@ -55,216 +74,256 @@
 			<h2>Laws and policies</h2>
 			<table class="flow">
 				<thead>
-				<tr>
-					<th>Country or Region</th>
-					<th>Name</th>
-					<th>Date Enacted</th>
-					<th>Type</th>
-					<th>Maturity</th>
-					<th>Responsible Entity</th>
-				</tr>
+					<tr>
+						<th>Country or Region</th>
+						<th>Name</th>
+						<th>Date Enacted</th>
+						<th>Type</th>
+						<th>Maturity</th>
+						<th>Responsible Entity</th>
+					</tr>
 				</thead>
 				<tbody>
-				<tr>
-					<td>Brazil</td>
-					<td><a href="https://www.gov.br/cvm/en/foreign-investors/regulation-files/ResolutionCVM193.pdf">Enhancement and Standardization of Climate-Related Disclosures (Resolution 193)</a> (<em>PDF</em>)</td>
-					<td>2026</td>
-					<td>Policy</td>
-					<td><a href="https://www.esgtoday.com/brazil-to-require-mandatory-sustainability-reporting-from-2026/">Awaiting</a></td>
-					<td><a href="https://www.gov.br/cvm/en">Securities and Exchange Commission</a></td>
-				</tr>
-				<tr>
-					<td>Singapore</td>
-					<td><a href="https://www.sgx.com/sustainable-finance/sustainability-reporting">Sustainability Disclosure and Reporting Rules</a></td>
-					<td>2026</td>
-					<td>Policy</td>
-					<td><a href="https://www.sgxgroup.com/media-centre/20240923-sgx-regco-start-incorporating-ifrs-sustainability-disclosure">Awaiting</a></td>
-					<td><a href="https://www.sgxgroup.com/">Singapore Exchange (SGX Group)</a></td>
-				</tr>
-				<tr>
-					<td>United States</td>
-					<td><a href="https://www.epw.senate.gov/public/_cache/files/e/2/e2c78ea9-0e16-4588-888f-b9b2e57c3fb6/B99FED5139B823395EFC442BF75CF687E7275CBA19F73D8C9A3B5E3E5AF1474D.maz25018.pdf">Clean Cloud Act</a> (<em>PDF</em>)</td>
-					<td>2025</td>
-					<td>Law</td>
-					<td><a href="https://www.epw.senate.gov/public/index.cfm/2025/4/whitehouse-fetterman-introduce-clean-cloud-act-to-create-emissions-standard-for-ai-cryptomining-facilities">Passed</a></td>
-					<td><a href="https://www.epw.senate.gov/public/">U.S. Senate Committee on Environment and Public Works</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628-Cloud-and-AI-Development-Act_en">EU Cloud and AI Development Act</a></td>
-					<td>2025</td>
-					<td>Law</td>
-					<td><a href="https://www.eu-cloud-ai-act.com/">Awaiting</a></td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://commission.europa.eu/business-economy-euro/doing-business-eu/sustainability-due-diligence-responsible-business/corporate-sustainability-due-diligence_en">Corporate Sustainability Due Diligence Directive (CS3D)</a></td>
-					<td>2024</td>
-					<td>Directive</td>
-					<td><a href="https://www.tlt.com/insights-and-events/insight/eu-corporate-sustainability-due-diligence-directive-moving-forward-but-pared-back/">Awaiting</a></td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://www.springlex.eu/packages/dora/dora-regulation/">Digital Operational Resilience Act (DORA)</a></td>
-					<td>2024</td>
-					<td>Law</td>
-					<td>Passed</td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng">Green Transition Directive (EU 2024/825)</a></td>
-					<td>2024</td>
-					<td>Directive</td>
-					<td>Passed</td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en">Ecodesign for Sustainable Products Regulation (ESPR)</a></td>
-					<td>2024</td>
-					<td>Law</td>
-					<td>Passed</td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
-				<tr>
-					<td>United States</td>
-					<td><a href="https://www.sec.gov/files/33-11042-fact-sheet.pdf">Enhancement and Standardization of Climate-Related Disclosures</a> (<em>PDF</em>)</td>
-					<td>2024</td>
-					<td>Policy</td>
-					<td><a href="https://www.esgtoday.com/the-sec-unveils-long-awaited-proposed-climate-disclosure-rules/">Awaiting</a></td>
-					<td><a href="https://www.sec.gov/">Securities and Exchange Commission</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://artificialintelligenceact.eu/the-act/">EU Artificial Intelligence Act (AI Act)</a></td>
-					<td>2024</td>
-					<td>Law</td>
-					<td>Passed</td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
-				<tr>
-					<td>United States</td>
-					<td><a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2013">Generative AI: Training Data Transparency (AB-2013)</a></td>
-					<td>2024</td>
-					<td>Law</td>
-					<td><a href="https://www.gov.ca.gov/2024/09/29/governor-newsom-announces-new-initiatives-to-advance-safe-and-responsible-ai-protect-californians/">Awaiting</a></td>
-					<td><a href="https://leginfo.legislature.ca.gov/faces/home.xhtml">State of California</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://www.europarl.europa.eu/legislative-train/theme-a-european-green-deal/file-substantiating-green-claims">Green Claims Directive</a></td>
-					<td>2024</td>
-					<td>Directive</td>
-					<td><a href="https://www.europarl.europa.eu/topics/en/article/20240111STO16722/stopping-greenwashing-how-the-eu-regulates-green-claims">Awaiting</a></td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
-				<tr>
-					<td>China</td>
-					<td><a href="https://www.china-briefing.com/news/china-releases-esg-reporting-standards-for-businesses/">Sustainability Disclosure Standards for Businesses</a></td>
-					<td>2024</td>
-					<td>Policy</td>
-					<td><a href="https://www.esgtoday.com/china-stock-exchanges-announce-mandatory-sustainability-reporting-requirements-for-listed-companies/">Awaiting</a></td>
-					<td><a href="https://www.mof.gov.cn/en/">Ministry of Finance</a></td>
-				</tr>
-				<tr>
-					<td>United States</td>
-					<td><a href="https://legiscan.com/CA/text/SB253/2023">Climate Corporate Data Accountability Act (SB 253/CCDAA)</a></td>
-					<td>2023</td>
-					<td>Law</td>
-					<td>Passed</td>
-					<td><a href="https://leginfo.legislature.ca.gov/faces/home.xhtml">State of California</a></td>
-				</tr>
-				<tr>
-					<td>United States</td>
-					<td><a href="https://legiscan.com/CA/text/SB261/2023">Climate-Related Financial Risk Act (SB 261/CFRA)</a></td>
-					<td>2023</td>
-					<td>Law</td>
-					<td>Passed</td>
-					<td><a href="https://leginfo.legislature.ca.gov/faces/home.xhtml">State of California</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://finance.ec.europa.eu/capital-markets-union-and-financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en">Corporate Sustainability Reporting Directive (CSRD)</a></td>
-					<td>2023</td>
-					<td>Directive</td>
-					<td>Passed</td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
-				<tr>
-					<td>Germany</td>
-					<td><a href="https://www.gesetze-im-internet.de/enefg/BJNR1350B0023.html">Energy Efficiency Act (EnEfG)</a></td>
-					<td>2023</td>
-					<td>Law</td>
-					<td>Passed</td>
-					<td><a href="https://www.bundesregierung.de/breg-en">Federal Government (Bundesregierung)</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficiency-targets-directive-and-rules/energy-efficiency-directive_en">Energy Efficiency Directive</a></td>
-					<td>2023</td>
-					<td>Directive</td>
-					<td>Passed</td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
-				<tr>
-					<td>Germany</td>
-					<td><a href="https://www.csr-in-deutschland.de/EN/Business-Human-Rights/Supply-Chain-Act/supply-chain-act.html">Supply Chain and Due Diligence Act (SCDDA)</a></td>
-					<td>2023</td>
-					<td>Law</td>
-					<td>Passed</td>
-					<td><a href="https://www.bmas.de/EN/Home/home.html">Federal Ministry of Labour and Social Affairs</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://digital-strategy.ec.europa.eu/en/library/cyber-resilience-act">Cyber Resilience Act (CRA)</a></td>
-					<td>2022</td>
-					<td>Law</td>
-					<td>Passed</td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02009L0125-20121204&from=EN">Ecodesign for Sustainable Products Directive (ESPD)</a> (<em>PDF</em>)</td>
-					<td>2022</td>
-					<td>Directive</td>
-					<td>Passed</td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
-				<tr>
-					<td>France</td>
-					<td><a href="https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000044330841/2022-02-15">Anti-gaspillage pour une économie circulaire' (AGEC)</a></td>
-					<td>2021</td>
-					<td>Law</td>
-					<td>Passed</td>
-					<td><a href="https://www.legifrance.gouv.fr/">French Republic</a></td>
-				</tr>
-				<tr>
-					<td>India</td>
-					<td><a href="https://community.sap.com/t5/sustainability-blogs/business-responsibility-and-sustainability-report-brsr-in-nutshell/ba-p/13573959">Business Responsibility and Sustainability Report (BRSR)</a></td>
-					<td>2021</td>
-					<td>Policy</td>
-					<td>Passed</td>
-					<td><a href="https://www.sebi.gov.in/">Securities and Exchange Board of India (SEBI)</a></td>
-				</tr>
-				<tr>
-					<td>France</td>
-					<td><a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044327272">Visant à Réduire L'empreinte Environnementale Du Numérique (REEN)</a></td>
-					<td>2021</td>
-					<td>Law</td>
-					<td>Passed</td>
-					<td><a href="https://www.legifrance.gouv.fr/">French Republic</a></td>
-				</tr>
-				<tr>
-					<td>European Union</td>
-					<td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R0852">EU Taxonomy Regulation</a></td>
-					<td>2020</td>
-					<td>Law</td>
-					<td>Passed</td>
-					<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
-				</tr>
+					<tr>
+						<td>United States</td>
+						<td><a href="https://www.nysenate.gov/legislation/bills/2025/S3456">New York Corporate Climate Accountability Act (S3456)</a></td>
+						<td>2027</td>
+						<td>Law</td>
+						<td><a href="https://www.ropesgray.com/en/insights/viewpoints/102jyry/climate-disclosure-bills-reintroduced-in-new-york-fast-facts-and-take-aways">Awaiting</a></td>
+						<td><a href="https://leginfo.legislature.ca.gov/faces/home.xhtml">The New York Senate</a></td>
+					</tr>
+					<tr>
+						<td>Brazil</td>
+						<td><a href="https://www.gov.br/cvm/en/foreign-investors/regulation-files/ResolutionCVM193.pdf">Enhancement and Standardization of Climate-Related Disclosures (Resolution 193)</a> (<em>PDF</em>)</td>
+						<td>2026</td>
+						<td>Policy</td>
+						<td><a href="https://www.esgtoday.com/brazil-to-require-mandatory-sustainability-reporting-from-2026/">Awaiting</a></td>
+						<td><a href="https://www.gov.br/cvm/en">Securities and Exchange Commission</a></td>
+					</tr>
+					<tr>
+						<td>Singapore</td>
+						<td><a href="https://www.sgx.com/sustainable-finance/sustainability-reporting">Sustainability Disclosure and Reporting Rules</a></td>
+						<td>2026</td>
+						<td>Policy</td>
+						<td><a href="https://www.sgxgroup.com/media-centre/20240923-sgx-regco-start-incorporating-ifrs-sustainability-disclosure">Awaiting</a></td>
+						<td><a href="https://www.sgxgroup.com/">Singapore Exchange (SGX Group)</a></td>
+					</tr>
+					<tr>
+						<td>United States</td>
+						<td><a href="https://www.epw.senate.gov/public/_cache/files/e/2/e2c78ea9-0e16-4588-888f-b9b2e57c3fb6/B99FED5139B823395EFC442BF75CF687E7275CBA19F73D8C9A3B5E3E5AF1474D.maz25018.pdf">Clean Cloud Act</a> (<em>PDF</em>)</td>
+						<td>2026</td>
+						<td>Law</td>
+						<td><a href="https://www.epw.senate.gov/public/index.cfm/2025/4/whitehouse-fetterman-introduce-clean-cloud-act-to-create-emissions-standard-for-ai-cryptomining-facilities">Passed</a></td>
+						<td><a href="https://www.epw.senate.gov/public/">U.S. Senate Committee on Environment and Public Works</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628-Cloud-and-AI-Development-Act_en">EU Cloud and AI Development Act</a></td>
+						<td>2025</td>
+						<td>Law</td>
+						<td><a href="https://www.eu-cloud-ai-act.com/">Awaiting</a></td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://www.digital-fairness-act.com/">Digital Fairness Act (DFA)</a></td>
+						<td>2024</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://commission.europa.eu/business-economy-euro/doing-business-eu/sustainability-due-diligence-responsible-business/corporate-sustainability-due-diligence_en">Corporate Sustainability Due Diligence Directive (CS3D)</a></td>
+						<td>2024</td>
+						<td>Directive</td>
+						<td><a href="https://www.tlt.com/insights-and-events/insight/eu-corporate-sustainability-due-diligence-directive-moving-forward-but-pared-back">Awaiting</a></td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://www.springlex.eu/en/packages/dora/dora-regulation/">Digital Operational Resilience Act (DORA)</a></td>
+						<td>2024</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng">Green Transition Directive (EU 2024/825)</a></td>
+						<td>2024</td>
+						<td>Directive</td>
+						<td>Passed</td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://commission.europa.eu/energy-climate-change-environment/standards-tools-and-labels/products-labelling-rules-and-requirements/ecodesign-sustainable-products-regulation_en">Ecodesign for Sustainable Products Regulation (ESPR)</a></td>
+						<td>2024</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>United States</td>
+						<td><a href="https://www.sec.gov/files/33-11042-fact-sheet.pdf">Enhancement and Standardization of Climate-Related Disclosures</a> (<em>PDF</em>)</td>
+						<td>2024</td>
+						<td>Policy</td>
+						<td><a href="https://www.esgtoday.com/the-sec-unveils-long-awaited-proposed-climate-disclosure-rules/">Awaiting</a></td>
+						<td><a href="https://www.sec.gov/">Securities and Exchange Commission</a></td>
+					</tr>
+					<tr>
+						<td>United Kingdom</td>
+						<td><a href="https://www.gov.uk/government/publications/sustainability-disclosure-requirements-implementation-update-2024">Sustainable Disclosure Regulation (SDR)</a></td>
+						<td>2024</td>
+						<td>Law</td>
+						<td><a href="https://www.sweep.net/blog/environmental-legislation-uk-what-you-need-to-know">Awaiting</a></td>
+						<td><a href="https://www.gov.uk/">UK Parliament</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://artificialintelligenceact.eu/the-act/">EU Artificial Intelligence Act (AI Act)</a></td>
+						<td>2024</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>United States</td>
+						<td><a href="https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB2013">Generative AI: Training Data Transparency (AB-2013)</a></td>
+						<td>2024</td>
+						<td>Law</td>
+						<td><a href="https://www.gov.ca.gov/2024/09/29/governor-newsom-announces-new-initiatives-to-advance-safe-and-responsible-ai-protect-californians/">Awaiting</a></td>
+						<td><a href="https://leginfo.legislature.ca.gov/faces/home.xhtml">State of California</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://www.europarl.europa.eu/legislative-train/theme-a-european-green-deal/file-substantiating-green-claims">Green Claims Directive</a></td>
+						<td>2024</td>
+						<td>Directive</td>
+						<td><a href="https://www.europarl.europa.eu/topics/en/article/20240111STO16722/stopping-greenwashing-how-the-eu-regulates-green-claims">Awaiting</a></td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>China</td>
+						<td><a href="https://www.china-briefing.com/news/china-releases-esg-reporting-standards-for-businesses/">Sustainability Disclosure Standards for Businesses</a></td>
+						<td>2024</td>
+						<td>Policy</td>
+						<td><a href="https://www.esgtoday.com/china-stock-exchanges-announce-mandatory-sustainability-reporting-requirements-for-listed-companies/">Awaiting</a></td>
+						<td><a href="https://www.mof.gov.cn/en/">Ministry of Finance</a></td>
+					</tr>
+					<tr>
+						<td>United States</td>
+						<td><a href="https://legiscan.com/CA/text/SB253/2023">Climate Corporate Data Accountability Act (SB 253/CCDAA)</a></td>
+						<td>2023</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://leginfo.legislature.ca.gov/faces/home.xhtml">State of California</a></td>
+					</tr>
+					<tr>
+						<td>United States</td>
+						<td><a href="https://legiscan.com/CA/text/SB261/2023">Climate-Related Financial Risk Act (SB 261/CFRA)</a></td>
+						<td>2023</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://leginfo.legislature.ca.gov/faces/home.xhtml">State of California</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://finance.ec.europa.eu/capital-markets-union-and-financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en">Corporate Sustainability Reporting Directive (CSRD)</a></td>
+						<td>2023</td>
+						<td>Directive</td>
+						<td>Passed</td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>Germany</td>
+						<td><a href="https://www.gesetze-im-internet.de/enefg/BJNR1350B0023.html">Energy Efficiency Act (EnEfG)</a></td>
+						<td>2023</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://www.bundesregierung.de/breg-en">Federal Government (Bundesregierung)</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficiency-targets-directive-and-rules/energy-efficiency-directive_en">Energy Efficiency Directive</a></td>
+						<td>2023</td>
+						<td>Directive</td>
+						<td>Passed</td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>Germany</td>
+						<td><a href="https://www.csr-in-deutschland.de/EN/Business-Human-Rights/Supply-Chain-Act/supply-chain-act.html">Supply Chain and Due Diligence Act (SCDDA)</a></td>
+						<td>2023</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://www.bmas.de/EN/Home/home.html">Federal Ministry of Labour and Social Affairs</a></td>
+					</tr>
+					<tr>
+						<td>United Kingdom</td>
+						<td><a href="https://www.legislation.gov.uk/uksi/2022/31/contents/made">Climate-Related Financial Disclosure (CRFD)</a></td>
+						<td>2022</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://www.gov.uk">UK Parliment</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://digital-strategy.ec.europa.eu/en/library/cyber-resilience-act">Cyber Resilience Act (CRA)</a></td>
+						<td>2022</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02009L0125-20121204&from=EN">Ecodesign for Sustainable Products Directive (ESPD)</a> (<em>PDF</em>)</td>
+						<td>2022</td>
+						<td>Directive</td>
+						<td>Passed</td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>France</td>
+						<td><a href="https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000044330841/2022-02-15">Anti-gaspillage pour une économie circulaire' (AGEC)</a></td>
+						<td>2021</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://www.legifrance.gouv.fr/">French Republic</a></td>
+					</tr>
+					<tr>
+						<td>France</td>
+						<td><a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044327272">Visant à Réduire L'empreinte Environnementale Du Numérique (REEN)</a></td>
+						<td>2021</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://www.legifrance.gouv.fr/">French Republic</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R0852">EU Taxonomy Regulation</a></td>
+						<td>2020</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>European Union</td>
+						<td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R0852">EU Taxonomy Regulation</a></td>
+						<td>2020</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://commission.europa.eu/index_en">European Parliament</a></td>
+					</tr>
+					<tr>
+						<td>United Kingdom</td>
+						<td><a href="https://www.gov.uk/government/news/new-digital-tool-enables-easier-energy-and-carbon-reporting">Streamlined Energy and Carbon Reporting (SECR)</a></td>
+						<td>2019</td>
+						<td>Law</td>
+						<td>Passed</td>
+						<td><a href="https://www.gov.uk">UK Parliment</a></td>
+					</tr>
 				</tbody>
 			</table>
 		</section>
@@ -274,8 +333,10 @@
 				<li><a href="https://www.xrb.govt.nz/standards/climate-related-disclosures/aotearoa-new-zealand-climate-standards/">Aotearoa New Zealand Climate Standards (NZ CS 1-3)</a></li>
 				<li><a href="https://aasb.gov.au/news/australian-sustainability-reporting-standards-aasb-s1-and-aasb-s2-are-now-available-on-the-aasb-digital-standards-portal/">Australian Sustainability Reporting Standards (AASB S1 and S2)</a> (Passed)</li>
 				<li><a href="https://www.omg.org/spec/ASCRSM/">Automated Source Code Resource Sustainability Measure (ASCRSM)</a></li>
+				<li><a href="https://community.sap.com:443/t5/sustainability-blog-posts/business-responsibility-and-sustainability-report-brsr-in-nutshell/ba-p/13573959">Business Responsibility and Sustainability Report (BRSR)</a> <a href="https://www.sebi.gov.in/">(SEBI)</a></li>
 				<li><a href="https://account.scte.org/standards/library/catalog/scte-295-cable-broadband-corporate-sustainability-metrics/">Cable Broadband Corporate Sustainability Metrics (SCTE 295 2025)</a></li>
 				<li><a href="https://cpastore-boutiquecpa.cpacanada.ca/UI/Publications.html?productId=13957">Canadian Sustainability Disclosure Standards (CSDS)</a></li>
+				<li><a href="https://www.opencompute.org/documents/carbon-disclosure-ocp-base-specification-20250730-pdf">Embodied Carbon Disclosure Base Specification (OCP/iCA)</a> (<em>PDF</em>)</li>
 				<li><a href="https://finance.ec.europa.eu/news/commission-adopts-european-sustainability-reporting-standards-2023-07-31_en">European Sustainability Reporting Standards (ESRS)</a></li>
 				<li><a href="https://www.globalreporting.org/how-to-use-the-gri-standards/gri-standards-english-language/">Global Reporting Initiative (GRI)</a></li>
 				<li><a href="https://greensoftware.foundation/">Green Software Foundation (GSF)</a><ul>
@@ -296,6 +357,8 @@
 					<li><a href="https://www.ietf.org/archive/id/draft-stephan-green-use-cases-00.html">Use Cases for Energy Efficiency Management</a> (<a href="https://emile22.github.io/draft-stephan-green-use-cases/draft-stephan-green-use-cases.html">Awaiting</a>)</li>
 				</ul></li>
 				<li><a href="https://sustainablegamesalliance.org/standard/read-the-standard/">Sustainable Games Alliance Standard (SGA)</a></li>
+				<li><a href="https://www.sustainableit.org/standards/it-esg-standards">Sustainable IT</a></li>
+				<li><a href="https://www.gov.uk/guidance/uk-sustainability-reporting-standards">UK Sustainability Disclosure Standards (UK SRS)</a></li>
 			</ol>
 		</section>
 		<section> <!-- Best practices -->
@@ -318,6 +381,13 @@
 					<td>2025</td>
 					<td><a href="https://github.com/w3c/sustainableweb-wsg/releases">Awaiting</a></td>
 					<td><a href="https://www.w3.org/groups/ig/sustainableweb/">W3C Sustainable Web Interest Group</a></td>
+				</tr>
+				<tr>
+					<td>United Kingdom</td>
+					<td><a href="https://greenclaims.campaign.gov.uk/">Green Claims Code</a></td>
+					<td>2025</td>
+					<td>Passed</td>
+					<td><a href="https://www.gov.uk/">UK Parliament</a></td>
 				</tr>
 				<tr>
 					<td>France</td>

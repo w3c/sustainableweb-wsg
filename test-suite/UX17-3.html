@@ -3,30 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Stop Animation</title>
+		<title>WSG Test: Pre-Generated Resource</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#ensure-animation-is-proportionate-and-easy-to-control">
-		<meta name="flags" content="invalid">
-		<meta name="assert" content="Test Checks: Include a Mechanism To Pause or Stop Page Animation">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-and-physical-documents">
+		<meta name="flags" content="asset">
+		<meta name="assert" content="Test Checks: Provide Pre-Generated Copies of Repeat-Use Physical Assets">
 		<style>
-			div {
-			width: 100px;
-			height: 100px;
-			background: red;
-			position: relative;
-			animation: mymove 5s infinite;
-			}
-			@keyframes mymove {
-			from {left: 0px;}
-			to {left: 200px;}
-			}
+
 		</style>
 		<script>
 
 		</script>
 	</head>
 	<body>
-		<div></div>
-		<p>Test passes if it recognizes and warns that this animation cannot be stopped or paused.</p>
+		<p>You can download our latest <a href="assets/doc.pdf">sustainability report</a> (PDF) to learn how we are becoming more sustainable.</p>
+		<p>Test passes if the resource has already been generated and is stored for repeat-use.</p>
 	</body>
 </html>

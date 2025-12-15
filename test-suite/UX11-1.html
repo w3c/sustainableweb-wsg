@@ -3,21 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Deceptive Design</title>
+		<title>WSG Test: Auto-Playing Animation</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability">
 		<meta name="flags" content="invalid">
-		<meta name="assert" content="Test Checks: Eliminate Deceptive Design Patterns or Manipulative Techniques">
+		<meta name="assert" content="Test Checks: Remove Any Functionality That May Trigger Auto-Playing Animation">
 		<style>
-			body { user-select: none; }
+
 		</style>
 		<script>
-			document.addEventListener('contextmenu', event => {
-				event.preventDefault();
-			});
+
 		</script>
 	</head>
 	<body>
-		<p>Test passes if anti-patterns are identified and flagged for removal.</p>
+		<video controls autoplay muted>
+			<source src="assets/flower.webm" type="video/webm">
+			Your browser does not support the video tag.
+		</video>
+		<p>Test passes if the auto-playing animation is detected and flagged.</p>
 	</body>
 </html>

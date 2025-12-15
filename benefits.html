@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
+		<title>Benefits for Web Sustainability Guidelines (WSG)</title>
+		<style>
+			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
+			summary { cursor: pointer; }
+			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
+			.summary:not(:last-child) { margin-bottom: 1em; }
+		</style>
+		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+		<script class="remove">
+			/* Author Acknowledgement */
+			function authorRef() {
+				document.querySelectorAll("div.head dt").forEach(function (node) {
+					if (node.textContent.trim() == "Feedback:") {
+						node.insertAdjacentHTML('beforebegin', `
+							<dt>Authors:</dt>
+							<dd>
+								<a href="#acknowledgments">See acknowledgments</a>
+							</dd> `); }}); }
+			function editorRef() {
+				/* Editor Resolution */	
+				const ddToRemove = document.querySelector('dd[data-editor-id="49702"]');
+				if (ddToRemove) { ddToRemove.remove(); }
+				document.querySelectorAll('.head dt').forEach(dt => {
+					if (dt.textContent.trim() === 'Editors:') {
+						dt.textContent = "Editor:";
+						const htmlToInsert = `
+						<dt>Lead Editor:</dt>
+						<dd class="editor p-author h-card vcard" data-editor-id="49702">
+								<a class="u-url url p-name fn" href="https://alexanderdawson.com/">Alexander Dawson</a> (<span class="p-org org h-org">Invited Expert</span>)
+						</dd>`;
+						dt.insertAdjacentHTML('beforebegin', htmlToInsert); } } ); }
+		</script>
+		<script class="remove">
+		var respecConfig = {
+			editors: [
+				{
+					name: "Alexander Dawson",
+					url: "https://alexanderdawson.com/",
+					company: "Invited Expert",
+					w3cid: 49702,
+				},
+				{
+					name: "Rose Newell",
+					url: "https://rosenewell.co.uk/",
+					company: "Invited Expert",
+					w3cid: 164418,
+				},
+			],
+			edDraftURI: "https://w3c.github.io/sustainableweb-wsg/benefits.html",
+			github: "https://github.com/w3c/sustainableweb-wsg/",
+			group: "sustainableweb",
+			latestVersion: "https://w3c.github.io/sustainableweb-wsg/benefits.html",
+			specStatus: "ED",
+			postProcess: [authorRef, editorRef],
+		}
+		</script>
+	</head>
+	<body>
+		<section id="abstract"> <!-- Abstract -->
+			<p>This document lists benefits that reinforce the guidelines and success criteria within the <a href="https://w3c.github.io/sustainableweb-wsg/">Web Sustainability Guidelines</a> (<abbr title="Web Sustainability Guidelines">WSG</abbr>) specification.</p>
+			<p>Benefits are described as motivation factors that may not necessarily be sustainability-related, but can be used as persuasive starting points in discussions with <strong>colleagues</strong>, <strong>clients</strong>, and <strong>leadership</strong> who may dictate the adoption state of sustainability-related efforts. As such, these benefits that potentially can arise from meeting sustainability guidance within WSG can assist with justifying compliance.</p>
+			<p>Within this document, we use the following descriptive labels:</p>
+			<ul>
+				<li>Accessibility</li>
+				<li>Conversion</li>
+				<li>Economic</li>
+				<li>Environment</li>
+				<li>Operations</li>
+				<li>Performance</li>
+				<li>Privacy</li>
+				<li>Social Equity</li>
+				<li>Security</li>
+				<li>Transparency</li>
+			</ul>
+			<p>Resources are for information purposes only, no endorsement is implied. Neither the <abbr title="World Wide Web Consortium">W3C</abbr> nor the <a href="https://www.w3.org/groups/ig/sustainableweb/">Sustainable Web Interest Group</a> can guarantee the sustainability of these external resources.</p>
+			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
+		</section>
+		<section id="sotd"> <!-- Status of This Document -->
+			<p>To provide feedback regarding this document, the preferred method is using GitHub. It is free to create a GitHub account to file issues. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
+		</section>
+		<section> <!-- WSG Benefits -->
+			<h2>WSG Benefits</h2>
+			<section> <!-- User Experience Design -->
+				<h3>User Experience Design</h3>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#examine-and-disclose-any-external-factors-interacting-with-your-project">2.1</a></strong>: Examine and disclose any external factors interacting with your project</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Including people who are not primary or secondary users, such as people with disabilities, in research means their specific needs can be addressed more effectively.</li>
+						<li><strong>Economic:</strong> Researching the entire ecosystem, including the broader or indirect impact and services, helps organizations to manage budgets more effectively.</li>
+						<li><strong>Environment:</strong> Making certain interventions, such as coordinating planning with suppliers, can significantly reduce the environmental impact of a digital product or service.</li>
+						<li><strong>Privacy:</strong> Having an overview of components makes it easier to identify potential data protection risks.</li>
+						<li><strong>Social Equity:</strong> Auditing factors can reveal factors not commonly understood or covered in established best practices, enabling better support for underrepresented groups.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#understand-user-requirements-or-constraints-resolving-barriers-to-access">2.2</a></strong>: Understand user requirements or constraints, resolving barriers to access</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Understanding the needs of your audience through accessibility and trauma-informed research will help you prioritize design improvements to boost accessibility beyond the basics.</li>
+						<li><strong>Conversion:</strong> Meeting audience requirements increases the likelihood that they will use it regularly and recommend it to others, improving its adoption rate and reputation.</li>
+						<li><strong>Economic:</strong> Responding to the needs of your audience means they are more likely to convert and purchase.</li>
+						<li><strong>Environment:</strong> Undertaking research to identify real user needs and behaviour means developers can avoid wasting time, effort, and emissions on building unnecessary features.</li>
+						<li><strong>Performance:</strong> Use user research to identify UX bottlenecks that cause user abandonment. Fixes can be measured, tested, and evaluated to further improve performance and reduce emissions through removing those bottlenecks and inefficiencies.</li>
+						<li><strong>Privacy:</strong> Assessing user needs and being minimal with further information requests will help you comply with privacy legislation.</li>
+						<li><strong>Social Equity:</strong> Improving UX with compatibility in mind means products or services work better for users who might otherwise face various barriers to accessing content - such as older devices, low-bandwidth environments, or restrictive territories, language, while being considerate of localizability and adapting to cultural norms. This reduces e-waste and improves equity if older equipment meets needs for longer.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#integrate-sustainability-into-every-stage-of-the-ideation-process">2.3</a></strong>: Integrate sustainability into every stage of the ideation process</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Understanding real-world accessibility requirements in the early development stages makes it possible to prioritize inclusive design throughout the entire lifecycle. This improves efficiency, as developers will not be prompted to add in accessibility later. It will also reduce emissions associated with the patching process.</li>
+						<li><strong>Conversion:</strong> Testing user interfaces usually leads to improved conversion rates as they can be optimized accordingly. This includes removing anything that causes friction and designing content in a way that optimizes user flow, reducing emissions while maximizing conversion.</li>
+						<li><strong>Environment:</strong> Helping key contributors to better understand the environmental impact makes it possible to track and reduce that impact throughout the lifecycle of a project.</li>
+						<li><strong>Economic:</strong> Incorporating wireframes, prototypes, and user testing into early product design cycles reduces money and effort otherwise wasted building features people will not use.</li>
+						<li><strong>Social Equity:</strong> Accounting for the needs of users who might otherwise face various barriers to accessing content - on such as older devices, in low-bandwidth environments, or have other barriers to accessing information early in the process will reduce the need for costly redesigns or adding appropriate alternatives at a later date.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#minimize-non-essential-content-interactivity-or-journeys">2.4</a></strong>: Minimize non-essential content, interactivity, or journeys</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Providing intuitive, lightweight user experiences improves understanding and accessibility, especially for people with cognitive disabilities. Reducing confusion, this can reduce the time spent trying to find content.</li>
+						<li><strong>Conversion:</strong> Following conventions and patterns with a clean, distraction-free layout reduces churn, page abandonment, and barriers to entry.</li>
+						<li><strong>Economic:</strong> Simplifying interfaces by reducing the amount of information can reduce the burden of choice and help to convert users during online decision-to-purchase processes. Reduced user choice will also reduce data payloads.</li>
+						<li><strong>Environment:</strong> Streamlining user experience to remove barriers and the non-essential reduces unnecessary code and content payloads and the amount of time users spend on their devices trying to complete tasks or find information. This reduces the amount of energy used and lowers emissions.</li>
+						<li><strong>Performance:</strong> Minimizing the amount of content on screen to what is genuinely required reduces bandwidth consumption over the lifecycle project and may make the user experience feel faster.</li>
+						<li><strong>Privacy:</strong> Hiding non-essential features can improve data protection by reducing overall data collection overall, especially that associated with the integration of third-party services.</li>
+						<li><strong>Social Equity:</strong> Reducing device and bandwidth requirements through providing more lightweight experiences can improve work better for users using older devices or located in low-bandwidth environments, and similar.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-navigation-and-wayfinding-are-well-structured">2.5</a></strong>: Ensure that navigation and wayfinding are well-structured</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Enabling easier navigation makes content accessible to people with disabilities. Bringing people to their goal faster also reduces data consumption.</li>
+						<li><strong>Conversion:</strong> Optimizing structure can also boost conversion rates as people are more likely to find what they need. The same applies when users are made aware of new content related to their interests.</li>
+						<li><strong>Economic:</strong> Shortening user journeys can also reduce hosting costs where this is linked to data transfer.</li>
+						<li><strong>Environment:</strong> Improving navigation and search efficiency can reduce the time users spend finding what they need and achieving their objectives. This also lowers emissions.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#design-to-assist-and-not-to-distract">2.6</a></strong>: Design to assist and not to distract</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Reducing unnecessary barriers can improve accessibility and navigation using assistive technologies.</li>
+						<li><strong>Environment:</strong> Using pagination rather than infinite scrolling allows individuals to request data on demand rather than encouraging overconsumption. This reduces carbon impact while encouraging healthy and sustainable browsing habits.</li>
+						<li><strong>Performance:</strong> Avoiding attention traps improves user experience by reducing the time spent clicking through, closing, or hiding these distractions. Presenting the information in less distracting ways makes the experience feel faster, reduces barriers to access, and improves user flow.</li>
+						<li><strong>Social Equity:</strong> Preserving user focus on their objectives reduces the potential for confusion, mistakes, and lapses in judgment.</li>
+						<li><strong>Transparency:</strong> Avoiding deceptive patterns will boost trust and encourage users to return or recommend.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive">2.7</a></strong>: Avoid being manipulative or deceptive</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Avoiding deceptive design patterns improves user experience for people using assistive technologies, as these can be especially disruptive when using a screen reader. This improves their trust and access to your content.</li>
+						<li><strong>Conversion:</strong> Avoiding deceptive patterns can result in fewer complaints, reduce barriers, and improve conversion.</li>
+						<li><strong>Environment:</strong> Avoiding deceptive design patterns reduces energy consumption because users do not waste time and energy trying to undo choices they never intended to make.</li>
+						<li><strong>Performance:</strong> Using ethical, non-disruptive practices will accelerate the user journey and perceived speed and reduce unnecessary friction.</li>
+						<li><strong>Privacy:</strong> Ensuring compliance with ethical privacy practices and avoiding dark and deceptive patterns reduces litigation risk. It also reduces data transmission between tracking and advertising services providers.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#make-deliverables-understandable-and-reusable">2.8</a></strong>: Make deliverables understandable and reusable</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Conversion:</strong> Using open and reusable formats lowers barriers to entry, as there will likely be no cost involved in participation. It can encourage users to play a more active role in the project.</li>
+						<li><strong>Economic:</strong> Creating and maintaining good documentation will make implementation easier and reduce future ongoing costs associated with maintenance.</li>
+						<li><strong>Environment:</strong> Using common and clear formats for deliverables will reduce the time users need to spend familiarizing themselves with and adapting to the environment. This reduces the energy spent managing a project and the associated emissions.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-for-interface-consistency">2.9</a></strong>: Use a design system for interface consistency</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Using a design system with accessible components will improve access to information for people with disabilities. Building design features that integrate accessibility from the start ensures everyone is always included.</li>
+						<li><strong>Conversion:</strong> Using design systems supports consistent user interfaces. This improves user trust because individuals will recognize familiar components and know how to use them. This can improve conversion rates as it will reduce frustration, abandonment, and possible complaints.</li>
+						<li><strong>Economic:</strong> Using standardized components and avoiding redundancy can reduce development time and the associated costs. Familiarity makes the experience easier for users, reducing bounce rates.</li>
+						<li><strong>Environment:</strong> Building using recognized design components will reduce the amount of time users spend trying to perform a task. The less time users spend achieving their goals, the lower their energy usage and emissions.</li>
+						<li><strong>Performance:</strong> Building design systems using standardized components reduces the need for repeat coding. This reduces developer coding time and can improve performance. Overall, sustainable patterns reduce emissions.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#provide-clear-inclusive-content-with-purpose">2.10</a></strong>: Provide clear, inclusive content with purpose</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Using plain-language makes content easier to understand and accessible to more users. Good structure that complies with standards and expectations works better alongside assistive technologies, such as screen readers.</li>
+						<li><strong>Conversion:</strong> Writing and presenting authoritative content with intent and care can lead to citation by third parties. This can increase traffic with pre-warmed leads.</li>
+						<li><strong>Economic:</strong> Being recognized as an authoritative source can bring additional recognition, users, and opportunities.</li>
+						<li><strong>Environment:</strong> Ensuring content is easy to find and comprehend enables users to make informed decisions faster, taking less time and resources. This reduces energy consumption and emissions.</li>
+						<li><strong>Performance:</strong> Creating well-structured content can improve search performance. When content ranks higher in search engines, people are more likely to land in the right place straight away.</li>
+						<li><strong>Social Equity:</strong> Using inclusive language that avoids jargon and unnecessary exclusion can improve user experience for a broader audience.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-media-for-sustainability">2.11</a></strong>: Optimize media for sustainability</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Eliminating data-intensive media entirely and using alternatives such as transcripts reduce costs associated with hosting and data transfer.</li>
+						<li><strong>Environment:</strong> Reducing the battery drain associated with loading data-intensive content by preventing auto-loading or delaying it until the moment it is required reduces energy emissions associated with data transfer and renering.</li>
+						<li><strong>Performance:</strong> Tailoring user experience to the device, situation, and environment of the user by having different resolutions and quality formats available reduces wasted bandwidth. This can boost performance for users who make choices to reduce the data downloaded.</li>
+						<li><strong>Social Equity:</strong> Providing alternatives to data-intensive media allows with limited bandwidth or older devices to access content.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-animation-is-proportionate-and-easy-to-control">2.12</a></strong>: Ensure animation is proportionate and easy to control</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Environment:</strong> Disabling and reducing animation to the essential, with appropriate optimization and user control, reduces rendering impact and associated emissions.</li>
+						<li><strong>Performance:</strong> Compressing, removing, or otherwise reducing animation files reduces complexity, improving performance.</li>
+						<li><strong>Social Equity:</strong> Catering to different perspectives on and preferences in relation to animation can improve acceptance and access for individuals using different devices and from different backgrounds.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-optimized-and-appropriate-web-typography">2.13</a></strong>: Use optimized and appropriate web typography</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Environment:</strong> Reducing the number and complexity of custom fonts used reduces data transfer and rendering effort, which lowers associated emissions.</li>
+						<li><strong>Performance:</strong> Using optimized web fonts or system fonts supports a smoother user experience and faster rendering.</li>
+						<li><strong>Social Equity:</strong> System fonts are preinstalled and are reliable, ensuring content can always be presented fast in a font users are familiar with.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#offer-suitable-alternatives-for-every-format-used">2.14</a></strong>: Offer suitable alternatives for every format used</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Providing content in multiple formats means users can choose the format that best supports their needs, helping to eliminate barriers.</li>
+						<li><strong>Conversion:</strong> Creating text alternatives to media, such as transcripts, means your content can be more easily found and indexed by search engines.</li>
+						<li><strong>Economic:</strong> Hosting and delivering text is less computationally expensive than media, so providing text-based content can reduce hosting and bandwidth costs.</li>
+						<li><strong>Environment:</strong> Offering low-impact alternatives to media formats reduces rendering and processing effort, and the associated emissions.</li>
+						<li><strong>Performance:</strong> Reducing interactivity can help users access what they need faster.</li>
+						<li><strong>Social Equity:</strong> Providing text alternatives for those who are not able to watch a video or listen to audio, even situationally, improves access and user experience.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#provide-accessible-usable-minimal-web-forms">2.15</a></strong>: Provide accessible, usable, minimal web forms</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Labeling your forms correctly and testing for accessibility and compatibility with a range of different devices and inputs reduces barriers. Autocomplete improves ease of use and efficiency for all use, especially those with additional accessibility needs. Well-labeled and accessible forms are more likely to be successfully completed.</li>
+						<li><strong>Conversion:</strong> Building forms based on standards with ease of use and accessibility in mind boosts conversion, as more users are able to complete them.</li>
+						<li><strong>Economic:</strong> Implementing more accessible and usable forms reduces frustration while increasing completion rates. This can reduce complaints, support costs, and abandonment.</li>
+						<li><strong>Environment:</strong> Optimizing forms reduces the resources required to complete them, which reduces emissions.</li>
+						<li><strong>Privacy:</strong> Collecting informed consent and providing helpful disclosures about cookies, data collection, and data processing within forms, alongside appropriate links to find further information in an accessible format, improves data privacy.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#provide-useful-notifications">2.16</a></strong>: Provide useful notifications</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Signposting individuals to information through helpful notifications or error messages will reduce abandonment. All information must be presented in a way that does not discriminate, as this could exclude many potential users.</li>
+						<li><strong>Environment:</strong> Notifying users about important events can reduce the need to constantly refresh pages. These notifications provide a shortcut, ensuring content is loaded when it becomes available. This can save emissions.</li>
+						<li><strong>Privacy:</strong> Using notifications appropriately ensures personalized content is only displayed on specific devices, reducing the risk of information exposure.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#reduce-the-impact-of-downloadable-and-physical-documents">2.17</a></strong>: Reduce the impact of downloadable and physical documents</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Providing a range of inclusively designed downloadable documents in a variety of formats benefits those with accessibility needs as they can choose the ideal format for their device and use case.</li>
+						<li><strong>Environment:</strong> Reducing the need to print documents or providing a print friendly style sheet reduces emissions associated with paper, ink, and the act of printing.</li>
+						<li><strong>Performance:</strong> Compressing or otherwise optimizing documents means they can be downloaded faster, avoiding users needing to wait to view documents prepared for offline viewing.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#involve-users-and-contributors-early-in-the-project">2.18</a></strong>: Involve users and contributors early in the project</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Conversion:</strong> Using a well-built, thoroughly tested interface is likely to reduce user frustration and churn.</li>
+						<li><strong>Economic:</strong> Prioritizing user research in organizational policies helps to reduce and mitigate risks and costs associated with building unnecessary features, which would also incur technical debt. Performing iterative testing and prototyping reduces the resources needed to build new features.</li>
+						<li><strong>Environment:</strong> Enabling users to complete tasks more quickly and efficiently reduces energy use and emissions.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#audit-and-test-for-bugs-or-issues-requiring-resolution">2.19</a></strong>: Audit and test for bugs or issues requiring resolution</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Tracking accessibility compliance information over time makes it easier for users to understand how acccessibility has been addressed in the past.</li>
+						<li><strong>Conversion:</strong> Increasing page load speed can measurably improve conversion rates, as users will be less likely to abandon a product or service if the content appears instantaneously.</li>
+						<li><strong>Economic:</strong> Performing ongoing regression testing improves security, which reduces risk and its associated costs.</li>
+						<li><strong>Environment:</strong> Carrying out regular service audits reduces technical debt, which improves performance and environmental sustainability. Regression analysis also supports continuous improvement and lowers resource use over time, which in turn reduces emissions.</li>
+						<li><strong>Performance:</strong> Loading less data improves performance. Lighter pages are rendered and available to users quicker, helping to improve the UX.</li>
+						<li><strong>Security:</strong> Auditing a product or service regularly will identify potential sources of breaches and areas of improvement in security and privacy.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#verify-that-real-world-users-can-successfully-use-your-work">2.20</a></strong>: Verify that real-world users can successfully use your work</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Gathering feedback from people with disabilities can guide key improvements. This ensures your project can be used by the widest possible audience.</li>
+						<li><strong>Conversion:</strong> Acting on feedback often improves conversion rates because it ensures that your digital product or service reflects the needs of your audience.</li>
+						<li><strong>Economic:</strong> Avoiding wasted development time building features that bring little value to the consumer means resources can be focused where they deliver more value.</li>
+						<li><strong>Environment:</strong> Learning from feedback enables choices that improve environmental impact. An example of this would be making sure that the most frequently used features are placed higher in the visual hierarchy. This reduces the effort and time users must invest to achieve their goals.</li>
+						<li><strong>Performance:</strong> Performing user testing allows you to retain focus on goal and maintain good performance without unnecessary complexity.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#regularly-test-and-maintain-compatibility">2.21</a></strong>: Regularly test and maintain compatibility</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Incorporating accessibility into early prototypes ensures it remains a priority throughout the lifecycle. Broken code can also impact assistive technologies, such as screen readers, and how they describe content to individuals with visual disabilities. Semantic code can help to deliver an equal, error-free experience to all.</li>
+						<li><strong>Conversion:</strong> Delivering products and services that last longer and enjoy longer-lasting compatibility can increase conversion rates, due to the lower abandonment rates and a broader audience that is able to use a barrier-free version of the product or service.</li>
+						<li><strong>Economic:</strong> Saving time and improving quality results in cost reductions, because increased stability reduces the need for refactoring. Users benefit from greater trust and potentially lower costs and maintenance fees as upgrades may not be required as frequently.</li>
+						<li><strong>Environment:</strong> Avoiding incompatibility issues can significantly reduce e-waste, with planned obsolescence being is one of the biggest contributors to e-waste worldwide.Extending lifespans and improving compatibility within your service plan can improve sustainability and slow the upgrade cycle otherwise driven by sluggish digital experiences.</li>
+						<li><strong>Performance:</strong> Deploying incompatible code has an energy cost. When code is non-standard, deprecated or does not work on a device, it can take additional time to render because it is usually not optimized for the environment. This puts pressure on the <abbr title="Central Processing Unit">CPU</abbr> and wastes battery. Using modern web standards will help your service run reliably in modern browsers.</li>
+						<li><strong>Social Equity:</strong> Enhancing compatibility and longevity helps to reduce the digital divide. This can be significant in relation to income inequality, infrastructure robustness, or accessibility, for example. Broader support can therefore open your work to new markets, or extend the viability of existing access. Similarly, because progressive web applications use established web standards, they are available to more people than more cost-prohibitive closed systems.</li>
+					</ul>
+				</div>
+			</section>
+			<section> <!-- Web Development -->
+				<h3>Web Development</h3>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#set-goals-based-on-performance-and-energy-impact">3.1</a></strong>: Set goals based on performance and energy impact</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Conversion:</strong> Page speed and web performance are confirmed ranking factors when it comes to SEO. A faster digital product or service may support an organization's efforts to rank higher on search engines. Combined with the better on-page user experience, this can lead to improved conversion rates.</li>
+						<li><strong>Environment:</strong> Limiting the number of server requests and the <abbr title="Document Object Model">DOM</abbr> size lessens the negative environmental impact of a product or service' by reducing CPU and <abbr title="Graphics Processing Unit">GPU</abbr> cycles and <abbr title="Random Access Memory">RAM</abbr> usage. This brings down energy consumption, and reduces the need to recharge portable devices as frequently.</li>
+						<li><strong>Performance:</strong> Reducing the hardware load improves overall performance. Devices are less likely to be overloaded or hit their limits with reduced resources.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-or-redundant-information">3.2</a></strong>: Remove unnecessary or redundant information</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Conversion:</strong> Faster page speeds improve user experience across the board. This makes users less likely to abandon their journey or search for their information elsewhere.</li>
+						<li><strong>Performance:</strong> Less data transferred means reduced loading times. White space itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#modularize-bandwidth-heavy-components">3.3</a></strong>: Modularize bandwidth-heavy components</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Conversion:</strong> Modularizing code can accelerate performance, improving user experience while reducing the chance of abandonment. This is especially impact for users of low-resource devices, such as handhelds.</li>
+						<li><strong>Economic:</strong> Reducing the size of large files will reduce bandwidth expenses for service providers.</li>
+						<li><strong>Performance:</strong> Using smaller, modular components allows for more effective caching of commonly those reused components, while loading functions only when required reduces the payload. Unused portions of a larger resource will not be downloaded, which can have a considerable impact.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#remove-unnecessary-code">3.4</a></strong>: Remove unnecessary code</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Eliminating unused code means reducing maintenance work and expense. It can otherwise affect other code' or add unnecessary complexity.</li>
+						<li><strong>Environment:</strong> Removing unused code eliminates wasted bytes, reducing download size and potentially improving rendering time.</li>
+						<li><strong>Performance:</strong> Reducing downloaded code that otherwise offers no benefit to users frees up cache and RAM resources on their devices, while saving time.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-redundancy-and-duplication-in-code">3.5</a></strong>: Avoid redundancy and duplication in code</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Following naming conventions used in methodologies can be easier for developers with accessibility needs to follow and use compared to generic selector identifiers.</li>
+						<li><strong>Economic:</strong> Using an optimized and reusable codebase can enhance productivity and code quality leading to a better return on investment.</li>
+						<li><strong>Environment:</strong> Integrating certain methodologies can add code to your markup, but they also improve maintainability. This reduces development time at scale, and could reduce energy consumption as developers optimized workflows will reduce the time and energy spent on tasks.</li>
+						<li><strong>Performance:</strong> Avoiding repetitive code reduces waste in markup, which reduces the time it takes to download site data. This also reduces server-side impact.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#give-third-parties-the-same-priority-as-first-parties-during-assessment">3.6</a></strong>: Give third parties the same priority as first parties during assessment</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Environment:</strong> Replacing heavy tooling and third-party services with lightweight tooling reduces user bandwidth usage and compute impact. It does require learning a new way of doing things or reducing the visibility of impactful features until they are requested. It can significantly reduce a page's overall 'environmental impact, including the data you have no control over. This is especially relevant when calculating Scope 3 emissions.</li>
+						<li><strong>Performance:</strong> Self-hosting fully self-contained services, features, and content are more performant by design. They avoid additional server and rendering requests or other complications associated with third-party content. You can choose to only include the required features, further reducing overall bandwidth usage and associated emissions.</li>
+						<li><strong>Privacy:</strong> Choosing not to embed and automatically load third-party content may be perceived as a privacy benefit by privacy-conscious users, because this reduces opportunities for their user data to be exploited.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-code-follows-good-semantic-practices">3.7</a></strong>: Ensure code follows good semantic practices</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Applying semantic approaches means your content will be easier to navigate via assistive technologies and keyboard. Many tags have built-in semantics, reducing the need for additional attributes. This can also improve compatibility of your content with a broad range of technologies.</li>
+						<li><strong>Conversion:</strong> Ensuring your code is efficient and works reduces the risk of broken features and users giving up.</li>
+						<li><strong>Economic:</strong> Conforming to accessibility legislation and regulations avoid lawsuits and fines.</li>
+						<li><strong>Environment:</strong> Following standards ensures users have a coherent experience - reducing bugs, saving time spent fixing bugs, and avoiding wasted resources. Bloated markup can otherwise lead to waste data, while broken markup can even trigger memory leaks.</li>
+						<li><strong>Performance:</strong> Clean, modern code renders better than deprecated or poorly maintained code. While Web Components do outperform framework components, they cannot outperform the native elements they are built on.</li>
+						<li><strong>Security:</strong> Keeping up with modern standards reduces the risk of security exploits.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#defer-the-loading-of-non-critical-resources">3.8</a></strong>: Defer the loading of non-critical resources</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> If data is not loaded unless needed, you will reduce your server's bandwidth use.</li>
+						<li><strong>Environment:</strong> Lazy loading videos and images so that they are only loaded once required by the user. This reduces transferred data and the required processing power.</li>
+						<li><strong>Performance:</strong> Allowing text to render first make the user feel that everything is loading faster while, as the remaining content loads in the background or on demand.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#provide-information-to-help-understand-the-usefulness-of-a-page">3.9</a></strong>: Provide information to help understand the usefulness of a page</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Including skip links and other accessibility aids can accelerate the user journey, reducing system resources required and allowing them to find the content they need.</li>
+						<li><strong>Economic:</strong> Enabling quicker visits that complete the user's objective can help to encourage return visits.</li>
+						<li><strong>Environment:</strong> Reducing the time people spend searching for the information they want and aiding them on their journey will reduce energy use, including battery drain.</li>
+						<li><strong>Social Equity:</strong> Allowing users to achieve objectives faster reduces resource consumption while potentially enhancing user health and well-being.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#validate-form-errors-and-account-for-tooling-requirements">3.10</a></strong>: Validate form errors and account for tooling requirements</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Fixing issues immediately and keeping people in the process can help to prevent abandonment.</li>
+						<li><strong>Performance:</strong> Enabling users to fill in forms more efficiently and avoid navigating back to where they were or refilling data on forms can increase the speed of necessary form filing and reduce errors in completion.</li>
+						<li><strong>Security:</strong> Allowing people to correct input errors, verify their input prior to submission, and identifying errors early in the process can help to prevent costly data protection mistakes.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#structure-metadata-for-machine-readability">3.11</a></strong>: Structure metadata for machine readability</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Improving metadata can make it easier for search engines, social networks, or other platforms to present your content appropriately. This can lead to better search engine visibility, more users, and potentially better conversion.</li>
+						<li><strong>Performance:</strong> Providing third-party tools and search engines with the information they need can direct people more quickly to the content they need.</li>
+						<li><strong>Transparency:</strong> Metadata ensures clients find the correct content fast. If users only require something basic, such as contact details, they may not even have to view the content directly - saving bandwidth.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-sustainability-beneficial-user-preference-media-queries">3.12</a></strong>: Sustainable <abbr title="Cascading StyleSheets">CSS</abbr> user preference media queries are used</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Having a high contrast version of a site will reduce barriers to entry and time wasted for visually impaired users. Reduced motion can also accommodate other accessibility requirements.</li>
+						<li><strong>Conversion:</strong> Delivering better user experience by meeting their preferences can improve conversion and encourage repeat visits.</li>
+						<li><strong>Economic:</strong> Using print media queries within style sheets can reduce users' ink use and paper costs.</li>
+						<li><strong>Environment:</strong> Accommodating dark mode when preferred will always be more energy efficient on OLED devices. Similarly, animation and media have a significant impact on CPU and GPU usage, so respecting a prefers reduced motion query will reduce energy consumption. The presence of a monochrome preference query could encourage greater adoption of energy-efficient e-ink devices. A sustainability-optimized print style sheet can save both paper and ink output.</li>
+						<li><strong>Performance:</strong> Allowing users to access a reduced-data version of a site could significantly reduce the data transferred and the resulting carbon footprint. This can improve performance and reduce costs for individuals on a metered data plan. Detecting if scripting is disabled and offering alternative content may save wasted effort and improve the performance of a project.</li>
+						<li><strong>Social Equity:</strong> Meeting user preferences is a positive shift: You are not telling your users how they should 'experience your content, but following your users' preferences or a device' capabilities and the priority of constituencies.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-layouts-work-for-different-devices-and-requirements">3.13</a></strong>: Ensure layouts work for different devices and requirements</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Incorporating large, touch-friendly buttons, simplified navigation menus, and clear readable fonts on your mobile websites can make it easier for individuals with visual or motor impairments to interact with your content. A device-adaptable strategy that considers the limitations of each approach helps to maximize accessibility and usability across all devices, enhancing accessibility and optimizing experience.</li>
+						<li><strong>Conversion:</strong> Broadening the compatibility of your products and services can equally broaden their appeal and use, even in scenarios you may not have originally envisaged.</li>
+						<li><strong>Economic:</strong> Ensuring your website or application works well on desktop devices, smartphones, and other resolutions alike can provide a financial benefit by enabling individuals to make purchases wherever and whenever it suits them.</li>
+						<li><strong>Environment:</strong> Allowing non-visual browsers to interact with your content can help to reduce overall emissions. Non-visual browsers may lack a display, which reduces the environmental impact of browsing.</li>
+						<li><strong>Social Equity:</strong> Ensuring content works well on older and low-powered devices is important, as these are more frequently used in developing nations.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-standards-based-javascript-and-apis">3.14</a></strong>: Use standards-based JavaScript and <abbr title="Application Programming Interfaces">APIs</abbr></p>
+				<div class="summary">
+					<ul>
+						<li><strong>Conversion:</strong> Creating fallbacks for technology that might fail can 'enable sales you would otherwise miss out on.</li>
+						<li><strong>Economic:</strong> Providing easier, reliable access in more situations allows you to sell to more people.</li>
+						<li><strong>Environment:</strong> Reducing unnecessary visual effects - such as animations - when a page is not visible, helps to prevent wasted processing in background tabs. This can potentially help users who leave multiple tabs open conserve battery.</li>
+						<li><strong>Performance:</strong> Using low-impact scripting can reduce heavy codebase sizes. Providing fallbacks for unavailable JavaScript ensures older or less capable devices can still access your content.</li>
+						<li><strong>Privacy:</strong> Allowing script-free users to easily access your content can protect the privacy of users with increased privacy needs.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-that-your-code-is-secure">3.15</a></strong>: Ensure that your code is secure</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Preventing security issues ahead of time c protects you and your users from financial crime.</li>
+						<li><strong>Environment:</strong> Securing your project against threats and closing vulnerabilities makes them a less likely target for individuals who might exploit them, consuming vast amounts of data in the process.</li>
+						<li><strong>Performance:</strong> Protecting your project against breaches reduces your risk of large amounts of data being stolen, corrupted, or destroyed.</li>
+						<li><strong>Security:</strong> Maintaining security helps to maintain trust and prevent personal information from being exposed and exploited.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-dependencies-appropriately-and-ensure-maintenance">3.16</a></strong>: Use dependencies appropriately and ensure maintenance</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Environment:</strong> Removing code packages developers or users do not need reduces wasted energy during rendering.</li>
+						<li><strong>Performance:</strong> Reducing client-side JavaScript reduces rendering time and ensures a faster, smoother user experience.</li>
+						<li><strong>Security:</strong> Keeping packages up-to-date and using fewer third-party libraries reduces the likelihood of security vulnerabilities.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#include-expected-and-beneficial-files">3.17</a></strong>: Include expected and beneficial files</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Integrating expected files enables the browser''s default search box to search a service, replacing any custom solution. This can increase accessibility as it encourages the use of a browser-native component and/or keyboard shortcuts, which can often better meet accessibility requirements.</li>
+						<li><strong>Conversion:</strong> Configuring robots.txt appropriately can help to ensure content is correctly indexed and users are better guided to appropriate content on your project.</li>
+						<li><strong>Economic:</strong> Including robots.txt and sitemap files helps search engines to discover and index your website. This can lead to more users and potentially more customers. The ads.txt file may reduce advertising fraud and could similarly benefit your business.</li>
+						<li><strong>Environment:</strong> Providing files expected by search engines or browsers will reduce loading errors and may improve efficiency in how users find or interact with a site. Plain text requires no rendering. If users or search engines are able to find these files, such as carbon.txt, they can load more quickly and with less CPU/GPU impact than any formatted webpage.</li>
+						<li><strong>Performance:</strong> Satisfying requests for expected files improves interactions with search engines or browsers requesting them, while also potentially avoiding additional requests once they are discovered. Plain text files contain no links, no markup, and has a low rendering impact. Including details such as site credits in such a file will reduce data transfer and have a lower rendering footprint.</li>
+						<li><strong>Transparency:</strong> Providing a humans.txt file allows you to credit the people involved in the creation process, while security.txt provides critical points of contact if an issue is discovered. Both increase transparency.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-the-most-efficient-solution-for-your-service">3.18</a></strong>: Use the most efficient solution for your service</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Making assistive technologies a core part of project specifications from the very start and throughout a product or service''s lifecycle improves access for people with disabilities.</li>
+						<li><strong>Economic:</strong> Avoiding tooling at risk of overburdening user experience may result in financial savings, especially if tooling has associated maintenance expenses, licensing fees, or subscription costs.</li>
+						<li><strong>Environment:</strong> Evaluating long-term technology implications and taking the time to ensure they are optimized and efficiently utilized helps a team measurably reduce the environmental impact of a product or service.</li>
+						<li><strong>Performance:</strong> Reducing complexity in your infrastructure will increase developer productivity, while also reducing overhead. This further reduces emissions.</li>
+						<li><strong>Privacy:</strong> Prioritizing security and user privacy helps an organization better comply with current and emerging legislation.</li>
+						<li><strong>Security:</strong> Maintaining a software product and restricting your use of third-party solutions to the essential will improve overall security.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-the-latest-stable-language-version">3.19</a></strong>: Use the latest stable language version</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Using the latest and more performant language version can help hosting companies to reduce their costs. That could be beneficial for the company and customers alike.</li>
+						<li><strong>Environment:</strong> Using the latest language version can improve efficiency and reduce data center energy consumption. Although do verify that benefits are worthwhile before major build upgrades.</li>
+						<li><strong>Performance:</strong> Updating the language version will often offer performance improvements. Compiled languages, such as C or Rust, can have greatly reduced execution times and energy usage for algorthims compared to the same algorithms written in interpreted languages, such as Python or JavaScript.</li>
+						<li><strong>Security:</strong> Maintaining update and upgrade schedules is good for security, allowing you to reduce the risk of security vulnerabilities in older versions.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#reduce-the-number-and-complexity-of-database-queries">3.20</a></strong>: Reduce the number and complexity of database queries</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Optimizing the codebase to avoid pushing multiple additional demands to the server reduces bandwidth overheads, while also reducing the risk of stress failures and lost business.</li>
+						<li><strong>Environment:</strong> Filtering out unneeded data at a deeper level of the application can reduce energy usage, as it reduces the processing required for (de)serialization.</li>
+						<li><strong>Performance:</strong> Holding the data locally rather than remotely eliminates the need to wait for additional requests to process the query. Relational databases and other specialist data stores are usually heavily optimized for data filtering and retrieval. Performing transformations at this level of the application creduces processing time and delivers responses faster.</li>
+					</ul>
+				</div>
+			</section>
+			<section> <!-- Hosting, Infrastructure, and Systems -->
+				<h3>Hosting, Infrastructure, and Systems</h3>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-sustainable-hosting">4.1</a></strong>: Use sustainable hosting</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Conversion:</strong> Using sustainable hosting and sharing sustainability metrics with visitors may increase preference and loyalty.</li>
+						<li><strong>Environment:</strong> Using hosting providers that operate with lower emissions, better power efficiency, and more responsible electronic waste management reduces negative environmental impacts from websites and products.</li>
+						<li><strong>Social Equity:</strong> Minimizing the environmental impact of your website's hosting infrastructure reduces its negative impacts on communities.</li>
+						<li><strong>Transparency:</strong> Sharing the efficiency and low-carbon energy metrics of hosting services allows the public to verify and understand sustainable websites and products.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#optimize-caching-and-support-offline-access">4.2</a></strong>: Optimize caching and support offline access</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Bandwidth to serve users cost money and reducing the amount of data transfer saves money.</li>
+						<li><strong>Environment:</strong> Caching enables websites to deliver content without unnecessary server requests, sparing the carbon emissions driven by networks and the data center.</li>
+						<li><strong>Performance:</strong> Enabling browser caching can reduce page reload speeds for return users and deliver better website performance.</li>
+						<li><strong>Social Equity:</strong> Optimizing browser caching often enables users to view content when their network connection has failed or when they must use a low quality network.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#reduce-data-transfer-with-compression">4.3</a></strong>: Reduce data transfer with compression</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Environment:</strong> Applying compression effectively reduces network demand, consequently lowering power consumption and carbon emissions.</li>
+						<li><strong>Performance:</strong> Reducing data transfer volumes and data consumption delivers faster performance to all users.</li>
+						<li><strong>Social Equity:</strong> Decreasing demand on networks enables users with slower network connections to enjoy the same experience and performance as users with high speed networks.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#setup-necessary-error-pages-and-redirection-links">4.4</a></strong>: Setup necessary error pages and redirection links</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Error pages and appropriate redirects matter because every user requires appropriate assistance to find their path. Navigation and signage that successfully support individuals with cognitive disabilities to find their path deliver the best design for all users.</li>
+						<li><strong>Conversion:</strong> Users who find their way out of an error quickly have a faster and more enjoyable experience that encourages return visits.</li>
+						<li><strong>Economic:</strong> Minimizing erroneous page loads saves money.</li>
+						<li><strong>Environment:</strong> When users load fewer pages on their way to desired content, a project becomes less carbon intensive.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#avoid-maintaining-unnecessary-virtualized-environments-or-containers">4.5</a></strong>: Avoid maintaining unnecessary virtualized environments or containers</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Removing unnecessary environments reduces the resources that must be provisioned. This reduces infrastructure, maintenance, and process costs.</li>
+						<li><strong>Environment:</strong> Power and energy resources will be conserved from avoiding utilizing unnecessary environments and lowering carbon emissions will result.</li>
+						<li><strong>Social Equity:</strong> Scaling back the usage of data centers reduces the need for new facilities that may bring negative community impacts and strain national resources.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-automation-wisely">4.6</a></strong>: Use automation wisely</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Maximizing the number of tasks carried out rapidly by machine brings down maintenance and infrastructure costs.</li>
+						<li><strong>Environment:</strong> Optimizing workflows can reduce the amount of energy used during peak periods where it may be most costly or unsustainable to run.</li>
+						<li><strong>Operations:</strong> Automating repetitive tasks allows humans to focus on valuable, novel, and creative tasks that can offer greater job satisfaction and expand skills.</li>
+						<li><strong>Security:</strong> Evading unwanted bots, crawlers, and similar users protects websites from harm and avoids potential downtime.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#define-the-frequency-of-data-refreshes">4.7</a></strong>: Define the frequency of data refreshes</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Conversion:</strong> Eliminating unnecessary data refreshes delivers a better user experience that makes return visits more likely.</li>
+						<li><strong>Economic:</strong> Caching or simply not updating data unnecessarily can potentially reduce costs by reducing the amount of data transmitted over a network.</li>
+						<li><strong>Environment:</strong> Minimizing data refreshes reduces server and network usage, which brings down power consumption and carbon emissions in turn.</li>
+						<li><strong>Social Equity:</strong> Reducing live data refresh rates makes it easier for people with limited or slow network access to access and use website content.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#back-up-critical-data-at-routine-intervals">4.8</a></strong>: Back up critical data at routine intervals</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Using efficient backup processes that are automated and include only incremental changes to critical data results in less storage being used, reducing costs.</li>
+						<li><strong>Environment:</strong> Designing backups as efficiently as possible minimizes power consumption and carbon emissions by eliminating excess processes and storage.</li>
+						<li><strong>Performance:</strong> Ensuring the availability of critical data allows continuation or speedier resumption of service when problems occur, such as data loss or outages.</li>
+						<li><strong>Security:</strong> Keeping efficient, stable, and well-protected backups is good practice, meaning work, data, and business value are not irreparably lost during a data breach.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#consider-the-impact-and-requirements-of-data-processing">4.9</a></strong>: Consider the impact and requirements of data processing</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Improving the efficiency of data processing saves money due to energy and infrastructure needs.</li>
+						<li><strong>Environment:</strong> Running servers for less time reduces carbon emissions.</li>
+						<li><strong>Performance:</strong> Efficient content delivery and data processing decreases page load times, improving performance and user experience.</li>
+						<li><strong>Social Equity:</strong> Reducing data processing demand means communities near data centers suffer less from noise, air pollution, and water and power overconsumption.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-content-delivery-networks-cdns-appropriately">4.10</a></strong>: <abbr title="Content Delivery Network">CDN</abbr> use must be proportionate and sustainable</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Using a CDN may save money because their data transfer rates are often cheaper than hosting providers.</li>
+						<li><strong>Environment:</strong> Using a CDN to host content closer to users lowers network-related carbon emissions while also reducing user device energy use because they can load content more quickly.</li>
+						<li><strong>Performance:</strong> Using a CDN to locate content closer to users gives them faster access to content.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#ensure-infrastructure-fits-project-requirements">4.11</a></strong>: Ensure infrastructure fits project requirements</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Environment:</strong> Reducing provisioned resources reduces wasted energy and water costs, even when resources are not used to capacity.</li>
+						<li><strong>Operations:</strong> Keeping a closer eye on actual and anticipated use allows an organization to better understand its own functions and anticipate future needs.</li>
+						<li><strong>Economic:</strong> Avoiding overprovisioning means avoiding unnecessary costs.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#store-data-according-to-the-needs-of-your-users">4.12</a></strong>: Store data according to the needs of your users</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Storing less data reduces the expense of operating excessively large storage and archiving systems.</li>
+						<li><strong>Environment:</strong> Reducing data storage brings down the carbon emissions driven by storage system operation.</li>
+						<li><strong>Security:</strong> Storing smaller amounts of data reduces the amount of data exposed to potential security issues and reduces monitoring effort.</li>
+					</ul>
+				</div>
+			</section>
+			<section> <!-- Business Strategy and Product Management -->
+				<h3>Business Strategy and Product Management</h3>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#have-an-ethical-and-sustainable-product-strategy">5.1</a></strong>: Have an ethical and sustainable product strategy</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Communicating the ways you can share the economic benefits of your digital work raises awareness of social inequalities. Similarly, enabling users to make more informed decisions can ensure your project is more financially sustainable overall.</li>
+						<li><strong>Environment:</strong> Establishing clear sustainability statements should make it easier to align organizational policies and practices with measurable metrics and support goals. Integrating this early in the digital product strategy can improve efficiency and reduce environmental impact.</li>
+						<li><strong>Operations:</strong> Establishing ethical and sustainability policies can help to ensure product teams are more engaged in the work they are doing.</li>
+						<li><strong>Privacy:</strong> Reducing your emissions and explaining to your audience how you aim to keep to your sustainability commitments provides the opportunity to highlight other key issues of interest to your users, such as privacy and security. This can boost user trust in your brand.</li>
+						<li><strong>Social Equity:</strong> Highlighting intersectional social issues in documentation, storytelling, and marketing materials raises awareness of problems and potential solutions.</li>
+						<li><strong>Transparency:</strong> Maintaining clear and public-facing policies helps internal and external affected parties to better understand an organization's sustainability commitments, while making it easier to report on the impact of these efforts.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#assign-a-sustainability-advocate">5.2</a></strong>: Assign a sustainability advocate</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Nominating a sustainability representative helps the organization remove barriers to access. These can inherently cost bandwidth, have monetary value, and carry potential legal implications.</li>
+						<li><strong>Environment:</strong> Appointing dedicated sustainability representatives means they can maintain quality assurance and guide decisions that measurably reduce the environmental impact of your digital products and services.</li>
+						<li><strong>Privacy:</strong> Having dedicated sustainability representatives on the team enables them to maintain intersectional data privacy standards and watch out for legal compliance issues within the organization.</li>
+						<li><strong>Social Equity:</strong> Ensuring someone on the team is dedicated to these concerns will help to reduce the digital divide through internal awareness raising and requesting features or information be provided to support those, for example on older devices or in low-bandwidth areas.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#inform-raise-awareness-and-train-for-sustainability">5.3</a></strong>: Inform, raise awareness, and train for sustainability</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Providing sustainability training and onboarding practices has been shown to lead to higher retention rates, improved performance, and improved systems for maintaining business continuity.</li>
+						<li><strong>Environment:</strong> Keeping your team informed and educated may promote systemic change in the way they build, the way they manage their work and technical infrastructure, and even the way they do business or live their day-to-day lives - even outside the workplace.</li>
+						<li><strong>Operations:</strong> Publishing clear sustainability goals and sharing resources encourages organizational affected parties to examine their own current status quo and make their own progress.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#communicate-the-environmental-impact-of-user-choices">5.4</a></strong>: Communicate the environmental impact of user choices</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Conversion:</strong> Communicating the impact and allowing the user to set preferences with the environmental impact in mind can encourage more individuals to make environmentally friendly choices and improve your image among ethical consumers.</li>
+						<li><strong>Environment:</strong> Allowing users to select more environmentally friendly settings within software naturally reduces the environmental impact.</li>
+						<li><strong>Performance:</strong> Reducing unnecessary or wasteful, less sustainable behaviors will often improve performance and accessibility, as these are often interlinked.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#calculate-the-environmental-impact">5.5</a></strong>: Calculate the environmental impact</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Auditing for accessibility can be included as a key part of a digital Life-Cycle Assessment (LCA), provided the key parameters are defined up front and maintained throughout the project to eliminate barriers to access. These parameters can include conformity with WCAG guidance, including manual checks.</li>
+						<li><strong>Economic:</strong> Using a functional unit approach supports a robust product or service while avoiding unnecessary and potentially costly features.</li>
+						<li><strong>Environment:</strong> Conducting a rigorous LCA can reveal significant opportunities to reduce overall environmental impact through the identification and elimination of factors and vectors of digital emissions such as water and e-waste.</li>
+						<li><strong>Performance:</strong> Including a detailed overview of optimizations in your LCA provides a clear direction to improve sustainability and performance.</li>
+						<li><strong>Social Equity:</strong> Including intersectional social metrics in your LCA can provide an opportunity to simultaneously consider and work on issues such as inequality, which also affect sustainability.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#define-clear-organizational-sustainability-goals-and-metrics">5.6</a></strong>: Define clear organizational sustainability goals and metrics</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Aligning with existing standards or frameworks makes it easier for organizations to include digital impact in their overall sustainability reporting.</li>
+						<li><strong>Environment:</strong> Setting, measuring, and communicating clear sustainability goals aligns an organization's impact aspirations with ongoing efforts to meet these goals.</li>
+						<li><strong>Transparency:</strong> Helping affected parties such as employees, clients, and partners to better understand how the organization creates shared value in its various sustainability policies and programs.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#validate-efforts-using-established-third-party-certifications">5.7</a></strong>: Validate efforts using established third-party certifications</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Certifications, vetted for conflicts of interest, can operationalize sustainability principles and verify and endorse levels of social and environmental performance, accountability, and transparency.</li>
+						<li><strong>Operations:</strong> Obtaining third-party sustainability certifications can make it easier for organizations to align operational practices with their mission, vision, and values, and communicate this to their affected parties.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#support-mandatory-disclosures-and-reporting">5.8</a></strong>: Support mandatory disclosures and reporting</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Conversion:</strong> Demonstrating transparency through regular reporting and showing measurable improvement over time can increase an organization's appeal to potential employees, partners, potential customers, investors, and suppliers who perceive shared values and an aligned mission.</li>
+						<li><strong>Economic:</strong> Being ahead of the curve affords businesses greater resilience in the face of more rigorous standards.</li>
+						<li><strong>Environment:</strong> Adopting reporting standards ahead of schedule provides more immediate environmental benefits, and allows you to mitigate environmental issues before they build into more complex or long-lasting ones.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#create-one-or-more-impact-business-models">5.9</a></strong>: Create one or more impact business models</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Environment:</strong> Business models focused on the customer and the wider ecosystem rather than just financial indicators can benefit the environment such as through reducing overconsumption of resources and disencouraging incentives for unethical behavior, leading to a reduction of emissions.</li>
+						<li><strong>Social Equity:</strong> Adding social indicators (such as the shared value within digital services) can reduce negative social impacts such as impoverishment or exploitation.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#follow-a-product-management-and-maintenance-strategy">5.10</a></strong>: Follow a product management and maintenance strategy</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Maintaining performance can boost customer retention, and organizations with clear product maintenance and management practices tend to benefit from greater resilience in the face of digital disruption.</li>
+						<li><strong>Environment:</strong> Implementing product management and maintenance strategies provides another opportunity to improve climate resilience and manage and reduce emissions over time.</li>
+						<li><strong>Performance:</strong> Following good product management and maintenance strategies means affected digital products and services benefit from better security, reduced technical debt, and improved data privacy.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#implement-continuous-improvement-procedures">5.11</a></strong>: Implement continuous improvement procedures</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Adopting an iterative approach supports inclusive design, providing the agility and adaptability for organizations to expand their accessibility.</li>
+						<li><strong>Conversion:</strong> Providing a reliable user experience boosts user trust, encouraging repeat business.</li>
+						<li><strong>Economic:</strong> Ensuring agility and continuous improvement helps organizations be more resilient in the face of disruption and a changing climate. Long-term, these practices save the organization time, money, and resources.</li>
+						<li><strong>Environment:</strong> Focusing on continuous improvement reduces waste and energy use by iteratively identifying opportunities to improve the product or service.</li>
+						<li><strong>Operations:</strong> Fostering a culture of experimentation encourages innovation. This supports team building and improves overall organizational resilience and efficiency.</li>
+						<li><strong>Performance:</strong> Establishing good review processes reduces buildup of technical debt. Focusing on continuous improvement rather than large single-scale releases means bottlenecks can be resolved, and they become apparent. This is helpful as new third-party tools, and software can affect performance without adaptation.</li>
+						<li><strong>Privacy:</strong> Having a high-quality, regularly updated product or service will reduce the chances of a data breach, which improves privacy.</li>
+						<li><strong>Security:</strong> Ensuring products or services are maintained and updated over time reduces risk and improves security.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#document-future-updates-and-evolutions">5.12</a></strong>: Document future updates and evolutions</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Updating digital products and services regularly requires less development time and reduces the risk of negative consumer impact from the extended downtime that can result from needing to start from scratch if a product or service is otherwise left to become outdated beyond repair.</li>
+						<li><strong>Environment:</strong> Maintaining an intuitive, lightweight user experience while adding new features or updating software reduces frustration, churn, and the energy users expend when the interface performs in ways users do not expect.</li>
+						<li><strong>Performance:</strong> Maintaining an optimized user experience that is regularly updated in line with best practices usually means content and assets will load quickly and as expected by users.</li>
+						<li><strong>Security:</strong> Maintaining evergreen status often means fewer issues due to a strong release cycle. This involves making necessary changes and keeping users informed while maintaining transparency.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#establish-if-a-digital-product-or-service-is-necessary">5.13</a></strong>: Establish if a digital product or service is necessary</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Preventing unnecessary digital products or services from being created can make it easier to find and access existing information, provided an accessible replacement is available.</li>
+						<li><strong>Economic:</strong> Reducing unnecessary research and development allows organizations to cut costs.</li>
+						<li><strong>Environment:</strong> Determining that a digital product or service is not necessary means the potential environmental impacts associated with its creation and use can be avoided.</li>
+						<li><strong>Operations:</strong> Avoiding creating unnecessary products or services prevents organizations from wasting time or resources on their creation and maintenance.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#provide-a-supplier-standards-of-practice-document">5.14</a></strong>: Provide a supplier standards of practice document</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Applying standards of practice can help an organization better align affected party needs with its mission, vision, and values, which builds trust and improves relationships.</li>
+						<li><strong>Environment:</strong> Vetting suppliers and partners can help an organization define, track, and reduce its scope 3 emissions.</li>
+						<li><strong>Operations:</strong> Examining suppliers and partners more closely can increase diversity within the technology sector.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#share-economic-benefits">5.15</a></strong>: Share economic benefits</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Collaborating with affected parties to coordinate mutually beneficial economic incentives builds stronger relationships.</li>
+						<li><strong>Social Equity:</strong> Paying a living wage and offering good benefits often leads to higher employee retention rates.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#share-decision-making-power-with-affected-parties">5.16</a></strong>: Share decision-making power with affected parties</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Environment:</strong> Emissions can be reduced through group action and commitments at an organizational level.</li>
+						<li><strong>Operations:</strong> Incentivizing project teams with key sustainability goals and granting the authority to make decisions based on these criteria enables them to measurably improve a range of metrics within the business, design, development, and infrastructure categories.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-justice-equity-diversity-inclusion-jedi-practices">5.17</a></strong>: Use Justice, Equity, Diversity, Inclusion (<abbr title="Justice, Equity, Diversity, Inclusion">JEDI</abbr>) practices</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Accessibility:</strong> Incorporating more diverse affected party perspectives leads to enacting more inclusive policies, often resulting in better products, services, and programs. JEDI practices boost an organization's resilience and ability to collaborate. This improves diversity in the tech sector and the overall accessibility of the web.</li>
+						<li><strong>Economic:</strong> Having clear policies and practices reduces the risk of legal issues.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#promote-responsible-data-practices">5.18</a></strong>: Promote responsible data practices</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Prioritizing data privacy and other responsible data practices reduces associated risk and costs, increases resilience, and often fosters better relationships with customers and other affected parties.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#implement-appropriate-data-management-procedures">5.19</a></strong>: Implement appropriate data management procedures</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Requiring less data reduces storage requirements, allowing organizations to scale down their hosting package or be charged less for pay-by-use infrastructure costs.</li>
+						<li><strong>Environment:</strong> Storing less data reduces the computing power required to maintain a service, reducing energy and infrastructure-related emissions.</li>
+						<li><strong>Performance:</strong> Moving older and less relevant content onto a smaller scaled-down version of your digital product or service will reduce your bandwidth usage. Archived information will have significantly fewer users, meaning this is unlikely to have a negative impact on their experience.</li>
+						<li><strong>Privacy:</strong> Improving data management supports better data protection practices.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies">5.20</a></strong>: Establish responsible practices around AI and emerging or disruptive technologies</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Establishing clear policies related to digital disruption and emerging technologies makes organizations more resilient and better able to pivot quickly, and face less risk from various threats, including legal action.</li>
+						<li><strong>Operations:</strong> Prioritizing ongoing learning and continuous improvement builds stronger teams that can adapt more quickly.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#include-responsible-financial-policies">5.21</a></strong>: Include responsible financial policies</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Sourcing responsible financing for digital products and services improves their resilience and saves the organization time, money, and resources over time.</li>
+						<li><strong>Environment:</strong> Divesting from fossil fuels moves us more quickly to an economy that is powered by low-carbon energy, which can reduce the catastrophic impacts of climate change.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#include-organizational-philanthropy-policies">5.22</a></strong>: Include organizational philanthropy policies</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Following clear philanthropic strategies means there is usually a system of checks and balances in place to support better financial practices overall.</li>
+						<li><strong>Operations:</strong> Having clear philanthropy strategies that include volunteer or free projects with team stretch goals can boost employee engagement and retention.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#plan-for-a-digital-product-or-service-s-care-and-end-of-life">5.23</a></strong>: Plan for a digital product or service's care and end-of-life</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Removing redundancy in the product or service can generate savings in hosting, security costs, and other third-party subscriptions.</li>
+						<li><strong>Environment:</strong> Planning for end-of-life reduces long-term environmental impacts after a digital product or service is no longer needed. This eliminates waste and frees up resources.</li>
+						<li><strong>Performance:</strong> Removing unnecessary features, functions, and data of a service improves performance and resilience as the resources which were utilizing data will be better spent on more popular functionality, and the gains made from their elimination will be felt in terms of emissions through saved development time.</li>
+						<li><strong>Privacy:</strong> Incorporating clear end-of-life policies that include a user's right to be forgotten will benefit the user by explaining how you enforce data protection and comply with legislation.</li>
+						<li><strong>Security:</strong> Providing regular maintenance, updates, and care on outdated software and data can significantly reduce security risks.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#include-e-waste-right-to-repair-and-recycling-policies">5.24</a></strong>: Include e-waste, right to repair, and recycling policies</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Extending the shelf-life of hardware and clear e-waste and recycling policies reduce costs.</li>
+						<li><strong>Environment:</strong> Following clear e-waste and recycling policies reduces environmental impact and promotes circularity, while also extending the shelf life of hardware. When coupled with clear philanthropic policies, donated hardware can also support resource-constrained charities.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#define-performance-and-environmental-budgets">5.25</a></strong>: Define performance and environmental budgets</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Conversion:</strong> Improving performance will reduce churn and page abandonment. A website may also rank better on search engines thanks to performance being a key indicator in ranking algorithms.</li>
+						<li><strong>Economic:</strong> Reducing resource requirements means users will not have to keep upgrading devices to match the needs of digital products and services that are otherwise growing unchecked over time.</li>
+						<li><strong>Environment:</strong> Setting a strict sustainability or performance budget will reduce the chance of a digital product or service getting too large or resulting in pollution transfers, which will also ensure it has a minimal impact on a user's device. This has a direct impact on emissions by forcing businesses to choose where to make reductions and efficiency savings. Users not having to upgrade devices as frequently will also reduce e-waste from discarded devices.</li>
+						<li><strong>Performance:</strong> Keeping realistic goals regarding delivery size will push developers to optimize resource-heavy projects and reconsider using large tooling in place of lightweight alternatives. A lower target budget for a product or service will also decrease the amount of time spent transferring and rendering data.</li>
+						<li><strong>Social Equity:</strong> By having a human or planetary budget, you can assign targets to improve services for impacted groups or those affected directly by your project.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#use-open-source-where-possible">5.26</a></strong>: Use open source where possible</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Using open-source tools can significantly reduce development time when managed properly.</li>
+						<li><strong>Social Equity:</strong> Supporting collaboration and building communities around open-source practices engenders trust and helps to reduce inequalities.</li>
+					</ul>
+				</div>
+				<p><strong>Guideline <a href="https://w3c.github.io/sustainableweb-wsg/#create-a-business-continuity-and-disaster-recovery-plan">5.27</a></strong>: Create a business continuity and disaster recovery plan</p>
+				<div class="summary">
+					<ul>
+						<li><strong>Economic:</strong> Limiting the extent of the disruption has obvious economic benefits.</li>
+						<li><strong>Operations:</strong> Creating transparency around digital resilience procedures encourages trust that a product or service can be depended upon for critical use.</li>
+						<li><strong>Social Equity:</strong> Providing uninterrupted access to potentially vital online services in case of a disaster or emergency benefits users.</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+		<section class="appendix"> <!-- Acknowledgments -->
+			<h2>Acknowledgments</h2>
+			<p>Additional information about participation in the Sustainable Web Interest Group can be found <a href="https://github.com/w3c/sustainableweb-ig/">within the GitHub repository</a> of the Interest Group.</p>
+			<section> <!-- Draft Contributors -->
+				<h2>Participants active in the development of this document</h2>
+				<p>Alexander Dawson, Andrew Wright, Chris Needham, Jennifer Strickland, Rose Newell, Ryan Sholin, Sarah Zama, Susannah Hill, Thorsten Jonas, Tim Frick, Tzviya Siegman.</p>
+			</section>
+		</section>
+	</body>
+</html>

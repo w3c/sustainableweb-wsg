@@ -15,6 +15,19 @@
 							<dd>
 								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
+			function editorRef() {
+				/* Editor Resolution */	
+				const ddToRemove = document.querySelector('dd[data-editor-id="49702"]');
+				if (ddToRemove) { ddToRemove.remove(); }
+				document.querySelectorAll('.head dt').forEach(dt => {
+					if (dt.textContent.trim() === 'Editors:') {
+						dt.textContent = "Editor:";
+						const htmlToInsert = `
+						<dt>Lead Editor:</dt>
+						<dd class="editor p-author h-card vcard" data-editor-id="49702">
+								<a class="u-url url p-name fn" href="https://alexanderdawson.com/">Alexander Dawson</a> (<span class="p-org org h-org">Invited Expert</span>)
+						</dd>`;
+						dt.insertAdjacentHTML('beforebegin', htmlToInsert); } } ); }
 		</script>
 		<script class="remove">
 		var respecConfig = {
@@ -24,6 +37,12 @@
 					url: "https://alexanderdawson.com/",
 					company: "Invited Expert",
 					w3cid: 49702,
+				},
+				{
+					name: "Rose Newell",
+					url: "https://rosenewell.co.uk/",
+					company: "Invited Expert",
+					w3cid: 164418,
 				},
 			],
 			edDraftURI: "https://w3c.github.io/sustainableweb-wsg/summary.html",
@@ -71,11 +90,12 @@
 					status: "Informational",
 					publisher: "David Mytton, Dag Lundén, and Jens Malmodin",
 				},
-				"UN": {
-					title: "Sustainability",
-					href: "https://www.un.org/en/academic-impact/sustainability",
+				"RB-SCI": {
+					title: "Measuring Power Consumption and Emissions of Web Applications: Implementing SCI for the Web",
+					date: "01 November 2024",
+					href: "https://cardamon-web.s3.eu-west-2.amazonaws.com/pdf/cardamon_model_2.pdf",
 					status: "Informational",
-					publisher: "United Nations",
+					publisher: "Oliver Winks, Adam Newman, Son Ba Pham",
 				},
 				"VARIABLES": {
 					title: "The Variables of Web Sustainability",
@@ -93,7 +113,7 @@
 				},
 			},
 			specStatus: "ED",
-			postProcess: [authorRef],
+			postProcess: [authorRef, editorRef],
 		}
 		</script>
 		<style>
@@ -114,19 +134,14 @@
 		</section>
 		<section> <!-- What is web sustainability? -->
 			<h2>What is web sustainability?</h2>
-			<p>Sustainability, as defined by the United Nations [[UN]], focuses on "meeting the needs of the present without compromising the ability of future generations to meet their own needs". Web Sustainability is the digital equivalent of this. It's an approach to designing digital products and services that puts people and the planet first [[MANIFESTO]].</p>
-			<p>Web sustainability addresses more than just environmental issues. It's about making the Web—and the world—a better place for everyone.</p>
-			<p>For those unfamiliar with sustainability issues relating to the web, consider that many factors [[VARIABLES]] may contribute to waste or emissions being produced online.</p>
+			<p>The goal of Web Sustainability is to design, develop, and operate digital products and services such that they meet the needs of the present while ensuring future generations can meet their own needs.</p>
 				<ul>
-					<li>The way data is sent or received between client and server.</li>
-					<li>Hosting, environments, arrays, and infrastructure.</li>
-					<li>Consumer devices, components, and variability in conditions.</li>
-					<li>Software like web browsers (rendering engines and code), operating systems, assistive tools, and applications.</li>
-					<li>Human-centered design features include legislation, accessibility, and the vast field of usability.</li>
-					<li>Development workflows, business operations, and tooling.</li>
-					<li>The visitor's equipment, environment, and behavior.</li>
+					<li>At the time of publication, we have crossed <a href="https://www.stockholmresilience.org/research/planetary-boundaries.html">seven of nine planetary boundaries</a>. The impact of this is seen in communities and ecosystems around the world.</li>
+					<li>Technology hastens these overshoots, contributing to a trajectory that is not in line with any sustainable development targets. This is especially true of artificial intelligence and other emerging, resource-intensive technologies.</li>
+					<li>Sustainable development supports strong social foundations within planetary limits. It acknowledges interdependence and helps us rethink how we create value. In other words, instead of merely 'doing less harm', we strive to restore ecosystems and support communities to help them thrive.</li>
 				</ul>
-			<p>Sustainability also encompasses more than just carbon/energy emissions. Material waste, chemical pollution, water waste, electronic waste, and other impacts need to be measured, accounted for, and reduced where possible from digital products and services.</p>
+			<p>Web sustainability aims to apply sustainable development principles to the creation and management of digital products, services, and content delivered via the web. It represents the ambition to design, develop, and maintain digital products and services. Web sustainability acknowledges that the web is both part of the problem and part of the solution</p>
+			<p>Web sustainability envisions an <a href="https://www.w3.org/TR/ethical-web-principles/">ethical</a> and more <a href="https://humanewebmanifesto.com/">humane web</a> that provides <a href="https://www.sustainablewebmanifesto.com/">environmental, social, and economic benefits</a> to everyone who uses it. The Web Sustainability Guidelines offer a roadmap to achieve this</p>
 		</section>
 		<section> <!-- The importance of web sustainability -->
 			<h2>The importance of web sustainability</h2>
@@ -149,6 +164,7 @@
 				<li>Similarly, good governance and ethical economic practices improve organizations. In turn, these organizations can also outperform their more traditional counterparts on a variety of indicators, including sustainability and long-term financial performance.</li>
 				<li>Also, ensuring your product or service is compatible on older devices and slower or unstable connections not only forces the regulation of avoiding overly burdensome experiences that could prevent access, especially those in developing nations or at-risk groups, but it also will help reduce the need for device upgrades if the user is dependent on such tooling, leading to less e-waste.</li>
 			</ul>
+			<p>Web sustainability also encompasses more than just carbon/energy emissions [[VARIABLES]]. Material waste, chemical pollution, water waste, electronic waste, and other impacts need to be measured, accounted for, and reduced where possible from digital products and services.</p>
 		</section>
 		<section> <!-- Accounting and measurement -->
 			<h2>Accounting and measurement</h2>
@@ -187,7 +203,7 @@
 			</section>
 			<section class="notoc">
 				<h3>What can designers of new web platform features do?</h3>
-				<p>Make sure that tooling is accessible, performant, private by design, secure, non-exploitative, and powered by carbon-free energy. If your product or service is for the public good, ensure its infrastructure is tightly optimized and meets the WSG. In turn, this will help you get a leg up on potential regulatory requirements down the line.</p>
+				<p>Make sure that tooling is accessible, performant, private by design, secure, non-exploitative, and powered by low-carbon energy. If your product or service is for the public good, ensure its infrastructure is tightly optimized and meets the WSG. In turn, this will help you get a leg up on potential regulatory requirements down the line.</p>
 			</section>
 			<section class="notoc">
 				<h3>What can browsers do?</h3>
@@ -211,7 +227,7 @@
 					<details>
 						<summary>Show / Hide available resources.</summary>
 						<ul class="resources">
-							<li><a href="https://www.oreilly.com/library/view/building-green-software/9781098150617/">Building Green Software</a></li>
+							<li><a href="https://www.strategically.green/building-green-software">Building Green Software</a></li>
 							<li><a href="https://climateproductleaders.org/playbook/">Climate Product Leaders Playbook</a></li>
 							<li><a href="https://www.apc.org/sites/default/files/Community_networks_-_the_Internet_by_the_people_for_the_people_0.pdf">Community networks: The internet by the people, for the people</a> (<em>PDF</em>)</li>
 							<li><a href="https://decarbonise.digital/">Decarbonise Digital</a></li>
@@ -223,6 +239,7 @@
 							<li><a href="https://ecoconceptionweb.com/">Ecoconception web: les 115 bonnes pratiques</a> (<em>French</em>)</li>
 							<li><a href="https://altreconomia.it/prodotto/ecologia-digitale/">Ecologia digitale</a> (<em>Italian</em>)</li>
 							<li><a href="https://link.springer.com/book/10.1007/978-3-642-19322-4">Energy-Efficient Computing and Networking</a></li>
+							<li><a href="https://www.cambridge.org/core/books/environmental-knowledge-commons/6456F777EB856A59359873BB99DCB381">The Environmental Knowledge Commons</a></li>
 							<li><a href="https://www.smashingmagazine.com/printed-books/ethical-design-handbook/">Ethical Design Handbook</a></li>
 							<li><a href="https://cloud.google.com/resources/software-guide">Google Go Green Software</a></li>
 							<li><a href="https://www.exove.com/green-code/">Green Code</a></li>
@@ -239,6 +256,7 @@
 							<li><a href="https://theretailexec.com/sustainable-ecommerce-handbook/">Sustainable Ecommerce Handbook</a></li>
 							<li><a href="https://www.wiley.com/en-us/Sustainable+Graphic+Design%3A+Tools%2C+Systems+and+Strategies+for+Innovative+Print+Design+-p-9780470640272">Sustainable Graphic Design</a></li>
 							<li><a href="https://institutnr.org/sutainable-it-procurement-clause-book#clausebook">Sustainable IT Procurement Clause Book</a></li>
+							<li><a href="https://www.nachhaltiges-ux.design/">Sustainable User Experience</a></li>
 							<li><a href="https://www.wholegraindigital.com/blog/sustainable-web-design-book-updated/">Sustainable Web Design</a></li>
 							<li><a href="https://link.springer.com/book/10.1007/978-1-4614-7714-3">Sustainable Web Ecosystem Design</a></li>
 							<li><a href="https://gerrymcgovern.com/books/world-wide-waste/buy-the-book/">World Wide Waste</a></li>
@@ -257,7 +275,6 @@
 							<li><a href="https://greensoftware.foundation/">Green Software</a></li>
 							<li><a href="https://greeningdigital.substack.com/">Greening Digital</a></li>
 							<li><a href="https://spectrum.ieee.org/green-software">IEEE Spectrum</a> (Article)</li>
-							<li><a href="https://mailman3.ietf.org/mailman3/lists/e-impact@ietf.org/">IETF E-Impact Discussion</a></li>
 						</ul>
 					</details>
 				</div>
@@ -340,7 +357,6 @@
 								<li><a href="https://archive.fosdem.org/2023/schedule/event/energy_power_profiling_firefox/">Power profiling with the Firefox Profiler</a></li>
 								<li><a href="https://noti.st/er1p/vaFRbG/sustainability-all-the-way-down">Sustainability All The Way Down</a></li>
 								<li><a href="https://docs.google.com/presentation/d/1OTXaz3RuV0HWgM754PRMUC7d2KYVHH974s5hnAt53wk/edit">Sustainable UX in VR</a></li>
-								<li><a href="https://oursustainablewp.org/">Sustainable WP</a></li>
 							</ul></li>
 						</ul>
 					</details>
@@ -374,8 +390,8 @@
 							<li><a href="https://www.england.nhs.uk/greenernhs/">Greener NHS</a></li>
 							<li><a href="https://greenspector.com/en/blog-en/">Greenspector</a></li>
 							<li><a href="https://indieweb.org/green_computing">IndieWeb Green Computing</a></li>
-							<li><a href="https://amsterdameconomicboard.com/en/initiative/leap/">LEAP</a></li>
-							<li><a href="https://www.mightybytes.com/blog/sustainable-web-design/">MightyBytes</a></li>
+							<li><a href="https://amsterdameconomicboard.com/initiatief/leap/">LEAP</a></li>
+							<li><a href="https://www.mightybytes.com/insights/sustainable-web-design/">Mightybytes</a></li>
 							<li><a href="https://nachhaltiges-webdesign.jetzt/">Nachhaltiges Webdesign</a> (<em>German</em>)</li>
 							<li><a href="https://permacomputing.net/principles/">PermaComputing Principles</a></li>
 							<li><a href="https://www.piano-d.it/category/sostenibilita-digitale/">Piano D</a> (<em>Italian</em>)</li>
@@ -405,7 +421,7 @@
 								<li><a href="https://builtwith.com/">Built With</a></li>
 								<li><a href="https://www3.epa.gov/carbon-footprint-calculator/">Carbon Footprint Calculator</a></li>
 								<li><a href="https://carbonneutralwebsite.org/">Carbon Neutral Website</a></li>
-								<li><a href="https://github.com/lfwa/carbontracker">Carbon Tracker</a></li>
+								<li><a href="https://github.com/saintslab/carbontracker">Carbon Tracker</a></li>
 								<li><a href="https://cardamon.io/">Cardamon</a></li>
 								<li><a href="https://chromewebstore.google.com/detail/chatgpt-co2-tracker/hkjljphcfcpfjdknlpolgofpceebjpha?pli=1">ChatGPT CO2 Tracker</a></li>
 								<li><a href="https://www.cloudcarbonfootprint.org/">Cloud Carbon Footprint</a></li>
@@ -414,6 +430,7 @@
 								<li><a href="https://codecarbon.io/">Code Carbon</a></li>
 								<li><a href="https://dataviz.boavizta.org/">Datavizta</a></li>
 								<li><a href="https://ecograder.com/">Ecograder</a></li>
+								<li><a href="https://calculator.footsprint.co/">Footsprint</a></li>
 								<li><a href="https://www.thegreenwebfoundation.org/">Green Host Checker</a></li>
 								<li><a href="https://greenframe.io/">GreenFrame</a></li>
 								<li><a href="https://github.com/cnumr/GreenIT-Analysis">GreenIT Analysis</a></li>
@@ -429,12 +446,14 @@
 								<li><a href="https://readabilityformulas.com/readability-scoring-system.php">Readability Checker</a></li>
 								<li><a href="https://www.webfx.com/tools/read-able/">Readable</a></li>
 								<li><a href="https://www.sitigreen.it/">SitiGreen</a></li>
+								<li><a href="https://opensourcegreenops.cloud/">Spruce</a></li>
 								<li><a href="https://unlighthouse.dev/">Unlighthouse</a></li>
 								<li><a href="https://www.nolesserpanda.com/pages/video-conference-carbon-calculator.php">Video Calls Calculator</a></li>
 								<li><a href="https://validator.w3.org/">W3C Markup Validator</a></li>
 								<li><a href="https://wave.webaim.org/">WAVE Accessibility</a></li>
 								<li><a href="https://websustainabilityindex.com/about">Web Sustainability Index</a></li>
 								<li><a href="https://webhint.io/">WebHint</a></li>
+								<li><a href="https://website-tester.green-coding.io/">WebNRG</a></li>
 								<li><a href="https://www.webpagetest.org/">WebPageTest</a></li>
 								<li><a href="https://www.websitecarbon.com/">Website Carbon</a></li>
 							</ul></li>
@@ -448,18 +467,22 @@
 								<li><a href="https://www.microsoft.com/en-us/sustainability/emissions-impact-dashboard">Emissions Impact Dashboard</a></li>
 								<li><a href="https://ethical.net/resources/?resource-category=web-hosting">Ethical</a></li>
 								<li><a href="https://ethicalrevolution.co.uk/">Ethical Revolution</a></li>
+								<li><a href="https://carbonrunner.io/github-actions-carbon-calculator">GitHub Actions carbon footprint</a></li>
 								<li><a href="https://globemallow.io/">Globemallow</a></li>
 								<li><a href="https://github.com/Adora-Foundation/awesome-green-extensions">Green Extensions</a></li>
 								<li><a href="https://www.internetexchangemap.com/#/">Internet Exchange Map</a></li>
+								<li><a href="https://github.com/Adora-Foundation/llm-energy-lab">LLM Energy Lab</a></li>
 								<li><a href="https://github.com/vicocotea/low-web-extension">Low Web Extension</a></li>
 								<li><a href="https://lune.co/">Lune</a></li>
+								<li><a href="https://mapyourgrid.org/">MapYourGrid</a></li>
 								<li><a href="https://opensustain.tech/">Open Sustainable Technology</a></li>
 								<li><a href="https://github.com/S2-group/SAF-Toolkit">SAF-Toolkit</a></li>
 								<li><a href="https://github.com/hubblo-org/scaphandre">Scaphandre</a></li>
 								<li><a href="https://scope3.com/">Scope3</a></li>
 								<li><a href="https://www.submarinecablemap.com/">Submarine Cable Map</a></li>
+								<li><a href="https://github.com/liti-dev/vscarbon">VSCarbon</a></li>
+								<li><a href="https://github.com/overbrowsing/wasteback-machine">Wasteback Machine</a></li>
 								<li><a href="https://wikirate.org/">Wikirate</a></li>
-								<li><a href="https://www.utilitybidder.co.uk/business-electricity/zoom-emissions/">Zoom Emissions</a></li>
 							</ul></li>
 						</ul>
 					</details>
@@ -481,6 +504,7 @@
 							<li><a href="https://fershad.com/writing/improving-the-accuracy-of-website-carbon-emissions-estimates/">Improving the accuracy of website carbon emissions estimates</a></li>
 							<li><a href="https://fershad.com/writing/including-user-interaction-in-website-carbon-estimates/">Including user interaction in website carbon estimates</a></li>
 							<li><a href="https://www.the-public-good.com/web-development/measuring-the-web">Measuring The Web</a></li>
+							<li>Measuring Power Consumption and Emissions of Web Applications: Implementing SCI for the Web [[RB-SCI]]</li>
 							<li>Network energy use not directly proportional to data volume [[NETWORK]]</li>
 							<li><a href="https://circleid.com/posts/20170321_shedding_light_on_how_much_energy_internet_and_ict_consume/">Shedding Light on How Much Energy the Internet and ICTs Consume</a></li>
 							<li>The real climate and transformative impact of ICT [[CTICT]]</li>

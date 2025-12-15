@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Accessibility Statement</title>
+		<title>WSG Test: Manage Account</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#use-justice-equity-diversity-inclusion-jedi-practices">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#implement-appropriate-data-management-procedures">
 		<meta name="flags" content="">
-		<meta name="assert" content="Test Checks: Provide a Publicly Visible Accessibility Statement">
+		<meta name="assert" content="Test Checks: Enable Users To Manage Their Accounts and Data">
 		<style>
 
 		</style>
@@ -16,15 +16,13 @@
 		</script>
 	</head>
 	<body>
-		<h1>Accessibility Statement</h1>
-		<h2>Compatibility</h2>
-		<p>Browsers and devices that have been tested upon.</p>
-		<h2>Built-In Features</h2>
-		<p>Additional assistance aids bolted into the application or website.</p>
-		<h2>Known Issues</h2>
-		<p>Quirks that may affect accessibility tools and agents.</p>
-		<h2>Support</h2>
-		<p>You can get support for accessibility-related issues <a href="mailto:email@this.address">at this address</a></p>
-		<p>Test passes if the statement exists, and has necessary sections provided in plain English.</p>
+		<form action="">
+			<fieldset>
+				<legend>Account Management</legend>
+				<input class="pause" type="reset" value="Pause Membership">
+				<input class="delete" type="reset" value="Delete Account">
+			</fieldset>
+		</form> 
+		<p>Test passes if the ability to remove an account within a membership page is visible.</p>
 	</body>
 </html>

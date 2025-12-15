@@ -3,29 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Interaction Permissions</title>
+		<title>WSG Test: Design System</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#design-to-assist-and-not-to-distract">
-		<meta name="flags" content="javascript">
-		<meta name="assert" content="Test Checks: Request Permission for Invasive Access To Interact With Content">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#use-a-design-system-for-interface-consistency">
+		<meta name="flags" content="invalid">
+		<meta name="assert" content="Test Checks: Implement an Up-to-Date Design System">
 		<style>
-			
+
 		</style>
 		<script>
-			function getLocation() {
-				if (navigator.geolocation) {
-					navigator.geolocation.getCurrentPosition(showPosition);
-				} else { 
-					document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
-				}
-			}
-			function showPosition(position) {
-				document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
-			}
+
 		</script>
 	</head>
-	<body onload="getLocation()">
-		<p id="demo"></p>
-		<p>Test passes if permissions are requested and if so, can be blocked or a user-invoked alternative is provided.</p>
+	<body>
+		<h1>Sustainability Statement</h1>
+		<p>Currently, we do not use a design system for our product, this is something we hope to change in the future to increase the reusability of components and to reduce wasted effort and machine time. As such, this has an increased carbon impact on our development cycles and we have increased offsetting attempts in other areas to compensate.</p>
+		<p>Test passes if it is noted that no design system was identified as a central source of truth.</p>
 	</body>
 </html>

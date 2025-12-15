@@ -3,25 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WSG Test: Decorative Design</title>
+		<title>WSG Test: Deceptive Design</title>
 		<link rel="author" title="Alexander Dawson" href="https://alexanderdawson.com/">
-		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#use-decorative-design-with-care">
+		<link rel="help" href="https://w3c.github.io/sustainableweb-wsg/#avoid-being-manipulative-or-deceptive">
 		<meta name="flags" content="invalid">
-		<meta name="assert" content="Test Checks: Decorative Design Elements Can Be Disabled if They Are Not Done So by Default">
+		<meta name="assert" content="Test Checks: Eliminate Deceptive Design Patterns or Manipulative Techniques">
 		<style>
-			p {
-				cursor: pointer;
-				overflow-x: scroll;
-				scrollbar-color: red orange;
-				scrollbar-width: thin;
-				width: 20%;
-			}
+			body { user-select: none; }
 		</style>
 		<script>
-
+			document.addEventListener('contextmenu', event => {
+				event.preventDefault();
+			});
 		</script>
 	</head>
 	<body>
-		<p>Test passes if the decorative design elements are identified and flagged.</p>
+		<p>Test passes if anti-patterns are identified and flagged for removal.</p>
 	</body>
 </html>
