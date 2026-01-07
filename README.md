@@ -14,7 +14,7 @@ If you would like to learn more about us and how to participate in this project,
 	<tbody>
 		<tr>
 			<td>Jan 15 2026</td>
-			<td>Existing W3C horizontal review updates ready for inclusion in WSG</td>
+			<td>Existing W3C horizontal review updates ready for inclusion in WSG.</td>
 		</tr>
 		<tr>
 			<td>Feb 15 2026</td>
@@ -22,10 +22,10 @@ If you would like to learn more about us and how to participate in this project,
 		</tr>
 		<tr>
 			<td rowspan="2">Mar 15 2026</td>
-			<td>Conformance Task Force review and updates to satisfy regulatory reporting</td>
+			<td>Conformance Task Force review and updates to satisfy regulatory reporting.</td>
 		</tr>
 		<tr>
-			<td>Wide review and other W3C horizontal review updates ready for inclusion in WSG</td>
+			<td>Wide review and other W3C horizontal review updates are ready for inclusion in WSG.</td>
 		</tr>
 		<tr>
 			<td rowspan="2">Apr 15 2026</td>
@@ -39,7 +39,7 @@ If you would like to learn more about us and how to participate in this project,
 			<td>IG completes initial work on supplements prior to WSG submission.</td>
 		</tr>
 		<tr>
-			<td>IG finalizes workflow changes it can affect, publishing approach so other groups can adopt.</td>
+			<td>IG finalizes workflow changes it can affect, publishing an approach so that other groups can adopt.</td>
 		</tr>
 		<tr>
 			<td rowspan="2">Jun 15 2026</td>
