@@ -50,7 +50,7 @@ If you would like to learn more about us and how to participate in this project,
 		</tr>
 		<tr>
 			<td rowspan="2">Jul 15 2026</td>
-			<td>WSG is readied, WSG repo is temporily frozen, and submitted for STMT (statement) status.</td>
+			<td>WSG is readied and submitted for STMT (statement) status (See reminder for Chairs/Editors).</td>
 		</tr>
 		<tr>
 			<td>Agree on finalized charter, submit to strategy team for review (HR / TiLT, etc), then submit to AC.</td>
@@ -63,6 +63,8 @@ If you would like to learn more about us and how to participate in this project,
 </table>
 
 **Note:** Horizontal review is ongoing and wide review from external parties have been accepted at all stages of WSGs development.
+
+**Reminder for Chairs/Editors:** 6.4.3 of W3C Process states that during the statement review period, notes must NOT be updated. As editing of any file WILL trigger a new spec release in Echidna (automated publishing), NO merges of PR's / direct edits should be allowed during this phase.
 
 ## Statistics
 
