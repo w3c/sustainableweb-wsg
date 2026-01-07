@@ -3,6 +3,67 @@ Welcome to the repository of the [Web Sustainability Guidelines (WSG)](https://w
 
 If you would like to learn more about us and how to participate in this project, please check the readme in the [W3C Sustainable Web Interest Group](https://github.com/w3c/sustainableweb-ig) repository.
 
+## Schedule
+<table>
+	<thead>
+		<tr>
+			<th>Date</th>
+			<th>Details</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Jan 15 2026</td>
+			<td>Existing W3C horizontal review updates ready for inclusion in WSG</td>
+		</tr>
+		<tr>
+			<td>Feb 15 2026</td>
+			<td>Measurability Task Force scoring consensus and Impact API inclusion.</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Mar 15 2026</td>
+			<td>Conformance Task Force review and updates to satisfy regulatory reporting</td>
+		</tr>
+		<tr>
+			<td>Wide review and other W3C horizontal review updates ready for inclusion in WSG</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Apr 15 2026</td>
+			<td>TAG updates ready for inclusion in WSG.</td>
+		</tr>
+		<tr>
+			<td>IG begins work on new charter (6 months planning).</td>
+		</tr>
+		<tr>
+			<td rowspan="2">May 15 2026</td>
+			<td>IG completes initial work on supplements prior to WSG submission.</td>
+		</tr>
+		<tr>
+			<td>IG finalizes workflow changes it can affect, publishing approach so other groups can adopt.</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Jun 15 2026</td>
+			<td>WSG is submitted to W3C for NOTE status.</td>
+		</tr>
+		<tr>
+			<td>IG begins discussion of educational materials, outreach, tooling, etc, to broaden awareness.</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Jul 15 2026</td>
+			<td>WSG is readied, WSG repo is temporily frozen, and submitted for STMT (statement) status.</td>
+		</tr>
+		<tr>
+			<td>Agree on finalized charter, submit to strategy team for review (HR / TiLT, etc), then submit to AC.</td>
+		</tr>
+		<tr>
+			<td>Oct 31 2026</td>
+			<td>Our charter ends.</td>
+		</tr>
+	</tbody>
+</table>
+
+**Note:** Horizontal review is ongoing and wide review from external parties have been accepted at all stages of WSGs development.
+
 ## Statistics
 
  - **80** Guidelines covering UX, Web Development, Infrastructure, and Business/Product Strategy.
@@ -99,46 +160,6 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		</tr>
 	</tbody>
 </table>
-
-## Schedule
-<table>
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Date</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Final Editor's Draft</td>
-			<td>15 December 2025</td>
-		</tr>
-		<tr>
-			<td>Measurability</td>
-			<td>31 Mar 2026</td>
-		</tr>
-		<tr>
-			<td>W3C Draft Note</td>
-			<td>22 Apr 2026 (<i>Earth Day</i>)</td>
-		</tr>
-		<!--
-		<tr>
-			<td>Horizontal Review</td>
-			<td>TBD</td>
-		</tr>
-		<tr>
-			<td>W3C Note</td>
-			<td>TBD</td>
-		</tr>
-		<tr>
-			<td>W3C Statement</td>
-			<td>TBD</td>
-		</tr>
-		-->
-	</tbody>
-</table>
-
-**Note:** We will still consider the [remaining proposed and planned updates](https://docs.google.com/presentation/d/1dcuSMLcAF8jTHNCovOfs31zrjCr3rtrwzTXRLSy3lAk/edit?usp=sharing) carried forward from the Sustainable Web Community Group (based on both W3C and CG member feedback).
 
 ## Processes
 
