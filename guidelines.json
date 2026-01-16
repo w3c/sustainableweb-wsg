@@ -1,7 +1,7 @@
 {
 	"title": "Web Sustainability Guidelines",
 	"edition": "Draft Note",
-	"lastModified": "2025-12-14",
+	"lastModified": "2026-01-16",
 	"category": [
 		{
 			"id": "1",
@@ -269,7 +269,7 @@
 					],
 					"benefits": [
 						{
-							"Accessibility": "Understanding real-world accessibility requirements in the early development stages makes it possible to prioritize inclusive design throughout the entire lifecycle. This improves efficiency, as developers will not be prompted to add in accessibility later. It will also reduce emissions associated with the patching process.",
+							"Accessibility": "Understanding real-world accessibility requirements in the early development stages by involving people with disabilities makes it possible to prioritize inclusive design throughout the entire lifecycle. This improves efficiency, as developers will not be prompted to add in accessibility later. It will also reduce emissions associated with the patching process.",
 							"Conversion": "Testing user interfaces usually leads to improved conversion rates as they can be optimized accordingly. This includes removing anything that causes friction and designing content in a way that optimizes user flow, reducing emissions while maximizing conversion.",
 							"Economic": "Incorporating wireframes, prototypes, and user testing into early product design cycles reduces money and effort otherwise wasted building features people will not use.",
 							"Environment": "Helping key contributors to better understand the environmental impact makes it possible to track and reduce that impact throughout the lifecycle of a project.",
@@ -349,7 +349,7 @@
 						},
 						{
 							"title": "Eliminate the non-essential",
-							"description": "Only show users information that is relevant to their experience, hiding non-essential information from view.",
+							"description": "Only show users information that is relevant to their experience, hiding non-essential information from view and always in ways appropriate to the accessibility requirements of different users.",
 							"resources": [
 								{
 									"A manifesto for small, static, web apps": "https://rosswintle.uk/2024/02/a-manifesto-for-small-static-web-apps/",
@@ -426,7 +426,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Content", "Patterns", "Performance", "Social Equity", "UI", "Usability"]
+					"tags": ["Accessibility", "Content", "Patterns", "Performance", "Social Equity", "UI", "Usability"]
 				},
 				{
 					"id": "5",
@@ -573,7 +573,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Assets", "Patterns", "UI", "Usability"]
+					"tags": ["Accessibility", "Assets", "Patterns", "UI", "Usability"]
 				},
 				{
 					"id": "7",
@@ -787,7 +787,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Assets", "Content", "Education", "Patterns", "Software"]
+					"tags": ["Accessibility", "Assets", "Content", "Education", "Patterns", "Software"]
 				},
 				{
 					"id": "9",
@@ -858,7 +858,7 @@
 							"emissions": "Low"
 						}
 					],
-					"tags": ["Assets", "CSS", "Education", "Patterns", "Strategy", "UI", "Usability"]
+					"tags": ["Accessibility", "Assets", "CSS", "Education", "Patterns", "Strategy", "UI", "Usability"]
 				},
 				{
 					"id": "10",
@@ -1112,7 +1112,7 @@
 						}
 					],
 					"example": "<picture> \n  <source type=\"image/avif\" srcset=\"image.avif\">\n  <source type=\"image/webp\" srcset=\"image.webp\">\n  <img width=\"100px\" height=\"100px\" src=\"image.jpg\" alt=\"\" loading=\"lazy\"/>\n</picture>",
-					"tags": ["Assets", "Content", "HTML", "Performance", "Software", "UI", "Usability"]
+					"tags": ["Accessibility", "Assets", "Content", "HTML", "Performance", "Software", "UI", "Usability"]
 				},
 				{
 					"id": "12",
@@ -1262,7 +1262,7 @@
 						}
 					],
 					"example": "font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;",
-					"tags": ["CSS", "Performance", "UI", "Usability"]
+					"tags": ["Accessibility", "CSS", "Performance", "UI", "Usability"]
 				},
 				{
 					"id": "14",
@@ -1492,7 +1492,7 @@
 						}
 					],
 					"example": "<form>\r\n\t<label for=\"choose\">Would you prefer a banana or cherry? (required)<\/label>\r\n\t<input id=\"choose\" name=\"i-like\" required \/>\r\n\t<button>Submit<\/button>\r\n<\/form>",
-					"tags": ["JavaScript", "Privacy", "UI", "Usability"]
+					"tags": ["Accessibility", "JavaScript", "Privacy", "UI", "Usability"]
 				},
 				{
 					"id": "17",
@@ -1585,7 +1585,7 @@
 							"emissions": "Low"
 						}
 					],
-					"tags": ["Assets", "Compatibility", "Content", "E-Waste", "Hardware", "Performance", "Software", "UI", "Usability"]
+					"tags": ["Accessibility", "Assets", "Compatibility", "Content", "E-Waste", "Hardware", "Performance", "Software", "UI", "Usability"]
 				},
 				{
 					"id": "18",
@@ -2159,7 +2159,7 @@
 						}
 					],
 					"example": "!function(e,t){\"use strict\";\"object\"==typeof module&&\"object\"==typeof module.exports?module.exports=e.document?t(e,!0):function(e){if(!e.document)throw new Error(\"jQuery requires a window with a document\");return t(e)}:t(e)}(\"undefined\"!=typeof window?window:this,function(g,e){\"use strict\";var t=[],r=Object.getPrototypeOf,s=t.slice,v=t.flat?function(e){return t.flat.call(e)}:function(e){return t.concat.apply([],e)},u=t.push,i=t.indexOf",
-					"tags": ["CSS", "HTML", "JavaScript", "Performance"]
+					"tags": ["Accessibility", "CSS", "HTML", "JavaScript", "Performance"]
 				},
 				{
 					"id": "3",
@@ -2454,7 +2454,7 @@
 						}
 					],
 					"example": "<iframe src=\"https:\/\/example.com\" loading=\"lazy\" width=\"600\" height=\"400\"><\/iframe>",
-					"tags": ["JavaScript", "Performance", "Privacy", "Security", "Software", "UI", "Usability"]
+					"tags": ["Accessibility", "JavaScript", "Performance", "Privacy", "Security", "Software", "UI", "Usability"]
 				},
 				{
 					"id": "7",
@@ -2666,7 +2666,7 @@
 						}
 					],
 					"example": "<img src=\"image.png\" loading=\"lazy\" alt=\"\u2026\" width=\"200\" height=\"200\">",
-					"tags": ["Assets", "CSS", "JavaScript", "Performance"]
+					"tags": ["Accessibility", "Assets", "CSS", "JavaScript", "Performance"]
 				},
 				{
 					"id": "9",
@@ -3080,7 +3080,7 @@
 						}
 					],
 					"example": "@media screen and (min-width: 600px) {\r\n\tbody {\r\n\t\tcolor: red;\r\n\t}\r\n}",
-					"tags": ["AI", "Compatibility", "Content", "CSS", "Performance", "Social Equity", "UI", "Usability"]
+					"tags": ["Accessibility", "AI", "Compatibility", "Content", "CSS", "Performance", "Social Equity", "UI", "Usability"]
 				},
 				{
 					"id": "14",
@@ -3330,7 +3330,7 @@
 						}
 					],
 					"example": "npm uninstall <package-name>",
-					"tags": ["JavaScript", "Patterns", "Performance", "Privacy", "Security", "Software"]
+					"tags": ["Accessibility", "JavaScript", "Patterns", "Performance", "Privacy", "Security", "Software"]
 				},
 				{
 					"id": "17",
@@ -3402,7 +3402,7 @@
 						}
 					],
 					"example": "User-agent: *\r\nDisallow: \/cgi-bin\/",
-					"tags": ["Assets", "Compatibility", "Marketing", "Patterns", "Security", "UI"]
+					"tags": ["Accessibility", "Assets", "Compatibility", "Marketing", "Patterns", "Security", "UI"]
 				},
 				{
 					"id": "18",
@@ -3520,7 +3520,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Compatibility", "Ideation", "Performance", "Software", "Strategy"]
+					"tags": ["Accessibility", "Compatibility", "Ideation", "Performance", "Software", "Strategy"]
 				},
 				{
 					"id": "19",
@@ -3576,7 +3576,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Compatibility", "Performance", "Security"]
+					"tags": ["Accessibility", "Compatibility", "Performance", "Security"]
 				},
 				{
 					"id": "20",
@@ -3946,7 +3946,7 @@
 						}
 					],
 					"example": "<IfModule mod_expires.c>\r\n\tExpiresActive on\r\n\t# Default: Fallback\r\n\tExpiresDefault                                      \"access plus 1 year\"\r\n\t# Specific: Assets\r\n\tExpiresByType image\/x-icon                          \"access plus 1 week\"\r\n\tExpiresByType application\/rss+xml                   \"access plus 1 hour\"\r\n\tExpiresByType application\/json                      \"access\"\r\n<\/IfModule>",
-					"tags": ["Assets", "HTML", "JavaScript", "Networking", "Performance", "Software"]
+					"tags": ["Accessibility", "Assets", "HTML", "JavaScript", "Networking", "Performance", "Software"]
 				},
 				{
 					"id": "3",
@@ -4098,7 +4098,7 @@
 						}
 					],
 					"example": "ErrorDocument 404 /404.html",
-					"tags": ["Compatibility", "Content", "Marketing", "Networking", "UI", "Usability"]
+					"tags": ["Accessibility", "Compatibility", "Content", "Marketing", "Networking", "UI", "Usability"]
 				},
 				{
 					"id": "5",
@@ -4255,7 +4255,7 @@
 							"emissions": "Low"
 						}
 					],
-					"tags": ["AI", "Performance", "Security", "Software"]
+					"tags": ["Accessibility", "AI", "Performance", "Security", "Software"]
 				},
 				{
 					"id": "7",
@@ -4618,7 +4618,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["AI", "Content", "Hardware", "Networking", "Performance"]
+					"tags": ["Accessibility", "AI", "Content", "Hardware", "Networking", "Performance"]
 				},
 				{
 					"id": "11",
@@ -4781,7 +4781,7 @@
 						}
 					],
 					"example": "Accept-Encoding: zstd, gzip, br, deflate",
-					"tags": ["Content", "E-Waste", "Hardware", "Performance", "Privacy"]
+					"tags": ["Accessibility", "Content", "E-Waste", "Hardware", "Performance", "Privacy"]
 				}
 			]
 		},
@@ -5624,7 +5624,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["Compatibility", "Strategy"]
+					"tags": ["Accessibility", "Compatibility", "Strategy"]
 				},
 				{
 					"id": "11",
@@ -5891,7 +5891,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["AI", "E-Waste", "Ideation", "Reporting", "Software"]
+					"tags": ["Accessibility", "AI", "E-Waste", "Ideation", "Reporting", "Software"]
 				},
 				{
 					"id": "14",
@@ -6550,7 +6550,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["AI", "Content", "E-Waste", "Governance", "Hardware", "Networking", "Performance", "Privacy", "Security", "Social Equity", "Software"]
+					"tags": ["Accessibility", "AI", "Content", "E-Waste", "Governance", "Hardware", "Networking", "Performance", "Privacy", "Security", "Social Equity", "Software"]
 				},
 				{
 					"id": "21",
@@ -7053,7 +7053,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Assets", "Ideation", "Social Equity", "Software", "UI"]
+					"tags": ["Accessibility", "Assets", "Ideation", "Social Equity", "Software", "UI"]
 				},
 				{
 					"id": "27",
