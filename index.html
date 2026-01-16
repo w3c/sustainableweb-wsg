@@ -1069,12 +1069,17 @@
 				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491, GreenIT" data-considerations="" data-categories="CSS, Performance, UI, Usability">
 					<h4 id="pre-installed-typefaces">Success Criterion: Pre-installed typefaces</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX13-1">Resources</a></p>
-					<p>Use pre-installed, web-safe typefaces and system fonts wherever possible.</p>
+					<p>Use pre-installed fonts, such as system fonts, wherever possible, to reduce the reliance on user-installed or web fonts.</p>
 				</section>
 				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491" data-considerations="" data-categories="CSS, Performance, UI, Usability">
-					<h4 id="font-optimization">Success Criterion: Font optimization</h4>
+					<h4 id="web-font-optimization">Success Criterion: Web font optimization</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX13-2">Resources</a></p>
-					<p>Limit the number and complexity of fonts downloaded. Design or subset fonts to omit unnecessary or unused stylistic variations, such as font weight or italics. Additionally design or subset to omit unused characters only where you and not the user or a third party control the input and output and can be sure only the confirmed Unicode range or character set will be used. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.</p>
+					<p>Limit the number and complexity of fonts downloaded. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.</p>
+				</section>
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="" data-categories="CSS, Performance, UI, Usability">
+					<h4 id="web-font-subsetting">Success Criterion: Web font subsetting</h4>
+					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX13-3">Resources</a></p>
+					<p>Design or subset fonts to omit unnecessary or unused stylistic variations, such as font weight or italics. Design or subset web fonts based on explicitly supported languages and Unicode scripts rather than assumed defaults. Where you are in full control of all input and output, fonts can be subset to include only the relevant Unicode range or character set. In all other instances - particularly where content is user-generated or affected by dynamic input and output - provide full script coverage and use a solution such as Incremental Font Transfer (<abbr title="Incremental Font Transfer">IFT</abbr>) to load the required segments of the font on demand.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
