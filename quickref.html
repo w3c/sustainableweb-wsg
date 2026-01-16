@@ -109,7 +109,7 @@
 						<td><input type="checkbox" id="2.2b"></td><td colspan="5"><label for="2.2b">Conduct internal and user research to identify whether a technical, material, or human constraint might require adaptations to reduce barriers or improve access to content.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="2.2c"></td><td colspan="5"><label for="2.2c">Remove identified barriers to access. These can include deceptive design patterns, accessibility issues, or other pain points.</label></td>
+						<td><input type="checkbox" id="2.2c"></td><td colspan="5"><label for="2.2c">Remove identified barriers to access, provided they do not introduce or increase security or safety risks or exposure. Removable pain points can include deceptive design patterns and accessibility hurdles, but not include user verification or authentication mechanisms.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>GRI</strong></td>
@@ -601,7 +601,7 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.6a"></td><td colspan="5"><label for="3.6a">Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions.</label></td>
+						<td><input type="checkbox" id="3.6a"></td><td colspan="5"><label for="3.6a">Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions. Ensure that third-party vendors enforce the same Compliance, Security, and Privacy standards as the first party. This includes data deletion policies, data retention limits, and mandatory security updates.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="3.6b"></td><td colspan="5"><label for="3.6b">Use click-to-load triggers based on an import on interaction pattern to prevent automatic loading of third-party content and/or services (see above). Offer suitable alternatives to third-party use, for example, a link to a contact form as an alternative to a chat widget.</label></td>
@@ -795,7 +795,7 @@
 						<td><input type="checkbox" id="3.16a"></td><td colspan="5"><label for="3.16a">Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that are not needed.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.16b"></td><td colspan="5"><label for="3.16b">Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library.</label></td>
+						<td><input type="checkbox" id="3.16b"></td><td colspan="5"><label for="3.16b">Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library.  Do not replace battle-tested security libraries with custom implementations: Custom security code increases vulnerability, which itself can negatively affect sustainability.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="3.16c"></td><td colspan="5"><label for="3.16c">Regularly check dependencies and keep them up to date.</label></td>
@@ -872,7 +872,7 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="3.20a"></td><td colspan="5"><label for="3.20a">Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process.</label></td>
+						<td><input type="checkbox" id="3.20a"></td><td colspan="5"><label for="3.20a">Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process. Practice good database hygiene with data modeling best practices such as data minimization, such as Time-to-Live (<abbr title="Time-to-Live">TTL</abbr>), de-identification, <abbr title="Universally Unique Identifiers">UUIDs</abbr>, and purpose limitation.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>GRI</strong></td>
@@ -970,7 +970,7 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="4.5a"></td><td colspan="5"><label for="4.5a">Minimize the number of active environments, including virtualized environments (such as containers). Where applicable, also evaluate running services. Audit codebases and setups for unused branches, environments, and services and remove them as appropriate.</label></td>
+						<td><input type="checkbox" id="4.5a"></td><td colspan="5"><label for="4.5a">Reduce the number of active environments by deactivating and/or offlining unused or redundant virtual (e.g., containers, virtual machines) or physical environments wherever this can be done without reducing the required security, isolation, or compliance guarantees. Where applicable, also evaluate running services in the same way. Similarly audit codebases and setups for unused branches, environments, and services and prune as appropriate.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>GRI</strong></td>
@@ -1021,7 +1021,7 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="4.8a"></td><td colspan="5"><label for="4.8a">Ensure backups of system and user data are secure and incremental to minimize storage use, reduce backup time, and protect against data loss or breaches.</label></td>
+						<td><input type="checkbox" id="4.8a"></td><td colspan="5"><label for="4.8a">Ensure backups of system and user data are secure and incremental to minimize storage use, reduce backup time. Establish mechanisms to prevent user identifiable information from being stored long term, limit access, and protect against data loss or breaches.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>GRI</strong></td>
@@ -1110,7 +1110,7 @@
 						<td><input type="checkbox" id="4.12d"></td><td colspan="5"><label for="4.12d">Store data only when it cannot be easily or accurately regenerated.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="4.12e"></td><td colspan="5"><label for="4.12e">Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers.</label></td>
+						<td><input type="checkbox" id="4.12e"></td><td colspan="5"><label for="4.12e">Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers. Establish mechanisms to ensure identifiable user information does not appear in logs to reduce security and privacy risks and exposure.</label></td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" id="4.12f"></td><td colspan="5"><label for="4.12f">Make large, long-term assets available for easy download when in persistent use so users are not required to re-access the server for repeat downloads.</label></td>
@@ -1428,7 +1428,7 @@
 						<td></td><td colspan="5"><strong>Success Criterion</strong></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="5.16a"></td><td colspan="5"><label for="5.16a">Assign all affected parties, from users to project managers, an equitable role in the decision-making process. Ensure all internal involved parties have the necessary power and autonomy to make key decisions on the organization's behalf.</label></td>
+						<td><input type="checkbox" id="5.16a"></td><td colspan="5"><label for="5.16a">Assign all affected parties, from users to project managers, an equitable role in the decision-making process. Ensure all internal involved parties have the necessary power and autonomy to make key decisions on the organization's behalf. Where an autonomous system is able to make automated decisions, it must be possible to opt out, object, withdraw, and restrict the use of personal data. Any autonomous process must also be made as transparent as possible with evidence-based assurances that the metrics used are not biased. Affected parties must be able to obtain details about how the decision was made and offered a means to challenge decisions with human oversight.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>GRI</strong></td>
@@ -1468,7 +1468,7 @@
 						<td><input type="checkbox" id="5.18a"></td><td colspan="5"><label for="5.18a">Maintain a publicly accessible privacy policy, terms and conditions, and any other documents as required by law in the jurisdictions in which the product or service operates. Adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. Provide documents in accessible formats and use clear, user-friendly language to ensure comprehension by all users. Avoid unnecessary jargon, technical language, and legalese. Support emerging legislation and implement best practices related to data privacy, sustainability, and responsible data management.</label></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="5.18b"></td><td colspan="5"><label for="5.18b">Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a user's "right to be forgotten" or opt-out will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.</label></td>
+						<td><input type="checkbox" id="5.18b"></td><td colspan="5"><label for="5.18b">Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how opt-out will be handled along with ownership rights. Data deletion or "Right to be forgotten" requests must immediately propagate to databases and local caches. Cached data must not persist after a user has revoked consent or deleted their account. Also provide the ability to download or export data created by or in relation to the user in a non-proprietary format.</label></td>
 					</tr>
 					<tr>
 						<td></td><td><strong>GRI</strong></td>
