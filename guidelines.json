@@ -3260,7 +3260,7 @@
 						},
 						{
 							"title": "Dependency necessity",
-							"description": "Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library.  Do not replace battle-tested security libraries with custom implementations: Custom security code increases vulnerability, which itself can negatively affect sustainability.",
+							"description": "Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library. Do not replace established and trusted security libraries with scoped-down or custom implementations. Custom security code increases vulnerability, which itself can negatively affect sustainability.",
 							"resources": [
 								{
 									"Boring Web Development": "https://meiert.com/blog/boring-web-development/",
