@@ -430,6 +430,10 @@
 				<p>Web Sustainability Guidelines (WSG) were developed in cooperation with individuals and organizations around the world. It does so, intending to provide a shared strategy for <a>web sustainability</a> that meets the needs of individuals, organizations, and governments internationally. WSG is designed to apply broadly to different existing web technologies now and in the future and <strong>to be testable with a combination of automated testing and human evaluation</strong>.</p>
 				<p>While content within WSG has been categorized for ease of readability, considering sustainability impacts beyond a field of interest is critical to increase awareness and collective action. <strong>Guidelines and success criteria matter, not prescribed labels</strong>. Certain tasks may be suited to a different/multiple role(s) depending upon whom or how the task of compliance is being approached.</p>
 				<p><a>Web sustainability</a> depends not only on sustainable products and services but also on sustainable web browsers and other user agents. Examples include the performance of rendering and the accurate measuring of energy use through developer tooling. Authoring tools also have an important role in <a>web sustainability</a>, by ensuring performant code, reducing waste, and serving the results in the most sustainable way possible.</p>
+				<div class="note">
+					<p>Any tools or user agents designed to provide the user or their environment with insights related to the implementation of WSG should be developed in a way that is mindful to the risk of fingerprinting, e.g. user agent identifiers, unique values, scores, signature patterns, and other data collection that could be used to identify a user and thereby compromise user privacy.</p>
+					<p>It should also not be possible to reverse-engineer energy metrics to track users across sessions or websites, and any energy use reported to websites must be aggregated to avoid revealing information about individuals or their environments.</p>
+				</div>
 				<p><strong>Coverage should not be restricted to what falls within the digital sector.</strong> While for this specification, we primarily focus on Internet-related technologies and the people and organizations that use them, sustainability concerns exist beyond the scope of this work, and as such, the impacts of these differing areas of concern should be addressed when meeting targets, reporting, and complying with relevant legislation.</p>
 				<div class="note">
 					<p>The WSG was originally developed under the guidance of the <a href="https://www.w3.org/community/sustyweb/">Sustainable Web Design Community Group</a>. W3C community groups act as incubator hubs where ideas for new technologies and standards can be discussed without formal constraints.</p>
@@ -638,7 +642,7 @@
 				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, SDGs" data-considerations="Accessibility" data-categories="Compatibility, Ideation, KPIs, Patterns, Reporting, Research, Social Equity, UI, Usability">
 					<h4 id="barrier-removal">Success Criterion: Barrier removal</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX02-3">Resources</a></p>
-					<p>Remove identified barriers to access. These can include deceptive design patterns, accessibility issues, or other pain points.</p>
+					<p>Remove identified barriers to access, provided they do not introduce or increase security or safety risks or exposure. Removable pain points can include deceptive design patterns and accessibility hurdles, but not include user verification or authentication mechanisms.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -1079,12 +1083,17 @@
 				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491, GreenIT" data-considerations="Accessibility" data-categories="CSS, Performance, UI, Usability">
 					<h4 id="pre-installed-typefaces">Success Criterion: Pre-installed typefaces</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX13-1">Resources</a></p>
-					<p>Use pre-installed, web-safe typefaces and system fonts wherever possible.</p>
+					<p>Use pre-installed fonts, such as system fonts, wherever possible, to reduce the reliance on user-installed or web fonts.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491" data-considerations="Accessibility" data-categories="CSS, Performance, UI, Usability">
-					<h4 id="font-optimization">Success Criterion: Font optimization</h4>
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491" data-considerations="" data-categories="CSS, Performance, UI, Usability">
+					<h4 id="web-font-optimization">Success Criterion: Web font optimization</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX13-2">Resources</a></p>
-					<p>Limit the number and complexity of fonts downloaded. Design or subset fonts to omit unnecessary or unused stylistic variations, such as font weight or italics. Additionally design or subset to omit unused characters only where you and not the user or a third party control the input and output and can be sure only the confirmed Unicode range or character set will be used. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.</p>
+					<p>Limit the number and complexity of fonts downloaded. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.</p>
+				</section>
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="" data-categories="CSS, Performance, UI, Usability">
+					<h4 id="web-font-subsetting">Success Criterion: Web font subsetting</h4>
+					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX13-3">Resources</a></p>
+					<p>Design or subset fonts to omit unnecessary or unused stylistic variations, such as font weight or italics. Design or subset web fonts based on explicitly supported languages and Unicode scripts rather than assumed defaults. Where you are in full control of all input and output, fonts can be subset to include only the relevant Unicode range or character set. In all other instances - particularly where content is user-generated or affected by dynamic input and output - provide full script coverage and use a solution such as Incremental Font Transfer (<abbr title="Incremental Font Transfer">IFT</abbr>) to load the required segments of the font on demand.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -1660,7 +1669,7 @@
 				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="assess-and-reduce">Success Criterion: Assess and reduce</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD06-1">Resources</a></p>
-					<p>Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions.</p>
+					<p>Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions. Ensure that third-party vendors enforce the same Compliance, Security, and Privacy standards as the first party. This includes data deletion policies, data retention limits, and mandatory security updates.</p>
 				</section>
 				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GreenIT, SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="third-party-implementation">Success Criterion: Third-party implementation</h4>
@@ -2101,7 +2110,7 @@
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491, SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="JavaScript, Patterns, Performance, Software">
 					<h4 id="dependency-necessity">Success Criterion: Dependency necessity</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD16-2">Resources</a></p>
-					<p>Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library.</p>
+					<p>Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library. Do not replace established and trusted security libraries with scoped-down or custom implementations. Custom security code increases vulnerability, which itself can negatively affect sustainability.</p>
 				</section>
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, SDGs" data-considerations="Accessibility, Security" data-categories="JavaScript, Patterns, Performance, Software">
 					<h4 id="dependency-updates">Success Criterion: Dependency updates</h4>
@@ -2253,7 +2262,7 @@
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF" data-considerations="" data-categories="Networking, Performance">
 					<h4 id="database-queries">Success Criterion: Database queries</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD20-1">Resources</a></p>
-					<p>Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process.</p>
+					<p>Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process. Practice good database hygiene with data modeling best practices such as data minimization, such as Time-to-Live (<abbr title="Time-to-Live">TTL</abbr>), de-identification, <abbr title="Universally Unique Identifiers">UUIDs</abbr>, and purpose limitation.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2490,7 +2499,7 @@
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, GPF, GR491, SDGs" data-considerations="" data-categories="AI, Hardware, Networking, Performance, Software">
 					<h4 id="unused-environments">Success Criterion: Unused environments</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS05-1">Resources</a></p>
-					<p>Minimize the number of active environments, including virtualized environments (such as containers). Where applicable, also evaluate running services. Audit codebases and setups for unused branches, environments, and services and remove them as appropriate.</p>
+					<p>Reduce the number of active environments by deactivating and/or offlining unused or redundant virtual (e.g., containers, virtual machines) or physical environments wherever this can be done without reducing the required security, isolation, or compliance guarantees. Where applicable, also evaluate running services in the same way. Similarly audit codebases and setups for unused branches, environments, and services and prune as appropriate.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2586,7 +2595,7 @@
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, GPF, GR491" data-considerations="" data-categories="Hardware, Performance">
 					<h4 id="data-backups">Success Criterion: Data backups</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS08-1">Resources</a></p>
-					<p>Ensure backups of system and user data are secure and incremental to minimize storage use, reduce backup time, and protect against data loss or breaches.</p>
+					<p>Ensure backups of system and user data are secure and incremental to minimize storage use, reduce backup time. Establish mechanisms to prevent user identifiable information from being stored long term, limit access, and protect against data loss or breaches.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -2749,7 +2758,7 @@
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="AWS WAF, Azure WAF, GPF, GR491" data-considerations="Security" data-categories="Content, E-Waste, Hardware, Performance">
 					<h4 id="optimized-logging">Success Criterion: Optimized logging</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS12-5">Resources</a></p>
-					<p>Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers.</p>
+					<p>Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers. Establish mechanisms to ensure identifiable user information does not appear in logs to reduce security and privacy risks and exposure.</p>
 				</section>
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility, Security" data-categories="Content, E-Waste, Hardware, Performance">
 					<h4 id="asset-downloads">Success Criterion: Asset downloads</h4>
@@ -3382,7 +3391,7 @@
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491, SDGs" data-considerations="Accessibility" data-categories="Ideation, Social Equity, Strategy">
 					<h4 id="decision-making">Success Criterion: Decision-making</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM16-1">Resources</a></p>
-					<p>Assign all affected parties, from users to project managers, an equitable role in the decision-making process. Ensure all internal involved parties have the necessary power and autonomy to make key decisions on the organization's behalf.</p>
+					<p>Assign all affected parties, from users to project managers, an equitable role in the decision-making process. Ensure all internal involved parties have the necessary power and autonomy to make key decisions on the organization's behalf. Where an autonomous system is able to make automated decisions, it must be possible to opt out, object, withdraw, and restrict the use of personal data. Any autonomous process must also be made as transparent as possible with evidence-based assurances that the metrics used are not biased. Affected parties must be able to obtain details about how the decision was made and offered a means to challenge decisions with human oversight.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3456,7 +3465,7 @@
 				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, SDGs" data-considerations="Privacy" data-categories="Content, Governance, Social Equity">
 					<h4 id="data-ownership">Success Criterion: Data ownership</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM18-2">Resources</a></p>
-					<p>Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a user's "right to be forgotten" or opt-out will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.</p>
+					<p>Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how opt-out will be handled along with ownership rights. Data deletion or "Right to be forgotten" requests must immediately propagate to databases and local caches. Cached data must not persist after a user has revoked consent or deleted their account. Also provide the ability to download or export data created by or in relation to the user in a non-proprietary format.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>

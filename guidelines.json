@@ -148,7 +148,7 @@
 						},
 						{
 							"title": "Barrier removal",
-							"description": "Remove identified barriers to access. These can include deceptive design patterns, accessibility issues, or other pain points.",
+							"description": "Remove identified barriers to access, provided they do not introduce or increase security or safety risks or exposure. Removable pain points can include deceptive design patterns and accessibility hurdles, but not include user verification or authentication mechanisms.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -1197,7 +1197,7 @@
 					"criteria": [
 						{
 							"title": "Pre-installed typefaces",
-							"description": "Use pre-installed, web-safe typefaces and system fonts wherever possible.",
+							"description": "Use pre-installed fonts, such as system fonts, wherever possible, to reduce the reliance on user-installed or web fonts.",
 							"resources": [
 								{
 									"Apple System Fonts": "https://developer.apple.com/fonts/system-fonts/",
@@ -1221,8 +1221,8 @@
 							]
 						},
 						{
-							"title": "Font optimization",
-							"description": "Limit the number and complexity of fonts downloaded. Design or subset fonts to omit unnecessary or unused stylistic variations, such as font weight or italics. Additionally design or subset to omit unused characters only where you and not the user or a third party control the input and output and can be sure only the confirmed Unicode range or character set will be used. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.",
+							"title": "Web font optimization",
+							"description": "Limit the number and complexity of fonts downloaded. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.",
 							"resources": [
 								{
 									"A Guide to Understanding What Makes a Typeface Accessible": "https://medium.com/the-readability-group/a-guide-to-understanding-what-makes-a-typeface-accessible-and-how-to-make-informed-decisions-9e5c0b9040a0",
@@ -1233,14 +1233,28 @@
 									"GPF - General Policy Framework (PDF) - 5.7 - Content (File Size Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 2-4015 - Font Limits": "https://gr491.isit-europe.org/en/crit.php?id=2-4015-contents-each-font-is-encoded-in-a-file",
 									"GR491 - 8-3058 - Fonts and Varients": "https://gr491.isit-europe.org/en/crit.php?id=8-3058-uxui-fonts-can-be-very-large.-by-reducing",
-									"Incremental Font Transfer": "https://www.w3.org/TR/IFT/",
 									"Preload Fonts On Your Website For Better Core Web Vitals": "https://www.debugbear.com/blog/preload-web-fonts",
 									"Reduce web font size": "https://web.dev/articles/reduce-webfont-size?hl=en",
-									"The performance cost of custom web fonts, and how to solve it": "https://www.wholegraindigital.com/blog/performant-web-fonts/",
 									"Should you preload fonts for performance?": "https://www.erwinhofman.com/blog/should-you-preload-fonts-for-performance",
 									"The Ultimate Guide to Font Performance Optimization": "https://www.debugbear.com/blog/website-font-performance",
 									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
 									"Web Font Performance - How Your Fonts Affect Page Speed": "https://speedy.site/web-font-performance-how-your-fonts-affect-page-speed/",
+									"You're loading fonts wrong": "https://www.jonoalderson.com/performance/youre-loading-fonts-wrong/"
+								}
+							]
+						},
+						{
+							"title": "Web font subsetting",
+							"description": "Design or subset fonts to omit unnecessary or unused stylistic variations, such as font weight or italics. Design or subset web fonts based on explicitly supported languages and Unicode scripts rather than assumed defaults. Where you are in full control of all input and output, fonts can be subset to include only the relevant Unicode range or character set. In all other instances - particularly where content is user-generated or affected by dynamic input and output - provide full script coverage and use a solution such as Incremental Font Transfer (IFT) to load the required segments of the font on demand.",
+							"resources": [
+								{
+									"Best practices for fonts": "https://web.dev/articles/font-best-practices?hl=en",
+									"GPF - General Policy Framework (PDF) - 4.8 - UX and UI (Font Limits)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"Incremental Font Transfer": "https://www.w3.org/TR/IFT/",
+									"Reduce web font size": "https://web.dev/articles/reduce-webfont-size?hl=en",
+									"The performance cost of custom web fonts, and how to solve it": "https://www.wholegraindigital.com/blog/performant-web-fonts/",
+									"The Ultimate Guide to Font Performance Optimization": "https://www.debugbear.com/blog/website-font-performance",
+									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
 									"You're loading fonts wrong": "https://www.jonoalderson.com/performance/youre-loading-fonts-wrong/"
 								}
 							]
@@ -2336,7 +2350,7 @@
 					"criteria": [
 						{
 							"title": "Assess and reduce",
-							"description": "Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions.",
+							"description": "Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions. Ensure that third-party vendors enforce the same Compliance, Security, and Privacy standards as the first party. This includes data deletion policies, data retention limits, and mandatory security updates.",
 							"resources": [
 								{
 									"6 steps to reduce the carbon footprint of your website": "https://opensource.com/article/23/3/reduce-carbon-footprint-website",
@@ -3260,7 +3274,7 @@
 						},
 						{
 							"title": "Dependency necessity",
-							"description": "Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library.",
+							"description": "Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library. Do not replace established and trusted security libraries with scoped-down or custom implementations. Custom security code increases vulnerability, which itself can negatively affect sustainability.",
 							"resources": [
 								{
 									"Boring Web Development": "https://meiert.com/blog/boring-web-development/",
@@ -3586,20 +3600,23 @@
 					"criteria": [
 						{
 							"title": "Database queries",
-							"description": "Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process.",
+							"description": "Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process. Practice good database hygiene with data modeling best practices such as data minimization, such as Time-to-Live (TTL), de-identification, UUIDs, and purpose limitation.",
 							"resources": [
 								{
+									"Choosing The Right ID Strategy": "https://anilkumarvalluru.medium.com/choosing-the-right-id-strategy-auto-increment-uuid-ulid-or-snowflake-id-e21fe24af55f",
 									"get_post_meta": "https://developer.wordpress.org/reference/functions/get_post_meta/",
 									"GPF - General Policy Framework (PDF) - 4.9 - UX and UI (Server Requests)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 6.5 - Front-End (Upload Triggers)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 7.3 - Back-End (Background Processing)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"High Performance MySQL: Query Performance Optimization": "https://www.oreilly.com/library/view/high-performance-mysql/9780596101718/ch04.html",
 									"Improving PHP Performance for Web Applications": "https://www.keycdn.com/blog/php-performance#9-limit-your-database-hits",
+									"Keeping Databases Lean with TTL": "https://medium.com/@leela.kumili/keeping-databases-lean-with-ttl-practical-insights-and-strategies-ec6d9d09f91a",
 									"Minimizing SQL query response times": "https://www.ibm.com/docs/en/cognos-analytics/11.1.x?topic=performance-minimizing-sql-query-response-times",
 									"Performance Tuning SQL Queries": "https://www.thoughtspot.com/sql-tutorial/sql-performance-tuning",
 									"Proactive Energy Management in Database Systems (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final111.pdf",
 									"Query optimization techniques in SQL Server": "https://www.sqlshack.com/query-optimization-techniques-in-sql-server-tips-and-tricks/",
-									"SQL Query Optimization": "https://codedamn.com/news/sql/sql-query-optimization-tips-tricks-faster-queries"
+									"SQL Query Optimization": "https://codedamn.com/news/sql/sql-query-optimization-tips-tricks-faster-queries",
+									"Why Everyone Needs a Data Privacy Vault": "https://softwareengineeringdaily.com/2022/03/12/why-everyone-needs-a-data-privacy-vault/"
 								}
 							]
 						}
@@ -4108,7 +4125,7 @@
 					"criteria": [
 						{
 							"title": "Unused environments",
-							"description": "Minimize the number of active environments, including virtualized environments (such as containers). Where applicable, also evaluate running services. Audit codebases and setups for unused branches, environments, and services and remove them as appropriate.",
+							"description": "Reduce the number of active environments by deactivating and/or offlining unused or redundant virtual (e.g., containers, virtual machines) or physical environments wherever this can be done without reducing the required security, isolation, or compliance guarantees. Where applicable, also evaluate running services in the same way. Similarly audit codebases and setups for unused branches, environments, and services and prune as appropriate.",
 							"resources": [
 								{
 									"AWS WAF - SUS02-BP03 - Stop the creation and maintenance of unused assets": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a4.html",
@@ -4306,7 +4323,7 @@
 					"criteria": [
 						{
 							"title": "Data backups",
-							"description": "Ensure backups of system and user data are secure and incremental to minimize storage use, reduce backup time, and protect against data loss or breaches.",
+							"description": "Ensure backups of system and user data are secure and incremental to minimize storage use, reduce backup time. Establish mechanisms to prevent user identifiable information from being stored long term, limit access, and protect against data loss or breaches.",
 							"resources": [
 								{
 									"The 3-2-1 Backup Strategy": "https://www.backblaze.com/blog/the-3-2-1-backup-Strategy/",
@@ -4736,7 +4753,7 @@
 						},
 						{
 							"title": "Optimized logging",
-							"description": "Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers.",
+							"description": "Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers. Establish mechanisms to ensure identifiable user information does not appear in logs to reduce security and privacy risks and exposure.",
 							"resources": [
 								{
 									"An Engineer's Checklist of Logging Best Practices": "https://www.honeycomb.io/blog/engineers-checklist-logging-best-practices",
@@ -6059,7 +6076,7 @@
 					"criteria": [
 						{
 							"title": "Decision-making",
-							"description": "Assign all affected parties, from users to project managers, an equitable role in the decision-making process. Ensure all internal involved parties have the necessary power and autonomy to make key decisions on the organization's behalf.",
+							"description": "Assign all affected parties, from users to project managers, an equitable role in the decision-making process. Ensure all internal involved parties have the necessary power and autonomy to make key decisions on the organization's behalf. Where an autonomous system is able to make automated decisions, it must be possible to opt out, object, withdraw, and restrict the use of personal data. Any autonomous process must also be made as transparent as possible with evidence-based assurances that the metrics used are not biased. Affected parties must be able to obtain details about how the decision was made and offered a means to challenge decisions with human oversight.",
 							"resources": [
 								{
 									"Creating And Maintaining A Voice Of Customer Program": "https://www.smashingmagazine.com/2023/11/creating-maintaining-voice-customer-program/",
@@ -6075,7 +6092,8 @@
 									"Software proposal template": "https://wise.com/us/business-templates/business-proposal/software-proposal",
 									"United Nations SDGS - Goal 5 - Gender Equality": "https://sdgs.un.org/goals/goal5#targets_and_indicators",
 									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators"
+									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
+									"W3C Privacy Principles - Data Rights": "https://www.w3.org/TR/privacy-principles/#data-rights"
 								}
 							]
 						}
@@ -6223,7 +6241,7 @@
 						},
 						{
 							"title": "Data ownership",
-							"description": "Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how data disposal and a user's \"right to be forgotten\" or opt-out will be handled, along with ownership rights. Also, provide the ability to download or export data they have contributed into a non-proprietary format.",
+							"description": "Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how opt-out will be handled along with ownership rights. Data deletion or \"Right to be forgotten\" requests must immediately propagate to databases and local caches. Cached data must not persist after a user has revoked consent or deleted their account. Also provide the ability to download or export data created by or in relation to the user in a non-proprietary format.",
 							"resources": [
 								{
 									"10 CCPA Compliance Tips For Web Developers": "https://dataoverhaulers.medium.com/10-ccpa-compliance-tips-for-web-developers-1ce8382c7286",
