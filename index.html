@@ -426,7 +426,7 @@
 			</div>
 			<section> <!-- Background -->
        			<h3>Background on WSG</h3>
-				<p>Web Sustainability Guidelines (WSG) define how to make web products and services more sustainable for <strong>people and the planet</strong>. <a>Web sustainability</a> addresses <strong>more than just environmental issues</strong> [[VARIABLES]]; intersectional issues such as <strong>accessibility, privacy, and security</strong> can impact the sustainability of a project. We have an <a href="https://w3c.github.io/sustainableweb-wsg/summary.html">Summary of Web Sustainability</a> if you would like to learn more about the subject. The Interest Group considers that WSG incrementally advances <a>web sustainability</a> in numerous areas, but underscores that <strong>not all environmental improvements are met by these guidelines</strong>, as sustainability is an emerging field and research gaps may exist in certain areas. These guidelines may make digital products and services more performant, usable, and improve other metrics for end-users as a by-product of being sustainable. WSG may also be helpful to comply with existing and upcoming worldwide regulatory frameworks, reporting schemes, and compliance requirements (<a href="https://w3c.github.io/sustainableweb-wsg/policies.html">laws and policies</a>).</p>
+				<p>Web Sustainability Guidelines (WSG) define how to make web products and services more sustainable for <strong>people and the planet</strong>. <a>Web sustainability</a> extends beyond <strong>environmental issues</strong> [[VARIABLES]], because principles such as such as <strong>accessibility, internationalization, privacy, and security</strong> can impact the sustainability of a project. Equally, these principles should not be compromised upon or take on secondary importance in the pursuit of improved sustainability. We have a <a href="https://w3c.github.io/sustainableweb-wsg/summary.html">Summary of Web Sustainability</a> if you would like to learn more about the subject. The Interest Group considers that WSG incrementally advances <a>web sustainability</a> in numerous areas, but underscores that <strong>not all environmental improvements are met by these guidelines</strong>, as sustainability is an emerging field and research gaps may exist in certain areas. WSG may be helpful to comply with existing and upcoming worldwide regulatory frameworks, reporting schemes, and compliance requirements (<a href="https://w3c.github.io/sustainableweb-wsg/policies.html">laws and policies</a>).</p>
 				<p>Web Sustainability Guidelines (WSG) were developed in cooperation with individuals and organizations around the world. It does so, intending to provide a shared strategy for <a>web sustainability</a> that meets the needs of individuals, organizations, and governments internationally. WSG is designed to apply broadly to different existing web technologies now and in the future and <strong>to be testable with a combination of automated testing and human evaluation</strong>.</p>
 				<p>While content within WSG has been categorized for ease of readability, considering sustainability impacts beyond a field of interest is critical to increase awareness and collective action. <strong>Guidelines and success criteria matter, not prescribed labels</strong>. Certain tasks may be suited to a different/multiple role(s) depending upon whom or how the task of compliance is being approached.</p>
 				<p><a>Web sustainability</a> depends not only on sustainable products and services but also on sustainable web browsers and other user agents. Examples include the performance of rendering and the accurate measuring of energy use through developer tooling. Authoring tools also have an important role in <a>web sustainability</a>, by ensuring performant code, reducing waste, and serving the results in the most sustainable way possible.</p>
@@ -472,6 +472,16 @@
 			<section class="override" id="conformance"> <!-- Conformance -->
 				<h3>Conformance</h3>
 				<p>This section lists requirements for conformance to WSG. It also provides information about how to make optional conformance claims. Finally, it describes greenwashing and cautionary notes when claiming conformance to WSG.</p>
+				<div id="conflicts" class="note">
+					<p>In cases where WSG guidance conflicts with recommendations made by another standard or requirement, the following best practice steps are advised:</p>
+					<ol>
+						<li>Determine if the WSG guideline or success criterion in question has enough scope or allowance a different solution to achieve the same result, without compromising sustainability, thereby meeting both compliance obligations.</li>
+						<li>If a conflict exists and there is a risk of compromise, determine the risks associated (inclusive of compliance, your audience, and further impacts):<ol>
+							<li>If the sustainability associated risks are lower than those of the conflicting recommendation, follow that recommendation as the justification to meet it will be greater.</li>
+							<li>If the sustainability associated risks are higher than those of the conflicting recommendation, follow WSG guidance unless it conflicts with or is underpinned by that of a higher authority such as legislation.</li>
+						</ol></li>
+					</ol>
+				</div>
 				<section> <!-- Requirements -->
 					<h4>Conformance requirements</h4>
 					<p>WSG is robustly built so that it can be implemented over time, in a non-specific order, and each success criteria will provide some measurable sustainability benefit. As such, conformance is measured upon the implementation of each guideline (and all of its success criteria being met) across the whole project.</p>
@@ -523,8 +533,8 @@
 					<dd>The <a href="https://rweb.greenit.fr/en">GreenIT</a> Best practice guidelines for web eco-design project is an open source French collaboration to provide meaningful goals to reduce a digital carbon footprint. As there are many parallels between WSG and the open source GreenIT project, guideline references note prior work from this project where it exists.</dd>
 					<dt>Relationship to GRI</dt>
 					<dd>The Global Reporting Initiative is an international, independent standards organization that helps organizations and individuals understand and communicate their sustainability impact. As denoted in [[[#additional-information]]], WSG provides metrics relating to <a href="https://www.globalreporting.org/standards/">GRI Standards</a> to offer more targeted guidance for regulatory compliance goals. As our measurability improves, our results are subject to change.</dd>
-					<dt>Relationship to Human rights and technical standard-setting for the Web</dt>
-					<dd>The Human rights and technical standard-setting for the Web specification talks about the importance of being considerate of peoples human rights when writing specifications [[HR-Spec]]. While an unofficial document, it has a good ethical point and the subjects held in high importance (such as accessibility, privacy, and security) are considered throughout the development of WSG as having an ESG impact.</dd>
+					<dt>Relationship to <abbr title="Center for Democracy and Technology">CDT</abbr> Human Rights and Technical Standard-Setting for the Web</dt>
+					<dd>The CDT Human Rights and Technical Standard-Setting for the Web specification talks about the importance of being considerate of peoples human rights when writing specifications [[HR-Spec]]. While an unofficial document, it has a good ethical point and the subjects held in high importance (such as accessibility, internationalization, privacy, and security) are considered throughout the development of WSG as having an ESG impact.</dd>
 					<dt>Relationship to Mitigating Browser Fingerprinting in Web Specifications</dt>
 					<dd>W3C Mitigating Browser Fingerprinting in Web Specifications defines types of fingerprinting and considers how to mitigate the related privacy risks [[fingerprinting-guidance]]. Because WSG contains several guidelines that can benefit sustainability but there may be considerations that fall into the scope of this field, the user impact is being carefully considered.</dd>
 					<dt>Relationship to OpQuast</dt>
@@ -534,7 +544,7 @@
 					<dt>Relationship to <abbr title="Sustainable Development Goals">SDGs</abbr></dt>
 					<dd>In 2015, the United Nations Member States, as a result of the 2030 Agenda for Sustainable Development created the <a href="https://sdgs.un.org/goals">Sustainable Development Goals</a>. While some of these goals are notably difficult to achieve by individual action, wherever digital/web technology interconnects with an explicit SDG target (and WSG could help shift towards compliance), the SDG target is noted within the references for each guideline.</dd>
 					<dt>Relationship to Web Content Accessibility Guidelines (WCAG)</dt>
-					<dd>Web Content Accessibility Guidelines (WCAG) provides recommendations for making web content more accessible [[WCAG]]. As WSG <a href="#accessibility">contains accessibility considerations</a> due to the social impacts of sustainability overlapping with inclusive design/development, the impacts of affected parties have been taken into consideration whenever possible.</dd>
+					<dd>Web Content Accessibility Guidelines ([[WCAG]]) provides recommendations for making web content more accessible. WSG works in alignment with WCAG, also <a href="#accessibility">highlighting</a> the natural relationships between sustainability and accessibility. Conflicts between WCAG and WSG are unlikely by nature, but where apparent, should be assessed according to the <a href="#conflicts">conformance note</a>.</dd>
 					<dt>Relationship to Web Platform Design Principles</dt>
 					<dd>W3C Web Platform Design Principles contains a set of design principles to be used when designing web platform technologies [[design-principles]]. The WSG took it's recommendations into consideration to encourage and embed the methodology of using best practices when implementing sustainable solutions.</dd>
 				</dl>
@@ -698,32 +708,32 @@
 			<section> <!-- Minimize non-essential content, interactivity, or journeys -->
 				<h3>Minimize non-essential content, interactivity, or journeys</h3>
 				<p class="subheading">Use distraction and clutter-free design, showing the user only what they need without interruptions or wasted resource consumption.</p>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GreenIT, OpQuast, SDGs" data-considerations="" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GreenIT, OpQuast, SDGs" data-considerations="Accessibility" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
 					<h4 id="efficient-paths">Success Criterion: Efficient paths</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX04-1">Resources</a></p>
 					<p>Make access as simple and efficient as possible. Displaying the time required to complete an action, reducing choice, and ensuring users understand requirements at the start of a journey can improve user efficiency.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GR491" data-considerations="" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GR491" data-considerations="Accessibility" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
 					<h4 id="patterns-for-efficiency">Success Criterion: Patterns for efficiency</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX04-2">Resources</a></p>
 					<p>Ensure user journeys are as smooth as possible. It also helps to build on established design patterns that people already understand.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GR491" data-considerations="" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GR491" data-considerations="Accessibility" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
 					<h4 id="distraction-free-design">Success Criterion: Distraction-free design</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX04-3">Resources</a></p>
 					<p>Enable users to complete tasks without distractions or non-essential features getting in the way.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="Accessibility" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
 					<h4 id="eliminate-the-non-essential">Success Criterion: Eliminate the non-essential</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX04-4">Resources</a></p>
-					<p>Only show users information that is relevant to their experience, hiding non-essential information from view.</p>
+					<p>Only present information that is relevant to the user. Do not present non-essential information until requested by the user, and do so in ways appropriate to the accessibility requirements of different users.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, OpQuast" data-considerations="" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, OpQuast" data-considerations="Accessibility" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
 					<h4 id="user-initiated-actionable-content">Success Criterion: User-initiated actionable content</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX04-5">Resources</a></p>
 					<p>Ensure that disruptive actionable information, such as pop-up or modal windows, can only be initiated by the user.</p>
 				</section>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, SDGs" data-considerations="" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, SDGs" data-considerations="Accessibility" data-categories="Content, Patterns, Performance, Social Equity, UI, Usability">
 					<h4 id="decorative-design">Success Criterion: Decorative design</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX04-6">Resources</a></p>
 					<p>Use decorative design only when it enhances user experience. Remove unnecessary assets or those that do not enhance user experience or sustainability. Alternatively, make these optional and disabled by default.</p>
@@ -742,7 +752,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Content, Patterns, Performance, Social Equity, UI, Usability</p>
+							<p>Accessibility, Content, Patterns, Performance, Social Equity, UI, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -787,12 +797,12 @@
 			<section> <!-- Design to assist and not to distract -->
 				<h3>Design to assist and not to distract</h3>
 				<p class="subheading">Provide engagement that keeps the user's focus where it needs to be, avoiding anything that will either reduce efficiency or artificially prolong engagement.</p>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491" data-considerations="" data-categories="Assets, Patterns, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491" data-considerations="Accessibility" data-categories="Assets, Patterns, UI, Usability">
 					<h4 id="respect-user-attention">Success Criterion: Respect user attention</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX06-1">Resources</a></p>
 					<p>Ensure users can easily control how and when they receive information, with respect for their attention, focus, and mental energy.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491" data-considerations="" data-categories="Assets, Patterns, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491" data-considerations="Accessibility" data-categories="Assets, Patterns, UI, Usability">
 					<h4 id="minimize-distraction">Success Criterion: Minimize distraction</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX06-2">Resources</a></p>
 					<p>Prioritize features that assist rather than distract users, not unnecessarily prolonging the time they spend engaging with your content.</p>
@@ -816,7 +826,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Assets, Patterns, UI, Usability</p>
+							<p>Accessibility, Assets, Patterns, UI, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -866,17 +876,17 @@
 			<section> <!-- Make deliverables understandable and reusable -->
 				<h3>Make deliverables understandable and reusable</h3>
 				<p class="subheading">Create discoverable, well documented deliverables so that future users can find and make use of them without requiring assistance or expending unnecessary time and resources.</p>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491" data-considerations="" data-categories="Assets, Content, Education, Patterns, Software">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491" data-considerations="Accessibility" data-categories="Assets, Content, Education, Patterns, Software">
 					<h4 id="deliverables-reusability">Success Criterion: Deliverables reusability</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX08-1">Resources</a></p>
 					<p>Create deliverables, including documentation, in ways that facilitate later reuse.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491, SDGs" data-considerations="" data-categories="Assets, Content, Education, Patterns, Software">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491, SDGs" data-considerations="Accessibility" data-categories="Assets, Content, Education, Patterns, Software">
 					<h4 id="deliverables-documentation">Success Criterion: Deliverables documentation</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX08-2">Resources</a></p>
 					<p>Document functionality and technical specifications by creating easy to understand resources.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="Assets, Content, Education, Patterns, Software">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="Accessibility" data-categories="Assets, Content, Education, Patterns, Software">
 					<h4 id="deliverables-readability">Success Criterion: Deliverables readability</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX08-3">Resources</a></p>
 					<p>Developers have access to code comments and have the ability to view source to make it easier to access, understand, maintain, and use code.</p>
@@ -895,7 +905,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Assets, Content, Education, Patterns, Software</p>
+							<p>Accessibility, Assets, Content, Education, Patterns, Software</p>
 						</details>
 					</div>
 				</section>
@@ -903,7 +913,7 @@
 			<section> <!-- Use a design system for interface consistency -->
 				<h3>Use a design system for interface consistency</h3>
 				<p class="subheading">Keep the components of the project as consistent and clear as possible by using a design system to organize reusable features.</p>
-				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="AFNOR, GPF, GR491, GreenIT, OpQuast, SDGs" data-considerations="" data-categories="Assets, CSS, Education, Patterns, Strategy, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="AFNOR, GPF, GR491, GreenIT, OpQuast, SDGs" data-considerations="Accessibility" data-categories="Assets, CSS, Education, Patterns, Strategy, UI, Usability">
 					<h4 id="design-system">Success Criterion: Design system</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX09-1">Resources</a></p>
 					<p>Use a formal design system when a project is large or has many contributors to improve performance, consistency, and sustainability. Choose a system based on web standards with reusable components and ensure your project only loads the components actually needed on the front end. Whether using a formal design system or not, always follow familiar design patterns and conventions.</p>
@@ -922,7 +932,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Assets, CSS, Education, Patterns, Strategy, UI, Usability</p>
+							<p>Accessibility, Assets, CSS, Education, Patterns, Strategy, UI, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -967,17 +977,17 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX11-1">Resources</a></p>
 					<p>Do not include media unless it adds value. Consider the quantity, format, and sizes required.</p>
 				</section>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="" data-categories="Assets, Content, HTML, Performance, Software, UI, Usability">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="Accessibility" data-categories="Assets, Content, HTML, Performance, Software, UI, Usability">
 					<h4 id="optimized-media">Success Criterion: Optimized media</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX11-2">Resources</a></p>
 					<p>Resize, optimize, and compress all media. Provide media in appropriate sizes for different screen resolutions, user device capabilities, and user needs. Optimize and compress media appropriately. Provide media in compatible and appropriate formats. Avoid non-native embedded media players.</p>
 				</section>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GR491, GreenIT" data-considerations="" data-categories="Assets, Content, HTML, Performance, Software, UI, Usability">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GR491, GreenIT" data-considerations="Accessibility" data-categories="Assets, Content, HTML, Performance, Software, UI, Usability">
 					<h4 id="lazy-loading">Success Criterion: Lazy loading</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX11-3">Resources</a></p>
 					<p>Incorporate lazy/deferred loading from the start: Consider which media elements are immediately required, and which would be better relegated to loading on specific user interaction. Load data-intensive media on the client side, including the media itself, behind a facade - a non-functional and static representational element.</p>
 				</section>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GR491, GreenIT, OpQuast" data-considerations="" data-categories="Assets, Content, HTML, Performance, Software, UI, Usability">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GR491, GreenIT, OpQuast" data-considerations="Accessibility" data-categories="Assets, Content, HTML, Performance, Software, UI, Usability">
 					<h4 id="user-controlled-media">Success Criterion: User-controlled media</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX11-4">Resources</a></p>
 					<p>Disable auto-play functionality on audio, video, and similar media formats. Give the user full agency over media interactions, including a choice of resolutions and formats, and the option to deactivate media. Inform users of the length, format, and data intensity of the media. Provide the option for data-intensive media to be disabled or provide low-fidelity alternatives.</p>
@@ -1009,7 +1019,7 @@
 								&lt;/picture&gt;
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Assets, Content, HTML, Performance, Software, UI, Usability</p>
+							<p>Accessibility, Assets, Content, HTML, Performance, Software, UI, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -1070,7 +1080,7 @@
 			<section> <!-- Use optimized and appropriate web typography -->
 				<h3>Use optimized and appropriate web typography</h3>
 				<p class="subheading">Provide custom fonts in the most suitable file format, but with a preference for pre-installed typefaces where possible.</p>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491, GreenIT" data-considerations="" data-categories="CSS, Performance, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491, GreenIT" data-considerations="Accessibility" data-categories="CSS, Performance, UI, Usability">
 					<h4 id="pre-installed-typefaces">Success Criterion: Pre-installed typefaces</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX13-1">Resources</a></p>
 					<p>Use pre-installed fonts, such as system fonts, wherever possible, to reduce the reliance on user-installed or web fonts.</p>
@@ -1103,7 +1113,7 @@
 								font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>CSS, Performance, UI, Usability</p>
+							<p>Accessibility, CSS, Performance, UI, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -1201,12 +1211,12 @@
 			<section> <!-- Provide useful notifications -->
 				<h3>Provide useful notifications</h3>
 				<p class="subheading">Ensure any required notifications or alerts are clearly explained before activation, and that the user can both control and change them.</p>
-				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, GR491" data-considerations="Privacy" data-categories="JavaScript, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, GR491" data-considerations="Accessibility, Privacy" data-categories="JavaScript, UI, Usability">
 					<h4 id="need-for-notification">Success Criterion: Need for notification</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX16-1">Resources</a></p>
 					<p>Remove non-essential notifications. Justify and reduce email, text message (<abbr title="Short Messaging Service">SMS</abbr>), and other invasive or energy-intense notifications to what is necessary. Use notifications, such as alerts for new content, with care and restraint. Make sure the users understand and give informed consent.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GR491, GreenIT" data-considerations="Privacy" data-categories="JavaScript, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GR491, GreenIT" data-considerations="Accessibility, Privacy" data-categories="JavaScript, UI, Usability">
 					<h4 id="notification-settings">Success Criterion: Notification settings</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX16-2">Resources</a></p>
 					<p>Allow users to adjust their own notification and messaging settings. Ensure the options to unsubscribe, log out, and close an account are available and visible. Optional notifications must be off by default and only activated upon user opt in. The user should be able to change their contact details.</p>
@@ -1241,12 +1251,12 @@
 			<section> <!-- Reduce the impact of downloadable and physical documents -->
 				<h3>Reduce the impact of downloadable and physical documents</h3>
 				<p class="subheading">Reduce the need for physical documents as much as possible by allowing the saving of well-labeled, optimized digital downloads and having a print style sheet.</p>
-				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GR491, GreenIT, OpQuast, SDGs" data-considerations="" data-categories="Assets, Compatibility, Content, E-Waste, Hardware, HTML, Performance, Software, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GR491, GreenIT, OpQuast, SDGs" data-considerations="Accessibility" data-categories="Assets, Compatibility, Content, E-Waste, Hardware, HTML, Performance, Software, UI, Usability">
 					<h4 id="printing-documents">Success Criterion: Printed documents</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX17-1">Resources</a></p>
 					<p>Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a CSS print style sheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, GR491, OpQuast, SDGs" data-considerations="" data-categories="Assets, Compatibility, Content, E-Waste, Hardware, HTML, Performance, Software, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, GR491, OpQuast, SDGs" data-considerations="Accessibility" data-categories="Assets, Compatibility, Content, E-Waste, Hardware, HTML, Performance, Software, UI, Usability">
 					<h4 id="optimize-documents">Success Criterion: Optimized documents</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX17-2">Resources</a></p>
 					<p>Optimize and compress all downloadable documents. Make them available in a variety of accessible file formats.</p>
@@ -1256,7 +1266,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX17-3">Resources</a></p>
 					<p>Avoid duplicating effort. If a document will be reused, generate and save it once on the server side for reuse, ideally on a cookie-free domain.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="OpQuast" data-considerations="" data-categories="Assets, Compatibility, Content, E-Waste, Hardware, HTML, Performance, Software, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="OpQuast" data-considerations="Accessibility" data-categories="Assets, Compatibility, Content, E-Waste, Hardware, HTML, Performance, Software, UI, Usability">
 					<h4 id="labels-and-choice">Success Criterion: Labels and choice</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX17-4">Resources</a></p>
 					<p>Display the document name, a summary, the size, and format prior to downloading. Allow users to choose the right format and language for their needs where possible. Avoid embedding documents directly; provide a link to download or view them within the browser instead.</p>
@@ -1275,7 +1285,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Assets, Compatibility, Content, E-Waste, Hardware, Performance, Software, UI, Usability</p>
+							<p>Accessibility, Assets, Compatibility, Content, E-Waste, Hardware, Performance, Software, UI, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -1361,7 +1371,7 @@
 			<section> <!-- Verify that real-world users can successfully use your work -->
 				<h3>Verify that real-world users can successfully use your work</h3>
 				<p class="subheading">Factor the ways people use the project into your decision making and evaluate how this can be optimized for both people and the planet.</p>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="" data-categories="KPIs, Research, Strategy, Usability">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="Accessibility" data-categories="KPIs, Research, Strategy, Usability">
 					<h4 id="usage-changes">Success Criterion: Usage changes</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX20-1">Resources</a></p>
 					<p>Monitor user feedback, adoption, and churn rates in relation to different features and incorporate these insights into future releases.</p>
@@ -1499,7 +1509,7 @@
 			<section> <!-- Remove unnecessary or redundant information -->
 				<h3>Remove unnecessary or redundant information</h3>
 				<p class="subheading">Remove redundant characters from code to reduce the amount of data being stored and transferred to devices.</p>
-				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="" data-categories="CSS, HTML, JavaScript, Performance">
+				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility" data-categories="CSS, HTML, JavaScript, Performance">
 					<h4 id="minified-code">Success Criterion: Minified code</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD02-1">Resources</a></p>
 					<p>Remove unnecessary white space, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to <abbr title="Hypertext Markup Language">HTML</abbr>, CSS, JavaScript, JSON, <abbr title="Scalable Vector Graphics">SVG</abbr>, and other relevant file types.</p>
@@ -1522,7 +1532,7 @@
 								!function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.exports=e.document?t(e,!0):function(e){if(!e.document)throw new Error("jQuery requires a window with a document");return t(e)}:t(e)}("undefined"!=typeof window?window:this,function(g,e){"use strict";var t=[],r=Object.getPrototypeOf,s=t.slice,v=t.flat?function(e){return t.flat.call(e)}:function(e){return t.concat.apply([],e)},u=t.push,i=t.indexOf
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>CSS, HTML, JavaScript, Performance</p>
+							<p>Accessibility, CSS, HTML, JavaScript, Performance</p>
 						</details>
 					</div>
 				</section>
@@ -1656,12 +1666,12 @@
 			<section> <!-- Give third parties the same priority as first parties during assessment -->
 				<h3>Give third parties the same priority as first parties during assessment</h3>
 				<p class="subheading">Avoid using large third-party libraries and frameworks where possible, and where these must be used, self host, defer loading, allow the user to object, and provide alternatives.</p>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="assess-and-reduce">Success Criterion: Assess and reduce</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD06-1">Resources</a></p>
 					<p>Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions. Ensure that third-party vendors enforce the same Compliance, Security, and Privacy standards as the first party. This includes data deletion policies, data retention limits, and mandatory security updates.</p>
 				</section>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GreenIT, SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GreenIT, SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="third-party-implementation">Success Criterion: Third-party implementation</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD06-2">Resources</a></p>
 					<p>Use click-to-load triggers based on an import on interaction pattern to prevent automatic loading of third-party content and/or services (see above). Offer suitable alternatives to third-party use, for example, a link to a contact form as an alternative to a chat widget.</p>
@@ -1671,7 +1681,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD06-3">Resources</a></p>
 					<p>Host your content and assets, such as icons and widgets, directly on your own site rather than relying on third-party services to store, deliver, or embed those features.</p>
 				</section>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GR491, SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GPF, GR491, SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="third-party-preferences">Success Criterion: Third-party preferences</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD06-4">Resources</a></p>
 					<p>Respect user preferences around the use of third-party products and services, similar to the implementation of cookie consent modals. Provide mechanisms to disable or refuse non-first-party features alongside explanations of their purpose unless it is possible to show these third-party features are critical for functionality.</p>
@@ -1694,7 +1704,7 @@
 								&lt;iframe src="https://example.com" loading="lazy" width="600" height="400"&gt;&lt;/iframe&gt;
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>JavaScript, Performance, Privacy, Security, Software, UI, Usability</p>
+							<p>Accessibility, JavaScript, Performance, Privacy, Security, Software, UI, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -1722,7 +1732,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD07-4">Resources</a></p>
 					<p>Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use pre-existing elements or if you require them for the purposes of producing reusable design system components.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="" data-categories="Compatibility, CSS, HTML, JavaScript, Patterns, UI">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="Accessibility" data-categories="Compatibility, CSS, HTML, JavaScript, Patterns, UI">
 					<h4 id="built-in-over-custom">Success Criterion: Built-in over custom</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD07-5">Resources</a></p>
 					<p>Use web platform features and APIs over writing your own.</p>
@@ -1759,7 +1769,7 @@
 			<section> <!-- Defer the loading of non-critical resources -->
 				<h3>Defer the loading of non-critical resources</h3>
 				<p class="subheading">Avoid render-blocking slowdowns by asynchronously loading, deferring, or prioritizing external resources as appropriate.</p>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="Assets, CSS, JavaScript, Performance">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="Accessibility" data-categories="Assets, CSS, JavaScript, Performance">
 					<h4 id="asynchronous-code">Success Criterion: Asynchronous code</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD08-1">Resources</a></p>
 					<p>Defer loading of non-essential external assets or set these to load asynchronously to avoid a Flash Of Unstyled Content (FOUC).</p>
@@ -1787,7 +1797,7 @@
 								&lt;img src="image.png" loading="lazy" alt="…" width="200" height="200"&gt;
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Assets, CSS, JavaScript, Performance</p>
+							<p>Accessibility, Assets, CSS, JavaScript, Performance</p>
 						</details>
 					</div>
 				</section>
@@ -1964,12 +1974,12 @@
 			<section> <!-- Ensure layouts work for different devices and requirements -->
 				<h3>Ensure layouts work for different devices and requirements</h3>
 				<p class="subheading">Use a mix of carbon-aware design techniques to adapt to different layouts, different modes of interaction, and also progressively enhance content.</p>
-				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, SDGs" data-considerations="" data-categories="Compatibility, CSS, Performance, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, SDGs" data-considerations="Accessibility" data-categories="Compatibility, CSS, Performance, UI, Usability">
 					<h4 id="device-adaptable">Success Criterion: Device-adaptable</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD13-1">Resources</a></p>
 					<p>Use responsive and adaptive design techniques to ensure your project supports an wide range of devices and screen sizes, including smartphones, tablets, laptops, desktop computers, smart TVs, and other emerging platforms. Implement robust fallback strategies to ensure that the digital product or service will not fail if it encounters unsupported technologies.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, SDGs" data-considerations="" data-categories="Compatibility, CSS, Performance, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, SDGs" data-considerations="Accessibility" data-categories="Compatibility, CSS, Performance, UI, Usability">
           			<h4 id="progressive-enhancement">Success Criterion: Progressive enhancement</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD13-2">Resources</a></p>
 					<p>Use progressive enhancement to enhance overall sustainability. This starts with baseline HTML, and increases the user experience without reliance on style and interaction to ensure a robust project.</p>
@@ -1979,7 +1989,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD13-3">Resources</a></p>
 					<p>Use carbon-aware design techniques to maximize your use of low-carbon energy. This is achieved by adapting the delivery of your project to current electricity availability and user grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, GR491, SDGs" data-considerations="" data-categories="AI, Content, Compatibility, CSS, Performance, Social Equity, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="GPF, GR491, SDGs" data-considerations="Accessibility" data-categories="AI, Content, Compatibility, CSS, Performance, Social Equity, UI, Usability">
 					<h4 id="alternative-browsing">Success Criterion: Alternative browsing</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD13-4">Resources</a></p>
 					<p>Support non-visual/indirect methods of interaction. This includes assistive technologies, voice agents, scanned input (<abbr title="Quick Response">QR</abbr>, etc.), reader view (browser, application, or <abbr title="Really Simple Syndication">RSS</abbr>), or connected devices.</p>
@@ -2006,7 +2016,7 @@
 								}
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>AI, Compatibility, Content, CSS, Performance, Social Equity, UI, Usability</p>
+							<p>Accessibility, AI, Compatibility, Content, CSS, Performance, Social Equity, UI, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -2097,12 +2107,12 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD16-1">Resources</a></p>
 					<p>Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that are not needed.</p>
 				</section>
-				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491, SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Patterns, Performance, Software">
+				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, GR491, SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="JavaScript, Patterns, Performance, Software">
 					<h4 id="dependency-necessity">Success Criterion: Dependency necessity</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD16-2">Resources</a></p>
 					<p>Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library. Do not replace established and trusted security libraries with scoped-down or custom implementations. Custom security code increases vulnerability, which itself can negatively affect sustainability.</p>
 				</section>
-				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, SDGs" data-considerations="Security" data-categories="JavaScript, Patterns, Performance, Software">
+				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF, SDGs" data-considerations="Accessibility, Security" data-categories="JavaScript, Patterns, Performance, Software">
 					<h4 id="dependency-updates">Success Criterion: Dependency updates</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD16-3">Resources</a></p>
 					<p>Regularly check dependencies and keep them up to date.</p>
@@ -2125,7 +2135,7 @@
 								npm uninstall &lt;package-name&gt;
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>JavaScript, Patterns, Performance, Privacy, Security, Software</p>
+							<p>Accessibility, JavaScript, Patterns, Performance, Privacy, Security, Software</p>
 						</details>
 					</div>
 				</section>
@@ -2133,12 +2143,12 @@
 			<section> <!-- Include expected and beneficial files -->
 				<h3>Include expected and beneficial files</h3>
 				<p class="subheading">Always provide expected files and optionally offer environmentally or otherwise beneficial files to enhance the project.</p>
-				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF" data-considerations="Security" data-categories="Assets, Compatibility, Marketing, Patterns, UI">
+				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF" data-considerations="Accessibility, Security" data-categories="Assets, Compatibility, Marketing, Patterns, UI">
 					<h4 id="expected-files">Success Criterion: Expected files</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD17-1">Resources</a></p>
 					<p>Include favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml files by default. Also ensure that any similar files defined in future web standards or specifications are included.</p>
 				</section>
-				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF" data-considerations="Security" data-categories="Assets, Compatibility, Marketing, Patterns, UI">
+				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GPF" data-considerations="Accessibility, Security" data-categories="Assets, Compatibility, Marketing, Patterns, UI">
 					<h4 id="beneficial-files">Success Criterion: Beneficial files</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD17-2">Resources</a></p>
 					<p>Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Also ensure that any similar files defined in future web standards or specifications are included.</p>
@@ -2162,7 +2172,7 @@
 								Disallow: /cgi-bin/
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Assets, Compatibility, Marketing, Patterns, Security, UI</p>
+							<p>Accessibility, Assets, Compatibility, Marketing, Patterns, Security, UI</p>
 						</details>
 					</div>
 				</section>
@@ -2170,27 +2180,27 @@
 			<section> <!-- Use the most efficient solution for your service -->
 				<h3>Use the most efficient solution for your service</h3>
 				<p class="subheading">Identify the project requirements, use the most efficient approach, aim for static over dynamic where possible, and consider the impact of extensions and components.</p>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="Accessibility" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
 					<h4 id="identify-requirements">Success Criterion: Identify requirements</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD18-1">Resources</a></p>
 					<p>Identify the requirements and use this as a basis to help you select the most appropriate implementation for your project. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources and have a bigger emissions impact on render, but it could have a faster build time - meaning less carbon is emitted in development.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="Accessibility" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
 					<h4 id="optimized-methodology">Success Criterion: Optimized methodology</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD18-2">Resources</a></p>
 					<p>Use the most effective approach for your use case. Most of the time, coding from scratch will often provide the most performant results. Where an existing solution is present and is being actively maintained, this may be better optimized than what you can reasonably produce yourself. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors - including visual page builders - or other heavy frameworks. Be mindful of the impact of third-party solutions.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="Accessibility" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
 					<h4 id="static-over-dynamic">Success Criterion: Static over dynamic</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD18-3">Resources</a></p>
 					<p>Deliver static in place of dynamic content wherever possible. If you choose to use a code generation tool, then favor the most efficient tool available, such as Static Site Generators (<abbr title="Static Site Generators">SSGs</abbr>). Content delivered by a dynamic <abbr title="Content Management System">CMS</abbr> will involve much more server-side processing and uses bulkier libraries.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491, GreenIT" data-considerations="Accessibility" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
 					<h4 id="extensions-and-plugins">Success Criterion: Extensions and plugins</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD18-4">Resources</a></p>
 					<p>Carefully select and review plugins, extensions, and themes to maximize interoperability, accessibility, and performance. Audit these regularly over time to ensure continued compatibility.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="AFNOR, GPF, GR491" data-considerations="Accessibility" data-categories="Compatibility, Ideation, Performance, Software, Strategy">
 					<h4 id="interface-components">Success Criterion: Interface components</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD18-5">Resources</a></p>
 					<p>Pay particular attention to user interface components with respect to their sustainability impact.</p>
@@ -2209,7 +2219,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Compatibility, Ideation, Performance, Software, Strategy</p>
+							<p>Accessibility, Compatibility, Ideation, Performance, Software, Strategy</p>
 						</details>
 					</div>
 				</section>
@@ -2217,7 +2227,7 @@
 			<section> <!-- Use the latest stable language version -->
 				<h3>Use the latest stable language version</h3>
 				<p class="subheading">Consider the environmental impact of the chosen syntax language, while always ensuring you use the latest build of any language or framework.</p>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="Security" data-categories="Compatibility, Performance">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="Accessibility, Security" data-categories="Compatibility, Performance">
 					<h4 id="versioning">Success Criterion: Versioning</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#WD19-1">Resources</a></p>
 					<p>Use the latest build of your chosen syntax language and its coupled framework.</p>
@@ -2362,7 +2372,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS02-1">Resources</a></p>
 					<p>Use server-side caching where possible to reduce processing time and repeated database lookups or <abbr title="Application Programming Interface">API</abbr> calls. Configure caching via server settings to control file-type expiration using appropriate headers, such as Expires or Cache-Control. Cache dynamic page responses where possible to serve static versions to future users. Support client-side caching of frequently used static assets to minimize repeat server requests.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="high" data-water="medium" data-emissions="high" data-standard="GPF" data-considerations="" data-categories="Assets, HTML, JavaScript, Networking, Performance, Software">
+				<section class="notoc" data-materials="medium" data-energy="high" data-water="medium" data-emissions="high" data-standard="GPF" data-considerations="Accessibility" data-categories="Assets, HTML, JavaScript, Networking, Performance, Software">
 					<h4 id="offline-access">Success Criterion: Offline access</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS02-2">Resources</a></p>
 					<p>Ensure resources remain available and accessible even if the user is disconnected, using methods such as JavaScript Service Workers, Web Workers, and browser local storage features.</p>
@@ -2393,7 +2403,7 @@
 								&lt;/IfModule&gt;
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Assets, HTML, JavaScript, Networking, Performance, Software</p>
+							<p>Accessibility, Assets, HTML, JavaScript, Networking, Performance, Software</p>
 						</details>
 					</div>
 				</section>
@@ -2450,12 +2460,12 @@
 			<section> <!-- Setup necessary error pages and redirection links -->
 				<h3>Setup necessary error pages and redirection links</h3>
 				<p class="subheading">Use error and redirection handling on projects to reduce the impact of unnecessary journeys or unhelpful detours.</p>
-				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491" data-considerations="" data-categories="Compatibility, Content, Marketing, Networking, UI, Usability">
+				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491" data-considerations="Accessibility" data-categories="Compatibility, Content, Marketing, Networking, UI, Usability">
 					<h4 id="error-pages">Success Criterion: Error pages</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS04-1">Resources</a></p>
 					<p>Set up proper error handling and error pages to clearly inform users when something goes wrong, guide them back to useful content, and maintain a consistent, trustworthy experience.</p>
 				</section>
-				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491" data-considerations="" data-categories="Compatibility, Content, Marketing, Networking, UI, Usability">
+				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="GR491" data-considerations="Accessibility" data-categories="Compatibility, Content, Marketing, Networking, UI, Usability">
 					<h4 id="redirection">Success Criterion: Redirection</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS04-2">Resources</a></p>
 					<p>Regularly audit to check for broken and outdated links. Update these as necessary and add redirects to guide users and search engines to the correct content to ensure efficient browsing and protect SEO value. Test all redirects to ensure they function as intended and avoid impactful redirect loops. Favor the most efficient redirection system for your platform.</p>
@@ -2478,7 +2488,7 @@
 								ErrorDocument 404 /404.html
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Compatibility, Content, Marketing, Networking, UI, Usability</p>
+							<p>Accessibility, Compatibility, Content, Marketing, Networking, UI, Usability</p>
 						</details>
 					</div>
 				</section>
@@ -2528,7 +2538,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS06-3">Resources</a></p>
 					<p>Use automated scaling to adjust server capacity based on demand, ensuring efficient resource allocation during traffic spikes. Implement buffering and throttling to manage load and maintain performance without overprovisioning. Also use automation to promptly scale resources back down based on demand.</p>
 				</section>
-				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Security" data-categories="AI, Performance, Software">
+				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility, Security" data-categories="AI, Performance, Software">
 					<h4 id="suspicious-activity-management">Success Criterion: Suspicious activity management</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS06-4">Resources</a></p>
 					<p>Restrict the activity of unwanted and unnecessary third-party crawlers, suspicious user agents, unwanted users, bots, and scrapers from accessing or downloading your content. Follow best practices, such as server access rules and security tools, while ensuring your content remains accessible to users, search engines and any helpful, welcome crawlers. Consider that scrapers may be used to inform and train large language models.</p>
@@ -2547,7 +2557,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Low</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>AI, Performance, Security, Software</p>
+							<p>Accessibility, AI, Performance, Security, Software</p>
 						</details>
 					</div>
 				</section>
@@ -2651,7 +2661,7 @@
 			<section> <!-- Use Content Delivery Networks (CDNs) appropriately -->
 				<h3>Use Content Delivery Networks (<abbr title="Content Delivery Networks">CDNs</abbr>) appropriately</h3>
 				<p class="subheading">Use CDNs where they bring a sustainability benefit, ensuring the provider itself is sustainable, has nodes local to an audience, and they are only used to serve static resources on them.</p>
-				<section class="notoc" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="GPF, GR491, SDGs" data-considerations="" data-categories="Content, Hardware, Networking, Performance">
+				<section class="notoc" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="GPF, GR491, SDGs" data-considerations="Accessibility" data-categories="Content, Hardware, Networking, Performance">
 					<h4 id="global-cdns">Success Criterion: Global CDNs</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS10-1">Resources</a></p>
 					<p>Deploy static content, assets, and other read-only resources via a Content Delivery Network (<abbr title="Content Delivery Network">CDN</abbr>) on a case-by-case basis, where judged to be beneficial. Carefully evaluate the environmental impact of any CDN service used, similar to a web hosting provider.</p>
@@ -2661,7 +2671,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS10-2">Resources</a></p>
 					<p>Select CDN providers that make commitments to sustainability and report on their progress.</p>
 				</section>
-				<section class="notoc" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="AWS WAF, Azure WAF, GPF, GR491, SDGs" data-considerations="" data-categories="Content, Hardware, Networking, Performance">
+				<section class="notoc" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="AWS WAF, Azure WAF, GPF, GR491, SDGs" data-considerations="Accessibility" data-categories="Content, Hardware, Networking, Performance">
 					<h4 id="local-servers">Success Criterion: Local servers</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS10-3">Resources</a></p>
 					<p>When serving an exclusively local audience, consider whether a CDN is required at all. Instead, select hosting providers with servers close to your target audience.</p>
@@ -2690,7 +2700,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>AI, Content, Hardware, Networking, Performance</p>
+							<p>Accessibility, AI, Content, Hardware, Networking, Performance</p>
 						</details>
 					</div>
 				</section>
@@ -2750,7 +2760,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS12-5">Resources</a></p>
 					<p>Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers. Establish mechanisms to ensure identifiable user information does not appear in logs to reduce security and privacy risks and exposure.</p>
 				</section>
-				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Security" data-categories="Content, E-Waste, Hardware, Performance">
+				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility, Security" data-categories="Content, E-Waste, Hardware, Performance">
 					<h4 id="asset-downloads">Success Criterion: Asset downloads</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS12-6">Resources</a></p>
 					<p>Make large, long-term assets available for easy download when in persistent use so users are not required to re-access the server for repeat downloads.</p>
@@ -2773,7 +2783,7 @@
 								Accept-Encoding: zstd, gzip, br, deflate
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Content, E-Waste, Hardware, Performance, Privacy</p>
+							<p>Accessibility, Content, E-Waste, Hardware, Performance, Privacy</p>
 						</details>
 					</div>
 				</section>
@@ -2814,7 +2824,7 @@
 			<section> <!-- Have an ethical and sustainable product strategy -->
 				<h3>Have an ethical and sustainable product strategy</h3>
 				<p class="subheading">Produce policies and documents showcasing evidence, achievements, and onboarding underpinned by good governance.</p>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, SDGs" data-considerations="" data-categories="AI, Education, Ideation, KPIs, Research, Social Equity, Strategy">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR, SDGs" data-considerations="Accessibility" data-categories="AI, Education, Ideation, KPIs, Research, Social Equity, Strategy">
 					<h4 id="public-documents">Success Criterion: Public documents</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM01-1">Resources</a></p>
 					<p>Develop, publish and maintain key policies, such as a code of ethics, product guidelines, sustainability statements, and/or other documents that include language specific to digital products, services, policies, and programs. Address public concerns around AI and relevant emerging technologies with public-facing policies. Make these publicly accessible and transparently versioned formats.</p>
@@ -3132,7 +3142,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM10-2">Resources</a></p>
 					<p>Establish maintenance and security plans for all digital products and services.</p>
 				</section>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="" data-categories="Compatibility, Strategy">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Accessibility" data-categories="Compatibility, Strategy">
 					<h4 id="resourcing-products">Success Criterion: Resourcing products</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM10-3">Resources</a></p>
 					<p>Ensure that products, prototypes, testing, and supporting processes are sufficiently resourced over time - including staffing and budgeting - so that teams can maintain capacity, address technical debt, refactor code, introduce new features, support long-term care and maintenance, and avoid project abandonment for customers, users, and all affected parties.</p>
@@ -3142,7 +3152,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM10-4">Resources</a></p>
 					<p>Incorporate carbon and resource measurement into maintenance programs and show measurable improvement over time.</p>
 				</section>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="" data-considerations="" data-categories="Compatibility, Strategy">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="" data-considerations="Accessibility" data-categories="Compatibility, Strategy">
 					<h4 id="failure-indicators">Success Criterion: Failure indicators</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM10-5">Resources</a></p>
 					<p>Identify and document Key Failure Indicators (<abbr title="Key Failure Indicators">KFIs</abbr>) and implement resolutions to prevent negative sustainability impacts.</p>
@@ -3161,7 +3171,7 @@
 								<dt>GRI 305: Emissions</dt><dd>High</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Compatibility, Strategy</p>
+							<p>Accessibility, Compatibility, Strategy</p>
 						</details>
 					</div>
 				</section>
@@ -3267,17 +3277,17 @@
 			<section> <!-- Establish if a digital product or service is necessary -->
 				<h3>Establish if a digital product or service is necessary</h3>
 				<p class="subheading">Determine whether a project is necessary, eliminating obstacles for users, and aligning with SDGs and sustainability principles.</p>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="" data-considerations="" data-categories="AI, E-Waste, Ideation, Reporting, Software">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="" data-considerations="Accessibility" data-categories="AI, E-Waste, Ideation, Reporting, Software">
 					<h4 id="sustainable-development-goals">Success Criterion: Sustainable Development Goals</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM13-1">Resources</a></p>
 					<p>Identify where the product or service aligns with one of the <abbr title="United Nations">U.N.</abbr> (<abbr title="Sustainable Development Goals">SDG</abbr>s) and its appropriate targets within a sustainability statement.</p>
 				</section>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR" data-considerations="" data-categories="AI, E-Waste, Ideation, Reporting, Software">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="AFNOR" data-considerations="Accessibility" data-categories="AI, E-Waste, Ideation, Reporting, Software">
 					<h4 id="creation-evaluation">Success Criterion: Creation evaluation</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM13-2">Resources</a></p>
 					<p>Determine that the product or service is necessary based upon desirability, feasibility, and viability factors.</p>
 				</section>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GR491" data-considerations="" data-categories="E-Waste, Ideation, Reporting, Software">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GR491" data-considerations="Accessibility" data-categories="E-Waste, Ideation, Reporting, Software">
 					<h4 id="obstacle-consideration">Success Criterion: Obstacle consideration</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM13-3">Resources</a></p>
 					<p>Remove or alleviate any obstacles to using a product or service, such as accessibility, equality, technical, or territorial.</p>
@@ -3296,7 +3306,7 @@
 								<dt>GRI 305: Emissions</dt><dd>High</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>AI, E-Waste, Ideation, Reporting, Software</p>
+							<p>Accessibility, AI, E-Waste, Ideation, Reporting, Software</p>
 						</details>
 					</div>
 				</section>
@@ -3516,7 +3526,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM20-1">Resources</a></p>
 					<p>Ensure all technologies that deploy or create large datasets use data that is appropriately scaled and stored, ethically sourced, screened, validated, and implemented in a non-discriminatory, responsible manner.</p>
 				</section>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
 					<h4 id="business-adaptation">Success Criterion: Business adaptation</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM20-2">Resources</a></p>
 					<p>Show how members of your organization are supported in the process of adapting to the rise of new technologies that could disrupt the organization's business model or operational norms.</p>
@@ -3550,7 +3560,7 @@
 								<dt>GRI 305: Emissions</dt><dd>High</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Privacy, Security, Social Equity, Software</p>
+							<p>Accessibility, AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Privacy, Security, Social Equity, Software</p>
 						</details>
 					</div>
 				</section>
@@ -3765,7 +3775,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM26-1">Resources</a></p>
 					<p>Establish a clear open source policy that outlines how open-source tools are used and any practices used to support open-source development.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491, SDGs" data-considerations="" data-categories="Assets, Ideation, Social Equity, Software, UI">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491, SDGs" data-considerations="Accessibility" data-categories="Assets, Ideation, Social Equity, Software, UI">
 					<h4 id="collaboration">Success Criterion: Collaboration</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM26-2">Resources</a></p>
 					<p>Show a track record of collaboration and building communities around open-source principles.</p>
@@ -3789,7 +3799,7 @@
 								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
 							</dl>
 							<p class="subtitle"><strong>Tags</strong></p>
-							<p>Assets, Ideation, Social Equity, Software, UI</p>
+							<p>Accessibility, Assets, Ideation, Social Equity, Software, UI</p>
 						</details>
 					</div>
 				</section>
@@ -3830,35 +3840,40 @@
 		<section class="appendix"> <!-- Considerations -->
 			<h2>Considerations</h2>
 			<p>Guidelines within this specification which the Interest Group has identified possible implications for accessibility, privacy, or security, either by providing protections for end users or which are important for website providers to take in to consideration when implementing features designed to implement digital sustainability, are listed below. This list reflects the current understanding of the Interest Group but other guidelines may have implications that the Interest Group is not aware of at the time of publishing.</p>
-			<p>Individuals or organizations wishing to understand more about best practices relating to these objectives should read the relevant materials provided by <a href="https://www.w3.org/groups/">W3C Working and Interest Groups</a> in this area, as the result of good accessibility, privacy, and security, can benefit both people and the planet in measurable ways.</p>
-			<p>It is relevant to note that groups working on accessibility, privacy, and security may identify sustainability impacts within their work and may provide relevant guidance where appropriate on best practices to limit the scope of these concerns. Any such guidance should be considered as complementary to that provided within the WSG.</p>
+			<p>Individuals or organizations wishing to understand more about best practices relating to these objectives should read the relevant materials provided by <a href="https://www.w3.org/groups/">W3C Working and Interest Groups</a> in this area, as the result of good accessibility, internationalization, privacy, and security, can benefit both people and the planet in measurable ways.</p>
+			<p>It is relevant to note that groups working on accessibility, internationalization, privacy, and security may identify sustainability impacts within their work and may provide relevant guidance where appropriate on best practices to limit the scope of these concerns. Any such guidance should be considered as complementary to that provided within the WSG.</p>
 			<section> <!-- Accessibility -->
 				<h3>Accessibility</h3>
 				<p>Guidelines within this specification that may relate to accessibility are:</p>
 				<ul>
-					<li><a href="#examine-and-disclose-any-external-factors-interacting-with-your-project">2.1 Examine and disclose any external factors interacting with your project</a></li>
-					<li><a href="#understand-user-requirements-or-constraints-resolving-barriers-to-access">2.2 Understand user requirements or constraints, resolving barriers to access</a></li>
-					<li><a href="#integrate-sustainability-into-every-stage-of-the-ideation-process">2.3 Integrate sustainability into every stage of the ideation process</a></li>
-					<li><a href="#ensure-that-navigation-and-wayfinding-are-well-structured">2.5 Ensure that navigation and wayfinding are well-structured</a></li>
-					<li><a href="#avoid-being-manipulative-or-deceptive">2.7 Avoid being manipulative or deceptive</a></li>
-					<li><a href="#provide-clear-inclusive-content-with-purpose">2.10 Provide clear, inclusive content with purpose</a></li>
-					<li><a href="#ensure-animation-is-proportionate-and-easy-to-control">2.12 Ensure animation is proportionate and easy to control</a></li>
-					<li><a href="#offer-suitable-alternatives-for-every-format-used">2.14 Offer suitable alternatives for every format used</a></li>
-					<li><a href="#provide-accessible-usable-minimal-web-forms">2.15 Provide accessible, usable, minimal web forms</a></li>
-					<li><a href="#involve-users-and-contributors-early-in-the-project">2.18 Involve users and contributors early in the project</a></li>
-					<li><a href="#audit-and-test-for-bugs-or-issues-requiring-resolution">2.19 Audit and test for bugs or issues requiring resolution</a></li>
-					<li><a href="#verify-that-real-world-users-can-successfully-use-your-work">2.20 Verify that real-world users can successfully use your work</a></li>
-					<li><a href="#regularly-test-and-maintain-compatibility">2.21 Regularly test and maintain compatibility</a></li>
+					<li>All those listed within section <a href="#user-experience-design">2. User Experience Design</a></li>
+					<li><a href="#remove-unnecessary-or-redundant-information">3.2 Remove unnecessary or redundant information</a></li>
+					<li><a href="#give-third-parties-the-same-priority-as-first-parties-during-assessment">3.6 Give third parties the same priority as first parties during assessment</a></li>
 					<li><a href="#ensure-code-follows-good-semantic-practices">3.7 Ensure code follows good semantic practices</a></li>
+					<li><a href="#defer-the-loading-of-non-critical-resources">3.8 Defer the loading of non-critical resources</a></li>
 					<li><a href="#provide-information-to-help-understand-the-usefulness-of-a-page">3.9 Provide information to help understand the usefulness of a page</a></li>
 					<li><a href="#validate-form-errors-and-account-for-tooling-requirements">3.10 Validate form errors and account for tooling requirements</a></li>
 					<li><a href="#structure-metadata-for-machine-readability">3.11 Structure metadata for machine readability</a></li>
 					<li><a href="#use-sustainability-beneficial-user-preference-media-queries">3.12 Use sustainability beneficial user preference media queries</a></li>
+					<li><a href="#ensure-layouts-work-for-different-devices-and-requirements">3.13 Ensure layouts work for different devices and requirements</a></li>
 					<li><a href="#use-standards-based-javascript-and-apis">3.14 Use standards-based JavaScript and APIs</a></li>
+					<li><a href="#use-dependencies-appropriately-and-ensure-maintenance">3.16 Use dependencies appropriately and ensure maintenance</a></li>
+					<li><a href="#include-expected-and-beneficial-files">3.17 Include expected and beneficial files</a></li>
+					<li><a href="#use-the-most-efficient-solution-for-your-service">3.18 Use the most efficient solution for your service</a></li>
+					<li><a href="#use-the-latest-stable-language-version">3.19 Use the latest stable language version</a></li>
+					<li><a href="#optimize-caching-and-support-offline-access">4.2 Optimize caching and support offline access</a></li>
+					<li><a href="#setup-necessary-error-pages-and-redirection-links">4.4 Setup necessary error pages and redirection links</a></li>
+					<li><a href="#use-automation-wisely">4.6 Use automation wisely</a></li>
+					<li><a href="#use-content-delivery-networks-cdns-appropriately">4.10 Use Content Delivery Networks (CDNs) appropriately</a></li>
+					<li><a href="#store-data-according-to-the-needs-of-your-users">4.12 Store data according to the needs of your users</a></li>
 					<li><a href="#have-an-ethical-and-sustainable-product-strategy">5.1 Have an ethical and sustainable product strategy</a></li>
+					<li><a href="#follow-a-product-management-and-maintenance-strategy">5.10 Follow a product management and maintenance strategy</a></li>
+					<li><a href="#establish-if-a-digital-product-or-service-is-necessary">5.13 Establish if a digital product or service is necessary</a></li>
 					<li><a href="#share-decision-making-power-with-affected-parties">5.16 Share decision-making power with affected parties</a></li>
 					<li><a href="#use-justice-equity-diversity-inclusion-jedi-practices">5.17 Use Justice, Equity, Diversity, Inclusion (JEDI) Practices</a></li>
+					<li><a href="#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies">5.20 Establish responsible practices around AI and emerging or disruptive technologies</a></li>
 					<li><a href="#define-performance-and-environmental-budgets">5.25 Define performance and environmental budgets</a></li>
+					<li><a href="#use-open-source-where-possible">5.26 Use open source where possible</a></li>
 				</ul>
 			</section>
 			<section> <!-- Privacy -->
@@ -4050,7 +4065,7 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/58">#58</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/67">#67</a>], & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/68">#68</a>] Guideline <a href="https://w3c.github.io/sustainableweb-ig/tagFilter.html">filters using data-attributes</a> (for full-document mode) available.<br><span class="credit">@airbr, @AlexDawsonUK, @ldevernay, @timfrick, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/41">#41</a>] Living changelog section has been added to the WSG (Github releases will continue).<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/53">#53</a>] New success criteria for <a href="https://w3c.github.io/sustainableweb-wsg/#domain-names">4.1</a> providing coverage regarding the impact of domain names.<br><span class="credit">@codewordcreative & @exortech</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/68">#68</a>] New <a href="#considerations">considerations</a> section with accessibility, privacy, and security cross-references.<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/68">#68</a>] New <a href="#considerations">considerations</a> section with accessibility, internationalization, privacy, and security cross-references.<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
 					</ul>
 					<p><strong>Updates:</strong></p>
 					<ul>
