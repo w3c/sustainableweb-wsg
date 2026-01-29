@@ -17,8 +17,6 @@ The structure of the repository has been created to ensure ease of maintenance. 
 ```
 /test-suite/		- Test Suite and Assets
 GRI.ipynb		- GRI Impact Calculator
-checklist.pages		- PDF Checklist (Source)
-checklist.pdf		- PDF Checklist
 benefits.html		- Benefits
 glance.html		- At-A-Glance
 guidelines.json		- WSG JSON API
