@@ -108,7 +108,7 @@
 			<section> <!-- Methodology -->
 				<h3>Methodology</h3>
 				<p>With the above considerations taken into account, a good next step is to consider sustainability within content and treat sustainability as any other impact target (such as accessibility or performance) by trying to drive change through metrics data. If research exists to back a particular technique as more performant, it is likely to be more sustainable. Often there will be cases where evidence does not exist as web sustainability is an evolving field and as such, a common sense approach (considering the factors that can impact people and the planet) will be the best method if metrics data cannot be provided to identify the most sustainable option.</p>
-				<p>Every body of work will have its approach to this and a progress over-perfection methodology is preferred (as doing something is ultimately better than waiting for an ideal fix), but as a general consideration for those who are creating documents that are relied upon by large numbers of individuals, the Planet, People, and Prosperity <abbr title="Planet, People, and Prosperity">PPP</abbr> model which does not just account for emissions and the environmental impact but also and human factors and issues surrounding good governance are an ideal template to work from. In the context of the Internet this accounts for everyday (but important) factors such as performance, accessibility, privacy by design, security, and reducing waste which all as a by-product have an environmental impact.</p>
+				<p>Every body of work will have its approach to this and a progress over-perfection methodology is preferred (as doing something is ultimately better than waiting for an ideal fix), but as a general consideration for those who are creating documents that are relied upon by large numbers of individuals, the Planet, People, and Prosperity <abbr title="Planet, People, and Prosperity">PPP</abbr> model which does not just account for emissions and the environmental impact but also and human factors and issues surrounding good governance are an ideal template to work from. In the context of the Internet this accounts for everyday (but important) factors such as performance, accessibility, privacy by design, security, internationalization, and reducing waste which all as a by-product have an environmental impact.</p>
 				<p>It is also important to note that different bodies will have their sustainability challenges, for example, those working on platform <abbr title="Application Programming Interfaces">APIs</abbr> are more likely to encounter hardware resource consumption (energy usage), whereas language standards will be more considerate of implementors, accessibility, and improving developer workflows. As such, it is worth coordinating with other groups with aligned goals and discussing their sustainability approaches to align work and help improve theirs, accounting for different factors.</p>
 				<p class="note">Providing sustainability guidance within work can be presented in many ways. One option is to integrate it within existing guidance or specifications (amending the content). Another is to provide notes or in-page sections dedicated to sustainability providing coverage. Or to gently guide individuals into the subject, a dedicated supplement that will be adapted or merged into the specification at the next major version (giving individuals time to adapt) could be created.</p>
 			</section>
@@ -313,7 +313,7 @@
 						<li>Failing a technique test does not necessarily mean failing WSG, because the techniques are discrete (that is, they address one specific point) and they are not required.</li>
 						<li>Content can meet WSG success criteria in different ways other than STAR published sufficient techniques.</li>
 					</ul>
-					<p>While the techniques are useful for evaluating the content, evaluations must go beyond just checking the sufficient technique tests to evaluate how content conforms to WSG success criteria (considerations such as accessibility, privacy, security, etc).</p>
+					<p>While the techniques are useful for evaluating the content, evaluations must go beyond just checking the sufficient technique tests to evaluate how content conforms to WSG success criteria (considerations such as accessibility, privacy, internationalization, security, etc).</p>
 					<p>Failures are particularly useful for evaluations because they do indicate non-conformance (unless an alternate version is provided without the failure).</p>
 				</section>
 				<section class="notoc"> <!-- Using the techniques -->
@@ -1583,7 +1583,7 @@
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">2.19 Audit and test for bugs or issues requiring resolution</a>.</p>
 						<p>Provide a mechanism during the development process where businesses and individuals creating web projects can verify that new work meets compliance targets for individual regulations. This technique is most useful when performed with each major milestone as there is a potential for feature (and compliance) breaking material to occur.</p>
-						<p>Within the scope of sustainability, this is increasingly important as there are explicit laws surrounding the subject in addition to expanded PPP remits such as accessibility, privacy, etc. In terms of machine testability the mechanics of an implementation may be more difficult than utilizing an automated checker, but wizard software can work through questions to help identify key issues.</p>
+						<p>Within the scope of sustainability, this is increasingly important as there are explicit laws surrounding the subject in addition to expanded PPP remits such as accessibility, privacy, security, etc. In terms of machine testability the mechanics of an implementation may be more difficult than utilizing an automated checker, but wizard software can work through questions to help identify key issues.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>Internationally reaching environmental legislation such as <a href="https://finance.ec.europa.eu/capital-markets-union-and-financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"><abbr title="Corporate Sustainability Reporting Directive">CSRD</abbr></a> and the <a href="https://www.europarl.europa.eu/news/en/press-room/20240112IPR16772/meps-adopt-new-law-banning-greenwashing-and-misleading-product-information">Green Claims Directive</a> provide stricter enforcement around product descriptions and the need to reduce emissions and accurately report such efforts.</li>
@@ -4353,7 +4353,7 @@
 								<td colspan="2">13</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX13-1.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX13-2.html">PASS</a></td>
-								<td></td>
+								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 								<td></td>
