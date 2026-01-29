@@ -1633,7 +1633,7 @@
 					],
 					"examples": [
 						{
-							"1": "[Browser Stack](https://www.browserstack.com/) and [LambadaTest](https://www.lambdatest.com/) provide virtual testing (which can be automated) amongst a variety of common web browsers allowing testers to identify flaws in their website or application's compatibility.",
+							"1": "[Browser Stack](https://www.browserstack.com/) provides virtual testing (which can be automated) amongst a variety of common web browsers allowing testers to identify flaws in their website or application's compatibility.",
 							"2": "[Can I Use](https://caniuse.com/) and [Can I WebView](https://caniwebview.com/) provide a comprehensive guide to browser implementations of web standards, including known bugs, and thereby can help guide implementors with decision making when deciding how to progressively enhance their product or service.",
 							"3": "Certain political situations may result in the inability for users to access your product or service hassle-free such as geo-blocking restrictions, the cost of bandwidth, or government-enacted firewalls, filters, or authentication requirements."
 						}
@@ -1922,7 +1922,7 @@
 					"examples": [
 						{
 							"1": "[BBC News](https://www.bbc.co.uk/news/entertainment-arts-68590845) uses a cloaking mechanism to prevent third-party content of social media sites from loading unless requested by the user to reduce the impact on their devices (if this fails to work, a source link is offered).",
-							"2": "Google provides details on how to [Lazy load offscreen iframes](https://web.dev/articles/iframe-lazy-loading) in order to reduce the impact that third-party materials that are imported may have until they are scrolled into the viewport and required."
+							"2": "Google provides details on how to [Lazy load offscreen iframes](https://web.dev/articles/iframe-lazy-loading?hl=en-us) in order to reduce the impact that third-party materials that are imported may have until they are scrolled into the viewport and required."
 						}
 					],
 					"tests": [
@@ -2487,7 +2487,7 @@
 					],
 					"examples": [
 						{
-							"1": "[Electricity Maps](https://app.electricitymaps.com/) provides an application that could be utilized to help make decisions as to where data is being served (based upon the intensity and level of low-carbon energy being offered in particular regions)."
+							"1": "[Electricity Maps](https://app.electricitymaps.com/map/live/fifteen_minutes) provides an application that could be utilized to help make decisions as to where data is being served (based upon the intensity and level of low-carbon energy being offered in particular regions)."
 						}
 					],
 					"tests": [
@@ -2579,7 +2579,7 @@
 					],
 					"examples": [
 						{
-							"1": "[MDN Provides a list of Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) that can be implemented ([with varying levels of browser support](https://whatwebcando.today/). Some of these provide enhanced functionality to the end-user, and others may tuned to provide the ecodesign benefits that will give your product or service an edge.",
+							"1": "[MDN Provides a list of Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) that can be implemented ([with varying levels of browser support](https://progressier.com/what-web-can-do-today). Some of these provide enhanced functionality to the end-user, and others may tuned to provide the ecodesign benefits that will give your product or service an edge.",
 							"2": "Custom APIs such as our [WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json) ([source](https://github.com/w3c/sustainableweb-wsg/blob/main/guidelines.json)) can be used within your product or service to provide actionable sustainability information to your users that is maintained and kept up-to-date."
 						}
 					],
