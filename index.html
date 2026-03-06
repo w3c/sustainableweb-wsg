@@ -26,7 +26,9 @@
 				.summary .reporting dd { flex-basis: calc(100% - 85px); margin: 0; }
 				.summary .reporting dd { flex-basis: calc(100% - 85px); } }
 			/* Fix for Printing The Specification: https://github.com/w3c/sustyweb/issues/92 */
-			@media print { .pageButtons, .filter, body { margin-left: 1.6em !important; padding-left: 1.6em !important; } }
+			@media print {
+				.pageButtons, .filter, body { margin-left: 1.6em !important; padding-left: 1.6em !important; }
+				.switch { display: none; } }
 			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
 			summary { cursor: pointer; }
 			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
@@ -2611,7 +2613,7 @@
 			</section>
 			<section> <!-- Consider the impact and requirements of data processing -->
 				<h3>Consider the impact and requirements of data processing</h3>
-				<p class="subheading">Account for the energy involved in data transfer, considering factors such as the protocol used, whether it is processed client- or server-side, and the environment used.</p>
+				<p class="subheading">Account for the energy involved in data processing, considering factors such as the protocol used, whether it is processed client- or server-side, and the environment used.</p>
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="Azure WAF, GPF, GR491" data-considerations="" data-categories="AI, JavaScript, Networking, Performance">
 					<h4 id="batch-processing">Success Criterion: Batch processing</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#HIS09-1">Resources</a></p>
@@ -3970,11 +3972,14 @@
 					</ul>
 					<p><strong>Fixes:</strong></p>
 					<ul>
+						<li>Numerous issues raised by TAG have been addressed for the introduction and UX section.<br><span class="credit">@AlexDawsonUK, @codewordcreative, @susannah-hill, and @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/213">#213</a>] Horizontal Review feedback for Accessibility has been included.<br><span class="credit">@AlexDawsonUK, @goodwitch, @JamesChristie-SustainableUX, @jenstrickland, @codewordcreative, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/214">#214</a>] Horizontal Review feedback for Internationalization has been included.<br><span class="credit">@aphillips, @AlexDawsonUK, @svgeesus, @r12a, & @codewordcreative</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/215">#215</a>] Horizontal Review feedback for Privacy has been included.<br><span class="credit">@AlexDawsonUK, @gbshankar, @codewordcreative, &@TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/216">#216</a>] GreenIT URLs have been updated to match the latest release.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/216">#216</a>] Ensured other deliverable cross-references all point to the TR specification URL.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/232">#232</a>] Additional references added to the laws & policies supplement.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/232">#232</a>] Statistics in the at-a-glance supplement have been updated.<br><span class="credit">@AlexDawsonUK</span></li>
 					</ul>
 					<!--
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/">#</a>] Change.<br><span class="credit">@Github</span></li>

@@ -1,7 +1,7 @@
 {
 	"title": "Web Sustainability Guidelines",
-	"edition": "Draft Note",
-	"lastModified": "2026-01-16",
+	"edition": "Group Note Draft",
+	"lastModified": "2026-03-06",
 	"category": [
 		{
 			"id": "1",
@@ -4362,7 +4362,7 @@
 					"id": "9",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#consider-the-impact-and-requirements-of-data-processing",
 					"guideline": "Consider the impact and requirements of data processing",
-					"subheading": "Account for the energy involved in data transfer, considering factors such as the protocol used, whether it is processed client- or server-side, and the environment used.",
+					"subheading": "Account for the energy involved in data processing, considering factors such as the protocol used, whether it is processed client- or server-side, and the environment used.",
 					"criteria": [
 						{
 							"title": "Batch processing",
