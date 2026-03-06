@@ -100,7 +100,7 @@
 					"id": "2",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access",
 					"guideline": "Understand user requirements or constraints, resolving barriers to access",
-        			"subheading": "Understand the audience and their requirements, remove their constraints and barriers, and give them an equal role in decision making.",
+        			"subheading": "Understand the audience and their requirements and remove their constraints and barriers.",
 					"criteria": [
 						{
 							"title": "Audience evaluation",
@@ -579,7 +579,7 @@
 					"id": "7",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive",
 					"guideline": "Avoid being manipulative or deceptive",
-					"subheading": "Avoid using patterns, content, tools, or techniques that may artificially manipulate or deceive the user and waste energy.",
+					"subheading": "Avoid using patterns, content, tools, or techniques that may artificially manipulate or deceive the user.",
 					"criteria": [
 						{
 							"title": "Deceptive design patterns",
@@ -932,9 +932,9 @@
 				},
 				{
 					"id": "11",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-for-sustainability",
-					"guideline": "Optimize media for sustainability",
-					"subheading": "Ensure all media - including audio, video, animation, images, and other novel formats, when deemed necessary in the design, are optimized, correctly sized and formatted, use lazy loading where appropriate, and managed effectively.",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use",
+					"guideline": "Optimize media to reduce resource use",
+					"subheading": "Ensure all media - including audio, video, animation, images, and other novel formats, when deemed necessary in the design, are optimized, correctly sized and formatted, use lazy loading where appropriate, with a usage policy in place.",
 					"criteria": [
 						{
 							"title": "Need for media",
@@ -1447,12 +1447,13 @@
 							"emissions": "Low"
 						}
 					],
+					"example": "<form>\r\n\t<label for=\"choose\">Would you prefer a banana or cherry? (required)<\/label>\r\n\t<input id=\"choose\" name=\"i-like\" required \/>\r\n\t<button>Submit<\/button>\r\n<\/form>",
 					"tags": ["Accessibility", "HTML", "Privacy", "Social Equity", "UI", "Usability"]
 				},
 				{
 					"id": "16",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#provide-useful-notifications",
-					"guideline": "Provide useful notifications",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-unwanted-notifications",
+					"guideline": "Avoid unwanted notifications",
 					"subheading": "Ensure any required notifications or alerts are clearly explained before activation, and that the user can both control and change them.",
 					"criteria": [
 						{
@@ -1504,14 +1505,13 @@
 							"emissions": "Low"
 						}
 					],
-					"example": "<form>\r\n\t<label for=\"choose\">Would you prefer a banana or cherry? (required)<\/label>\r\n\t<input id=\"choose\" name=\"i-like\" required \/>\r\n\t<button>Submit<\/button>\r\n<\/form>",
 					"tags": ["Accessibility", "JavaScript", "Privacy", "UI", "Usability"]
 				},
 				{
 					"id": "17",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents",
 					"guideline": "Reduce the impact of downloadable and physical documents",
-					"subheading": "Reduce the need for physical documents as much as possible by allowing the saving of well-labeled, optimized digital downloads and having a print style sheet.",
+					"subheading": "Reduce the need for physical documents as much as possible by allowing the saving of well-labeled, optimized digital downloads. Include a print style sheet to avoid resource waste.",
 					"criteria": [
 						{
 							"title": "Printed documents",
@@ -1793,14 +1793,13 @@
 							"emissions": "Medium"
 						}
 					],
-					"example": "<link rel=\"prefetch\" href=\"\/articles\/\" as=\"document\">",
 					"tags": ["Accessibility", "Compatibility", "KPIs", "Performance", "Privacy", "Reporting", "Research", "Security", "Social Equity", "Software", "Strategy", "UI", "Usability"]
 				},
 				{
 					"id": "20",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#verify-that-real-world-users-can-successfully-use-your-work",
 					"guideline": "Verify that real-world users can successfully use your work",
-					"subheading": "Factor the ways people use the project into your decision making and evaluate how this can be optimized for both people and the planet.",
+					"subheading": "Factor the ways people use the project into your decision making and evaluate how this can be optimized for the planet, people, and organisational prosperity.",
 					"criteria": [
 						{
 							"title": "Usage changes",
@@ -2678,7 +2677,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"example": "<img src=\"image.png\" loading=\"lazy\" alt=\"\u2026\" width=\"200\" height=\"200\">",
+					"example": "<link rel=\"prefetch\" href=\"\/articles\/\" as=\"document\">",
 					"tags": ["Accessibility", "Assets", "CSS", "JavaScript", "Performance"]
 				},
 				{
@@ -4050,7 +4049,7 @@
 							"emissions": "Low"
 						}
 					],
-					"example": "<IfModule mod_deflate.c>\r\n\t<IfModule mod_setenvif.c>\r\n\t\t<IfModule mod_headers.c>\r\n\t\t\tSetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\\s*,?\\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding\r\n\t\t\tRequestHeader append Accept-Encoding \"gzip,deflate\" env=HAVE_Accept-Encoding\r\n\t\t<\/IfModule>\r\n\t<\/IfModule>\r\n\t<IfModule mod_filter.c>\r\n\t\tAddOutputFilterByType DEFLATE \"application\/atom+xml application\/javascript application\/json application\/ld+json application\/manifest+json application\/rdf+xml application\/rss+xml application\/schema+json application\/geo+json application\/vnd.ms-fontobject application\/wasm application\/x-font-ttf application\/x-javascript application\/x-web-app-manifest+json application\/xhtml+xml application\/xml font\/eot font\/opentype font\/otf font\/ttf image\/bmp image\/svg+xml image\/vnd.microsoft.icon image\/x-icon text\/cache-manifest text\/calendar text\/css text\/html text\/javascript text\/plain text\/markdown text\/vcard text\/vnd.rim.location.xloc text\/vtt text\/x-component text\/x-cross-domain-policy text\/xml\"\r\n\t<\/IfModule>\r\n\t<IfModule mod_mime.c>\r\n\t\tAddEncoding gzip              svgz\r\n\t<\/IfModule>\r\n<\/IfModule>",
+					"example": "<IfModule mod_deflate.c>\r\n\t<IfModule mod_setenvif.c>\r\n\t\t<IfModule mod_headers.c>\r\n\t\t\tSetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\\s*,?\\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding\r\n\t\t\tRequestHeader append Accept-Encoding \"zstd, gzip, br, deflate\" env=HAVE_Accept-Encoding\r\n\t\t<\/IfModule>\r\n\t<\/IfModule>\r\n\t<IfModule mod_filter.c>\r\n\t\tAddOutputFilterByType DEFLATE \"application\/atom+xml application\/javascript application\/json application\/ld+json application\/manifest+json application\/rdf+xml application\/rss+xml application\/schema+json application\/geo+json application\/vnd.ms-fontobject application\/wasm application\/x-font-ttf application\/x-javascript application\/x-web-app-manifest+json application\/xhtml+xml application\/xml font\/eot font\/opentype font\/otf font\/ttf image\/bmp image\/svg+xml image\/vnd.microsoft.icon image\/x-icon text\/cache-manifest text\/calendar text\/css text\/html text\/javascript text\/plain text\/markdown text\/vcard text\/vnd.rim.location.xloc text\/vtt text\/x-component text\/x-cross-domain-policy text\/xml\"\r\n\t<\/IfModule>\r\n\t<IfModule mod_mime.c>\r\n\t\tAddEncoding gzip              svgz\r\n\t<\/IfModule>\r\n<\/IfModule>",
 					"tags": ["Assets", "Networking", "Performance"]
 				},
 				{
@@ -4795,7 +4794,6 @@
 							"emissions": "Low"
 						}
 					],
-					"example": "Accept-Encoding: zstd, gzip, br, deflate",
 					"tags": ["Accessibility", "Content", "E-Waste", "Hardware", "Performance", "Privacy"]
 				}
 			]
@@ -4809,7 +4807,7 @@
 					"id": "1",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy",
 					"guideline": "Have an ethical and sustainable product strategy",
-					"subheading": "Produce policies and documents showcasing evidence, achievements, and onboarding underpinned by good governance.",
+					"subheading": "Produce policies and documents showcasing evidence, achievements, and onboarding underpinned by good governance alongside compliance with responsible legislation.",
 					"criteria": [
 						{
 							"title": "Public documents",
@@ -4988,7 +4986,7 @@
 					"id": "3",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#inform-raise-awareness-and-train-for-sustainability",
 					"guideline": "Inform, raise awareness, and train for sustainability",
-					"subheading": "Drive sustainability awareness both externally and internally with active encouragement and routine training offered where necessary.",
+					"subheading": "Drive sustainability awareness both externally and internally with active encouragement and routine training and materials offered where necessary.",
 					"criteria": [
 						{
 							"title": "Inform and aware",
