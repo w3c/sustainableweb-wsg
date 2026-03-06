@@ -771,7 +771,7 @@
 				{
 					"id": "UX11-1",
 					"title": "Remove any functionality that may trigger auto-playing animation",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media for sustainability](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media to reduce resource use](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use).",
 					"description": [
 						{
 							"1": "Ensure that media will only run within a website or application on the command of the user and not begin consuming resources and thrashing hardware from the immediacy of the page load event. Because this involves HTML (attributes and background media), JavaScript, and images (animated GIFs), a multi-functional approach is required.",
@@ -801,7 +801,7 @@
 				{
 					"id": "UX11-2",
 					"title": "Optimizing all audio and video assets for speed and compatibility",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media for sustainability](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media to reduce resource use](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use).",
 					"description": [
 						{
 							"1": "Ensure that both the formats being used for media have widespread browser compatibility and that the audio and video being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the user, thereby improving multiple PPP factors and increasing performance.",
@@ -831,7 +831,7 @@
 				{
 					"id": "UX11-3",
 					"title": "Provide facades and lazy-loading for media, animated GIFs, and third-party content",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media for sustainability](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media to reduce resource use](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use).",
 					"description": [
 						{
 							"1": "Provide a mechanism that ensures users remain in control of when highly impactful (in terms of emissions) media or third-party materials begin to transmit to their devices. By having a static facade that upon clicking begins the render (and not simply hiding the video, audio or interactive element behind the static image), you ensure that the content has a lazy-load effect even if autoplay or the interaction is not active (as pre-buffering may occur during the render process).",
@@ -870,7 +870,7 @@
 				{
 					"id": "UX11-4",
 					"title": "Optimizing all media assets for a variety of different resolutions",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media for sustainability](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media to reduce resource use](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use).",
 					"description": [
 						{
 							"1": "Ensure that videos are not only served at the correct resolution but also to identify assets that can help users make decisions before choosing to load the main video as to whether the media is correct for them. The location of these links should be connected to the embedded media, and either replace the original video upon click or downloadable for the user (they should not increase the number of embeds).",
@@ -902,7 +902,7 @@
 				{
 					"id": "UX11-5",
 					"title": "Add details about media impacts to the media management and use policy",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media for sustainability](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-for-sustainability).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media to reduce resource use](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use).",
 					"description": [
 						{
 							"1": "Ensure that you provide details about any audio or video reduction targets and techniques within a publicly available media management and use policy. This will help you to establish the criteria you will attempt to meet across your product or service and allow users to identify any failings if they spot them (which can be fixed during the product lifecycle).",
@@ -1378,7 +1378,7 @@
 				{
 					"id": "UX18-1",
 					"title": "Identify an affected party-focused testing and prototyping policy",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.18 Involve users and contributors early in the project](https://www.w3.org/TR/web-sustainability-guidelines/#involve-users-and-contributors-early-in-the-project).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.18 Involve users early in the project](https://www.w3.org/TR/web-sustainability-guidelines/#involve-users-early-in-the-project).",
 					"description": [
 						{
 							"1": "Identify the way new features, product ideas, and user-interface components will be tested among various affected party groups such as those with with accessibility issues. The main location for such an outline will be through an affected party-focused testing and prototyping policy and as such once implemented publicly, a link to the policy should be available.",
@@ -3459,7 +3459,7 @@
 					"examples": [
 						{
 							"1": "The US Secretaries and Exchange Commission [has a useful example](https://www.sec.gov/Archives/edgar/data/1094007/000119312504044901/dex14.htm) regarding a code of ethics policy that leans towards ethical values. While it is focused on one industry it could easily be adapted to other sectors.",
-							"2": "Electronics organisation Nokia [has a page dedicated to sustainability](https://www.nokia.com/about-us/sustainability/) listing their commitments towards net-zero, their goals towards people and the planet, plus other important assets relating to PPP emissions."
+							"2": "Electronics organisation Nokia [has a page dedicated to sustainability](https://www.nokia.com/about-us/sustainability/) listing their commitments towards net-zero, their goals towards the planet, people, and organisational prosperity, plus other important assets relating to PPP emissions."
 						}
 					],
 					"tests": [
@@ -3486,7 +3486,7 @@
 					"description": [
 						{
 							"1": "Provide a mechanism within a sustainability statement to identify actions that a product or service may have undertaken that go beyond the WSG to become sustainable. These may include work from other specifications, supplementary materials to the WSG, or third-party tooling that has been created by the organization to improve sustainability.",
-							"2": "Machine testability for such features would include identifying references to the documentation within a sustainability statement, also if tooling itself is aware of anything that is beyond the scope of the WSG and feels it warrants inclusion for improving sustainability for people and the planet, this could also be identified within the tooling and calculated into the overall scoring metrics."
+							"2": "Machine testability for such features would include identifying references to the documentation within a sustainability statement, also if tooling itself is aware of anything that is beyond the scope of the WSG and feels it warrants inclusion for improving sustainability for the planet, people, and organisational prosperity, this could also be identified within the tooling and calculated into the overall scoring metrics."
 						}
 					],
 					"examples": [
@@ -3872,7 +3872,7 @@
 					],
 					"examples": [
 						{
-							"1": "Mobile Phone company Telefonica has a Supply Chain [Sustainability Policy document](https://www.telefonica.com/en/wp-content/uploads/sites/5/2021/07/Policy-Sustainability-Supply-Chain.pdf) (PDF) that outlines its ethical standpoint regarding people and the planet as defined by the SDGs and how it does trade."
+							"1": "Mobile Phone company Telefonica has a Supply Chain [Sustainability Policy document](https://www.telefonica.com/en/wp-content/uploads/sites/5/2021/07/Policy-Sustainability-Supply-Chain.pdf) (PDF) that outlines its ethical standpoint regarding the planet, people, and organisational prosperity as defined by the SDGs and how it does trade."
 						}
 					],
 					"tests": [
