@@ -956,7 +956,7 @@
 					<details> <!-- UX11-1: Remove any functionality that may trigger auto-playing animation -->
 						<summary id="UX11-1">UX11-1: Remove any functionality that may trigger auto-playing animation</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-for-sustainability">2.11 Optimize media for sustainability</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">2.11 Optimize media to reduce resource use</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Ensure that media will only run within a website or application on the command of the user and not begin consuming resources and thrashing hardware from the immediacy of the page load event. Because this involves HTML (attributes and background media), JavaScript, and images (animated <abbr title="Graphic Interchange Format">GIFs</abbr>), a multi-functional approach is required.</p>
 						<p>Because media can involve audio and video, implementors will need to ensure that both are treated with equal respect as they both consume resources and contribute to emissions (to varying degrees). Additional care will also need to be taken to identify background media and prevent its sudden onset unless the function of that page or application is to show a media file (with nothing else).</p>
@@ -980,7 +980,7 @@
 					<details> <!-- UX11-2: Optimizing all media assets for speed and compatibility -->
 						<summary id="UX11-2">UX11-2: Optimizing all media assets for speed and compatibility</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-for-sustainability">2.11 Optimize media for sustainability</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">2.11 Optimize media to reduce resource use</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Ensure that both the formats being used for media have widespread browser compatibility and that the media being served have been compressed using a suitable algorithm to provide the asset at the lowest bandwidth requirements possible to the user, thereby improving multiple PPP factors and increasing performance.</p>
 						<p>Compression tests can be run against every media file to see if improvements can be made without losing too much quality that the artifact becomes degraded beyond usefulness. Media formats to be embedded with browser compatibility issues can also be machine detected and recommendations for alternatives can be offered (and implemented).</p>
@@ -1004,7 +1004,7 @@
 					<details> <!-- UX11-3: Provide facades and lazy-loading for media, animated GIFs, and third-party content -->
 						<summary id="UX11-3">UX11-3: Provide facades and and lazy-loading for media, animated GIFs, and third-party content</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-for-sustainability">2.11 Optimize media for sustainability</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">2.11 Optimize media to reduce resource use</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism that ensures users remain in control of when highly impactful (in terms of emissions) media or third-party materials begin to transmit to their devices. By having a static facade that upon clicking begins the render (and not simply hiding the video, audio or interactive element behind the static image), you ensure that the content has a lazy-load effect even if autoplay or the interaction is not active (as pre-buffering may occur during the render process).</p>
 						<p>Ensure that users with bandwidth restrictions or slow connections are given a mechanism to access your content when their ability to access critical information may be stressed. Providing such options may include an in-page solution (either by default or by choice), or through the offering of a highly optimized alternative for such requests.</p>
@@ -1037,7 +1037,7 @@
 					<details> <!-- UX11-4: Optimizing all media assets for a variety of different resolutions -->
 						<summary id="UX11-4">UX11-4: Optimizing all media assets for a variety of different resolutions</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-for-sustainability">2.11 Optimize media for sustainability</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">2.11 Optimize media to reduce resource use</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Ensure that videos are not only served at the correct resolution but also to identify assets that can help users make decisions before choosing to load the main video as to whether the media is correct for them. The location of these links should be connected to the embedded media, and either replace the original video upon click or downloadable for the user (they should not increase the number of embeds).</p>
 						<p>JavaScript can be used to detect the resolution of the device accessing the media and serve the correct media size for the user requesting it (ensuring smaller devices do not get larger media files). Regarding the types of links to be offered, they should provide the user with more choice in terms of the quality of the video being consumed or provide added context to its purpose.</p>
@@ -1063,7 +1063,7 @@
 					<details> <!-- UX11-5: Add details about media impacts to the media management and use policy -->
 						<summary id="UX11-5">UX11-5: Add details about media impacts to the media management and use policy</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-for-sustainability">2.11 Optimize media for sustainability</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">2.11 Optimize media to reduce resource use</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Ensure that you provide details about any audio or video reduction targets and techniques within a publicly available media management and use policy. This will help you to establish the criteria you will attempt to meet across your product or service and allow users to identify any failings if they spot them (which can be fixed during the product lifecycle).</p>
 						<p>Machine testability for such processes can involve first ensuring that the media management and use policy exists and then checking for a section on audio, video, or media, exists can be a definable way of identifying that the subject is being mentioned. Content can be checked for accuracy through auditing processes and failings flagged up as issues requiring resolution to maintain compliance.</p>
