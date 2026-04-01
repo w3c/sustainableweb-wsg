@@ -12,6 +12,8 @@
 			.urls { border: 1px solid #A0A0A0; border-radius: 10px; display: block; font-weight: bold; padding: 0.25em 0.5em; }
 			.urls { background-color: var(--tocsidebar-bg); }
 			/* Fix for Specification Readability: https://github.com/w3c/sustyweb/issues/92 */
+			h5 { font-weight: bold !important; }
+			.overflowFix, blockquote { width: 100%; }
 			.subheading { border-left: thick solid #d9d9d9; font-style: italic; padding: 0.5em 1em; }
 			.credit { font-size: small; }
 			.summary pre { border: 1px solid; overflow: visible !important; padding: 0.5em; page-break-inside: avoid; white-space: pre-wrap !important; word-wrap: break-word !important; }
@@ -325,6 +327,13 @@
 			group: "sustainableweb",
 			latestVersion: "https://w3c.github.io/sustainableweb-wsg/",
 			localBiblio: {
+				"COMMS": {
+					title: "Between 2010 and 2021, global emissions from digital technologies were largely obscured in greenhouse gas emission accounting standards",
+					date: "28 January 2026",
+					href: "https://www.nature.com/articles/s44458-025-00022-6",
+					status: "Informational",
+					publisher: "Janna Axenbeck, Stefanie Kunkel, Joris Blain, and Francis Charpentier",
+				},
 				"FOOTPRINT": {
 					title: "The environmental footprint of the digital world",
 					date: "01 November 2019",
@@ -345,6 +354,20 @@
 					href: "https://cdt.org/wp-content/uploads/2023/03/human-rights-web-standards.html",
 					status: "Informational",
 					publisher: "Nick Doty, Alissa Cooper, and Wendy Seltzer",
+				},
+				"ICT-IMPACT": {
+					title: "The real climate and transformative impact of ICT: A critique of estimates, trends, and regulations",
+					date: "10 September 2021",
+					href: "https://www.cell.com/patterns/pdfExtended/S2666-3899(21)00188-4",
+					status: "Informational",
+					publisher: "Charlotte Freitag, Mike Berners-Lee, Kelly Widdicks, Bran Knowles, Gordon S. Blair, and Adrian Friday",
+				},
+				"SHIFT": {
+					title: "Lean ICT: Towards digital sobriety",
+					date: "09 March 2019",
+					href: "https://theshiftproject.org/en/publications/lean-ict/",
+					status: "Informational",
+					publisher: "The Shift Project",
 				},
 				"VARIABLES": {
 					title: "The Variables of Web Sustainability",
@@ -399,15 +422,15 @@
 	</head>
 	<body>
 		<section id="abstract"> <!-- Abstract -->
-			<p>The Web Sustainability Guidelines (<abbr title="Web Sustainability Guidelines">WSG</abbr>) provide recommendations to help digital teams make informed sustainable development decisions. They cover the planetary, people, and prosperity (<a><abbr title="Planet, People, and Prosperity">PPP</abbr></a>) principles of digital products and services that organizations create and manage. These cross-functional guidelines aim to improve the web overall, including initiatives that leverage artificial intelligence and other emerging technologies delivered via the web.</p>
-			<p>To achieve an ethical and more humane web that works better for everyone and our shared planet, the Web Sustainability Guidelines encourage systems thinking, intersectionality, and cross-functional collaboration.</p>
-			<p>Some guidelines intentionally overlap with and signpost to other documents and specifications from W3C and other organizations. The purpose of this is not to reinterpret existing recommendations but rather to highlight how critical intersectionality and cross-functional collaboration are to successful sustainable development. To this end, while the guidelines are web-specific, they can serve as a conduit to enhance other sustainable development initiatives within an organization. WSG will not address every possible mechanism or strategy to become more sustainable.</p>
-			<p>Finally, sustainable development is measured by progress over perfection. It is not expected that organizations will adhere to every guideline within the specification. Rather, defining realistic goals and measuring progress over time will help teams more effectively achieve long-term sustainability targets. Refer to the additional information sections and supplements where provided for further guidance on implementation of WSG.</p>
+			<p><strong>Web Sustainability Guidelines (<abbr title="Web Sustainability Guidelines">WSG</abbr>)</strong> provide actionable recommendations to help digital teams make informed, sustainable decisions. In considering different aspects of work and the web, these guidelines address the <strong>planet, people, and prosperity (<a><abbr title="Planet, People, and Prosperity">PPP</abbr></a>)</strong> impacts of digital products and services. They are interdisciplinary and cover artificial intelligence and emerging web technologies.</p>
+			<p>Some guidelines reference existing documents and specifications from W3C and other organizations. This approach highlights the importance of intersectionality and collaboration, rather than reinterpreting established recommendations. While WSG prioritizes web technologies, it can also support broader organizational sustainability efforts.</p>
+			<p>WSG can also serve as a practical bridge to support broader organizational sustainability initiatives and transformation, helping teams apply web-focused guidance to broader environmental, social, and governance efforts.</p>
+			<p>Organizations are encouraged to make sustainability progress over time. Setting realistic goals and tracking progress will help teams achieve lasting web sustainability. For implementation guidance, see the "additional information" sections in this document and the <a href="#wsg-supporting-documents">supporting documents</a>.</p>
 		</section>
 		<section id="sotd"> <!-- Status of This Document -->
-			<p>This document has been reviewed by Interest Group members and interested parties. This is a draft document which may be updated, replaced, or obsoleted by other documents at any time. It is inappropriate to cite this document as other than a work in progress. The Interest Group's role in publishing is to draw attention to the specification and to promote its widespread deployment.</p>
-			<p>By publishing these guidelines, the Interest Group does not expect that the work produced in this specification will affect the work undertaken by other <abbr title="World Wide Web Consortium">W3C</abbr> sustainability, accessibility, or performance groups. The Interest Group will continue to track these Working, Interest, and Community Groups as appropriate.</p>
-			<p>To provide feedback regarding this specification, the preferred method is using GitHub. It is free to create a GitHub account to file issues. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available. There is currently no preliminary interoperability or implementation report, however one of the key tasks of this Interest Group is to examine the potential for better models for digital sustainability that can feed into tooling (and thus into large studies of implementations) that can be reported upon and fed back into guidance for the Web Sustainability Guidelines.</p>
+			<p>This document has been reviewed by members of the Sustainable Web Interest Group and other interested parties. This Interest Group published the WSG draft to raise awareness of the guidelines and to encourage discussion and adoption. Publication of these guidelines does not imply that they will affect the work undertaken by other W3C groups; the Interest Group will monitor related work as appropriate.</p>
+			<p>Feedback is welcome and should be submitted via <a href="https://github.com/w3c/sustainableweb-ig/">GitHub</a>. A free GitHub account is required to file issues. Past discussions are archived on the <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) mailing list.</p>
+			<p>No preliminary interoperability or implementation reports exist at this time. However, the Interest Group is exploring models for web sustainability to inform tooling, large-scale studies, and future WSG guidance.</p>
 		</section>
 		<section> <!-- Introduction -->
 			<h2>Introduction</h2>
@@ -415,158 +438,241 @@
 				<details>
 					<summary>Plain language summary of Introduction</summary>
 					<ul>
-						<li>The Web Sustainability Guidelines (WSG) promote good sustainability best practices based on the latest evidence and research.</li>
+						<li>Web Sustainability Guidelines (WSG) promote web sustainability best practices based on the latest evidence and research.</li>
 						<li>WSG apply to applications, websites, and other Internet-related products and services.</li>
-						<li>The guidelines feature Success Criteria you should aim to comply with, and provide additional information and other deliverables that can help with decision-making and implementation.</li>
-						<li>Digital sustainability is a complex topic, the guidance and metrics may change over time, and other considerations (such as non-digital factors) and impacts beyond carbon should be accounted for.</li>
+						<li>The guidelines feature Success Criteria, and provide additional information and <a href="#wsg-supporting-documents">other deliverables</a> to aid decision-making and implementation.</li>
+						<li>Web sustainability is a complex topic. The guidance and metrics may change over time, and other considerations - including non-digital factors - beyond carbon should be accounted for.</li>
 					</ul>
 				</details>
 			</div>
-			<section> <!-- Background -->
-       			<h3>Background on WSG</h3>
-				<p>Web Sustainability Guidelines (WSG) define how to make web products and services more sustainable for <strong>the planet, people, and organisational prosperity</strong>. <a>Web sustainability</a> extends beyond <strong>environmental issues</strong> [[VARIABLES]], because principles such as such as <strong>accessibility, internationalization, privacy, and security</strong> can impact the sustainability of a project. Equally, these principles should not be compromised upon or take on secondary importance in the pursuit of improved sustainability. <a href="https://w3c.github.io/sustainableweb-wsg/summary.html">Summary of Web Sustainability</a> explains sustainability in depth and explains why these guidelines are necessary. WSG incrementally advances <a>web sustainability</a> in numerous areas, but underscores that <strong>not all environmental improvements are met by these guidelines</strong>, as sustainability is an emerging field and research gaps may exist in certain areas. WSG may be helpful to comply with existing and upcoming worldwide regulatory frameworks, reporting schemes, and compliance requirements (<a href="https://w3c.github.io/sustainableweb-wsg/policies.html">laws and policies</a>).</p>
-				<p>Web Sustainability Guidelines (WSG) were developed in cooperation with individuals and organizations around the world. It does so, intending to provide a shared strategy for <a>web sustainability</a> that meets the needs of individuals, organizations, and governments internationally. WSG is designed to apply broadly to different existing web technologies now and in the future and <strong>to be testable with a combination of automated testing and human evaluation</strong>.</p>
-				<p>WSG is divided into four categories that reflect different roles in the web industry. Some requirements may apply to more than one role, depending on who is responsible for meeting them. When working on a project, <strong>review not only your assigned role but also other relevant sections</strong> to ensure you meet all applicable guidelines and success criteria.</p>
-				<p><a>Web sustainability</a> is dependent on authors (e.g., designers and developers), sustainable user agents (e.g., browsers), and authoring tools. Examples include the performance of rendering and the accurate measuring of energy use through developer tooling. Authoring tools also have an important role in <a>web sustainability</a>, by ensuring performant code, reducing waste, and serving the results in the most sustainable way possible.</p>
-				<div class="note">
-					<p>Any tools or user agents designed to provide the user or their environment with insights related to the implementation of WSG should be developed in a way that is mindful to the risk of fingerprinting, e.g. user agent identifiers, unique values, scores, signature patterns, and other data collection that could be used to identify a user and thereby compromise user privacy.</p>
-					<p>It should also not be possible to reverse-engineer energy metrics to track users across sessions or websites, and any energy use reported to websites must be aggregated to avoid revealing information about individuals or their environments.</p>
-				</div>
-				<p><strong>WSG should not be restricted to what falls within the digital sector.</strong> While for this specification, we primarily focus on Internet-related technologies and the people and organizations that use them, sustainability concerns exist beyond the scope of this work, and as such, the impacts of these differing areas of concern should be addressed when meeting targets, reporting, and complying with relevant legislation.</p>
-				<p>WSG includes guidelines for websites and web applications, authoring tools, and user agents. These are applicable to user experience design, web development, hosting and infrastructure, business, and product strategy. Out of scope from WSG are non-web aspects of native applications in both mobile and desktop environments. Web applications remain in scope. Hardware is also out of scope unless related to hosting and infrastructure.</p>
-				<div class="note">
-					<p>The WSG was originally developed under the guidance of the <a href="https://www.w3.org/community/sustyweb/">Sustainable Web Design Community Group</a>. W3C community groups act as incubator hubs where ideas for new technologies and standards can be discussed without formal constraints.</p>
-					<p>From April 2022, with the help of over 100 subject matter experts from around the globe, the group created the first draft, and subsequently, through GitHub and regular meetings continued work over another year to progress the WSG and its deliverables to a level of maturity where the group and its work were ready to become a part of the W3C family in October 2024.</p>
-				</div>
+			<section> <!-- Background on WSG -->
+				<h3>Background on WSG</h3>
+				<section> <!-- Web sustainability overview -->
+					<h4>Web sustainability overview</h4>
+					<p class="overflowFix">WSG defines web sustainability as follows:</p>
+					<p class="def">An approach to designing, developing, and operating digital products and services that leads to a web that is <strong>clean, efficient, open, honest, regenerative and resilient</strong>.</p>
+					<p>Web sustainability goes beyond reducing harm: it is also about restoring ecosystems and supporting communities to thrive. The web can be <strong>both part of the problem</strong> and a <strong>catalyst for solutions</strong>.</p>
+					<p>WSG aims to foster a more <a href="https://www.w3.org/TR/ethical-web-principles/">ethical</a>, <a href="https://humanewebmanifesto.com/">humane</a>, and <a href="https://www.sustainablewebmanifesto.com/">inclusive</a> web. The guidelines emphasize <strong>systems thinking, intersectionality, and cross-functional collaboration</strong> as essential to sustainable development.</p>
+					<blockquote id="dfn-sustainability">
+						<p>WSG understands the key terms from its definition as follows:</p>
+						<ul>
+							<li><strong>Clean:</strong> hosted using low-carbon or renewable energy;</li>
+							<li><strong>Efficient:</strong> using the fewest resources possible;</li>
+							<li><strong>Open:</strong> transparent, accessible, and user-controlled;</li>
+							<li><strong>Honest:</strong> avoiding manipulation, exploitation, or deceptive patterns;</li>
+							<li><strong>Regenerative:</strong> supporting communities and ecosystems;</li>
+							<li><strong>Resilient:</strong> designed to endure and adapt under changing circumstances.</li>
+						</ul>
+						<p>This builds on the existing pillars of web sustainability:</p>
+						<ul>
+							<li><strong>Planet:</strong> Protecting and promoting healthy ecosystems.</li>
+							<li><strong>People:</strong> Safeguarding individuals, communities, and society as a whole.</li>
+							<li><strong>Prosperity:</strong> Following practices grounded in good governance, resilience and shared equity.</li>
+						</ul>
+					</blockquote>
+					<p>Web Sustainability Guidelines (WSG) explore how to make web products and services more sustainable for <strong>the planet, people, and prosperity</strong>. Web sustainability is about more than strictly environmental concerns, as factors such as <strong>accessibility, internationalization, privacy, and security</strong> will influence the long-term viability of a project. These principles should always be observed without compromise in the pursuit of web sustainability.</p>
+					<div class="note">WSG was originally developed by the <a href="https://www.w3.org/community/sustyweb/">Sustainable Web Design Community Group</a>. From April 2022, over 100 experts contributed to the first draft, which was refined through GitHub and regular meetings. In October 2024, the group and its work became part of W3C.</div>
+				</section>
+				<section> <!-- The importance of web sustainability -->
+					<h4>The importance of web sustainability</h4>
+					<ul>
+						<li>Internet-related emissions now surpass those of the <strong>aviation industry</strong>, making web sustainability a critical lever for climate action. [[ICT-IMPACT]] [[COMMS]] [[SHIFT]]</li>
+						<li><strong>Seven of nine planetary boundaries</strong> <a href="https://earthcommission.org/planetary-health-check-7-of-9-boundaries-breached/">have been crossed</a>, with Internet-related technologies accelerating these overshoots. WSG provides a framework to <strong>reverse this trend</strong> through measurable, evidence-based practices.</li>
+						<li>The integration of <a href="https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai">emerging technologies</a> such as <strong>artificial intelligence</strong> can <a href="https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/">significantly increase</a> digital resource consumption, highlighting the need to consider sustainability when developing and deploying new web capabilities.</li>
+						<li>Digital impact scales with size: Larger websites and online resources have greater sustainability challenges, but also more opportunities to implement changes. Unlike other infrastructure, the web lends itself to agile and iterative improvement.</li>
+					</ul>
+				</section>
+				<section> <!-- Sustainability considerations -->
+					<h4>Sustainability considerations</h4>
+					<p>Web sustainability requires systems thinking and cross-functional collaboration. Digital services operate within complex environmental, social, and economic systems, meaning decisions made in one area may influence outcomes in others. Consideration of interdependencies can help to avoid unintended consequences and identify opportunities.</p>
+					<p>While these guidelines promote web sustainability across multiple areas, they <strong>do not cover all possible environmental improvements</strong>, methods or strategies. Web sustainability is an evolving field, and gaps in research or established best practices may exist. Always explore additional approaches that may better suit the context.</p>
+					<p>WSG focuses on web technologies, but just like the web is connected to almost everything we do, WSG also examines less obvious details that impact web sustainability, even if their relationship to digital services and the web may seem tenuous at first glance. Organizations should consider these broader impacts when setting targets, reporting, and ensuring compliance with regulations.</p>
+				</section>
 			</section>
-			<section> <!-- Layers -->
+			<section> <!-- WSG layers of guidance -->
 				<h3>WSG layers of guidance</h3>
-				<p>The individuals and organizations that use WSG vary widely. To meet the varying needs of this audience, several layers of guidance are provided, including overarching <em>guidelines</em>, <em>success criteria</em>, and <em>additional information</em>.</p>
+				<p>WSG is designed for a diverse audience, including developers, designers, policymakers, and more. It provides multiple layers of guidance to address different needs.</p>
 				<ul>
-					<li><strong>Guidelines</strong>: The foundation of WSG is comprised of guidelines. These guidelines provide the overarching goals that implementers should work toward to make products and services more sustainable. The guidelines provide the framework and overall objectives to help implementers understand the success criteria against which they are testable, and to implement better digital solutions.</li>
-					<li><strong>Success Criteria</strong>: For each guideline, success criteria are provided as achievable statements to fulfill. Impact ratings, where available are also included to assist with decision making. Links to supporting resources are also provided.</li>
-					<li><strong>Additional Information</strong>: These guidelines come with examples, where possible, to showcase how a success criteria within a guideline could be addressed. Tags are also provided in order to help individuals and tooling identify the relationships that occur between our material and particular groups.</li>
+					<li><strong>Guidelines:</strong> High-level goals.</li>
+					<li><strong>Success Criteria:</strong> Actionable statements with impact ratings (where available) and supporting resources.</li>
+					<li><strong>Additional Information:</strong> Examples to illustrate how success criteria can be met. Reporting provides <abbr title="Global Reporting Initiative">GRI</abbr>-based scores at the guideline level to track web sustainability performance. Tags help people and tools identify relationships between the guidelines and specific groups.</li>
 				</ul>
-				<p>All of these layers of guidance (guidelines, success criteria, and additional information) work together to guide how to make projects more sustainable. Implementers are encouraged to view and apply all layers that they are able to, to make their project as sustainable as it can become.</p>
-				<p>While great care has been taken to make these guidelines as well-rounded and feature-complete as possible, there will likely be additional tasks implementers can perform to improve sustainability that this specification has failed to address.</p>
-				<div class="note">
-					<p>This specification offers interactivity. You can filter and see only the success criteria that apply to your interests/choices by selecting the <strong>filter</strong> button in the Table of Contents of the WSG. Your choices will reveal themselves upon selecting from the categories and checkboxes.</p>
-					<p>Most of the filters align to content you will find within the specification such as machine testability, GRI within Addtional Information (material, energy, water, and emission levels) and tags (considerations and categories), however, for standards, those listed and mentioned within <a href="#relationships">relationships</a> note specifications and other bodies work, cross-referenced within our <a href="https://w3c.github.io/sustainableweb-wsg/resources.html">resources</a> document.</p>
-				</div>
+				<p>Together, these layers provide a structured approach similar to other W3C guidelines and help implementers create more sustainable projects. Guidelines describe web sustainability goals, success criteria define measurable expectations, and additional information provides context and examples to support implementation.</p>
+				<p>Web Sustainability Guidelines (WSG) are organized into four categories, reflecting different roles involved in digital services and the web. <strong>Readers should review all sections</strong>, even those not nominally related to their assumed responsibilities. This is important, as some Success Criteria have relevance outside their assigned category. While WSG is comprehensive, additional web sustainability improvements exist outside the scope of these guidelines.</p>
+				<p class="note">This interactive specification lets you filter success criteria by interest; standards listed in <a href="#relationships">relationships</a> are available as filters and are cross-referenced in the resources document.</p>
 			</section>
-			<section class="measurability"> <!-- Measurability -->
-				<h3>Measurability</h3>
-				<p>The Web Sustainability Guidelines take the role of data and measurement seriously. All success criteria are evidence and best-practice backed, where possible through materials available in the <a href="https://w3c.github.io/sustainableweb-wsg/resources.html">resources document</a>.</p>
-				<p>Alongside supporting evidence, the Interest Group <span id="api-status">will offer</span> a JSON API that integrates live sustainability impact scores within this specification. Methods of calculating impact alongside details of the scope of measurability, limitations, and labels used to showcase scores <span id="api-status2">will be available once the Task Force concludes their work</span>. Available scores will be visible alongside success criteria and be updated by the Interest Group as appropriate.</p>
-				<div id="reporting" class="ednote">
-					<p>WSG provides a crude reporting metric for reporting and compliance purposes based on the Global Reporting Initiative (<abbr title="Global Reporting Initiative">GRI</abbr>). An open source <a href="https://w3c.github.io/sustainableweb-wsg/GRI.ipynb">Jupyter Notebook</a> was created. As an input, it takes a spreadsheet containing all the guidelines and (using low, medium, or high) their indicators of impact on the reduction of server resource usage, network transfer, and end-user device usage. Then it takes data from a GreenIT Report [[FOOTPRINT]] which estimates the environmental impact of the mentioned categories across material use, water use, energy use, and <abbr title="Greenhouse Gas">GHG</abbr> emissions. It then combines these datasets and estimates the comparative impact of a given recommendation on different sections of GRI taxonomy.</p>
-					<dl class="rating">
-						<dt>Low</dt><dd>This will have a minimal impact within a particular category.</dd>
-						<dt>Medium</dt><dd>This will have an impact worthy of consideration within a particular category.</dd>
-						<dt>High</dt><dd>This will have a considerable impact within a particular category.</dd>
-					</dl>
-					<p>When the JSON API with more accurate scores weighted against the GRI is published, the existing reporting metrics will be deprecated and replaced. Until then, existing content may remain in the additional information.</p>
-				</div>
+			<section> <!-- Testing and metrics -->
+				<h3>Testing and metrics</h3>
+				<p>WSG is designed to be <strong>testable</strong> through automated tools and human evaluation. It applies to a wide range of web technologies and was developed with input from global experts.</p>
+				<p>WSG emphasizes <strong>data-driven decision-making</strong>. Success criteria are backed by evidence and best practices, with supporting materials available in the <a href="https://w3c.github.io/sustainableweb-wsg/resources.html">resources document</a>.</p>
+				<section> <!-- Challenges in measurement -->
+					<h4>Challenges in measurement</h4>
+					<ul>
+						<li><strong>Data gaps</strong> exist across the Internet stack. For example, energy use data for servers, networks, and devices is often incomplete.</li>
+						<li><strong>Systemic interdependencies</strong> reate butterfly effects, whereby actions in one area may impact others. For example, deploying energy-efficient hardware may reduce energy consumption and have the side-benefit of local noise reduction, but that hardware must be manufactured, and that in turn necessitates the mining of rare earth metals.</li>
+						<li><strong>Carbon tunnel vision</strong> leads to prioritization of energy emissions over material waste, e-waste, and water use, or the planet over the people and prosperity aspects of PPP.</li>
+						<li><strong>Environmental impact is rarely all or nothing.</strong> Implementers should do what they can and mitigate remaining negative impacts to improve their overall impact.</li>
+					</ul>
+					<p>Environmental impacts associated with digital services <strong>extend beyond energy consumption and greenhouse gas (<abbr title="Greenhouse Gas">GHG</abbr>) emissions</strong>. Material use, electronic waste, water consumption, and chemical pollution associated with digital infrastructure should also be considered wherever the data and methodologies are available [[VARIABLES]].</p>
+					<p>Web sustainability improvements <strong>can involve trade-offs</strong>. For example, actions that reduce water use may increase energy demand, while performance optimizations may influence accessibility or device compatibility. Implementers should evaluate potential trade-offs carefully to ensure improvements in one area do not unintentionally cause harm in another.</p>
+				</section>
+				<section> <!-- Impact and reporting -->
+					<h4>Impact and reporting</h4>
+					<p>WSG provides a basic reporting metric based on the Global Reporting Initiative ([[GRI]]) to support web sustainability tracking and compliance. An open-source <a href="https://w3c.github.io/sustainableweb-wsg/GRI.ipynb">Jupyter Notebook</a> combines two inputs: a spreadsheet of guidelines with low, medium, or high impact ratings for server resources, network transfer, and end-user devices; and data from the GreenIT Report [[FOOTPRINT]] estimating environmental impacts across material use, water use, energy use, and greenhouse gas emissions. The notebook produces estimates of each guideline's comparative impact on the relevant GRI taxonomy sections.</p>
+					<p id="reporting" class="overflowFix">GRI impact ratings:</p>
+					<ul>
+						<li><strong>Low:</strong> This will have a minimal impact within a particular category.</li>
+						<li><strong>Medium:</strong> This will have an impact worthy of consideration within a particular category.</li>
+						<li><strong>High:</strong> This will have a considerable impact within a particular category.</li>
+					</ul>
+					<p class="ednote">A <strong>JSON API</strong> will provide web sustainability impact scores, including details on scope, limitations, and labels. It will replace the existing reporting GRI metrics, which will continue to appear in the "additional information" sections until the JSON API is available.</p>
+				</section>
+				<section> <!-- Call to action -->
+					<h4>Call to action</h4>
+					<p class="overflowFix">Web Sustainability Guidelines relies on multiple implementors:</p>
+					<ul>
+						<li>Authors (e.g., designers, developers, writers, decision-makers).</li>
+						<li>User agents (e.g., browsers).</li>
+						<li>Authoring tools.</li>
+					</ul>
+					<p>Examples of their impact include rendering performance and accurate measurement of energy use through developer tooling. Authoring tools also support web sustainability by producing efficient code, reducing waste, and delivering results in the most sustainable way possible.</p>
+					<p class="note">Tools or user agents that provide WSG insights <strong>must avoid fingerprinting risks</strong>. For example, tracking users via unique identifiers, scores, or patterns. Energy metrics should be aggregated to avoid identifying individual users.</p>
+					<p>Beyond this, web sustainability requires <strong>champions across all roles</strong>:</p>
+					<ul>
+						<li><strong>Individuals:</strong> Advocate for web sustainability, educate peers, and start small.</li>
+						<li><strong>Designers/Developers:</strong> Prioritize accessibility, security, privacy, internationalization, performance, and low-carbon infrastructure.</li>
+						<li><strong>Browsers/Hardware Vendors:</strong> Optimize efficiency, adopt circular economy practices, and ensure operations and supply chains avoid exploitative, unsustainable, or unsafe practices.</li>
+						<li><strong>Regulators:</strong> Embed digital sustainability into climate policies and reduction targets.</li>
+					</ul>
+					<p>As research, technologies, and web sustainability practices evolve, WSG will continue to be updated. <a href="https://github.com/w3c/sustainableweb-wsg/">Contribute via GitHub</a> to help ensure the guidance reflects current knowledge and practical implementation experience.</p>
+				</section>
 			</section>
-			<section class="override" id="conformance"> <!-- Conformance -->
+			<section> <!-- Conformance -->
 				<h3>Conformance</h3>
-				<p>This section lists requirements for conformance to WSG. It also provides information about how to make optional conformance claims. Finally, it describes greenwashing and cautionary notes when claiming conformance to WSG.</p>
-				<div id="conflicts" class="note">
-					<p>In cases where WSG guidance conflicts with recommendations made by another standard or requirement, the following best practice steps are advised:</p>
-					<ol>
-						<li>Determine if the WSG guideline or success criterion in question has enough scope or allowance a different solution to achieve the same result, without compromising sustainability, thereby meeting both compliance obligations.</li>
-						<li>If a conflict exists and there is a risk of compromise, determine the risks associated (inclusive of compliance, your audience, and further impacts):<ol>
-							<li>If the sustainability associated risks are lower than those of the conflicting recommendation, follow that recommendation as the justification to meet it will be greater.</li>
-							<li>If the sustainability associated risks are higher than those of the conflicting recommendation, follow WSG guidance unless it conflicts with or is underpinned by that of a higher authority such as legislation.</li>
-						</ol></li>
-					</ol>
-				</div>
+				<p>This section defines requirements for conformance to WSG, including optional conformance claims and guidance to avoid greenwashing.</p>
 				<section> <!-- Requirements -->
-					<h4>Conformance requirements</h4>
-					<p>WSG is robustly built so that it can be implemented over time, in a non-specific order, and each success criteria will provide some measurable sustainability benefit. As such, conformance is measured upon the implementation of each guideline (and all of its success criteria being met) across the whole project.</p>
-					<p>To declare conformance to an individual guideline, all of the success criteria of that guideline must be met. In cases where success criteria do not apply to a situation or cannot be applied, partial conformance should still be declared, but declaring of passing individual success criteria may be more suitable to showcase conformity.</p>
-					<p class="note">Total conformance is achieved by meeting every success criteria for every guideline within the specification. As a general policy, most products and services will not likely be able to satisfy all success criteria. This could be as a result of time commitments, or because certain guidelines and success criteria simply do not apply to your project. In these situations, it is not recommended that implementers prioritize conformance over other important features such as security updates. Pragmatism and <strong>progress over perfection</strong> should be considered paramount when implementing and conforming to these guidelines.</p>
+					<h4>Requirements</h4>
+					<p>Conformance to WSG, either partially or in full, means a specific set of WSG criteria is fulfilled. Conformance with WSG can be established for success criteria, guidelines, sections (role-based), or the entire specification.</p>
+					<h5 class="notoc">Partial conformance on the success criterion level</h5>
+					<p>A digital product or service conforms to a specific success criterion when it meets the requirements in that success criterion.</p>
+					<h5 class="notoc">Partial conformance on the guideline level</h5>
+					<p>A digital product or service conforms to an individual guideline when it meets all of the success criteria in that guideline. If a success criterion cannot be applied, it does not affect conformance of that guideline.</p>
+					<p class="note">A success criterion may not be applicable, for example, it may relate to video content and the product or service being evaluated does not include video.</p>
+					<h5 class="notoc">Partial conformance on the section level</h5>
+					<p>Section-level (role-based) conformance can be achieved by conforming to all guidelines within one section. For example, if all guidelines in the Web Development section are met, the website or organization is considered partially conformant for that section.</p>
+					<p class="overflowFix">These are called:</p>
+					<ul>
+						<li>Partially conformant: UX</li>
+						<li>Partially conformant: Web Development</li>
+						<li>Partially conformant: Hosting and Infrastructure</li>
+						<li>Partially conformant: Business and Product</li>
+					</ul>
+					<h5 class="notoc overflowFix">Full conformance</h5>
+					<p>A digital product or service fully conforms to WSG when it meets all success criteria across all guidelines.</p>
+					<p class="note">Full conformance may not be achievable for all products or services. Pragmatism and progress over perfection should be considered paramount when implementing and following these guidelines.</p>
 				</section>
 				<section> <!-- Claims -->
-					<h4>Conformance claims</h4>
-					<p>Conformance claims are <strong>not required</strong>. Implementers can conform to WSG without making a claim. If a conformance claim is made, then the conformance claim <strong>must</strong> include the following information:</p>
+					<h4>Claims</h4>
+					<p class="overflowFix">Conformance claims are <strong>optional</strong>. If made, they <strong>must</strong> include:</p>
 					<ol>
 						<li><strong>Date</strong> of the claim.</li>
-						<li><strong>Guidelines title, and <abbr title="Uniform Resource Identifier">URI</abbr></strong> "Web Sustainability Guidelines at <a href="https://www.w3.org/TR/web-sustainability-guidelines/">https://www.w3.org/TR/web-sustainability-guidelines/</a>".</li>
-						<li><strong>Conformance</strong>: A concise description of sustainability commitments and a list of the guidelines and/or success criteria adhered to.</li>
-						<li><strong>Other</strong>: In addition to the required components of a conformance claim above, provide additional information to assist users, such as additional steps taken (beyond the specification) to improve sustainability or statistics (metrics) that show the effect of changes that have already been made.</li>
+						<li><strong>Guidelines title and URI:</strong> "Web Sustainability Guidelines at <a href="https://www.w3.org/TR/web-sustainability-guidelines/">https://www.w3.org/TR/web-sustainability-guidelines/</a>".</li>
+						<li><strong>Conformance details:</strong> A list of the success criteria, guidelines and/or sections in WSG that are met.</li>
 					</ol>
-					<p class="note">Recording conformance claims within a sustainability statement may be helpful as a method of proving that you are meeting sustainability reduction targets, such as for internal scope accounting or meeting regulatory requirements.</p>
-				</section>
-				<section id="greenwashing"><!-- Greenwashing -->
-					<h4>Greenwashing</h4>
-					<p>In the field of sustainability, greenwashing (misappropriation or deliberately misinterpreting our work to appear greener than you are) is a very real threat. Within other fields of the tech industry, such as web accessibility, false claims can lead to harm to users. In sustainability, harm can occur not only to users of a product or service but also to the wider ecosystem.</p>
-					<p>As such, with claims of conformance, we advise consumers and implementers to do the following:</p>
+					<p>Implementers can conform to WSG <strong>without</strong> making a claim.</p>
+					<p>In addition to the conformance claim itself, it can be helpful to include:</p>
 					<ul>
-						<li>Do not claim the Web Sustainability Guidelines as a mark of total sustainability, as there will always be gaps in this document's coverage.</li>
-						<li>Only make claims that you can provide evidence for and provide easy access to such evidence.</li>
-						<li>If you come across an organization or individual making claims regarding the WSG that appear unlikely or untrue, request that the claims be justified, rectified, or removed.</li>
+						<li>A <strong>statement of intent</strong> of which standards and regulations you commit to complying with.</li>
+						<li>Additional information is provided to assist users, including <strong>steps taken beyond this specification</strong> to improve web sustainability and metrics <strong>showing the impact</strong> of changes, <strong>with dates or time periods</strong> for any supporting data clearly stated.</li>
+					</ul>
+					<div class="note">
+						<p>Recording claims and supporting evidence in a sustainability statement can help demonstrate compliance with reduction targets, internal scope accounting, or regulations.</p>
+						<p>Using these guidelines can help organizations to better align with existing and emerging <a href="https://w3c.github.io/sustainableweb-wsg/policies.html">laws, policies, and reporting schemes</a> related to environmental and sustainability practices. They do not guarantee full compliance and should be applied alongside applicable legal and regulatory requirements.</p>
+					</div>
+				</section>
+				<section> <!-- Greenwashing -->
+					<h4>Greenwashing</h4>
+					<p><strong>Greenwashing</strong> is misleading the public to believe that a company or other entity is doing more to protect the environment than it is. False claims are acknowledged to potentially harm users in other fields. In sustainability, harm arising from this threat vector can impact not only users of a product or service, but also to the wider ecosystem and society.</p>
+					<p>To avoid this:</p>
+					<ul>
+						<li>Do not claim WSG conformance as evidence of achieving total sustainability, as there will always be gaps in this document's coverage.</li>
+						<li>Avoid presenting partial improvements as evidence of achieving sustainability.</li>
+						<li>Communicate sustainability efforts transparently, only making verifiable claims alongside supporting evidence.</li>
 					</ul>
 				</section>
 			</section>
 			<section> <!-- Relationships -->
-				<h4>Relationships</h4>
+				<h3>Relationships</h3>
 				<div class="note">
-					<p>The body of work and landscape WSG builds on is constantly evolving. Some, typically referred to as "living" or "evergreen" standards, are subject to change frequently, and their impact on this publication's validity may be immediate. Others are updated less regularly, and the changes may not affect WSG publications until a new revision is issued.</p>
-					<p>In all cases, it is therefore prudent that implementors should regularly ensure that best practices have not changed due to new research or data and that any tooling they are using is frequently updated to account for compliance changes occurring as a result of more weighty evidence and guidance.</p>
+					<p>The guidelines and standards that WSG is based on are always changing. Some, called "living" or "evergreen" standards, update often and could quickly affect how relevant this document is. Others update less often, so changes might not impact WSG until a new version comes out.</p>
+					<p>Because of this, anyone using WSG should regularly check for updates to best practices based on new research or data. They should also make sure their tools are up to date to stay compliant with the latest guidance.</p>
 				</div>
-				<dl>
-					<dt>Relationship to <abbr title="Association Française de Normalisation">AFNOR</abbr></dt>
-					<dd>Association Française de Normalisation is a Paris-based standards organization and a member body for France at the International Organization for Standardization. WSG directly references the <a href="https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315">AFNOR SPEC 2201</a> document, where guidelines may have relatable sustainability associations.</dd>
-					<dt>Relationship to <abbr title="Autorité de Régulation des Communications Électroniques, des Postes et de la Distribution de la Presse">ARCEP</abbr></dt>
-					<dd>The Autorité de Régulation des Communications Électroniques, des Postes et de la Distribution de la Presse is the regulatory authority for telecommunications in France. Explicit comparison notes from guidelines that match (for compliance purposes), pointing to the <a href="https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf">General Policy Framework for the Ecodesign of Digital Services</a> inside each WSG relevant guideline reference section, have been provided.</dd>
-					<dt>Relationship to AWS and Microsoft Azure <abbr title="Well-Architected Framework">WAF</abbr></dt>
-					<dd><a href="https://docs.aws.amazon.com/wellarchitected/">Amazon</a> and <a href="https://learn.microsoft.com/en-us/azure/well-architected/">Microsoft Azure</a> both provide a Well-Architected Framework offering a set of best practices that help protect digital products from consuming excessive resources. Where sustainability measures match the evidence and guidelines within the WSG, cross-links have been placed within guideline resources.</dd>
-					<dt>Relationship to Ethical Principles for Web Machine Learning</dt>
-					<dd>The W3C Ethical Principles for Web Machine Learning [[webmachinelearning-ethics]] discusses ethical issues associated with using Machine Learning and outlines considerations for web technologies that enable related use cases. As Artificial Intelligence and related technologies play a key role in digital sustainability, guidance relating to the subjects underpinned by this resource can be found throughout WSG.</dd>
-					<dt>Relationship to Ethical Web Principles</dt>
-					<dd>The W3C Ethical Web Principles sets out ethical principles that the W3C are working towards [[ethical-web-principles]]. Within the document is a principle (2.9) "The web is an environmentally sustainable platform", this aligns with the message with the WSG and what the guidelines strive to achieve.</dd>
-					<dt>Relationship to <abbr title="Handbook of Sustainable Design of Digital Services">GR491</abbr></dt>
-					<dd>The Handbook of Sustainable Design of Digital Services (also known as <a href="https://gr491.isit-europe.org/en/">GR491</a>) is a series of sustainability best practices, published by the Institute for Sustainable <abbr title="Information Technology">IT</abbr>. Like many other best practice guides, where matching compliance targets can be found to the WSG guidelines and success criteria, cross-links in the resources section have been provided.</dd>
-					<dt>Relationship to GreenIT</dt>
-					<dd>The <a href="https://rweb.greenit.fr/en">GreenIT</a> Best practice guidelines for web eco-design project is an open source French collaboration to provide meaningful goals to reduce a digital carbon footprint. As there are many parallels between WSG and the open source GreenIT project, guideline references note prior work from this project where it exists.</dd>
-					<dt>Relationship to GRI</dt>
-					<dd>The Global Reporting Initiative is an international, independent standards organization that helps organizations and individuals understand and communicate their sustainability impact. As denoted in [[[#additional-information]]], WSG provides metrics relating to <a href="https://www.globalreporting.org/standards/">GRI Standards</a> to offer more targeted guidance for regulatory compliance goals. As our measurability improves, our results are subject to change.</dd>
-					<dt>Relationship to <abbr title="Center for Democracy and Technology">CDT</abbr> Human Rights and Technical Standard-Setting for the Web</dt>
-					<dd>The CDT Human Rights and Technical Standard-Setting for the Web specification talks about the importance of being considerate of peoples human rights when writing specifications [[HR-Spec]]. While an unofficial document, it has a good ethical point and the subjects held in high importance (such as accessibility, internationalization, privacy, and security) are considered throughout the development of WSG as having an ESG impact.</dd>
-					<dt>Relationship to Mitigating Browser Fingerprinting in Web Specifications</dt>
-					<dd>W3C Mitigating Browser Fingerprinting in Web Specifications defines types of fingerprinting and considers how to mitigate the related privacy risks [[fingerprinting-guidance]]. Because WSG contains several guidelines that can benefit sustainability but there may be considerations that fall into the scope of this field, the user impact is being carefully considered.</dd>
-					<dt>Relationship to OpQuast</dt>
-					<dd>OpQuast is a quality assurance provider that offers checklists for things through their <a href="https://checklists.opquast.com/en/digital-quality/">Digital Quality Framework</a>. While many of the improvements noted fall out of the sustainability scope, several directly relate to WSG success criteria or may impact guidelines as a secondary effect and should be considered. As this list is comprehensive, items deemed of consequence are noted in the resources section for relevant guidelines.</dd>
-					<dt>Relationship to Privacy Principles</dt>
-					<dd>W3C Privacy Principles provides definitions for privacy and related concepts that are applicable worldwide as well as a set of privacy principles that should guide the development of the web as a trustworthy platform [[privacy-principles]]. Because several WSG guidelines and success criteria <a href="#privacy">have privacy considerations</a>, also connecting <a href="#security">into security considerations</a>, impacts (either to people or the planet) are considered.</dd>
-					<dt>Relationship to <abbr title="Sustainable Development Goals">SDGs</abbr></dt>
-					<dd>In 2015, the United Nations Member States, as a result of the 2030 Agenda for Sustainable Development created the <a href="https://sdgs.un.org/goals">Sustainable Development Goals</a>. While some of these goals are notably difficult to achieve by individual action, wherever digital/web technology interconnects with an explicit SDG target (and WSG could help shift towards compliance), the SDG target is noted within the references for each guideline.</dd>
-					<dt>Relationship to Web Content Accessibility Guidelines (WCAG)</dt>
-					<dd>Web Content Accessibility Guidelines ([[WCAG]]) provides recommendations for making web content more accessible. WSG works in alignment with WCAG, also <a href="#accessibility">highlighting</a> the natural relationships between sustainability and accessibility. Conflicts between WCAG and WSG are unlikely by nature, but where apparent, should be assessed according to the <a href="#conflicts">conformance note</a>.</dd>
-					<dt>Relationship to Web Platform Design Principles</dt>
-					<dd>W3C Web Platform Design Principles contains a set of design principles to be used when designing web platform technologies [[design-principles]]. The WSG took it's recommendations into consideration to encourage and embed the methodology of using best practices when implementing sustainable solutions.</dd>
-				</dl>
+				<section> <!-- W3C specifications -->
+					<h4>W3C specifications</h4>
+					<dl>
+						<dt>Relationship to Ethical Principles for Web Machine Learning [[webmachinelearning-ethics]]</dt>
+						<dd>This W3C document addresses ethical considerations for using machine learning on the web. WSG integrates these principles to ensure <a href="https://www.w3.org/TR/web-sustainability-guidelines/?filter=ai">AI</a> addresses sustainable and responsible digital practices.</dd>
+						<dt>Relationship to Ethical Web Principles [[ethical-web-principles]]</dt>
+						<dd>This W3C document outlines ethical principles for the web, including Principle 2.9, which states "The web is an environmentally sustainable platform." WSG aligns with this principle to promote sustainability in digital practices.</dd>
+						<dt>Relationship to Mitigating Browser Fingerprinting [[fingerprinting-guidance]]</dt>
+						<dd>This W3C document defines types of browser fingerprinting and ways to mitigate privacy risks. WSG ensures web sustainability efforts respect user privacy and data protection in line with these guidelines.</dd>
+						<dt>Relationship to Privacy Principles [[privacy-principles]]</dt>
+						<dd>This W3C document provides privacy principles to guide the development of the web as a trustworthy platform. WSG connects <a href="#privacy">privacy</a>, <a href="#security">security</a>, and web sustainability to create responsible digital practices.</dd>
+						<dt>Relationship to Web Content Accessibility Guidelines (WCAG)</dt>
+						<dd>[[WCAG]] provides recommendations for making web content more accessible. WSG aligns with WCAG to ensure digital experiences are both <a href="#accessibility">accessible</a> and sustainable. Conflicts between WCAG and WSG are unlikely by nature, but where apparent, should be assessed according to the <a href="#conflicts">conformance note</a>.</dd>
+						<dt>Relationship to Web Platform Design Principles [[design-principles]]</dt>
+						<dd>This W3C document contains design principles for web platform technologies. WSG incorporates these principles to advance sustainable best practices.</dd>
+					</dl>
+				</section>
+				<section> <!-- Other standards -->
+					<h4>Other standards</h4>
+					<dl>
+						<dt>Relationship to Global Reporting Initiative (GRI)</dt>
+						<dd>[[GRI]] provides the world's most widely used <a href="https://www.globalreporting.org/standards/">standards</a> for web sustainability reporting. WSG provides GRI-aligned metrics to support transparency and compliance in sustainability reporting, with data evolving as measurability improves.</dd>
+					</dl>
+				</section>
+				<section> <!-- Best practices -->
+					<h4>Best practices</h4>
+					<dl>
+						<dt>Relationship to AFNOR (Association Française de Normalisation)</dt>
+						<dd><a href="https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315">AFNOR SPEC 2201</a> provides guidelines for web sustainability in digital practices. WSG references this document to align with recognized sustainability frameworks.</dd>
+						<dt>Relationship to ARCEP (Autorité de Régulation des Communications Électroniques, des Postes et de la Distribution de la Presse)</dt>
+						<dd>The <a href="https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf">General Policy Framework for the Ecodesign of Digital Services</a> provides guidelines for sustainable digital service design. WSG aligns with this framework to assist with compliance and sustainability in digital practices.</dd>
+						<dt>Relationship to Amazon Web Services (AWS) and Microsoft Azure  Well-Architected Frameworks</dt>
+						<dd>The <a href="https://docs.aws.amazon.com/wellarchitected/">AWS</a> and <a href="https://learn.microsoft.com/en-us/azure/well-architected/">Azure</a> Well-Architected Frameworks provide best practices for optimizing digital resources. WSG cross-references these frameworks where web sustainability goals overlap with resource efficiency and responsible cloud usage.</dd>
+						<dt>Relationship to Center for Democracy & Technology (CDT)</dt>
+						<dd>Human Rights and Technical Standard-Setting for the Web [[HR-Spec]] emphasizes the importance of human rights in web standards, including accessibility, privacy, internationalization, and security. WSG integrates these principles to ensure digital practices are both sustainable and ethically responsible.</dd>
+						<dt>Relationship to GR491 (Handbook of Sustainable Digital Design)</dt>
+						<dd>Published by the Institute for Sustainable IT, <a href="https://gr491.isit-europe.org/en/">GR491</a> is a handbook of best practices for sustainable digital services. WSG cross-references this handbook to incorporate proven web sustainability strategies.</dd>
+						<dt>Relationship to GreenIT</dt>
+						<dd>An open-source initiative providing guidelines to reduce the digital carbon footprint. WSG adopts GreenIT's <a href="https://rweb.greenit.fr/en">best practice guidelines for web eco-design</a> recommendations to promote sustainable IT practices.</dd>
+						<dt>Relationship to OpQuast</dt>
+						<dd>A quality assurance provider offering checklists for digital quality through its <a href="https://checklists.opquast.com/en/digital-quality/">Digital Quality Framework</a> WSG aligns with OpQuast's guidelines to enhance performance and resource efficiency for web sustainability.</dd>
+						<dt>Relationship to United Nations (UN) Sustainable Development Goals (SDGs)</dt>
+						<dd>The <a href="https://sdgs.un.org/goals">UN's SDGs</a> are global targets for sustainable change. WSG maps digital practices to relevant SDG targets to contribute to broader sustainability efforts.</dd>
+					</dl>
+				</section>
+				<p id="conflicts" class="note">When WSG guidance conflicts with those in other documents, first check whether an alternative solution can meet both web sustainability and compliance obligations. If a conflict remains, assess risks: following the recommendation with lower sustainability risks unless WSG is overridden by higher authority, such as legislation.</p>
 			</section>
-			<section> <!-- Supporting -->
+			<section> <!-- WSG supporting documents -->
 				<h3>WSG supporting documents</h3>
-				<p>The WSG document is designed to meet the needs of those who need a stable, referenceable technical specification. Other documents, called supporting documents, are based on this document and address other important purposes, including techniques regarding implementation strategies, guiding implementors through the guidelines that apply to their use case, and how WSG would be applied to new technologies. Supporting documents include:</p>
+				<p>WSG specification provides a stable, referenceable foundation. Supporting documents expand on it with implementation guidance, methodologies, and strategies for working with new technologies. Supporting documents include:</p>
 				<ul>
-					<li><a href="https://w3c.github.io/sustainableweb-wsg/star.html"><strong>Sustainable Tooling And Reporting (STAR)</strong></a> - Implementation advice for specification writers covering sustainability, alongside an evaluation methodology for testing sustainability within a workflow, and a collection of techniques, each with its own implementation test from our test suite.</li>
-					<li><a href="https://w3c.github.io/sustainableweb-wsg/resources.html"><strong>Resources for WSG</strong></a> - A collection of citations, evidence-based research, academic papers, useful articles, implementations, and tools, all relating to digital sustainability, categorized by WSG Success Criteria.</li>
-					<li><a href="https://w3c.github.io/sustainableweb-wsg/policies.html"><strong>Web Sustainability Laws and Policies</strong></a> - A guide to the laws, policies, directives, standards, and best practices that have coverage in the web sustainability sector.</li>
-					<li><a href="https://w3c.github.io/sustainableweb-wsg/benefits.html"><strong>Benefits for WSG</strong></a> - These guidelines come with a list of benefits across a range of different categories to justify the adoption of success criteria with clients, colleagues, and leadership.</li>
-					<li><a href="https://w3c.github.io/sustainableweb-wsg/summary.html"><strong>Summary of Web Sustainability</strong></a> - A guide summarizing the subject of <a>web sustainability</a> and how the WSG can be useful in addressing this concern, including some useful educational resources to learn more.</li>
-					<li><a href="https://w3c.github.io/sustainableweb-wsg/glance.html"><strong>WSG at a Glance</strong></a> - A brief overview of the WSG and its contents, including some highlights chosen by members of the Interest Group from the WSG.</li>
-					<li><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html"><strong>Quick Reference for WSG</strong></a> - A quick reference to the WSG containing a print-friendly checklist for ease of working through the guidelines.</li>
+					<li><strong><a href="https://w3c.github.io/sustainableweb-wsg/star.html">Sustainable Tooling And Reporting (STAR)</a></strong> - Implementation guidance for specification writers on sustainability, including an evaluation methodology for assessing sustainability within workflows. It also features a collection of techniques, each with its own implementation test from the test suite.</li>
+					<li><strong><a href="https://w3c.github.io/sustainableweb-wsg/resources.html">Resources for WSG</a></strong> - Resources - A curated collection of citations, evidence-based research, academic papers, articles, implementations, and tools related to digital sustainability, categorized by WSG success criteria.</li>
+					<li><strong><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws and Policies</a></strong> - A guide to laws, policies, directives, standards, and best practices relevant to the web sustainability sector.</li>
+					<li><strong><a href="https://w3c.github.io/sustainableweb-wsg/benefits.html">Benefits for WSG</a></strong> - These guidelines include a list of benefits across various categories to help justify the adoption of success criteria with clients, colleagues, and leadership.</li>
+					<li><strong><a href="https://w3c.github.io/sustainableweb-wsg/summary.html">Summary of Web Sustainability</a></strong> - A guide summarizing the topic of web sustainability and how WSG can address these concerns, along with educational resources for further learning.</li>
+					<li><strong><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG at a Glance</a></strong> - A concise overview of WSG and its contents, featuring highlights selected by members of the Interest Group.</li>
+					<li><strong><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">Quick Reference for WSG</a></strong> - A quick-reference guide to WSG, including a print-friendly checklist for easy navigation through the guidelines.</li>
 				</ul>
-				<p>See the Interest Groups <a href="https://github.com/w3c/sustainableweb-ig/">GitHub repository</a> for further supporting materials, including education resources relating to WSG. Additional resources covering topics such as tooling may also be noted on a case-by-case basis.</p>
+				<p>For more, see the <a href="https://github.com/w3c/sustainableweb-ig/">W3C Sustainable Web Interest Group GitHub</a> for educational resources related to WSG; other resources, such as tooling, may be referenced as needed.</p>
 			</section>
 		</section>
 		<section> <!-- User Experience Design -->
 			<h2>User Experience Design</h2>
 			<p><strong>If you are creating content and systems designed for users, then whether you know it or not, you are working in user experience (<abbr title="User Experience">UX</abbr>).</strong></p>
-			<p>Good user experience reduces time and resources wasted on the journey. Poor user experience does the opposite, often also harming accessibility. Meanwhile, visual design choices and how we present information can have some of the biggest impacts on asset size, performance, and overall <a>web sustainability</a>.</p>
+			<p>Good user experience reduces time and resources wasted on the journey. Poor user experience does the opposite, often also harming accessibility. Meanwhile, visual design choices and how we present information can have some of the biggest impacts on asset size, performance, and overall web sustainability.</p>
 			<p>Goals include:</p>
 			<ul>
 				<li>Identify and regularly audit product, user, and user needs and the related impacts.</li>
@@ -3936,10 +4042,6 @@
 				<dt>Normative</dt>
 				<dd>
 					<p>Required for compliance.</p>
-				</dd>
-				<dt><dfn>Web Sustainability</dfn></dt>
-				<dd>
-					<p>The ambition to design, develop, and operate <a href="https://www.sustainablewebmanifesto.com/">digital products and services</a> such that they meet the needs of the present while ensuring future generations can <a href="https://humanewebmanifesto.com/">meet their own needs</a> [[ethical-web-principles]].</p>
 				</dd>
 			</dl>
 		</section>
