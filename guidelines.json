@@ -2638,7 +2638,7 @@
 						},
 						{
 							"title": "Optimized loading",
-							"description": "Where external resources are required to be used upon the documents load, optimize loading using resource and priority hints.",
+							"description": "Where external resources are required to be used upon the document's load, optimize loading using resource and priority hints.",
 							"resources": [
 								{
 									"Assist the browser with resource hints": "https://web.dev/learn/performance/resource-hints",
