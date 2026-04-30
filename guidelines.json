@@ -2058,7 +2058,7 @@
 					"criteria": [
 						{
 							"title": "Performance goals",
-							"description": "Set clear goals with performance and environmental impact in mind, then meet them. These could include, the number of requests or elements that must be rendered.",
+							"description": "Set clear goals with performance and environmental impact in mind, then meet them. These could include the number of requests or elements that must be rendered.",
 							"resources": [
 								{
 									"15 page speed optimizations that sites ignore (at their own risk)": "https://www.speedcurve.com/blog/15-neglected-page-speed-optimizations/",
@@ -2638,7 +2638,7 @@
 						},
 						{
 							"title": "Optimized loading",
-							"description": "Where external resources are required to be used upon the documents load, optimize loading using resource and priority hints.",
+							"description": "Where external resources are required to be used upon the document's load, optimize loading using resource and priority hints.",
 							"resources": [
 								{
 									"Assist the browser with resource hints": "https://web.dev/learn/performance/resource-hints",
@@ -4181,7 +4181,7 @@
 						},
 						{
 							"title": "Necessary tasks",
-							"description": "Run automated tasks only when necessary to reduce unnecessary resources/resource utlisation/processing cycles.",
+							"description": "Run automated tasks only when necessary to reduce unnecessary resources/resource utilisation/processing cycles.",
 							"resources": [
 								{
 									"AWS WAF - SEC11-BP02 - Automate testing throughout the development and release lifecycle": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_automate_testing_throughout_lifecycle.html",
