@@ -95,7 +95,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Group Note Draft</td>
-			<td>06 March 2026</td>
+			<td>14 May 2026</td>
 		</tr>
 	</tbody>
 </table>
@@ -123,7 +123,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws and Policies</a></td>
 			<td>W3C Editors Draft</td>
-			<td>06 March 2026</td>
+			<td>14 May 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/benefits.html">Benefits for WSG</a></td>

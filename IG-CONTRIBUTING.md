@@ -10,6 +10,9 @@ Contributions to this repository are intended to become part of Interest Group d
 
 We welcome fresh contributions and understand that this may pose difficulties for those either unfamiliar with pull requests (on a technical level) or with collaborative efforts (wishing to discuss progress before submitting results). In such cases, contributors can (if they choose) work with any open format they prefer to collaborate using (referring to the guidelines and its supplements), and submit an issue request containing the URL to the document in question. The editor will work alongside the group chairs to translate these requested updates into the guidelines.
 
+> [!CAUTION]
+> While we appreciate that individuals may wish to use AI to assist with their contributions, please consider whether its use is appropriate, and ensure you clearly disclose where AI has been used and to what extent within your contribution.
+
 ## File Structure
 
 The structure of the repository has been created to ensure ease of maintenance. The base directory contains living editions of the [guidelines](https://w3c.github.io/sustainableweb-wsg/), [benefits](https://w3c.github.io/sustainableweb-wsg/benefits.html), [resources](https://w3c.github.io/sustainableweb-wsg/resources.html), [at-a-glance](https://w3c.github.io/sustainableweb-wsg/glance.html), [summary](https://w3c.github.io/sustainableweb-wsg/summary.html), [laws and policies](https://w3c.github.io/sustainableweb-wsg/policies.html), [quick reference](https://w3c.github.io/sustainableweb-wsg/quickref.html), [STAR](https://w3c.github.io/sustainableweb-wsg/star.html), [WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json), [STAR API](https://w3c.github.io/sustainableweb-wsg/star.json), and other deliverables such as our test suite.
