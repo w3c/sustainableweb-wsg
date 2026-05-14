@@ -16,11 +16,11 @@ Hands-on advice on how to make digital products and services more sustainable is
 
 ## Approach
 
-The [Web Sustainability Guidelines (WSG)](https://www.w3.org/TR/web-sustainability-guidelines/) help design and implement digital products and services that are more sustainable.
+[Web Sustainability Guidelines (WSG)](https://www.w3.org/TR/web-sustainability-guidelines/) help design and implement digital products and services that are more sustainable.
 
-The WSG are designed to put people and planet first. They are best practices based on measurable, evidence-based research. They are also aligned with open standards from Global Reporting Initiative ([GRI](https://w3c.github.io/sustainableweb-wsg/summary.html#bib-gri)) and where appropriate, are cross-referenced [with other industry best practices](https://www.w3.org/TR/web-sustainability-guidelines/#relationships) such as the General Policy Framework for the Ecodesign of Digital Services and GR491.
+WSG are designed to put people and planet first. They are best practices based on measurable, evidence-based research. They are also aligned with open standards from Global Reporting Initiative ([GRI](https://w3c.github.io/sustainableweb-wsg/summary.html#bib-gri)) and where appropriate, are cross-referenced [with other industry best practices](https://www.w3.org/TR/web-sustainability-guidelines/#relationships) such as the General Policy Framework for the Ecodesign of Digital Services and GR491.
 
-The guidelines can be used by individuals and organisations to improve products, and to show progress in their road to becoming more sustainable (the aim is “progress over perfection”).
+The guidelines can be used by individuals and organizations to improve products, and to show progress in their road to becoming more sustainable (the aim is “progress over perfection”).
 
 ## Practical use cases
 
@@ -39,4 +39,4 @@ For content organization, currently by discipline, we previously considered orga
 
 ## Accessibility, Internationalization, Privacy, and Security Considerations
 
-Where applicable, accessibility, internationalization, privacy, and security have been considered throughout the development of the Web Sustainability Guidelines. [A list of guidelines to these areas](https://www.w3.org/TR/web-sustainability-guidelines/#considerations) is available.
+Where applicable, accessibility, internationalization, privacy, and security have been considered throughout the development of Web Sustainability Guidelines. [A list of guidelines to these areas](https://www.w3.org/TR/web-sustainability-guidelines/#considerations) is available.

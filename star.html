@@ -77,8 +77,8 @@
 	</head>
 	<body>
 		<section id="abstract"> <!-- Abstract -->
-			<p>Sustainable Tooling And Reporting (<abbr title="Sustainable Tooling And Reporting">STAR</abbr>) provides information, examples, and metrics data to complement the Web Sustainability Guidelines (<abbr title="Web Sustainability Guidelines">WSG</abbr>) specification. Within this supplementary document, you will find implementation advice (for external groups wishing to incorporate sustainability in their work), an evaluation methodology (for testing conformance), a categorized series of techniques (potential implementations and case studies), and a test suite (metrics data on impact and machine automation capability).</p>
-			<p>As with the WSG, these features have been inspired by the work of the Web Accessibility Initiative ([[WAI]]). They have also been curated with a web sustainability methodology, with the goal of better understanding the digital landscape's role in reducing harm to the wider ecosystem (regarding the planet, people, and organisational prosperity).</p>
+			<p>Sustainable Tooling And Reporting (<abbr title="Sustainable Tooling And Reporting">STAR</abbr>) provides information, examples, and metrics data to complement Web Sustainability Guidelines (<abbr title="Web Sustainability Guidelines">WSG</abbr>) specification. Within this supplementary document, you will find implementation advice (for external groups wishing to incorporate sustainability in their work), an evaluation methodology (for testing conformance), a categorized series of techniques (potential implementations and case studies), and a test suite (metrics data on impact and machine automation capability).</p>
+			<p>As with WSG, these features have been inspired by the work of the Web Accessibility Initiative ([[WAI]]). They have also been curated with a web sustainability methodology, with the goal of better understanding the digital landscape's role in reducing harm to the wider ecosystem (regarding the planet, people, and prosperity).</p>
 			<p>For the full document, see <a href="https://www.w3.org/TR/web-sustainability-guidelines/">https://www.w3.org/TR/web-sustainability-guidelines/</a>.</p>
 			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
 		</section>
@@ -90,7 +90,7 @@
 			<p>The following section provides advisory guidance for other specification writers and external groups wishing to incorporate digital sustainability within their work (such as <abbr title="World Wide Web Consortium">W3C</abbr> Working and Community Groups). We are primarily a group dedicated to fostering sustainable change in web technologies associated with the creation of websites and applications. While it is outside of our group's scope to conduct horizontal reviews of other group's specifications, we may request or accept requests to collaborate with or assist in coordination with other groups to implement sustainable change.</p>
 			<section> <!-- Considerations -->
 				<h3>Considerations</h3>
-				<p>The WSG have a broad appeal, designed to impact a wide range of web technologies and related infrastructure as appropriate. With this in mind, when first starting to look to incorporate sustainability within a body of work you may find that certain guidelines more than others will apply to practices.</p>
+				<p>WSG have a broad appeal, designed to impact a wide range of web technologies and related infrastructure as appropriate. With this in mind, when first starting to look to incorporate sustainability within a body of work you may find that certain guidelines more than others will apply to practices.</p>
 				<p>When designing any fledgling body of work it is worth considering the following:</p>
 				<ul>
 					<li>Can a sustainability policy be put in place to vet work appropriately?</li>
@@ -101,13 +101,13 @@
 				</ul>
 				<div class="note">
 					<p>When creating specifications or industry-specific documents, cross-reference to specific WSG guidelines that are appropriate for a body of work to connect elements of content to applicable sustainability goals.</p>
-					<p>Create new sustainability guidelines that are explicitly targeted for a technology (that may be too niche to be included within the WSG). This would provide additional success criteria for an audience to meet.</p>
+					<p>Create new sustainability guidelines that are explicitly targeted for a technology (that may be too niche to be included within WSG). This would provide additional success criteria for an audience to meet.</p>
 					<p>If you do wish to create additional targeted guidelines, please first consult the Sustainable Web Interest Group as we may be able to include them within the main WSG or provide guidance to avoid conflicts with other existing guidelines.</p>
 				</div>
 			</section>
 			<section> <!-- Methodology -->
 				<h3>Methodology</h3>
-				<p>With the above considerations taken into account, a good next step is to consider sustainability within content and treat sustainability as any other impact target (such as accessibility or performance) by trying to drive change through metrics data. If research exists to back a particular technique as more performant, it is likely to be more sustainable. Often there will be cases where evidence does not exist as web sustainability is an evolving field and as such, a common sense approach (considering the factors that can impact the planet, people, and organisational prosperity) will be the best method if metrics data cannot be provided to identify the most sustainable option.</p>
+				<p>With the above considerations taken into account, a good next step is to consider sustainability within content and treat sustainability as any other impact target (such as accessibility or performance) by trying to drive change through metrics data. If research exists to back a particular technique as more performant, it is likely to be more sustainable. Often there will be cases where evidence does not exist as web sustainability is an evolving field and as such, a common sense approach (considering the factors that can impact the planet, people, and prosperity) will be the best method if metrics data cannot be provided to identify the most sustainable option.</p>
 				<p>Every body of work will have its approach to this and a progress over-perfection methodology is preferred (as doing something is ultimately better than waiting for an ideal fix), but as a general consideration for those who are creating documents that are relied upon by large numbers of individuals, the Planet, People, and Prosperity <abbr title="Planet, People, and Prosperity">PPP</abbr> model which does not just account for emissions and the environmental impact but also and human factors and issues surrounding good governance are an ideal template to work from. In the context of the Internet this accounts for everyday (but important) factors such as performance, accessibility, privacy by design, security, internationalization, and reducing waste which all as a by-product have an environmental impact.</p>
 				<p>It is also important to note that different bodies will have their sustainability challenges, for example, those working on platform <abbr title="Application Programming Interfaces">APIs</abbr> are more likely to encounter hardware resource consumption (energy usage), whereas language standards will be more considerate of implementors, accessibility, and improving developer workflows. As such, it is worth coordinating with other groups with aligned goals and discussing their sustainability approaches to align work and help improve theirs, accounting for different factors.</p>
 				<p class="note">Providing sustainability guidance within work can be presented in many ways. One option is to integrate it within existing guidance or specifications (amending the content). Another is to provide notes or in-page sections dedicated to sustainability providing coverage. Or to gently guide individuals into the subject, a dedicated supplement that will be adapted or merged into the specification at the next major version (giving individuals time to adapt) could be created.</p>
@@ -115,8 +115,8 @@
 		</section>
 		<section> <!-- Evaluation Methodology -->
 			<h2>Evaluation Methodology</h2>
-			<p>Evaluating the extent to which a website implements the Web Sustainability Guidelines (WSG) is a process involving several steps. The activities carried out within these steps are influenced by many aspects such as the type of website (e.g. static, dynamic, responsive, mobile, application, etc.); its size, complexity, and the technologies used to create the website (e.g. <abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="JavaScript">JS</abbr>, <abbr title="Portable Document Format">PDF</abbr>, etc.); how much knowledge the evaluators have about the process used to design and develop the website; and the main purpose for the evaluation (e.g. to issue a sustainability statement, to plan a redesign process, to perform research, etc.).</p>
-			<p>This methodology describes the steps that are common for comprehensive evaluation of the extent of websites and applications to implement WSG. It highlights considerations for evaluators to apply these steps in the context of a particular product or service. It does not replace the need for quality assurance measures that are implemented throughout the design, development, and maintenance of websites or applications to ensure their sustainability conformance. Following this methodology will help evaluators apply good practice, avoid commonly made mistakes, and achieve more comparable results. However, in the majority of situations using this methodology alone, without additional quality assurance measures, does not directly result in a sustainable product or service that meets the WSG success criteria and guidelines.</p>
+			<p>Evaluating the extent to which a website implements Web Sustainability Guidelines (WSG) is a process involving several steps. The activities carried out within these steps are influenced by many aspects such as the type of website (e.g. static, dynamic, responsive, mobile, application, etc.); its size, complexity, and the technologies used to create the website (e.g. <abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="JavaScript">JS</abbr>, <abbr title="Portable Document Format">PDF</abbr>, etc.); how much knowledge the evaluators have about the process used to design and develop the website; and the main purpose for the evaluation (e.g. to issue a sustainability statement, to plan a redesign process, to perform research, etc.).</p>
+			<p>This methodology describes the steps that are common for comprehensive evaluation of the extent of websites and applications to implement WSG. It highlights considerations for evaluators to apply these steps in the context of a particular product or service. It does not replace the need for quality assurance measures that are implemented throughout the design, development, and maintenance of websites or applications to ensure their sustainability conformance. Following this methodology will help evaluators apply good practice, avoid commonly made mistakes, and achieve more comparable results. However, in the majority of situations using this methodology alone, without additional quality assurance measures, does not directly result in a sustainable product or service that meets WSG success criteria and guidelines.</p>
 			<p><strong>This methodology does not in any way add to or change the requirements defined by the WSG specification</strong>, nor does it provide instructions on feature-by-feature evaluation of web content. The methodology can be used in conjunction with techniques and examples for meeting WSG success criteria, such as the techniques documented within this STAR supplement, but does not require this or any other specific set of techniques.</p>
 			<p>This methodology is intended for people who are experienced in evaluating web sustainability using WSG and its supporting resources. It provides guidance on good practice in defining the evaluation scope, exploring the target website, selecting representative samples from websites where it is not feasible to evaluate all content, auditing the selected samples, reporting the evaluation findings, and if necessary - implementing sustainable change. It does not specify particular web technologies, evaluation tools, web browsers, or other software to use for evaluation. It is also suitable for use in different evaluation contexts, including self-assessment and third-party evaluation.</p>
 			<section class="notoc"> <!-- Purposes for this methodology -->
@@ -141,16 +141,16 @@
 					<h4>Evaluators and usage</h4>
 					<p>Different expertise may be required to evaluate a website or application, as such, one of the below or a combination of these at different stages of the project may assist with understanding and evaluating the sustainability of a website or application.</p>
 					<ul>
-						<li><strong>Required expertise</strong> Users of this methodology are assumed to have a solid understanding of how to evaluate web content using WSG along with a reasonable understanding of sustainable web design and development, how web sustainability affects Internet infrastructure and business practices, and how sustainability issues affect the planet, people, and organisational prosperity. This includes a reasonable understanding of existing web technologies; and evaluation techniques, tools, and methods to identify sources of emissions, how to measure them accurately, and how to remedy issues that occur. In particular, it is also assumed that users of this methodology are deeply familiar with the WSG supplementary documents.</li>
+						<li><strong>Required expertise</strong> Users of this methodology are assumed to have a solid understanding of how to evaluate web content using WSG along with a reasonable understanding of sustainable web design and development, how web sustainability affects Internet infrastructure and business practices, and how sustainability issues affect the planet, people, and prosperity. This includes a reasonable understanding of existing web technologies; and evaluation techniques, tools, and methods to identify sources of emissions, how to measure them accurately, and how to remedy issues that occur. In particular, it is also assumed that users of this methodology are deeply familiar with WSG supplementary documents.</li>
 						<li><strong>Combined expertise (optional)</strong> This methodology can be carried out by an individual evaluator with the required expertise, or a team of evaluators with collective expertise. Using the combined expertise of different evaluators may sometimes be necessary or beneficial when one evaluator alone does not possess all of the required expertise.</li>
 						<li><strong>Involving users (optional)</strong> Involving people who are affected by real-world complications of sustainability may help identify digital issues that are not easily discovered by expert evaluation alone. While not required for using this methodology, it may sometimes be necessary for evaluators to involve real people from a wide variety of backgrounds during the evaluation process.</li>
-						<li><strong>Evaluation tools (optional)</strong> This methodology is independent of any particular web sustainability evaluation tool, web browser (user-agent), and other software tool. While some sustainability checks in the WSG are not fully machine-testable, evaluation tools can significantly assist evaluators during the evaluation process and contribute to more effective evaluation. For example, some web sustainability evaluation tools can scan entire products and services to help identify relevant pages for manual evaluation as well as identify those issues that fall under testability criteria. Tools can also be used to assist during manual (human) evaluation of sustainability checks, including those that are not machine-testable.</li>
+						<li><strong>Evaluation tools (optional)</strong> This methodology is independent of any particular web sustainability evaluation tool, web browser (user-agent), and other software tool. While some sustainability checks in WSG are not fully machine-testable, evaluation tools can significantly assist evaluators during the evaluation process and contribute to more effective evaluation. For example, some web sustainability evaluation tools can scan entire products and services to help identify relevant pages for manual evaluation as well as identify those issues that fall under testability criteria. Tools can also be used to assist during manual (human) evaluation of sustainability checks, including those that are not machine-testable.</li>
 					</ul>
 					<p>This methodology is designed for evaluating both websites and applications. This includes organizations, entities, persons, events, products, and services. Websites and applications can include publicly available or internal websites; applications, intranets, online shops, dedicated mobile websites, isolated sections of a larger website, or internationalization pages (on a subdomain for example). This methodology can apply equally to any collection of materials, regardless of whether it is a part of a larger project or a dedicated entity of its own.</p>
 				</section>
 				<section class="notoc"> <!-- Principle of website enclosure -->
 					<h4>Principle of website enclosure</h4>
-					<p>When a target website or application is defined for evaluation, all pages, states, and functionality within the scope of this definition must be considered for evaluation. Excluding such aspects of a website from the scope of evaluation would likely conflict with the WSG success criteria and conformance requirements or otherwise distort the evaluation results.</p>
+					<p>When a target website or application is defined for evaluation, all pages, states, and functionality within the scope of this definition must be considered for evaluation. Excluding such aspects of a website from the scope of evaluation would likely conflict with WSG success criteria and conformance requirements or otherwise distort the evaluation results.</p>
 					<p>Example of website enclosure:</p>
 					<ul>
 						<li>index.html</li>
@@ -199,19 +199,19 @@
 				<p>Evaluators should proceed from one step to the next, and may return to any preceding step in the process as new information is revealed to them during the evaluation process.</p>
 				<section class="notoc"> <!-- Internal knowledge -->
 					<h4>Internal knowledge</h4>
-					<p>Due to the requirements of sustainability reporting and the success criteria contained within the WSG, in order to conform to certain aspects of the specification it may be required to obtain or have access to internal knowledge of the website or application or a business behind the product or service. If such access is possible, this knowledge should be used by evaluators in accordance to any policies in-place regarding data use. If access however is not available or cannot be provided, the use of publicly available data may serve as a general estimation of comparability; though the accuracy of results may be in question. In addition, in cases where no replacement for data can be found, conformance evaluators should aim to identify other methods of meeting success criteria or identify the lack of knowledge as a failure point (until such a time that the organization can disclose the information publicly).</p>
+					<p>Due to the requirements of sustainability reporting and the success criteria contained within WSG, in order to conform to certain aspects of the specification it may be required to obtain or have access to internal knowledge of the website or application or a business behind the product or service. If such access is possible, this knowledge should be used by evaluators in accordance to any policies in-place regarding data use. If access however is not available or cannot be provided, the use of publicly available data may serve as a general estimation of comparability; though the accuracy of results may be in question. In addition, in cases where no replacement for data can be found, conformance evaluators should aim to identify other methods of meeting success criteria or identify the lack of knowledge as a failure point (until such a time that the organization can disclose the information publicly).</p>
 				</section>
 				<section class="notoc"> <!-- Machine testability -->
 					<h4>Machine testability</h4>
-					<p>While many of the success criteria in the WSG will withstand machine testing (automation) without human intervention, others cannot be reproduced without manual examination. In such cases, to assist with a large volume of pages, rather than sampling a subset of the website or application (which could bias the results due to the potential for missing important pages), creating a semi-automated structure around human testability to assist with such tasks through tooling (such as the use of a wizard interface) may help reduce pinch points in the evaluation process.</p>
+					<p>While many of the success criteria in WSG will withstand machine testing (automation) without human intervention, others cannot be reproduced without manual examination. In such cases, to assist with a large volume of pages, rather than sampling a subset of the website or application (which could bias the results due to the potential for missing important pages), creating a semi-automated structure around human testability to assist with such tasks through tooling (such as the use of a wizard interface) may help reduce pinch points in the evaluation process.</p>
 				</section>
 				<section class="notoc"> <!-- Step 1: Define the evaluation scope -->
 					<h4>Step 1: Define the evaluation scope</h4>
 					<p>During this step the overall scope of the evaluation is defined. It is an important step as initial exploration of the target application or website may be necessary to better know specifics (and to ensure common expectations) of the product or service and the required evaluation.</p>
 					<ol>
 						<li><strong>Define the scope of the website:</strong> During this step the web pages (and states) that are in scope of the evaluation are defined. To avoid later mismatches of expectations between the evaluator, commissioner, and readers of the resulting evaluation report, it is important to define unambiguously what aspects of the website or application are within its scope. Documentation of URIs are recommended where possible and to list aspects of the website that support its identification such as third-party content and services, or content that may have a different web address but is still considered to be part of the target website.</li>
-						<li><strong>Define the target:</strong> Because the WSG favor a progress-over-perfection approach to conformance, it does not use any strict levels for compliance in meeting the guidelines. As such, during the evaluation process, evaluators should set defined targets based on a level they believe is achievable between client and the workers involved in making the website or application sustainable.</li>
-						<li><strong>Define a sustainability support baseline:</strong> Depending on the type of website or application being developed, it may not always be possible to implement every aspect of the WSG (or they may not always be applicable to every situation). WSG does not pre-define which combinations of features and technologies must be supported as this depends on the particular context of the website or application, the web technologies that are used to create the content, and the user agents currently available. During this step the evaluator in consultation with the website owner (and or commissioner) and developer determines the minimum level of sustainability implementations or improvements to be established over a given period (or as a starting point in first-cases). It should be noted that setting a baseline does not imply that such expectations cannot be exceeded with new goals and including further targets to reach.</li>
+						<li><strong>Define the target:</strong> Because WSG favor a progress-over-perfection approach to conformance, it does not use any strict levels for compliance in meeting the guidelines. As such, during the evaluation process, evaluators should set defined targets based on a level they believe is achievable between client and the workers involved in making the website or application sustainable.</li>
+						<li><strong>Define a sustainability support baseline:</strong> Depending on the type of website or application being developed, it may not always be possible to implement every aspect of WSG (or they may not always be applicable to every situation). WSG does not pre-define which combinations of features and technologies must be supported as this depends on the particular context of the website or application, the web technologies that are used to create the content, and the user agents currently available. During this step the evaluator in consultation with the website owner (and or commissioner) and developer determines the minimum level of sustainability implementations or improvements to be established over a given period (or as a starting point in first-cases). It should be noted that setting a baseline does not imply that such expectations cannot be exceeded with new goals and including further targets to reach.</li>
 						<li><strong>Define additional evaluation requirements (Optional):</strong> An evaluator or commissioner may be interested in additional information beyond what is needed to determine the extent of compliance to WSG. This may include submitted reports of issues, analysis of use-cases or interactions, descriptions of solutions beyond the scope of the evaluation, or reporting templates. Such additional requirements should be clarified early on and documented, and reported as such in any resulting report that is produced.</li>
 					</ol>
 				</section>
@@ -251,7 +251,7 @@
 					<h4>Step 5: Report the evaluation findings</h4>
 					<p>While evaluation findings are reported at the end of the process, documenting them is carried out throughout the evaluation process to ensure verifiable outcomes. The documentation typically has varying levels of confidentiality. For example, documenting the specific methods used to evaluate individual requirements might remain limited to the evaluator while reports about the outcomes from these checks are typically made available to the evaluation commissioner. Website or application owners might further choose to make public statements about the outcomes from evaluation according to this methodology.</p>
 					<ol>
-						<li><strong>Document the outcomes of each step:</strong> Documenting the outcomes for each of the previous steps (including all sub-sections) is essential to ensure transparency of the evaluation process, replicability of the evaluation results, and justification for any statements made based on this evaluation. Evaluation reports should include names of evaluators, dates of the evaluation, the scope and requirements (of sustainability), the pages and state being tested along with any technologies being identified and relied upon, plus the results of sustainability issues identified and any key factors that have contributed to meeting (or failing to meet) targets in the WSG success criteria. In certain instances, it may be useful to offer a list of every failure occurrence for every web page and web page state for transparency reporting along with the causes and repair suggestions to remedy the failures.</li>
+						<li><strong>Document the outcomes of each step:</strong> Documenting the outcomes for each of the previous steps (including all sub-sections) is essential to ensure transparency of the evaluation process, replicability of the evaluation results, and justification for any statements made based on this evaluation. Evaluation reports should include names of evaluators, dates of the evaluation, the scope and requirements (of sustainability), the pages and state being tested along with any technologies being identified and relied upon, plus the results of sustainability issues identified and any key factors that have contributed to meeting (or failing to meet) targets in WSG success criteria. In certain instances, it may be useful to offer a list of every failure occurrence for every web page and web page state for transparency reporting along with the causes and repair suggestions to remedy the failures.</li>
 						<li><strong>Record the evaluation specifics (optional):</strong> While optional, it is good practice for evaluators to keep record of the evaluation specifics, for example to support conflict resolution in the case of dispute. This includes archiving the web pages and web page states audited, and recording the evaluation tools, web browsers, other software, and methods used to audit them. A table or grid may be useful to record what was used for the different web pages and web page states audited. When such records contain sensitive information, they need particular security and privacy precautions. Records could include copies of files, assets, and resources of the web pages stated, screenshots (screen grabs), descriptions of the path to locate a page or state during a process (or information to use when testing interactive components), names and versions of tooling; or methods, procedures, and techniques used to evaluate conformance to WSG.</li>
 						<li><strong>Provide an evaluation statement (optional):</strong> In the majority of situations, using this methodology alone does not result in WSG conformance claims for the target websites. Website owners may wish to make public statements about the outcomes from evaluations following this methodology. If they wish to do so, they should follow the advisory guidance provided in the WSG conformance section in order to provide a statement relating to the level of sustainability they have achieved.</li>
 					</ol>
@@ -272,7 +272,7 @@
 				</ul>
 				<section class="notoc"> <!-- Techniques are informative -->
 					<h4>Techniques are informative</h4>
-					<p>Techniques are informative, meaning they are not required. The basis for determining conformance to WSG is the success criteria from guidelines within the specification and not the techniques themselves. We also caution against requiring specific techniques or tests mentioned within this document. The only thing that should be required is meeting the WSG success criteria.</p>
+					<p>Techniques are informative, meaning they are not required. The basis for determining conformance to WSG is the success criteria from guidelines within the specification and not the techniques themselves. We also caution against requiring specific techniques or tests mentioned within this document. The only thing that should be required is meeting WSG success criteria.</p>
 				</section>
 				<section class="notoc"> <!-- Technique types -->
 					<h4>Technique types</h4>
@@ -1200,7 +1200,7 @@
 						<ol>
 							<li>Check that all non-native web documents have an HTML alternative available.</li>
 							<li>Check that available formats are clearly identified with text and/or icons.</li>
-							<li>Check any generated HTML transcript meets the WSG.</li>
+							<li>Check any generated HTML transcript meets WSG.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -1262,7 +1262,7 @@
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used">2.14 Offer suitable alternatives for every format used</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Offer a transcript of the content of an audio file or video. This is especially useful within podcasts or shows that follow the linear progress of events that can be organized into chapters. How content is chosen to be written up is at the discretion of the author but to pass the criteria it must be accessible, understandable, and content complete.</p>
-						<p>As with all generated external HTML documents, for machine testability (this will include other examples), the generated content must itself pass the WSG guidelines in being sustainable (meeting the success criteria as an HTML document that generates emissions). The document can be tested against the techniques laid down in this reference.</p>
+						<p>As with all generated external HTML documents, for machine testability (this will include other examples), the generated content must itself pass WSG guidelines in being sustainable (meeting the success criteria as an HTML document that generates emissions). The document can be tested against the techniques laid down in this reference.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>The <a href="https://99percentinvisible.org/episode/roman-mars-describes-chicago-as-it-is/transcript">99% Invisible podcast</a> provides text transcripts of its episodes using a paper icon to indicate availability. The speaker is clearly identified within each episode and credits are also provided alongside.</li>
@@ -1271,7 +1271,7 @@
 						<p>Procedure</p>
 						<ol>
 							<li>Check for an HTML transcript either below the media file (labeled transcript) or linked to the media.</li>
-							<li>Check any generated HTML transcript meets the WSG.</li>
+							<li>Check any generated HTML transcript meets WSG.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -1521,7 +1521,7 @@
 						<ol>
 							<li>Check that testing occurs hourly/daily/weekly to be considered active.</li>
 							<li>Check that all publicly visible pages are included within the monitoring.</li>
-							<li>Check that the facility providing the monitoring meets the WSG.</li>
+							<li>Check that the facility providing the monitoring meets WSG.</li>
 							<li>Check that a report of ongoing listed issues is publicly available until fully resolved.</li>
 							<li>Provide resolutions for detected issues within a timely manner.</li>
 						</ol>
@@ -1545,7 +1545,7 @@
 						<p>Procedure</p>
 						<ol>
 							<li>Check that all publicly visible pages are included within the monitoring.</li>
-							<li>Check for a wide variety of issues within the scope of the WSG.</li>
+							<li>Check for a wide variety of issues within the scope of WSG.</li>
 							<li>Check that a report of ongoing listed issues is publicly available until fully resolved.</li>
 							<li>Provide resolutions for detected issues within a timely manner.</li>
 						</ol>
@@ -1875,7 +1875,7 @@
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">3.6 Give third parties the same priority as first parties during assessment</a>.</p>
 						<p><strong>Description</strong></p>
-						<p>First identify any third-party components within a website or application, then analyze that feature as if it were a first-party product or service (against the WSG) for sustainability. If the product or service is determined to be highly impactful in a negative way, the third-party should be replaced or removed; otherwise, it can be optimized, or stay as-is.</p>
+						<p>First identify any third-party components within a website or application, then analyze that feature as if it were a first-party product or service (against WSG) for sustainability. If the product or service is determined to be highly impactful in a negative way, the third-party should be replaced or removed; otherwise, it can be optimized, or stay as-is.</p>
 						<p>As third-party components are hosted externally, machine testing these elements should involve isolating these components and testing them as separate from the product or service. This can be factored into any decision-making regarding inclusion as highly performant and sustainable third-party materials will ultimately be low impact (and the opposite is true for others).</p>
 						<p><strong>Examples</strong></p>
 						<ol>
@@ -1886,7 +1886,7 @@
 						<p>Procedure</p>
 						<ol>
 							<li>Check if any third-party components exist within the page or application.</li>
-							<li>Check that component against the WSG for its sustainability compliance.</li>
+							<li>Check that component against WSG for its sustainability compliance.</li>
 							<li>Check if high-impact third-party components offer self-hosted alternatives.</li>
 							<li>Check that self-hosted alternatives are used if provided.</li>
 						</ol>
@@ -2473,7 +2473,7 @@
 						<p>Because this can occur at both the client-side and server-side internal access may be required if server-side scanning is wished to be included within machine testability, however within the scope of the success criteria, if internal access is not available or permitted, testing the code using known methods and scanning client-side code for harmful techniques should help with passing.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
-							<li>RayGun <a href="https://raygun.com/blog/js-security-vulnerabilities-best-practices/">provides a great article</a> about vulnerabilities and best practices when working with JavaScript. Some of the things mentioned are covered within the WSG in other sections, all others can be followed here.</li>
+							<li>RayGun <a href="https://raygun.com/blog/js-security-vulnerabilities-best-practices/">provides a great article</a> about vulnerabilities and best practices when working with JavaScript. Some of the things mentioned are covered within WSG in other sections, all others can be followed here.</li>
 							<li><a href="https://snyk.io/">Snyk</a> is one of the most well-known providers of data regarding code vulnerabilities. They can be integrated within existing tooling or you can browse their <a href="https://security.snyk.io/">database of known security issues</a> to be aware of.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
@@ -2646,7 +2646,7 @@
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service">3.18 Use the most efficient solution for your service</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for testing third-party plugins, extensions, and themes (if such devices are used within a product or service's creation process) for any sustainability impacts they may have. These often are included within CMS software and are external assets that can add overheads to the website or application being rendered.</p>
-						<p>For machine testability, many CMS products provide trace details of included features within the source code of a page (as conditional comments) due to these having to be loaded as third-party resources. Internal access may be required to get a full picture of everything being loaded. Third-party resources should be tested against the WSG separately to identify sustainability issues.</p>
+						<p>For machine testability, many CMS products provide trace details of included features within the source code of a page (as conditional comments) due to these having to be loaded as third-party resources. Internal access may be required to get a full picture of everything being loaded. Third-party resources should be tested against WSG separately to identify sustainability issues.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>When using WordPress as their primary content management system, they often want to have a distinctive layout for their blog or website. As such they will install a custom theme, and its code with sustainability impacts will be imported into the total bundle size. So be careful what you choose!</li>
@@ -2656,7 +2656,7 @@
 						<ol>
 							<li>Check if any third-party resources exist within the page or application.</li>
 							<li>If internal access is required to verify resource usage, grant it.</li>
-							<li>Check that component against the WSG for its sustainability compliance.</li>
+							<li>Check that component against WSG for its sustainability compliance.</li>
 							<li>Check if high-impact third-party resources offer self-hosted alternatives.</li>
 							<li>Check that self-hosted alternatives are used if provided.</li>
 						</ol>
@@ -3026,7 +3026,7 @@
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately">4.10 Use Content Delivery Networks (CDNs) appropriately</a>.</p>
 						<p><strong>Description</strong></p>
-						<p>Test the sustainability of the CDN against the WSG as a service provider as a third-party service in addition to any sustainability criteria and best practices that exist externally for infrastructure and hosting. This not only applies to the provider itself but to all of the nodes that it uses to supply distribution, and any third-parties it uses as part of its extended network. As such, calculating and vetting providers can be complex.</p>
+						<p>Test the sustainability of the CDN against WSG as a service provider as a third-party service in addition to any sustainability criteria and best practices that exist externally for infrastructure and hosting. This not only applies to the provider itself but to all of the nodes that it uses to supply distribution, and any third-parties it uses as part of its extended network. As such, calculating and vetting providers can be complex.</p>
 						<p>For machine testability, providers should have information about sustainability offered within a sustainability statement along with details of compliance being met plus any sustainability features they provide that enhance their service. If this information is publicly available (and uses recognized sources), it could be parsed by machine, otherwise, a sustainable provider list should be sourced.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
@@ -3037,7 +3037,7 @@
 						<ol>
 							<li>Check if the CDN provider has a sustainability statement in place.</li>
 							<li>Check if the CDN provider meets any sustainability compliance obligations.</li>
-							<li>Check that CDN against the WSG for its sustainability compliance.</li>
+							<li>Check that CDN against WSG for its sustainability compliance.</li>
 							<li>Check that the CDN supply network (nodes) are also as sustainable as the provider.</li>
 						</ol>
 						<p>Expected Results</p>
@@ -3142,8 +3142,8 @@
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">4.12 Store data according to the needs of your users</a>.</p>
 						<p><strong>Description</strong></p>
-						<p>Ensure that any third-party backup service provider is examined for sustainability impacts. This will involve examining the impact they have simply in hosting your data, but also how sustainable their platform is, as well as their business. If their model meets any obligations laid out and aligns well against the WSG, it may meet success criteria.</p>
-						<p>To identify how sustainable a service is, a list of recommended sustainable backup providers would be an ideal source to utilize (assuming that one exists and it is itself reputable). If no list exists, checking providers' claims, sustainability statements, and measuring their service against criteria such as the WSG can be helpful to some extent, though utilizing established standards like the <abbr title="Global Reporting Initiative">GRI</abbr> and recommendations around infrastructure will also help.</p>
+						<p>Ensure that any third-party backup service provider is examined for sustainability impacts. This will involve examining the impact they have simply in hosting your data, but also how sustainable their platform is, as well as their business. If their model meets any obligations laid out and aligns well against WSG, it may meet success criteria.</p>
+						<p>To identify how sustainable a service is, a list of recommended sustainable backup providers would be an ideal source to utilize (assuming that one exists and it is itself reputable). If no list exists, checking providers' claims, sustainability statements, and measuring their service against criteria such as WSG can be helpful to some extent, though utilizing established standards like the <abbr title="Global Reporting Initiative">GRI</abbr> and recommendations around infrastructure will also help.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>An application producing large numbers of logs that need to be rotated on a regular cycle could backup those logs to an external sustainable source and remove them from the origin host to eliminate existing emissions.</li>
@@ -3153,7 +3153,7 @@
 						<ol>
 							<li>Check if the backup provider has a sustainability statement in place.</li>
 							<li>Check if the backup provider meets any sustainability compliance obligations.</li>
-							<li>Check that backup provider against the WSG for its sustainability compliance.</li>
+							<li>Check that backup provider against WSG for its sustainability compliance.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -3176,7 +3176,7 @@
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>The <abbr title="United States">US</abbr> Secretaries and Exchange Commission <a href="https://www.sec.gov/Archives/edgar/data/1094007/000119312504044901/dex14.htm">has a useful example</a> regarding a code of ethics policy that leans towards ethical values. While it is focused on one industry it could easily be adapted to other sectors.</li>
-							<li>Electronics organisation Nokia <a href="https://www.nokia.com/about-us/sustainability/">has a page dedicated to sustainability</a> listing their commitments towards net-zero, their goals towards the planet, people, and organisational prosperity, plus other important assets relating to PPP emissions.</li>
+							<li>Electronics organization Nokia <a href="https://www.nokia.com/about-us/sustainability/">has a page dedicated to sustainability</a> listing their commitments towards net-zero, their goals towards the planet, people, and prosperity, plus other important assets relating to PPP emissions.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
@@ -3198,20 +3198,20 @@
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy">5.1 Have an ethical and sustainable product strategy</a>.</p>
 						<p><strong>Description</strong></p>
-						<p>Provide a mechanism within a sustainability statement to identify actions that a product or service may have undertaken that go beyond the WSG to become sustainable. These may include work from other specifications, supplementary materials to the WSG, or third-party tooling that has been created by the organization to improve sustainability.</p>
-						<p>Machine testability for such features would include identifying references to the documentation within a sustainability statement, also if tooling itself is aware of anything that is beyond the scope of the WSG and feels it warrants inclusion for improving sustainability for the planet, people, and organisational prosperity, this could also be identified within the tooling and calculated into the overall scoring metrics.</p>
+						<p>Provide a mechanism within a sustainability statement to identify actions that a product or service may have undertaken that go beyond WSG to become sustainable. These may include work from other specifications, supplementary materials to WSG, or third-party tooling that has been created by the organization to improve sustainability.</p>
+						<p>Machine testability for such features would include identifying references to the documentation within a sustainability statement, also if tooling itself is aware of anything that is beyond the scope of WSG and feels it warrants inclusion for improving sustainability for the planet, people, and prosperity, this could also be identified within the tooling and calculated into the overall scoring metrics.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
-							<li>Third-party testing tools such as <a href="https://ecograder.com/">EcoGrader</a> or <a href="https://www.websitecarbon.com/">Website Carbon</a> will have their own implementations of the WSG and therefore may choose to not only score differently but potentially extend the criteria being tested.</li>
-							<li>Other specifications such as those from the <a href="https://www.w3.org/">W3C</a> or <abbr title="Request for Comments">RFCs</abbr> from the <a href="https://www.ietf.org/">IETF</a> may choose to reference sustainability best practices within the scope of their own work, based on evidence and beyond the WSG offerings.</li>
+							<li>Third-party testing tools such as <a href="https://ecograder.com/">EcoGrader</a> or <a href="https://www.websitecarbon.com/">Website Carbon</a> will have their own implementations of WSG and therefore may choose to not only score differently but potentially extend the criteria being tested.</li>
+							<li>Other specifications such as those from the <a href="https://www.w3.org/">W3C</a> or <abbr title="Request for Comments">RFCs</abbr> from the <a href="https://www.ietf.org/">IETF</a> may choose to reference sustainability best practices within the scope of their own work, based on evidence and beyond WSG offerings.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
 						<ol>
-							<li>Check for any third-party sustainability features beyond the WSG scope.</li>
+							<li>Check for any third-party sustainability features beyond WSG scope.</li>
 							<li>Check that any such features are met in both guidelines and success criteria.</li>
 							<li>Check that no conflicts are caused with existing WSG compliance.</li>
-							<li>If conflicts do exist, prioritize the WSG unless a higher classification of document exists (law, etc).</li>
+							<li>If conflicts do exist, prioritize WSG unless a higher classification of document exists (law, etc).</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -3274,17 +3274,17 @@
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#calculate-the-environmental-impact">5.5 Calculate the environmental impact</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a sustainability benchmark of competitors to ensure that you maintain a regular schedule of improvements to your own work. This is something that is observed in many other aspects of business but is a great principle for having the edge over others who may want to lead the change on being environmentally friendly.</p>
-						<p>It is important to consider any third-party service in isolation when analyzing services that are independent of your own. This means that you should run that product or service against the WSG without consideration of your own results and only compare them once testing is complete. For machine testing, any competitors could be provided by the user after the website or application has been analyzed, scanned, and compared - and those sites could be then tested.</p>
+						<p>It is important to consider any third-party service in isolation when analyzing services that are independent of your own. This means that you should run that product or service against WSG without consideration of your own results and only compare them once testing is complete. For machine testing, any competitors could be provided by the user after the website or application has been analyzed, scanned, and compared - and those sites could be then tested.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
-							<li>A manufacturer of bicycles analyzes how sustainable their website is compared to their competitors (knowing that they cannot optimize their manufacturing site any further), so they use the WSG as a benchmark.</li>
+							<li>A manufacturer of bicycles analyzes how sustainable their website is compared to their competitors (knowing that they cannot optimize their manufacturing site any further), so they use WSG as a benchmark.</li>
 							<li>Two businesses are about to merge but they do not know which website they should use to preserve their ethical reputation, so they run an analysis of both to identify things to take from each creation.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
 						<ol>
-							<li>Check your own product or service against the WSG for a baseline score.</li>
-							<li>Check competitor websites against the WSG to identify where they sit sustainably.</li>
+							<li>Check your own product or service against WSG for a baseline score.</li>
+							<li>Check competitor websites against WSG to identify where they sit sustainably.</li>
 							<li>Check again regularly over time to monitor potential changes that may occur.</li>
 						</ol>
 						<p>Expected Results</p>
@@ -3328,7 +3328,7 @@
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-efforts-using-established-third-party-certifications">5.7 Validate efforts using established third-party certifications</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for product or service owners who have achieved certifications either as an individual or as a business in a related sustainability field (with a recognized achievement or certification) to have that accounted for in the calculation of their sustainability journey. Any such certifications should be included within a statement.</p>
-						<p>For machine testability, this would require having a compiled list of recognized certifications and achievements (that are recognized as sustainable) which could then be identified by embedded links such as images for that scheme. Testing would also need to verify member's achievements. This can be used in weighted scoring to give additional marks for going beyond the WSG criteria.</p>
+						<p>For machine testability, this would require having a compiled list of recognized certifications and achievements (that are recognized as sustainable) which could then be identified by embedded links such as images for that scheme. Testing would also need to verify member's achievements. This can be used in weighted scoring to give additional marks for going beyond WSG criteria.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>Organizations that have chosen to commit to <a href="https://www.bcorporation.net/en-us/">become a B-Corporation</a> will have taken steps to become more sustainable and will be required to continue to make sustainable changes to retain their status.</li>
@@ -3499,7 +3499,7 @@
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#establish-if-a-digital-product-or-service-is-necessary">5.13 Establish if a digital product or service is necessary</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide additional compliance criteria for testing tools to ensure that sustainability goals are being met. As such testing tools can analyze websites to vet each product or service against the United Nations Sustainable Development Goals to decide if enough evidence exists within WSG compliance (and other criteria) to pass or fail applicable categories.</p>
-						<p>Because the SDGs may have scope beyond the WSG, both individuals and testing tools must develop criteria that meet the strict requirements of each category to be considered a compliance pass or fail. As such, it may require additional input from the tester, internal access, or additional measurements and evidence gathering undertaken (with scores adjusted).</p>
+						<p>Because the SDGs may have scope beyond WSG, both individuals and testing tools must develop criteria that meet the strict requirements of each category to be considered a compliance pass or fail. As such, it may require additional input from the tester, internal access, or additional measurements and evidence gathering undertaken (with scores adjusted).</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>The <a href="https://raeng.org.uk/sdgs">Royal Academy for Engineering</a> showcases each of the SDGs as a map and upon clicking each one you get taken to a dedicated page with information provided about how engineers are working to solve the issue.</li>
@@ -3522,17 +3522,17 @@
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-a-supplier-standards-of-practice-document">5.14 Provide a supplier standards of practice document</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Both increase transparency within an organization and to ensure that users and customers can see how suppliers and potential suppliers in the supply chain are vetted to ensure that they meet sustainable guidance set up by the organization. This can relate to the things purchased, or even the business and the way it operates.</p>
-						<p>Machine testing a supplier policy first requires detection that the policy exists in a public area of a website or application. Once detected, the list of suppliers can be gathered and unless the provider has already been validated by a verified third-party, conditions for testing can be identified and listed by the tool. If not, consider testing that supplier as a first-party against the WSG (if a digital service is given), otherwise, test against other compliance targets.</p>
+						<p>Machine testing a supplier policy first requires detection that the policy exists in a public area of a website or application. Once detected, the list of suppliers can be gathered and unless the provider has already been validated by a verified third-party, conditions for testing can be identified and listed by the tool. If not, consider testing that supplier as a first-party against WSG (if a digital service is given), otherwise, test against other compliance targets.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
-							<li>Mobile Phone company Telefonica has a Supply Chain <a href="https://www.telefonica.com/en/wp-content/uploads/sites/5/2021/07/Policy-Sustainability-Supply-Chain.pdf">Sustainability Policy document</a> (<em>PDF</em>) that outlines its ethical standpoint regarding the planet, people, and organisational prosperity as defined by the SDGs and how it does trade. </li>
+							<li>Mobile Phone company Telefonica has a Supply Chain <a href="https://www.telefonica.com/en/wp-content/uploads/sites/5/2021/07/Policy-Sustainability-Supply-Chain.pdf">Sustainability Policy document</a> (<em>PDF</em>) that outlines its ethical standpoint regarding the planet, people, and prosperity as defined by the SDGs and how it does trade. </li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
 						<ol>
 							<li>Check that a publicly visible supplier policy exists on the website.</li>
 							<li>Check that information covering all three aspects of PPP are covered.</li>
-							<li>Check that third-party supplier against the WSG for sustainability.</li>
+							<li>Check that third-party supplier against WSG for sustainability.</li>
 							<li>If the supplier has a poor impact record post-testing, reconsider usage.</li>
 							<li>Check that the content is written in plain English for readability.</li>
 						</ol>
@@ -3547,7 +3547,7 @@
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-a-supplier-standards-of-practice-document">5.16 Provide a supplier standards of practice document</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism where members of the public who view a supplier policy document within your website can easily view the sustainability impact that working with each supplier will have on your product or service. This can be measured in many ways, but a detailed report of any benefits, issues, and solutions over time is helpful.</p>
-						<p>Identifying that a list of partners exists is key, if a list of partners exists then attempting to verify the impact of those services should first be found on the website itself. If the information is not found, flagging the issue and attempting to test the partners individually against the WSG would be an ideal next step (in a similar fashion to competitor analysis) to identify problematic relationships.</p>
+						<p>Identifying that a list of partners exists is key, if a list of partners exists then attempting to verify the impact of those services should first be found on the website itself. If the information is not found, flagging the issue and attempting to test the partners individually against WSG would be an ideal next step (in a similar fashion to competitor analysis) to identify problematic relationships.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>A business with an impeccable sustainability record is offered the opportunity to partner with an oil and gas company for financial gain. Because of the conflict this would create, they chose to turn it down.</li>
@@ -3557,7 +3557,7 @@
 						<ol>
 							<li>Check that all partnerships of the product or service are listed online.</li>
 							<li>Check those partners against public lists of known greenwashers.</li>
-							<li>Check those partners against the WSG for sustainability conformance.</li>
+							<li>Check those partners against WSG for sustainability conformance.</li>
 							<li>If the supplier has a poor impact record post-testing, reconsider usage.</li>
 						</ol>
 						<p>Expected Results</p>
@@ -3745,13 +3745,13 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM21-1: Verify all partnerships and sponsors against the WSG -->
-						<summary id="BSPM21-1">BSPM21-1: Verify all partnerships and sponsors against the WSG</summary>	
+					<details> <!-- BSPM21-1: Verify all partnerships and sponsors against WSG -->
+						<summary id="BSPM21-1">BSPM21-1: Verify all partnerships and sponsors against WSG</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#include-responsible-financial-policies">5.21 Include responsible financial policies</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Ensure that if an individual or organization is being endorsed or financed by an external group or organization, the influence that the group may provide is sustainably minded (and will not divert the product or service away from such activities). Ensuring all endorsements are sustainable can also help service providers avoid claims of greenwashing.</p>
-						<p>Machine testing such factors will require firstly all partnerships and sponsors to be correctly labeled as such, if they are labeled within the product or service then the tester can test each of these services against the WSG as a first-party (an isolated service) and verify how sustainable they are in comparison. If they score poorly, a warning of conflict of interest issues can be provided.</p>
+						<p>Machine testing such factors will require firstly all partnerships and sponsors to be correctly labeled as such, if they are labeled within the product or service then the tester can test each of these services against WSG as a first-party (an isolated service) and verify how sustainable they are in comparison. If they score poorly, a warning of conflict of interest issues can be provided.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>In 2024, The <a href="https://www.sciencemuseum.org.uk/about-us/support-us/corporate-partnerships">Science Museum</a> (London) decided to run a gallery promoting sustainability, however, due to their sponsorship by Oil and Gas giants this caused <a href="https://www.museumsassociation.org/museums-journal/news/2024/03/science-museums-green-energy-gallery-opens-amid-protests-over-sponsorship/#">repetitional damage and greenwashing accusations</a>.</li>
@@ -3762,7 +3762,7 @@
 							<li>Check that all partnerships and sponsors are publicly listed on the website.</li>
 							<li>Check that all listings are correctly marked up so they can be machine-read.</li>
 							<li>Check that all partnerships and sponsors are vetted against public lists of known greenwashers.</li>
-							<li>Check that all partnerships and sponsors are tested against the WSG for sustainability.</li>
+							<li>Check that all partnerships and sponsors are tested against WSG for sustainability.</li>
 							<li>If the supplier has a poor impact record post-testing, reconsider usage.</li>
 						</ol>
 						<p>Expected Results</p>
@@ -3807,14 +3807,14 @@
 						<p>For machine testability, the budget (often provided in a format like JSON) will either be required to be submitted to the testing agent or be declared in some other manner to ensure that any results can be compared against the budget for alignment. If the budget is met, a pass can be given, if not, a warning can be issued with recommendations where potential improvements can be made.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
-							<li>A video streaming service wishes to build a sustainability budget based on the WSG so defines <abbr title="Key Performance Indicators">KPIs</abbr> around each success criterion with a defined numerical value that must be achieved during machine testing stages.</li>
+							<li>A video streaming service wishes to build a sustainability budget based on WSG so defines <abbr title="Key Performance Indicators">KPIs</abbr> around each success criterion with a defined numerical value that must be achieved during machine testing stages.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
 						<ol>
 							<li>Check that any budget information provided by the user is in a valid format.</li>
 							<li>Check to see if the user has submitted a JSON budget with predefined labels and values.</li>
-							<li>Check that the WSG conformance (against success criteria) matches or is lower than the budget.</li>
+							<li>Check that WSG conformance (against success criteria) matches or is lower than the budget.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -3950,7 +3950,7 @@
 			<h2>Test Suite</h2>
 			<p><a>Interoperability</a> is important to web professionals. Better interoperability among implementations means that web professionals can create websites, applications, and tooling designed to be sustainable, and ensure that it is successfully repeatable (and testable) in several environments. It means reducing the potential for web sustainability issues to occur in complex projects and reducing the implementation time where automation and tooling can assist during the creation, development, and maintenance process. Writing tests in a way that allows them to be run in all browsers gives implementors confidence that they are shipping software that will be compatible, and consistent with other implementations.</p>
 			<p>Good test suites drive interoperability. They are a key part of making sure web standards are implemented correctly and consistently. More tests encourage more interoperability. Wrong tests drive interoperability on wrong behavior. As such, web sustainability needs good test suites. It is an evolving field and most of the test suites are still works in progress: so they may contain errors.</p>
-			<p>The primary focus of this test suite is to provide interoperability for tool makers (in terms of automation and compliance with the WSG). In addition, we also aim to provide meaningful testable metrics that can be measured and help identify the true impact of the success criteria within the WSG, and therefore better understand the impact that digital has on the ecosystem.</p>
+			<p>The primary focus of this test suite is to provide interoperability for tool makers (in terms of automation and compliance with WSG). In addition, we also aim to provide meaningful testable metrics that can be measured and help identify the true impact of the success criteria within WSG, and therefore better understand the impact that digital has on the ecosystem.</p>
 			<p>Implementors could use the dataset provided to expand upon the results and offer more nuanced research. Additionally, there is the potential for toolmakers to create more accurate products that measure the carbon impact of products. While the scope of such matters may potentially stretch beyond this group's remit, the results could feed back into - and impact further iterations of our work.</p>
 			<section> <!-- Table of results -->
 				<h3>Table of results</h3>

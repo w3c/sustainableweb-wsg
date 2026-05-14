@@ -1,7 +1,7 @@
 {
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"edition": "Editor's Draft",
-	"lastModified": "2026-03-06",
+	"lastModified": "2026-05-14",
 	"category": [
 		{
 			"id": "1",
@@ -1068,7 +1068,7 @@
 								{
 									"1": "Check that all non-native web documents have an HTML alternative available.",
 									"2": "Check that available formats are clearly identified with text and/or icons.",
-									"3": "Check any generated HTML transcript meets the WSG."
+									"3": "Check any generated HTML transcript meets WSG."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -1144,7 +1144,7 @@
 					"description": [
 						{
 							"1": "Offer a transcript of the content of an audio file or video. This is especially useful within podcasts or shows that follow the linear progress of events that can be organized into chapters. How content is chosen to be written up is at the discretion of the author but to pass the criteria it must be accessible, understandable, and content complete.",
-							"2": "As with all generated external HTML documents, for machine testability (this will include other examples), the generated content must itself pass the WSG guidelines in being sustainable (meeting the success criteria as an HTML document that generates emissions). The document can be tested against the techniques laid down in this reference."
+							"2": "As with all generated external HTML documents, for machine testability (this will include other examples), the generated content must itself pass WSG guidelines in being sustainable (meeting the success criteria as an HTML document that generates emissions). The document can be tested against the techniques laid down in this reference."
 						}
 					],
 					"examples": [
@@ -1157,7 +1157,7 @@
 							"procedure": [
 								{
 									"1": "Check for an HTML transcript either below the media file (labeled transcript) or linked to the media.",
-									"2": "Check any generated HTML transcript meets the WSG."
+									"2": "Check any generated HTML transcript meets WSG."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -1459,7 +1459,7 @@
 								{
 									"1": "Check that testing occurs hourly/daily/weekly to be considered active.",
 									"2": "Check that all publicly visible pages are included within the monitoring.",
-									"3": "Check that the facility providing the monitoring meets the WSG.",
+									"3": "Check that the facility providing the monitoring meets WSG.",
 									"4": "Check that a report of ongoing listed issues is publicly available until fully resolved.",
 									"5": "Provide resolutions for detected issues within a timely manner."
 								}
@@ -1489,7 +1489,7 @@
 							"procedure": [
 								{
 									"1": "Check that all publicly visible pages are included within the monitoring.",
-									"2": "Check for a wide variety of issues within the scope of the WSG.",
+									"2": "Check for a wide variety of issues within the scope of WSG.",
 									"3": "Check that a report of ongoing listed issues is publicly available until fully resolved.",
 									"4": "Provide resolutions for detected issues within a timely manner."
 								}
@@ -1884,7 +1884,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.6 Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
 					"description": [
 						{
-							"1": "First identify any third-party components within a website or application, then analyze that feature as if it were a first-party product or service (against the WSG) for sustainability. If the product or service is determined to be highly impactful in a negative way, the third-party should be replaced or removed; otherwise, it can be optimized, or stay as-is.",
+							"1": "First identify any third-party components within a website or application, then analyze that feature as if it were a first-party product or service (against WSG) for sustainability. If the product or service is determined to be highly impactful in a negative way, the third-party should be replaced or removed; otherwise, it can be optimized, or stay as-is.",
 							"2": "As third-party components are hosted externally, machine testing these elements should involve isolating these components and testing them as separate from the product or service. This can be factored into any decision-making regarding inclusion as highly performant and sustainable third-party materials will ultimately be low impact (and the opposite is true for others)."
 						}
 					],
@@ -1899,7 +1899,7 @@
 							"procedure": [
 								{
 									"1": "Check if any third-party components exist within the page or application.",
-									"2": "Check that component against the WSG for its sustainability compliance.",
+									"2": "Check that component against WSG for its sustainability compliance.",
 									"3": "Check if high-impact third-party components offer self-hosted alternatives.",
 									"4": "Check that self-hosted alternatives are used if provided."
 								}
@@ -2610,7 +2610,7 @@
 					],
 					"examples": [
 						{
-							"1": "RayGun [provides a great article](https://raygun.com/blog/js-security-vulnerabilities-best-practices/) about vulnerabilities and best practices when working with JavaScript. Some of the things mentioned are covered within the WSG in other sections, all others can be followed here.",
+							"1": "RayGun [provides a great article](https://raygun.com/blog/js-security-vulnerabilities-best-practices/) about vulnerabilities and best practices when working with JavaScript. Some of the things mentioned are covered within WSG in other sections, all others can be followed here.",
 							"2": "[Snyk](https://snyk.io/) is one of the most well-known providers of data regarding code vulnerabilities. They can be integrated within existing tooling or you can browse their [database of known security issues](https://security.snyk.io/) to be aware of."
 						}
 					],
@@ -2817,7 +2817,7 @@
 					"description": [
 						{
 							"1": "Provide a mechanism for testing third-party plugins, extensions, and themes (if such devices are used within a product or service's creation process) for any sustainability impacts they may have. These often are included within CMS software and are external assets that can add overheads to the website or application being rendered.",
-							"2": "For machine testability, many CMS products provide trace details of included features within the source code of a page (as conditional comments) due to these having to be loaded as third-party resources. Internal access may be required to get a full picture of everything being loaded. Third-party resources should be tested against the WSG separately to identify sustainability issues."
+							"2": "For machine testability, many CMS products provide trace details of included features within the source code of a page (as conditional comments) due to these having to be loaded as third-party resources. Internal access may be required to get a full picture of everything being loaded. Third-party resources should be tested against WSG separately to identify sustainability issues."
 						}
 					],
 					"examples": [
@@ -2831,7 +2831,7 @@
 								{
 									"1": "Check if any third-party resources exist within the page or application.",
 									"2": "If internal access is required to verify resource usage, grant it.",
-									"3": "Check that component against the WSG for its sustainability compliance.",
+									"3": "Check that component against WSG for its sustainability compliance.",
 									"4": "Check if high-impact third-party resources offer self-hosted alternatives.",
 									"5": "Check that self-hosted alternatives are used if provided."
 								}
@@ -3272,7 +3272,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.10 Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
 					"description": [
 						{
-							"1": "Test the sustainability of the CDN against the WSG as a service provider as a third-party service in addition to any sustainability criteria and best practices that exist externally for infrastructure and hosting. This not only applies to the provider itself but to all of the nodes that it uses to supply distribution, and any third-parties it uses as part of its extended network. As such, calculating and vetting providers can be complex.",
+							"1": "Test the sustainability of the CDN against WSG as a service provider as a third-party service in addition to any sustainability criteria and best practices that exist externally for infrastructure and hosting. This not only applies to the provider itself but to all of the nodes that it uses to supply distribution, and any third-parties it uses as part of its extended network. As such, calculating and vetting providers can be complex.",
 							"2": "For machine testability, providers should have information about sustainability offered within a sustainability statement along with details of compliance being met plus any sustainability features they provide that enhance their service. If this information is publicly available (and uses recognized sources), it could be parsed by machine, otherwise, a sustainable provider list should be sourced."
 						}
 					],
@@ -3287,7 +3287,7 @@
 								{
 									"1": "Check if the CDN provider has a sustainability statement in place.",
 									"2": "Check if the CDN provider meets any sustainability compliance obligations.",
-									"3": "Check that CDN against the WSG for its sustainability compliance.",
+									"3": "Check that CDN against WSG for its sustainability compliance.",
 									"4": "Check that the CDN supply network (nodes) are also as sustainable as the provider."
 								}
 							],
@@ -3416,8 +3416,8 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.12 Store data according to the needs of your users](https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
 						{
-							"1": "Ensure that any third-party backup service provider is examined for sustainability impacts. This will involve examining the impact they have simply in hosting your data, but also how sustainable their platform is, as well as their business. If their model meets any obligations laid out and aligns well against the WSG, it may meet success criteria.",
-							"2": "To identify how sustainable a service is, a list of recommended sustainable backup providers would be an ideal source to utilize (assuming that one exists and it is itself reputable). If no list exists, checking providers' claims, sustainability statements, and measuring their service against criteria such as the WSG can be helpful to some extent, though utilizing established standards like the GRI and recommendations around infrastructure will also help."
+							"1": "Ensure that any third-party backup service provider is examined for sustainability impacts. This will involve examining the impact they have simply in hosting your data, but also how sustainable their platform is, as well as their business. If their model meets any obligations laid out and aligns well against WSG, it may meet success criteria.",
+							"2": "To identify how sustainable a service is, a list of recommended sustainable backup providers would be an ideal source to utilize (assuming that one exists and it is itself reputable). If no list exists, checking providers' claims, sustainability statements, and measuring their service against criteria such as WSG can be helpful to some extent, though utilizing established standards like the GRI and recommendations around infrastructure will also help."
 						}
 					],
 					"examples": [
@@ -3431,7 +3431,7 @@
 								{
 									"1": "Check if the backup provider has a sustainability statement in place.",
 									"2": "Check if the backup provider meets any sustainability compliance obligations.",
-									"3": "Check that backup provider against the WSG for its sustainability compliance."
+									"3": "Check that backup provider against WSG for its sustainability compliance."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -3459,7 +3459,7 @@
 					"examples": [
 						{
 							"1": "The US Secretaries and Exchange Commission [has a useful example](https://www.sec.gov/Archives/edgar/data/1094007/000119312504044901/dex14.htm) regarding a code of ethics policy that leans towards ethical values. While it is focused on one industry it could easily be adapted to other sectors.",
-							"2": "Electronics organisation Nokia [has a page dedicated to sustainability](https://www.nokia.com/about-us/sustainability/) listing their commitments towards net-zero, their goals towards the planet, people, and organisational prosperity, plus other important assets relating to PPP emissions."
+							"2": "Electronics organization Nokia [has a page dedicated to sustainability](https://www.nokia.com/about-us/sustainability/) listing their commitments towards net-zero, their goals towards the planet, people, and prosperity, plus other important assets relating to PPP emissions."
 						}
 					],
 					"tests": [
@@ -3485,24 +3485,24 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.1 Have an ethical and sustainable product strategy](https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy).",
 					"description": [
 						{
-							"1": "Provide a mechanism within a sustainability statement to identify actions that a product or service may have undertaken that go beyond the WSG to become sustainable. These may include work from other specifications, supplementary materials to the WSG, or third-party tooling that has been created by the organization to improve sustainability.",
-							"2": "Machine testability for such features would include identifying references to the documentation within a sustainability statement, also if tooling itself is aware of anything that is beyond the scope of the WSG and feels it warrants inclusion for improving sustainability for the planet, people, and organisational prosperity, this could also be identified within the tooling and calculated into the overall scoring metrics."
+							"1": "Provide a mechanism within a sustainability statement to identify actions that a product or service may have undertaken that go beyond WSG to become sustainable. These may include work from other specifications, supplementary materials to WSG, or third-party tooling that has been created by the organization to improve sustainability.",
+							"2": "Machine testability for such features would include identifying references to the documentation within a sustainability statement, also if tooling itself is aware of anything that is beyond the scope of WSG and feels it warrants inclusion for improving sustainability for the planet, people, and prosperity, this could also be identified within the tooling and calculated into the overall scoring metrics."
 						}
 					],
 					"examples": [
 						{
-							"1": "Third-party testing tools such as [EcoGrader](https://ecograder.com/) or [Website Carbon](https://www.websitecarbon.com/) will have their own implementations of the WSG and therefore may choose to not only score differently but potentially extend the criteria being tested.",
-							"2": "Other specifications such as those from the [W3C](https://www.w3.org/) or RFCs from the [IETF](https://www.ietf.org/) may choose to reference sustainability best practices within the scope of their own work, based on evidence and beyond the WSG offerings."
+							"1": "Third-party testing tools such as [EcoGrader](https://ecograder.com/) or [Website Carbon](https://www.websitecarbon.com/) will have their own implementations of WSG and therefore may choose to not only score differently but potentially extend the criteria being tested.",
+							"2": "Other specifications such as those from the [W3C](https://www.w3.org/) or RFCs from the [IETF](https://www.ietf.org/) may choose to reference sustainability best practices within the scope of their own work, based on evidence and beyond WSG offerings."
 						}
 					],
 					"tests": [
 						{
 							"procedure": [
 								{
-									"1": "Check for any third-party sustainability features beyond the WSG scope.",
+									"1": "Check for any third-party sustainability features beyond WSG scope.",
 									"2": "Check that any such features are met in both guidelines and success criteria.",
 									"3": "Check that no conflicts are caused with existing WSG compliance.",
-									"4": "If conflicts do exist, prioritize the WSG unless a higher classification of document exists (law, etc)."
+									"4": "If conflicts do exist, prioritize WSG unless a higher classification of document exists (law, etc)."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -3573,12 +3573,12 @@
 					"description": [
 						{
 							"1": "Provide a sustainability benchmark of competitors to ensure that you maintain a regular schedule of improvements to your own work. This is something that is observed in many other aspects of business but is a great principle for having the edge over others who may want to lead the change on being environmentally friendly.",
-							"2": "It is important to consider any third-party service in isolation when analyzing services that are independent of your own. This means that you should run that product or service against the WSG without consideration of your own results and only compare them once testing is complete. For machine testing, any competitors could be provided by the user after the website or application has been analyzed, scanned, and compared - and those sites could be then tested."
+							"2": "It is important to consider any third-party service in isolation when analyzing services that are independent of your own. This means that you should run that product or service against WSG without consideration of your own results and only compare them once testing is complete. For machine testing, any competitors could be provided by the user after the website or application has been analyzed, scanned, and compared - and those sites could be then tested."
 						}
 					],
 					"examples": [
 						{
-							"1": "A manufacturer of bicycles analyzes how sustainable their website is compared to their competitors (knowing that they cannot optimize their manufacturing site any further), so they use the WSG as a benchmark.",
+							"1": "A manufacturer of bicycles analyzes how sustainable their website is compared to their competitors (knowing that they cannot optimize their manufacturing site any further), so they use WSG as a benchmark.",
 							"2": "Two businesses are about to merge but they do not know which website they should use to preserve their ethical reputation, so they run an analysis of both to identify things to take from each creation."
 						}
 					],
@@ -3586,8 +3586,8 @@
 						{
 							"procedure": [
 								{
-									"1": "Check your own product or service against the WSG for a baseline score.",
-									"2": "Check competitor websites against the WSG to identify where they sit sustainably.",
+									"1": "Check your own product or service against WSG for a baseline score.",
+									"2": "Check competitor websites against WSG to identify where they sit sustainably.",
 									"3": "Check again regularly over time to monitor potential changes that may occur."
 								}
 							],
@@ -3635,7 +3635,7 @@
 					"description": [
 						{
 							"1": "Provide a mechanism for product or service owners who have achieved certifications either as an individual or as a business in a related sustainability field (with a recognized achievement or certification) to have that accounted for in the calculation of their sustainability journey. Any such certifications should be included within a statement.",
-							"2": "For machine testability, this would require having a compiled list of recognized certifications and achievements (that are recognized as sustainable) which could then be identified by embedded links such as images for that scheme. Testing would also need to verify member's achievements. This can be used in weighted scoring to give additional marks for going beyond the WSG criteria."
+							"2": "For machine testability, this would require having a compiled list of recognized certifications and achievements (that are recognized as sustainable) which could then be identified by embedded links such as images for that scheme. Testing would also need to verify member's achievements. This can be used in weighted scoring to give additional marks for going beyond WSG criteria."
 						}
 					],
 					"examples": [
@@ -3840,7 +3840,7 @@
 					"description": [
 						{
 							"1": "Provide additional compliance criteria for testing tools to ensure that sustainability goals are being met. As such testing tools can analyze websites to vet each product or service against the United Nations Sustainable Development Goals to decide if enough evidence exists within WSG compliance (and other criteria) to pass or fail applicable categories.",
-							"2": "Because the SDGs may have scope beyond the WSG, both individuals and testing tools must develop criteria that meet the strict requirements of each category to be considered a compliance pass or fail. As such, it may require additional input from the tester, internal access, or additional measurements and evidence gathering undertaken (with scores adjusted)."
+							"2": "Because the SDGs may have scope beyond WSG, both individuals and testing tools must develop criteria that meet the strict requirements of each category to be considered a compliance pass or fail. As such, it may require additional input from the tester, internal access, or additional measurements and evidence gathering undertaken (with scores adjusted)."
 						}
 					],
 					"examples": [
@@ -3867,12 +3867,12 @@
 					"description": [
 						{
 							"1": "Both increase transparency within an organization and to ensure that users and customers can see how suppliers and potential suppliers in the supply chain are vetted to ensure that they meet sustainable guidance set up by the organization. This can relate to the things purchased, or even the business and the way it operates.",
-							"2": "Machine testing a supplier policy first requires detection that the policy exists in a public area of a website or application. Once detected, the list of suppliers can be gathered and unless the provider has already been validated by a verified third-party, conditions for testing can be identified and listed by the tool. If not, consider testing that supplier as a first-party against the WSG (if a digital service is given), otherwise, test against other compliance targets."
+							"2": "Machine testing a supplier policy first requires detection that the policy exists in a public area of a website or application. Once detected, the list of suppliers can be gathered and unless the provider has already been validated by a verified third-party, conditions for testing can be identified and listed by the tool. If not, consider testing that supplier as a first-party against WSG (if a digital service is given), otherwise, test against other compliance targets."
 						}
 					],
 					"examples": [
 						{
-							"1": "Mobile Phone company Telefonica has a Supply Chain [Sustainability Policy document](https://www.telefonica.com/en/wp-content/uploads/sites/5/2021/07/Policy-Sustainability-Supply-Chain.pdf) (PDF) that outlines its ethical standpoint regarding the planet, people, and organisational prosperity as defined by the SDGs and how it does trade."
+							"1": "Mobile Phone company Telefonica has a Supply Chain [Sustainability Policy document](https://www.telefonica.com/en/wp-content/uploads/sites/5/2021/07/Policy-Sustainability-Supply-Chain.pdf) (PDF) that outlines its ethical standpoint regarding the planet, people, and prosperity as defined by the SDGs and how it does trade."
 						}
 					],
 					"tests": [
@@ -3881,7 +3881,7 @@
 								{
 									"1": "Check that a publicly visible supplier policy exists on the website.",
 									"2": "Check that information covering all three aspects of PPP are covered.",
-									"3": "Check that third-party supplier against the WSG for sustainability.",
+									"3": "Check that third-party supplier against WSG for sustainability.",
 									"4": "If the supplier has a poor impact record post-testing, reconsider usage.",
 									"5": "Check that the content is written in plain English for readability."
 								}
@@ -3898,7 +3898,7 @@
 					"description": [
 						{
 							"1": "Provide a mechanism where members of the public who view a supplier policy document within your website can easily view the sustainability impact that working with each supplier will have on your product or service. This can be measured in many ways, but a detailed report of any benefits, issues, and solutions over time is helpful.",
-							"2": "Identifying that a list of partners exists is key, if a list of partners exists then attempting to verify the impact of those services should first be found on the website itself. If the information is not found, flagging the issue and attempting to test the partners individually against the WSG would be an ideal next step (in a similar fashion to competitor analysis) to identify problematic relationships."
+							"2": "Identifying that a list of partners exists is key, if a list of partners exists then attempting to verify the impact of those services should first be found on the website itself. If the information is not found, flagging the issue and attempting to test the partners individually against WSG would be an ideal next step (in a similar fashion to competitor analysis) to identify problematic relationships."
 						}
 					],
 					"examples": [
@@ -3912,7 +3912,7 @@
 								{
 									"1": "Check that all partnerships of the product or service are listed online.",
 									"2": "Check those partners against public lists of known greenwashers.",
-									"3": "Check those partners against the WSG for sustainability conformance.",
+									"3": "Check those partners against WSG for sustainability conformance.",
 									"4": "If the supplier has a poor impact record post-testing, reconsider usage."
 								}
 							],
@@ -4133,12 +4133,12 @@
 				},
 				{
 					"id": "BSPM21-1",
-					"title": "Verify all partnerships and sponsors against the WSG",
+					"title": "Verify all partnerships and sponsors against WSG",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.21 Include responsible financial policies](https://www.w3.org/TR/web-sustainability-guidelines/#include-responsible-financial-policies).",
 					"description": [
 						{
 							"1": "Ensure that if an individual or organization is being endorsed or financed by an external group or organization, the influence that the group may provide is sustainably minded (and will not divert the product or service away from such activities). Ensuring all endorsements are sustainable can also help service providers avoid claims of greenwashing.",
-							"2": "Machine testing such factors will require firstly all partnerships and sponsors to be correctly labeled as such, if they are labeled within the product or service then the tester can test each of these services against the WSG as a first-party (an isolated service) and verify how sustainable they are in comparison. If they score poorly, a warning of conflict of interest issues can be provided."
+							"2": "Machine testing such factors will require firstly all partnerships and sponsors to be correctly labeled as such, if they are labeled within the product or service then the tester can test each of these services against WSG as a first-party (an isolated service) and verify how sustainable they are in comparison. If they score poorly, a warning of conflict of interest issues can be provided."
 						}
 					],
 					"examples": [
@@ -4153,7 +4153,7 @@
 									"1": "Check that all partnerships and sponsors are publicly listed on the website.",
 									"2": "Check that all listings are correctly marked up so they can be machine-read.",
 									"3": "Check that all partnerships and sponsors are vetted against public lists of known greenwashers.",
-									"4": "Check that all partnerships and sponsors are tested against the WSG for sustainability.",
+									"4": "Check that all partnerships and sponsors are tested against WSG for sustainability.",
 									"5": "If the supplier has a poor impact record post-testing, reconsider usage."
 								}
 							],
@@ -4204,7 +4204,7 @@
 					],
 					"examples": [
 						{
-							"1": "A video streaming service wishes to build a sustainability budget based on the WSG so defines KPIs around each success criterion with a defined numerical value that must be achieved during machine testing stages."
+							"1": "A video streaming service wishes to build a sustainability budget based on WSG so defines KPIs around each success criterion with a defined numerical value that must be achieved during machine testing stages."
 						}
 					],
 					"tests": [
@@ -4213,7 +4213,7 @@
 								{
 									"1": "Check that any budget information provided by the user is in a valid format.",
 									"2": "Check to see if the user has submitted a JSON budget with predefined labels and values.",
-									"3": "Check that the WSG conformance (against success criteria) matches or is lower than the budget."
+									"3": "Check that WSG conformance (against success criteria) matches or is lower than the budget."
 								}
 							],
 							"expectedResults": "All checks above are true."
