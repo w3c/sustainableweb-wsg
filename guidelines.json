@@ -1,7 +1,7 @@
 {
 	"title": "Web Sustainability Guidelines",
 	"edition": "Group Note Draft",
-	"lastModified": "2026-03-06",
+	"lastModified": "2026-05-15",
 	"category": [
 		{
 			"id": "1",
@@ -94,7 +94,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Accessibility", "Compatibility", "Hardware", "Ideation", "Networking", "Performance", "Reporting", "Research", "Social Equity", "Software"]
+					"tags": ["Accessibility", "Compatibility", "Hardware", "Ideation", "Networking", "Performance", "Privacy", "Reporting", "Research", "Social Equity", "Software"]
 				},
 				{
 					"id": "2",
@@ -197,7 +197,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Accessibility", "Compatibility", "Ideation", "KPIs", "Patterns", "Reporting", "Research", "Social Equity", "UI", "Usability"]
+					"tags": ["Accessibility", "Compatibility", "Ideation", "KPIs", "Patterns", "Privacy", "Reporting", "Research", "Social Equity", "UI", "Usability"]
 				},
 				{
 					"id": "3",
@@ -426,7 +426,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Accessibility", "Content", "Patterns", "Performance", "Social Equity", "UI", "Usability"]
+					"tags": ["Accessibility", "Content", "Patterns", "Performance", "Privacy", "Social Equity", "UI", "Usability"]
 				},
 				{
 					"id": "5",
@@ -2338,7 +2338,7 @@
 						}
 					],
 					"example": ".opinions_box {\r\n\tmargin: 0 0 8px 0;\r\n\ttext-align: center;\r\n\t&__view-more {\r\n\t\ttext-decoration: underline;\r\n\t}\r\n\t&__text-input {\r\n\t\tborder: 1px solid #ccc;\r\n\t}\r\n\t&--is-inactive {\r\n\t\tcolor: gray;\r\n\t}\r\n}",
-					"tags": ["CSS", "JavaScript", "Patterns", "Performance"]
+					"tags": ["Accessibility", "CSS", "JavaScript", "Patterns", "Performance"]
 				},
 				{
 					"id": "6",
@@ -2612,7 +2612,7 @@
 						}
 					],
 					"example": "<button onclick=\"window.dialog.showModal()\">open dialog</button>\r\n<dialog id=\"dialog\">\r\n\t<p>I'm a dialog.</p>\r\n\t<form method=\"dialog\">\r\n\t\t<button>Close</button>\r\n\t</form>\r\n</dialog>",
-					"tags": ["Accessibility", "Compatibility", "Content", "HTML", "Social Equity", "Usability"]
+					"tags": ["Accessibility", "Compatibility", "Content", "HTML", "Security", "Social Equity", "Usability"]
 				},
 				{
 					"id": "8",
@@ -3184,7 +3184,7 @@
 						}
 					],
 					"example": "const audio = document.querySelector(\"audio\");\r\n\/\/ Handle page visibility change:\r\n\/\/ - If the page is hidden, pause the video\r\n\/\/ - If the page is shown, play the video\r\ndocument.addEventListener(\"visibilitychange\", () => {\r\nif (document.hidden) {\r\n\taudio.pause();\r\n} else {\r\n\taudio.play();\r\n}\r\n});",
-					"tags": ["Accessibility", "JavaScript", "Security"]
+					"tags": ["Accessibility", "JavaScript", "Privacy", "Security"]
 				},
 				{
 					"id": "15",
@@ -3532,7 +3532,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Accessibility", "Compatibility", "Ideation", "Performance", "Software", "Strategy"]
+					"tags": ["Accessibility", "Compatibility", "Ideation", "Performance", "Privacy", "Security", "Software", "Strategy"]
 				},
 				{
 					"id": "19",
@@ -4356,7 +4356,7 @@
 							"emissions": "Low"
 						}
 					],
-					"tags": ["Hardware", "Performance"]
+					"tags": ["Hardware", "Performance", "Security"]
 				},
 				{
 					"id": "9",
@@ -4937,7 +4937,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["Accessibility", "AI", "Education", "Ideation", "KPIs", "Research", "Social Equity", "Strategy"]
+					"tags": ["Accessibility", "AI", "Education", "Ideation", "KPIs", "Privacy", "Research", "Security", "Social Equity", "Strategy"]
 				},
 				{
 					"id": "2",
@@ -4980,7 +4980,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Education", "Ideation", "Marketing", "Social Equity"]
+					"tags": ["Accessibility", "Education", "Ideation", "Marketing", "Privacy", "Social Equity"]
 				},
 				{
 					"id": "3",
@@ -5268,7 +5268,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["AI", "Ideation", "KPIs", "Research", "Social Equity", "Software", "Strategy"]
+					"tags": ["Accessibility", "AI", "Ideation", "KPIs", "Research", "Social Equity", "Software", "Strategy"]
 				},
 				{
 					"id": "6",
@@ -5637,7 +5637,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["Accessibility", "Compatibility", "Strategy"]
+					"tags": ["Accessibility", "Compatibility", "Security", "Strategy"]
 				},
 				{
 					"id": "11",
@@ -5792,7 +5792,7 @@
 							"emissions": "High"
 						}
 					],
-					"tags": ["AI", "Compatibility", "KPIs", "Performance", "Security", "Strategy", "UI"]
+					"tags": ["Accessibility", "AI", "Compatibility", "KPIs", "Performance", "Privacy", "Security", "Strategy", "UI"]
 				},
 				{
 					"id": "12",
@@ -5835,7 +5835,7 @@
 						}
 					],
 					"example": "# Changelog - Website\r\n\r\n## [Unreleased]\r\n- N\/A\r\n\r\n## 1.0.0 - YYYY-MM-DD\r\n### Added\r\n- Content.\r\n\r\n## [Guide]\r\n- Added: New features.\r\n- Changed: Altered functionality.\r\n- Deprecated: Disappearing features.\r\n- Removed: Eliminated features.\r\n- Fixed: Bugs patched.\r\n- Security: Solved vulnerabilities.",
-					"tags": ["Compatibility", "Content", "Education", "Usability"]
+					"tags": ["Compatibility", "Content", "Education", "Security", "Usability"]
 				},
 				{
 					"id": "13",
@@ -6736,7 +6736,7 @@
 							"emissions": "Medium"
 						}
 					],
-					"tags": ["Compatibility", "E-Waste", "Research", "Social Equity", "Software", "Strategy"]
+					"tags": ["Compatibility", "E-Waste", "Privacy", "Research", "Security", "Social Equity", "Software", "Strategy"]
 				},
 				{
 					"id": "24",
