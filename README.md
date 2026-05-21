@@ -131,11 +131,6 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td>15 May 2026</td>
 		</tr>
 		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/summary.html">Summary of Web Sustainability</a></td>
-			<td>W3C Editors Draft</td>
-			<td>06 March 2026</td>
-		</tr>
-		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
 			<td>W3C Editors Draft</td>
 			<td>14 May 2026</td>
