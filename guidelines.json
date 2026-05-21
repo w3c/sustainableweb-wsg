@@ -3648,11 +3648,11 @@
 					"id": "1",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting",
 					"guideline": "Use sustainable hosting",
-					"subheading": "Ensure that hosting and domain infrastructure and service providers offer monitoring of resource use capabilities, low-carbon operations, and proper equipment maintenance and disposal.",
+					"subheading": "Select and manage infrastructure using sustainability metrics, extend hardware lifespan, and reduce and account for emissions through low-carbon energy use and responsible domain and hosting choices.",
 					"criteria": [
 						{
 							"title": "Sustainability metrics",
-							"description": "Monitor, request, and track key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. Prioritize indicators of energy and water usage, even if you are using an \"all-in-one\" full service hosting provider. For people who set up and configure their hosting, track hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share environmental impact metrics. Metrics should include Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE).",
+							"description": "Include sustainability metrics in your decision-making process when selecting hosting providers, platforms, and infrastructure. When using external hosting infrastructure or services, ensure the provider shares clear sustainability metrics such as Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE). If basic metrics are not available, consider alternative providers. In all cases, monitor, acquire, and track key indicators to assess and transparently report the environmental impact associated with hosting your project. Track energy and water use, and where possible, monitor and optimize server resources usage such as CPU and memory to identify opportunities for optimization and identify overprovisioning.",
 							"resources": [
 								{
 									"#3 Metrics for Datacenter Efficiency: PUE, CUE, and WUE": "https://submer.com/blog/pue-cue-and-wue-what-do-these-three-metrics-represent-and-which-is-one-is-the-most-important/",
@@ -3698,7 +3698,7 @@
 						},
 						{
 							"title": "Equipment longevity",
-							"description": "Both hosting providers and consumers should maintain hardware to extend its lifespan as long as possible. Use it efficiently at an appropriate capacity, verify it has up-to-date security patches, and ensure it has the necessary certifications. New purchases should be from reliable long-lifespan suppliers. Hosting providers should have a policy for extending hardware lifetime.",
+							"description": "Extend the lifespan of hardware. Use equipment efficiently at an appropriate capacity, keep it securely patched and properly maintained, and ensure it has the necessary certifications. New hardware should be sourced from suppliers with appropriate commitments to device longevity, patching, and repair options.",
 							"resources": [
 								{
 									"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
@@ -3744,7 +3744,7 @@
 						},
 						{
 							"title": "Low-carbon electricity",
-							"description": "Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, backup generators, and storage systems in calculations.",
+							"description": "Use electricity with the lowest practical carbon intensity. Hosting providers should measure and report carbon intensity using available location-based grid data and include on-site generation, backup systems, and storage in their reporting. Use this information to improve energy sourcing and infrastructure efficiency.",
 							"resources": [
 								{
 									"2025 Eco Web Hosting Review": "https://go.eco/news/2025-eco-web-hosting-review/",
@@ -3804,7 +3804,7 @@
 						},
 						{
 							"title": "Remaining emissions",
-							"description": "Work to ensure hosting and infrastructure adheres to GHG Protocol Scope 2 guidance on market-based carbon emissions accounting, seeking to match the time and location of location-based emissions from electricity consumption with purchases of low-carbon electricity.",
+							"description": "Reduce remaining emissions in accordance with GHG Protocol Scope 2 guidance on market-based carbon emissions accounting. Aim to match the time and location of location-based emissions from electricity consumption with purchases of low-carbon electricity.",
 							"resources": [
 								{
 									"Alternatives to Carbon Credits": "https://offsetguide.org/alternatives-to-carbon-credits/",
@@ -3834,7 +3834,7 @@
 						},
 						{
 							"title": "Domain names",
-							"description": "The impact of domain names is disclosed by domain registries and registrars. Registrants should consider and (where possible) mitigate environmental impact when making registration decisions.",
+							"description": "Verify that the impact of domain name registration is disclosed by domain registries and registrars. Where environmental impact data is available from registrars, use it to inform domain registration decisions and mitigate environmental impact. Where such data is unavailable, consider the assumed environmental impact when making registration decisions and make sustainability-focused choices where possible.",
 							"resources": [
 								{
 									".eco Greenhouse Gas Emissions Report - 2024": "https://go.eco/impact/ghg-report-2024/",
