@@ -934,11 +934,11 @@
 					"id": "11",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use",
 					"guideline": "Optimize media to reduce resource use",
-					"subheading": "Ensure all media - including audio, video, animation, images, and other novel formats, when deemed necessary in the design, are optimized, correctly sized and formatted, use lazy loading where appropriate, with a usage policy in place.",
+					"subheading": "Include media only when it supports user needs. Manage, optimize, and load media efficiently, while ensuring users have control over playback and data use.",
 					"criteria": [
 						{
 							"title": "Need for media",
-							"description": "Do not include media unless it adds value. Consider the quantity, format, and sizes required.",
+							"description": "Only include media when it supports user experience or improves understanding while reducing the overall quantity.",
 							"resources": [
 								{
 									"5 terabytes for 30 seconds of homepage video": "https://wagtail.org/blog/5-terabytes-for-30-seconds-of-homepage-video/",
@@ -963,7 +963,7 @@
 						},
 						{
 							"title": "Optimized media",
-							"description": "Resize, optimize, and compress all media. Provide media in appropriate sizes for different screen resolutions, user device capabilities, and user needs. Optimize and compress media appropriately. Provide media in compatible and appropriate formats. Avoid non-native embedded media players.",
+							"description": "Resize, optimize, and compress media for different screen sizes, devices, and user needs. Use appropriate and widely supported formats, and avoid unnecessary embedded media players.",
 							"resources": [
 								{
 									"20 ways to make your website more energy efficient": "https://www.wholegraindigital.com/blog/website-energy-efficiency/",
@@ -1024,7 +1024,7 @@
 						},
 						{
 							"title": "Lazy loading",
-							"description": "Incorporate lazy/deferred loading from the start: Consider which media elements are immediately required, and which would be better relegated to loading on specific user interaction. Load data-intensive media on the client side, including the media itself, behind a facade - a non-functional and static representational element.",
+							"description": "Incorporate lazy and/or deferred loading from the start by identifying which media elements are required immediately and which should load only on user interaction. Load large or data-intensive media only when needed, using a non-functional static facade or placeholder to defer loading until user request or interaction.",
 							"resources": [
 								{
 									"Avoid hotlinking images with Cross-Origin-Resource-Policy": "https://www.sjoerdlangkemper.nl/2024/11/27/avoid-hotlinking-images-with-corp-cross-origin-resource-policy/",
@@ -1046,7 +1046,7 @@
 						},
 						{
 							"title": "User-controlled media",
-							"description": "Disable auto-play functionality on audio, video, and similar media formats. Give the user full agency over media interactions, including a choice of resolutions and formats, and the option to deactivate media. Inform users of the length, format, and data intensity of the media. Provide the option for data-intensive media to be disabled or provide low-fidelity alternatives.",
+							"description": "Disable autoplay for audio, video, and other media by default. Ensure users can control playback, resolution, format, and data use. Inform users about media length, format, and expected data use. Provide the option to disable data-intensive media or offer lower-bandwidth alternatives.",
 							"resources": [
 								{
 									"Ditch 4K video and new tech to fight climate change": "https://www.bbc.co.uk/news/technology-55164410",
@@ -1073,7 +1073,7 @@
 						},
 						{
 							"title": "Media management and use",
-							"description": "Set up a media management and use policy. Include criteria for media compression, rendering impact optimization, file formats, data retention, review, and deletion.",
+							"description": "Create a media management and usage policy. Include guidance on compression, rendering performance, file formats, data retention, storage, review, and deletion.",
 							"resources": [
 								{
 
