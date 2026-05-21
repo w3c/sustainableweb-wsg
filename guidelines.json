@@ -2054,11 +2054,11 @@
 					"id": "1",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#set-goals-based-on-performance-and-energy-impact",
 					"guideline": "Set goals based on performance and energy impact",
-					"subheading": "Account for the difference in energy intensity that different types of content may have on a project and set goals based on what you would like to achieve.",
+					"subheading": "Define performance and environmental targets and design content with awareness of the relative energy and processing cost.",
 					"criteria": [
 						{
 							"title": "Performance goals",
-							"description": "Set clear goals with performance and environmental impact in mind, then meet them. These could include, the number of requests or elements that must be rendered.",
+							"description": "Set clear performance and environmental goals for the project, including limits on requests, elements rendered, or other measurable resource use.",
 							"resources": [
 								{
 									"15 page speed optimizations that sites ignore (at their own risk)": "https://www.speedcurve.com/blog/15-neglected-page-speed-optimizations/",
@@ -2091,7 +2091,7 @@
 						},
 						{
 							"title": "Energy intensity",
-							"description": "Consider differences in the energy intensity or testable impact across each component. For example, unstyled text is less computationally intensive to render than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL or 4K video.",
+							"description": "Prioritize lower-impact design choices, paying attention to measurable differences in energy use across components. Complex structure, styling, and script-driven experiences along with graphics-heavy and media-rich rendering increase the computational complexity of rendering. Use more intensive approaches only where these add clear value.",
 							"resources": [
 								{
 									"Analysis of overconsumptions on a light website": "https://greenspector.com/en/analysis-of-overconsumptions-on-a-light-website-2/",
