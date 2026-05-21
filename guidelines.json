@@ -1,7 +1,7 @@
 {
 	"title": "Web Sustainability Guidelines",
 	"edition": "Group Note Draft",
-	"lastModified": "2026-05-15",
+	"lastModified": "2026-05-21",
 	"category": [
 		{
 			"id": "1",
@@ -14,13 +14,13 @@
 			"guidelines": [
 				{
 					"id": "1",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#examine-and-disclose-any-external-factors-interacting-with-your-project",
-					"guideline": "Examine and disclose any external factors interacting with your project",
-					"subheading": "Identify, track, and publicly disclose negative external factors.",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts",
+					"guideline": "Identify, assess, disclose, review, and mitigate sustainability impacts",
+					"subheading": "Assess and report sustainability impacts, and plan measurable reductions to the real-world effects of digital activity.",
 					"criteria": [
 						{
 							"title": "Impact analysis",
-							"description": "Anticipate and identify existing or potential negative external factors. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.",
+							"description": "Review the sustainability impacts of your project at the start and at regular intervals. Publish a public sustainability statement that explains the main issues found, where improvements are needed, and what progress the project has made.",
 							"resources": [
 								{
 									"A view of the sustainable computing landscape": "https://www.cell.com/patterns/fulltext/S2666-3899(25)00144-8",
@@ -57,7 +57,7 @@
 						},
 						{
 							"title": "External impact",
-							"description": "Establish a plan of action for affected parties who might be indirectly impacted by choices made with your project. Examples include neighbors accepting parcels or traffic jams due to deliveries. Other examples include the local health impacts of infrastructure emissions, or supply chain pressure.",
+							"description": "Create a plan to reduce the real-world effects of digital activities associated with your project. Include effects such as transportation and deliveries, infrastructure emissions, local health impacts, and supply chain pressure. Use measurable actions to improve web sustainability.",
 							"resources": [
 								{
 									"2030 Calculator": "https://www.2030calculator.com/",
