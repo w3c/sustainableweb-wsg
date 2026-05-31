@@ -6357,11 +6357,11 @@
 					"id": "20",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies",
 					"guideline": "Establish responsible practices around AI and emerging or disruptive technologies",
-					"subheading": "Ensure responsible use of automated systems by only using ethically sourced and appropriately scaled data, managing environmental impacts, supporting workforce adaptation, respecting user agent controls, and using post-quantum encryption only where justified.",
+					"subheading": "Ensure responsible use of automated systems by only using ethically sourced and suitably sized data, managing environmental impacts, supporting workforce adaptation, respecting user agent controls, and using post-quantum encryption only where justified.",
 					"criteria": [
 						{
 							"title": "AI and data collection",
-							"description": "Ensure datasets used, created, or referenced by automated systems are appropriately scaled, ethically sourced, screened, validated, stored, and used in a fair and non-discriminatory, responsible way.",
+							"description": "Ensure datasets used, created, or referenced by automated systems are no larger than necessary for the task, ethically sourced, screened, validated, stored, and used in a fair and non-discriminatory, responsible way.",
 							"resources": [
 								{
 									"AI transparency framework": "https://uxdesign.cc/ai-transparency-framework-cf89fa61dc1b",
@@ -6386,7 +6386,7 @@
 						},
 						{
 							"title": "Business adaptation",
-							"description": "Support employees in adapting to new technologies that may change or disrupt their roles or the organisation's operations.",
+							"description": "Support employees in adapting to new technologies that may change or disrupt their roles or the organization's operations.",
 							"resources": [
 								{
 									"AI Overviews Reduce Clicks by 34.5%": "https://ahrefs.com/blog/ai-overviews-reduce-clicks/",
@@ -6406,7 +6406,7 @@
 						},
 						{
 							"title": "Environmental responsibilities",
-							"description": "Audit and account for environmental impacts linked to the promotion or adoption of AI and emerging or disruptive technologies. This includes third-party systems and the waste, water, and emissions generated per use, as well as those resulting from initial deployment and updates. Prioritize efficiency and is deployed in a way that minimises environmental impacts.",
+							"description": "Audit and account for environmental impacts linked to the promotion or adoption of AI and emerging or disruptive technologies. This includes third-party systems and the waste, water, and emissions generated per use, as well as those resulting from initial deployment and updates. Prioritize efficiency and deployment in a way that minimizes environmental impacts.",
 							"resources": [
 								{
 									"3rd Global CryptoAsset Benchmarking Study (PDF)": "https://www.jbs.cam.ac.uk/wp-content/uploads/2021/01/2021-ccaf-3rd-global-cryptoasset-benchmarking-study.pdf",
