@@ -3648,7 +3648,7 @@
 					"id": "1",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting",
 					"guideline": "Use sustainable hosting",
-					"subheading": "Select and manage infrastructure using sustainability metrics, extend hardware lifespan, and reduce and account for emissions through low-carbon energy use and responsible domain and hosting choices.",
+					"subheading": "Select and manage infrastructure using sustainability metrics to extend hardware lifespan and minimise emissions through low-carbon energy use and responsible domain and hosting choices.",
 					"criteria": [
 						{
 							"title": "Sustainability metrics",
@@ -3698,7 +3698,7 @@
 						},
 						{
 							"title": "Equipment longevity",
-							"description": "Extend the lifespan of hardware. Use equipment efficiently at an appropriate capacity, keep it securely patched and properly maintained, and ensure it has the necessary certifications. New hardware should be sourced from suppliers with appropriate commitments to device longevity, patching, and repair options.",
+							"description": "Extend the lifespan of hardware. Use equipment efficiently and at the right capacity, keep it securely patched and properly maintained, and ensure it has the necessary certifications. New hardware should be sourced from suppliers that commit to device longevity, patching, and repair options.",
 							"resources": [
 								{
 									"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
@@ -3744,7 +3744,7 @@
 						},
 						{
 							"title": "Low-carbon electricity",
-							"description": "Use electricity with the lowest practical carbon intensity. Hosting providers should measure and report carbon intensity using available location-based grid data and include on-site generation, backup systems, and storage in their reporting. Use this information to improve energy sourcing and infrastructure efficiency.",
+							"description": "Use electricity with the lowest possible carbon intensity. Hosting providers should measure and report carbon intensity using available location-based grid data and include on-site generation, backup systems, and storage in their reporting. Use this information to improve energy sourcing and infrastructure efficiency.",
 							"resources": [
 								{
 									"2025 Eco Web Hosting Review": "https://go.eco/news/2025-eco-web-hosting-review/",
@@ -3834,7 +3834,7 @@
 						},
 						{
 							"title": "Domain names",
-							"description": "Verify that the impact of domain name registration is disclosed by domain registries and registrars. Where environmental impact data is available from registrars, use it to inform domain registration decisions and mitigate environmental impact. Where such data is unavailable, consider the assumed environmental impact when making registration decisions and make sustainability-focused choices where possible.",
+							"description": "Verify that the impact of domain name registration is disclosed by domain registries and registrars. Where environmental impact data is available from registrars, use it to inform domain registration decisions and mitigate environmental impact. Where such data is unavailable, assess the assumed environmental impact when making registration decisions and make sustainability-focused choices where possible.",
 							"resources": [
 								{
 									".eco Greenhouse Gas Emissions Report - 2024": "https://go.eco/impact/ghg-report-2024/",
