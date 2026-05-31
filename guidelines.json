@@ -934,11 +934,11 @@
 					"id": "11",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use",
 					"guideline": "Optimize media to reduce resource use",
-					"subheading": "Include media only when it supports user needs. Manage, optimize, and load media efficiently, while ensuring users have control over playback and data use.",
+					"subheading": "Include media only when it supports user needs. Manage, optimize, and load media efficiently. Ensure users have control over playback and data use.",
 					"criteria": [
 						{
 							"title": "Need for media",
-							"description": "Only include media when it supports user experience or improves understanding while reducing the overall quantity.",
+							"description": "Only include media when it supports user experience or improves understanding and keep the number of media items to a minimum.",
 							"resources": [
 								{
 									"5 terabytes for 30 seconds of homepage video": "https://wagtail.org/blog/5-terabytes-for-30-seconds-of-homepage-video/",
@@ -963,7 +963,7 @@
 						},
 						{
 							"title": "Optimized media",
-							"description": "Resize, optimize, and compress media for different screen sizes, devices, and user needs. Use appropriate and widely supported formats, and avoid unnecessary embedded media players.",
+							"description": "Resize, optimize, and compress media for different screen sizes, devices, and user needs. Use widely supported, efficient formats that enable native playback where possible. Avoid unnecessary custom or non-native media players.",
 							"resources": [
 								{
 									"20 ways to make your website more energy efficient": "https://www.wholegraindigital.com/blog/website-energy-efficiency/",
@@ -1046,7 +1046,7 @@
 						},
 						{
 							"title": "User-controlled media",
-							"description": "Disable autoplay for audio, video, and other media by default. Ensure users can control playback, resolution, format, and data use. Inform users about media length, format, and expected data use. Provide the option to disable data-intensive media or offer lower-bandwidth alternatives.",
+							"description": "Disable autoplay for audio, video, and other media by default. Ensure users can control playback and resolution. Inform users about media length, format, and expected data use. Provide the option to disable data-intensive media or offer lower-bandwidth alternatives.",
 							"resources": [
 								{
 									"Ditch 4K video and new tech to fight climate change": "https://www.bbc.co.uk/news/technology-55164410",
