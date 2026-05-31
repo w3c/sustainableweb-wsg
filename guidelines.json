@@ -2268,7 +2268,7 @@
 					"id": "5",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-redundancy-and-duplication-in-code",
 					"guideline": "Avoid redundancy and duplication in code",
-					"subheading": "Refactor and reuse code to reduce duplication, ensure maintainability, and favor evolving existing solutions over rebuilding them.",
+					"subheading": "Reduce code duplication through refactoring and reuse, ensure maintainability, and favor evolving existing solutions over rebuilding them.",
 					"criteria": [
 						{
 							"title": "Remove or simplify",
