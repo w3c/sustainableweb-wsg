@@ -3970,7 +3970,7 @@
 					"criteria": [
 						{
 							"title": "Server-side compression",
-							"description": "Use server-side compression to reduce file sizes before delivery. This can reduce bandwidth use and improve performance, but balance it against processing cost and diminishing returns.",
+							"description": "Reduce file size before uploading images, audio, and video by using efficient formats and quality settings. Avoid applying additional compression if the file is already appropriately sized for upload.",
 							"resources": [
 								{
 									"10 Steps to Avoid Enormous Network Payloads": "https://www.debugbear.com/blog/avoid-enormous-network-payloads",
