@@ -3651,32 +3651,46 @@
 					"subheading": "Select and manage infrastructure using sustainability metrics to extend hardware lifespan and minimise emissions through low-carbon energy use and responsible domain and hosting choices.",
 					"criteria": [
 						{
-							"title": "Sustainability metrics",
-							"description": "Include sustainability metrics in your decision-making process when selecting hosting providers, platforms, and infrastructure. When using external hosting infrastructure or services, ensure the provider shares clear sustainability metrics such as Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE). If basic metrics are not available, consider alternative providers. In all cases, monitor, acquire, and track key indicators to assess and transparently report the environmental impact associated with hosting your project. Track energy and water use, and where possible, monitor and optimize server resources usage such as CPU and memory to identify opportunities for optimization and identify overprovisioning.",
+							"title": "Provider selection",
+							"description": "Include sustainability metrics when selecting and evaluating potential infrastructure, hosting, cloud, platform, or other digital services. Favor providers that publicly and transparently disclose their environmental policies and related performance indicators, including Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), Carbon Usage Effectiveness (CUE), renewable energy use, emissions reduction commitments, and hardware maintenance and sourcing practices.",
 							"resources": [
 								{
 									"#3 Metrics for Datacenter Efficiency: PUE, CUE, and WUE": "https://submer.com/blog/pue-cue-and-wue-what-do-these-three-metrics-represent-and-which-is-one-is-the-most-important/",
 									"A *May* update on the first E.E.D. day in Europe": "https://www.thegreenwebfoundation.org/news/a-may-update-on-the-first-e-e-d-day-in-europe/",
-									"Afnic's Carbon Balance Sheet": "https://www.afnic.fr/en/associating-excellence/our-commitments/social-responsibility-at-afnic/environment-measuring-understanding-and-reducing-the-impact-of-our-activities/",
 									"Beyond PUE: Taclking IT's wasted terawatts (PDF)": "https://www.capex.net.co/wp-content/uploads/2020/02/Capex.pdf",
-									"Big tech's new datacentres will take water from the world's driest areas": "https://www.theguardian.com/environment/2025/apr/09/big-tech-datacentres-water",
 									"Bridging the Sustainability Gap in Serverless through Observability and Carbon-Aware Pricing (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final164.pdf",
-									"Can the Internet Survive Climate Change?": "https://newrepublic.com/article/155993/can-internet-survive-climate-change",
-									"Carbon Footprint of Data Centers & Data Storage Per Country": "https://8billiontrees.com/carbon-offsets-credits/carbon-ecological-footprint-calculators/carbon-footprint-of-data-centers/",
-									"Causal allocation of fixed impacts in product systems": "https://onlinelibrary.wiley.com/doi/10.1111/jiec.70057",
 									"Cloud PUE: Comparing AWS, Azure and GCP Global Regions": "https://thenewstack.io/cloud-pue-comparing-aws-azure-and-gcp-global-regions/",
 									"Data Centre Energy Use: Critical Review of Models and Results (PDF)": "https://www.iea-4e.org/wp-content/uploads/2025/05/Data-Centre-Energy-Use-Critical-Review-of-Models-and-Results.pdf",
 									"Data Collection - Big Tech Emissions + Energy": "https://ketanjoshi.co/2025/05/23/data-collection-big-tech-emissions-energy/",
 									"DC2 PARIS - Opcore Datacenter": "https://pue.dc2.opcore.eu/en/",
+									"GPF - General Policy Framework (PDF) - 8.1 - Hosting (Hosting Provider)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 8.5 - Hosting (Renewable Documentation)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GR491 - 1-8014 - Power Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8014-hosting-the-total-power-consumed-by-the-data",
+									"GR491 - 1-8016 - Water Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8016-hosting-the-total-water-consumed-by-the-data",
+									"GR491 - 1-8013 - Server Power Efficiency": "https://gr491.isit-europe.org/en/crit.php?id=1-8013-hosting-one-factor-in-reducing-the-hosting-footprint",
+									"Reading grid for environmental commitments of web hosting offers": "https://greenspector.com/en/comparison-of-web-hosting-offers-selected-for-their-environmental-commitments/",
+									"Stratix Rapportage Datacenters Impact en Feiten (PDF)": "https://www.stratix.nl/wp-content/uploads/2023/02/Stratix-Rapport-objectivering-datacenters-2022.pdf",
+									"What is PUE / DCiE? How to Calculate, What to Measure": "https://www.42u.com/measurement/pue-dcie.htm",
+									"Water Usage Effectiveness (WUE)": "https://www.sunbirddcim.com/glossary/water-usage-effectiveness-wue"
+								}
+							]
+						},
+						{
+							"title": "Efficient operation",
+							"description": "Monitor and reduce the negative environmental impact of all running infrastructure over time. Whether external or self-hosted, track all available relevant indicators, such as energy use, water use, and server resource utilization. This includes CPU/cores, memory, storage, and network usage. Use this information to identify inefficiencies, reduce overprovisioning, optimize resource use, and support transparent sustainability reporting.",
+							"resources": [
+								{
+									"Afnic's Carbon Balance Sheet": "https://www.afnic.fr/en/associating-excellence/our-commitments/social-responsibility-at-afnic/environment-measuring-understanding-and-reducing-the-impact-of-our-activities/",
+									"Big tech's new datacentres will take water from the world's driest areas": "https://www.theguardian.com/environment/2025/apr/09/big-tech-datacentres-water",
+									"Can the Internet Survive Climate Change?": "https://newrepublic.com/article/155993/can-internet-survive-climate-change",
+									"Carbon Footprint of Data Centers & Data Storage Per Country": "https://8billiontrees.com/carbon-offsets-credits/carbon-ecological-footprint-calculators/carbon-footprint-of-data-centers/",
+									"Causal allocation of fixed impacts in product systems": "https://onlinelibrary.wiley.com/doi/10.1111/jiec.70057",
 									"Energizta": "https://boavizta.github.io/Energizta/",
 									"Getting beyond Net Zero dashboards in the information technology sector": "https://www.sciencedirect.com/science/article/pii/S2214629623004577",
 									"GPF - General Policy Framework (PDF) - 4.15 - UX and UI (Sustainability Tracking)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.1 - Hosting (Hosting Provider)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.2 - Hosting (Equipment Policy)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.5 - Hosting (Renewable Documentation)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 1-8014 - Power Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8014-hosting-the-total-power-consumed-by-the-data",
-									"GR491 - 1-8016 - Water Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8016-hosting-the-total-water-consumed-by-the-data",
-									"GR491 - 1-8013 - Server Power Efficiency": "https://gr491.isit-europe.org/en/crit.php?id=1-8013-hosting-one-factor-in-reducing-the-hosting-footprint",
 									"GR491 - 3-8026 - Power Off When Not In Use": "https://gr491.isit-europe.org/en/crit.php?id=3-8026-hosting-the-network-infrastructure-is-at-the-heart",
 									"GR491 - 3-8027 - Physical VS Virtual": "https://gr491.isit-europe.org/en/crit.php?id=3-8027-hosting-virtualization-techniques-make-it-possible-to-pool",
 									"GR491 - 3-8028 - Memory Usage": "https://gr491.isit-europe.org/en/crit.php?id=3-8028-hosting-the-management-of-the-consumption-of-physical",
@@ -3686,13 +3700,7 @@
 									"GR491 - 5-8053 - Efficiency Measurements": "https://gr491.isit-europe.org/en/crit.php?id=5-8053-hosting-the-standards-for-data-centers-highlight-efficiency",
 									"Overestimating data center public health costs": "https://davidmytton.blog/overestimating-data-center-public-health-costs/",
 									"Overview of Power Factor in Streaming (PDF)": "https://555e2619-4a3d-4f25-8303-8fb567f350a1.filesusr.com/ugd/2e5a39_96ca7c83877946a2a273d5d85a52fd26.pdf",
-									"Power Off, Sleep and Standby (PDF)": "https://www.greeningofstreaming.org/_files/ugd/b1006e_3e4d32473a3c4edb96e4465863030718.pdf",
-									"Reading grid for environmental commitments of web hosting offers": "https://greenspector.com/en/comparison-of-web-hosting-offers-selected-for-their-environmental-commitments/",
-									"Stratix Rapportage Datacenters Impact en Feiten (PDF)": "https://www.stratix.nl/wp-content/uploads/2023/02/Stratix-Rapport-objectivering-datacenters-2022.pdf",
-									"Sustainability Guide: Product": "https://sustainabilityguide.eu/ecodesign/product/",
-									"Sustainability Guide: Use": "https://sustainabilityguide.eu/ecodesign/use/",
-									"What is PUE / DCiE? How to Calculate, What to Measure": "https://www.42u.com/measurement/pue-dcie.htm",
-									"Water Usage Effectiveness (WUE)": "https://www.sunbirddcim.com/glossary/water-usage-effectiveness-wue"
+									"Power Off, Sleep and Standby (PDF)": "https://www.greeningofstreaming.org/_files/ugd/b1006e_3e4d32473a3c4edb96e4465863030718.pdf"
 								}
 							]
 						},
