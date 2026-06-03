@@ -2301,7 +2301,7 @@
 						},
 						{
 							"title": "Organize code arrangement",
-							"description": "Apply practices such as Don't Repeat Yourself (DRY) to CSS and JavaScript to improve maintainability and reduce unnecessary resource usage.",
+							"description": "Apply DRY (Don't Repeat Yourself) principles to CSS and JavaScript where they improve maintainability. Ensure that efforts to reduce duplication do not increase complexity, introduce unnecessary dependencies, or adversely affect performance.",
 							"resources": [
 								{
 									"3 software development principles I wish I knew earlier in my career": "https://thetshaped.dev/p/3-software-development-principles",
