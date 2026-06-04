@@ -412,7 +412,8 @@
 			noRecTrack: true,
 			shortName: "web-sustainability-guidelines",
 			latestVersion: "https://www.w3.org/TR/web-sustainability-guidelines/",
-			postProcess: [authorRef, editorRef, htmlInsert, addFilter, queryFilter]
+			postProcess: [authorRef, editorRef, htmlInsert, addFilter, queryFilter],
+			maxTocLevel: 3,
 		}
 		</script>
 	</head>
@@ -512,13 +513,78 @@
 				</section>
 				<section> <!-- Impact and reporting -->
 					<h4>Impact and reporting</h4>
-					<p>WSG provides a basic reporting metric based on the Global Reporting Initiative ([[GRI]]) to support web sustainability tracking and compliance. An open-source <a href="https://w3c.github.io/sustainableweb-wsg/GRI.ipynb">Jupyter Notebook</a> combines two inputs: a spreadsheet of guidelines with low, medium, or high impact ratings for server resources, network transfer, and end-user devices; and data from the GreenIT Report [[FOOTPRINT]] estimating environmental impacts across material use, water use, energy use, and greenhouse gas emissions. The notebook produces estimates of each guideline's comparative impact on the relevant GRI taxonomy sections.</p>
-					<p id="reporting" class="overflowFix">GRI impact ratings:</p>
-					<ul>
-						<li><strong>Low:</strong> This will have a minimal impact within a particular category.</li>
-						<li><strong>Medium:</strong> This will have an impact worthy of consideration within a particular category.</li>
-						<li><strong>High:</strong> This will have a considerable impact within a particular category.</li>
-					</ul>
+					<h5>Introduction</h5>
+					<p>WSG provides “high”, “medium”, “low”, and “indeterminate” impact ratings for each guideline across the spectrum of people, planet, and prosperity. These ratings are accompanied by an indicator (“short”, “medium”, and “long”) reflecting the timeframe in which the impact is likely realized.</p>
+					<p>These factors go into calculating an “impact score” for each guideline. This score  provides a means for adopters of the WSG to assess the impact of each guideline and prioritise the guidelines they may choose to act upon.</p>
+					<p>Each guideline has an explanation of the rationale behind each set of ratings and timeframe because  some guidelines in the WSG are not  measurable using a clear metric or tool.  As a result. for some guidelines, we have used available research and input from  industry experts in order to provide ratings and impact timeframes. </p>
+					<p>Where appropriate, we included the suitable or recommended metrics that can be used to assess the impact of a given guideline.</p>
+					<h5>Impact ratings</h5>
+					<dl class="overflowFix">
+						<dt>Indeterminate</dt>
+						<dd>The impact of a guideline on a given category cannot be easily assessed.</dd>
+						<dt>Low</dt> 
+						<dd>The guideline has a small positive impact on the given category.</dd>
+						<dt>Medium</dt>
+						<dd>The guideline has a moderate positive impact on the given category.</dd>
+						<dt>High</dt>
+						<dd>The guideline has a significant positive impact on the given category.</dd>
+					</dl>
+					<h5>Timeframe</h5>
+					<dl>
+						<dt>Short</dt>
+						<dd>The impact of the guideline will be noticed quickly (e.g. within the next month, the next sprint etc.)</dd>
+						<dt>Medium</dt>
+						<dd>The impact of the guideline will be noticed after some time (e.g. after a few months, after the next major release etc.)</dd>
+						<dt>Long</dt>
+						<dd>The impact of the guideline will be noticed after a lengthy period (e.g. after a year, after several major releases etc.)</dd>
+					</dl>
+					<h5>Categories</h5>
+					<dl>
+						<dt>Planet</dt>
+						<dd>This guidelines prioritizes the health of the environment, ecosystems, and the planet overall.</dd>
+						<dt>People</dt>
+						<dd>This guideline prioritizes giving This guideline prioritizes giving  access to resources, information, and opportunities necessary for their well-being.</dd>
+						<dt>Prosperity</dt>
+						<dd>This guidelines prioritizes financial stability and equitable economic development, usually via the circular economy.</dd>
+					</dl>
+					<h5>Impact score</h5>
+					<p>The impact score is derived from the impact ratings and impact timeframe for each guideline. Higher values mean the guideline has a higher impact in a shorter period of time, while lower values mean the opposite.</p>
+					<p>Each category (People, Planet, Prosperity) is assigned an impact rating and timeframe based on the table below. These are then summed to calculate the impact score.</p>
+					<table class="index">
+						<caption>Impact score calculation</caption>
+						<thead>
+							<tr>
+								<th></th>
+								<th colspan="3">Impact rating</th>
+								<th colspan="3">Impact timeframe</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td</td>
+								<td><strong>Indeterminate</strong></td>
+								<td><strong>Low</strong></td>
+								<td><strong>Medium</strong></td>
+								<td><strong>High</strong></td>
+								<td><strong>Short</strong></td>
+								<td><strong>Medium</strong></td>
+								<td><strong>Long</strong></td>
+							</tr>
+							<tr>
+								<td><strong>Points</strong></td>
+								<td>0</td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>3</td>
+								<td>2</td>
+								<td>1</td>
+							</tr>
+						</tbody>
+					</table>
+					<h5>Assumptions</h5>
+					<p>Impact ratings are provided at the guideline level. Future versions may offer ratings at the Success Criteria level. Assume that each success criteria under a parent guideline shares the same impact ratings and timeframes as that guideline.</p>
+					<p>Impact ratings are for individual guidelines. Ratings are not compounded. </p>
 					<p class="ednote">A <strong>JSON API</strong> will provide web sustainability impact scores, including details on scope, limitations, and labels. It will replace the existing reporting GRI metrics, which will continue to appear in the "additional information" sections until the JSON API is available.</p>
 				</section>
 				<section> <!-- Call to action -->
