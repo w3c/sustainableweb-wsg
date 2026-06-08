@@ -2272,7 +2272,7 @@
 					"criteria": [
 						{
 							"title": "Remove or simplify",
-							"description": "Refactor code to reduce duplication and redundancy by improving structure, consolidating repeated logic, and encouraging reuse, without changing functionality.",
+							"description": "Refactor code to reduce duplication and redundancy by improving structure, consolidating repeated logic, and encouraging reuse.",
 							"resources": [
 								{
 									"25 Techniques for Javascript Performance Optimization": "https://desalasworks.com/article/javascript-performance-techniques/",
@@ -2286,7 +2286,7 @@
 						},
 						{
 							"title": "Iteration over recreation",
-							"description": "Prioritize improving existing solutions over rebuilding from scratch. Only replace a solution when the new approach offers justifiable improvements to performance, scalability, or maintainability.",
+							"description": "Prioritize improving and extending existing user-facing solutions over rebuilding them from scratch. Only replace an existing solution when doing so provides clear benefits to user experience, performance, scalability, or maintainability.",
 							"resources": [
 								{
 									"A Sustainable Design Handbook": "https://www.sustainabledesignhandbook.com/design-development",
