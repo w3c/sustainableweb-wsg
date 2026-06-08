@@ -3648,11 +3648,11 @@
 					"id": "1",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting",
 					"guideline": "Use sustainable hosting",
-					"subheading": "Select and manage infrastructure using sustainability metrics to extend hardware lifespan and minimise emissions through low-carbon energy use and responsible domain and hosting choices.",
+					"subheading": "Select and manage infrastructure using sustainability metrics, prioritising low-carbon energy use and low-impact hosting and domain choices in selection, and extending hardware lifespan and minimising emissions in management.",
 					"criteria": [
 						{
 							"title": "Provider selection",
-							"description": "Include sustainability metrics when selecting and evaluating potential infrastructure, hosting, cloud, platform, or other digital services. Favor providers that publicly and transparently disclose their environmental policies and related performance indicators, including Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), Carbon Usage Effectiveness (CUE), renewable energy use, emissions reduction commitments, and hardware maintenance and sourcing practices.",
+							"description": "Include sustainability metrics when selecting and evaluating potential infrastructure, hosting, cloud, platform, externally managed content, or other digital services. Favor providers that publicly and transparently disclose their environmental policies and related performance indicators, including Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), Carbon Usage Effectiveness (CUE), renewable energy use, emissions reduction commitments, and hardware maintenance and sourcing practices.",
 							"resources": [
 								{
 									"#3 Metrics for Datacenter Efficiency: PUE, CUE, and WUE": "https://submer.com/blog/pue-cue-and-wue-what-do-these-three-metrics-represent-and-which-is-one-is-the-most-important/",
@@ -3706,7 +3706,7 @@
 						},
 						{
 							"title": "Equipment longevity",
-							"description": "Extend the lifespan of hardware. Use equipment efficiently and at the right capacity, keep it securely patched and properly maintained, and ensure it has the necessary certifications. New hardware should be sourced from suppliers that commit to device longevity, patching, and repair options.",
+							"description": "Extend the lifespan of hardware. Use equipment efficiently and at the right capacity and keep it securely patched and properly maintained. New hardware should be sourced from suppliers that commit to device longevity, patching, and repair options..",
 							"resources": [
 								{
 									"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
@@ -3752,7 +3752,7 @@
 						},
 						{
 							"title": "Low-carbon electricity",
-							"description": "Use electricity with the lowest possible carbon intensity. Hosting providers should measure and report carbon intensity using available location-based grid data and include on-site generation, backup systems, and storage in their reporting. Use this information to improve energy sourcing and infrastructure efficiency.",
+							"description": "Use electricity with the lowest possible carbon intensity. Hosting providers should measure and report carbon intensity using available location-based grid data, including on-site generation, backup systems, and storage. Use this information to select lower-carbon hosting providers and improve energy sourcing and infrastructure efficiency.",
 							"resources": [
 								{
 									"2025 Eco Web Hosting Review": "https://go.eco/news/2025-eco-web-hosting-review/",
@@ -3812,7 +3812,7 @@
 						},
 						{
 							"title": "Remaining emissions",
-							"description": "Reduce remaining emissions in accordance with GHG Protocol Scope 2 guidance on market-based carbon emissions accounting. Aim to match the time and location of location-based emissions from electricity consumption with purchases of low-carbon electricity.",
+							"description": "Reduce remaining emissions using market-based carbon accounting for indirect electricity emissions under the GHG Protocol (Scope 2). When purchasing low-carbon electricity through Energy Attribute Certificates (EACs) or Renewable Energy Certificates (RECs), ensure the certificates match the time and location of the electricity used, identify when the renewable electricity was generated, can be validly transferred and retired for your claim, and are issued and retired in a way that prevents double counting.",
 							"resources": [
 								{
 									"Alternatives to Carbon Credits": "https://offsetguide.org/alternatives-to-carbon-credits/",
