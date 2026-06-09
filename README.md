@@ -95,7 +95,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Group Note Draft</td>
-			<td>15 May 2026</td>
+			<td>09 Jun 2026</td>
 		</tr>
 	</tbody>
 </table>
@@ -113,42 +113,42 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
 			<td>W3C Editors Draft</td>
-			<td>14 May 2026</td>
+			<td>09 Jun 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/resources.html">WSG Resources</a></td>
 			<td>W3C Editors Draft</td>
-			<td>15 May 2026</td>
+			<td>09 Jun 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws and Policies</a></td>
 			<td>W3C Editors Draft</td>
-			<td>14 May 2026</td>
+			<td>09 Jun 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/benefits.html">WSG Benefits</a></td>
 			<td>W3C Editors Draft</td>
-			<td>15 May 2026</td>
+			<td>09 Jun 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
 			<td>W3C Editors Draft</td>
-			<td>14 May 2026</td>
+			<td>09 Jun 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">WSG Quick Reference</a></td>
 			<td>W3C Editors Draft</td>
-			<td>15 May 2026</td>
+			<td>09 Jun 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
 			<td>JSON API</td>
-			<td>15 May 2026</td>
+			<td>09 Jun 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
 			<td>JSON API</td>
-			<td>14 May 2026</td>
+			<td>09 Jun 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>

@@ -5,13 +5,13 @@
 		<meta name="color-scheme" content="light dark">
 		<title>Web Sustainability Guidelines (WSG)</title>
 		<style>
-			/* Fix for Testability Highlight Color Palette: https://github.com/w3c/sustyweb/issues/29 */
+			/* Fix for Testability Highlight Color Palette: https://github.com/w3c-cg/sustyweb/issues/29 */
 			section > section > section { display: flex; flex-wrap: wrap; }
 			section > section > section p:last-child { flex-basis: 100%; }
 			.external { align-items: end; display: flex; gap: 1em; position: relative; top: 0.1em; white-space: nowrap; width: fit-content; }
 			.urls { border: 1px solid #A0A0A0; border-radius: 10px; display: block; font-weight: bold; padding: 0.25em 0.5em; }
 			.urls { background-color: var(--tocsidebar-bg); }
-			/* Fix for Specification Readability: https://github.com/w3c/sustyweb/issues/92 */
+			/* Fix for Specification Readability: https://github.com/w3c-cg/sustyweb/issues/92 */
 			h5 { font-weight: bold !important; }
 			.overflowFix, blockquote { width: 100%; }
 			.subheading { border-left: thick solid #d9d9d9; font-style: italic; padding: 0.5em 1em; }
@@ -27,11 +27,11 @@
 				.summary .rating dd { flex-basis: calc(100% - 83px); }
 				.summary .reporting dd { flex-basis: calc(100% - 85px); margin: 0; }
 				.summary .reporting dd { flex-basis: calc(100% - 85px); } }
-			/* Fix for Printing The Specification: https://github.com/w3c/sustyweb/issues/92 */
+			/* Fix for Printing The Specification: https://github.com/w3c-cg/sustyweb/issues/92 */
 			@media print {
 				.pageButtons, .filter, body { margin-left: 1.6em !important; padding-left: 1.6em !important; }
 				.switch { display: none; } }
-			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
+			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c-cg/sustyweb/issues/114 */
 			summary { cursor: pointer; }
 			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
 			/* Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14 */
@@ -444,7 +444,7 @@
 				<section> <!-- Web sustainability overview -->
 					<h4>Web sustainability overview</h4>
 					<p class="overflowFix">WSG defines web sustainability as follows:</p>
-					<p class="def">An approach to designing, developing, and operating digital products and services that leads to a web that is <strong>clean, efficient, open, honest, regenerative and resilient</strong>.</p>
+					<p class="def">An approach to designing, developing, and operating digital products and services that leads to a web that is as <strong>clean, efficient, open, honest, regenerative and resilient</strong> as possible.</p>
 					<p>Web sustainability goes beyond reducing harm: it is also about restoring ecosystems and supporting communities to thrive. The web can be <strong>both part of the problem</strong> and a <strong>catalyst for solutions</strong>.</p>
 					<p>WSG aims to foster a more <a href="https://www.w3.org/TR/ethical-web-principles/">ethical</a>, <a href="https://humanewebmanifesto.com/">humane</a>, and <a href="https://www.sustainablewebmanifesto.com/">inclusive</a> web. The guidelines emphasize <strong>systems thinking, intersectionality, and cross-functional collaboration</strong> as essential to sustainable development.</p>
 					<blockquote id="dfn-sustainability">
@@ -778,7 +778,7 @@
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX03-3">Resources</a></p>
 					<p>Use the participatory design approach to involve users within the iteration and design process. When conducting user testing, reach out to your community to help improve your product. Provide opportunities for users to apply their knowledge and experience to your product or service.</p>
 				</section>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491, SDGs" data-considerations="Accessibility" data-categories="Ideation, Research, Social Equity, Software, Strategy, UI">
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="SDGs" data-considerations="Accessibility" data-categories="Ideation, Research, Social Equity, Software, Strategy, UI">
 					<h4 id="environmental-ideation">Success Criterion: Environmental ideation</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX03-4">Resources</a></p>
 					<p>Consider planetary needs and the environmental boundaries during the ideation phase. This can include creating non-user, non-human (animal, planet) personas, or climate-specific user stories and sprints.</p>
@@ -1010,7 +1010,7 @@
 			<section> <!-- Use a design system for interface consistency -->
 				<h3>Use a design system for interface consistency</h3>
 				<p class="subheading">Keep the components of the project as consistent and clear as possible by using a design system to organize reusable features.</p>
-				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="AFNOR, GPF, GR491, GreenIT, OpQuast, SDGs" data-considerations="Accessibility" data-categories="Assets, CSS, Education, Patterns, Strategy, UI, Usability">
+				<section class="notoc" data-materials="medium" data-energy="low" data-water="medium" data-emissions="low" data-standard="AFNOR, GPF, GreenIT, OpQuast, SDGs" data-considerations="Accessibility" data-categories="Assets, CSS, Education, Patterns, Strategy, UI, Usability">
 					<h4 id="design-system">Success Criterion: Design system</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#UX09-1">Resources</a></p>
 					<p>Use a formal design system when a project is large or has many contributors to improve performance, consistency, and sustainability. Choose a system based on web standards with reusable components and ensure your project only loads the components actually needed on the front end. Whether using a formal design system or not, always follow familiar design patterns and conventions.</p>
@@ -3434,7 +3434,7 @@
 			<section> <!-- Share economic benefits -->
 				<h3>Share economic benefits</h3>
 				<p class="subheading">Share benefits associated with being sustainably resilient with workers, incentivizing efforts, and advocating for those involved to meet sustainability goals.</p>
-				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="GR491, SDGs" data-considerations="" data-categories="Governance, Social Equity">
+				<section class="notoc" data-materials="high" data-energy="high" data-water="high" data-emissions="high" data-standard="SDGs" data-considerations="" data-categories="Governance, Social Equity">
 					<h4 id="living-wage">Success Criterion: Living wage</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#BSPM15-1">Resources</a></p>
 					<p>Publicly commit to paying employees, contractors, and other affected parties a living wage.</p>
@@ -4052,13 +4052,13 @@
 			</section>
 			<section> <!-- Meeting, Slack, Wiki, Etc Contributors -->
 				<h2>Other active participants, or contributors to supporting resources</h2>
-				<p>Adam Newman, Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Anthony Vallée-Dubois, Antoine Abélard, Asim Hussain, Bee Flaherty, Boris Schapira, Brian Sharpe, Carine Bournez, Christophe Clouzeau, Christos Bacharakis, Crystal Preston-Watson, Danielle Subject, Denis Didier, Edward Bender, Elise West, Eloisa Guerrero, Florence Maurice, Gerry McGovern, Greg McDonald, Hannah Smith, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jeroen Hulscher, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Katya Dreyer-Oren, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nicholas Oliveira, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicolas Oren, Oliver Winks, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Samuel Pitoňák, Sandra Pallier, Sarven Capadisli, Sebastien Solere, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
+				<p>Adam Newman, Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Anthony Vallée-Dubois, Antoine Abélard, Asim Hussain, Bee Flaherty, Boris Schapira, Brian Kardell, Brian Sharpe, Carine Bournez, Christophe Clouzeau, Christos Bacharakis, Crystal Preston-Watson, Danielle Subject, Denis Didier, Edward Bender, Elise West, Eloisa Guerrero, Florence Maurice, Gerry McGovern, Greg McDonald, Hannah Smith, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jeroen Hulscher, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Katya Dreyer-Oren, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nicholas Oliveira, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicolas Oren, Oliver Winks, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Samuel Pitoňák, Sandra Pallier, Sarven Capadisli, Sebastien Solere, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
 			</section>
 		</section>
 		<section class="appendix"> <!-- Changelog -->
 			<h2>Changelog</h2>
-			<p>Note that this <a href="https://github.com/w3c/sustainableweb-wsg/releases">changelog</a> only identifies substantive changes since the final draft <a href="https://github.com/w3c/sustyweb/releases">Community Group Report</a> dated <strong>Dec 6, 2024</strong>.</p>
-			<p>For a list of all issues addressed, refer to the <a href="https://github.com/w3c/sustainableweb-wsg/issues?q=is%3Aissue%20state%3Aclosed">Interest Group</a> and former <a href="https://github.com/w3c/sustyweb/issues?q=is%3Aissue%20state%3Aclosed">Community Group</a> issue trackers.</p>
+			<p>Note that this <a href="https://github.com/w3c/sustainableweb-wsg/releases">changelog</a> only identifies substantive changes since the final draft <a href="https://github.com/w3c-cg/sustyweb/releases">Community Group Report</a> dated <strong>Dec 6, 2024</strong>.</p>
+			<p>For a list of all issues addressed, refer to the <a href="https://github.com/w3c/sustainableweb-wsg/issues?q=is%3Aissue%20state%3Aclosed">Interest Group</a> and former <a href="https://github.com/w3c-cg/sustyweb/issues?q=is%3Aissue%20state%3Aclosed">Community Group</a> issue trackers.</p>
 			<div class="summary">
 				<details> <!-- Ongoing Release Notes -->
 					<summary>Ongoing Release Notes</summary>
@@ -4074,6 +4074,7 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/243">#243</a>] Plain English introduction boxes are now expanded by default to maximize visibility.<br><span class="credit">@AlexDawsonUK, @codewordcreative & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/291">#291</a>] Introduction has been updated with new material from IG members and summary document.<br><span class="credit">@AlexDawsonUK, @AnneFaubry, @hidde, @mgifford, @Psychpsyo, @codewordcreative, @ryansholin, @timfrick, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/309">#309</a>] Updates to the considerations and tagging to align better with benefits.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/342">#342</a>] "Sustainability metrics" split into "Provider selection" and "Efficient operation" SCs.<br><span class="credit">@AlexDawsonUK, @fershad, & @codewordcreative</span></li>
 					</ul>
 					<p><strong>Fixes:</strong></p>
 					<ul>
@@ -4226,7 +4227,7 @@
 						<li>Success criteria for guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-overburdening">2.17</a> now includes mentions of animation iterations.<br><span class="credit">@codewordcreative</span></li>
 						<li>Success criteria for guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#protocols">4.9</a> now include improved protocol usage compatibility.<br><span class="credit">@ldevernay & @mgifford</span></li>
 						<li>Update to guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access">4.2</a> to be more inclusive of both client and server-side.<br><span class="credit">@ldevernay & @mgifford</span></li>
-						<li>WSG has been successfully transitioned from <a href="https://github.com/w3c/sustyweb/">CG</a> to W3C <a href="https://github.com/w3c/sustainableweb-wsg/">IG</a> repository.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>WSG has been successfully transitioned from <a href="https://github.com/w3c-cg/sustyweb/">CG</a> to W3C <a href="https://github.com/w3c/sustainableweb-wsg/">IG</a> repository.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/4">#4</a>] Update to guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#need-for-media">2.16</a> SC among others to remove language ambiguity.<br><span class="credit">@timfrick</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>] Guideline descriptions relabeled as Intent and temporarily moved to additional information.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/16">#16</a>] Former Guidelines <a href="https://www.w3.org/TR/web-sustainability-guidelines/#include-expected-and-beneficial-files">3.18-19</a> have been merged into a single Guideline.<br><span class="credit">@andreadavanzo</span></li>
