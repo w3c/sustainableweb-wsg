@@ -2907,7 +2907,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-1.html"
 				},
 				{
-					"id": "HIS01-3",
+					"id": "HIS01-4",
 					"title": "Ensure that the project is hosted on a sustainable platform",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Use sustainable hosting](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting).",
 					"description": [
@@ -2937,10 +2937,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-4.html"
 				},
 				{
-					"id": "HIS01-5",
+					"id": "HIS01-6",
 					"title": "Ensure that the project uses a sustainable domain registrar",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Use sustainable hosting](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting).",
 					"description": [
@@ -2966,7 +2966,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-5.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-6.html"
 				},
 				{
 					"id": "HIS02-1",

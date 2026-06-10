@@ -3648,35 +3648,49 @@
 					"id": "1",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting",
 					"guideline": "Use sustainable hosting",
-					"subheading": "Ensure that hosting and domain infrastructure and service providers offer monitoring of resource use capabilities, low-carbon operations, and proper equipment maintenance and disposal.",
+					"subheading": "Select and manage infrastructure using sustainability metrics, prioritizing low-carbon energy use and low-impact hosting and domain choices in selection, and extending hardware lifespan and minimising emissions in management.",
 					"criteria": [
 						{
-							"title": "Sustainability metrics",
-							"description": "Monitor, request, and track key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. Prioritize indicators of energy and water usage, even if you are using an \"all-in-one\" full service hosting provider. For people who set up and configure their hosting, track hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share environmental impact metrics. Metrics should include Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE).",
+							"title": "Provider selection",
+							"description": "Include sustainability metrics when selecting and evaluating potential infrastructure, hosting, cloud, platform, externally managed content, or other digital services. Favor providers that publicly and transparently disclose their environmental policies and related performance indicators, including Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), Carbon Usage Effectiveness (CUE), renewable energy use, emissions reduction commitments, and hardware maintenance and sourcing practices.",
 							"resources": [
 								{
 									"#3 Metrics for Datacenter Efficiency: PUE, CUE, and WUE": "https://submer.com/blog/pue-cue-and-wue-what-do-these-three-metrics-represent-and-which-is-one-is-the-most-important/",
 									"A *May* update on the first E.E.D. day in Europe": "https://www.thegreenwebfoundation.org/news/a-may-update-on-the-first-e-e-d-day-in-europe/",
-									"Afnic's Carbon Balance Sheet": "https://www.afnic.fr/en/associating-excellence/our-commitments/social-responsibility-at-afnic/environment-measuring-understanding-and-reducing-the-impact-of-our-activities/",
 									"Beyond PUE: Taclking IT's wasted terawatts (PDF)": "https://www.capex.net.co/wp-content/uploads/2020/02/Capex.pdf",
-									"Big tech's new datacentres will take water from the world's driest areas": "https://www.theguardian.com/environment/2025/apr/09/big-tech-datacentres-water",
 									"Bridging the Sustainability Gap in Serverless through Observability and Carbon-Aware Pricing (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final164.pdf",
-									"Can the Internet Survive Climate Change?": "https://newrepublic.com/article/155993/can-internet-survive-climate-change",
-									"Carbon Footprint of Data Centers & Data Storage Per Country": "https://8billiontrees.com/carbon-offsets-credits/carbon-ecological-footprint-calculators/carbon-footprint-of-data-centers/",
-									"Causal allocation of fixed impacts in product systems": "https://onlinelibrary.wiley.com/doi/10.1111/jiec.70057",
 									"Cloud PUE: Comparing AWS, Azure and GCP Global Regions": "https://thenewstack.io/cloud-pue-comparing-aws-azure-and-gcp-global-regions/",
 									"Data Centre Energy Use: Critical Review of Models and Results (PDF)": "https://www.iea-4e.org/wp-content/uploads/2025/05/Data-Centre-Energy-Use-Critical-Review-of-Models-and-Results.pdf",
 									"Data Collection - Big Tech Emissions + Energy": "https://ketanjoshi.co/2025/05/23/data-collection-big-tech-emissions-energy/",
 									"DC2 PARIS - Opcore Datacenter": "https://pue.dc2.opcore.eu/en/",
+									"GPF - General Policy Framework (PDF) - 8.1 - Hosting (Hosting Provider)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 8.5 - Hosting (Renewable Documentation)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GR491 - 1-8014 - Power Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8014-hosting-the-total-power-consumed-by-the-data",
+									"GR491 - 1-8016 - Water Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8016-hosting-the-total-water-consumed-by-the-data",
+									"GR491 - 1-8013 - Server Power Efficiency": "https://gr491.isit-europe.org/en/crit.php?id=1-8013-hosting-one-factor-in-reducing-the-hosting-footprint",
+									"Reading grid for environmental commitments of web hosting offers": "https://greenspector.com/en/comparison-of-web-hosting-offers-selected-for-their-environmental-commitments/",
+									"Stratix Rapportage Datacenters Impact en Feiten (PDF)": "https://www.stratix.nl/wp-content/uploads/2023/02/Stratix-Rapport-objectivering-datacenters-2022.pdf",
+									"What is PUE / DCiE? How to Calculate, What to Measure": "https://www.42u.com/measurement/pue-dcie.htm",
+									"Water Usage Effectiveness (WUE)": "https://www.sunbirddcim.com/glossary/water-usage-effectiveness-wue"
+								}
+							]
+						},
+						{
+							"title": "Efficient operation",
+							"description": "Monitor and reduce the negative environmental impact of all running infrastructure over time. Whether external or self-hosted, track all available relevant indicators, such as energy use, water use, and server resource utilization. This includes CPU/cores, memory, storage, and network usage. Use this information to identify inefficiencies, reduce overprovisioning, optimize resource use, and support transparent sustainability reporting.",
+							"resources": [
+								{
+									"Afnic's Carbon Balance Sheet": "https://www.afnic.fr/en/associating-excellence/our-commitments/social-responsibility-at-afnic/environment-measuring-understanding-and-reducing-the-impact-of-our-activities/",
+									"Big tech's new datacentres will take water from the world's driest areas": "https://www.theguardian.com/environment/2025/apr/09/big-tech-datacentres-water",
+									"Can the Internet Survive Climate Change?": "https://newrepublic.com/article/155993/can-internet-survive-climate-change",
+									"Carbon Footprint of Data Centers & Data Storage Per Country": "https://8billiontrees.com/carbon-offsets-credits/carbon-ecological-footprint-calculators/carbon-footprint-of-data-centers/",
+									"Causal allocation of fixed impacts in product systems": "https://onlinelibrary.wiley.com/doi/10.1111/jiec.70057",
 									"Energizta": "https://boavizta.github.io/Energizta/",
 									"Getting beyond Net Zero dashboards in the information technology sector": "https://www.sciencedirect.com/science/article/pii/S2214629623004577",
 									"GPF - General Policy Framework (PDF) - 4.15 - UX and UI (Sustainability Tracking)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.1 - Hosting (Hosting Provider)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.2 - Hosting (Equipment Policy)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.5 - Hosting (Renewable Documentation)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 1-8014 - Power Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8014-hosting-the-total-power-consumed-by-the-data",
-									"GR491 - 1-8016 - Water Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8016-hosting-the-total-water-consumed-by-the-data",
-									"GR491 - 1-8013 - Server Power Efficiency": "https://gr491.isit-europe.org/en/crit.php?id=1-8013-hosting-one-factor-in-reducing-the-hosting-footprint",
 									"GR491 - 3-8026 - Power Off When Not In Use": "https://gr491.isit-europe.org/en/crit.php?id=3-8026-hosting-the-network-infrastructure-is-at-the-heart",
 									"GR491 - 3-8027 - Physical VS Virtual": "https://gr491.isit-europe.org/en/crit.php?id=3-8027-hosting-virtualization-techniques-make-it-possible-to-pool",
 									"GR491 - 3-8028 - Memory Usage": "https://gr491.isit-europe.org/en/crit.php?id=3-8028-hosting-the-management-of-the-consumption-of-physical",
@@ -3686,19 +3700,13 @@
 									"GR491 - 5-8053 - Efficiency Measurements": "https://gr491.isit-europe.org/en/crit.php?id=5-8053-hosting-the-standards-for-data-centers-highlight-efficiency",
 									"Overestimating data center public health costs": "https://davidmytton.blog/overestimating-data-center-public-health-costs/",
 									"Overview of Power Factor in Streaming (PDF)": "https://555e2619-4a3d-4f25-8303-8fb567f350a1.filesusr.com/ugd/2e5a39_96ca7c83877946a2a273d5d85a52fd26.pdf",
-									"Power Off, Sleep and Standby (PDF)": "https://www.greeningofstreaming.org/_files/ugd/b1006e_3e4d32473a3c4edb96e4465863030718.pdf",
-									"Reading grid for environmental commitments of web hosting offers": "https://greenspector.com/en/comparison-of-web-hosting-offers-selected-for-their-environmental-commitments/",
-									"Stratix Rapportage Datacenters Impact en Feiten (PDF)": "https://www.stratix.nl/wp-content/uploads/2023/02/Stratix-Rapport-objectivering-datacenters-2022.pdf",
-									"Sustainability Guide: Product": "https://sustainabilityguide.eu/ecodesign/product/",
-									"Sustainability Guide: Use": "https://sustainabilityguide.eu/ecodesign/use/",
-									"What is PUE / DCiE? How to Calculate, What to Measure": "https://www.42u.com/measurement/pue-dcie.htm",
-									"Water Usage Effectiveness (WUE)": "https://www.sunbirddcim.com/glossary/water-usage-effectiveness-wue"
+									"Power Off, Sleep and Standby (PDF)": "https://www.greeningofstreaming.org/_files/ugd/b1006e_3e4d32473a3c4edb96e4465863030718.pdf"
 								}
 							]
 						},
 						{
 							"title": "Equipment longevity",
-							"description": "Both hosting providers and consumers should maintain hardware to extend its lifespan as long as possible. Use it efficiently at an appropriate capacity, verify it has up-to-date security patches, and ensure it has the necessary certifications. New purchases should be from reliable long-lifespan suppliers. Hosting providers should have a policy for extending hardware lifetime.",
+							"description": "Extend the lifespan of hardware. Use equipment efficiently and at the right capacity and keep it securely patched and properly maintained. New hardware should be sourced from suppliers that commit to device longevity, patching, and repair options..",
 							"resources": [
 								{
 									"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
@@ -3744,7 +3752,7 @@
 						},
 						{
 							"title": "Low-carbon electricity",
-							"description": "Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, backup generators, and storage systems in calculations.",
+							"description": "Use electricity with the lowest possible carbon intensity. Hosting providers should measure and report carbon intensity using available location-based grid data, including on-site generation, backup systems, and storage. Use this information to select lower-carbon hosting providers and improve energy sourcing and infrastructure efficiency.",
 							"resources": [
 								{
 									"2025 Eco Web Hosting Review": "https://go.eco/news/2025-eco-web-hosting-review/",
@@ -3804,7 +3812,7 @@
 						},
 						{
 							"title": "Remaining emissions",
-							"description": "Work to ensure hosting and infrastructure adheres to GHG Protocol Scope 2 guidance on market-based carbon emissions accounting, seeking to match the time and location of location-based emissions from electricity consumption with purchases of low-carbon electricity.",
+							"description": "Reduce remaining emissions using market-based carbon accounting for indirect electricity emissions under the GHG Protocol (Scope 2). When purchasing low-carbon electricity through Energy Attribute Certificates (EACs) or Renewable Energy Certificates (RECs), ensure the certificates match the time and location of the electricity used, identify when the renewable electricity was generated, can be validly issued and retired in a way that prevents double counting.",
 							"resources": [
 								{
 									"Alternatives to Carbon Credits": "https://offsetguide.org/alternatives-to-carbon-credits/",
@@ -3834,7 +3842,7 @@
 						},
 						{
 							"title": "Domain names",
-							"description": "The impact of domain names is disclosed by domain registries and registrars. Registrants should consider and (where possible) mitigate environmental impact when making registration decisions.",
+							"description": "Verify that the impact of domain name registration is disclosed by domain registries and registrars. Where environmental impact data is available from registrars, use it to inform domain registration decisions and mitigate environmental impact. Where such data is unavailable, assess the assumed environmental impact when making registration decisions and make sustainability-focused choices where possible.",
 							"resources": [
 								{
 									".eco Greenhouse Gas Emissions Report - 2024": "https://go.eco/impact/ghg-report-2024/",
