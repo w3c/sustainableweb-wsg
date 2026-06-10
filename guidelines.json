@@ -14,13 +14,13 @@
 			"guidelines": [
 				{
 					"id": "1",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#examine-and-disclose-any-external-factors-interacting-with-your-project",
-					"guideline": "Examine and disclose any external factors interacting with your project",
-					"subheading": "Identify, track, and publicly disclose negative external factors.",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts",
+					"guideline": "Identify, assess, disclose, review, and mitigate sustainability impacts",
+					"subheading": "Assess and report the planet, people, and prosperity impacts of digital projects, and plan measurable reductions to the real-world effects of their activity.",
 					"criteria": [
 						{
 							"title": "Impact analysis",
-							"description": "Anticipate and identify existing or potential negative external factors. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.",
+							"description": "Review the planet, people, and prosperity impacts of your project at the start and at regular intervals. Record the main issues you identify, where improvements are needed, and the progress you make. Reflect these findings in your public-facing governance documents and project reporting.",
 							"resources": [
 								{
 									"A view of the sustainable computing landscape": "https://www.cell.com/patterns/fulltext/S2666-3899(25)00144-8",
@@ -57,7 +57,7 @@
 						},
 						{
 							"title": "External impact",
-							"description": "Establish a plan of action for affected parties who might be indirectly impacted by choices made with your project. Examples include neighbors accepting parcels or traffic jams due to deliveries. Other examples include the local health impacts of infrastructure emissions, or supply chain pressure.",
+							"description": "Create a plan to reduce the non-digital environmental and social impacts of digital activities associated with your project. Include impacts from logistics and delivery emissions, infrastructure emissions, local health effects, and supply chain pressures. Use measurable actions to improve external planet, people, and prosperity outcomes.",
 							"resources": [
 								{
 									"Digitalisation and Energy": "https://www.iea.org/reports/digitalisation-and-energy",
@@ -930,11 +930,11 @@
 					"id": "11",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use",
 					"guideline": "Optimize media to reduce resource use",
-					"subheading": "Ensure all media - including audio, video, animation, images, and other novel formats, when deemed necessary in the design, are optimized, correctly sized and formatted, use lazy loading where appropriate, with a usage policy in place.",
+					"subheading": "Include media only when it supports user needs. Manage, optimize, and load media efficiently. Ensure users have control over playback and data use.",
 					"criteria": [
 						{
 							"title": "Need for media",
-							"description": "Do not include media unless it adds value. Consider the quantity, format, and sizes required.",
+							"description": "Only include media when it supports user experience or improves understanding and keep the number of media items to a minimum.",
 							"resources": [
 								{
 									"5 terabytes for 30 seconds of homepage video": "https://wagtail.org/blog/5-terabytes-for-30-seconds-of-homepage-video/",
@@ -959,7 +959,7 @@
 						},
 						{
 							"title": "Optimized media",
-							"description": "Resize, optimize, and compress all media. Provide media in appropriate sizes for different screen resolutions, user device capabilities, and user needs. Optimize and compress media appropriately. Provide media in compatible and appropriate formats. Avoid non-native embedded media players.",
+							"description": "Resize, optimize, and compress media for different screen sizes, devices, and user needs. Use widely supported, efficient formats that enable native playback where possible. Avoid unnecessary custom or non-native media players. Use hardware-accelerated playback when available and compatible with security requirements.",
 							"resources": [
 								{
 									"20 ways to make your website more energy efficient": "https://www.wholegraindigital.com/blog/website-energy-efficiency/",
@@ -1020,7 +1020,7 @@
 						},
 						{
 							"title": "Lazy loading",
-							"description": "Incorporate lazy/deferred loading from the start: Consider which media elements are immediately required, and which would be better relegated to loading on specific user interaction. Load data-intensive media on the client side, including the media itself, behind a facade - a non-functional and static representational element.",
+							"description": "Incorporate lazy and/or deferred loading from the start by identifying which media elements are required immediately and which should load only on user interaction. Load large or data-intensive media only when needed, using a non-functional static facade or placeholder to defer loading until user request or interaction.",
 							"resources": [
 								{
 									"Avoid hotlinking images with Cross-Origin-Resource-Policy": "https://www.sjoerdlangkemper.nl/2024/11/27/avoid-hotlinking-images-with-corp-cross-origin-resource-policy/",
@@ -1042,7 +1042,7 @@
 						},
 						{
 							"title": "User-controlled media",
-							"description": "Disable auto-play functionality on audio, video, and similar media formats. Give the user full agency over media interactions, including a choice of resolutions and formats, and the option to deactivate media. Inform users of the length, format, and data intensity of the media. Provide the option for data-intensive media to be disabled or provide low-fidelity alternatives.",
+							"description": "Disable autoplay for audio, video, and other media by default. Ensure users can control playback and resolution. Inform users about media length, format, and expected data use. Provide the option to disable data-intensive media or offer lower-bandwidth alternatives.",
 							"resources": [
 								{
 									"Ditch 4K video and new tech to fight climate change": "https://www.bbc.co.uk/news/technology-55164410",
@@ -1069,7 +1069,7 @@
 						},
 						{
 							"title": "Media management and use",
-							"description": "Set up a media management and use policy. Include criteria for media compression, rendering impact optimization, file formats, data retention, review, and deletion.",
+							"description": "Create a media management and usage policy. Include guidance on compression, rendering performance, file formats, data retention, storage, review, and deletion.",
 							"resources": [
 								{
 
@@ -2042,11 +2042,11 @@
 					"id": "1",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#set-goals-based-on-performance-and-energy-impact",
 					"guideline": "Set goals based on performance and energy impact",
-					"subheading": "Account for the difference in energy intensity that different types of content may have on a project and set goals based on what you would like to achieve.",
+					"subheading": "Define performance and environmental targets, and design content with awareness of the relative energy and processing cost.",
 					"criteria": [
 						{
 							"title": "Performance goals",
-							"description": "Set clear goals with performance and environmental impact in mind, then meet them. These could include, the number of requests or elements that must be rendered.",
+							"description": "Set clear performance and environmental goals for the project, including limits on requests, elements rendered, or other measurable resource use.",
 							"resources": [
 								{
 									"15 page speed optimizations that sites ignore (at their own risk)": "https://www.speedcurve.com/blog/15-neglected-page-speed-optimizations/",
@@ -2079,7 +2079,7 @@
 						},
 						{
 							"title": "Energy intensity",
-							"description": "Consider differences in the energy intensity or testable impact across each component. For example, unstyled text is less computationally intensive to render than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL or 4K video.",
+							"description": "Prioritize lower-impact design choices, paying attention to measurable differences in energy use across components. Complex structure, styling, and script-driven experiences along with graphics-heavy and media-rich rendering increase the computational complexity of rendering. Use more intensive approaches only where these add clear value.",
 							"resources": [
 								{
 									"Analysis of overconsumptions on a light website": "https://greenspector.com/en/analysis-of-overconsumptions-on-a-light-website-2/",
@@ -2256,11 +2256,11 @@
 					"id": "5",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-redundancy-and-duplication-in-code",
 					"guideline": "Avoid redundancy and duplication in code",
-					"subheading": "Improve solutions rather than recreating them, using good organization strategies to simplify code where possible and reduce redundancy.",
+					"subheading": "Reduce code duplication through refactoring and reuse, ensure maintainability, and favor evolving existing solutions over rebuilding them.",
 					"criteria": [
 						{
 							"title": "Remove or simplify",
-							"description": "Remove duplication and/or simplify and optimize your code for better performance, focusing on essential features so you have a cleaner, less redundant product and codebase.",
+							"description": "Refactor code to reduce duplication and redundancy by improving structure, consolidating repeated logic, and encouraging reuse.",
 							"resources": [
 								{
 									"25 Techniques for Javascript Performance Optimization": "https://desalasworks.com/article/javascript-performance-techniques/",
@@ -2274,7 +2274,7 @@
 						},
 						{
 							"title": "Iteration over recreation",
-							"description": "Improve existing solutions rather than redeveloping and redesigning products from scratch, since the latter would duplicate the coding effort and maintenance burden for developers rather than reduce the learning burden for users.",
+							"description": "Prioritize improving and extending existing user-facing solutions over rebuilding them from scratch. Only replace an existing solution when doing so provides clear benefits to user experience, performance, scalability, or maintainability.",
 							"resources": [
 								{
 									"A Sustainable Design Handbook": "https://www.sustainabledesignhandbook.com/design-development",
@@ -2289,7 +2289,7 @@
 						},
 						{
 							"title": "Organize code arrangement",
-							"description": "Use organization methodology and systems such as Don't Repeat Yourself (DRY) to optimize the arrangement and output of your JavaScript and CSS.",
+							"description": "Apply DRY (Don't Repeat Yourself) principles to CSS and JavaScript where they improve maintainability. Ensure that efforts to reduce duplication do not increase complexity, introduce unnecessary dependencies, or adversely affect performance.",
 							"resources": [
 								{
 									"3 software development principles I wish I knew earlier in my career": "https://thetshaped.dev/p/3-software-development-principles",
@@ -3628,35 +3628,49 @@
 					"id": "1",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting",
 					"guideline": "Use sustainable hosting",
-					"subheading": "Ensure that hosting and domain infrastructure and service providers offer monitoring of resource use capabilities, low-carbon operations, and proper equipment maintenance and disposal.",
+					"subheading": "Select and manage infrastructure using sustainability metrics, prioritizing low-carbon energy use and low-impact hosting and domain choices in selection, and extending hardware lifespan and minimising emissions in management.",
 					"criteria": [
 						{
-							"title": "Sustainability metrics",
-							"description": "Monitor, request, and track key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. Prioritize indicators of energy and water usage, even if you are using an \"all-in-one\" full service hosting provider. For people who set up and configure their hosting, track hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and CPU cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share environmental impact metrics. Metrics should include Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), and Carbon Usage Effectiveness (CUE).",
+							"title": "Provider selection",
+							"description": "Include sustainability metrics when selecting and evaluating potential infrastructure, hosting, cloud, platform, externally managed content, or other digital services. Favor providers that publicly and transparently disclose their environmental policies and related performance indicators, including Power Usage Effectiveness (PUE), Water Usage Effectiveness (WUE), Carbon Usage Effectiveness (CUE), renewable energy use, emissions reduction commitments, and hardware maintenance and sourcing practices.",
 							"resources": [
 								{
 									"#3 Metrics for Datacenter Efficiency: PUE, CUE, and WUE": "https://submer.com/blog/pue-cue-and-wue-what-do-these-three-metrics-represent-and-which-is-one-is-the-most-important/",
 									"A *May* update on the first E.E.D. day in Europe": "https://www.thegreenwebfoundation.org/news/a-may-update-on-the-first-e-e-d-day-in-europe/",
-									"Afnic's Carbon Balance Sheet": "https://www.afnic.fr/en/associating-excellence/our-commitments/social-responsibility-at-afnic/environment-measuring-understanding-and-reducing-the-impact-of-our-activities/",
 									"Beyond PUE: Taclking IT's wasted terawatts (PDF)": "https://www.capex.net.co/wp-content/uploads/2020/02/Capex.pdf",
-									"Big tech's new datacentres will take water from the world's driest areas": "https://www.theguardian.com/environment/2025/apr/09/big-tech-datacentres-water",
 									"Bridging the Sustainability Gap in Serverless through Observability and Carbon-Aware Pricing (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final164.pdf",
-									"Can the Internet Survive Climate Change?": "https://newrepublic.com/article/155993/can-internet-survive-climate-change",
-									"Carbon Footprint of Data Centers & Data Storage Per Country": "https://8billiontrees.com/carbon-offsets-credits/carbon-ecological-footprint-calculators/carbon-footprint-of-data-centers/",
-									"Causal allocation of fixed impacts in product systems": "https://onlinelibrary.wiley.com/doi/10.1111/jiec.70057",
 									"Cloud PUE: Comparing AWS, Azure and GCP Global Regions": "https://thenewstack.io/cloud-pue-comparing-aws-azure-and-gcp-global-regions/",
 									"Data Centre Energy Use: Critical Review of Models and Results (PDF)": "https://www.iea-4e.org/wp-content/uploads/2025/05/Data-Centre-Energy-Use-Critical-Review-of-Models-and-Results.pdf",
 									"Data Collection - Big Tech Emissions + Energy": "https://ketanjoshi.co/2025/05/23/data-collection-big-tech-emissions-energy/",
 									"DC2 PARIS - Opcore Datacenter": "https://pue.dc2.opcore.eu/en/",
+									"GPF - General Policy Framework (PDF) - 8.1 - Hosting (Hosting Provider)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 8.5 - Hosting (Renewable Documentation)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GR491 - 1-8014 - Power Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8014-hosting-the-total-power-consumed-by-the-data",
+									"GR491 - 1-8016 - Water Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8016-hosting-the-total-water-consumed-by-the-data",
+									"GR491 - 1-8013 - Server Power Efficiency": "https://gr491.isit-europe.org/en/crit.php?id=1-8013-hosting-one-factor-in-reducing-the-hosting-footprint",
+									"Reading grid for environmental commitments of web hosting offers": "https://greenspector.com/en/comparison-of-web-hosting-offers-selected-for-their-environmental-commitments/",
+									"Stratix Rapportage Datacenters Impact en Feiten (PDF)": "https://www.stratix.nl/wp-content/uploads/2023/02/Stratix-Rapport-objectivering-datacenters-2022.pdf",
+									"What is PUE / DCiE? How to Calculate, What to Measure": "https://www.42u.com/measurement/pue-dcie.htm",
+									"Water Usage Effectiveness (WUE)": "https://www.sunbirddcim.com/glossary/water-usage-effectiveness-wue"
+								}
+							]
+						},
+						{
+							"title": "Efficient operation",
+							"description": "Monitor and reduce the negative environmental impact of all running infrastructure over time. Whether external or self-hosted, track all available relevant indicators, such as energy use, water use, and server resource utilization. This includes CPU/cores, memory, storage, and network usage. Use this information to identify inefficiencies, reduce overprovisioning, optimize resource use, and support transparent sustainability reporting.",
+							"resources": [
+								{
+									"Afnic's Carbon Balance Sheet": "https://www.afnic.fr/en/associating-excellence/our-commitments/social-responsibility-at-afnic/environment-measuring-understanding-and-reducing-the-impact-of-our-activities/",
+									"Big tech's new datacentres will take water from the world's driest areas": "https://www.theguardian.com/environment/2025/apr/09/big-tech-datacentres-water",
+									"Can the Internet Survive Climate Change?": "https://newrepublic.com/article/155993/can-internet-survive-climate-change",
+									"Carbon Footprint of Data Centers & Data Storage Per Country": "https://8billiontrees.com/carbon-offsets-credits/carbon-ecological-footprint-calculators/carbon-footprint-of-data-centers/",
+									"Causal allocation of fixed impacts in product systems": "https://onlinelibrary.wiley.com/doi/10.1111/jiec.70057",
 									"Energizta": "https://boavizta.github.io/Energizta/",
 									"Getting beyond Net Zero dashboards in the information technology sector": "https://www.sciencedirect.com/science/article/pii/S2214629623004577",
 									"GPF - General Policy Framework (PDF) - 4.15 - UX and UI (Sustainability Tracking)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.1 - Hosting (Hosting Provider)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.2 - Hosting (Equipment Policy)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.5 - Hosting (Renewable Documentation)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 1-8014 - Power Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8014-hosting-the-total-power-consumed-by-the-data",
-									"GR491 - 1-8016 - Water Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8016-hosting-the-total-water-consumed-by-the-data",
-									"GR491 - 1-8013 - Server Power Efficiency": "https://gr491.isit-europe.org/en/crit.php?id=1-8013-hosting-one-factor-in-reducing-the-hosting-footprint",
 									"GR491 - 3-8026 - Power Off When Not In Use": "https://gr491.isit-europe.org/en/crit.php?id=3-8026-hosting-the-network-infrastructure-is-at-the-heart",
 									"GR491 - 3-8027 - Physical VS Virtual": "https://gr491.isit-europe.org/en/crit.php?id=3-8027-hosting-virtualization-techniques-make-it-possible-to-pool",
 									"GR491 - 3-8028 - Memory Usage": "https://gr491.isit-europe.org/en/crit.php?id=3-8028-hosting-the-management-of-the-consumption-of-physical",
@@ -3666,19 +3680,13 @@
 									"GR491 - 5-8053 - Efficiency Measurements": "https://gr491.isit-europe.org/en/crit.php?id=5-8053-hosting-the-standards-for-data-centers-highlight-efficiency",
 									"Overestimating data center public health costs": "https://davidmytton.blog/overestimating-data-center-public-health-costs/",
 									"Overview of Power Factor in Streaming (PDF)": "https://555e2619-4a3d-4f25-8303-8fb567f350a1.filesusr.com/ugd/2e5a39_96ca7c83877946a2a273d5d85a52fd26.pdf",
-									"Power Off, Sleep and Standby (PDF)": "https://555e2619-4a3d-4f25-8303-8fb567f350a1.filesusr.com/ugd/b1006e_3e4d32473a3c4edb96e4465863030718.pdf",
-									"Reading grid for environmental commitments of web hosting offers": "https://greenspector.com/en/comparison-of-web-hosting-offers-selected-for-their-environmental-commitments/",
-									"Stratix Rapportage Datacenters Impact en Feiten (PDF)": "https://www.stratix.nl/wp-content/uploads/2023/02/Stratix-Rapport-objectivering-datacenters-2022.pdf",
-									"Sustainability Guide: Product": "https://sustainabilityguide.eu/ecodesign/product/",
-									"Sustainability Guide: Use": "https://sustainabilityguide.eu/ecodesign/use/",
-									"What is PUE / DCiE? How to Calculate, What to Measure": "https://www.42u.com/measurement/pue-dcie.htm",
-									"Water Usage Effectiveness (WUE)": "https://www.sunbirddcim.com/glossary/water-usage-effectiveness-wue"
+									"Power Off, Sleep and Standby (PDF)": "https://www.greeningofstreaming.org/_files/ugd/b1006e_3e4d32473a3c4edb96e4465863030718.pdf"
 								}
 							]
 						},
 						{
 							"title": "Equipment longevity",
-							"description": "Both hosting providers and consumers should maintain hardware to extend its lifespan as long as possible. Use it efficiently at an appropriate capacity, verify it has up-to-date security patches, and ensure it has the necessary certifications. New purchases should be from reliable long-lifespan suppliers. Hosting providers should have a policy for extending hardware lifetime.",
+							"description": "Extend the lifespan of hardware. Use equipment efficiently and at the right capacity and keep it securely patched and properly maintained. New hardware should be sourced from suppliers that commit to device longevity, patching, and repair options..",
 							"resources": [
 								{
 									"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
@@ -3724,7 +3732,7 @@
 						},
 						{
 							"title": "Low-carbon electricity",
-							"description": "Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, backup generators, and storage systems in calculations.",
+							"description": "Use electricity with the lowest possible carbon intensity. Hosting providers should measure and report carbon intensity using available location-based grid data, including on-site generation, backup systems, and storage. Use this information to select lower-carbon hosting providers and improve energy sourcing and infrastructure efficiency.",
 							"resources": [
 								{
 									"2025 Eco Web Hosting Review": "https://go.eco/news/2025-eco-web-hosting-review/",
@@ -3784,7 +3792,7 @@
 						},
 						{
 							"title": "Remaining emissions",
-							"description": "Work to ensure hosting and infrastructure adheres to GHG Protocol Scope 2 guidance on market-based carbon emissions accounting, seeking to match the time and location of location-based emissions from electricity consumption with purchases of low-carbon electricity.",
+							"description": "Reduce remaining emissions using market-based carbon accounting for indirect electricity emissions under the GHG Protocol (Scope 2). When purchasing low-carbon electricity through Energy Attribute Certificates (EACs) or Renewable Energy Certificates (RECs), ensure the certificates match the time and location of the electricity used, identify when the renewable electricity was generated, can be validly issued and retired in a way that prevents double counting.",
 							"resources": [
 								{
 									"Alternatives to Carbon Credits": "https://offsetguide.org/alternatives-to-carbon-credits/",
@@ -3814,7 +3822,7 @@
 						},
 						{
 							"title": "Domain names",
-							"description": "The impact of domain names is disclosed by domain registries and registrars. Registrants should consider and (where possible) mitigate environmental impact when making registration decisions.",
+							"description": "Verify that the impact of domain name registration is disclosed by domain registries and registrars. Where environmental impact data is available from registrars, use it to inform domain registration decisions and mitigate environmental impact. Where such data is unavailable, assess the assumed environmental impact when making registration decisions and make sustainability-focused choices where possible.",
 							"resources": [
 								{
 									".eco Greenhouse Gas Emissions Report - 2024": "https://go.eco/impact/ghg-report-2024/",
@@ -3946,11 +3954,11 @@
 					"id": "3",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#reduce-data-transfer-with-compression",
 					"guideline": "Reduce data transfer with compression",
-					"subheading": "Use compression on all appropriate resources either before or as part of the transfer process.",
+					"subheading": "Compress server responses and media files to reduce bandwidth, storage use, and delivery overhead while balancing processing costs.",
 					"criteria": [
 						{
 							"title": "Server-side compression",
-							"description": "Use server-side compression to reduce file sizes before delivery. Server-side compression settings and tools can be used to compress most commonly used file types, reducing energy consumption while minimizing load times, saving bandwidth, and improving overall performance.",
+							"description": "Reduce file size before uploading images, audio, and video by using efficient formats and quality settings. Avoid applying additional compression if the file is already appropriately sized for upload.",
 							"resources": [
 								{
 									"10 Steps to Avoid Enormous Network Payloads": "https://www.debugbear.com/blog/avoid-enormous-network-payloads",
@@ -3990,7 +3998,7 @@
 						},
 						{
 							"title": "Media compression",
-							"description": "Use media compression tools to reduce the file size of images, videos, audio, and any other media before uploading to a server.",
+							"description": "Compress media files such as images, video, and audio before uploading anywhere to reduce storage and transfer requirements.",
 							"resources": [
 								{
 									"10 Steps to Avoid Enormous Network Payloads": "https://www.debugbear.com/blog/avoid-enormous-network-payloads",
@@ -4786,11 +4794,11 @@
 					"id": "1",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy",
 					"guideline": "Have an ethical and sustainable product strategy",
-					"subheading": "Produce policies and documents showcasing evidence, achievements, and onboarding underpinned by good governance alongside compliance with responsible legislation.",
+					"subheading": "Implement organizational practices around ethics, sustainability, and responsible data use. Publish and maintain policies that demonstrate their implementation.",
 					"criteria": [
 						{
 							"title": "Public documents",
-							"description": "Develop, publish and maintain key policies, such as a code of ethics, product guidelines, sustainability statements, and/or other documents that include language specific to digital products, services, policies, and programs. Address public concerns around AI and relevant emerging technologies with public-facing policies. Make these publicly accessible and transparently versioned formats.",
+							"description": "Develop, publish, and maintain key organizational policies such as a code of ethics, product guidelines, and sustainability statements. Include clear language for digital products, services, and emerging or disruptive technologies, such as AI. Make these policies publicly accessible and keep them versioned for transparency.",
 							"resources": [
 								{
 									"#Tech4Bad: When Do We Say No?": "https://branch.climateaction.tech/issues/issue-3/tech4bad-when-do-we-say-no/",
@@ -4822,7 +4830,7 @@
 						},
 						{
 							"title": "Achievements and compliance",
-							"description": "Publish achievements, features, compliance, and anything beyond the scope of these guidelines within a dedicated sustainability section.",
+							"description": "Publish web sustainability-related achievements, features, compliance updates, and other relevant information within a dedicated sustainability section.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.3 and 5.4.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -4838,7 +4846,7 @@
 						},
 						{
 							"title": "Governance over time",
-							"description": "Provide evidence to demonstrate how digital sustainability policies, climate policies, and related practices are effectively implemented, monitored, and governed over time.",
+							"description": "Provide evidence that sustainability policies and practices are actively implemented, monitored, and governed over time.",
 							"resources": [
 								{
 									"Action Plan for Sustainable Planet in the Digital Age (PDF)": "https://www.sparkblue.org/codesactionplanlaunch",
@@ -4863,7 +4871,7 @@
 						},
 						{
 							"title": "Technology legislation",
-							"description": "Advocate for and comply with responsible legislation that supports employment rights, transparency, and accountability related to sharing economic benefits, along with policies that impact your organization in relation to emerging technologies and/or digital sustainability.",
+							"description": "Advocate for and comply with evidence-based legislation and standards that advance digital privacy, employment rights, transparency, accountability, responsible emerging technologies, and digital sustainability. Simultaneously make efforts to go beyond minimum expectations, especially in regard to avoiding unnecessary data collection to preserve an efficient and accessible user journey in compliance with accessibility and data protection requirements.",
 							"resources": [
 								{
 									"4 Powerful Ways Business Leaders Can Advocate for Women, Minority, and LGBTQ Workers": "https://www.inc.com/marcel-schwantes/4-powerful-ways-business-leaders-can-advocate-for-women-minority-lgbtq-workers.html",
@@ -6331,11 +6339,11 @@
 					"id": "20",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies",
 					"guideline": "Establish responsible practices around AI and emerging or disruptive technologies",
-					"subheading": "Implement policies, training, and auditing practices for AI and emerging or disruptive to ensure sustainability upon implementation, while accounting for associated legal issues.",
+					"subheading": "Ensure responsible use of automated systems by only using ethically sourced and suitably sized data, managing environmental impacts, supporting workforce adaptation, respecting user agent controls, and using post-quantum encryption only where justified.",
 					"criteria": [
 						{
 							"title": "AI and data collection",
-							"description": "Ensure all technologies that deploy or create large datasets use data that is appropriately scaled and stored, ethically sourced, screened, validated, and implemented in a non-discriminatory, responsible manner.",
+							"description": "Ensure datasets used, created, or referenced by automated systems are no larger than necessary for the task, ethically sourced, screened, validated, stored, and used in a fair and non-discriminatory, responsible way.",
 							"resources": [
 								{
 									"AI transparency framework": "https://uxdesign.cc/ai-transparency-framework-cf89fa61dc1b",
@@ -6360,7 +6368,7 @@
 						},
 						{
 							"title": "Business adaptation",
-							"description": "Show how members of your organization are supported in the process of adapting to the rise of new technologies that could disrupt the organization's business model or operational norms.",
+							"description": "Support employees in adapting to new technologies that may change or disrupt their roles or the organization's operations.",
 							"resources": [
 								{
 									"AI Overviews Reduce Clicks by 34.5%": "https://ahrefs.com/blog/ai-overviews-reduce-clicks/",
@@ -6380,7 +6388,7 @@
 						},
 						{
 							"title": "Environmental responsibilities",
-							"description": "Audit and account for any environmental considerations associated with the promotion or adoption of AI or any emerging or disruptive technologies. This should include third-party choices, and the associated waste or emissions per use and those incurred as a consequence of deployment.",
+							"description": "Audit and account for environmental impacts linked to the promotion or adoption of AI and emerging or disruptive technologies. This includes third-party systems and the waste, water, and emissions generated per use, as well as those resulting from initial deployment and updates. Prioritize efficiency and deployment in a way that minimizes environmental impacts.",
 							"resources": [
 								{
 									"3rd Global CryptoAsset Benchmarking Study (PDF)": "https://www.jbs.cam.ac.uk/wp-content/uploads/2021/01/2021-ccaf-3rd-global-cryptoasset-benchmarking-study.pdf",
@@ -6481,7 +6489,7 @@
 						},
 						{
 							"title": "Automated tooling",
-							"description": "Ensure all automated tooling, scrapers, spiders, bots, artificial intelligence, and other forms of machine-assisted data gathering abides by requests to opt out at the host, server, or website level. Providers must declare themselves as non-human within the user-agent/HTTP header. Providers must also publish impact reports relating to their gathering activities.",
+							"description": "Ensure bots, crawlers, user agents, scrapers, artificial intelligence, and all other automated tools respect opt-out signals at the host, server, and site level. Providers must declare themselves as non-human within the user agent in the HTTP header.",
 							"resources": [
 								{
 									"A short history of web bots and bot detection techniques": "https://sinja.io/blog/bot-or-not",
@@ -6508,7 +6516,7 @@
 						},
 						{
 							"title": "Quantum resilience",
-							"description": "Do not roll out post-quantum encryption for high-traffic services that do not need resilience against harvest now, decrypt later attacks, where attackers steal encrypted data, anticipating that future quantum computers will be powerful enough to break the encryption and make the data readable at a later date.",
+							"description": "Use post-quantum encryption only where there is a clear need to protect against “harvest now, decrypt later” attacks and long-term data confidentiality risks. Treat it as supplementary to rather than replacing existing encryption methods, using both during any transition. Apply caution when adopting post-quantum encryption in high-traffic services, as the bandwidth consumption, processing demand, design complexity, and migration risks may outweigh the security benefits.",
 							"resources": [
 								{
 									"China breaks RSA encryption with a quantum computer, threatening global data security": "https://www.earth.com/news/china-breaks-rsa-encryption-with-a-quantum-computer-threatening-global-data-security/",

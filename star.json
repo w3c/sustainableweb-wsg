@@ -15,7 +15,7 @@
 				{
 					"id": "UX01-1",
 					"title": "Produce a list of factors to monitor for sustainability impacts",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.1 Examine and disclose any external factors interacting with your project](https://www.w3.org/TR/web-sustainability-guidelines/#examine-and-disclose-any-external-factors-interacting-with-your-project).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.1 Identify, assess, disclose, review, and mitigate sustainability impacts](https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts).",
 					"description": [
 						{
 							"1": "Create a maintainable list of different factors that may impact the sustainability of a product or service over time. By having this list in place, everyone in the creation process can closely monitor the application or website against each factor to determine if an PPP factor present on the list will require resolution either before, during, or after a product or service is launched.",
@@ -48,7 +48,7 @@
 				{
 					"id": "UX01-2",
 					"title": "Use third-party APIs to measure any passive external impact",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.1 Examine and disclose any external factors interacting with your project](https://www.w3.org/TR/web-sustainability-guidelines/#examine-and-disclose-any-external-factors-interacting-with-your-project).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.1 Identify, assess, disclose, review, and mitigate sustainability impacts](https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts).",
 					"description": [
 						{
 							"1": "Utilize the tooling and resources provided by external parties to help you identify any efficiency and sustainability savings when having to use such services, or when non-digital forces come into play, such as if your product or service involves the physical delivery of goods.",
@@ -2907,7 +2907,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-1.html"
 				},
 				{
-					"id": "HIS01-3",
+					"id": "HIS01-4",
 					"title": "Ensure that the project is hosted on a sustainable platform",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Use sustainable hosting](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting).",
 					"description": [
@@ -2937,10 +2937,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-4.html"
 				},
 				{
-					"id": "HIS01-5",
+					"id": "HIS01-6",
 					"title": "Ensure that the project uses a sustainable domain registrar",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Use sustainable hosting](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting).",
 					"description": [
@@ -2966,7 +2966,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-5.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-6.html"
 				},
 				{
 					"id": "HIS02-1",

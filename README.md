@@ -172,7 +172,7 @@ These documents are reachable via GitHub pages and can be queried using JavaScri
 
 **WSG** (*guidelines.json*)
 ```js
-category[1].guidelines[0].guideline = "Examine and disclose any external factors interacting with your project"
+category[1].guidelines[0].guideline = "Identify, assess, disclose, review, and mitigate sustainability impacts"
 ```
 **STAR** (*star.json*)
 ```js

@@ -80,9 +80,9 @@
 			<h2>User Experience Design</h2>
 			<form>
 				<fieldset>
-					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#examine-and-disclose-any-external-factors-interacting-with-your-project">2.1 Examine and disclose any external factors interacting with your project</a></legend>
-					<label><input type="checkbox"><span>Anticipate and identify existing or potential negative external factors. Disclose these in a publicly available resource, identifying areas where digital sustainability can be improved. Perform this audit at the start of your project and at regular intervals.</span></label>
-					<label><input type="checkbox"><span>Establish a plan of action for affected parties who might be indirectly impacted by choices made with your project. Examples include neighbors accepting parcels or traffic jams due to deliveries. Other examples include the local health impacts of infrastructure emissions, or supply chain pressure.</span></label>
+					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts">2.1 Identify, assess, disclose, review, and mitigate sustainability impacts</a></legend>
+					<label><input type="checkbox"><span>Review the planet, people, and prosperity impacts of your project at the start and at regular intervals. Record the main issues you identify, where improvements are needed, and the progress you make. Reflect these findings in your public-facing governance documents and project reporting.</span></label>
+					<label><input type="checkbox"><span>Create a plan to reduce the non-digital environmental and social impacts of digital activities associated with your project. Include impacts from logistics and delivery emissions, infrastructure emissions, local health effects, and supply chain pressures. Use measurable actions to improve external planet, people, and prosperity outcomes.</span></label>
 					<p><strong>GRI:</strong> Medium (Materials) / Medium (Energy) / Medium (Water) / Medium (Emissions)</p>
 				</fieldset>
 				<fieldset>
@@ -152,11 +152,11 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">2.11 Optimize media to reduce resource use</a></legend>
-					<label><input type="checkbox"><span>Do not include media unless it adds value. Consider the quantity, format, and sizes required.</span></label>
-					<label><input type="checkbox"><span>Resize, optimize, and compress all media. Provide media in appropriate sizes for different screen resolutions, user device capabilities, and user needs. Optimize and compress media appropriately. Provide media in compatible and appropriate formats. Avoid non-native embedded media players.</span></label>
-					<label><input type="checkbox"><span>Incorporate lazy/deferred loading from the start: Consider which media elements are immediately required, and which would be better relegated to loading on specific user interaction. Load data-intensive media on the client side, including the media itself, behind a facade - a non-functional and static representational element.</span></label>
-					<label><input type="checkbox"><span>Disable auto-play functionality on audio, video, and similar media formats. Give the user full agency over media interactions, including a choice of resolutions and formats, and the option to deactivate media. Inform users of the length, format, and data intensity of the media. Provide the option for data-intensive media to be disabled or provide low-fidelity alternatives.</span></label>
-					<label><input type="checkbox"><span>Set up a media management and use policy. Include criteria for media compression, rendering impact optimization, file formats, data retention, review, and deletion.</span></label>
+					<label><input type="checkbox"><span>Only include media when it supports user experience or improves understanding and keep the number of media items to a minimum.</span></label>
+					<label><input type="checkbox"><span>Resize, optimize, and compress media for different screen sizes, devices, and user needs. Use widely supported, efficient formats that enable native playback where possible. Avoid unnecessary custom or non-native media players. Use hardware-accelerated playback when available and compatible with security requirements.</span></label>
+					<label><input type="checkbox"><span>Incorporate lazy and/or deferred loading from the start by identifying which media elements are required immediately and which should load only on user interaction. Load large or data-intensive media only when needed, using a non-functional static facade or placeholder to defer loading until user request or interaction.</span></label>
+					<label><input type="checkbox"><span>Disable autoplay for audio, video, and other media by default. Ensure users can control playback and resolution. Inform users about media length, format, and expected data use. Provide the option to disable data-intensive media or offer lower-bandwidth alternatives.</span></label>
+					<label><input type="checkbox"><span>Create a media management and usage policy. Include guidance on compression, rendering performance, file formats, data retention, storage, review, and deletion.</span></label>
 					<p><strong>GRI:</strong> High (Materials) / High (Energy) / High (Water) / High (Emissions)</p>
 				</fieldset>
 				<fieldset>
@@ -237,8 +237,8 @@
 			<form>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#set-goals-based-on-performance-and-energy-impact">3.1 Set goals based on performance and energy impact</a></legend>
-					<label><input type="checkbox"><span>Set clear goals with performance and environmental impact in mind, then meet them. These could include, the number of requests or elements that must be rendered.</span></label>
-					<label><input type="checkbox"><span>Consider differences in the energy intensity or testable impact across each component. For example, unstyled text is less computationally intensive to render than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL or 4K video.</span></label>
+					<label><input type="checkbox"><span>Set clear performance and environmental goals for the project, including limits on requests, elements rendered, or other measurable resource use.</span></label>
+					<label><input type="checkbox"><span>Prioritize lower-impact design choices, paying attention to measurable differences in energy use across components. Complex structure, styling, and script-driven experiences along with graphics-heavy and media-rich rendering increase the computational complexity of rendering. Use more intensive approaches only where these add clear value.</span></label>
 					<p><strong>GRI:</strong> Medium (Materials) / Medium (Energy) / Medium (Water) / Medium (Emissions)</p>
 				</fieldset>
 				<fieldset>
@@ -258,9 +258,9 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-redundancy-and-duplication-in-code">3.5 Avoid redundancy and duplication in code</a></legend>
-					<label><input type="checkbox"><span>Remove duplication and/or simplify and optimize your code for better performance, focusing on essential features so you have a cleaner, less redundant product and codebase.</span></label>
-					<label><input type="checkbox"><span>Improve existing solutions rather than redeveloping and redesigning products from scratch, since the latter would duplicate the coding effort and maintenance burden for developers rather than reduce the learning burden for users.</span></label>
-					<label><input type="checkbox"><span>Use organization methodology and systems such as Don't Repeat Yourself (<abbr title="Don't Repeat Yourself">DRY</abbr>) to optimize the arrangement and output of your JavaScript and CSS.</span></label>
+					<label><input type="checkbox"><span>Refactor code to reduce duplication and redundancy by improving structure, consolidating repeated logic, and encouraging reuse.</span></label>
+					<label><input type="checkbox"><span>Prioritize improving and extending existing user-facing solutions over rebuilding them from scratch. Only replace an existing solution when doing so provides clear benefits to user experience, performance, scalability, or maintainability.</span></label>
+					<label><input type="checkbox"><span>Apply <abbr title="Don't Repeat Yourself">DRY</abbr> (Don't Repeat Yourself) principles to CSS and JavaScript where they improve maintainability. Ensure that efforts to reduce duplication do not increase complexity, introduce unnecessary dependencies, or adversely affect performance.</span></label>
 					<p><strong>GRI:</strong> Medium (Materials) / Medium (Energy) / Medium (Water) / Medium (Emissions)</p>
 				</fieldset>
 				<fieldset>
@@ -370,11 +370,12 @@
 			<form>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting">4.1 Use sustainable hosting</a></legend>
-					<label><input type="checkbox"><span>Monitor, request, and track key indicators to assess and transparently report the environmental impact of hosting and identify overconsumption. Prioritize indicators of energy and water usage, even if you are using an "all-in-one" full service hosting provider. For people who set up and configure their hosting, track hardware factors, such as CPU usage and memory usage. Similarly, track the allocation of servers and <abbr title="Central Processing Unit">CPU</abbr> cores to optimize resource efficiency. Consumers should monitor and providers should both calculate and transparently share environmental impact metrics. Metrics should include Power Usage Effectiveness (<abbr title="Power Usage Effectiveness">PUE</abbr>), Water Usage Effectiveness (<abbr title="Water Usage Effectiveness">WUE</abbr>), and Carbon Usage Effectiveness (<abbr title="Carbon Usage Effectiveness">CUE</abbr>).</span></label>
-					<label><input type="checkbox"><span>Both hosting providers and consumers should maintain hardware to extend its lifespan as long as possible. Use it efficiently at an appropriate capacity, verify it has up-to-date security patches, and ensure it has the necessary certifications. New purchases should be from reliable long-lifespan suppliers. Hosting providers should have a policy for extending hardware lifetime.</span></label>
-					<label><input type="checkbox"><span>Use electricity with the lowest possible carbon intensity. Examine location-based emissions factors to calculate the carbon intensity of available electricity from the regional grid. Include the impact of on-site electricity generation, backup generators, and storage systems in calculations.</span></label>
-					<label><input type="checkbox"><span>Work to ensure hosting and infrastructure adheres to GHG Protocol Scope 2 guidance on market-based carbon emissions accounting, seeking to match the time and location of location-based emissions from electricity consumption with purchases of low-carbon electricity.</span></label>
-					<label><input type="checkbox"><span>The impact of domain names is disclosed by domain registries and registrars. Registrants should consider and (where possible) mitigate environmental impact when making registration decisions.</span></label>
+					<label><input type="checkbox"><span>Include sustainability metrics when selecting and evaluating potential infrastructure, hosting, cloud, platform, externally managed content, or other digital services. Favor providers that publicly and transparently disclose their environmental policies and related performance indicators, including Power Usage Effectiveness (<abbr title="Power Usage Effectiveness">PUE</abbr>), Water Usage Effectiveness (<abbr title="Water Usage Effectiveness">WUE</abbr>), Carbon Usage Effectiveness (<abbr title="Carbon Usage Effectiveness">CUE</abbr>), renewable energy use, emissions reduction commitments, and hardware maintenance and sourcing practices.</span></label>
+					<label><input type="checkbox"><span>Monitor and reduce the negative environmental impact of all running infrastructure over time. Whether external or self-hosted, track all available relevant indicators, such as energy use, water use, and server resource utilization. This includes <abbr title="Central Processing Unit">CPU</abbr>/cores, memory, storage, and network usage. Use this information to identify inefficiencies, reduce overprovisioning, optimize resource use, and support transparent sustainability reporting.</span></label>
+					<label><input type="checkbox"><span>Extend the lifespan of hardware. Use equipment efficiently and at the right capacity and keep it securely patched and properly maintained. New hardware should be sourced from suppliers that commit to device longevity, patching, and repair options..</span></label>
+					<label><input type="checkbox"><span>Use electricity with the lowest possible carbon intensity. Hosting providers should measure and report carbon intensity using available location-based grid data, including on-site generation, backup systems, and storage. Use this information to select lower-carbon hosting providers and improve energy sourcing and infrastructure efficiency.</span></label>
+					<label><input type="checkbox"><span>Reduce remaining emissions using market-based carbon accounting for indirect electricity emissions under the GHG Protocol (Scope 2). When purchasing low-carbon electricity through Energy Attribute Certificates (<abbr title="Energy Attribute Certificates">EACs</abbr>) or Renewable Energy Certificates (<abbr title="Renewable Energy Certificates">RECs</abbr>), ensure the certificates match the time and location of the electricity used, identify when the renewable electricity was generated, can be validly issued and retired in a way that prevents double counting.</span></label>
+					<label><input type="checkbox"><span>Verify that the impact of domain name registration is disclosed by domain registries and registrars. Where environmental impact data is available from registrars, use it to inform domain registration decisions and mitigate environmental impact. Where such data is unavailable, assess the assumed environmental impact when making registration decisions and make sustainability-focused choices where possible.</span></label>
 					<p><strong>GRI:</strong> Low (Materials) / Low (Energy) / Low (Water) / Low (Emissions)</p>
 				</fieldset>
 				<fieldset>
@@ -385,8 +386,8 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-data-transfer-with-compression">4.3 Reduce data transfer with compression</a></legend>
-					<label><input type="checkbox"><span>Use server-side compression to reduce file sizes before delivery. Server-side compression settings and tools can be used to compress most commonly used file types, reducing energy consumption while minimizing load times, saving bandwidth, and improving overall performance.</span></label>
-					<label><input type="checkbox"><span>Use media compression tools to reduce the file size of images, videos, audio, and any other media before uploading to a server.</span></label>
+					<label><input type="checkbox"><span>Reduce file size before uploading images, audio, and video by using efficient formats and quality settings. Avoid applying additional compression if the file is already appropriately sized for upload.</span></label>
+					<label><input type="checkbox"><span>Compress media files such as images, video, and audio before uploading anywhere to reduce storage and transfer requirements.</span></label>
 					<p><strong>GRI:</strong> Low (Materials) / Low (Energy) / Low (Water) / Low (Emissions)</p>
 				</fieldset>
 				<fieldset>
@@ -457,10 +458,10 @@
 			<form>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy">5.1 Have an ethical and sustainable product strategy</a></legend>
-					<label><input type="checkbox"><span>Develop, publish and maintain key policies, such as a code of ethics, product guidelines, sustainability statements, and/or other documents that include language specific to digital products, services, policies, and programs. Address public concerns around AI and relevant emerging technologies with public-facing policies. Make these publicly accessible and transparently versioned formats</span></label>
-					<label><input type="checkbox"><span>Publish achievements, features, compliance, and anything beyond the scope of these guidelines within a dedicated sustainability section.</span></label>
-					<label><input type="checkbox"><span>Provide evidence to demonstrate how digital sustainability policies, climate policies, and related practices are effectively implemented, monitored, and governed over time.</span></label>
-					<label><input type="checkbox"><span>Advocate for and comply with responsible legislation that supports employment rights, transparency, and accountability related to sharing economic benefits, along with policies that impact your organization in relation to emerging technologies and/or digital sustainability.</span></label>
+					<label><input type="checkbox"><span>Develop, publish, and maintain key organizational policies such as a code of ethics, product guidelines, and sustainability statements. Include clear language for digital products, services, and emerging or disruptive technologies, such as <abbr title="Artificial Intelligence">AI</abbr>. Make these policies publicly accessible and keep them versioned for transparency.</span></label>
+					<label><input type="checkbox"><span>Publish web sustainability-related achievements, features, compliance updates, and other relevant information within a dedicated sustainability section.</span></label>
+					<label><input type="checkbox"><span>Provide evidence that sustainability policies and practices are actively implemented, monitored, and governed over time.</span></label>
+					<label><input type="checkbox"><span>Advocate for and comply with evidence-based legislation and standards that advance digital privacy, employment rights, transparency, accountability, responsible emerging technologies, and digital sustainability. Simultaneously make efforts to go beyond minimum expectations, especially in regard to avoiding unnecessary data collection to preserve an efficient and accessible user journey in compliance with accessibility and data protection requirements.</span></label>
 					<p><strong>GRI:</strong> High (Materials) / High (Energy) / High (Water) / High (Emissions)</p>
 				</fieldset>
 				<fieldset>
@@ -585,11 +586,11 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies">5.20 Establish responsible practices around AI and emerging or disruptive technologies</a></legend>
-					<label><input type="checkbox"><span>Ensure all technologies that deploy or create large datasets use data that is appropriately scaled and stored, ethically sourced, screened, validated, and implemented in a non-discriminatory, responsible manner.</span></label>
-					<label><input type="checkbox"><span>Show how members of your organization are supported in the process of adapting to the rise of new technologies that could disrupt the organization's business model or operational norms.</span></label>
-					<label><input type="checkbox"><span>Audit and account for any environmental considerations associated with the promotion or adoption of AI or any emerging or disruptive technologies. This should include third-party choices, and the associated waste or emissions per use and those incurred as a consequence of deployment.</span></label>
-					<label><input type="checkbox"><span>Ensure all automated tooling, scrapers, spiders, bots, artificial intelligence, and other forms of machine-assisted data gathering abides by requests to opt out at the host, server, or website level. Providers must declare themselves as non-human within the user-agent/HTTP header. Providers must also publish impact reports relating to their gathering activities.</span></label>
-					<label><input type="checkbox"><span>Do not roll out post-quantum encryption for high-traffic services that do not need resilience against harvest now, decrypt later attacks, where attackers steal encrypted data, anticipating that future quantum computers will be powerful enough to break the encryption and make the data readable at a later date.</span></label>
+					<label><input type="checkbox"><span>Ensure datasets used, created, or referenced by automated systems are no larger than necessary for the task, ethically sourced, screened, validated, stored, and used in a fair and non-discriminatory, responsible way.</span></label>
+					<label><input type="checkbox"><span>Support employees in adapting to new technologies that may change or disrupt their roles or the organization's operations.</span></label>
+					<label><input type="checkbox"><span>Audit and account for environmental impacts linked to the promotion or adoption of AI and emerging or disruptive technologies. This includes third-party systems and the waste, water, and emissions generated per use, as well as those resulting from initial deployment and updates. Prioritize efficiency and deployment in a way that minimizes environmental impacts.</span></label>
+					<label><input type="checkbox"><span>Ensure bots, crawlers, user agents, scrapers, artificial intelligence, and all other automated tools respect opt-out signals at the host, server, and site level. Providers must declare themselves as non-human within the user agent in the HTTP header.</span></label>
+					<label><input type="checkbox"><span>Use post-quantum encryption only where there is a clear need to protect against “harvest now, decrypt later” attacks and long-term data confidentiality risks. Treat it as supplementary to rather than replacing existing encryption methods, using both during any transition. Apply caution when adopting post-quantum encryption in high-traffic services, as the bandwidth consumption, processing demand, design complexity, and migration risks may outweigh the security benefits.</span></label>
 					<p><strong>GRI:</strong> High (Materials) / High (Energy) / High (Water) / High (Emissions)</p>
 				</fieldset>
 				<fieldset>
