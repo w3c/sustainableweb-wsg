@@ -10,9 +10,9 @@
 			.flow table { border-collapse:collapse; border-spacing:0; white-space: nowrap; }
 			.flow td, .flow th { border: 1px solid; text-align: center; }
 			.red { color: #FF0000; }
-			/* Fix for Printing The Specification: https://github.com/w3c/sustyweb/issues/92 */
+			/* Fix for Printing The Specification: https://github.com/w3c-cg/sustyweb/issues/92 */
 			@media print { .flow { display: none !important; } #test-suite::after { content: "To examine the test suite table, see the original Sustainable Tooling And Reporting (STAR) document.";} }
-			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c/sustyweb/issues/114 */
+			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c-cg/sustyweb/issues/114 */
 			summary { cursor: pointer; }
 			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
 			.summary:not(:last-child) { margin-bottom: 1em; }
@@ -1586,7 +1586,7 @@
 						<p>Within the scope of sustainability, this is increasingly important as there are explicit laws surrounding the subject in addition to expanded PPP remits such as accessibility, privacy, security, etc. In terms of machine testability the mechanics of an implementation may be more difficult than utilizing an automated checker, but wizard software can work through questions to help identify key issues.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
-							<li>Internationally reaching environmental legislation such as <a href="https://finance.ec.europa.eu/capital-markets-union-and-financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"><abbr title="Corporate Sustainability Reporting Directive">CSRD</abbr></a> and the <a href="https://www.europarl.europa.eu/news/en/press-room/20240112IPR16772/meps-adopt-new-law-banning-greenwashing-and-misleading-product-information">Green Claims Directive</a> provide stricter enforcement around product descriptions and the need to reduce emissions and accurately report such efforts.</li>
+							<li>Internationally reaching environmental legislation such as <a href="https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"><abbr title="Corporate Sustainability Reporting Directive">CSRD</abbr></a> and the <a href="https://www.europarl.europa.eu/news/en/press-room/20240112IPR16772/meps-adopt-new-law-banning-greenwashing-and-misleading-product-information">Green Claims Directive</a> provide stricter enforcement around product descriptions and the need to reduce emissions and accurately report such efforts.</li>
 							<li>Accessibility legislation (<a href="https://www.w3.org/WAI/policies/">of which there are many worldwide</a>) provides strict enforcement around ensuring inclusivity not just offline but also in the digital sphere as well, leaving non-compliance open to lawsuit risks.</li>
 							<li>Internationally reaching privacy legislation such as <a href="https://gdpr-info.eu/"><abbr title="General Data Protection Regulation">GDPR</abbr></a> can also impact digital services on a sustainability level (through the people and societal aspect of PPP), and <a href="https://gdpr.eu/checklist/">various</a> <a href="https://gdprchecklist.io/">checklists</a> can assist.</li>
 						</ol>
@@ -2026,7 +2026,7 @@
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>In the past, it was necessary to provide specific coding techniques (known as hacks) to ensure web browser compatibility. <a href="http://browserhacks.com/">Browser Hacks</a>, lists the various patterns used that could be solutions fit for removal.</li>
-							<li>When <a href="https://ios404.com/">testing new features</a>, browsers had a habit of <a href="https://shouldiprefix.com/">prefixing their code</a> in the past <a href="https://webstatus.dev/">behind flags</a> to avoid breaking existing code. Lists of such prefixes can be found online as well as archaic proprietary HTML and CSS. Websites like <a href="https://bcd-watch.igalia.com/">BCD Watch</a>, <a href="https://css-triggers.com/">CSS Triggers</a>, <a href="https://runtime-compat.unjs.io/">Runtime compatibility?</a>, and <a href="https://web-platform-dx.github.io/web-features-explorer/">Web features explorer</a> can help with compatibility testing.</li>
+							<li>When <a href="https://ios404.com/">testing new features</a>, browsers had a habit of <a href="https://anthonymaximus.com/should-i-prefix/">prefixing their code</a> in the past <a href="https://webstatus.dev/">behind flags</a> to avoid breaking existing code. Lists of such prefixes can be found online as well as archaic proprietary HTML and CSS. Websites like <a href="https://bcd-watch.igalia.com/">BCD Watch</a>, <a href="https://css-triggers.com/">CSS Triggers</a>, <a href="https://runtime-compat.unjs.io/">Runtime compatibility?</a>, and <a href="https://web-platform-dx.github.io/web-features-explorer/">Web features explorer</a> can help with compatibility testing.</li>
 							<li>The <a href="https://www.spacejam.com/1996/">Space Jam website</a> is considered a classic piece of 90s Internet design with its total disregard for function over form, but if you look at the code - it gets even uglier with table-based layouts and deprecated code</li>
 							<li>The <a href="https://www.webdesignmuseum.org/flash-websites">Web Design Museum</a> houses a showcase of screenshots of websites that were built using the proprietary technology Adobe Flash. Along with Java Applets and Microsoft Silverlight they now no longer work.</li>
 						</ol>
@@ -2250,7 +2250,7 @@
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>The <abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr> not only has within the <a href="https://html.spec.whatwg.org/multipage/semantics.html">HTML specification</a> a list of recognized elements that can provide contextual information about the page, but it also has a wiki that lists <a href="https://wiki.whatwg.org/wiki/MetaExtensions">proprietary META tags</a>.</li>
-							<li>Many social networks take advantage of the <a href="https://ogp.me/">OpenGraph Protocol</a> including <a href="https://developers.facebook.com/docs/sharing/webmasters">Facebook</a> and <a href="https://developer.x.com/en/docs/x-for-websites/cards/overview/markup">X (formally Twitter)</a> in the HTML head. <a href="https://joinmastodon.org/verification">Mastodon</a> uses the rel="me" attribute to identify websites with owners.</li>
+							<li>Many social networks take advantage of the <a href="https://ogp.me/">OpenGraph Protocol</a> including <a href="https://developers.facebook.com/docs/sharing/webmasters">Facebook</a> in the HTML head. <a href="https://joinmastodon.org/verification">Mastodon</a> uses the rel="me" attribute to identify websites with owners.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>

@@ -1,7 +1,7 @@
 {
 	"title": "Sustainable Tooling And Reporting (STAR)",
 	"edition": "Editor's Draft",
-	"lastModified": "2026-05-21",
+	"lastModified": "2026-06-09",
 	"category": [
 		{
 			"id": "1",
@@ -1542,7 +1542,7 @@
 					],
 					"examples": [
 						{
-							"1": "Internationally reaching environmental legislation such as [CSRD](https://finance.ec.europa.eu/capital-markets-union-and-financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en) and the [Green Claims Directive](https://www.europarl.europa.eu/news/en/press-room/20240112IPR16772/meps-adopt-new-law-banning-greenwashing-and-misleading-product-information) provide stricter enforcement around product descriptions and the need to reduce emissions and accurately report such efforts.",
+							"1": "Internationally reaching environmental legislation such as [CSRD](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en) and the [Green Claims Directive](https://www.europarl.europa.eu/news/en/press-room/20240112IPR16772/meps-adopt-new-law-banning-greenwashing-and-misleading-product-information) provide stricter enforcement around product descriptions and the need to reduce emissions and accurately report such efforts.",
 							"2": "Accessibility legislation ([of which there are many worldwide](https://www.w3.org/WAI/policies/)) provides strict enforcement around ensuring inclusivity not just offline but also in the digital sphere as well, leaving non-compliance open to lawsuit risks.",
 							"3": "Internationally reaching privacy legislation such as [GDPR](https://gdpr-info.eu/) can also impact digital services on a sustainability level (through the people and societal aspect of PPP), and [various](https://gdpr.eu/checklist/) [checklists](https://gdprchecklist.io/) can assist."
 						}
@@ -2073,7 +2073,7 @@
 					"examples": [
 						{
 							"1": "In the past, it was necessary to provide specific coding techniques (known as hacks) to ensure web browser compatibility. [Browser Hacks](http://browserhacks.com/), lists the various patterns used that could be solutions fit for removal.",
-							"2": "When [testing new features](https://ios404.com/), browsers had a habit of [prefixing their code](https://shouldiprefix.com/) in the past [behind flags](https://webstatus.dev/) to avoid breaking existing code. Lists of such prefixes can be found online as well as archaic proprietary HTML and CSS. Websites like [BCD Watch](https://bcd-watch.igalia.com/), [CSS Triggers](https://css-triggers.com/), [Runtime compatibility?](https://runtime-compat.unjs.io/), and [Web features explorer](https://web-platform-dx.github.io/web-features-explorer/) can help with compatibility testing.",
+							"2": "When [testing new features](https://ios404.com/), browsers had a habit of [prefixing their code](https://anthonymaximus.com/should-i-prefix/) in the past [behind flags](https://webstatus.dev/) to avoid breaking existing code. Lists of such prefixes can be found online as well as archaic proprietary HTML and CSS. Websites like [BCD Watch](https://bcd-watch.igalia.com/), [CSS Triggers](https://css-triggers.com/), [Runtime compatibility?](https://runtime-compat.unjs.io/), and [Web features explorer](https://web-platform-dx.github.io/web-features-explorer/) can help with compatibility testing.",
 							"3": "Check that the project does not contain any outdated layout techniques (such as table-based design).",
 							"4": "Check that the website or application does not contain deprecated syntax features.",
 							"5": "Check if the existing product or service uses outdated technologies (VML/P3P, etc) and if so recommend replacements (X3D/POWDER, etc).",
@@ -2341,7 +2341,7 @@
 					"examples": [
 						{
 							"1": "The WHATWG not only has within the [HTML specification](https://html.spec.whatwg.org/multipage/semantics.html) a list of recognized elements that can provide contextual information about the page, but it also has a wiki that lists [proprietary META tags](https://wiki.whatwg.org/wiki/MetaExtensions).",
-							"2": "Many social networks take advantage of the [OpenGraph Protocol](https://ogp.me/) including [Facebook](https://developers.facebook.com/docs/sharing/webmasters) and [X (formally Twitter)](https://developer.x.com/en/docs/x-for-websites/cards/overview/markup) in the HTML head. [Mastodon](https://joinmastodon.org/verification) uses the rel=\"me\" attribute to identify websites with owners."
+							"2": "Many social networks take advantage of the [OpenGraph Protocol](https://ogp.me/) including [Facebook](https://developers.facebook.com/docs/sharing/webmasters) in the HTML head. [Mastodon](https://joinmastodon.org/verification) uses the rel=\"me\" attribute to identify websites with owners."
 						}
 					],
 					"tests": [
