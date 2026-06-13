@@ -13,7 +13,7 @@
 			"shortName": "UX Design",
 			"techniques": [
 				{
-					"id": "UX01-1",
+					"id": "impact-analysis",
 					"title": "Produce a list of factors to monitor for sustainability impacts",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.1 Identify, assess, disclose, review, and mitigate sustainability impacts](https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts).",
 					"description": [
@@ -43,10 +43,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX01-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/impact-analysis.html"
 				},
 				{
-					"id": "UX01-2",
+					"id": "external-impact",
 					"title": "Use third-party APIs to measure any passive external impact",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.1 Identify, assess, disclose, review, and mitigate sustainability impacts](https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts).",
 					"description": [
@@ -75,10 +75,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX01-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/external-impact.html"
 				},
 				{
-					"id": "UX02-1",
+					"id": "audience-evaluation",
 					"title": "Use quantitative research to measure the needs of users and affected communities",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.2 Understand user requirements or constraints, resolving barriers to access](https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access).",
 					"description": [
@@ -106,10 +106,10 @@
 							"expectedResults": "If #1, #2 and #3 above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX02-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/audience-evaluation.html"
 				},
 				{
-					"id": "UX02-2",
+					"id": "barriers-and-access",
 					"title": "Test against specific disability profiles for more calibrated accessibility",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.2 Understand user requirements or constraints, resolving barriers to access](https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access).",
 					"description": [
@@ -138,10 +138,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX02-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/barriers-and-access.html"
 				},
 				{
-					"id": "UX04-1",
+					"id": "efficient-paths",
 					"title": "Measure interaction cost to reach every page in the information architecture",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.4 Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
 					"description": [
@@ -170,10 +170,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX04-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/efficient-paths.html"
 				},
 				{
-					"id": "UX04-3",
+					"id": "distraction-free-design",
 					"title": "Check for Content Obscuring Materials That Occur Upon pageLoad",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.4 Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
 					"description": [
@@ -202,10 +202,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX04-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html"
 				},
 				{
-					"id": "UX04-4",
+					"id": "eliminate-the-non-essential",
 					"title": "Break large pieces of content down using progressive disclosure",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.4 Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
 					"description": [
@@ -233,10 +233,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX04-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/eliminate-the-non-essential.html"
 				},
 				{
-					"id": "UX04-5",
+					"id": "user-initiated-actionable-content",
 					"title": "Remove any non-user initiated pop-up or model windows",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.4 Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
 					"description": [
@@ -262,10 +262,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX04-5.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/user-initiated-actionable-content.html"
 				},
 				{
-					"id": "UX04-6",
+					"id": "decorative-design",
 					"title": "Decorative design elements can be disabled if they are not done so by default",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.4 Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
 					"description": [
@@ -294,10 +294,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX04-6.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/decorative-design.html"
 				},
 				{
-					"id": "UX05-1",
+					"id": "navigation-and-search",
 					"title": "Making your navigation menu accessible and well-structured",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.5 Ensure that navigation and wayfinding are well-structured](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured).",
 					"description": [
@@ -325,10 +325,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX05-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/navigation-and-search.html"
 				},
 				{
-					"id": "UX05-2",
+					"id": "human-readable-sitemaps",
 					"title": "Provide a human-readable sitemap to improve the information architecture",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.5 Ensure that navigation and wayfinding are well-structured](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured).",
 					"description": [
@@ -358,10 +358,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX05-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/human-readable-sitemaps.html"
 				},
 				{
-					"id": "UX05-3",
+					"id": "new-content",
 					"title": "Provide a method of keeping up-to-date with product or service updates",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.5 Ensure that navigation and wayfinding are well-structured](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured).",
 					"description": [
@@ -391,10 +391,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX05-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/new-content.html"
 				},
 				{
-					"id": "UX06-1",
+					"id": "respect-user-attention",
 					"title": "Request permission for invasive access to interact with content",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.6 Design to assist and not to distract](https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract).",
 					"description": [
@@ -422,10 +422,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX06-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/respect-user-attention.html"
 				},
 				{
-					"id": "UX06-2",
+					"id": "minimize-distraction",
 					"title": "Encourage features that help users achieve tasks",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.6 Design to assist and not to distract](https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract).",
 					"description": [
@@ -454,10 +454,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX06-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/minimize-distraction.html"
 				},
 				{
-					"id": "UX06-3",
+					"id": "reduce-engagement-traps",
 					"title": "Avoid mechanisms that promote excessive screen time",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.6 Design to assist and not to distract](https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract).",
 					"description": [
@@ -483,10 +483,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX06-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/reduce-engagement-traps.html"
 				},
 				{
-					"id": "UX07-1",
+					"id": "deceptive-design-patterns",
 					"title": "Eliminate deceptive design patterns or manipulative techniques",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.7 Avoid being manipulative or deceptive](https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive).",
 					"description": [
@@ -511,10 +511,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX07-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/deceptive-design-patterns.html"
 				},
 				{
-					"id": "UX07-3",
+					"id": "analytics-and-tracking",
 					"title": "Determine if analytics can be sustainably improved or removed",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.7 Avoid being manipulative or deceptive](https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive).",
 					"description": [
@@ -541,10 +541,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX07-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/analytics-and-tracking.html"
 				},
 				{
-					"id": "UX07-4",
+					"id": "search-engine-optimization",
 					"title": "Eliminate any manipulative SEO techniques from your source code",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.7 Avoid being manipulative or deceptive](https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive).",
 					"description": [
@@ -572,10 +572,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX07-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/search-engine-optimization.html"
 				},
 				{
-					"id": "UX08-1",
+					"id": "deliverables-reusability",
 					"title": "Provide deliverables in reusable, self-isolated components",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.8 Make deliverables understandable and reusable](https://www.w3.org/TR/web-sustainability-guidelines/#make-deliverables-understandable-and-reusable).",
 					"description": [
@@ -603,10 +603,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX08-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-reusability.html"
 				},
 				{
-					"id": "UX08-2",
+					"id": "deliverables-documentation",
 					"title": "Provide documentation to guide the deliverables",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.8 Make deliverables understandable and reusable](https://www.w3.org/TR/web-sustainability-guidelines/#make-deliverables-understandable-and-reusable).",
 					"description": [
@@ -639,10 +639,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX08-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-documentation.html"
 				},
 				{
-					"id": "UX08-3",
+					"id": "deliverables-readability",
 					"title": "Create code comments to describe the functionality of features",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.8 Make deliverables understandable and reusable](https://www.w3.org/TR/web-sustainability-guidelines/#make-deliverables-understandable-and-reusable).",
 					"description": [
@@ -668,10 +668,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX08-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-readability.html"
 				},
 				{
-					"id": "UX09-1",
+					"id": "design-system",
 					"title": "Implement an up-to-date design system",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.9 Use a design system for interface consistency](https://www.w3.org/TR/web-sustainability-guidelines/#use-a-design-system-for-interface-consistency).",
 					"description": [
@@ -704,10 +704,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX09-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/design-system.html"
 				},
 				{
-					"id": "UX10-1",
+					"id": "clear-content",
 					"title": "Increase the readability of content using common metrics",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.10 Provide clear, inclusive content with purpose](https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose).",
 					"description": [
@@ -737,10 +737,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX10-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/clear-content.html"
 				},
 				{
-					"id": "UX10-2",
+					"id": "content-formatting",
 					"title": "Break long-form content down into a simpler structure",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.10 Provide clear, inclusive content with purpose](https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose).",
 					"description": [
@@ -766,10 +766,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX10-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/content-formatting.html"
 				},
 				{
-					"id": "UX11-1",
+					"id": "need-for-media",
 					"title": "Remove any functionality that may trigger auto-playing animation",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media to reduce resource use](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use).",
 					"description": [
@@ -796,10 +796,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX11-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/need-for-media.html"
 				},
 				{
-					"id": "UX11-2",
+					"id": "optimized-media",
 					"title": "Optimizing all audio and video assets for speed and compatibility",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media to reduce resource use](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use).",
 					"description": [
@@ -826,10 +826,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX11-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-media.html"
 				},
 				{
-					"id": "UX11-3",
+					"id": "lazy-loading",
 					"title": "Provide facades and lazy-loading for media, animated GIFs, and third-party content",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media to reduce resource use](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use).",
 					"description": [
@@ -865,10 +865,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX11-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/lazy-loading.html"
 				},
 				{
-					"id": "UX11-4",
+					"id": "user-controlled-media",
 					"title": "Optimizing all media assets for a variety of different resolutions",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media to reduce resource use](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use).",
 					"description": [
@@ -897,10 +897,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX11-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/user-controlled-media.html"
 				},
 				{
-					"id": "UX11-5",
+					"id": "media-management-and-use",
 					"title": "Add details about media impacts to the media management and use policy",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.11 Optimize media to reduce resource use](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use).",
 					"description": [
@@ -928,10 +928,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX11-5.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/media-management-and-use.html"
 				},
 				{
-					"id": "UX12-2",
+					"id": "avoid-overburdening",
 					"title": "Measure and respond to high-intensity animation usage",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.12 Ensure animation is proportionate and easy to control](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-animation-is-proportionate-and-easy-to-control).",
 					"description": [
@@ -958,10 +958,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX12-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/avoid-overburdening.html"
 				},
 				{
-					"id": "UX12-3",
+					"id": "control-animation",
 					"title": "Include a mechanism to pause or stop page animation",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.12 Ensure animation is proportionate and easy to control](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-animation-is-proportionate-and-easy-to-control).",
 					"description": [
@@ -986,10 +986,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX12-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/control-animation.html"
 				},
 				{
-					"id": "UX13-1",
+					"id": "pre-installed-typefaces",
 					"title": "Provide accessible mechanisms around symbols in system fonts",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.13 Use optimized and appropriate web typography](https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography).",
 					"description": [
@@ -1014,10 +1014,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX13-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/pre-installed-typefaces.html"
 				},
 				{
-					"id": "UX13-2",
+					"id": "web-font-optimization",
 					"title": "Use modern, efficient custom typefaces within a set limit",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.13 Use optimized and appropriate web typography](https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography).",
 					"description": [
@@ -1045,10 +1045,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX13-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/web-font-optimization.html"
 				},
 				{
-					"id": "UX14-1",
+					"id": "open-formats",
 					"title": "Ensure that every PDF or other non-web document has an HTML alternative",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.14 Offer suitable alternatives for every format used](https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used).",
 					"description": [
@@ -1074,10 +1074,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX14-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/open-formats.html"
 				},
 				{
-					"id": "UX14-2",
+					"id": "font-stack-fallbacks",
 					"title": "Provide a suitable font stack when custom typefaces are used",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.14 Offer suitable alternatives for every format used](https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used).",
 					"description": [
@@ -1104,10 +1104,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX14-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/font-stack-fallbacks.html"
 				},
 				{
-					"id": "UX14-3",
+					"id": "alternative-text",
 					"title": "Provide alternative text or figure captions for images",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.14 Offer suitable alternatives for every format used](https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used).",
 					"description": [
@@ -1135,10 +1135,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX14-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/alternative-text.html"
 				},
 				{
-					"id": "UX14-4",
+					"id": "transcripts-and-text",
 					"title": "Provide a text transcription of media files in an open HTML format",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.14 Offer suitable alternatives for every format used](https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used).",
 					"description": [
@@ -1163,10 +1163,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX14-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/transcripts-and-text.html"
 				},
 				{
-					"id": "UX14-5",
+					"id": "video-alternatives",
 					"title": "Include WebVTT closed captions, subtitles, and sign language support",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.14 Offer suitable alternatives for every format used](https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used).",
 					"description": [
@@ -1192,10 +1192,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX14-5.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/video-alternatives.html"
 				},
 				{
-					"id": "UX15-1",
+					"id": "simple-forms",
 					"title": "Detect form requirements and identify data collection policies",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.15 Provide accessible, usable, minimal web forms](https://www.w3.org/TR/web-sustainability-guidelines/#provide-accessible-usable-minimal-web-forms).",
 					"description": [
@@ -1224,10 +1224,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX15-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/simple-forms.html"
 				},
 				{
-					"id": "UX15-2",
+					"id": "functional-forms",
 					"title": "Allow for data entry with automatic assistance settings",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.15 Provide accessible, usable, minimal web forms](https://www.w3.org/TR/web-sustainability-guidelines/#provide-accessible-usable-minimal-web-forms).",
 					"description": [
@@ -1255,10 +1255,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX15-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/functional-forms.html"
 				},
 				{
-					"id": "UX17-1",
+					"id": "printing-documents",
 					"title": "Add a print-friendly media query or style sheet",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.17 Reduce the impact of downloadable and physical documents](https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
@@ -1286,10 +1286,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX17-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/printing-documents.html"
 				},
 				{
-					"id": "UX17-2",
+					"id": "optimize-documents",
 					"title": "Optimizing all document assets across a variety of different formats",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.17 Reduce the impact of downloadable and physical documents](https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
@@ -1316,10 +1316,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX17-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optimize-documents.html"
 				},
 				{
-					"id": "UX17-3",
+					"id": "optimize-delivery",
 					"title": "Provide pre-generated copies of repeat-use physical assets",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.17 Reduce the impact of downloadable and physical documents](https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
@@ -1344,10 +1344,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX17-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optimize-delivery.html"
 				},
 				{
-					"id": "UX17-4",
+					"id": "labels-and-choice",
 					"title": "Provide document details including a URL within a page",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.17 Reduce the impact of downloadable and physical documents](https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents).",
 					"description": [
@@ -1373,10 +1373,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX17-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/labels-and-choice.html"
 				},
 				{
-					"id": "UX18-1",
+					"id": "early-user-testing",
 					"title": "Identify an affected party-focused testing and prototyping policy",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.18 Involve users early in the project](https://www.w3.org/TR/web-sustainability-guidelines/#involve-users-early-in-the-project).",
 					"description": [
@@ -1402,10 +1402,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX18-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/early-user-testing.html"
 				},
 				{
-					"id": "UX19-1",
+					"id": "ongoing-evaluation",
 					"title": "Produce a list of checkpoints to ensure quality control",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.19 Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
 					"description": [
@@ -1435,10 +1435,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/ongoing-evaluation.html"
 				},
 				{
-					"id": "UX19-2",
+					"id": "non-regression-tests",
 					"title": "Provide active monitoring for issues on a frequent schedule",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.19 Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
 					"description": [
@@ -1467,10 +1467,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/non-regression-tests.html"
 				},
 				{
-					"id": "UX19-3",
+					"id": "regression-tests",
 					"title": "Scan for introduced issues upon the completion of a new release",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.19 Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
 					"description": [
@@ -1497,10 +1497,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/regression-tests.html"
 				},
 				{
-					"id": "UX19-4",
+					"id": "performance-testing",
 					"title": "Establish performance testing routines with each new release",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.19 Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
 					"description": [
@@ -1528,10 +1528,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/performance-testing.html"
 				},
 				{
-					"id": "UX19-5",
+					"id": "compliant-measurement",
 					"title": "Provide compliance checks with each release for relevant legislation",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.19 Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
 					"description": [
@@ -1560,10 +1560,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-5.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compliant-measurement.html"
 				},
 				{
-					"id": "UX21-1",
+					"id": "compatibility-policy",
 					"title": "Provide a publicly visible compatibility policy or statement",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.21 Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
 					"description": [
@@ -1589,10 +1589,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX21-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-policy.html"
 				},
 				{
-					"id": "UX21-2",
+					"id": "maintaining-compatibility",
 					"title": "Provide clarification when updates are significant over minor releases",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.21 Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
 					"description": [
@@ -1618,10 +1618,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX21-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/maintaining-compatibility.html"
 				},
 				{
-					"id": "UX21-3",
+					"id": "user-constraints",
 					"title": "Establish compatibility testing routines with each new release",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.21 Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
 					"description": [
@@ -1652,10 +1652,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX21-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/user-constraints.html"
 				},
 				{
-					"id": "UX21-4",
+					"id": "progressive-web-applications-pwas",
 					"title": "Provide a PWA if more suitable than its native counterpart",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [2.21 Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
 					"description": [
@@ -1685,7 +1685,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/UX21-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/progressive-web-applications-pwas.html"
 				}
 			]
 		},
@@ -1695,7 +1695,7 @@
 			"shortName": "Web Development",
 			"techniques": [
 				{
-					"id": "WD01-1",
+					"id": "performance-goals",
 					"title": "Profile existing projects to identify common factors of value",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.1 Set goals based on performance and energy impact](https://www.w3.org/TR/web-sustainability-guidelines/#set-goals-based-on-performance-and-energy-impact).",
 					"description": [
@@ -1723,10 +1723,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD01-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/performance-goals.html"
 				},
 				{
-					"id": "WD01-2",
+					"id": "energy-intensity",
 					"title": "Calculate the energy intensity of technologies for existing projects",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.1 Set goals based on performance and energy impact](https://www.w3.org/TR/web-sustainability-guidelines/#set-goals-based-on-performance-and-energy-impact).",
 					"description": [
@@ -1754,10 +1754,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD01-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/energy-intensity.html"
 				},
 				{
-					"id": "WD02-1",
+					"id": "minified-code",
 					"title": "Minify your front-end code if it is public facing",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.2 Remove unnecessary or redundant information](https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-or-redundant-information).",
 					"description": [
@@ -1785,10 +1785,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD02-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/minified-code.html"
 				},
 				{
-					"id": "WD03-1",
+					"id": "code-splitting",
 					"title": "Implement code-splitting where appropriate to reduce payloads",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.3 Modularize bandwidth-heavy components](https://www.w3.org/TR/web-sustainability-guidelines/#modularize-bandwidth-heavy-components).",
 					"description": [
@@ -1817,10 +1817,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD03-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/code-splitting.html"
 				},
 				{
-					"id": "WD04-1",
+					"id": "remove-redundancy",
 					"title": "Eliminate redundant code through coverage or tree shaking",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.4 Remove unnecessary code](https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-code).",
 					"description": [
@@ -1847,10 +1847,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD04-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/remove-redundancy.html"
 				},
 				{
-					"id": "WD05-3",
+					"id": "organize-code-arrangement",
 					"title": "Write code for performance removing duplication",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.5 Avoid redundancy and duplication in code](https://www.w3.org/TR/web-sustainability-guidelines/#avoid-redundancy-and-duplication-in-code).",
 					"description": [
@@ -1876,10 +1876,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD05-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/organize-code-arrangement.html"
 				},
 				{
-					"id": "WD06-1",
+					"id": "assess-and-reduce",
 					"title": "Determine and decision make upon third-party impacts",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.6 Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
 					"description": [
@@ -1907,10 +1907,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/assess-and-reduce.html"
 				},
 				{
-					"id": "WD06-2",
+					"id": "third-party-implementation",
 					"title": "Provide an import on interaction delay for third-party resources",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.6 Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
 					"description": [
@@ -1936,10 +1936,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/third-party-implementation.html"
 				},
 				{
-					"id": "WD06-3",
+					"id": "self-hosting",
 					"title": "Ensure that content is delivered through the most sustainable pathway",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.6 Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
 					"description": [
@@ -1967,10 +1967,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/self-hosting.html"
 				},
 				{
-					"id": "WD06-4",
+					"id": "third-party-preferences",
 					"title": "Provide the ability to identify and choose third-party components to load",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.6 Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
 					"description": [
@@ -1998,10 +1998,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/third-party-preferences.html"
 				},
 				{
-					"id": "WD07-1",
+					"id": "semantic-code",
 					"title": "Validate source code for semantic accuracy",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.7 Ensure code follows good semantic practices](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices).",
 					"description": [
@@ -2027,10 +2027,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/semantic-code.html"
 				},
 				{
-					"id": "WD07-2",
+					"id": "optional-features",
 					"title": "Eliminate optional code to reduce the rendering impact",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.7 Ensure code follows good semantic practices](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices).",
 					"description": [
@@ -2056,10 +2056,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optional-features.html"
 				},
 				{
-					"id": "WD07-3",
+					"id": "non-standard-code",
 					"title": "Replace non-standard code with suitable alternative syntax",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.7 Ensure code follows good semantic practices](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices).",
 					"description": [
@@ -2092,10 +2092,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/non-standard-code.html"
 				},
 				{
-					"id": "WD07-5",
+					"id": "built-in-over-custom",
 					"title": "Replace code that can instead use more efficient native APIs",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.7 Ensure code follows good semantic practices](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices).",
 					"description": [
@@ -2121,10 +2121,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-5.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/built-in-over-custom.html"
 				},
 				{
-					"id": "WD08-1",
+					"id": "asynchronous-code",
 					"title": "Set scripts to load either asynchronously or deferred",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.8 Defer the loading of non-critical resources](https://www.w3.org/TR/web-sustainability-guidelines/#defer-the-loading-of-non-critical-resources).",
 					"description": [
@@ -2149,10 +2149,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD08-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/asynchronous-code.html"
 				},
 				{
-					"id": "WD08-2",
+					"id": "optimized-loading",
 					"title": "Provide assets required at load with the correct delivery route",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.8 Defer the loading of non-critical resources](https://www.w3.org/TR/web-sustainability-guidelines/#defer-the-loading-of-non-critical-resources).",
 					"description": [
@@ -2177,10 +2177,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD08-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-loading.html"
 				},
 				{
-					"id": "WD09-1",
+					"id": "accessibility-aids",
 					"title": "Add signposting within the page to direct users and accessibility aids",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.9 Provide information to help understand the usefulness of a page](https://www.w3.org/TR/web-sustainability-guidelines/#provide-information-to-help-understand-the-usefulness-of-a-page).",
 					"description": [
@@ -2209,10 +2209,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD09-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/accessibility-aids.html"
 				},
 				{
-					"id": "WD10-1",
+					"id": "error-validation",
 					"title": "Ensure that form inputs correctly match and validate content expectations",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.10 Validate form errors and account for tooling requirements](https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements).",
 					"description": [
@@ -2240,10 +2240,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD10-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/error-validation.html"
 				},
 				{
-					"id": "WD10-2",
+					"id": "label-elements",
 					"title": "Ensure that form elements are correctly labeled",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.10 Validate form errors and account for tooling requirements](https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements).",
 					"description": [
@@ -2267,10 +2267,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD10-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/label-elements.html"
 				},
 				{
-					"id": "WD10-3",
+					"id": "allow-clipboard",
 					"title": "Reduce issues within data entry with manual third-party content",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.10 Validate form errors and account for tooling requirements](https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements).",
 					"description": [
@@ -2296,10 +2296,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD10-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/allow-clipboard.html"
 				},
 				{
-					"id": "WD11-1",
+					"id": "required-elements",
 					"title": "Ensure that the required HTML elements are included",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.11 Structure metadata for machine readability](https://www.w3.org/TR/web-sustainability-guidelines/#structure-metadata-for-machine-readability).",
 					"description": [
@@ -2326,10 +2326,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD11-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/required-elements.html"
 				},
 				{
-					"id": "WD11-2",
+					"id": "meta-tags",
 					"title": "Provide relevant metadata using a recognized scheme",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.11 Structure metadata for machine readability](https://www.w3.org/TR/web-sustainability-guidelines/#structure-metadata-for-machine-readability).",
 					"description": [
@@ -2356,10 +2356,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD11-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/meta-tags.html"
 				},
 				{
-					"id": "WD11-3",
+					"id": "structured-data",
 					"title": "Ensure content is structured using Microdata",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.11 Structure metadata for machine readability](https://www.w3.org/TR/web-sustainability-guidelines/#structure-metadata-for-machine-readability).",
 					"description": [
@@ -2384,10 +2384,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD11-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/structured-data.html"
 				},
 				{
-					"id": "WD12-1",
+					"id": "media-and-preference-queries",
 					"title": "Ensure CSS preference media queries are correctly applied",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.12 Use sustainability beneficial user preference media queries](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainability-beneficial-user-preference-media-queries).",
 					"description": [
@@ -2414,10 +2414,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD12-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/media-and-preference-queries.html"
 				},
 				{
-					"id": "WD13-1",
+					"id": "device-adaptable",
 					"title": "Test against network speeds and visual resolution breakpoints",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.13 Ensure layouts work for different devices and requirements](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements).",
 					"description": [
@@ -2443,10 +2443,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/device-adaptable.html"
 				},
 				{
-					"id": "WD13-2",
+					"id": "progressive-enhancement",
 					"title": "Provide progressive enhancement feature testing within projects",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.13 Ensure layouts work for different devices and requirements](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements).",
 					"description": [
@@ -2473,10 +2473,10 @@
 							"expectedResults": "Expectation of the above is dependent on the task but should aim to be true unless necessary."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/progressive-enhancement.html"
 				},
 				{
-					"id": "WD13-3",
+					"id": "carbon-aware-design",
 					"title": "Configure your project around carbon-aware situations",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.13 Ensure layouts work for different devices and requirements](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements).",
 					"description": [
@@ -2501,10 +2501,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/carbon-aware-design.html"
 				},
 				{
-					"id": "WD13-4",
+					"id": "alternative-browsing",
 					"title": "Provide low-impact, delayed, or alternate methods of interaction",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.13 Ensure layouts work for different devices and requirements](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements).",
 					"description": [
@@ -2534,10 +2534,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/alternative-browsing.html"
 				},
 				{
-					"id": "WD14-1",
+					"id": "sustainable-javascript",
 					"title": "Optimize a codebase through rewriting for performance",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.14 Use standards-based JavaScript and APIs](https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis).",
 					"description": [
@@ -2565,10 +2565,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD14-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-javascript.html"
 				},
 				{
-					"id": "WD14-2",
+					"id": "sustainable-apis",
 					"title": "Ensure JavaScript APIs are correctly applied",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.14 Use standards-based JavaScript and APIs](https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis).",
 					"description": [
@@ -2596,10 +2596,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD14-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-apis.html"
 				},
 				{
-					"id": "WD15-1",
+					"id": "code-security",
 					"title": "Ensure all vulnerabilities are removed and code is Linted",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.15 Ensure that your code is secure](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-your-code-is-secure).",
 					"description": [
@@ -2624,10 +2624,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD15-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/code-security.html"
 				},
 				{
-					"id": "WD16-1",
+					"id": "dependency-management",
 					"title": "Identify and remove unused packages and dependencies",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.16 Use dependencies appropriately and ensure maintenance](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance).",
 					"description": [
@@ -2652,10 +2652,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD16-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-management.html"
 				},
 				{
-					"id": "WD16-2",
+					"id": "dependency-necessity",
 					"title": "Implement modularized or lightweight frameworks and libraries",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.16 Use dependencies appropriately and ensure maintenance](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance).",
 					"description": [
@@ -2687,10 +2687,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD16-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-necessity.html"
 				},
 				{
-					"id": "WD16-3",
+					"id": "dependency-updates",
 					"title": "Ensure that dependencies are verified as up-to-date",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.16 Use dependencies appropriately and ensure maintenance](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance).",
 					"description": [
@@ -2716,10 +2716,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD16-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-updates.html"
 				},
 				{
-					"id": "WD17-1",
+					"id": "expected-files",
 					"title": "Provide the expected website assets in your base directory",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.17 Include expected and beneficial files](https://www.w3.org/TR/web-sustainability-guidelines/#include-expected-and-beneficial-files).",
 					"description": [
@@ -2749,10 +2749,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD17-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/expected-files.html"
 				},
 				{
-					"id": "WD17-2",
+					"id": "beneficial-files",
 					"title": "Provide beneficial plaintext website assets in the expected locations",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.17 Include expected and beneficial files](https://www.w3.org/TR/web-sustainability-guidelines/#include-expected-and-beneficial-files).",
 					"description": [
@@ -2780,10 +2780,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD17-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/beneficial-files.html"
 				},
 				{
-					"id": "WD18-1",
+					"id": "identify-requirements",
 					"title": "Encourage the use of more sustainable creation toolchains",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.18 Use the most efficient solution for your service](https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service).",
 					"description": [
@@ -2808,10 +2808,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD18-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/identify-requirements.html"
 				},
 				{
-					"id": "WD18-4",
+					"id": "extensions-and-plugins",
 					"title": "Test all third-party resources for sustainability impacts",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.18 Use the most efficient solution for your service](https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service).",
 					"description": [
@@ -2839,10 +2839,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD18-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/extensions-and-plugins.html"
 				},
 				{
-					"id": "WD19-1",
+					"id": "versioning",
 					"title": "Ensure the latest version of a syntax language is being used",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [3.19 Use the latest stable language version](https://www.w3.org/TR/web-sustainability-guidelines/#use-the-latest-stable-language-version).",
 					"description": [
@@ -2866,7 +2866,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/WD19-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/versioning.html"
 				}
 			]
 		},
@@ -2876,7 +2876,7 @@
 			"shortName": "Hosting & Infrastructure",
 			"techniques": [
 				{
-					"id": "HIS01-1",
+					"id": "provider-selection",
 					"title": "Publicly disclose relevant sustainability metrics to users",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Use sustainable hosting](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting).",
 					"description": [
@@ -2904,10 +2904,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/provider-selection.html"
 				},
 				{
-					"id": "HIS01-4",
+					"id": "low-carbon-electricity",
 					"title": "Ensure that the project is hosted on a sustainable platform",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Use sustainable hosting](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting).",
 					"description": [
@@ -2937,10 +2937,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/low-carbon-electricity.html"
 				},
 				{
-					"id": "HIS01-6",
+					"id": "domain-names",
 					"title": "Ensure that the project uses a sustainable domain registrar",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.1 Use sustainable hosting](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting).",
 					"description": [
@@ -2966,10 +2966,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-6.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/domain-names.html"
 				},
 				{
-					"id": "HIS02-1",
+					"id": "caching-resources",
 					"title": "Provide caching responses to optimize page reloads",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.2 Optimize caching and support offline access](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access).",
 					"description": [
@@ -2993,10 +2993,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS02-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/caching-resources.html"
 				},
 				{
-					"id": "HIS02-2",
+					"id": "offline-access",
 					"title": "Identify the potential for PWAs and other useful features",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.2 Optimize caching and support offline access](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access).",
 					"description": [
@@ -3024,10 +3024,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS02-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/offline-access.html"
 				},
 				{
-					"id": "HIS03-1",
+					"id": "server-side-compression",
 					"title": "Ensure that files are compressed correctly before serving",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.3 Reduce data transfer with compression](https://www.w3.org/TR/web-sustainability-guidelines/#reduce-data-transfer-with-compression).",
 					"description": [
@@ -3053,10 +3053,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS03-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/server-side-compression.html"
 				},
 				{
-					"id": "HIS03-2",
+					"id": "media-compression",
 					"title": "Compress all assets that can be optimized before CMS submission",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.3 Reduce data transfer with compression](https://www.w3.org/TR/web-sustainability-guidelines/#reduce-data-transfer-with-compression).",
 					"description": [
@@ -3084,10 +3084,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS03-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/media-compression.html"
 				},
 				{
-					"id": "HIS04-1",
+					"id": "error-pages",
 					"title": "Provide custom error pages to handle unexpected events",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.4 Setup necessary error pages and redirection links](https://www.w3.org/TR/web-sustainability-guidelines/#setup-necessary-error-pages-and-redirection-links).",
 					"description": [
@@ -3116,10 +3116,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS04-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/error-pages.html"
 				},
 				{
-					"id": "HIS04-2",
+					"id": "redirection",
 					"title": "Resolve all anchor references which trigger errors or redirects",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.4 Setup necessary error pages and redirection links](https://www.w3.org/TR/web-sustainability-guidelines/#setup-necessary-error-pages-and-redirection-links).",
 					"description": [
@@ -3147,10 +3147,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS04-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/redirection.html"
 				},
 				{
-					"id": "HIS06-4",
+					"id": "suspicious-activity-management",
 					"title": "Check that pages have not been subjected to hijacking",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.6 Use automation wisely](https://www.w3.org/TR/web-sustainability-guidelines/#use-automation-wisely).",
 					"description": [
@@ -3178,10 +3178,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS06-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/suspicious-activity-management.html"
 				},
 				{
-					"id": "HIS07-1",
+					"id": "refresh-frequency",
 					"title": "Ensure that stored data has a defined and reasonable expiry date",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.7 Define the frequency of data refreshes.](https://www.w3.org/TR/web-sustainability-guidelines/#define-the-frequency-of-data-refreshes).",
 					"description": [
@@ -3207,10 +3207,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS07-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/refresh-frequency.html"
 				},
 				{
-					"id": "HIS09-2",
+					"id": "protocols",
 					"title": "Deliver content using the correct, most secure protocol",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.9 Consider the impact and requirements of data processing](https://www.w3.org/TR/web-sustainability-guidelines/#consider-the-impact-and-requirements-of-data-processing).",
 					"description": [
@@ -3235,10 +3235,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS09-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/protocols.html"
 				},
 				{
-					"id": "HIS10-1",
+					"id": "global-cdns",
 					"title": "Provide distributed access to static resources via a CDN",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.10 Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
 					"description": [
@@ -3264,10 +3264,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS10-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/global-cdns.html"
 				},
 				{
-					"id": "HIS10-2",
+					"id": "sustainability-commitment",
 					"title": "Ensure that the CDN and its chain of locations are sustainable",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.10 Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
 					"description": [
@@ -3294,10 +3294,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS10-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-commitment.html"
 				},
 				{
-					"id": "HIS10-3",
+					"id": "local-servers",
 					"title": "Provide a copy of the product or service close to the user",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.10 Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
 					"description": [
@@ -3323,10 +3323,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS10-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/local-servers.html"
 				},
 				{
-					"id": "HIS10-4",
+					"id": "inappropriate-resources",
 					"title": "Avoid hosting dynamic resources or third-party scripts on the CDN",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.10 Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
 					"description": [
@@ -3352,10 +3352,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS10-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/inappropriate-resources.html"
 				},
 				{
-					"id": "HIS12-2",
+					"id": "expiration-dates",
 					"title": "Provide a review or expiration date on website content",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.12 Store data according to the needs of your users](https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
@@ -3379,10 +3379,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS12-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/expiration-dates.html"
 				},
 				{
-					"id": "HIS12-3",
+					"id": "classify-and-tag",
 					"title": "Provide a classification policy to content if it is deemed sustainable",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.12 Store data according to the needs of your users](https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
@@ -3408,10 +3408,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS12-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/classify-and-tag.html"
 				},
 				{
-					"id": "HIS12-5",
+					"id": "optimized-logging",
 					"title": "Ensure that backup providers are classified as sustainable",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [4.12 Store data according to the needs of your users](https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
@@ -3437,7 +3437,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/HIS12-5.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-logging.html"
 				}
 			]
 		},
@@ -3447,7 +3447,7 @@
 			"shortName": "Business & Product Strategy",
 			"techniques": [
 				{
-					"id": "BSPM01-1",
+					"id": "public-documents",
 					"title": "Provide a publicly visible sustainability and/or ethical policy statement",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.1 Have an ethical and sustainable product strategy](https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy).",
 					"description": [
@@ -3477,10 +3477,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM01-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/public-documents.html"
 				},
 				{
-					"id": "BSPM01-2",
+					"id": "achievements-and-compliance",
 					"title": "Provide details of any beyond-the-scope sustainability features",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.1 Have an ethical and sustainable product strategy](https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy).",
 					"description": [
@@ -3508,10 +3508,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM01-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/achievements-and-compliance.html"
 				},
 				{
-					"id": "BSPM02-1",
+					"id": "advocate-for-sustainability",
 					"title": "Check that an employee is assigned as the sustainability representative",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.2 Assign a sustainability advocate](https://www.w3.org/TR/web-sustainability-guidelines/#assign-a-sustainability-advocate).",
 					"description": [
@@ -3535,10 +3535,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM02-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/advocate-for-sustainability.html"
 				},
 				{
-					"id": "BSPM03-3",
+					"id": "active-participation",
 					"title": "Produce awareness raising resources on sustainability",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.3 Inform, raise awareness, and train for sustainability](https://www.w3.org/TR/web-sustainability-guidelines/#inform-raise-awareness-and-train-for-sustainability).",
 					"description": [
@@ -3564,10 +3564,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM03-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/active-participation.html"
 				},
 				{
-					"id": "BSPM05-2",
+					"id": "competitor-impact",
 					"title": "Calculate the environmental impact of your competitors",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.5 Calculate the environmental impact](https://www.w3.org/TR/web-sustainability-guidelines/#calculate-the-environmental-impact).",
 					"description": [
@@ -3594,10 +3594,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM05-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/competitor-impact.html"
 				},
 				{
-					"id": "BSPM06-1",
+					"id": "sustainability-goals",
 					"title": "Have a clearly defined set of sustainability goals",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.6 Define clear organizational sustainability goals and metrics](https://www.w3.org/TR/web-sustainability-guidelines/#define-clear-organizational-sustainability-goals-and-metrics).",
 					"description": [
@@ -3626,10 +3626,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM06-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-goals.html"
 				},
 				{
-					"id": "BSPM07-1",
+					"id": "obtaining-certifications",
 					"title": "Verify and showcase any third-party sustainability certifications",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.7 Validate efforts using established third-party certifications](https://www.w3.org/TR/web-sustainability-guidelines/#validate-efforts-using-established-third-party-certifications).",
 					"description": [
@@ -3655,10 +3655,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM07-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/obtaining-certifications.html"
 				},
 				{
-					"id": "BSPM08-1",
+					"id": "policies-and-practices",
 					"title": "Check for any included disclosure reporting policies",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.8 Support mandatory disclosures and reporting](https://www.w3.org/TR/web-sustainability-guidelines/#support-mandatory-disclosures-and-reporting).",
 					"description": [
@@ -3683,10 +3683,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM08-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/policies-and-practices.html"
 				},
 				{
-					"id": "BSPM08-2",
+					"id": "impact-reports",
 					"title": "Include public facing carbon reports on an annual basis",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.8 Support mandatory disclosures and reporting](https://www.w3.org/TR/web-sustainability-guidelines/#support-mandatory-disclosures-and-reporting).",
 					"description": [
@@ -3713,7 +3713,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM08-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/impact-reports.html"
 				},
 				{
 					"id": "BSPM08-3",
@@ -3743,7 +3743,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM08-3.html"
 				},
 				{
-					"id": "BSPM10-1",
+					"id": "management-and-maintenance",
 					"title": "Provide a product or service maintenance agreement",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.10 Follow a product management and maintenance strategy](https://www.w3.org/TR/web-sustainability-guidelines/#follow-a-product-management-and-maintenance-strategy).",
 					"description": [
@@ -3770,10 +3770,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM10-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/management-and-maintenance.html"
 				},
 				{
-					"id": "BSPM11-3",
+					"id": "iterative-consideration",
 					"title": "Identify the iteration record of the website or application",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.11 Implement continuous improvement procedures](https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures).",
 					"description": [
@@ -3800,10 +3800,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM11-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/iterative-consideration.html"
 				},
 				{
-					"id": "BSPM11-5",
+					"id": "security-updates",
 					"title": "Clearly label changes using a release notes feature",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.11 Implement continuous improvement procedures](https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures).",
 					"description": [
@@ -3831,10 +3831,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM11-5.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/security-updates.html"
 				},
 				{
-					"id": "BSPM13-1",
+					"id": "sustainable-development-goals",
 					"title": "Align product or service compliance with the SDGs",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.13 Establish if a digital product or service is necessary](https://www.w3.org/TR/web-sustainability-guidelines/#establish-if-a-digital-product-or-service-is-necessary).",
 					"description": [
@@ -3858,10 +3858,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM13-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-development-goals.html"
 				},
 				{
-					"id": "BSPM14-1",
+					"id": "vetting-potential-partners",
 					"title": "Provide a publicly visible and transparent supplier policy",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.14 Provide a supplier standards of practice document](https://www.w3.org/TR/web-sustainability-guidelines/#provide-a-supplier-standards-of-practice-document).",
 					"description": [
@@ -3889,10 +3889,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM14-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/vetting-potential-partners.html"
 				},
 				{
-					"id": "BSPM14-3",
+					"id": "informative-partner-promotion",
 					"title": "Publicly list the sustainability impact of any partnerships",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.14 Provide a supplier standards of practice document](https://www.w3.org/TR/web-sustainability-guidelines/#provide-a-supplier-standards-of-practice-document).",
 					"description": [
@@ -3919,10 +3919,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM14-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/informative-partner-promotion.html"
 				},
 				{
-					"id": "BSPM15-1",
+					"id": "living-wage",
 					"title": "Ensure that the business is a living wage employer",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.15 Share economic benefits](https://www.w3.org/TR/web-sustainability-guidelines/#share-economic-benefits).",
 					"description": [
@@ -3949,10 +3949,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM15-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/living-wage.html"
 				},
 				{
-					"id": "BSPM15-3",
+					"id": "employee-benefits",
 					"title": "Ensure that the business provides benefits for employees",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.15 Share economic benefits](https://www.w3.org/TR/web-sustainability-guidelines/#share-economic-benefits).",
 					"description": [
@@ -3979,10 +3979,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM15-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/employee-benefits.html"
 				},
 				{
-					"id": "BSPM17-2",
+					"id": "accessibility-policy",
 					"title": "Provide a publicly visible accessibility statement",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.17 Use Justice, Equity, Diversity, Inclusion (JEDI) practices](https://www.w3.org/TR/web-sustainability-guidelines/#use-justice-equity-diversity-inclusion-jedi-practices).",
 					"description": [
@@ -4011,10 +4011,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM17-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/accessibility-policy.html"
 				},
 				{
-					"id": "BSPM18-1",
+					"id": "data-practices",
 					"title": "Provide links to the privacy policy and relevant legislation",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.18 Promote responsible data practices](https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices).",
 					"description": [
@@ -4042,10 +4042,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM18-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/data-practices.html"
 				},
 				{
-					"id": "BSPM19-1",
+					"id": "outdated-content",
 					"title": "Provide a website archive containing outdated or old versions",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.19 Implement appropriate data management procedures](https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures).",
 					"description": [
@@ -4072,10 +4072,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM19-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/outdated-content.html"
 				},
 				{
-					"id": "BSPM19-2",
+					"id": "data-controllers",
 					"title": "Enable users to manage their accounts and data",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.19 Implement appropriate data management procedures](https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures).",
 					"description": [
@@ -4099,10 +4099,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM19-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/data-controllers.html"
 				},
 				{
-					"id": "BSPM20-1",
+					"id": "ai-and-data-collection",
 					"title": "Provide a publicly facing policy around emerging technologies",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.20 Establish responsible practices around AI and emerging or disruptive technologies](https://www.w3.org/TR/web-sustainability-guidelines/#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies).",
 					"description": [
@@ -4129,10 +4129,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM20-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/ai-and-data-collection.html"
 				},
 				{
-					"id": "BSPM21-1",
+					"id": "fuel-divestment",
 					"title": "Verify all partnerships and sponsors against WSG",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.21 Include responsible financial policies](https://www.w3.org/TR/web-sustainability-guidelines/#include-responsible-financial-policies).",
 					"description": [
@@ -4160,10 +4160,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM21-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/fuel-divestment.html"
 				},
 				{
-					"id": "BSPM22-1",
+					"id": "philanthropy-policy",
 					"title": "Verify and showcase any third-party sustainability projects",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.22 Include organizational philanthropy policies](https://www.w3.org/TR/web-sustainability-guidelines/#include-organizational-philanthropy-policies).",
 					"description": [
@@ -4190,10 +4190,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM22-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/philanthropy-policy.html"
 				},
 				{
-					"id": "BSPM25-1",
+					"id": "environmental-budget",
 					"title": "Provide a sustainability and environmental budget",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.25 Define performance and environmental budgets](https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-and-environmental-budgets).",
 					"description": [
@@ -4219,10 +4219,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM25-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/environmental-budget.html"
 				},
 				{
-					"id": "BSPM25-2",
+					"id": "performance-budget",
 					"title": "Provide a performance budget for your product or service",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.25 Define performance and environmental budgets](https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-and-environmental-budgets).",
 					"description": [
@@ -4248,10 +4248,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM25-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/performance-budget.html"
 				},
 				{
-					"id": "BSPM25-4",
+					"id": "measurable-improvements",
 					"title": "Benchmark the improvement in revised budget achievements",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.25 Define performance and environmental budgets](https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-and-environmental-budgets).",
 					"description": [
@@ -4280,10 +4280,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM25-4.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/measurable-improvements.html"
 				},
 				{
-					"id": "BSPM26-1",
+					"id": "open-source-policy",
 					"title": "Produce an open source policy and verify licensing",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.26 Use open source where possible](https://www.w3.org/TR/web-sustainability-guidelines/#use-open-source-where-possible).",
 					"description": [
@@ -4309,10 +4309,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM26-1.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/open-source-policy.html"
 				},
 				{
-					"id": "BSPM26-3",
+					"id": "contribution",
 					"title": "Identify contributions made to open source projects",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.26 Use open source where possible](https://www.w3.org/TR/web-sustainability-guidelines/#use-open-source-where-possible).",
 					"description": [
@@ -4338,10 +4338,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM26-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/contribution.html"
 				},
 				{
-					"id": "BSPM27-2",
+					"id": "audience-awareness",
 					"title": "Maintain transparent communication when problems occur",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [5.27 Create a business continuity and disaster recovery plan](https://www.w3.org/TR/web-sustainability-guidelines/#create-a-business-continuity-and-disaster-recovery-plan).",
 					"description": [
@@ -4367,7 +4367,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM27-2.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/audience-awareness.html"
 				}
 			]
 		}

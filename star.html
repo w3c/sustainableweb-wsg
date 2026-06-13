@@ -74,6 +74,17 @@
 			postProcess: [authorRef, editorRef],
 		}
 		</script>
+		<script>
+			/* URL Fragment Details Opener */
+			function openDetails() {
+				const id = location.hash.slice(1);
+				const target = document.getElementById(id);
+				if (!target) return;
+				const details = target.closest("details");
+				if (details) { details.open = true; } }
+				window.addEventListener("DOMContentLoaded", openDetails);
+				window.addEventListener("hashchange", openDetails);
+		</script>
 	</head>
 	<body>
 		<section id="abstract"> <!-- Abstract -->
@@ -205,8 +216,8 @@
 					<h4>Machine testability</h4>
 					<p>While many of the success criteria in WSG will withstand machine testing (automation) without human intervention, others cannot be reproduced without manual examination. In such cases, to assist with a large volume of pages, rather than sampling a subset of the website or application (which could bias the results due to the potential for missing important pages), creating a semi-automated structure around human testability to assist with such tasks through tooling (such as the use of a wizard interface) may help reduce pinch points in the evaluation process.</p>
 				</section>
-				<section class="notoc"> <!-- Step 1: Define the evaluation scope -->
-					<h4>Step 1: Define the evaluation scope</h4>
+				<section class="notoc"> <!-- Define the evaluation scope -->
+					<h4>Define the evaluation scope</h4>
 					<p>During this step the overall scope of the evaluation is defined. It is an important step as initial exploration of the target application or website may be necessary to better know specifics (and to ensure common expectations) of the product or service and the required evaluation.</p>
 					<ol>
 						<li><strong>Define the scope of the website:</strong> During this step the web pages (and states) that are in scope of the evaluation are defined. To avoid later mismatches of expectations between the evaluator, commissioner, and readers of the resulting evaluation report, it is important to define unambiguously what aspects of the website or application are within its scope. Documentation of URIs are recommended where possible and to list aspects of the website that support its identification such as third-party content and services, or content that may have a different web address but is still considered to be part of the target website.</li>
@@ -215,8 +226,8 @@
 						<li><strong>Define additional evaluation requirements (Optional):</strong> An evaluator or commissioner may be interested in additional information beyond what is needed to determine the extent of compliance to WSG. This may include submitted reports of issues, analysis of use-cases or interactions, descriptions of solutions beyond the scope of the evaluation, or reporting templates. Such additional requirements should be clarified early on and documented, and reported as such in any resulting report that is produced.</li>
 					</ol>
 				</section>
-				<section class="notoc"> <!-- Step 2: Explore the target website -->
-					<h4>Step 2: Explore the target website</h4>
+				<section class="notoc"> <!-- Explore the target website -->
+					<h4>Explore the target website</h4>
 					<p>During this step the evaluator explores the target website or application to be evaluated, to develop an initial understanding of the product or service and its use, purpose, and functionality. Much of this will not be immediately apparent to evaluators, in particular to those from outside the development team. In some cases it is also not possible to exhaustively identify and list all functionality, types of web pages, and technologies used to realize the website and its applications. The initial exploration carried out in this step is typically refined in the later steps as the evaluator learns more about the target website. Involvement of website owners and website developers can help evaluators make their explorations more effective.</p>
 					<div class="note">
 						<p>Carrying out initial cursory checks during this step helps identify web pages that are relevant for more detailed evaluation later on. For example, an evaluator may identify web pages that seem to be lacking sustainable features and note them down for more detailed evaluation later on.</p>
@@ -229,8 +240,8 @@
 						<li><strong>Identify other relevant web pages:</strong> Some web pages and web page states including features that are specifically relevant for improving the sustainability of your website or application. The outcome of this step is a list (with relevant explanations and information) regarding how such implementations benefit a product or service's users and users.</li>
 					</ol>
 				</section>
-				<section class="notoc"> <!-- Step 3: Test or sample the website -->
-					<h4>Step 3: Test or sample the website</h4>
+				<section class="notoc"> <!-- Test or sample the website -->
+					<h4>Test or sample the website</h4>
 					<p>In cases where it is feasible to evaluate all web pages and web page states of a website, which is highly recommended for websites under 1,000 pages, the "selected sample" in the remaining steps of this evaluation process is the entire website. In some cases, such as for small websites, this sampling procedure may result in selecting all web pages and web page states of a website.</p>
 					<p>In cases where over 1,000 pages exist and the number of pages exceeds the ability to physically test every instance (or in cases where increased complexity reduces the capability to audit pages effectively), the evaluator selects a sample of web pages and web page states that is representative of the target website or application to be evaluated. The purpose of this selection is to ensure that the evaluation results reflect the sustainability of the product or service with reasonable confidence.</p>
 					<ul>
@@ -238,8 +249,8 @@
 						<li>The sample selected should be randomly chosen (a blind method such as script selection could be used as an example) to avoid bias and should be comprised of <strong>10-20%</strong> of the total website or applications structure (for example, a website comprised of 2,000 pages could test 400 pages).</li>
 					</ul>
 				</section>
-				<section class="notoc"> <!-- Step 4: Audit the selected pages -->
-					<h4>Step 4: Audit the selected pages</h4>
+				<section class="notoc"> <!-- Audit the selected pages -->
+					<h4>Audit the selected pages</h4>
 					<p>During this step the evaluator audits (detailed evaluation of) all of the web pages and web page states selected. Carrying out this step requires the expertise described in section Required Expertise.</p>
 					<ol>
 						<li><strong>Check all initial web pages:</strong> For each web page and web page state, check its conformance with each of the defined success criteria in WSG as denoted in <em>Step 1</em>. This includes all components of the web page or web page state, including any functionality and interactions that may affect the sustainability or state of the web page. Remember to include third-parties where necessary in processing and account for infrastructural and internal access requirements as the processing to meet success criteria requests to identify sustainability solutions occurs.</li>
@@ -247,8 +258,8 @@
 					</ol>
 					<p class="note">There are typically several ways to determine whether WSG success criteria have been met or not met. One example includes the set of (non-normative) <strong>Techniques</strong> for WSG provided within STAR that documents ways of meeting particular WSG success criteria using testable statements that will either be true or false when applied to specific web content. While evaluators can use such documented guidance to check whether particular web content meets or fails to meet WSG success criteria (and include this within reports), it is not required and evaluators may use other approaches to evaluate whether WSG success criteria have been met or not met.</p>
 				</section>
-				<section class="notoc"> <!-- Step 5: Report the evaluation findings -->
-					<h4>Step 5: Report the evaluation findings</h4>
+				<section class="notoc"> <!-- Report the evaluation findings -->
+					<h4>Report the evaluation findings</h4>
 					<p>While evaluation findings are reported at the end of the process, documenting them is carried out throughout the evaluation process to ensure verifiable outcomes. The documentation typically has varying levels of confidentiality. For example, documenting the specific methods used to evaluate individual requirements might remain limited to the evaluator while reports about the outcomes from these checks are typically made available to the evaluation commissioner. Website or application owners might further choose to make public statements about the outcomes from evaluation according to this methodology.</p>
 					<ol>
 						<li><strong>Document the outcomes of each step:</strong> Documenting the outcomes for each of the previous steps (including all sub-sections) is essential to ensure transparency of the evaluation process, replicability of the evaluation results, and justification for any statements made based on this evaluation. Evaluation reports should include names of evaluators, dates of the evaluation, the scope and requirements (of sustainability), the pages and state being tested along with any technologies being identified and relied upon, plus the results of sustainability issues identified and any key factors that have contributed to meeting (or failing to meet) targets in WSG success criteria. In certain instances, it may be useful to offer a list of every failure occurrence for every web page and web page state for transparency reporting along with the causes and repair suggestions to remedy the failures.</li>
@@ -278,7 +289,7 @@
 					<h4>Technique types</h4>
 					<p><em>Sufficient techniques</em> are reliable ways to meet the success criteria.</p>
 					<ul>
-						<li>From an author or evaluator's perspective: If you use sufficient techniques for a given criterion correctly and it is sustainable within the context of its wider application and usage, you can be confident that you met the success criterion.</li>
+						<li>If you use sufficient techniques for a given criterion correctly and it is sustainable within the context of its wider application and usage, you can be confident that you met the success criterion.</li>
 					</ul>
 					<p><em>Advisory techniques</em> are suggested ways to improve sustainability. They are often very helpful and maybe a significant way of reducing emissions or meeting primary PPP objectives.</p>
 					<p>Advisory techniques are not designated as sufficient techniques for various reasons such as:</p>
@@ -328,8 +339,8 @@
 				<h3><dfn data-lt="UX">User Experience Design</dfn></h3>
 				<p>Each of the below can be shown or hidden by clicking on the technique you wish to display.</p>
 				<div class="summary">
-					<details> <!-- UX01-1: Produce a list of factors to monitor for sustainability impacts -->
-						<summary id="UX01-1">UX01-1: Produce a list of factors to monitor for sustainability impacts</summary><p><strong>Applicability</strong></p>
+					<details> <!-- Produce a list of factors to monitor for sustainability impacts -->
+						<summary id="impact-analysis">Produce a list of factors to monitor for sustainability impacts</summary><p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts">2.1 Identify, assess, disclose, review, and mitigate sustainability impacts</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Create a maintainable list of different factors that may impact the sustainability of a product or service over time. By having this list in place, everyone in the creation process can closely monitor the application or website against each factor to determine if an PPP factor present on the list will require resolution either before, during, or after a product or service is launched.</p>
@@ -354,8 +365,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX01-2: Use third-party APIs to measure any passive external impact -->
-						<summary id="UX01-2">UX01-2: Use third-party APIs to measure any passive external impact</summary><p><strong>Applicability</strong></p>
+					<details> <!-- Use third-party APIs to measure any passive external impact -->
+						<summary id="external-impact">Use third-party APIs to measure any passive external impact</summary><p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts">2.1 Identify, assess, disclose, review, and mitigate sustainability impacts</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Utilize the tooling and resources provided by external parties to help you identify any efficiency and sustainability savings when having to use such services, or when non-digital forces come into play, such as if your product or service involves the physical delivery of goods.</p>
@@ -381,8 +392,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX02-1: Use quantitative research to measure the needs of users and affected communities -->
-						<summary id="UX02-1">UX02-1: Use quantitative research to measure the needs of users and affected communities</summary><p><strong>Applicability</strong></p>
+					<details> <!-- Use quantitative research to measure the needs of users and affected communities -->
+						<summary id="audience-evaluation">Use quantitative research to measure the needs of users and affected communities</summary><p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access">2.2 Understand user requirements or constraints, resolving barriers to access</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for application and website owners to better curate their products and services around the needs of their users and those affected by what has been created and in doing so, reduce the PPP burden which can impact the sustainability of the website, especially around Social, people-centered (and user experience) impacts.</p>
@@ -405,8 +416,8 @@
 							<li>If #1, #2 and #3 above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX02-2: Test against specific disability profiles for more calibrated accessibility -->
-						<summary id="UX02-2">UX02-2: Test against specific disability profiles for more calibrated accessibility</summary><p><strong>Applicability</strong></p>
+					<details> <!-- Test against specific disability profiles for more calibrated accessibility -->
+						<summary id="barriers-and-access">Test against specific disability profiles for more calibrated accessibility</summary><p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access">2.2 Understand user requirements or constraints, resolving barriers to access</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Go beyond the remit of Web Content Accessibility Guidelines (<abbr title="Web Content Accessibility Guidelines">WCAG</abbr>) and accessibility by default and to encourage designers and developers of products to test their creations against a range of specific named types of disabilities to both better understand the conditions and to be able to more structurally and sustainably better test for the unique issues each disability brings to technology in terms of adaptation.</p>
@@ -432,8 +443,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX04-1: Measure interaction cost to reach every page in the information architecture -->
-						<summary id="UX04-1">UX04-1: Measure interaction cost to reach every page in the information architecture</summary><p><strong>Applicability</strong></p>
+					<details> <!-- Measure interaction cost to reach every page in the information architecture -->
+						<summary id="efficient-paths">Measure interaction cost to reach every page in the information architecture</summary><p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">2.4 Minimize non-essential content, interactivity, or journeys</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Reduce the cognitive load for users between the initial visit to a website or application and reaching their final destination where the information they are seeking is located. The path to locating such information can be routed through multiple interactions such as a search mechanism, hyperlinks, form controls (where appropriate), and progressive disclosure features (reducing the complexity involved in reaching a destination will reduce the rendering load leading to sustainability benefits).</p>
@@ -457,8 +468,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX04-3: Check for content obscuring materials that occur upon pageLoad -->
-						<summary id="UX04-3">UX04-3: Check for content obscuring materials that occur upon pageLoad</summary>
+					<details> <!-- Check for content obscuring materials that occur upon pageLoad -->
+						<summary id="distraction-free-design">Check for content obscuring materials that occur upon pageLoad</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">2.4 Minimize non-essential content, interactivity, or journeys</a>.</p>
 						<p><strong>Description</strong></p>
@@ -483,8 +494,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX04-4: Break large pieces of content down using progressive disclosure -->
-						<summary id="UX04-4">UX04-4: Break large pieces of content down using progressive disclosure</summary>
+					<details> <!-- Break large pieces of content down using progressive disclosure -->
+						<summary id="eliminate-the-non-essential">Break large pieces of content down using progressive disclosure</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">2.4 Minimize non-essential content, interactivity, or journeys</a>.</p>
 						<p><strong>Description</strong></p>
@@ -508,8 +519,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX04-5: Remove any non-user initiated pop-up or model windows -->
-						<summary id="UX04-5">UX04-5: Remove any non-user initiated pop-up or model windows</summary>
+					<details> <!-- Remove any non-user initiated pop-up or model windows -->
+						<summary id="user-initiated-actionable-content">Remove any non-user initiated pop-up or model windows</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">2.4 Minimize non-essential content, interactivity, or journeys</a>.</p>
 						<p><strong>Description</strong></p>
@@ -531,8 +542,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX04-6: Decorative design elements can be disabled if they are not done so by default -->
-						<summary id="UX04-6">UX04-6: Decorative design elements can be disabled if they are not done so by default</summary>
+					<details> <!-- Decorative design elements can be disabled if they are not done so by default -->
+						<summary id="decorative-design">Decorative design elements can be disabled if they are not done so by default</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">2.4 Minimize non-essential content, interactivity, or journeys</a>.</p>
 						<p><strong>Description</strong></p>
@@ -559,8 +570,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX05-1: Making your navigation menu accessible and well-structured -->
-						<summary id="UX05-1">UX05-1: Making your navigation menu accessible and well-structured</summary>
+					<details> <!-- Making your navigation menu accessible and well-structured -->
+						<summary id="navigation-and-search">Making your navigation menu accessible and well-structured</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured">2.5 Ensure that navigation and wayfinding are well-structured</a>.</p>
 						<p><strong>Description</strong></p>
@@ -584,8 +595,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX05-2: Provide a human-readable sitemap to improve the information architecture -->
-						<summary id="UX05-2">UX05-2: Provide a human-readable sitemap to improve the information architecture</summary>
+					<details> <!-- Provide a human-readable sitemap to improve the information architecture -->
+						<summary id="human-readable-sitemaps">Provide a human-readable sitemap to improve the information architecture</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured">2.5 Ensure that navigation and wayfinding are well-structured</a>.</p>
 						<p><strong>Description</strong></p>
@@ -611,8 +622,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX05-3: Provide a method of keeping up-to-date with product or service updates -->
-						<summary id="UX05-3">UX05-3: Provide a method of keeping up-to-date with product or service updates</summary>
+					<details> <!-- Provide a method of keeping up-to-date with product or service updates -->
+						<summary id="new-content">Provide a method of keeping up-to-date with product or service updates</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured">2.5 Ensure that navigation and wayfinding are well-structured</a>.</p>
 						<p><strong>Description</strong></p>
@@ -640,8 +651,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX06-1: Request permission for invasive access to interact with content -->
-						<summary id="UX06-1">UX06-1: Request permission for invasive access to interact with content</summary>
+					<details> <!-- Request permission for invasive access to interact with content -->
+						<summary id="respect-user-attention">Request permission for invasive access to interact with content</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract">2.6 Design to assist and not to distract</a>.</p>
 						<p><strong>Description</strong></p>
@@ -665,8 +676,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX06-2: Encourage features that help users achieve tasks -->
-						<summary id="UX06-2">UX06-2: Encourage features that help users achieve tasks</summary>
+					<details> <!-- Encourage features that help users achieve tasks -->
+						<summary id="minimize-distraction">Encourage features that help users achieve tasks</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract">2.6 Design to assist and not to distract</a>.</p>
 						<p><strong>Description</strong></p>
@@ -691,8 +702,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX06-3: Avoid mechanisms that promote excessive screen time -->
-						<summary id="UX06-3">UX06-3: Avoid mechanisms that promote excessive screen time</summary>
+					<details> <!-- Avoid mechanisms that promote excessive screen time -->
+						<summary id="reduce-engagement-traps">Avoid mechanisms that promote excessive screen time</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract">2.6 Design to assist and not to distract</a>.</p>
 						<p><strong>Description</strong></p>
@@ -716,8 +727,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX07-1: Eliminate deceptive design patterns or manipulative techniques -->
-						<summary id="UX07-1">UX07-1: Eliminate deceptive design patterns or manipulative techniques</summary>
+					<details> <!-- Eliminate deceptive design patterns or manipulative techniques -->
+						<summary id="deceptive-design-patterns">Eliminate deceptive design patterns or manipulative techniques</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive">2.7 Avoid being manipulative or deceptive</a>.</p>
 						<p><strong>Description</strong></p>
@@ -738,8 +749,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX07-3: Determine if analytics can be sustainably improved or removed -->
-						<summary id="UX07-3">UX07-3: Determine if analytics can be sustainably improved or removed</summary>
+					<details> <!-- Determine if analytics can be sustainably improved or removed -->
+						<summary id="analytics-and-tracking">Determine if analytics can be sustainably improved or removed</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive">2.7 Avoid being manipulative or deceptive</a>.</p>
 						<p><strong>Description</strong></p>
@@ -762,8 +773,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX07-4: Eliminate Any Manipulative SEO Techniques From Your Source Code -->
-						<summary id="UX07-4">UX07-4: Eliminate any manipulative <abbr title="Search Engine Optimization">SEO</abbr> techniques from your source code</summary>
+					<details> <!-- Eliminate Any Manipulative SEO Techniques From Your Source Code -->
+						<summary id="search-engine-optimization">Eliminate any manipulative <abbr title="Search Engine Optimization">SEO</abbr> techniques from your source code</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive">2.7 Avoid being manipulative or deceptive</a>.</p>
 						<p><strong>Description</strong></p>
@@ -789,8 +800,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX08-1: Provide deliverables in reusable, self-isolated components -->
-						<summary id="UX08-1">UX08-1: Provide deliverables in reusable, self-isolated components</summary>
+					<details> <!-- Provide deliverables in reusable, self-isolated components -->
+						<summary id="deliverables-reusability">Provide deliverables in reusable, self-isolated components</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#make-deliverables-understandable-and-reusable">2.8 Make deliverables understandable and reusable</a>.</p>
 						<p><strong>Description</strong></p>
@@ -814,8 +825,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX08-2: Provide documentation to guide the deliverables -->
-						<summary id="UX08-2">UX08-2: Provide documentation to guide the deliverables</summary>
+					<details> <!-- Provide documentation to guide the deliverables -->
+						<summary id="deliverables-documentation">Provide documentation to guide the deliverables</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#make-deliverables-understandable-and-reusable">2.8 Make deliverables understandable and reusable</a>.</p>
 						<p><strong>Description</strong></p>
@@ -844,8 +855,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX08-3: Create code comments to describe the functionality of features -->
-						<summary id="UX08-3">UX08-3: Create code comments to describe the functionality of features</summary>
+					<details> <!-- Create code comments to describe the functionality of features -->
+						<summary id="deliverables-readability">Create code comments to describe the functionality of features</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#make-deliverables-understandable-and-reusable">2.8 Make deliverables understandable and reusable</a>.</p>
 						<p><strong>Description</strong></p>
@@ -869,8 +880,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX09-1: Implement an up-to-date design system -->
-						<summary id="UX09-1">UX09-1: Implement an up-to-date design system</summary>
+					<details> <!-- Implement an up-to-date design system -->
+						<summary id="design-system">Implement an up-to-date design system</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-a-design-system-for-interface-consistency">2.9 Use a design system for interface consistency</a>.</p>
 						<p><strong>Description</strong></p>
@@ -901,8 +912,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX10-1: Increase the readability of content using common metrics -->
-						<summary id="UX10-1">UX10-1: Increase the readability of content using common metrics</summary>
+					<details> <!-- Increase the readability of content using common metrics -->
+						<summary id="clear-content">Increase the readability of content using common metrics</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose">2.10 Provide clear, inclusive content with purpose</a>.</p>
 						<p><strong>Description</strong></p>
@@ -928,8 +939,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX10-2: Break long-form content down into a simpler structure -->
-						<summary id="UX10-2">UX10-2: Break long-form content down into a simpler structure</summary>
+					<details> <!-- Break long-form content down into a simpler structure -->
+						<summary id="content-formatting">Break long-form content down into a simpler structure</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose">2.10 Provide clear, inclusive content with purpose</a>.</p>
 						<p><strong>Description</strong></p>
@@ -953,8 +964,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX11-1: Remove any functionality that may trigger auto-playing animation -->
-						<summary id="UX11-1">UX11-1: Remove any functionality that may trigger auto-playing animation</summary>
+					<details> <!-- Remove any functionality that may trigger auto-playing animation -->
+						<summary id="need-for-media">Remove any functionality that may trigger auto-playing animation</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">2.11 Optimize media to reduce resource use</a>.</p>
 						<p><strong>Description</strong></p>
@@ -977,8 +988,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX11-2: Optimizing all media assets for speed and compatibility -->
-						<summary id="UX11-2">UX11-2: Optimizing all media assets for speed and compatibility</summary>
+					<details> <!-- Optimizing all media assets for speed and compatibility -->
+						<summary id="optimized-media">Optimizing all media assets for speed and compatibility</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">2.11 Optimize media to reduce resource use</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1001,8 +1012,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX11-3: Provide facades and lazy-loading for media, animated GIFs, and third-party content -->
-						<summary id="UX11-3">UX11-3: Provide facades and and lazy-loading for media, animated GIFs, and third-party content</summary>
+					<details> <!-- Provide facades and lazy-loading for media, animated GIFs, and third-party content -->
+						<summary id="lazy-loading">Provide facades and and lazy-loading for media, animated GIFs, and third-party content</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">2.11 Optimize media to reduce resource use</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1034,8 +1045,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX11-4: Optimizing all media assets for a variety of different resolutions -->
-						<summary id="UX11-4">UX11-4: Optimizing all media assets for a variety of different resolutions</summary>
+					<details> <!-- Optimizing all media assets for a variety of different resolutions -->
+						<summary id="user-controlled-media">Optimizing all media assets for a variety of different resolutions</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">2.11 Optimize media to reduce resource use</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1060,8 +1071,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX11-5: Add details about media impacts to the media management and use policy -->
-						<summary id="UX11-5">UX11-5: Add details about media impacts to the media management and use policy</summary>
+					<details> <!-- Add details about media impacts to the media management and use policy -->
+						<summary id="media-management-and-use">Add details about media impacts to the media management and use policy</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">2.11 Optimize media to reduce resource use</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1087,8 +1098,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX12-2: Measure and respond to high-intensity animation usage -->
-						<summary id="UX12-2">UX12-2: Measure and respond to high-intensity animation usage</summary>
+					<details> <!-- Measure and respond to high-intensity animation usage -->
+						<summary id="avoid-overburdening">Measure and respond to high-intensity animation usage</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-animation-is-proportionate-and-easy-to-control">2.12 Ensure animation is proportionate and easy to control</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1111,8 +1122,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX12-3: Include a mechanism to pause or stop page animation -->
-						<summary id="UX12-3">UX12-3: Include a mechanism to pause or stop page animation</summary>
+					<details> <!-- Include a mechanism to pause or stop page animation -->
+						<summary id="control-animation">Include a mechanism to pause or stop page animation</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-animation-is-proportionate-and-easy-to-control">2.12 Ensure animation is proportionate and easy to control</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1135,8 +1146,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX13-1: Provide accessible mechanisms around symbols in system fonts -->
-						<summary id="UX13-1">UX13-1: Provide accessible mechanisms around symbols in system fonts</summary>
+					<details> <!-- Provide accessible mechanisms around symbols in system fonts -->
+						<summary id="pre-installed-typefaces">Provide accessible mechanisms around symbols in system fonts</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography">2.13 Use optimized and appropriate web typography</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1157,8 +1168,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX13-2: Use modern, efficient custom typefaces within a set limit -->
-						<summary id="UX13-2">UX13-2: Use modern, efficient custom typefaces within a set limit</summary>
+					<details> <!-- Use modern, efficient custom typefaces within a set limit -->
+						<summary id="web-font-optimization">Use modern, efficient custom typefaces within a set limit</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography">2.13 Use optimized and appropriate web typography</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1184,8 +1195,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX14-1: Ensure that every PDF or other non-web document has an HTML alternative -->
-						<summary id="UX14-1">UX14-1: Ensure that every PDF or other non-web document has an HTML alternative</summary>
+					<details> <!-- Ensure that every PDF or other non-web document has an HTML alternative -->
+						<summary id="open-formats">Ensure that every PDF or other non-web document has an HTML alternative</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used">2.14 Offer suitable alternatives for every format used</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1207,8 +1218,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX14-2: Provide a suitable font stack when custom typefaces are used -->
-						<summary id="UX14-2">UX14-2: Provide a suitable font stack when custom typefaces are used</summary>
+					<details> <!-- Provide a suitable font stack when custom typefaces are used -->
+						<summary id="font-stack-fallbacks">Provide a suitable font stack when custom typefaces are used</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used">2.14 Offer suitable alternatives for every format used</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1231,8 +1242,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX14-3: Provide alternative text or figure captions for images -->
-						<summary id="UX14-3">UX14-3: Provide alternative text or figure captions for images</summary>
+					<details> <!-- Provide alternative text or figure captions for images -->
+						<summary id="alternative-text">Provide alternative text or figure captions for images</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used">2.14 Offer suitable alternatives for every format used</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1256,8 +1267,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX14-4: Provide a text transcription of media files in an open HTML format -->
-						<summary id="UX14-4">UX14-4: Provide a text transcription of media files in an open HTML format</summary>
+					<details> <!-- Provide a text transcription of media files in an open HTML format -->
+						<summary id="transcripts-and-text">Provide a text transcription of media files in an open HTML format</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used">2.14 Offer suitable alternatives for every format used</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1278,8 +1289,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX14-5: Include WebVTT closed captions, subtitles, and sign language support -->
-						<summary id="UX14-5">UX14-5: Include WebVTT closed captions, subtitles, and sign language support</summary>
+					<details> <!-- Include WebVTT closed captions, subtitles, and sign language support -->
+						<summary id="video-alternatives">Include WebVTT closed captions, subtitles, and sign language support</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used">2.14 Offer suitable alternatives for every format used</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1303,8 +1314,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX15-1: Detect form requirements and identify data collection policies -->
-						<summary id="UX15-1">UX15-1: Detect form requirements and identify data collection policies</summary>
+					<details> <!-- Detect form requirements and identify data collection policies -->
+						<summary id="simple-forms">Detect form requirements and identify data collection policies</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-accessible-usable-minimal-web-forms">2.15 Provide accessible, usable, minimal web forms</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1329,8 +1340,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX15-2: Allow for data entry with automatic assistance settings -->
-						<summary id="UX15-2">UX15-2: Allow for data entry with automatic assistance settings</summary>
+					<details> <!-- Allow for data entry with automatic assistance settings -->
+						<summary id="functional-forms">Allow for data entry with automatic assistance settings</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-accessible-usable-minimal-web-forms">2.15 Provide accessible, usable, minimal web forms</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1356,8 +1367,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX17-1: Add a print-friendly media query or style sheet -->
-						<summary id="UX17-1">UX17-1: Add a print-friendly media query or style sheet</summary>
+					<details> <!-- Add a print-friendly media query or style sheet -->
+						<summary id="printing-documents">Add a print-friendly media query or style sheet</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents">2.17 Reduce the impact of downloadable and physical documents</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1381,8 +1392,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX17-2: Optimizing all document assets across a variety of different formats -->
-						<summary id="UX17-2">UX17-2: Optimizing all document assets across a variety of different formats</summary>
+					<details> <!-- Optimizing all document assets across a variety of different formats -->
+						<summary id="optimize-documents">Optimizing all document assets across a variety of different formats</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents">2.17 Reduce the impact of downloadable and physical documents</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1405,8 +1416,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX17-3: Provide pre-generated copies of repeat-use physical assets -->
-						<summary id="UX17-3">UX17-3: Provide pre-generated copies of repeat-use physical assets</summary>
+					<details> <!-- Provide pre-generated copies of repeat-use physical assets -->
+						<summary id="optimize-delivery">Provide pre-generated copies of repeat-use physical assets</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents">2.17 Reduce the impact of downloadable and physical documents</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1427,8 +1438,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX17-4: Provide document details including a URL within a page -->
-						<summary id="UX17-4">UX17-4: Provide document details including a <abbr title="Uniform Resource Locator">URL</abbr> within a page</summary>
+					<details> <!-- Provide document details including a URL within a page -->
+						<summary id="labels-and-choice">Provide document details including a <abbr title="Uniform Resource Locator">URL</abbr> within a page</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents">2.17 Reduce the impact of downloadable and physical documents</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1452,8 +1463,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX18-1: Identify an affected party-focused testing and prototyping policy -->
-						<summary id="UX18-1">UX18-1: Identify an affected party-focused testing and prototyping policy</summary>
+					<details> <!-- Identify an affected party-focused testing and prototyping policy -->
+						<summary id="early-user-testing">Identify an affected party-focused testing and prototyping policy</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#involve-users-early-in-the-project">2.18 Involve users early in the project</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1477,8 +1488,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX19-1: Produce a list of checkpoints to ensure quality control -->
-						<summary id="UX19-1">UX19-1: Produce a list of checkpoints to ensure quality control</summary>
+					<details> <!-- Produce a list of checkpoints to ensure quality control -->
+						<summary id="ongoing-evaluation">Produce a list of checkpoints to ensure quality control</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">2.19 Audit and test for bugs or issues requiring resolution</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1504,8 +1515,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX19-2: Provide active monitoring for issues on a frequent schedule -->
-						<summary id="UX19-2">UX19-2: Provide active monitoring for issues on a frequent schedule</summary>
+					<details> <!-- Provide active monitoring for issues on a frequent schedule -->
+						<summary id="non-regression-tests">Provide active monitoring for issues on a frequent schedule</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">2.19 Audit and test for bugs or issues requiring resolution</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1530,8 +1541,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX19-3: Scan for introduced issues upon the completion of a new release -->
-						<summary id="UX19-3">UX19-3: Scan for introduced issues upon the completion of a new release</summary>
+					<details> <!-- Scan for introduced issues upon the completion of a new release -->
+						<summary id="regression-tests">Scan for introduced issues upon the completion of a new release</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">2.19 Audit and test for bugs or issues requiring resolution</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1554,8 +1565,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX19-4: Establish performance testing routines with each new release -->
-						<summary id="UX19-4">UX19-4: Establish performance testing routines with each new release</summary>
+					<details> <!-- Establish performance testing routines with each new release -->
+						<summary id="performance-testing">Establish performance testing routines with each new release</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">2.19 Audit and test for bugs or issues requiring resolution</a>.</p>
 						<p>Encourage a routine to improve web performance within websites and applications due to the established link between web performance optimization and digital sustainability. Running regular benchmarks and working from checklists (either prefabricated or built from scratch) will encourage a schedule to identify potential bottlenecks.</p>
@@ -1578,8 +1589,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX19-5: Provide compliance checks with each release for relevant legislation -->
-						<summary id="UX19-5">UX19-5: Provide compliance checks with each release for relevant legislation</summary>
+					<details> <!-- Provide compliance checks with each release for relevant legislation -->
+						<summary id="compliant-measurement">Provide compliance checks with each release for relevant legislation</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">2.19 Audit and test for bugs or issues requiring resolution</a>.</p>
 						<p>Provide a mechanism during the development process where businesses and individuals creating web projects can verify that new work meets compliance targets for individual regulations. This technique is most useful when performed with each major milestone as there is a potential for feature (and compliance) breaking material to occur.</p>
@@ -1605,8 +1616,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- UX21-1: Provide a publicly visible compatibility policy or statement -->
-						<summary id="UX21-1">UX21-1: Provide a publicly visible compatibility policy or statement</summary>
+					<details> <!-- Provide a publicly visible compatibility policy or statement -->
+						<summary id="compatibility-policy">Provide a publicly visible compatibility policy or statement</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility">2.21 Regularly test and maintain compatibility</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1628,8 +1639,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX21-2: Provide clarification when updates are significant over minor releases -->
-						<summary id="UX21-2">UX21-2: Provide clarification when updates are significant over minor releases</summary>
+					<details> <!-- Provide clarification when updates are significant over minor releases -->
+						<summary id="maintaining-compatibility">Provide clarification when updates are significant over minor releases</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility">2.21 Regularly test and maintain compatibility</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1651,8 +1662,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX21-3: Establish compatibility testing routines with each new release -->
-						<summary id="UX21-3">UX21-3: Establish compatibility testing routines with each new release</summary>
+					<details> <!-- Establish compatibility testing routines with each new release -->
+						<summary id="user-constraints">Establish compatibility testing routines with each new release</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility">2.21 Regularly test and maintain compatibility</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1679,8 +1690,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- UX21-4: Provide a PWA if more suitable than its native counterpart -->
-						<summary id="UX21-4">UX21-4: Provide a <abbr title="Progressive Web Application">PWA</abbr> if more suitable than its native counterpart</summary>
+					<details> <!-- Provide a PWA if more suitable than its native counterpart -->
+						<summary id="progressive-web-applications-pwas">Provide a <abbr title="Progressive Web Application">PWA</abbr> if more suitable than its native counterpart</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility">2.21 Regularly test and maintain compatibility</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1712,8 +1723,8 @@
 				<h3><dfn data-lt="WebDev">Web Development</dfn></h3>
 				<p>Each of the below can be shown or hidden by clicking on the technique you wish to display.</p>
 				<div class="summary">
-					<details> <!-- WD01-1: Profile existing projects to identify common factors of value -->
-						<summary id="WD01-1">WD01-1: Profile existing projects to identify common factors of value</summary>	
+					<details> <!-- Profile existing projects to identify common factors of value -->
+						<summary id="performance-goals">Profile existing projects to identify common factors of value</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#set-goals-based-on-performance-and-energy-impact">3.1 Set goals based on performance and energy impact</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1737,8 +1748,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD01-2: Calculate the energy intensity of technologies for existing projects -->
-						<summary id="WD01-2">WD01-2: Calculate the energy intensity of technologies for existing projects</summary>	
+					<details> <!-- Calculate the energy intensity of technologies for existing projects -->
+						<summary id="energy-intensity">Calculate the energy intensity of technologies for existing projects</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#set-goals-based-on-performance-and-energy-impact">3.1 Set goals based on performance and energy impact</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1764,8 +1775,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD02-1: Minify your front-end code if it is public facing -->
-						<summary id="WD02-1">WD02-1: Minify your front-end code if it is public facing</summary>	
+					<details> <!-- Minify your front-end code if it is public facing -->
+						<summary id="minified-code">Minify your front-end code if it is public facing</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-or-redundant-information">3.2 Remove unnecessary or redundant information</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1791,8 +1802,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD03-1: Implement code-splitting where appropriate to reduce payloads -->
-						<summary id="WD03-1">WD03-1: Implement code-splitting where appropriate to reduce payloads</summary>	
+					<details> <!-- Implement code-splitting where appropriate to reduce payloads -->
+						<summary id="code-splitting">Implement code-splitting where appropriate to reduce payloads</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#modularize-bandwidth-heavy-components">3.3 Modularize bandwidth-heavy components</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1819,8 +1830,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD04-1: Eliminate redundant code through coverage or tree shaking -->
-						<summary id="WD04-1">WD04-1: Eliminate redundant code through coverage or tree shaking</summary>	
+					<details> <!-- Eliminate redundant code through coverage or tree shaking -->
+						<summary id="remove-redundancy">Eliminate redundant code through coverage or tree shaking</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-code">3.4 Remove unnecessary code</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1845,8 +1856,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD05-3: Write code for performance removing duplication -->
-						<summary id="WD05-3">WD05-3: Write code for performance removing duplication</summary>	
+					<details> <!-- Write code for performance removing duplication -->
+						<summary id="organize-code-arrangement">Write code for performance removing duplication</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-redundancy-and-duplication-in-code">3.5 Avoid redundancy and duplication in code</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1870,8 +1881,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD06-1: Determine and decision make upon third-party impacts -->
-						<summary id="WD06-1">WD06-1: Determine and decision make upon third-party impacts</summary>	
+					<details> <!-- Determine and decision make upon third-party impacts -->
+						<summary id="assess-and-reduce">Determine and decision make upon third-party impacts</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">3.6 Give third parties the same priority as first parties during assessment</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1895,8 +1906,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD06-2: Provide an import on interaction delay for third-party resources -->
-						<summary id="WD06-2">WD06-2: Provide an import on interaction delay for third-party resources</summary>	
+					<details> <!-- Provide an import on interaction delay for third-party resources -->
+						<summary id="third-party-implementation">Provide an import on interaction delay for third-party resources</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">3.6 Give third parties the same priority as first parties during assessment</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1918,8 +1929,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD06-3: Ensure that content is delivered through the most sustainable pathway -->
-						<summary id="WD06-3">WD06-3: Ensure that content is delivered through the most sustainable pathway</summary>	
+					<details> <!-- Ensure that content is delivered through the most sustainable pathway -->
+						<summary id="self-hosting">Ensure that content is delivered through the most sustainable pathway</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">3.6 Give third parties the same priority as first parties during assessment</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1943,8 +1954,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD06-4: Provide the ability to identify and choose third-party components to load -->
-						<summary id="WD06-4">WD06-4: Provide the ability to identify and choose third-party components to load</summary>	
+					<details> <!-- Provide the ability to identify and choose third-party components to load -->
+						<summary id="third-party-preferences">Provide the ability to identify and choose third-party components to load</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">3.6 Give third parties the same priority as first parties during assessment</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1970,8 +1981,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD07-1: Validate source code for semantic accuracy -->
-						<summary id="WD07-1">WD07-1: Validate source code for semantic accuracy</summary>	
+					<details> <!-- Validate source code for semantic accuracy -->
+						<summary id="semantic-code">Validate source code for semantic accuracy</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices">3.7 Ensure code follows good semantic practices</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1993,8 +2004,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD07-2: Eliminate optional code to reduce the rendering impact -->
-						<summary id="WD07-2">WD07-2: Eliminate optional code to reduce the rendering impact</summary>	
+					<details> <!-- Eliminate optional code to reduce the rendering impact -->
+						<summary id="optional-features">Eliminate optional code to reduce the rendering impact</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices">3.7 Ensure code follows good semantic practices</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2016,8 +2027,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD07-3: Replace non-standard code with suitable alternative syntax -->
-						<summary id="WD07-3">WD07-3: Replace non-standard code with suitable alternative syntax</summary>	
+					<details> <!-- Replace non-standard code with suitable alternative syntax -->
+						<summary id="non-standard-code">Replace non-standard code with suitable alternative syntax</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices">3.7 Ensure code follows good semantic practices</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2046,8 +2057,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD07-5: Replace code that can instead use more efficient web platform APIs -->
-						<summary id="WD07-5">WD07-5: Replace code that can instead use more efficient web platform APIs</summary>	
+					<details> <!-- Replace code that can instead use more efficient web platform APIs -->
+						<summary id="built-in-over-custom">Replace code that can instead use more efficient web platform APIs</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices">3.7 Ensure code follows good semantic practices</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2071,8 +2082,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD08-1: Set scripts to load either asynchronously or deferred -->
-						<summary id="WD08-1">WD08-1: Set scripts to load either asynchronously or deferred</summary>	
+					<details> <!-- Set scripts to load either asynchronously or deferred -->
+						<summary id="asynchronous-code">Set scripts to load either asynchronously or deferred</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#defer-the-loading-of-non-critical-resources">3.8 Defer the loading of non-critical resources</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2093,8 +2104,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD08-2: Provide assets required at load with the correct delivery route -->
-						<summary id="WD08-2">WD08-2: Provide assets required at load with the correct delivery route</summary>	
+					<details> <!-- Provide assets required at load with the correct delivery route -->
+						<summary id="optimized-loading">Provide assets required at load with the correct delivery route</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#defer-the-loading-of-non-critical-resources">3.8 Defer the loading of non-critical resources</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2117,8 +2128,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD09-1: Add signposting within the page to direct users and accessibility aids -->
-						<summary id="WD09-1">WD09-1: Add signposting within the page to direct users and accessibility aids</summary>	
+					<details> <!-- Add signposting within the page to direct users and accessibility aids -->
+						<summary id="accessibility-aids">Add signposting within the page to direct users and accessibility aids</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-information-to-help-understand-the-usefulness-of-a-page">3.9 Provide information to help understand the usefulness of a page</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2145,8 +2156,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD10-1: Ensure that form inputs correctly match and validate content expectations -->
-						<summary id="WD10-1">WD10-1: Ensure that form inputs correctly match and validate content expectations</summary>	
+					<details> <!-- Ensure that form inputs correctly match and validate content expectations -->
+						<summary id="error-validation">Ensure that form inputs correctly match and validate content expectations</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements">3.10 Validate form errors and account for tooling requirements</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2170,8 +2181,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD10-2: Ensure that form elements are correctly labeled -->
-						<summary id="WD10-2">WD10-2: Ensure that form elements are correctly labeled</summary>	
+					<details> <!-- Ensure that form elements are correctly labeled -->
+						<summary id="label-elements">Ensure that form elements are correctly labeled</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements">3.10 Validate form errors and account for tooling requirements</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2191,8 +2202,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD10-3: Reduce issues within data entry with manual third-party content -->
-						<summary id="WD10-3">WD10-3: Reduce issues within data entry with manual third-party content</summary>	
+					<details> <!-- Reduce issues within data entry with manual third-party content -->
+						<summary id="allow-clipboard">Reduce issues within data entry with manual third-party content</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements">3.10 Validate form errors and account for tooling requirements</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2216,8 +2227,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD11-1: Ensure that the required HTML elements are included -->
-						<summary id="WD11-1">WD11-1: Ensure that the required HTML elements are included</summary>	
+					<details> <!-- Ensure that the required HTML elements are included -->
+						<summary id="required-elements">Ensure that the required HTML elements are included</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#structure-metadata-for-machine-readability">3.11 Structure metadata for machine readability</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2240,8 +2251,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD11-2: Provide relevant metadata using a recognized scheme -->
-						<summary id="WD11-2">WD11-2: Provide relevant metadata using a recognized scheme</summary>	
+					<details> <!-- Provide relevant metadata using a recognized scheme -->
+						<summary id="meta-tags">Provide relevant metadata using a recognized scheme</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#structure-metadata-for-machine-readability">3.11 Structure metadata for machine readability</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2264,8 +2275,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD11-3: Ensure content is structured using microdata -->
-						<summary id="WD11-3">WD11-3: Ensure content is structured using microdata</summary>	
+					<details> <!-- Ensure content is structured using microdata -->
+						<summary id="structured-data">Ensure content is structured using microdata</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#structure-metadata-for-machine-readability">3.11 Structure metadata for machine readability</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2288,8 +2299,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD12-1: Ensure CSS preference media queries are correctly applied -->
-						<summary id="WD12-1">WD12-1: Ensure CSS preference media queries are correctly applied</summary>	
+					<details> <!-- Ensure CSS preference media queries are correctly applied -->
+						<summary id="media-and-preference-queries">Ensure CSS preference media queries are correctly applied</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainability-beneficial-user-preference-media-queries">3.12 Use sustainability beneficial user preference media queries</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2314,8 +2325,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD13-1: Test against network speeds and visual resolution breakpoints -->
-						<summary id="WD13-1">WD13-1: Test against network speeds and visual resolution breakpoints</summary>	
+					<details> <!-- Test against network speeds and visual resolution breakpoints -->
+						<summary id="device-adaptable">Test against network speeds and visual resolution breakpoints</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements">3.13 Ensure layouts work for different devices and requirements</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2337,8 +2348,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD13-2: Provide progressive enhancement feature testing within projects -->
-						<summary id="WD13-2">WD13-2: Provide progressive enhancement feature testing within projects</summary>	
+					<details> <!-- Provide progressive enhancement feature testing within projects -->
+						<summary id="progressive-enhancement">Provide progressive enhancement feature testing within projects</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements">3.13 Ensure layouts work for different devices and requirements</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2361,8 +2372,8 @@
 							<li>Expectation of the above is dependent on the task but should aim to be true unless necessary.</li>
 						</ol>
 					</details>
-					<details> <!-- WD13-3: Configure your project around carbon-aware situations -->
-						<summary id="WD13-3">WD13-3: Configure your project around carbon-aware situations</summary>	
+					<details> <!-- Configure your project around carbon-aware situations -->
+						<summary id="carbon-aware-design">Configure your project around carbon-aware situations</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements">3.13 Ensure layouts work for different devices and requirements</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2383,8 +2394,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD13-4: Provide low-impact, delayed, or alternate methods of interaction -->
-						<summary id="WD13-4">WD13-4: Provide low-impact, delayed, or alternate methods of interaction</summary>	
+					<details> <!-- Provide low-impact, delayed, or alternate methods of interaction -->
+						<summary id="alternative-browsing">Provide low-impact, delayed, or alternate methods of interaction</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements">3.13 Ensure layouts work for different devices and requirements</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2412,8 +2423,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD14-1: Optimize a codebase through rewriting for performance -->
-						<summary id="WD14-1">WD14-1: Optimize a codebase through rewriting for performance</summary>	
+					<details> <!-- Optimize a codebase through rewriting for performance -->
+						<summary id="sustainable-javascript">Optimize a codebase through rewriting for performance</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis">3.14 Use standards-based JavaScript and APIs</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2437,8 +2448,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD14-2: Ensure JavaScript APIs are correctly applied -->
-						<summary id="WD14-2">WD14-2: Ensure JavaScript APIs are correctly applied</summary>	
+					<details> <!-- Ensure JavaScript APIs are correctly applied -->
+						<summary id="sustainable-apis">Ensure JavaScript APIs are correctly applied</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis">3.14 Use standards-based JavaScript and APIs</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2464,8 +2475,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD15-1: Ensure all vulnerabilities are removed and code is linted -->
-						<summary id="WD15-1">WD15-1: Ensure all vulnerabilities are removed and code is linted</summary>	
+					<details> <!-- Ensure all vulnerabilities are removed and code is linted -->
+						<summary id="code-security">Ensure all vulnerabilities are removed and code is linted</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-your-code-is-secure">3.15 Ensure that your code is secure</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2488,8 +2499,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD16-1: Identify and remove unused packages and dependencies -->
-						<summary id="WD16-1">WD16-1: Identify and remove unused packages and dependencies</summary>	
+					<details> <!-- Identify and remove unused packages and dependencies -->
+						<summary id="dependency-management">Identify and remove unused packages and dependencies</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance">3.16 Use dependencies appropriately and ensure maintenance</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2510,8 +2521,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD16-2: Implement modularized or lightweight frameworks and libraries -->
-						<summary id="WD16-2">WD16-2: Implement modularized or lightweight frameworks and libraries</summary>	
+					<details> <!-- Implement modularized or lightweight frameworks and libraries -->
+						<summary id="dependency-necessity">Implement modularized or lightweight frameworks and libraries</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance">3.16 Use dependencies appropriately and ensure maintenance</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2539,8 +2550,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD16-3: Ensure that dependencies are verified as up-to-date -->
-						<summary id="WD16-3">WD16-3: Ensure that dependencies are verified as up-to-date</summary>	
+					<details> <!-- Ensure that dependencies are verified as up-to-date -->
+						<summary id="dependency-updates">Ensure that dependencies are verified as up-to-date</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance">3.16 Use dependencies appropriately and ensure maintenance</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2564,8 +2575,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD17-1: Provide the expected website assets in your base directory -->
-						<summary id="WD17-1">WD17-1: Provide the expected website assets in your base directory</summary>	
+					<details> <!-- Provide the expected website assets in your base directory -->
+						<summary id="expected-files">Provide the expected website assets in your base directory</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#include-expected-and-beneficial-files">3.17 Include expected and beneficial files</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2591,8 +2602,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD17-2: Provide beneficial plaintext website assets in the expected locations -->
-						<summary id="WD17-2">WD17-2: Provide beneficial plaintext website assets in the expected locations</summary>	
+					<details> <!-- Provide beneficial plaintext website assets in the expected locations -->
+						<summary id="beneficial-files">Provide beneficial plaintext website assets in the expected locations</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#include-expected-and-beneficial-files">3.17 Include expected and beneficial files</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2618,8 +2629,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD18-1: Encourage the use of more sustainable creation toolchains -->
-						<summary id="WD18-1">WD18-1: Encourage the use of more sustainable creation toolchains</summary>	
+					<details> <!-- Encourage the use of more sustainable creation toolchains -->
+						<summary id="identify-requirements">Encourage the use of more sustainable creation toolchains</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service">3.18 Use the most efficient solution for your service</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2640,8 +2651,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- WD18-4: Test all third-party resources for sustainability impacts -->
-						<summary id="WD18-4">WD18-4: Test all third-party resources for sustainability impacts</summary>	
+					<details> <!-- Test all third-party resources for sustainability impacts -->
+						<summary id="extensions-and-plugins">Test all third-party resources for sustainability impacts</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service">3.18 Use the most efficient solution for your service</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2667,8 +2678,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- WD19-1: Ensure the latest version of a syntax language is being used -->
-						<summary id="WD19-1">WD19-1: Ensure the latest version of a syntax language is being used</summary>	
+					<details> <!-- Ensure the latest version of a syntax language is being used -->
+						<summary id="versioning">Ensure the latest version of a syntax language is being used</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-the-latest-stable-language-version">3.19 Use the latest stable language version</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2694,8 +2705,8 @@
 				<h3><dfn data-lt="Hosting">Hosting, Infrastructure, and Systems</dfn></h3>
 				<p>Each of the below can be shown or hidden by clicking on the technique you wish to display.</p>
 				<div class="summary">
-					<details> <!-- HIS01-1: Publicly disclose relevant sustainability metrics to users -->
-						<summary id="HIS01-1">HIS01-1: Publicly disclose relevant sustainability metrics to users</summary>	
+					<details> <!-- Publicly disclose relevant sustainability metrics to users -->
+						<summary id="provider-selection">Publicly disclose relevant sustainability metrics to users</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting">4.1 Use sustainable hosting</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2719,8 +2730,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- HIS01-4: Ensure that the project is hosted on a sustainable platform -->
-						<summary id="HIS01-4">HIS01-4: Ensure that the project is hosted on a sustainable platform</summary>	
+					<details> <!-- Ensure that the project is hosted on a sustainable platform -->
+						<summary id="low-carbon-electricity">Ensure that the project is hosted on a sustainable platform</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting">4.1 Use sustainable hosting</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2746,8 +2757,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- HIS01-6: Ensure that the project uses a sustainable domain registrar -->
-						<summary id="HIS01-6">HIS01-6: Ensure that the project uses a sustainable domain registrar</summary>	
+					<details> <!-- Ensure that the project uses a sustainable domain registrar -->
+						<summary id="domain-names">Ensure that the project uses a sustainable domain registrar</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting">4.1 Use sustainable hosting</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2771,8 +2782,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- HIS02-1: Provide caching responses to optimize page reloads -->
-						<summary id="HIS02-1">HIS02-1: Provide caching responses to optimize page reloads</summary>	
+					<details> <!-- Provide caching responses to optimize page reloads -->
+						<summary id="caching-resources">Provide caching responses to optimize page reloads</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access">4.2 Optimize caching and support offline access</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2792,8 +2803,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- HIS02-2: Identify the potential for PWAs and other useful features -->
-						<summary id="HIS02-2">HIS02-2: Identify the potential for <abbr title="Progressive Web Applications">PWAs</abbr> and other useful features</summary>	
+					<details> <!-- Identify the potential for PWAs and other useful features -->
+						<summary id="offline-access">Identify the potential for <abbr title="Progressive Web Applications">PWAs</abbr> and other useful features</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access">4.2 Optimize caching and support offline access</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2819,8 +2830,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- HIS03-1: Ensure that files are compressed correctly before serving -->
-						<summary id="HIS03-1">HIS03-1: Ensure that files are compressed correctly before serving</summary>	
+					<details> <!-- Ensure that files are compressed correctly before serving -->
+						<summary id="server-side-compression">Ensure that files are compressed correctly before serving</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-data-transfer-with-compression">4.3 Reduce data transfer with compression</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2842,8 +2853,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- HIS03-2: Compress all assets that can be optimized before CMS submission -->
-						<summary id="HIS03-2">HIS03-2: Compress all assets that can be optimized before <abbr title="Content Management System">CMS</abbr> submission</summary>	
+					<details> <!-- Compress all assets that can be optimized before CMS submission -->
+						<summary id="media-compression">Compress all assets that can be optimized before <abbr title="Content Management System">CMS</abbr> submission</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-data-transfer-with-compression">4.3 Reduce data transfer with compression</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2869,8 +2880,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- HIS04-1: Provide custom error pages to handle unexpected events -->
-						<summary id="HIS04-1">HIS04-1: Provide custom error pages to handle unexpected events</summary>	
+					<details> <!-- Provide custom error pages to handle unexpected events -->
+						<summary id="error-pages">Provide custom error pages to handle unexpected events</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#setup-necessary-error-pages-and-redirection-links">4.4 Setup necessary error pages and redirection links</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2895,8 +2906,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- HIS04-2: Resolve all anchor references which trigger errors or redirects -->
-						<summary id="HIS04-2">HIS04-2: Resolve all anchor references which trigger errors or redirects</summary>	
+					<details> <!-- Resolve all anchor references which trigger errors or redirects -->
+						<summary id="redirection">Resolve all anchor references which trigger errors or redirects</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#setup-necessary-error-pages-and-redirection-links">4.4 Setup necessary error pages and redirection links</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2922,8 +2933,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- HIS06-4: Check that pages have not been subjected to hijacking -->
-						<summary id="HIS06-4">HIS06-4: Check that pages have not been subjected to hijacking</summary>	
+					<details> <!-- Check that pages have not been subjected to hijacking -->
+						<summary id="suspicious-activity-management">Check that pages have not been subjected to hijacking</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-automation-wisely">4.6 Use automation wisely</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2949,8 +2960,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- HIS07-1: Ensure that stored data has a defined and reasonable expiry date -->
-						<summary id="HIS07-1">HIS07-1: Ensure that stored data has a defined and reasonable expiry date</summary>	
+					<details> <!-- Ensure that stored data has a defined and reasonable expiry date -->
+						<summary id="refresh-frequency">Ensure that stored data has a defined and reasonable expiry date</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#define-the-frequency-of-data-refreshes">4.7 Define the frequency of data refreshes</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2974,8 +2985,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- HIS09-2: Deliver content using the correct, most secure protocol -->
-						<summary id="HIS09-2">HIS09-2: Deliver content using the correct, most secure protocol</summary>	
+					<details> <!-- Deliver content using the correct, most secure protocol -->
+						<summary id="protocols">Deliver content using the correct, most secure protocol</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#consider-the-impact-and-requirements-of-data-processing">4.9 Consider the impact and requirements of data processing</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2998,8 +3009,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- HIS10-1: Provide distributed access to static resources via a CDN -->
-						<summary id="HIS10-1">HIS10-1: Provide distributed access to static resources via a <abbr title="Content Delivery Network">CDN</abbr></summary>	
+					<details> <!-- Provide distributed access to static resources via a CDN -->
+						<summary id="global-cdns">Provide distributed access to static resources via a <abbr title="Content Delivery Network">CDN</abbr></summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately">4.10 Consider <abbr title="Content Delivery Networks">CDNs</abbr> and Edge Caching</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3021,8 +3032,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- HIS10-2: Ensure that the CDN and its chain of locations are sustainable -->
-						<summary id="HIS10-2">HIS10-2: Ensure that the CDN and its chain of locations are sustainable</summary>	
+					<details> <!-- Ensure that the CDN and its chain of locations are sustainable -->
+						<summary id="sustainability-commitment">Ensure that the CDN and its chain of locations are sustainable</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately">4.10 Use Content Delivery Networks (CDNs) appropriately</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3045,8 +3056,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- HIS10-3: Provide a copy of the product or service close to the user -->
-						<summary id="HIS10-3">HIS10-3: Provide a copy of the product or service close to the user</summary>	
+					<details> <!-- Provide a copy of the product or service close to the user -->
+						<summary id="local-servers">Provide a copy of the product or service close to the user</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately">4.10 Use Content Delivery Networks (CDNs) appropriately</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3068,8 +3079,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- HIS10-4: Avoid hosting dynamic resources or third-party scripts on the CDN -->
-						<summary id="HIS10-4">HIS10-4: Avoid hosting dynamic resources or third-party scripts on the CDN</summary>	
+					<details> <!-- Avoid hosting dynamic resources or third-party scripts on the CDN -->
+						<summary id="inappropriate-resources">Avoid hosting dynamic resources or third-party scripts on the CDN</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately">4.10 Use Content Delivery Networks (CDNs) appropriately</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3093,8 +3104,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- HIS12-2: Provide a review or expiration date on website content -->
-						<summary id="HIS12-2">HIS12-2: Provide a review or expiration date on website content</summary>	
+					<details> <!-- Provide a review or expiration date on website content -->
+						<summary id="expiration-dates">Provide a review or expiration date on website content</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">4.12 Store data according to the needs of your users</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3114,8 +3125,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- HIS12-3: Provide a classification policy to content if it is deemed sustainable -->
-						<summary id="HIS12-3">HIS12-3: Provide a classification policy to content if it is deemed sustainable</summary>	
+					<details> <!-- Provide a classification policy to content if it is deemed sustainable -->
+						<summary id="classify-and-tag">Provide a classification policy to content if it is deemed sustainable</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">4.12 Store data according to the needs of your users</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3137,8 +3148,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- HIS12-5: Ensure that backup providers are classified as sustainable -->
-						<summary id="HIS12-5">HIS12-5: Ensure that backup providers are classified as sustainable</summary>	
+					<details> <!-- Ensure that backup providers are classified as sustainable -->
+						<summary id="optimized-logging">Ensure that backup providers are classified as sustainable</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">4.12 Store data according to the needs of your users</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3166,8 +3177,8 @@
 				<h3><dfn data-lt="Business">Business Strategy and Product Management</dfn></h3>
 				<p>Each of the below can be shown or hidden by clicking on the technique you wish to display.</p>
 				<div class="summary">
-					<details> <!-- BSPM01-1: Provide a publicly visible sustainability and/or ethical policy statement -->
-						<summary id="BSPM01-1">BSPM01-1: Provide a publicly visible sustainability and/or ethical policy statement</summary>	
+					<details> <!-- Provide a publicly visible sustainability and/or ethical policy statement -->
+						<summary id="public-documents">Provide a publicly visible sustainability and/or ethical policy statement</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy">5.1 Have an ethical and sustainable product strategy</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3193,8 +3204,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- BSPM01-2: Provide details of any beyond-the-scope sustainability features -->
-						<summary id="BSPM01-2">BSPM01-2: Provide details of any beyond-the-scope sustainability features</summary>	
+					<details> <!-- Provide details of any beyond-the-scope sustainability features -->
+						<summary id="achievements-and-compliance">Provide details of any beyond-the-scope sustainability features</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy">5.1 Have an ethical and sustainable product strategy</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3220,8 +3231,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM02-1: Check that an employee is assigned as the sustainability representative -->
-						<summary id="BSPM02-1">BSPM02-1: Check that an employee is assigned as the sustainability representative</summary>	
+					<details> <!-- Check that an employee is assigned as the sustainability representative -->
+						<summary id="advocate-for-sustainability">Check that an employee is assigned as the sustainability representative</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#assign-a-sustainability-advocate">5.2 Assign a sustainability advocate</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3243,8 +3254,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM03-3: Produce awareness raising resources on sustainability -->
-						<summary id="BSPM03-3">BSPM03-3: Produce awareness raising resources on sustainability</summary>	
+					<details> <!-- Produce awareness raising resources on sustainability -->
+						<summary id="active-participation">Produce awareness raising resources on sustainability</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#inform-raise-awareness-and-train-for-sustainability">5.3 Inform, raise awareness, and train for sustainability</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3268,8 +3279,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM05-2: Calculate the environmental impact of your competitors -->
-						<summary id="BSPM05-2">BSPM05-2: Calculate the environmental impact of your competitors</summary>	
+					<details> <!-- Calculate the environmental impact of your competitors -->
+						<summary id="competitor-impact">Calculate the environmental impact of your competitors</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#calculate-the-environmental-impact">5.5 Calculate the environmental impact</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3294,8 +3305,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM06-1: Have a clearly defined set of sustainability goals -->
-						<summary id="BSPM06-1">BSPM06-1: Have a clearly defined set of sustainability goals</summary>	
+					<details> <!-- Have a clearly defined set of sustainability goals -->
+						<summary id="sustainability-goals">Have a clearly defined set of sustainability goals</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#define-clear-organizational-sustainability-goals-and-metrics">5.6 Define clear organizational sustainability goals and metrics</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3322,8 +3333,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM07-1: Verify and showcase any third-party sustainability certifications -->
-						<summary id="BSPM07-1">BSPM07-1: Verify and showcase any third-party sustainability certifications</summary>	
+					<details> <!-- Verify and showcase any third-party sustainability certifications -->
+						<summary id="obtaining-certifications">Verify and showcase any third-party sustainability certifications</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-efforts-using-established-third-party-certifications">5.7 Validate efforts using established third-party certifications</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3347,8 +3358,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM08-1: Check for any included disclosure reporting policies -->
-						<summary id="BSPM08-1">BSPM08-1: Check for any included disclosure reporting policies</summary>	
+					<details> <!-- Check for any included disclosure reporting policies -->
+						<summary id="policies-and-practices">Check for any included disclosure reporting policies</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#support-mandatory-disclosures-and-reporting">5.8 Support mandatory disclosures and reporting</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3369,8 +3380,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- BSPM08-2: Include public facing carbon reports on an annual basis -->
-						<summary id="BSPM08-2">BSPM08-2: Include public facing carbon reports on an annual basis</summary>	
+					<details> <!-- Include public facing carbon reports on an annual basis -->
+						<summary id="impact-reports">Include public facing carbon reports on an annual basis</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#support-mandatory-disclosures-and-reporting">5.9 Support mandatory disclosures and reporting</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3393,8 +3404,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- BSPM08-3: Check for any compliance related disclosure documentation -->
-						<summary id="BSPM08-3">BSPM08-3: Check for any compliance related disclosure documentation</summary>	
+					<details> <!-- Check for any compliance related disclosure documentation -->
+						<summary id="BSPM08-3">Check for any compliance related disclosure documentation</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#support-mandatory-disclosures-and-reporting">5.9 Support mandatory disclosures and reporting</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3416,8 +3427,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM10-1: Provide a product or service maintenance agreement -->
-						<summary id="BSPM10-1">BSPM10-1: Provide a product or service maintenance agreement</summary>	
+					<details> <!-- Provide a product or service maintenance agreement -->
+						<summary id="management-and-maintenance">Provide a product or service maintenance agreement</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#follow-a-product-management-and-maintenance-strategy">5.10 Follow a product management and maintenance strategy</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3442,8 +3453,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM11-3: Identify the iteration record of the website or application -->
-						<summary id="BSPM11-3">BSPM11-3: Identify the iteration record of the website or application</summary>	
+					<details> <!-- Identify the iteration record of the website or application -->
+						<summary id="iterative-consideration">Identify the iteration record of the website or application</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures">5.11 Implement continuous improvement procedures</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3466,8 +3477,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- BSPM11-5: Clearly label changes using a release notes feature -->
-						<summary id="BSPM11-5">BSPM11-5: Clearly label changes using a release notes feature</summary>	
+					<details> <!-- Clearly label changes using a release notes feature -->
+						<summary id="security-updates">Clearly label changes using a release notes feature</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures">5.12 Implement continuous improvement procedures</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3493,8 +3504,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM13-1: Align product or service compliance with the SDGs -->
-						<summary id="BSPM13-1">BSPM13-1: Align product or service compliance with the <abbr title="Sustainable Development Goals">SDGs</abbr></summary>	
+					<details> <!-- Align product or service compliance with the SDGs -->
+						<summary id="sustainable-development-goals">Align product or service compliance with the <abbr title="Sustainable Development Goals">SDGs</abbr></summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#establish-if-a-digital-product-or-service-is-necessary">5.13 Establish if a digital product or service is necessary</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3516,8 +3527,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM14-1: Provide a publicly visible and transparent supplier policy -->
-						<summary id="BSPM14-1">BSPM14-1: Provide a publicly visible and transparent supplier policy</summary>	
+					<details> <!-- Provide a publicly visible and transparent supplier policy -->
+						<summary id="vetting-potential-partners">Provide a publicly visible and transparent supplier policy</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-a-supplier-standards-of-practice-document">5.14 Provide a supplier standards of practice document</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3541,8 +3552,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- BSPM14-3: Publicly list the sustainability impact of any partnerships -->
-						<summary id="BSPM14-3">BSPM14-3: Publicly list the sustainability impact of any partnerships</summary>	
+					<details> <!-- Publicly list the sustainability impact of any partnerships -->
+						<summary id="informative-partner-promotion">Publicly list the sustainability impact of any partnerships</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-a-supplier-standards-of-practice-document">5.16 Provide a supplier standards of practice document</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3567,8 +3578,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM15-1: Ensure that the business is a living wage employer -->
-						<summary id="BSPM15-1">BSPM15-1: Ensure that the business is a living wage employer</summary>	
+					<details> <!-- Ensure that the business is a living wage employer -->
+						<summary id="living-wage">Ensure that the business is a living wage employer</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#share-economic-benefits">5.15 Share economic benefits</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3591,8 +3602,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- BSPM15-3: Ensure that the business provides benefits for employees -->
-						<summary id="BSPM15-3">BSPM15-3: Ensure that the business provides benefits for employees</summary>	
+					<details> <!-- Ensure that the business provides benefits for employees -->
+						<summary id="employee-benefits">Ensure that the business provides benefits for employees</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#share-economic-benefits">5.17 Share economic benefits</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3617,8 +3628,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM17-2: Provide a publicly visible accessibility statement -->
-						<summary id="BSPM17-2">BSPM17-2: Provide a publicly visible accessibility statement</summary>	
+					<details> <!-- Provide a publicly visible accessibility statement -->
+						<summary id="accessibility-policy">Provide a publicly visible accessibility statement</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-justice-equity-diversity-inclusion-jedi-practices">5.17 Use Justice, Equity, Diversity, Inclusion (JEDI) practices</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3645,8 +3656,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM18-1: Provide links to the privacy policy and relevant legislation -->
-						<summary id="BSPM18-1">BSPM18-1: Provide links to the privacy policy and relevant legislation</summary>	
+					<details> <!-- Provide links to the privacy policy and relevant legislation -->
+						<summary id="data-practices">Provide links to the privacy policy and relevant legislation</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices">5.18 Promote responsible data practices</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3672,8 +3683,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM19-1: Provide a website archive containing outdated or old versions -->
-						<summary id="BSPM19-1">BSPM19-1: Provide a website archive containing outdated or old versions</summary>	
+					<details> <!-- Provide a website archive containing outdated or old versions -->
+						<summary id="outdated-content">Provide a website archive containing outdated or old versions</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures">5.19 Implement appropriate data management procedures</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3696,8 +3707,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- BSPM19-2: Enable users to manage their accounts and data -->
-						<summary id="BSPM19-2">BSPM19-2: Enable users to manage their accounts and data</summary>	
+					<details> <!-- Enable users to manage their accounts and data -->
+						<summary id="data-controllers">Enable users to manage their accounts and data</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures">5.21 Implement appropriate data management procedures</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3719,8 +3730,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM20-1: Provide a publicly facing policy around emerging technologies -->
-						<summary id="BSPM20-1">BSPM20-1: Provide a publicly facing policy around emerging technologies</summary>	
+					<details> <!-- Provide a publicly facing policy around emerging technologies -->
+						<summary id="ai-and-data-collection">Provide a publicly facing policy around emerging technologies</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies">5.20 Establish responsible practices around AI and emerging or disruptive technologies</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3745,8 +3756,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM21-1: Verify all partnerships and sponsors against WSG -->
-						<summary id="BSPM21-1">BSPM21-1: Verify all partnerships and sponsors against WSG</summary>	
+					<details> <!-- Verify all partnerships and sponsors against WSG -->
+						<summary id="fuel-divestment">Verify all partnerships and sponsors against WSG</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#include-responsible-financial-policies">5.21 Include responsible financial policies</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3772,8 +3783,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM22-1: Verify and showcase any third-party sustainability projects -->
-						<summary id="BSPM22-1">BSPM22-1: Verify and showcase any third-party sustainability projects</summary>	
+					<details> <!-- Verify and showcase any third-party sustainability projects -->
+						<summary id="philanthropy-policy">Verify and showcase any third-party sustainability projects</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#include-organizational-philanthropy-policies">5.22 Include organizational philanthropy policies</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3798,8 +3809,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM25-1: Provide a sustainability and environmental budget -->
-						<summary id="BSPM25-1">BSPM25-1: Provide a sustainability and environmental budget</summary>	
+					<details> <!-- Provide a sustainability and environmental budget -->
+						<summary id="environmental-budget">Provide a sustainability and environmental budget</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-and-environmental-budgets">5.25 Define performance and environmental budgets</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3821,8 +3832,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- BSPM25-2: Provide a performance budget for your product or service -->
-						<summary id="BSPM25-2">BSPM25-2: Provide a performance budget for your product or service</summary>	
+					<details> <!-- Provide a performance budget for your product or service -->
+						<summary id="performance-budget">Provide a performance budget for your product or service</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-and-environmental-budgets">5.27 Define performance and environmental budgets</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3844,8 +3855,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- BSPM25-4: Benchmark the improvement in revised budget achievements -->
-						<summary id="BSPM25-4">BSPM25-4: Benchmark the improvement in revised budget achievements</summary>	
+					<details> <!-- Benchmark the improvement in revised budget achievements -->
+						<summary id="measurable-improvements">Benchmark the improvement in revised budget achievements</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-and-environmental-budgets">5.27 Define performance and environmental budgets</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3872,8 +3883,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM26-1: Produce an open source policy and verify licensing -->
-						<summary id="BSPM26-1">BSPM26-1: Produce an open source policy and verify licensing</summary>	
+					<details> <!-- Produce an open source policy and verify licensing -->
+						<summary id="open-source-policy">Produce an open source policy and verify licensing</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-open-source-where-possible">5.26 Use open source where possible</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3895,8 +3906,8 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- BSPM26-3: Identify contributions made to open source projects -->
-						<summary id="BSPM26-3">BSPM26-3: Identify contributions made to open source projects</summary>	
+					<details> <!-- Identify contributions made to open source projects -->
+						<summary id="contribution">Identify contributions made to open source projects</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-open-source-where-possible">5.28 Use open source where possible</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3920,8 +3931,8 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- BSPM27-2: Maintain transparent communication when problems occur -->
-						<summary id="BSPM27-2">BSPM27-2: Maintain transparent communication when problems occur</summary>	
+					<details> <!-- Maintain transparent communication when problems occur -->
+						<summary id="audience-awareness">Maintain transparent communication when problems occur</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#create-a-business-continuity-and-disaster-recovery-plan">5.27 Create a business continuity and disaster recovery plan</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3949,7 +3960,7 @@
 		<section> <!-- Test Suite -->
 			<h2>Test Suite</h2>
 			<p><a>Interoperability</a> is important to web professionals. Better interoperability among implementations means that web professionals can create websites, applications, and tooling designed to be sustainable, and ensure that it is successfully repeatable (and testable) in several environments. It means reducing the potential for web sustainability issues to occur in complex projects and reducing the implementation time where automation and tooling can assist during the creation, development, and maintenance process. Writing tests in a way that allows them to be run in all browsers gives implementors confidence that they are shipping software that will be compatible, and consistent with other implementations.</p>
-			<p>Good test suites drive interoperability. They are a key part of making sure web standards are implemented correctly and consistently. More tests encourage more interoperability. Wrong tests drive interoperability on wrong behavior. As such, web sustainability needs good test suites. It is an evolving field and most of the test suites are still works in progress: so they may contain errors.</p>
+			<p>so they may contain errors.</p>
 			<p>The primary focus of this test suite is to provide interoperability for tool makers (in terms of automation and compliance with WSG). In addition, we also aim to provide meaningful testable metrics that can be measured and help identify the true impact of the success criteria within WSG, and therefore better understand the impact that digital has on the ecosystem.</p>
 			<p>Implementors could use the dataset provided to expand upon the results and offer more nuanced research. Additionally, there is the potential for toolmakers to create more accurate products that measure the carbon impact of products. While the scope of such matters may potentially stretch beyond this group's remit, the results could feed back into - and impact further iterations of our work.</p>
 			<section> <!-- Table of results -->
@@ -4003,28 +4014,28 @@
 							</tr>
 							<tr>
 								<td colspan="2">1</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX01-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX01-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/impact-analysis.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/external-impact.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD01-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD01-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/performance-goals.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/energy-intensity.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/provider-selection.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-4.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/low-carbon-electricity.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS01-6.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/domain-names.html">PASS</a></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM01-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM01-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/public-documents.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/achievements-and-compliance.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td></td>
@@ -4032,27 +4043,27 @@
 							</tr>
 							<tr>
 								<td colspan="2">2</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX02-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX02-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/audience-evaluation.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/barriers-and-access.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD02-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/minified-code.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS02-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS02-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/caching-resources.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/offline-access.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM02-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/advocate-for-sustainability.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4065,46 +4076,46 @@
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
-								<td></td>
-
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD03-1.html">PASS</a></td>
-								<td></td>
-								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS03-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS03-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/code-splitting.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/server-side-compression.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/media-compression.html">PASS</a></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM03-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/active-participation.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td></td>
 							</tr>
 							<tr>
 								<td colspan="2">4</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX04-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/efficient-paths.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX04-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX04-4.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX04-5.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/eliminate-the-non-essential.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/user-initiated-actionable-content.html">PASS</a></td>
 								<td class="red">FAIL</td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD04-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/remove-redundancy.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS04-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS04-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/error-pages.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/redirection.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4119,16 +4130,16 @@
 							</tr>
 							<tr>
 								<td colspan="2">5</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX05-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX05-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX05-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/navigation-and-search.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/human-readable-sitemaps.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/new-content.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD05-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/organize-code-arrangement.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
@@ -4140,7 +4151,7 @@
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM05-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/competitor-impact.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -4148,27 +4159,27 @@
 							</tr>
 							<tr>
 								<td colspan="2">6</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX06-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX06-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX06-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/respect-user-attention.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/minimize-distraction.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/reduce-engagement-traps.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD06-4.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/assess-and-reduce.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/third-party-implementation.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/self-hosting.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/third-party-preferences.html">PASS</a></td>
 								<td></td>
 
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS06-4.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/suspicious-activity-management.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM06-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-goals.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4177,27 +4188,27 @@
 							</tr>
 							<tr>
 								<td colspan="2">7</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX07-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deceptive-design-patterns.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX07-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX07-4.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/analytics-and-tracking.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/search-engine-optimization.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/semantic-code.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optional-features.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/non-standard-code.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD07-5.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/built-in-over-custom.html">PASS</a></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS07-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/refresh-frequency.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM07-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/obtaining-certifications.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -4206,15 +4217,15 @@
 							</tr>
 							<tr>
 								<td colspan="2">8</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX08-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX08-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX08-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-reusability.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-documentation.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-readability.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD08-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD08-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/asynchronous-code.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-loading.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4226,8 +4237,8 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM08-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM08-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/policies-and-practices.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/impact-reports.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM08-3.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
@@ -4235,21 +4246,21 @@
 							</tr>
 							<tr>
 								<td colspan="2">9</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX09-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/design-system.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD09-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/accessibility-aids.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS09-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/protocols.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td></td>
@@ -4264,27 +4275,27 @@
 							</tr>
 							<tr>
 								<td colspan="2">10</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX10-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX10-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/clear-content.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/content-formatting.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD10-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD10-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD10-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/error-validation.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/label-elements.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/allow-clipboard.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS10-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS10-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS10-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS10-4.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/global-cdns.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-commitment.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/local-servers.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/inappropriate-resources.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM10-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/management-and-maintenance.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
@@ -4293,53 +4304,53 @@
 							</tr>
 							<tr>
 								<td colspan="2">11</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX11-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX11-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX11-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX11-4.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX11-5.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/need-for-media.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-media.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/lazy-loading.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/user-controlled-media.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/media-management-and-use.html">PASS</a></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD11-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD11-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD11-3.html">PASS</a></td>
-								<td></td>
-								<td></td>
-
-								<td class="red">FAIL</td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/required-elements.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/meta-tags.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/structured-data.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
 								<td class="red">FAIL</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM11-3.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM11-5.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/iterative-consideration.html">PASS</a></td>
+								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/security-updates.html">PASS</a></td>
 								<td class="red">FAIL</td>
 							</tr>
 							<tr>
 								<td colspan="2">12</td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX12-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX12-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/avoid-overburdening.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/control-animation.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD12-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/media-and-preference-queries.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS12-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS12-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/expiration-dates.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/classify-and-tag.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/HIS12-5.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-logging.html">PASS</a></td>
 								<td class="red">FAIL</td>
 
 								<td class="red">FAIL</td>
@@ -4351,17 +4362,17 @@
 							</tr>
 							<tr>
 								<td colspan="2">13</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX13-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX13-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/pre-installed-typefaces.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/web-font-optimization.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD13-4.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/device-adaptable.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/progressive-enhancement.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/carbon-aware-design.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/alternative-browsing.html">PASS</a></td>
 								<td></td>
 
 								<td></td>
@@ -4371,7 +4382,7 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM13-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-development-goals.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td></td>
@@ -4380,15 +4391,15 @@
 							</tr>
 							<tr>
 								<td colspan="2">14</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX14-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX14-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX14-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX14-4.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX14-5.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/open-formats.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/font-stack-fallbacks.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/alternative-text.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/transcripts-and-text.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/video-alternatives.html">PASS</a></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD14-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD14-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-javascript.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-apis.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -4400,23 +4411,23 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM14-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/vetting-potential-partners.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM14-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/informative-partner-promotion.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 							</tr>
 							<tr>
 								<td colspan="2">15</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX15-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX15-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/simple-forms.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/functional-forms.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD15-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/code-security.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4429,9 +4440,9 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM15-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/living-wage.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM15-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/employee-benefits.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4445,9 +4456,9 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD16-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD16-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD16-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-management.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-necessity.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-updates.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
@@ -4467,15 +4478,15 @@
 							</tr>
 							<tr>
 								<td colspan="2">17</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX17-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX17-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX17-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX17-4.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/printing-documents.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimize-documents.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimize-delivery.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/labels-and-choice.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD17-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD17-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/expected-files.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/beneficial-files.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4488,7 +4499,7 @@
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM17-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/accessibility-policy.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td></td>
@@ -4496,17 +4507,17 @@
 							</tr>
 							<tr>
 								<td colspan="2">18</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX18-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/early-user-testing.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD18-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/identify-requirements.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD18-4.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/extensions-and-plugins.html">PASS</a></td>
 								<td class="red">FAIL</td>
 
 								<td></td>
@@ -4516,7 +4527,7 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM18-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/data-practices.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -4525,14 +4536,14 @@
 							</tr>
 							<tr>
 								<td colspan="2">19</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-4.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX19-5.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/ongoing-evaluation.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/non-regression-tests.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/regression-tests.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/performance-testing.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/compliant-measurement.html">PASS</a></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/WD19-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/versioning.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -4545,8 +4556,8 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM19-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM19-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/outdated-content.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/data-controllers.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4574,7 +4585,7 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM20-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/ai-and-data-collection.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
@@ -4583,10 +4594,10 @@
 							</tr>
 							<tr>
 								<td colspan="2">21</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX21-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX21-2.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX21-3.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/UX21-4.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-policy.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/maintaining-compatibility.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/user-constraints.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/progressive-web-applications-pwas.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
@@ -4603,7 +4614,7 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM21-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/fuel-divestment.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -4632,7 +4643,7 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM22-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/philanthropy-policy.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -4719,10 +4730,10 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM25-1.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM25-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/environmental-budget.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/performance-budget.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM25-4.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/measurable-improvements.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 							</tr>
@@ -4748,9 +4759,9 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM26-1.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/open-source-policy.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM26-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/contribution.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4778,7 +4789,7 @@
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM27-2.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/audience-awareness.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>

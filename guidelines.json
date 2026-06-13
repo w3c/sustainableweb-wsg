@@ -13,7 +13,7 @@
 			"shortName": "UX Design",
 			"guidelines": [
 				{
-					"id": "1",
+					"id": "identify-assess-disclose-review-and-mitigate-sustainability-impacts",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts",
 					"guideline": "Identify, assess, disclose, review, and mitigate sustainability impacts",
 					"subheading": "Assess and report the planet, people, and prosperity impacts of digital projects, and plan measurable reductions to the real-world effects of their activity.",
@@ -96,7 +96,7 @@
 					"tags": ["Accessibility", "Compatibility", "Hardware", "Ideation", "Networking", "Performance", "Privacy", "Reporting", "Research", "Social Equity", "Software"]
 				},
 				{
-					"id": "2",
+					"id": "understand-user-requirements-or-constraints-resolving-barriers-to-access",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access",
 					"guideline": "Understand user requirements or constraints, resolving barriers to access",
         			"subheading": "Understand the audience and their requirements and remove their constraints and barriers.",
@@ -199,7 +199,7 @@
 					"tags": ["Accessibility", "Compatibility", "Ideation", "KPIs", "Patterns", "Privacy", "Reporting", "Research", "Social Equity", "UI", "Usability"]
 				},
 				{
-					"id": "3",
+					"id": "integrate-sustainability-into-every-stage-of-the-ideation-process",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#integrate-sustainability-into-every-stage-of-the-ideation-process",
 					"guideline": "Integrate sustainability into every stage of the ideation process",
 					"subheading": "Optimize materials created at every stage of the process and consider the needs of and impact on the planet, and other affected parties.",
@@ -285,7 +285,7 @@
 					"tags": ["Accessibility", "Ideation", "KPIs", "Research", "Social Equity", "Software", "Strategy", "UI"]
 				},
 				{
-					"id": "4",
+					"id": "minimize-non-essential-content-interactivity-or-journeys",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys",
 					"guideline": "Minimize non-essential content, interactivity, or journeys",
 					"subheading": "Use distraction and clutter-free design, showing the user only what they need without interruptions or wasted resource consumption.",
@@ -427,7 +427,7 @@
 					"tags": ["Accessibility", "Content", "Patterns", "Performance", "Privacy", "Social Equity", "UI", "Usability"]
 				},
 				{
-					"id": "5",
+					"id": "ensure-that-navigation-and-wayfinding-are-well-structured",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured",
 					"guideline": "Ensure that navigation and wayfinding are well-structured",
 					"subheading": "Provide good information architecture that signposts users, both human and machine, to what they need, so they can reach their destination as efficiently as possible.",
@@ -494,7 +494,7 @@
 					"tags": ["Accessibility", "HTML", "Marketing", "UI", "Usability"]
 				},
 				{
-					"id": "6",
+					"id": "design-to-assist-and-not-to-distract",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract",
 					"guideline": "Design to assist and not to distract",
 					"subheading": "Provide engagement that keeps the user's focus where it needs to be, avoiding anything that will either reduce efficiency or artificially prolong engagement.",
@@ -574,7 +574,7 @@
 					"tags": ["Accessibility", "Assets", "Patterns", "UI", "Usability"]
 				},
 				{
-					"id": "7",
+					"id": "avoid-being-manipulative-or-deceptive",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive",
 					"guideline": "Avoid being manipulative or deceptive",
 					"subheading": "Avoid using patterns, content, tools, or techniques that may artificially manipulate or deceive the user.",
@@ -695,7 +695,7 @@
 					"tags": ["Accessibility", "Assets", "Compatibility", "JavaScript", "JavaScript", "Patterns", "Privacy", "Security", "Social Equity", "UI", "Usability"]
 				},
 				{
-					"id": "8",
+					"id": "make-deliverables-understandable-and-reusable",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#make-deliverables-understandable-and-reusable",
 					"guideline": "Make deliverables understandable and reusable",
 					"subheading": "Create discoverable, well documented deliverables so that future users can find and make use of them without requiring assistance or expending unnecessary time and resources.",
@@ -787,7 +787,7 @@
 					"tags": ["Accessibility", "Assets", "Content", "Education", "Patterns", "Software"]
 				},
 				{
-					"id": "9",
+					"id": "use-a-design-system-for-interface-consistency",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-a-design-system-for-interface-consistency",
 					"guideline": "Use a design system for interface consistency",
 					"subheading": "Keep the components of the project as consistent and clear as possible by using a design system to organize reusable features.",
@@ -857,7 +857,7 @@
 					"tags": ["Accessibility", "Assets", "CSS", "Education", "Patterns", "Strategy", "UI", "Usability"]
 				},
 				{
-					"id": "10",
+					"id": "provide-clear-inclusive-content-with-purpose",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose",
 					"guideline": "Provide clear, inclusive content with purpose",
 					"subheading": "Provide content that meets the needs of the audience, ensuring it is formatted for readability and incorporating SEO for visibility, so they can reach their destination as efficiently as possible.",
@@ -927,7 +927,7 @@
 					"tags": ["Accessibility", "Content", "Social Equity", "UI", "Usability"]
 				},
 				{
-					"id": "11",
+					"id": "optimize-media-to-reduce-resource-use",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use",
 					"guideline": "Optimize media to reduce resource use",
 					"subheading": "Include media only when it supports user needs. Manage, optimize, and load media efficiently. Ensure users have control over playback and data use.",
@@ -1109,7 +1109,7 @@
 					"tags": ["Accessibility", "Assets", "Content", "HTML", "Performance", "Software", "UI", "Usability"]
 				},
 				{
-					"id": "12",
+					"id": "ensure-animation-is-proportionate-and-easy-to-control",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-animation-is-proportionate-and-easy-to-control",
 					"guideline": "Ensure animation is proportionate and easy to control",
 					"subheading": "Ensure any animation deemed necessary is not overdone and that the user can control its ability to run.",
@@ -1184,7 +1184,7 @@
 					"tags": ["Accessibility", "CSS", "JavaScript", "Performance", "UI", "Usability"]
 				},
 				{
-					"id": "13",
+					"id": "use-optimized-and-appropriate-web-typography",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography",
 					"guideline": "Use optimized and appropriate web typography",
 					"subheading": "Provide custom fonts in the most suitable file format, but with a preference for pre-installed typefaces where possible.",
@@ -1271,7 +1271,7 @@
 					"tags": ["Accessibility", "CSS", "Performance", "UI", "Usability"]
 				},
 				{
-					"id": "14",
+					"id": "offer-suitable-alternatives-for-every-format-used",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used",
 					"guideline": "Offer suitable alternatives for every format used",
 					"subheading": "Integrate fallbacks so that if something cannot load or is not compatible, there is an accessible alternative to ensure equal access to the content.",
@@ -1379,7 +1379,7 @@
 					"tags": ["Accessibility", "Assets", "Compatibility", "Content", "HTML", "Performance", "Social Equity", "UI", "Usability"]
 				},
 				{
-					"id": "15",
+					"id": "provide-accessible-usable-minimal-web-forms",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#provide-accessible-usable-minimal-web-forms",
 					"guideline": "Provide accessible, usable, minimal web forms",
 					"subheading": "Ensure forms are as minimalistic and friction-free as possible, reduce the impact of submitting, and only collecting required data.",
@@ -1444,7 +1444,7 @@
 					"tags": ["Accessibility", "HTML", "Privacy", "Social Equity", "UI", "Usability"]
 				},
 				{
-					"id": "16",
+					"id": "avoid-unwanted-notifications",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-unwanted-notifications",
 					"guideline": "Avoid unwanted notifications",
 					"subheading": "Ensure any required notifications or alerts are clearly explained before activation, and that the user can both control and change them.",
@@ -1501,7 +1501,7 @@
 					"tags": ["Accessibility", "JavaScript", "Privacy", "UI", "Usability"]
 				},
 				{
-					"id": "17",
+					"id": "reduce-the-impact-of-downloadable-and-physical-documents",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents",
 					"guideline": "Reduce the impact of downloadable and physical documents",
 					"subheading": "Reduce the need for physical documents as much as possible by allowing the saving of well-labeled, optimized digital downloads. Include a print style sheet to avoid resource waste.",
@@ -1594,7 +1594,7 @@
 					"tags": ["Accessibility", "Assets", "Compatibility", "Content", "E-Waste", "Hardware", "Performance", "Software", "UI", "Usability"]
 				},
 				{
-					"id": "18",
+					"id": "involve-users-early-in-the-project",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#involve-users-early-in-the-project",
 					"guideline": "Involve users early in the project",
 					"subheading": "Document the test process for new features with real users and validate the results, ensuring resources and training are provided to maintain the project's viability and minimize rework.",
@@ -1633,7 +1633,7 @@
 					"tags": ["Accessibility", "Education", "Governance", "Ideation", "Research", "Social Equity", "Strategy", "UI", "Usability"]
 				},
 				{
-					"id": "19",
+					"id": "audit-and-test-for-bugs-or-issues-requiring-resolution",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution",
 					"guideline": "Audit and test for bugs or issues requiring resolution",
 					"subheading": "Regularly audit for issues or problems, running tests at regular intervals in both simulated and real-world scenarios to ensure stability of the project.",
@@ -1789,7 +1789,7 @@
 					"tags": ["Accessibility", "Compatibility", "KPIs", "Performance", "Privacy", "Reporting", "Research", "Security", "Social Equity", "Software", "Strategy", "UI", "Usability"]
 				},
 				{
-					"id": "20",
+					"id": "verify-that-real-world-users-can-successfully-use-your-work-upon-and-after-release",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#verify-that-real-world-users-can-successfully-use-your-work-upon-and-after-release",
 					"guideline": "Verify that real-world users can successfully use your work upon and after release",
 					"subheading": "Factor the ways people use the project into your decision making and evaluate how this can be optimized for the planet, people, and organisational prosperity.",
@@ -1876,7 +1876,7 @@
 					"tags": ["Accessibility", "Education", "Governance", "Ideation", "KPIs", "Research", "Social Equity", "Strategy", "UI", "Usability"]
 				},
 				{
-					"id": "21",
+					"id": "regularly-test-and-maintain-compatibility",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility",
 					"guideline": "Regularly test and maintain compatibility",
 					"subheading": "Produce a regularly updated compatibility policy that details support levels, scenarios tested against, and technology used to benefit users.",
@@ -2039,7 +2039,7 @@
 			"shortName": "Web Development",
 			"guidelines": [
 				{
-					"id": "1",
+					"id": "set-goals-based-on-performance-and-energy-impact",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#set-goals-based-on-performance-and-energy-impact",
 					"guideline": "Set goals based on performance and energy impact",
 					"subheading": "Define performance and environmental targets, and design content with awareness of the relative energy and processing cost.",
@@ -2120,7 +2120,7 @@
 					"tags": ["KPIs", "Networking", "Performance", "Research", "Social Equity", "Strategy"]
 				},
 				{
-					"id": "2",
+					"id": "remove-unnecessary-or-redundant-information",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-or-redundant-information",
 					"guideline": "Remove unnecessary or redundant information",
 					"subheading": "Remove redundant characters from code to reduce the amount of data being stored and transferred to devices.",
@@ -2162,7 +2162,7 @@
 					"tags": ["Accessibility", "CSS", "HTML", "JavaScript", "Performance"]
 				},
 				{
-					"id": "3",
+					"id": "modularize-bandwidth-heavy-components",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#modularize-bandwidth-heavy-components",
 					"guideline": "Modularize bandwidth-heavy components",
 					"subheading": "Break down large components into smaller, self-contained pieces that can be requested only when required to save bandwidth.",
@@ -2206,7 +2206,7 @@
 					"tags": ["CSS", "JavaScript", "Performance"]
 				},
 				{
-					"id": "4",
+					"id": "remove-unnecessary-code",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-code",
 					"guideline": "Remove unnecessary code",
 					"subheading": "Clear out dead or unused code as it builds up in a project to reduce the amount of wasted data being transferred.",
@@ -2253,7 +2253,7 @@
 					"tags": ["CSS", "JavaScript", "Performance"]
 				},
 				{
-					"id": "5",
+					"id": "avoid-redundancy-and-duplication-in-code",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-redundancy-and-duplication-in-code",
 					"guideline": "Avoid redundancy and duplication in code",
 					"subheading": "Reduce code duplication through refactoring and reuse, ensure maintainability, and favor evolving existing solutions over rebuilding them.",
@@ -2329,7 +2329,7 @@
 					"tags": ["Accessibility", "CSS", "JavaScript", "Patterns", "Performance"]
 				},
 				{
-					"id": "6",
+					"id": "give-third-parties-the-same-priority-as-first-parties-during-assessment",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment",
 					"guideline": "Give third parties the same priority as first parties during assessment",
 					"subheading": "Avoid using large third-party libraries and frameworks where possible, and where these must be used, self host, defer loading, allow the user to object, and provide alternatives.",
@@ -2457,7 +2457,7 @@
 					"tags": ["Accessibility", "JavaScript", "Performance", "Privacy", "Security", "Software", "UI", "Usability"]
 				},
 				{
-					"id": "7",
+					"id": "ensure-code-follows-good-semantic-practices",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices",
 					"guideline": "Ensure code follows good semantic practices",
 					"subheading": "Use semantic markup free of optional or non-standard code, use the latest version of technical specifications, and only using custom solutions when native ones are insufficient.",
@@ -2602,7 +2602,7 @@
 					"tags": ["Accessibility", "Compatibility", "Content", "HTML", "Security", "Social Equity", "Usability"]
 				},
 				{
-					"id": "8",
+					"id": "defer-the-loading-of-non-critical-resources",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#defer-the-loading-of-non-critical-resources",
 					"guideline": "Defer the loading of non-critical resources",
 					"subheading": "Avoid render-blocking slowdowns by asynchronously loading, deferring, or prioritizing external resources as appropriate.",
@@ -2668,7 +2668,7 @@
 					"tags": ["Accessibility", "Assets", "CSS", "JavaScript", "Performance"]
 				},
 				{
-					"id": "9",
+					"id": "provide-information-to-help-understand-the-usefulness-of-a-page",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#provide-information-to-help-understand-the-usefulness-of-a-page",
 					"guideline": "Provide information to help understand the usefulness of a page",
 					"subheading": "Ensure that accessibility tooling can access a project to reduce unnecessary journeys.",
@@ -2708,7 +2708,7 @@
 					"tags": ["Accessibility", "AI", "HTML", "Marketing", "UI", "Usability"]
 				},
 				{
-					"id": "10",
+					"id": "validate-form-errors-and-account-for-tooling-requirements",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements",
 					"guideline": "Validate form errors and account for tooling requirements",
 					"subheading": "Label forms correctly while also checking for errors both prior to and during submission to reduce the impact of erroneous data entry.",
@@ -2779,7 +2779,7 @@
 					"tags": ["Accessibility", "Compatibility", "HTML", "Security", "UI", "Usability"]
 				},
 				{
-					"id": "11",
+					"id": "structure-metadata-for-machine-readability",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#structure-metadata-for-machine-readability",
 					"guideline": "Structure metadata for machine readability",
 					"subheading": "Include the required metadata and structured microdata to increase the visibility and findability of resources.",
@@ -2850,7 +2850,7 @@
 					"tags": ["Accessibility", "AI", "HTML", "Marketing", "Usability"]
 				},
 				{
-					"id": "12",
+					"id": "use-sustainability-beneficial-user-preference-media-queries",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainability-beneficial-user-preference-media-queries",
 					"guideline": "Use sustainability beneficial user preference media queries",
 					"subheading": "Use sustainable media queries, such as dark mode and scripting media queries, to customize an interface to suit user preferences and reduce emissions.",
@@ -2919,7 +2919,7 @@
 					"tags": ["Accessibility", "Assets", "CSS", "UI", "Usability"]
 				},
 				{
-					"id": "13",
+					"id": "ensure-layouts-work-for-different-devices-and-requirements",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements",
 					"guideline": "Ensure layouts work for different devices and requirements",
 					"subheading": "Use a mix of carbon-aware design techniques to adapt to different layouts, different modes of interaction, and also progressively enhance content.",
@@ -3081,7 +3081,7 @@
 					"tags": ["Accessibility", "AI", "Compatibility", "Content", "CSS", "Performance", "Social Equity", "UI", "Usability"]
 				},
 				{
-					"id": "14",
+					"id": "use-standards-based-javascript-and-apis",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis",
 					"guideline": "Use standards-based JavaScript and APIs",
 					"subheading": "Use JavaScript in an energy-efficient and accessible way, only using APIs and making external calls when this enhances a project's sustainability.",
@@ -3173,7 +3173,7 @@
 					"tags": ["Accessibility", "JavaScript", "Privacy", "Security"]
 				},
 				{
-					"id": "15",
+					"id": "ensure-that-your-code-is-secure",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-your-code-is-secure",
 					"guideline": "Ensure that your code is secure",
 					"subheading": "Regularly check code for exploitable security issues that could affect both users and hosting infrastructure.",
@@ -3231,7 +3231,7 @@
 					"tags": ["JavaScript", "Privacy", "Security", "Social Equity"]
 				},
 				{
-					"id": "16",
+					"id": "use-dependencies-appropriately-and-ensure-maintenance",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance",
 					"guideline": "Use dependencies appropriately and ensure maintenance",
 					"subheading": "Use libraries and frameworks only where necessary, when plain code or smaller packages are inappropriate for the use case, and they are kept up to date.",
@@ -3331,7 +3331,7 @@
 					"tags": ["Accessibility", "JavaScript", "Patterns", "Performance", "Privacy", "Security", "Software"]
 				},
 				{
-					"id": "17",
+					"id": "include-expected-and-beneficial-files",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#include-expected-and-beneficial-files",
 					"guideline": "Include expected and beneficial files",
 					"subheading": "Always provide expected files and optionally offer environmentally or otherwise beneficial files to enhance the project.",
@@ -3403,7 +3403,7 @@
 					"tags": ["Accessibility", "Assets", "Compatibility", "Marketing", "Patterns", "Security", "UI"]
 				},
 				{
-					"id": "18",
+					"id": "use-the-most-efficient-solution-for-your-service",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service",
 					"guideline": "Use the most efficient solution for your service",
 					"subheading": "Identify the project requirements, use the most efficient approach, aim for static over dynamic where possible, and consider the impact of extensions and components.",
@@ -3516,7 +3516,7 @@
 					"tags": ["Accessibility", "Compatibility", "Ideation", "Performance", "Privacy", "Security", "Software", "Strategy"]
 				},
 				{
-					"id": "19",
+					"id": "use-the-latest-stable-language-version",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-the-latest-stable-language-version",
 					"guideline": "Use the latest stable language version",
 					"subheading": "Consider the environmental impact of the chosen syntax language, while always ensuring you use the latest build of any language or framework.",
@@ -3572,7 +3572,7 @@
 					"tags": ["Accessibility", "Compatibility", "Performance", "Security"]
 				},
 				{
-					"id": "20",
+					"id": "reduce-the-number-and-complexity-of-database-queries",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-number-and-complexity-of-database-queries",
 					"guideline": "Reduce the number and complexity of database queries",
 					"subheading": "Optimize any information provided via databases, both in terms of access schedules and how queries are sent and received.",
@@ -3625,7 +3625,7 @@
 			"shortName": "Hosting and Infrastructure",
 			"guidelines": [
 				{
-					"id": "1",
+					"id": "use-sustainable-hosting",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting",
 					"guideline": "Use sustainable hosting",
 					"subheading": "Select and manage infrastructure using sustainability metrics, prioritizing low-carbon energy use and low-impact hosting and domain choices in selection, and extending hardware lifespan and minimising emissions in management.",
@@ -3863,7 +3863,7 @@
 					"tags": ["AI", "E-Waste", "Hardware", "Networking", "Social Equity"]
 				},
 				{
-					"id": "2",
+					"id": "optimize-caching-and-support-offline-access",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access",
 					"guideline": "Optimize caching and support offline access",
 					"subheading": "Use caching on all appropriate resources, prioritizing the ability to use the resource offline if possible.",
@@ -3951,7 +3951,7 @@
 					"tags": ["Accessibility", "Assets", "HTML", "JavaScript", "Networking", "Performance", "Software"]
 				},
 				{
-					"id": "3",
+					"id": "reduce-data-transfer-with-compression",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#reduce-data-transfer-with-compression",
 					"guideline": "Reduce data transfer with compression",
 					"subheading": "Compress server responses and media files to reduce bandwidth, storage use, and delivery overhead while balancing processing costs.",
@@ -4041,7 +4041,7 @@
 					"tags": ["Assets", "Networking", "Performance"]
 				},
 				{
-					"id": "4",
+					"id": "setup-necessary-error-pages-and-redirection-links",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#setup-necessary-error-pages-and-redirection-links",
 					"guideline": "Setup necessary error pages and redirection links",
 					"subheading": "Use error and redirection handling on projects to reduce the impact of unnecessary journeys or unhelpful detours.",
@@ -4103,7 +4103,7 @@
 					"tags": ["Accessibility", "Compatibility", "Content", "Marketing", "Networking", "UI", "Usability"]
 				},
 				{
-					"id": "5",
+					"id": "avoid-maintaining-unnecessary-virtualized-environments-or-containers",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-maintaining-unnecessary-virtualized-environments-or-containers",
 					"guideline": "Avoid maintaining unnecessary virtualized environments or containers",
 					"subheading": "Reduce the number of unnecessary virtualized environments to save hardware utilization.",
@@ -4142,7 +4142,7 @@
 					"tags": ["AI", "Hardware", "Networking", "Performance", "Software"]
 				},
 				{
-					"id": "6",
+					"id": "use-automation-wisely",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-automation-wisely",
 					"guideline": "Use automation wisely",
 					"subheading": "Automate recurring tasks only where this saves resources, such as scaling services to reduce consumption or handling suspicious activity.",
@@ -4260,7 +4260,7 @@
 					"tags": ["Accessibility", "AI", "Performance", "Security", "Software"]
 				},
 				{
-					"id": "7",
+					"id": "define-the-frequency-of-data-refreshes",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#define-the-frequency-of-data-refreshes",
 					"guideline": "Define the frequency of data refreshes",
 					"subheading": "Decide when to refresh data based on a balance of user and sustainability considerations.",
@@ -4301,7 +4301,7 @@
 					"tags": ["JavaScript", "Networking", "Performance", "Usability"]
 				},
 				{
-					"id": "8",
+					"id": "back-up-critical-data-at-routine-intervals",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#back-up-critical-data-at-routine-intervals",
 					"guideline": "Back up critical data at routine intervals",
 					"subheading": "Back up data at regular intervals to ensure that there are failsafes that can be relied upon should an issue occur.",
@@ -4347,7 +4347,7 @@
 					"tags": ["Hardware", "Performance", "Security"]
 				},
 				{
-					"id": "9",
+					"id": "consider-the-impact-and-requirements-of-data-processing",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#consider-the-impact-and-requirements-of-data-processing",
 					"guideline": "Consider the impact and requirements of data processing",
 					"subheading": "Account for the energy involved in data processing, considering factors such as the protocol used, whether it is processed client- or server-side, and the environment used.",
@@ -4447,7 +4447,7 @@
 					"tags": ["AI", "JavaScript", "Networking", "Performance"]
 				},
 				{
-					"id": "10",
+					"id": "use-content-delivery-networks-cdns-appropriately",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately",
 					"guideline": "Use Content Delivery Networks (CDNs) appropriately",
 					"subheading": "Use CDNs where they bring a sustainability benefit, ensuring the provider itself is sustainable, has nodes local to an audience, and they are only used to serve static resources on them.",
@@ -4622,7 +4622,7 @@
 					"tags": ["Accessibility", "AI", "Content", "Hardware", "Networking", "Performance"]
 				},
 				{
-					"id": "11",
+					"id": "ensure-infrastructure-fits-project-requirements",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-infrastructure-fits-project-requirements",
 					"guideline": "Ensure infrastructure fits project requirements",
 					"subheading": "Maintain the infrastructure you require rather than over-provisioning. Autoscale to meet demand and preserve hardware resources.",
@@ -4667,7 +4667,7 @@
 					"tags": ["E-Waste", "Hardware", "Performance"]
 				},
 				{
-					"id": "12",
+					"id": "store-data-according-to-the-needs-of-your-users",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users",
 					"guideline": "Store data according to the needs of your users",
 					"subheading": "Set expiration dates on data so it can be archived, made available offline, or removed when no longer used or required, with the remaining content tagged for future management.",
@@ -4791,7 +4791,7 @@
 			"shortName": "Business and Product",
 			"guidelines": [
 				{
-					"id": "1",
+					"id": "have-an-ethical-and-sustainable-product-strategy",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy",
 					"guideline": "Have an ethical and sustainable product strategy",
 					"subheading": "Implement organizational practices around ethics, sustainability, and responsible data use. Publish and maintain policies that demonstrate their implementation.",
@@ -4926,7 +4926,7 @@
 					"tags": ["Accessibility", "AI", "Education", "Ideation", "KPIs", "Privacy", "Research", "Security", "Social Equity", "Strategy"]
 				},
 				{
-					"id": "2",
+					"id": "assign-a-sustainability-advocate",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#assign-a-sustainability-advocate",
 					"guideline": "Assign a sustainability advocate",
 					"subheading": "Appoint a sustainability advocate who is provided with what they require to speak about and for issues relating to sustainability.",
@@ -4968,7 +4968,7 @@
 					"tags": ["Accessibility", "Education", "Ideation", "Marketing", "Privacy", "Social Equity"]
 				},
 				{
-					"id": "3",
+					"id": "inform-raise-awareness-and-train-for-sustainability",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#inform-raise-awareness-and-train-for-sustainability",
 					"guideline": "Inform, raise awareness, and train for sustainability",
 					"subheading": "Drive sustainability awareness both externally and internally with active encouragement and routine training and materials offered where necessary.",
@@ -5108,7 +5108,7 @@
 					"tags": ["Content", "Education", "Marketing", "Reporting"]
 				},
 				{
-					"id": "4",
+					"id": "communicate-the-environmental-impact-of-user-choices",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#communicate-the-environmental-impact-of-user-choices",
 					"guideline": "Communicate the environmental impact of user choices",
 					"subheading": "Empower users, allowing them to make decisions when their choices can influence the environmental impact they have.",
@@ -5150,7 +5150,7 @@
 					"tags": ["Content", "Education", "Marketing", "Reporting"]
 				},
 				{
-					"id": "5",
+					"id": "calculate-the-environmental-impact",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#calculate-the-environmental-impact",
 					"guideline": "Calculate the environmental impact",
 					"subheading": "Calculate the environmental impact of the project and any tooling you use, and even that of a competitor, where possible, as this may be useful for comparison.",
@@ -5255,7 +5255,7 @@
 					"tags": ["Accessibility", "AI", "Ideation", "KPIs", "Research", "Social Equity", "Software", "Strategy"]
 				},
 				{
-					"id": "6",
+					"id": "define-clear-organizational-sustainability-goals-and-metrics",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#define-clear-organizational-sustainability-goals-and-metrics",
 					"guideline": "Define clear organizational sustainability goals and metrics",
 					"subheading": "Publish a set of sustainability goals that can be used to track progress over a period of time.",
@@ -5306,7 +5306,7 @@
 					"tags": ["AI", "Governance", "Ideation", "KPIs", "Research", "Social Equity"]
 				},
 				{
-					"id": "7",
+					"id": "validate-efforts-using-established-third-party-certifications",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#validate-efforts-using-established-third-party-certifications",
 					"guideline": "Validate efforts using established third-party certifications",
 					"subheading": "Obtain and maintain third-party certifications to externally validate progress toward sustainability goals.",
@@ -5360,7 +5360,7 @@
 					"tags": ["Governance", "KPIs"]
 				},
 				{
-					"id": "8",
+					"id": "support-mandatory-disclosures-and-reporting",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#support-mandatory-disclosures-and-reporting",
 					"guideline": "Support mandatory disclosures and reporting",
 					"subheading": "Create policies and documents showing evidence of commitment towards impact progress, how this is achieved, and any applicable regulations you are meeting.",
@@ -5456,7 +5456,7 @@
 					"tags": ["AI", "Content", "KPIs", "Reporting"]
 				},
 				{
-					"id": "9",
+					"id": "create-one-or-more-impact-business-models",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#create-one-or-more-impact-business-models",
 					"guideline": "Create one or more impact business models",
 					"subheading": "Produce a document that shows how the organisation is taking steps to become as resilient as possible.",
@@ -5503,7 +5503,7 @@
 					"tags": ["Content", "Ideation", "Research", "Strategy"]
 				},
 				{
-					"id": "10",
+					"id": "follow-a-product-management-and-maintenance-strategy",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#follow-a-product-management-and-maintenance-strategy",
 					"guideline": "Follow a product management and maintenance strategy",
 					"subheading": "Explain through documentation how projects will be maintained, managed, resourced, and note issues while tracking measurements over time.",
@@ -5623,7 +5623,7 @@
 					"tags": ["Accessibility", "Compatibility", "Security", "Strategy"]
 				},
 				{
-					"id": "11",
+					"id": "implement-continuous-improvement-procedures",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures",
 					"guideline": "Implement continuous improvement procedures",
 					"subheading": "Continuously improve projects through regular reviews and iteration, integrating technical debt and security management, determining if new or existing functionality is required.",
@@ -5778,7 +5778,7 @@
 					"tags": ["Accessibility", "AI", "Compatibility", "KPIs", "Performance", "Privacy", "Security", "Strategy", "UI"]
 				},
 				{
-					"id": "12",
+					"id": "document-future-updates-and-evolutions",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#document-future-updates-and-evolutions",
 					"guideline": "Document future updates and evolutions",
 					"subheading": "Provide documentation to help users find their way whenever functionality changes.",
@@ -5821,7 +5821,7 @@
 					"tags": ["Compatibility", "Content", "Education", "Security", "Usability"]
 				},
 				{
-					"id": "13",
+					"id": "establish-if-a-digital-product-or-service-is-necessary",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#establish-if-a-digital-product-or-service-is-necessary",
 					"guideline": "Establish if a digital product or service is necessary",
 					"subheading": "Determine whether a project is necessary, eliminating obstacles for users, and aligning with SDGs and sustainability principles.",
@@ -5890,7 +5890,7 @@
 					"tags": ["Accessibility", "AI", "E-Waste", "Ideation", "Reporting", "Software"]
 				},
 				{
-					"id": "14",
+					"id": "provide-a-supplier-standards-of-practice-document",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#provide-a-supplier-standards-of-practice-document",
 					"guideline": "Provide a supplier standards of practice document",
 					"subheading": "Vet suppliers before onboarding, then collaborate to promote and encourage better sustainability practices.",
@@ -5973,7 +5973,7 @@
 					"tags": ["AI", "Content", "Governance", "Hardware", "Ideation", "Social Equity"]
 				},
 				{
-					"id": "15",
+					"id": "share-economic-benefits",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#share-economic-benefits",
 					"guideline": "Share economic benefits",
 					"subheading": "Share benefits associated with being sustainably resilient with workers, incentivizing efforts, and advocating for those involved to meet sustainability goals.",
@@ -6047,7 +6047,7 @@
 					"tags": ["Governance", "Social Equity"]
 				},
 				{
-					"id": "16",
+					"id": "share-decision-making-power-with-affected-parties",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#share-decision-making-power-with-affected-parties",
 					"guideline": "Share decision-making power with affected parties",
 					"subheading": "Ensure that all affected parties have the opportunity to get involved in helping the organisation become more sustainable.",
@@ -6093,7 +6093,7 @@
 					"tags": ["Accessibility", "Ideation", "Social Equity", "Strategy"]
 				},
 				{
-					"id": "17",
+					"id": "use-justice-equity-diversity-inclusion-jedi-practices",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-justice-equity-diversity-inclusion-jedi-practices",
 					"guideline": "Use Justice, Equity, Diversity, Inclusion (JEDI) practices",
 					"subheading": "Implement JEDI practices to foster inclusive hiring practices within an organization, showing evidence of improvement over time.",
@@ -6197,7 +6197,7 @@
 					"tags": ["Accessibility", "Ideation", "Social Equity", "Strategy"]
 				},
 				{
-					"id": "18",
+					"id": "promote-responsible-data-practices",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices",
 					"guideline": "Promote responsible data practices",
 					"subheading": "Provide publicly accessible versions of documents required by law in a sustainable, easy-to-consume format, while also observing ethical data retention practices.",
@@ -6265,7 +6265,7 @@
 					"tags": ["AI", "Content", "Governance", "Privacy", "Social Equity"]
 				},
 				{
-					"id": "19",
+					"id": "implement-appropriate-data-management-procedures",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures",
 					"guideline": "Implement appropriate data management procedures",
 					"subheading": "Allow users to manage, control, and delete their data upon request, while making outdated content searchable via a lightweight and simple archive.",
@@ -6336,7 +6336,7 @@
 					"tags": ["Privacy", "Security", "Social Equity", "Strategy"]
 				},
 				{
-					"id": "20",
+					"id": "establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies",
 					"guideline": "Establish responsible practices around AI and emerging or disruptive technologies",
 					"subheading": "Ensure responsible use of automated systems by only using ethically sourced and suitably sized data, managing environmental impacts, supporting workforce adaptation, respecting user agent controls, and using post-quantum encryption only where justified.",
@@ -6549,7 +6549,7 @@
 					"tags": ["Accessibility", "AI", "Content", "E-Waste", "Governance", "Hardware", "Networking", "Performance", "Privacy", "Security", "Social Equity", "Software"]
 				},
 				{
-					"id": "21",
+					"id": "include-responsible-financial-policies",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#include-responsible-financial-policies",
 					"guideline": "Include responsible financial policies",
 					"subheading": "Ensure that a project is suitably budgeted for and funded through sustainable and ethical sources.",
@@ -6612,7 +6612,7 @@
 					"tags": ["Governance", "Ideation", "Social Equity"]
 				},
 				{
-					"id": "22",
+					"id": "include-organizational-philanthropy-policies",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#include-organizational-philanthropy-policies",
 					"guideline": "Include organizational philanthropy policies",
 					"subheading": "Provide the opportunity to give back to the community through charitable or volunteer efforts via your organisation.",
@@ -6673,7 +6673,7 @@
 					"tags": ["Content", "Governance", "Social Equity"]
 				},
 				{
-					"id": "23",
+					"id": "plan-for-a-digital-product-or-service-s-care-and-end-of-life",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#plan-for-a-digital-product-or-service-s-care-and-end-of-life",
 					"guideline": "Plan for a digital product or service's care and end-of-life",
 					"subheading": "Produce documentation to ensure that when a project is shut down, users are made aware of what will happen to their data.",
@@ -6719,7 +6719,7 @@
 					"tags": ["Compatibility", "E-Waste", "Privacy", "Research", "Security", "Social Equity", "Software", "Strategy"]
 				},
 				{
-					"id": "24",
+					"id": "include-e-waste-right-to-repair-and-recycling-policies",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#include-e-waste-right-to-repair-and-recycling-policies",
 					"guideline": "Include e-waste, right to repair, and recycling policies",
 					"subheading": "Include policies and documentation explaining how sustainable e-waste, recycling, repairing, and refurbishment are handled.",
@@ -6844,7 +6844,7 @@
 					"tags": ["Content", "E-Waste", "Governance", "Hardware", "Ideation", "Social Equity"]
 				},
 				{
-					"id": "25",
+					"id": "define-performance-and-environmental-budgets",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-and-environmental-budgets",
 					"guideline": "Define performance and environmental budgets",
 					"subheading": "Set budgets, taking people, planet, and performance into account alongside baselines, targets, evidence, and resources to help meet KPIs.",
@@ -6950,7 +6950,7 @@
 					"tags": ["Accessibility", "Ideation", "KPIs", "Performance", "Research", "Usability"]
 				},
 				{
-					"id": "26",
+					"id": "use-open-source-where-possible",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-open-source-where-possible",
 					"guideline": "Use open source where possible",
 					"subheading": "Produce a policy around open collaboration and contribution to creating and sustaining open source projects.",
@@ -7048,7 +7048,7 @@
 					"tags": ["Accessibility", "Assets", "Ideation", "Social Equity", "Software", "UI"]
 				},
 				{
-					"id": "27",
+					"id": "create-a-business-continuity-and-disaster-recovery-plan",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#create-a-business-continuity-and-disaster-recovery-plan",
 					"guideline": "Create a business continuity and disaster recovery plan",
 					"subheading": "Create a plan of action with a system to recover from failure or alert users if or when a loss of service occurs.",
