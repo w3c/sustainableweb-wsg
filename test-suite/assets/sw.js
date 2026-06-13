@@ -8,7 +8,7 @@ self.addEventListener('install', event => {
   event.waitUntil(
     addResourcesToCache([
       "/",
-      "../offline-access.html"
+      "../index.html"
     ])
   );
 });
