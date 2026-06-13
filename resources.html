@@ -1323,6 +1323,17 @@
 			postProcess: [authorRef, editorRef],
 		}
 		</script>
+		<script>
+			/* URL Fragment Details Opener */
+			function openDetails() {
+				const id = location.hash.slice(1);
+				const target = document.getElementById(id);
+				if (!target) return;
+				const details = target.closest("details");
+				if (details) { details.open = true; } }
+				window.addEventListener("DOMContentLoaded", openDetails);
+				window.addEventListener("hashchange", openDetails);
+		</script>
 	</head>
 	<!-- <span class="tag">Policy / Standard / Guidelines / Research / Case Study / Course / Article / Tool</span> -->
 	<body>
