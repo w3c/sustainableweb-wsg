@@ -1690,33 +1690,6 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- Provide a PWA if more suitable than its native counterpart -->
-						<summary id="progressive-web-applications-pwas">Provide a <abbr title="Progressive Web Application">PWA</abbr> if more suitable than its native counterpart</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support">Cross-platform compatibility support</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Identify a web application that exists and then determine if turning the web application into a progressive web application would be more beneficial than providing a native offering. This would need to take into account current web capabilities (such as ServiceWorkers), methods of delivery (such as <abbr title="Web Assembly">WASM</abbr>), and the human aspect (audience requirements).</p>
-						<p>Machine testability can firstly examine the existing state of an application to determine how sustainable it is and what technology stack was used to develop it (and how sustainable it already performs for all), from there, data points can be used to identify an approximate cost of implementation for both a native or highly optimized web application endpoint and options can be provided.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>Native applications may be a good choice if applications require specific access to hardware as web APIs can still be quite restrictive. In addition, there is a case for going native to provide a more <abbr title="Operating System">OS</abbr>-centric look and feel.</li>
-							<li>Web applications are often quicker and easier to deploy and can provide updates without delays in the pipeline (as they do not have to go through store controls), they can also benefit from lower creation costs.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check if the existing application already utilizes a ServiceWorker.</li>
-							<li>If so, check the PWA JavaScript and JSON are well formed, and the icon exists.</li>
-							<li>If not calculate the sustainability impact of becoming a PWA.</li>
-							<li>Check that no native application already exists (<a href="https://developer.apple.com/documentation/webkit/promoting-apps-with-smart-app-banners">meta tag smart banner</a>).</li>
-							<li>If so use that, otherwise calculate the sustainability impact of building an application.</li>
-							<li>If cost-efficient sustainability-wise, implement a PWA or/and a native application.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
 				</div>
 			</section>
 			<section> <!-- Web Development -->
