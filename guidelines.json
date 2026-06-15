@@ -1112,11 +1112,11 @@
 					"id": "ensure-animation-is-proportionate-and-easy-to-control",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-animation-is-proportionate-and-easy-to-control",
 					"guideline": "Ensure animation is proportionate and easy to control",
-					"subheading": "Ensure any animation deemed necessary is not overdone and that the user can control its ability to run.",
+					"subheading": "Use animation sparingly and efficiently to support understanding, while limiting performance impact and giving users control over motion.",
 					"criteria": [
 						{
 							"title": "Need for animation",
-							"description": "Use animation only when it adds value and not for decorative elements.",
+							"description": "Use animation only when it supports the user experience or helps users understand content or actions.",
 							"resources": [
 								{
 									"Climate Change Implications of Gaming Products and Services (PDF)": "https://openresearch.surrey.ac.uk/discovery/delivery/44SUR_INST:ResearchRepository/99512335802346#13140594990002346",
@@ -1132,7 +1132,7 @@
 						},
 						{
 							"title": "Avoiding overburdening",
-							"description": "Progressively display an appropriate number of animations to avoid overburdening the user or negatively impacting device performance. This includes setting a maximum number of replays or iterations.",
+							"description": "Limit the number and frequency of animations to reduce distraction, lower resource use, and avoid affecting device performance. Set a maximum number of replays or iterations.",
 							"resources": [
 								{
 									"Equations relating total annual energy consumption and chips energy efficiency": "https://www.researchgate.net/publication/371938289_Equations_relating_total_annual_energy_consumption_and_chips_energy_efficiency",
@@ -1148,7 +1148,7 @@
 						},
 						{
 							"title": "Control animation",
-							"description": "Allow users to start, stop, pause, or otherwise control animated content.",
+							"description": "Let users start, pause, stop, or control animated and moving content.",
 							"resources": [
 								{
 									"Accessible Web Animation": "https://css-tricks.com/accessible-web-animation-the-wcag-on-animation-explained/",
@@ -1161,6 +1161,21 @@
 									"Let users pause/stop/hide animation": "https://marcom.wwu.edu/accessibility/guide/pause-stop-hide-animation",
 									"prefers-reduced-motion: Sometimes less movement is more": "https://web.dev/articles/prefers-reduced-motion?hl=en",
 									"Respecting Users' Motion Preferences": "https://www.smashingmagazine.com/2021/10/respecting-users-motion-preferences/"
+								}
+							]
+						},
+						{
+							"title": "Efficient animation",
+							"description": "Keep interactive and animated content as lightweight as possible. Reduce rendering cost by accounting for formats, lengths, complexity, dimensions, quality, tooling, and implementation approach. Where multiple approaches are available, choose browser- or platform-native animation capabilities and minimize main-thread or layout-intensive work.",
+							"resources": [
+								{
+									"Animation performance and frame rate": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Animation_performance_and_frame_rate",
+									"CSS and JavaScript animation performance": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/CSS_JavaScript_animation_performance",
+									"CSS vs. JavaScript": "https://www.joshwcomeau.com/animation/css-vs-javascript/",
+									"How to create high-performance CSS animations": "https://web.dev/articles/animations-guide",
+									"Optimizing Performance in CSS Animations: What to Avoid and How to Improve It": "https://dev.to/nasehbadalov/optimizing-performance-in-css-animations-what-to-avoid-and-how-to-improve-it-bfa",
+									"The Web Animation Performance Tier List": "https://motion.dev/magazine/web-animation-performance-tier-list",
+									"Why are some animations slow?": "https://web.dev/articles/animations-overview"
 								}
 							]
 						}
