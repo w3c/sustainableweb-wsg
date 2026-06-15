@@ -1180,23 +1180,24 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use optimized and appropriate web typography -->
-				<h3>Use optimized and appropriate web typography</h3>
-				<p class="subheading">Provide custom fonts in the most suitable file format, but with a preference for pre-installed typefaces where possible.</p>
+			<section> <!-- Use optimized web typography -->
+				<h3>Use optimized web typography</h3>
+				<p class="subheading">Use font strategies that minimize downloads and complexity while supporting required languages and dynamic content.</p>
 				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GR491, GreenIT" data-considerations="Accessibility" data-categories="CSS, Performance, UI, Usability">
 					<h4 id="pre-installed-typefaces">Success Criterion: Pre-installed typefaces</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#pre-installed-typefaces">Resources</a></p>
-					<p>Use pre-installed fonts, such as system fonts, wherever possible, to reduce the reliance on user-installed or web fonts.</p>
+					<p>Use system fonts or other pre-installed fonts to reduce font downloads and improve performance.</p>
 				</section>
 				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF, GR491" data-considerations="" data-categories="CSS, Performance, UI, Usability">
 					<h4 id="web-font-optimization">Success Criterion: Web font optimization</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#web-font-optimization">Resources</a></p>
-					<p>Limit the number and complexity of fonts downloaded. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.</p>
+					<p>Limit the number and complexity of downloaded fonts. When using variable fonts, restrict supported axes and ranges to only those required by the project to reduce file size. Use the most performant font formats available and provide suitable fallback fonts to maintain readability and performance during font loading or when custom fonts cannot be loaded.
+					</p>
 				</section>
 				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="GPF" data-considerations="" data-categories="CSS, Performance, UI, Usability">
 					<h4 id="web-font-subsetting">Success Criterion: Web font subsetting</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#web-font-subsetting">Resources</a></p>
-					<p>Design or subset fonts to omit unnecessary or unused stylistic variations, such as font weight or italics. Design or subset web fonts based on explicitly supported languages and Unicode scripts rather than assumed defaults. Where you are in full control of all input and output, fonts can be subset to include only the relevant Unicode range or character set. In all other instances - particularly where content is user-generated or affected by dynamic input and output - provide full script coverage and use a solution such as Incremental Font Transfer (<abbr title="Incremental Font Transfer">IFT</abbr>) to load the required segments of the font on demand.</p>
+					<p>Remove unused font styles, weights, and character sets. Subset fonts based on explicitly supported languages, scripts, and Unicode ranges required by the project. Where you have full control over all input and output, subset fonts to include only the relevant Unicode ranges or character sets. In cases involving dynamic content or user-generated input, provide broader script coverage and use Incremental Font Transfer (<abbr title="Incremental Font Transfer">IFT</abbr>) to load required font segments on demand.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>

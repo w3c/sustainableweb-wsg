@@ -167,10 +167,10 @@
 					<p><strong>GRI:</strong> High (Materials) / High (Energy) / High (Water) / High (Emissions)</p>
 				</fieldset>
 				<fieldset>
-					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography">Use optimized and appropriate web typography</a></legend>
-					<label><input type="checkbox"><span>Use pre-installed fonts, such as system fonts, wherever possible, to reduce the reliance on user-installed or web fonts.</span></label>
-					<label><input type="checkbox"><span>Limit the number and complexity of fonts downloaded. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.</span></label>
-					<label><input type="checkbox"><span>Design or subset fonts to omit unnecessary or unused stylistic variations, such as font weight or italics. Design or subset web fonts based on explicitly supported languages and Unicode scripts rather than assumed defaults. Where you are in full control of all input and output, fonts can be subset to include only the relevant Unicode range or character set. In all other instances - particularly where content is user-generated or affected by dynamic input and output - provide full script coverage and use a solution such as Incremental Font Transfer (<abbr title="Incremental Font Transfer">IFT</abbr>) to load the required segments of the font on demand.</span></label>
+					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography">Use optimized web typography</a></legend>
+					<label><input type="checkbox"><span>Use system fonts or other pre-installed fonts to reduce font downloads and improve performance.</span></label>
+					<label><input type="checkbox"><span>Limit the number and complexity of downloaded fonts. When using variable fonts, restrict supported axes and ranges to only those required by the project to reduce file size. Use the most performant font formats available and provide suitable fallback fonts to maintain readability and performance during font loading or when custom fonts cannot be loaded.</span></label>
+					<label><input type="checkbox"><span>Remove unused font styles, weights, and character sets. Subset fonts based on explicitly supported languages, scripts, and Unicode ranges required by the project. Where you have full control over all input and output, subset fonts to include only the relevant Unicode ranges or character sets. In cases involving dynamic content or user-generated input, provide broader script coverage and use Incremental Font Transfer (<abbr title="Incremental Font Transfer">IFT</abbr>) to load required font segments on demand.</span></label>
 					<p><strong>GRI:</strong> Medium (Materials) / Medium (Energy) / Medium (Water) / Medium (Emissions)</p>
 				</fieldset>
 				<fieldset>

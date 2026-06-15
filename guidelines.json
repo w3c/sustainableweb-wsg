@@ -1184,14 +1184,14 @@
 					"tags": ["Accessibility", "CSS", "JavaScript", "Performance", "UI", "Usability"]
 				},
 				{
-					"id": "use-optimized-and-appropriate-web-typography",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography",
-					"guideline": "Use optimized and appropriate web typography",
-					"subheading": "Provide custom fonts in the most suitable file format, but with a preference for pre-installed typefaces where possible.",
+					"id": "use-optimized-web-typography",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography",
+					"guideline": "Use optimized web typography",
+					"subheading": "Use font strategies that minimize downloads and complexity while supporting required languages and dynamic content.",
 					"criteria": [
 						{
 							"title": "Pre-installed typefaces",
-							"description": "Use pre-installed fonts, such as system fonts, wherever possible, to reduce the reliance on user-installed or web fonts.",
+							"description": "Use system fonts or other pre-installed fonts to reduce font downloads and improve performance.",
 							"resources": [
 								{
 									"Apple System Fonts": "https://developer.apple.com/fonts/system-fonts/",
@@ -1216,7 +1216,7 @@
 						},
 						{
 							"title": "Web font optimization",
-							"description": "Limit the number and complexity of fonts downloaded. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.",
+							"description": "Limit the number and complexity of downloaded fonts. When using variable fonts, restrict supported axes and ranges to only those required by the project to reduce file size. Use the most performant font formats available and provide suitable fallback fonts to maintain readability and performance during font loading or when custom fonts cannot be loaded.",
 							"resources": [
 								{
 									"A Guide to Understanding What Makes a Typeface Accessible": "https://medium.com/the-readability-group/a-guide-to-understanding-what-makes-a-typeface-accessible-and-how-to-make-informed-decisions-9e5c0b9040a0",
@@ -1237,7 +1237,7 @@
 						},
 						{
 							"title": "Web font subsetting",
-							"description": "Design or subset fonts to omit unnecessary or unused stylistic variations, such as font weight or italics. Design or subset web fonts based on explicitly supported languages and Unicode scripts rather than assumed defaults. Where you are in full control of all input and output, fonts can be subset to include only the relevant Unicode range or character set. In all other instances - particularly where content is user-generated or affected by dynamic input and output - provide full script coverage and use a solution such as Incremental Font Transfer (IFT) to load the required segments of the font on demand.",
+							"description": "Remove unused font styles, weights, and character sets. Subset fonts based on explicitly supported languages, scripts, and Unicode ranges required by the project. Where you have full control over all input and output, subset fonts to include only the relevant Unicode ranges or character sets. In cases involving dynamic content or user-generated input, provide broader script coverage and use Incremental Font Transfer (IFT) to load required font segments on demand.",
 							"resources": [
 								{
 									"Best practices for fonts": "https://web.dev/articles/font-best-practices?hl=en",

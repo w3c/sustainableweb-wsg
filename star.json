@@ -991,7 +991,7 @@
 				{
 					"id": "pre-installed-typefaces",
 					"title": "Provide accessible mechanisms around symbols in system fonts",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use optimized and appropriate web typography](https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use optimized web typography](https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography).",
 					"description": [
 						{
 							"1": "Avoid rendering issues surrounding emojis and symbol typefaces based on the operating system an individual may be using or the localization of their device. This can inherently cause accessibility issues which can reduce readability as well as the aforementioned visual glitches that can potentially have an impact on system hardware.",
@@ -1019,7 +1019,7 @@
 				{
 					"id": "web-font-optimization",
 					"title": "Use modern, efficient custom typefaces within a set limit",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use optimized and appropriate web typography](https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use optimized web typography](https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography).",
 					"description": [
 						{
 							"1": "Optimize a typeface to ensure that when custom fonts are provided, they are implemented as sustainably as possible requiring the fewest amount of resources to download and render as possible. By placing restrictions on the number of custom typefaces and using a highly optimized format (hopefully subsetted), you will have a highly compressed file.",
