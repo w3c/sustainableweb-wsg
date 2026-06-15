@@ -707,68 +707,6 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/design-system.html"
 				},
 				{
-					"id": "clear-content",
-					"title": "Increase the readability of content using common metrics",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Provide clear, inclusive content with purpose](https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose).",
-					"description": [
-						{
-							"1": "Make the content within your website or application more legible to individuals who may struggle with more technical language. Techniques such as lowering the reading age, removing industry terms (or clearly defining them), and having translations for international audiences can help get your message across.",
-							"2": "This technique is most useful when dealing with a large body of content that the user has to wade through to complete a task. Being able to reduce screen time by improving the ease at which users can comprehend a topic will ultimately allow for an experience that feels faster and discriminates less against individuals who may struggle with highly technical content."
-						}
-					],
-					"examples": [
-						{
-							"1": "[Transport for London](https://tfl.gov.uk/info-for/suppliers-and-contractors/digital-design-toolkit/using-plain-english) has an editorial style guide that sets out to use plain English throughout their website. The guide itself serves as a useful tool that others could adapt (including the terms in machine testability).",
-							"2": "There are lots of technical terms used in (for example) the web industry, Jens Oliver Meiert has created the [Web Glossary](https://webglossary.info/) as a dictionary of terminology which can help clarify confusing terminology.",
-							"3": "[Readability Formulas](https://readabilityformulas.com/readability-scoring-system.php) have an assessment tool that can use one of several different models to identify issues with content. As there is no agreed-upon assessment model, this can be particularly helpful."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check against a list of terms for the use of plain English.",
-									"2": "Check that terminology is inclusive and non-discriminatory.",
-									"3": "Check that technical terms are identified and well-defined.",
-									"4": "Check that the content has an appropriate reading age.",
-									"5": "Check for internationalization within content, HTML, and CSS."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/clear-content.html"
-				},
-				{
-					"id": "content-formatting",
-					"title": "Break long-form content down into a simpler structure",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Provide clear, inclusive content with purpose](https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose).",
-					"description": [
-						{
-							"1": "Avoid users being hit with a wall of text which risks abandonment of the page (and a wasted session with emissions attached). By taking large pieces of information and structuring them into more clean smaller chunks and utilizing a range of more friendlier features when appropriate such as lists and tables, the information will look less intimidating.",
-							"2": "For machine testability, identifying clear headings, visual hierarchy, spacing, line breaks, lists, use of images, and other features of HTML can help calculate the relative density of the content and whether it could be better presented not just for readers but to (if used with progressive disclosure) reduce the initial impact on rendering engines which can have a sustainable impact on hardware."
-						}
-					],
-					"examples": [
-						{
-							"1": "This article from [Nielson Norman Group](https://www.nngroup.com/articles/formatting-long-form-content/) provides some great examples and ideas around the subject of dealing with long-form content on the web, each of which can be both implemented and tested against."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that the heading hierarchy structure is correct (H1 > H6).",
-									"2": "Check that paragraphs do not exceed a set word length.",
-									"3": "Check the spacing between elements is not too crowded."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/content-formatting.html"
-				},
-				{
 					"id": "need-for-media",
 					"title": "Remove any functionality that may trigger auto-playing animation",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Optimize media to reduce resource use](https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use).",
