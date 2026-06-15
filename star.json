@@ -1563,12 +1563,12 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compliant-measurement.html"
 				},
 				{
-					"id": "compatibility-policy",
-					"title": "Provide a publicly visible compatibility policy or statement",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
+					"id": "compatibility-documentation",
+					"title": "Provide a publicly visible Compatibility documentation or statement",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Cross-platform compatibility support](https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support).",
 					"description": [
 						{
-							"1": "Ensure that users are made aware of (or able to find out) the limitations of a product or service before issuing a support request that will involve creating new emission sources. This compatibility policy can be listed amongst other policies on a website, however, it must contain detailed information about any factor that may have reduced capability.",
+							"1": "Ensure that users are made aware of (or able to find out) the limitations of a product or service before issuing a support request that will involve creating new emission sources. This Compatibility documentation can be listed amongst other policies on a website, however, it must contain detailed information about any factor that may have reduced capability.",
 							"2": "For machine testability, attempt to first establish that the policy exists and then try using heuristics (or identification of the headlines) to locate sections on what is both actively supported (those conditions tested upon), and those that are confirmed as unsupported (those conditions known to be broken but will not be fixed with reasons given). Ensure that a support method is also provided."
 						}
 					],
@@ -1581,7 +1581,7 @@
 						{
 							"procedure": [
 								{
-									"1": "Check for a compatibility policy or statement's existence.",
+									"1": "Check for a Compatibility documentation or statement's existence.",
 									"2": "Check for sections on included and excluded coverage.",
 									"3": "Check that a support method is offered for issues outside of scope."
 								}
@@ -1589,12 +1589,12 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-policy.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-documentation.html"
 				},
 				{
 					"id": "maintaining-compatibility",
 					"title": "Provide clarification when updates are significant over minor releases",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Cross-platform compatibility support](https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support).",
 					"description": [
 						{
 							"1": "Provide a mechanism for introducing users to new features and capabilities within websites and applications upon a major release being triggered. This would include compatibility changes, any alterations that affect workflow, and bugs that have been resolved. It applies equally to both applications on upgrade paths and website redesigns.",
@@ -1623,7 +1623,7 @@
 				{
 					"id": "user-constraints",
 					"title": "Establish compatibility testing routines with each new release",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Cross-platform compatibility support](https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support).",
 					"description": [
 						{
 							"1": "Ensure that compatibility issues resulting from user constraints (such as operating system or browser age/connection speed, availability, or cost) are factored into the testing process at each new release. Creators must have processes in place whether through checklists that are pre-created or crafted from scratch to ensure that a regime is in place. Other contingencies exist (such as geo-blocking or mobile data costs) and these can also be taken into account if detection is possible.",
@@ -1657,7 +1657,7 @@
 				{
 					"id": "progressive-web-applications-pwas",
 					"title": "Provide a PWA if more suitable than its native counterpart",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Cross-platform compatibility support](https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support).",
 					"description": [
 						{
 							"1": "Identify a web application that exists and then determine if turning the web application into a progressive web application would be more beneficial than providing a native offering. This would need to take into account current web capabilities (such as ServiceWorkers), methods of delivery (such as WASM), and the human aspect (audience requirements).",
