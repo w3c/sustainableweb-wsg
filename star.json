@@ -425,7 +425,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/respect-user-attention.html"
 				},
 				{
-					"id": "minimize-distraction",
+					"id": "distraction-free-design",
 					"title": "Encourage features that help users achieve tasks",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Design to assist and not to distract](https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract).",
 					"description": [
@@ -454,10 +454,10 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/minimize-distraction.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html"
 				},
 				{
-					"id": "reduce-engagement-traps",
+					"id": "remove-engagement-traps",
 					"title": "Avoid mechanisms that promote excessive screen time",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Design to assist and not to distract](https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract).",
 					"description": [
@@ -483,7 +483,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/reduce-engagement-traps.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/remove-engagement-traps.html"
 				},
 				{
 					"id": "deceptive-design-patterns",
