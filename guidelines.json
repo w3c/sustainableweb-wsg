@@ -1789,14 +1789,14 @@
 					"tags": ["Accessibility", "Compatibility", "KPIs", "Performance", "Privacy", "Reporting", "Research", "Security", "Social Equity", "Software", "Strategy", "UI", "Usability"]
 				},
 				{
-					"id": "verify-that-real-world-users-can-successfully-use-your-work-upon-and-after-release",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#verify-that-real-world-users-can-successfully-use-your-work-upon-and-after-release",
-					"guideline": "Verify that real-world users can successfully use your work upon and after release",
-					"subheading": "Factor the ways people use the project into your decision making and evaluate how this can be optimized for the planet, people, and organisational prosperity.",
+					"id": "validate-usability-through-testing-and-real-world-usage",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#validate-usability-through-testing-and-real-world-usage",
+					"guideline": "Validate usability through testing and real-world usage",
+					"subheading": "Monitor user feedback and real usage to evaluate feature effectiveness, and use usability testing and user research to guide ongoing improvements.",
 					"criteria": [
 						{
 							"title": "Usage changes",
-							"description": "Monitor user feedback, adoption, and churn rates in relation to different features and incorporate these insights into future releases.",
+							"description": "Monitor user feedback, adoption, and churn for each feature. Use these insights to guide updates and future releases.",
 							"resources": [
 								{
 									"7 UX KPIs you should be measuring": "https://maze.co/collections/ux-management/kpis/",
@@ -1814,7 +1814,7 @@
 						},
 						{
 							"title": "Usability testing",
-							"description": "Incorporate extensive usability testing, real user metrics, and user interviews into product cycles and routinely measure the impact of these tests for future releases. Validate whether released features meet internal goals and audience needs.",
+							"description": "Use usability testing, real user metrics, and user interviews throughout product development. Measure the impact of findings and check whether released features meet user needs and internal goals.",
 							"resources": [
 								{
 									"A Complete Guide to Usability Testing": "https://www.uxmatters.com/mt/archives/2023/05/a-complete-guide-to-usability-testing.php",
