@@ -698,11 +698,11 @@
 					"id": "make-deliverables-understandable-and-reusable",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#make-deliverables-understandable-and-reusable",
 					"guideline": "Make deliverables understandable and reusable",
-					"subheading": "Create discoverable, well documented deliverables so that future users can find and make use of them without requiring assistance or expending unnecessary time and resources.",
+					"subheading": "Create discoverable, maintainable, and reusable documentation and code resources that support long-term understanding, reuse, and sustainability.",
 					"criteria": [
 						{
 							"title": "Deliverables reusability",
-							"description": "Create deliverables, including documentation, in ways that facilitate later reuse.",
+							"description": "Create documentation and other deliverables in reusable formats to reduce duplicated work and support long-term sustainability.",
 							"resources": [
 								{
 									"4 Ways to Make Your Code More Reusable": "https://medium.com/@lanceharvieruntime/4-ways-to-make-your-code-more-reusable-bc20889c1e4",
@@ -721,7 +721,7 @@
 						},
 						{
 							"title": "Deliverables documentation",
-							"description": "Document functionality and technical specifications by creating easy to understand resources.",
+							"description": "Document functionality and technical requirements in clear and easy-to-maintain resources. Keep documentation updated over time and provide guidance for replacing or retiring outdated information.",
 							"resources": [
 								{
 									"A guide to UX documentation": "https://blog.logrocket.com/ux-design/ux-documentation-guide-best-practices-template/",
@@ -756,7 +756,7 @@
 						},
 						{
 							"title": "Deliverables readability",
-							"description": "Developers have access to code comments and have the ability to view source to make it easier to access, understand, maintain, and use code.",
+							"description": "Provide developers with access to source code and code comments so they can easily understand, maintain, and reuse the code.",
 							"resources": [
 								{
 									"7 simple habits of the top 1% of engineers": "https://read.engineerscodex.com/p/7-simple-habits-of-the-top-1-of-engineers",
