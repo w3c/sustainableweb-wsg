@@ -448,7 +448,13 @@
 									"1": "Check for read it later compatibility within articles.",
 									"2": "Check for purchasable products and the option to quickly purchase (bonus points if no login is required).",
 									"3": "Check if the HTML head contains landmark links of relevance to be identified.",
-									"4": "Check for recognized landmark shortcuts (skip links, etc) and that they are functional."
+									"4": "Check for recognized landmark shortcuts (skip links, etc) and that they are functional.",
+									"5": "Check the page's content to ensure none is clipped by other materials or an overflow issue (with a scrollbar lacking).",
+									"6": "Check that all links and buttons are functioning.",
+									"7": "Check that progressive disclosing content only appears when requested and is compatible with user's browsers.",
+									"8": "Check that progressive disclosure is used appropriately with your content or tasks to perform.",
+									"9": "Check that CSS and JavaScript overlays, custom scrollbars and cursors, popup events, and new window opening triggers are not actioned without user consent.",
+									"10": "Check that decorative features, and interactive media, images, or animation can be disabled at the user's request."
 								}
 							],
 							"expectedResults": "All checks above are true."
