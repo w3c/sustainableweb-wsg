@@ -577,11 +577,11 @@
 					"id": "avoid-being-manipulative-or-deceptive",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive",
 					"guideline": "Avoid being manipulative or deceptive",
-					"subheading": "Avoid using patterns, content, tools, or techniques that may artificially manipulate or deceive the user.",
+					"subheading": "Avoid deceptive patterns, clearly label ads, respect consent for tracking, and ensure search, sharing, and discoverability practices prioritise user needs over optimisation or manipulation.",
 					"criteria": [
 						{
 							"title": "Deceptive design patterns",
-							"description": "Avoid deceptive design or unethical coding techniques that manipulate users into taking actions that are not in their best interest. Examples include anti-right click, copy prevention, requiring an account to purchase, etc.",
+							"description": "Avoid deceptive design patterns that pressure or mislead users. This includes practices such as bait and switch, hidden fees, or fake scarcity.",
 							"resources": [
 								{
 									"10 Common Dark Patterns in UX and How to Avoid Them": "https://www.netsolutions.com/insights/dark-patterns-in-ux-disadvantages/",
@@ -617,7 +617,7 @@
 						},
 						{
 							"title": "Advertisements",
-							"description": "Select, present, and label advertisements and sponsorships transparently and only implement where these provide economic value in an ethical way without diminishing user experience.",
+							"description": "Clearly label advertisements and sponsored content. Deliver advertising in a lightweight and minimally disruptive way while enabling users to control the experience.",
 							"resources": [
 								{
 									"Ad Net Zero announces global framework to measure media's carbon emissions": "https://adnetzero.com/news/ad-net-zero-announces-global-framework-to-measure-medias-carbon-emissions/",
@@ -638,7 +638,7 @@
 						},
 						{
 							"title": "Analytics and tracking",
-							"description": "Evaluate and remove unnecessary or unused analytics and tracking, especially any operating without user consent.",
+							"description": "Remove unnecessary analytics and tracking, and respect user consent over tracking analytics.",
 							"resources": [
 								{
 									"48 Cart Abandonment Rate Statistics 2023": "https://baymard.com/lists/cart-abandonment-rate",
@@ -655,7 +655,7 @@
 						},
 						{
 							"title": "Search Engine Optimization",
-							"description": "Focus on serving user intent through non-manipulative search and social media optimization. For example, do not misuse coding practices intended to support assistive technologies. This can include content with natural redundancy, or unhelpful or low-quality material designed only to manipulate search results.",
+							"description": "Optimize content for search and social sharing in ways that support user needs rather than manipulation. Do not misuse accessibility features, create low-quality content, or add unnecessary duplication only to influence search rankings.",
 							"resources": [
 								{
 									"Climate change SEO survey": "https://searchengineland.com/climate-change-seo-survey-making-web-more-sustainable-438209",
