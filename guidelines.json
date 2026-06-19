@@ -2165,11 +2165,11 @@
 					"id": "modularize-bandwidth-heavy-components",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#modularize-bandwidth-heavy-components",
 					"guideline": "Modularize bandwidth-heavy components",
-					"subheading": "Break down large components into smaller, self-contained pieces that can be requested only when required to save bandwidth.",
+					"subheading": "Split large components into smaller, on-demand modules to improve loading efficiency while balancing maintainability and caching performance.",
 					"criteria": [
 						{
 							"title": "Code splitting",
-							"description": "Break down bandwidth-heavy components into smaller, modular segments that can be loaded only when required. This applies to both front-end and back-end code.",
+							"description": "Split large or bandwidth-heavy components into smaller modules that load only when needed. Avoid excessive splitting, as it can increase overhead, reduce caching efficiency, and make code harder to maintain.",
 							"resources": [
 								{
 									"Bundling dependancies": "https://e18e.dev/blog/bundling-dependencies",
