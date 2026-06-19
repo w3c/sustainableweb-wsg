@@ -6844,14 +6844,14 @@
 					"tags": ["Content", "E-Waste", "Governance", "Hardware", "Ideation", "Social Equity"]
 				},
 				{
-					"id": "define-performance-and-environmental-budgets",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-and-environmental-budgets",
-					"guideline": "Define performance and environmental budgets",
-					"subheading": "Set budgets, taking people, planet, and performance into account alongside baselines, targets, evidence, and resources to help meet KPIs.",
+					"id": "define-performance-environmental-and-human-budgets",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-environmental-and-human-budgets",
+					"guideline": "Define performance, environmental, and human budgets",
+					"subheading": "Define and apply lifecycle sustainability and performance budgets, set evidence-based KPIs, and track measurable improvements over time.",
 					"criteria": [
 						{
 							"title": "Environmental budget",
-							"description": "Define and document clear digital sustainability budget criteria that covers impact from asset and resource creation to consumption. Communicate this to affected parties.",
+							"description": "Outline and document digital sustainability budget criteria covering the full lifecycle of products and services, including creation, usage, and decommissioning. Ensure these limits are actively applied and communicated to all affected parties.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -6867,7 +6867,7 @@
 						},
 						{
 							"title": "Performance budget",
-							"description": "Use a performance budget to set a target maximum size of your digital product or service to monitor and reduce impact of data transfer, file type size, and more.",
+							"description": "Use performance budgets to cap the size and complexity of digital products or services, actively reducing data transfer and file sizes to improve performance and create more sustainable, lower-impact digital experiences.",
 							"resources": [
 								{
 									"A Complete Guide to Performance Budgets": "https://www.speedcurve.com/blog/performance-budgets/",
@@ -6893,7 +6893,7 @@
 						},
 						{
 							"title": "Human budget",
-							"description": "Define KPIs around engineering hours, development time, or sprints while keeping the health and well-being of your workers paramount. Sustainably optimize workflows to allow all tasks to be performed with care.",
+							"description": "Define KPIs for engineering effort, development time, or sprints. Optimize workflows sustainably so work is done with care, while prioritizing worker health, wellbeing, and sustainable workloads.",
 							"resources": [
 								{
 									"7 Ways To Reduce Burnout In Your Tech Teams": "https://www.hackerearth.com/blog/reduce-workplace-burnout",
@@ -6907,7 +6907,7 @@
 						},
 						{
 							"title": "Measurable improvements",
-							"description": "Establish a baseline and measurement criteria to track improvements over time. Improvement claims must be evidenced and verifiable.",
+							"description": "Establish baseline measurements and track improvements over time. Require that improvement claims are supported by evidence.",
 							"resources": [
 								{
 									"Are there limits to growth in data traffic?": "https://www.researchgate.net/publication/303748253_Are_there_limits_to_growth_in_data_traffic_on_time_use_data_generation_and_speed",
