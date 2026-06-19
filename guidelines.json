@@ -3519,11 +3519,11 @@
 					"id": "use-the-latest-stable-language-version",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-the-latest-stable-language-version",
 					"guideline": "Use the latest stable language version",
-					"subheading": "Consider the environmental impact of the chosen syntax language, while always ensuring you use the latest build of any language or framework.",
+					"subheading": "Use up-to-date technologies and select the most suitable programming language for each task to ensure efficiency and maintainability.",
 					"criteria": [
 						{
 							"title": "Versioning",
-							"description": "Use the latest build of your chosen syntax language and its coupled framework.",
+							"description": "Use the latest stable version of the chosen language and framework.",
 							"resources": [
 								{
 									"Best PHP Performance Tips From Community & Influencers": "https://www.cloudways.com/blog/php-performance/",
@@ -3538,7 +3538,7 @@
 						},
 						{
 							"title": "Language choice",
-							"description": "Use the most appropriate programming language for the task. Many tools and programming languages are optimized for the performance of particular tasks. Applying the most appropriate tools to the problem can justify any time or effort involved in their adoption, especially if there is a reasonable user base, provided it does not impact the wellbeing of those involved or risk becoming cost-prohibitive.",
+							"description": "Use the best programming language for the task, recognizing that many tools and languages are optimized for specific types of work. Adoption effort is justified where benefits outweigh costs and there is a reasonable user base, provided it does not impact the wellbeing of those involved or become cost-prohibitive.",
 							"resources": [
 								{
 									"Best PHP Performance Tips From Community & Influencers": "https://www.cloudways.com/blog/php-performance/",
