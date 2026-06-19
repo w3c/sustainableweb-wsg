@@ -3105,41 +3105,23 @@
 				</div>
 				<div class="summary">
 					<details> <!-- Provide a review or expiration date on website content -->
-						<summary id="expiration-dates">Provide a review or expiration date on website content</summary>	
+						<summary id="lifecycle-management">Provide a review or expiration date on website content</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism that ensures all content within a website or application gets regularly reviewed and if necessary refreshed, updated, or if it has reached the end-of-life, deleted or archived. As such, publicly providing a date when events will occur should offer an incentive for providers to action these labels (and users can note outdated content).</p>
+						<p>Also increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other factors. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.</p>
 						<p>Machine testability should offer a grace period for content that has passed the date when a review should take place (as circumstances can lead to dates being missed), however, failings should still be flagged as potential issues that need to be resolved. Labels within the content should be detectable by scripts that issue such dates, and if they do not exist, recommendations can be issued.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>On the <a href="https://www.nhs.uk/conditions/migraine/">National Health Service</a> website, at the bottom of an article about a medical condition, a clear piece of text mentioning when the content was last reviewed and is next due for review is given.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that all articles (or content where material may go out-of-date) have a review or expiration date.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Provide a classification policy to content if it is deemed sustainable -->
-						<summary id="classify-and-tag">Provide a classification policy to content if it is deemed sustainable</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other factors. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.</p>
-						<p>Machine testability for such features will involve examining the page's source code to identify repeating patterns across several pages (if correctly labeled, patterns such as tags or categories may be semantically easy to find). The sustainability of such implementations must account for the impact it has upon rendering across each page, against the benefit it has to the user experience.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
 							<li>A List Apart <a href="https://alistapart.com/topics/">provides a topics page</a> which groups various pieces of content (articles) into categories. By doing this it reduces the number of pages an individual will need to click through to find what they are after.</li>
 							<li>Maggie Appleton has a <a href="https://maggieappleton.com/garden">really visually appealing way</a> of laying out all of their different topics, content types, and even how well-developed their thoughts are. With all of this, you can filter their content accordingly.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
 						<ol>
+							<li>Check that all articles (or content where material may go out-of-date) have a review or expiration date.</li>
 							<li>Check that content within the website (or potentially within long articles) can be filtered by classification.</li>
 							<li>Check that all classification patterns used on websites are repeated across all pages and clearly labeled.</li>
 						</ol>
@@ -4347,8 +4329,8 @@
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/expiration-dates.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/classify-and-tag.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/lifecycle-management.html">PASS</a></td>
+								<td></td>
 								<td class="red">FAIL</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-logging.html">PASS</a></td>
 								<td class="red">FAIL</td>

@@ -3355,60 +3355,36 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/inappropriate-resources.html"
 				},
 				{
-					"id": "expiration-dates",
+					"id": "lifecycle-management",
 					"title": "Provide a review or expiration date on website content",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Store data according to the needs of your users](https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
 						{
 							"1": "Provide a mechanism that ensures all content within a website or application gets regularly reviewed and if necessary refreshed, updated, or if it has reached the end-of-life, deleted or archived. As such, publicly providing a date when events will occur should offer an incentive for providers to action these labels (and users can note outdated content).",
-							"2": "Machine testability should offer a grace period for content that has passed the date when a review should take place (as circumstances can lead to dates being missed), however, failings should still be flagged as potential issues that need to be resolved. Labels within the content should be detectable by scripts that issue such dates, and if they do not exist, recommendations can be issued."
+							"2": "Also increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other factors. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.",
+							"3": "Machine testability should offer a grace period for content that has passed the date when a review should take place (as circumstances can lead to dates being missed), however, failings should still be flagged as potential issues that need to be resolved. Labels within the content should be detectable by scripts that issue such dates, and if they do not exist, recommendations can be issued."
 						}
 					],
 					"examples": [
 						{
-							"1": "On the [National Health Service](https://www.nhs.uk/conditions/migraine/) website, at the bottom of an article about a medical condition, a clear piece of text mentioning when the content was last reviewed and is next due for review is given."
+							"1": "On the [National Health Service](https://www.nhs.uk/conditions/migraine/) website, at the bottom of an article about a medical condition, a clear piece of text mentioning when the content was last reviewed and is next due for review is given.",
+							"2": "A List Apart [provides a topics page](https://alistapart.com/topics/) which groups various pieces of content (articles) into categories. By doing this it reduces the number of pages an individual will need to click through to find what they are after.",
+							"3": "Maggie Appleton has a [really visually appealing way](https://maggieappleton.com/garden) of laying out all of their different topics, content types, and even how well-developed their thoughts are. With all of this, you can filter their content accordingly."
 						}
 					],
 					"tests": [
 						{
 							"procedure": [
 								{
-									"1": "Check that all articles (or content where material may go out-of-date) have a review or expiration date."
+									"1": "Check that all articles (or content where material may go out-of-date) have a review or expiration date.",
+									"2": "Check that content within the website (or potentially within long articles) can be filtered by classification.",
+									"3": "Check that all classification patterns used on websites are repeated across all pages and clearly labeled."
 								}
 							],
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/expiration-dates.html"
-				},
-				{
-					"id": "classify-and-tag",
-					"title": "Provide a classification policy to content if it is deemed sustainable",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Store data according to the needs of your users](https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users).",
-					"description": [
-						{
-							"1": "Increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other factors. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.",
-							"2": "Machine testability for such features will involve examining the page's source code to identify repeating patterns across several pages (if correctly labeled, patterns such as tags or categories may be semantically easy to find). The sustainability of such implementations must account for the impact it has upon rendering across each page, against the benefit it has to the user experience."
-						}
-					],
-					"examples": [
-						{
-							"1": "A List Apart [provides a topics page](https://alistapart.com/topics/) which groups various pieces of content (articles) into categories. By doing this it reduces the number of pages an individual will need to click through to find what they are after.",
-							"2": "Maggie Appleton has a [really visually appealing way](https://maggieappleton.com/garden) of laying out all of their different topics, content types, and even how well-developed their thoughts are. With all of this, you can filter their content accordingly."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that content within the website (or potentially within long articles) can be filtered by classification.",
-									"2": "Check that all classification patterns used on websites are repeated across all pages and clearly labeled."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/classify-and-tag.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/lifecycle-management.html"
 				},
 				{
 					"id": "optimized-logging",

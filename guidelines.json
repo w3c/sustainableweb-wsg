@@ -393,7 +393,7 @@
 									"Implementing image sprites in CSS": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Images/Implementing_image_sprites",
 									"Less Data Doesn't Mean a Lesser Experience": "https://timkadlec.com/remembers/2019-08-30-less-data-doesnt-mean-a-lesser-experience/",
 									"Less is more: How stripping back can improve UX Design": "https://www.uxdesigninstitute.com/blog/improve-ux-design/",
-									"Reduce Redundancy": "https://www.nngroup.com/articles/reduce-redundancydecrease-duplicated-design-decisions/",
+									"Remove unused data": "https://www.nngroup.com/articles/reduce-redundancydecrease-duplicated-design-decisions/",
 									"Reduce The Number Of Images": "https://www.giftofspeed.com/minimize-images/",
 									"Reducing Cognitive Overload": "https://www.lionandmason.com/ux-blog/reducing-cognitive-overload-declutter-your-design-for-better-ux/",
 									"Simple icon systems using SVG sprites": "https://oliverjam.es/articles/svg-sprites",
@@ -4670,11 +4670,11 @@
 					"id": "store-data-according-to-the-needs-of-your-users",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users",
 					"guideline": "Store data according to the needs of your users",
-					"subheading": "Set expiration dates on data so it can be archived, made available offline, or removed when no longer used or required, with the remaining content tagged for future management.",
+					"subheading": "Regularly manage and reduce stored data (including content, logs, media, and downloads) using retention, compression, and lifecycle policies, while maintaining efficient access to long-term assets.",
 					"criteria": [
 						{
-							"title": "Reduce redundancy",
-							"description": "Regularly audit for and delete so-called \"dark data\" that is single-use, redundant, or abandoned in order to reduce storage demand and energy use.",
+							"title": "Remove unused data",
+							"description": "Regularly remove unused or obsolete data (\"dark data\") to reduce storage and energy costs, and manage whether and how long data is stored.",
 							"resources": [
 								{
 									"A Call for Research on Storage Emissions (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final126.pdf",
@@ -4692,37 +4692,29 @@
 							]
 						},
 						{
-							"title": "Expiration dates",
-							"description": "Assign expiration and/or maximum retention dates to stored data where appropriate, treating excess data as a form of technical debt. Observe any applicable minimum data retention periods. Make data cleanup an established organization-wide routine to prevent long-term data accumulation.",
-							"resources": [
-								{
-									"AWS WAF - SUS04-BP03 - Use policies to manage the lifecycle of your datasets": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_data_a4.html",
-									"AWS WAF - SUS04-BP05 - Remove unneeded or redundant data": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_data_a6.html",
-									"GPF - General Policy Framework (PDF) - 7.2 - Back-End (Data Retention)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"Help users to Know that a page is up to date": "https://service-manual.nhs.uk/design-system/patterns/know-that-a-page-is-up-to-date",
-									"How to Create Your Own localStorage with Expiry Time in JavaScript": "https://vinaysomawat.medium.com/how-to-create-your-own-localstorage-with-expiry-time-in-javascript-02ed77d5b4f4",
-									"How to label a webpage as being out-of-date": "https://www.ctrl.blog/entry/label-outdated-webpages.html",
-									"Using an expiry date in JavaScript to create self-destructing data": "https://dev.to/seanwelshbrown/using-an-expiry-date-in-javascript-to-create-self-destructing-data-453o"
-								}
-							]
-						},
-						{
-							"title": "Classify and tag",
-							"description": "Implement a data classification and tagging policy to improve visibility, simplify management, and enable efficient removal of outdated or unused data.",
+							"title": "Lifecycle management",
+							"description": "Use classification and tagging policies to define and manage data lifecycle rules, including retention, expiration, and archival.",
 							"resources": [
 								{
 									"5 Types of Data Classification (With Examples)": "https://www.indeed.com/career-advice/career-development/data-classification-types",
 									"A Guide to Data Classification for Small Businesses": "https://method-it.co.uk/resources/a-guide-to-data-classification-for-small-businesses",
 									"AWS WAF - SUS04-BP01 - Implement a data classification policy": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_data_a2.html",
+									"AWS WAF - SUS04-BP03 - Use policies to manage the lifecycle of your datasets": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_data_a4.html",
+									"AWS WAF - SUS04-BP05 - Remove unneeded or redundant data": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_data_a6.html",
 									"Data Classification Guide": "https://www.spirion.com/data-classification",
+									"GPF - General Policy Framework (PDF) - 7.2 - Back-End (Data Retention)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"Help users to Know that a page is up to date": "https://service-manual.nhs.uk/design-system/patterns/know-that-a-page-is-up-to-date",
+									"How to Create Your Own localStorage with Expiry Time in JavaScript": "https://vinaysomawat.medium.com/how-to-create-your-own-localstorage-with-expiry-time-in-javascript-02ed77d5b4f4",
+									"How to label a webpage as being out-of-date": "https://www.ctrl.blog/entry/label-outdated-webpages.html",
 									"Understanding Data Classification": "https://transcend.io/blog/data-classification",
+									"Using an expiry date in JavaScript to create self-destructing data": "https://dev.to/seanwelshbrown/using-an-expiry-date-in-javascript-to-create-self-destructing-data-453o",
 									"What is Data Classification?": "https://www.fortra.com/blog/what-data-classification-data-classification-definition"
 								}
 							]
 						},
 						{
 							"title": "Efficient storage",
-							"description": "Store data only when it cannot be easily or accurately regenerated.",
+							"description": "Store data only where it provides lasting operational, analytical, or legal value and cannot be easily regenerated or replaced. Remove or archive it when it becomes obsolete. Avoid unnecessary duplication and use efficient storage practices such as compression, caching, and storage optimization techniques.",
 							"resources": [
 								{
 									"AWS WAF - SUS04-BP08 - Back up data only when difficult to recreate": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_data_a9.html",
@@ -4737,7 +4729,7 @@
 						},
 						{
 							"title": "Optimized logging",
-							"description": "Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers. Establish mechanisms to ensure identifiable user information does not appear in logs to reduce security and privacy risks and exposure.",
+							"description": "Manage logs with regular rotation, retention, compression, and backup practices, including scheduling resource-intensive operations during low-activity periods where practical to reduce energy demand and operational overhead. Use resilient backup strategies, including off-site storage when necessary for resilience or recovery, and remove sensitive information from logs wherever possible to minimize security and privacy risks.",
 							"resources": [
 								{
 									"An Engineer's Checklist of Logging Best Practices": "https://www.honeycomb.io/blog/engineers-checklist-logging-best-practices",
@@ -4753,7 +4745,7 @@
 						},
 						{
 							"title": "Asset downloads",
-							"description": "Make large, long-term assets available for easy download when in persistent use so users are not required to re-access the server for repeat downloads.",
+							"description": "Make large, long-term assets easily downloadable so users do not need repeated server requests.",
 							"resources": [
 								{
 									"Going Offline": "https://goingoffline.adactio.com/",
