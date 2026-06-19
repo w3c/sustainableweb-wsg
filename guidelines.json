@@ -2922,11 +2922,11 @@
 					"id": "ensure-layouts-work-for-different-devices-and-requirements",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements",
 					"guideline": "Ensure layouts work for different devices and requirements",
-					"subheading": "Use a mix of carbon-aware design techniques to adapt to different layouts, different modes of interaction, and also progressively enhance content.",
+					"subheading": "Use responsive, progressively enhanced, and carbon-aware design to ensure accessible, adaptable functionality across devices and interaction methods while managing resource use.",
 					"criteria": [
 						{
 							"title": "Device-adaptable",
-							"description": "Use responsive and adaptive design techniques to ensure your project supports an wide range of devices and screen sizes, including smartphones, tablets, laptops, desktop computers, smart TVs, and other emerging platforms. Implement robust fallback strategies to ensure that the digital product or service will not fail if it encounters unsupported technologies.",
+							"description": "Use responsive and adaptive design so the product works across devices and screen sizes such as phones, tablets, laptops, desktops, TVs, and emerging platforms. Ensure the project still functions when certain features or technologies are not supported.",
 							"resources": [
 								{
 									"Building a resilient frontend using progressive enhancement": "https://www.gov.uk/service-manual/technology/using-progressive-enhancement",
@@ -2981,7 +2981,7 @@
 						},
 						{
 							"title": "Progressive enhancement",
-							"description": "Use progressive enhancement to enhance overall sustainability. This starts with baseline HTML, and increases the user experience without reliance on style and interaction to ensure a robust project.",
+							"description": "Use progressive enhancement to enhance sustainability by starting with a baseline of HTML, then progressively improving the user experience without relying on style or interaction for core functionality, ensuring a robust and resilient project.",
 							"resources": [
 								{
 									"Build for the Web, Build on the Web, Build with the Web": "https://csswizardry.com/2025/01/build-for-the-web-build-on-the-web-build-with-the-web/",
@@ -3015,7 +3015,7 @@
 						},
 						{
 							"title": "Carbon-aware design",
-							"description": "Use carbon-aware design techniques to maximize your use of low-carbon energy. This is achieved by adapting the delivery of your project to current electricity availability and user grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.",
+							"description": "Use carbon-aware design to reduce energy use when electricity demand or system load is high. Use situational design to replace, reduce, or disable high-impact features for lower-impact alternatives. Automated thresholds may also adjust or disable non-essential features, provided changes remain transparent. Clearly communicate what changed and why, and allow users to restore full functionality where possible.",
 							"resources": [
 								{
 									"A Carbon-Aware Internet": "https://branch.climateaction.tech/issues/issue-2/a-carbon-aware-internet/",
@@ -3040,7 +3040,7 @@
 						},
 						{
 							"title": "Alternative browsing",
-							"description": "Support non-visual/indirect methods of interaction. This includes assistive technologies, voice agents, scanned input (QR, etc.), reader view (browser, application, or RSS), or connected devices.",
+							"description": "Support sustainable non-visual and indirect interaction methods such as assistive technologies, voice input, QR codes, reader view (browser, application, or RSS), and connected devices.",
 							"resources": [
 								{
 									"CSS Speech Module Level 1": "https://www.w3.org/TR/css-speech-1/",
