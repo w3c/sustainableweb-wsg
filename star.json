@@ -2539,7 +2539,7 @@
 				{
 					"id": "sustainable-javascript",
 					"title": "Optimize a codebase through rewriting for performance",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use standards-based JavaScript and APIs](https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use sustainable JavaScript and APIs](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-javascript-and-apis).",
 					"description": [
 						{
 							"1": "Improve the quality of JavaScript code by examining the contents and identifying any issues that could be deemed a matter of sustainability which could trigger a large load upon hardware resources (and thus put a strain on battery charge cycles). In addition to this, matters of accessibility and performance with such code can be considered.",
@@ -2568,9 +2568,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-javascript.html"
 				},
 				{
-					"id": "sustainable-apis",
+					"id": "energy-relevant-apis",
 					"title": "Ensure JavaScript APIs are correctly applied",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use standards-based JavaScript and APIs](https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use sustainable JavaScript and APIs](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-javascript-and-apis).",
 					"description": [
 						{
 							"1": "Provide mechanisms through JavaScript that minimize the user's energy consumption by either optimizing the performance of the website or application itself or improving functionality in such a way that it reduces the utilization of resources when they are not required by the user. Some JavaScript APIs can have explicit sustainability benefits, while others may improve other PPP benefits through accessibility (societal factors).",
@@ -2596,7 +2596,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-apis.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/energy-relevant-apis.html"
 				},
 				{
 					"id": "code-security",

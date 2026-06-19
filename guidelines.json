@@ -3081,14 +3081,14 @@
 					"tags": ["Accessibility", "AI", "Compatibility", "Content", "CSS", "Performance", "Social Equity", "UI", "Usability"]
 				},
 				{
-					"id": "use-standards-based-javascript-and-apis",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis",
-					"guideline": "Use standards-based JavaScript and APIs",
-					"subheading": "Use JavaScript in an energy-efficient and accessible way, only using APIs and making external calls when this enhances a project's sustainability.",
+					"id": "use-sustainable-javascript-and-apis",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-javascript-and-apis",
+					"guideline": "Use sustainable JavaScript and APIs",
+					"subheading": "Write efficient JavaScript and use APIs that minimize processing, data use, and energy consumption.",
 					"criteria": [
 						{
 							"title": "Sustainable JavaScript",
-							"description": "Improve sustainability through accessible and performant code.",
+							"description": "Write JavaScript that supports long-term application performance by reducing unnecessary calculations, limiting DOM updates, and minimising network requests.",
 							"resources": [
 								{
 									"A handful of reasons JavaScript won't be available": "https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available/",
@@ -3121,8 +3121,8 @@
 							]
 						},
 						{
-							"title": "Sustainable APIs",
-							"description": "Integrate energy-relevant APIs - such as Battery Status, Compression Streams, Page Visibility, or Vibration - where these can reduce energy consumption.",
+							"title": "Energy-relevant APIs",
+							"description": "Leverage JavaScript APIs, such as Compression Streams, Page Visibility, or Vibration, when they help reduce energy use or improve efficiency.",
 							"resources": [
 								{
 									"API Green Score": "https://github.com/API-Green-Score/APIGreenScore",
@@ -3139,14 +3139,14 @@
 						},
 						{
 							"title": "API requests",
-							"description": "Call client- or server-side APIs only when necessary. Equally, ensure an API is optimized to only send data that is actually required.",
+							"description": "Only call client-side or server-side APIs when needed, ensuring requests and responses only request the data required for the task.",
 							"resources": [
 								{
 									"9 Proven Strategies to Improve API Performance": "https://www.thegeekyminds.com/post/strategies-to-improve-api-performance",
 									"API Security Best Practices": "https://medium.com/@hassene/api-security-best-practices-acf0e3a0d469",
 									"Common API mistakes and how to avoid them": "https://blog.logrocket.com/common-api-mistakes-and-how-to-avoid-them-804fbcb9cc4b/",
 									"GPF - General Policy Framework (PDF) - 1.10 - Strategy (Documented APIs)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"Green API Design 1/5: Rates limiting for Sustainable APIs": "https://medium.com/just-tech-it-now/green-api-design-1-5-rates-limiting-for-sustainable-apis-649803c0f896",
+									"Green API Design 1/5: Rates limiting for Energy-relevant APIs": "https://medium.com/just-tech-it-now/green-api-design-1-5-rates-limiting-for-sustainable-apis-649803c0f896",
 									"Green APIs: Developing Sustainable API's with a Low Carbon Footprint": "https://medium.com/@nandamurimanikanta19/green-apis-developing-sustainable-apis-with-a-low-carbon-footprint-db3ddc402af3"
 								}
 							]
