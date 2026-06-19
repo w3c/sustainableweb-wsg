@@ -4106,11 +4106,11 @@
 					"id": "avoid-maintaining-unnecessary-virtualized-environments-or-containers",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-maintaining-unnecessary-virtualized-environments-or-containers",
 					"guideline": "Avoid maintaining unnecessary virtualized environments or containers",
-					"subheading": "Reduce the number of unnecessary virtualized environments to save hardware utilization.",
+					"subheading": "Remove unnecessary virtualized environments to improve efficiency and maintainability.",
 					"criteria": [
 						{
 							"title": "Unused environments",
-							"description": "Reduce the number of active environments by deactivating and/or offlining unused or redundant virtual (e.g., containers, virtual machines) or physical environments wherever this can be done without reducing the required security, isolation, or compliance guarantees. Where applicable, also evaluate running services in the same way. Similarly audit codebases and setups for unused branches, environments, and services and prune as appropriate.",
+							"description": "Reduce the number of active environments by deactivating, offlining, or removing unused or redundant virtual and physical environments (e.g., containers and virtual machines) wherever this can be done without reducing required security, isolation, or compliance guarantees. Also evaluate running services in the same way. Similarly, codebases and setups for unused branches, environments, and services, and remove what is no longer needed.",
 							"resources": [
 								{
 									"AWS WAF - SUS02-BP03 - Stop the creation and maintenance of unused assets": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a4.html",
