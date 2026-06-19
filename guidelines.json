@@ -3173,64 +3173,6 @@
 					"tags": ["Accessibility", "JavaScript", "Privacy", "Security"]
 				},
 				{
-					"id": "ensure-that-your-code-is-secure",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-your-code-is-secure",
-					"guideline": "Ensure that your code is secure",
-					"subheading": "Regularly check code for exploitable security issues that could affect both users and hosting infrastructure.",
-					"criteria": [
-						{
-							"title": "Code security",
-							"description": "Check scripts and associated code for vulnerabilities, exploits, header issues, and code injection.",
-							"resources": [
-								{
-									"5 Ways to Keep Your website from Getting Hacked": "https://www.mightybytes.com/insights/5-ways-to-keep-site-from-getting-hacked/",
-									"Awesome npm Security Best Practices": "https://github.com/lirantal/npm-security-best-practices",
-									"Content Security Policy Reference": "https://content-security-policy.com/",
-									"Frontend Security Checklist": "https://www.trevorlasn.com/blog/frontend-security-checklist/",
-									"GPF - General Policy Framework (PDF) - 1.7 - Strategy (Encryption)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 1-7020 - Data Security": "https://gr491.isit-europe.org/en/crit.php?id=1-7020-backend-the-gdpr-requires-the-implementation-of-a",
-									"Hacksplaning": "https://www.hacksplaining.com/lessons",
-									"How OWASP Helps You Secure Your Full-Stack Web Applications": "https://www.smashingmagazine.com/2025/02/how-owasp-helps-secure-full-stack-web-applications/",
-									"How To Prevent WordPress SQL Injection Attacks": "https://www.smashingmagazine.com/2025/03/how-prevent-wordpress-sql-injection-attacks/",
-									"Improving the trustworthiness of Javascript on the Web": "https://blog.cloudflare.com/improving-the-trustworthiness-of-javascript-on-the-web/",
-									"NPM Security Best Practices": "https://github.com/bodadotsh/npm-security-best-practices",
-									"OWASP Top Ten": "https://owasp.org/www-project-top-ten/",
-									"Script Integrity": "https://frontendmasters.com/blog/script-integrity/",
-									"Secure coding in JavaScript": "https://stackoverflow.blog/2025/10/15/secure-coding-in-javascript/",
-									"Security Headers": "https://securityheaders.com/",
-									"Security Headers using meta": "https://www.htmhell.dev/adventcalendar/2023/7/",
-									"The Basics of Web Application Security": "https://martinfowler.com/articles/web-security-basics.html",
-									"The OWASP Top 10": "https://www.freecodecamp.org/news/technical-dive-into-owasp/",
-									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
-									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
-									"United Nations SDGS - Goal 17 - Global Partnership": "https://sdgs.un.org/goals/goal17#targets_and_indicators",
-									"Web security": "https://developer.mozilla.org/en-US/docs/Web/Security",
-									"Website security": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/First_steps/Website_security",
-									"What is XSS? How to Protect Your Website from DOM Cross-Site Scripting Attacks": "https://www.freecodecamp.org/news/how-to-protect-against-dom-xss-attacks/",
-									"WordPress Security: How to Protect Your website from Attacks and Hackers": "https://www.mightybytes.com/insights/wordpress-security/"
-								}
-							]
-						}
-					],
-					"benefits": [
-						{
-							"Economic": "Preventing security issues ahead of time c protects you and your users from financial crime.",
-							"Environment": "Securing your project against threats and closing vulnerabilities makes them a less likely target for individuals who might exploit them, consuming vast amounts of data in the process.",
-							"Performance": "Protecting your project against breaches reduces your risk of large amounts of data being stolen, corrupted, or destroyed.",
-							"Security": "Maintaining security helps to maintain trust and prevent personal information from being exposed and exploited."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
-					"tags": ["JavaScript", "Privacy", "Security", "Social Equity"]
-				},
-				{
 					"id": "use-dependencies-appropriately-and-ensure-maintenance",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance",
 					"guideline": "Use dependencies appropriately and ensure maintenance",

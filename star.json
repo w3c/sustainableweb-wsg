@@ -2599,34 +2599,6 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-apis.html"
 				},
 				{
-					"id": "code-security",
-					"title": "Ensure all vulnerabilities are removed and code is Linted",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Ensure that your code is secure](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-your-code-is-secure).",
-					"description": [
-						{
-							"1": "Scan the website or application's code for issues that may otherwise potentially leave a product or service vulnerable to exploitation. This will not only include first-party code that is created by the project owners but third-party tooling imported. Any third-party library or framework found to contain harmful code should be removed before production.",
-							"2": "Because this can occur at both the client-side and server-side internal access may be required if server-side scanning is wished to be included within machine testability, however within the scope of the success criteria, if internal access is not available or permitted, testing the code using known methods and scanning client-side code for harmful techniques should help with passing."
-						}
-					],
-					"examples": [
-						{
-							"1": "RayGun [provides a great article](https://raygun.com/blog/js-security-vulnerabilities-best-practices/) about vulnerabilities and best practices when working with JavaScript. Some of the things mentioned are covered within WSG in other sections, all others can be followed here.",
-							"2": "[Snyk](https://snyk.io/) is one of the most well-known providers of data regarding code vulnerabilities. They can be integrated within existing tooling or you can browse their [database of known security issues](https://security.snyk.io/) to be aware of."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check the product or service for vulnerabilities within your code, ensuring they are resolved."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/code-security.html"
-				},
-				{
 					"id": "dependency-management",
 					"title": "Identify and remove unused packages and dependencies",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies appropriately and ensure maintenance](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance).",

@@ -2475,30 +2475,6 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- Ensure all vulnerabilities are removed and code is linted -->
-						<summary id="code-security">Ensure all vulnerabilities are removed and code is linted</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-your-code-is-secure">Ensure that your code is secure</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Scan the website or application's code for issues that may otherwise potentially leave a product or service vulnerable to exploitation. This will not only include first-party code that is created by the project owners but third-party tooling imported. Any third-party library or framework found to contain harmful code should be removed before production.</p>
-						<p>Because this can occur at both the client-side and server-side internal access may be required if server-side scanning is wished to be included within machine testability, however within the scope of the success criteria, if internal access is not available or permitted, testing the code using known methods and scanning client-side code for harmful techniques should help with passing.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>RayGun <a href="https://raygun.com/blog/js-security-vulnerabilities-best-practices/">provides a great article</a> about vulnerabilities and best practices when working with JavaScript. Some of the things mentioned are covered within WSG in other sections, all others can be followed here.</li>
-							<li><a href="https://snyk.io/">Snyk</a> is one of the most well-known providers of data regarding code vulnerabilities. They can be integrated within existing tooling or you can browse their <a href="https://security.snyk.io/">database of known security issues</a> to be aware of.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check the product or service for vulnerabilities within your code, ensuring they are resolved.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
 					<details> <!-- Identify and remove unused packages and dependencies -->
 						<summary id="dependency-management">Identify and remove unused packages and dependencies</summary>	
 						<p><strong>Applicability</strong></p>
