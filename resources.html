@@ -4710,20 +4710,29 @@
 						</ul>
 					</details>
 				</div>
-				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately"> <abbr title="Content Delivery Network">CDN</abbr> use must be proportionate and sustainable</a>:</strong></p>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial"> <abbr title="Content Delivery Network">CDN</abbr> use must be proportionate and sustainable</a>:</strong></p>
 				<div class="summary">
 					<details> <!-- Global CDNs -->
 						<summary id="global-cdns">Global (<abbr title="Content Delivery Network">CDNs</abbr>)</summary>
 						<ul>
+							<li><a href="https://docs.aws.amazon.com/wellarchitected/">AWS WAF</a><ul>
+								<li><a href="https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_region_a2.html">SUS01-BP01</a> - Choose Region based on both business requirements and sustainability goals</li>
+								<li><a href="https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a5.html">SUS02-BP04</a> - Optimize geographic placement of workloads based on their networking requirements</li>
+							</ul></li>
 							<li><a href="https://www.debugbear.com/blog/cdn-cache">Caching on a Content Delivery Network (CDN)</a></li>
 							<li>Carbon accounting in the Cloud [[CAC]] (<em>PDF</em>)</li>
 							<li><a href="https://www.cdnperf.com/cdn-compare">CDN Compare</a></li>
 							<li><a href="https://www.cloudcarbonfootprint.org/">Cloud Carbon Footprint</a></li>
 							<li><a href="https://aws.amazon.com/blogs/aws/cloud-computing-server-utilization-the-environment/">Cloud Computing, Server Utilization, & the Environment</a></li>
+							<li>Consume Local: Towards Carbon Free Content Delivery [[LOCAL]]</li>
 							<li><a href="https://www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech">Data center emissions probably 662% higher than big tech claims. Can it keep up the ruse?</a></li>
+							<li><a href="https://docs.cloud.google.com/architecture/framework/sustainability">Design for environmental sustainability</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Edge_computing">Edge computing</a></li>
+							<li><a href="https://app.electricitymaps.com/map/live/fifteen_minutes">Electricity Maps</a></li>
 							<li>Energy Consumption in Data Centres and Broadband Communication Networks in the EU [[ECDCBC]]</li>
 							<li>Energy-efficient Cloud Computing Technologies and Policies for an Eco-friendly Cloud Market [[ECCCT]]</li>
 							<li>Future trends of Green All Optical Networks and ICT Infrastructure in a large context [[GON]]</li>
+							<li>Geographical Server Relocation: Opportunities and Challenges [[GEO-OPC]]</li>
 							<li>[[GPF]] - General Policy Framework for the Ecodesign of Digital Services<ul>
 								<li>2.3 - Specifications (Connection Issues)</li>
 								<li>6.2 - Front-End (Caching Mechanisms)</li>
@@ -4759,16 +4768,23 @@
 							<li><a href="https://smartwatermagazine.com/news/h2o-building-services/how-much-water-do-data-centres-use">How much water do data centres use?</a></li>
 							<li><a href="https://www.wholegraindigital.com/blog/how-using-a-cdn-is-better-for-people-and-the-planet/">How using a CDN is better for people and the planet</a></li>
 							<li><a href="https://tag-env-sustainability.cncf.io/blog/2024-06-idle-power-matters-kepler-metrics-for-public-cloud-energy-efficiency/">Idle Power Matters</a></li>
+							<li><a href="https://www.internetexchangemap.com/#/">Internet Exchange Map</a></li>
 							<li>Investigating the Inconsistencies among Energy and Energy Intensity Estimates of the Internet [[EEI]]</li>
+							<li><a href="https://ismyhostfastyet.com/">Is my host fast yet?</a></li>
 							<li><a href="https://www.localcdn.org/">LocalCDN</a></li>
 							<li><a href="https://ismyhostfastyet.com/">Is My Host Fast Yet?</a></li>
 							<li>Measuring the Emissions & Energy Footprint of the ICT Sector [[EEF-ICT]]</li>
+							<li><a href="https://learn.microsoft.com/en-us/azure/well-architected/">Microsoft Azure WAF</a><ul>
+								<li><a href="https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-platform#deploy-to-low-carbon-regions">Deploy to low-carbon regions</a></li>
+							</ul></li>
 							<li>Power and Energy Efficiency [[PAEE]]</li>
 							<li><a href="https://httptoolkit.com/blog/public-cdn-risks/">Public CDNs Are Useless and Dangerous</a></li>
 							<li>Reporting requirements on the energy performance and sustainability of data centres for the Energy Efficiency Directive [[RREPDC]]</li>
 							<li>Requirements for Energy Efficiency Management [[REEM]]</li>
+							<li><a href="https://www.submarinecablemap.com/">Submarine Cable Map</a></li>
 							<li><a href="https://www.linkedin.com/pulse/hosting-server-location-what-means-website-seo-ernest-ekwoge-metuge/">The Hosting Server Location & What It Means For Website SEO</a></li>
 							<li>The staggering ecological impacts of computation and the cloud [[EICC]]</li>
+							<li>Towards Game-Theoretic Approaches to Attributing Carbon in Cloud Data Centers [[CARBON-CLOUD]]</li>
 							<li>United Nations [[SDGS]]<ul>
 								<li><a href="https://sdgs.un.org/goals/goal3#targets_and_indicators">Goal 3</a> - Health & Well-being</li>
 								<li><a href="https://sdgs.un.org/goals/goal6#targets_and_indicators">Goal 6</a> - Water & Sanitation</li>
@@ -4795,48 +4811,6 @@
 							<li><a href="https://investor.lenovo.com/en/sustainability/reports/FY2025-lenovo-sustainability-report.pdf">Lenovo ESG 2025 Report</a> (<em>PDF</em>)</li>
 						</ul>
 					</details>
-					<details> <!-- Local servers -->
-						<summary id="local-servers">Local servers</summary>
-						<ul>
-							<li><a href="https://docs.aws.amazon.com/wellarchitected/">AWS WAF</a><ul>
-								<li><a href="https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_region_a2.html">SUS01-BP01</a> - Choose Region based on both business requirements and sustainability goals</li>
-								<li><a href="https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a5.html">SUS02-BP04</a> - Optimize geographic placement of workloads based on their networking requirements</li>
-							</ul></li>
-							<li>Consume Local: Towards Carbon Free Content Delivery [[LOCAL]]</li>
-							<li><a href="https://docs.cloud.google.com/architecture/framework/sustainability">Design for environmental sustainability</a></li>
-							<li><a href="https://en.wikipedia.org/wiki/Edge_computing">Edge computing</a></li>
-							<li><a href="https://app.electricitymaps.com/map/live/fifteen_minutes">Electricity Maps</a></li>
-							<li>Geographical Server Relocation: Opportunities and Challenges [[GEO-OPC]]</li>
-							<li>[[GPF]] - General Policy Framework for the Ecodesign of Digital Services<ul>
-								<li>2.3 - Specifications (Connection Issues)</li>
-								<li>6.2 - Front-End (Caching Mechanisms)</li>
-								<li>6.7 - Front-End (Server Host)</li>
-								<li>7.1 - Back-End (Reusability Caching)</li>
-								<li>8.1 - Hosting (Hosting Provider)</li>
-								<li>8.5 - Hosting (Renewable Documentation)</li>
-								<li>8.6 - Hosting (Local Datacenters)</li>
-							</ul></li>
-							<li>[[GR491]]<ul>
-								<li><a href="https://gr491.isit-europe.org/en/crit.php?id=1-8003-hosting-data-centers-are-rarely-installed-in-the">1-8003</a> - Datacenter Location</li>
-								<li><a href="https://gr491.isit-europe.org/en/crit.php?id=2-8020-hosting-physical-trips-to-datacenters-are-by-nature">2-8020</a> - Datacenter Hub</li>
-							</ul></li>
-							<li><a href="https://www.internetexchangemap.com/#/">Internet Exchange Map</a></li>
-							<li><a href="https://ismyhostfastyet.com/">Is my host fast yet?</a></li>
-							<li><a href="https://learn.microsoft.com/en-us/azure/well-architected/">Microsoft Azure WAF</a><ul>
-								<li><a href="https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-platform#deploy-to-low-carbon-regions">Deploy to low-carbon regions</a></li>
-							</ul></li>
-							<li><a href="https://www.submarinecablemap.com/">Submarine Cable Map</a></li>
-							<li>Towards Game-Theoretic Approaches to Attributing Carbon in Cloud Data Centers [[CARBON-CLOUD]]</li>
-							<li>United Nations [[SDGS]]<ul>
-								<li><a href="https://sdgs.un.org/goals/goal3#targets_and_indicators">Goal 3</a> - Health & Well-being</li>
-								<li><a href="https://sdgs.un.org/goals/goal6#targets_and_indicators">Goal 6</a> - Water & Sanitation</li>
-								<li><a href="https://sdgs.un.org/goals/goal7#targets_and_indicators">Goal 7</a> - Sustainable Energy</li>
-								<li><a href="https://sdgs.un.org/goals/goal9#targets_and_indicators">Goal 9</a> - Infrastructure</li>
-								<li><a href="https://sdgs.un.org/goals/goal12#targets_and_indicators">Goal 12</a> - Consumption & Production</li>
-								<li><a href="https://sdgs.un.org/goals/goal13#targets_and_indicators">Goal 13</a> - Climate Change</li>
-							</ul></li>
-						</ul>
-					</details>
 					<details> <!-- Inappropriate resources -->
 						<summary id="inappropriate-resources">Inappropriate resources</summary>
 						<ul>
@@ -4848,25 +4822,6 @@
 								<li>7.1 - Back-End (Reusability Caching)</li>
 							</ul></li>
 							<li><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity">Subresource Integrity</a></li>
-							<li>United Nations [[SDGS]]<ul>
-								<li><a href="https://sdgs.un.org/goals/goal7#targets_and_indicators">Goal 7</a> - Sustainable Energy</li>
-								<li><a href="https://sdgs.un.org/goals/goal9#targets_and_indicators">Goal 9</a> - Infrastructure</li>
-								<li><a href="https://sdgs.un.org/goals/goal13#targets_and_indicators">Goal 13</a> - Climate Change</li>
-							</ul></li>
-						</ul>
-					</details>
-					<details> <!-- Efficient location -->
-						<summary id="efficient-location">Efficient location</summary>
-						<ul>
-							<li><a href="https://www.confluent.io/blog/achieving-data-efficiency/">3 Strategies for Achieving Data Efficiency in Modern Organizations</a></li>
-							<li><a href="https://www.carbon-aware-computing.com/">Carbon Aware Computing</a></li>
-							<li><a href="https://hackernoon.com/carbon-aware-computing-next-green-breakthrough-or-new-greenwashing">Carbon Aware Computing: Next Green Breakthrough or New Greenwashing?</a></li>
-							<li><a href="https://climateproductleaders.org/playbook/design-frugally/minimize-data-transfer">Minimize data transfer</a></li>
-							<li><a href="https://www.harper.fast/resources/the-cost-of-serialization-and-5-ways-to-minimize-or-remove-this-hidden-expense">The Cost of Serialization</a></li>
-							<li>[[GPF]] - General Policy Framework for the Ecodesign of Digital Services<ul>
-								<li>2.3 - Specifications (Connection Issues)</li>
-								<li>6.2 - Front-End (Caching Mechanisms)</li>
-							</ul></li>
 							<li>United Nations [[SDGS]]<ul>
 								<li><a href="https://sdgs.un.org/goals/goal7#targets_and_indicators">Goal 7</a> - Sustainable Energy</li>
 								<li><a href="https://sdgs.un.org/goals/goal9#targets_and_indicators">Goal 9</a> - Infrastructure</li>

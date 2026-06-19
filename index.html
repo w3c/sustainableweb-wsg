@@ -2758,33 +2758,23 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Use Content Delivery Networks (CDNs) appropriately -->
-				<h3>Use Content Delivery Networks (<abbr title="Content Delivery Networks">CDNs</abbr>) appropriately</h3>
-				<p class="subheading">Use CDNs where they bring a sustainability benefit, ensuring the provider itself is sustainable, has nodes local to an audience, and they are only used to serve static resources on them.</p>
-				<section class="notoc" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="GPF, GR491, SDGs" data-considerations="Accessibility" data-categories="Content, Hardware, Networking, Performance">
+			<section> <!-- Use Content Delivery Networks (CDNs) when beneficial -->
+				<h3>Use Content Delivery Networks (<abbr title="Content Delivery Networks">CDNs</abbr>) when beneficial</h3>
+				<p class="subheading">Use CDNs and data location strategically for static content and processing only when they improve efficiency and sustainability, while avoiding unnecessary distribution and transfers.</p>
+				<section class="notoc" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="AWS WAF, Azure WAF, GPF, GR491, SDGs" data-considerations="Accessibility" data-categories="Content, Hardware, Networking, Performance">
 					<h4 id="global-cdns">Success Criterion: Global CDNs</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#global-cdns">Resources</a></p>
-					<p>Deploy static content, assets, and other read-only resources via a Content Delivery Network (<abbr title="Content Delivery Network">CDN</abbr>) on a case-by-case basis, where judged to be beneficial. Carefully evaluate the environmental impact of any CDN service used, similar to a web hosting provider.</p>
+					<p>Use a Content Delivery Network (<abbr title="Content Delivery Network">CDN</abbr>) for static content, assets, and other read-only resources only where it provides clear benefits, evaluating performance improvements and environmental impact on a case-by-case basis in line with broader web hosting choices. When serving an exclusively local audience, evaluate whether a CDN is necessary, and prefer geographically close hosting instead.</p>
 				</section>
 				<section class="notoc" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="GPF" data-considerations="" data-categories="Content, Hardware, Networking, Performance">
 					<h4 id="sustainability-commitment">Success Criterion: Sustainability commitment</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#sustainability-commitment">Resources</a></p>
-					<p>Select CDN providers that make commitments to sustainability and report on their progress.</p>
-				</section>
-				<section class="notoc" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="AWS WAF, Azure WAF, GPF, GR491, SDGs" data-considerations="Accessibility" data-categories="Content, Hardware, Networking, Performance">
-					<h4 id="local-servers">Success Criterion: Local servers</h4>
-					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#local-servers">Resources</a></p>
-					<p>When serving an exclusively local audience, consider whether a CDN is required at all. Instead, select hosting providers with servers close to your target audience.</p>
+					<p>Choose CDN providers that demonstrate credible, evidence-based web sustainability commitments.</p>
 				</section>
 				<section class="notoc" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="GPF, SDGs" data-considerations="" data-categories="Content, Hardware, Networking, Performance">
 					<h4 id="inappropriate-resources">Success Criterion: Inappropriate resources</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#inappropriate-resources">Resources</a></p>
-					<p>Avoid deploying dynamic or frequently changing resources to a CDN. Browser behaviors such as cache partitioning and cross-origin resource sharing (<abbr title="Cross-Origin Resource Sharing">CORS</abbr>) can limit performance gains, hinder caching and interaction, and attempting to override these can introduce security or privacy risks. This does not apply to static assets or <abbr title="JavaScript Object Notation">JSON</abbr> files, which are well suited to CDN delivery.</p>
-				</section>
-				<section class="notoc" data-materials="low" data-energy="medium" data-water="low" data-emissions="medium" data-standard="GPF, SDGs" data-considerations="" data-categories="AI, Content, Hardware, Networking, Performance">
-					<h4 id="efficient-location">Success Criterion: Efficient location</h4>
-					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#efficient-location">Resources</a></p>
-					<p>Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources.</p>
+					<p>Avoid deploying dynamic or frequently changing resources to a CDN, as browser mechanisms like cache partitioning and cross-origin resource sharing (<abbr title="Cross-Origin Resource Sharing">CORS</abbr>) can limit caching benefits and interaction performance, reducing resource efficiency, while workarounds may introduce security or privacy risks.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3960,7 +3950,7 @@
 					<li><a href="#optimize-caching-and-support-offline-access">Optimize caching and support offline access</a></li>
 					<li><a href="#setup-necessary-error-pages-and-redirection-links">Setup necessary error pages and redirection links</a></li>
 					<li><a href="#use-automation-wisely">Use automation wisely</a></li>
-					<li><a href="#use-content-delivery-networks-cdns-appropriately">Use Content Delivery Networks (CDNs) appropriately</a></li>
+					<li><a href="#use-content-delivery-networks-cdns-when-beneficial">Use Content Delivery Networks (CDNs) when beneficial</a></li>
 					<li><a href="#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a></li>
 					<li><a href="#have-an-ethical-and-sustainable-product-strategy">Have an ethical and sustainable product strategy</a></li>
 					<li><a href="#assign-a-sustainability-advocate">Assign a sustainability advocate</a></li>

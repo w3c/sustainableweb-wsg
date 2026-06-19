@@ -3240,7 +3240,7 @@
 				{
 					"id": "global-cdns",
 					"title": "Provide distributed access to static resources via a CDN",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) when beneficial](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial).",
 					"description": [
 						{
 							"1": "Offer a mechanism for users to gain access to a static website or application assets in a location that is closer to them than the origin host. By utilizing a content delivery network, large media files, images, fonts, and other static assets can be distributed to regional locations so that users can access them quicker (as the route to the file is shorter).",
@@ -3249,16 +3249,19 @@
 					],
 					"examples": [
 						{
-							"1": "While it does not provide insights into sustainability, [CDN Compare](https://cdncomparison.com/) offers a great deal of context between several popular content delivery networks and the offerings they provide to help you make up your mind."
+							"1": "While it does not provide insights into sustainability, [CDN Compare](https://cdncomparison.com/) offers a great deal of context between several popular content delivery networks and the offerings they provide to help you make up your mind.",
+							"2": "[Our World In Data](https://ourworldindata.org/internet), the [World Bank](https://data.worldbank.org/indicator/IT.NET.USER.ZS), and [Wikipedia](https://en.wikipedia.org/wiki/List_of_countries_by_number_of_Internet_users) provide some awesome information on average Internet usage worldwide. While this cannot replace real-world demographics, it can be helpful for new projects."
 						}
 					],
 					"tests": [
 						{
 							"procedure": [
 								{
-									"1": "Check the existing location of static resources on the existing website.",
-									"2": "If they exist on the first-party domain, calculate the sustainability value of using a CDN.",
-									"3": "Check if the value of using a CDN will be beneficial, if so use one."
+									"1": "Check if you only serve a local (single country) audience, if so, avoid CDN usage.",
+									"2": "Check using analytics the average distribution of your product or service's users.",
+									"3": "Check the existing location of static resources on the existing website.",
+									"4": "If they exist on the first-party domain, calculate the sustainability value of using a CDN.",
+									"5": "Check a hosting or CDN provider's locations to match as closely to your customers."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -3269,7 +3272,7 @@
 				{
 					"id": "sustainability-commitment",
 					"title": "Ensure that the CDN and its chain of locations are sustainable",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) when beneficial](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial).",
 					"description": [
 						{
 							"1": "Test the sustainability of the CDN against WSG as a service provider as a third-party service in addition to any sustainability criteria and best practices that exist externally for infrastructure and hosting. This not only applies to the provider itself but to all of the nodes that it uses to supply distribution, and any third-parties it uses as part of its extended network. As such, calculating and vetting providers can be complex.",
@@ -3297,38 +3300,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-commitment.html"
 				},
 				{
-					"id": "local-servers",
-					"title": "Provide a copy of the product or service close to the user",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
-					"description": [
-						{
-							"1": "Provide a mechanism for mirroring the content (website or application) as close to the user as possible to reduce the loading time as effectively as possible. This can be done using CDNs or by analyzing metrics data and deciding based on the locale of users where the origin host choice would be best placed (both can be useful methods).",
-							"2": "Machine testing for this requires internal access to analytics logs to determine where user locations are and from this identify the best location to place information (if a CDN is used, this may be automatically done on your behalf meeting compliance requirements). If no internal access or data is available, general statistics about Internet usage could help identify trends."
-						}
-					],
-					"examples": [
-						{
-							"1": "[Our World In Data](https://ourworldindata.org/internet), the [World Bank](https://data.worldbank.org/indicator/IT.NET.USER.ZS), and [Wikipedia](https://en.wikipedia.org/wiki/List_of_countries_by_number_of_Internet_users) provide some awesome information on average Internet usage worldwide. While this cannot replace real-world demographics, it can be helpful for new projects."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check if you only serve a local (single country) audience, if so, avoid CDN usage.",
-									"2": "Check using analytics the average distribution of your product or service's users.",
-									"3": "Check a hosting or CDN provider's locations to match as closely to your customers."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/local-servers.html"
-				},
-				{
 					"id": "inappropriate-resources",
 					"title": "Avoid hosting dynamic resources or third-party scripts on the CDN",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) when beneficial](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial).",
 					"description": [
 						{
 							"1": "Prevent non-first-party dynamic resources from being loaded through a content delivery network. The justification behind this is due to browser mechanisms such as CORS and cache partitioning, unfavorable things can occur if you try to load dynamic resources from third-party websites (this is a security measure to prevent malicious code injection).",
