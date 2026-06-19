@@ -3803,7 +3803,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/iterative-consideration.html"
 				},
 				{
-					"id": "security-updates",
+					"id": "feature-changes",
 					"title": "Clearly label changes using a release notes feature",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Implement continuous improvement procedures](https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures).",
 					"description": [
@@ -3831,7 +3831,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/security-updates.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/feature-changes.html"
 				},
 				{
 					"id": "sustainable-development-goals",
