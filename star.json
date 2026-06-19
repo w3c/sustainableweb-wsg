@@ -2389,7 +2389,7 @@
 				{
 					"id": "media-and-preference-queries",
 					"title": "Ensure CSS preference media queries are correctly applied",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use sustainability beneficial user preference media queries](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainability-beneficial-user-preference-media-queries).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use media queries that support sustainability goals](https://www.w3.org/TR/web-sustainability-guidelines/#use-media-queries-that-support-sustainability-goals).",
 					"description": [
 						{
 							"1": "Provide mechanisms through CSS that adhere to the user's preferences regarding how they may choose to browse a website or application. While some queries that exist in the language will hold little sustainability value, others could have PPP benefits through accessibility (societal factors), or environmental (reducing hardware or data usage).",
