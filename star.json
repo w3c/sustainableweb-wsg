@@ -4283,9 +4283,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/measurable-improvements.html"
 				},
 				{
-					"id": "open-source-policy",
+					"id": "open-source-governance",
 					"title": "Produce an open source policy and verify licensing",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use open source where possible](https://www.w3.org/TR/web-sustainability-guidelines/#use-open-source-where-possible).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use and contribute to open source](https://www.w3.org/TR/web-sustainability-guidelines/#use-and-contribute-to-open-source).",
 					"description": [
 						{
 							"1": "Consider the place that open source has in a product or service. If open source (for example) is used within code libraries such as frameworks, these should be identified and the license type should be verified to ensure compliance occurs (for instance, attribution). If the business in question is supportive of open source, this should also be noted publicly.",
@@ -4309,12 +4309,12 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/open-source-policy.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/open-source-governance.html"
 				},
 				{
-					"id": "contribution",
+					"id": "collaboration-and-contribution",
 					"title": "Identify contributions made to open source projects",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use open source where possible](https://www.w3.org/TR/web-sustainability-guidelines/#use-open-source-where-possible).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use and contribute to open source](https://www.w3.org/TR/web-sustainability-guidelines/#use-and-contribute-to-open-source).",
 					"description": [
 						{
 							"1": "Provide a mechanism to identify any open source work an individual or business may have made which gives back to the community. Open source and working on collaborative projects is a sustainable way of helping to evolve knowledge around digital issues and as such should be referenced in meeting sustainability objectives (especially high profile work).",
@@ -4338,7 +4338,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/contribution.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/collaboration-and-contribution.html"
 				},
 				{
 					"id": "audience-awareness",
