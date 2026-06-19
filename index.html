@@ -1603,13 +1603,18 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Remove unnecessary or redundant information -->
-				<h3>Remove unnecessary or redundant information</h3>
-				<p class="subheading">Remove redundant characters from code to reduce the amount of data being stored and transferred to devices.</p>
+			<section> <!-- Minify and remove unused code -->
+				<h3>Minify and remove unused code</h3>
+				<p class="subheading">Minify code and data, and remove unused characters to reduce file size and improve loading efficiency and maintainability.</p>
 				<section class="notoc" data-materials="low" data-energy="low" data-water="low" data-emissions="low" data-standard="" data-considerations="Accessibility" data-categories="CSS, HTML, JavaScript, Performance">
 					<h4 id="minified-code">Success Criterion: Minified code</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#minified-code">Resources</a></p>
-					<p>Remove unnecessary white space, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to <abbr title="Hypertext Markup Language">HTML</abbr>, CSS, JavaScript, JSON, <abbr title="Scalable Vector Graphics">SVG</abbr>, and other relevant file types.</p>
+					<p>Minify code and data files by removing unnecessary whitespace, comments, and non-essential characters. Apply this consistently across the system to reduce file size and improve loading efficiency. This helps reduce cumulative data transfer and processing overhead at scale, improving resource efficiency and lowering energy consumption.</p>
+				</section>
+				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="CSS, JavaScript, Performance">
+					<h4 id="remove-redundancy">Success Criterion: Remove redundancy</h4>
+					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#remove-redundancy">Resources</a></p>
+					<p>Identify and remove unused or dead code, especially in <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -1667,39 +1672,6 @@
 									console.error(err.message);
 								});
 							});
-							</pre>
-							<p class="subtitle"><strong>Tags</strong></p>
-							<p>CSS, JavaScript, Performance</p>
-						</details>
-					</div>
-				</section>
-			</section>
-			<section> <!-- Remove unnecessary code -->
-				<h3>Remove unnecessary code</h3>
-				<p class="subheading">Clear out dead or unused code as it builds up in a project to reduce the amount of wasted data being transferred.</p>
-				<section class="notoc" data-materials="medium" data-energy="medium" data-water="medium" data-emissions="medium" data-standard="" data-considerations="" data-categories="CSS, JavaScript, Performance">
-					<h4 id="remove-redundancy">Success Criterion: Remove redundancy</h4>
-					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#remove-redundancy">Resources</a></p>
-					<p>Identify and eliminate unused and dead code, commonly within <abbr title="Cascading Style Sheets">CSS</abbr> and JavaScript.</p>
-				</section>
-				<section class="notoc">
-					<h4>Additional information</h4>
-					<div class="summary">
-						<details>
-							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
-							<p class="subtitle"><strong><a href="#reporting">Reporting</a></strong></p>
-							<p>[[GRI]] compliance guidance is available from the body that issues the standard.</p>
-							<dl class="reporting">
-								<dt>GRI 301: Materials</dt><dd>Medium</dd>
-								<dt>GRI 302: Energy</dt><dd>Medium</dd>
-								<dt>GRI 303: Water</dt><dd>Medium</dd>
-								<dt>GRI 305: Emissions</dt><dd>Medium</dd>
-							</dl>
-							<p class="subtitle"><strong>Example</strong></p>
-							<pre class="nohighlight">
-								export function read(props) { return props.book }
-								import { read } from 'utilities';
-								eventHandler = (e) => { read({ book: e.target.value })}
 							</pre>
 							<p class="subtitle"><strong>Tags</strong></p>
 							<p>CSS, JavaScript, Performance</p>
@@ -3942,7 +3914,7 @@
 				<p>Guidelines within this specification that <a href="https://www.w3.org/mission/accessibility/">may relate to accessibility</a> are:</p>
 				<ul>
 					<li>All those listed within <a href="#user-experience-design">User Experience Design</a></li>
-					<li><a href="#remove-unnecessary-or-redundant-information">Remove unnecessary or redundant information</a></li>
+					<li><a href="#minify-and-remove-unused-code">Minify and remove unused code</a></li>
 					<li><a href="#avoid-redundancy-and-duplication-in-code">Avoid redundancy and duplication in code</a></li>
 					<li><a href="#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a></li>
 					<li><a href="#ensure-code-follows-good-semantic-practices">Ensure code follows good semantic practices</a></li>
@@ -4251,7 +4223,7 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/20">#20</a>] & [<a href="https://github.com/w3c/sustainableweb-wsg/issues/24">#24</a>] Update to guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices">3.7</a> SCs to improve the criteria robustness.<br><span class="credit">@andreadavanzo & @hidde</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/21">#21</a>] Two success criteria for guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#non-standard-code">3.19</a> have been merged into a single SC.<br><span class="credit">@andreadavanzo & @hidde</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/23">#23</a>] Two success criteria for guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices">5.20</a> have been merged.<br><span class="credit">@andreadavanzo</span></li>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/27">#27</a>] Success criteria for guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-or-redundant-information">3.2</a> now includes more detail about data types.<br><span class="credit">@andreadavanzo</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/27">#27</a>] Success criteria for guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code">3.2</a> now includes more detail about data types.<br><span class="credit">@andreadavanzo</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/28">#28</a>] Success criteria for guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#modularize-bandwidth-heavy-components">3.3</a> now includes modular front and back-end code.<br><span class="credit">@andreadavanzo</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/32">#32</a>] Success criteria for guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#third-party-implementation">3.7</a> are more extensively defined.<br><span class="credit">@fullo, @hidde, & @kazuhito-kidachi</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/35">#35</a>] Success criteria for guideline <a href="https://www.w3.org/TR/web-sustainability-guidelines/#non-standard-code">3.19</a> now includes avoiding polyfills in modern browsers.<br><span class="credit">@AlexDawsonUK</span></li>

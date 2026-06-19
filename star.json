@@ -1759,7 +1759,7 @@
 				{
 					"id": "minified-code",
 					"title": "Minify your front-end code if it is public facing",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Remove unnecessary or redundant information](https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-or-redundant-information).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minify and remove unused code](https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code).",
 					"description": [
 						{
 							"1": "Provide a mechanism in which your production-ready source code can have unnecessary data such as code comments, white space data, and machine-detectable redundancy removed to deliver the smallest file payload possible to the user. This will improve both the speed of your site and lower screen usage (wait) time.",
@@ -1822,7 +1822,7 @@
 				{
 					"id": "remove-redundancy",
 					"title": "Eliminate redundant code through coverage or tree shaking",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Remove unnecessary code](https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-code).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minify and remove unused code](https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code).",
 					"description": [
 						{
 							"1": "Eliminate redundancy within an application or website that may have been either introduced previously or through error. By using browser development tooling such as DevTools coverage or techniques like tree shaking any code which is no longer associated with functionality can be identified as potentially fit for removal (always verify this is accurate).",
