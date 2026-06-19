@@ -3575,25 +3575,66 @@
 					"id": "reduce-the-number-and-complexity-of-database-queries",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-number-and-complexity-of-database-queries",
 					"guideline": "Reduce the number and complexity of database queries",
-					"subheading": "Optimize any information provided via databases, both in terms of access schedules and how queries are sent and received.",
+					"subheading": "Optimize database use by minimizing and scoping queries, reducing repeated requests, and applying data governance practices.",
 					"criteria": [
 						{
 							"title": "Database queries",
-							"description": "Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process. Practice good database hygiene with data modeling best practices such as data minimization, such as Time-to-Live (TTL), de-identification, UUIDs, and purpose limitation.",
+							"description": "Optimize database queries to reduce load by retrieving required data in as few queries as possible, and by applying filtering and selection at the database level rather than in application or ORM code, especially for frequently accessed data.",
 							"resources": [
 								{
-									"Choosing The Right ID Strategy": "https://anilkumarvalluru.medium.com/choosing-the-right-id-strategy-auto-increment-uuid-ulid-or-snowflake-id-e21fe24af55f",
-									"get_post_meta": "https://developer.wordpress.org/reference/functions/get_post_meta/",
+									"Django Database access optimization": "https://docs.djangoproject.com/en/6.0/topics/db/optimization/",
+									"GPF - General Policy Framework (PDF) - 4.9 - UX and UI (Server Requests)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 6.5 - Front-End (Upload Triggers)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 7.3 - Back-End (Background Processing)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"High Performance MySQL: Query Performance Optimization": "https://www.oreilly.com/library/view/high-performance-mysql/9780596101718/ch04.html",
+									"Performance Tuning SQL Queries": "https://www.thoughtspot.com/sql-tutorial/sql-performance-tuning",
+									"Proactive Energy Management in Database Systems (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final111.pdf",
+									"Query Optimization Patterns": "https://medium.com/@artemkhrenov/query-optimization-patterns-writing-efficient-sql-for-high-performance-applications-8143e5028443"
+								}
+							]
+						},
+						{
+							"title": "Database queries",
+							"description": "Retrieve data only once per request or process and reuse it locally instead of repeating database queries.",
+							"resources": [
+								{
+									"Best practices for SQLite performance": "https://developer.android.com/topic/performance/sqlite-performance-best-practices",
 									"GPF - General Policy Framework (PDF) - 4.9 - UX and UI (Server Requests)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 6.5 - Front-End (Upload Triggers)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 7.3 - Back-End (Background Processing)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"High Performance MySQL: Query Performance Optimization": "https://www.oreilly.com/library/view/high-performance-mysql/9780596101718/ch04.html",
 									"Improving PHP Performance for Web Applications": "https://www.keycdn.com/blog/php-performance#9-limit-your-database-hits",
-									"Keeping Databases Lean with TTL": "https://medium.com/@leela.kumili/keeping-databases-lean-with-ttl-practical-insights-and-strategies-ec6d9d09f91a",
 									"Minimizing SQL query response times": "https://www.ibm.com/docs/en/cognos-analytics/11.1.x?topic=performance-minimizing-sql-query-response-times",
-									"Performance Tuning SQL Queries": "https://www.thoughtspot.com/sql-tutorial/sql-performance-tuning",
-									"Proactive Energy Management in Database Systems (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final111.pdf",
-									"Query optimization techniques in SQL Server": "https://www.sqlshack.com/query-optimization-techniques-in-sql-server-tips-and-tricks/",
+									"Proactive Energy Management in Database Systems (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final111.pdf"
+								}
+							]
+						},
+						{
+							"title": "Database queries",
+							"description": "Scope database queries to return only the fields and records that are required.",
+							"resources": [
+								{
+									"Best practices for SQLite performance": "https://developer.android.com/topic/performance/sqlite-performance-best-practices",
+									"get_post_meta": "https://developer.wordpress.org/reference/functions/get_post_meta/",
+									"GPF - General Policy Framework (PDF) - 4.9 - UX and UI (Server Requests)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 6.5 - Front-End (Upload Triggers)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 7.3 - Back-End (Background Processing)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"High Performance MySQL: Query Performance Optimization": "https://www.oreilly.com/library/view/high-performance-mysql/9780596101718/ch04.html",
+									"Proactive Energy Management in Database Systems (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final111.pdf"
+								}
+							]
+						},
+						{
+							"title": "Database queries",
+							"description": "Apply data lifecycle and governance controls such as Time-to-Live (TTL), use of non-sensitive identifiers like UUIDs, de-identification, and minimization of stored data in line with purpose limitation principles.",
+							"resources": [
+								{
+									"Best practices for SQLite performance": "https://developer.android.com/topic/performance/sqlite-performance-best-practices",
+									"Choosing The Right ID Strategy": "https://anilkumarvalluru.medium.com/choosing-the-right-id-strategy-auto-increment-uuid-ulid-or-snowflake-id-e21fe24af55f",
+									"GPF - General Policy Framework (PDF) - 4.9 - UX and UI (Server Requests)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 6.5 - Front-End (Upload Triggers)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 7.3 - Back-End (Background Processing)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"Keeping Databases Lean with TTL": "https://medium.com/@leela.kumili/keeping-databases-lean-with-ttl-practical-insights-and-strategies-ec6d9d09f91a",
 									"Why Everyone Needs a Data Privacy Vault": "https://softwareengineeringdaily.com/2022/03/12/why-everyone-needs-a-data-privacy-vault/"
 								}
 							]
