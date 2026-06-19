@@ -5821,14 +5821,14 @@
 					"tags": ["Compatibility", "Content", "Education", "Security", "Usability"]
 				},
 				{
-					"id": "establish-if-a-digital-product-or-service-is-necessary",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#establish-if-a-digital-product-or-service-is-necessary",
-					"guideline": "Establish if a digital product or service is necessary",
-					"subheading": "Determine whether a project is necessary, eliminating obstacles for users, and aligning with SDGs and sustainability principles.",
+					"id": "evaluate-if-a-digital-product-or-service-is-necessary",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#evaluate-if-a-digital-product-or-service-is-necessary",
+					"guideline": "Evaluate if a digital product or service is necessary",
+					"subheading": "Assess alignment with sustainability goals, validate product need, and reduce barriers to access, usability, and fairness.",
 					"criteria": [
 						{
 							"title": "Sustainable Development Goals",
-							"description": "Identify where the product or service aligns with one of the UN (SDGs) and its appropriate targets within a sustainability statement.",
+							"description": "Identify whether the product or service aligns with any relevant UN Sustainable Development Goals (SDGs) and, where applicable, include corresponding targets within a sustainability statement.",
 							"resources": [
 								{
 									"Aligning Your Organization with U.N. Sustainable Development Goals": "https://www.mightybytes.com/insights/aligning-un-sustainable-development-goals/",
@@ -5842,7 +5842,7 @@
 						},
 						{
 							"title": "Creation evaluation",
-							"description": "Determine that the product or service is necessary based upon desirability, feasibility, and viability factors.",
+							"description": "Evaluate whether a product or service is needed based on desirability, feasibility, and viability.",
 							"resources": [
 								{
 									"14 Ways To Determine Need Before Launching A New Product Or Service": "https://www.forbes.com/councils/forbesbusinesscouncil/2021/07/06/14-ways-to-determine-need-before-launching-a-new-product-or-service/",
@@ -5857,7 +5857,7 @@
 						},
 						{
 							"title": "Obstacle consideration",
-							"description": "Remove or alleviate any obstacles to using a product or service, such as accessibility, equality, technical, or territorial.",
+							"description": "Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers.",
 							"resources": [
 								{
 									"Digital divide": "https://en.wikipedia.org/wiki/Digital_divide",
