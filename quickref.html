@@ -331,10 +331,10 @@
 					<p><strong>GRI:</strong> Medium (Materials) / Medium (Energy) / Medium (Water) / Medium (Emissions)</p>
 				</fieldset>
 				<fieldset>
-					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance">Use dependencies appropriately and ensure maintenance</a></legend>
-					<label><input type="checkbox"><span>Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that are not needed.</span></label>
-					<label><input type="checkbox"><span>Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library. Do not replace established and trusted security libraries with scoped-down or custom implementations. Custom security code increases vulnerability, which itself can negatively affect sustainability.</span></label>
-					<label><input type="checkbox"><span>Regularly check dependencies and keep them up to date.</span></label>
+					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a></legend>
+					<label><input type="checkbox"><span>Review dependencies regularly and remove unused libraries and frameworks. Uninstall packages that are not needed.</span></label>
+					<label><input type="checkbox"><span>Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations, as this increases vulnerability and can negatively impact sustainability.</span></label>
+					<label><input type="checkbox"><span>Keep all dependencies up to date through regular review and maintenance.</span></label>
 					<p><strong>GRI:</strong> Low (Materials) / Low (Energy) / Low (Water) / Low (Emissions)</p>
 				</fieldset>
 				<fieldset>
