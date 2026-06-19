@@ -3982,38 +3982,6 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/employee-benefits.html"
 				},
 				{
-					"id": "accessibility-policy",
-					"title": "Provide a publicly visible accessibility statement",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Justice, Equity, Diversity, Inclusion (JEDI) practices](https://www.w3.org/TR/web-sustainability-guidelines/#use-justice-equity-diversity-inclusion-jedi-practices).",
-					"description": [
-						{
-							"1": "Ensure that users are made aware of (or able to find out) the lengths that a product or service has gone to, ensuring that individuals with accessibility needs have been included in the design and development of the product or service. It should also aim to describe any limitations of the product or service and how to submit a support request.",
-							"2": "The European Environment Agency provides a simple but effective accessibility statement that underlines compatibility issues and levels of support with existing web standards that users need to be aware of."
-						}
-					],
-					"examples": [
-						{
-							"1": "United Kingdom charity Scope [provides a comprehensive](https://www.scope.org.uk/accessibility/) website accessibility statement that showcases their commitment to accessibility along with adaptations made and issues they are aware of to resolve.",
-							"2": "The European Environment Agency provides a simple but effective [accessibility statement](https://www.eea.europa.eu/en/accessibility) that underlines compatibility issues and levels of support with existing web standards that users need to be aware of."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check for a publicly visible accessibility statement on the website.",
-									"2": "Check for a section detailing accessibility compatibility.",
-									"3": "Check for a section on accessibility features built-in.",
-									"4": "Check for a section listing support and known issues.",
-									"5": "Check that the content is written in plain English for readability."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/accessibility-policy.html"
-				},
-				{
 					"id": "data-practices",
 					"title": "Provide links to the privacy policy and relevant legislation",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Promote responsible data practices](https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices).",

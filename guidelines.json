@@ -4798,25 +4798,38 @@
 					"criteria": [
 						{
 							"title": "Public documents",
-							"description": "Develop, publish, and maintain key organizational policies such as a code of ethics, product guidelines, and sustainability statements. Include clear language for digital products, services, and emerging or disruptive technologies, such as AI. Make these policies publicly accessible and keep them versioned for transparency.",
+							"description": "Develop, publish, and maintain key organizational policies such as a code of ethics, product guidelines, accessibility, and sustainability statements. Include clear language for digital products, services, and emerging or disruptive technologies, such as AI. Make these policies publicly accessible and keep them versioned for transparency.",
 							"resources": [
 								{
 									"#Tech4Bad: When Do We Say No?": "https://branch.climateaction.tech/issues/issue-3/tech4bad-when-do-we-say-no/",
 									"A Guide To Developing Your Organization's Code of Ethics (PDF)": "https://www.shrm.org/content/dam/en/shrm/about/organization-coe.pdf",
+									"Accessibility Statements: The good, the bad, and the ugly": "https://buttondown.com/access-ability/archive/accessibility-statements-the-good-the-bad-and-the/",
 									"AFNOR Spec 5.2.3 and 5.4.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
 									"Aline Sustainability policy": "https://www.aline.to/sustainability",
+									"CivicActions Accessibility statement": "https://civicactions.com/accessibility-statement/",
 									"CivicActions Sustainability Statement": "https://civicactions.com/sustainability/",
 									"How To Write a Code of Ethics: 5 Steps to Follow": "https://www.contractscounsel.com/b/how-to-write-a-code-of-ethics",
 									"Climate Change: What is Computing's Responsibility?": "https://drops.dagstuhl.de/entities/document/10.4230/DagMan.11.1.1",
 									"Code of Ethics": "https://www.mightybytes.com/code-of-ethics/",
 									"Corporate Digital responsibility": "https://www.ottogroup.com/en/nachhaltigkeit/corporate-digital-responsibility.php",
+									"Digital Product Accessibility Policy": "https://www.bbc.co.uk/accessibility/forproducts/policy/",
 									"Digital sustainability and Enel's code of conduct": "https://www.enel.com/company/stories/articles/2022/02/digital-sustainability-code-conduct",
+									"Developing an Accessibility Statement": "https://www.w3.org/WAI/planning/statements/",
+									"Developing Organizational Policies on Web Accessibility": "https://www.w3.org/WAI/planning/org-policies/",
+									"Don't just borrow your accessibility statement for European Accessibility Act from some random site": "https://cerovac.com/a11y/2025/02/dont-just-borrow-your-accessibility-statement-for-european-accessibility-act-from-some-random-site/",
+									"Don't use scores from automatic tools in your accessibility statement - do this instead": "https://cerovac.com/a11y/2025/03/dont-use-scores-from-automatic-tools-in-your-accessibility-statement-do-this-instead/",
 									"Environmental policy (Italian) (PDF)": "https://www.piano-d.it/environmental-policy.pdf",
 									"Ethical marketing policy (Italian) (PDF)": "https://www.piano-d.it/ethical-marketing-policy.pdf",
 									"Ethical Policy": "https://www.wholegraindigital.com/ethical-screening-policy/",
 									"Guiding the future of ethical design": "https://uxdesign.cc/guiding-the-future-of-ethical-design-796e7cc3c9b1",
+									"How to Write an Accessibility Policy": "https://accessible.org/how-to-write-accessibility-policy/",
+									"How to Write an Accessibility Statement in 2025, with Examples": "https://equalizedigital.com/how-to-write-an-accessibility-statement-in-2025-with-examples/",
 									"How to Write An Effective Sustainability Statement": "https://ecocart.io/sustainability-statement/",
+									"Mangrove's Accessibility Statement": "https://mangrove-web.com/accessibility-statement/",
+									"Mangrove's Statement on Diversity, Equity, Inclusion and Justice": "https://mangrove-web.com/diversity-equity-inclusion/",
 									"Mightybytes Sustainability Statement": "https://www.mightybytes.com/sustainability/",
+									"Nava Values": "https://www.navapbc.com/values",
+									"Sample accessibility statement": "https://www.gov.uk/government/publications/sample-accessibility-statement",
 									"Share your commitment, actions and journey publicly": "https://climateproductleaders.org/playbook/use-your-influence/share-your-commitment-actions-and-journey-publicly",
 									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
 									"United Nations SDGS - Goal 5 - Gender Equality": "https://sdgs.un.org/goals/goal5#targets_and_indicators",
@@ -4824,7 +4837,8 @@
 									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
 									"United Nations SDGS - Goal 13 - Climate Change": "https://sdgs.un.org/goals/goal13#targets_and_indicators",
 									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
-									"The Value of Declaring Your Values": "https://gregbloom.org/2025/12/02/new-paper-the-value-of-declaring-your-values/"
+									"The Value of Declaring Your Values": "https://gregbloom.org/2025/12/02/new-paper-the-value-of-declaring-your-values/",
+									"Why inclusive products are green products": "https://tetralogical.com/blog/2025/09/01/why-inclusive-products-are-green-products/"
 								}
 							]
 						},
@@ -6093,14 +6107,14 @@
 					"tags": ["Accessibility", "Ideation", "Social Equity", "Strategy"]
 				},
 				{
-					"id": "use-justice-equity-diversity-inclusion-jedi-practices",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-justice-equity-diversity-inclusion-jedi-practices",
-					"guideline": "Use Justice, Equity, Diversity, Inclusion (JEDI) practices",
-					"subheading": "Implement JEDI practices to foster inclusive hiring practices within an organization, showing evidence of improvement over time.",
+					"id": "use-diversity-equity-justice-inclusion-deji-practices",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-diversity-equity-justice-inclusion-deji-practices",
+					"guideline": "Use Diversity, Equity, Justice, Inclusion (DEJI) practices",
+					"subheading": "Publish and act on Diversity, Equity, Justice, Inclusion (DEIJ) and accessibility commitments, support training and measurable progress, and ensure inclusive outcomes across products and operations.",
 					"criteria": [
 						{
-							"title": "JEDI practices",
-							"description": "Document commitments to JEDI practices with clear policies on how marginalized or otherwise underserved communities are prioritized.",
+							"title": "DEJI practices",
+							"description": "Publish clear commitments to DEIJ. Explain how the organization applies these commitments to reduce exclusion and support the long-term sustainability of access to the product for diverse and underserved or marginalised communities.",
 							"resources": [
 								{
 									"Accessible Recruitment": "https://tetralogical.com/blog/2025/08/19/accessible-recruitment/",
@@ -6121,30 +6135,8 @@
 							]
 						},
 						{
-							"title": "Accessibility policy",
-							"description": "Establish a publicly displayed accessibility policy and demonstrate this via accessible digital products or services.",
-							"resources": [
-								{
-									"Accessibility Statements: The good, the bad, and the ugly": "https://buttondown.com/access-ability/archive/accessibility-statements-the-good-the-bad-and-the/",
-									"CivicActions Accessibility statement": "https://civicactions.com/accessibility-statement/",
-									"Digital Product Accessibility Policy": "https://www.bbc.co.uk/accessibility/forproducts/policy/",
-									"Developing an Accessibility Statement": "https://www.w3.org/WAI/planning/statements/",
-									"Developing Organizational Policies on Web Accessibility": "https://www.w3.org/WAI/planning/org-policies/",
-									"Don't just borrow your accessibility statement for European Accessibility Act from some random site": "https://cerovac.com/a11y/2025/02/dont-just-borrow-your-accessibility-statement-for-european-accessibility-act-from-some-random-site/",
-									"Don't use scores from automatic tools in your accessibility statement - do this instead": "https://cerovac.com/a11y/2025/03/dont-use-scores-from-automatic-tools-in-your-accessibility-statement-do-this-instead/",
-									"How to Write an Accessibility Policy": "https://accessible.org/how-to-write-accessibility-policy/",
-									"How to Write an Accessibility Statement in 2025, with Examples": "https://equalizedigital.com/how-to-write-an-accessibility-statement-in-2025-with-examples/",
-									"Mangrove's Accessibility Statement": "https://mangrove-web.com/accessibility-statement/",
-									"Mangrove's Statement on Diversity, Equity, Inclusion and Justice": "https://mangrove-web.com/diversity-equity-inclusion/",
-									"Nava Values": "https://www.navapbc.com/values",
-									"Sample accessibility statement": "https://www.gov.uk/government/publications/sample-accessibility-statement",
-									"Why inclusive products are green products": "https://tetralogical.com/blog/2025/09/01/why-inclusive-products-are-green-products/"
-								}
-							]
-						},
-						{
-							"title": "JEDI training",
-							"description": "Provide JEDI-related training materials and schedule regular workshops related to how this topic manifests itself in digital products and services, covering topics such as algorithmic bias, digital divide, employment, mis- and disinformation.",
+							"title": "DEJI training",
+							"description": "Provide DEIJ training and topics such as algorithmic bias, the digital divide, employment equity, mis- and disinformation.",
 							"resources": [
 								{
 									"Digital divide": "https://en.wikipedia.org/wiki/Digital_divide",
@@ -6160,8 +6152,8 @@
 							]
 						},
 						{
-							"title": "JEDI improvements",
-							"description": "Show measurable improvement over time across hiring, leadership, and operations.",
+							"title": "DEJI improvements",
+							"description": "Track and publish measurable progress in DEIJ across hiring, leadership, and operations.",
 							"resources": [
 								{
 									"Designing web services for people living in data poverty": "https://www.wholegraindigital.com/blog/designing-web-services-for-people-living-in-data-poverty/",
