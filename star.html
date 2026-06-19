@@ -1884,7 +1884,7 @@
 					<details> <!-- Determine and decision make upon third-party impacts -->
 						<summary id="assess-and-reduce">Determine and decision make upon third-party impacts</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>First identify any third-party components within a website or application, then analyze that feature as if it were a first-party product or service (against WSG) for sustainability. If the product or service is determined to be highly impactful in a negative way, the third-party should be replaced or removed; otherwise, it can be optimized, or stay as-is.</p>
 						<p>As third-party components are hosted externally, machine testing these elements should involve isolating these components and testing them as separate from the product or service. This can be factored into any decision-making regarding inclusion as highly performant and sustainable third-party materials will ultimately be low impact (and the opposite is true for others).</p>
@@ -1909,7 +1909,7 @@
 					<details> <!-- Provide an import on interaction delay for third-party resources -->
 						<summary id="third-party-implementation">Provide an import on interaction delay for third-party resources</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism to delay third-party content from loading to the screen until the user has requested it. Because third-party content is sourced from outside the origin domain, the sustainability impacts of the third-party code are outside of the control of a project, and thus click-to-load delay screens using the import-on-interaction pattern is critical.</p>
 						<p>The pattern used to either switch in the third-party content or load it on-demand can be machine-identified and if common third-party library resources are identified as loading (or leaking) upon a visit, this can and should be flagged up as a failure of the success criteria in functioning upon the user request (as such external requests should be within the user control).</p>
@@ -1932,7 +1932,7 @@
 					<details> <!-- Ensure that content is delivered through the most sustainable pathway -->
 						<summary id="self-hosting">Ensure that content is delivered through the most sustainable pathway</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Identify the location of website content and determine the most suitable pathway for it to be consumed sustainably. With the rise in content being hosted on third-party blogging platforms, there is a risk of significant content loss if the platform disappears and therefore a need for self-hosting exists (especially to maintain control of sustainability impacts).</p>
 						<p>For machine testability, identifying the source of the content is a key priority, then determining the impact of any third-party (the risk of content loss along with any sustainability impacts through WSG testing). Finally, this should be weighed up against the impact of self-hosting (and any potential negative consequences such as content moderation requirements that may occur).</p>
@@ -1957,7 +1957,7 @@
 					<details> <!-- Provide the ability to identify and choose third-party components to load -->
 						<summary id="third-party-preferences">Provide the ability to identify and choose third-party components to load</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide users with the optimum level of control over sustainability impacts by not just allowing them to identify and load third-party controls upon click but to also control third-party services, libraries, and tooling used by the product or service (even at load) via a preference panel where individual third-parties (which may be impactful) can be refused access.</p>
 						<p>This mechanism if using a commonly accepted scheme could be detected by a machine. If the preference is presented upon load and not set by default and if the user has the option of selecting individual services (one at a time), accepting all, and denying all, then it can be deemed that the functionality is working as expected (as long as third-party services obey that scheme).</p>

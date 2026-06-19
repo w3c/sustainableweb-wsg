@@ -1881,7 +1881,7 @@
 				{
 					"id": "assess-and-reduce",
 					"title": "Determine and decision make upon third-party impacts",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Treat third parties the same as first parties](https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties).",
 					"description": [
 						{
 							"1": "First identify any third-party components within a website or application, then analyze that feature as if it were a first-party product or service (against WSG) for sustainability. If the product or service is determined to be highly impactful in a negative way, the third-party should be replaced or removed; otherwise, it can be optimized, or stay as-is.",
@@ -1912,7 +1912,7 @@
 				{
 					"id": "third-party-implementation",
 					"title": "Provide an import on interaction delay for third-party resources",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Treat third parties the same as first parties](https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties).",
 					"description": [
 						{
 							"1": "Provide a mechanism to delay third-party content from loading to the screen until the user has requested it. Because third-party content is sourced from outside the origin domain, the sustainability impacts of the third-party code are outside of the control of a project, and thus click-to-load delay screens using the import-on-interaction pattern is critical.",
@@ -1941,7 +1941,7 @@
 				{
 					"id": "self-hosting",
 					"title": "Ensure that content is delivered through the most sustainable pathway",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Treat third parties the same as first parties](https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties).",
 					"description": [
 						{
 							"1": "Identify the location of website content and determine the most suitable pathway for it to be consumed sustainably. With the rise in content being hosted on third-party blogging platforms, there is a risk of significant content loss if the platform disappears and therefore a need for self-hosting exists (especially to maintain control of sustainability impacts).",
@@ -1972,7 +1972,7 @@
 				{
 					"id": "third-party-preferences",
 					"title": "Provide the ability to identify and choose third-party components to load",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Treat third parties the same as first parties](https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties).",
 					"description": [
 						{
 							"1": "Provide users with the optimum level of control over sustainability impacts by not just allowing them to identify and load third-party controls upon click but to also control third-party services, libraries, and tooling used by the product or service (even at load) via a preference panel where individual third-parties (which may be impactful) can be refused access.",
