@@ -3210,9 +3210,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/refresh-frequency.html"
 				},
 				{
-					"id": "protocols",
+					"id": "Protocol efficiency",
 					"title": "Deliver content using the correct, most secure protocol",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Consider the impact and requirements of data processing](https://www.w3.org/TR/web-sustainability-guidelines/#consider-the-impact-and-requirements-of-data-processing).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Assess the impact and requirements of data processing](https://www.w3.org/TR/web-sustainability-guidelines/#assess-the-impact-and-requirements-of-data-processing).",
 					"description": [
 						{
 							"1": "Guarantee that users who experience a website or application will have their experience delivered using a secure delivery route. Transmitting data using non-secure means (now that SSL certificates can be obtained free of charge) should never occur as there are inherent risks that can otherwise be avoided during the browsing session.",
@@ -3235,7 +3235,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/protocols.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/Protocol efficiency.html"
 				},
 				{
 					"id": "global-cdns",

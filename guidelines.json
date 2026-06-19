@@ -4347,17 +4347,17 @@
 					"tags": ["Hardware", "Performance", "Security"]
 				},
 				{
-					"id": "consider-the-impact-and-requirements-of-data-processing",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#consider-the-impact-and-requirements-of-data-processing",
-					"guideline": "Consider the impact and requirements of data processing",
-					"subheading": "Account for the energy involved in data processing, considering factors such as the protocol used, whether it is processed client- or server-side, and the environment used.",
+					"id": "assess-the-impact-and-requirements-of-data-processing",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#assess-the-impact-and-requirements-of-data-processing",
+					"guideline": "Assess the impact and requirements of data processing",
+					"subheading": "Use carbon-aware scheduling, efficient and secure protocols, and simple system designs to reduce unnecessary processing while balancing performance, security, and constraints.",
 					"criteria": [
 						{
-							"title": "Batch processing",
-							"description": "Use existing and supported carbon-aware computing methods to automate batching and scheduling according to real-time electrical grid carbon intensity data or shift workloads to lower-carbon regions to optimize sustainability while maintaining performance.",
+							"title": "Carbon shifting",
+							"description": "Use carbon-aware computing to dynamically optimize workload execution by scheduling or batching tasks based on real-time grid carbon intensity data, and shifting workloads across regions when permitted, while respecting security, performance, and data residency constraints.",
 							"resources": [
 								{
-									"Beginner's Guide to Batch Processing": "https://www.talend.com/resources/batch-processing/",
+									"Beginner's Guide to Carbon shifting": "https://www.talend.com/resources/batch-processing/",
 									"GPF - General Policy Framework (PDF) - 6.5 - Front-End (Upload Triggers)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 7.3 - Back-End (Background Processing)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.10 - Hosting (Asynchronous Requests)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -4365,13 +4365,13 @@
 									"GR491 - 5-6024 - Transfer Compression": "https://gr491.isit-europe.org/en/crit.php?id=5-6024-architecture-the-distribution-of-processing-on-different-and",
 									"Microsoft Azure WAF - Performance efficiency principles": "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/principles",
 									"Optimizing Data Pipelines": "https://rivery.io/blog/batch-vs-stream-processing-pros-and-cons-2/",
-									"What is Batch Processing?": "https://aws.amazon.com/what-is/batch-processing/"
+									"What is Carbon shifting?": "https://aws.amazon.com/what-is/batch-processing/"
 								}
 							]
 						},
 						{
-							"title": "Protocols",
-							"description": "Choose communication protocols appropriate to user needs and the type of data being transferred. Avoid insecure options such as HTTP and FTP, and prioritize secure, efficient alternatives such as HTTPS and SSH. Use modern protocols to take advantage of newer sustainability features, while maintaining backward compatibility for older devices.",
+							"title": "Protocol efficiency",
+							"description": "Choose communication protocols that balance user needs, security, and sustainability by improving efficiency and reducing resource use. Prioritize secure options like HTTPS and SFTP/SSH, avoid insecure legacy protocols such as HTTP and FTP, and adopt modern standards like HTTP/2 or HTTP/3 for better performance and lower network overhead. Maintain backward compatibility only where necessary.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.7 - Strategy (Encryption)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -4389,7 +4389,7 @@
 						},
 						{
 							"title": "Event-driven architecture",
-							"description": "Consider using event-driven architecture and microservices when building products with state changes that do not require full page refreshes. Favor these where they offer a more energy-efficient alternative to traditional APIs based on performance, power, and processing factors. Choose the approach that reduces server workload and environmental impact.",
+							"description": "Use event-driven architecture and microservices when building products with state changes that do not require full page refreshes. Favor those where they offer a more energy-efficient alternative to REST-style synchronous APIs based on performance, power, and processing factors, and choose the approach that reduces server workload and environmental impact while meeting requirements.",
 							"resources": [
 								{
 									"AWS WAF - SUS02-BP06 - Implement buffering or throttling to flatten the demand curve": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a7.html",
@@ -4411,7 +4411,7 @@
 						},
 						{
 							"title": "Data processing efficiency",
-							"description": "Avoid redundant processing. When data processing is necessary, carefully compare the relative effects of client- versus server-side processing based on efficiency, performance, security, and sustainability metrics to make an informed decision.",
+							"description": "Avoid unnecessary data processing. Decide carefully whether processing should happen on the client or server based on performance, security, sustainability metrics, and resource use.",
 							"resources": [
 								{
 									"Best practises for 5G App Developers (PDF)": "https://www.gsma.com/get-involved/working-groups/wp-content/uploads/2022/11/IG.15-v1.0-1.pdf",
@@ -4424,6 +4424,24 @@
 									"GR491 - 3-7043 - Client / Server Requests": "https://gr491.isit-europe.org/en/crit.php?id=3-7043-backend-the-operations-carried-out-on-the-front",
 									"GR491 - 5-6024 - Transfer Compression": "https://gr491.isit-europe.org/en/crit.php?id=5-6024-architecture-the-distribution-of-processing-on-different-and",
 									"Microsoft Azure WAF - Performance efficiency principles": "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/principles"
+								}
+							]
+						},
+						{
+							"title": "Efficient location",
+							"description": "Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources.",
+							"resources": [
+								{
+									"3 Strategies for Achieving Data Efficiency in Modern Organizations": "https://www.confluent.io/blog/achieving-data-efficiency/",
+									"Carbon Aware Computing": "https://www.carbon-aware-computing.com/",
+									"Carbon Aware Computing: Next Green Breakthrough or New Greenwashing?": "https://hackernoon.com/carbon-aware-computing-next-green-breakthrough-or-new-greenwashing",
+									"GPF - General Policy Framework (PDF) - 2.3 - Specifications (Connection Issues)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 6.2 - Front-End (Caching Mechanisms)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"Minimize data transfer": "https://climateproductleaders.org/playbook/design-frugally/minimize-data-transfer",
+									"The Cost of Serialization": "https://www.harper.fast/resources/the-cost-of-serialization-and-5-ways-to-minimize-or-remove-this-hidden-expense",
+									"United Nations SDGS - Goal 7 - Sustainable Energy": "https://sdgs.un.org/goals/goal7#targets_and_indicators",
+									"United Nations SDGS - Goal 9 - Infrastructure": "https://sdgs.un.org/goals/goal9#targets_and_indicators",
+									"United Nations SDGS - Goal 13 - Climate Change": "https://sdgs.un.org/goals/goal13#targets_and_indicators"
 								}
 							]
 						}
@@ -4584,24 +4602,6 @@
 									"United Nations SDGS - Goal 13 - Climate Change": "https://sdgs.un.org/goals/goal13#targets_and_indicators"
 								}
 							]
-						},
-						{
-							"title": "Efficient location",
-							"description": "Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources.",
-							"resources": [
-								{
-									"3 Strategies for Achieving Data Efficiency in Modern Organizations": "https://www.confluent.io/blog/achieving-data-efficiency/",
-									"Carbon Aware Computing": "https://www.carbon-aware-computing.com/",
-									"Carbon Aware Computing: Next Green Breakthrough or New Greenwashing?": "https://hackernoon.com/carbon-aware-computing-next-green-breakthrough-or-new-greenwashing",
-									"GPF - General Policy Framework (PDF) - 2.3 - Specifications (Connection Issues)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 6.2 - Front-End (Caching Mechanisms)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"Minimize data transfer": "https://climateproductleaders.org/playbook/design-frugally/minimize-data-transfer",
-									"The Cost of Serialization": "https://www.harper.fast/resources/the-cost-of-serialization-and-5-ways-to-minimize-or-remove-this-hidden-expense",
-									"United Nations SDGS - Goal 7 - Sustainable Energy": "https://sdgs.un.org/goals/goal7#targets_and_indicators",
-									"United Nations SDGS - Goal 9 - Infrastructure": "https://sdgs.un.org/goals/goal9#targets_and_indicators",
-									"United Nations SDGS - Goal 13 - Climate Change": "https://sdgs.un.org/goals/goal13#targets_and_indicators"
-								}
-							]
 						}
 					],
 					"benefits": [
@@ -4746,7 +4746,7 @@
 									"GPF - General Policy Framework (PDF) - 1.6 - Strategy (Data Collection)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 7.2 - Back-End (Data Retention)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 3-7041 - Transfer Compression": "https://gr491.isit-europe.org/en/crit.php?id=3-7041-backend-the-essential-exchanges-should-make-it-possible",
-									"Microsoft Azure WAF - Batch Processing": "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-platform#run-batch-workloads-during-low-carbon-intensity-periods",
+									"Microsoft Azure WAF - Carbon shifting": "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-platform#run-batch-workloads-during-low-carbon-intensity-periods",
 									"Microsoft Azure WAF - Only store what is relevant": "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-storage#only-store-what-is-relevant"
 								}
 							]
