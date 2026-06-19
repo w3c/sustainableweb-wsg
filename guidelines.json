@@ -2460,11 +2460,11 @@
 					"id": "ensure-code-follows-good-semantic-practices",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices",
 					"guideline": "Ensure code follows good semantic practices",
-					"subheading": "Use semantic markup free of optional or non-standard code, use the latest version of technical specifications, and only using custom solutions when native ones are insufficient.",
+					"subheading": "Use standards-compliant HTML and web platform features, and avoid unnecessary complexity or non-standard code.",
 					"criteria": [
 						{
 							"title": "Semantic code",
-							"description": "Use accurate markup according to the relevant standard(s).",
+							"description": "Use valid and standards-compliant markup.",
 							"resources": [
 								{
 									"2025: 0 of the Global Top 200 Websites Use Valid HTML": "https://meiert.com/blog/html-conformance-2024/",
@@ -2502,7 +2502,7 @@
 						},
 						{
 							"title": "Optional features",
-							"description": "Remove optional HTML elements, attribute quotes, and default attributes when these do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity without compromising on performance, or ensure consistent browser rendering.",
+							"description": "Remove optional HTML elements, attribute quotes, and default attributes if  doing so does not negatively impact accessibility, readability, functionality, or performance. Retain them when they improve accessibility, maintain clarity without compromising performance, or ensure consistent browser rendering.",
 							"resources": [
 								{
 									"Almost, but not quite, entirely unlike": "https://www.htmhell.dev/adventcalendar/2024/7/",
@@ -2516,7 +2516,7 @@
 						},
 						{
 							"title": "Avoid non-standard code",
-							"description": "Avoid using non-standard, deprecated, proprietary, or outdated formats and web standards. Only use such code where this is required to meet a documented customer need and if there is a justifiable benefit that cannot otherwise be met. Justifiable reasons could include compatibility with essential legacy systems and/or hardware, accessibility, or emissions reduction. Use polyfills only when necessary, and regularly audit code to see if they can be removed.",
+							"description": "Avoid deprecated, proprietary, or non-standard technologies unless there is a clear, justified need such as legacy compatibility or accessibility. Use polyfills only when necessary and review them regularly for removal.",
 							"resources": [
 								{
 									"A Node and Command Line Tool to Find Obsolete HTML": "https://meiert.com/blog/find-obsolete-html/",
@@ -2550,32 +2550,23 @@
 						},
 						{
 							"title": "Custom code",
-							"description": "Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use pre-existing elements or if you require them for the purposes of producing reusable design system components.",
-							"resources": [
-								{
-									"GPF - General Policy Framework (PDF) - 1.9 - Strategy (Interoperable Technologies)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 2.9 - Specifications (Off-The-Shelf Components)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"HTML First": "https://html-first.com/",
-									"NoLoJS: Reducing the JS Workload with HTML and CSS": "https://calendar.perfplanet.com/2025/nolojs-reducing-js-workload-html-css/",
-									"Plain Vanilla": "https://plainvanillaweb.com/",
-									"Web Components Basics and Performance Benefits": "https://medium.com/@spkamboj/web-components-basics-and-performance-benefits-f7537c908075",
-									"Web components vs. React": "https://blog.logrocket.com/web-components-vs-react/"
-								}
-							]
-						},
-						{
-							"title": "Built-in over custom",
-							"description": "Use web platform features and APIs over writing your own.",
+							"description": "Use standard HTML elements, attributes, features, and APIs wherever they meet the requirement. Use custom elements, Web Components, or custom functionality only when built-in web platform capabilities cannot meet the need or when building reusable design system components.",
 							"resources": [
 								{
 									"15 Tips to Optimize Your PHP Script for Better Performance for Developers": "https://www.thegeekstuff.com/2014/04/optimize-php-code/",
 									"Energy Efficiency across Programming Languages (PDF)": "https://greenlab.di.uminho.pt/wp-content/uploads/2017/10/sleFinal.pdf",
 									"GPF - General Policy Framework (PDF) - 1.9 - Strategy (Interoperable Technologies)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 2.9 - Specifications (Off-The-Shelf Components)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 4.5 - UX and UI (Native Components)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"HTML First": "https://html-first.com/",
 									"Improving PHP Performance for Web Applications": "https://www.keycdn.com/blog/php-performance",
 									"Native features of the browser": "https://subscription.packtpub.com/book/game-development/9781849696029/1/ch01lvl1sec13/native-features-of-the-browser",
+									"NoLoJS: Reducing the JS Workload with HTML and CSS": "https://calendar.perfplanet.com/2025/nolojs-reducing-js-workload-html-css/",
 									"PHP Function and Method listing": "https://www.php.net/manual/en/indexes.functions.php",
-									"Web APIs": "https://developer.mozilla.org/en-US/docs/Web/API"
+									"Plain Vanilla": "https://plainvanillaweb.com/",
+									"Web APIs": "https://developer.mozilla.org/en-US/docs/Web/API",
+									"Web Components Basics and Performance Benefits": "https://medium.com/@spkamboj/web-components-basics-and-performance-benefits-f7537c908075",
+									"Web components vs. React": "https://blog.logrocket.com/web-components-vs-react/"
 								}
 							]
 						}
