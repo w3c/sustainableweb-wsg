@@ -6260,29 +6260,7 @@
 									"Your right to get your data deleted": "https://ico.org.uk/for-the-public/your-right-to-get-your-data-deleted/"
 								}
 							]
-						}
-					],
-					"benefits": [
-						{
-							"Economic": "Prioritizing data privacy and other responsible data practices reduces associated risk and costs, increases resilience, and often fosters better relationships with customers and other affected parties."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
-					"tags": ["AI", "Content", "Governance", "Privacy", "Social Equity"]
-				},
-				{
-					"id": "implement-appropriate-data-management-procedures",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures",
-					"guideline": "Implement appropriate data management procedures",
-					"subheading": "Allow users to manage, control, and delete their data upon request, while making outdated content searchable via a lightweight and simple archive.",
-					"criteria": [
+						},
 						{
 							"title": "Outdated content",
 							"description": "Archive and delete outdated or otherwise expired product content and data via automated expiration dates and scheduled product audits. Publish the archiving schedule, ensuring a lightweight version of the old searchable content is maintained for those that may require it.",
@@ -6307,7 +6285,7 @@
 					],
 					"benefits": [
 						{
-							"Economic": "Requiring less data reduces storage requirements, allowing organizations to scale down their hosting package or be charged less for pay-by-use infrastructure costs.",
+							"Economic": "Prioritizing data privacy and other responsible data practices reduces associated risk and costs, increases resilience, and often fosters better relationships with customers and other affected parties.",
 							"Environment": "Storing less data reduces the computing power required to maintain a service, reducing energy and infrastructure-related emissions.",
 							"Performance": "Moving older and less relevant content onto a smaller scaled-down version of your digital product or service will reduce your bandwidth usage. Archived information will have significantly fewer users, meaning this is unlikely to have a negative impact on their experience.",
 							"Privacy": "Improving data management supports better data protection practices."
@@ -6315,13 +6293,13 @@
 					],
 					"GRI": [
 						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
+							"materials": "High",
+							"energy": "High",
+							"water": "High",
+							"emissions": "High"
 						}
 					],
-					"tags": ["Privacy", "Security", "Social Equity", "Strategy"]
+					"tags": ["AI", "Content", "Governance", "Privacy", "Security", "Social Equity", "Strategy"]
 				},
 				{
 					"id": "establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies",
