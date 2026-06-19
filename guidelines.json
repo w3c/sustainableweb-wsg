@@ -4044,11 +4044,11 @@
 					"id": "setup-necessary-error-pages-and-redirection-links",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#setup-necessary-error-pages-and-redirection-links",
 					"guideline": "Setup necessary error pages and redirection links",
-					"subheading": "Use error and redirection handling on projects to reduce the impact of unnecessary journeys or unhelpful detours.",
+					"subheading": "Provide clear error handling and ensure broken links are either fixed or redirected to destinations to prevent navigation issues.",
 					"criteria": [
 						{
 							"title": "Error pages",
-							"description": "Set up proper error handling and error pages to clearly inform users when something goes wrong, guide them back to useful content, and maintain a consistent, trustworthy experience.",
+							"description": "Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content.",
 							"resources": [
 								{
 									"6 Best practices for 404 pages with killer UX": "https://uxplanet.org/6-best-practices-for-404-pages-with-killer-ux-d9305db19ad9",
@@ -4069,7 +4069,7 @@
 						},
 						{
 							"title": "redirection",
-							"description": "Regularly audit to check for broken and outdated links. Update these as necessary and add redirects to guide users and search engines to the correct content to ensure efficient browsing and protect SEO value. Test all redirects to ensure they function as intended and avoid impactful redirect loops. Favor the most efficient redirection system for your platform.",
+							"description": "Update broken and outdated links if they are no longer valid. Use redirects only when they clearly benefit users or preserve SEO value, and avoid long or unnecessary redirect chains. Apply proportionality so engineering and maintenance costs do not outweigh performance or SEO gains. Test redirects to prevent errors and loops, and choose the simplest effective approach.",
 							"resources": [
 								{
 									"Avoid Multiple Page Redirects": "https://www.debugbear.com/blog/avoid-multiple-page-redirects",
