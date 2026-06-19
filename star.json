@@ -2783,7 +2783,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/beneficial-files.html"
 				},
 				{
-					"id": "identify-requirements",
+					"id": "appropriate-implementation",
 					"title": "Encourage the use of more sustainable creation toolchains",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use the most efficient solution for your service](https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service).",
 					"description": [
@@ -2808,7 +2808,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/identify-requirements.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/appropriate-implementation.html"
 				},
 				{
 					"id": "extensions-and-plugins",
