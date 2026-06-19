@@ -6200,11 +6200,11 @@
 					"id": "promote-responsible-data-practices",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices",
 					"guideline": "Promote responsible data practices",
-					"subheading": "Provide publicly accessible versions of documents required by law in a sustainable, easy-to-consume format, while also observing ethical data retention practices.",
+					"subheading": "Respect user data rights and manage data lifecycle through minimised collection, user control, portability, deletion, and content archiving.",
 					"criteria": [
 						{
 							"title": "Data practices",
-							"description": "Maintain a publicly accessible privacy policy, terms and conditions, and any other documents as required by law in the jurisdictions in which the product or service operates. Adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. Provide documents in accessible formats and use clear, user-friendly language to ensure comprehension by all users. Avoid unnecessary jargon, technical language, and legalese. Support emerging legislation and implement best practices related to data privacy, sustainability, and responsible data management.",
+							"description": "Maintain publicly accessible privacy, legal, and policy documents in plain language and accessible formats. Follow strong data protection practices aligned with recognised international standards, apply stronger protections where risks to users are higher or safeguards are insufficient, and support good practices in privacy, accessibility, and sustainability through transparent data use and governance.",
 							"resources": [
 								{
 									"5 Essential Legal Pages Every Website Need": "https://www.codeconspirators.com/5-essential-legal-pages-every-website-need/",
@@ -6219,7 +6219,7 @@
 						},
 						{
 							"title": "Data ownership",
-							"description": "Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how opt-out will be handled along with ownership rights. Data deletion or \"Right to be forgotten\" requests must immediately propagate to databases and local caches. Cached data must not persist after a user has revoked consent or deleted their account. Also provide the ability to download or export data created by or in relation to the user in a non-proprietary format.",
+							"description": "Respect user data rights, including access, correction, deletion, opt-out, and data portability. Provide clear user controls to manage accounts, data, and subscriptions. Only collect and retain personal data for a defined purpose and for no longer than necessary. Provide data export in open, commonly used formats. Ensure that deletion and consent changes apply across all systems, including databases, derived datasets, backups, and caches, within a reasonable timeframe.",
 							"resources": [
 								{
 									"10 CCPA Compliance Tips For Web Developers": "https://dataoverhaulers.medium.com/10-ccpa-compliance-tips-for-web-developers-1ce8382c7286",
