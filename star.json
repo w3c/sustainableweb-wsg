@@ -3716,7 +3716,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/impact-reports.html"
 				},
 				{
-					"id": "BSPM08-3",
+					"id": "disclosure-reporting",
 					"title": "Check for any compliance related disclosure documentation",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Support mandatory disclosures and reporting](https://www.w3.org/TR/web-sustainability-guidelines/#support-mandatory-disclosures-and-reporting).",
 					"description": [
@@ -3740,7 +3740,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM08-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/disclosure-reporting.html"
 				},
 				{
 					"id": "management-and-maintenance",
