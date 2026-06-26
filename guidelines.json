@@ -2389,7 +2389,7 @@
 						},
 						{
 							"title": "Self-hosting",
-							"description": "Host assets such as content, icons, and widgets on your own infrastructure rather than relying on third-party services to store, deliver, or embed them, reducing dependency on external systems, improving performance through fewer external requests, and lowering the energy use associated with third-party delivery networks.",
+							"description": "Serve assets such as content, icons, fonts, scripts, and widgets from infrastructure you control where practical, rather than embedding or depending on third-party services for their storage or delivery. This reduces dependency on external systems, improves reliability, and can reduce unnecessary network requests.",
 							"resources": [
 								{
 									"Awesome-Selfhosted": "https://github.com/awesome-selfhosted/awesome-selfhosted",
@@ -2416,7 +2416,7 @@
 						},
 						{
 							"title": "Third-party preferences",
-							"description": "Respect user preferences around third-party content and services. Provide clear controls to disable or opt out of non-essential third-party features. Explain their purpose unless they are required for core functionality.",
+							"description": "Respect user preferences around third-party content and services. Provide clear controls to disable or opt out of non-essential third-party features.",
 							"resources": [
 								{
 									"An empirical study on the performance and energy costs of ads and analytics in mobile web apps": "https://www.sciencedirect.com/science/article/pii/S0950584923002252",
