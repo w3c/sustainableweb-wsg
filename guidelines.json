@@ -3088,7 +3088,7 @@
 					"criteria": [
 						{
 							"title": "Sustainable JavaScript",
-							"description": "Write JavaScript that supports long-term application performance by reducing unnecessary calculations, limiting DOM updates, and minimising network requests.",
+							"description": "Write JavaScript that supports long-term application performance by reducing unnecessary calculations, limiting DOM updates, and minimizing network requests.",
 							"resources": [
 								{
 									"A handful of reasons JavaScript won't be available": "https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available/",
@@ -3139,7 +3139,7 @@
 						},
 						{
 							"title": "API requests",
-							"description": "Only call client-side or server-side APIs when needed, ensuring requests and responses only request the data required for the task.",
+							"description": "Only call client-side or server-side APIs when needed. Ensure only data required for the task is included in requests and responses.",
 							"resources": [
 								{
 									"9 Proven Strategies to Improve API Performance": "https://www.thegeekyminds.com/post/strategies-to-improve-api-performance",
