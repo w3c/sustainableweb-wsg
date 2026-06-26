@@ -122,17 +122,22 @@
 						},
 						{
 							"title": "Barriers and access",
-							"description": "Conduct internal and user research to identify whether a technical, physical, or human constraint might require adaptations to reduce barriers or improve access to content. Use the findings to improve access and reduce unnecessary effort for users.",
+							"description": "Conduct internal and user research to identify constraints or conditions that may require adaptations to reduce barriers or improve access to content. Use the findings to reduce barriers and effort. Do not introduce or increase security or safety risks or exposure, including compromising necessary user verification or authentication mechanisms. Design security and safety measures in ways that avoid unnecessary barriers to access.",
 							"resources": [
 								{
 									"Access Guide": "https://www.accessguide.io/",
 									"Accessibility": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
 									"Adaptive web design": "https://en.wikipedia.org/wiki/Adaptive_web_design",
 									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
+									"Europe's Digital Decade": "https://digital-strategy.ec.europa.eu/en/policies/europes-digital-decade",
+									"GPF - General Policy Framework (PDF) - 4.14 - UX and UI (Dark Patterns)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GR491 - 10-3070 - Dark Patterns": "https://gr491.isit-europe.org/en/crit.php?id=10-3070-uxui-some-services-are-designed-to-create-some",
+									"Harm reduction principles for digital accessibility practitioners": "https://ericwbailey.website/published/harm-reduction-principles-for-digital-accessibility-practitioners/",
 									"Introduction to Web Accessibility": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
 									"Keys To An Accessibility Mindset": "https://www.smashingmagazine.com/2023/02/keys-accessibility-mindset/",
 									"Learn Accessibility": "https://web.dev/learn/accessibility?hl=en",
 									"Metrics to measure the ROI of web accessibility": "https://uxdesign.cc/top-10-metrics-to-measure-the-roi-of-web-accessibility-f9ddd697896a",
+									"ROI Calculators": "https://humanfactors.com/thinking-favorite.aspx",
 									"Supporting Digital Skills and Reducing Social Isolation Amongst Older People": "https://www.governmentevents.co.uk/ge-insights/supporting-digital-skills-and-reducing-social-isolation-amongst-older-people/",
 									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
 									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
@@ -142,37 +147,6 @@
 									"W3C Web Content Accessibility Guidelines": "https://www.w3.org/TR/WCAG22/",
 									"What are design constraints?": "https://blog.logrocket.com/ux-design/what-are-design-constraints/",
 									"What are the Main Barriers to Digital Inclusion?": "https://www.trueambassadors.org.uk/what-are-the-main-barriers-to-digital-inclusion/"
-								}
-							]
-						},
-						{
-							"title": "Barrier removal",
-							"description": "Remove barriers to access. Do not introduce or increase security or safety risks or exposure, including compromising necessary user verification or authentication mechanisms. Design security and safety measures in ways that avoid unnecessary barriers to access. Accessibility barriers can reduce long-term usability, limit reach, and increase support and maintenance costs.",
-							"resources": [
-								{
-									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"Dark Design Patterns Catalog": "https://www.uxtigers.com/post/dark-design",
-									"Dark pattern": "https://en.wikipedia.org/wiki/Dark_pattern",
-									"Dark Patterns Detective": "https://games.productartistry.com/games/dark-patterns",
-									"Dark Patterns Hall of Shame": "https://hallofshame.design/",
-									"Dark patterns in UX: how designers should be responsible for their actions": "https://uxdesign.cc/dark-patterns-in-ux-design-7009a83b233c",
-									"Deceptive design vs. the law": "https://clearleft.com/thinking/deceptive-design-vs-the-law",
-									"Deceptive Patterns": "https://www.deceptive.design/",
-									"Europe's Digital Decade": "https://digital-strategy.ec.europa.eu/en/policies/europes-digital-decade",
-									"GPF - General Policy Framework (PDF) - 4.14 - UX and UI (Dark Patterns)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 10-3070 - Dark Patterns": "https://gr491.isit-europe.org/en/crit.php?id=10-3070-uxui-some-services-are-designed-to-create-some",
-									"Harm reduction principles for digital accessibility practitioners": "https://ericwbailey.website/published/harm-reduction-principles-for-digital-accessibility-practitioners/",
-									"How Deceptive Design is Used to Compromise Your Privacy and How to Fight Back": "https://consciousdigital.org/deceptive-design-patterns/",
-									"Ledger of Harms": "https://ledger.humanetech.com/",
-									"Overlay Fact Sheet": "https://overlayfactsheet.com/en/",
-									"Overlay False Claims": "https://overlayfalseclaims.com/",
-									"ROI Calculators": "https://humanfactors.com/thinking-favorite.aspx",
-									"Six Dark Patterns to Avoid On Your Website": "https://www.mightybytes.com/insights/6-dark-patterns-to-avoid-on-your-website/",
-									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
-									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
-									"United Nations SDGS - Goal 9 - Infrastructure": "https://sdgs.un.org/goals/goal9#targets_and_indicators",
-									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators"
 								}
 							]
 						}
