@@ -126,6 +126,11 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td>14 May 2026</td>
 		</tr>
 		<tr>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/impact.html">WSG Impact Measurement</a></td>
+			<td>W3C Editors Draft</td>
+			<td>26 June 2026</td>
+		</tr>
+		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/benefits.html">WSG Benefits</a></td>
 			<td>W3C Editors Draft</td>
 			<td>15 May 2026</td>
@@ -144,6 +149,11 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
 			<td>JSON API</td>
 			<td>15 May 2026</td>
+		</tr>
+		<tr>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/impact.json">WSG Impact API</a></td>
+			<td>W3C Editors Draft</td>
+			<td>26 June 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
