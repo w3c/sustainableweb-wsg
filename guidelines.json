@@ -2502,7 +2502,7 @@
 						},
 						{
 							"title": "Optional features",
-							"description": "Remove optional HTML elements, attribute quotes, and default attributes if  doing so does not negatively impact accessibility, readability, functionality, or performance. Retain them when they improve accessibility, maintain clarity without compromising performance, or ensure consistent browser rendering.",
+							"description": "Remove optional HTML elements, attribute quotes, and default attributes if doing so does not negatively impact accessibility, readability, functionality, or performance. Include them when they improve accessibility, maintain clarity without compromising performance, or ensure consistent browser rendering.",
 							"resources": [
 								{
 									"Almost, but not quite, entirely unlike": "https://www.htmhell.dev/adventcalendar/2024/7/",
