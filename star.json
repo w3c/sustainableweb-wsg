@@ -1443,7 +1443,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
 					"description": [
 						{
-							"1": "Ensure that problems relating to the sustainability of a website can be picked up with more frequency and regularity, especially upon the release of a new version. Within the scope of website and application testing, it is important to be actively monitoring for common failure points that build over time and upon being notified of said issues provide resolutions within a reasonable timeframe.",
+							"1": "Ensure that problems relating to the sustainability of a website can be picked up with more frequency and regularity, especially upon the release of a new version. Within the scope of website and application testing, it is important to actively monitor for common failure points that build over time. Upon being notified of said issues provide resolutions within a reasonable timeframe.",
 							"2": "Machine testability for this implementation will be based on the mechanism used for testing. For instance, if a product or service provider chooses to simply run routine tests on a scheduled basis this may be considered a pass as long as the time between scans is frequent enough that it can be considered active in opposition to occasional (weekly would be the widest margin)."
 						}
 					],
@@ -1451,7 +1451,7 @@
 						{
 							"1": "[Speedcurve](https://www.speedcurve.com/) is a commercial product that actively monitors websites for performance issues (broken down by category in rendering) and can provide advisory guidance on meeting targets for performance budgets.",
 							"2": "[Google Search Console](https://search.google.com/search-console/about) is a free product that monitors websites for issues that may affect their ability to be indexed within the Google search engine, which notably can impact their overall global page visibility.",
-							"3": "[Accessibility scanners](https://www.w3.org/WAI/test-evaluate/tools/list/) can use the machine-testable elements of WCAG to help identify issues that can be resolved. While they are not a silver bullet and cannot replace manual audits they can identify some issues."
+							"3": "[Accessibility scanners](https://www.w3.org/WAI/test-evaluate/tools/list/) can use the machine-testable elements of WCAG to help identify and resolve issues. While they are not a silver bullet and cannot replace manual audits they can identify some issues."
 						}
 					],
 					"tests": [
