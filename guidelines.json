@@ -4354,7 +4354,7 @@
 					"criteria": [
 						{
 							"title": "Carbon shifting",
-							"description": "Use carbon-aware computing to dynamically optimize workload execution by scheduling or batching tasks based on real-time grid carbon intensity data, and shifting workloads across regions when permitted, while respecting security, performance, and data residency constraints.",
+							"description": "Use carbon-aware computing to dynamically optimize workload execution by scheduling or batching tasks to run at a time when carbon intensity is lower based on real-time grid carbon intensity data, or shifting workloads to regions with lower carbon intensity when possible, while respecting security, performance, and data residency constraints.",
 							"resources": [
 								{
 									"Beginner's Guide to Carbon shifting": "https://www.talend.com/resources/batch-processing/",
