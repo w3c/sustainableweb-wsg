@@ -85,14 +85,6 @@
 							"Social Equity": "Auditing factors can reveal factors not commonly understood or covered in established best practices, enabling better support for underrepresented groups."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["Accessibility", "Compatibility", "Hardware", "Ideation", "Networking", "Performance", "Privacy", "Reporting", "Research", "Social Equity", "Software"]
 				},
 				{
@@ -188,14 +180,6 @@
 							"Social Equity": "Improving UX with compatibility in mind means products or services work better for users who might otherwise face various barriers to accessing content - such as older devices, low-bandwidth environments, or restrictive territories, language, while being considerate of localizability and adapting to cultural norms. This reduces e-waste and improves equity if older equipment meets needs for longer."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["Accessibility", "Compatibility", "Ideation", "KPIs", "Patterns", "Privacy", "Reporting", "Research", "Social Equity", "UI", "Usability"]
 				},
 				{
@@ -272,14 +256,6 @@
 							"Economic": "Incorporating wireframes, prototypes, and user testing into early product design cycles reduces money and effort otherwise wasted building features people will not use.",
 							"Environment": "Helping key contributors to better understand the environmental impact makes it possible to track and reduce that impact throughout the lifecycle of a project.",
 							"Social Equity": "Accounting for the needs of users who might otherwise face various barriers to accessing content - on such as older devices, in low-bandwidth environments, or have other barriers to accessing information early in the process will reduce the need for costly redesigns or adding appropriate alternatives at a later date."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"tags": ["Accessibility", "Ideation", "KPIs", "Research", "Social Equity", "Software", "Strategy", "UI"]
@@ -416,14 +392,6 @@
 							"Social Equity": "Reducing device and bandwidth requirements through providing more lightweight experiences can improve work better for users using older devices or located in low-bandwidth environments, and similar."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["Accessibility", "Content", "Patterns", "Performance", "Privacy", "Social Equity", "UI", "Usability"]
 				},
 				{
@@ -481,14 +449,6 @@
 							"Conversion": "Optimizing structure can also boost conversion rates as people are more likely to find what they need. The same applies when users are made aware of new content related to their interests.",
 							"Economic": "Shortening user journeys can also reduce hosting costs where this is linked to data transfer.",
 							"Environment": "Improving navigation and search efficiency can reduce the time users spend finding what they need and achieving their objectives. This also lowers emissions."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Low",
-							"water": "Medium",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["Accessibility", "HTML", "Marketing", "UI", "Usability"]
@@ -604,15 +564,7 @@
 							"Transparency": "Avoiding deceptive patterns will boost trust and encourage users to return or recommend."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
-					"tags": ["Accessibility", "Assets", "Content", "Patterns", "Performance", "Privacy", "Social Equity", "UI", "Usability"]
+					"tags": ["Accessibility", "Assets", "Patterns", "UI", "Usability"]
 				},
 				{
 					"id": "avoid-being-manipulative-or-deceptive",
@@ -725,14 +677,6 @@
 							"Privacy": "Ensuring compliance with ethical privacy practices and avoiding dark and deceptive patterns reduces litigation risk. It also reduces data transmission between tracking and advertising services providers."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
-						}
-					],
 					"tags": ["Accessibility", "Assets", "Compatibility", "JavaScript", "JavaScript", "Patterns", "Privacy", "Security", "Social Equity", "UI", "Usability"]
 				},
 				{
@@ -817,14 +761,6 @@
 							"Environment": "Using common and clear formats for deliverables will reduce the time users need to spend familiarizing themselves with and adapting to the environment. This reduces the energy spent managing a project and the associated emissions."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["Accessibility", "Assets", "Content", "Education", "Patterns", "Software"]
 				},
 				{
@@ -887,14 +823,6 @@
 							"Performance": "Building design systems using standardized components reduces the need for repeat coding. This reduces developer coding time and can improve performance. Overall, sustainable patterns reduce emissions."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Low",
-							"water": "Medium",
-							"emissions": "Low"
-						}
-					],
 					"tags": ["Accessibility", "Assets", "CSS", "Education", "Patterns", "Strategy", "UI", "Usability"]
 				},
 				{
@@ -955,14 +883,6 @@
 							"Environment": "Ensuring content is easy to find and comprehend enables users to make informed decisions faster, taking less time and resources. This reduces energy consumption and emissions.",
 							"Performance": "Creating well-structured content can improve search performance. When content ranks higher in search engines, people are more likely to land in the right place straight away.",
 							"Social Equity": "Using inclusive language that avoids jargon and unnecessary exclusion can improve user experience for a broader audience."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Low",
-							"water": "Medium",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["Accessibility", "Content", "Social Equity", "UI", "Usability"]
@@ -1138,14 +1058,6 @@
 							"Performance": "Tailoring user experience to the device, situation, and environment of the user by having different resolutions and quality formats available reduces wasted bandwidth. This can boost performance for users who make choices to reduce the data downloaded.",
 							"Social Equity": "Providing alternatives to data-intensive media allows with limited bandwidth or older devices to access content."						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"example": "<picture> \n  <source type=\"image/avif\" srcset=\"image.avif\">\n  <source type=\"image/webp\" srcset=\"image.webp\">\n  <img width=\"100px\" height=\"100px\" src=\"image.jpg\" alt=\"\" loading=\"lazy\"/>\n</picture>",
 					"tags": ["Accessibility", "Assets", "Content", "HTML", "Performance", "Software", "UI", "Usability"]
 				},
@@ -1211,14 +1123,6 @@
 							"Environment": "Disabling and reducing animation to the essential, with appropriate optimization and user control, reduces rendering impact and associated emissions.",
 							"Performance": "Compressing, removing, or otherwise reducing animation files reduces complexity, improving performance.",
 							"Social Equity": "Catering to different perspectives on and preferences in relation to animation can improve acceptance and access for individuals using different devices and from different backgrounds."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
 						}
 					],
 					"example": "@media (prefers-reduced-motion: reduce) {\r\n\tbody *,\r\n\tbody *::before,\r\n\tbody *::after {\r\n\t\tanimation-delay: -1ms !important;\r\n\t\tanimation-duration: 1ms !important;\r\n\t\tanimation-iteration-count: 1 !important;\r\n\t\tbackground-attachment: initial !important;\r\n\t\ttransition-duration: 1ms !important;\r\n\t\ttransition-delay: -1ms !important;\r\n\t\tscroll-behavior: auto !important;\r\n\t}\r\n}",
@@ -1298,14 +1202,6 @@
 							"Environment": "Reducing the number and complexity of custom fonts used reduces data transfer and rendering effort, which lowers associated emissions.",
 							"Performance": "Using optimized web fonts or system fonts supports a smoother user experience and faster rendering.",
 							"Social Equity": "System fonts are preinstalled and are reliable, ensuring content can always be presented fast in a font users are familiar with."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"example": "font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;",
@@ -1408,14 +1304,6 @@
 							"Social Equity": "Providing text alternatives for those who are not able to watch a video or listen to audio, even situationally, improves access and user experience."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"example": "WEBVTT\r\n\r\n00:01.000 --> 00:04.000\r\n- Something happened yesterday morning.\r\n\r\n00:05.000 --> 00:09.000\r\n- Or was it in the evening?\r\n- I can't remember!",
 					"tags": ["Accessibility", "Assets", "Compatibility", "Content", "HTML", "Performance", "Social Equity", "UI", "Usability"]
 				},
@@ -1473,14 +1361,6 @@
 							"Privacy": "Collecting informed consent and providing helpful disclosures about cookies, data collection, and data processing within forms, alongside appropriate links to find further information in an accessible format, improves data privacy."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Low",
-							"water": "Medium",
-							"emissions": "Low"
-						}
-					],
 					"example": "<form>\r\n\t<label for=\"choose\">Would you prefer a banana or cherry? (required)<\/label>\r\n\t<input id=\"choose\" name=\"i-like\" required \/>\r\n\t<button>Submit<\/button>\r\n<\/form>",
 					"tags": ["Accessibility", "HTML", "Privacy", "Social Equity", "UI", "Usability"]
 				},
@@ -1529,14 +1409,6 @@
 							"Accessibility": "Signposting individuals to information through helpful notifications or error messages will reduce abandonment. All information must be presented in a way that does not discriminate, as this could exclude many potential users.",
 							"Environment": "Notifying users about important events can reduce the need to constantly refresh pages. These notifications provide a shortcut, ensuring content is loaded when it becomes available. This can save emissions.",
 							"Privacy": "Using notifications appropriately ensures personalized content is only displayed on specific devices, reducing the risk of information exposure."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Low",
-							"water": "Medium",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["Accessibility", "JavaScript", "Privacy", "UI", "Usability"]
@@ -1624,14 +1496,6 @@
 							"Performance": "Compressing or otherwise optimizing documents means they can be downloaded faster, avoiding users needing to wait to view documents prepared for offline viewing."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Low",
-							"water": "Medium",
-							"emissions": "Low"
-						}
-					],
 					"tags": ["Accessibility", "Assets", "Compatibility", "Content", "E-Waste", "Hardware", "Performance", "Software", "UI", "Usability"]
 				},
 				{
@@ -1661,14 +1525,6 @@
 							"Conversion": "Using a well-built, thoroughly tested interface is likely to reduce user frustration and churn.",
 							"Economic": "Prioritizing user research in organizational policies helps to reduce and mitigate risks and costs associated with building unnecessary features, which would also incur technical debt. Performing iterative testing and prototyping reduces the resources needed to build new features.",
 							"Environment": "Enabling users to complete tasks more quickly and efficiently reduces energy use and emissions."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
 						}
 					],
 					"tags": ["Accessibility", "Education", "Governance", "Ideation", "Research", "Social Equity", "Strategy", "UI", "Usability"]
@@ -1819,14 +1675,6 @@
 							"Security": "Auditing a product or service regularly will identify potential sources of breaches and areas of improvement in security and privacy."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["Accessibility", "Compatibility", "KPIs", "Performance", "Privacy", "Reporting", "Research", "Security", "Social Equity", "Software", "Strategy", "UI", "Usability"]
 				},
 				{
@@ -1904,14 +1752,6 @@
 							"Economic": "Avoiding wasted development time building features that bring little value to the consumer means resources can be focused where they deliver more value.",
 							"Environment": "Learning from feedback enables choices that improve environmental impact. An example of this would be making sure that the most frequently used features are placed higher in the visual hierarchy. This reduces the effort and time users must invest to achieve their goals.",
 							"Performance": "Performing user testing allows you to retain focus on goal and maintain good performance without unnecessary complexity."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"tags": ["Accessibility", "Education", "Governance", "Ideation", "KPIs", "Research", "Social Equity", "Strategy", "UI", "Usability"]
@@ -2062,14 +1902,6 @@
 							"Social Equity": "Enhancing compatibility and longevity helps to reduce the digital divide. This can be significant in relation to income inequality, infrastructure robustness, or accessibility, for example. Broader support can therefore open your work to new markets, or extend the viability of existing access. Similarly, because progressive web applications use established web standards, they are available to more people than more cost-prohibitive closed systems."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"tags": ["Accessibility", "Compatibility", "Ideation", "KPIs", "Patterns", "Reporting", "Research", "Security", "Social Equity", "Software", "Strategy", "UI", "Usability"]
 				}
 			]
@@ -2150,14 +1982,6 @@
 							"Performance": "Reducing the hardware load improves overall performance. Devices are less likely to be overloaded or hit their limits with reduced resources."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["KPIs", "Networking", "Performance", "Research", "Social Equity", "Strategy"]
 				},
 				{
@@ -2189,14 +2013,6 @@
 						{
 							"Conversion": "Faster page speeds improve user experience across the board. This makes users less likely to abandon their journey or search for their information elsewhere.",
 							"Performance": "Less data transferred means reduced loading times. White space itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"example": "!function(e,t){\"use strict\";\"object\"==typeof module&&\"object\"==typeof module.exports?module.exports=e.document?t(e,!0):function(e){if(!e.document)throw new Error(\"jQuery requires a window with a document\");return t(e)}:t(e)}(\"undefined\"!=typeof window?window:this,function(g,e){\"use strict\";var t=[],r=Object.getPrototypeOf,s=t.slice,v=t.flat?function(e){return t.flat.call(e)}:function(e){return t.concat.apply([],e)},u=t.push,i=t.indexOf",
@@ -2233,14 +2049,6 @@
 							"Conversion": "Modularizing code can accelerate performance, improving user experience while reducing the chance of abandonment. This is especially impact for users of low-resource devices, such as handhelds.",
 							"Economic": "Reducing the size of large files will reduce bandwidth expenses for service providers.",
 							"Performance": "Using smaller, modular components allows for more effective caching of commonly those reused components, while loading functions only when required reduces the payload. Unused portions of a larger resource will not be downloaded, which can have a considerable impact."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"example": "link.addEventListener(\"click\", (e) => {\r\n\te.preventDefault();\r\n\timport(\"\/modules\/my-module.js\")\r\n\t.then((module) => {\r\n\t\t\/* Do something *\/\r\n\t})\r\n\t.catch((err) => {\r\n\t\tconsole.error(err.message);\r\n\t});});",
@@ -2280,14 +2088,6 @@
 							"Economic": "Eliminating unused code means reducing maintenance work and expense. It can otherwise affect other code' or add unnecessary complexity.",
 							"Environment": "Removing unused code eliminates wasted bytes, reducing download size and potentially improving rendering time.",
 							"Performance": "Reducing downloaded code that otherwise offers no benefit to users frees up cache and RAM resources on their devices, while saving time."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"example": "export function read(props) { return props.book }\r\nimport { read } from 'utilities';\r\neventHandler = (e) => { read({ book: e.target.value })}",
@@ -2356,14 +2156,6 @@
 							"Economic": "Using an optimized and reusable codebase can enhance productivity and code quality leading to a better return on investment.",
 							"Environment": "Integrating certain methodologies can add code to your markup, but they also improve maintainability. This reduces development time at scale, and could reduce energy consumption as developers optimized workflows will reduce the time and energy spent on tasks.",
 							"Performance": "Avoiding repetitive code reduces waste in markup, which reduces the time it takes to download site data. This also reduces server-side impact."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"example": ".opinions_box {\r\n\tmargin: 0 0 8px 0;\r\n\ttext-align: center;\r\n\t&__view-more {\r\n\t\ttext-decoration: underline;\r\n\t}\r\n\t&__text-input {\r\n\t\tborder: 1px solid #ccc;\r\n\t}\r\n\t&--is-inactive {\r\n\t\tcolor: gray;\r\n\t}\r\n}",
@@ -2484,14 +2276,6 @@
 							"Environment": "Replacing heavy tooling and third-party services with lightweight tooling reduces user bandwidth usage and compute impact. It does require learning a new way of doing things or reducing the visibility of impactful features until they are requested. It can significantly reduce a page's overall 'environmental impact, including the data you have no control over. This is especially relevant when calculating Scope 3 emissions.",
 							"Performance": "Self-hosting fully self-contained services, features, and content are more performant by design. They avoid additional server and rendering requests or other complications associated with third-party content. You can choose to only include the required features, further reducing overall bandwidth usage and associated emissions.",
 							"Privacy": "Choosing not to embed and automatically load third-party content may be perceived as a privacy benefit by privacy-conscious users, because this reduces opportunities for their user data to be exploited."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
 						}
 					],
 					"example": "<iframe src=\"https:\/\/example.com\" loading=\"lazy\" width=\"600\" height=\"400\"><\/iframe>",
@@ -2631,14 +2415,6 @@
 							"Security": "Keeping up with modern standards reduces the risk of security exploits."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"example": "<button onclick=\"window.dialog.showModal()\">open dialog</button>\r\n<dialog id=\"dialog\">\r\n\t<p>I'm a dialog.</p>\r\n\t<form method=\"dialog\">\r\n\t\t<button>Close</button>\r\n\t</form>\r\n</dialog>",
 					"tags": ["Accessibility", "Compatibility", "Content", "HTML", "Security", "Social Equity", "Usability"]
 				},
@@ -2697,14 +2473,6 @@
 							"Performance": "Allowing text to render first make the user feel that everything is loading faster while, as the remaining content loads in the background or on demand."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"example": "<link rel=\"prefetch\" href=\"\/articles\/\" as=\"document\">",
 					"tags": ["Accessibility", "Assets", "CSS", "JavaScript", "Performance"]
 				},
@@ -2735,14 +2503,6 @@
 							"Economic": "Enabling quicker visits that complete the user's objective can help to encourage return visits.",
 							"Environment": "Reducing the time people spend searching for the information they want and aiding them on their journey will reduce energy use, including battery drain.",
 							"Social Equity": "Allowing users to achieve objectives faster reduces resource consumption while potentially enhancing user health and well-being."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"example": "&lt;a href=\"#content\"&gt;Skip to main content&lt;/a&gt;\r\n...\r\n&lt;main id=\"content\"&gt;\r\n&lt;h1&gt;Heading&lt;/h1&gt;",
@@ -2808,14 +2568,6 @@
 							"Security": "Allowing people to correct input errors, verify their input prior to submission, and identifying errors early in the process can help to prevent costly data protection mistakes."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"example": "<label for=\"username\">Username: (3-16 characters)<\/label>\r\n<input name=\"username\" type=\"text\" value=\"Sasha\" pattern=\"\\w{3,16}\" required>\r\n<label for=\"pin\">PIN: (4 digits)<\/label>\r\n<input name=\"pin\" type=\"password\" pattern=\"\\d{4,4}\" required>",
 					"tags": ["Accessibility", "Compatibility", "HTML", "Security", "UI", "Usability"]
 				},
@@ -2879,14 +2631,6 @@
 							"Transparency": "Metadata ensures clients find the correct content fast. If users only require something basic, such as contact details, they may not even have to view the content directly - saving bandwidth."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"example": "<html>\r\n\t<head>\r\n\t\t<title>Example: A website about Examples<\/title>\r\n\t\t<script type=\"application\/ld+json\">\r\n\t\t{\r\n\t\t\t\"@context\" : \"https:\/\/schema.org\",\r\n\t\t\t\"@type\" : \"WebSite\",\r\n\t\t\t\"name\" : \"Example\",\r\n\t\t\t\"url\" : \"https:\/\/example.com\/\"\r\n\t\t}\r\n\t<\/script>\r\n\t<\/head>\r\n\t<body>\r\n\t<\/body>\r\n<\/html>",
 					"tags": ["Accessibility", "AI", "HTML", "Marketing", "Usability"]
 				},
@@ -2946,14 +2690,6 @@
 							"Environment": "Accommodating dark mode when preferred will always be more energy efficient on OLED devices. Similarly, animation and media have a significant impact on CPU and GPU usage, so respecting a prefers reduced motion query will reduce energy consumption. The presence of a monochrome preference query could encourage greater adoption of energy-efficient e-ink devices. A sustainability-optimized print style sheet can save both paper and ink output.",
 							"Performance": "Allowing users to access a reduced-data version of a site could significantly reduce the data transferred and the resulting carbon footprint. This can improve performance and reduce costs for individuals on a metered data plan. Detecting if scripting is disabled and offering alternative content may save wasted effort and improve the performance of a project.",
 							"Social Equity": "Meeting user preferences is a positive shift: You are not telling your users how they should 'experience your content, but following your users' preferences or a device' capabilities and the priority of constituencies."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"example": "@media (prefers-color-scheme: dark) {\r\n\t\/* wants dark mode *\/\r\n}\r\n@media (prefers-color-scheme: light) {\r\n\t\/* wants light mode *\/\r\n}",
@@ -3110,14 +2846,6 @@
 							"Social Equity": "Ensuring content works well on older and low-powered devices is important, as these are more frequently used in developing nations."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Low",
-							"water": "Medium",
-							"emissions": "Low"
-						}
-					],
 					"example": "@media screen and (min-width: 600px) {\r\n\tbody {\r\n\t\tcolor: red;\r\n\t}\r\n}",
 					"tags": ["Accessibility", "AI", "Compatibility", "Content", "CSS", "Performance", "Social Equity", "UI", "Usability"]
 				},
@@ -3202,14 +2930,6 @@
 							"Privacy": "Allowing script-free users to easily access your content can protect the privacy of users with increased privacy needs."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"example": "const audio = document.querySelector(\"audio\");\r\n\/\/ Handle page visibility change:\r\n\/\/ - If the page is hidden, pause the video\r\n\/\/ - If the page is shown, play the video\r\ndocument.addEventListener(\"visibilitychange\", () => {\r\nif (document.hidden) {\r\n\taudio.pause();\r\n} else {\r\n\taudio.play();\r\n}\r\n});",
 					"tags": ["Accessibility", "JavaScript", "Privacy", "Security"]
 				},
@@ -3259,14 +2979,6 @@
 							"Environment": "Securing your project against threats and closing vulnerabilities makes them a less likely target for individuals who might exploit them, consuming vast amounts of data in the process.",
 							"Performance": "Protecting your project against breaches reduces your risk of large amounts of data being stolen, corrupted, or destroyed.",
 							"Security": "Maintaining security helps to maintain trust and prevent personal information from being exposed and exploited."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"tags": ["JavaScript", "Privacy", "Security", "Social Equity"]
@@ -3360,14 +3072,6 @@
 							"Security": "Keeping packages up-to-date and using fewer third-party libraries reduces the likelihood of security vulnerabilities."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
-						}
-					],
 					"example": "npm uninstall <package-name>",
 					"tags": ["Accessibility", "JavaScript", "Patterns", "Performance", "Privacy", "Security", "Software"]
 				},
@@ -3430,14 +3134,6 @@
 							"Environment": "Providing files expected by search engines or browsers will reduce loading errors and may improve efficiency in how users find or interact with a site. Plain text requires no rendering. If users or search engines are able to find these files, such as carbon.txt, they can load more quickly and with less CPU/GPU impact than any formatted webpage.",
 							"Performance": "Satisfying requests for expected files improves interactions with search engines or browsers requesting them, while also potentially avoiding additional requests once they are discovered. Plain text files contain no links, no markup, and has a low rendering impact. Including details such as site credits in such a file will reduce data transfer and have a lower rendering footprint.",
 							"Transparency": "Providing a humans.txt file allows you to credit the people involved in the creation process, while security.txt provides critical points of contact if an issue is discovered. Both increase transparency."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"example": "User-agent: *\r\nDisallow: \/cgi-bin\/",
@@ -3546,14 +3242,6 @@
 							"Security": "Maintaining a software product and restricting your use of third-party solutions to the essential will improve overall security."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["Accessibility", "Compatibility", "Ideation", "Performance", "Privacy", "Security", "Software", "Strategy"]
 				},
 				{
@@ -3602,14 +3290,6 @@
 							"Security": "Maintaining update and upgrade schedules is good for security, allowing you to reduce the risk of security vulnerabilities in older versions."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["Accessibility", "Compatibility", "Performance", "Security"]
 				},
 				{
@@ -3645,14 +3325,6 @@
 							"Economic": "Optimizing the codebase to avoid pushing multiple additional demands to the server reduces bandwidth overheads, while also reducing the risk of stress failures and lost business.",
 							"Environment": "Filtering out unneeded data at a deeper level of the application can reduce energy usage, as it reduces the processing required for (de)serialization.",
 							"Performance": "Holding the data locally rather than remotely eliminates the need to wait for additional requests to process the query. Relational databases and other specialist data stores are usually heavily optimized for data filtering and retrieval. Performing transformations at this level of the application creduces processing time and delivers responses faster."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"example": "$value = get_post_meta( int $post_id, string $key = '', bool $single = false ): mixed",
@@ -3893,14 +3565,6 @@
 							"Transparency": "Sharing the efficiency and low-carbon energy metrics of hosting services allows the public to verify and understand sustainable websites and products."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
-						}
-					],
 					"tags": ["AI", "E-Waste", "Hardware", "Networking", "Social Equity"]
 				},
 				{
@@ -3978,14 +3642,6 @@
 							"Environment": "Caching enables websites to deliver content without unnecessary server requests, sparing the carbon emissions driven by networks and the data center.",
 							"Performance": "Enabling browser caching can reduce page reload speeds for return users and deliver better website performance.",
 							"Social Equity": "Optimizing browser caching often enables users to view content when their network connection has failed or when they must use a low quality network."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "High",
-							"water": "Medium",
-							"emissions": "High"
 						}
 					],
 					"example": "<IfModule mod_expires.c>\r\n\tExpiresActive on\r\n\t# Default: Fallback\r\n\tExpiresDefault                                      \"access plus 1 year\"\r\n\t# Specific: Assets\r\n\tExpiresByType image\/x-icon                          \"access plus 1 week\"\r\n\tExpiresByType application\/rss+xml                   \"access plus 1 hour\"\r\n\tExpiresByType application\/json                      \"access\"\r\n<\/IfModule>",
@@ -4070,14 +3726,6 @@
 							"Social Equity": "Reduced reliance on a high-speed connection (which in many locations is unavailable)."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
-						}
-					],
 					"example": "<IfModule mod_deflate.c>\r\n\t<IfModule mod_setenvif.c>\r\n\t\t<IfModule mod_headers.c>\r\n\t\t\tSetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\\s*,?\\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding\r\n\t\t\tRequestHeader append Accept-Encoding \"zstd, gzip, br, deflate\" env=HAVE_Accept-Encoding\r\n\t\t<\/IfModule>\r\n\t<\/IfModule>\r\n\t<IfModule mod_filter.c>\r\n\t\tAddOutputFilterByType DEFLATE \"application\/atom+xml application\/javascript application\/json application\/ld+json application\/manifest+json application\/rdf+xml application\/rss+xml application\/schema+json application\/geo+json application\/vnd.ms-fontobject application\/wasm application\/x-font-ttf application\/x-javascript application\/x-web-app-manifest+json application\/xhtml+xml application\/xml font\/eot font\/opentype font\/otf font\/ttf image\/bmp image\/svg+xml image\/vnd.microsoft.icon image\/x-icon text\/cache-manifest text\/calendar text\/css text\/html text\/javascript text\/plain text\/markdown text\/vcard text\/vnd.rim.location.xloc text\/vtt text\/x-component text\/x-cross-domain-policy text\/xml\"\r\n\t<\/IfModule>\r\n\t<IfModule mod_mime.c>\r\n\t\tAddEncoding gzip              svgz\r\n\t<\/IfModule>\r\n<\/IfModule>",
 					"tags": ["Assets", "Networking", "Performance"]
 				},
@@ -4132,14 +3780,6 @@
 							"Environment": "When users load fewer pages on their way to desired content, a project becomes less carbon intensive."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
-						}
-					],
 					"example": "ErrorDocument 404 /404.html",
 					"tags": ["Accessibility", "Compatibility", "Content", "Marketing", "Networking", "UI", "Usability"]
 				},
@@ -4170,14 +3810,6 @@
 							"Economic": "Removing unnecessary environments reduces the resources that must be provisioned. This reduces infrastructure, maintenance, and process costs.",
 							"Environment": "Power and energy resources will be conserved from avoiding utilizing unnecessary environments and lowering carbon emissions will result.",
 							"Social Equity": "Scaling back the usage of data centers reduces the need for new facilities that may bring negative community impacts and strain national resources."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["AI", "Hardware", "Networking", "Performance", "Software"]
@@ -4290,14 +3922,6 @@
 							"Security": "Evading unwanted bots, crawlers, and similar users protects websites from harm and avoids potential downtime."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
-						}
-					],
 					"tags": ["Accessibility", "AI", "Performance", "Security", "Software"]
 				},
 				{
@@ -4329,14 +3953,6 @@
 							"Economic": "Caching or simply not updating data unnecessarily can potentially reduce costs by reducing the amount of data transmitted over a network.",
 							"Environment": "Minimizing data refreshes reduces server and network usage, which brings down power consumption and carbon emissions in turn.",
 							"Social Equity": "Reducing live data refresh rates makes it easier for people with limited or slow network access to access and use website content."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"tags": ["JavaScript", "Networking", "Performance", "Usability"]
@@ -4375,14 +3991,6 @@
 							"Environment": "Designing backups as efficiently as possible minimizes power consumption and carbon emissions by eliminating excess processes and storage.",
 							"Performance": "Ensuring the availability of critical data allows continuation or speedier resumption of service when problems occur, such as data loss or outages.",
 							"Security": "Keeping efficient, stable, and well-protected backups is good practice, meaning work, data, and business value are not irreparably lost during a data breach."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["Hardware", "Performance", "Security"]
@@ -4475,14 +4083,6 @@
 							"Environment": "Running servers for less time reduces carbon emissions.",
 							"Performance": "Efficient content delivery and data processing decreases page load times, improving performance and user experience.",
 							"Social Equity": "Reducing data processing demand means communities near data centers suffer less from noise, air pollution, and water and power overconsumption."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["AI", "JavaScript", "Networking", "Performance"]
@@ -4652,14 +4252,6 @@
 							"Performance": "Using a CDN to locate content closer to users gives them faster access to content."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Medium",
-							"water": "Low",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["Accessibility", "AI", "Content", "Hardware", "Networking", "Performance"]
 				},
 				{
@@ -4695,14 +4287,6 @@
 							"Environment": "Reducing provisioned resources reduces wasted energy and water costs, even when resources are not used to capacity.",
 							"Operations": "Keeping a closer eye on actual and anticipated use allows an organization to better understand its own functions and anticipate future needs.",
 							"Economic": "Avoiding overprovisioning means avoiding unnecessary costs."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["E-Waste", "Hardware", "Performance"]
@@ -4812,14 +4396,6 @@
 							"Economic": "Storing less data reduces the expense of operating excessively large storage and archiving systems.",
 							"Environment": "Reducing data storage brings down the carbon emissions driven by storage system operation.",
 							"Security": "Storing smaller amounts of data reduces the amount of data exposed to potential security issues and reduces monitoring effort."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["Accessibility", "Content", "E-Waste", "Hardware", "Performance", "Privacy"]
@@ -4956,14 +4532,6 @@
 							"Transparency": "Maintaining clear and public-facing policies helps internal and external affected partys to better understand an organization's sustainability commitments, while making it easier to report on the impact of these efforts."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"tags": ["Accessibility", "AI", "Education", "Ideation", "KPIs", "Privacy", "Research", "Security", "Social Equity", "Strategy"]
 				},
 				{
@@ -4996,14 +4564,6 @@
 							"Environment": "Appointing dedicated sustainability representatives means they can maintain quality assurance and guide decisions that measurably reduce the environmental impact of your digital products and services.",
 							"Privacy": "Having dedicated sustainability representatives on the team enables them to maintain intersectional data privacy standards and watch out for legal compliance issues within the organization.",
 							"Social Equity": "Ensuring someone on the team is dedicated to these concerns will help to reduce the digital divide through internal awareness raising and requesting features or information be provided to support those, for example on older devices or in low-bandwidth areas."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"tags": ["Accessibility", "Education", "Ideation", "Marketing", "Privacy", "Social Equity"]
@@ -5138,14 +4698,6 @@
 							"Operations": "Publishing clear sustainability goals and sharing resources encourages organizational affected parties to examine their own current status quo and make their own progress."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["Content", "Education", "Marketing", "Reporting"]
 				},
 				{
@@ -5178,14 +4730,6 @@
 							"Conversion": "Communicating the impact and allowing the user to set preferences with the environmental impact in mind can encourage more individuals to make environmentally friendly choices and improve your image among ethical consumers.",
 							"Environment": "Allowing users to select more environmentally friendly settings within software naturally reduces the environmental impact.",
 							"Performance": "Reducing unnecessary or wasteful, less sustainable behaviors will often improve performance and accessibility, as these are often interlinked."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"tags": ["Content", "Education", "Marketing", "Reporting"]
@@ -5285,14 +4829,6 @@
 							"Social Equity": "Including intersectional social metrics in your LCA can provide an opportunity to simultaneously consider and work on issues such as inequality, which also affect sustainability."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["Accessibility", "AI", "Ideation", "KPIs", "Research", "Social Equity", "Software", "Strategy"]
 				},
 				{
@@ -5334,14 +4870,6 @@
 							"Economic": "Aligning with existing standards or frameworks makes it easier for organizations to include digital impact in their overall sustainability reporting.",
 							"Environment": "Setting, measuring, and communicating clear sustainability goals aligns an organization's impact aspirations with ongoing efforts to meet these goals.",
 							"Transparency": "Helping affected parties such as employees, clients, and partners to better understand how the organization creates shared value in its various sustainability policies and programs."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["AI", "Governance", "Ideation", "KPIs", "Research", "Social Equity"]
@@ -5388,14 +4916,6 @@
 						{
 							"Economic": "Certifications, vetted for conflicts of interest, can operationalize sustainability principles and verify and endorse levels of social and environmental performance, accountability, and transparency.",
 							"Operations": "Obtaining third-party sustainability certifications can make it easier for organizations to align operational practices with their mission, vision, and values, and communicate this to their affected parties."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"tags": ["Governance", "KPIs"]
@@ -5486,14 +5006,6 @@
 							"Environment": "Adopting reporting standards ahead of schedule provides more immediate environmental benefits, and allows you to mitigate environmental issues before they build into more complex or long-lasting ones."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["AI", "Content", "KPIs", "Reporting"]
 				},
 				{
@@ -5531,14 +5043,6 @@
 						{
 							"Environment": "Business models focused on the customer and the wider ecosystem rather than just financial indicators can benefit the environment such as through reducing overconsumption of resources and disencouraging incentives for unethical behavior, leading to a reduction of emissions.",
 							"Social Equity": "Adding social indicators (such as the shared value within digital services) can reduce negative social impacts such as impoverishment or exploitation."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
 						}
 					],
 					"tags": ["Content", "Ideation", "Research", "Strategy"]
@@ -5651,14 +5155,6 @@
 							"Economic": "Maintaining performance can boost customer retention, and organizations with clear product maintenance and management practices tend to benefit from greater resilience in the face of digital disruption.",
 							"Environment": "Implementing product management and maintenance strategies provides another opportunity to improve climate resilience and manage and reduce emissions over time.",
 							"Performance": "Following good product management and maintenance strategies means affected digital products and services benefit from better security, reduced technical debt, and improved data privacy."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
 						}
 					],
 					"tags": ["Accessibility", "Compatibility", "Security", "Strategy"]
@@ -5808,14 +5304,6 @@
 							"Security": "Ensuring products or services are maintained and updated over time reduces risk and improves security."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"tags": ["Accessibility", "AI", "Compatibility", "KPIs", "Performance", "Privacy", "Security", "Strategy", "UI"]
 				},
 				{
@@ -5848,14 +5336,6 @@
 							"Environment": "Maintaining an intuitive, lightweight user experience while adding new features or updating software reduces frustration, churn, and the energy users expend when the interface performs in ways users do not expect.",
 							"Performance": "Maintaining an optimized user experience that is regularly updated in line with best practices usually means content and assets will load quickly and as expected by users.",
 							"Security": "Maintaining evergreen status often means fewer issues due to a strong release cycle. This involves making necessary changes and keeping users informed while maintaining transparency."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"example": "# Changelog - Website\r\n\r\n## [Unreleased]\r\n- N\/A\r\n\r\n## 1.0.0 - YYYY-MM-DD\r\n### Added\r\n- Content.\r\n\r\n## [Guide]\r\n- Added: New features.\r\n- Changed: Altered functionality.\r\n- Deprecated: Disappearing features.\r\n- Removed: Eliminated features.\r\n- Fixed: Bugs patched.\r\n- Security: Solved vulnerabilities.",
@@ -5918,14 +5398,6 @@
 							"Economic": "Reducing unnecessary research and development allows organizations to cut costs.",
 							"Environment": "Determining that a digital product or service is not necessary means the potential environmental impacts associated with its creation and use can be avoided.",
 							"Operations": "Avoiding creating unnecessary products or services prevents organizations from wasting time or resources on their creation and maintenance."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
 						}
 					],
 					"tags": ["Accessibility", "AI", "E-Waste", "Ideation", "Reporting", "Software"]
@@ -6003,14 +5475,6 @@
 							"Operations": "Examining suppliers and partners more closely can increase diversity within the technology sector."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"tags": ["AI", "Content", "Governance", "Hardware", "Ideation", "Social Equity"]
 				},
 				{
@@ -6077,14 +5541,6 @@
 							"Social Equity": "Paying a living wage and offering good benefits often leads to higher employee retention rates."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"tags": ["Governance", "Social Equity"]
 				},
 				{
@@ -6121,14 +5577,6 @@
 						{
 							"Environment": "Emissions can be reduced through group action and commitments at an organizational level.",
 							"Operations": "Incentivizing project teams with key sustainability goals and granting the authority to make decisions based on these criteria enables them to measurably improve a range of metrics within the business, design, development, and infrastructure categories."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["Accessibility", "Ideation", "Social Equity", "Strategy"]
@@ -6227,14 +5675,6 @@
 							"Economic": "Having clear policies and practices reduces the risk of legal issues."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"tags": ["Accessibility", "Ideation", "Social Equity", "Strategy"]
 				},
 				{
@@ -6293,14 +5733,6 @@
 					"benefits": [
 						{
 							"Economic": "Prioritizing data privacy and other responsible data practices reduces associated risk and costs, increases resilience, and often fosters better relationships with customers and other affected parties."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
 						}
 					],
 					"tags": ["AI", "Content", "Governance", "Privacy", "Social Equity"]
@@ -6364,14 +5796,6 @@
 							"Environment": "Storing less data reduces the computing power required to maintain a service, reducing energy and infrastructure-related emissions.",
 							"Performance": "Moving older and less relevant content onto a smaller scaled-down version of your digital product or service will reduce your bandwidth usage. Archived information will have significantly fewer users, meaning this is unlikely to have a negative impact on their experience.",
 							"Privacy": "Improving data management supports better data protection practices."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["Privacy", "Security", "Social Equity", "Strategy"]
@@ -6579,14 +6003,6 @@
 							"Operations": "Prioritizing ongoing learning and continuous improvement builds stronger teams that can adapt more quickly."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"tags": ["Accessibility", "AI", "Content", "E-Waste", "Governance", "Hardware", "Networking", "Performance", "Privacy", "Security", "Social Equity", "Software"]
 				},
 				{
@@ -6642,14 +6058,6 @@
 							"Environment": "Divesting from fossil fuels moves us more quickly to an economy that is powered by low-carbon energy, which can reduce the catastrophic impacts of climate change."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"tags": ["Governance", "Ideation", "Social Equity"]
 				},
 				{
@@ -6703,14 +6111,6 @@
 							"Operations": "Having clear philanthropy strategies that include volunteer or free projects with team stretch goals can boost employee engagement and retention."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"tags": ["Content", "Governance", "Social Equity"]
 				},
 				{
@@ -6747,14 +6147,6 @@
 							"Performance": "Removing unnecessary features, functions, and data of a service improves performance and resilience as the resources which were utilizing data will be better spent on more popular functionality, and the gains made from their elimination will be felt in terms of emissions through saved development time.",
 							"Privacy": "Incorporating clear end-of-life policies that include a user's right to be forgotten will benefit the user by explaining how you enforce data protection and comply with legislation.",
 							"Security": "Providing regular maintenance, updates, and care on outdated software and data can significantly reduce security risks."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
 						}
 					],
 					"tags": ["Compatibility", "E-Waste", "Privacy", "Research", "Security", "Social Equity", "Software", "Strategy"]
@@ -6874,14 +6266,6 @@
 							"Environment": "Following clear e-waste and recycling policies reduces environmental impact and promotes circularity, while also extending the shelf life of hardware. When coupled with clear philanthropic policies, donated hardware can also support resource-constrained charities."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "High",
-							"energy": "High",
-							"water": "High",
-							"emissions": "High"
-						}
-					],
 					"tags": ["Content", "E-Waste", "Governance", "Hardware", "Ideation", "Social Equity"]
 				},
 				{
@@ -6979,14 +6363,6 @@
 							"Social Equity": "By having a human or planetary budget, you can assign targets to improve services for impacted groups or those affected directly by your project."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"example": "[\r\n{\r\n\t\"resourceSizes\": [],\r\n\t\"timings\": [\r\n\t{\r\n\t\t\"metric\": \"largest-contentful-paint\",\r\n\t\t\"budget\": 2500\r\n\t},\r\n\t{\r\n\t\t\"metric\": \"max-potential-fid\",\r\n\t\t\"budget\": 100\r\n\t},\r\n\t{\r\n\t\t\"metric\": \"cumulative-layout-shift\",\r\n\t\t\"budget\": 0.1\r\n\t}\r\n\t]\r\n}\r\n]",
 					"tags": ["Accessibility", "Ideation", "KPIs", "Performance", "Research", "Usability"]
 				},
@@ -7078,14 +6454,6 @@
 							"Social Equity": "Supporting collaboration and building communities around open-source practices engenders trust and helps to reduce inequalities."
 						}
 					],
-					"GRI": [
-						{
-							"materials": "Medium",
-							"energy": "Medium",
-							"water": "Medium",
-							"emissions": "Medium"
-						}
-					],
 					"tags": ["Accessibility", "Assets", "Ideation", "Social Equity", "Software", "UI"]
 				},
 				{
@@ -7138,14 +6506,6 @@
 							"Economic": "Limiting the extent of the disruption has obvious economic benefits.",
 							"Operations": "Creating transparency around digital resilience procedures encourages trust that a product or service can be depended upon for critical use.",
 							"Social Equity": "Providing uninterrupted access to potentially vital online services in case of a disaster or emergency benefits users."
-						}
-					],
-					"GRI": [
-						{
-							"materials": "Low",
-							"energy": "Low",
-							"water": "Low",
-							"emissions": "Low"
 						}
 					],
 					"tags": ["AI", "Governance", "Security", "Strategy"]
