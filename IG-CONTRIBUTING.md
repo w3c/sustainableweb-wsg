@@ -19,11 +19,12 @@ The structure of the repository has been created to ensure ease of maintenance. 
 
 ```
 /test-suite/		- Test Suite and Assets
-GRI.ipynb		- GRI Impact Calculator
 benefits.html		- Benefits
 glance.html		- At-A-Glance
 guidelines.json		- WSG JSON API
 index.html		- WSG Guidelines
+impact.html		- WSG Impact Measurement
+impact.json		- WSG Impact API
 policies.html		- Laws and Policies
 quickref.html		- Quick Reference
 resources.html		- Resources (URLs)
