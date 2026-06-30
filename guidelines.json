@@ -88,10 +88,10 @@
 					"tags": ["Accessibility", "Compatibility", "Hardware", "Ideation", "Networking", "Performance", "Privacy", "Reporting", "Research", "Social Equity", "Software"]
 				},
 				{
-					"id": "understand-user-requirements-or-constraints-resolving-barriers-to-access",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access",
-					"guideline": "Understand user requirements or constraints, resolving barriers to access",
-        			"subheading": "Identify and involve users and affected communities, and research and remove barriers to access.",
+					"id": "understand-user-requirements-or-constraints",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints",
+					"guideline": "Understand user requirements or constraints",
+        			"subheading": "Identify and involve users and affected communities, and research their needs.",
 					"criteria": [
 						{
 							"title": "Audience evaluation",
@@ -106,39 +106,10 @@
 									"How To Argue Against AI-First Research": "https://www.smashingmagazine.com/2025/03/how-to-argue-against-ai-first-research/",
 									"How To Run UX Research Without Access To Users": "https://www.smashingmagazine.com/2024/05/how-run-ux-research-without-access-users/",
 									"Make the sustainable thing the best thing, by design": "https://medium.com/necdigitalstudio/make-the-sustainable-thing-the-best-thing-by-design-e38da7bd7768",
+									"ROI Calculators": "https://humanfactors.com/thinking-favorite.aspx",
 									"The UX Cookbook": "https://theuxcookbook.com/",
 									"UX: Best Practices For Developers": "https://blog.openreplay.com/ux-best-practices-for-developers/",
 									"UX/UI Product Design Roadmap": "https://product-design-roadmap.com/"
-								}
-							]
-						},
-						{
-							"title": "Barriers and access",
-							"description": "Conduct internal and user research to identify constraints or conditions that may require adaptations to reduce barriers or improve access to content. Use the findings to reduce barriers and effort. Do not introduce or increase security or safety risks or exposure, including compromising necessary user verification or authentication mechanisms. Design security and safety measures in ways that avoid unnecessary barriers to access.",
-							"resources": [
-								{
-									"Access Guide": "https://www.accessguide.io/",
-									"Accessibility": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
-									"Adaptive web design": "https://en.wikipedia.org/wiki/Adaptive_web_design",
-									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"Europe's Digital Decade": "https://digital-strategy.ec.europa.eu/en/policies/europes-digital-decade",
-									"GPF - General Policy Framework (PDF) - 4.14 - UX and UI (Dark Patterns)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 10-3070 - Dark Patterns": "https://gr491.isit-europe.org/en/crit.php?id=10-3070-uxui-some-services-are-designed-to-create-some",
-									"Harm reduction principles for digital accessibility practitioners": "https://ericwbailey.website/published/harm-reduction-principles-for-digital-accessibility-practitioners/",
-									"Introduction to Web Accessibility": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
-									"Keys To An Accessibility Mindset": "https://www.smashingmagazine.com/2023/02/keys-accessibility-mindset/",
-									"Learn Accessibility": "https://web.dev/learn/accessibility?hl=en",
-									"Metrics to measure the ROI of web accessibility": "https://uxdesign.cc/top-10-metrics-to-measure-the-roi-of-web-accessibility-f9ddd697896a",
-									"ROI Calculators": "https://humanfactors.com/thinking-favorite.aspx",
-									"Supporting Digital Skills and Reducing Social Isolation Amongst Older People": "https://www.governmentevents.co.uk/ge-insights/supporting-digital-skills-and-reducing-social-isolation-amongst-older-people/",
-									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
-									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
-									"United Nations SDGS - Goal 9 - Infrastructure": "https://sdgs.un.org/goals/goal9#targets_and_indicators",
-									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
-									"W3C Web Content Accessibility Guidelines": "https://www.w3.org/TR/WCAG22/",
-									"What are design constraints?": "https://blog.logrocket.com/ux-design/what-are-design-constraints/",
-									"What are the Main Barriers to Digital Inclusion?": "https://www.trueambassadors.org.uk/what-are-the-main-barriers-to-digital-inclusion/"
 								}
 							]
 						}
