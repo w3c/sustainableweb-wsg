@@ -143,7 +143,7 @@
 				{
 					"id": "efficient-paths",
 					"title": "Measure interaction cost to reach every page in the information architecture",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Design efficient and streamlined user journeys](https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys).",
 					"description": [
 						{
 							"1": "Reduce the cognitive load for users between the initial visit to a website or application and reaching their final destination where the information they are seeking is located. The path to locating such information can be routed through multiple interactions such as a search mechanism, hyperlinks, form controls (where appropriate), and progressive disclosure features (reducing the complexity involved in reaching a destination will reduce the rendering load leading to sustainability benefits).",
@@ -173,164 +173,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/efficient-paths.html"
 				},
 				{
-					"id": "distraction-free-design",
-					"title": "Check for Content Obscuring Materials That Occur Upon pageLoad",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
-					"description": [
-						{
-							"1": "Ensure that users can read the materials produced for your website or application and click on interactive content (such as links or buttons) that would otherwise be impaired by other content that due to positioning obscures the material by preventing the page from functioning correctly (wasted clicks, especially if JavaScript functions monitor them could lead to emission costs so its best to avoid unnecessary actions).",
-							"2": "There will be occasions when content should be obscured to progressively disclose additional content, but for unintentional overlapping, obscuring deliberately for attention (unnecessary), and all cases where the user did not ask to be impacted, the visibility of the content should be assured (either manually or mechanically through identifying object locations and dimensions plus where conflicts arise, issue remedial advice)."
-						}
-					],
-					"examples": [
-						{
-							"1": "Advertising is often a cause of content that temporarily overlaps content with the intent of requesting clicks or attention-grabbing to monetize the material on the website or application. While such actions may be financially reasoned, they are rarely sustainably minded.",
-							"2": "Consent managers are an example of obscuring materials for the good as they ensure that users to the page authorize potentially invasive technologies before they become active. An example of this is the cookie consent banner that asks for their allowance before they can be used to store sensitive information on the user's machine.",
-							"3": "Scrollable content in which the scrollbar has been obscured, replaced (with a non-functional, obscured, or hidden replacement), or hidden entirely making it impossible to detect where additional content may occur beyond just the window (such as in overflowing boxes) will be unavailable to users making its use of hardware to render a waste of resources."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check the page's content to ensure none is clipped by other materials or an overflow issue (with a scrollbar lacking).",
-									"2": "Check that all links and buttons are functioning.",
-									"3": "Check that progressive disclosing content only appears when requested.",
-									"4": "Check that necessary disclosing materials that obscure content can be easily removed."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html"
-				},
-				{
-					"id": "eliminate-the-non-essential",
-					"title": "Break large pieces of content down using progressive disclosure",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
-					"description": [
-						{
-							"1": "Help increase the readability of content within a website or application by breaking down larger pieces of content into smaller constituent pieces. In the same way that a book is broken down into chapters, using progressive disclosure you can reveal sections when the reader is ready, avoiding information overload (the same can be done with long tasks).",
-							"2": "For machine testability, identification of such progressive disclosure markers can be found using the HTML details or dialog element, the CSS target selector (and its accompanying HTML ID attributes), the CSS checkbox hack, the use of JavaScript hash bangs, and also the use of state (and content) changes through various frameworks. Each of these can build a picture of how content displays on-screen during the user experience, and some can load content only when it is requested which can reduce data transfer and rendering requests leading to sustainability improvements."
-						}
-					],
-					"examples": [
-						{
-							"1": "Tabs can be a simple way in which [you can showcase](https://www.gov.uk/bank-holidays) different pieces of information to an audience. By using a mechanism such as the CSS target selector you can reveal information based on its related HTML ID.",
-							"2": "Dropdown menus such as the one you will find on many websites disclose from a single link several additional roadmapped locations which are grouped children in the information architecture of the product or service."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that progressive disclosure is used appropriately with your content or tasks to perform.",
-									"2": "Check that progress can be made from one disclosure to another.",
-									"3": "Check that each disclosure element can be closed successfully.",
-									"4": "Check that the disclosure method you use is compatible with user's browsers."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/eliminate-the-non-essential.html"
-				},
-				{
-					"id": "user-initiated-actionable-content",
-					"title": "Remove any non-user initiated pop-up or model windows",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
-					"description": [
-						{
-							"1": "Reduce problematic friction within the user experience and help reduce the number of deceptive patterns which might occur onLoad and during the interaction process as these can cause considerable sustainability issues as a result of wasted emissions. By ensuring that the user remains in control of the interface and that websites and applications work as expected, a more ethical and optimized product or service is likely to result.",
-							"2": "Machine testing can analyze JavaScript for the use of pop up events, the appearance of \"_blank\" within hyperlinks or frames, or other functionality that exists that may produce overlays. It is important to question the acceptability of such usage for example, opening links in new windows may be acceptable for non-web formats like PDF, otherwise, it is best to advise against its use."
-						}
-					],
-					"examples": [
-						{
-							"1": "While not as common today, pop up advertisements which appear in a new window or in a separate frame used to be a fixture of the early web and required heavy user management to close multiple banners that would trigger."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check for CSS and JavaScript overlays that may occur onLoad and remove when identified.",
-									"2": "Check that any pop up events can only be initiated with the user's consent.",
-									"3": "Check all hyperlinks for new window opening triggers (and action as appropriate)."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/user-initiated-actionable-content.html"
-				},
-				{
-					"id": "decorative-design",
-					"title": "Decorative design elements can be disabled if they are not done so by default",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
-					"description": [
-						{
-							"1": "Provide a mechanism in which users can reduce their impact by choosing to have a more basic experience (to what extent will be up to the developer) by downloading fewer external resources, scripts, and other assets to their machine to be processed and rendered. With this action, a website or application that is already optimized for sustainability can go one step further in providing a barebones format for those wishing to prioritize lowering their footprint over having added functionality.",
-							"2": "This action could be performed by defining what assets have been added to the product or service to enhance the experience but are not of critical importance (such as background images, or decorative flourishes that can be machine identified). Other forms of decoration can also be machine-identified such as CSS flourishes to content and images, background sounds, custom cursors, custom scrollbars, etc."
-						}
-					],
-					"examples": [
-						{
-							"1": "Web browsers can [change CSS cursors](https://csscursor.info/), and while there may be functional reasons to do so under certain circumstances, such as to indicate loading progress, zoom, or click-ability, in most circumstances, you should leave it at the system default as this is the expected behavior.",
-							"2": "CSS scrollbars [can be customized](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scrollbars_styling) or replaced but this can be problematic for users. Changes in scroll speed or its mechanics can affect impact readability and the way things render, and color changes can impact visibility and affect overflow regions within elements of the page. In such cases, the system default always functions better than a custom solution."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check decorative images are clearly labeled using ARIA so assistive technologies can skip them.",
-									"2": "Check that CSS decoration can be disabled if it may interfere with readability.",
-									"3": "Check that custom scrollbars and cursors can be disabled as they may interfere with a user's ability to interact with the screen.",
-									"4": "Check that background sounds can be disabled and do not auto-load or auto-play.",
-									"5": "Check that decorative features can be disabled at the user's request."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/decorative-design.html"
-				},
-				{
-					"id": "navigation-and-search",
-					"title": "Making your navigation menu accessible and well-structured",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Ensure that navigation and wayfinding are well-structured](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured).",
-					"description": [
-						{
-							"1": "Verify that your navigation menu is crafted in such a manner that it is both accessible to users and user-agents and functions correctly so that when implemented it does not lead to issues when attempting to browse the information architecture of a website or application. If the information architecture were to fail, this would lead to PPP failings as your users would no longer be able to use the product or service without encountering barriers to access and risk further emissions attempting to solve the issue.",
-							"2": "Machine testing the structure of a navigation menu will usually involve the nav, ul, or ol elements within the header of a product or service which repeats across pages and assuming that links function as expected and click ratios (sizes) are large enough on both desktop and mobile platforms, any search functionality will also need to be tested to ensure that results are provided upon submission."
-						}
-					],
-					"examples": [
-						{
-							"1": "The hamburger design is often considered the stereotype of [mobile functionality](https://www.smashingmagazine.com/2022/11/navigation-design-mobile-ux/), a three-lined icon that represents a menu upon clicking it reveals a full-screen list of options. Employing good patterns is key to reducing confusion and abandonment from users"
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that the structure of the navigation menu is semantically correct.",
-									"2": "Check that the structure of the navigation menu is repeated across all pages.",
-									"3": "Check that the click sizes/ratios of anchors in navigation menus are large enough on both mobile and desktop to be comfortable.",
-									"4": "Check that the URLs provided within links do not lead to errors.",
-									"5": "Check that any search functionality provides results (not errors) upon submission."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/navigation-and-search.html"
-				},
-				{
 					"id": "human-readable-sitemaps",
 					"title": "Provide a human-readable sitemap to improve the information architecture",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Ensure that navigation and wayfinding are well-structured](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Design efficient and streamlined user journeys](https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys).",
 					"description": [
 						{
 							"1": "Increase the findability of the content within your website among search engines and social networks. By creating a XML sitemap in the base directory of your website, and potentially having a human-readable) HTML sitemap to supplement it, you provide an index of all the publicly available pages. This acts as a potential signpost for individuals who may find themselves seeking information but not knowing exactly where it is stored.",
@@ -359,39 +204,6 @@
 						}
 					],
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/human-readable-sitemaps.html"
-				},
-				{
-					"id": "new-content",
-					"title": "Provide a method of keeping up-to-date with product or service updates",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Ensure that navigation and wayfinding are well-structured](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured).",
-					"description": [
-						{
-							"1": "Ensure that users and users of an application or website can monitor changes and events that occur over time. The need to be able to track such events is critical as customers become reliant on products and services. This reliance on such features means that time will have been invested into learning how to set up and use the product, which if it fails could have a sustainability impact not just for the product or service owner, but for those reliant on its ability to function.",
-							"2": "Every product or service will have its own update schedule and there will be no hard and fast rule in terms of how often a website or application should be offering new releases. That being said, there should be a mechanism in place to describe news events both in a syndicated format and on the website, and a system status mechanism to identify any current issues with the product or service."
-						}
-					],
-					"examples": [
-						{
-							"1": "[Apple has a newsroom](https://www.apple.com/newsroom/) that is very minimalistic yet it contains all that you would expect from a news category from a major website. It has grouped stories with useful headlines, dates, categories, and a picture. Having something similar for your website can help users find new material quickly and reduce churn digging through archives.",
-							"2": "[Syndication feeds](https://www.w3.org/blog/feed/) come in multiple different formats but the most common is the RSS format. They are compatible with readers on every platform and can be a useful way to get news to subscribers quickly. While these make regular requests to websites, they request less data and result in users spending less time browsing overall which is an emissions-positive event."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check for a news page or category of a website.",
-									"2": "Check the news section has been updated within 12 months.",
-									"3": "Check for a syndication feed in RSS, Atom, or JSON.",
-									"4": "Check the syndication feed has been updated within 12 months.",
-									"5": "Check for other syndicated events (podcasts, OPML, etc).",
-									"6": "Check the syndication feed is semantically correct."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/new-content.html"
 				},
 				{
 					"id": "respect-user-attention",
