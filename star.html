@@ -394,7 +394,7 @@
 				<div class="summary">
 					<details> <!-- Use quantitative research to measure the needs of users and affected communities -->
 						<summary id="audience-evaluation">Use quantitative research to measure the needs of users and affected communities</summary><p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access">Understand user requirements or constraints, resolving barriers to access</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints">Understand user requirements or constraints</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for application and website owners to better curate their products and services around the needs of their users and those affected by what has been created and in doing so, reduce the PPP burden which can impact the sustainability of the website, especially around Social, people-centered (and user experience) impacts.</p>
 						<p>It should be noted that for machine automation, only quantitative feedback will be able to be processed (and therefore useful) and all information gathering must be done sustainably and ethically. It should also be noted that because information is being requested, internal access may be required to formally identify certain characteristics necessary for processing.</p>
@@ -418,7 +418,7 @@
 					</details>
 					<details> <!-- Test against specific disability profiles for more calibrated accessibility -->
 						<summary id="barriers-and-access">Test against specific disability profiles for more calibrated accessibility</summary><p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access">Understand user requirements or constraints, resolving barriers to access</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints">Understand user requirements or constraints</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Go beyond the remit of Web Content Accessibility Guidelines (<abbr title="Web Content Accessibility Guidelines">WCAG</abbr>) and accessibility by default and to encourage designers and developers of products to test their creations against a range of specific named types of disabilities to both better understand the conditions and to be able to more structurally and sustainably better test for the unique issues each disability brings to technology in terms of adaptation.</p>
 						<p>It is strongly encouraged that teams work with individuals with disabilities when attempting this task as they will have the lived experience to help you better adapt your products and services to their needs. If this is not possible or you wish to theorize against certain pre-built profiles, you can refer to established medical texts to identify potential symptoms and refer these against issues that may cause technology issues, building solutions, and/or simulators (see color blindness) to help test for issues along the creation process.</p>
@@ -445,7 +445,7 @@
 				<div class="summary">
 					<details> <!-- Measure interaction cost to reach every page in the information architecture -->
 						<summary id="efficient-paths">Measure interaction cost to reach every page in the information architecture</summary><p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">Minimize non-essential content, interactivity, or journeys</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys">Design efficient and streamlined user journeys</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Reduce the cognitive load for users between the initial visit to a website or application and reaching their final destination where the information they are seeking is located. The path to locating such information can be routed through multiple interactions such as a search mechanism, hyperlinks, form controls (where appropriate), and progressive disclosure features (reducing the complexity involved in reaching a destination will reduce the rendering load leading to sustainability benefits).</p>
 						<p>While there is no hard and fast rule regarding the number of clicks required to meet a user's expectations, including clear way-finding (breadcrumbs can be machine-identified as can landing page regions to guide users along the path). It is therefore a sensible precaution to ensure that the steps required are well documented to avoid overwhelming a user. If required, click-through testing can be measured to identify bottlenecks in complex applications.</p>
@@ -468,137 +468,10 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- Check for content obscuring materials that occur upon pageLoad -->
-						<summary id="distraction-free-design">Check for content obscuring materials that occur upon pageLoad</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">Minimize non-essential content, interactivity, or journeys</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Ensure that users can read the materials produced for your website or application and click on interactive content (such as links or buttons) that would otherwise be impaired by other content that due to positioning obscures the material by preventing the page from functioning correctly (wasted clicks, especially if JavaScript functions monitor them could lead to emission costs so its best to avoid unnecessary actions).</p>
-						<p>There will be occasions when content should be obscured to progressively disclose additional content, but for unintentional overlapping, obscuring deliberately for attention (unnecessary), and all cases where the user did not ask to be impacted, the visibility of the content should be assured (either manually or mechanically through identifying object locations and dimensions plus where conflicts arise, issue remedial advice).</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>Advertising is often a cause of content that temporarily overlaps content with the intent of requesting clicks or attention-grabbing to monetize the material on the website or application. While such actions may be financially reasoned, they are rarely sustainably minded.</li>
-							<li>Consent managers are an example of obscuring materials for the good as they ensure that users to the page authorize potentially invasive technologies before they become active. An example of this is the cookie consent banner that asks for their allowance before they can be used to store sensitive information on the user's machine.</li>
-							<li>Scrollable content in which the scrollbar has been obscured, replaced (with a non-functional, obscured, or hidden replacement), or hidden entirely making it impossible to detect where additional content may occur beyond just the window (such as in overflowing boxes) will be unavailable to users making its use of hardware to render a waste of resources.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check the page's content to ensure none is clipped by other materials or an overflow issue (with a scrollbar lacking).</li>
-							<li>Check that all links and buttons are functioning.</li>
-							<li>Check that progressive disclosing content only appears when requested.</li>
-							<li>Check that necessary disclosing materials that obscure content can be easily removed.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Break large pieces of content down using progressive disclosure -->
-						<summary id="eliminate-the-non-essential">Break large pieces of content down using progressive disclosure</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">Minimize non-essential content, interactivity, or journeys</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Help increase the readability of content within a website or application by breaking down larger pieces of content into smaller constituent pieces. In the same way that a book is broken down into chapters, using progressive disclosure you can reveal sections when the reader is ready, avoiding information overload (the same can be done with long tasks).</p>
-						<p>For machine testability, identification of such progressive disclosure markers can be found using the HTML details or dialog element, the CSS target selector (and its accompanying HTML ID attributes), the CSS checkbox hack, the use of JavaScript hash bangs, and also the use of state (and content) changes through various frameworks. Each of these can build a picture of how content displays on-screen during the user experience, and some can load content only when it is requested which can reduce data transfer and rendering requests leading to sustainability improvements.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>Tabs can be a simple way in which <a href="https://www.gov.uk/bank-holidays">you can showcase</a> different pieces of information to an audience. By using a mechanism such as the CSS target selector you can reveal information based on its related HTML ID.</li>
-							<li>Dropdown menus such as the one you will find on many websites disclose from a single link several additional roadmapped locations which are grouped children in the information architecture of the product or service.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that progressive disclosure is used appropriately with your content or tasks to perform.</li>
-							<li>Check that progress can be made from one disclosure to another.</li>
-							<li>Check that each disclosure element can be closed successfully.</li>
-							<li>Check that the disclosure method you use is compatible with user's browsers.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Remove any non-user initiated pop-up or model windows -->
-						<summary id="user-initiated-actionable-content">Remove any non-user initiated pop-up or model windows</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">Minimize non-essential content, interactivity, or journeys</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Reduce problematic friction within the user experience and help reduce the number of deceptive patterns which might occur onLoad and during the interaction process as these can cause considerable sustainability issues as a result of wasted emissions. By ensuring that the user remains in control of the interface and that websites and applications work as expected, a more ethical and optimized product or service is likely to result.</p>
-						<p>Machine testing can analyze JavaScript for the use of pop up events, the appearance of "_blank" within hyperlinks or frames, or other functionality that exists that may produce overlays. It is important to question the acceptability of such usage for example, opening links in new windows may be acceptable for non-web formats like PDF, otherwise, it is best to advise against its use.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>While not as common today, pop up advertisements which appear in a new window or in a separate frame used to be a fixture of the early web and required heavy user management to close multiple banners that would trigger.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check for CSS and JavaScript overlays that may occur onLoad and remove when identified.</li>
-							<li>Check that any pop up events can only be initiated with the user's consent.</li>
-							<li>Check all hyperlinks for new window opening triggers (and action as appropriate).</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Decorative design elements can be disabled if they are not done so by default -->
-						<summary id="decorative-design">Decorative design elements can be disabled if they are not done so by default</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">Minimize non-essential content, interactivity, or journeys</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Provide a mechanism in which users can reduce their impact by choosing to have a more basic experience (to what extent will be up to the developer) by downloading fewer external resources, scripts, and other assets to their machine to be processed and rendered. With this action, a website or application that is already optimized for sustainability can go one step further in providing a barebones format for those wishing to prioritize lowering their footprint over having added functionality.</p>
-						<p>This action could be performed by defining what assets have been added to the product or service to enhance the experience but are not of critical importance (such as background images, or decorative flourishes that can be machine identified). Other forms of decoration can also be machine-identified such as CSS flourishes to content and images, background sounds, custom cursors, custom scrollbars, etc.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>Web browsers can <a href="https://csscursor.info/">change CSS cursors</a>, and while there may be functional reasons to do so under certain circumstances, such as to indicate loading progress, zoom, or click-ability, in most circumstances, you should leave it at the system default as this is the expected behavior.</li>
-							<li>CSS scrollbars <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scrollbars_styling">can be customized</a> or replaced but this can be problematic for users. Changes in scroll speed or its mechanics can affect impact readability and the way things render, and color changes can impact visibility and affect overflow regions within elements of the page. In such cases, the system default always functions better than a custom solution.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check decorative images are clearly labeled using ARIA so assistive technologies can skip them.</li>
-							<li>Check that CSS decoration can be disabled if it may interfere with readability.</li>
-							<li>Check that custom scrollbars and cursors can be disabled as they may interfere with a user's ability to interact with the screen.</li>
-							<li>Check that background sounds can be disabled and do not auto-load or auto-play.</li>
-							<li>Check that decorative features can be disabled at the user's request.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
-					<details> <!-- Making your navigation menu accessible and well-structured -->
-						<summary id="navigation-and-search">Making your navigation menu accessible and well-structured</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured">Ensure that navigation and wayfinding are well-structured</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Verify that your navigation menu is crafted in such a manner that it is both accessible to users and user-agents and functions correctly so that when implemented it does not lead to issues when attempting to browse the information architecture of a website or application. If the information architecture were to fail, this would lead to PPP failings as your users would no longer be able to use the product or service without encountering barriers to access and risk further emissions attempting to solve the issue.</p>
-						<p>Machine testing the structure of a navigation menu will usually involve the nav, ul, or ol elements within the header of a product or service which repeats across pages and assuming that links function as expected and click ratios (sizes) are large enough on both desktop and mobile platforms, any search functionality will also need to be tested to ensure that results are provided upon submission.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>The hamburger design is often considered the stereotype of <a href="https://www.smashingmagazine.com/2022/11/navigation-design-mobile-ux/">mobile functionality</a>, a three-lined icon that represents a menu upon clicking it reveals a full-screen list of options. Employing good patterns is key to reducing confusion and abandonment from users.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that the structure of the navigation menu is semantically correct.</li>
-							<li>Check that the structure of the navigation menu is repeated across all pages.</li>
-							<li>Check that the click sizes/ratios of anchors in navigation menus are large enough on both mobile and desktop to be comfortable.</li>
-							<li>Check that the <abbr title="Uniform Resource Locators">URLs</abbr> provided within links do not lead to errors.</li>
-							<li>Check that any search functionality provides results (not errors) upon submission.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
 					<details> <!-- Provide a human-readable sitemap to improve the information architecture -->
 						<summary id="human-readable-sitemaps">Provide a human-readable sitemap to improve the information architecture</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured">Ensure that navigation and wayfinding are well-structured</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys">Design efficient and streamlined user journeys</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Increase the findability of the content within your website among search engines and social networks. By creating a <abbr title="Extensible Markup Language">XML</abbr> sitemap in the base directory of your website, and potentially having a human-readable) HTML sitemap to supplement it, you provide an index of all the publicly available pages. This acts as a potential signpost for individuals who may find themselves seeking information but not knowing exactly where it is stored.</p>
 						<p>When creating an HTML sitemap it will be important to categorize pages into lists based on what section of the website they appear in (for human readability) rather than providing everything in a single long list. Structurally, you could use lists within lists to provide this distinction or use subheadings with individual lists. Both methods should ensure to be semantically correct and accessible to meet the human requirements of PPP targets.</p>
@@ -616,33 +489,6 @@
 							<li>Check for the existence of a publicly visible HTML sitemap.</li>
 							<li>Check that the file exists alongside a sitemap.xml format.</li>
 							<li>Check that the HTML sitemap is semantically correct.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Provide a method of keeping up-to-date with product or service updates -->
-						<summary id="new-content">Provide a method of keeping up-to-date with product or service updates</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured">Ensure that navigation and wayfinding are well-structured</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Ensure that users and users of an application or website can monitor changes and events that occur over time. The need to be able to track such events is critical as customers become reliant on products and services. This reliance on such features means that time will have been invested into learning how to set up and use the product, which if it fails could have a sustainability impact not just for the product or service owner, but for those reliant on its ability to function.</p>
-						<p>Every product or service will have its own update schedule and there will be no hard and fast rule in terms of how often a website or application should be offering new releases. That being said, there should be a mechanism in place to describe news events both in a syndicated format and on the website, and a system status mechanism to identify any current issues with the product or service.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://www.apple.com/newsroom/">Apple has a newsroom</a> that is very minimalistic yet it contains all that you would expect from a news category from a major website. It has grouped stories with useful headlines, dates, categories, and a picture. Having something similar for your website can help users find new material quickly and reduce churn digging through archives.</li>
-							<li><a href="https://www.w3.org/blog/feed/">Syndication feeds</a> come in multiple different formats but the most common is the <a href="https://www.rssboard.org/rss-specification"><abbr title="Really Simple Syndication">RSS</abbr> format</a>. They are compatible with readers on every platform and can be a useful way to get news to subscribers quickly. While these make regular requests to websites, they request less data and result in users spending less time browsing overall which is an emissions-positive event.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check for a news page or category of a website.</li>
-							<li>Check the news section has been updated within 12 months.</li>
-							<li>Check for a syndication feed in RSS, Atom, or <abbr title="JavaScript Object Notation">JSON</abbr>.</li>
-							<li>Check the syndication feed has been updated within 12 months.</li>
-							<li>Check for other syndicated events (podcasts, <abbr title="Outline Processor Markup Language">OPML</abbr>, etc).</li>
-							<li>Check the syndication feed is semantically correct.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -677,7 +523,7 @@
 						</ol>
 					</details>
 					<details> <!-- Encourage features that help users achieve tasks -->
-						<summary id="minimize-distraction">Encourage features that help users achieve tasks</summary>
+						<summary id="distraction-free-design">Encourage features that help users achieve tasks</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract">Design to assist and not to distract</a>.</p>
 						<p><strong>Description</strong></p>
@@ -696,6 +542,12 @@
 							<li>Check for purchasable products and the option to quickly purchase (bonus points if no login is required).</li>
 							<li>Check if the HTML head contains landmark links of relevance to be identified.</li>
 							<li>Check for recognized landmark shortcuts (skip links, etc) and that they are functional.</li>
+							<li>Check the page's content to ensure none is clipped by other materials or an overflow issue (with a scrollbar lacking).</li>
+							<li>Check that all links and buttons are functioning.</li>
+							<li>Check that progressive disclosing content only appears when requested and is compatible with user's browsers.</li>
+							<li>Check that progressive disclosure is used appropriately with your content or tasks to perform.</li>
+							<li>Check that CSS and JavaScript overlays, custom scrollbars and cursors, popup events, and new window opening triggers are not actioned without user consent.</li>
+							<li>Check that decorative features, and interactive media, images, or animation can be disabled at the user's request.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -703,7 +555,7 @@
 						</ol>
 					</details>
 					<details> <!-- Avoid mechanisms that promote excessive screen time -->
-						<summary id="reduce-engagement-traps">Avoid mechanisms that promote excessive screen time</summary>
+						<summary id="remove-engagement-traps">Avoid mechanisms that promote excessive screen time</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract">Design to assist and not to distract</a>.</p>
 						<p><strong>Description</strong></p>
@@ -912,58 +764,6 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- Increase the readability of content using common metrics -->
-						<summary id="clear-content">Increase the readability of content using common metrics</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose">Provide clear, inclusive content with purpose</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Make the content within your website or application more legible to individuals who may struggle with more technical language. Techniques such as lowering the reading age, removing industry terms (or clearly defining them), and having translations for international audiences can help get your message across.</p>
-						<p>This technique is most useful when dealing with a large body of content that the user has to wade through to complete a task. Being able to reduce screen time by improving the ease at which users can comprehend a topic will ultimately allow for an experience that feels faster and discriminates less against individuals who may struggle with highly technical content.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://tfl.gov.uk/info-for/suppliers-and-contractors/digital-design-toolkit/using-plain-english">Transport for London</a> has an editorial style guide that sets out to use plain English throughout their website. The guide itself serves as a useful tool that others could adapt (including the terms in machine testability).</li>
-							<li>There are lots of technical terms used in (for example) the Web industry, Jens Oliver Meiert has created the <a href="https://webglossary.info/">Web Glossary</a> as a dictionary of terminology which can help clarify confusing terminology.</li>
-							<li><a href="https://readabilityformulas.com/readability-scoring-system.php">Readability Formulas</a> have an assessment tool that can use one of several different models to identify issues with content. As there is no agreed-upon assessment model, this can be particularly helpful.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check against a list of terms for the use of plain English.</li>
-							<li>Check that terminology is inclusive and non-discriminatory.</li>
-							<li>Check that technical terms are identified and well-defined.</li>
-							<li>Check that the content has an appropriate reading age.</li>
-							<li>Check for internationalization within content, HTML, and CSS.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Break long-form content down into a simpler structure -->
-						<summary id="content-formatting">Break long-form content down into a simpler structure</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose">Provide clear, inclusive content with purpose</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Avoid users being hit with a wall of text which risks abandonment of the page (and a wasted session with emissions attached). By taking large pieces of information and structuring them into more clean smaller chunks and utilizing a range of more friendlier features when appropriate such as lists and tables, the information will look less intimidating.</p>
-						<p>For machine testability, identifying clear headings, visual hierarchy, spacing, line breaks, lists, use of images, and other features of HTML can help calculate the relative density of the content and whether it could be better presented not just for readers but to (if used with progressive disclosure) reduce the initial impact on rendering engines which can have a sustainable impact on hardware.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>This article from <a href="https://www.nngroup.com/articles/formatting-long-form-content/">Nielson Norman Group</a> provides some great examples and ideas around the subject of dealing with long-form content on the web, each of which can be both implemented and tested against.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that the heading hierarchy structure is correct (H1 > H6).</li>
-							<li>Check that paragraphs do not exceed a set word length.</li>
-							<li>Check the spacing between elements is not too crowded.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
 					<details> <!-- Remove any functionality that may trigger auto-playing animation -->
 						<summary id="need-for-media">Remove any functionality that may trigger auto-playing animation</summary>
 						<p><strong>Applicability</strong></p>
@@ -1149,7 +949,7 @@
 					<details> <!-- Provide accessible mechanisms around symbols in system fonts -->
 						<summary id="pre-installed-typefaces">Provide accessible mechanisms around symbols in system fonts</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography">Use optimized and appropriate web typography</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography">Use optimized web typography</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Avoid rendering issues surrounding emojis and symbol typefaces based on the operating system an individual may be using or the localization of their device. This can inherently cause accessibility issues which can reduce readability as well as the aforementioned visual glitches that can potentially have an impact on system hardware.</p>
 						<p>For machine testability, flagging of symbol fonts (and potentially emojis where operating system compatibility differences may be an issue) will increase readability if resolutions are put in place. One consideration may be to avoid using symbol fonts without an explicit justification and to only use emojis that have endured widespread operating system compatibility.</p>
@@ -1171,7 +971,7 @@
 					<details> <!-- Use modern, efficient custom typefaces within a set limit -->
 						<summary id="web-font-optimization">Use modern, efficient custom typefaces within a set limit</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography">Use optimized and appropriate web typography</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography">Use optimized web typography</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Optimize a typeface to ensure that when custom fonts are provided, they are implemented as sustainably as possible requiring the fewest amount of resources to download and render as possible. By placing restrictions on the number of custom typefaces and using a highly optimized format (hopefully subsetted), you will have a highly compressed file.</p>
 						<p>Multiple factors will contribute to the size of a typeface, as such, it is difficult to simply specify a hard number to aim for, but if (for example) you are not using international characters and you can subset your font, eliminating such waste could save precious resources from the fonts character table and reduce the file size considerably (reducing the system resource load upon rendering).</p>
@@ -3872,7 +3672,7 @@
 							<tr>
 								<td colspan="2">2</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/audience-evaluation.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/barriers-and-access.html">PASS</a></td>
+								<td></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -3988,8 +3788,8 @@
 							<tr>
 								<td colspan="2">6</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/respect-user-attention.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/minimize-distraction.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/reduce-engagement-traps.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/remove-engagement-traps.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
