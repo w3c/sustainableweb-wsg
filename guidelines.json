@@ -88,14 +88,14 @@
 					"tags": ["Accessibility", "Compatibility", "Hardware", "Ideation", "Networking", "Performance", "Privacy", "Reporting", "Research", "Social Equity", "Software"]
 				},
 				{
-					"id": "understand-user-requirements-or-constraints-resolving-barriers-to-access",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access",
-					"guideline": "Understand user requirements or constraints, resolving barriers to access",
-        			"subheading": "Understand the audience and their requirements and remove their constraints and barriers.",
+					"id": "understand-user-requirements-or-constraints",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints",
+					"guideline": "Understand user requirements or constraints",
+        			"subheading": "Identify and involve users and affected communities, and research their needs.",
 					"criteria": [
 						{
 							"title": "Audience evaluation",
-							"description": "Identify primary and secondary target users. Evaluate and define their needs through research, testing, or analytics. Ensure your users and affected communities are consistently and closely involved in the research and testing process.",
+							"description": "Identify the primary and secondary users, and affected communities, for the project. Use research, testing, analytics, and reviews to understand their needs and the project's impact on them. Involve users throughout the project.",
 							"resources": [
 								{
 									"6 Powerful User Research Methods to Boost Hypothesis Validation": "https://uxplanet.org/6-powerful-user-research-methods-to-boost-hypothesis-validation-58c491461075",
@@ -106,65 +106,10 @@
 									"How To Argue Against AI-First Research": "https://www.smashingmagazine.com/2025/03/how-to-argue-against-ai-first-research/",
 									"How To Run UX Research Without Access To Users": "https://www.smashingmagazine.com/2024/05/how-run-ux-research-without-access-users/",
 									"Make the sustainable thing the best thing, by design": "https://medium.com/necdigitalstudio/make-the-sustainable-thing-the-best-thing-by-design-e38da7bd7768",
+									"ROI Calculators": "https://humanfactors.com/thinking-favorite.aspx",
 									"The UX Cookbook": "https://theuxcookbook.com/",
 									"UX: Best Practices For Developers": "https://blog.openreplay.com/ux-best-practices-for-developers/",
 									"UX/UI Product Design Roadmap": "https://product-design-roadmap.com/"
-								}
-							]
-						},
-						{
-							"title": "Barriers and access",
-							"description": "Conduct internal and user research to identify whether a technical, material, or human constraint might require adaptations to reduce barriers or improve access to content.",
-							"resources": [
-								{
-									"Access Guide": "https://www.accessguide.io/",
-									"Accessibility": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
-									"Adaptive web design": "https://en.wikipedia.org/wiki/Adaptive_web_design",
-									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"Introduction to Web Accessibility": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
-									"Keys To An Accessibility Mindset": "https://www.smashingmagazine.com/2023/02/keys-accessibility-mindset/",
-									"Learn Accessibility": "https://web.dev/learn/accessibility?hl=en",
-									"Metrics to measure the ROI of web accessibility": "https://uxdesign.cc/top-10-metrics-to-measure-the-roi-of-web-accessibility-f9ddd697896a",
-									"Supporting Digital Skills and Reducing Social Isolation Amongst Older People": "https://www.governmentevents.co.uk/ge-insights/supporting-digital-skills-and-reducing-social-isolation-amongst-older-people/",
-									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
-									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
-									"United Nations SDGS - Goal 9 - Infrastructure": "https://sdgs.un.org/goals/goal9#targets_and_indicators",
-									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
-									"W3C Web Content Accessibility Guidelines": "https://www.w3.org/TR/WCAG22/",
-									"What are design constraints?": "https://blog.logrocket.com/ux-design/what-are-design-constraints/",
-									"What are the Main Barriers to Digital Inclusion?": "https://www.trueambassadors.org.uk/what-are-the-main-barriers-to-digital-inclusion/"
-								}
-							]
-						},
-						{
-							"title": "Barrier removal",
-							"description": "Remove identified barriers to access, provided they do not introduce or increase security or safety risks or exposure. Removable pain points can include deceptive design patterns and accessibility hurdles, but not include user verification or authentication mechanisms.",
-							"resources": [
-								{
-									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"Dark Design Patterns Catalog": "https://www.uxtigers.com/post/dark-design",
-									"Dark pattern": "https://en.wikipedia.org/wiki/Dark_pattern",
-									"Dark Patterns Detective": "https://games.productartistry.com/games/dark-patterns",
-									"Dark Patterns Hall of Shame": "https://hallofshame.design/",
-									"Dark patterns in UX: how designers should be responsible for their actions": "https://uxdesign.cc/dark-patterns-in-ux-design-7009a83b233c",
-									"Deceptive design vs. the law": "https://clearleft.com/thinking/deceptive-design-vs-the-law",
-									"Deceptive Patterns": "https://www.deceptive.design/",
-									"Europe's Digital Decade": "https://digital-strategy.ec.europa.eu/en/policies/europes-digital-decade",
-									"GPF - General Policy Framework (PDF) - 4.14 - UX and UI (Dark Patterns)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 10-3070 - Dark Patterns": "https://gr491.isit-europe.org/en/crit.php?id=10-3070-uxui-some-services-are-designed-to-create-some",
-									"Harm reduction principles for digital accessibility practitioners": "https://ericwbailey.website/published/harm-reduction-principles-for-digital-accessibility-practitioners/",
-									"How Deceptive Design is Used to Compromise Your Privacy and How to Fight Back": "https://consciousdigital.org/deceptive-design-patterns/",
-									"Ledger of Harms": "https://ledger.humanetech.com/",
-									"Overlay Fact Sheet": "https://overlayfactsheet.com/en/",
-									"Overlay False Claims": "https://overlayfalseclaims.com/",
-									"ROI Calculators": "https://humanfactors.com/thinking-favorite.aspx",
-									"Six Dark Patterns to Avoid On Your Website": "https://www.mightybytes.com/insights/6-dark-patterns-to-avoid-on-your-website/",
-									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
-									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
-									"United Nations SDGS - Goal 9 - Infrastructure": "https://sdgs.un.org/goals/goal9#targets_and_indicators",
-									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators"
 								}
 							]
 						}
@@ -186,11 +131,11 @@
 					"id": "integrate-sustainability-into-every-stage-of-the-ideation-process",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#integrate-sustainability-into-every-stage-of-the-ideation-process",
 					"guideline": "Integrate sustainability into every stage of the ideation process",
-					"subheading": "Optimize materials created at every stage of the process and consider the needs of and impact on the planet, and other affected parties.",
+					"subheading": "Design and review sustainable branding and experiences, involve users throughout the process, and reduce unnecessary development and environmental impact through early testing and environmentally aware design.",
 					"criteria": [
 						{
 							"title": "Sustainable brand development",
-							"description": "Optimize all branding materials and assets approved during the ideation process in line with sustainability best practices prior to and on an ongoing basis after deployment. Where provided, brand guidelines must also detail the sustainability impact and best-practice deployment of materials and assets.",
+							"description": "Optimize approved branding materials and assets to meet the organization’s sustainability requirements before release and review them regularly after launch. Where brand guidelines exist, include information about the environmental impact of materials and assets, along with guidance for sustainable production, use, and disposal.",
 							"resources": [
 								{
 									"A Guide to Sustainable Branding": "https://medium.com/@NineBlaess/a-guide-to-sustainable-branding-76d1022eaf01",
@@ -206,7 +151,7 @@
 						},
 						{
 							"title": "Wireframes and prototypes",
-							"description": "Use wireframes and rapid prototyping to quickly build consensus, reduce risk, and reduce the number of resources needed to build features.",
+							"description": "Use wireframes and rapid prototypes to test ideas early, build agreement quickly, reduce risk, and avoid unnecessary development work and resource use.",
 							"resources": [
 								{
 									"Activating sustainability in the design process": "https://www.degruyterbrill.com/document/doi/10.1515/icom-2024-0037/html?lang=en",
@@ -220,7 +165,7 @@
 						},
 						{
 							"title": "Participation and testing",
-							"description": "Use the participatory design approach to involve users within the iteration and design process. When conducting user testing, reach out to your community to help improve your product. Provide opportunities for users to apply their knowledge and experience to your product or service.",
+							"description": "Use participatory design methods throughout the design process. Involve users in testing and iteration, and give communities opportunities to share their knowledge and experience to improve the product or service.",
 							"resources": [
 								{
 									"An introduction to radical participatory design": "https://www.cambridge.org/core/journals/design-science/article/an-introduction-to-radical-participatory-design-decolonising-participatory-design-processes/63F70ECC408844D3CD6C1A5AC7D35F4D",
@@ -236,7 +181,7 @@
 						},
 						{
 							"title": "Environmental ideation",
-							"description": "Consider planetary needs and the environmental boundaries during the ideation phase. This can include creating non-user, non-human (animal, planet) personas, or climate-specific user stories and sprints.",
+							"description": "Address planetary needs and environmental boundaries during the ideation phase. This can include creating non-user, non-human personas, such as animal- or planet-focused perspectives, and developing climate-specific user stories and sprints.",
 							"resources": [
 								{
 									"52 Sustainability Focused Ideation Brainstorm Cards for FREE": "https://www.explorerlabs.co/thinking/52-sustainability-focused-ideation-brainstorm-cards-for-free",
@@ -258,17 +203,17 @@
 							"Social Equity": "Accounting for the needs of users who might otherwise face various barriers to accessing content - on such as older devices, in low-bandwidth environments, or have other barriers to accessing information early in the process will reduce the need for costly redesigns or adding appropriate alternatives at a later date."
 						}
 					],
-					"tags": ["Accessibility", "Ideation", "KPIs", "Research", "Social Equity", "Software", "Strategy", "UI"]
+					"tags": ["Accessibility", "Content", "HTML", "Marketing", "Patterns", "Performance", "Privacy", "Social Equity", "UI", "Usability"]
 				},
 				{
-					"id": "minimize-non-essential-content-interactivity-or-journeys",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys",
-					"guideline": "Minimize non-essential content, interactivity, or journeys",
-					"subheading": "Use distraction and clutter-free design, showing the user only what they need without interruptions or wasted resource consumption.",
+					"id": "design-efficient-and-streamlined-user-journeys",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys",
+					"guideline": "Design efficient and streamlined user journeys",
+					"subheading": "Design clear, efficient journeys that help users complete tasks and find content with minimal effort.",
 					"criteria": [
 						{
 							"title": "Efficient paths",
-							"description": "Make access as simple and efficient as possible. Displaying the time required to complete an action, reducing choice, and ensuring users understand requirements at the start of a journey can improve user efficiency.",
+							"description": "Make tasks simple and efficient to complete. Help users understand what is required at the start of a task, reduce unnecessary choices, and show how long journeys are expected to take.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -289,7 +234,7 @@
 						},
 						{
 							"title": "Patterns for efficiency",
-							"description": "Ensure user journeys are as smooth as possible. It also helps to build on established design patterns that people already understand.",
+							"description": "Design user journeys that are clear and efficient. Use established design patterns that people already understand.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -305,78 +250,27 @@
 							]
 						},
 						{
-							"title": "Distraction-free design",
-							"description": "Enable users to complete tasks without distractions or non-essential features getting in the way.",
+							"title": "Content discovery",
+							"description": "Provide a human-readable sitemap, especially for large, complex, or legacy websites where navigation is not straightforward. Keep it regularly updated. Provide clear and accessible navigation and search features so users can quickly find the content or services they need. Use lightweight and efficient ways to help users discover new content and services, including news pages, updates, and changelogs.",
 							"resources": [
 								{
-									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"Cognitive load is what matters": "https://github.com/zakirullin/cognitive-load",
-									"GR491 - 4-5030 - Older Equipment or Limited Network Access": "https://gr491.isit-europe.org/en/crit.php?id=4-5030-frontend-the-more-components-the-service-implements-that",
-									"GR491 - 7-3052 - Quick And Simple": "https://gr491.isit-europe.org/en/crit.php?id=7-3052-uxui-there-are-several-scenarios-for-accessing-the",
-									"GR491 - 9-3063 - Useful to the User": "https://gr491.isit-europe.org/en/crit.php?id=9-3063-uxui-the-efficient-use-of-a-digital-service",
-									"Laws Of UX": "https://lawsofux.com/",
-									"Paradox of Choice: Why Less is More in UX Design": "https://thedecisionlab.com/reference-guide/economics/the-paradox-of-choice",
-									"UI Tools": "https://designsustainably.eu/uitools/",
-									"UX: Best Practices For Developers": "https://blog.openreplay.com/ux-best-practices-for-developers/"
-								}
-							]
-						},
-						{
-							"title": "Eliminate the non-essential",
-							"description": "Only present information that is relevant to the user. Do not present non-essential information until requested by the user, and do so in ways appropriate to the accessibility requirements of different users.",
-							"resources": [
-								{
-									"A manifesto for small, static, web apps": "https://rosswintle.uk/2024/02/a-manifesto-for-small-static-web-apps/",
-									"A User-Centered Lens into Digital Excess (PDF)": "https://limits.pubpub.org/pub/krloqqv4/release/1",
-									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"GPF - General Policy Framework (PDF) - 3.1 - Architecture (Impact Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 2-7033 - Lighter Framework / Library": "https://gr491.isit-europe.org/en/crit.php?id=2-7033-backend-for-an-equal-functional-scope-several-technical",
-									"GreenIT - 0001 - Eliminate non-essential features": "https://rweb.greenit.fr/en/fiches/RWEB_0001-eliminate-non-essential-features",
-									"How can we design sustainably?": "https://medium.com/@sandra.pallier/how-can-we-design-sustainably-3be7530a0f5b",
-									"How to Become an Eco Web Designer": "https://onextrapixel.com/how-to-become-an-eco-web-designer/",
-									"Remove non-essential features from the scope": "https://climateproductleaders.org/playbook/discover-mindfully/remove-non-essential-features-from-the-scope",
-									"Using UX Design to Build a Sustainable Future": "https://uxmag.com/articles/using-ux-design-to-build-a-sustainable-future",
-									"The web is fast by default, let's keep it fast": "https://hidde.blog/the-web-is-fast-by-default-lets-keep-it-fast/",
-									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability"
-								}
-							]
-						},
-						{
-							"title": "User-initiated actionable content",
-							"description": "Ensure that disruptive actionable information, such as pop-up or modal windows, can only be initiated by the user.",
-							"resources": [
-								{
-									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"dialog: The Dialog element": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog",
-									"Modal & Nonmodal Dialogs: When (& When Not) to Use Them": "https://www.nngroup.com/articles/modal-nonmodal-dialog/",
-									"OpQuast - 29 - A product or service can be purchased without creating an account.": "https://checklists.opquast.com/en/digital-quality/a-product-or-service-can-be-purchased-without-creating-an-account",
-									"OpQuast - 33 - Product availability is indicated before final validation of the order.": "https://checklists.opquast.com/en/digital-quality/product-availability-is-shown-before-final-order-placement",
-									"Popups: 10 Problematic Trends and Alternatives": "https://www.nngroup.com/articles/popups/",
-									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability"
-								}
-							]
-						},
-						{
-							"title": "Decorative design",
-							"description": "Use decorative design only when it enhances user experience. Remove unnecessary assets or those that do not enhance user experience or sustainability. Alternatively, make these optional and disabled by default.",
-							"resources": [
-								{
-									"Against images as accessories": "https://uxdesign.cc/against-images-as-accessories-92f43b0d45e9",
-									"Best practices for fonts": "https://web.dev/articles/font-best-practices?hl=en",
-									"Decorative Images": "https://www.w3.org/WAI/tutorials/images/decorative/",
-									"Don't use custom CSS scrollbars": "https://ericwbailey.website/published/dont-use-custom-css-scrollbars/",
-									"GPF - General Policy Framework (PDF) - 4.6 - UX and UI (Informational Media)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"Implementing image sprites in CSS": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Images/Implementing_image_sprites",
-									"Less Data Doesn't Mean a Lesser Experience": "https://timkadlec.com/remembers/2019-08-30-less-data-doesnt-mean-a-lesser-experience/",
-									"Less is more: How stripping back can improve UX Design": "https://www.uxdesigninstitute.com/blog/improve-ux-design/",
-									"Reduce Redundancy": "https://www.nngroup.com/articles/reduce-redundancydecrease-duplicated-design-decisions/",
-									"Reduce The Number Of Images": "https://www.giftofspeed.com/minimize-images/",
-									"Reducing Cognitive Overload": "https://www.lionandmason.com/ux-blog/reducing-cognitive-overload-declutter-your-design-for-better-ux/",
-									"Simple icon systems using SVG sprites": "https://oliverjam.es/articles/svg-sprites",
-									"Simplify Your UX Through Reduction": "https://www.uxmatters.com/mt/archives/2015/07/simplify-your-ux-through-reduction.php",
-									"The Website Obesity Crisis (Video)": "https://webdirections.org/blog/the-website-obesity-crisis/",
-									"Use fewer web fonts": "https://web.dev/articles/font-best-practices?hl=en",
-									"United Nations SDGS - Goal 7 - Sustainable Energy": "https://sdgs.un.org/goals/goal7#targets_and_indicators"
+									"An Excellent Beginner's Guide to Information Architecture": "https://careerfoundry.com/en/blog/ux-design/a-beginners-guide-to-information-architecture/",
+									"Building Accessible Menu Systems": "https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/",
+									"Build and submit a sitemap": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en",
+									"GPF - General Policy Framework (PDF) - 4.3 - UX and UI (Optimized Clickstream)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GreenIT - 0090 - Set up an efficient sitemap": "https://rweb.greenit.fr/en/fiches/RWEB_0090-set-up-an-efficient-sitemap",
+									"How To Achieve Instant Navigations On The Web": "https://www.debugbear.com/blog/instant-navigations",
+									"How UX design can help tackle climate change": "https://www.cyber-duck.co.uk/insights/how-sustainable-design-can-help-climate-change",
+									"HTML Sitemap: The Benefits for SEO and Users": "https://www.semrush.com/blog/html-sitemap/",
+									"Information Architecture Design Step-by-Step": "https://uxplanet.org/information-architecture-design-step-by-step-7036897511d7",
+									"Information Architecture: Study Guide": "https://www.nngroup.com/articles/ia-study-guide/",
+									"Menu-Design Checklist": "https://www.nngroup.com/articles/menu-design/",
+									"Menus Tutorial": "https://www.w3.org/WAI/tutorials/menus/",
+									"OpQuast - 1 - The website provides a way for users to find out about new content and services.": "https://checklists.opquast.com/en/digital-quality/the-site-provides-users-with-a-way-to-know-about-new-contents-and-services",
+									"OpQuast - 213 - The website provides a sitemap file listing the content to be crawled.": "https://checklists.opquast.com/en/digital-quality/the-website-provides-a-sitemap-file-listing-the-content-to-be-crawled",
+									"UX: Best Practices For Developers": "https://blog.openreplay.com/ux-best-practices-for-developers/",
+									"Website Navigation: How to Design Menus Visitors Love": "https://blog.hubspot.com/website/main-website-navigation-ht",
+									"When and how to use HTML sitemaps for SEO and UX": "https://searchengineland.com/html-sitemaps-seo-ux-when-how-394763"
 								}
 							]
 						}
@@ -392,66 +286,7 @@
 							"Social Equity": "Reducing device and bandwidth requirements through providing more lightweight experiences can improve work better for users using older devices or located in low-bandwidth environments, and similar."
 						}
 					],
-					"tags": ["Accessibility", "Content", "Patterns", "Performance", "Privacy", "Social Equity", "UI", "Usability"]
-				},
-				{
-					"id": "ensure-that-navigation-and-wayfinding-are-well-structured",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured",
-					"guideline": "Ensure that navigation and wayfinding are well-structured",
-					"subheading": "Provide good information architecture that signposts users, both human and machine, to what they need, so they can reach their destination as efficiently as possible.",
-					"criteria": [
-						{
-							"title": "Navigation and search",
-							"description": "Provide an accessible, easy-to-use navigation menu with search features to help users easily find what they need.",
-							"resources": [
-								{
-									"Building Accessible Menu Systems": "https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/",
-									"GPF - General Policy Framework (PDF) - 4.3 - UX and UI (Optimized Clickstream)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"How To Achieve Instant Navigations On The Web": "https://www.debugbear.com/blog/instant-navigations",
-									"Menu-Design Checklist": "https://www.nngroup.com/articles/menu-design/",
-									"Menus Tutorial": "https://www.w3.org/WAI/tutorials/menus/",
-									"Website Navigation: How to Design Menus Visitors Love": "https://blog.hubspot.com/website/main-website-navigation-ht"
-								}
-							]
-						},
-						{
-							"title": "Human-readable sitemaps",
-							"description": "Consider implementing an efficient and regularly updated sitemap for human users. While guidance beyond the navigation bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.",
-							"resources": [
-								{
-									"Build and submit a sitemap": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en",
-									"GPF - General Policy Framework (PDF) - 4.3 - UX and UI (Optimized Clickstream)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GreenIT - 0090 - Set up an efficient sitemap": "https://rweb.greenit.fr/en/fiches/RWEB_0090-set-up-an-efficient-sitemap",
-									"HTML Sitemap: The Benefits for SEO and Users": "https://www.semrush.com/blog/html-sitemap/",
-									"OpQuast - 213 - The website provides a sitemap file listing the content to be crawled.": "https://checklists.opquast.com/en/digital-quality/the-website-provides-a-sitemap-file-listing-the-content-to-be-crawled",
-									"When and how to use HTML sitemaps for SEO and UX": "https://searchengineland.com/html-sitemaps-seo-ux-when-how-394763"
-								}
-							]
-						},
-						{
-							"title": "New content",
-							"description": "Implement lightweight and efficient means for users to learn about new content and services.",
-							"resources": [
-								{
-									"An Excellent Beginner's Guide to Information Architecture": "https://careerfoundry.com/en/blog/ux-design/a-beginners-guide-to-information-architecture/",
-									"How UX design can help tackle climate change": "https://www.cyber-duck.co.uk/insights/how-sustainable-design-can-help-climate-change",
-									"Information Architecture Design Step-by-Step": "https://uxplanet.org/information-architecture-design-step-by-step-7036897511d7",
-									"Information Architecture: Study Guide": "https://www.nngroup.com/articles/ia-study-guide/",
-									"OpQuast - 1 - The website provides a way for users to find out about new content and services.": "https://checklists.opquast.com/en/digital-quality/the-site-provides-users-with-a-way-to-know-about-new-contents-and-services",
-									"UX: Best Practices For Developers": "https://blog.openreplay.com/ux-best-practices-for-developers/"
-								}
-							]
-						}
-					],
-					"benefits": [
-						{
-							"Accessibility": "Enabling easier navigation makes content accessible to people with disabilities. Bringing people to their goal faster also reduces data consumption.",
-							"Conversion": "Optimizing structure can also boost conversion rates as people are more likely to find what they need. The same applies when users are made aware of new content related to their interests.",
-							"Economic": "Shortening user journeys can also reduce hosting costs where this is linked to data transfer.",
-							"Environment": "Improving navigation and search efficiency can reduce the time users spend finding what they need and achieving their objectives. This also lowers emissions."
-						}
-					],
-					"tags": ["Accessibility", "HTML", "Marketing", "UI", "Usability"]
+					"tags": ["Accessibility", "Content", "HTML", "Marketing", "Patterns", "Performance", "Privacy", "Social Equity", "UI", "Usability"]
 				},
 				{
 					"id": "design-to-assist-and-not-to-distract",
