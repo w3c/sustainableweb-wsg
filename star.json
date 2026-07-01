@@ -80,7 +80,7 @@
 				{
 					"id": "audience-evaluation",
 					"title": "Use quantitative research to measure the needs of users and affected communities",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Understand user requirements or constraints, resolving barriers to access](https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Understand user requirements or constraints](https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints).",
 					"description": [
 						{
 							"1": "Provide a mechanism for application and website owners to better curate their products and services around the needs of their users and those affected by what has been created and in doing so, reduce the PPP burden which can impact the sustainability of the website, especially around Social, people-centered (and user experience) impacts.",
@@ -111,7 +111,7 @@
 				{
 					"id": "barriers-and-access",
 					"title": "Test against specific disability profiles for more calibrated accessibility",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Understand user requirements or constraints, resolving barriers to access](https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Understand user requirements or constraints](https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints).",
 					"description": [
 						{
 							"1": "Go beyond the remit of Web Content Accessibility Guidelines (WCAG) and accessibility by default and to encourage designers and developers of products to test their creations against a range of specific named types of disabilities to both better understand the conditions and to be able to more structurally and sustainably better test for the unique issues each disability brings to technology in terms of adaptation.",
@@ -143,7 +143,7 @@
 				{
 					"id": "efficient-paths",
 					"title": "Measure interaction cost to reach every page in the information architecture",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Design efficient and streamlined user journeys](https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys).",
 					"description": [
 						{
 							"1": "Reduce the cognitive load for users between the initial visit to a website or application and reaching their final destination where the information they are seeking is located. The path to locating such information can be routed through multiple interactions such as a search mechanism, hyperlinks, form controls (where appropriate), and progressive disclosure features (reducing the complexity involved in reaching a destination will reduce the rendering load leading to sustainability benefits).",
@@ -173,164 +173,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/efficient-paths.html"
 				},
 				{
-					"id": "distraction-free-design",
-					"title": "Check for Content Obscuring Materials That Occur Upon pageLoad",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
-					"description": [
-						{
-							"1": "Ensure that users can read the materials produced for your website or application and click on interactive content (such as links or buttons) that would otherwise be impaired by other content that due to positioning obscures the material by preventing the page from functioning correctly (wasted clicks, especially if JavaScript functions monitor them could lead to emission costs so its best to avoid unnecessary actions).",
-							"2": "There will be occasions when content should be obscured to progressively disclose additional content, but for unintentional overlapping, obscuring deliberately for attention (unnecessary), and all cases where the user did not ask to be impacted, the visibility of the content should be assured (either manually or mechanically through identifying object locations and dimensions plus where conflicts arise, issue remedial advice)."
-						}
-					],
-					"examples": [
-						{
-							"1": "Advertising is often a cause of content that temporarily overlaps content with the intent of requesting clicks or attention-grabbing to monetize the material on the website or application. While such actions may be financially reasoned, they are rarely sustainably minded.",
-							"2": "Consent managers are an example of obscuring materials for the good as they ensure that users to the page authorize potentially invasive technologies before they become active. An example of this is the cookie consent banner that asks for their allowance before they can be used to store sensitive information on the user's machine.",
-							"3": "Scrollable content in which the scrollbar has been obscured, replaced (with a non-functional, obscured, or hidden replacement), or hidden entirely making it impossible to detect where additional content may occur beyond just the window (such as in overflowing boxes) will be unavailable to users making its use of hardware to render a waste of resources."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check the page's content to ensure none is clipped by other materials or an overflow issue (with a scrollbar lacking).",
-									"2": "Check that all links and buttons are functioning.",
-									"3": "Check that progressive disclosing content only appears when requested.",
-									"4": "Check that necessary disclosing materials that obscure content can be easily removed."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html"
-				},
-				{
-					"id": "eliminate-the-non-essential",
-					"title": "Break large pieces of content down using progressive disclosure",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
-					"description": [
-						{
-							"1": "Help increase the readability of content within a website or application by breaking down larger pieces of content into smaller constituent pieces. In the same way that a book is broken down into chapters, using progressive disclosure you can reveal sections when the reader is ready, avoiding information overload (the same can be done with long tasks).",
-							"2": "For machine testability, identification of such progressive disclosure markers can be found using the HTML details or dialog element, the CSS target selector (and its accompanying HTML ID attributes), the CSS checkbox hack, the use of JavaScript hash bangs, and also the use of state (and content) changes through various frameworks. Each of these can build a picture of how content displays on-screen during the user experience, and some can load content only when it is requested which can reduce data transfer and rendering requests leading to sustainability improvements."
-						}
-					],
-					"examples": [
-						{
-							"1": "Tabs can be a simple way in which [you can showcase](https://www.gov.uk/bank-holidays) different pieces of information to an audience. By using a mechanism such as the CSS target selector you can reveal information based on its related HTML ID.",
-							"2": "Dropdown menus such as the one you will find on many websites disclose from a single link several additional roadmapped locations which are grouped children in the information architecture of the product or service."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that progressive disclosure is used appropriately with your content or tasks to perform.",
-									"2": "Check that progress can be made from one disclosure to another.",
-									"3": "Check that each disclosure element can be closed successfully.",
-									"4": "Check that the disclosure method you use is compatible with user's browsers."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/eliminate-the-non-essential.html"
-				},
-				{
-					"id": "user-initiated-actionable-content",
-					"title": "Remove any non-user initiated pop-up or model windows",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
-					"description": [
-						{
-							"1": "Reduce problematic friction within the user experience and help reduce the number of deceptive patterns which might occur onLoad and during the interaction process as these can cause considerable sustainability issues as a result of wasted emissions. By ensuring that the user remains in control of the interface and that websites and applications work as expected, a more ethical and optimized product or service is likely to result.",
-							"2": "Machine testing can analyze JavaScript for the use of pop up events, the appearance of \"_blank\" within hyperlinks or frames, or other functionality that exists that may produce overlays. It is important to question the acceptability of such usage for example, opening links in new windows may be acceptable for non-web formats like PDF, otherwise, it is best to advise against its use."
-						}
-					],
-					"examples": [
-						{
-							"1": "While not as common today, pop up advertisements which appear in a new window or in a separate frame used to be a fixture of the early web and required heavy user management to close multiple banners that would trigger."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check for CSS and JavaScript overlays that may occur onLoad and remove when identified.",
-									"2": "Check that any pop up events can only be initiated with the user's consent.",
-									"3": "Check all hyperlinks for new window opening triggers (and action as appropriate)."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/user-initiated-actionable-content.html"
-				},
-				{
-					"id": "decorative-design",
-					"title": "Decorative design elements can be disabled if they are not done so by default",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minimize non-essential content, interactivity, or journeys](https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys).",
-					"description": [
-						{
-							"1": "Provide a mechanism in which users can reduce their impact by choosing to have a more basic experience (to what extent will be up to the developer) by downloading fewer external resources, scripts, and other assets to their machine to be processed and rendered. With this action, a website or application that is already optimized for sustainability can go one step further in providing a barebones format for those wishing to prioritize lowering their footprint over having added functionality.",
-							"2": "This action could be performed by defining what assets have been added to the product or service to enhance the experience but are not of critical importance (such as background images, or decorative flourishes that can be machine identified). Other forms of decoration can also be machine-identified such as CSS flourishes to content and images, background sounds, custom cursors, custom scrollbars, etc."
-						}
-					],
-					"examples": [
-						{
-							"1": "Web browsers can [change CSS cursors](https://csscursor.info/), and while there may be functional reasons to do so under certain circumstances, such as to indicate loading progress, zoom, or click-ability, in most circumstances, you should leave it at the system default as this is the expected behavior.",
-							"2": "CSS scrollbars [can be customized](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scrollbars_styling) or replaced but this can be problematic for users. Changes in scroll speed or its mechanics can affect impact readability and the way things render, and color changes can impact visibility and affect overflow regions within elements of the page. In such cases, the system default always functions better than a custom solution."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check decorative images are clearly labeled using ARIA so assistive technologies can skip them.",
-									"2": "Check that CSS decoration can be disabled if it may interfere with readability.",
-									"3": "Check that custom scrollbars and cursors can be disabled as they may interfere with a user's ability to interact with the screen.",
-									"4": "Check that background sounds can be disabled and do not auto-load or auto-play.",
-									"5": "Check that decorative features can be disabled at the user's request."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/decorative-design.html"
-				},
-				{
-					"id": "navigation-and-search",
-					"title": "Making your navigation menu accessible and well-structured",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Ensure that navigation and wayfinding are well-structured](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured).",
-					"description": [
-						{
-							"1": "Verify that your navigation menu is crafted in such a manner that it is both accessible to users and user-agents and functions correctly so that when implemented it does not lead to issues when attempting to browse the information architecture of a website or application. If the information architecture were to fail, this would lead to PPP failings as your users would no longer be able to use the product or service without encountering barriers to access and risk further emissions attempting to solve the issue.",
-							"2": "Machine testing the structure of a navigation menu will usually involve the nav, ul, or ol elements within the header of a product or service which repeats across pages and assuming that links function as expected and click ratios (sizes) are large enough on both desktop and mobile platforms, any search functionality will also need to be tested to ensure that results are provided upon submission."
-						}
-					],
-					"examples": [
-						{
-							"1": "The hamburger design is often considered the stereotype of [mobile functionality](https://www.smashingmagazine.com/2022/11/navigation-design-mobile-ux/), a three-lined icon that represents a menu upon clicking it reveals a full-screen list of options. Employing good patterns is key to reducing confusion and abandonment from users"
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that the structure of the navigation menu is semantically correct.",
-									"2": "Check that the structure of the navigation menu is repeated across all pages.",
-									"3": "Check that the click sizes/ratios of anchors in navigation menus are large enough on both mobile and desktop to be comfortable.",
-									"4": "Check that the URLs provided within links do not lead to errors.",
-									"5": "Check that any search functionality provides results (not errors) upon submission."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/navigation-and-search.html"
-				},
-				{
 					"id": "human-readable-sitemaps",
 					"title": "Provide a human-readable sitemap to improve the information architecture",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Ensure that navigation and wayfinding are well-structured](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Design efficient and streamlined user journeys](https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys).",
 					"description": [
 						{
 							"1": "Increase the findability of the content within your website among search engines and social networks. By creating a XML sitemap in the base directory of your website, and potentially having a human-readable) HTML sitemap to supplement it, you provide an index of all the publicly available pages. This acts as a potential signpost for individuals who may find themselves seeking information but not knowing exactly where it is stored.",
@@ -359,39 +204,6 @@
 						}
 					],
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/human-readable-sitemaps.html"
-				},
-				{
-					"id": "new-content",
-					"title": "Provide a method of keeping up-to-date with product or service updates",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Ensure that navigation and wayfinding are well-structured](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured).",
-					"description": [
-						{
-							"1": "Ensure that users and users of an application or website can monitor changes and events that occur over time. The need to be able to track such events is critical as customers become reliant on products and services. This reliance on such features means that time will have been invested into learning how to set up and use the product, which if it fails could have a sustainability impact not just for the product or service owner, but for those reliant on its ability to function.",
-							"2": "Every product or service will have its own update schedule and there will be no hard and fast rule in terms of how often a website or application should be offering new releases. That being said, there should be a mechanism in place to describe news events both in a syndicated format and on the website, and a system status mechanism to identify any current issues with the product or service."
-						}
-					],
-					"examples": [
-						{
-							"1": "[Apple has a newsroom](https://www.apple.com/newsroom/) that is very minimalistic yet it contains all that you would expect from a news category from a major website. It has grouped stories with useful headlines, dates, categories, and a picture. Having something similar for your website can help users find new material quickly and reduce churn digging through archives.",
-							"2": "[Syndication feeds](https://www.w3.org/blog/feed/) come in multiple different formats but the most common is the RSS format. They are compatible with readers on every platform and can be a useful way to get news to subscribers quickly. While these make regular requests to websites, they request less data and result in users spending less time browsing overall which is an emissions-positive event."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check for a news page or category of a website.",
-									"2": "Check the news section has been updated within 12 months.",
-									"3": "Check for a syndication feed in RSS, Atom, or JSON.",
-									"4": "Check the syndication feed has been updated within 12 months.",
-									"5": "Check for other syndicated events (podcasts, OPML, etc).",
-									"6": "Check the syndication feed is semantically correct."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/new-content.html"
 				},
 				{
 					"id": "respect-user-attention",
@@ -425,7 +237,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/respect-user-attention.html"
 				},
 				{
-					"id": "minimize-distraction",
+					"id": "distraction-free-design",
 					"title": "Encourage features that help users achieve tasks",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Design to assist and not to distract](https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract).",
 					"description": [
@@ -448,16 +260,22 @@
 									"1": "Check for read it later compatibility within articles.",
 									"2": "Check for purchasable products and the option to quickly purchase (bonus points if no login is required).",
 									"3": "Check if the HTML head contains landmark links of relevance to be identified.",
-									"4": "Check for recognized landmark shortcuts (skip links, etc) and that they are functional."
+									"4": "Check for recognized landmark shortcuts (skip links, etc) and that they are functional.",
+									"5": "Check the page's content to ensure none is clipped by other materials or an overflow issue (with a scrollbar lacking).",
+									"6": "Check that all links and buttons are functioning.",
+									"7": "Check that progressive disclosing content only appears when requested and is compatible with user's browsers.",
+									"8": "Check that progressive disclosure is used appropriately with your content or tasks to perform.",
+									"9": "Check that CSS and JavaScript overlays, custom scrollbars and cursors, popup events, and new window opening triggers are not actioned without user consent.",
+									"10": "Check that decorative features, and interactive media, images, or animation can be disabled at the user's request."
 								}
 							],
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/minimize-distraction.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html"
 				},
 				{
-					"id": "reduce-engagement-traps",
+					"id": "remove-engagement-traps",
 					"title": "Avoid mechanisms that promote excessive screen time",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Design to assist and not to distract](https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract).",
 					"description": [
@@ -483,7 +301,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/reduce-engagement-traps.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/remove-engagement-traps.html"
 				},
 				{
 					"id": "deceptive-design-patterns",
@@ -705,68 +523,6 @@
 						}
 					],
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/design-system.html"
-				},
-				{
-					"id": "clear-content",
-					"title": "Increase the readability of content using common metrics",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Provide clear, inclusive content with purpose](https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose).",
-					"description": [
-						{
-							"1": "Make the content within your website or application more legible to individuals who may struggle with more technical language. Techniques such as lowering the reading age, removing industry terms (or clearly defining them), and having translations for international audiences can help get your message across.",
-							"2": "This technique is most useful when dealing with a large body of content that the user has to wade through to complete a task. Being able to reduce screen time by improving the ease at which users can comprehend a topic will ultimately allow for an experience that feels faster and discriminates less against individuals who may struggle with highly technical content."
-						}
-					],
-					"examples": [
-						{
-							"1": "[Transport for London](https://tfl.gov.uk/info-for/suppliers-and-contractors/digital-design-toolkit/using-plain-english) has an editorial style guide that sets out to use plain English throughout their website. The guide itself serves as a useful tool that others could adapt (including the terms in machine testability).",
-							"2": "There are lots of technical terms used in (for example) the web industry, Jens Oliver Meiert has created the [Web Glossary](https://webglossary.info/) as a dictionary of terminology which can help clarify confusing terminology.",
-							"3": "[Readability Formulas](https://readabilityformulas.com/readability-scoring-system.php) have an assessment tool that can use one of several different models to identify issues with content. As there is no agreed-upon assessment model, this can be particularly helpful."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check against a list of terms for the use of plain English.",
-									"2": "Check that terminology is inclusive and non-discriminatory.",
-									"3": "Check that technical terms are identified and well-defined.",
-									"4": "Check that the content has an appropriate reading age.",
-									"5": "Check for internationalization within content, HTML, and CSS."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/clear-content.html"
-				},
-				{
-					"id": "content-formatting",
-					"title": "Break long-form content down into a simpler structure",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Provide clear, inclusive content with purpose](https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose).",
-					"description": [
-						{
-							"1": "Avoid users being hit with a wall of text which risks abandonment of the page (and a wasted session with emissions attached). By taking large pieces of information and structuring them into more clean smaller chunks and utilizing a range of more friendlier features when appropriate such as lists and tables, the information will look less intimidating.",
-							"2": "For machine testability, identifying clear headings, visual hierarchy, spacing, line breaks, lists, use of images, and other features of HTML can help calculate the relative density of the content and whether it could be better presented not just for readers but to (if used with progressive disclosure) reduce the initial impact on rendering engines which can have a sustainable impact on hardware."
-						}
-					],
-					"examples": [
-						{
-							"1": "This article from [Nielson Norman Group](https://www.nngroup.com/articles/formatting-long-form-content/) provides some great examples and ideas around the subject of dealing with long-form content on the web, each of which can be both implemented and tested against."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that the heading hierarchy structure is correct (H1 > H6).",
-									"2": "Check that paragraphs do not exceed a set word length.",
-									"3": "Check the spacing between elements is not too crowded."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/content-formatting.html"
 				},
 				{
 					"id": "need-for-media",
@@ -991,7 +747,7 @@
 				{
 					"id": "pre-installed-typefaces",
 					"title": "Provide accessible mechanisms around symbols in system fonts",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use optimized and appropriate web typography](https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use optimized web typography](https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography).",
 					"description": [
 						{
 							"1": "Avoid rendering issues surrounding emojis and symbol typefaces based on the operating system an individual may be using or the localization of their device. This can inherently cause accessibility issues which can reduce readability as well as the aforementioned visual glitches that can potentially have an impact on system hardware.",
@@ -1019,7 +775,7 @@
 				{
 					"id": "web-font-optimization",
 					"title": "Use modern, efficient custom typefaces within a set limit",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use optimized and appropriate web typography](https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use optimized web typography](https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography).",
 					"description": [
 						{
 							"1": "Optimize a typeface to ensure that when custom fonts are provided, they are implemented as sustainably as possible requiring the fewest amount of resources to download and render as possible. By placing restrictions on the number of custom typefaces and using a highly optimized format (hopefully subsetted), you will have a highly compressed file.",
@@ -1046,216 +802,6 @@
 						}
 					],
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/web-font-optimization.html"
-				},
-				{
-					"id": "open-formats",
-					"title": "Ensure that every PDF or other non-web document has an HTML alternative",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Offer suitable alternatives for every format used](https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used).",
-					"description": [
-						{
-							"1": "Expand the compatibility of non-native web documents and to reduce the reliance on proprietary formats which can become an issue for users who may not have access to the software required to view the documents in question (either due to cost, the time expense of installing additional software, or the format no longer being maintained).",
-							"2": "The alternative format provided should be in HTML as this can be marked up to be web accessible (and as an open format it can be maintained to be sustainable to meet PPP targets). The choice of which format to use should be clearly identified both using text and (if possible) using iconography, and if a default format needs to be set, having the open format is best."
-						}
-					],
-					"examples": [
-						{
-							"1": "The book [Eloquent JavaScript](https://eloquentjavascript.net/) has been written primarily in HTML but also has an offline compiled PDF, ePub, and MOBI version available for individuals who would prefer to make use of these eReader-safe formats."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that all non-native web documents have an HTML alternative available.",
-									"2": "Check that available formats are clearly identified with text and/or icons.",
-									"3": "Check any generated HTML transcript meets WSG."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/open-formats.html"
-				},
-				{
-					"id": "font-stack-fallbacks",
-					"title": "Provide a suitable font stack when custom typefaces are used",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Offer suitable alternatives for every format used](https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used).",
-					"description": [
-						{
-							"1": "Ensure cross-platform compatibility when custom fonts are utilized within a product or service. This should be done by providing at least three fallbacks across a variety of different desktop operating systems (Windows, Mac, and Linux), mobile platforms (Android and iOS), and finally offering a generic font family as a last resort to fall back upon.",
-							"2": "Machine testing for suitable typefaces will involve a list of web-safe fonts for each platform to ensure a high probability of compatibility. Statistics about the usage of each platform can be gathered from analytics packages and used to determine which operating systems require support, from there, using a list of pre-installed fonts listed as web-safe will help you define a sustainable stack."
-						}
-					],
-					"examples": [
-						{
-							"1": "[This guide](https://en.wikipedia.org/wiki/List_of_typefaces_included_with_macOS) provides a solid overview of web-safe typefaces across macOS, this guide provides coverage of Microsoft Windows and includes typefaces within Microsoft Office, and this guide showcases typefaces across all of Apples platforms.",
-							"2": "[CSS Font Stack](https://www.cssfontstack.com/) gives a list (with statistics) of Windows and Mac typefaces including their availability. It is particularly useful as it groups them based on the relative font family the typeface relates to."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check all custom fonts have a generic font-family.",
-									"2": "Check all custom fonts have at least three listed web-safe fallback typefaces.",
-									"3": "Check that all web-safe fallback fonts cover Windows, Mac, Linux, and Mobile."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/font-stack-fallbacks.html"
-				},
-				{
-					"id": "alternative-text",
-					"title": "Provide alternative text or figure captions for images",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Offer suitable alternatives for every format used](https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used).",
-					"description": [
-						{
-							"1": "Ensure that alternative text is available for descriptive images that are non-decorative and are important to the content of the website or application. Within HTML this can be provided either through the use of the alternative text attribute or through the use of figure captions (which are associated with an image providing added context).",
-							"2": "Machine testability should flag any IMG element that has no alternative text unless it exists within a figure element that contains a figcaption element. There may be cases for decorative purposes where images do not require alternative text, however, these (arguably) should be identified as such and accessibility aids given the notification they can skip over them rather than being ignored."
-						}
-					],
-					"examples": [
-						{
-							"1": "[MDN provides documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figcaption) and an example of how figcaption can be used to give contextual meaning to an image. While the example only uses an IMG element, you could embed a picture element for the same effect.",
-							"2": "Web Development magazine [A List Apart](https://alistapart.com/) provides alternative text on its images to ensure that those using assistive technologies can read the content without missing out on the context that they can provide."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that all IMG elements contain ALT attribute text unless within a FIGURE element with FIGCAPTION.",
-									"2": "Check that SVG elements contain a TITLE and optionally a DESC element.",
-									"3": "Check that CANVAS elements contain alternative textual content.",
-									"4": "Check that all AREA elements (for MAP elements) contain ALT attribute text)."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/alternative-text.html"
-				},
-				{
-					"id": "transcripts-and-text",
-					"title": "Provide a text transcription of media files in an open HTML format",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Offer suitable alternatives for every format used](https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used).",
-					"description": [
-						{
-							"1": "Offer a transcript of the content of an audio file or video. This is especially useful within podcasts or shows that follow the linear progress of events that can be organized into chapters. How content is chosen to be written up is at the discretion of the author but to pass the criteria it must be accessible, understandable, and content complete.",
-							"2": "As with all generated external HTML documents, for machine testability (this will include other examples), the generated content must itself pass WSG guidelines in being sustainable (meeting the success criteria as an HTML document that generates emissions). The document can be tested against the techniques laid down in this reference."
-						}
-					],
-					"examples": [
-						{
-							"1": "The [99% Invisible podcast](https://99percentinvisible.org/episode/roman-mars-describes-chicago-as-it-is/transcript) provides text transcripts of its episodes using a paper icon to indicate availability. The speaker is clearly identified within each episode and credits are also provided alongside."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check for an HTML transcript either below the media file (labeled transcript) or linked to the media.",
-									"2": "Check any generated HTML transcript meets WSG."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/transcripts-and-text.html"
-				},
-				{
-					"id": "video-alternatives",
-					"title": "Include WebVTT closed captions, subtitles, and sign language support",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Offer suitable alternatives for every format used](https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used).",
-					"description": [
-						{
-							"1": "Enhance existing media that has been provided to ensure maximum legibility and comprehension. In doing so, the viewer is less likely to have issues in which they rewind content to attempt to understand dialog which they had difficulty understanding (which will in turn cause bursts of CPU and GPU activity during this media manipulation).",
-							"2": "Layering additional context upon a video may initially have an additional outlay in terms of emissions (due to the loading of additional files or rendering extra content upon the screen) but because of its social and societal benefits, it meets PPP targets and as such should be prioritized. Testers should therefore seek to identify such features and flag non-availability as an issue."
-						}
-					],
-					"examples": [
-						{
-							"1": "[Meryl Evans has a great example](https://meryl.net/webvtt/) with some basic code (and links to further materials on using the WebVTT format for providing essential captioning for your videos. It is covered in [more depth on MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API).",
-							"2": "Paying for a sign language interpreter for your videos can offer added value to your content. It can be easier to understand than written content, reduces accessibility issues, and increases satisfaction levels."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check for iconography to identify sign language or accessible media aids.",
-									"2": "Check for the availability of a WebVTT file with video files."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/video-alternatives.html"
-				},
-				{
-					"id": "simple-forms",
-					"title": "Detect form requirements and identify data collection policies",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Provide accessible, usable, minimal web forms](https://www.w3.org/TR/web-sustainability-guidelines/#provide-accessible-usable-minimal-web-forms).",
-					"description": [
-						{
-							"1": "Reduce the amount of inteference that occurs when information is required to be entered on a form control within a user-interface. Identify how many elements must be filled out (and those which are not mandatory being eliminated), clearly label how such components need to be filled out (and how many steps there are), plus have links to data collection policies.",
-							"2": "Such actions can lead to less unnecessary data transmission which is not only beneficial in terms of privacy and security (the people and societal component of PPP) but also having fewer form elements or steps to render will have an emissions reduction due to the lower amount of individual elements to render to the screen (and the user will spend less time on-screen filling the forms in)."
-						}
-					],
-					"examples": [
-						{
-							"1": "Domain Registrar [iWantMyName](https://new.help.iwantmyname.com/hc/en-gb) takes form filling to the most minimal extent possible on their contact page, only providing three essential fields to deal with requests, each of which is clearly labeled.",
-							"2": "The [registration page for BBC iPlayer](https://account.bbc.com/register) is a multi-step process that is well designed and labeled to avoid overwhelming new users and it only requests the minimum amount of data necessary to set up an account.",
-							"3": "This [medical diagnosis application](https://symptomate.com/) decides what information is required to be filled in next upon the previous submission, thereby only relevant questions are being asked (leading to less redundancy in form filling)."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check how many steps there are in an input process and if this can be reduced.",
-									"2": "Check that all form components are clearly labeled and disclose their purpose.",
-									"3": "Check that only necessary form elements are displayed onscreen.",
-									"4": "Check that a publicly displayed data collection policy link is visible (this may be a section of a privacy policy)."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/simple-forms.html"
-				},
-				{
-					"id": "functional-forms",
-					"title": "Allow for data entry with automatic assistance settings",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Provide accessible, usable, minimal web forms](https://www.w3.org/TR/web-sustainability-guidelines/#provide-accessible-usable-minimal-web-forms).",
-					"description": [
-						{
-							"1": "Provide a mechanism within forms during necessary data entry to allow automated tooling to provide necessary assistance. Such data entry will cause users to spend less time onscreen and as such will generate fewer emissions in addition to less frustration from failed attempts that would otherwise lead to potential escalation of such emissions being triggered (while also conserving bandwidth).",
-							"2": "For machine testability, the autocomplete attribute should be disabled in all form inputs outside of those likely to be utilized/assisted by a password manager (this is especially true where the suggestions do not come from a user device but a third-party and additional bandwidth or rendering processes are likely to be endured). A list of such inputs can be identified from a common password manager and marked against each form for correctness."
-						}
-					],
-					"examples": [
-						{
-							"1": "[Login forms such as Grammerly](https://www.grammarly.com/signin) can be detected by password manager software and therefore have a benefit for autocompletion (as users cannot be expected to remember personal details across all websites).",
-							"2": "[Filling in an application form](https://www.jotform.com/form-templates/job-application) should allow autocomplete for elements of a profile that may be contained within a password manager (such as name, email, and phone), but should be disabled in all other formats to prevent the text element from attempting to anticipate the user's responses.",
-							"3": "The HTML Hell advent calendar [has a great article on providing autocomplete](https://www.htmhell.dev/tips/autocompleting-password-fields/) for the sake of third-party tooling access such as password managers. It includes a range of examples and links to additionally useful articles that might guide decision-making."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that autocomplete is enabled in all username and password fields.",
-									"2": "Check that autocomplete is enabled in all identity (E.G. address, email) fields.",
-									"3": "Check that autocomplete is disabled in all other input fields."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/functional-forms.html"
 				},
 				{
 					"id": "printing-documents",
