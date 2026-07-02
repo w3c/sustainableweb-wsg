@@ -1960,7 +1960,7 @@
 					<details> <!-- Identify and remove unused packages and dependencies -->
 						<summary id="dependency-management">Identify and remove unused packages and dependencies</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance">Use dependencies appropriately and ensure maintenance</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for identifying if a library or framework is currently in use and if not, remove the said tooling and its unused dependencies from the production code. This will help reduce the PPP burden of the website as less bloat will reach the user which can have a large impact if they are on a low-powered device or a restricted data plan.</p>
 						<p>For machine testability, internal access will be required to determine if web developers or creators will require specific tooling within a project. If internal access is given, the package.json file is an ideal place to locate the packages being requested and these can be compared against the public-facing website to identify redundancy in the toolchain process.</p>
@@ -1982,7 +1982,7 @@
 					<details> <!-- Implement modularized or lightweight frameworks and libraries -->
 						<summary id="dependency-necessity">Implement modularized or lightweight frameworks and libraries</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance">Use dependencies appropriately and ensure maintenance</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for determining how much of a library of framework you require for your website or application to function, and then requesting just that modularized segment to reduce the overall payload and load on the user's hardware during rendering. This is especially critical for third-party scripting but is also useful for CSS. Reduce the overhead of libraries and frameworks which may be used by the product or service but could be offered through lighter or less production-heavy alternatives.</p>
 						<p>Machine testability should attempt to identify when third-party libraries are present within a codebase and if that framework or library supports the ability to load a lightweight or modular version of its features (thereby only loading what you require, when you require it), ensure that the project in question does so rather than loading an un-optimal "fully-loaded" version of the project.</p>
@@ -2011,7 +2011,7 @@
 					<details> <!-- Ensure that dependencies are verified as up-to-date -->
 						<summary id="dependency-updates">Ensure that dependencies are verified as up-to-date</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance">Use dependencies appropriately and ensure maintenance</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Ensure that the deliverables are current and up-to-date, thereby providing any necessary security patches or bug fixes that are required to remain operational. This is especially true when a website or application is dependent on third-party libraries or frameworks and has a complex toolchain. As such, verifying the maintenance status of work is critical.</p>
 						<p>To machine test or verify the dependency chain of a project, the source code of a project should identify (by filename or URL) the project and version. If during the tree shaking or production process all notifications of what third-party code has been used have been removed, internal access will be required to access the package.json (except heuristic fingerprinting of packages).</p>

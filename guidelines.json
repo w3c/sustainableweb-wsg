@@ -2404,14 +2404,14 @@
 					"tags": ["Accessibility", "JavaScript", "Privacy", "Security"]
 				},
 				{
-					"id": "use-dependencies-appropriately-and-ensure-maintenance",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance",
-					"guideline": "Use dependencies appropriately and ensure maintenance",
-					"subheading": "Use libraries and frameworks only where necessary, when plain code or smaller packages are inappropriate for the use case, and they are kept up to date.",
+					"id": "use-dependencies-sparingly-and-maintain-them",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them",
+					"guideline": "Use dependencies sparingly and maintain them",
+					"subheading": "Regularly review dependencies, remove unused or unnecessary libraries and frameworks, and keep required packages up to date. Opt for minimal, secure, and modular solutions.",
 					"criteria": [
 						{
 							"title": "Dependency management",
-							"description": "Prevent developers from downloading and installing libraries and frameworks to run client-side when they are not needed by checking for unused dependencies. Follow up by uninstalling those that are not needed.",
+							"description": "Review dependencies regularly and remove unused libraries and frameworks. Uninstall packages that are not needed.",
 							"resources": [
 								{
 									"Categorize Your Dependencies": "https://antfu.me/posts/categorize-deps",
@@ -2431,7 +2431,7 @@
 						},
 						{
 							"title": "Dependency necessity",
-							"description": "Limit your use of libraries and frameworks to the genuinely necessary as this will reduce the amount of code that has to be downloaded and parsed by the browser. Consider whether you can use plain code instead. Check the package size and whether individual modules can be installed and imported individually or a more performant alternative can be used in its place, as opposed to the entire library. Do not replace established and trusted security libraries with scoped-down or custom implementations. Custom security code increases vulnerability, which itself can negatively affect sustainability.",
+							"description": "Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations, as this increases vulnerability and can negatively impact sustainability.",
 							"resources": [
 								{
 									"Boring Web Development": "https://meiert.com/blog/boring-web-development/",
@@ -2470,7 +2470,7 @@
 						},
 						{
 							"title": "Dependency updates",
-							"description": "Regularly check dependencies and keep them up to date.",
+							"description": "Keep all dependencies up to date through regular review and maintenance.",
 							"resources": [
 								{
 									"Five Key Application Security Best Practices and Benefits for Maintaining Up-to-Date Dependencies": "https://www.mend.io/blog/five-key-application-security-best-practices-and-benefits-for-maintaining-up-to-date-dependencies/",

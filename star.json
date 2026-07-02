@@ -1934,7 +1934,7 @@
 				{
 					"id": "dependency-management",
 					"title": "Identify and remove unused packages and dependencies",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies appropriately and ensure maintenance](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies sparingly and maintain them](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them).",
 					"description": [
 						{
 							"1": "Provide a mechanism for identifying if a library or framework is currently in use and if not, remove the said tooling and its unused dependencies from the production code. This will help reduce the PPP burden of the website as less bloat will reach the user which can have a large impact if they are on a low-powered device or a restricted data plan.",
@@ -1962,7 +1962,7 @@
 				{
 					"id": "dependency-necessity",
 					"title": "Implement modularized or lightweight frameworks and libraries",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies appropriately and ensure maintenance](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies sparingly and maintain them](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them).",
 					"description": [
 						{
 							"1": "Provide a mechanism for determining how much of a library of framework you require for your website or application to function, and then requesting just that modularized segment to reduce the overall payload and load on the user's hardware during rendering. This is especially critical for third-party scripting but is also useful for CSS. Reduce the overhead of libraries and frameworks which may be used by the product or service but could be offered through lighter or less production-heavy alternatives.",
@@ -1997,7 +1997,7 @@
 				{
 					"id": "dependency-updates",
 					"title": "Ensure that dependencies are verified as up-to-date",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies appropriately and ensure maintenance](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies sparingly and maintain them](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them).",
 					"description": [
 						{
 							"1": "Ensure that the deliverables are current and up-to-date, thereby providing any necessary security patches or bug fixes that are required to remain operational. This is especially true when a website or application is dependent on third-party libraries or frameworks and has a complex toolchain. As such, verifying the maintenance status of work is critical.",
