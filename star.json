@@ -1048,9 +1048,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/performance-testing.html"
 				},
 				{
-					"id": "compatibility-policy",
+					"id": "compatibility-documentation",
 					"title": "Provide a publicly visible compatibility policy or statement",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
 					"description": [
 						{
 							"1": "Ensure that users are made aware of (or able to find out) the limitations of a product or service before issuing a support request that will involve creating new emission sources. This compatibility policy can be listed amongst other policies on a website, however, it must contain detailed information about any factor that may have reduced capability.",
@@ -1074,12 +1074,12 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-policy.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-documentation.html"
 				},
 				{
 					"id": "maintaining-compatibility",
 					"title": "Provide clarification when updates are significant over minor releases",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Cross-platform compatibility support](https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support).",
 					"description": [
 						{
 							"1": "Provide a mechanism for introducing users to new features and capabilities within websites and applications upon a major release being triggered. This would include compatibility changes, any alterations that affect workflow, and bugs that have been resolved. It applies equally to both applications on upgrade paths and website redesigns.",
@@ -1108,7 +1108,7 @@
 				{
 					"id": "user-constraints",
 					"title": "Establish compatibility testing routines with each new release",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Cross-platform compatibility support](https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support).",
 					"description": [
 						{
 							"1": "Ensure that compatibility issues resulting from user constraints (such as operating system or browser age/connection speed, availability, or cost) are factored into the testing process at each new release. Creators must have processes in place whether through checklists that are pre-created or crafted from scratch to ensure that a regime is in place. Other contingencies exist (such as geo-blocking or mobile data costs) and these can also be taken into account if detection is possible.",
@@ -1138,39 +1138,6 @@
 						}
 					],
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/user-constraints.html"
-				},
-				{
-					"id": "progressive-web-applications-pwas",
-					"title": "Provide a PWA if more suitable than its native counterpart",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
-					"description": [
-						{
-							"1": "Identify a web application that exists and then determine if turning the web application into a progressive web application would be more beneficial than providing a native offering. This would need to take into account current web capabilities (such as ServiceWorkers), methods of delivery (such as WASM), and the human aspect (audience requirements).",
-							"2": "Machine testability can firstly examine the existing state of an application to determine how sustainable it is and what technology stack was used to develop it (and how sustainable it already performs for all), from there, data points can be used to identify an approximate cost of implementation for both a native or highly optimized web application endpoint and options can be provided."
-						}
-					],
-					"examples": [
-						{
-							"1": "Native applications may be a good choice if applications require specific access to hardware as web APIs can still be quite restrictive. In addition, there is a case for going native to provide a more OS-centric look and feel.",
-							"2": "web applications are often quicker and easier to deploy and can provide updates without delays in the pipeline (as they do not have to go through store controls), they can also benefit from lower creation costs."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check if the existing application already utilizes a ServiceWorker.",
-									"2": "If so, check the PWA JavaScript and JSON are well formed, and the icon exists.",
-									"3": "If not calculate the sustainability impact of becoming a PWA.",
-									"4": "Check that no native application already exists ([meta tag smart banner](https://developer.apple.com/documentation/webkit/promoting-apps-with-smart-app-banners)).",
-									"5": "If so use that, otherwise calculate the sustainability impact of building an application.",
-									"6": "If cost-efficient sustainability-wise, implement a PWA or/and a native application."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/progressive-web-applications-pwas.html"
 				}
 			]
 		},
