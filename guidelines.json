@@ -1216,30 +1216,21 @@
 							]
 						},
 						{
-							"title": "Non-regression tests",
-							"description": "Implement non-regression tests for all critical features.",
+							"title": "Automated tests",
+							"description": "Maintain an automated test suite that covers critical functionality and run it consistently during builds and releases to catch regressions early.",
 							"resources": [
 								{
     								"AWS WAF - SEC11-BP02 - Automate testing throughout the development and release lifecycle": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_automate_testing_throughout_lifecycle.html",
-									"Non Regression Testing: Purpose, Process, Examples": "https://www.testlio.com/blog/non-regression-testing/",
-									"Non regression vs. regression: key differences in QA": "https://www.statsig.com/perspectives/non-regression-vs-regression-qa",
-									"Test automation": "https://web.dev/explore/test-automation?hl=en",
-									"The Simple and Complete Guide on Non-Regression Testing": "https://testgrid.io/blog/non-regression-testing/",
-									"Understanding non-regression testing and its impact": "https://www.statsig.com/perspectives/understanding-non-regression-testing"
-								}
-							]
-						},
-						{
-							"title": "Regression tests",
-							"description": "Incorporate regression testing into each release cycle to ensure new features do not introduce bugs or otherwise conflict with existing functionality.",
-							"resources": [
-								{
 									"Difference Between Regression Testing And Unit Testing": "https://www.browserstack.com/guide/regression-testing-vs-unit-testing",
 									"GPF - General Policy Framework (PDF) - 1.4 - Strategy (Regular Reviews)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"Non Regression Testing: Purpose, Process, Examples": "https://www.testlio.com/blog/non-regression-testing/",
 									"Non regression vs. regression: key differences in QA": "https://www.statsig.com/perspectives/non-regression-vs-regression-qa",
 									"Regression testing": "https://en.wikipedia.org/wiki/Regression_testing",
 									"Regression Testing: A Detailed Guide": "https://www.browserstack.com/guide/regression-testing",
-									"Software regression testing": "https://www.rainforestqa.com/blog/software-regression-testing"
+									"Software regression testing": "https://www.rainforestqa.com/blog/software-regression-testing",
+									"Test automation": "https://web.dev/explore/test-automation?hl=en",
+									"The Simple and Complete Guide on Non-Regression Testing": "https://testgrid.io/blog/non-regression-testing/",
+									"Understanding non-regression testing and its impact": "https://www.statsig.com/perspectives/understanding-non-regression-testing"
 								}
 							]
 						},
@@ -1275,38 +1266,6 @@
 									"What Are Core Web Vitals (CWVs) & How To Improve Them": "https://ahrefs.com/blog/core-web-vitals/",
 									"Why does speed matter?": "https://web.dev/learn/performance/why-speed-matters?hl=en",
 									"Why your website should be under 14kB in size": "https://endtimes.dev/why-your-website-should-be-under-14kb-in-size/"
-								}
-							]
-						},
-						{
-							"title": "Compliant measurement",
-							"description": "Collect only data required to provide a streamlined and effective user journey and comply with relevant accessibility and data protection legislation. Put policies in place to ensure strict adherence.",
-							"resources": [
-								{
-									"10 CCPA Compliance Tips For Web Developers": "https://dataoverhaulers.medium.com/10-ccpa-compliance-tips-for-web-developers-1ce8382c7286",
-									"17 Countries with GDPR-like Data Privacy Laws": "https://insights.comforte.com/countries-with-gdpr-like-data-privacy-laws",
-									"A privacy-friendly Do Not Track (DNT) Policy": "https://www.eff.org/dnt-policy",
-									"Beyond GDPR: Data Protection Around The World": "https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/magazine/beyond-gdpr-data-protection-around-world",
-									"California Consumer Privacy Act": "https://oag.ca.gov/privacy/ccpa",
-									"Data ethics and digital sustainability": "https://www.sciencedirect.com/science/article/pii/S2666659624000258",
-									"Developer's Guide To GDPR": "https://fusionauth.io/articles/ciam/developers-guide-to-gdpr",
-									"GDPR Checklist": "https://gdprchecklist.io/",
-									"General Data Protection Regulation (GDPR)": "https://gdpr.eu/",
-									"GPF - General Policy Framework (PDF) - 1.6 - Strategy (Data Collection)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 7.2 - Back-End (Data Retention)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 8.8 - Hosting (Hot / Cold Data)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"How To Protect Your Users With The Privacy By Design Framework": "https://www.smashingmagazine.com/2017/07/privacy-by-design-framework/",
-									"Is GDPR Good for the Environment?": "https://www.mightybytes.com/insights/is-gdpr-good-for-the-environment/",
-									"Learn Privacy": "https://web.dev/blog/introducing-learn-privacy?hl=en",
-									"Prefetch resources to speed up future navigations": "https://web.dev/articles/link-prefetch?hl=en",
-									"Privacy by design": "https://en.wikipedia.org/wiki/Privacy_by_design",
-									"State Of GDPR Part 1 and Part 2": "https://www.smashingmagazine.com/2021/02/state-gdpr-2021-key-updates/",
-									"The environmental benefits of privacy-focussed web design": "https://rootwebdesign.studio/articles/the-environmental-benefits-of-privacy-focussed-web-design/",
-									"Ultimate CCPA Compliance Checklist": "https://securiti.ai/blog/ccpa-compliance-checklist/",
-									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-									"United Nations SDGS - Goal 13 - Climate Change": "https://sdgs.un.org/goals/goal13#targets_and_indicators",
-									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
-									"United Nations SDGS - Goal 17 - Global Partnership": "https://sdgs.un.org/goals/goal17#targets_and_indicators"
 								}
 							]
 						}
