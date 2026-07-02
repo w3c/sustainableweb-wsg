@@ -1077,35 +1077,6 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-policy.html"
 				},
 				{
-					"id": "compatibility-documentation",
-					"title": "Provide a publicly visible Compatibility documentation or statement",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Cross-platform compatibility support](https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support).",
-					"description": [
-						{
-							"1": "Ensure that users are made aware of (or able to find out) the limitations of a product or service before issuing a support request that will involve creating new emission sources. This Compatibility documentation can be listed amongst other policies on a website, however, it must contain detailed information about any factor that may have reduced capability.",
-							"2": "For machine testability, attempt to first establish that the policy exists and then try using heuristics (or identification of the headlines) to locate sections on what is both actively supported (those conditions tested upon), and those that are confirmed as unsupported (those conditions known to be broken but will not be fixed with reasons given). Ensure that a support method is also provided."
-						}
-					],
-					"examples": [
-						{
-							"1": "British cellphone provider GiffGaff provides a [web browser support policy](https://www.giffgaff.design/guidelines/browser-support-policy/) that identifies which browsers they support and do not actively support."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check for a Compatibility documentation or statement's existence.",
-									"2": "Check for sections on included and excluded coverage.",
-									"3": "Check that a support method is offered for issues outside of scope."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-documentation.html"
-				},
-				{
 					"id": "maintaining-compatibility",
 					"title": "Provide clarification when updates are significant over minor releases",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Cross-platform compatibility support](https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support).",
