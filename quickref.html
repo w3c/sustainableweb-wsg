@@ -303,7 +303,10 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-number-and-complexity-of-database-queries">Reduce the number and complexity of database queries</a></legend>
-					<label><input type="checkbox"><span>Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process. Practice good database hygiene with data modeling best practices such as data minimization, such as Time-to-Live (<abbr title="Time-to-Live">TTL</abbr>), de-identification, <abbr title="Universally Unique Identifiers">UUIDs</abbr>, and purpose limitation.</span></label>
+					<label><input type="checkbox"><span>Optimize database queries to reduce load by retrieving required data in as few queries as possible, and by applying filtering and selection at the database level rather than in application or <abbr title="Object-Relational Mapping">ORM</abbr> code, especially for frequently accessed data.</span></label>
+					<label><input type="checkbox"><span>Retrieve data only once per request or process and reuse it locally instead of repeating database queries.</span></label>
+					<label><input type="checkbox"><span>Scope database queries to return only the fields and records that are required.</span></label>
+					<label><input type="checkbox"><span>Apply data lifecycle and governance controls such as Time-to-Live (<abbr title="Time-to-Live">TTL</abbr>), use of non-sensitive identifiers like <abbr title="Universally Unique Identifiers">UUIDs</abbr>, de-identification, and minimization of stored data in line with purpose limitation principles.</span></label>
 					<p><strong>GRI:</strong> Low (Materials) / Low (Energy) / Low (Water) / Low (Emissions)</p>
 				</fieldset>
 			</form>

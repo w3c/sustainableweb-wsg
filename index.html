@@ -1712,11 +1712,26 @@
 			</section>
 			<section> <!-- Reduce the number and complexity of database queries -->
 				<h3>Reduce the number and complexity of database queries</h3>
-				<p class="subheading">Optimize any information provided via databases, both in terms of access schedules and how queries are sent and received.</p>
+				<p class="subheading">Optimize database use by minimizing and scoping queries, reducing repeated requests, and applying data governance practices.</p>
 				<section class="notoc" data-standard="GPF" data-considerations="" data-categories="Networking, Performance">
-					<h4 id="database-queries">Success Criterion: Database queries</h4>
-					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#database-queries">Resources</a></p>
-					<p>Optimize database queries, especially for frequently accessed information. If you need information that is stored in a database, and you require it or it is likely to be requested more than once in your code, the database should only be accessed once and the data stored locally for subsequent processing. Avoid relying on framework helpers that might defer filtering to later in the process. Practice good database hygiene with data modeling best practices such as data minimization, such as Time-to-Live (<abbr title="Time-to-Live">TTL</abbr>), de-identification, <abbr title="Universally Unique Identifiers">UUIDs</abbr>, and purpose limitation.</p>
+					<h4 id="efficient-database-querying">Success Criterion: Efficient database querying</h4>
+					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#efficient-database-querying">Resources</a></p>
+					<p>Optimize database queries to reduce load by retrieving required data in as few queries as possible, and by applying filtering and selection at the database level rather than in application or <abbr title="Object-Relational Mapping">ORM</abbr> code, especially for frequently accessed data.</p>
+				</section>
+				<section class="notoc" data-standard="GPF" data-considerations="" data-categories="Networking, Performance">
+					<h4 id="reuse-of-retrieved-data">Success Criterion: Reuse of retrieved data</h4>
+					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#reuse-of-retrieved-data">Resources</a></p>
+					<p>Retrieve data only once per request or process and reuse it locally instead of repeating database queries.</p>
+				</section>
+				<section class="notoc" data-standard="GPF" data-considerations="" data-categories="Networking, Performance">
+					<h4 id="data-minimization-in-queries">Success Criterion: Data minimization in queries</h4>
+					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#data-minimization-in-queries">Resources</a></p>
+					<p>Scope database queries to return only the fields and records that are required.</p>
+				</section>
+				<section class="notoc" data-standard="GPF" data-considerations="" data-categories="Networking, Performance">
+					<h4 id="data-lifecycle-controls">Success Criterion: Data lifecycle controls</h4>
+					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#data-lifecycle-controls">Resources</a></p>
+					<p>Apply data lifecycle and governance controls such as Time-to-Live (<abbr title="Time-to-Live">TTL</abbr>), use of non-sensitive identifiers like <abbr title="Universally Unique Identifiers">UUIDs</abbr>, de-identification, and minimization of stored data in line with purpose limitation principles.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
