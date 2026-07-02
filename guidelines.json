@@ -88,14 +88,14 @@
 					"tags": ["Accessibility", "Compatibility", "Hardware", "Ideation", "Networking", "Performance", "Privacy", "Reporting", "Research", "Social Equity", "Software"]
 				},
 				{
-					"id": "understand-user-requirements-or-constraints-resolving-barriers-to-access",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access",
-					"guideline": "Understand user requirements or constraints, resolving barriers to access",
-        			"subheading": "Understand the audience and their requirements and remove their constraints and barriers.",
+					"id": "understand-user-requirements-or-constraints",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints",
+					"guideline": "Understand user requirements or constraints",
+        			"subheading": "Identify and involve users and affected communities, and research their needs.",
 					"criteria": [
 						{
 							"title": "Audience evaluation",
-							"description": "Identify primary and secondary target users. Evaluate and define their needs through research, testing, or analytics. Ensure your users and affected communities are consistently and closely involved in the research and testing process.",
+							"description": "Identify the primary and secondary users, and affected communities, for the project. Use research, testing, analytics, and reviews to understand their needs and the project's impact on them. Involve users throughout the project.",
 							"resources": [
 								{
 									"6 Powerful User Research Methods to Boost Hypothesis Validation": "https://uxplanet.org/6-powerful-user-research-methods-to-boost-hypothesis-validation-58c491461075",
@@ -106,65 +106,10 @@
 									"How To Argue Against AI-First Research": "https://www.smashingmagazine.com/2025/03/how-to-argue-against-ai-first-research/",
 									"How To Run UX Research Without Access To Users": "https://www.smashingmagazine.com/2024/05/how-run-ux-research-without-access-users/",
 									"Make the sustainable thing the best thing, by design": "https://medium.com/necdigitalstudio/make-the-sustainable-thing-the-best-thing-by-design-e38da7bd7768",
+									"ROI Calculators": "https://humanfactors.com/thinking-favorite.aspx",
 									"The UX Cookbook": "https://theuxcookbook.com/",
 									"UX: Best Practices For Developers": "https://blog.openreplay.com/ux-best-practices-for-developers/",
 									"UX/UI Product Design Roadmap": "https://product-design-roadmap.com/"
-								}
-							]
-						},
-						{
-							"title": "Barriers and access",
-							"description": "Conduct internal and user research to identify whether a technical, material, or human constraint might require adaptations to reduce barriers or improve access to content.",
-							"resources": [
-								{
-									"Access Guide": "https://www.accessguide.io/",
-									"Accessibility": "https://developer.mozilla.org/en-US/docs/Web/Accessibility",
-									"Adaptive web design": "https://en.wikipedia.org/wiki/Adaptive_web_design",
-									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"Introduction to Web Accessibility": "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
-									"Keys To An Accessibility Mindset": "https://www.smashingmagazine.com/2023/02/keys-accessibility-mindset/",
-									"Learn Accessibility": "https://web.dev/learn/accessibility?hl=en",
-									"Metrics to measure the ROI of web accessibility": "https://uxdesign.cc/top-10-metrics-to-measure-the-roi-of-web-accessibility-f9ddd697896a",
-									"Supporting Digital Skills and Reducing Social Isolation Amongst Older People": "https://www.governmentevents.co.uk/ge-insights/supporting-digital-skills-and-reducing-social-isolation-amongst-older-people/",
-									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
-									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
-									"United Nations SDGS - Goal 9 - Infrastructure": "https://sdgs.un.org/goals/goal9#targets_and_indicators",
-									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
-									"W3C Web Content Accessibility Guidelines": "https://www.w3.org/TR/WCAG22/",
-									"What are design constraints?": "https://blog.logrocket.com/ux-design/what-are-design-constraints/",
-									"What are the Main Barriers to Digital Inclusion?": "https://www.trueambassadors.org.uk/what-are-the-main-barriers-to-digital-inclusion/"
-								}
-							]
-						},
-						{
-							"title": "Barrier removal",
-							"description": "Remove identified barriers to access, provided they do not introduce or increase security or safety risks or exposure. Removable pain points can include deceptive design patterns and accessibility hurdles, but not include user verification or authentication mechanisms.",
-							"resources": [
-								{
-									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"Dark Design Patterns Catalog": "https://www.uxtigers.com/post/dark-design",
-									"Dark pattern": "https://en.wikipedia.org/wiki/Dark_pattern",
-									"Dark Patterns Detective": "https://games.productartistry.com/games/dark-patterns",
-									"Dark Patterns Hall of Shame": "https://hallofshame.design/",
-									"Dark patterns in UX: how designers should be responsible for their actions": "https://uxdesign.cc/dark-patterns-in-ux-design-7009a83b233c",
-									"Deceptive design vs. the law": "https://clearleft.com/thinking/deceptive-design-vs-the-law",
-									"Deceptive Patterns": "https://www.deceptive.design/",
-									"Europe's Digital Decade": "https://digital-strategy.ec.europa.eu/en/policies/europes-digital-decade",
-									"GPF - General Policy Framework (PDF) - 4.14 - UX and UI (Dark Patterns)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 10-3070 - Dark Patterns": "https://gr491.isit-europe.org/en/crit.php?id=10-3070-uxui-some-services-are-designed-to-create-some",
-									"Harm reduction principles for digital accessibility practitioners": "https://ericwbailey.website/published/harm-reduction-principles-for-digital-accessibility-practitioners/",
-									"How Deceptive Design is Used to Compromise Your Privacy and How to Fight Back": "https://consciousdigital.org/deceptive-design-patterns/",
-									"Ledger of Harms": "https://ledger.humanetech.com/",
-									"Overlay Fact Sheet": "https://overlayfactsheet.com/en/",
-									"Overlay False Claims": "https://overlayfalseclaims.com/",
-									"ROI Calculators": "https://humanfactors.com/thinking-favorite.aspx",
-									"Six Dark Patterns to Avoid On Your Website": "https://www.mightybytes.com/insights/6-dark-patterns-to-avoid-on-your-website/",
-									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
-									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
-									"United Nations SDGS - Goal 9 - Infrastructure": "https://sdgs.un.org/goals/goal9#targets_and_indicators",
-									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators"
 								}
 							]
 						}
@@ -186,11 +131,11 @@
 					"id": "integrate-sustainability-into-every-stage-of-the-ideation-process",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#integrate-sustainability-into-every-stage-of-the-ideation-process",
 					"guideline": "Integrate sustainability into every stage of the ideation process",
-					"subheading": "Optimize materials created at every stage of the process and consider the needs of and impact on the planet, and other affected parties.",
+					"subheading": "Design and review sustainable branding and experiences, involve users throughout the process, and reduce unnecessary development and environmental impact through early testing and environmentally aware design.",
 					"criteria": [
 						{
 							"title": "Sustainable brand development",
-							"description": "Optimize all branding materials and assets approved during the ideation process in line with sustainability best practices prior to and on an ongoing basis after deployment. Where provided, brand guidelines must also detail the sustainability impact and best-practice deployment of materials and assets.",
+							"description": "Optimize approved branding materials and assets to meet the organization’s sustainability requirements before release and review them regularly after launch. Where brand guidelines exist, include information about the environmental impact of materials and assets, along with guidance for sustainable production, use, and disposal.",
 							"resources": [
 								{
 									"A Guide to Sustainable Branding": "https://medium.com/@NineBlaess/a-guide-to-sustainable-branding-76d1022eaf01",
@@ -206,7 +151,7 @@
 						},
 						{
 							"title": "Wireframes and prototypes",
-							"description": "Use wireframes and rapid prototyping to quickly build consensus, reduce risk, and reduce the number of resources needed to build features.",
+							"description": "Use wireframes and rapid prototypes to test ideas early, build agreement quickly, reduce risk, and avoid unnecessary development work and resource use.",
 							"resources": [
 								{
 									"Activating sustainability in the design process": "https://www.degruyterbrill.com/document/doi/10.1515/icom-2024-0037/html?lang=en",
@@ -220,7 +165,7 @@
 						},
 						{
 							"title": "Participation and testing",
-							"description": "Use the participatory design approach to involve users within the iteration and design process. When conducting user testing, reach out to your community to help improve your product. Provide opportunities for users to apply their knowledge and experience to your product or service.",
+							"description": "Use participatory design methods throughout the design process. Involve users in testing and iteration, and give communities opportunities to share their knowledge and experience to improve the product or service.",
 							"resources": [
 								{
 									"An introduction to radical participatory design": "https://www.cambridge.org/core/journals/design-science/article/an-introduction-to-radical-participatory-design-decolonising-participatory-design-processes/63F70ECC408844D3CD6C1A5AC7D35F4D",
@@ -236,7 +181,7 @@
 						},
 						{
 							"title": "Environmental ideation",
-							"description": "Consider planetary needs and the environmental boundaries during the ideation phase. This can include creating non-user, non-human (animal, planet) personas, or climate-specific user stories and sprints.",
+							"description": "Address planetary needs and environmental boundaries during the ideation phase. This can include creating non-user, non-human personas, such as animal- or planet-focused perspectives, and developing climate-specific user stories and sprints.",
 							"resources": [
 								{
 									"52 Sustainability Focused Ideation Brainstorm Cards for FREE": "https://www.explorerlabs.co/thinking/52-sustainability-focused-ideation-brainstorm-cards-for-free",
@@ -258,17 +203,17 @@
 							"Social Equity": "Accounting for the needs of users who might otherwise face various barriers to accessing content - on such as older devices, in low-bandwidth environments, or have other barriers to accessing information early in the process will reduce the need for costly redesigns or adding appropriate alternatives at a later date."
 						}
 					],
-					"tags": ["Accessibility", "Ideation", "KPIs", "Research", "Social Equity", "Software", "Strategy", "UI"]
+					"tags": ["Accessibility", "Content", "HTML", "Marketing", "Patterns", "Performance", "Privacy", "Social Equity", "UI", "Usability"]
 				},
 				{
-					"id": "minimize-non-essential-content-interactivity-or-journeys",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys",
-					"guideline": "Minimize non-essential content, interactivity, or journeys",
-					"subheading": "Use distraction and clutter-free design, showing the user only what they need without interruptions or wasted resource consumption.",
+					"id": "design-efficient-and-streamlined-user-journeys",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys",
+					"guideline": "Design efficient and streamlined user journeys",
+					"subheading": "Design clear, efficient journeys that help users complete tasks and find content with minimal effort.",
 					"criteria": [
 						{
 							"title": "Efficient paths",
-							"description": "Make access as simple and efficient as possible. Displaying the time required to complete an action, reducing choice, and ensuring users understand requirements at the start of a journey can improve user efficiency.",
+							"description": "Make tasks simple and efficient to complete. Help users understand what is required at the start of a task, reduce unnecessary choices, and show how long journeys are expected to take.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -289,7 +234,7 @@
 						},
 						{
 							"title": "Patterns for efficiency",
-							"description": "Ensure user journeys are as smooth as possible. It also helps to build on established design patterns that people already understand.",
+							"description": "Design user journeys that are clear and efficient. Use established design patterns that people already understand.",
 							"resources": [
 								{
 									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -305,78 +250,27 @@
 							]
 						},
 						{
-							"title": "Distraction-free design",
-							"description": "Enable users to complete tasks without distractions or non-essential features getting in the way.",
+							"title": "Content discovery",
+							"description": "Provide a human-readable sitemap, especially for large, complex, or legacy websites where navigation is not straightforward. Keep it regularly updated. Provide clear and accessible navigation and search features so users can quickly find the content or services they need. Use lightweight and efficient ways to help users discover new content and services, including news pages, updates, and changelogs.",
 							"resources": [
 								{
-									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"Cognitive load is what matters": "https://github.com/zakirullin/cognitive-load",
-									"GR491 - 4-5030 - Older Equipment or Limited Network Access": "https://gr491.isit-europe.org/en/crit.php?id=4-5030-frontend-the-more-components-the-service-implements-that",
-									"GR491 - 7-3052 - Quick And Simple": "https://gr491.isit-europe.org/en/crit.php?id=7-3052-uxui-there-are-several-scenarios-for-accessing-the",
-									"GR491 - 9-3063 - Useful to the User": "https://gr491.isit-europe.org/en/crit.php?id=9-3063-uxui-the-efficient-use-of-a-digital-service",
-									"Laws Of UX": "https://lawsofux.com/",
-									"Paradox of Choice: Why Less is More in UX Design": "https://thedecisionlab.com/reference-guide/economics/the-paradox-of-choice",
-									"UI Tools": "https://designsustainably.eu/uitools/",
-									"UX: Best Practices For Developers": "https://blog.openreplay.com/ux-best-practices-for-developers/"
-								}
-							]
-						},
-						{
-							"title": "Eliminate the non-essential",
-							"description": "Only present information that is relevant to the user. Do not present non-essential information until requested by the user, and do so in ways appropriate to the accessibility requirements of different users.",
-							"resources": [
-								{
-									"A manifesto for small, static, web apps": "https://rosswintle.uk/2024/02/a-manifesto-for-small-static-web-apps/",
-									"A User-Centered Lens into Digital Excess (PDF)": "https://limits.pubpub.org/pub/krloqqv4/release/1",
-									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"GPF - General Policy Framework (PDF) - 3.1 - Architecture (Impact Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 2-7033 - Lighter Framework / Library": "https://gr491.isit-europe.org/en/crit.php?id=2-7033-backend-for-an-equal-functional-scope-several-technical",
-									"GreenIT - 0001 - Eliminate non-essential features": "https://rweb.greenit.fr/en/fiches/RWEB_0001-eliminate-non-essential-features",
-									"How can we design sustainably?": "https://medium.com/@sandra.pallier/how-can-we-design-sustainably-3be7530a0f5b",
-									"How to Become an Eco Web Designer": "https://onextrapixel.com/how-to-become-an-eco-web-designer/",
-									"Remove non-essential features from the scope": "https://climateproductleaders.org/playbook/discover-mindfully/remove-non-essential-features-from-the-scope",
-									"Using UX Design to Build a Sustainable Future": "https://uxmag.com/articles/using-ux-design-to-build-a-sustainable-future",
-									"The web is fast by default, let's keep it fast": "https://hidde.blog/the-web-is-fast-by-default-lets-keep-it-fast/",
-									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability"
-								}
-							]
-						},
-						{
-							"title": "User-initiated actionable content",
-							"description": "Ensure that disruptive actionable information, such as pop-up or modal windows, can only be initiated by the user.",
-							"resources": [
-								{
-									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"dialog: The Dialog element": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog",
-									"Modal & Nonmodal Dialogs: When (& When Not) to Use Them": "https://www.nngroup.com/articles/modal-nonmodal-dialog/",
-									"OpQuast - 29 - A product or service can be purchased without creating an account.": "https://checklists.opquast.com/en/digital-quality/a-product-or-service-can-be-purchased-without-creating-an-account",
-									"OpQuast - 33 - Product availability is indicated before final validation of the order.": "https://checklists.opquast.com/en/digital-quality/product-availability-is-shown-before-final-order-placement",
-									"Popups: 10 Problematic Trends and Alternatives": "https://www.nngroup.com/articles/popups/",
-									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability"
-								}
-							]
-						},
-						{
-							"title": "Decorative design",
-							"description": "Use decorative design only when it enhances user experience. Remove unnecessary assets or those that do not enhance user experience or sustainability. Alternatively, make these optional and disabled by default.",
-							"resources": [
-								{
-									"Against images as accessories": "https://uxdesign.cc/against-images-as-accessories-92f43b0d45e9",
-									"Best practices for fonts": "https://web.dev/articles/font-best-practices?hl=en",
-									"Decorative Images": "https://www.w3.org/WAI/tutorials/images/decorative/",
-									"Don't use custom CSS scrollbars": "https://ericwbailey.website/published/dont-use-custom-css-scrollbars/",
-									"GPF - General Policy Framework (PDF) - 4.6 - UX and UI (Informational Media)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"Implementing image sprites in CSS": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Images/Implementing_image_sprites",
-									"Less Data Doesn't Mean a Lesser Experience": "https://timkadlec.com/remembers/2019-08-30-less-data-doesnt-mean-a-lesser-experience/",
-									"Less is more: How stripping back can improve UX Design": "https://www.uxdesigninstitute.com/blog/improve-ux-design/",
-									"Reduce Redundancy": "https://www.nngroup.com/articles/reduce-redundancydecrease-duplicated-design-decisions/",
-									"Reduce The Number Of Images": "https://www.giftofspeed.com/minimize-images/",
-									"Reducing Cognitive Overload": "https://www.lionandmason.com/ux-blog/reducing-cognitive-overload-declutter-your-design-for-better-ux/",
-									"Simple icon systems using SVG sprites": "https://oliverjam.es/articles/svg-sprites",
-									"Simplify Your UX Through Reduction": "https://www.uxmatters.com/mt/archives/2015/07/simplify-your-ux-through-reduction.php",
-									"The Website Obesity Crisis (Video)": "https://webdirections.org/blog/the-website-obesity-crisis/",
-									"Use fewer web fonts": "https://web.dev/articles/font-best-practices?hl=en",
-									"United Nations SDGS - Goal 7 - Sustainable Energy": "https://sdgs.un.org/goals/goal7#targets_and_indicators"
+									"An Excellent Beginner's Guide to Information Architecture": "https://careerfoundry.com/en/blog/ux-design/a-beginners-guide-to-information-architecture/",
+									"Building Accessible Menu Systems": "https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/",
+									"Build and submit a sitemap": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en",
+									"GPF - General Policy Framework (PDF) - 4.3 - UX and UI (Optimized Clickstream)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GreenIT - 0090 - Set up an efficient sitemap": "https://rweb.greenit.fr/en/fiches/RWEB_0090-set-up-an-efficient-sitemap",
+									"How To Achieve Instant Navigations On The Web": "https://www.debugbear.com/blog/instant-navigations",
+									"How UX design can help tackle climate change": "https://www.cyber-duck.co.uk/insights/how-sustainable-design-can-help-climate-change",
+									"HTML Sitemap: The Benefits for SEO and Users": "https://www.semrush.com/blog/html-sitemap/",
+									"Information Architecture Design Step-by-Step": "https://uxplanet.org/information-architecture-design-step-by-step-7036897511d7",
+									"Information Architecture: Study Guide": "https://www.nngroup.com/articles/ia-study-guide/",
+									"Menu-Design Checklist": "https://www.nngroup.com/articles/menu-design/",
+									"Menus Tutorial": "https://www.w3.org/WAI/tutorials/menus/",
+									"OpQuast - 1 - The website provides a way for users to find out about new content and services.": "https://checklists.opquast.com/en/digital-quality/the-site-provides-users-with-a-way-to-know-about-new-contents-and-services",
+									"OpQuast - 213 - The website provides a sitemap file listing the content to be crawled.": "https://checklists.opquast.com/en/digital-quality/the-website-provides-a-sitemap-file-listing-the-content-to-be-crawled",
+									"UX: Best Practices For Developers": "https://blog.openreplay.com/ux-best-practices-for-developers/",
+									"Website Navigation: How to Design Menus Visitors Love": "https://blog.hubspot.com/website/main-website-navigation-ht",
+									"When and how to use HTML sitemaps for SEO and UX": "https://searchengineland.com/html-sitemaps-seo-ux-when-how-394763"
 								}
 							]
 						}
@@ -392,76 +286,17 @@
 							"Social Equity": "Reducing device and bandwidth requirements through providing more lightweight experiences can improve work better for users using older devices or located in low-bandwidth environments, and similar."
 						}
 					],
-					"tags": ["Accessibility", "Content", "Patterns", "Performance", "Privacy", "Social Equity", "UI", "Usability"]
-				},
-				{
-					"id": "ensure-that-navigation-and-wayfinding-are-well-structured",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured",
-					"guideline": "Ensure that navigation and wayfinding are well-structured",
-					"subheading": "Provide good information architecture that signposts users, both human and machine, to what they need, so they can reach their destination as efficiently as possible.",
-					"criteria": [
-						{
-							"title": "Navigation and search",
-							"description": "Provide an accessible, easy-to-use navigation menu with search features to help users easily find what they need.",
-							"resources": [
-								{
-									"Building Accessible Menu Systems": "https://www.smashingmagazine.com/2017/11/building-accessible-menu-systems/",
-									"GPF - General Policy Framework (PDF) - 4.3 - UX and UI (Optimized Clickstream)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"How To Achieve Instant Navigations On The Web": "https://www.debugbear.com/blog/instant-navigations",
-									"Menu-Design Checklist": "https://www.nngroup.com/articles/menu-design/",
-									"Menus Tutorial": "https://www.w3.org/WAI/tutorials/menus/",
-									"Website Navigation: How to Design Menus Visitors Love": "https://blog.hubspot.com/website/main-website-navigation-ht"
-								}
-							]
-						},
-						{
-							"title": "Human-readable sitemaps",
-							"description": "Consider implementing an efficient and regularly updated sitemap for human users. While guidance beyond the navigation bar may be unnecessary for smaller projects, clearly structured human-readable sitemaps can improve accessibility and help users find their way through websites or other online content with naturally complex or legacy information architecture.",
-							"resources": [
-								{
-									"Build and submit a sitemap": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap?hl=en",
-									"GPF - General Policy Framework (PDF) - 4.3 - UX and UI (Optimized Clickstream)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GreenIT - 0090 - Set up an efficient sitemap": "https://rweb.greenit.fr/en/fiches/RWEB_0090-set-up-an-efficient-sitemap",
-									"HTML Sitemap: The Benefits for SEO and Users": "https://www.semrush.com/blog/html-sitemap/",
-									"OpQuast - 213 - The website provides a sitemap file listing the content to be crawled.": "https://checklists.opquast.com/en/digital-quality/the-website-provides-a-sitemap-file-listing-the-content-to-be-crawled",
-									"When and how to use HTML sitemaps for SEO and UX": "https://searchengineland.com/html-sitemaps-seo-ux-when-how-394763"
-								}
-							]
-						},
-						{
-							"title": "New content",
-							"description": "Implement lightweight and efficient means for users to learn about new content and services.",
-							"resources": [
-								{
-									"An Excellent Beginner's Guide to Information Architecture": "https://careerfoundry.com/en/blog/ux-design/a-beginners-guide-to-information-architecture/",
-									"How UX design can help tackle climate change": "https://www.cyber-duck.co.uk/insights/how-sustainable-design-can-help-climate-change",
-									"Information Architecture Design Step-by-Step": "https://uxplanet.org/information-architecture-design-step-by-step-7036897511d7",
-									"Information Architecture: Study Guide": "https://www.nngroup.com/articles/ia-study-guide/",
-									"OpQuast - 1 - The website provides a way for users to find out about new content and services.": "https://checklists.opquast.com/en/digital-quality/the-site-provides-users-with-a-way-to-know-about-new-contents-and-services",
-									"UX: Best Practices For Developers": "https://blog.openreplay.com/ux-best-practices-for-developers/"
-								}
-							]
-						}
-					],
-					"benefits": [
-						{
-							"Accessibility": "Enabling easier navigation makes content accessible to people with disabilities. Bringing people to their goal faster also reduces data consumption.",
-							"Conversion": "Optimizing structure can also boost conversion rates as people are more likely to find what they need. The same applies when users are made aware of new content related to their interests.",
-							"Economic": "Shortening user journeys can also reduce hosting costs where this is linked to data transfer.",
-							"Environment": "Improving navigation and search efficiency can reduce the time users spend finding what they need and achieving their objectives. This also lowers emissions."
-						}
-					],
-					"tags": ["Accessibility", "HTML", "Marketing", "UI", "Usability"]
+					"tags": ["Accessibility", "Content", "HTML", "Marketing", "Patterns", "Performance", "Privacy", "Social Equity", "UI", "Usability"]
 				},
 				{
 					"id": "design-to-assist-and-not-to-distract",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract",
 					"guideline": "Design to assist and not to distract",
-					"subheading": "Provide engagement that keeps the user's focus where it needs to be, avoiding anything that will either reduce efficiency or artificially prolong engagement.",
+					"subheading": "Give users control over notifications and focus, prioritize task-relevant content, and avoid designs that distract or unnecessarily extend engagement.",
 					"criteria": [
 						{
 							"title": "Respect user attention",
-							"description": "Ensure users can easily control how and when they receive information, with respect for their attention, focus, and mental energy.",
+							"description": "Ensure users can control when and how they receive information, while respecting their attention, focus, and mental effort.",
 							"resources": [
 								{
 									"Design for Sustainable Behaviour": "https://sustainabilityguide.eu/methods/design-sustainable-behaviour/",
@@ -478,24 +313,65 @@
 							]
 						},
 						{
-							"title": "Minimize distraction",
-							"description": "Prioritize features that assist rather than distract users, not unnecessarily prolonging the time they spend engaging with your content.",
+							"title": "Distraction-free design",
+							"description": "Show users information relevant to their current task and avoid unnecessary interruption and competing interface elements. Delay or collapse information not immediately needed, but keep it easy to find. Only show pop-ups, modal windows, or other disruptive interface elements when the user chooses to open them. Use decorative design only when it improves the user experience, and make optional assets removable or turned off by default. Do not remove information or functionality that may be important for accessibility, safety, or different user needs.",
 							"resources": [
 								{
 									"5 Website Features to Avoid (and how to fix them)": "https://medium.com/@lancerdesign/5-website-features-to-avoid-and-how-to-fix-them-2a4256f25b1f",
+									"A manifesto for small, static, web apps": "https://rosswintle.uk/2024/02/a-manifesto-for-small-static-web-apps/",
+									"A User-Centered Lens into Digital Excess (PDF)": "https://limits.pubpub.org/pub/krloqqv4/release/1",
+									"AFNOR Spec 5.2.1 and 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
+									"Against images as accessories": "https://uxdesign.cc/against-images-as-accessories-92f43b0d45e9",
+									"Best practices for fonts": "https://web.dev/articles/font-best-practices?hl=en",
+									"Cognitive load is what matters": "https://github.com/zakirullin/cognitive-load",
+									"dialog: The Dialog element": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog",
+									"Decorative Images": "https://www.w3.org/WAI/tutorials/images/decorative/",
+									"Don't use custom CSS scrollbars": "https://ericwbailey.website/published/dont-use-custom-css-scrollbars/",
+									"GPF - General Policy Framework (PDF) - 3.1 - Architecture (Impact Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 4.6 - UX and UI (Informational Media)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GR491 - 2-7033 - Lighter Framework / Library": "https://gr491.isit-europe.org/en/crit.php?id=2-7033-backend-for-an-equal-functional-scope-several-technical",
+									"GR491 - 4-5030 - Older Equipment or Limited Network Access": "https://gr491.isit-europe.org/en/crit.php?id=4-5030-frontend-the-more-components-the-service-implements-that",
+									"GR491 - 7-3052 - Quick And Simple": "https://gr491.isit-europe.org/en/crit.php?id=7-3052-uxui-there-are-several-scenarios-for-accessing-the",
 									"GR491 - 8-5057 - Attention Capturing": "https://gr491.isit-europe.org/en/crit.php?id=8-5057-frontend-the-attention-of-the-user-is-a",
+									"GR491 - 9-3063 - Useful to the User": "https://gr491.isit-europe.org/en/crit.php?id=9-3063-uxui-the-efficient-use-of-a-digital-service",
 									"GR491 - 10-3072 - Respect for the User": "https://gr491.isit-europe.org/en/crit.php?id=10-3072-uxui-addictions-some-services-are-designed-to-create",
 									"GR491 - 10-3074 - Attention Control": "https://gr491.isit-europe.org/en/crit.php?id=10-3074-uxui-the--users-attention-is-an-asset",
+									"GreenIT - 0001 - Eliminate non-essential features": "https://rweb.greenit.fr/en/fiches/RWEB_0001-eliminate-non-essential-features",
+									"How can we design sustainably?": "https://medium.com/@sandra.pallier/how-can-we-design-sustainably-3be7530a0f5b",
+									"How to Become an Eco Web Designer": "https://onextrapixel.com/how-to-become-an-eco-web-designer/",
+									"Implementing image sprites in CSS": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Images/Implementing_image_sprites",
+									"Laws Of UX": "https://lawsofux.com/",
+									"Less Data Doesn't Mean a Lesser Experience": "https://timkadlec.com/remembers/2019-08-30-less-data-doesnt-mean-a-lesser-experience/",
+									"Less is more: How stripping back can improve UX Design": "https://www.uxdesigninstitute.com/blog/improve-ux-design/",
+									"Modal & Nonmodal Dialogs: When (& When Not) to Use Them": "https://www.nngroup.com/articles/modal-nonmodal-dialog/",
+									"OpQuast - 29 - A product or service can be purchased without creating an account.": "https://checklists.opquast.com/en/digital-quality/a-product-or-service-can-be-purchased-without-creating-an-account",
+									"OpQuast - 33 - Product availability is indicated before final validation of the order.": "https://checklists.opquast.com/en/digital-quality/product-availability-is-shown-before-final-order-placement",
+									"Paradox of Choice: Why Less is More in UX Design": "https://thedecisionlab.com/reference-guide/economics/the-paradox-of-choice",
+									"Popups: 10 Problematic Trends and Alternatives": "https://www.nngroup.com/articles/popups/",
+									"Reduce Redundancy": "https://www.nngroup.com/articles/reduce-redundancydecrease-duplicated-design-decisions/",
+									"Reduce The Number Of Images": "https://www.giftofspeed.com/minimize-images/",
+									"Reducing Cognitive Overload": "https://www.lionandmason.com/ux-blog/reducing-cognitive-overload-declutter-your-design-for-better-ux/",
+									"Remove non-essential features from the scope": "https://climateproductleaders.org/playbook/discover-mindfully/remove-non-essential-features-from-the-scope",
+									"Simple icon systems using SVG sprites": "https://oliverjam.es/articles/svg-sprites",
+									"Simplify Your UX Through Reduction": "https://www.uxmatters.com/mt/archives/2015/07/simplify-your-ux-through-reduction.php",
 									"Top 10 Website Eyesores to Avoid": "https://verticalresponse.com/blog/top-10-website-eyesores-to-avoid/",
+									"UI Tools": "https://designsustainably.eu/uitools/",
+									"United Nations SDGS - Goal 7 - Sustainable Energy": "https://sdgs.un.org/goals/goal7#targets_and_indicators",
 									"Use Distraction Control in Safari to hide items on a webpage": "https://support.apple.com/en-us/120682",
+									"Use fewer web fonts": "https://web.dev/articles/font-best-practices?hl=en",
+									"Using UX Design to Build a Sustainable Future": "https://uxmag.com/articles/using-ux-design-to-build-a-sustainable-future",
+									"UX: Best Practices For Developers": "https://blog.openreplay.com/ux-best-practices-for-developers/",
+									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
 									"Web Animation: Delightful or Distracting?": "https://constructive.co/insight/web-animation-delightful-or-distracting/",
-									"Web Design Don'ts": "https://www.forbes.com/councils/forbestechcouncil/2019/01/28/web-design-donts-13-website-features-that-can-ruin-the-user-experience/"
+									"Web Design Don'ts": "https://www.forbes.com/councils/forbestechcouncil/2019/01/28/web-design-donts-13-website-features-that-can-ruin-the-user-experience/",
+									"The web is fast by default, let's keep it fast": "https://hidde.blog/the-web-is-fast-by-default-lets-keep-it-fast/",
+									"The Website Obesity Crisis (Video)": "https://webdirections.org/blog/the-website-obesity-crisis/"
 								}
 							]
 						},
 						{
-							"title": "Reduce engagement traps",
-							"description": "Avoid using design strategies intended to artificially prolong user attention, such as infinite scroll.",
+							"title": "Remove engagement traps",
+							"description": "Avoid design patterns that engage users longer than necessary, such as infinite scroll or disabling standard browser controls and navigation features.",
 							"resources": [
 								{
 									"Doomprompting Is the New Doomscrolling": "https://www.workingtheorys.com/p/doomprompting",
@@ -529,11 +405,11 @@
 					"id": "avoid-being-manipulative-or-deceptive",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive",
 					"guideline": "Avoid being manipulative or deceptive",
-					"subheading": "Avoid using patterns, content, tools, or techniques that may artificially manipulate or deceive the user.",
+					"subheading": "Avoid deceptive patterns, clearly label ads, respect consent for tracking, and ensure search, sharing, and discoverability practices prioritize user needs over optimization or manipulation.",
 					"criteria": [
 						{
 							"title": "Deceptive design patterns",
-							"description": "Avoid deceptive design or unethical coding techniques that manipulate users into taking actions that are not in their best interest. Examples include anti-right click, copy prevention, requiring an account to purchase, etc.",
+							"description": "Avoid deceptive design patterns that pressure or mislead users. This includes practices such as bait and switch, hidden fees, or fake scarcity.",
 							"resources": [
 								{
 									"10 Common Dark Patterns in UX and How to Avoid Them": "https://www.netsolutions.com/insights/dark-patterns-in-ux-disadvantages/",
@@ -569,7 +445,7 @@
 						},
 						{
 							"title": "Advertisements",
-							"description": "Select, present, and label advertisements and sponsorships transparently and only implement where these provide economic value in an ethical way without diminishing user experience.",
+							"description": "Clearly label advertisements and sponsored content. Deliver advertising in a lightweight and minimally disruptive way while enabling users to control the experience.",
 							"resources": [
 								{
 									"Ad Net Zero announces global framework to measure media's carbon emissions": "https://adnetzero.com/news/ad-net-zero-announces-global-framework-to-measure-medias-carbon-emissions/",
@@ -590,7 +466,7 @@
 						},
 						{
 							"title": "Analytics and tracking",
-							"description": "Evaluate and remove unnecessary or unused analytics and tracking, especially any operating without user consent.",
+							"description": "Remove unnecessary analytics and tracking, and respect user consent over tracking analytics.",
 							"resources": [
 								{
 									"48 Cart Abandonment Rate Statistics 2023": "https://baymard.com/lists/cart-abandonment-rate",
@@ -607,7 +483,7 @@
 						},
 						{
 							"title": "Search Engine Optimization",
-							"description": "Focus on serving user intent through non-manipulative search and social media optimization. For example, do not misuse coding practices intended to support assistive technologies. This can include content with natural redundancy, or unhelpful or low-quality material designed only to manipulate search results.",
+							"description": "Optimize content for search and social sharing in ways that support user needs rather than manipulation. Do not misuse accessibility features, create low-quality content, or add unnecessary duplication only to influence search rankings.",
 							"resources": [
 								{
 									"Climate change SEO survey": "https://searchengineland.com/climate-change-seo-survey-making-web-more-sustainable-438209",
@@ -642,11 +518,11 @@
 					"id": "make-deliverables-understandable-and-reusable",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#make-deliverables-understandable-and-reusable",
 					"guideline": "Make deliverables understandable and reusable",
-					"subheading": "Create discoverable, well documented deliverables so that future users can find and make use of them without requiring assistance or expending unnecessary time and resources.",
+					"subheading": "Create discoverable, maintainable, and reusable documentation and code resources that support long-term understanding, reuse, and sustainability.",
 					"criteria": [
 						{
 							"title": "Deliverables reusability",
-							"description": "Create deliverables, including documentation, in ways that facilitate later reuse.",
+							"description": "Create documentation and other deliverables in reusable formats to reduce duplicated work and support long-term sustainability.",
 							"resources": [
 								{
 									"4 Ways to Make Your Code More Reusable": "https://medium.com/@lanceharvieruntime/4-ways-to-make-your-code-more-reusable-bc20889c1e4",
@@ -665,7 +541,7 @@
 						},
 						{
 							"title": "Deliverables documentation",
-							"description": "Document functionality and technical specifications by creating easy to understand resources.",
+							"description": "Document functionality and technical requirements in clear and easy-to-maintain resources. Keep documentation updated over time and provide guidance for replacing or retiring outdated information.",
 							"resources": [
 								{
 									"A guide to UX documentation": "https://blog.logrocket.com/ux-design/ux-documentation-guide-best-practices-template/",
@@ -700,7 +576,7 @@
 						},
 						{
 							"title": "Deliverables readability",
-							"description": "Developers have access to code comments and have the ability to view source to make it easier to access, understand, maintain, and use code.",
+							"description": "Provide developers with access to source code and code comments so they can easily understand, maintain, and reuse the code.",
 							"resources": [
 								{
 									"7 simple habits of the top 1% of engineers": "https://read.engineerscodex.com/p/7-simple-habits-of-the-top-1-of-engineers",
@@ -726,11 +602,11 @@
 					"id": "use-a-design-system-for-interface-consistency",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-a-design-system-for-interface-consistency",
 					"guideline": "Use a design system for interface consistency",
-					"subheading": "Keep the components of the project as consistent and clear as possible by using a design system to organize reusable features.",
+					"subheading": "Use design systems and established patterns to ensure consistent, efficient, and sustainable interfaces through reusable components and clear maintenance practices.",
 					"criteria": [
 						{
 							"title": "Design system",
-							"description": "Use a formal design system when a project is large or has many contributors to improve performance, consistency, and sustainability. Choose a system based on web standards with reusable components and ensure your project only loads the components actually needed on the front end. Whether using a formal design system or not, always follow familiar design patterns and conventions.",
+							"description": "Use a design system for large projects or projects with many contributors to improve consistency, performance, and long-term sustainability. Use reusable components based on web standards, load only the components needed for each page or feature, and maintain the system through clear ownership, versioning, and updated documentation. Follow established design patterns and conventions.",
 							"resources": [
 								{
 									"4 Ways to Make Your Code More Reusable": "https://medium.com/@lanceharvieruntime/4-ways-to-make-your-code-more-reusable-bc20889c1e4",
@@ -783,68 +659,6 @@
 						}
 					],
 					"tags": ["Accessibility", "Assets", "CSS", "Education", "Patterns", "Strategy", "UI", "Usability"]
-				},
-				{
-					"id": "provide-clear-inclusive-content-with-purpose",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose",
-					"guideline": "Provide clear, inclusive content with purpose",
-					"subheading": "Provide content that meets the needs of the audience, ensuring it is formatted for readability and incorporating SEO for visibility, so they can reach their destination as efficiently as possible.",
-					"criteria": [
-						{
-							"title": "Clear content",
-							"description": "Write content using plain and inclusive language, at an appropriate reading level for your audience. Account for specific needs in relation to accessibility, native language, and internationalization.",
-							"resources": [
-								{
-									"Accessible Numbers": "https://accessiblenumbers.com/",
-									"Content Audit: A Step-by-Step Guide": "https://www.mightybytes.com/insights/how-to-run-a-content-audit/",
-									"GR491 - 1-4004 - Facts and Opinions": "https://gr491.isit-europe.org/en/crit.php?id=1-4004-contents-when-the-information-provided-is-not-deemed",
-									"GR491 - 2-4014 - Internationalisation": "https://gr491.isit-europe.org/en/crit.php?id=2-4014-contents-multi-language-management-adds-a-substantial-volume-of",
-									"GR491 - 5-4046 - Useful Images and Links": "https://gr491.isit-europe.org/en/crit.php?id=5-4046-contents-content-uses-external-references-rather-than-duplicating",
-									"How much should you spend on accessibility?": "https://karlgroves.com/how-much-should-you-spend-on-accessibility/",
-									"How screen readers read special characters: an update": "https://elevenways.be/en/articles/screenreaders-special-characters",
-									"Plain Language Writing — An Essential Part Of Accessibility": "https://www.forbes.com/sites/andrewpulrang/2020/10/22/plain-language-writing---an-essential-part-of-accessibility/",
-									"Readability Scoring System": "https://readabilityformulas.com/readability-scoring-system.php",
-									"Stop Writing Web Copy That Over Explains Everything": "https://www.mightybytes.com/insights/stop-writing-web-copy-that-over-explains/",
-									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
-									"United Nations SDGS - Goal 4 - Education": "https://sdgs.un.org/goals/goal4#targets_and_indicators",
-									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-									"WCAG 2.2 Understanding Docs: Reading Level": "https://www.w3.org/WAI/WCAG22/Understanding/reading-level.html",
-									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
-									"Why Non-Native Content Designers Improve Global UX": "https://almanac.httparchive.org/en/2024/sustainability"
-								}
-							]
-						},
-						{
-							"title": "Content formatting",
-							"description": "Use appropriate formatting for digital media. Provide a clear document structure with consideration of visual hierarchy. Use headings, bulleted lists, line spacing, and highlights appropriately. Provide information with appropriate formatting for the action users need to take.",
-							"resources": [
-								{
-									"Content design practices for sustainable communication in tech": "https://uxdesign.cc/content-design-practices-for-sustainable-communication-in-tech-cbfc679be0cc",
-									"The Elements of Content Strategy": "https://elements-of-content-strategy.abookapart.com/",
-									"GR491 - 1-4003 - Verified Sources": "https://gr491.isit-europe.org/en/crit.php?id=1-4003-contents-the-information-transmitted-can-be-controversial-and",
-									"GR491 - 1-4004 - Facts and Opinions": "https://gr491.isit-europe.org/en/crit.php?id=1-4004-contents-when-the-information-provided-is-not-deemed",
-									"GR491 - 2-4014 - Internationalisation": "https://gr491.isit-europe.org/en/crit.php?id=2-4014-contents-multi-language-management-adds-a-substantial-volume-of",
-									"GR491 - 5-4046 - Useful Images and Links": "https://gr491.isit-europe.org/en/crit.php?id=5-4046-contents-content-uses-external-references-rather-than-duplicating",
-									"How to Effectively Use Visual Hierarchy in Web Design": "https://speckyboy.com/visual-hierarchy-web-design/",
-									"How UX design can help tackle climate change": "https://www.cyber-duck.co.uk/insights/how-sustainable-design-can-help-climate-change",
-									"HTML: HyperText Markup Language": "https://developer.mozilla.org/en-US/docs/Web/HTML",
-									"Page Structure Tutorial": "https://www.w3.org/WAI/tutorials/page-structure/",
-									"Why Heading Tags and Content Structure Matter": "https://www.mightybytes.com/insights/why-heading-tags-and-structure-matter/"
-								}
-							]
-						}
-					],
-					"benefits": [
-						{
-							"Accessibility": "Using plain-language makes content easier to understand and accessible to more users. Good structure that complies with standards and expectations works better alongside assistive technologies, such as screen readers.",
-							"Conversion": "Writing and presenting authoritative content with intent and care can lead to citation by third parties. This can increase traffic with pre-warmed leads.",
-							"Economic": "Being recognized as an authoritative source can bring additional recognition, users, and opportunities.",
-							"Environment": "Ensuring content is easy to find and comprehend enables users to make informed decisions faster, taking less time and resources. This reduces energy consumption and emissions.",
-							"Performance": "Creating well-structured content can improve search performance. When content ranks higher in search engines, people are more likely to land in the right place straight away.",
-							"Social Equity": "Using inclusive language that avoids jargon and unnecessary exclusion can improve user experience for a broader audience."
-						}
-					],
-					"tags": ["Accessibility", "Content", "Social Equity", "UI", "Usability"]
 				},
 				{
 					"id": "optimize-media-to-reduce-resource-use",
@@ -1024,11 +838,11 @@
 					"id": "ensure-animation-is-proportionate-and-easy-to-control",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-animation-is-proportionate-and-easy-to-control",
 					"guideline": "Ensure animation is proportionate and easy to control",
-					"subheading": "Ensure any animation deemed necessary is not overdone and that the user can control its ability to run.",
+					"subheading": "Use animation sparingly and efficiently, only when it supports understanding, while limiting performance impact and giving users control over motion.",
 					"criteria": [
 						{
 							"title": "Need for animation",
-							"description": "Use animation only when it adds value and not for decorative elements.",
+							"description": "Use animation only when it supports the user experience or helps users understand content or actions.",
 							"resources": [
 								{
 									"Climate Change Implications of Gaming Products and Services (PDF)": "https://openresearch.surrey.ac.uk/discovery/delivery/44SUR_INST:ResearchRepository/99512335802346#13140594990002346",
@@ -1044,7 +858,7 @@
 						},
 						{
 							"title": "Avoiding overburdening",
-							"description": "Progressively display an appropriate number of animations to avoid overburdening the user or negatively impacting device performance. This includes setting a maximum number of replays or iterations.",
+							"description": "Limit the number and frequency of animations to reduce distraction, lower resource use, and avoid affecting device performance. Set a maximum number of replays or iterations.",
 							"resources": [
 								{
 									"Equations relating total annual energy consumption and chips energy efficiency": "https://www.researchgate.net/publication/371938289_Equations_relating_total_annual_energy_consumption_and_chips_energy_efficiency",
@@ -1060,7 +874,7 @@
 						},
 						{
 							"title": "Control animation",
-							"description": "Allow users to start, stop, pause, or otherwise control animated content.",
+							"description": "Let users start, pause, stop, or control animated and moving content.",
 							"resources": [
 								{
 									"Accessible Web Animation": "https://css-tricks.com/accessible-web-animation-the-wcag-on-animation-explained/",
@@ -1073,6 +887,21 @@
 									"Let users pause/stop/hide animation": "https://marcom.wwu.edu/accessibility/guide/pause-stop-hide-animation",
 									"prefers-reduced-motion: Sometimes less movement is more": "https://web.dev/articles/prefers-reduced-motion?hl=en",
 									"Respecting Users' Motion Preferences": "https://www.smashingmagazine.com/2021/10/respecting-users-motion-preferences/"
+								}
+							]
+						},
+						{
+							"title": "Efficient animation",
+							"description": "Keep interactive and animated content as lightweight as possible. Reduce rendering cost by accounting for formats, lengths, complexity, dimensions, quality, tooling, and implementation approach. Where multiple approaches are available, choose browser- or platform-native animation capabilities and minimize main-thread or layout-intensive work.",
+							"resources": [
+								{
+									"Animation performance and frame rate": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Animation_performance_and_frame_rate",
+									"CSS and JavaScript animation performance": "https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/CSS_JavaScript_animation_performance",
+									"CSS vs. JavaScript": "https://www.joshwcomeau.com/animation/css-vs-javascript/",
+									"How to create high-performance CSS animations": "https://web.dev/articles/animations-guide",
+									"Optimizing Performance in CSS Animations: What to Avoid and How to Improve It": "https://dev.to/nasehbadalov/optimizing-performance-in-css-animations-what-to-avoid-and-how-to-improve-it-bfa",
+									"The Web Animation Performance Tier List": "https://motion.dev/magazine/web-animation-performance-tier-list",
+									"Why are some animations slow?": "https://web.dev/articles/animations-overview"
 								}
 							]
 						}
@@ -1088,14 +917,14 @@
 					"tags": ["Accessibility", "CSS", "JavaScript", "Performance", "UI", "Usability"]
 				},
 				{
-					"id": "use-optimized-and-appropriate-web-typography",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography",
-					"guideline": "Use optimized and appropriate web typography",
-					"subheading": "Provide custom fonts in the most suitable file format, but with a preference for pre-installed typefaces where possible.",
+					"id": "use-optimized-web-typography",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography",
+					"guideline": "Use optimized web typography",
+					"subheading": "Use font strategies that minimize downloads and complexity while supporting required languages and dynamic content.",
 					"criteria": [
 						{
 							"title": "Pre-installed typefaces",
-							"description": "Use pre-installed fonts, such as system fonts, wherever possible, to reduce the reliance on user-installed or web fonts.",
+							"description": "Use system fonts or other pre-installed fonts to reduce font downloads and improve performance.",
 							"resources": [
 								{
 									"Apple System Fonts": "https://developer.apple.com/fonts/system-fonts/",
@@ -1120,28 +949,34 @@
 						},
 						{
 							"title": "Web font optimization",
-							"description": "Limit the number and complexity of fonts downloaded. When using a variable font, also restrict the supported axes and ranges to those required by your project whenever this reduces file size. Use the most performant file format available.",
+							"description": "Limit the number and complexity of downloaded fonts. When using variable fonts, restrict supported axes and ranges to only those required by the project to reduce file size. Use the most performant font formats available and provide suitable fallback fonts to maintain readability and performance during font loading or when custom fonts cannot be loaded.",
 							"resources": [
 								{
 									"A Guide to Understanding What Makes a Typeface Accessible": "https://medium.com/the-readability-group/a-guide-to-understanding-what-makes-a-typeface-accessible-and-how-to-make-informed-decisions-9e5c0b9040a0",
+									"A New Way To Reduce Font Loading Impact: CSS Font Descriptors": "https://www.smashingmagazine.com/2021/05/reduce-font-loading-impact-css-descriptors/",
 									"Best practices for fonts": "https://web.dev/articles/font-best-practices?hl=en",
+									"Creating font subsets": "https://markoskon.com/creating-font-subsets/",
+									"Fast Load Times: Optimize WebFonts": "https://web.dev/explore/fast?hl=en#optimize-webfonts",
 									"Font sustainability and accessibility analysis": "https://codewordcreative.com/better-fonts/",
+									"How to subset a variable font": "https://clagnut.com/blog/2418",
 									"GPF - General Policy Framework (PDF) - 4.7 - UX and UI (Media Choices)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 4.8 - UX and UI (Font Limits)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 5.7 - Content (File Size Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 2-4015 - Font Limits": "https://gr491.isit-europe.org/en/crit.php?id=2-4015-contents-each-font-is-encoded-in-a-file",
+									"The performance cost of custom web fonts, and how to solve it": "https://www.wholegraindigital.com/blog/performant-web-fonts/",
 									"Preload Fonts On Your Website For Better Core Web Vitals": "https://www.debugbear.com/blog/preload-web-fonts",
 									"Reduce web font size": "https://web.dev/articles/reduce-webfont-size?hl=en",
 									"Should you preload fonts for performance?": "https://www.erwinhofman.com/blog/should-you-preload-fonts-for-performance",
 									"The Ultimate Guide to Font Performance Optimization": "https://www.debugbear.com/blog/website-font-performance",
 									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
+									"Web fonts: when you need them, when you don't": "https://david-gilbertson.medium.com/web-fonts-when-you-need-them-when-you-dont-a3b4b39fe0ae",
 									"You're loading fonts wrong": "https://www.jonoalderson.com/performance/youre-loading-fonts-wrong/"
 								}
 							]
 						},
 						{
 							"title": "Web font subsetting",
-							"description": "Design or subset fonts to omit unnecessary or unused stylistic variations, such as font weight or italics. Design or subset web fonts based on explicitly supported languages and Unicode scripts rather than assumed defaults. Where you are in full control of all input and output, fonts can be subset to include only the relevant Unicode range or character set. In all other instances - particularly where content is user-generated or affected by dynamic input and output - provide full script coverage and use a solution such as Incremental Font Transfer (IFT) to load the required segments of the font on demand.",
+							"description": "Remove unused font styles, weights, and character sets. Subset fonts based on explicitly supported languages, scripts, and Unicode ranges required by the project. Where you have full control over all input and output, subset fonts to include only the relevant Unicode ranges or character sets. In cases involving dynamic content or user-generated input, provide broader script coverage and use Incremental Font Transfer (IFT) to load required font segments on demand.",
 							"resources": [
 								{
 									"Best practices for fonts": "https://web.dev/articles/font-best-practices?hl=en",
@@ -1167,171 +1002,14 @@
 					"tags": ["Accessibility", "CSS", "Performance", "UI", "Usability"]
 				},
 				{
-					"id": "offer-suitable-alternatives-for-every-format-used",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used",
-					"guideline": "Offer suitable alternatives for every format used",
-					"subheading": "Integrate fallbacks so that if something cannot load or is not compatible, there is an accessible alternative to ensure equal access to the content.",
-					"criteria": [
-						{
-							"title": "Open formats",
-							"description": "Default to using open alternatives, such as HTML, over proprietary file formats.",
-							"resources": [
-								{
-									"Are PDFs Hurting the Planet?": "https://medium.com/@thepdfspace/are-pdfs-hurting-the-planet-7c850655c98e",
-									"GPF - General Policy Framework (PDF) - 3.1 - Architecture (Impact Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 4.6 - UX and UI (Informational Media)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 4.7 - UX and UI (Media Choices)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 4.12 - UX and UI (Impact Flags)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"Making a positive change: PDF to HTML": "https://accessibility.blog.gov.uk/2023/06/12/making-a-positive-change-pdf-to-html/",
-									"PDFs vs. web pages: what's better for users?": "https://lapope.com/resource/pdfs-vs-web-pages-whats-better-for-users/",
-									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
-									"Why you need to stop using PDFs": "https://shorthand.com/the-craft/the-pdf-is-in-terminal-decline/index.html"
-								}
-							]
-						},
-						{
-							"title": "Font stack fallbacks",
-							"description": "Provide a suitable font stack as a fallback when custom typefaces are used.",
-							"resources": [
-								{
-									"A New Way To Reduce Font Loading Impact: CSS Font Descriptors": "https://www.smashingmagazine.com/2021/05/reduce-font-loading-impact-css-descriptors/",
-									"Creating font subsets": "https://markoskon.com/creating-font-subsets/",
-									"Fast Load Times: Optimize WebFonts": "https://web.dev/explore/fast?hl=en#optimize-webfonts",
-									"How to subset a variable font": "https://clagnut.com/blog/2418",
-									"The performance cost of custom web fonts, and how to solve it": "https://www.wholegraindigital.com/blog/performant-web-fonts/",
-									"The Ultimate Guide to Font Performance Optimization": "https://www.debugbear.com/blog/website-font-performance",
-									"Web fonts: when you need them, when you don't": "https://david-gilbertson.medium.com/web-fonts-when-you-need-them-when-you-dont-a3b4b39fe0ae"
-								}
-							]
-						},
-						{
-							"title": "Alternative text",
-							"description": "Provide meaningful alternative text for all descriptive images that are non-decorative and support the user's understanding of the content, acting as a fallback if the images do not load.",
-							"resources": [
-								{
-									"Alt Text: What to Write": "https://www.nngroup.com/articles/write-alt-text/",
-									"Alternative Text": "https://webaim.org/techniques/alttext/",
-									"GR491 - 2-4012 - Image Alternatives": "https://gr491.isit-europe.org/en/crit.php?id=2-4012-contents-accessibility-assistants-must-be-able-to-use",
-									"GR491 - 9-5064 - Image Text Replacement": "https://gr491.isit-europe.org/en/crit.php?id=9-5064-frontend-accessibility-assistants-must-be-able-to-use",
-									"OpQuast - 111 - Each decorative image has an appropriate text alternative.": "https://checklists.opquast.com/en/digital-quality/each-decorative-image-has-an-appropriate-text-alternative",
-									"WCAG Guideline 1.1 - Text Alternatives": "https://www.w3.org/TR/WCAG22/#text-alternatives",
-									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
-									"Write helpful alt text": "https://developers.google.com/tech-writing/accessibility/self-study/write-alt-text"
-								}
-							]
-						},
-						{
-							"title": "Transcripts and text",
-							"description": "Include transcripts and/or text versions of media files as an alternative to playing the media.",
-							"resources": [
-								{
-									"Audio accessibility": "https://userway.org/blog/audio-accessibility/",
-									"GR491 - 3-4034 - Audio Alternatives": "https://gr491.isit-europe.org/en/crit.php?id=3-4034-contents-access-to-sound-is-difficult-if-not",
-									"Making Audio and Video Media Accessible": "https://www.w3.org/WAI/media/av/",
-									"OpQuast - 116 - Each audio and video content is accompanied by a text transcription.": "https://checklists.opquast.com/en/digital-quality/all-audio-and-video-content-is-accompanied-by-a-text-transcription",
-									"The Carbon Impact of Web Standards (PDF)": "https://websitesustainability.com/cache/files/research23.pdf",
-									"Transcripts": "https://www.w3.org/WAI/media/av/transcripts/"
-								}
-							]
-						},
-						{
-							"title": "Video alternatives",
-							"description": "Include closed captions and subtitles along with transcripts for videos. Provide localization as expected by your audience, including subtitles and sign language that meet the same standard.",
-							"resources": [
-								{
-									"GPF - General Policy Framework (PDF) - 5.5 - Content (Video Alternative)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 3-4030 - Video Alternatives": "https://gr491.isit-europe.org/en/crit.php?id=3-4030-contents-the-information-provided-by-video-can-often",
-									"Making Audio and Video Media Accessible": "https://www.w3.org/WAI/media/av/",
-									"OpQuast - 116 - Each audio and video content is accompanied by a text transcription.": "https://checklists.opquast.com/en/digital-quality/all-audio-and-video-content-is-accompanied-by-a-text-transcription",
-									"The Carbon Impact of Web Standards (PDF)": "https://websitesustainability.com/cache/files/research23.pdf",
-									"Tips for creating a transcript file": "https://support.google.com/youtube/answer/2734799",
-									"Video Captions": "https://www.w3.org/WAI/perspective-videos/captions/",
-									"W3C Web Accessibility Initiative: Transcripts": "https://www.w3.org/WAI/media/av/transcripts/",
-									"Web Video Text Tracks Format (WebVTT)": "https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API",
-									"WebVTT: The Web Video Text Tracks Format": "https://www.w3.org/TR/webvtt1/"
-								}
-							]
-						}
-					],
-					"benefits": [
-						{
-							"Accessibility": "Providing content in multiple formats means users can choose the format that best supports their needs, helping to eliminate barriers.",
-							"Conversion": "Creating text alternatives to media, such as transcripts, means your content can be more easily found and indexed by search engines.",
-							"Economic": "Hosting and delivering text is less computationally expensive than media, so providing text-based content can reduce hosting and bandwidth costs.",
-							"Environment": "Offering low-impact alternatives to media formats reduces rendering and processing effort, and the associated emissions.",
-							"Performance": "Reducing interactivity can help users access what they need faster.",
-							"Social Equity": "Providing text alternatives for those who are not able to watch a video or listen to audio, even situationally, improves access and user experience."
-						}
-					],
-					"example": "WEBVTT\r\n\r\n00:01.000 --> 00:04.000\r\n- Something happened yesterday morning.\r\n\r\n00:05.000 --> 00:09.000\r\n- Or was it in the evening?\r\n- I can't remember!",
-					"tags": ["Accessibility", "Assets", "Compatibility", "Content", "HTML", "Performance", "Social Equity", "UI", "Usability"]
-				},
-				{
-					"id": "provide-accessible-usable-minimal-web-forms",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#provide-accessible-usable-minimal-web-forms",
-					"guideline": "Provide accessible, usable, minimal web forms",
-					"subheading": "Ensure forms are as minimalistic and friction-free as possible, reduce the impact of submitting, and only collecting required data.",
-					"criteria": [
-						{
-							"title": "Simple forms",
-							"description": "Remove unnecessary forms and reduce form content to the minimum necessary to meet the user needs while satisfying the organization's minimum requirements. Clearly communicate why a form is necessary, the value it provides, the number of steps required for completion, and what will be done with the collected data. Also disclose if the data will be shared with third parties.",
-							"resources": [
-								{
-									"Accessible Forms: Tips and Techniques": "https://afixt.com/accessible-forms-tips-and-techniques/",
-									"Best Practices For Mobile Form Design": "https://www.smashingmagazine.com/2018/08/best-practices-for-mobile-form-design/",
-									"Designing Efficient Web Forms": "https://www.smashingmagazine.com/2017/06/designing-efficient-web-forms/",
-									"Form Design for Complex Applications": "https://coyleandrew.medium.com/form-design-for-complex-applications-d8a1d025eba6",
-									"Form design: from zero to hero all in one blog post": "https://adamsilver.io/blog/form-design-from-zero-to-hero-all-in-one-blog-post/",
-									"Form UX: How to Design a User-Friendly Form": "https://blog.hubspot.com/marketing/form-ux",
-									"Forms Tutorial": "https://www.w3.org/WAI/tutorials/forms/",
-									"GPF - General Policy Framework (PDF) - 1.6 - Strategy (Data Collection)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 4.10 - UX and UI (Input Format)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"How Web Content Accessibility Guidelines Improve Digital Products": "https://www.mightybytes.com/insights/web-content-accessibility-guidelines/",
-									"Ultimate Guide to Accessible Form Design": "https://www.uxpin.com/studio/blog/ultimate-guide-to-accessible-form-design/",
-									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
-									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators"
-								}
-							]
-						},
-						{
-							"title": "Functional forms",
-							"description": "Avoid using auto-completion or auto-suggest based on partial entry to conserve user bandwidth and reduce unnecessary server side requests. Support the use of helpful tooling, such as password managers, by not preventing autofill.",
-							"resources": [
-								{
-									"Autofill": "https://web.dev/learn/forms/autofill?hl=en",
-									"Autofill in action: real-world insights": "https://developer.chrome.com/blog/autofill-insights-2024?hl=en",
-									"Avoid Unnecessarily Complex Password-Creation Requirements (82% Don't)": "https://baymard.com/blog/password-requirements-and-password-reset",
-									"Don't Get Clever with Login Forms": "https://bradfrost.com/blog/post/dont-get-clever-with-login-forms/",
-									"GreenIT - 0014 - Prefer assisted input to autocomplete": "https://rweb.greenit.fr/en/fiches/RWEB_0014-prefer-assisted-input-to-autocomplete",
-									"How to turn off form autocompletion": "https://developer.mozilla.org/en-US/docs/Web/Security/Practical_implementation_guides/Turning_off_form_autocompletion",
-									"How to turn off password managers for fields": "https://www.stefanjudis.com/snippets/turn-off-password-managers/",
-									"Making password managers play ball with your login form": "https://hidde.blog/making-password-managers-play-ball-with-your-login-form/",
-									"Reducing the impact of autocompletion": "https://greenspector.com/en/reducing-the-impact-of-autocompletion/"
-								}
-							]
-						}
-					],
-					"benefits": [
-						{
-							"Accessibility": "Labeling your forms correctly and testing for accessibility and compatibility with a range of different devices and inputs reduces barriers. Autocomplete improves ease of use and efficiency for all use, especially those with additional accessibility needs. Well-labeled and accessible forms are more likely to be successfully completed.",
-							"Conversion": "Building forms based on standards with ease of use and accessibility in mind boosts conversion, as more users are able to complete them.",
-							"Economic": "Implementing more accessible and usable forms reduces frustration while increasing completion rates. This can reduce complaints, support costs, and abandonment.",
-							"Environment": "Optimizing forms reduces the resources required to complete them, which reduces emissions.",
-							"Privacy": "Collecting informed consent and providing helpful disclosures about cookies, data collection, and data processing within forms, alongside appropriate links to find further information in an accessible format, improves data privacy."
-						}
-					],
-					"example": "<form>\r\n\t<label for=\"choose\">Would you prefer a banana or cherry? (required)<\/label>\r\n\t<input id=\"choose\" name=\"i-like\" required \/>\r\n\t<button>Submit<\/button>\r\n<\/form>",
-					"tags": ["Accessibility", "HTML", "Privacy", "Social Equity", "UI", "Usability"]
-				},
-				{
 					"id": "avoid-unwanted-notifications",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-unwanted-notifications",
 					"guideline": "Avoid unwanted notifications",
-					"subheading": "Ensure any required notifications or alerts are clearly explained before activation, and that the user can both control and change them.",
+					"subheading": "Send only user-requested notifications and provide clear, accessible controls for managing preferences, opt-in, and account and contact settings.",
 					"criteria": [
 						{
 							"title": "Need for notification",
-							"description": "Remove non-essential notifications. Justify and reduce email, text message (SMS), and other invasive or energy-intense notifications to what is necessary. Use notifications, such as alerts for new content, with care and restraint. Make sure the users understand and give informed consent.",
+							"description": "Only send notifications that match user preferences or that the user has explicitly requested. Avoid unnecessary emails, SMS messages, and push notifications. Give users clear control over each notification type.",
 							"resources": [
 								{
 									"Biased By Design": "https://biasedbydesign.com/",
@@ -1348,7 +1026,7 @@
 						},
 						{
 							"title": "Notification settings",
-							"description": "Allow users to adjust their own notification and messaging settings. Ensure the options to unsubscribe, log out, and close an account are available and visible. Optional notifications must be off by default and only activated upon user opt in. The user should be able to change their contact details.",
+							"description": "Let users manage their notification and messaging settings easily. Make unsubscribe, logout, and account closure options visible and accessible. Turn off optional notifications by default and enable them only after user opt-in.",
 							"resources": [
 								{
 									"Can I email?": "https://www.caniemail.com/",
@@ -1376,11 +1054,11 @@
 					"id": "reduce-the-impact-of-downloadable-and-physical-documents",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents",
 					"guideline": "Reduce the impact of downloadable and physical documents",
-					"subheading": "Reduce the need for physical documents as much as possible by allowing the saving of well-labeled, optimized digital downloads. Include a print style sheet to avoid resource waste.",
+					"subheading": "Reduce paper use through digital-first workflows, optimize and reuse accessible downloadable documents, and provide clear, user-controlled document previews and formats.",
 					"criteria": [
 						{
 							"title": "Printed documents",
-							"description": "Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a CSS print style sheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.",
+							"description": "Design workflows to reduce the need for paper documents. When paper use is necessary, reduce paper use through efficient print layouts and minimal page counts. Include print style sheets and test them with real content. Encourage the use of digital formats instead of paper storage and archiving.",
 							"resources": [
 								{
 									"A Guide To The State Of Print Stylesheets In 2018": "https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/",
@@ -1403,23 +1081,32 @@
 						},
 						{
 							"title": "Optimized documents",
-							"description": "Optimize and compress all downloadable documents. Make them available in a variety of accessible file formats.",
+							"description": "Optimize and compress downloadable documents, provide them in accessible formats that suit different user needs, and choose open, widely supported formats (such as HTML) over proprietary file formats.",
 							"resources": [
 								{
+									"Are PDFs Hurting the Planet?": "https://medium.com/@thepdfspace/are-pdfs-hurting-the-planet-7c850655c98e",
 									"Changing Paper Consumption": "http://www.greenschools.net/article.php-id=75.html",
+									"GPF - General Policy Framework (PDF) - 3.1 - Architecture (Impact Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 4.6 - UX and UI (Informational Media)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 4.7 - UX and UI (Media Choices)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 4.11 - UX and UI (Inform Users)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 4.12 - UX and UI (Impact Flags)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 5.7 - Content (File Size Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 5-4052 - Downloadable Documents": "https://gr491.isit-europe.org/en/crit.php?id=5-4052-contents-the-documents-available-to-the-user-in",
 									"GR491 - 5-4053 - PDF Documents": "https://gr491.isit-europe.org/en/crit.php?id=5-4053-contents-large-documents-are-rarely-read-completely-by",
+									"Making a positive change: PDF to HTML": "https://accessibility.blog.gov.uk/2023/06/12/making-a-positive-change-pdf-to-html/",
 									"Optimizing PDFs for Web": "https://dev.to/revisepdf/optimizing-pdfs-for-web-best-practices-for-faster-loading-3b93",
+									"PDFs vs. web pages: what's better for users?": "https://lapope.com/resource/pdfs-vs-web-pages-whats-better-for-users/",
+									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
 									"United Nations SDGS - Goal 11 - Human Habitats": "https://sdgs.un.org/goals/goal11#targets_and_indicators",
-									"United Nations SDGS - Goal 12 - Consumption & Production": "https://sdgs.un.org/goals/goal12#targets_and_indicators"
+									"United Nations SDGS - Goal 12 - Consumption & Production": "https://sdgs.un.org/goals/goal12#targets_and_indicators",
+									"Why you need to stop using PDFs": "https://shorthand.com/the-craft/the-pdf-is-in-terminal-decline/index.html"
 								}
 							]
 						},
 						{
 							"title": "Optimized delivery",
-							"description": "Avoid duplicating effort. If a document will be reused, generate and save it once on the server side for reuse, ideally on a cookie-free domain.",
+							"description": "Avoid duplicating work. When a document is reused, generate and store it once on the server so it can be reused efficiently, preferably on a cookie-free domain.",
 							"resources": [
 								{
 									"A full comparison of 6 JS libraries for generating PDFs": "https://dev.to/handdot/generate-a-pdf-in-js-summary-and-comparison-of-libraries-3k0p",
@@ -1433,7 +1120,7 @@
 						},
 						{
 							"title": "Labels and choice",
-							"description": "Display the document name, a summary, the size, and format prior to downloading. Allow users to choose the right format and language for their needs where possible. Avoid embedding documents directly; provide a link to download or view them within the browser instead.",
+							"description": "Show users the document name, format, size, and a short summary before download. Let users choose the most suitable format and language. Avoid embedding documents directly in pages; instead provide download or browser-view links.",
 							"resources": [
 								{
 									"Add file format and size to all download links and buttons": "https://www.accede-web.com/en/guidelines/html-css/complementary-guidelines/add-file-format-and-size-to-all-download-links-and-buttons/",
@@ -1461,11 +1148,11 @@
 					"id": "involve-users-early-in-the-project",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#involve-users-early-in-the-project",
 					"guideline": "Involve users early in the project",
-					"subheading": "Document the test process for new features with real users and validate the results, ensuring resources and training are provided to maintain the project's viability and minimize rework.",
+					"subheading": "Define and validate prototypes and interface components through user testing to ensure they work effectively in real-world use cases and across diverse user needs.",
 					"criteria": [
 						{
 							"title": "Early user testing",
-							"description": "Establish clear processes for the prototyping and testing of new features, product ideas, and user interface components. Validate applicability, usefulness, and appropriateness with real users who represent different perspectives and user constraints to align development efforts with real-world contexts from the start.",
+							"description": "Create defined processes for prototyping and testing new features and interface components. Validate them with representative users to ensure they work in real-world conditions and across different needs.",
 							"resources": [
 								{
 									"5 Common Low-Fidelity Prototypes and Their Best Practices": "https://ixdf.org/literature/article/prototyping-learn-eight-common-methods-and-best-practices",
@@ -1529,30 +1216,21 @@
 							]
 						},
 						{
-							"title": "Non-regression tests",
-							"description": "Implement non-regression tests for all critical features.",
+							"title": "Automated tests",
+							"description": "Maintain an automated test suite that covers critical functionality and run it consistently during builds and releases to catch regressions early.",
 							"resources": [
 								{
     								"AWS WAF - SEC11-BP02 - Automate testing throughout the development and release lifecycle": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_automate_testing_throughout_lifecycle.html",
-									"Non Regression Testing: Purpose, Process, Examples": "https://www.testlio.com/blog/non-regression-testing/",
-									"Non regression vs. regression: key differences in QA": "https://www.statsig.com/perspectives/non-regression-vs-regression-qa",
-									"Test automation": "https://web.dev/explore/test-automation?hl=en",
-									"The Simple and Complete Guide on Non-Regression Testing": "https://testgrid.io/blog/non-regression-testing/",
-									"Understanding non-regression testing and its impact": "https://www.statsig.com/perspectives/understanding-non-regression-testing"
-								}
-							]
-						},
-						{
-							"title": "Regression tests",
-							"description": "Incorporate regression testing into each release cycle to ensure new features do not introduce bugs or otherwise conflict with existing functionality.",
-							"resources": [
-								{
 									"Difference Between Regression Testing And Unit Testing": "https://www.browserstack.com/guide/regression-testing-vs-unit-testing",
 									"GPF - General Policy Framework (PDF) - 1.4 - Strategy (Regular Reviews)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"Non Regression Testing: Purpose, Process, Examples": "https://www.testlio.com/blog/non-regression-testing/",
 									"Non regression vs. regression: key differences in QA": "https://www.statsig.com/perspectives/non-regression-vs-regression-qa",
 									"Regression testing": "https://en.wikipedia.org/wiki/Regression_testing",
 									"Regression Testing: A Detailed Guide": "https://www.browserstack.com/guide/regression-testing",
-									"Software regression testing": "https://www.rainforestqa.com/blog/software-regression-testing"
+									"Software regression testing": "https://www.rainforestqa.com/blog/software-regression-testing",
+									"Test automation": "https://web.dev/explore/test-automation?hl=en",
+									"The Simple and Complete Guide on Non-Regression Testing": "https://testgrid.io/blog/non-regression-testing/",
+									"Understanding non-regression testing and its impact": "https://www.statsig.com/perspectives/understanding-non-regression-testing"
 								}
 							]
 						},
@@ -1590,38 +1268,6 @@
 									"Why your website should be under 14kB in size": "https://endtimes.dev/why-your-website-should-be-under-14kb-in-size/"
 								}
 							]
-						},
-						{
-							"title": "Compliant measurement",
-							"description": "Collect only data required to provide a streamlined and effective user journey and comply with relevant accessibility and data protection legislation. Put policies in place to ensure strict adherence.",
-							"resources": [
-								{
-									"10 CCPA Compliance Tips For Web Developers": "https://dataoverhaulers.medium.com/10-ccpa-compliance-tips-for-web-developers-1ce8382c7286",
-									"17 Countries with GDPR-like Data Privacy Laws": "https://insights.comforte.com/countries-with-gdpr-like-data-privacy-laws",
-									"A privacy-friendly Do Not Track (DNT) Policy": "https://www.eff.org/dnt-policy",
-									"Beyond GDPR: Data Protection Around The World": "https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/magazine/beyond-gdpr-data-protection-around-world",
-									"California Consumer Privacy Act": "https://oag.ca.gov/privacy/ccpa",
-									"Data ethics and digital sustainability": "https://www.sciencedirect.com/science/article/pii/S2666659624000258",
-									"Developer's Guide To GDPR": "https://fusionauth.io/articles/ciam/developers-guide-to-gdpr",
-									"GDPR Checklist": "https://gdprchecklist.io/",
-									"General Data Protection Regulation (GDPR)": "https://gdpr.eu/",
-									"GPF - General Policy Framework (PDF) - 1.6 - Strategy (Data Collection)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 7.2 - Back-End (Data Retention)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 8.8 - Hosting (Hot / Cold Data)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"How To Protect Your Users With The Privacy By Design Framework": "https://www.smashingmagazine.com/2017/07/privacy-by-design-framework/",
-									"Is GDPR Good for the Environment?": "https://www.mightybytes.com/insights/is-gdpr-good-for-the-environment/",
-									"Learn Privacy": "https://web.dev/blog/introducing-learn-privacy?hl=en",
-									"Prefetch resources to speed up future navigations": "https://web.dev/articles/link-prefetch?hl=en",
-									"Privacy by design": "https://en.wikipedia.org/wiki/Privacy_by_design",
-									"State Of GDPR Part 1 and Part 2": "https://www.smashingmagazine.com/2021/02/state-gdpr-2021-key-updates/",
-									"The environmental benefits of privacy-focussed web design": "https://rootwebdesign.studio/articles/the-environmental-benefits-of-privacy-focussed-web-design/",
-									"Ultimate CCPA Compliance Checklist": "https://securiti.ai/blog/ccpa-compliance-checklist/",
-									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-									"United Nations SDGS - Goal 13 - Climate Change": "https://sdgs.un.org/goals/goal13#targets_and_indicators",
-									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
-									"United Nations SDGS - Goal 17 - Global Partnership": "https://sdgs.un.org/goals/goal17#targets_and_indicators"
-								}
-							]
 						}
 					],
 					"benefits": [
@@ -1637,14 +1283,14 @@
 					"tags": ["Accessibility", "Compatibility", "KPIs", "Performance", "Privacy", "Reporting", "Research", "Security", "Social Equity", "Software", "Strategy", "UI", "Usability"]
 				},
 				{
-					"id": "verify-that-real-world-users-can-successfully-use-your-work-upon-and-after-release",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#verify-that-real-world-users-can-successfully-use-your-work-upon-and-after-release",
-					"guideline": "Verify that real-world users can successfully use your work upon and after release",
-					"subheading": "Factor the ways people use the project into your decision making and evaluate how this can be optimized for the planet, people, and organisational prosperity.",
+					"id": "validate-usability-through-testing-and-real-world-usage",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#validate-usability-through-testing-and-real-world-usage",
+					"guideline": "Validate usability through testing and real-world usage",
+					"subheading": "Monitor user feedback and real usage to evaluate feature effectiveness, and use usability testing and user research to guide ongoing improvements.",
 					"criteria": [
 						{
 							"title": "Usage changes",
-							"description": "Monitor user feedback, adoption, and churn rates in relation to different features and incorporate these insights into future releases.",
+							"description": "Monitor user feedback, adoption, and churn for each feature. Use these insights to guide updates and future releases.",
 							"resources": [
 								{
 									"7 UX KPIs you should be measuring": "https://maze.co/collections/ux-management/kpis/",
@@ -1662,7 +1308,7 @@
 						},
 						{
 							"title": "Usability testing",
-							"description": "Incorporate extensive usability testing, real user metrics, and user interviews into product cycles and routinely measure the impact of these tests for future releases. Validate whether released features meet internal goals and audience needs.",
+							"description": "Use usability testing, real user metrics, and user interviews throughout product development. Measure the impact of findings and check whether released features meet user needs and internal goals.",
 							"resources": [
 								{
 									"A Complete Guide to Usability Testing": "https://www.uxmatters.com/mt/archives/2023/05/a-complete-guide-to-usability-testing.php",
@@ -1716,14 +1362,14 @@
 					"tags": ["Accessibility", "Education", "Governance", "Ideation", "KPIs", "Research", "Social Equity", "Strategy", "UI", "Usability"]
 				},
 				{
-					"id": "regularly-test-and-maintain-compatibility",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility",
-					"guideline": "Regularly test and maintain compatibility",
-					"subheading": "Produce a regularly updated compatibility policy that details support levels, scenarios tested against, and technology used to benefit users.",
+					"id": "cross-platform-compatibility-support",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support",
+					"guideline": "Cross-platform compatibility support",
+					"subheading": "Document compatibility, avoid unnecessary obsolescence, and test across devices, systems, and network conditions.",
 					"criteria": [
 						{
-							"title": "Compatibility policy",
-							"description": "Establish and maintain a compatibility policy which covers current and obsolete devices and software versions, listing the supported device brands, operating systems, and browsers (including versions). Update this regularly in line with new releases.",
+							"title": "Compatibility documentation",
+							"description": "Document supported devices, operating systems, and browsers, including version ranges. Review and update it regularly to reflect current releases.",
 							"resources": [
 								{
 									"A Framework for Evaluating Browser Support": "https://www.joshwcomeau.com/css/browser-support/",
@@ -1733,7 +1379,7 @@
 									"Designing for different browsers and devices": "https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices",
 									"Digital sustainability audits: a de facto standard for the Internet carbon footprint": "https://www.researchgate.net/publication/343041330_Digital_sustainability_audits_a_de_facto_standard_for_the_Internet_carbon_footprint",
 									"GPF - General Policy Framework (PDF) - 1.4 - Strategy (Regular Reviews)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 3-3023 - Compatibility Policy": "https://gr491.isit-europe.org/en/crit.php?id=3-3023-uxui-technological-advances-are-increase-constantly--hardware",
+									"GR491 - 3-3023 - Compatibility documentation": "https://gr491.isit-europe.org/en/crit.php?id=3-3023-uxui-technological-advances-are-increase-constantly--hardware",
 									"Practical Retrofitting for Obsolete Devices (PDF)": "https://computingwithinlimits.org/2025/papers/limits2025-lafrechoux-retrofitting.pdf",
 									"Resilient web design": "https://resilientwebdesign.com/",
 									"Tiny Screens, Big Impact": "https://www.smashingmagazine.com/2025/07/tiny-screens-big-impact-developing-web-apps-feature-phones/",
@@ -1744,7 +1390,7 @@
 						},
 						{
 							"title": "Maintaining compatibility",
-							"description": "Avoid planned obsolescence. Strive to maintain compatibility for as long as possible and communicate clearly whether an update is evolutionary, as in large updates that can significantly reduce performance, or corrective, as in smaller updates that fix bugs or improve security.",
+							"description": "Avoid planned obsolescence. Keep compatibility for as long as reasonably possible. Clearly explain whether updates are major changes that may affect performance or smaller updates that fix issues or improve security.",
 							"resources": [
 								{
 									"A Framework for Evaluating Browser Support": "https://www.joshwcomeau.com/css/browser-support/",
@@ -1775,7 +1421,7 @@
 						},
 						{
 							"title": "User constraints",
-							"description": "Account for potential user constraints in various scenarios to ensure compatibility. Testing should cover weak, unstable, restricted, or slow connections, Virtual Private Network (VPN) use, operating system choice or version, browser, and the device age.",
+							"description": "Test for a wide range of user conditions, including slow, restricted or unstable connections, Virtual Private Network (VPN) use, different operating systems and browsers, and older or low-performance devices.",
 							"resources": [
 								{
 									"AFNOR Spec 5.1.1 & 5.1.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -1831,22 +1477,6 @@
 									"Web Platform Status": "https://webstatus.dev/",
 									"Web Vitals": "https://web.dev/articles/vitals?hl=en",
 									"Webhint": "https://webhint.io/"
-								}
-							]
-						},
-						{
-							"title": "Progressive Web Applications (PWAs)",
-							"description": "Use a PWA over a native mobile application if it meets sustainability, interoperability, and compatibility criteria.",
-							"resources": [
-								{
-									"Assessing the Impact of Service Workers on the Energy Efficiency of Progressive Web Apps (PDF)": "https://www.ivanomalavolta.com/files/papers/Mobilesoft_2017.pdf",
-									"Evaluating the Impact of Caching on the Energy Consumption and Performance of Progressive Web Apps (PDF)": "https://www.ivanomalavolta.com/files/papers/MOBILESoft_Caching_PWA_2020.pdf",
-									"GreenIT - 0019 - Prefer PWA over native mobile applications that are similar to the website": "https://rweb.greenit.fr/en/fiches/RWEB_0019-prefer-pwa-over-native-mobile-applications-that-are-similar-to-the-website",
-									"Investigating the correlation between performance scores and energy consumption of mobile web apps (PDF)": "https://www.ivanomalavolta.com/files/papers/EASE_2020.pdf",
-									"PWA Builder": "https://www.pwabuilder.com/",
-									"Starbucks Ordering and Store Locator PWA": "https://nearform.com/work/starbucks-progressive-web-app/",
-									"The Carbon Impact of Web Standards (PDF)": "https://websitesustainability.com/cache/files/research23.pdf",
-									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability"
 								}
 							]
 						}
@@ -1944,14 +1574,14 @@
 					"tags": ["KPIs", "Networking", "Performance", "Research", "Social Equity", "Strategy"]
 				},
 				{
-					"id": "remove-unnecessary-or-redundant-information",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-or-redundant-information",
-					"guideline": "Remove unnecessary or redundant information",
-					"subheading": "Remove redundant characters from code to reduce the amount of data being stored and transferred to devices.",
+					"id": "minify-and-remove-unused-code",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code",
+					"guideline": "Minify and remove unused code",
+					"subheading": "Minify code and data, and remove unused characters to reduce file size and improve loading efficiency and maintainability.",
 					"criteria": [
 						{
 							"title": "Minified code",
-							"description": "Remove unnecessary white space, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to HTML, CSS, JavaScript, JSON, SVG, and other relevant file types.",
+							"description": "Minify code and data files by removing unnecessary whitespace, comments, and non-essential characters. Apply this consistently across the system to reduce file size and improve loading efficiency. This helps reduce cumulative data transfer and processing overhead at scale, improving resource efficiency and lowering energy consumption.",
 							"resources": [
 								{
 									"Comparing HTML Minifiers": "https://meiert.com/blog/comparing-html-minifiers/",
@@ -1966,12 +1596,36 @@
 									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability"
 								}
 							]
+						},
+						{
+							"title": "Remove redundancy",
+							"description": "Identify and remove unused or dead code, especially in CSS and JavaScript.",
+							"resources": [
+								{
+									"Browser Default Styles": "https://browserdefaultstyles.com/",
+									"Coverage: Find unused JavaScript and CSS": "https://developer.chrome.com/docs/devtools/coverage?hl=en",
+									"Front-End Performance 2021: Build Optimizations": "https://www.smashingmagazine.com/2021/01/front-end-performance-build-optimizations/",
+									"How large DOM sizes affect interactivity": "https://web.dev/articles/dom-size-and-interactivity?hl=en",
+									"How To Reduce Unused CSS And Speed Up Your Website": "https://www.debugbear.com/blog/reduce-unused-css",
+									"How To Reduce Unused JavaScript": "https://www.debugbear.com/blog/reduce-unused-javascript",
+									"Reduce JavaScript payloads with tree shaking": "https://web.dev/articles/reduce-javascript-payloads-with-tree-shaking?hl=en",
+									"Remove unused CSS": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules?hl=en",
+									"The cost of not deleting code": "https://www.asystad.net/the-cost-of-not-deleting-code/",
+									"Tree shaking": "https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking",
+									"Tree Shaking Patterns": "https://www.patterns.dev/vanilla/tree-shaking/",
+									"Tree-Shaking: A Reference Guide": "https://www.smashingmagazine.com/2021/05/tree-shaking-reference-guide/",
+									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
+									"Who Killed My Battery: Analyzing Mobile Browser Energy Consumption (PDF)": "https://mobisocial.stanford.edu/papers/boneh-www2012.pdf"
+								}
+							]
 						}
 					],
 					"benefits": [
 						{
 							"Conversion": "Faster page speeds improve user experience across the board. This makes users less likely to abandon their journey or search for their information elsewhere.",
-							"Performance": "Less data transferred means reduced loading times. White space itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact."
+							"Economic": "Eliminating unused code means reducing maintenance work and expense. It can otherwise affect other code or add unnecessary complexity.",
+							"Environment": "Removing unused code eliminates wasted bytes, reducing download size and potentially improving rendering time.",
+							"Performance": "Less data transferred means reduced loading times. Reducing downloaded code that otherwise offers no benefit to users frees up cache and RAM resources on their devices. White space itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact."
 						}
 					],
 					"example": "!function(e,t){\"use strict\";\"object\"==typeof module&&\"object\"==typeof module.exports?module.exports=e.document?t(e,!0):function(e){if(!e.document)throw new Error(\"jQuery requires a window with a document\");return t(e)}:t(e)}(\"undefined\"!=typeof window?window:this,function(g,e){\"use strict\";var t=[],r=Object.getPrototypeOf,s=t.slice,v=t.flat?function(e){return t.flat.call(e)}:function(e){return t.concat.apply([],e)},u=t.push,i=t.indexOf",
@@ -1981,11 +1635,11 @@
 					"id": "modularize-bandwidth-heavy-components",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#modularize-bandwidth-heavy-components",
 					"guideline": "Modularize bandwidth-heavy components",
-					"subheading": "Break down large components into smaller, self-contained pieces that can be requested only when required to save bandwidth.",
+					"subheading": "Split large components into smaller, on-demand modules to improve loading efficiency while balancing maintainability and caching performance.",
 					"criteria": [
 						{
 							"title": "Code splitting",
-							"description": "Break down bandwidth-heavy components into smaller, modular segments that can be loaded only when required. This applies to both front-end and back-end code.",
+							"description": "Split large or bandwidth-heavy components into smaller modules that load only when needed. Avoid excessive splitting, as it can increase overhead, reduce caching efficiency, and make code harder to maintain.",
 							"resources": [
 								{
 									"Bundling dependancies": "https://e18e.dev/blog/bundling-dependencies",
@@ -2011,45 +1665,6 @@
 						}
 					],
 					"example": "link.addEventListener(\"click\", (e) => {\r\n\te.preventDefault();\r\n\timport(\"\/modules\/my-module.js\")\r\n\t.then((module) => {\r\n\t\t\/* Do something *\/\r\n\t})\r\n\t.catch((err) => {\r\n\t\tconsole.error(err.message);\r\n\t});});",
-					"tags": ["CSS", "JavaScript", "Performance"]
-				},
-				{
-					"id": "remove-unnecessary-code",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-code",
-					"guideline": "Remove unnecessary code",
-					"subheading": "Clear out dead or unused code as it builds up in a project to reduce the amount of wasted data being transferred.",
-					"criteria": [
-						{
-							"title": "Remove redundancy",
-							"description": "Identify and eliminate unused and dead code, commonly within CSS and JavaScript.",
-							"resources": [
-								{
-									"Browser Default Styles": "https://browserdefaultstyles.com/",
-									"Coverage: Find unused JavaScript and CSS": "https://developer.chrome.com/docs/devtools/coverage?hl=en",
-									"Front-End Performance 2021: Build Optimizations": "https://www.smashingmagazine.com/2021/01/front-end-performance-build-optimizations/",
-									"How large DOM sizes affect interactivity": "https://web.dev/articles/dom-size-and-interactivity?hl=en",
-									"How To Reduce Unused CSS And Speed Up Your Website": "https://www.debugbear.com/blog/reduce-unused-css",
-									"How To Reduce Unused JavaScript": "https://www.debugbear.com/blog/reduce-unused-javascript",
-									"Reduce JavaScript payloads with tree shaking": "https://web.dev/articles/reduce-javascript-payloads-with-tree-shaking?hl=en",
-									"Remove unused CSS": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules?hl=en",
-									"The cost of not deleting code": "https://www.asystad.net/the-cost-of-not-deleting-code/",
-									"Tree shaking": "https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking",
-									"Tree Shaking Patterns": "https://www.patterns.dev/vanilla/tree-shaking/",
-									"Tree-Shaking: A Reference Guide": "https://www.smashingmagazine.com/2021/05/tree-shaking-reference-guide/",
-									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
-									"Who Killed My Battery: Analyzing Mobile Browser Energy Consumption (PDF)": "https://mobisocial.stanford.edu/papers/boneh-www2012.pdf"
-								}
-							]
-						}
-					],
-					"benefits": [
-						{
-							"Economic": "Eliminating unused code means reducing maintenance work and expense. It can otherwise affect other code' or add unnecessary complexity.",
-							"Environment": "Removing unused code eliminates wasted bytes, reducing download size and potentially improving rendering time.",
-							"Performance": "Reducing downloaded code that otherwise offers no benefit to users frees up cache and RAM resources on their devices, while saving time."
-						}
-					],
-					"example": "export function read(props) { return props.book }\r\nimport { read } from 'utilities';\r\neventHandler = (e) => { read({ book: e.target.value })}",
 					"tags": ["CSS", "JavaScript", "Performance"]
 				},
 				{
@@ -2121,14 +1736,14 @@
 					"tags": ["Accessibility", "CSS", "JavaScript", "Patterns", "Performance"]
 				},
 				{
-					"id": "give-third-parties-the-same-priority-as-first-parties-during-assessment",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment",
-					"guideline": "Give third parties the same priority as first parties during assessment",
-					"subheading": "Avoid using large third-party libraries and frameworks where possible, and where these must be used, self host, defer loading, allow the user to object, and provide alternatives.",
+					"id": "treat-third-parties-the-same-as-first-parties",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties",
+					"guideline": "Treat third parties the same as first parties",
+					"subheading": "Minimize and carefully manage third-party services by using lightweight, user-controlled integrations that are loaded only when needed.",
 					"criteria": [
 						{
 							"title": "Assess and reduce",
-							"description": "Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions. Ensure that third-party vendors enforce the same Compliance, Security, and Privacy standards as the first party. This includes data deletion policies, data retention limits, and mandatory security updates.",
+							"description": "Review third-party content and/or services early in the design or ideation process, including plugins, widgets, feeds, maps, carousels, tracking scripts, and similar components. Use as few as possible, preferring lightweight options to reduce overall environmental impact, including GHG Protocol Scope 3 emissions. Ensure third-party providers enforce the same compliance, security, privacy, data retention limits, data deletion policies, and mandatory security update standards as the first party.",
 							"resources": [
 								{
 									"6 steps to reduce the carbon footprint of your website": "https://opensource.com/article/23/3/reduce-carbon-footprint-website",
@@ -2153,7 +1768,7 @@
 						},
 						{
 							"title": "Third-party implementation",
-							"description": "Use click-to-load triggers based on an import on interaction pattern to prevent automatic loading of third-party content and/or services (see above). Offer suitable alternatives to third-party use, for example, a link to a contact form as an alternative to a chat widget.",
+							"description": "Load third-party content only when the user interacts with it. Offer simple alternatives, such as linking to a form instead of embedding a widget.",
 							"resources": [
 								{
 									"Are my third parties green?": "https://aremythirdpartiesgreen.com/",
@@ -2181,7 +1796,7 @@
 						},
 						{
 							"title": "Self-hosting",
-							"description": "Host your content and assets, such as icons and widgets, directly on your own site rather than relying on third-party services to store, deliver, or embed those features.",
+							"description": "Serve assets such as content, icons, fonts, scripts, and widgets from infrastructure you control where practical, rather than embedding or depending on third-party services for their storage or delivery. This reduces dependency on external systems, improves reliability, and can reduce unnecessary network requests.",
 							"resources": [
 								{
 									"Awesome-Selfhosted": "https://github.com/awesome-selfhosted/awesome-selfhosted",
@@ -2208,7 +1823,7 @@
 						},
 						{
 							"title": "Third-party preferences",
-							"description": "Respect user preferences around the use of third-party products and services, similar to the implementation of cookie consent modals. Provide mechanisms to disable or refuse non-first-party features alongside explanations of their purpose unless it is possible to show these third-party features are critical for functionality.",
+							"description": "Respect user preferences around third-party content and services. Provide clear controls to disable or opt out of non-essential third-party features.",
 							"resources": [
 								{
 									"An empirical study on the performance and energy costs of ads and analytics in mobile web apps": "https://www.sciencedirect.com/science/article/pii/S0950584923002252",
@@ -2244,11 +1859,11 @@
 					"id": "ensure-code-follows-good-semantic-practices",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices",
 					"guideline": "Ensure code follows good semantic practices",
-					"subheading": "Use semantic markup free of optional or non-standard code, use the latest version of technical specifications, and only using custom solutions when native ones are insufficient.",
+					"subheading": "Use standards-compliant HTML and web platform features, and avoid unnecessary complexity or non-standard code.",
 					"criteria": [
 						{
 							"title": "Semantic code",
-							"description": "Use accurate markup according to the relevant standard(s).",
+							"description": "Use valid and standards-compliant markup.",
 							"resources": [
 								{
 									"2025: 0 of the Global Top 200 Websites Use Valid HTML": "https://meiert.com/blog/html-conformance-2024/",
@@ -2286,7 +1901,7 @@
 						},
 						{
 							"title": "Optional features",
-							"description": "Remove optional HTML elements, attribute quotes, and default attributes when these do not negatively impact functionality, accessibility, or readability. Retain them when they enhance accessibility, maintain clarity without compromising on performance, or ensure consistent browser rendering.",
+							"description": "Remove optional HTML elements, attribute quotes, and default attributes if doing so does not negatively impact accessibility, readability, functionality, or performance. Include them when they improve accessibility, maintain clarity without compromising performance, or ensure consistent browser rendering.",
 							"resources": [
 								{
 									"Almost, but not quite, entirely unlike": "https://www.htmhell.dev/adventcalendar/2024/7/",
@@ -2300,7 +1915,7 @@
 						},
 						{
 							"title": "Avoid non-standard code",
-							"description": "Avoid using non-standard, deprecated, proprietary, or outdated formats and web standards. Only use such code where this is required to meet a documented customer need and if there is a justifiable benefit that cannot otherwise be met. Justifiable reasons could include compatibility with essential legacy systems and/or hardware, accessibility, or emissions reduction. Use polyfills only when necessary, and regularly audit code to see if they can be removed.",
+							"description": "Avoid deprecated, proprietary, or non-standard technologies unless there is a clear, justified need such as legacy compatibility or accessibility. Use polyfills only when necessary and review them regularly for removal.",
 							"resources": [
 								{
 									"A Node and Command Line Tool to Find Obsolete HTML": "https://meiert.com/blog/find-obsolete-html/",
@@ -2334,32 +1949,23 @@
 						},
 						{
 							"title": "Custom code",
-							"description": "Prioritize the use of standard HTML elements and attributes. Only use custom elements or Web Components if you cannot use pre-existing elements or if you require them for the purposes of producing reusable design system components.",
-							"resources": [
-								{
-									"GPF - General Policy Framework (PDF) - 1.9 - Strategy (Interoperable Technologies)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 2.9 - Specifications (Off-The-Shelf Components)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"HTML First": "https://html-first.com/",
-									"NoLoJS: Reducing the JS Workload with HTML and CSS": "https://calendar.perfplanet.com/2025/nolojs-reducing-js-workload-html-css/",
-									"Plain Vanilla": "https://plainvanillaweb.com/",
-									"Web Components Basics and Performance Benefits": "https://medium.com/@spkamboj/web-components-basics-and-performance-benefits-f7537c908075",
-									"Web components vs. React": "https://blog.logrocket.com/web-components-vs-react/"
-								}
-							]
-						},
-						{
-							"title": "Built-in over custom",
-							"description": "Use web platform features and APIs over writing your own.",
+							"description": "Use standard HTML elements, attributes, features, and APIs wherever they meet the requirement. Use custom elements, Web Components, or custom functionality only when built-in web platform capabilities cannot meet the need or when building reusable design system components.",
 							"resources": [
 								{
 									"15 Tips to Optimize Your PHP Script for Better Performance for Developers": "https://www.thegeekstuff.com/2014/04/optimize-php-code/",
 									"Energy Efficiency across Programming Languages (PDF)": "https://greenlab.di.uminho.pt/wp-content/uploads/2017/10/sleFinal.pdf",
 									"GPF - General Policy Framework (PDF) - 1.9 - Strategy (Interoperable Technologies)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 2.9 - Specifications (Off-The-Shelf Components)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 4.5 - UX and UI (Native Components)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"HTML First": "https://html-first.com/",
 									"Improving PHP Performance for Web Applications": "https://www.keycdn.com/blog/php-performance",
 									"Native features of the browser": "https://subscription.packtpub.com/book/game-development/9781849696029/1/ch01lvl1sec13/native-features-of-the-browser",
+									"NoLoJS: Reducing the JS Workload with HTML and CSS": "https://calendar.perfplanet.com/2025/nolojs-reducing-js-workload-html-css/",
 									"PHP Function and Method listing": "https://www.php.net/manual/en/indexes.functions.php",
-									"Web APIs": "https://developer.mozilla.org/en-US/docs/Web/API"
+									"Plain Vanilla": "https://plainvanillaweb.com/",
+									"Web APIs": "https://developer.mozilla.org/en-US/docs/Web/API",
+									"Web Components Basics and Performance Benefits": "https://medium.com/@spkamboj/web-components-basics-and-performance-benefits-f7537c908075",
+									"Web components vs. React": "https://blog.logrocket.com/web-components-vs-react/"
 								}
 							]
 						}
@@ -2381,11 +1987,11 @@
 					"id": "defer-the-loading-of-non-critical-resources",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#defer-the-loading-of-non-critical-resources",
 					"guideline": "Defer the loading of non-critical resources",
-					"subheading": "Avoid render-blocking slowdowns by asynchronously loading, deferring, or prioritizing external resources as appropriate.",
+					"subheading": "Load non-essential assets asynchronously or with prioritization to improve rendering performance and avoid visual issues.",
 					"criteria": [
 						{
 							"title": "Asynchronous code",
-							"description": "Defer loading of non-essential external assets or set these to load asynchronously to avoid a Flash Of Unstyled Content (FOUC).",
+							"description": "Load non-essential external assets asynchronously or defer them to avoid rendering issues such as Flash Of Unstyled Content (FOUC), Flash of Invisible Text (FOIT), or Flash of Faux Text (FOFT).",
 							"resources": [
 								{
 									"Fast Load Times: Optimize your resource delivery": "https://web.dev/explore/fast?hl=en#optimize-your-resource-delivery",
@@ -2401,7 +2007,7 @@
 						},
 						{
 							"title": "Optimized loading",
-							"description": "Where external resources are required to be used upon the documents load, optimize loading using resource and priority hints.",
+							"description": "Use resource and priority hints to improve loading performance when multiple assets compete for bandwidth or rendering order.",
 							"resources": [
 								{
 									"Assist the browser with resource hints": "https://web.dev/learn/performance/resource-hints",
@@ -2436,109 +2042,14 @@
 					"tags": ["Accessibility", "Assets", "CSS", "JavaScript", "Performance"]
 				},
 				{
-					"id": "provide-information-to-help-understand-the-usefulness-of-a-page",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#provide-information-to-help-understand-the-usefulness-of-a-page",
-					"guideline": "Provide information to help understand the usefulness of a page",
-					"subheading": "Ensure that accessibility tooling can access a project to reduce unnecessary journeys.",
-					"criteria": [
-						{
-							"title": "Accessibility aids",
-							"description": "Provide accessibility and usability aids, such as skip links and signposts, to help users find and navigate content.",
-							"resources": [
-								{
-									"Breadcrumbs In Web Design": "https://www.smashingmagazine.com/2009/03/breadcrumbs-in-web-design-examples-and-best-practices/",
-									"Customer Experience Mapping": "https://www.startupgrind.com/blog/customer-experience-mapping-what-is-it-and-how-to-do-it/",
-									"Skip links: what, why, and how": "https://www.tempertemper.net/blog/skip-links-what-why-and-how",
-									"Skip Navigation Links": "https://webaim.org/techniques/skipnav/",
-									"The Benefits of Tree Testing Your Navigation": "https://www.mightybytes.com/insights/things-you-learn-tree-testing-navigation/",
-									"What is a Customer Journey Map?": "https://www.mightybytes.com/insights/customer-journey-map-template-download/"
-								}
-							]
-						}
-					],
-					"benefits": [
-						{
-							"Accessibility": "Including skip links and other accessibility aids can accelerate the user journey, reducing system resources required and allowing them to find the content they need.",
-							"Economic": "Enabling quicker visits that complete the user's objective can help to encourage return visits.",
-							"Environment": "Reducing the time people spend searching for the information they want and aiding them on their journey will reduce energy use, including battery drain.",
-							"Social Equity": "Allowing users to achieve objectives faster reduces resource consumption while potentially enhancing user health and well-being."
-						}
-					],
-					"example": "&lt;a href=\"#content\"&gt;Skip to main content&lt;/a&gt;\r\n...\r\n&lt;main id=\"content\"&gt;\r\n&lt;h1&gt;Heading&lt;/h1&gt;",
-					"tags": ["Accessibility", "AI", "HTML", "Marketing", "UI", "Usability"]
-				},
-				{
-					"id": "validate-form-errors-and-account-for-tooling-requirements",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements",
-					"guideline": "Validate form errors and account for tooling requirements",
-					"subheading": "Label forms correctly while also checking for errors both prior to and during submission to reduce the impact of erroneous data entry.",
-					"criteria": [
-						{
-							"title": "Error validation",
-							"description": "Identify errors through live validation and with feedback on submission.",
-							"resources": [
-								{
-									"48 Cart Abandonment Rate Statistics 2023": "https://baymard.com/lists/cart-abandonment-rate",
-									"Client-side form validation": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation",
-									"Data Validation": "https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/",
-									"Designing for forgiveness": "https://uxdesign.cc/designing-for-forgiveness-how-to-create-error-tolerant-interfaces-af9146c8072b",
-									"Error handling - UX design patterns": "https://medium.com/design-bootcamp/error-handling-ux-design-patterns-c2a5bbae5f8d",
-									"HTML attribute: pattern": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/pattern",
-									"Inline Field Validation vs. Constantly Active Submit Button": "https://buttondown.com/access-ability/archive/accessibility-and-usability-inline-field/",
-									"Validating Input": "https://www.w3.org/WAI/tutorials/forms/validation/",
-									"WCAG 2.2 Understanding Docs: Error Identification": "https://www.w3.org/WAI/WCAG22/Understanding/error-identification.html",
-									"Web Form Validation: Best Practices and Tutorials": "https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/"
-								}
-							]
-						},
-						{
-							"title": "Label elements",
-							"description": "Clearly label and identify required elements to ensure easy recognition for users using assistive technologies.",
-							"resources": [
-								{
-									"GPF - General Policy Framework (PDF) - 4.10 - UX and UI (Input Format)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"How GDPR Will Change The Way You Develop": "https://www.smashingmagazine.com/2018/02/gdpr-for-web-developers/",
-									"HTML attribute: required": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/required",
-									"The Label element": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label",
-									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
-									"Web Form Validation: Best Practices and Tutorials": "https://www.smashingmagazine.com/2009/07/web-form-validation-best-practices-and-tutorials/"
-								}
-							]
-						},
-						{
-							"title": "Allow clipboard",
-							"description": "Always allow the copying and pasting of content (including passwords) from external sources.",
-							"resources": [
-								{
-									"Authentication Cheat Sheet": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
-									"Disabling paste in textboxes is not a security feature": "https://humanwhocodes.com/blog/2023/07/disabling-paste-textboxes-security/",
-									"Don't Disable Copying / Pasting Passwords": "https://medium.com/@EricJFisher/dont-disable-copying-pasting-passwords-a2198428f8f",
-									"Making password managers play ball with your login form": "https://hidde.blog/making-password-managers-play-ball-with-your-login-form/",
-									"Prevents users from pasting into input fields": "https://developer.chrome.com/docs/lighthouse/best-practices/paste-preventing-inputs?hl=en",
-									"The \"Cobra Effect\" that is disabling paste on password fields": "https://www.troyhunt.com/the-cobra-effect-that-is-disabling/"
-								}
-							]
-						}
-					],
-					"benefits": [
-						{
-							"Economic": "Fixing issues immediately and keeping people in the process can help to prevent abandonment.",
-							"Performance": "Enabling users to fill in forms more efficiently and avoid navigating back to where they were or refilling data on forms can increase the speed of necessary form filing and reduce errors in completion.",
-							"Security": "Allowing people to correct input errors, verify their input prior to submission, and identifying errors early in the process can help to prevent costly data protection mistakes."
-						}
-					],
-					"example": "<label for=\"username\">Username: (3-16 characters)<\/label>\r\n<input name=\"username\" type=\"text\" value=\"Sasha\" pattern=\"\\w{3,16}\" required>\r\n<label for=\"pin\">PIN: (4 digits)<\/label>\r\n<input name=\"pin\" type=\"password\" pattern=\"\\d{4,4}\" required>",
-					"tags": ["Accessibility", "Compatibility", "HTML", "Security", "UI", "Usability"]
-				},
-				{
 					"id": "structure-metadata-for-machine-readability",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#structure-metadata-for-machine-readability",
 					"guideline": "Structure metadata for machine readability",
-					"subheading": "Include the required metadata and structured microdata to increase the visibility and findability of resources.",
+					"subheading": "Include essential document metadata and structured data to improve usability, accessibility, and machine readability.",
 					"criteria": [
 						{
 							"title": "Required elements",
-							"description": "Include the required title element, plus any beneficial optional HTML head elements.",
+							"description": "Include a required title element and add optional HTML head elements where they improve usability, accessibility, or performance.",
 							"resources": [
 								{
 									"A simple guide to HTML head elements": "https://github.com/joshbuchea/HEAD",
@@ -2552,7 +2063,7 @@
 						},
 						{
 							"title": "Meta tags",
-							"description": "Include necessary meta tag references that are commonly recognized and used by user agents such as search engines. Follow recognized standards and vocabularies such as Friend of a Friend (FOAF) or RDFa.",
+							"description": "Include relevant meta tags that are widely used by browsers, search engines, and other user agents.",
 							"resources": [
 								{
 									"A simple guide to HTML head elements": "https://github.com/joshbuchea/HEAD",
@@ -2565,7 +2076,7 @@
 						},
 						{
 							"title": "Structured data",
-							"description": "Use microdata, structured data (e.g., Schema.org), or microformats in content where a widely used structured data format exists.",
+							"description": "Use structured data, such as schema.org, implemented with JSON-LD, microdata, RDFa, or microformats, to enable consistent interpretation and reuse of content by both humans and machines across tools and services.",
 							"resources": [
 								{
     								"GPF - General Policy Framework (PDF) - 1.9 - Strategy (Interoperable Technologies)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -2594,14 +2105,14 @@
 					"tags": ["Accessibility", "AI", "HTML", "Marketing", "Usability"]
 				},
 				{
-					"id": "use-sustainability-beneficial-user-preference-media-queries",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainability-beneficial-user-preference-media-queries",
-					"guideline": "Use sustainability beneficial user preference media queries",
-					"subheading": "Use sustainable media queries, such as dark mode and scripting media queries, to customize an interface to suit user preferences and reduce emissions.",
+					"id": "use-media-queries-that-support-sustainability-goals",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-media-queries-that-support-sustainability-goals",
+					"guideline": "Use media queries that support sustainability goals",
+					"subheading": "Support user preferences via media queries for color, motion, contrast, data use, and related settings to improve accessibility and efficiency.",
 					"criteria": [
 						{
 							"title": "Media and preference queries",
-							"description": "Accommodate common user preferences, such as prefers-color-scheme, with corresponding CSS media queries. Consider accounting for additional user preferences, including monochrome, prefers-contrast, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion preference queries where these will benefit your users. Use print and scripting media queries when they can improve sustainability.",
+							"description": "Accommodate common user preferences using CSS media queries such as prefers-color-scheme. Account for additional preference queries, including monochrome, prefers-contrast, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion where these will benefit your users. Use print and scripting media queries where they can improve efficiency or sustainability.",
 							"resources": [
 								{
 									"A Guide To The State Of Print Stylesheets In 2018": "https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/",
@@ -2658,11 +2169,11 @@
 					"id": "ensure-layouts-work-for-different-devices-and-requirements",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements",
 					"guideline": "Ensure layouts work for different devices and requirements",
-					"subheading": "Use a mix of carbon-aware design techniques to adapt to different layouts, different modes of interaction, and also progressively enhance content.",
+					"subheading": "Use responsive, progressively enhanced, and carbon-aware design to ensure accessible, adaptable functionality across devices and interaction methods while managing resource use.",
 					"criteria": [
 						{
 							"title": "Device-adaptable",
-							"description": "Use responsive and adaptive design techniques to ensure your project supports an wide range of devices and screen sizes, including smartphones, tablets, laptops, desktop computers, smart TVs, and other emerging platforms. Implement robust fallback strategies to ensure that the digital product or service will not fail if it encounters unsupported technologies.",
+							"description": "Use responsive and adaptive design so the product works across devices and screen sizes such as phones, tablets, laptops, desktops, TVs, and emerging platforms. Ensure the project still functions when certain features or technologies are not supported.",
 							"resources": [
 								{
 									"Building a resilient frontend using progressive enhancement": "https://www.gov.uk/service-manual/technology/using-progressive-enhancement",
@@ -2717,7 +2228,7 @@
 						},
 						{
 							"title": "Progressive enhancement",
-							"description": "Use progressive enhancement to enhance overall sustainability. This starts with baseline HTML, and increases the user experience without reliance on style and interaction to ensure a robust project.",
+							"description": "Use progressive enhancement to enhance sustainability by starting with a baseline of HTML, then progressively improving the user experience without relying on style or interaction for core functionality, ensuring a robust and resilient project.",
 							"resources": [
 								{
 									"Build for the Web, Build on the Web, Build with the Web": "https://csswizardry.com/2025/01/build-for-the-web-build-on-the-web-build-with-the-web/",
@@ -2751,7 +2262,7 @@
 						},
 						{
 							"title": "Carbon-aware design",
-							"description": "Use carbon-aware design techniques to maximize your use of low-carbon energy. This is achieved by adapting the delivery of your project to current electricity availability and user grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.",
+							"description": "Use carbon-aware design to reduce energy use when electricity demand or system load is high. Use situational design to replace, reduce, or disable high-impact features for lower-impact alternatives. Automated thresholds may also adjust or disable non-essential features, provided changes remain transparent. Clearly communicate what changed and why, and allow users to restore full functionality where possible.",
 							"resources": [
 								{
 									"A Carbon-Aware Internet": "https://branch.climateaction.tech/issues/issue-2/a-carbon-aware-internet/",
@@ -2776,7 +2287,7 @@
 						},
 						{
 							"title": "Alternative browsing",
-							"description": "Support non-visual/indirect methods of interaction. This includes assistive technologies, voice agents, scanned input (QR, etc.), reader view (browser, application, or RSS), or connected devices.",
+							"description": "Support sustainable non-visual and indirect interaction methods such as assistive technologies, voice input, QR codes, reader view (browser, application, or RSS), and connected devices.",
 							"resources": [
 								{
 									"CSS Speech Module Level 1": "https://www.w3.org/TR/css-speech-1/",
