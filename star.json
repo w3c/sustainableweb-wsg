@@ -1048,7 +1048,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/performance-testing.html"
 				},
 				{
-					"id": "compatibility-policy",
+					"id": "compatibility-documentation",
 					"title": "Provide a publicly visible compatibility policy or statement",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
 					"description": [
@@ -1074,7 +1074,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-policy.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-documentation.html"
 				},
 				{
 					"id": "maintaining-compatibility",
