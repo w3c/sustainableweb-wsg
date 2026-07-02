@@ -1946,26 +1946,26 @@
 			</section>
 			<section> <!-- Use automation wisely -->
 				<h3>Use automation wisely</h3>
-				<p class="subheading">Automate recurring tasks only where this saves resources, such as scaling services to reduce consumption or handling suspicious activity.</p>
+				<p class="subheading">Automate and scale tasks and infrastructure efficiently, run processes only when needed, and control unwanted traffic.</p>
 				<section class="notoc" data-standard="AWS WAF, Azure WAF, GPF" data-considerations="Security" data-categories="AI, Performance, Software">
 					<h4 id="task-automation">Success Criterion: Task automation</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#task-automation">Resources</a></p>
-					<p>Automate recurring tasks, such as deployment, testing, and compilation in alignment with continuous integration and continuous delivery best practices.</p>
+					<p>Automate recurring tasks such as deployment, testing, and compilation in alignment with continuous integration and continuous delivery (<abbr title="Continuous Integration">CI</abbr>/<abbr title="Continuous Delivery">CD</abbr>) best practices to reduce manual effort and improve consistency. Favor automation tools and platforms with lower environmental impact, and avoid unnecessary duplication of automation systems.</p>
 				</section>
 				<section class="notoc" data-standard="AWS WAF, Azure WAF, GPF" data-considerations="Security" data-categories="AI, Performance, Software">
 					<h4 id="necessary-tasks">Success Criterion: Necessary tasks</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#necessary-tasks">Resources</a></p>
-					<p>Run automated tasks only when necessary to reduce unnecessary resources/resource utlisation/processing cycles.</p>
+					<p>Run automated tasks only when they are needed to avoid unnecessary resource use.</p>
 				</section>
 				<section class="notoc" data-standard="AWS WAF, Azure WAF, GR491" data-considerations="Security" data-categories="Performance, Software">
 					<h4 id="automated-scaling">Success Criterion: Automated scaling</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#automated-scaling">Resources</a></p>
-					<p>Use automated scaling to adjust server capacity based on demand, ensuring efficient resource allocation during traffic spikes. Implement buffering and throttling to manage load and maintain performance without overprovisioning. Also use automation to promptly scale resources back down based on demand.</p>
+					<p>Use autoscaling to adjust server capacity based on demand. Implement buffering and throttling to manage load pressures. Scale resources up during high demand and scale down when demand drops to avoid overprovisioning.</p>
 				</section>
 				<section class="notoc" data-standard="" data-considerations="Accessibility, Security" data-categories="AI, Performance, Software">
 					<h4 id="suspicious-activity-management">Success Criterion: Suspicious activity management</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#suspicious-activity-management">Resources</a></p>
-					<p>Restrict the activity of unwanted and unnecessary third-party crawlers, suspicious user agents, unwanted users, bots, and scrapers from accessing or downloading your content. Follow best practices, such as server access rules and security tools, while ensuring your content remains accessible to users, search engines and any helpful, welcome crawlers. Consider that scrapers may be used to inform and train large language models.</p>
+					<p>Restrict unwanted and unnecessary third-party crawlers, user agents, bots, and scrapers using security controls, while ensuring content remains accessible to legitimate users, search engines, and helpful or authorized crawlers. Take into account that some scrapers may be used for beneficial purposes, including informing or training large language models.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
