@@ -4184,11 +4184,11 @@
 					"id": "calculate-the-environmental-impact",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#calculate-the-environmental-impact",
 					"guideline": "Calculate the environmental impact",
-					"subheading": "Calculate the environmental impact of the project and any tooling you use, and even that of a competitor, where possible, as this may be useful for comparison.",
+					"subheading": "Assess and compare full life cycle environmental impacts, including those of third-party services, to inform sustainable design decisions.",
 					"criteria": [
 						{
 							"title": "Life-cycle assessment",
-							"description": "Conduct a life-cycle analysis/assessment (LCA) to define sustainability-related functional unit impacts throughout a project's lifetime.",
+							"description": "Conduct a life cycle assessment (LCA) to understand the environmental impact of each functional unit - a defined measure of a product or service being assessed - including lifecycle greenhouse gas (GHG) emissions and other relevant environmental impacts across the full project lifecycle.",
 							"resources": [
 								{
 
@@ -4227,7 +4227,7 @@
 						},
 						{
 							"title": "Competitor impact",
-							"description": "Calculate the environmental impact of your project compared to that of market alternatives to inform decision-making targets. Establish the need for your product by comparing the value offered by your project compared to these same alternatives.",
+							"description": "Evaluate the environmental impact of your project against comparable alternatives to inform decision-making targets. Determine whether the project's additional value or sustainability benefits justify its environmental impacts.",
 							"resources": [
 								{
 									"Apples and oranges? The challenges of comparing sustainability reporting": "https://insights.ieseg.fr/en/resource-center/csr-sustainability-diversity/comparing-sustainability-reporting/",
