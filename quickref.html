@@ -388,12 +388,11 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a></legend>
-					<label><input type="checkbox"><span>Regularly audit for and delete so-called "dark data" that is single-use, redundant, or abandoned in order to reduce storage demand and energy use.</span></label>
-					<label><input type="checkbox"><span>Assign expiration and/or maximum retention dates to stored data where appropriate, treating excess data as a form of technical debt. Observe any applicable minimum data retention periods. Make data cleanup an established organization-wide routine to prevent long-term data accumulation.</span></label>
-					<label><input type="checkbox"><span>Implement a data classification and tagging policy to improve visibility, simplify management, and enable efficient removal of outdated or unused data.</span></label>
-					<label><input type="checkbox"><span>Store data only when it cannot be easily or accurately regenerated.</span></label>
-					<label><input type="checkbox"><span>Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers. Establish mechanisms to ensure identifiable user information does not appear in logs to reduce security and privacy risks and exposure.</span></label>
-					<label><input type="checkbox"><span>Make large, long-term assets available for easy download when in persistent use so users are not required to re-access the server for repeat downloads.</span></label>
+					<label><input type="checkbox"><span>Regularly remove unused or obsolete data ("dark data") to reduce storage and energy costs, and manage whether and how long data is stored.</span></label>
+					<label><input type="checkbox"><span>Use classification and tagging policies to define and manage data lifecycle rules, including retention, expiration, and archival.</span></label>
+					<label><input type="checkbox"><span>Store data only where it provides lasting operational, analytical, or legal value and cannot be easily regenerated or replaced. Remove or archive it when it becomes obsolete. Avoid unnecessary duplication and use efficient storage practices such as compression, caching, and storage optimization techniques.</span></label>
+					<label><input type="checkbox"><span>Manage logs with regular rotation, retention, compression, and backup practices, including scheduling resource-intensive operations during low-activity periods where practical to reduce energy demand and operational overhead. Use resilient backup strategies, including off-site storage when necessary for resilience or recovery, and remove sensitive information from logs wherever possible to minimize security and privacy risks.</span></label>
+					<label><input type="checkbox"><span>Make large, long-term assets easily downloadable so users do not need repeated server requests.</span></label>
 					<p><strong>GRI:</strong> Low (Materials) / Low (Energy) / Low (Water) / Low (Emissions)</p>
 				</fieldset>
 			</form>

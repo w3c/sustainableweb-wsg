@@ -2105,36 +2105,31 @@
 			</section>
 			<section> <!-- Store data according to the needs of your users -->
 				<h3>Store data according to the needs of your users</h3>
-				<p class="subheading">Set expiration dates on data so it can be archived, made available offline, or removed when no longer used or required, with the remaining content tagged for future management.</p>
+				<p class="subheading">Regularly manage and reduce stored data (including content, logs, media, and downloads) using retention, compression, and lifecycle policies, while maintaining efficient access to long-term assets.</p>
 				<section class="notoc" data-standard="Azure WAF, GPF" data-considerations="Security" data-categories="Content, E-Waste, Hardware, Performance">
-					<h4 id="reduce-redundancy">Success Criterion: Reduce redundancy</h4>
-					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#reduce-redundancy">Resources</a></p>
-					<p>Regularly audit for and delete so-called "dark data" that is single-use, redundant, or abandoned in order to reduce storage demand and energy use.</p>
+					<h4 id="remove-unused-data">Success Criterion: Remove unused data</h4>
+					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#remove-unused-data">Resources</a></p>
+					<p>Regularly remove unused or obsolete data ("dark data") to reduce storage and energy costs, and manage whether and how long data is stored.</p>
 				</section>
 				<section class="notoc" data-standard="AWS WAF, GPF" data-considerations="Security" data-categories="Content, E-Waste, Hardware, Performance">
-					<h4 id="expiration-dates">Success Criterion: Expiration dates</h4>
-					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#expiration-dates">Resources</a></p>
-					<p>Assign expiration and/or maximum retention dates to stored data where appropriate, treating excess data as a form of technical debt. Observe any applicable minimum data retention periods. Make data cleanup an established organization-wide routine to prevent long-term data accumulation.</p>
-				</section>
-				<section class="notoc" data-standard="AWS WAF" data-considerations="Security" data-categories="Content, E-Waste, Hardware, Performance">
-					<h4 id="classify-and-tag">Success Criterion: Classify and tag</h4>
-					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#classify-and-tag">Resources</a></p>
-					<p>Implement a data classification and tagging policy to improve visibility, simplify management, and enable efficient removal of outdated or unused data.</p>
+					<h4 id="lifecycle-management">Success Criterion: Lifecycle management</h4>
+					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#lifecycle-management">Resources</a></p>
+					<p>Use classification and tagging policies to define and manage data lifecycle rules, including retention, expiration, and archival.</p>
 				</section>
 				<section class="notoc" data-standard="AWS WAF, GPF" data-considerations="Security" data-categories="Content, E-Waste, Hardware, Performance">
 					<h4 id="efficient-storage">Success Criterion: Efficient storage</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#efficient-storage">Resources</a></p>
-					<p>Store data only when it cannot be easily or accurately regenerated.</p>
+					<p>Store data only where it provides lasting operational, analytical, or legal value and cannot be easily regenerated or replaced. Remove or archive it when it becomes obsolete. Avoid unnecessary duplication and use efficient storage practices such as compression, caching, and storage optimization techniques.</p>
 				</section>
 				<section class="notoc" data-standard="AWS WAF, Azure WAF, GPF, GR491" data-considerations="Security" data-categories="Content, E-Waste, Hardware, Performance">
 					<h4 id="optimized-logging">Success Criterion: Optimized logging</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#optimized-logging">Resources</a></p>
-					<p>Optimize log collection and storage by scheduling backups during low-activity hours, rotating logs appropriately, and using off-site, sustainable providers. Establish mechanisms to ensure identifiable user information does not appear in logs to reduce security and privacy risks and exposure.</p>
+					<p>Manage logs with regular rotation, retention, compression, and backup practices, including scheduling resource-intensive operations during low-activity periods where practical to reduce energy demand and operational overhead. Use resilient backup strategies, including off-site storage when necessary for resilience or recovery, and remove sensitive information from logs wherever possible to minimize security and privacy risks.</p>
 				</section>
 				<section class="notoc" data-standard="" data-considerations="Accessibility, Security" data-categories="Content, E-Waste, Hardware, Performance">
 					<h4 id="asset-downloads">Success Criterion: Asset downloads</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#asset-downloads">Resources</a></p>
-					<p>Make large, long-term assets available for easy download when in persistent use so users are not required to re-access the server for repeat downloads.</p>
+					<p>Make large, long-term assets easily downloadable so users do not need repeated server requests.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
