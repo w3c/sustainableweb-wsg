@@ -1547,7 +1547,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/non-standard-code.html"
 				},
 				{
-					"id": "built-in-over-custom",
+					"id": "custom-code",
 					"title": "Replace code that can instead use more efficient native APIs",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Ensure code follows good semantic practices](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices).",
 					"description": [
@@ -1573,7 +1573,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/built-in-over-custom.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/custom-code.html"
 				},
 				{
 					"id": "asynchronous-code",
