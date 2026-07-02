@@ -375,11 +375,10 @@
 					<p><strong>GRI:</strong> Low (Materials) / Low (Energy) / Low (Water) / Low (Emissions)</p>
 				</fieldset>
 				<fieldset>
-					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately">Use Content Delivery Networks (CDNs) appropriately</a></legend>
-					<label><input type="checkbox"><span>Deploy static content, assets, and other read-only resources via a Content Delivery Network (<abbr title="Content Delivery Network">CDN</abbr>) on a case-by-case basis, where judged to be beneficial. Carefully evaluate the environmental impact of any CDN service used, similar to a web hosting provider..</span></label>
-					<label><input type="checkbox"><span>Select CDN providers that make commitments to sustainability and report on their progress.</span></label>
-					<label><input type="checkbox"><span>When serving an exclusively local audience, consider whether a CDN is required at all. Instead, select hosting providers with servers close to your target audience.</span></label>
-					<label><input type="checkbox"><span>Avoid deploying dynamic or frequently changing resources to a CDN. Browser behaviors such as cache partitioning and cross-origin resource sharing (<abbr title="Cross-Origin Resource Sharing">CORS</abbr>) can limit performance gains, hinder caching and interaction, and attempting to override these can introduce security or privacy risks. This does not apply to static assets or <abbr title="JavaScript Object Notation">JSON</abbr> files, which are well suited to CDN delivery.</span></label>
+					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial">Use Content Delivery Networks (CDNs) when beneficial</a></legend>
+					<label><input type="checkbox"><span>Use a Content Delivery Network (<abbr title="Content Delivery Network">CDN</abbr>) for static content, assets, and other read-only resources only where it provides clear benefits, evaluating performance improvements and environmental impact on a case-by-case basis in line with broader web hosting choices. When serving an exclusively local audience, evaluate whether a CDN is necessary, and prefer geographically close hosting instead.</span></label>
+					<label><input type="checkbox"><span>Choose CDN providers that demonstrate credible, evidence-based web sustainability commitments.</span></label>
+					<label><input type="checkbox"><span>Avoid deploying dynamic or frequently changing resources to a CDN, as browser mechanisms like cache partitioning and cross-origin resource sharing (<abbr title="Cross-Origin Resource Sharing">CORS</abbr>) can limit caching benefits and interaction performance, reducing resource efficiency, while workarounds may introduce security or privacy risks.</span></label>
 					<p><strong>GRI:</strong> Low (Materials) / Medium (Energy) / Low (Water) / Medium (Emissions)</p>
 				</fieldset>
 				<fieldset>

@@ -3575,25 +3575,32 @@
 					"tags": ["AI", "JavaScript", "Networking", "Performance"]
 				},
 				{
-					"id": "use-content-delivery-networks-cdns-appropriately",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately",
-					"guideline": "Use Content Delivery Networks (CDNs) appropriately",
-					"subheading": "Use CDNs where they bring a sustainability benefit, ensuring the provider itself is sustainable, has nodes local to an audience, and they are only used to serve static resources on them.",
+					"id": "use-content-delivery-networks-cdns-when-beneficial",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial",
+					"guideline": "Use Content Delivery Networks (CDNs) when beneficial",
+					"subheading": "Use CDNs and data location strategically for static content and processing only when they improve efficiency and sustainability, while avoiding unnecessary distribution and transfers.",
 					"criteria": [
 						{
 							"title": "Global CDNs",
-							"description": "Deploy static content, assets, and other read-only resources via a Content Delivery Network (CDN) on a case-by-case basis, where judged to be beneficial. Carefully evaluate the environmental impact of any CDN service used, similar to a web hosting provider.",
+							"description": "Use a Content Delivery Network (CDN) for static content, assets, and other read-only resources only where it provides clear benefits, evaluating performance improvements and environmental impact on a case-by-case basis in line with broader web hosting choices. When serving an exclusively local audience, evaluate whether a CDN is necessary, and prefer geographically close hosting instead.",
 							"resources": [
 								{
+									"AWS WAF - SUS01-BP01 - Choose Region based on both business requirements and sustainability goals": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_region_a2.html",
+									"AWS WAF - SUS02-BP04 - Optimize geographic placement of workloads based on their networking requirements": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a5.html",
 									"Caching on a Content Delivery Network (CDN)": "https://www.debugbear.com/blog/cdn-cache",
 									"Carbon accounting in the Cloud (PDF)": "https://arxiv.org/pdf/2406.09645",
 									"CDN Compare": "https://www.cdnperf.com/cdn-compare",
 									"Cloud Carbon Footprint": "https://www.cloudcarbonfootprint.org/",
 									"Cloud Computing, Server Utilization, & the Environment": "https://aws.amazon.com/blogs/aws/cloud-computing-server-utilization-the-environment/",
+									"Consume Local: Towards Carbon Free Content Delivery (PDF)": "https://nms.kcl.ac.uk/netsys/~aravindh/publications/ICDCS2018-consume-local.pdf",
 									"Data center emissions probably 662% higher than big tech claims. Can it keep up the ruse?": "https://www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech",
+									"Design for environmental sustainability": "https://docs.cloud.google.com/architecture/framework/sustainability",
+									"Edge computing": "https://en.wikipedia.org/wiki/Edge_computing",
+									"Electricity Maps": "https://app.electricitymaps.com/map/live/fifteen_minutes",
 									"Energy Consumption in Data Centres and Broadband Communication Networks in the EU": "https://publications.jrc.ec.europa.eu/repository/handle/JRC135926",
 									"Energy-efficient Cloud Computing Technologies and Policies for an Eco-friendly Cloud Market": "https://digital-strategy.ec.europa.eu/en/library/energy-efficient-cloud-computing-technologies-and-policies-eco-friendly-cloud-market",
 									"Future trends of Green All Optical Networks and ICT Infrastructure in a large context": "https://www.researchgate.net/publication/368690756_Future_trends_of_Green_All_Optical_Networks_and_ICT_Infrastructure_in_a_large_context_-_trends_to_2050",
+									"Geographical Server Relocation: Opportunities and Challenges (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final20.pdf",
 									"GPF - General Policy Framework (PDF) - 2.3 - Specifications (Connection Issues)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 6.2 - Front-End (Caching Mechanisms)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 6.7 - Front-End (Server Host)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -3625,16 +3632,21 @@
 									"How much water do data centres use?": "https://smartwatermagazine.com/news/h2o-building-services/how-much-water-do-data-centres-use",
 									"How using a CDN is better for people and the planet": "https://www.wholegraindigital.com/blog/how-using-a-cdn-is-better-for-people-and-the-planet/",
 									"Idle Power Matters": "https://tag-env-sustainability.cncf.io/blog/2024-06-idle-power-matters-kepler-metrics-for-public-cloud-energy-efficiency/",
+									"Internet Exchange Map": "https://www.internetexchangemap.com/#/",
+									"Is my host fast yet?": "https://ismyhostfastyet.com/",
 									"Investigating the Inconsistencies among Energy and Energy Intensity Estimates of the Internet": "https://www.aramis.admin.ch/Default?DocumentID=67656&Load=true",
 									"Is My Host Fast Yet?": "https://ismyhostfastyet.com/",
 									"LocalCDN": "https://www.localcdn.org/",
 									"Measuring the Emissions & Energy Footprint of the ICT Sector (PDF)": "https://documents1.worldbank.org/curated/en/099121223165540890/pdf/P17859712a98880541a4b71d57876048abb.pdf",
+									"Microsoft Azure WAF - Deploy to low-carbon regions": "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-platform#deploy-to-low-carbon-regions",
 									"Power and Energy Efficiency": "https://www.ietf.org/archive/id/draft-opsawg-poweff-01.html",
 									"Public CDNs Are Useless and Dangerous": "https://httptoolkit.com/blog/public-cdn-risks/",
 									"Reporting requirements on the energy performance and sustainability of data centres for the Energy Efficiency Directive": "https://op.europa.eu/en/publication-detail/-/publication/d9404897-7221-11ee-9220-01aa75ed71a1/language-en",
 									"Requirements for Energy Efficiency Management": "https://www.ietf.org/archive/id/draft-stephan-green-ucs-and-reqs-02.html",
+									"Submarine Cable Map": "https://www.submarinecablemap.com/",
 									"The Hosting Server Location & What It Means For Website SEO": "https://www.linkedin.com/pulse/hosting-server-location-what-means-website-seo-ernest-ekwoge-metuge/",
 									"The staggering ecological impacts of computation and the cloud": "https://computing.mit.edu/news/the-staggering-ecological-impacts-of-computation-and-the-cloud/",
+									"Towards Game-Theoretic Approaches to Attributing Carbon in Cloud Data Centers (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final7.pdf",
 									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
 									"United Nations SDGS - Goal 6 - Water & Sanitation": "https://sdgs.un.org/goals/goal6#targets_and_indicators",
 									"United Nations SDGS - Goal 7 - Sustainable Energy": "https://sdgs.un.org/goals/goal7#targets_and_indicators",
@@ -3648,7 +3660,7 @@
 						},
 						{
 							"title": "Sustainability commitment",
-							"description": "Select CDN providers that make commitments to sustainability and report on their progress.",
+							"description": "Choose CDN providers that demonstrate credible, evidence-based web sustainability commitments.",
 							"resources": [
 								{
 									"Akaimi ESG Sustainability": "https://www.akamai.com/company/corporate-responsibility/sustainability",
@@ -3662,43 +3674,8 @@
 							]
 						},
 						{
-							"title": "Local servers",
-							"description": "When serving an exclusively local audience, consider whether a CDN is required at all. Instead, select hosting providers with servers close to your target audience.",
-							"resources": [
-								{
-									"AWS WAF - SUS01-BP01 - Choose Region based on both business requirements and sustainability goals": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_region_a2.html",
-									"AWS WAF - SUS02-BP04 - Optimize geographic placement of workloads based on their networking requirements": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a5.html",
-									"Consume Local: Towards Carbon Free Content Delivery (PDF)": "https://nms.kcl.ac.uk/netsys/~aravindh/publications/ICDCS2018-consume-local.pdf",
-									"Design for environmental sustainability": "https://docs.cloud.google.com/architecture/framework/sustainability",
-									"Edge computing": "https://en.wikipedia.org/wiki/Edge_computing",
-									"Electricity Maps": "https://app.electricitymaps.com/map/live/fifteen_minutes",
-									"Geographical Server Relocation: Opportunities and Challenges (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final20.pdf",
-									"GPF - General Policy Framework (PDF) - 2.3 - Specifications (Connection Issues)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 6.2 - Front-End (Caching Mechanisms)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 6.7 - Front-End (Server Host)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 7.1 - Back-End (Reusability Caching)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 8.1 - Hosting (Hosting Provider)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 8.5 - Hosting (Renewable Documentation)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 8.6 - Hosting (Local Datacenters)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 1-8003 - Datacenter Location": "https://gr491.isit-europe.org/en/crit.php?id=1-8003-hosting-data-centers-are-rarely-installed-in-the",
-									"GR491 - 2-8020 - Datacenter Hub": "https://gr491.isit-europe.org/en/crit.php?id=2-8020-hosting-physical-trips-to-datacenters-are-by-nature",
-									"Internet Exchange Map": "https://www.internetexchangemap.com/#/",
-									"Is my host fast yet?": "https://ismyhostfastyet.com/",
-									"Microsoft Azure WAF - Deploy to low-carbon regions": "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-application-platform#deploy-to-low-carbon-regions",
-									"Submarine Cable Map": "https://www.submarinecablemap.com/",
-									"Towards Game-Theoretic Approaches to Attributing Carbon in Cloud Data Centers (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final7.pdf",
-									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
-									"United Nations SDGS - Goal 6 - Water & Sanitation": "https://sdgs.un.org/goals/goal6#targets_and_indicators",
-									"United Nations SDGS - Goal 7 - Sustainable Energy": "https://sdgs.un.org/goals/goal7#targets_and_indicators",
-									"United Nations SDGS - Goal 9 - Infrastructure": "https://sdgs.un.org/goals/goal9#targets_and_indicators",
-									"United Nations SDGS - Goal 12 - Consumption & Production": "https://sdgs.un.org/goals/goal12#targets_and_indicators",
-									"United Nations SDGS - Goal 13 - Climate Change": "https://sdgs.un.org/goals/goal13#targets_and_indicators"
-								}
-							]
-						},
-						{
 							"title": "Inappropriate resources",
-							"description": "Avoid deploying dynamic or frequently changing resources to a CDN. Browser behaviors such as cache partitioning and cross-origin resource sharing (CORS) can limit performance gains, hinder caching and interaction, and attempting to override these can introduce security or privacy risks. This does not apply to static assets or JSON files, which are well suited to CDN delivery.",
+							"description": "Avoid deploying dynamic or frequently changing resources to a CDN, as browser mechanisms like cache partitioning and cross-origin resource sharing (CORS) can limit caching benefits and interaction performance, reducing resource efficiency, while workarounds may introduce security or privacy risks.",
 							"resources": [
 								{
 									"Cross-Origin Resource Sharing (CORS)": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
