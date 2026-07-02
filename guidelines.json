@@ -1574,14 +1574,14 @@
 					"tags": ["KPIs", "Networking", "Performance", "Research", "Social Equity", "Strategy"]
 				},
 				{
-					"id": "remove-unnecessary-or-redundant-information",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-or-redundant-information",
-					"guideline": "Remove unnecessary or redundant information",
-					"subheading": "Remove redundant characters from code to reduce the amount of data being stored and transferred to devices.",
+					"id": "minify-and-remove-unused-code",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code",
+					"guideline": "Minify and remove unused code",
+					"subheading": "Minify code and data, and remove unused characters to reduce file size and improve loading efficiency and maintainability.",
 					"criteria": [
 						{
 							"title": "Minified code",
-							"description": "Remove unnecessary white space, comments, and other non-essential characters from code and data files to reduce file sizes and improve loading times. This applies to HTML, CSS, JavaScript, JSON, SVG, and other relevant file types.",
+							"description": "Minify code and data files by removing unnecessary whitespace, comments, and non-essential characters. Apply this consistently across the system to reduce file size and improve loading efficiency. This helps reduce cumulative data transfer and processing overhead at scale, improving resource efficiency and lowering energy consumption.",
 							"resources": [
 								{
 									"Comparing HTML Minifiers": "https://meiert.com/blog/comparing-html-minifiers/",
@@ -1596,12 +1596,36 @@
 									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability"
 								}
 							]
+						},
+						{
+							"title": "Remove redundancy",
+							"description": "Identify and remove unused or dead code, especially in CSS and JavaScript.",
+							"resources": [
+								{
+									"Browser Default Styles": "https://browserdefaultstyles.com/",
+									"Coverage: Find unused JavaScript and CSS": "https://developer.chrome.com/docs/devtools/coverage?hl=en",
+									"Front-End Performance 2021: Build Optimizations": "https://www.smashingmagazine.com/2021/01/front-end-performance-build-optimizations/",
+									"How large DOM sizes affect interactivity": "https://web.dev/articles/dom-size-and-interactivity?hl=en",
+									"How To Reduce Unused CSS And Speed Up Your Website": "https://www.debugbear.com/blog/reduce-unused-css",
+									"How To Reduce Unused JavaScript": "https://www.debugbear.com/blog/reduce-unused-javascript",
+									"Reduce JavaScript payloads with tree shaking": "https://web.dev/articles/reduce-javascript-payloads-with-tree-shaking?hl=en",
+									"Remove unused CSS": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules?hl=en",
+									"The cost of not deleting code": "https://www.asystad.net/the-cost-of-not-deleting-code/",
+									"Tree shaking": "https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking",
+									"Tree Shaking Patterns": "https://www.patterns.dev/vanilla/tree-shaking/",
+									"Tree-Shaking: A Reference Guide": "https://www.smashingmagazine.com/2021/05/tree-shaking-reference-guide/",
+									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
+									"Who Killed My Battery: Analyzing Mobile Browser Energy Consumption (PDF)": "https://mobisocial.stanford.edu/papers/boneh-www2012.pdf"
+								}
+							]
 						}
 					],
 					"benefits": [
 						{
 							"Conversion": "Faster page speeds improve user experience across the board. This makes users less likely to abandon their journey or search for their information elsewhere.",
-							"Performance": "Less data transferred means reduced loading times. White space itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact."
+							"Economic": "Eliminating unused code means reducing maintenance work and expense. It can otherwise affect other code or add unnecessary complexity.",
+							"Environment": "Removing unused code eliminates wasted bytes, reducing download size and potentially improving rendering time.",
+							"Performance": "Less data transferred means reduced loading times. Reducing downloaded code that otherwise offers no benefit to users frees up cache and RAM resources on their devices. White space itself is ignored by rendering engines, meaning the client-side impact is minimal. However, reducing data transfer has a positive impact."
 						}
 					],
 					"example": "!function(e,t){\"use strict\";\"object\"==typeof module&&\"object\"==typeof module.exports?module.exports=e.document?t(e,!0):function(e){if(!e.document)throw new Error(\"jQuery requires a window with a document\");return t(e)}:t(e)}(\"undefined\"!=typeof window?window:this,function(g,e){\"use strict\";var t=[],r=Object.getPrototypeOf,s=t.slice,v=t.flat?function(e){return t.flat.call(e)}:function(e){return t.concat.apply([],e)},u=t.push,i=t.indexOf",
@@ -1641,45 +1665,6 @@
 						}
 					],
 					"example": "link.addEventListener(\"click\", (e) => {\r\n\te.preventDefault();\r\n\timport(\"\/modules\/my-module.js\")\r\n\t.then((module) => {\r\n\t\t\/* Do something *\/\r\n\t})\r\n\t.catch((err) => {\r\n\t\tconsole.error(err.message);\r\n\t});});",
-					"tags": ["CSS", "JavaScript", "Performance"]
-				},
-				{
-					"id": "remove-unnecessary-code",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-code",
-					"guideline": "Remove unnecessary code",
-					"subheading": "Clear out dead or unused code as it builds up in a project to reduce the amount of wasted data being transferred.",
-					"criteria": [
-						{
-							"title": "Remove redundancy",
-							"description": "Identify and eliminate unused and dead code, commonly within CSS and JavaScript.",
-							"resources": [
-								{
-									"Browser Default Styles": "https://browserdefaultstyles.com/",
-									"Coverage: Find unused JavaScript and CSS": "https://developer.chrome.com/docs/devtools/coverage?hl=en",
-									"Front-End Performance 2021: Build Optimizations": "https://www.smashingmagazine.com/2021/01/front-end-performance-build-optimizations/",
-									"How large DOM sizes affect interactivity": "https://web.dev/articles/dom-size-and-interactivity?hl=en",
-									"How To Reduce Unused CSS And Speed Up Your Website": "https://www.debugbear.com/blog/reduce-unused-css",
-									"How To Reduce Unused JavaScript": "https://www.debugbear.com/blog/reduce-unused-javascript",
-									"Reduce JavaScript payloads with tree shaking": "https://web.dev/articles/reduce-javascript-payloads-with-tree-shaking?hl=en",
-									"Remove unused CSS": "https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules?hl=en",
-									"The cost of not deleting code": "https://www.asystad.net/the-cost-of-not-deleting-code/",
-									"Tree shaking": "https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking",
-									"Tree Shaking Patterns": "https://www.patterns.dev/vanilla/tree-shaking/",
-									"Tree-Shaking: A Reference Guide": "https://www.smashingmagazine.com/2021/05/tree-shaking-reference-guide/",
-									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
-									"Who Killed My Battery: Analyzing Mobile Browser Energy Consumption (PDF)": "https://mobisocial.stanford.edu/papers/boneh-www2012.pdf"
-								}
-							]
-						}
-					],
-					"benefits": [
-						{
-							"Economic": "Eliminating unused code means reducing maintenance work and expense. It can otherwise affect other code' or add unnecessary complexity.",
-							"Environment": "Removing unused code eliminates wasted bytes, reducing download size and potentially improving rendering time.",
-							"Performance": "Reducing downloaded code that otherwise offers no benefit to users frees up cache and RAM resources on their devices, while saving time."
-						}
-					],
-					"example": "export function read(props) { return props.book }\r\nimport { read } from 'utilities';\r\neventHandler = (e) => { read({ book: e.target.value })}",
 					"tags": ["CSS", "JavaScript", "Performance"]
 				},
 				{

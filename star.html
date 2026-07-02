@@ -1331,7 +1331,7 @@
 					<details> <!-- Minify your front-end code if it is public facing -->
 						<summary id="minified-code">Minify your front-end code if it is public facing</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-or-redundant-information">Remove unnecessary or redundant information</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code">Minify and remove unused code</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism in which your production-ready source code can have unnecessary data such as code comments, white space data, and machine-detectable redundancy removed to deliver the smallest file payload possible to the user. This will improve both the speed of your site and lower screen usage (wait) time.</p>
 						<p>In terms of machine testability, the functions of a minification tool can be replicated for the languages HTML, CSS, and JavaScript using scripts and these can identify improvements to be made. Function names can be uglified (shortened to the smallest value) to reduce the size of the payload further and reporting tools can make recommendations based upon feedback.</p>
@@ -1353,6 +1353,32 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
+				<div class="summary">
+					<details> <!-- Eliminate redundant code through coverage or tree shaking -->
+						<summary id="remove-redundancy">Eliminate redundant code through coverage or tree shaking</summary>	
+						<p><strong>Applicability</strong></p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code">Minify and remove unused code</a>.</p>
+						<p><strong>Description</strong></p>
+						<p>Eliminate redundancy within an application or website that may have been either introduced previously or through error. By using browser development tooling such as DevTools coverage or techniques like tree shaking any code which is no longer associated with functionality can be identified as potentially fit for removal (always verify this is accurate).</p>
+						<p>For machine testability, redundant (orphaned/unused) code can be identified by its lack of association with existing components within the web page or application. Consideration will also need to be given to components that may be generated mid or post-render in addition to styles that only trigger when a certain state occurs (such as through hover or the target pseudo selector).</p>
+						<p><strong>Examples</strong></p>
+						<ol>
+							<li><a href="https://web.dev/articles/reduce-javascript-payloads-with-tree-shaking?hl=en">This article by Jeremy Wagner</a> showcases the importance of tree shaking within projects, including the history behind it and how it functions, in addition, it provides a few useful code examples.</li>
+							<li>You can identify unused code within a project using Google Developer Tools in the <a href="https://developer.chrome.com/docs/devtools/coverage?hl=en-us">Coverage Panel</a>. While there are a few gotchas (such as identifying inactive pseudo selectors), it is a useful way to weed CSS.</li>
+						</ol>
+						<p><strong>Tests</strong></p>
+						<p>Procedure</p>
+						<ol>
+							<li>Check CSS to determine if redundancy exists within your code.</li>
+							<li>Check packages to determine if redundancy exists within JavaScript.</li>
+							<li>Check if redundant code may be reintroduced, if not, remove it.</li>
+						</ol>
+						<p>Expected Results</p>
+						<ol>
+							<li>All checks above are true.</li>
+						</ol>
+					</details>
+				</div>
 				</div>
 				<div class="summary">
 					<details> <!-- Implement code-splitting where appropriate to reduce payloads -->
@@ -1375,32 +1401,6 @@
 							<li>Check if CSS would benefit from being split into separate style sheets based on queries.</li>
 							<li>Check if JavaScript can be modularized and imported when required.</li>
 							<li>Check if obfuscation exists, if not code-split the source code.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
-					<details> <!-- Eliminate redundant code through coverage or tree shaking -->
-						<summary id="remove-redundancy">Eliminate redundant code through coverage or tree shaking</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-code">Remove unnecessary code</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Eliminate redundancy within an application or website that may have been either introduced previously or through error. By using browser development tooling such as DevTools coverage or techniques like tree shaking any code which is no longer associated with functionality can be identified as potentially fit for removal (always verify this is accurate).</p>
-						<p>For machine testability, redundant (orphaned/unused) code can be identified by its lack of association with existing components within the web page or application. Consideration will also need to be given to components that may be generated mid or post-render in addition to styles that only trigger when a certain state occurs (such as through hover or the target pseudo selector).</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://web.dev/articles/reduce-javascript-payloads-with-tree-shaking?hl=en">This article by Jeremy Wagner</a> showcases the importance of tree shaking within projects, including the history behind it and how it functions, in addition, it provides a few useful code examples.</li>
-							<li>You can identify unused code within a project using Google Developer Tools in the <a href="https://developer.chrome.com/docs/devtools/coverage?hl=en-us">Coverage Panel</a>. While there are a few gotchas (such as identifying inactive pseudo selectors), it is a useful way to weed CSS.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check CSS to determine if redundancy exists within your code.</li>
-							<li>Check packages to determine if redundancy exists within JavaScript.</li>
-							<li>Check if redundant code may be reintroduced, if not, remove it.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
