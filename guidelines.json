@@ -3434,7 +3434,7 @@
 					"criteria": [
 						{
 							"title": "Data backups",
-							"description": "Ensure backups of system and user data are secure and incremental to minimize storage use, reduce backup time. Establish mechanisms to prevent user identifiable information from being stored long term, limit access, and protect against data loss or breaches.",
+							"description": "Ensure backups of systems and user data are secure and incremental to minimize storage use and reduce backup time. Limit access to backups, and establish mechanisms to prevent user-identifiable information from being stored long term. Protect backups against data loss or misuse.",
 							"resources": [
 								{
 									"The 3-2-1 Backup Strategy": "https://www.backblaze.com/blog/the-3-2-1-backup-Strategy/",
