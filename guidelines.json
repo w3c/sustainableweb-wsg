@@ -3397,11 +3397,11 @@
 					"id": "define-the-frequency-of-data-refreshes",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#define-the-frequency-of-data-refreshes",
 					"guideline": "Define the frequency of data refreshes",
-					"subheading": "Decide when to refresh data based on a balance of user and sustainability considerations.",
+					"subheading": "Decide when to refresh data based on a balance of user and sustainability requirements.",
 					"criteria": [
 						{
 							"title": "Refresh frequency",
-							"description": "Define the refresh frequency for the cache, local data, and page content based on user needs. Verify performance, data accuracy, and resource efficiency.",
+							"description": "Define cache refresh rates based on user needs, accuracy requirements, and resource efficiency to determine when data is updated.",
 							"resources": [
 								{
 									"A Review on Green Caching Strategies for Next Generation Communication Networks": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9272291",
