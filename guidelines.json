@@ -3704,11 +3704,11 @@
 					"id": "ensure-infrastructure-fits-project-requirements",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-infrastructure-fits-project-requirements",
 					"guideline": "Ensure infrastructure fits project requirements",
-					"subheading": "Maintain the infrastructure you require rather than over-provisioning. Autoscale to meet demand and preserve hardware resources.",
+					"subheading": "Use demand-matched, autoscaling infrastructure to meet demand efficiently without overprovisioning.",
 					"criteria": [
 						{
 							"title": "Lowest requirements",
-							"description": "Select infrastructure that meets your requirements and customer agreements without over-provisioning. Favor standalone instances over multi-zone or distributed setups when requirements allow. Provision for average loads rather than peaks to ensure efficient resource use. Use autoscaling to handle fluctuations without underutilizing infrastructure.",
+							"description": "Select infrastructure that meets your requirements and customer agreements without over-provisioning. Favor standalone instances over multi-zone or distributed setups when requirements allow. Provision for average loads rather than peak loads to ensure efficient resource use.",
 							"resources": [
 								{
 									"AWS WAF - SUS02-BP02 - Align SLAs with sustainability goals": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a3.html",
