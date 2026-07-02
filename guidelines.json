@@ -2105,14 +2105,14 @@
 					"tags": ["Accessibility", "AI", "HTML", "Marketing", "Usability"]
 				},
 				{
-					"id": "use-sustainability-beneficial-user-preference-media-queries",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainability-beneficial-user-preference-media-queries",
-					"guideline": "Use sustainability beneficial user preference media queries",
-					"subheading": "Use sustainable media queries, such as dark mode and scripting media queries, to customize an interface to suit user preferences and reduce emissions.",
+					"id": "use-media-queries-that-support-sustainability-goals",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-media-queries-that-support-sustainability-goals",
+					"guideline": "Use media queries that support sustainability goals",
+					"subheading": "Support user preferences via media queries for color, motion, contrast, data use, and related settings to improve accessibility and efficiency.",
 					"criteria": [
 						{
 							"title": "Media and preference queries",
-							"description": "Accommodate common user preferences, such as prefers-color-scheme, with corresponding CSS media queries. Consider accounting for additional user preferences, including monochrome, prefers-contrast, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion preference queries where these will benefit your users. Use print and scripting media queries when they can improve sustainability.",
+							"description": "Accommodate common user preferences using CSS media queries such as prefers-color-scheme. Account for additional preference queries, including monochrome, prefers-contrast, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion where these will benefit your users. Use print and scripting media queries where they can improve efficiency or sustainability.",
 							"resources": [
 								{
 									"A Guide To The State Of Print Stylesheets In 2018": "https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/",
