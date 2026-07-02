@@ -3032,11 +3032,11 @@
 					"id": "optimize-caching-and-support-offline-access",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access",
 					"guideline": "Optimize caching and support offline access",
-					"subheading": "Use caching on all appropriate resources, prioritizing the ability to use the resource offline if possible.",
+					"subheading": "Use caching and offline capabilities to reduce network load, improve resilience, and balance performance with sustainability.",
 					"criteria": [
 						{
 							"title": "Caching resources",
-							"description": "Use server-side caching where possible to reduce processing time and repeated database lookups or API calls. Configure caching via server settings to control file-type expiration using appropriate headers, such as Expires or Cache-Control. Cache dynamic page responses where possible to serve static versions to future users. Support client-side caching of frequently used static assets to minimize repeat server requests.",
+							"description": "Use caching to reduce processing time and repeated database queries, API calls, and network requests. Apply server-side caching for dynamic content and client-side caching for resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and minimize repeated requests for frequently used resources, balancing against added complexity and maintenance costs to improve how data is delivered.",
 							"resources": [
 								{
 									"A complete guide to HTTP caching": "https://www.jonoalderson.com/performance/http-caching/",
@@ -3071,25 +3071,33 @@
 						},
 						{
 							"title": "Offline access",
-							"description": "Ensure resources remain available and accessible even if the user is disconnected, using methods such as JavaScript Service Workers, Web Workers, and browser local storage features.",
+							"description": "Keep essential content and functionality available during network interruptions. Provide offline access using web platform capabilities, such as Progressive Web Applications (PWAs), Service Workers, Web Workers, or local storage.",
 							"resources": [
 								{
+									"Assessing the Impact of Service Workers on the Energy Efficiency of Progressive Web Apps (PDF)": "https://www.ivanomalavolta.com/files/papers/Mobilesoft_2017.pdf",
+									"Evaluating the Impact of Caching on the Energy Consumption and Performance of Progressive Web Apps (PDF)": "https://www.ivanomalavolta.com/files/papers/MOBILESoft_Caching_PWA_2020.pdf",
 									"Front-End Performance 2021: Build Optimizations": "https://www.smashingmagazine.com/2021/01/front-end-performance-build-optimizations/",
 									"Going Offline": "https://goingoffline.adactio.com/",
 									"GPF - General Policy Framework (PDF) - 2.3 - Specifications (Connection Issues)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GreenIT - 0019 - Prefer PWA over native mobile applications that are similar to the website": "https://rweb.greenit.fr/en/fiches/RWEB_0019-prefer-pwa-over-native-mobile-applications-that-are-similar-to-the-website",
 									"Implement caching, batching, and offline features": "https://climateproductleaders.org/playbook/design-frugally/implement-caching-batching-and-offline-features",
 									"Ink & Switch: Local-first Software": "https://www.inkandswitch.com/essay/local-first/",
+									"Investigating the correlation between performance scores and energy consumption of mobile web apps (PDF)": "https://www.ivanomalavolta.com/files/papers/EASE_2020.pdf",
 									"Learn PWA": "https://web.dev/learn/pwa?hl=en",
 									"Local-first Landscape": "https://www.localfirst.fm/landscape",
 									"Local-first Software": "https://lofi.so/",
 									"Offline UX design guidelines": "https://web.dev/articles/offline-ux-design-guidelines?hl=en",
 									"Progressive web apps": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps",
 									"Progressive Web Apps: Going Offline": "https://developers.google.com/codelabs/pwa-training/pwa03--going-offline?hl=en",
+									"PWA Builder": "https://www.pwabuilder.com/",
 									"Resilient web design": "https://resilientwebdesign.com/",
 									"Service workers": "https://web.dev/learn/pwa/service-workers?hl=en",
 									"SingleFile": "https://github.com/gildas-lormeau/SingleFile",
+									"Starbucks Ordering and Store Locator PWA": "https://nearform.com/work/starbucks-progressive-web-app/",
 									"The five hidden benefits of offline": "https://resco.net/blog/five-hidden-benefits-of-offline/",
 									"The Importance of Offline Options for Online Learners (PDF)": "https://jime.open.ac.uk/articles/898/files/66ed5dbae0e0c.pdf",
+									"The Carbon Impact of Web Standards (PDF)": "https://websitesustainability.com/cache/files/research23.pdf",
+									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability",
 									"Why Local-First Software Is the Future and what are its Limitations": "https://rxdb.info/articles/local-first-future.html",
 									"Why storing data offline results in climate benefits": "https://www.sustainability-times.com/energy/why-storing-data-offline-results-in-climate-benefits/",
 									"Why Your Website Should Work Offline": "https://dev.to/buildwebcrumbs/why-your-website-should-work-offline-and-what-you-should-do-about-it-fck"

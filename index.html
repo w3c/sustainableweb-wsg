@@ -1822,16 +1822,16 @@
 			</section>
 			<section> <!-- Optimize caching and support offline access -->
 				<h3>Optimize caching and support offline access</h3>
-				<p class="subheading">Use caching on all appropriate resources, prioritizing the ability to use the resource offline if possible.</p>
+				<p class="subheading">Use caching and offline capabilities to reduce network load, improve resilience, and balance performance with sustainability.</p>
 				<section class="notoc" data-standard="Azure WAF, GPF, GR491" data-considerations="" data-categories="Assets, HTML, JavaScript, Networking, Performance, Software">
 					<h4 id="caching-resources">Success Criterion: Caching resources</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#caching-resources">Resources</a></p>
-					<p>Use server-side caching where possible to reduce processing time and repeated database lookups or <abbr title="Application Programming Interface">API</abbr> calls. Configure caching via server settings to control file-type expiration using appropriate headers, such as Expires or Cache-Control. Cache dynamic page responses where possible to serve static versions to future users. Support client-side caching of frequently used static assets to minimize repeat server requests.</p>
+					<p>Use caching to reduce processing time and repeated database queries, <abbr title="Application Programming Interface">API</abbr> calls, and network requests. Apply server-side caching for dynamic content and client-side caching for resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and minimize repeated requests for frequently used resources, balancing against added complexity and maintenance costs to improve how data is delivered.</p>
 				</section>
-				<section class="notoc" data-standard="GPF" data-considerations="Accessibility" data-categories="Assets, HTML, JavaScript, Networking, Performance, Software">
+				<section class="notoc" data-standard="GPF, GreenIT" data-considerations="Accessibility" data-categories="Assets, HTML, JavaScript, Networking, Performance, Software">
 					<h4 id="offline-access">Success Criterion: Offline access</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#offline-access">Resources</a></p>
-					<p>Ensure resources remain available and accessible even if the user is disconnected, using methods such as JavaScript Service Workers, Web Workers, and browser local storage features.</p>
+					<p>Keep essential content and functionality available during network interruptions. Provide offline access using web platform capabilities, such as Progressive Web Applications (<abbr title="Progressive Web Applications">PWA</abbr>), Service Workers, Web Workers, or local storage.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>

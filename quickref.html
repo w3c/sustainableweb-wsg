@@ -326,8 +326,8 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access">Optimize caching and support offline access</a></legend>
-					<label><input type="checkbox"><span>Use server-side caching where possible to reduce processing time and repeated database lookups or API calls. Configure caching via server settings to control file-type expiration using appropriate headers, such as Expires or Cache-Control. Cache dynamic page responses where possible to serve static versions to future users. Support client-side caching of frequently used static assets to minimize repeat server requests.</span></label>
-					<label><input type="checkbox"><span>Ensure resources remain available and accessible even if the user is disconnected, using methods such as JavaScript Service Workers, Web Workers, and browser local storage features.</span></label>
+					<label><input type="checkbox"><span>Use caching to reduce processing time and repeated database queries, <abbr title="Application Programming Interface">API</abbr> calls, and network requests. Apply server-side caching for dynamic content and client-side caching for resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and minimize repeated requests for frequently used resources, balancing against added complexity and maintenance costs to improve how data is delivered.</span></label>
+					<label><input type="checkbox"><span>Keep essential content and functionality available during network interruptions. Provide offline access using web platform capabilities, such as Progressive Web Applications (<abbr title="Progressive Web Applications">PWAs</abbr>), Service Workers, Web Workers, or local storage.</span></label>
 					<p><strong>GRI:</strong> Medium (Materials) / High (Energy) / Medium (Water) / High (Emissions)</p>
 				</fieldset>
 				<fieldset>
