@@ -2852,7 +2852,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/competitor-impact.html"
 				},
 				{
-					"id": "sustainability-goals",
+					"id": "web-sustainability-goals",
 					"title": "Have a clearly defined set of sustainability goals",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Define clear organizational sustainability goals and metrics](https://www.w3.org/TR/web-sustainability-guidelines/#define-clear-organizational-sustainability-goals-and-metrics).",
 					"description": [
@@ -2881,7 +2881,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-goals.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/web-sustainability-goals.html"
 				},
 				{
 					"id": "obtaining-certifications",
