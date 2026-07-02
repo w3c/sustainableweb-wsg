@@ -2563,11 +2563,11 @@
 					"id": "use-the-most-efficient-solution-for-your-service",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service",
 					"guideline": "Use the most efficient solution for your service",
-					"subheading": "Identify the project requirements, use the most efficient approach, aim for static over dynamic where possible, and consider the impact of extensions and components.",
+					"subheading": "Choose lightweight, efficient implementation approaches that balance effort, performance, and environmental impact while favoring simple, native, and static solutions.",
 					"criteria": [
 						{
-							"title": "Identify requirements",
-							"description": "Identify the requirements and use this as a basis to help you select the most appropriate implementation for your project. A simpler technological implementation may use more human resources but could have a smaller footprint. A prebuilt solution may use more system resources and have a bigger emissions impact on render, but it could have a faster build time - meaning less carbon is emitted in development.",
+							"title": "Appropriate Implementation",
+							"description": "Choose implementation approaches that balance effort, performance, and environmental impact. Simpler solutions may reduce complexity and runtime impact but require more human effort, while prebuilt tools may reduce build time and development effort but increase ongoing resource use.",
 							"resources": [
 								{
 									"A Guide to Functional Requirements": "https://www.nuclino.com/articles/functional-requirements",
@@ -2581,7 +2581,7 @@
 						},
 						{
 							"title": "Optimized methodology",
-							"description": "Use the most effective approach for your use case. Most of the time, coding from scratch will often provide the most performant results. Where an existing solution is present and is being actively maintained, this may be better optimized than what you can reasonably produce yourself. Favor native components and file systems over WYSIWYG editors - including visual page builders - or other heavy frameworks. Be mindful of the impact of third-party solutions.",
+							"description": "Use the most performant approach for your use case. Most of the time, coding from scratch can provide the most performant results, but where a well-maintained existing solution is available it may be better optimized than what you can produce yourself. Favor native components and file systems over WYSIWYG editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, and environmental impact of third-party solutions.",
 							"resources": [
 								{
 									"AFNOR Spec 5.3.3 & 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -2597,7 +2597,7 @@
 						},
 						{
 							"title": "Static over dynamic",
-							"description": "Deliver static in place of dynamic content wherever possible. If you choose to use a code generation tool, then favor the most efficient tool available, such as Static Site Generators (SSGs). Content delivered by a dynamic CMS will involve much more server-side processing and uses bulkier libraries.",
+							"description": "Deliver static content in place of dynamic content wherever possible. If code generation is required, favor the efficient tools, such as Static Site Generators (SSGs). Be aware that dynamic CMS-driven content typically involves greater server-side processing and relies on bulkier libraries compared to static approaches.",
 							"resources": [
 								{
 									"7 Reasons to Use a Static Site Generator": "https://www.sitepoint.com/7-reasons-use-static-site-generator/",
@@ -2622,7 +2622,7 @@
 						},
 						{
 							"title": "Extensions and plugins",
-							"description": "Carefully select and review plugins, extensions, and themes to maximize interoperability, accessibility, and performance. Audit these regularly over time to ensure continued compatibility.",
+							"description": "Review plugins, extensions, and themes regularly to ensure they remain compatible with the platform and other components, efficient, and accessible.",
 							"resources": [
 								{
 									"AFNOR Spec 5.3.3 & 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -2637,7 +2637,7 @@
 						},
 						{
 							"title": "Interface components",
-							"description": "Pay particular attention to user interface components with respect to their sustainability impact.",
+							"description": "Use user interface components that are lightweight, focused, and efficient, avoiding unnecessary complexity that increases resource use, environmental impact, or maintenance burden.",
 							"resources": [
 								{
 									"AFNOR Spec 5.3.3 & 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
