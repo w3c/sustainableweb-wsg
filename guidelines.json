@@ -1054,11 +1054,11 @@
 					"id": "reduce-the-impact-of-downloadable-and-physical-documents",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents",
 					"guideline": "Reduce the impact of downloadable and physical documents",
-					"subheading": "Reduce the need for physical documents as much as possible by allowing the saving of well-labeled, optimized digital downloads. Include a print style sheet to avoid resource waste.",
+					"subheading": "Reduce paper use through digital-first workflows, optimize and reuse accessible downloadable documents, and provide clear, user-controlled document previews and formats.",
 					"criteria": [
 						{
 							"title": "Printed documents",
-							"description": "Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a CSS print style sheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.",
+							"description": "Design workflows to reduce the need for paper documents. When paper use is necessary, reduce paper use through efficient print layouts and minimal page counts. Include print style sheets and test them with real content. Encourage the use of digital formats instead of paper storage and archiving.",
 							"resources": [
 								{
 									"A Guide To The State Of Print Stylesheets In 2018": "https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/",
@@ -1081,23 +1081,32 @@
 						},
 						{
 							"title": "Optimized documents",
-							"description": "Optimize and compress all downloadable documents. Make them available in a variety of accessible file formats.",
+							"description": "Optimize and compress downloadable documents, provide them in accessible formats that suit different user needs, and choose open, widely supported formats (such as HTML) over proprietary file formats.",
 							"resources": [
 								{
+									"Are PDFs Hurting the Planet?": "https://medium.com/@thepdfspace/are-pdfs-hurting-the-planet-7c850655c98e",
 									"Changing Paper Consumption": "http://www.greenschools.net/article.php-id=75.html",
+									"GPF - General Policy Framework (PDF) - 3.1 - Architecture (Impact Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 4.6 - UX and UI (Informational Media)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 4.7 - UX and UI (Media Choices)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 4.11 - UX and UI (Inform Users)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 4.12 - UX and UI (Impact Flags)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 5.7 - Content (File Size Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 5-4052 - Downloadable Documents": "https://gr491.isit-europe.org/en/crit.php?id=5-4052-contents-the-documents-available-to-the-user-in",
 									"GR491 - 5-4053 - PDF Documents": "https://gr491.isit-europe.org/en/crit.php?id=5-4053-contents-large-documents-are-rarely-read-completely-by",
+									"Making a positive change: PDF to HTML": "https://accessibility.blog.gov.uk/2023/06/12/making-a-positive-change-pdf-to-html/",
 									"Optimizing PDFs for Web": "https://dev.to/revisepdf/optimizing-pdfs-for-web-best-practices-for-faster-loading-3b93",
+									"PDFs vs. web pages: what's better for users?": "https://lapope.com/resource/pdfs-vs-web-pages-whats-better-for-users/",
+									"United Nations SDGS - Goal 1 - Poverty": "https://sdgs.un.org/goals/goal1#targets_and_indicators",
 									"United Nations SDGS - Goal 11 - Human Habitats": "https://sdgs.un.org/goals/goal11#targets_and_indicators",
-									"United Nations SDGS - Goal 12 - Consumption & Production": "https://sdgs.un.org/goals/goal12#targets_and_indicators"
+									"United Nations SDGS - Goal 12 - Consumption & Production": "https://sdgs.un.org/goals/goal12#targets_and_indicators",
+									"Why you need to stop using PDFs": "https://shorthand.com/the-craft/the-pdf-is-in-terminal-decline/index.html"
 								}
 							]
 						},
 						{
 							"title": "Optimized delivery",
-							"description": "Avoid duplicating effort. If a document will be reused, generate and save it once on the server side for reuse, ideally on a cookie-free domain.",
+							"description": "Avoid duplicating work. When a document is reused, generate and store it once on the server so it can be reused efficiently, preferably on a cookie-free domain.",
 							"resources": [
 								{
 									"A full comparison of 6 JS libraries for generating PDFs": "https://dev.to/handdot/generate-a-pdf-in-js-summary-and-comparison-of-libraries-3k0p",
@@ -1111,7 +1120,7 @@
 						},
 						{
 							"title": "Labels and choice",
-							"description": "Display the document name, a summary, the size, and format prior to downloading. Allow users to choose the right format and language for their needs where possible. Avoid embedding documents directly; provide a link to download or view them within the browser instead.",
+							"description": "Show users the document name, format, size, and a short summary before download. Let users choose the most suitable format and language. Avoid embedding documents directly in pages; instead provide download or browser-view links.",
 							"resources": [
 								{
 									"Add file format and size to all download links and buttons": "https://www.accede-web.com/en/guidelines/html-css/complementary-guidelines/add-file-format-and-size-to-all-download-links-and-buttons/",
@@ -1139,11 +1148,11 @@
 					"id": "involve-users-early-in-the-project",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#involve-users-early-in-the-project",
 					"guideline": "Involve users early in the project",
-					"subheading": "Document the test process for new features with real users and validate the results, ensuring resources and training are provided to maintain the project's viability and minimize rework.",
+					"subheading": "Define and validate prototypes and interface components through user testing to ensure they work effectively in real-world use cases and across diverse user needs.",
 					"criteria": [
 						{
 							"title": "Early user testing",
-							"description": "Establish clear processes for the prototyping and testing of new features, product ideas, and user interface components. Validate applicability, usefulness, and appropriateness with real users who represent different perspectives and user constraints to align development efforts with real-world contexts from the start.",
+							"description": "Create defined processes for prototyping and testing new features and interface components. Validate them with representative users to ensure they work in real-world conditions and across different needs.",
 							"resources": [
 								{
 									"5 Common Low-Fidelity Prototypes and Their Best Practices": "https://ixdf.org/literature/article/prototyping-learn-eight-common-methods-and-best-practices",
@@ -1207,30 +1216,21 @@
 							]
 						},
 						{
-							"title": "Non-regression tests",
-							"description": "Implement non-regression tests for all critical features.",
+							"title": "Automated tests",
+							"description": "Maintain an automated test suite that covers critical functionality and run it consistently during builds and releases to catch regressions early.",
 							"resources": [
 								{
     								"AWS WAF - SEC11-BP02 - Automate testing throughout the development and release lifecycle": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_automate_testing_throughout_lifecycle.html",
-									"Non Regression Testing: Purpose, Process, Examples": "https://www.testlio.com/blog/non-regression-testing/",
-									"Non regression vs. regression: key differences in QA": "https://www.statsig.com/perspectives/non-regression-vs-regression-qa",
-									"Test automation": "https://web.dev/explore/test-automation?hl=en",
-									"The Simple and Complete Guide on Non-Regression Testing": "https://testgrid.io/blog/non-regression-testing/",
-									"Understanding non-regression testing and its impact": "https://www.statsig.com/perspectives/understanding-non-regression-testing"
-								}
-							]
-						},
-						{
-							"title": "Regression tests",
-							"description": "Incorporate regression testing into each release cycle to ensure new features do not introduce bugs or otherwise conflict with existing functionality.",
-							"resources": [
-								{
 									"Difference Between Regression Testing And Unit Testing": "https://www.browserstack.com/guide/regression-testing-vs-unit-testing",
 									"GPF - General Policy Framework (PDF) - 1.4 - Strategy (Regular Reviews)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"Non Regression Testing: Purpose, Process, Examples": "https://www.testlio.com/blog/non-regression-testing/",
 									"Non regression vs. regression: key differences in QA": "https://www.statsig.com/perspectives/non-regression-vs-regression-qa",
 									"Regression testing": "https://en.wikipedia.org/wiki/Regression_testing",
 									"Regression Testing: A Detailed Guide": "https://www.browserstack.com/guide/regression-testing",
-									"Software regression testing": "https://www.rainforestqa.com/blog/software-regression-testing"
+									"Software regression testing": "https://www.rainforestqa.com/blog/software-regression-testing",
+									"Test automation": "https://web.dev/explore/test-automation?hl=en",
+									"The Simple and Complete Guide on Non-Regression Testing": "https://testgrid.io/blog/non-regression-testing/",
+									"Understanding non-regression testing and its impact": "https://www.statsig.com/perspectives/understanding-non-regression-testing"
 								}
 							]
 						},
@@ -1268,38 +1268,6 @@
 									"Why your website should be under 14kB in size": "https://endtimes.dev/why-your-website-should-be-under-14kb-in-size/"
 								}
 							]
-						},
-						{
-							"title": "Compliant measurement",
-							"description": "Collect only data required to provide a streamlined and effective user journey and comply with relevant accessibility and data protection legislation. Put policies in place to ensure strict adherence.",
-							"resources": [
-								{
-									"10 CCPA Compliance Tips For Web Developers": "https://dataoverhaulers.medium.com/10-ccpa-compliance-tips-for-web-developers-1ce8382c7286",
-									"17 Countries with GDPR-like Data Privacy Laws": "https://insights.comforte.com/countries-with-gdpr-like-data-privacy-laws",
-									"A privacy-friendly Do Not Track (DNT) Policy": "https://www.eff.org/dnt-policy",
-									"Beyond GDPR: Data Protection Around The World": "https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/magazine/beyond-gdpr-data-protection-around-world",
-									"California Consumer Privacy Act": "https://oag.ca.gov/privacy/ccpa",
-									"Data ethics and digital sustainability": "https://www.sciencedirect.com/science/article/pii/S2666659624000258",
-									"Developer's Guide To GDPR": "https://fusionauth.io/articles/ciam/developers-guide-to-gdpr",
-									"GDPR Checklist": "https://gdprchecklist.io/",
-									"General Data Protection Regulation (GDPR)": "https://gdpr.eu/",
-									"GPF - General Policy Framework (PDF) - 1.6 - Strategy (Data Collection)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 7.2 - Back-End (Data Retention)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 8.8 - Hosting (Hot / Cold Data)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"How To Protect Your Users With The Privacy By Design Framework": "https://www.smashingmagazine.com/2017/07/privacy-by-design-framework/",
-									"Is GDPR Good for the Environment?": "https://www.mightybytes.com/insights/is-gdpr-good-for-the-environment/",
-									"Learn Privacy": "https://web.dev/blog/introducing-learn-privacy?hl=en",
-									"Prefetch resources to speed up future navigations": "https://web.dev/articles/link-prefetch?hl=en",
-									"Privacy by design": "https://en.wikipedia.org/wiki/Privacy_by_design",
-									"State Of GDPR Part 1 and Part 2": "https://www.smashingmagazine.com/2021/02/state-gdpr-2021-key-updates/",
-									"The environmental benefits of privacy-focussed web design": "https://rootwebdesign.studio/articles/the-environmental-benefits-of-privacy-focussed-web-design/",
-									"Ultimate CCPA Compliance Checklist": "https://securiti.ai/blog/ccpa-compliance-checklist/",
-									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
-									"United Nations SDGS - Goal 13 - Climate Change": "https://sdgs.un.org/goals/goal13#targets_and_indicators",
-									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
-									"United Nations SDGS - Goal 17 - Global Partnership": "https://sdgs.un.org/goals/goal17#targets_and_indicators"
-								}
-							]
 						}
 					],
 					"benefits": [
@@ -1315,14 +1283,14 @@
 					"tags": ["Accessibility", "Compatibility", "KPIs", "Performance", "Privacy", "Reporting", "Research", "Security", "Social Equity", "Software", "Strategy", "UI", "Usability"]
 				},
 				{
-					"id": "verify-that-real-world-users-can-successfully-use-your-work-upon-and-after-release",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#verify-that-real-world-users-can-successfully-use-your-work-upon-and-after-release",
-					"guideline": "Verify that real-world users can successfully use your work upon and after release",
-					"subheading": "Factor the ways people use the project into your decision making and evaluate how this can be optimized for the planet, people, and organisational prosperity.",
+					"id": "validate-usability-through-testing-and-real-world-usage",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#validate-usability-through-testing-and-real-world-usage",
+					"guideline": "Validate usability through testing and real-world usage",
+					"subheading": "Monitor user feedback and real usage to evaluate feature effectiveness, and use usability testing and user research to guide ongoing improvements.",
 					"criteria": [
 						{
 							"title": "Usage changes",
-							"description": "Monitor user feedback, adoption, and churn rates in relation to different features and incorporate these insights into future releases.",
+							"description": "Monitor user feedback, adoption, and churn for each feature. Use these insights to guide updates and future releases.",
 							"resources": [
 								{
 									"7 UX KPIs you should be measuring": "https://maze.co/collections/ux-management/kpis/",
@@ -1340,7 +1308,7 @@
 						},
 						{
 							"title": "Usability testing",
-							"description": "Incorporate extensive usability testing, real user metrics, and user interviews into product cycles and routinely measure the impact of these tests for future releases. Validate whether released features meet internal goals and audience needs.",
+							"description": "Use usability testing, real user metrics, and user interviews throughout product development. Measure the impact of findings and check whether released features meet user needs and internal goals.",
 							"resources": [
 								{
 									"A Complete Guide to Usability Testing": "https://www.uxmatters.com/mt/archives/2023/05/a-complete-guide-to-usability-testing.php",
@@ -2320,11 +2288,11 @@
 					"id": "ensure-layouts-work-for-different-devices-and-requirements",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements",
 					"guideline": "Ensure layouts work for different devices and requirements",
-					"subheading": "Use a mix of carbon-aware design techniques to adapt to different layouts, different modes of interaction, and also progressively enhance content.",
+					"subheading": "Use responsive, progressively enhanced, and carbon-aware design to ensure accessible, adaptable functionality across devices and interaction methods while managing resource use.",
 					"criteria": [
 						{
 							"title": "Device-adaptable",
-							"description": "Use responsive and adaptive design techniques to ensure your project supports an wide range of devices and screen sizes, including smartphones, tablets, laptops, desktop computers, smart TVs, and other emerging platforms. Implement robust fallback strategies to ensure that the digital product or service will not fail if it encounters unsupported technologies.",
+							"description": "Use responsive and adaptive design so the product works across devices and screen sizes such as phones, tablets, laptops, desktops, TVs, and emerging platforms. Ensure the project still functions when certain features or technologies are not supported.",
 							"resources": [
 								{
 									"Building a resilient frontend using progressive enhancement": "https://www.gov.uk/service-manual/technology/using-progressive-enhancement",
@@ -2379,7 +2347,7 @@
 						},
 						{
 							"title": "Progressive enhancement",
-							"description": "Use progressive enhancement to enhance overall sustainability. This starts with baseline HTML, and increases the user experience without reliance on style and interaction to ensure a robust project.",
+							"description": "Use progressive enhancement to enhance sustainability by starting with a baseline of HTML, then progressively improving the user experience without relying on style or interaction for core functionality, ensuring a robust and resilient project.",
 							"resources": [
 								{
 									"Build for the Web, Build on the Web, Build with the Web": "https://csswizardry.com/2025/01/build-for-the-web-build-on-the-web-build-with-the-web/",
@@ -2413,7 +2381,7 @@
 						},
 						{
 							"title": "Carbon-aware design",
-							"description": "Use carbon-aware design techniques to maximize your use of low-carbon energy. This is achieved by adapting the delivery of your project to current electricity availability and user grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.",
+							"description": "Use carbon-aware design to reduce energy use when electricity demand or system load is high. Use situational design to replace, reduce, or disable high-impact features for lower-impact alternatives. Automated thresholds may also adjust or disable non-essential features, provided changes remain transparent. Clearly communicate what changed and why, and allow users to restore full functionality where possible.",
 							"resources": [
 								{
 									"A Carbon-Aware Internet": "https://branch.climateaction.tech/issues/issue-2/a-carbon-aware-internet/",
@@ -2438,7 +2406,7 @@
 						},
 						{
 							"title": "Alternative browsing",
-							"description": "Support non-visual/indirect methods of interaction. This includes assistive technologies, voice agents, scanned input (QR, etc.), reader view (browser, application, or RSS), or connected devices.",
+							"description": "Support sustainable non-visual and indirect interaction methods such as assistive technologies, voice input, QR codes, reader view (browser, application, or RSS), and connected devices.",
 							"resources": [
 								{
 									"CSS Speech Module Level 1": "https://www.w3.org/TR/css-speech-1/",

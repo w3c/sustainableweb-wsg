@@ -164,30 +164,28 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents">Reduce the impact of downloadable and physical documents</a></legend>
-					<label><input type="checkbox"><span>Design your process to reduce the need for paper documents. Where the production of paper documents is essential, it should be designed to have the lowest impact possible. Include a <abbr title="Cascading Style Sheets">CSS</abbr> print style sheet and test it with different types of content. Encourage saving documents in digital formats over paper-based storage and archiving.</span></label>
-					<label><input type="checkbox"><span>Optimize and compress all downloadable documents. Make them available in a variety of accessible file formats.</span></label>
-					<label><input type="checkbox"><span>Avoid duplicating effort. If a document will be reused, generate and save it once on the server side for reuse, ideally on a cookie-free domain.</span></label>
-					<label><input type="checkbox"><span>Display the document name, a summary, the size, and format prior to downloading. Allow users to choose the right format and language for their needs where possible. Avoid embedding documents directly; provide a link to download or view them within the browser instead.</span></label>
+					<label><input type="checkbox"><span>Design workflows to reduce the need for paper documents. When paper use is necessary, reduce paper use through efficient print layouts and minimal page counts. Include print style sheets and test them with real content. Encourage the use of digital formats instead of paper storage and archiving.</span></label>
+					<label><input type="checkbox"><span>Optimize and compress downloadable documents, provide them in accessible formats that suit different user needs, and choose open, widely supported formats (such as HTML) over proprietary file formats.</span></label>
+					<label><input type="checkbox"><span>Avoid duplicating work. When a document is reused, generate and store it once on the server so it can be reused efficiently, preferably on a cookie-free domain.</span></label>
+					<label><input type="checkbox"><span>Show users the document name, format, size, and a short summary before download. Let users choose the most suitable format and language. Avoid embedding documents directly in pages; instead provide download or browser-view links.</span></label>
 					<p><strong>GRI:</strong> Medium (Materials) / Low (Energy) / Medium (Water) / Low (Emissions)</p>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#involve-users-early-in-the-project">Involve users early in the project</a></legend>
-					<label><input type="checkbox"><span>Establish clear processes for the prototyping and testing of new features, product ideas, and user interface components. Validate applicability, usefulness, and appropriateness with real users who represent different perspectives and user constraints to align development efforts with real-world contexts from the start.</span></label>
+					<label><input type="checkbox"><span>Create defined processes for prototyping and testing new features and interface components. Validate them with representative users to ensure they work in real-world conditions and across different needs.</span></label>
 					<p><strong>GRI:</strong> High (Materials) / High (Energy) / High (Water) / High (Emissions)</p>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a></legend>
 					<label><input type="checkbox"><span>Evaluate current user experience and check the codebase for bugs, identify performance issues, and account for accessibility, sustainability, or security problems at appropriate regular intervals, such as every month or quarter.</span></label>
-					<label><input type="checkbox"><span>Implement non-regression tests for all critical features.</span></label>
-					<label><input type="checkbox"><span>Incorporate regression testing into each release cycle to ensure new features do not introduce bugs or otherwise conflict with existing functionality.</span></label>
+					<label><input type="checkbox"><span>Maintain an automated test suite that covers critical functionality and run it consistently during builds and releases to catch regressions early.</span></label>
 					<label><input type="checkbox"><span>Identify and resolve bottlenecks or issues in the underlying code or infrastructure which could impact sustainability and performance to encourage a smooth, frictionless user journey. Consider both simulated and real-world metrics. Monitor performance across every release cycle using appropriate tooling or through research and auditing.</span></label>
-					<label><input type="checkbox"><span>Collect only data required to provide a streamlined and effective user journey and comply with relevant accessibility and data protection legislation. Put policies in place to ensure strict adherence.</span></label>
 					<p><strong>GRI:</strong> Medium (Materials) / Medium (Energy) / Medium (Water) / Medium (Emissions)</p>
 				</fieldset>
 				<fieldset>
-					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#verify-that-real-world-users-can-successfully-use-your-work-upon-and-after-release">Verify that real-world users can successfully use your work upon and after release</a></legend>
-					<label><input type="checkbox"><span>Monitor user feedback, adoption, and churn rates in relation to different features and incorporate these insights into future releases.</span></label>
-					<label><input type="checkbox"><span>Incorporate extensive usability testing, real user metrics, and user interviews into product cycles and routinely measure the impact of these tests for future releases. Validate whether released features meet internal goals and audience needs.</span></label>
+					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-usability-through-testing-and-real-world-usage">Validate usability through testing and real-world usage</a></legend>
+					<label><input type="checkbox"><span>Monitor user feedback, adoption, and churn for each feature. Use these insights to guide updates and future releases.</span></label>
+					<label><input type="checkbox"><span>Use usability testing, real user metrics, and user interviews throughout product development. Measure the impact of findings and check whether released features meet user needs and internal goals.</span></label>
 					<p><strong>GRI:</strong> Medium (Materials) / Medium (Energy) / Medium (Water) / Medium (Emissions)</p>
 				</fieldset>
 				<fieldset>
@@ -279,10 +277,10 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements">Ensure layouts work for different devices and requirements</a></legend>
-					<label><input type="checkbox"><span>Use responsive and adaptive design techniques to ensure your project supports an wide range of devices and screen sizes, including smartphones, tablets, laptops, desktop computers, smart TVs, and other emerging platforms. Implement robust fallback strategies to ensure that the digital product or service will not fail if it encounters unsupported technologies.</span></label>
-					<label><input type="checkbox"><span>Use progressive enhancement to enhance overall sustainability. This starts with baseline HTML, and increases the user experience without reliance on style and interaction to ensure a robust project.</span></label>
-					<label><input type="checkbox"><span>Use carbon-aware design techniques to maximize your use of low-carbon energy. This is achieved by adapting the delivery of your project to current electricity availability and user grid load. This should include using situational design to reduce the codebase and disable non-essential functionality during high-intensity periods. Similarly, it should be possible to adapt the user interface to perform better with reduced hardware resources, where this measure can be taken to avoid scaling hardware resources and the resultant increase in emissions. It can also include designing algorithms that can automatically disable features based on set thresholds.</span></label>
-					<label><input type="checkbox"><span>Support non-visual/indirect methods of interaction. This includes assistive technologies, voice agents, scanned input (<abbr title="Quick Response">QR</abbr>, etc.), reader view (browser, application, or <abbr title="Really Simple Syndication">RSS</abbr>), or connected devices.</span></label>
+					<label><input type="checkbox"><span>Use responsive and adaptive design so the product works across devices and screen sizes such as phones, tablets, laptops, desktops, TVs, and emerging platforms. Ensure the project still functions when certain features or technologies are not supported.</span></label>
+					<label><input type="checkbox"><span>Use progressive enhancement to enhance sustainability by starting with a baseline of HTML, then progressively improving the user experience without relying on style or interaction for core functionality, ensuring a robust and resilient project.</span></label>
+					<label><input type="checkbox"><span>Use carbon-aware design to reduce energy use when electricity demand or system load is high. Use situational design to replace, reduce, or disable high-impact features for lower-impact alternatives. Automated thresholds may also adjust or disable non-essential features, provided changes remain transparent. Clearly communicate what changed and why, and allow users to restore full functionality where possible.</span></label>
+					<label><input type="checkbox"><span>Support sustainable non-visual and indirect interaction methods such as assistive technologies, voice input, <abbr title="Quick Response">QR</abbr> codes, reader view (browser, application, or <abbr title="Really Simple Syndication">RSS</abbr>), and connected devices.</span></label>
 					<p><strong>GRI:</strong> Medium (Materials) / Low (Energy) / Medium (Water) / Low (Emissions)</p>
 				</fieldset>
 				<fieldset>
