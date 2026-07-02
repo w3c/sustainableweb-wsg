@@ -2499,11 +2499,11 @@
 					"id": "include-expected-and-beneficial-files",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#include-expected-and-beneficial-files",
 					"guideline": "Include expected and beneficial files",
-					"subheading": "Always provide expected files and optionally offer environmentally or otherwise beneficial files to enhance the project.",
+					"subheading": "Include standard website metadata and configuration files to support discoverability, transparency, and operational best practices.",
 					"criteria": [
 						{
 							"title": "Expected files",
-							"description": "Include favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml files by default. Also ensure that any similar files defined in future web standards or specifications are included.",
+							"description": "Include favicon.ico, robots.txt, opensearch.xml, site.webmanifest, and sitemap.xml by default. Include additional default files if they become standard.",
 							"resources": [
 								{
 									"About /robots.txt": "https://www.robotstxt.org/robotstxt.html",
@@ -2524,7 +2524,7 @@
 						},
 						{
 							"title": "Beneficial files",
-							"description": "Include beneficial files such as ads.txt, carbon.txt, humans.txt, security.txt. Also ensure that any similar files defined in future web standards or specifications are included.",
+							"description": "Include additional standard files, such as ads.txt, carbon.txt, humans.txt, and security.txt. Include additional default files if they become standard.",
 							"resources": [
 								{
 									"Ads.txt guide": "https://support.google.com/adsense/answer/12171612?hl=en-GB&rd=1",
