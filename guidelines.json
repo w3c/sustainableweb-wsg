@@ -1736,14 +1736,14 @@
 					"tags": ["Accessibility", "CSS", "JavaScript", "Patterns", "Performance"]
 				},
 				{
-					"id": "give-third-parties-the-same-priority-as-first-parties-during-assessment",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment",
-					"guideline": "Give third parties the same priority as first parties during assessment",
-					"subheading": "Avoid using large third-party libraries and frameworks where possible, and where these must be used, self host, defer loading, allow the user to object, and provide alternatives.",
+					"id": "treat-third-parties-the-same-as-first-parties",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties",
+					"guideline": "Treat third parties the same as first parties",
+					"subheading": "Minimize and carefully manage third-party services by using lightweight, user-controlled integrations that are loaded only when needed.",
 					"criteria": [
 						{
 							"title": "Assess and reduce",
-							"description": "Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions. Ensure that third-party vendors enforce the same Compliance, Security, and Privacy standards as the first party. This includes data deletion policies, data retention limits, and mandatory security updates.",
+							"description": "Review third-party content and/or services early in the design or ideation process, including plugins, widgets, feeds, maps, carousels, tracking scripts, and similar components. Use as few as possible, preferring lightweight options to reduce overall environmental impact, including GHG Protocol Scope 3 emissions. Ensure third-party providers enforce the same compliance, security, privacy, data retention limits, data deletion policies, and mandatory security update standards as the first party.",
 							"resources": [
 								{
 									"6 steps to reduce the carbon footprint of your website": "https://opensource.com/article/23/3/reduce-carbon-footprint-website",
@@ -1768,7 +1768,7 @@
 						},
 						{
 							"title": "Third-party implementation",
-							"description": "Use click-to-load triggers based on an import on interaction pattern to prevent automatic loading of third-party content and/or services (see above). Offer suitable alternatives to third-party use, for example, a link to a contact form as an alternative to a chat widget.",
+							"description": "Load third-party content only when the user interacts with it. Offer simple alternatives, such as linking to a form instead of embedding a widget.",
 							"resources": [
 								{
 									"Are my third parties green?": "https://aremythirdpartiesgreen.com/",
@@ -1796,7 +1796,7 @@
 						},
 						{
 							"title": "Self-hosting",
-							"description": "Host your content and assets, such as icons and widgets, directly on your own site rather than relying on third-party services to store, deliver, or embed those features.",
+							"description": "Serve assets such as content, icons, fonts, scripts, and widgets from infrastructure you control where practical, rather than embedding or depending on third-party services for their storage or delivery. This reduces dependency on external systems, improves reliability, and can reduce unnecessary network requests.",
 							"resources": [
 								{
 									"Awesome-Selfhosted": "https://github.com/awesome-selfhosted/awesome-selfhosted",
@@ -1823,7 +1823,7 @@
 						},
 						{
 							"title": "Third-party preferences",
-							"description": "Respect user preferences around the use of third-party products and services, similar to the implementation of cookie consent modals. Provide mechanisms to disable or refuse non-first-party features alongside explanations of their purpose unless it is possible to show these third-party features are critical for functionality.",
+							"description": "Respect user preferences around third-party content and services. Provide clear controls to disable or opt out of non-essential third-party features.",
 							"resources": [
 								{
 									"An empirical study on the performance and energy costs of ads and analytics in mobile web apps": "https://www.sciencedirect.com/science/article/pii/S0950584923002252",

@@ -1315,28 +1315,28 @@
 					</div>
 				</section>
 			</section>
-			<section> <!-- Give third parties the same priority as first parties during assessment -->
-				<h3>Give third parties the same priority as first parties during assessment</h3>
-				<p class="subheading">Avoid using large third-party libraries and frameworks where possible, and where these must be used, self host, defer loading, allow the user to object, and provide alternatives.</p>
+			<section> <!-- Treat third parties the same as first parties -->
+				<h3>Treat third parties the same as first parties</h3>
+				<p class="subheading">Minimize and carefully manage third-party services by using lightweight, user-controlled integrations that are loaded only when needed.</p>
 				<section class="notoc" data-standard="GPF, SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="assess-and-reduce">Success Criterion: Assess and reduce</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#assess-and-reduce">Resources</a></p>
-					<p>Assess third-party content and/or services (including plugins, widgets, feeds, maps, carousels, tracking scripts, and more) as early as possible in the ideation or creation process. Use as few as possible, preferring lighter, less complex solutions to reduce the overall environmental impact, including Scope 3 emissions. Ensure that third-party vendors enforce the same Compliance, Security, and Privacy standards as the first party. This includes data deletion policies, data retention limits, and mandatory security updates.</p>
+					<p>Review third-party content and/or services early in the design or ideation process, including plugins, widgets, feeds, maps, carousels, tracking scripts, and similar components. Use as few as possible, preferring lightweight options to reduce overall environmental impact, including GHG Protocol Scope 3 emissions. Ensure third-party providers enforce the same compliance, security, privacy, data retention limits, data deletion policies, and mandatory security update standards as the first party.</p>
 				</section>
 				<section class="notoc" data-standard="GPF, GreenIT, SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="third-party-implementation">Success Criterion: Third-party implementation</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#third-party-implementation">Resources</a></p>
-					<p>Use click-to-load triggers based on an import on interaction pattern to prevent automatic loading of third-party content and/or services (see above). Offer suitable alternatives to third-party use, for example, a link to a contact form as an alternative to a chat widget.</p>
+					<p>Load third-party content only when the user interacts with it. Offer simple alternatives, such as linking to a form instead of embedding a widget.</p>
 				</section>
 				<section class="notoc" data-standard="GPF, GreenIT, SDGs" data-considerations="Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="self-hosting">Success Criterion: Self-hosting</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#self-hosting">Resources</a></p>
-					<p>Host your content and assets, such as icons and widgets, directly on your own site rather than relying on third-party services to store, deliver, or embed those features.</p>
+					<p>Serve assets such as content, icons, fonts, scripts, and widgets from infrastructure you control where practical, rather than embedding or depending on third-party services for their storage or delivery. This reduces dependency on external systems, improves reliability, and can reduce unnecessary network requests.</p>
 				</section>
 				<section class="notoc" data-standard="GPF, GR491, SDGs" data-considerations="Accessibility, Privacy, Security" data-categories="JavaScript, Performance, Software, UI, Usability">
 					<h4 id="third-party-preferences">Success Criterion: Third-party preferences</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#third-party-preferences">Resources</a></p>
-					<p>Respect user preferences around the use of third-party products and services, similar to the implementation of cookie consent modals. Provide mechanisms to disable or refuse non-first-party features alongside explanations of their purpose unless it is possible to show these third-party features are critical for functionality.</p>
+					<p>Respect user preferences around third-party content and services. Provide clear controls to disable or opt out of non-essential third-party features.</p>
 				</section>
 				<section class="notoc">
 					<h4>Additional information</h4>
@@ -3067,7 +3067,7 @@
 					<li>All those listed within <a href="#user-experience-design">User Experience Design</a></li>
 					<li><a href="#minify-and-remove-unused-code">Minify and remove unused code</a></li>
 					<li><a href="#avoid-redundancy-and-duplication-in-code">Avoid redundancy and duplication in code</a></li>
-					<li><a href="#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a></li>
+					<li><a href="#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a></li>
 					<li><a href="#ensure-code-follows-good-semantic-practices">Ensure code follows good semantic practices</a></li>
 					<li><a href="#defer-the-loading-of-non-critical-resources">Defer the loading of non-critical resources</a></li>
 					<li><a href="#provide-information-to-help-understand-the-usefulness-of-a-page">Provide information to help understand the usefulness of a page</a></li>
@@ -3109,7 +3109,7 @@
 					<li><a href="#provide-accessible-usable-minimal-web-forms">Provide accessible, usable, minimal web forms</a></li>
 					<li><a href="#avoid-unwanted-notifications">Avoid unwanted notifications</a></li>
 					<li><a href="#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a></li>
-					<li><a href="#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a></li>
+					<li><a href="#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a></li>
 					<li><a href="#use-standards-based-javascript-and-apis">Use standards-based JavaScript and APIs</a></li>
 					<li><a href="#ensure-that-your-code-is-secure">Ensure that your code is secure</a></li>
 					<li><a href="#use-dependencies-appropriately-and-ensure-maintenance">Use dependencies appropriately and ensure maintenance</a></li>
@@ -3130,7 +3130,7 @@
 					<li><a href="#avoid-being-manipulative-or-deceptive">Avoid being manipulative or deceptive</a></li>
 					<li><a href="#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a></li>
 					<li><a href="#validate-usability-through-testing-and-real-world-usage">Validate usability through testing and real-world usage</a></li>
-					<li><a href="#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a></li>
+        	<li><a href="#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a></li>
 					<li><a href="#ensure-code-follows-good-semantic-practices">Ensure code follows good semantic practices</a></li>
 					<li><a href="#validate-form-errors-and-account-for-tooling-requirements">Validate form errors and account for tooling requirements</a></li>
 					<li><a href="#use-standards-based-javascript-and-apis">Use standards-based JavaScript and APIs</a></li>
