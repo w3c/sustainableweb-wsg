@@ -2884,9 +2884,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/web-sustainability-goals.html"
 				},
 				{
-					"id": "obtaining-certifications",
+					"id": "obtaining-verification",
 					"title": "Verify and showcase any third-party sustainability certifications",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Validate efforts using established third-party certifications](https://www.w3.org/TR/web-sustainability-guidelines/#validate-efforts-using-established-third-party-certifications).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Validate web sustainability efforts through external verification](https://www.w3.org/TR/web-sustainability-guidelines/#validate-web-sustainability-efforts-through-external-verification).",
 					"description": [
 						{
 							"1": "Provide a mechanism for product or service owners who have achieved certifications either as an individual or as a business in a related sustainability field (with a recognized achievement or certification) to have that accounted for in the calculation of their sustainability journey. Any such certifications should be included within a statement.",
@@ -2910,7 +2910,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/obtaining-certifications.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/obtaining-verification.html"
 				},
 				{
 					"id": "policies-and-practices",
