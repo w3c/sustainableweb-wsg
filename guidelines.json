@@ -1987,11 +1987,11 @@
 					"id": "defer-the-loading-of-non-critical-resources",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#defer-the-loading-of-non-critical-resources",
 					"guideline": "Defer the loading of non-critical resources",
-					"subheading": "Avoid render-blocking slowdowns by asynchronously loading, deferring, or prioritizing external resources as appropriate.",
+					"subheading": "Load non-essential assets asynchronously or with prioritization to improve rendering performance and avoid visual issues.",
 					"criteria": [
 						{
 							"title": "Asynchronous code",
-							"description": "Defer loading of non-essential external assets or set these to load asynchronously to avoid a Flash Of Unstyled Content (FOUC).",
+							"description": "Load non-essential external assets asynchronously or defer them to avoid rendering issues such as Flash Of Unstyled Content (FOUC), Flash of Invisible Text (FOIT), or Flash of Faux Text (FOFT).",
 							"resources": [
 								{
 									"Fast Load Times: Optimize your resource delivery": "https://web.dev/explore/fast?hl=en#optimize-your-resource-delivery",
@@ -2007,7 +2007,7 @@
 						},
 						{
 							"title": "Optimized loading",
-							"description": "Where external resources are required to be used upon the documents load, optimize loading using resource and priority hints.",
+							"description": "Use resource and priority hints to improve loading performance when multiple assets compete for bandwidth or rendering order.",
 							"resources": [
 								{
 									"Assist the browser with resource hints": "https://web.dev/learn/performance/resource-hints",
