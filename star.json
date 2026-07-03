@@ -984,19 +984,20 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/ongoing-evaluation.html"
 				},
 				{
-					"id": "non-regression-tests",
+					"id": "automated-tests",
 					"title": "Provide active monitoring for issues on a frequent schedule",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
 					"description": [
 						{
-							"1": "Ensure that problems relating to the sustainability of a website can be picked up with more frequency and regularity. Within the scope of website and application testing, it is important to be actively monitoring for common failure points that build over time and upon being notified of said issues provide resolutions within a reasonable timeframe.",
+							"1": "Ensure that problems relating to the sustainability of a website can be picked up with more frequency and regularity, especially upon the release of a new version. Within the scope of website and application testing, it is important to actively monitor for common failure points that build over time. Upon being notified of said issues provide resolutions within a reasonable timeframe.",
 							"2": "Machine testability for this implementation will be based on the mechanism used for testing. For instance, if a product or service provider chooses to simply run routine tests on a scheduled basis this may be considered a pass as long as the time between scans is frequent enough that it can be considered active in opposition to occasional (weekly would be the widest margin)."
 						}
 					],
 					"examples": [
 						{
 							"1": "[Speedcurve](https://www.speedcurve.com/) is a commercial product that actively monitors websites for performance issues (broken down by category in rendering) and can provide advisory guidance on meeting targets for performance budgets.",
-							"2": "[Google Search Console](https://search.google.com/search-console/about) is a free product that monitors websites for issues that may affect their ability to be indexed within the Google search engine, which notably can impact their overall global page visibility."
+							"2": "[Google Search Console](https://search.google.com/search-console/about) is a free product that monitors websites for issues that may affect their ability to be indexed within the Google search engine, which notably can impact their overall global page visibility.",
+							"3": "[Accessibility scanners](https://www.w3.org/WAI/test-evaluate/tools/list/) can use the machine-testable elements of WCAG to help identify and resolve issues. While they are not a silver bullet and cannot replace manual audits they can identify some issues."
 						}
 					],
 					"tests": [
@@ -1013,37 +1014,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/non-regression-tests.html"
-				},
-				{
-					"id": "regression-tests",
-					"title": "Scan for introduced issues upon the completion of a new release",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
-					"description": [
-						{
-							"1": "Provide a mechanism for eliminating any potential new flaws that may have been introduced into a website or application upon the release of a new version that will have additional updates or features that could break functionality if not implemented correctly. As such, enforcing a sustainability scan across a series of factors is critical.",
-							"2": "For machine testability, the necessity of automation of running a scan could be triggered on the publication of each new release, or for more nuanced control (where active monitoring already exists and non-breaking features are being introduced), a scan could be triggered only where only a major release is issued when breaking changes are more likely to occur."
-						}
-					],
-					"examples": [
-						{
-							"1": "[Accessibility scanners](https://www.w3.org/WAI/test-evaluate/tools/list/) can use the machine-testable elements of WCAG to help identify issues that can be resolved. While they are not a silver bullet and cannot replace manual audits they can identify some issues."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that all publicly visible pages are included within the monitoring.",
-									"2": "Check for a wide variety of issues within the scope of WSG.",
-									"3": "Check that a report of ongoing listed issues is publicly available until fully resolved.",
-									"4": "Provide resolutions for detected issues within a timely manner."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/regression-tests.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/automated-tests.html"
 				},
 				{
 					"id": "performance-testing",
@@ -1077,41 +1048,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/performance-testing.html"
 				},
 				{
-					"id": "compliant-measurement",
-					"title": "Provide compliance checks with each release for relevant legislation",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution).",
-					"description": [
-						{
-							"1": "Provide a mechanism during the development process where businesses and individuals creating web projects can verify that new work meets compliance targets for individual regulations. This technique is most useful when performed with each major milestone as there is a potential for feature (and compliance) breaking material to occur.",
-							"2": "Within the scope of sustainability, this is increasingly important as there are explicit laws surrounding the subject in addition to expanded PPP remits such as accessibility, privacy, security, etc. In terms of machine testability the mechanics of an implementation may be more difficult than utilizing an automated checker, but wizard software can work through questions to help identify key issues."
-						}
-					],
-					"examples": [
-						{
-							"1": "Internationally reaching environmental legislation such as [CSRD](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en) and the [Green Claims Directive](https://www.europarl.europa.eu/news/en/press-room/20240112IPR16772/meps-adopt-new-law-banning-greenwashing-and-misleading-product-information) provide stricter enforcement around product descriptions and the need to reduce emissions and accurately report such efforts.",
-							"2": "Accessibility legislation ([of which there are many worldwide](https://www.w3.org/WAI/policies/)) provides strict enforcement around ensuring inclusivity not just offline but also in the digital sphere as well, leaving non-compliance open to lawsuit risks.",
-							"3": "Internationally reaching privacy legislation such as [GDPR](https://gdpr-info.eu/) can also impact digital services on a sustainability level (through the people and societal aspect of PPP), and [various](https://gdpr.eu/checklist/) [checklists](https://gdprchecklist.io/) can assist."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check to see if deliverables require internal access (if so, permission is given).",
-									"2": "Check that the testing regime is available (internally or externally).",
-									"3": "Identify all relevant compliance checks to perform during testing process.",
-									"4": "Report and resolve the findings within your auditing process."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compliant-measurement.html"
-				},
-				{
-					"id": "compatibility-policy",
+					"id": "compatibility-documentation",
 					"title": "Provide a publicly visible compatibility policy or statement",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Audit and test for bugs or issues requiring resolution](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
 					"description": [
 						{
 							"1": "Ensure that users are made aware of (or able to find out) the limitations of a product or service before issuing a support request that will involve creating new emission sources. This compatibility policy can be listed amongst other policies on a website, however, it must contain detailed information about any factor that may have reduced capability.",
@@ -1135,12 +1074,12 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-policy.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-documentation.html"
 				},
 				{
 					"id": "maintaining-compatibility",
 					"title": "Provide clarification when updates are significant over minor releases",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Cross-platform compatibility support](https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support).",
 					"description": [
 						{
 							"1": "Provide a mechanism for introducing users to new features and capabilities within websites and applications upon a major release being triggered. This would include compatibility changes, any alterations that affect workflow, and bugs that have been resolved. It applies equally to both applications on upgrade paths and website redesigns.",
@@ -1169,7 +1108,7 @@
 				{
 					"id": "user-constraints",
 					"title": "Establish compatibility testing routines with each new release",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Cross-platform compatibility support](https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support).",
 					"description": [
 						{
 							"1": "Ensure that compatibility issues resulting from user constraints (such as operating system or browser age/connection speed, availability, or cost) are factored into the testing process at each new release. Creators must have processes in place whether through checklists that are pre-created or crafted from scratch to ensure that a regime is in place. Other contingencies exist (such as geo-blocking or mobile data costs) and these can also be taken into account if detection is possible.",
@@ -1199,39 +1138,6 @@
 						}
 					],
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/user-constraints.html"
-				},
-				{
-					"id": "progressive-web-applications-pwas",
-					"title": "Provide a PWA if more suitable than its native counterpart",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Regularly test and maintain compatibility](https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility).",
-					"description": [
-						{
-							"1": "Identify a web application that exists and then determine if turning the web application into a progressive web application would be more beneficial than providing a native offering. This would need to take into account current web capabilities (such as ServiceWorkers), methods of delivery (such as WASM), and the human aspect (audience requirements).",
-							"2": "Machine testability can firstly examine the existing state of an application to determine how sustainable it is and what technology stack was used to develop it (and how sustainable it already performs for all), from there, data points can be used to identify an approximate cost of implementation for both a native or highly optimized web application endpoint and options can be provided."
-						}
-					],
-					"examples": [
-						{
-							"1": "Native applications may be a good choice if applications require specific access to hardware as web APIs can still be quite restrictive. In addition, there is a case for going native to provide a more OS-centric look and feel.",
-							"2": "web applications are often quicker and easier to deploy and can provide updates without delays in the pipeline (as they do not have to go through store controls), they can also benefit from lower creation costs."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check if the existing application already utilizes a ServiceWorker.",
-									"2": "If so, check the PWA JavaScript and JSON are well formed, and the icon exists.",
-									"3": "If not calculate the sustainability impact of becoming a PWA.",
-									"4": "Check that no native application already exists ([meta tag smart banner](https://developer.apple.com/documentation/webkit/promoting-apps-with-smart-app-banners)).",
-									"5": "If so use that, otherwise calculate the sustainability impact of building an application.",
-									"6": "If cost-efficient sustainability-wise, implement a PWA or/and a native application."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/progressive-web-applications-pwas.html"
 				}
 			]
 		},
@@ -1305,7 +1211,7 @@
 				{
 					"id": "minified-code",
 					"title": "Minify your front-end code if it is public facing",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Remove unnecessary or redundant information](https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-or-redundant-information).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minify and remove unused code](https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code).",
 					"description": [
 						{
 							"1": "Provide a mechanism in which your production-ready source code can have unnecessary data such as code comments, white space data, and machine-detectable redundancy removed to deliver the smallest file payload possible to the user. This will improve both the speed of your site and lower screen usage (wait) time.",
@@ -1368,7 +1274,7 @@
 				{
 					"id": "remove-redundancy",
 					"title": "Eliminate redundant code through coverage or tree shaking",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Remove unnecessary code](https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-code).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Minify and remove unused code](https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code).",
 					"description": [
 						{
 							"1": "Eliminate redundancy within an application or website that may have been either introduced previously or through error. By using browser development tooling such as DevTools coverage or techniques like tree shaking any code which is no longer associated with functionality can be identified as potentially fit for removal (always verify this is accurate).",
@@ -1427,7 +1333,7 @@
 				{
 					"id": "assess-and-reduce",
 					"title": "Determine and decision make upon third-party impacts",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Treat third parties the same as first parties](https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties).",
 					"description": [
 						{
 							"1": "First identify any third-party components within a website or application, then analyze that feature as if it were a first-party product or service (against WSG) for sustainability. If the product or service is determined to be highly impactful in a negative way, the third-party should be replaced or removed; otherwise, it can be optimized, or stay as-is.",
@@ -1458,7 +1364,7 @@
 				{
 					"id": "third-party-implementation",
 					"title": "Provide an import on interaction delay for third-party resources",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Treat third parties the same as first parties](https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties).",
 					"description": [
 						{
 							"1": "Provide a mechanism to delay third-party content from loading to the screen until the user has requested it. Because third-party content is sourced from outside the origin domain, the sustainability impacts of the third-party code are outside of the control of a project, and thus click-to-load delay screens using the import-on-interaction pattern is critical.",
@@ -1487,7 +1393,7 @@
 				{
 					"id": "self-hosting",
 					"title": "Ensure that content is delivered through the most sustainable pathway",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Treat third parties the same as first parties](https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties).",
 					"description": [
 						{
 							"1": "Identify the location of website content and determine the most suitable pathway for it to be consumed sustainably. With the rise in content being hosted on third-party blogging platforms, there is a risk of significant content loss if the platform disappears and therefore a need for self-hosting exists (especially to maintain control of sustainability impacts).",
@@ -1518,7 +1424,7 @@
 				{
 					"id": "third-party-preferences",
 					"title": "Provide the ability to identify and choose third-party components to load",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Give third parties the same priority as first parties during assessment](https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Treat third parties the same as first parties](https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties).",
 					"description": [
 						{
 							"1": "Provide users with the optimum level of control over sustainability impacts by not just allowing them to identify and load third-party controls upon click but to also control third-party services, libraries, and tooling used by the product or service (even at load) via a preference panel where individual third-parties (which may be impactful) can be refused access.",
@@ -1641,7 +1547,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/non-standard-code.html"
 				},
 				{
-					"id": "built-in-over-custom",
+					"id": "custom-code",
 					"title": "Replace code that can instead use more efficient native APIs",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Ensure code follows good semantic practices](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices).",
 					"description": [
@@ -1667,7 +1573,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/built-in-over-custom.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/custom-code.html"
 				},
 				{
 					"id": "asynchronous-code",
@@ -1724,125 +1630,6 @@
 						}
 					],
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-loading.html"
-				},
-				{
-					"id": "accessibility-aids",
-					"title": "Add signposting within the page to direct users and accessibility aids",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Provide information to help understand the usefulness of a page](https://www.w3.org/TR/web-sustainability-guidelines/#provide-information-to-help-understand-the-usefulness-of-a-page).",
-					"description": [
-						{
-							"1": "Provide mechanisms to assist the user with finding and navigating through content within the page or application. This can come in the form of links that allow you to bypass blocks of content, which is especially useful when large vocal areas of navigation or other content exist. It could also be in the form of keyboard shortcuts that activate certain features within a complex application rather than having to click multiple steps.",
-							"2": "Machine testability for such features can identify events within JavaScript or features that use common patterns in code that are recognized as helpful signposting features. If such features are present then the success criteria can be marked as compliant but if none are found it could be an indicator, especially in complex websites or applications that such features are needed."
-						}
-					],
-					"examples": [
-						{
-							"1": "[WebAim has a great article](https://webaim.org/techniques/skipnav/) describing the details relating to skip links [as does Jim Thatcher](https://www.jimthatcher.com/skipnav.htm), both include plenty of useful visual examples and situations to work with when designing a custom solution of your own.",
-							"2": "Smashing Magazine published a [two](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/) [part](https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-javascript-part2/) guide to keyboard accessibility which included HTML, CSS, and JavaScript and covered not only skip links but also provided keyboard-based accessibility aids."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that the project can be successfully navigated using the keyboard.",
-									"2": "Check that the tabindex order of the content makes logical, navigable sense.",
-									"3": "Check that skip links exist to guide accessibility tools through content.",
-									"4": "Check that keyboard shortcuts are well documented and work as expected.",
-									"5": "Check that signposting within pages are well described, and work as directed."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/accessibility-aids.html"
-				},
-				{
-					"id": "error-validation",
-					"title": "Ensure that form inputs correctly match and validate content expectations",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Validate form errors and account for tooling requirements](https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements).",
-					"description": [
-						{
-							"1": "Ensure that input types correctly match the type of content being placed within them, that content types like passwords are handled in a way that users can easily reveal them, and that the patterns attribute is used correctly to help reduce errors during data entry. In doing so, problematic friction encountered during form filling can be reduced as can erroneous submissions.",
-							"2": "Machine testability for this criteria will involve analyzing the components of forms to ensure they are well formed and that (for example) any regular expressions used in patterns will not produce an erroneous result. It is also important that functionality within forms perform well on mobile devices as well as desktop so consideration must be given to the choice of input for tasks."
-						}
-					],
-					"examples": [
-						{
-							"1": "[This article from TheGood](https://thegood.com/insights/form-design-examples/) showcases multiple examples of great form design not only from the point of the user experience but also in the development to ensure that the ability to make mistakes is reduced."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that the input type matches the expected content type.",
-									"2": "Check that the use of the pattern attribute does not prevent correct input.",
-									"3": "Check that regular expressions are correctly formed and do not equate errors.",
-									"4": "Check that password fields can be made visible to allow for recognition.",
-									"5": "Check that one input type will function well on mobile devices over another."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/error-validation.html"
-				},
-				{
-					"id": "label-elements",
-					"title": "Ensure that form elements are correctly labeled",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Validate form errors and account for tooling requirements](https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements).",
-					"description": [
-						{
-							"1": "Provide a mechanism for accessibility tooling to be able to accurately describe the content of form features and to provide visual aids for users aiming to identify what information is required to be entered. This technique requires all interactive elements within the form to have an associated label to describe the purpose and/or role of the item.",
-							"2": "Labels should be presented directly beside the element in question to imply association and if multiple associations are required, a grouping element with a label can be provided. Machines should be able to identify the relationship between the label and the object through the syntax and if objects without labels exist, a failure statement can be flagged up."
-						}
-					],
-					"examples": [
-						{
-							"1": "[This CodePen example](https://codepen.io/sushma-io/pen/zYbOREe) clearly has all interactive elements within the form correctly labeled and additionally goes the extra step by using input types to help reduce the chances of errors occurring during data entry."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that all interactive form components are correctly labeled."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/label-elements.html"
-				},
-				{
-					"id": "allow-clipboard",
-					"title": "Reduce issues within data entry with manual third-party content",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Validate form errors and account for tooling requirements](https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements).",
-					"description": [
-						{
-							"1": "Provide a mechanism in which users can easily take content from third-party sources and use it within your product or service. Techniques such as the ability to paste into forms or the ability to drag and drop can act as shortcuts to avoid retyping or recreating (using system resources) which may be energy-intensive or time-intensive for the user.",
-							"2": "Identifying mechanisms that may prevent the ability to import third-party content such as blocking pasting content or disabling the ability to drag and drop should be detected and flagged (unless a reason for this can be justified within the code). Mechanisms that aid the ability to import third-party content such as import or paste buttons should be actively encouraged."
-						}
-					],
-					"examples": [
-						{
-							"1": "These CodePen examples of [log in](https://codepen.io/colorlib/pen/rxddKy) and [registration](https://codepen.io/RajRajeshDn/pen/QWwypRy) forms do not inhibit the user from pasting content from third-party sources which allows for fast data entry if the information is stored elsewhere."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that the ability to paste content is uninhibited (no onpaste=\"return false;\").",
-									"2": "Check that the ability to drag and drop third-party content can be achieved successfully.",
-									"3": "Check that import options are provided if the above two options are unavailable or fail."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/allow-clipboard.html"
 				},
 				{
 					"id": "required-elements",
@@ -1935,7 +1722,7 @@
 				{
 					"id": "media-and-preference-queries",
 					"title": "Ensure CSS preference media queries are correctly applied",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use sustainability beneficial user preference media queries](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainability-beneficial-user-preference-media-queries).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use media queries that support sustainability goals](https://www.w3.org/TR/web-sustainability-guidelines/#use-media-queries-that-support-sustainability-goals).",
 					"description": [
 						{
 							"1": "Provide mechanisms through CSS that adhere to the user's preferences regarding how they may choose to browse a website or application. While some queries that exist in the language will hold little sustainability value, others could have PPP benefits through accessibility (societal factors), or environmental (reducing hardware or data usage).",
@@ -2085,7 +1872,7 @@
 				{
 					"id": "sustainable-javascript",
 					"title": "Optimize a codebase through rewriting for performance",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use standards-based JavaScript and APIs](https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use sustainable JavaScript and APIs](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-javascript-and-apis).",
 					"description": [
 						{
 							"1": "Improve the quality of JavaScript code by examining the contents and identifying any issues that could be deemed a matter of sustainability which could trigger a large load upon hardware resources (and thus put a strain on battery charge cycles). In addition to this, matters of accessibility and performance with such code can be considered.",
@@ -2114,9 +1901,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-javascript.html"
 				},
 				{
-					"id": "sustainable-apis",
+					"id": "energy-relevant-apis",
 					"title": "Ensure JavaScript APIs are correctly applied",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use standards-based JavaScript and APIs](https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use sustainable JavaScript and APIs](https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-javascript-and-apis).",
 					"description": [
 						{
 							"1": "Provide mechanisms through JavaScript that minimize the user's energy consumption by either optimizing the performance of the website or application itself or improving functionality in such a way that it reduces the utilization of resources when they are not required by the user. Some JavaScript APIs can have explicit sustainability benefits, while others may improve other PPP benefits through accessibility (societal factors).",
@@ -2142,40 +1929,12 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-apis.html"
-				},
-				{
-					"id": "code-security",
-					"title": "Ensure all vulnerabilities are removed and code is Linted",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Ensure that your code is secure](https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-your-code-is-secure).",
-					"description": [
-						{
-							"1": "Scan the website or application's code for issues that may otherwise potentially leave a product or service vulnerable to exploitation. This will not only include first-party code that is created by the project owners but third-party tooling imported. Any third-party library or framework found to contain harmful code should be removed before production.",
-							"2": "Because this can occur at both the client-side and server-side internal access may be required if server-side scanning is wished to be included within machine testability, however within the scope of the success criteria, if internal access is not available or permitted, testing the code using known methods and scanning client-side code for harmful techniques should help with passing."
-						}
-					],
-					"examples": [
-						{
-							"1": "RayGun [provides a great article](https://raygun.com/blog/js-security-vulnerabilities-best-practices/) about vulnerabilities and best practices when working with JavaScript. Some of the things mentioned are covered within WSG in other sections, all others can be followed here.",
-							"2": "[Snyk](https://snyk.io/) is one of the most well-known providers of data regarding code vulnerabilities. They can be integrated within existing tooling or you can browse their [database of known security issues](https://security.snyk.io/) to be aware of."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check the product or service for vulnerabilities within your code, ensuring they are resolved."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/code-security.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/energy-relevant-apis.html"
 				},
 				{
 					"id": "dependency-management",
 					"title": "Identify and remove unused packages and dependencies",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies appropriately and ensure maintenance](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies sparingly and maintain them](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them).",
 					"description": [
 						{
 							"1": "Provide a mechanism for identifying if a library or framework is currently in use and if not, remove the said tooling and its unused dependencies from the production code. This will help reduce the PPP burden of the website as less bloat will reach the user which can have a large impact if they are on a low-powered device or a restricted data plan.",
@@ -2203,7 +1962,7 @@
 				{
 					"id": "dependency-necessity",
 					"title": "Implement modularized or lightweight frameworks and libraries",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies appropriately and ensure maintenance](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies sparingly and maintain them](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them).",
 					"description": [
 						{
 							"1": "Provide a mechanism for determining how much of a library of framework you require for your website or application to function, and then requesting just that modularized segment to reduce the overall payload and load on the user's hardware during rendering. This is especially critical for third-party scripting but is also useful for CSS. Reduce the overhead of libraries and frameworks which may be used by the product or service but could be offered through lighter or less production-heavy alternatives.",
@@ -2238,7 +1997,7 @@
 				{
 					"id": "dependency-updates",
 					"title": "Ensure that dependencies are verified as up-to-date",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies appropriately and ensure maintenance](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use dependencies sparingly and maintain them](https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them).",
 					"description": [
 						{
 							"1": "Ensure that the deliverables are current and up-to-date, thereby providing any necessary security patches or bug fixes that are required to remain operational. This is especially true when a website or application is dependent on third-party libraries or frameworks and has a complex toolchain. As such, verifying the maintenance status of work is critical.",
@@ -2329,7 +2088,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/beneficial-files.html"
 				},
 				{
-					"id": "identify-requirements",
+					"id": "appropriate-implementation",
 					"title": "Encourage the use of more sustainable creation toolchains",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use the most efficient solution for your service](https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service).",
 					"description": [
@@ -2354,7 +2113,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/identify-requirements.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/appropriate-implementation.html"
 				},
 				{
 					"id": "extensions-and-plugins",
@@ -2756,9 +2515,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/refresh-frequency.html"
 				},
 				{
-					"id": "protocols",
+					"id": "Protocol efficiency",
 					"title": "Deliver content using the correct, most secure protocol",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Consider the impact and requirements of data processing](https://www.w3.org/TR/web-sustainability-guidelines/#consider-the-impact-and-requirements-of-data-processing).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Assess the impact and requirements of data processing](https://www.w3.org/TR/web-sustainability-guidelines/#assess-the-impact-and-requirements-of-data-processing).",
 					"description": [
 						{
 							"1": "Guarantee that users who experience a website or application will have their experience delivered using a secure delivery route. Transmitting data using non-secure means (now that SSL certificates can be obtained free of charge) should never occur as there are inherent risks that can otherwise be avoided during the browsing session.",
@@ -2781,12 +2540,12 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/protocols.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/Protocol efficiency.html"
 				},
 				{
 					"id": "global-cdns",
 					"title": "Provide distributed access to static resources via a CDN",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) when beneficial](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial).",
 					"description": [
 						{
 							"1": "Offer a mechanism for users to gain access to a static website or application assets in a location that is closer to them than the origin host. By utilizing a content delivery network, large media files, images, fonts, and other static assets can be distributed to regional locations so that users can access them quicker (as the route to the file is shorter).",
@@ -2795,16 +2554,19 @@
 					],
 					"examples": [
 						{
-							"1": "While it does not provide insights into sustainability, [CDN Compare](https://cdncomparison.com/) offers a great deal of context between several popular content delivery networks and the offerings they provide to help you make up your mind."
+							"1": "While it does not provide insights into sustainability, [CDN Compare](https://cdncomparison.com/) offers a great deal of context between several popular content delivery networks and the offerings they provide to help you make up your mind.",
+							"2": "[Our World In Data](https://ourworldindata.org/internet), the [World Bank](https://data.worldbank.org/indicator/IT.NET.USER.ZS), and [Wikipedia](https://en.wikipedia.org/wiki/List_of_countries_by_number_of_Internet_users) provide some awesome information on average Internet usage worldwide. While this cannot replace real-world demographics, it can be helpful for new projects."
 						}
 					],
 					"tests": [
 						{
 							"procedure": [
 								{
-									"1": "Check the existing location of static resources on the existing website.",
-									"2": "If they exist on the first-party domain, calculate the sustainability value of using a CDN.",
-									"3": "Check if the value of using a CDN will be beneficial, if so use one."
+									"1": "Check if you only serve a local (single country) audience, if so, avoid CDN usage.",
+									"2": "Check using analytics the average distribution of your product or service's users.",
+									"3": "Check the existing location of static resources on the existing website.",
+									"4": "If they exist on the first-party domain, calculate the sustainability value of using a CDN.",
+									"5": "Check a hosting or CDN provider's locations to match as closely to your customers."
 								}
 							],
 							"expectedResults": "All checks above are true."
@@ -2815,7 +2577,7 @@
 				{
 					"id": "sustainability-commitment",
 					"title": "Ensure that the CDN and its chain of locations are sustainable",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) when beneficial](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial).",
 					"description": [
 						{
 							"1": "Test the sustainability of the CDN against WSG as a service provider as a third-party service in addition to any sustainability criteria and best practices that exist externally for infrastructure and hosting. This not only applies to the provider itself but to all of the nodes that it uses to supply distribution, and any third-parties it uses as part of its extended network. As such, calculating and vetting providers can be complex.",
@@ -2843,38 +2605,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-commitment.html"
 				},
 				{
-					"id": "local-servers",
-					"title": "Provide a copy of the product or service close to the user",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
-					"description": [
-						{
-							"1": "Provide a mechanism for mirroring the content (website or application) as close to the user as possible to reduce the loading time as effectively as possible. This can be done using CDNs or by analyzing metrics data and deciding based on the locale of users where the origin host choice would be best placed (both can be useful methods).",
-							"2": "Machine testing for this requires internal access to analytics logs to determine where user locations are and from this identify the best location to place information (if a CDN is used, this may be automatically done on your behalf meeting compliance requirements). If no internal access or data is available, general statistics about Internet usage could help identify trends."
-						}
-					],
-					"examples": [
-						{
-							"1": "[Our World In Data](https://ourworldindata.org/internet), the [World Bank](https://data.worldbank.org/indicator/IT.NET.USER.ZS), and [Wikipedia](https://en.wikipedia.org/wiki/List_of_countries_by_number_of_Internet_users) provide some awesome information on average Internet usage worldwide. While this cannot replace real-world demographics, it can be helpful for new projects."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check if you only serve a local (single country) audience, if so, avoid CDN usage.",
-									"2": "Check using analytics the average distribution of your product or service's users.",
-									"3": "Check a hosting or CDN provider's locations to match as closely to your customers."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/local-servers.html"
-				},
-				{
 					"id": "inappropriate-resources",
 					"title": "Avoid hosting dynamic resources or third-party scripts on the CDN",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) appropriately](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Content Delivery Networks (CDNs) when beneficial](https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial).",
 					"description": [
 						{
 							"1": "Prevent non-first-party dynamic resources from being loaded through a content delivery network. The justification behind this is due to browser mechanisms such as CORS and cache partitioning, unfavorable things can occur if you try to load dynamic resources from third-party websites (this is a security measure to prevent malicious code injection).",
@@ -2901,60 +2634,36 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/inappropriate-resources.html"
 				},
 				{
-					"id": "expiration-dates",
+					"id": "lifecycle-management",
 					"title": "Provide a review or expiration date on website content",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Store data according to the needs of your users](https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users).",
 					"description": [
 						{
 							"1": "Provide a mechanism that ensures all content within a website or application gets regularly reviewed and if necessary refreshed, updated, or if it has reached the end-of-life, deleted or archived. As such, publicly providing a date when events will occur should offer an incentive for providers to action these labels (and users can note outdated content).",
-							"2": "Machine testability should offer a grace period for content that has passed the date when a review should take place (as circumstances can lead to dates being missed), however, failings should still be flagged as potential issues that need to be resolved. Labels within the content should be detectable by scripts that issue such dates, and if they do not exist, recommendations can be issued."
+							"2": "Also increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other factors. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.",
+							"3": "Machine testability should offer a grace period for content that has passed the date when a review should take place (as circumstances can lead to dates being missed), however, failings should still be flagged as potential issues that need to be resolved. Labels within the content should be detectable by scripts that issue such dates, and if they do not exist, recommendations can be issued."
 						}
 					],
 					"examples": [
 						{
-							"1": "On the [National Health Service](https://www.nhs.uk/conditions/migraine/) website, at the bottom of an article about a medical condition, a clear piece of text mentioning when the content was last reviewed and is next due for review is given."
+							"1": "On the [National Health Service](https://www.nhs.uk/conditions/migraine/) website, at the bottom of an article about a medical condition, a clear piece of text mentioning when the content was last reviewed and is next due for review is given.",
+							"2": "A List Apart [provides a topics page](https://alistapart.com/topics/) which groups various pieces of content (articles) into categories. By doing this it reduces the number of pages an individual will need to click through to find what they are after.",
+							"3": "Maggie Appleton has a [really visually appealing way](https://maggieappleton.com/garden) of laying out all of their different topics, content types, and even how well-developed their thoughts are. With all of this, you can filter their content accordingly."
 						}
 					],
 					"tests": [
 						{
 							"procedure": [
 								{
-									"1": "Check that all articles (or content where material may go out-of-date) have a review or expiration date."
+									"1": "Check that all articles (or content where material may go out-of-date) have a review or expiration date.",
+									"2": "Check that content within the website (or potentially within long articles) can be filtered by classification.",
+									"3": "Check that all classification patterns used on websites are repeated across all pages and clearly labeled."
 								}
 							],
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/expiration-dates.html"
-				},
-				{
-					"id": "classify-and-tag",
-					"title": "Provide a classification policy to content if it is deemed sustainable",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Store data according to the needs of your users](https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users).",
-					"description": [
-						{
-							"1": "Increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other factors. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.",
-							"2": "Machine testability for such features will involve examining the page's source code to identify repeating patterns across several pages (if correctly labeled, patterns such as tags or categories may be semantically easy to find). The sustainability of such implementations must account for the impact it has upon rendering across each page, against the benefit it has to the user experience."
-						}
-					],
-					"examples": [
-						{
-							"1": "A List Apart [provides a topics page](https://alistapart.com/topics/) which groups various pieces of content (articles) into categories. By doing this it reduces the number of pages an individual will need to click through to find what they are after.",
-							"2": "Maggie Appleton has a [really visually appealing way](https://maggieappleton.com/garden) of laying out all of their different topics, content types, and even how well-developed their thoughts are. With all of this, you can filter their content accordingly."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that content within the website (or potentially within long articles) can be filtered by classification.",
-									"2": "Check that all classification patterns used on websites are repeated across all pages and clearly labeled."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/classify-and-tag.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/lifecycle-management.html"
 				},
 				{
 					"id": "optimized-logging",
@@ -3143,7 +2852,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/competitor-impact.html"
 				},
 				{
-					"id": "sustainability-goals",
+					"id": "web-sustainability-goals",
 					"title": "Have a clearly defined set of sustainability goals",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Define clear organizational sustainability goals and metrics](https://www.w3.org/TR/web-sustainability-guidelines/#define-clear-organizational-sustainability-goals-and-metrics).",
 					"description": [
@@ -3172,12 +2881,12 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-goals.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/web-sustainability-goals.html"
 				},
 				{
-					"id": "obtaining-certifications",
+					"id": "obtaining-verification",
 					"title": "Verify and showcase any third-party sustainability certifications",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Validate efforts using established third-party certifications](https://www.w3.org/TR/web-sustainability-guidelines/#validate-efforts-using-established-third-party-certifications).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Validate web sustainability efforts through external verification](https://www.w3.org/TR/web-sustainability-guidelines/#validate-web-sustainability-efforts-through-external-verification).",
 					"description": [
 						{
 							"1": "Provide a mechanism for product or service owners who have achieved certifications either as an individual or as a business in a related sustainability field (with a recognized achievement or certification) to have that accounted for in the calculation of their sustainability journey. Any such certifications should be included within a statement.",
@@ -3201,7 +2910,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/obtaining-certifications.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/obtaining-verification.html"
 				},
 				{
 					"id": "policies-and-practices",
@@ -3262,7 +2971,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/impact-reports.html"
 				},
 				{
-					"id": "BSPM08-3",
+					"id": "disclosure-reporting",
 					"title": "Check for any compliance related disclosure documentation",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Support mandatory disclosures and reporting](https://www.w3.org/TR/web-sustainability-guidelines/#support-mandatory-disclosures-and-reporting).",
 					"description": [
@@ -3286,7 +2995,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM08-3.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/disclosure-reporting.html"
 				},
 				{
 					"id": "management-and-maintenance",
@@ -3349,7 +3058,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/iterative-consideration.html"
 				},
 				{
-					"id": "security-updates",
+					"id": "feature-changes",
 					"title": "Clearly label changes using a release notes feature",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Implement continuous improvement procedures](https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures).",
 					"description": [
@@ -3377,12 +3086,12 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/security-updates.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/feature-changes.html"
 				},
 				{
 					"id": "sustainable-development-goals",
 					"title": "Align product or service compliance with the SDGs",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Establish if a digital product or service is necessary](https://www.w3.org/TR/web-sustainability-guidelines/#establish-if-a-digital-product-or-service-is-necessary).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Evaluate if a digital product or service is necessary](https://www.w3.org/TR/web-sustainability-guidelines/#evaluate-if-a-digital-product-or-service-is-necessary).",
 					"description": [
 						{
 							"1": "Provide additional compliance criteria for testing tools to ensure that sustainability goals are being met. As such testing tools can analyze websites to vet each product or service against the United Nations Sustainable Development Goals to decide if enough evidence exists within WSG compliance (and other criteria) to pass or fail applicable categories.",
@@ -3528,38 +3237,6 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/employee-benefits.html"
 				},
 				{
-					"id": "accessibility-policy",
-					"title": "Provide a publicly visible accessibility statement",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use Justice, Equity, Diversity, Inclusion (JEDI) practices](https://www.w3.org/TR/web-sustainability-guidelines/#use-justice-equity-diversity-inclusion-jedi-practices).",
-					"description": [
-						{
-							"1": "Ensure that users are made aware of (or able to find out) the lengths that a product or service has gone to, ensuring that individuals with accessibility needs have been included in the design and development of the product or service. It should also aim to describe any limitations of the product or service and how to submit a support request.",
-							"2": "The European Environment Agency provides a simple but effective accessibility statement that underlines compatibility issues and levels of support with existing web standards that users need to be aware of."
-						}
-					],
-					"examples": [
-						{
-							"1": "United Kingdom charity Scope [provides a comprehensive](https://www.scope.org.uk/accessibility/) website accessibility statement that showcases their commitment to accessibility along with adaptations made and issues they are aware of to resolve.",
-							"2": "The European Environment Agency provides a simple but effective [accessibility statement](https://www.eea.europa.eu/en/accessibility) that underlines compatibility issues and levels of support with existing web standards that users need to be aware of."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check for a publicly visible accessibility statement on the website.",
-									"2": "Check for a section detailing accessibility compatibility.",
-									"3": "Check for a section on accessibility features built-in.",
-									"4": "Check for a section listing support and known issues.",
-									"5": "Check that the content is written in plain English for readability."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/accessibility-policy.html"
-				},
-				{
 					"id": "data-practices",
 					"title": "Provide links to the privacy policy and relevant legislation",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Promote responsible data practices](https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices).",
@@ -3591,9 +3268,36 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/data-practices.html"
 				},
 				{
+					"id": "data-ownership",
+					"title": "Enable users to manage their accounts and data",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Promote responsible data practices](https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices).",
+					"description": [
+						{
+							"1": "Offer a mechanism for users of a product or service to allow the management of any information (data) or accounts (subscription or otherwise) they may hold. Best practices with such systems will include allowing the deletion of accounts and/or data without human intervention and providing single steps (with confirmation) to achieve this.",
+							"2": "Machine testing such features will undoubtedly require internal access for a product or service, however, if the ability to create an account can be automated or undertaken, then the visibility of the source code within the account management system can be verified by tooling. As such, where internal access is required, gain permission, then check for the ability to delete accounts (and verify that this action works), if it does, pass the check."
+						}
+					],
+					"examples": [
+						{
+							"1": "A Software as a Service provider has within the account manager, a profile section allowing customers to click a big red button to \"delete account and data\". Upon hitting confirm, this erases their details from the servers."
+						}
+					],
+					"tests": [
+						{
+							"procedure": [
+								{
+									"1": "Check that users can delete their accounts and data without human intervention."
+								}
+							],
+							"expectedResults": "All checks above are true."
+						}
+					],
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/data-ownership.html"
+				},
+				{
 					"id": "outdated-content",
 					"title": "Provide a website archive containing outdated or old versions",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Implement appropriate data management procedures](https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Promote responsible data practices](https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices).",
 					"description": [
 						{
 							"1": "Provide a mechanism for retrieving old information that may have expired in terms of currency, but may still have a practical use as a reference for individuals wishing to identify information that had prior use or relevance for a product or service. This technique is most useful when the information is content-focused or showcasing iterative change.",
@@ -3619,33 +3323,6 @@
 						}
 					],
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/outdated-content.html"
-				},
-				{
-					"id": "data-controllers",
-					"title": "Enable users to manage their accounts and data",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Implement appropriate data management procedures](https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures).",
-					"description": [
-						{
-							"1": "Offer a mechanism for users of a product or service to allow the management of any information (data) or accounts (subscription or otherwise) they may hold. Best practices with such systems will include allowing the deletion of accounts and/or data without human intervention and providing single steps (with confirmation) to achieve this.",
-							"2": "Machine testing such features will undoubtedly require internal access for a product or service, however, if the ability to create an account can be automated or undertaken, then the visibility of the source code within the account management system can be verified by tooling. As such, where internal access is required, gain permission, then check for the ability to delete accounts (and verify that this action works), if it does, pass the check."
-						}
-					],
-					"examples": [
-						{
-							"1": "A Software as a Service provider has within the account manager, a profile section allowing customers to click a big red button to \"delete account and data\". Upon hitting confirm, this erases their details from the servers."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Check that users can delete their accounts and data without human intervention."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/data-controllers.html"
 				},
 				{
 					"id": "ai-and-data-collection",
@@ -3680,7 +3357,7 @@
 				{
 					"id": "fuel-divestment",
 					"title": "Verify all partnerships and sponsors against WSG",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Include responsible financial policies](https://www.w3.org/TR/web-sustainability-guidelines/#include-responsible-financial-policies).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Adopt responsible financial practices](https://www.w3.org/TR/web-sustainability-guidelines/#adopt-responsible-financial-practices).",
 					"description": [
 						{
 							"1": "Ensure that if an individual or organization is being endorsed or financed by an external group or organization, the influence that the group may provide is sustainably minded (and will not divert the product or service away from such activities). Ensuring all endorsements are sustainable can also help service providers avoid claims of greenwashing.",
@@ -3711,7 +3388,7 @@
 				{
 					"id": "philanthropy-policy",
 					"title": "Verify and showcase any third-party sustainability projects",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Include organizational philanthropy policies](https://www.w3.org/TR/web-sustainability-guidelines/#include-organizational-philanthropy-policies).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Adopt organizational philanthropy practices](https://www.w3.org/TR/web-sustainability-guidelines/#adopt-organizational-philanthropy-policies).",
 					"description": [
 						{
 							"1": "Identify any third-party projects connected with the product or service that can be verified as sustainability causes or schemes of value that may benefit either the business on its sustainability journey or directly lead to improvements for people or the planet. Schemes can include reinvesting in the ecosystem, or community, or reducing emissions.",
@@ -3741,7 +3418,7 @@
 				{
 					"id": "environmental-budget",
 					"title": "Provide a sustainability and environmental budget",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Define performance and environmental budgets](https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-and-environmental-budgets).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Define performance, environmental, and human budgets](https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-environmental-and-human-budgets).",
 					"description": [
 						{
 							"1": "Provide a clearly defined set of targets to achieve when working to either make an existing project more sustainable or create a newly sustainable website or application. Just as with performance budgets, you can define the factors that are most achievable and iterate with more factors (and improvements) to be included over a project's lifecycle.",
@@ -3770,7 +3447,7 @@
 				{
 					"id": "performance-budget",
 					"title": "Provide a performance budget for your product or service",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Define performance and environmental budgets](https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-and-environmental-budgets).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Define performance, environmental, and human budgets](https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-environmental-and-human-budgets).",
 					"description": [
 						{
 							"1": "Provide a clearly defined set of targets to achieve when working to either make an existing project more performant or create a new website or application fast and optimized. As with a sustainability budget, you should define the factors that are most relevant to your project and consider targets that will make a sustainable difference to your users.",
@@ -3799,7 +3476,7 @@
 				{
 					"id": "measurable-improvements",
 					"title": "Benchmark the improvement in revised budget achievements",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Define performance and environmental budgets](https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-and-environmental-budgets).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Define performance, environmental, and human budgets](https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-environmental-and-human-budgets).",
 					"description": [
 						{
 							"1": "Provide a mechanism for service providers to monitor the sustainability or performance improvements that occur over time when revising their budgets to meet stricter targets after they meet existing ones. This will require constant monitoring of existing products or services to ensure that goals are being met and that budgets are improving for the better.",
@@ -3829,9 +3506,9 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/measurable-improvements.html"
 				},
 				{
-					"id": "open-source-policy",
+					"id": "open-source-governance",
 					"title": "Produce an open source policy and verify licensing",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use open source where possible](https://www.w3.org/TR/web-sustainability-guidelines/#use-open-source-where-possible).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use and contribute to open source](https://www.w3.org/TR/web-sustainability-guidelines/#use-and-contribute-to-open-source).",
 					"description": [
 						{
 							"1": "Consider the place that open source has in a product or service. If open source (for example) is used within code libraries such as frameworks, these should be identified and the license type should be verified to ensure compliance occurs (for instance, attribution). If the business in question is supportive of open source, this should also be noted publicly.",
@@ -3855,12 +3532,12 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/open-source-policy.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/open-source-governance.html"
 				},
 				{
-					"id": "contribution",
+					"id": "collaboration-and-contribution",
 					"title": "Identify contributions made to open source projects",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use open source where possible](https://www.w3.org/TR/web-sustainability-guidelines/#use-open-source-where-possible).",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Use and contribute to open source](https://www.w3.org/TR/web-sustainability-guidelines/#use-and-contribute-to-open-source).",
 					"description": [
 						{
 							"1": "Provide a mechanism to identify any open source work an individual or business may have made which gives back to the community. Open source and working on collaborative projects is a sustainable way of helping to evolve knowledge around digital issues and as such should be referenced in meeting sustainability objectives (especially high profile work).",
@@ -3884,7 +3561,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/contribution.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/collaboration-and-contribution.html"
 				},
 				{
 					"id": "audience-awareness",
