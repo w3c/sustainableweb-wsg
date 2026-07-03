@@ -4609,11 +4609,11 @@
 					"id": "implement-continuous-improvement-procedures",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures",
 					"guideline": "Implement continuous improvement procedures",
-					"subheading": "Continuously improve projects through regular reviews and iteration, integrating technical debt and security management, determining if new or existing functionality is required.",
+					"subheading": "Maintain continuous improvement processes that balance feature changes, maintenance, and updates with user value and sustainability outcomes.",
 					"criteria": [
 						{
 							"title": "Continuous improvement",
-							"description": "Establish policies and practices to enable continuous improvement and resource practices appropriately to support these efforts over time.",
+							"description": "Embed continuous improvement practices that clearly report what is changing, why it is changing, and whether it improves environmental sustainability outcomes. Ensure that environmental and other ESG impacts are assessed alongside operational and business performance metrics.",
 							"resources": [
 								{
 									"6 stages of continuous improvement and why it is important": "https://www.betterup.com/blog/continuous-improvement",
@@ -4641,7 +4641,7 @@
 						},
 						{
 							"title": "Retrospectives conducted",
-							"description": "Review deliverables and update frequency to ensure project teams have enough time to conduct user research, identify technical debt, and produce high-quality output as well as share what they learned.",
+							"description": "Review deliverables and update frequently to ensure project teams have enough time to conduct user research, identify and eliminate technical debt, and produce high-quality output as well as share what they learned.",
 							"resources": [
 								{
 									"GPF - General Policy Framework (PDF) - 1.4 - Strategy (Regular Reviews)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -4657,7 +4657,7 @@
 						},
 						{
 							"title": "Iterative consideration",
-							"description": "Display a track record of continuous improvement (iteration) processes to analyze the digital product or service. Simultaneously address any potential consequences of ongoing experimentation, such as technical debt, product performance, and emissions. Analytics are limited to strictly necessary features that aid decision-making, encouraging user feedback, and comparing performance against organization goals and user needs.",
+							"description": "Display a track record of continuous improvement (iteration) processes to analyze the digital product or service. Simultaneously address any potential consequences of ongoing experimentation, such as technical debt, product performance, and emissions. Limit analytics to strictly necessary features that aid decision-making, encouraging user feedback, and comparing performance against organization goals and user needs.",
 							"resources": [
 								{
 									"An Introduction to Growth Driven Design (PDF)": "https://cdn2.hubspot.net/hubfs/124445/docs/ebook-growth.pdf?t=1488562926580",
@@ -4678,7 +4678,7 @@
 						},
 						{
 							"title": "Functionality decisions",
-							"description": "Justify and prioritize the retention of existing features, the creation of new functionality, and the decommissioning or elimination of unused functionality or low-traffic content throughout the product's life cycle on a case-by-case basis.",
+							"description": "Regularly review all functionality across the product lifecycle. Justify and prioritize decisions to retain, change, add, or remove features based on environmental impact, user value, usage, and maintenance cost. This includes decommissioning unused or low-traffic functionality and content.",
 							"resources": [
 								{
 									"A guide to feature sunset and product decommissioning": "https://blog.logrocket.com/product-management/feature-sunset-product-decommissioning-guide/",
@@ -4695,25 +4695,6 @@
 									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
 									"Using UX Design to Build a Sustainable Future": "https://uxmag.com/articles/using-ux-design-to-build-a-sustainable-future",
 									"When and How to Sunset a Product or a Feature Gracefully": "https://medium.com/@baris.oker/when-and-how-to-sunset-a-product-or-a-feature-gracefully-09ece50619f0"
-								}
-							]
-						},
-						{
-							"title": "Security updates",
-							"description": "Provide corrective security and policy updates during the product or service life cycle. These should be distinguished from more extensive evolutionary updates.",
-							"resources": [
-								{
-									"Best Practices for Material Updates to Your Privacy Policy": "https://www.termsfeed.com/blog/best-practices-material-updates-privacy-policy/",
-									"Device security guidance": "https://www.ncsc.gov.uk/collection/device-security-principles-for-manufacturers/provide-updates-securely",
-									"GPF - General Policy Framework (PDF) - 1.4 - Strategy (Regular Reviews)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 3.1 - Architecture (Impact Reduction)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 3.4 - Architecture (Supplied Updates)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 3.5 - Architecture (Patch Updates)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 3.6 - Architecture (Incremental Updates)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 7-3053 - Continuous Improvement": "https://gr491.isit-europe.org/en/crit.php?id=7-3053-uxui-over-time-the-organization-will-increase-its",
-									"How to Design a Sustainable Data Strategy": "https://www.mightybytes.com/insights/design-a-sustainable-data-strategy/",
-									"Vulnerability management": "https://www.ncsc.gov.uk/collection/vulnerability-management/guidance/policy-update-by-default",
-									"Web Almanac: Sustainability": "https://almanac.httparchive.org/en/2024/sustainability"
 								}
 							]
 						}
