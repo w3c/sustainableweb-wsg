@@ -394,7 +394,7 @@
 				<div class="summary">
 					<details> <!-- Use quantitative research to measure the needs of users and affected communities -->
 						<summary id="audience-evaluation">Use quantitative research to measure the needs of users and affected communities</summary><p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access">Understand user requirements or constraints, resolving barriers to access</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints">Understand user requirements or constraints</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for application and website owners to better curate their products and services around the needs of their users and those affected by what has been created and in doing so, reduce the PPP burden which can impact the sustainability of the website, especially around Social, people-centered (and user experience) impacts.</p>
 						<p>It should be noted that for machine automation, only quantitative feedback will be able to be processed (and therefore useful) and all information gathering must be done sustainably and ethically. It should also be noted that because information is being requested, internal access may be required to formally identify certain characteristics necessary for processing.</p>
@@ -418,7 +418,7 @@
 					</details>
 					<details> <!-- Test against specific disability profiles for more calibrated accessibility -->
 						<summary id="barriers-and-access">Test against specific disability profiles for more calibrated accessibility</summary><p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints-resolving-barriers-to-access">Understand user requirements or constraints, resolving barriers to access</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints">Understand user requirements or constraints</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Go beyond the remit of Web Content Accessibility Guidelines (<abbr title="Web Content Accessibility Guidelines">WCAG</abbr>) and accessibility by default and to encourage designers and developers of products to test their creations against a range of specific named types of disabilities to both better understand the conditions and to be able to more structurally and sustainably better test for the unique issues each disability brings to technology in terms of adaptation.</p>
 						<p>It is strongly encouraged that teams work with individuals with disabilities when attempting this task as they will have the lived experience to help you better adapt your products and services to their needs. If this is not possible or you wish to theorize against certain pre-built profiles, you can refer to established medical texts to identify potential symptoms and refer these against issues that may cause technology issues, building solutions, and/or simulators (see color blindness) to help test for issues along the creation process.</p>
@@ -445,7 +445,7 @@
 				<div class="summary">
 					<details> <!-- Measure interaction cost to reach every page in the information architecture -->
 						<summary id="efficient-paths">Measure interaction cost to reach every page in the information architecture</summary><p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">Minimize non-essential content, interactivity, or journeys</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys">Design efficient and streamlined user journeys</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Reduce the cognitive load for users between the initial visit to a website or application and reaching their final destination where the information they are seeking is located. The path to locating such information can be routed through multiple interactions such as a search mechanism, hyperlinks, form controls (where appropriate), and progressive disclosure features (reducing the complexity involved in reaching a destination will reduce the rendering load leading to sustainability benefits).</p>
 						<p>While there is no hard and fast rule regarding the number of clicks required to meet a user's expectations, including clear way-finding (breadcrumbs can be machine-identified as can landing page regions to guide users along the path). It is therefore a sensible precaution to ensure that the steps required are well documented to avoid overwhelming a user. If required, click-through testing can be measured to identify bottlenecks in complex applications.</p>
@@ -468,137 +468,10 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- Check for content obscuring materials that occur upon pageLoad -->
-						<summary id="distraction-free-design">Check for content obscuring materials that occur upon pageLoad</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">Minimize non-essential content, interactivity, or journeys</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Ensure that users can read the materials produced for your website or application and click on interactive content (such as links or buttons) that would otherwise be impaired by other content that due to positioning obscures the material by preventing the page from functioning correctly (wasted clicks, especially if JavaScript functions monitor them could lead to emission costs so its best to avoid unnecessary actions).</p>
-						<p>There will be occasions when content should be obscured to progressively disclose additional content, but for unintentional overlapping, obscuring deliberately for attention (unnecessary), and all cases where the user did not ask to be impacted, the visibility of the content should be assured (either manually or mechanically through identifying object locations and dimensions plus where conflicts arise, issue remedial advice).</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>Advertising is often a cause of content that temporarily overlaps content with the intent of requesting clicks or attention-grabbing to monetize the material on the website or application. While such actions may be financially reasoned, they are rarely sustainably minded.</li>
-							<li>Consent managers are an example of obscuring materials for the good as they ensure that users to the page authorize potentially invasive technologies before they become active. An example of this is the cookie consent banner that asks for their allowance before they can be used to store sensitive information on the user's machine.</li>
-							<li>Scrollable content in which the scrollbar has been obscured, replaced (with a non-functional, obscured, or hidden replacement), or hidden entirely making it impossible to detect where additional content may occur beyond just the window (such as in overflowing boxes) will be unavailable to users making its use of hardware to render a waste of resources.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check the page's content to ensure none is clipped by other materials or an overflow issue (with a scrollbar lacking).</li>
-							<li>Check that all links and buttons are functioning.</li>
-							<li>Check that progressive disclosing content only appears when requested.</li>
-							<li>Check that necessary disclosing materials that obscure content can be easily removed.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Break large pieces of content down using progressive disclosure -->
-						<summary id="eliminate-the-non-essential">Break large pieces of content down using progressive disclosure</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">Minimize non-essential content, interactivity, or journeys</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Help increase the readability of content within a website or application by breaking down larger pieces of content into smaller constituent pieces. In the same way that a book is broken down into chapters, using progressive disclosure you can reveal sections when the reader is ready, avoiding information overload (the same can be done with long tasks).</p>
-						<p>For machine testability, identification of such progressive disclosure markers can be found using the HTML details or dialog element, the CSS target selector (and its accompanying HTML ID attributes), the CSS checkbox hack, the use of JavaScript hash bangs, and also the use of state (and content) changes through various frameworks. Each of these can build a picture of how content displays on-screen during the user experience, and some can load content only when it is requested which can reduce data transfer and rendering requests leading to sustainability improvements.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>Tabs can be a simple way in which <a href="https://www.gov.uk/bank-holidays">you can showcase</a> different pieces of information to an audience. By using a mechanism such as the CSS target selector you can reveal information based on its related HTML ID.</li>
-							<li>Dropdown menus such as the one you will find on many websites disclose from a single link several additional roadmapped locations which are grouped children in the information architecture of the product or service.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that progressive disclosure is used appropriately with your content or tasks to perform.</li>
-							<li>Check that progress can be made from one disclosure to another.</li>
-							<li>Check that each disclosure element can be closed successfully.</li>
-							<li>Check that the disclosure method you use is compatible with user's browsers.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Remove any non-user initiated pop-up or model windows -->
-						<summary id="user-initiated-actionable-content">Remove any non-user initiated pop-up or model windows</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">Minimize non-essential content, interactivity, or journeys</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Reduce problematic friction within the user experience and help reduce the number of deceptive patterns which might occur onLoad and during the interaction process as these can cause considerable sustainability issues as a result of wasted emissions. By ensuring that the user remains in control of the interface and that websites and applications work as expected, a more ethical and optimized product or service is likely to result.</p>
-						<p>Machine testing can analyze JavaScript for the use of pop up events, the appearance of "_blank" within hyperlinks or frames, or other functionality that exists that may produce overlays. It is important to question the acceptability of such usage for example, opening links in new windows may be acceptable for non-web formats like PDF, otherwise, it is best to advise against its use.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>While not as common today, pop up advertisements which appear in a new window or in a separate frame used to be a fixture of the early web and required heavy user management to close multiple banners that would trigger.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check for CSS and JavaScript overlays that may occur onLoad and remove when identified.</li>
-							<li>Check that any pop up events can only be initiated with the user's consent.</li>
-							<li>Check all hyperlinks for new window opening triggers (and action as appropriate).</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Decorative design elements can be disabled if they are not done so by default -->
-						<summary id="decorative-design">Decorative design elements can be disabled if they are not done so by default</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minimize-non-essential-content-interactivity-or-journeys">Minimize non-essential content, interactivity, or journeys</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Provide a mechanism in which users can reduce their impact by choosing to have a more basic experience (to what extent will be up to the developer) by downloading fewer external resources, scripts, and other assets to their machine to be processed and rendered. With this action, a website or application that is already optimized for sustainability can go one step further in providing a barebones format for those wishing to prioritize lowering their footprint over having added functionality.</p>
-						<p>This action could be performed by defining what assets have been added to the product or service to enhance the experience but are not of critical importance (such as background images, or decorative flourishes that can be machine identified). Other forms of decoration can also be machine-identified such as CSS flourishes to content and images, background sounds, custom cursors, custom scrollbars, etc.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>Web browsers can <a href="https://csscursor.info/">change CSS cursors</a>, and while there may be functional reasons to do so under certain circumstances, such as to indicate loading progress, zoom, or click-ability, in most circumstances, you should leave it at the system default as this is the expected behavior.</li>
-							<li>CSS scrollbars <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Scrollbars_styling">can be customized</a> or replaced but this can be problematic for users. Changes in scroll speed or its mechanics can affect impact readability and the way things render, and color changes can impact visibility and affect overflow regions within elements of the page. In such cases, the system default always functions better than a custom solution.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check decorative images are clearly labeled using ARIA so assistive technologies can skip them.</li>
-							<li>Check that CSS decoration can be disabled if it may interfere with readability.</li>
-							<li>Check that custom scrollbars and cursors can be disabled as they may interfere with a user's ability to interact with the screen.</li>
-							<li>Check that background sounds can be disabled and do not auto-load or auto-play.</li>
-							<li>Check that decorative features can be disabled at the user's request.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
-					<details> <!-- Making your navigation menu accessible and well-structured -->
-						<summary id="navigation-and-search">Making your navigation menu accessible and well-structured</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured">Ensure that navigation and wayfinding are well-structured</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Verify that your navigation menu is crafted in such a manner that it is both accessible to users and user-agents and functions correctly so that when implemented it does not lead to issues when attempting to browse the information architecture of a website or application. If the information architecture were to fail, this would lead to PPP failings as your users would no longer be able to use the product or service without encountering barriers to access and risk further emissions attempting to solve the issue.</p>
-						<p>Machine testing the structure of a navigation menu will usually involve the nav, ul, or ol elements within the header of a product or service which repeats across pages and assuming that links function as expected and click ratios (sizes) are large enough on both desktop and mobile platforms, any search functionality will also need to be tested to ensure that results are provided upon submission.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>The hamburger design is often considered the stereotype of <a href="https://www.smashingmagazine.com/2022/11/navigation-design-mobile-ux/">mobile functionality</a>, a three-lined icon that represents a menu upon clicking it reveals a full-screen list of options. Employing good patterns is key to reducing confusion and abandonment from users.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that the structure of the navigation menu is semantically correct.</li>
-							<li>Check that the structure of the navigation menu is repeated across all pages.</li>
-							<li>Check that the click sizes/ratios of anchors in navigation menus are large enough on both mobile and desktop to be comfortable.</li>
-							<li>Check that the <abbr title="Uniform Resource Locators">URLs</abbr> provided within links do not lead to errors.</li>
-							<li>Check that any search functionality provides results (not errors) upon submission.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
 					<details> <!-- Provide a human-readable sitemap to improve the information architecture -->
 						<summary id="human-readable-sitemaps">Provide a human-readable sitemap to improve the information architecture</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured">Ensure that navigation and wayfinding are well-structured</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys">Design efficient and streamlined user journeys</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Increase the findability of the content within your website among search engines and social networks. By creating a <abbr title="Extensible Markup Language">XML</abbr> sitemap in the base directory of your website, and potentially having a human-readable) HTML sitemap to supplement it, you provide an index of all the publicly available pages. This acts as a potential signpost for individuals who may find themselves seeking information but not knowing exactly where it is stored.</p>
 						<p>When creating an HTML sitemap it will be important to categorize pages into lists based on what section of the website they appear in (for human readability) rather than providing everything in a single long list. Structurally, you could use lists within lists to provide this distinction or use subheadings with individual lists. Both methods should ensure to be semantically correct and accessible to meet the human requirements of PPP targets.</p>
@@ -616,33 +489,6 @@
 							<li>Check for the existence of a publicly visible HTML sitemap.</li>
 							<li>Check that the file exists alongside a sitemap.xml format.</li>
 							<li>Check that the HTML sitemap is semantically correct.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Provide a method of keeping up-to-date with product or service updates -->
-						<summary id="new-content">Provide a method of keeping up-to-date with product or service updates</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-navigation-and-wayfinding-are-well-structured">Ensure that navigation and wayfinding are well-structured</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Ensure that users and users of an application or website can monitor changes and events that occur over time. The need to be able to track such events is critical as customers become reliant on products and services. This reliance on such features means that time will have been invested into learning how to set up and use the product, which if it fails could have a sustainability impact not just for the product or service owner, but for those reliant on its ability to function.</p>
-						<p>Every product or service will have its own update schedule and there will be no hard and fast rule in terms of how often a website or application should be offering new releases. That being said, there should be a mechanism in place to describe news events both in a syndicated format and on the website, and a system status mechanism to identify any current issues with the product or service.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://www.apple.com/newsroom/">Apple has a newsroom</a> that is very minimalistic yet it contains all that you would expect from a news category from a major website. It has grouped stories with useful headlines, dates, categories, and a picture. Having something similar for your website can help users find new material quickly and reduce churn digging through archives.</li>
-							<li><a href="https://www.w3.org/blog/feed/">Syndication feeds</a> come in multiple different formats but the most common is the <a href="https://www.rssboard.org/rss-specification"><abbr title="Really Simple Syndication">RSS</abbr> format</a>. They are compatible with readers on every platform and can be a useful way to get news to subscribers quickly. While these make regular requests to websites, they request less data and result in users spending less time browsing overall which is an emissions-positive event.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check for a news page or category of a website.</li>
-							<li>Check the news section has been updated within 12 months.</li>
-							<li>Check for a syndication feed in RSS, Atom, or <abbr title="JavaScript Object Notation">JSON</abbr>.</li>
-							<li>Check the syndication feed has been updated within 12 months.</li>
-							<li>Check for other syndicated events (podcasts, <abbr title="Outline Processor Markup Language">OPML</abbr>, etc).</li>
-							<li>Check the syndication feed is semantically correct.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -677,7 +523,7 @@
 						</ol>
 					</details>
 					<details> <!-- Encourage features that help users achieve tasks -->
-						<summary id="minimize-distraction">Encourage features that help users achieve tasks</summary>
+						<summary id="distraction-free-design">Encourage features that help users achieve tasks</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract">Design to assist and not to distract</a>.</p>
 						<p><strong>Description</strong></p>
@@ -696,6 +542,12 @@
 							<li>Check for purchasable products and the option to quickly purchase (bonus points if no login is required).</li>
 							<li>Check if the HTML head contains landmark links of relevance to be identified.</li>
 							<li>Check for recognized landmark shortcuts (skip links, etc) and that they are functional.</li>
+							<li>Check the page's content to ensure none is clipped by other materials or an overflow issue (with a scrollbar lacking).</li>
+							<li>Check that all links and buttons are functioning.</li>
+							<li>Check that progressive disclosing content only appears when requested and is compatible with user's browsers.</li>
+							<li>Check that progressive disclosure is used appropriately with your content or tasks to perform.</li>
+							<li>Check that CSS and JavaScript overlays, custom scrollbars and cursors, popup events, and new window opening triggers are not actioned without user consent.</li>
+							<li>Check that decorative features, and interactive media, images, or animation can be disabled at the user's request.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -703,7 +555,7 @@
 						</ol>
 					</details>
 					<details> <!-- Avoid mechanisms that promote excessive screen time -->
-						<summary id="reduce-engagement-traps">Avoid mechanisms that promote excessive screen time</summary>
+						<summary id="remove-engagement-traps">Avoid mechanisms that promote excessive screen time</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract">Design to assist and not to distract</a>.</p>
 						<p><strong>Description</strong></p>
@@ -912,58 +764,6 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- Increase the readability of content using common metrics -->
-						<summary id="clear-content">Increase the readability of content using common metrics</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose">Provide clear, inclusive content with purpose</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Make the content within your website or application more legible to individuals who may struggle with more technical language. Techniques such as lowering the reading age, removing industry terms (or clearly defining them), and having translations for international audiences can help get your message across.</p>
-						<p>This technique is most useful when dealing with a large body of content that the user has to wade through to complete a task. Being able to reduce screen time by improving the ease at which users can comprehend a topic will ultimately allow for an experience that feels faster and discriminates less against individuals who may struggle with highly technical content.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://tfl.gov.uk/info-for/suppliers-and-contractors/digital-design-toolkit/using-plain-english">Transport for London</a> has an editorial style guide that sets out to use plain English throughout their website. The guide itself serves as a useful tool that others could adapt (including the terms in machine testability).</li>
-							<li>There are lots of technical terms used in (for example) the Web industry, Jens Oliver Meiert has created the <a href="https://webglossary.info/">Web Glossary</a> as a dictionary of terminology which can help clarify confusing terminology.</li>
-							<li><a href="https://readabilityformulas.com/readability-scoring-system.php">Readability Formulas</a> have an assessment tool that can use one of several different models to identify issues with content. As there is no agreed-upon assessment model, this can be particularly helpful.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check against a list of terms for the use of plain English.</li>
-							<li>Check that terminology is inclusive and non-discriminatory.</li>
-							<li>Check that technical terms are identified and well-defined.</li>
-							<li>Check that the content has an appropriate reading age.</li>
-							<li>Check for internationalization within content, HTML, and CSS.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Break long-form content down into a simpler structure -->
-						<summary id="content-formatting">Break long-form content down into a simpler structure</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-clear-inclusive-content-with-purpose">Provide clear, inclusive content with purpose</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Avoid users being hit with a wall of text which risks abandonment of the page (and a wasted session with emissions attached). By taking large pieces of information and structuring them into more clean smaller chunks and utilizing a range of more friendlier features when appropriate such as lists and tables, the information will look less intimidating.</p>
-						<p>For machine testability, identifying clear headings, visual hierarchy, spacing, line breaks, lists, use of images, and other features of HTML can help calculate the relative density of the content and whether it could be better presented not just for readers but to (if used with progressive disclosure) reduce the initial impact on rendering engines which can have a sustainable impact on hardware.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>This article from <a href="https://www.nngroup.com/articles/formatting-long-form-content/">Nielson Norman Group</a> provides some great examples and ideas around the subject of dealing with long-form content on the web, each of which can be both implemented and tested against.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that the heading hierarchy structure is correct (H1 > H6).</li>
-							<li>Check that paragraphs do not exceed a set word length.</li>
-							<li>Check the spacing between elements is not too crowded.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
 					<details> <!-- Remove any functionality that may trigger auto-playing animation -->
 						<summary id="need-for-media">Remove any functionality that may trigger auto-playing animation</summary>
 						<p><strong>Applicability</strong></p>
@@ -1149,7 +949,7 @@
 					<details> <!-- Provide accessible mechanisms around symbols in system fonts -->
 						<summary id="pre-installed-typefaces">Provide accessible mechanisms around symbols in system fonts</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography">Use optimized and appropriate web typography</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography">Use optimized web typography</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Avoid rendering issues surrounding emojis and symbol typefaces based on the operating system an individual may be using or the localization of their device. This can inherently cause accessibility issues which can reduce readability as well as the aforementioned visual glitches that can potentially have an impact on system hardware.</p>
 						<p>For machine testability, flagging of symbol fonts (and potentially emojis where operating system compatibility differences may be an issue) will increase readability if resolutions are put in place. One consideration may be to avoid using symbol fonts without an explicit justification and to only use emojis that have endured widespread operating system compatibility.</p>
@@ -1171,7 +971,7 @@
 					<details> <!-- Use modern, efficient custom typefaces within a set limit -->
 						<summary id="web-font-optimization">Use modern, efficient custom typefaces within a set limit</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-and-appropriate-web-typography">Use optimized and appropriate web typography</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography">Use optimized web typography</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Optimize a typeface to ensure that when custom fonts are provided, they are implemented as sustainably as possible requiring the fewest amount of resources to download and render as possible. By placing restrictions on the number of custom typefaces and using a highly optimized format (hopefully subsetted), you will have a highly compressed file.</p>
 						<p>Multiple factors will contribute to the size of a typeface, as such, it is difficult to simply specify a hard number to aim for, but if (for example) you are not using international characters and you can subset your font, eliminating such waste could save precious resources from the fonts character table and reduce the file size considerably (reducing the system resource load upon rendering).</p>
@@ -1187,178 +987,6 @@
 							<li>Check that no obsolete font formats are listed (such as <abbr title="Embedded OpenType">EOT</abbr>, <abbr title="TrueType Font">TTF</abbr>, <abbr title="Scalable Vector Graphic">SVG</abbr>).</li>
 							<li>Check that fonts are only provided using <abbr title="Web Open Font Format 2.0">WOFF2</abbr> or <abbr title="Web Open Font Format">WOFF</abbr> as a fallback.</li>
 							<li>Check that if a custom font is variable enabled (refer to font a preferred), remove other references (bold, italic, etc).</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
-					<details> <!-- Ensure that every PDF or other non-web document has an HTML alternative -->
-						<summary id="open-formats">Ensure that every PDF or other non-web document has an HTML alternative</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used">Offer suitable alternatives for every format used</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Expand the compatibility of non-native web documents and to reduce the reliance on proprietary formats which can become an issue for users who may not have access to the software required to view the documents in question (either due to cost, the time expense of installing additional software, or the format no longer being maintained).</p>
-						<p>The alternative format provided should be in HTML as this can be marked up to be web accessible (and as an open format it can be maintained to be sustainable to meet PPP targets). The choice of which format to use should be clearly identified both using text and (if possible) using iconography, and if a default format needs to be set, having the open format is best.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>The book <a href="https://eloquentjavascript.net/">Eloquent JavaScript</a> has been written primarily in HTML but also has an offline compiled PDF, ePub, and MOBI version available for individuals who would prefer to make use of these eReader-safe formats.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that all non-native web documents have an HTML alternative available.</li>
-							<li>Check that available formats are clearly identified with text and/or icons.</li>
-							<li>Check any generated HTML transcript meets WSG.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Provide a suitable font stack when custom typefaces are used -->
-						<summary id="font-stack-fallbacks">Provide a suitable font stack when custom typefaces are used</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used">Offer suitable alternatives for every format used</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Ensure cross-platform compatibility when custom fonts are utilized within a product or service. This should be done by providing at least three fallbacks across a variety of different desktop operating systems (Windows, Mac, and Linux), mobile platforms (Android and iOS), and finally offering a generic font family as a last resort to fall back upon.</p>
-						<p>Machine testing for suitable typefaces will involve a list of web-safe fonts for each platform to ensure a high probability of compatibility. Statistics about the usage of each platform can be gathered from analytics packages and used to determine which operating systems require support, from there, using a list of pre-installed fonts listed as web-safe will help you define a sustainable stack.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://en.wikipedia.org/wiki/List_of_typefaces_included_with_macOS">This guide</a> provides a solid overview of web-safe typefaces across macOS, <a href="https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows">this guide</a> provides coverage of Microsoft Windows and includes typefaces within Microsoft Office, and <a href="https://developer.apple.com/fonts/system-fonts/">this guide</a> showcases typefaces across all of Apples platforms.</li>
-							<li><a href="https://www.cssfontstack.com/">CSS Font Stack</a> gives a list (with statistics) of Windows and Mac typefaces including their availability. It is particularly useful as it groups them based on the relative font family the typeface relates to.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check all custom fonts have a generic font-family.</li>
-							<li>Check all custom fonts have at least three listed web-safe fallback typefaces.</li>
-							<li>Check that all web-safe fallback fonts cover Windows, Mac, Linux, and Mobile.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Provide alternative text or figure captions for images -->
-						<summary id="alternative-text">Provide alternative text or figure captions for images</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used">Offer suitable alternatives for every format used</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Ensure that alternative text is available for descriptive images that are non-decorative and are important to the content of the website or application. Within HTML this can be provided either through the use of the alternative text attribute or through the use of figure captions (which are associated with an image providing added context).</p>
-						<p>Machine testability should flag any IMG element that has no alternative text unless it exists within a figure element that contains a figcaption element. There may be cases for decorative purposes where images do not require alternative text, however, these (arguably) should be identified as such and accessibility aids given the notification they can skip over them rather than being ignored.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figcaption">MDN provides documentation</a> and an example of how figcaption can be used to give contextual meaning to an image. While the example only uses an IMG element, you could embed a picture element for the same effect.</li>
-							<li>Web Development magazine <a href="https://alistapart.com/">A List Apart</a> provides alternative text on its images to ensure that those using assistive technologies can read the content without missing out on the context that they can provide.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that all IMG elements contain ALT attribute text unless within a FIGURE element with FIGCAPTION.</li>
-							<li>Check that SVG elements contain a TITLE and optionally a DESC element.</li>
-							<li>Check that CANVAS elements contain alternative textual content.</li>
-							<li>Check that all AREA elements (for MAP elements) contain ALT attribute text).</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Provide a text transcription of media files in an open HTML format -->
-						<summary id="transcripts-and-text">Provide a text transcription of media files in an open HTML format</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used">Offer suitable alternatives for every format used</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Offer a transcript of the content of an audio file or video. This is especially useful within podcasts or shows that follow the linear progress of events that can be organized into chapters. How content is chosen to be written up is at the discretion of the author but to pass the criteria it must be accessible, understandable, and content complete.</p>
-						<p>As with all generated external HTML documents, for machine testability (this will include other examples), the generated content must itself pass WSG guidelines in being sustainable (meeting the success criteria as an HTML document that generates emissions). The document can be tested against the techniques laid down in this reference.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>The <a href="https://99percentinvisible.org/episode/roman-mars-describes-chicago-as-it-is/transcript">99% Invisible podcast</a> provides text transcripts of its episodes using a paper icon to indicate availability. The speaker is clearly identified within each episode and credits are also provided alongside.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check for an HTML transcript either below the media file (labeled transcript) or linked to the media.</li>
-							<li>Check any generated HTML transcript meets WSG.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Include WebVTT closed captions, subtitles, and sign language support -->
-						<summary id="video-alternatives">Include WebVTT closed captions, subtitles, and sign language support</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#offer-suitable-alternatives-for-every-format-used">Offer suitable alternatives for every format used</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Enhance existing media that has been provided to ensure maximum legibility and comprehension. In doing so, the viewer is less likely to have issues in which they rewind content to attempt to understand dialog which they had difficulty understanding (which will in turn cause bursts of CPU and GPU activity during this media manipulation).</p>
-						<p>Layering additional context upon a video may initially have an additional outlay in terms of emissions (due to the loading of additional files or rendering extra content upon the screen) but because of its social and societal benefits, it meets PPP targets and as such should be prioritized. Testers should therefore seek to identify such features and flag non-availability as an issue.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://meryl.net/webvtt/">Meryl Evans has a great example</a> with some basic code (and links to further materials on using the WebVTT format for providing essential captioning for your videos. It is covered in <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API">more depth on MDN</a>.</li>
-							<li>Paying for a sign language interpreter for your videos can offer added value to your content. It can be easier to understand than written content, reduces accessibility issues, and increases satisfaction levels.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check for iconography to identify sign language or accessible media aids.</li>
-							<li>Check for the availability of a WebVTT file with video files.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
-					<details> <!-- Detect form requirements and identify data collection policies -->
-						<summary id="simple-forms">Detect form requirements and identify data collection policies</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-accessible-usable-minimal-web-forms">Provide accessible, usable, minimal web forms</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Reduce the amount of inteference that occurs when information is required to be entered on a form control within a user-interface. Identify how many elements must be filled out (and those which are not mandatory being eliminated), clearly label how such components need to be filled out (and how many steps there are), plus have links to data collection policies.</p>
-						<p>Such actions can lead to less unnecessary data transmission which is not only beneficial in terms of privacy and security (the people and societal component of PPP) but also having fewer form elements or steps to render will have an emissions reduction due to the lower amount of individual elements to render to the screen (and the user will spend less time on-screen filling the forms in).</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>Domain Registrar <a href="https://new.help.iwantmyname.com/hc/en-gb">iWantMyName</a> takes form filling to the most minimal extent possible on their contact page, only providing three essential fields to deal with requests, each of which is clearly labeled.</li>
-							<li>The <a href="https://account.bbc.com/register">registration page for BBC iPlayer</a> is a multi-step process that is well designed and labeled to avoid overwhelming new users and it only requests the minimum amount of data necessary to set up an account.</li>
-							<li>This <a href="https://symptomate.com/">medical diagnosis application</a> decides what information is required to be filled in next upon the previous submission, thereby only relevant questions are being asked (leading to less redundancy in form filling).</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check how many steps there are in an input process and if this can be reduced.</li>
-							<li>Check that all form components are clearly labeled and disclose their purpose.</li>
-							<li>Check that only necessary form elements are displayed onscreen.</li>
-							<li>Check that a publicly displayed data collection policy link is visible (this may be a section of a privacy policy).</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Allow for data entry with automatic assistance settings -->
-						<summary id="functional-forms">Allow for data entry with automatic assistance settings</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-accessible-usable-minimal-web-forms">Provide accessible, usable, minimal web forms</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Provide a mechanism within forms during necessary data entry to allow automated tooling to provide necessary assistance. Such data entry will cause users to spend less time onscreen and as such will generate fewer emissions in addition to less frustration from failed attempts that would otherwise lead to potential escalation of such emissions being triggered (while also conserving bandwidth).</p>
-						<p>For machine testability, the autocomplete attribute should be disabled in all form inputs outside of those likely to be utilized/assisted by a password manager (this is especially true where the suggestions do not come from a user device but a third-party and additional bandwidth or rendering processes are likely to be endured). A list of such inputs can be identified from a common password manager and marked against each form for correctness.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://www.grammarly.com/signin">Login forms such as Grammerly</a> can be detected by password manager software and therefore have a benefit for autocompletion (as users cannot be expected to remember personal details across all websites).</li>
-							<li><a href="https://www.jotform.com/form-templates/job-application">Filling in an application form</a> should allow autocomplete for elements of a profile that may be contained within a password manager (such as name, email, and phone), but should be disabled in all other formats to prevent the text element from attempting to anticipate the user's responses.</li>
-							<li>The HTML Hell advent calendar has a <a href="https://www.htmhell.dev/tips/autocompleting-password-fields/">great article on providing autocomplete</a> for the sake of third-party tooling access such as password managers. It includes a range of examples and links to additionally useful articles that might guide decision-making.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that autocomplete is enabled in all username and password fields.</li>
-							<li>Check that autocomplete is enabled in all identity (E.G. address, email) fields.</li>
-							<li>Check that autocomplete is disabled in all other input fields.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -1516,16 +1144,17 @@
 						</ol>
 					</details>
 					<details> <!-- Provide active monitoring for issues on a frequent schedule -->
-						<summary id="non-regression-tests">Provide active monitoring for issues on a frequent schedule</summary>
+						<summary id="automated-tests">Provide active monitoring for issues on a frequent schedule</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a>.</p>
 						<p><strong>Description</strong></p>
-						<p>Ensure that problems relating to the sustainability of a website can be picked up with more frequency and regularity. Within the scope of website and application testing, it is important to be actively monitoring for common failure points that build over time and upon being notified of said issues provide resolutions within a reasonable timeframe.</p>
+						<p>Ensure that problems relating to the sustainability of a website can be picked up with more frequency and regularity, especially upon the release of a new version. Within the scope of website and application testing, it is important to actively monitor for common failure points that build over time. Upon being notified of said issues provide resolutions within a reasonable timeframe.</p>
 						<p>Machine testability for this implementation will be based on the mechanism used for testing. For instance, if a product or service provider chooses to simply run routine tests on a scheduled basis this may be considered a pass as long as the time between scans is frequent enough that it can be considered active in opposition to occasional (weekly would be the widest margin).</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li><a href="https://www.speedcurve.com/">Speedcurve</a> is a commercial product that actively monitors websites for performance issues (broken down by category in rendering) and can provide advisory guidance on meeting targets for performance budgets.</li>
 							<li><a href="https://search.google.com/search-console/about">Google Search Console</a> is a free product that monitors websites for issues that may affect their ability to be indexed within the Google search engine, which notably can impact their overall global page visibility.</li>
+							<li><a href="https://www.w3.org/WAI/test-evaluate/tools/list/">Accessibility scanners</a> can use the machine-testable elements of WCAG to help identify and resolve issues. While they are not a silver bullet and cannot replace manual audits they can identify some issues.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
@@ -1533,30 +1162,6 @@
 							<li>Check that testing occurs hourly/daily/weekly to be considered active.</li>
 							<li>Check that all publicly visible pages are included within the monitoring.</li>
 							<li>Check that the facility providing the monitoring meets WSG.</li>
-							<li>Check that a report of ongoing listed issues is publicly available until fully resolved.</li>
-							<li>Provide resolutions for detected issues within a timely manner.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Scan for introduced issues upon the completion of a new release -->
-						<summary id="regression-tests">Scan for introduced issues upon the completion of a new release</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Provide a mechanism for eliminating any potential new flaws that may have been introduced into a website or application upon the release of a new version that will have additional updates or features that could break functionality if not implemented correctly. As such, enforcing a sustainability scan across a series of factors is critical.</p>
-						<p>For machine testability, the necessity of automation of running a scan could be triggered on the publication of each new release, or for more nuanced control (where active monitoring already exists and non-breaking features are being introduced), a scan could be triggered only where only a major release is issued when breaking changes are more likely to occur.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://www.w3.org/WAI/test-evaluate/tools/list/">Accessibility scanners</a> can use the machine-testable elements of WCAG to help identify issues that can be resolved. While they are not a silver bullet and cannot replace manual audits they can identify some issues.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that all publicly visible pages are included within the monitoring.</li>
-							<li>Check for a wide variety of issues within the scope of WSG.</li>
 							<li>Check that a report of ongoing listed issues is publicly available until fully resolved.</li>
 							<li>Provide resolutions for detected issues within a timely manner.</li>
 						</ol>
@@ -1589,39 +1194,14 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- Provide compliance checks with each release for relevant legislation -->
-						<summary id="compliant-measurement">Provide compliance checks with each release for relevant legislation</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a>.</p>
-						<p>Provide a mechanism during the development process where businesses and individuals creating web projects can verify that new work meets compliance targets for individual regulations. This technique is most useful when performed with each major milestone as there is a potential for feature (and compliance) breaking material to occur.</p>
-						<p>Within the scope of sustainability, this is increasingly important as there are explicit laws surrounding the subject in addition to expanded PPP remits such as accessibility, privacy, security, etc. In terms of machine testability the mechanics of an implementation may be more difficult than utilizing an automated checker, but wizard software can work through questions to help identify key issues.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>Internationally reaching environmental legislation such as <a href="https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en"><abbr title="Corporate Sustainability Reporting Directive">CSRD</abbr></a> and the <a href="https://www.europarl.europa.eu/news/en/press-room/20240112IPR16772/meps-adopt-new-law-banning-greenwashing-and-misleading-product-information">Green Claims Directive</a> provide stricter enforcement around product descriptions and the need to reduce emissions and accurately report such efforts.</li>
-							<li>Accessibility legislation (<a href="https://www.w3.org/WAI/policies/">of which there are many worldwide</a>) provides strict enforcement around ensuring inclusivity not just offline but also in the digital sphere as well, leaving non-compliance open to lawsuit risks.</li>
-							<li>Internationally reaching privacy legislation such as <a href="https://gdpr-info.eu/"><abbr title="General Data Protection Regulation">GDPR</abbr></a> can also impact digital services on a sustainability level (through the people and societal aspect of PPP), and <a href="https://gdpr.eu/checklist/">various</a> <a href="https://gdprchecklist.io/">checklists</a> can assist.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check to see if deliverables require internal access (if so, permission is given).</li>
-							<li>Check that the testing regime is available (internally or externally).</li>
-							<li>Identify all relevant compliance checks to perform during testing process.</li>
-							<li>Report and resolve the findings within your auditing process.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- Provide a publicly visible compatibility policy or statement -->
-						<summary id="compatibility-policy">Provide a publicly visible compatibility policy or statement</summary>
+					<details> <!-- Provide a publicly visible Compatibility documentation or statement -->
+						<summary id="compatibility-documentation">Provide a publicly visible Compatibility documentation or statement</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility">Regularly test and maintain compatibility</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support">Cross-platform compatibility support</a>.</p>
 						<p><strong>Description</strong></p>
-						<p>Ensure that users are made aware of (or able to find out) the limitations of a product or service before issuing a support request that will involve creating new emission sources. This compatibility policy can be listed amongst other policies on a website, however, it must contain detailed information about any factor that may have reduced capability.</p>
+						<p>Ensure that users are made aware of (or able to find out) the limitations of a product or service before issuing a support request that will involve creating new emission sources. This Compatibility documentation can be listed amongst other policies on a website, however, it must contain detailed information about any factor that may have reduced capability.</p>
 						<p>For machine testability, attempt to first establish that the policy exists and then try using heuristics (or identification of the headlines) to locate sections on what is both actively supported (those conditions tested upon), and those that are confirmed as unsupported (those conditions known to be broken but will not be fixed with reasons given). Ensure that a support method is also provided.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
@@ -1630,7 +1210,7 @@
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
 						<ol>
-							<li>Check for a compatibility policy or statement's existence.</li>
+							<li>Check for a Compatibility documentation or statement's existence.</li>
 							<li>Check for sections on included and excluded coverage.</li>
 							<li>Check that a support method is offered for issues outside of scope.</li>
 						</ol>
@@ -1642,7 +1222,7 @@
 					<details> <!-- Provide clarification when updates are significant over minor releases -->
 						<summary id="maintaining-compatibility">Provide clarification when updates are significant over minor releases</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility">Regularly test and maintain compatibility</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support">Cross-platform compatibility support</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for introducing users to new features and capabilities within websites and applications upon a major release being triggered. This would include compatibility changes, any alterations that affect workflow, and bugs that have been resolved. It applies equally to both applications on upgrade paths and website redesigns.</p>
 						<p>The importance of re-orientating users around breaking changes is crucial as modifications made could lead to errors in usage, increases in technical support, problematic friction in usability or accessibility, or introduction of issues that may lead to multiple impacting PPP factors that could be resolved through training, answered questions, and well-signposted information architecture.</p>
@@ -1665,7 +1245,7 @@
 					<details> <!-- Establish compatibility testing routines with each new release -->
 						<summary id="user-constraints">Establish compatibility testing routines with each new release</summary>
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility">Regularly test and maintain compatibility</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support">Cross-platform compatibility support</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Ensure that compatibility issues resulting from user constraints (such as operating system or browser age, connection speed, availability, or cost) are factored into the testing process at each new release. Creators must have processes in place whether through checklists that are pre-created or crafted from scratch to ensure that a regime is in place. Other contingencies exist (such as geo-blocking or mobile data costs) and these can also be taken into account if detection is possible.</p>
 						<p>In terms of machine testability, some tools can provide virtualized emulations of certain operating systems and thereby load products and services to undertake tests (or screenshots) to examine compatibility. Data also exists regarding mobile data charges and connection speeds which can be used to emulate or identify the compatibility costs associated with projects.</p>
@@ -1684,33 +1264,6 @@
 							<li>Identify all compatibility tests to perform during the testing process.</li>
 							<li>Check if additional legal compliance requirements are being met.</li>
 							<li>Report and resolve the findings within your auditing process.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Provide a PWA if more suitable than its native counterpart -->
-						<summary id="progressive-web-applications-pwas">Provide a <abbr title="Progressive Web Application">PWA</abbr> if more suitable than its native counterpart</summary>
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#regularly-test-and-maintain-compatibility">Regularly test and maintain compatibility</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Identify a web application that exists and then determine if turning the web application into a progressive web application would be more beneficial than providing a native offering. This would need to take into account current web capabilities (such as ServiceWorkers), methods of delivery (such as <abbr title="Web Assembly">WASM</abbr>), and the human aspect (audience requirements).</p>
-						<p>Machine testability can firstly examine the existing state of an application to determine how sustainable it is and what technology stack was used to develop it (and how sustainable it already performs for all), from there, data points can be used to identify an approximate cost of implementation for both a native or highly optimized web application endpoint and options can be provided.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>Native applications may be a good choice if applications require specific access to hardware as web APIs can still be quite restrictive. In addition, there is a case for going native to provide a more <abbr title="Operating System">OS</abbr>-centric look and feel.</li>
-							<li>Web applications are often quicker and easier to deploy and can provide updates without delays in the pipeline (as they do not have to go through store controls), they can also benefit from lower creation costs.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check if the existing application already utilizes a ServiceWorker.</li>
-							<li>If so, check the PWA JavaScript and JSON are well formed, and the icon exists.</li>
-							<li>If not calculate the sustainability impact of becoming a PWA.</li>
-							<li>Check that no native application already exists (<a href="https://developer.apple.com/documentation/webkit/promoting-apps-with-smart-app-banners">meta tag smart banner</a>).</li>
-							<li>If so use that, otherwise calculate the sustainability impact of building an application.</li>
-							<li>If cost-efficient sustainability-wise, implement a PWA or/and a native application.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -1778,7 +1331,7 @@
 					<details> <!-- Minify your front-end code if it is public facing -->
 						<summary id="minified-code">Minify your front-end code if it is public facing</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-or-redundant-information">Remove unnecessary or redundant information</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code">Minify and remove unused code</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism in which your production-ready source code can have unnecessary data such as code comments, white space data, and machine-detectable redundancy removed to deliver the smallest file payload possible to the user. This will improve both the speed of your site and lower screen usage (wait) time.</p>
 						<p>In terms of machine testability, the functions of a minification tool can be replicated for the languages HTML, CSS, and JavaScript using scripts and these can identify improvements to be made. Function names can be uglified (shortened to the smallest value) to reduce the size of the payload further and reporting tools can make recommendations based upon feedback.</p>
@@ -1800,6 +1353,32 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
+				<div class="summary">
+					<details> <!-- Eliminate redundant code through coverage or tree shaking -->
+						<summary id="remove-redundancy">Eliminate redundant code through coverage or tree shaking</summary>	
+						<p><strong>Applicability</strong></p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code">Minify and remove unused code</a>.</p>
+						<p><strong>Description</strong></p>
+						<p>Eliminate redundancy within an application or website that may have been either introduced previously or through error. By using browser development tooling such as DevTools coverage or techniques like tree shaking any code which is no longer associated with functionality can be identified as potentially fit for removal (always verify this is accurate).</p>
+						<p>For machine testability, redundant (orphaned/unused) code can be identified by its lack of association with existing components within the web page or application. Consideration will also need to be given to components that may be generated mid or post-render in addition to styles that only trigger when a certain state occurs (such as through hover or the target pseudo selector).</p>
+						<p><strong>Examples</strong></p>
+						<ol>
+							<li><a href="https://web.dev/articles/reduce-javascript-payloads-with-tree-shaking?hl=en">This article by Jeremy Wagner</a> showcases the importance of tree shaking within projects, including the history behind it and how it functions, in addition, it provides a few useful code examples.</li>
+							<li>You can identify unused code within a project using Google Developer Tools in the <a href="https://developer.chrome.com/docs/devtools/coverage?hl=en-us">Coverage Panel</a>. While there are a few gotchas (such as identifying inactive pseudo selectors), it is a useful way to weed CSS.</li>
+						</ol>
+						<p><strong>Tests</strong></p>
+						<p>Procedure</p>
+						<ol>
+							<li>Check CSS to determine if redundancy exists within your code.</li>
+							<li>Check packages to determine if redundancy exists within JavaScript.</li>
+							<li>Check if redundant code may be reintroduced, if not, remove it.</li>
+						</ol>
+						<p>Expected Results</p>
+						<ol>
+							<li>All checks above are true.</li>
+						</ol>
+					</details>
+				</div>
 				</div>
 				<div class="summary">
 					<details> <!-- Implement code-splitting where appropriate to reduce payloads -->
@@ -1822,32 +1401,6 @@
 							<li>Check if CSS would benefit from being split into separate style sheets based on queries.</li>
 							<li>Check if JavaScript can be modularized and imported when required.</li>
 							<li>Check if obfuscation exists, if not code-split the source code.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
-					<details> <!-- Eliminate redundant code through coverage or tree shaking -->
-						<summary id="remove-redundancy">Eliminate redundant code through coverage or tree shaking</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#remove-unnecessary-code">Remove unnecessary code</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Eliminate redundancy within an application or website that may have been either introduced previously or through error. By using browser development tooling such as DevTools coverage or techniques like tree shaking any code which is no longer associated with functionality can be identified as potentially fit for removal (always verify this is accurate).</p>
-						<p>For machine testability, redundant (orphaned/unused) code can be identified by its lack of association with existing components within the web page or application. Consideration will also need to be given to components that may be generated mid or post-render in addition to styles that only trigger when a certain state occurs (such as through hover or the target pseudo selector).</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://web.dev/articles/reduce-javascript-payloads-with-tree-shaking?hl=en">This article by Jeremy Wagner</a> showcases the importance of tree shaking within projects, including the history behind it and how it functions, in addition, it provides a few useful code examples.</li>
-							<li>You can identify unused code within a project using Google Developer Tools in the <a href="https://developer.chrome.com/docs/devtools/coverage?hl=en-us">Coverage Panel</a>. While there are a few gotchas (such as identifying inactive pseudo selectors), it is a useful way to weed CSS.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check CSS to determine if redundancy exists within your code.</li>
-							<li>Check packages to determine if redundancy exists within JavaScript.</li>
-							<li>Check if redundant code may be reintroduced, if not, remove it.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -1884,7 +1437,7 @@
 					<details> <!-- Determine and decision make upon third-party impacts -->
 						<summary id="assess-and-reduce">Determine and decision make upon third-party impacts</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>First identify any third-party components within a website or application, then analyze that feature as if it were a first-party product or service (against WSG) for sustainability. If the product or service is determined to be highly impactful in a negative way, the third-party should be replaced or removed; otherwise, it can be optimized, or stay as-is.</p>
 						<p>As third-party components are hosted externally, machine testing these elements should involve isolating these components and testing them as separate from the product or service. This can be factored into any decision-making regarding inclusion as highly performant and sustainable third-party materials will ultimately be low impact (and the opposite is true for others).</p>
@@ -1909,7 +1462,7 @@
 					<details> <!-- Provide an import on interaction delay for third-party resources -->
 						<summary id="third-party-implementation">Provide an import on interaction delay for third-party resources</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism to delay third-party content from loading to the screen until the user has requested it. Because third-party content is sourced from outside the origin domain, the sustainability impacts of the third-party code are outside of the control of a project, and thus click-to-load delay screens using the import-on-interaction pattern is critical.</p>
 						<p>The pattern used to either switch in the third-party content or load it on-demand can be machine-identified and if common third-party library resources are identified as loading (or leaking) upon a visit, this can and should be flagged up as a failure of the success criteria in functioning upon the user request (as such external requests should be within the user control).</p>
@@ -1932,7 +1485,7 @@
 					<details> <!-- Ensure that content is delivered through the most sustainable pathway -->
 						<summary id="self-hosting">Ensure that content is delivered through the most sustainable pathway</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Identify the location of website content and determine the most suitable pathway for it to be consumed sustainably. With the rise in content being hosted on third-party blogging platforms, there is a risk of significant content loss if the platform disappears and therefore a need for self-hosting exists (especially to maintain control of sustainability impacts).</p>
 						<p>For machine testability, identifying the source of the content is a key priority, then determining the impact of any third-party (the risk of content loss along with any sustainability impacts through WSG testing). Finally, this should be weighed up against the impact of self-hosting (and any potential negative consequences such as content moderation requirements that may occur).</p>
@@ -1957,7 +1510,7 @@
 					<details> <!-- Provide the ability to identify and choose third-party components to load -->
 						<summary id="third-party-preferences">Provide the ability to identify and choose third-party components to load</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#give-third-parties-the-same-priority-as-first-parties-during-assessment">Give third parties the same priority as first parties during assessment</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide users with the optimum level of control over sustainability impacts by not just allowing them to identify and load third-party controls upon click but to also control third-party services, libraries, and tooling used by the product or service (even at load) via a preference panel where individual third-parties (which may be impactful) can be refused access.</p>
 						<p>This mechanism if using a commonly accepted scheme could be detected by a machine. If the preference is presented upon load and not set by default and if the user has the option of selecting individual services (one at a time), accepting all, and denying all, then it can be deemed that the functionality is working as expected (as long as third-party services obey that scheme).</p>
@@ -2058,7 +1611,7 @@
 						</ol>
 					</details>
 					<details> <!-- Replace code that can instead use more efficient web platform APIs -->
-						<summary id="built-in-over-custom">Replace code that can instead use more efficient web platform APIs</summary>	
+						<summary id="custom-code">Replace code that can instead use more efficient web platform APIs</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices">Ensure code follows good semantic practices</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2156,77 +1709,6 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- Ensure that form inputs correctly match and validate content expectations -->
-						<summary id="error-validation">Ensure that form inputs correctly match and validate content expectations</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements">Validate form errors and account for tooling requirements</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Ensure that input types correctly match the type of content being placed within them, that content types like passwords are handled in a way that users can easily reveal them, and that the patterns attribute is used correctly to help reduce errors during data entry. In doing so, problematic friction encountered during form filling can be reduced as can erroneous submissions.</p>
-						<p>Machine testability for this criteria will involve analyzing the components of forms to ensure they are well formed and that (for example) any regular expressions used in patterns will not produce an erroneous result. It is also important that functionality within forms perform well on mobile devices as well as desktop so consideration must be given to the choice of input for tasks.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://thegood.com/insights/form-design-examples/">This article from TheGood</a> showcases multiple examples of great form design not only from the point of the user experience but also in the development to ensure that the ability to make mistakes is reduced.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that the input type matches the expected content type.</li>
-							<li>Check that the use of the pattern attribute does not prevent correct input.</li>
-							<li>Check that regular expressions are correctly formed and do not equate errors.</li>
-							<li>Check that password fields can be made visible to allow for recognition.</li>
-							<li>Check that one input type will function well on mobile devices over another.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Ensure that form elements are correctly labeled -->
-						<summary id="label-elements">Ensure that form elements are correctly labeled</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements">Validate form errors and account for tooling requirements</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Provide a mechanism for accessibility tooling to be able to accurately describe the content of form features and to provide visual aids for users aiming to identify what information is required to be entered. This technique requires all interactive elements within the form to have an associated label to describe the purpose and/or role of the item.</p>
-						<p>Labels should be presented directly beside the element in question to imply association and if multiple associations are required, a grouping element with a label can be provided. Machines should be able to identify the relationship between the label and the object through the syntax and if objects without labels exist, a failure statement can be flagged up.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://codepen.io/sushma-io/pen/zYbOREe">This CodePen example</a> clearly has all interactive elements within the form correctly labeled and additionally goes the extra step by using input types to help reduce the chances of errors occurring during data entry.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that all interactive form components are correctly labeled.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Reduce issues within data entry with manual third-party content -->
-						<summary id="allow-clipboard">Reduce issues within data entry with manual third-party content</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-form-errors-and-account-for-tooling-requirements">Validate form errors and account for tooling requirements</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Provide a mechanism in which users can easily take content from third-party sources and use it within your product or service. Techniques such as the ability to paste into forms or the ability to drag and drop can act as shortcuts to avoid retyping or recreating (using system resources) which may be energy-intensive or time-intensive for the user.</p>
-						<p>Identifying mechanisms that may prevent the ability to import third-party content such as blocking pasting content or disabling the ability to drag and drop should be detected and flagged (unless a reason for this can be justified within the code). Mechanisms that aid the ability to import third-party content such as import or paste buttons should be actively encouraged.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>These CodePen examples of <a href="https://codepen.io/colorlib/pen/rxddKy">log in</a> and <a href="https://codepen.io/RajRajeshDn/pen/QWwypRy">registration</a> forms do not inhibit the user from pasting content from third-party sources which allows for fast data entry if the information is stored elsewhere.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that the ability to paste content is uninhibited (no onpaste="return false;").</li>
-							<li>Check that the ability to drag and drop third-party content can be achieved successfully.</li>
-							<li>Check that import options are provided if the above two options are unavailable or fail.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
 					<details> <!-- Ensure that the required HTML elements are included -->
 						<summary id="required-elements">Ensure that the required HTML elements are included</summary>	
 						<p><strong>Applicability</strong></p>
@@ -2302,7 +1784,7 @@
 					<details> <!-- Ensure CSS preference media queries are correctly applied -->
 						<summary id="media-and-preference-queries">Ensure CSS preference media queries are correctly applied</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainability-beneficial-user-preference-media-queries">Use sustainability beneficial user preference media queries</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-media-queries-that-support-sustainability-goals">Use media queries that support sustainability goals</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide mechanisms through CSS that adhere to the user's preferences regarding how they may choose to browse a website or application. While some queries that exist in the language will hold little sustainability value, others could have PPP benefits through accessibility (societal factors), or environmental (reducing hardware or data usage).</p>
 						<p>Each of the preference queries can be machine-identified through scripts and therefore can be tested against firstly for browser support, and secondly that the project provides some kind of environmental consequence for using the query that will benefit the user and/or the ecosystem. The value of such queries being applied could be measured by triggering or emulating them.</p>
@@ -2426,7 +1908,7 @@
 					<details> <!-- Optimize a codebase through rewriting for performance -->
 						<summary id="sustainable-javascript">Optimize a codebase through rewriting for performance</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis">Use standards-based JavaScript and APIs</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-javascript-and-apis">Use sustainable JavaScript and APIs</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Improve the quality of JavaScript code by examining the contents and identifying any issues that could be deemed a matter of sustainability which could trigger a large load upon hardware resources (and thus put a strain on battery charge cycles). In addition to this, matters of accessibility and performance with such code can be considered.</p>
 						<p>To meet the success criteria, rewriting for performance should only be done if the act does not cost more in effort (and creator impact) than it gains in impact. For machine testability, it is critical that such actions within scripting use tools at their disposal (libraries, patterns, even <abbr title="Artificial Intelligence">AI</abbr>) to heuristically identify any issues that may require resolution within the project's source code.</p>
@@ -2449,9 +1931,9 @@
 						</ol>
 					</details>
 					<details> <!-- Ensure JavaScript APIs are correctly applied -->
-						<summary id="sustainable-apis">Ensure JavaScript APIs are correctly applied</summary>	
+						<summary id="energy-relevant-apis">Ensure JavaScript APIs are correctly applied</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-standards-based-javascript-and-apis">Use standards-based JavaScript and APIs</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-javascript-and-apis">Use sustainable JavaScript and APIs</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide mechanisms through JavaScript that minimize the user's energy consumption by either optimizing the performance of the website or application itself or improving functionality in such a way that it reduces the utilization of resources when they are not required by the user. Some JavaScript APIs can have explicit sustainability benefits, while others may improve other PPP benefits through accessibility (societal factors).</p>
 						<p>Each of the JavaScript APIs can be machine-identified through scripts and therefore can be tested against firstly for browser support, and secondly that the project provides some environmental consequence for using the script that will benefit the user and/or the ecosystem. The value of such scripts could be measured by triggering or emulating them.</p>
@@ -2475,34 +1957,10 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- Ensure all vulnerabilities are removed and code is linted -->
-						<summary id="code-security">Ensure all vulnerabilities are removed and code is linted</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-that-your-code-is-secure">Ensure that your code is secure</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Scan the website or application's code for issues that may otherwise potentially leave a product or service vulnerable to exploitation. This will not only include first-party code that is created by the project owners but third-party tooling imported. Any third-party library or framework found to contain harmful code should be removed before production.</p>
-						<p>Because this can occur at both the client-side and server-side internal access may be required if server-side scanning is wished to be included within machine testability, however within the scope of the success criteria, if internal access is not available or permitted, testing the code using known methods and scanning client-side code for harmful techniques should help with passing.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>RayGun <a href="https://raygun.com/blog/js-security-vulnerabilities-best-practices/">provides a great article</a> about vulnerabilities and best practices when working with JavaScript. Some of the things mentioned are covered within WSG in other sections, all others can be followed here.</li>
-							<li><a href="https://snyk.io/">Snyk</a> is one of the most well-known providers of data regarding code vulnerabilities. They can be integrated within existing tooling or you can browse their <a href="https://security.snyk.io/">database of known security issues</a> to be aware of.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check the product or service for vulnerabilities within your code, ensuring they are resolved.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
 					<details> <!-- Identify and remove unused packages and dependencies -->
 						<summary id="dependency-management">Identify and remove unused packages and dependencies</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance">Use dependencies appropriately and ensure maintenance</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for identifying if a library or framework is currently in use and if not, remove the said tooling and its unused dependencies from the production code. This will help reduce the PPP burden of the website as less bloat will reach the user which can have a large impact if they are on a low-powered device or a restricted data plan.</p>
 						<p>For machine testability, internal access will be required to determine if web developers or creators will require specific tooling within a project. If internal access is given, the package.json file is an ideal place to locate the packages being requested and these can be compared against the public-facing website to identify redundancy in the toolchain process.</p>
@@ -2524,7 +1982,7 @@
 					<details> <!-- Implement modularized or lightweight frameworks and libraries -->
 						<summary id="dependency-necessity">Implement modularized or lightweight frameworks and libraries</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance">Use dependencies appropriately and ensure maintenance</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for determining how much of a library of framework you require for your website or application to function, and then requesting just that modularized segment to reduce the overall payload and load on the user's hardware during rendering. This is especially critical for third-party scripting but is also useful for CSS. Reduce the overhead of libraries and frameworks which may be used by the product or service but could be offered through lighter or less production-heavy alternatives.</p>
 						<p>Machine testability should attempt to identify when third-party libraries are present within a codebase and if that framework or library supports the ability to load a lightweight or modular version of its features (thereby only loading what you require, when you require it), ensure that the project in question does so rather than loading an un-optimal "fully-loaded" version of the project.</p>
@@ -2553,7 +2011,7 @@
 					<details> <!-- Ensure that dependencies are verified as up-to-date -->
 						<summary id="dependency-updates">Ensure that dependencies are verified as up-to-date</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-appropriately-and-ensure-maintenance">Use dependencies appropriately and ensure maintenance</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Ensure that the deliverables are current and up-to-date, thereby providing any necessary security patches or bug fixes that are required to remain operational. This is especially true when a website or application is dependent on third-party libraries or frameworks and has a complex toolchain. As such, verifying the maintenance status of work is critical.</p>
 						<p>To machine test or verify the dependency chain of a project, the source code of a project should identify (by filename or URL) the project and version. If during the tree shaking or production process all notifications of what third-party code has been used have been removed, internal access will be required to access the package.json (except heuristic fingerprinting of packages).</p>
@@ -2630,7 +2088,7 @@
 				</div>
 				<div class="summary">
 					<details> <!-- Encourage the use of more sustainable creation toolchains -->
-						<summary id="identify-requirements">Encourage the use of more sustainable creation toolchains</summary>	
+						<summary id="appropriate-implementation">Encourage the use of more sustainable creation toolchains</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service">Use the most efficient solution for your service</a>.</p>
 						<p><strong>Description</strong></p>
@@ -2986,9 +2444,9 @@
 				</div>
 				<div class="summary">
 					<details> <!-- Deliver content using the correct, most secure protocol -->
-						<summary id="protocols">Deliver content using the correct, most secure protocol</summary>	
+						<summary id="protocol-efficiency">Deliver content using the correct, most secure protocol</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#consider-the-impact-and-requirements-of-data-processing">Consider the impact and requirements of data processing</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#assess-the-impact-and-requirements-of-data-processing">Assess the impact and requirements of data processing</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Guarantee that users who experience a website or application will have their experience delivered using a secure delivery route. Transmitting data using non-secure means (now that <abbr title="Secure Sockets Layer">SSL</abbr> certificates can be obtained free of charge) should never occur as there are inherent risks that can otherwise be avoided during the browsing session.</p>
 						<p>Machine testing for protocol testing will involve examining that the page is being served across <abbr title="Hypertext Transfer Protocol (Secure)">HTTPS</abbr> in opposition to HTTP (there should not be an occasion where both are available, especially if dynamic or interactive content exists). Furthermore, insecure protocols for non-browsing usage should be tested to verify they are disabled and replaced (if required) with more secure options.</p>
@@ -3012,20 +2470,23 @@
 					<details> <!-- Provide distributed access to static resources via a CDN -->
 						<summary id="global-cdns">Provide distributed access to static resources via a <abbr title="Content Delivery Network">CDN</abbr></summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately">Consider <abbr title="Content Delivery Networks">CDNs</abbr> and Edge Caching</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial">Consider <abbr title="Content Delivery Networks">CDNs</abbr> and Edge Caching</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Offer a mechanism for users to gain access to a static website or application assets in a location that is closer to them than the origin host. By utilizing a content delivery network, large media files, images, fonts, and other static assets can be distributed to regional locations so that users can access them quicker (as the route to the file is shorter).</p>
 						<p>Machine testing for content delivery networks should take into account the balance as to whether adding assets to multiple locations (for performance) incurs more of a sustainability cost than loading them quicker. If the value in faster loading is greater, and a CDN is in use, this qualifies as a pass. If no CDN is being used, or one is in use but the added value is neutral or negative, question its impact and whether the material should be instead hosted onsite.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>While it does not provide insights into sustainability, <a href="https://cdncomparison.com/">CDN Compare</a> offers a great deal of context between several popular content delivery networks and the offerings they provide to help you make up your mind.</li>
+							<li><a href="https://ourworldindata.org/internet">Our World In Data</a>, the <a href="https://data.worldbank.org/indicator/IT.NET.USER.ZS">World Bank</a>, and <a href="https://en.wikipedia.org/wiki/List_of_countries_by_number_of_Internet_users">Wikipedia</a> provide some awesome information on average Internet usage worldwide. While this cannot replace real-world demographics, it can be helpful for new projects.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
 						<ol>
+							<li>Check if you only serve a local (single country) audience, if so, avoid CDN usage.</li>
+							<li>Check using analytics the average distribution of your product or service's users.</li>
 							<li>Check the existing location of static resources on the existing website.</li>
 							<li>If they exist on the first-party domain, calculate the sustainability value of using a CDN.</li>
-							<li>Check if the value of using a CDN will be beneficial, if so use one.</li>
+							<li>Check a hosting or CDN provider's locations to match as closely to your customers.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -3035,7 +2496,7 @@
 					<details> <!-- Ensure that the CDN and its chain of locations are sustainable -->
 						<summary id="sustainability-commitment">Ensure that the CDN and its chain of locations are sustainable</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately">Use Content Delivery Networks (CDNs) appropriately</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial">Use Content Delivery Networks (CDNs) when beneficial</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Test the sustainability of the CDN against WSG as a service provider as a third-party service in addition to any sustainability criteria and best practices that exist externally for infrastructure and hosting. This not only applies to the provider itself but to all of the nodes that it uses to supply distribution, and any third-parties it uses as part of its extended network. As such, calculating and vetting providers can be complex.</p>
 						<p>For machine testability, providers should have information about sustainability offered within a sustainability statement along with details of compliance being met plus any sustainability features they provide that enhance their service. If this information is publicly available (and uses recognized sources), it could be parsed by machine, otherwise, a sustainable provider list should be sourced.</p>
@@ -3056,33 +2517,10 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- Provide a copy of the product or service close to the user -->
-						<summary id="local-servers">Provide a copy of the product or service close to the user</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately">Use Content Delivery Networks (CDNs) appropriately</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Provide a mechanism for mirroring the content (website or application) as close to the user as possible to reduce the loading time as effectively as possible. This can be done using CDNs or by analyzing metrics data and deciding based on the locale of users where the origin host choice would be best placed (both can be useful methods).</p>
-						<p>Machine testing for this requires internal access to analytics logs to determine where user locations are and from this identify the best location to place information (if a CDN is used, this may be automatically done on your behalf meeting compliance requirements). If no internal access or data is available, general statistics about Internet usage could help identify trends.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://ourworldindata.org/internet">Our World In Data</a>, the <a href="https://data.worldbank.org/indicator/IT.NET.USER.ZS">World Bank</a>, and <a href="https://en.wikipedia.org/wiki/List_of_countries_by_number_of_Internet_users">Wikipedia</a> provide some awesome information on average Internet usage worldwide. While this cannot replace real-world demographics, it can be helpful for new projects.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check if you only serve a local (single country) audience, if so, avoid CDN usage.</li>
-							<li>Check using analytics the average distribution of your product or service's users.</li>
-							<li>Check a hosting or CDN provider's locations to match as closely to your customers.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
 					<details> <!-- Avoid hosting dynamic resources or third-party scripts on the CDN -->
 						<summary id="inappropriate-resources">Avoid hosting dynamic resources or third-party scripts on the CDN</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-appropriately">Use Content Delivery Networks (CDNs) appropriately</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial">Use Content Delivery Networks (CDNs) when beneficial</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Prevent non-first-party dynamic resources from being loaded through a content delivery network. The justification behind this is due to browser mechanisms such as CORS and cache partitioning, unfavorable things can occur if you try to load dynamic resources from third-party websites (this is a security measure to prevent malicious code injection).</p>
 						<p>As this issue does not affect static resources such as HTML, CSS, or JSON, when testing against the criteria, these types of resources can be excluded. For more dynamic resources like JavaScript or server-side code, if the host URL differs from your own (this includes things like frameworks), flagging up an error and recommending self-hosting or integration with existing tooling should be done.</p>
@@ -3105,41 +2543,23 @@
 				</div>
 				<div class="summary">
 					<details> <!-- Provide a review or expiration date on website content -->
-						<summary id="expiration-dates">Provide a review or expiration date on website content</summary>	
+						<summary id="lifecycle-management">Provide a review or expiration date on website content</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism that ensures all content within a website or application gets regularly reviewed and if necessary refreshed, updated, or if it has reached the end-of-life, deleted or archived. As such, publicly providing a date when events will occur should offer an incentive for providers to action these labels (and users can note outdated content).</p>
+						<p>Also increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other factors. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.</p>
 						<p>Machine testability should offer a grace period for content that has passed the date when a review should take place (as circumstances can lead to dates being missed), however, failings should still be flagged as potential issues that need to be resolved. Labels within the content should be detectable by scripts that issue such dates, and if they do not exist, recommendations can be issued.</p>
 						<p><strong>Examples</strong></p>
 						<ol>
 							<li>On the <a href="https://www.nhs.uk/conditions/migraine/">National Health Service</a> website, at the bottom of an article about a medical condition, a clear piece of text mentioning when the content was last reviewed and is next due for review is given.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that all articles (or content where material may go out-of-date) have a review or expiration date.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Provide a classification policy to content if it is deemed sustainable -->
-						<summary id="classify-and-tag">Provide a classification policy to content if it is deemed sustainable</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Increase findability within content by offering mechanisms within the page for users to filter the results of potential content they are seeking by category, tag, or other factors. How this feature is presented to users can differ between implementations as there are several well-defined patterns, but they can reduce problematic friction in the user experience.</p>
-						<p>Machine testability for such features will involve examining the page's source code to identify repeating patterns across several pages (if correctly labeled, patterns such as tags or categories may be semantically easy to find). The sustainability of such implementations must account for the impact it has upon rendering across each page, against the benefit it has to the user experience.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
 							<li>A List Apart <a href="https://alistapart.com/topics/">provides a topics page</a> which groups various pieces of content (articles) into categories. By doing this it reduces the number of pages an individual will need to click through to find what they are after.</li>
 							<li>Maggie Appleton has a <a href="https://maggieappleton.com/garden">really visually appealing way</a> of laying out all of their different topics, content types, and even how well-developed their thoughts are. With all of this, you can filter their content accordingly.</li>
 						</ol>
 						<p><strong>Tests</strong></p>
 						<p>Procedure</p>
 						<ol>
+							<li>Check that all articles (or content where material may go out-of-date) have a review or expiration date.</li>
 							<li>Check that content within the website (or potentially within long articles) can be filtered by classification.</li>
 							<li>Check that all classification patterns used on websites are repeated across all pages and clearly labeled.</li>
 						</ol>
@@ -3306,7 +2726,7 @@
 				</div>
 				<div class="summary">
 					<details> <!-- Have a clearly defined set of sustainability goals -->
-						<summary id="sustainability-goals">Have a clearly defined set of sustainability goals</summary>	
+						<summary id="web-sustainability-goals">Have a clearly defined set of sustainability goals</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#define-clear-organizational-sustainability-goals-and-metrics">Define clear organizational sustainability goals and metrics</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3334,9 +2754,9 @@
 				</div>
 				<div class="summary">
 					<details> <!-- Verify and showcase any third-party sustainability certifications -->
-						<summary id="obtaining-certifications">Verify and showcase any third-party sustainability certifications</summary>	
+						<summary id="obtaining-verification">Verify and showcase any third-party sustainability certifications</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-efforts-using-established-third-party-certifications">Validate efforts using established third-party certifications</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-web-sustainability-efforts-through-external-verification">Validate web sustainability efforts through external verification</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for product or service owners who have achieved certifications either as an individual or as a business in a related sustainability field (with a recognized achievement or certification) to have that accounted for in the calculation of their sustainability journey. Any such certifications should be included within a statement.</p>
 						<p>For machine testability, this would require having a compiled list of recognized certifications and achievements (that are recognized as sustainable) which could then be identified by embedded links such as images for that scheme. Testing would also need to verify member's achievements. This can be used in weighted scoring to give additional marks for going beyond WSG criteria.</p>
@@ -3405,7 +2825,7 @@
 						</ol>
 					</details>
 					<details> <!-- Check for any compliance related disclosure documentation -->
-						<summary id="BSPM08-3">Check for any compliance related disclosure documentation</summary>	
+						<summary id="disclosure-reporting">Check for any compliance related disclosure documentation</summary>	
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#support-mandatory-disclosures-and-reporting">Support mandatory disclosures and reporting</a>.</p>
 						<p><strong>Description</strong></p>
@@ -3477,10 +2897,12 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
+				</div>
+				<div class="summary">
 					<details> <!-- Clearly label changes using a release notes feature -->
-						<summary id="security-updates">Clearly label changes using a release notes feature</summary>	
+						<summary id="feature-changes">Clearly label changes using a release notes feature</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures">Implement continuous improvement procedures</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#document-updates-and-evolutions">Document updates and evolutions</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for users or users of a website or application to firstly identify when changes have taken place on a product or service and secondly be able to learn about the new features in more detail (if provided) so that they can quickly adjust themselves to changes that have been made for sustainability or other reasons (reducing confusion).</p>
 						<p>Each product or service should have an associated set of release notes that should be regularly maintained, as such, version numbers within those notes should match the version number of the available versions of the product or service. In addition, release notes should be detailed and sectioned based on criteria such as additions, removals, changes, and fixes - not just a single bullet that offers little context. Links and images with more detail can also be helpful.</p>
@@ -3507,7 +2929,7 @@
 					<details> <!-- Align product or service compliance with the SDGs -->
 						<summary id="sustainable-development-goals">Align product or service compliance with the <abbr title="Sustainable Development Goals">SDGs</abbr></summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#establish-if-a-digital-product-or-service-is-necessary">Establish if a digital product or service is necessary</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#evaluate-if-a-digital-product-or-service-is-necessary">Evaluate if a digital product or service is necessary</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide additional compliance criteria for testing tools to ensure that sustainability goals are being met. As such testing tools can analyze websites to vet each product or service against the United Nations Sustainable Development Goals to decide if enough evidence exists within WSG compliance (and other criteria) to pass or fail applicable categories.</p>
 						<p>Because the SDGs may have scope beyond WSG, both individuals and testing tools must develop criteria that meet the strict requirements of each category to be considered a compliance pass or fail. As such, it may require additional input from the tester, internal access, or additional measurements and evidence gathering undertaken (with scores adjusted).</p>
@@ -3628,34 +3050,6 @@
 					</details>
 				</div>
 				<div class="summary">
-					<details> <!-- Provide a publicly visible accessibility statement -->
-						<summary id="accessibility-policy">Provide a publicly visible accessibility statement</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-justice-equity-diversity-inclusion-jedi-practices">Use Justice, Equity, Diversity, Inclusion (JEDI) practices</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Ensure that users are made aware of (or able to find out) the lengths that a product or service has gone to, ensuring that individuals with accessibility needs have been included in the design and development of the product or service. It should also aim to describe any limitations of the product or service and how to submit a support request.</p>
-						<p>For machine testability, attempt to first establish that the accessibility statement exists and then try to identify the headlines within the document to establish its content. From there you can use heuristic testing of the source code to work out what accessible features have been provided, and what potential limitations may exist for inclusive design and accessibility needs.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>United Kingdom charity Scope <a href="https://www.scope.org.uk/accessibility/">provides a comprehensive</a> website accessibility statement that showcases their commitment to accessibility along with adaptations made and issues they are aware of to resolve.</li>
-							<li>The European Environment Agency provides a simple but effective <a href="https://www.eea.europa.eu/en/accessibility">accessibility statement</a> that underlines compatibility issues and levels of support with existing web standards that users need to be aware of.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check for a publicly visible accessibility statement on the website.</li>
-							<li>Check for a section detailing accessibility compatibility.</li>
-							<li>Check for a section on accessibility features built-in.</li>
-							<li>Check for a section listing support and known issues.</li>
-							<li>Check that the content is written in plain English for readability.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
 					<details> <!-- Provide links to the privacy policy and relevant legislation -->
 						<summary id="data-practices">Provide links to the privacy policy and relevant legislation</summary>	
 						<p><strong>Applicability</strong></p>
@@ -3681,12 +3075,31 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-				</div>
-				<div class="summary">
+					<details> <!-- Enable users to manage their accounts and data -->
+						<summary id="data-ownership">Enable users to manage their accounts and data</summary>	
+						<p><strong>Applicability</strong></p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices">Promote responsible data practices</a>.</p>
+						<p><strong>Description</strong></p>
+						<p>Offer a mechanism for users of a product or service to allow the management of any information (data) or accounts (subscription or otherwise) they may hold. Best practices with such systems will include allowing the deletion of accounts and/or data without human intervention and providing single steps (with confirmation) to achieve this.</p>
+						<p>Machine testing such features will undoubtedly require internal access for a product or service, however, if the ability to create an account can be automated or undertaken, then the visibility of the source code within the account management system can be verified by tooling. As such, where internal access is required, gain permission, then check for the ability to delete accounts (and verify that this action works), if it does, pass the check.</p>
+						<p><strong>Examples</strong></p>
+						<ol>
+							<li>A Software as a Service provider has within the account manager, a profile section allowing customers to click a big red button to "delete account and data". Upon hitting confirm, this erases their details from the servers.</li>
+						</ol>
+						<p><strong>Tests</strong></p>
+						<p>Procedure</p>
+						<ol>
+							<li>Check that users can delete their accounts and data without human intervention.</li>
+						</ol>
+						<p>Expected Results</p>
+						<ol>
+							<li>All checks above are true.</li>
+						</ol>
+					</details>
 					<details> <!-- Provide a website archive containing outdated or old versions -->
 						<summary id="outdated-content">Provide a website archive containing outdated or old versions</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures">Implement appropriate data management procedures</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices">Promote responsible data practices</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for retrieving old information that may have expired in terms of currency, but may still have a practical use as a reference for individuals wishing to identify information that had prior use or relevance for a product or service. This technique is most useful when the information is content-focused or showcasing iterative change.</p>
 						<p>For machine testability, several criteria should be taken into account. Firstly the outdated material should be isolated either on a subdomain or a subfolder to avoid clashing with existing content. This material should also be reduced to a minimalist form (content only) to reduce sustainability impacts. Furthermore, all links should be checked to ensure that they resolve to a working reference.</p>
@@ -3701,27 +3114,6 @@
 							<li>Check if the mentioned content is being accessed rarely rather than regularly.</li>
 							<li>Check (if both of the above are true) that a website archive holds this material.</li>
 							<li>Check that the mentioned archive is slimmed down to further reduce sustainability impacts.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Enable users to manage their accounts and data -->
-						<summary id="data-controllers">Enable users to manage their accounts and data</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures">Implement appropriate data management procedures</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Offer a mechanism for users of a product or service to allow the management of any information (data) or accounts (subscription or otherwise) they may hold. Best practices with such systems will include allowing the deletion of accounts and/or data without human intervention and providing single steps (with confirmation) to achieve this.</p>
-						<p>Machine testing such features will undoubtedly require internal access for a product or service, however, if the ability to create an account can be automated or undertaken, then the visibility of the source code within the account management system can be verified by tooling. As such, where internal access is required, gain permission, then check for the ability to delete accounts (and verify that this action works), if it does, pass the check.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>A Software as a Service provider has within the account manager, a profile section allowing customers to click a big red button to "delete account and data". Upon hitting confirm, this erases their details from the servers.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that users can delete their accounts and data without human intervention.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -3759,7 +3151,7 @@
 					<details> <!-- Verify all partnerships and sponsors against WSG -->
 						<summary id="fuel-divestment">Verify all partnerships and sponsors against WSG</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#include-responsible-financial-policies">Include responsible financial policies</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#adopt-responsible-financial-practices">Adopt responsible financial practices</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Ensure that if an individual or organization is being endorsed or financed by an external group or organization, the influence that the group may provide is sustainably minded (and will not divert the product or service away from such activities). Ensuring all endorsements are sustainable can also help service providers avoid claims of greenwashing.</p>
 						<p>Machine testing such factors will require firstly all partnerships and sponsors to be correctly labeled as such, if they are labeled within the product or service then the tester can test each of these services against WSG as a first-party (an isolated service) and verify how sustainable they are in comparison. If they score poorly, a warning of conflict of interest issues can be provided.</p>
@@ -3786,7 +3178,7 @@
 					<details> <!-- Verify and showcase any third-party sustainability projects -->
 						<summary id="philanthropy-policy">Verify and showcase any third-party sustainability projects</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#include-organizational-philanthropy-policies">Include organizational philanthropy policies</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#adopt-organizational-philanthropy-policies">Adopt organizational philanthropy practices</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Identify any third-party projects connected with the product or service that can be verified as sustainability causes or schemes of value that may benefit either the business on its sustainability journey or directly lead to improvements for people or the planet. Schemes can include reinvesting in the ecosystem, or community, or reducing emissions.</p>
 						<p>For machine testability, this would require having a compiled list of recognized schemes (that are recognized as sustainable) which could then be identified by embedded links such as images for that scheme. Testing could also check schemes that support verifying members as required. This could be used in weighted scoring to give additional marks for going beyond our guidelines.</p>
@@ -4044,7 +3436,7 @@
 							<tr>
 								<td colspan="2">2</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/audience-evaluation.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/barriers-and-access.html">PASS</a></td>
+								<td></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -4160,8 +3552,8 @@
 							<tr>
 								<td colspan="2">6</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/respect-user-attention.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/minimize-distraction.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/reduce-engagement-traps.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/remove-engagement-traps.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4179,7 +3571,7 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-goals.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/web-sustainability-goals.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4199,7 +3591,7 @@
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optional-features.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/non-standard-code.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/built-in-over-custom.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/custom-code.html">PASS</a></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/refresh-frequency.html">PASS</a></td>
 								<td></td>
@@ -4208,7 +3600,7 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/obtaining-certifications.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/obtaining-verification.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -4237,9 +3629,9 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/policies-and-practices.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/disclosure-reporting.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/impact-reports.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/BSPM08-3.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/disclosure-reporting.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -4260,7 +3652,7 @@
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/protocols.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/Protocol efficiency.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td></td>
@@ -4290,7 +3682,7 @@
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/global-cdns.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-commitment.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/local-servers.html">PASS</a></td>
+								<td></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/inappropriate-resources.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
@@ -4328,7 +3720,7 @@
 								<td class="red">FAIL</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/iterative-consideration.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/security-updates.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/feature-changes.html">PASS</a></td>
 								<td class="red">FAIL</td>
 							</tr>
 							<tr>
@@ -4347,8 +3739,8 @@
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/expiration-dates.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/classify-and-tag.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/lifecycle-management.html">PASS</a></td>
+								<td></td>
 								<td class="red">FAIL</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-logging.html">PASS</a></td>
 								<td class="red">FAIL</td>
@@ -4399,7 +3791,7 @@
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-javascript.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-apis.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/energy-relevant-apis.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
@@ -4499,7 +3891,7 @@
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/accessibility-policy.html">PASS</a></td>
+								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td></td>
@@ -4514,7 +3906,7 @@
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/identify-requirements.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/appropriate-implementation.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/extensions-and-plugins.html">PASS</a></td>
@@ -4537,8 +3929,8 @@
 							<tr>
 								<td colspan="2">19</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/ongoing-evaluation.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/non-regression-tests.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/regression-tests.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/automated-tests.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/automated-tests.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/performance-testing.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/compliant-measurement.html">PASS</a></td>
 								<td></td>
@@ -4557,7 +3949,7 @@
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/outdated-content.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/data-controllers.html">PASS</a></td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4594,7 +3986,7 @@
 							</tr>
 							<tr>
 								<td colspan="2">21</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-policy.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-documentation.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/maintaining-compatibility.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/user-constraints.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/progressive-web-applications-pwas.html">PASS</a></td>
