@@ -5526,28 +5526,36 @@
 					"tags": ["Compatibility", "E-Waste", "Privacy", "Research", "Security", "Social Equity", "Software", "Strategy"]
 				},
 				{
-					"id": "include-e-waste-right-to-repair-and-recycling-policies",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#include-e-waste-right-to-repair-and-recycling-policies",
-					"guideline": "Include e-waste, right to repair, and recycling policies",
-					"subheading": "Include policies and documentation explaining how sustainable e-waste, recycling, repairing, and refurbishment are handled.",
+					"id": "repair-reuse-refurbish-recycle-or-reduce-e-waste",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#repair-reuse-refurbish-recycle-or-reduce-e-waste",
+					"guideline": "Repair, reuse, refurbish, recycle or reduce e-waste",
+					"subheading": "Prioritize repair, reuse, refurbishment, and responsible recycling of hardware and e-waste through certified services, including supporting users doing repairs.",
 					"criteria": [
 						{
 							"title": "E-waste management",
-							"description": "Responsibly recycle or upcycle unwanted hardware or materials. Materials should be recovered, redeployment, and reused, where possible, or otherwise disposed of sustainably. Service providers should have a policy for responsible e-waste management.",
+							"description": "Recycle, repair, or upcycle unwanted hardware and materials. Recover, redeploy, and reuse components where possible, and dispose of remaining materials in a sustainable way. Use certified repair and recycling services to handle end-of-life digital equipment and operational e-waste responsibly. Service providers should maintain a clear policy for responsible e-waste management.",
 							"resources": [
 								{
+									"All 50 States Have Now Introduced Right to Repair Legislation": "https://www.404media.co/all-50-states-have-now-introduced-right-to-repair-legislation/",
+									"Carbon Emission Implications of ICT Re-use at the University of Edinburgh (PDF)": "https://edwebcontent.ed.ac.uk/sites/default/files/atoms/files/pc-carbonfootprints-jh-ecci2.pdf",
 									"Circular Economy": "https://sustainabilityguide.eu/sustainability/circular-economy/",
 									"Digital and metal study (French) (PDF)": "https://librairie.ademe.fr/economie-circulaire-et-dechets/7713-etude-numerique-et-metaux.html",
 									"Electronics and obsolescence in a circular economy": "https://www.eionet.europa.eu/etcs/etc-wmge/products/etc-wmge-reports/electronics-and-obsolescence-in-a-circular-economy",
+									"Future trends of Green All Optical Networks and ICT Infrastructure in a large context": "https://www.researchgate.net/publication/368690756_Future_trends_of_Green_All_Optical_Networks_and_ICT_Infrastructure_in_a_large_context_-_trends_to_2050",
+									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintainence & Decomissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 1-8006 - Water Recovered Or Recycled": "https://gr491.isit-europe.org/en/crit.php?id=1-8006-hosting-the-treatment-of-waste-generated-by-a",
 									"GR491 - 4-8047 - Repair Over Replace": "https://gr491.isit-europe.org/en/crit.php?id=4-8047-hosting-the-repairability-of-equipment-and-the-effective",
 									"GR491 - 4-8048 - End-Of-Life": "https://gr491.isit-europe.org/en/crit.php?id=4-8048-hosting-the-renewal-of-the-technical-park-is",
+									"How Your Business Can Unpack and Prioritize Sustainability Through Recycling": "https://www.entrepreneur.com/green-entrepreneur/how-your-business-can-unpack-the-importance-of-recycling/438815",
 									"Reduce, Reuse, Recycle": "https://www.scientificamerican.com/article/reduce-reuse-recycle-why-all-3-rs-are-critical-to-a-circular-economy/",
+									"Reduce, reuse, and recycle": "https://www.green.earth/blog/reduce-reuse-recycle-7-ways-for-businesses-to-reduce-waste",
 									"The circular economy in detail: Deep dive": "https://www.ellenmacarthurfoundation.org/the-circular-economy-in-detail-deep-dive",
+									"To Green the Internet, We Need RIPE": "https://labs.ripe.net/author/michael_oghia/to-green-the-internet-we-need-ripe/",
 									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
 									"United Nations SDGS - Goal 6 - Water & Sanitation": "https://sdgs.un.org/goals/goal6#targets_and_indicators",
 									"United Nations SDGS - Goal 7 - Sustainable Energy": "https://sdgs.un.org/goals/goal7#targets_and_indicators",
 									"United Nations SDGS - Goal 9 - Infrastructure": "https://sdgs.un.org/goals/goal9#targets_and_indicators",
+									"United Nations SDGS - Goal 11 - Human Habitats": "https://sdgs.un.org/goals/goal11#targets_and_indicators",
 									"United Nations SDGS - Goal 12 - Consumption & Production": "https://sdgs.un.org/goals/goal12#targets_and_indicators",
 									"United Nations SDGS - Goal 13 - Climate Change": "https://sdgs.un.org/goals/goal13#targets_and_indicators",
 									"What is a circular economy?": "https://www.ellenmacarthurfoundation.org/topics/circular-economy-introduction/overview"
@@ -5556,7 +5564,7 @@
 						},
 						{
 							"title": "E-waste policy",
-							"description": "Establish specific policies around e-waste recycling and repair owned technology products whenever possible.",
+							"description": "Maintain policies for repairing and recycling hardware and encourage repair.",
 							"resources": [
 								{
 									"E-waste Policy Toolkit": "https://www.itu.int/en/ITU-D/Environment/Pages/Toolbox/WEEE-Africa-Toolkit.aspx",
@@ -5575,30 +5583,8 @@
 							]
 						},
 						{
-							"title": "Recycling and repairing",
-							"description": "Form relationships with local partners for e-waste recycling and repair.",
-							"resources": [
-								{
-									"All 50 States Have Now Introduced Right to Repair Legislation": "https://www.404media.co/all-50-states-have-now-introduced-right-to-repair-legislation/",
-									"Carbon Emission Implications of ICT Re-use at the University of Edinburgh (PDF)": "https://edwebcontent.ed.ac.uk/sites/default/files/atoms/files/pc-carbonfootprints-jh-ecci2.pdf",
-									"Future trends of Green All Optical Networks and ICT Infrastructure in a large context": "https://www.researchgate.net/publication/368690756_Future_trends_of_Green_All_Optical_Networks_and_ICT_Infrastructure_in_a_large_context_-_trends_to_2050",
-									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintainence & Decomissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 4-8047 - Repair Over Replace": "https://gr491.isit-europe.org/en/crit.php?id=4-8047-hosting-the-repairability-of-equipment-and-the-effective",
-									"GR491 - 4-8048 - End-Of-Life": "https://gr491.isit-europe.org/en/crit.php?id=4-8048-hosting-the-renewal-of-the-technical-park-is",
-									"How Your Business Can Unpack and Prioritize Sustainability Through Recycling": "https://www.entrepreneur.com/green-entrepreneur/how-your-business-can-unpack-the-importance-of-recycling/438815",
-									"Reduce, reuse, recycle": "https://www.green.earth/blog/reduce-reuse-recycle-7-ways-for-businesses-to-reduce-waste",
-									"To Green the Internet, We Need RIPE": "https://labs.ripe.net/author/michael_oghia/to-green-the-internet-we-need-ripe/",
-									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
-									"United Nations SDGS - Goal 7 - Sustainable Energy": "https://sdgs.un.org/goals/goal7#targets_and_indicators",
-									"United Nations SDGS - Goal 11 - Human Habitats": "https://sdgs.un.org/goals/goal11#targets_and_indicators",
-									"United Nations SDGS - Goal 12 - Consumption & Production": "https://sdgs.un.org/goals/goal12#targets_and_indicators",
-									"United Nations SDGS - Goal 13 - Climate Change": "https://sdgs.un.org/goals/goal13#targets_and_indicators"
-								}
-							]
-						},
-						{
 							"title": "Refurbishment strategy",
-							"description": "Buy refurbished equipment whenever possible.",
+							"description": "Prioritize reuse, refurbishment, and redeployment of existing hardware before purchasing new equipment.",
 							"resources": [
 								{
 									"21 Reasons Why Refurbished IT is the Future": "https://www.techbuyer.com/uk/blog/21-reasons-why-refurbished-it-is-the-future",
@@ -5616,7 +5602,7 @@
 						},
 						{
 							"title": "Right to repair",
-							"description": "Allow consumers to repair the consumables they purchase to the best of their ability, offering replacement components if possible at cost, and provide clear instructions to help resolve faults that occur.",
+							"description": "Allow users to repair purchased products to the best of their ability, provide replacement parts at cost where possible, and give clear instructions to help fix faults when they occur.",
 							"resources": [
 								{
 									"Digitization and the Environment": "https://www.societybyte.swiss/en/2020/04/09/digitization-and-the-environment-opportunities-risks-and-the-need-for-action/",
