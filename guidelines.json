@@ -4497,7 +4497,7 @@
 					"id": "follow-a-product-management-and-maintenance-strategy",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#follow-a-product-management-and-maintenance-strategy",
 					"guideline": "Follow a product management and maintenance strategy",
-					"subheading": "Explain through documentation how projects will be maintained, managed, resourced, and note issues while tracking measurements over time.",
+					"subheading": "Maintain clear documentation, resourcing, and measurement practices for long-term product support, including security, sustainability, and early detection of failure risks.",
 					"criteria": [
 						{
 							"title": "Management and maintenance",
@@ -4516,7 +4516,7 @@
 						},
 						{
 							"title": "Planning strategy",
-							"description": "Establish maintenance and security plans for all digital products and services.",
+							"description": "Develop, implement, and maintain maintenance and security plans for all digital products and services that prioritize long-term sustainability, energy efficiency, and responsible resource use across the product lifecycle.",
 							"resources": [
 								{
 									"Complete Website Maintenance Checklist": "https://www.dreamhost.com/blog/complete-website-maintenance-checklist/",
@@ -4534,7 +4534,7 @@
 						},
 						{
 							"title": "Resourcing products",
-							"description": "Ensure that products, prototypes, testing, and supporting processes are sufficiently resourced over time - including staffing and budgeting - so that teams can maintain capacity, address technical debt, refactor code, introduce new features, support long-term care and maintenance, and avoid project abandonment for customers, users, and all affected parties.",
+							"description": "Ensure products, prototypes, testing, and supporting processes are adequately resourced over time. Maintain sufficient staffing and budget to support ongoing maintenance, including addressing technical debt, refactoring, and evolving functionality, without abandoning projects.",
 							"resources": [
 								{
 									"9 sustainable business practices + actionable examples": "https://fsc.org/en/blog/sustainable-business-practices",
@@ -4565,7 +4565,7 @@
 						},
 						{
 							"title": "Resource measurement",
-							"description": "Incorporate carbon and resource measurement into maintenance programs and show measurable improvement over time.",
+							"description": "Include carbon and resource measurement in maintenance processes, and track improvements over time. Prioritize metrics that reflect essential value delivered and sustainability outcomes. Avoid metrics that incentivize unnecessary work, resource consumption, or emissions.",
 							"resources": [
 								{
 									"Environmental Sustainability in Business Examples": "https://ecohedge.com/blog/environmental-sustainability-in-business-examples-a-guide/",
@@ -4583,7 +4583,7 @@
 						},
 						{
 							"title": "Failure indicators",
-							"description": "Identify and document Key Failure Indicators (KFIs) and implement resolutions to prevent negative sustainability impacts.",
+							"description": "Identify and document Key Failure Indicators (KFIs), including those related to accessibility, usability, and other environmental, social, and governance impacts. Monitor KFIs to detect emerging risks and inform corrective action.",
 							"resources": [
 								{
 									"Consequence Scanning": "https://doteveryone.org.uk/project/consequence-scanning/",
