@@ -5800,11 +5800,11 @@
 					"id": "create-a-business-continuity-and-disaster-recovery-plan",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#create-a-business-continuity-and-disaster-recovery-plan",
 					"guideline": "Create a business continuity and disaster recovery plan",
-					"subheading": "Create a plan of action with a system to recover from failure or alert users if or when a loss of service occurs.",
+					"subheading": "Maintain tested incident response plans and communicate transparently with users about service issues, risks, and recovery.",
 					"criteria": [
 						{
 							"title": "Plan of action",
-							"description": "Create, regularly review, and occasionally test a plan of action to determine readiness in case of an incident and establish procedures to quickly recover from any incident.",
+							"description": "Create, maintain, regularly review, and test incident response plans to determine readiness and ensure systems and services can quickly recover from any incident.",
 							"resources": [
 								{
 									"Disaster recovery plan": "https://www.ibm.com/docs/en/i/7.6.0?topic=system-example-disaster-recovery-plan",
@@ -5826,7 +5826,7 @@
 						},
 						{
 							"title": "Audience awareness",
-							"description": "Maintain regular and transparent communication with the audience regarding issues that may affect service delivery or user data.",
+							"description": "Communicate transparently with users about incidents, service issues, and any risks to data or availability.",
 							"resources": [
 								{
 									"7 excellent maintenance page examples from real websites": "https://www.atlassian.com/blog/statuspage/maintenance-page-examples",
