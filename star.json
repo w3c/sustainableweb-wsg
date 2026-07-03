@@ -109,38 +109,6 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/audience-evaluation.html"
 				},
 				{
-					"id": "barriers-and-access",
-					"title": "Test against specific disability profiles for more calibrated accessibility",
-					"applicability": "This technique is **Advisory** to meet *success criteria* within [Understand user requirements or constraints](https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints).",
-					"description": [
-						{
-							"1": "Go beyond the remit of Web Content Accessibility Guidelines (WCAG) and accessibility by default and to encourage designers and developers of products to test their creations against a range of specific named types of disabilities to both better understand the conditions and to be able to more structurally and sustainably better test for the unique issues each disability brings to technology in terms of adaptation.",
-							"2": "It is strongly encouraged that teams work with individuals with disabilities when attempting this task as they will have the lived experience to help you better adapt your products and services to their needs. If this is not possible or you wish to theorize against certain pre-built profiles, you can refer to established medical texts to identify potential symptoms and refer these against issues that may cause technology issues, building solutions, and/or simulators (see color blindness) to help test for issues along the creation process."
-						}
-					],
-					"examples": [
-						{
-							"1": "The use of a color blind filter such as the one built into browser DevTools or another [third-party solution](https://github.com/interaktivarum/rgblind?tab=readme-ov-file) potentially helps to identify contrast issues that might not otherwise be detected within an existing website."
-						}
-					],
-					"tests": [
-						{
-							"procedure": [
-								{
-									"1": "Identify users or individuals with disabilities who can help you become more accessible.",
-									"2": "Create testable profiles from symptom/issue lists that cause issues.",
-									"3": "Check that potential solutions do not interfere with existing functionality.",
-									"4": "Create and implement newly calibrated accessibility features.",
-									"5": "Check that the features work as implemented against all existing functionality.",
-									"6": "Report the findings within your accessibility statement."
-								}
-							],
-							"expectedResults": "All checks above are true."
-						}
-					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/barriers-and-access.html"
-				},
-				{
 					"id": "efficient-paths",
 					"title": "Measure interaction cost to reach every page in the information architecture",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Design efficient and streamlined user journeys](https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys).",
@@ -173,7 +141,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/efficient-paths.html"
 				},
 				{
-					"id": "human-readable-sitemaps",
+					"id": "content-discovery",
 					"title": "Provide a human-readable sitemap to improve the information architecture",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Design efficient and streamlined user journeys](https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys).",
 					"description": [
@@ -203,7 +171,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/human-readable-sitemaps.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/content-discovery.html"
 				},
 				{
 					"id": "respect-user-attention",

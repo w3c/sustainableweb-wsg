@@ -416,31 +416,6 @@
 							<li>If #1, #2 and #3 above are true.</li>
 						</ol>
 					</details>
-					<details> <!-- Test against specific disability profiles for more calibrated accessibility -->
-						<summary id="barriers-and-access">Test against specific disability profiles for more calibrated accessibility</summary><p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints">Understand user requirements or constraints</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Go beyond the remit of Web Content Accessibility Guidelines (<abbr title="Web Content Accessibility Guidelines">WCAG</abbr>) and accessibility by default and to encourage designers and developers of products to test their creations against a range of specific named types of disabilities to both better understand the conditions and to be able to more structurally and sustainably better test for the unique issues each disability brings to technology in terms of adaptation.</p>
-						<p>It is strongly encouraged that teams work with individuals with disabilities when attempting this task as they will have the lived experience to help you better adapt your products and services to their needs. If this is not possible or you wish to theorize against certain pre-built profiles, you can refer to established medical texts to identify potential symptoms and refer these against issues that may cause technology issues, building solutions, and/or simulators (see color blindness) to help test for issues along the creation process.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>The use of a color blind filter such as the one built into browser DevTools or another <a href="https://github.com/interaktivarum/rgblind?tab=readme-ov-file">third-party solution</a> potentially helps to identify contrast issues that might not otherwise be detected within an existing website.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Identify users or individuals with disabilities who can help you become more accessible.</li>
-							<li>Create testable profiles from symptom/issue lists that cause issues.</li>
-							<li>Check that potential solutions do not interfere with existing functionality.</li>
-							<li>Create and implement newly calibrated accessibility features.</li>
-							<li>Check that the features work as implemented against all existing functionality.</li>
-							<li>Report the findings within your accessibility statement.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
 				</div>
 				<div class="summary">
 					<details> <!-- Measure interaction cost to reach every page in the information architecture -->
@@ -469,7 +444,7 @@
 						</ol>
 					</details>
 					<details> <!-- Provide a human-readable sitemap to improve the information architecture -->
-						<summary id="human-readable-sitemaps">Provide a human-readable sitemap to improve the information architecture</summary>
+						<summary id="content-discovery">Provide a human-readable sitemap to improve the information architecture</summary>
 						<p><strong>Applicability</strong></p>
 						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys">Design efficient and streamlined user journeys</a>.</p>
 						<p><strong>Description</strong></p>
@@ -1673,34 +1648,6 @@
 						<p>Procedure</p>
 						<ol>
 							<li>Check that preload, prefetch, and preconnect are used as appropriate in HTML documents.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-				</div>
-				<div class="summary">
-					<details> <!-- Add signposting within the page to direct users and accessibility aids -->
-						<summary id="accessibility-aids">Add signposting within the page to direct users and accessibility aids</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <em>success criteria</em> within <a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-information-to-help-understand-the-usefulness-of-a-page">Provide information to help understand the usefulness of a page</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Provide mechanisms to assist the user with finding and navigating through content within the page or application. This can come in the form of links that allow you to bypass blocks of content, which is especially useful when large vocal areas of navigation or other content exist. It could also be in the form of keyboard shortcuts that activate certain features within a complex application rather than having to click multiple steps.</p>
-						<p>Machine testability for such features can identify events within JavaScript or features that use common patterns in code that are recognized as helpful signposting features. If such features are present then the success criteria can be marked as compliant but if none are found it could be an indicator, especially in complex websites or applications that such features are needed.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li><a href="https://webaim.org/techniques/skipnav/">WebAim has a great article</a> describing the details relating to skip links <a href="https://www.jimthatcher.com/skipnav.htm">as does Jim Thatcher</a>, both include plenty of useful visual examples and situations to work with when designing a custom solution of your own.</li>
-							<li>Smashing Magazine published a <a href="https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-html-css-part1/">two</a> <a href="https://www.smashingmagazine.com/2022/11/guide-keyboard-accessibility-javascript-part2/">part</a> guide to keyboard accessibility which included HTML, CSS, and JavaScript and covered not only skip links but also provided keyboard-based accessibility aids.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that the project can be successfully navigated using the keyboard.</li>
-							<li>Check that the tabindex order of the content makes logical, navigable sense.</li>
-							<li>Check that skip links exist to guide accessibility tools through content.</li>
-							<li>Check that keyboard shortcuts are well documented and work as expected.</li>
-							<li>Check that signposting within pages are well described, and work as directed.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -3370,7 +3317,7 @@
 						<thead>
 						<tr>
 							<th colspan="2"></th>
-							<th colspan="6"><a>UX</a></th>
+							<th colspan="5"><a>UX</a></th>
 							<th colspan="5"><a>WebDev</a></th>
 							<th colspan="6"><a>Hosting</a></th>
 							<th colspan="6"><a>Business</a></th>
@@ -3385,7 +3332,6 @@
 								<td>3</td>
 								<td>4</td>
 								<td>5</td>
-								<td>6</td>
 								<td>1</td>
 								<td>2</td>
 								<td>3</td>
@@ -3408,7 +3354,6 @@
 								<td colspan="2">1</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/impact-analysis.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/external-impact.html">PASS</a></td>
-								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -3437,13 +3382,12 @@
 								<td colspan="2">2</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/audience-evaluation.html">PASS</a></td>
 								<td></td>
-								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/minified-code.html">PASS</a></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/remove-redundancy.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -3468,7 +3412,6 @@
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
-								<td></td>
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/code-splitting.html">PASS</a></td>
@@ -3495,14 +3438,13 @@
 								<td colspan="2">4</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/efficient-paths.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/eliminate-the-non-essential.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/user-initiated-actionable-content.html">PASS</a></td>
-								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/content-discovery.html">PASS</a></td>
+								<td></td>
+								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/remove-redundancy.html">PASS</a></td>
-								<td></td>
-								<td></td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/organize-code-arrangement.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
@@ -3522,17 +3464,16 @@
 							</tr>
 							<tr>
 								<td colspan="2">5</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/navigation-and-search.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/human-readable-sitemaps.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/new-content.html">PASS</a></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/respect-user-attention.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/remove-engagement-traps.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
-								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/organize-code-arrangement.html">PASS</a></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/assess-and-reduce.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/third-party-implementation.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/self-hosting.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/third-party-preferences.html">PASS</a></td>
 								<td></td>
 
 								<td class="red">FAIL</td>
@@ -3551,18 +3492,17 @@
 							</tr>
 							<tr>
 								<td colspan="2">6</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/respect-user-attention.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/distraction-free-design.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/remove-engagement-traps.html">PASS</a></td>
-								<td></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deceptive-design-patterns.html">PASS</a></td>
+								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/analytics-and-tracking.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/search-engine-optimization.html">PASS</a></td>
 								<td></td>
 								
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/assess-and-reduce.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/third-party-implementation.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/self-hosting.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/third-party-preferences.html">PASS</a></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/semantic-code.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optional-features.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/non-standard-code.html">PASS</a></td>
+								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/custom-code.html">PASS</a></td>
 
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
@@ -3580,18 +3520,17 @@
 							</tr>
 							<tr>
 								<td colspan="2">7</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deceptive-design-patterns.html">PASS</a></td>
-								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/analytics-and-tracking.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/search-engine-optimization.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-reusability.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-documentation.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-readability.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/semantic-code.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optional-features.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/non-standard-code.html">PASS</a></td>
-								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/custom-code.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/asynchronous-code.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-loading.html">PASS</a></td>
+								<td></td>
+								<td></td>
+								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/refresh-frequency.html">PASS</a></td>
 								<td></td>
@@ -3609,27 +3548,26 @@
 							</tr>
 							<tr>
 								<td colspan="2">8</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-reusability.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-documentation.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/deliverables-readability.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/design-system.html">PASS</a></td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/asynchronous-code.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-loading.html">PASS</a></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/required-elements.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/meta-tags.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/structured-data.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/disclosure-reporting.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/policies-and-practices.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/impact-reports.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/disclosure-reporting.html">PASS</a></td>
 								<td class="red">FAIL</td>
@@ -3638,21 +3576,20 @@
 							</tr>
 							<tr>
 								<td colspan="2">9</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/design-system.html">PASS</a></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/need-for-media.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-media.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/lazy-loading.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/user-controlled-media.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/media-management-and-use.html">PASS</a></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/accessibility-aids.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/media-and-preference-queries.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/Protocol efficiency.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/protocol-efficiency.html">PASS</a></td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td></td>
@@ -3667,24 +3604,23 @@
 							</tr>
 							<tr>
 								<td colspan="2">10</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/clear-content.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/content-formatting.html">PASS</a></td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/avoid-overburdening.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/control-animation.html">PASS</a></td>
+								<td class="red">FAIL</td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/error-validation.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/label-elements.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/allow-clipboard.html">PASS</a></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/device-adaptable.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/progressive-enhancement.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/carbon-aware-design.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/alternative-browsing.html">PASS</a></td>
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/global-cdns.html">PASS</a></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainability-commitment.html">PASS</a></td>
 								<td></td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/inappropriate-resources.html">PASS</a></td>
-								<td class="red">FAIL</td>
+								<td></td>
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/management-and-maintenance.html">PASS</a></td>
@@ -3696,23 +3632,22 @@
 							</tr>
 							<tr>
 								<td colspan="2">11</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/need-for-media.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-media.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/lazy-loading.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/user-controlled-media.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/media-management-and-use.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/pre-installed-typefaces.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/web-font-optimization.html">PASS</a></td>
+								<td class="red">FAIL</td>
+								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/required-elements.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/meta-tags.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/structured-data.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-javascript.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/energy-relevant-apis.html">PASS</a></td>
+								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 
@@ -3726,24 +3661,23 @@
 							<tr>
 								<td colspan="2">12</td>
 								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/avoid-overburdening.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/control-animation.html">PASS</a></td>
+								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/media-and-preference-queries.html">PASS</a></td>
-								<td></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-management.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-necessity.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-updates.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
 								<td class="red">FAIL</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/lifecycle-management.html">PASS</a></td>
-								<td></td>
 								<td class="red">FAIL</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimized-logging.html">PASS</a></td>
 								<td class="red">FAIL</td>
+								<td></td>
 
 								<td class="red">FAIL</td>
 								<td></td>
@@ -3754,17 +3688,16 @@
 							</tr>
 							<tr>
 								<td colspan="2">13</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/pre-installed-typefaces.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/web-font-optimization.html">PASS</a></td>
-								<td class="red">FAIL</td>
-								<td></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/printing-documents.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimize-documents.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimize-delivery.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/labels-and-choice.html">PASS</a></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/device-adaptable.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/progressive-enhancement.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/carbon-aware-design.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/alternative-browsing.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/expected-files.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/beneficial-files.html">PASS</a></td>
+								<td></td>
+								<td></td>
 								<td></td>
 
 								<td></td>
@@ -3783,18 +3716,17 @@
 							</tr>
 							<tr>
 								<td colspan="2">14</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/open-formats.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/font-stack-fallbacks.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/alternative-text.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/transcripts-and-text.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/video-alternatives.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/early-user-testing.html">PASS</a></td>
+								<td></td>
+								<td></td>
+								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/sustainable-javascript.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/energy-relevant-apis.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/appropriate-implementation.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td></td>
-								<td></td>
+								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/extensions-and-plugins.html">PASS</a></td>
+								<td class="red">FAIL</td>
 
 								<td></td>
 								<td></td>
@@ -3812,15 +3744,14 @@
 							</tr>
 							<tr>
 								<td colspan="2">15</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/simple-forms.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/functional-forms.html">PASS</a></td>
-								<td></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/ongoing-evaluation.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/automated-tests.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/performance-testing.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/code-security.html">PASS</a></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/versioning.html">PASS</a></td>
+								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -3841,17 +3772,16 @@
 							</tr>
 							<tr>
 								<td colspan="2">16</td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-management.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-necessity.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/dependency-updates.html">PASS</a></td>
-								<td></td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
 								<td></td>
 
 								<td></td>
@@ -3870,16 +3800,9 @@
 							</tr>
 							<tr>
 								<td colspan="2">17</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/printing-documents.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimize-documents.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/optimize-delivery.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/labels-and-choice.html">PASS</a></td>
-								<td></td>
-								<td></td>
-
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/expected-files.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/beneficial-files.html">PASS</a></td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-documentation.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/maintaining-compatibility.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/user-constraints.html">PASS</a></td>
 								<td></td>
 								<td></td>
 
@@ -3888,29 +3811,34 @@
 								<td></td>
 								<td></td>
 								<td></td>
+
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
 								<td></td>
 
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
 								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
+								<td></td>
 								<td></td>
 								<td></td>
 							</tr>
 							<tr>
 								<td colspan="2">18</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/early-user-testing.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/appropriate-implementation.html">PASS</a></td>
-								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/extensions-and-plugins.html">PASS</a></td>
-								<td class="red">FAIL</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
 
 								<td></td>
 								<td></td>
@@ -3920,51 +3848,21 @@
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/data-practices.html">PASS</a></td>
-								<td class="red">FAIL</td>
-								<td></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/data-ownership.html">PASS</a></td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/outdated-content.html">PASS</a></td>
 								<td></td>
 								<td></td>
 								<td></td>
 							</tr>
 							<tr>
 								<td colspan="2">19</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/ongoing-evaluation.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/automated-tests.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/automated-tests.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/performance-testing.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/compliant-measurement.html">PASS</a></td>
-								<td></td>
-
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/versioning.html">PASS</a></td>
-								<td class="red">FAIL</td>
-								<td></td>
-								<td></td>
-								<td></td>
-
-								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/outdated-content.html">PASS</a></td>
 								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td colspan="2">20</td>
-								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-
-								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -3985,11 +3883,10 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td colspan="2">21</td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/compatibility-documentation.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/maintaining-compatibility.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/user-constraints.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/progressive-web-applications-pwas.html">PASS</a></td>
+								<td colspan="2">20</td>
+								<td></td>
+								<td></td>
+								<td></td>
 								<td></td>
 								<td></td>
 
@@ -4014,8 +3911,7 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td colspan="2">22</td>
-								<td></td>
+								<td colspan="2">21</td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4043,13 +3939,40 @@
 								<td></td>
 							</tr>
 							<tr>
+								<td colspan="2">22</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+
+								<td class="red">FAIL</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
 								<td colspan="2">23</td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
-								<td></td>
 
 								<td></td>
 								<td></td>
@@ -4065,44 +3988,14 @@
 								<td></td>
 
 								<td class="red">FAIL</td>
-								<td></td>
-								<td></td>
-								<td></td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
+								<td class="red">FAIL</td>
 								<td></td>
 								<td></td>
 							</tr>
 							<tr>
 								<td colspan="2">24</td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-
-								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td colspan="2">25</td>
-								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4130,8 +4023,7 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td colspan="2">26</td>
-								<td></td>
+								<td colspan="2">25</td>
 								<td></td>
 								<td></td>
 								<td></td>
@@ -4159,8 +4051,7 @@
 								<td></td>
 							</tr>
 							<tr>
-								<td colspan="2">27</td>
-								<td></td>
+								<td colspan="2">26</td>
 								<td></td>
 								<td></td>
 								<td></td>
