@@ -1,0 +1,1391 @@
+{
+	"title": "Web Sustainability Guidelines (WSG) Impact Measurement",
+	"edition": "Editor's Draft",
+	"lastModified": "2026-06-25",
+	"category": [
+		{
+			"id": "1",
+			"name": "Introduction"
+		},
+		{
+			"id": "2",
+			"name": "User Experience Design",
+			"shortName": "UX Design",	
+			"guidelines": [
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 1
+					},
+					"rationale": "This guideline concentrates on identifying, tracking, and disclosing negative impacts on a project rather than direct action. As such, there would be minimal direct impact in all categories from implementing it."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Low",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 2,
+						"planet": 1,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 5
+					},
+					"rationale": "Implementing this guideline should result in positive impact for users and planet, within a moderate timeframe, removing barriers to access should reduce time on task and energy usage. Minimal direct prosperity impact.",
+					"metrics": [
+						"Time on site"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#integrate-sustainability-into-every-stage-of-the-ideation-process",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Low",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 1,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 2
+					},
+					"rationale": "The direct planetary impact is positive. Other impacts are difficult to measure, though potential future impacts of meeting this guideline can be meaningful.",
+					"metrics": [
+						"File size",
+						"Data transfer",
+						"Page weight on load"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Low",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 2,
+						"planet": 1,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 6
+					},
+					"rationale": "Minimizing distractions improves user experience and may reduce resource consumption through shorter interactions.",
+					"metrics": [
+						"Time on site",
+						"Page views per session",
+						"File size",
+						"Data transfer",
+						"Page weight on load"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract",
+					"impactRatings": {
+						"people": "High",
+						"planet": "Low",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 3,
+						"planet": 1,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 7
+					},
+					"rationale": "Simplified navigation improves usability and reduces time on site, lowering energy consumption per visit.",
+					"metrics": [
+						"Time on site"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive",
+					"impactRatings": {
+						"people": "High",
+						"planet": "Low",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 3,
+						"planet": 1,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 7
+					},
+					"rationale": "Deceptive patterns can significantly harm users, including restricting access to information and causing financial harm."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#make-deliverables-understandable-and-reusable",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 2,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 4
+					},
+					"rationale": "There may be marginal positive impact on users who repeatedly access deliverables, though other impacts are minimal."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-a-design-system-for-interface-consistency",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Low",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 2,
+						"planet": 1,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 5
+					},
+					"rationale": "Consistent interfaces improve usability and may reduce resource consumption and costs."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use",
+					"impactRatings": {
+						"people": "Low",
+						"planet": "High",
+						"prosperity": "Medium",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 1,
+						"planet": 3,
+						"prosperity": 2,
+						"timeframe": 3,
+						"impactScore": 9
+					},
+					"rationale": "Reduced data transfer and media optimisation can deliver financial and environmental benefits.",
+					"metrics": [
+						"File size",
+						"Data transfer"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-animation-is-proportionate-and-easy-to-control",
+					"impactRatings": {
+						"people": "High",
+						"planet": "High",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 3,
+						"planet": 3,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 9
+					},
+					"rationale": "Animations can negatively affect accessibility and are resource intensive, so reducing them improves both user experience and energy use.",
+					"metrics": [
+						"CPU/GPU utilization",
+						"Accessibility audit"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography",
+					"impactRatings": {
+						"people": "Low",
+						"planet": "Low",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 1,
+						"planet": 1,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 5
+					},
+					"rationale": "Benefits are marginal, mainly through reduced bandwidth usage.",
+					"metrics": [
+						"File size",
+						"Data transfer"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-unwanted-notifications",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 2,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 5
+					},
+					"rationale": "Improves accessibility and user experience, with marginal broader benefits.",
+					"metrics": [
+						"Accessibility audit"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Medium",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 0,
+						"planet": 2,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 5
+					},
+					"rationale": "Reducing physical document use can lower environmental impact, though digital trade-offs exist.",
+					"metrics": [
+						"Number of printouts",
+						"Storage space used"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#involve-users-early-in-the-project",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Low",
+						"prosperity": "Low",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 1,
+						"prosperity": 1,
+						"timeframe": 1,
+						"impactScore": 3
+					},
+					"rationale": "Early user involvement helps avoid unnecessary features that could cause environmental harm."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 2
+					},
+					"rationale": "Focuses on testing rather than resolution, so direct impacts are limited.",
+					"metrics": [
+						"Test coverage",
+						"Lighthouse score",
+						"Core Web Vitals metrics"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#validate-usability-through-testing-and-real-world-usage",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Indeterminate",
+						"prosperity": "Low",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 2,
+						"planet": 0,
+						"prosperity": 1,
+						"timeframe": 2,
+						"impactScore": 5
+					},
+					"rationale": "Improves usability and inclusivity through better testing practices."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Medium",
+						"prosperity": "Medium",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 2,
+						"planet": 2,
+						"prosperity": 2,
+						"timeframe": 1,
+						"impactScore": 7
+					},
+					"rationale": "Supports long-term device compatibility and reduces premature device replacement."
+				}
+			]
+		},
+		{
+			"id": "3",
+			"name": "Web Development",
+			"shortName": "Web Development",
+			"guidelines": [
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#set-goals-based-on-performance-and-energy-impact",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 1
+					},
+					"rationale": "This guideline is mainly focused on setting goals, so there is minimal direct impact. Any impact depends on downstream actions taken to meet those goals."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unnecessary-code",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Indeterminate",
+						"prosperity": "Medium",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 2,
+						"planet": 0,
+						"prosperity": 2,
+						"timeframe": 3,
+						"impactScore": 7
+					},
+					"rationale": "Reducing and minifying code improves performance and reduces bandwidth usage, improving access speed and lowering data costs.",
+					"metrics": [
+						"File size"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#modularize-bandwidth-heavy-components",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 2,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 4
+					},
+					"rationale": "Modularisation improves performance by reducing unnecessary loading of heavy components, enabling faster access to content."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-redundancy-and-duplication-in-code",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 3
+					},
+					"rationale": "Impacts are marginal or uncertain, though cleaner code may improve maintainability."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-priority-as-first-parties",
+					"impactRatings": {
+						"people": "High",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 3,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 5
+					},
+					"rationale": "Reducing reliance on third-party scripts improves privacy, performance, and overall user experience.",
+					"metrics": [
+						"Third-party script count"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 2,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 4
+					},
+					"rationale": "Semantic code improves accessibility and usability, with indirect benefits to efficiency and maintainability."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#defer-the-loading-of-non-critical-resources",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Indeterminate",
+						"prosperity": "Medium",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 2,
+						"planet": 0,
+						"prosperity": 2,
+						"timeframe": 3,
+						"impactScore": 7
+					},
+					"rationale": "Deferring non-critical resources improves performance and reduces initial page load, benefiting both users and resource efficiency.",
+					"metrics": [
+						"Page weight on load"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#structure-metadata-for-machine-readability",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 2
+					},
+					"rationale": "Impacts are marginal or uncertain, primarily improving machine interpretability."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-media-queries-that-support-sustainability-goals",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 2,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 5
+					},
+					"rationale": "Improves accessibility and efficiency by adapting experiences to device constraints."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 2,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 4
+					},
+					"rationale": "Improves accessibility across devices and increases equitable access to services."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-javascript-and-apis",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 3
+					},
+					"rationale": "Impacts are marginal or uncertain depending on implementation choices."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 3
+					},
+					"rationale": "Reducing dependencies can improve maintainability, but direct impacts are uncertain."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#include-expected-and-beneficial-files",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 3
+					},
+					"rationale": "Impacts are marginal or uncertain depending on implementation.",
+					"metrics": [
+						"Presence of files"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Medium",
+						"prosperity": "Medium",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 2,
+						"planet": 2,
+						"prosperity": 2,
+						"timeframe": 2,
+						"impactScore": 8
+					},
+					"rationale": "Choosing efficient solutions improves performance, reduces resource usage, and can lower operational costs."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-the-latest-stable-language-version",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 3
+					},
+					"rationale": "Impacts are marginal or uncertain."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-number-and-complexity-of-database-queries",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Medium",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 0,
+						"planet": 2,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 5
+					},
+					"rationale": "Optimising database queries reduces server load and improves performance."
+				}
+			]
+		},
+		{
+			"id": "4",
+			"name": "Hosting, Infrastructure, and Systems",
+			"shortName": "Hosting and Infrastructure",
+			"guidelines": [
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "High",
+						"prosperity": "Medium",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 2,
+						"planet": 3,
+						"prosperity": 2,
+						"timeframe": 2,
+						"impactScore": 9
+					},
+					"rationale": "Choosing a sustainable hosting provider significantly reduces environmental impact through improved energy, water, and resource efficiency, while also benefiting communities near data centres.",
+					"metrics": [
+						"Carbon, Power, Water Usage Effectiveness (CUE, PUE, WUE)",
+						"Low Carbon Energy in Power Mix (%)",
+						"Up-to-date Security Patches, Necessary Certifications, Policy in Place for Extending Hardware Lifetime",
+						"Adheres to GHG Protocol Scope 2 Guidance on Market-Based Carbon Emissions Accounting (Y/N)"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Medium",
+						"prosperity": "Low",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 2,
+						"planet": 2,
+						"prosperity": 1,
+						"timeframe": 3,
+						"impactScore": 8
+					},
+					"rationale": "Caching and offline support reduce data transfer, improve accessibility in low-connectivity environments, and reduce environmental impact from repeated requests.",
+					"metrics": [
+						"cache-control headers",
+						"Resources Available and Accessible Offline (Y/N)"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#reduce-data-transfer-with-compression",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Medium",
+						"prosperity": "Low",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 2,
+						"planet": 2,
+						"prosperity": 1,
+						"timeframe": 3,
+						"impactScore": 8
+					},
+					"rationale": "Compression reduces data transfer size, lowering bandwidth usage, improving load times, and reducing energy consumption across networks and storage systems.",
+					"metrics": [
+						"content-encoding header",
+						"Files delivered in compressed format (Y/N)"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#setup-necessary-error-pages-and-redirection-links",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Low",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 2,
+						"planet": 1,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 6
+					},
+					"rationale": "Proper error handling and redirects improve navigation efficiency, reducing unnecessary page loads and improving user experience.",
+					"metrics": [
+						"Website analytics for error pages & redirections",
+						"Schedule for audits of broken and outdated links established (Y/N)",
+						"Audits for broken and outdated links conducted on schedule (Y/N)",
+						"100% of redirects tested (Y/N)"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-maintaining-unnecessary-virtualized-environments-or-containers",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "High",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 0,
+						"planet": 3,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 6
+					},
+					"rationale": "Removing unused environments significantly reduces resource consumption and infrastructure overhead, leading to strong environmental benefits.",
+					"metrics": [
+						"Schedule for auditing active environments, services, and codebases established (Y/N)",
+						"Audit of active environments, services, and codebases conducted as scheduled (Y/N)"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-automation-wisely",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Medium",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 0,
+						"planet": 2,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 4
+					},
+					"rationale": "Automation can reduce inefficiencies and improve system operations, though impacts vary depending on implementation.",
+					"metrics": [
+						"Continuous delivery and continuous integration best practices policy established (Y/N)",
+						"Automated scaling deployed (Y/N)",
+						"Suspicious activity management policy established (Y/N)"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#define-the-frequency-of-data-refreshes",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Low",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 0,
+						"planet": 1,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 3
+					},
+					"rationale": "Reducing unnecessary data refreshes lowers server load and data transfer, improving efficiency and reducing emissions.",
+					"metrics": [
+						"cache-control headers"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#back-up-critical-data-at-routine-intervals",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Medium",
+						"prosperity": "Medium",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 2,
+						"planet": 2,
+						"prosperity": 2,
+						"timeframe": 1,
+						"impactScore": 7
+					},
+					"rationale": "Proper backup strategies improve resilience, reduce data loss risk, and can optimise storage usage and operational continuity.",
+					"metrics": [
+						"Data Backup Policy and Process Established (Y/N)",
+						"Data Backup Procedures Completed as Scheduled (Y/N)"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#assess-the-impact-and-requirements-of-data-processing",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "High",
+						"prosperity": "High",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 2,
+						"planet": 3,
+						"prosperity": 3,
+						"timeframe": 2,
+						"impactScore": 10
+					},
+					"rationale": "Optimising data processing significantly improves efficiency, reduces wasteful computation, and enhances sustainability and cost effectiveness.",
+					"metrics": [
+						"Data processing time",
+						"Carbon-aware batching and scheduling methods in place (Y/N)",
+						"Audit of communication protocol security and sustainability updates conducted on schedule (Y/N)",
+						"Data processing metrics for efficiency, performance, security, and sustainability established and tracked (Y/N)"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Low",
+						"prosperity": "Low",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 2,
+						"planet": 1,
+						"prosperity": 1,
+						"timeframe": 3,
+						"impactScore": 7
+					},
+					"rationale": "CDNs improve performance and reduce latency, though environmental benefits are marginal due to underlying infrastructure still being required.",
+					"metrics": [
+						"CDN HTTP Headers",
+						"Request round-trip time"
+						]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#ensure-infrastructure-fits-project-requirements",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "High",
+						"prosperity": "Low",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 0,
+						"planet": 3,
+						"prosperity": 1,
+						"timeframe": 3,
+						"impactScore": 7
+					},
+					"rationale": "Proper infrastructure sizing reduces over-provisioning, lowering environmental impact and operational costs."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Medium",
+						"prosperity": "Medium",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 2,
+						"planet": 2,
+						"prosperity": 2,
+						"timeframe": 1,
+						"impactScore": 7
+					},
+					"rationale": "Appropriate data storage policies improve privacy, efficiency, and long-term sustainability of storage systems.",
+					"metrics": [
+						"Expiration headers"
+						]
+				}
+			]
+		},
+		{
+			"id": "5",
+			"name": "Business Strategy And Product Management",
+			"shortName": "Business and Product",
+			"guidelines": [
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 2
+					},
+					"rationale": "The direct impacts from this guideline are marginal or uncertain. Clear strategy drives decisions and behaviors throughout a product's life cycle.",
+					"metrics": [
+						"Product strategy exists that includes clear and measurable sustainability goals, metrics, and targets as well as ethical criteria (Y/N)"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#assign-a-sustainability-advocate",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 2
+					},
+					"rationale": "The direct impacts from this guideline are marginal or uncertain. Having a dedicated advocate improves application of sustainability criteria.",
+					"metrics": [
+						"Sustainability advocates assigned within a product team or organization (Y/N)"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#inform-raise-awareness-and-train-for-sustainability",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 2,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 3
+					},
+					"rationale": "Training and awareness can improve sustainability practices across an organisation.",
+					"metrics": [
+						"Training materials created with schedule and procedures for updates and communication (Y/N)"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#communicate-the-environmental-impact-of-user-choices",
+					"impactRatings": {
+						"people": "Low",
+						"planet": "Medium",
+						"prosperity": "Low",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 1,
+						"planet": 2,
+						"prosperity": 1,
+						"timeframe": 1,
+						"impactScore": 5
+					},
+					"rationale": "Communicating impact of user choices can improve environmental outcomes and awareness.",
+					"metrics": [
+						"Ratings: low = user choices exist; med = org has a plan to communicate impact; high = targets and tracking exist for continuous improvement"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#calculate-the-environmental-impact",
+					"impactRatings": {
+						"people": "Low",
+						"planet": "Medium",
+						"prosperity": "Low",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 1,
+						"planet": 2,
+						"prosperity": 1,
+						"timeframe": 1,
+						"impactScore": 5
+					},
+					"rationale": "Environmental measurement enables better sustainability decisions over time.",
+					"metrics": [
+						"Ratings: low = LCA or ESG analysis conducted; med = industry comparison published; high = supply chain analysis with improvement tracking"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#define-clear-organizational-sustainability-goals-and-metrics",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 2
+					},
+					"rationale": "Clear goals help align sustainability efforts across an organisation.",
+					"metrics": [
+						"Organisation has published sustainability statement with clear goals including digital services"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#validate-web-sustainability-efforts-through-external-verification",
+					"impactRatings": {
+						"people": "Low",
+						"planet": "Medium",
+						"prosperity": "Low",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 1,
+						"planet": 2,
+						"prosperity": 1,
+						"timeframe": 1,
+						"impactScore": 5
+					},
+					"rationale": "External validation improves credibility and sustainability accountability.",
+					"metrics": [
+						"Organisation has conducted ESG or LCA analysis and published findings or improvement tracking"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#support-mandatory-disclosures-and-reporting",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Medium",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 2,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 3
+					},
+					"rationale": "Reporting can drive transparency and environmental improvements.",
+					"metrics": [
+						"Organisation participates in ESG/LCA reporting and tracks improvements over time"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#create-one-or-more-impact-business-models",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 1
+					},
+					"rationale": "Impact business models can align revenue with positive outcomes.",
+					"metrics": [
+						"Theory of change and impact business model documented"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#follow-a-product-management-and-maintenance-strategy",
+					"impactRatings": {
+						"people": "Low",
+						"planet": "Medium",
+						"prosperity": "Low",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 1,
+						"planet": 2,
+						"prosperity": 1,
+						"timeframe": 1,
+						"impactScore": 5
+					},
+					"rationale": "Good maintenance strategy improves efficiency and sustainability outcomes.",
+					"metrics": [
+						"Product maintenance strategy exists and is resourced over time"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 1
+					},
+					"rationale": "Continuous improvement supports long-term sustainability maturity.",
+					"metrics": [
+						"Continuous improvement policies and measurement procedures in place"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#document-updates-and-evolutions",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 1
+					},
+					"rationale": "Documentation supports transparency and traceability of changes.",
+					"metrics": [
+						"Features documented in a structured, semantically versioned document"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#evaluate-if-a-digital-product-or-service-is-necessary",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 3
+					},
+					"rationale": "Assessing necessity helps avoid unnecessary digital products and waste.",
+					"metrics": [
+						"Policy exists for reviewing whether products/services are necessary"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#provide-a-supplier-standards-of-practice-document",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 1
+					},
+					"rationale": "Supplier standards help manage upstream sustainability risks.",
+					"metrics": [
+						"Policies exist for assessing social, environmental, and economic supplier risk"
+					]
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#share-economic-benefits",
+					"impactRatings": {
+						"people": "High",
+						"planet": "Indeterminate",
+						"prosperity": "High",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 3,
+						"planet": 0,
+						"prosperity": 3,
+						"timeframe": 1,
+						"impactScore": 7
+					},
+					"rationale": "Can significantly improve social and economic outcomes."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#share-decision-making-power-with-affected-parties",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Short"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 3,
+						"impactScore": 3
+					},
+					"rationale": "Participation improves inclusivity in decision-making processes."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-diversity-equity-justice-inclusion-deji-practices",
+					"impactRatings": {
+						"people": "High",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 3,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 4
+					},
+					"rationale": "Improves equity and inclusion outcomes in organisations."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 1
+					},
+					"rationale": "Responsible data practices improve trust and governance."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 1
+					},
+					"rationale": "Responsible AI governance supports long-term risk management."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#adopt-responsible-financial-policies",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Medium",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 2,
+						"planet": 2,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 5
+					},
+					"rationale": "Financial decisions can influence social and environmental outcomes."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#adopt-organizational-philanthropy-policies",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 2,
+						"impactScore": 5
+					},
+					"rationale": "Philanthropy can support broader societal benefits depending on implementation."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#plan-for-a-digital-product-or-service-s-care-and-end-of-life",
+					"impactRatings": {
+						"people": "Medium",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 2,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 3
+					},
+					"rationale": "Planning end-of-life improves privacy, security, and lifecycle management."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#repair-reuse-refurbish-recycle-or-reduce-e-waste",
+					"impactRatings": {
+						"people": "High",
+						"planet": "High",
+						"prosperity": "High",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 3,
+						"planet": 3,
+						"prosperity": 3,
+						"timeframe": 1,
+						"impactScore": 10
+					},
+					"rationale": "Extending device life significantly reduces environmental impact."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-environmental-and-human-budgets",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 1
+					},
+					"rationale": "Budgets provide baseline constraints but limited direct impact."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#use-and-contribute-to-open-source",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Medium",
+						"timeframe": "Medium"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 2,
+						"timeframe": 2,
+						"impactScore": 4
+					},
+					"rationale": "Open source contributions can improve collaboration and innovation."
+				},
+				{
+					"id": "https://www.w3.org/TR/web-sustainability-guidelines/#create-a-business-continuity-and-disaster-recovery-plan",
+					"impactRatings": {
+						"people": "Indeterminate",
+						"planet": "Indeterminate",
+						"prosperity": "Indeterminate",
+						"timeframe": "Long"
+					},
+					"points": {
+						"people": 0,
+						"planet": 0,
+						"prosperity": 0,
+						"timeframe": 1,
+						"impactScore": 1
+					},
+					"rationale": "Disaster recovery planning improves resilience but has minimal direct impact."
+				}
+			]
+		}
+		]
+}

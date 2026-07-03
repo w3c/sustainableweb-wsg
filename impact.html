@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="color-scheme" content="light dark">
+		<title>Web Sustainability Guidelines (WSG) Impact Measurement</title>
+		<style>
+			/* Fix for Showcasing Plain English Summaries: https://github.com/w3c-cg/sustyweb/issues/114 */
+			summary { cursor: pointer; }
+			.summary { background-color: var(--note-bg); border: medium solid var(--note-border); padding: 1em; }
+			.summary:not(:last-child) { margin-bottom: 1em; }
+		</style>
+		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+		<script class="remove">
+			/* Author Acknowledgement */
+			function authorRef() {
+				document.querySelectorAll("div.head dt").forEach(function (node) {
+					if (node.textContent.trim() == "Feedback:") {
+						node.insertAdjacentHTML('beforebegin', `
+							<dt>Authors:</dt>
+							<dd>
+								<a href="#acknowledgments">See acknowledgments</a>
+							</dd> `); }}); }
+			function editorRef() {
+				/* Editor Resolution */	
+				const ddToRemove = document.querySelector('dd[data-editor-id="49702"]');
+				if (ddToRemove) { ddToRemove.remove(); }
+				document.querySelectorAll('.head dt').forEach(dt => {
+					if (dt.textContent.trim() === 'Editors:') {
+						dt.textContent = "Editor:";
+						const htmlToInsert = `
+						<dt>Lead Editor:</dt>
+						<dd class="editor p-author h-card vcard" data-editor-id="49702">
+								<a class="u-url url p-name fn" href="https://alexanderdawson.com/">Alexander Dawson</a> (<span class="p-org org h-org">Invited Expert</span>)
+						</dd>`;
+						dt.insertAdjacentHTML('beforebegin', htmlToInsert); } } ); }
+		</script>
+		<script class="remove">
+		var respecConfig = {
+			editors: [
+				{
+					name: "Alexander Dawson",
+					url: "https://alexanderdawson.com/",
+					company: "Invited Expert",
+					w3cid: 49702,
+				},
+				{
+					name: "Rose Newell",
+					url: "https://rosenewell.co.uk/",
+					company: "Invited Expert",
+					w3cid: 164418,
+				},
+			],
+			edDraftURI: "https://w3c.github.io/sustainableweb-wsg/impact.html",
+			github: "https://github.com/w3c/sustainableweb-wsg/",
+			group: "sustainableweb",
+			latestVersion: "https://w3c.github.io/sustainableweb-wsg/impact.html",
+			specStatus: "ED",
+			postProcess: [authorRef, editorRef],
+		}
+		</script>
+	</head>
+	<body>
+		<section id="abstract"> <!-- Abstract -->
+			<p>This document describes the <strong>impact ratings</strong> provided alongside <a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines</a> (<abbr title="Web Sustainability Guidelines">WSG</abbr>). The ratings and timeframes support prioritisation of guidelines based on expected impact and when that impact is likely to occur across people, planet, and prosperity.</p>
+			<p>Help improve this page by sharing your ideas, suggestions, or comments via <a href="https://github.com/w3c/sustainableweb-wsg/issues/">GitHub issues</a>.</p>
+		</section>
+		<section id="sotd"> <!-- Status of This Document -->
+			<p>To provide feedback regarding this document, the preferred method is using GitHub. It is free to create a GitHub account to file issues. A list of issues filed as well as archives of previous mailing list <a id="public-name" href="mailto:public-sustainableweb@w3.org">public-sustainableweb@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-sustainableweb/">archive</a>) discussions are publicly available.</p>
+		</section>
+		<section> <!-- Introduction -->
+			<h2>Introduction</h2>
+			<p>This document provides "high", "medium", "low", and "indeterminate" impact ratings for each guideline within <a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines</a> (<abbr title="Web Sustainability Guidelines">WSG</abbr>) across the spectrum of people, planet, and prosperity. These ratings are accompanied by an indicator ("short", "medium", and "long") reflecting the timeframe in which the impact is likely realized.</p>
+			<p>These factors go into calculating an "impact score" for each guideline. This score provides a means for adopters of the WSG to assess the impact of each guideline and prioritise the guidelines they may choose to act upon.</p>
+			<p>Each guideline has an explanation of the rationale behind each set of ratings and timeframe because some guidelines in the WSG are not measurable using a clear metric or tool. As a result, for some guidelines, we have used available research and input from industry experts in order to provide ratings and impact timeframes. </p>
+			<p>Where appropriate, we included the suitable or recommended metrics that can be used to assess the impact of a given guideline.</p>
+			<p class="note">Impact ratings and scores may be used to support sustainability reporting and assessment. They can help organizations describe and compare the relative impact of guidelines over time. They may also be referenced alongside established reporting frameworks, such as the <a href="https://www.globalreporting.org/standards/">Global Reporting Initiative</a> (<abbr title="Global Reporting Initiative">GRI</abbr>) where relevant.</p>
+			<h2 class="notoc">Impact ratings</h2>
+			<dl>
+				<dt>Indeterminate</dt>
+				<dd>The impact of a guideline on a given category cannot be easily assessed.</dd>
+				<dt>Low</dt> 
+				<dd>The guideline has a small positive impact on the given category.</dd>
+				<dt>Medium</dt>
+				<dd>The guideline has a moderate positive impact on the given category.</dd>
+				<dt>High</dt>
+				<dd>The guideline has a significant positive impact on the given category.</dd>
+			</dl>
+			<h2 class="notoc">Timeframe</h2>
+			<dl>
+				<dt>Short</dt>
+				<dd>The impact of the guideline will be noticed quickly (e.g. within the next month, the next sprint etc.)</dd>
+				<dt>Medium</dt>
+				<dd>The impact of the guideline will be noticed after some time (e.g. after a few months, after the next major release etc.)</dd>
+				<dt>Long</dt>
+				<dd>The impact of the guideline will be noticed after a lengthy period (e.g. after a year, after several major releases etc.)</dd>
+			</dl>
+			<h2 class="notoc">Categories</h2>
+			<dl>
+				<dt>Planet</dt>
+				<dd>This guideline prioritizes the health of the environment, ecosystems, and the planet overall.</dd>
+				<dt>People</dt>
+				<dd>This guideline prioritizes giving access to resources, information, and opportunities necessary for their well-being.</dd>
+				<dt>Prosperity</dt>
+				<dd>This guideline prioritizes financial stability and equitable economic development, usually via the circular economy.</dd>
+			</dl>
+			<h2 class="notoc">Impact score</h2>
+			<p>The impact score is derived from the impact ratings and impact timeframe for each guideline. Higher values mean the guideline has a higher impact in a shorter period of time, while lower values mean the opposite.</p>
+			<table class="index">
+				<caption>Impact score calculation</caption>
+				<thead>
+					<tr>
+						<th></th>
+						<th colspan="4" style="text-align: center;">Impact rating</th>
+						<th colspan="3" style="text-align: center;">Impact timeframe</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td><strong>Indeterminate</strong></td>
+						<td><strong>Low</strong></td>
+						<td><strong>Medium</strong></td>
+						<td><strong>High</strong></td>
+						<td><strong>Short</strong></td>
+						<td><strong>Medium</strong></td>
+						<td><strong>Long</strong></td>
+					</tr>
+					<tr>
+						<td><strong>Points</strong></td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>3</td>
+						<td>2</td>
+						<td>1</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Each category (Planet, People, Prosperity) is assigned an impact rating and timeframe based on the table below. These are then summed to calculate the impact score.</p>
+			<table class="index">
+				<caption>Impact scoring example</caption>
+				<thead>
+					<tr>
+						<th></th>
+						<th>People</th>
+						<th>Planet</th>
+						<th>Prosperity</th>
+						<th>Timeframe</th>
+						<th>Impact score</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><strong>Impact ratings</strong></td>
+						<td>Indeterminate</td>
+						<td>High</td>
+						<td>Low</td>
+						<td>Medium</td>
+					</tr>
+					<tr>
+						<td><strong>Points</strong></td>
+						<td>0</td>
+						<td>3</td>
+						<td>1</td>
+						<td>2</td>
+						<td>6</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 class="notoc">Assumptions</h2>
+			<p>Impact ratings are provided at the guideline level. Future versions may offer ratings at the Success Criteria level. Assume that each success criteria under a parent guideline shares the same impact ratings and timeframes as that guideline.</p>
+			<p>Impact ratings are for individual guidelines. Ratings are not compounded.</p>
+		</section>
+		<section> <!-- Impact scores -->
+			<h2>Impact scores</h2>
+			<section> <!-- User Experience Design -->
+				<h2>User Experience Design</h2>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#identify-assess-disclose-review-and-mitigate-sustainability-impacts">Identify, assess, disclose, review, and mitigate sustainability impacts</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline concentrates on identifying, tracking, and disclosing negative impacts on a project rather than direct action. As such, there would be minimal direct impact in all categories from implementing it.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#understand-user-requirements-or-constraints">Understand user requirements or constraints</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Low</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>1</td><td>0</td><td>2</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Implementing this guideline should result in positive impact for users and planet, within a moderate timeframe, removing any barriers to access should reduce the amount of time users take to perform their task and have a corresponding effect on energy usage. There is minimal direct impact on prosperity.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Time on site</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#integrate-sustainability-into-every-stage-of-the-ideation-process">Integrate sustainability into every stage of the ideation process</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Low</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>1</td><td>0</td><td>1</td><td>2</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct planetary impact of this guideline is positive. Other impacts of this guideline are difficult to measure and quantify, though the potential future impacts of meeting this guideline can be meaningful.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>File size</li><li>Data transfer</li><li>Page weight on load</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-efficient-and-streamlined-user-journeys">Design efficient and streamlined user journeys</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Low</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>1</td><td>0</td><td>3</td><td>6</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Minimizing distractions for users can result in a positive experience for users, making access to information easier. There may be some marginal reduction in resource consumption as a result of this as well.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Time on site</li><li>Page views per session</li><li>File size</li><li>Data transfer</li><li>Page weight on load</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#design-to-assist-and-not-to-distract">Design to assist and not to distract</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>High</td><td>Low</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>3</td><td>1</td><td>0</td><td>3</td><td>7</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Simplified navigation can have a positive impact on user interaction, experience, and making information easier to find. In turn this should reduce the time spent on a site, bringing a planetary benefit of using less energy per visit.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Time on site</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-being-manipulative-or-deceptive">Avoid being manipulative or deceptive</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>High</td><td>Low</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>3</td><td>1</td><td>0</td><td>3</td><td>7</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Deceptive patterns and tactics have the potential to significantly harm users in a number of ways including restricting their access to important information and causing financial harm and confusion.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#make-deliverables-understandable-and-reusable">Make deliverables understandable and reusable</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>0</td><td>0</td><td>2</td><td>4</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>There may be marginal positive impact on users who repeatedly access deliverables, though little-to-no impact on other categories.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-a-design-system-for-interface-consistency">Use a design system for interface consistency</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Low</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>1</td><td>0</td><td>2</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Providing consistent user interfaces can result in a positive experience for users, making information easier to find. There may be some marginal reduction in resource consumption, and a marginal financial benefit though this is uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">Optimize media to reduce resource use</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Low</td><td>High</td><td>Medium</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>1</td><td>3</td><td>2</td><td>3</td><td>9</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>There can be some financial benefit of less data transfer (especially for users on pre-paid/capped data plans), and some reduction in resource consumption especially for heavy media formats like video.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>File size</li><li>Data transfer</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-animation-is-proportionate-and-easy-to-control">Ensure animation is proportionate and easy to control</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>High</td><td>High</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>3</td><td>3</td><td>0</td><td>3</td><td>9</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>For users, animations can present distractions or trigger physical conditions which inhibit their online experience. Animations are also processor intensive, resulting in a meaningful reduction in resource utilization from applying this guideline.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>CPU/GPU utilization</li><li>Accessibility audit</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-optimized-web-typography">Use optimized web typography</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Low</td><td>Low</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>1</td><td>1</td><td>0</td><td>3</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Though this guideline can be met relative quickly, the positive impacts across all three categories is marginal (reduced bandwidth) or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>File size</li><li>Data transfer</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-unwanted-notifications">Avoid unwanted notifications</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Indeterminate</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>0</td><td>0</td><td>3</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline prioritizes accessibility for non-visual users, which can also lead to shared societal and financial benefits. The impacts on other categories are marginal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Accessibility audit</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents">Reduce the impact of downloadable and physical documents</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Medium</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>2</td><td>0</td><td>3</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline may bring some planetary benefits through reduce physical resources used in producing documents, though this must be weighed against the resulting resource use from digital alternatives. Implementing this guideline may take time as physical documents are converted to accessible web versions. Benefits can be quickly realized in terms of hardware space, improved efficiency and reduction in paper waste.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Number of printouts</li><li>Storage space used</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#involve-users-early-in-the-project">Involve users early in the project</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Low</td><td>Low</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>1</td><td>1</td><td>1</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline focuses on establishing training and testing practices. By involving users early on, a lot of unnecessary features can be avoided that might have otherwise led to environmental harm.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline focuses on establishing audit and testing, rather than the performing the resolution actions. Therefore the direct impact on each category is marginal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Test coverage</li><li>Lighthouse score</li><li>Core Web Vitals metrics</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-usability-through-testing-and-real-world-usage">Validate usability through testing and real-world usage</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Indeterminate</td><td>Low</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>0</td><td>1</td><td>2</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline focuses on performing user testing, rather than implementing a specific action. Better user testing makes sure all potential users can use the service and nobody is excluded.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support">Cross-platform compatibility support</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Medium</td><td>Medium</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>2</td><td>2</td><td>1</td><td>7</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline focuses on keeping backward compatibility for as many devices as possible as well as the proper documentation of compatibility. Therefore it has a long-term impact on the life-time of devices and by this on the number of produced devices.</p>
+				</div>
+			</section>
+			<section> <!-- Web Development -->
+				<h2>Web Development</h2>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#set-goals-based-on-performance-and-energy-impact">Set goals based on performance and energy impact</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline is mainly focused on setting goals, and as such there would be minimal direct impact. Indirect impacts felt as a result of actions taken to meet those goals may exist, but are uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unnecessary-code">Minify and remove unused code</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Indeterminate</td><td>Medium</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>0</td><td>2</td><td>3</td><td>7</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The guideline champions code minification and reducing file size which can improve performance allowing users to access information faster which can also reduce bandwidth use for users on limited data plans. The direct impacts on planet as a result of this guideline a minimal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>File size</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#modularize-bandwidth-heavy-components">Modularize bandwidth-heavy components</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>0</td><td>0</td><td>2</td><td>4</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline aims to improve performance through modularisation, allowing users faster access to information. The direct impacts on planet and prosperity as a result of this guideline a minimal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-redundancy-and-duplication-in-code">Avoid redundancy and duplication in code</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>3</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impacts on each category from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-priority-as-first-parties">Treat third parties the same as first parties</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>High</td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>3</td><td>0</td><td>0</td><td>2</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline can have significant privacy and performance benefits for users. The impacts on other categories from this guideline are marginal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Third-party script count</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-code-follows-good-semantic-practices">Ensure code follows good semantic practices</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>0</td><td>0</td><td>2</td><td>4</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>There can be accessibility benefits for users through adopting this guideline. The impacts on other categories from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#defer-the-loading-of-non-critical-resources">Defer the loading of non-critical resources</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Indeterminate</td><td>Medium</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>0</td><td>2</td><td>3</td><td>7</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The guideline can improve performance allowing users to access information faster which can also reduce bandwidth use for users on limited data plans. The direct impacts on planet as a result of this guideline a minimal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Page weight on load</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#structure-metadata-for-machine-readability">Structure metadata for machine readability</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The impacts on each category from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-media-queries-that-support-sustainability-goals">Use media queries that support sustainability goals</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Indeterminate</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>0</td><td>0</td><td>3</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The impacts on each category from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-layouts-work-for-different-devices-and-requirements">Ensure layouts work for different devices and requirements</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>0</td><td>0</td><td>2</td><td>4</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The guideline can improve access to information, and ensure that users with older or non-standard devices also have equal access. The impacts on other categories from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-javascript-and-apis">Use sustainable JavaScript and <abbr title="Application Programming Interfaces">APIs</abbr></a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>3</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The impacts on each category from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>3</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The impacts on each category from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#include-expected-and-beneficial-files">Include expected and beneficial files</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>3</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The impacts on each category from this guideline are marginal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Presence of files</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service">Use the most efficient solution for your service</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Medium</td><td>Medium</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>2</td><td>2</td><td>2</td><td>8</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>There can be performance benefits from this guideline, allowing users faster access to information, as well as reduced resource utilization which can also lead to lower costs.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-the-latest-stable-language-version">Use the latest stable language version</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>3</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The impacts on each category from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-number-and-complexity-of-database-queries">Reduce the number and complexity of database queries</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Medium</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>2</td><td>0</td><td>3</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>There can be performance benefits from this guideline, allowing users faster access to information. Reduced database workloads can also reduce server resource consumption.</p>
+				</div>
+			</section>
+			<section> <!-- Hosting, Infrastructure, and Systems -->
+				<h2>Hosting, Infrastructure, and Systems</h2>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-hosting">Use sustainable hosting</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>High</td><td>Medium</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>3</td><td>2</td><td>2</td><td>9</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Choosing a sustainable service provider can have a strong planetary impact especially when considering infrastructure construction, power utilization, water use and other such factors. Impacts on local communities of poor data center resource management include water and power shortages, air and water pollution, noise and light intrusion, wasteful land use, and declines in residential property values.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Carbon, Power, Water Usage Effectiveness (CUE, PUE, WUE)</li><li>Low Carbon Energy in Power Mix (%)</li><li>Up-to-date Security Patches, Necessary Certifications, Policy in Place for Extending Hardware Lifetime</li><li>Adheres to GHG Protocol Scope 2 Guidance on Market-Based Carbon Emissions Accounting (Y/N)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-caching-and-support-offline-access">Optimize caching and support offline access</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Medium</td><td>Low</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>2</td><td>1</td><td>3</td><td>8</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Caching content has three impacts: lower carbon emissions from less data transfer, better user access to assets offline, and more usable access to assets for users who are limited to undependable networks or low bandwidth.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>cache-control headers</li><li>Resources Available and Accessible Offline (Y/N)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-data-transfer-with-compression">Reduce data transfer with compression</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Medium</td><td>Low</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>2</td><td>1</td><td>3</td><td>8</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The smaller size of compressed files drives less carbon emissions from data transfer and also from lower memory and storage consumption. Smaller files are also easier for users to download and consume less network bandwidth.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>content-encoding header</li><li>Files delivered in compressed format (Y/N)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#setup-necessary-error-pages-and-redirection-links">Setup necessary error pages and redirection links</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Low</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>1</td><td>0</td><td>3</td><td>6</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Appropriate error pages and redirections help users find the information they are seeking more quickly and efficiently, resulting in a better user experience and less carbon emissions from unnecessary page loads. The impact on Prosperity is Indeterminate.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Website analytics for error pages & redirections</li><li>Schedule for audits of broken and outdated links established (Y/N)</li><li>Audits for broken and outdated links conducted on schedule (Y/N)</li><li>100% of redirects tested (Y/N)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-maintaining-unnecessary-virtualized-environments-or-containers">Avoid maintaining unnecessary virtualized environments or containers</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>High</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>3</td><td>0</td><td>3</td><td>6</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Removing unused environments can result in significant reductions in resource utilization. The impacts on other categories from this guideline are marginal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Schedule for auditing active environments, services, and codebases established (Y/N)</li><li>Audit of active environments, services, and codebases conducted as scheduled (Y/N)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-automation-wisely">Use automation wisely</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Medium</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>2</td><td>0</td><td>2</td><td>4</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The planetary impact of task automation can be significant depending on the type of task that is being automated, and the kind of automation being performed. The impacts on each category from this guideline are marginal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Continuous delivery and continuous integration best practices policy established (Y/N)</li><li>Automated scaling deployed (Y/N)</li><li>Suspicious activity management policy established (Y/N)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#define-the-frequency-of-data-refreshes">Define the frequency of data refreshes</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Low</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>1</td><td>0</td><td>2</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Optimized data refresh decisions would tend to result in fewer refreshes and consequently lower emissions from lower data transmission and server operation.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>cache-control headers</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#back-up-critical-data-at-routine-intervals">Back up critical data at routine intervals</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Medium</td><td>Medium</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>2</td><td>2</td><td>1</td><td>7</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Well designed backup procedures for system and user data minimize storage use, reduce backup time, and limit the business interruptions and personal harms that come from data breaches and loss.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Data Backup Policy and Process Established (Y/N)</li><li>Data Backup Procedures Completed as Scheduled (Y/N)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#assess-the-impact-and-requirements-of-data-processing">Assess the impact and requirements of data processing</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>High</td><td>High</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>3</td><td>3</td><td>2</td><td>10</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Optimizing every method for reducing the intensity, duration, and wastefulness of data processing improves the economics and environmental impacts of web environments</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Data processing time</li><li>Carbon-aware batching and scheduling methods in place (Y/N)</li><li>Audit of communication protocol security and sustainability updates conducted on schedule (Y/N)</li><li>Data processing metrics for efficiency, performance, security, and sustainability established and tracked (Y/N)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-content-delivery-networks-cdns-when-beneficial">Use Content Delivery Networks (<abbr title="Content Delivery Networks">CDNs</abbr>) when beneficial</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Low</td><td>Low</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>1</td><td>1</td><td>3</td><td>7</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Serving content via a CDN can improve website performance for users, while also reducing host server bandwidth costs for implementers. The environmental impact of this guideline is marginal, as communication networks and hosting infrastructure will not be removed by a decision to use a CDN.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>CDN HTTP Headers</li><li>Request round-trip time</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-infrastructure-fits-project-requirements">Ensure infrastructure fits project requirements</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>High</td><td>Low</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>3</td><td>1</td><td>3</td><td>7</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Appropriately sizing infrastructure for a project can have a significant environmental impact in reduced resource use. Dialing back on provisioning save money, and over many projects that adds up.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Medium</td><td>Medium</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>2</td><td>2</td><td>1</td><td>7</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Applying appropriate data storage policies can reduce the risk of user's personal data being exposed, as well as free up storage space on devices and servers. This has an immediate environmental benefit of allowing storage devices to be used for longer, which results in a prosperity benefit as well.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Expiration headers</li></ul>
+				</div>
+			</section>
+			<section> <!-- Business Strategy and Product Management -->
+				<h2>Business Strategy and Product Management</h2>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy">Have an ethical and sustainable product strategy</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impacts from this guideline are marginal or uncertain. Clear strategy drives decisions and behaviors throughout a product's life cycle. Therefore, benefits from having the strategy in place can be seen throughout discovery, UX design, infrastructure, web dev, etc. processes.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Product strategy exists that includes clear and measurable sustainability goals, metrics, and targets as well as ethical criteria. (Y/N)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#assign-a-sustainability-advocate">Assign a sustainability advocate</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impacts from this guideline are marginal or uncertain. With a dedicated advocate whose responsibility is to maintain sustainability criteria throughout a product's life cycle, organizations will begin to see benefits from their strategy more quickly.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Sustainability advocates assigned within a product team or organization. (Y/N)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#inform-raise-awareness-and-train-for-sustainability">Inform, raise awareness, and train for sustainability</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>0</td><td>0</td><td>1</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impacts from this guideline are marginal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Training materials created with schedule and procedures for updates and communication. (Y/N)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#communicate-the-environmental-impact-of-user-choices">Communicate the environmental impact of user choices</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Low</td><td>Medium</td><td>Low</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>1</td><td>2</td><td>1</td><td>1</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The impacts of applying this guideline at the organizational level can have a positive impact on the planet, while also having some positive impacts for other categories.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Ratings: low = user choices exist; med = org has a plan in place to communicate the impact of user choices; high = targets and tracking are in place to measure progress and make continuous improvements over time</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#calculate-the-environmental-impact">Calculate the environmental impact</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Low</td><td>Medium</td><td>Low</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>1</td><td>2</td><td>1</td><td>1</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The impacts of applying this guideline at the organizational level can have a positive impact on the planet, while also having some positive impacts for other categories.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Ratings: low = the org has conducted an LCA or related ESG audit/analysis on their product(s); med = the org has analyzed how they perform in relation to others in their industry and published their findings; high = the org has extended analysis to their supply chain and can show improvement over time on progress</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#define-clear-organizational-sustainability-goals-and-metrics">Define clear organizational sustainability goals and metrics</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>2</td><td>2</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impacts from this guideline are marginal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Ratings: low = organization has published a sustainability statement with clear goals that include digital products/services; medium = org shows how it dedicates resources to implementing sustainability strategies that align with the statement; high = org can show how it measures progress over time and focuses on continuous improvement (usually reports that include digital product/service impacts)</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-web-sustainability-efforts-through-external-verification">Validate web sustainability efforts through external verification</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Low</td><td>Medium</td><td>Low</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>1</td><td>2</td><td>1</td><td>1</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The impacts of applying this guideline at the organizational level can have a positive impact on the planet, while also having some positive impacts for other categories.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Ratings: low = the org has conducted an LCA or related ESG audit/analysis on their product(s); med = the org has analyzed how they perform in relation to others in their industry and published their findings; high = the org has extended analysis to their supply chain and can show improvement over time on progress</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#support-mandatory-disclosures-and-reporting">Support mandatory disclosures and reporting</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Medium</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>2</td><td>0</td><td>1</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The process of reporting can lead to some amount of positive impact. This guideline explicitly refers to environmental impact reduction, while the direct impact on other categories is marginal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Ratings: low = the org has conducted an LCA or related ESG audit/analysis on their product(s); med = the org has analyzed how they perform in relation to others in their industry and published their findings; high = the org has extended analysis to their supply chain and can show improvement over time on progress</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#create-one-or-more-impact-business-models">Create one or more impact business models</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impacts from this guideline are marginal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Ratings: low = the company has published a theory of change and impact business model documentation; med = the company can show how much revenue is generated from the impact business model; high = the company can show how desired outcomes from their theory of change are reached based on the impact business model.</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#follow-a-product-management-and-maintenance-strategy">Follow a product management and maintenance strategy</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Low</td><td>Medium</td><td>Low</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>1</td><td>2</td><td>1</td><td>1</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>People: Low, more alignment and clarity improves teams; Planet: Medium, more thorough sustainability metrics incorporated into product strategy produces improved planetary and ecological impacts; Prosperity: Low, management and maintenance strategy ensures better efficiency (for lower operational cost)</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Ratings: low = product maintenance strategy in place (published?); med = Org can show how it appropriately resources the product over time to support ongoing maintenance and management; high = Org reporting shows progress over time on both performance and failures</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures">Implement continuous improvement procedures</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impacts from this guideline are marginal or uncertain, as this will vary significantly from org to org and continuous improvement practices generally take a long time to operationalize.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Ratings: low = continuous improvement policies/practices in place with strategy for measuring long-term product success; med = org can show how it implements policies/practices; high = org can show over time the progress it makes toward its goals through continuous improvement procedures</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#document-updates-and-evolutions">Document updates and evolutions</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impacts from this guideline are marginal or uncertain.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Yes: Features have been documented as they are added. in a 'well structured, semantically versioned document'. No: They haven't.</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#evaluate-if-a-digital-product-or-service-is-necessary">Evaluate if a digital product or service is necessary</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>3</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>There is little direct impact from implementing the success criteria of this guideline, though the process of deciding on and implementing this guideline can be swift.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Y/N: Policy and procedure is in place for reviewing whether products and services are necessary and for removing obstacles.</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-a-supplier-standards-of-practice-document">Provide a supplier standards of practice document</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impacts from this guideline are marginal or uncertain. How an organization approaches this guideline could significantly influence all three impact categories. However, influence is predicated on the processes above being implemented, tracked, and measured over time.</p>
+					<p><strong>Metrics:</strong></p>
+					<ul><li>Ratings: Low: The organization has policies to assess social, economic, and environmental risk associated with its supply chain; Med: The organization can show how it implements policies and practices over time to address identified risks; High: The organization can show how tracking their supplier standards measurably improves risk factors over time.</li></ul>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#share-economic-benefits">Share economic benefits</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>High</td><td>Indeterminate</td><td>High</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>3</td><td>0</td><td>3</td><td>1</td><td>7</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impact to employees and society from this guideline can be significant, though may take some time to be felt. The impacts on other categories from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#share-decision-making-power-with-affected-parties">Share decision-making power with affected parties</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Short</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>3</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>There is little direct impact from implementing this guideline, though implementation can be swift.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-diversity-equity-justice-inclusion-deji-practices">Use Diversity, Equity, Justice, Inclusion (<abbr title="Use Diversity, Equity, Justice, Inclusion">DEJI</abbr>) practices</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>High</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>3</td><td>0</td><td>0</td><td>1</td><td>4</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impact to employees from this guideline can be significant, though may take some time to be felt. The impacts on other categories from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices">Promote responsible data practices</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impacts from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies">Establish responsible practices around AI and emerging or disruptive technologies</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The direct impacts from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#adopt-responsible-financial-policies">Adopt responsible financial practices</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Medium</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>2</td><td>0</td><td>1</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline can have some degree positive impact for employees, users, and the planet (through fossil fuel divestment), though impacts may take some time to be felt. The impacts on other categories from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#adopt-organizational-philanthropy-policies">Adopt organizational philanthropy practices</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>2</td><td>5</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>This guideline can have strong societal impacts, and may have impacts in other areas depending on how it is applied though those are unclear.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#plan-for-a-digital-product-or-service-s-care-and-end-of-life">Plan for a digital product or service's care and end-of-life</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Medium</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>2</td><td>0</td><td>0</td><td>1</td><td>3</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The user benefit from this guideline can be noticeable especially when concerning data security and privacy at a digital product's end of life. The impacts on other categories from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#repair-reuse-refurbish-recycle-or-reduce-e-waste">Repair, reuse, refurbish, recycle or reduce e-waste</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>High</td><td>High</td><td>High</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>3</td><td>3</td><td>3</td><td>1</td><td>10</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Unimpeded access to repair and refurbishment can have direct benefits for users of physical devices, as well as prolonging device lifetimes and reducing e-waste which have significant environmental impacts.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#define-performance-environmental-and-human-budgets">Define performance, environmental, and human budgets</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>The definition of budgets and baselines by themselves have minimal direct impact.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-and-contribute-to-open-source">Use and contribute to open source</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Medium</td><td>Medium</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>2</td><td>2</td><td>4</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Adopting open source and contributing back to open source can have moderate societal impacts, especially when coupled with financial support for maintainers. The impacts on other categories from this guideline are marginal or uncertain.</p>
+				</div>
+				<p><strong><a href="https://www.w3.org/TR/web-sustainability-guidelines/#create-a-business-continuity-and-disaster-recovery-plan">Create a business continuity and disaster recovery plan</a>:</strong></p>
+				<div class="summary">
+					<table class="index">
+						<thead><tr><th></th><th>People</th><th>Planet</th><th>Prosperity</th><th>Timeframe</th><th>Impact score</th></tr></thead>
+						<tbody>
+					<tr><td><strong>Impact ratings</strong></td><td>Indeterminate</td><td>Indeterminate</td><td>Indeterminate</td><td>Long</td><td></td></tr>
+					<tr><td><strong>Points</strong></td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+						</tbody>
+					</table>
+					<p><strong>Rationale: </strong>Establishing a plan by itself has minimal direct impact on any category.</p>
+				</div>
+			</section>
+		</section>
+		<section class="appendix"> <!-- Acknowledgments -->
+			<h2>Acknowledgments</h2>
+			<p>Additional information about participation in the Sustainable Web Interest Group can be found <a href="https://github.com/w3c/sustainableweb-ig/">within the GitHub repository</a> of the Interest Group.</p>
+			<section> <!-- Draft Contributors -->
+				<h2>Participants active in the development of this document</h2>
+				<p>Adam Newman, Alexander Dawson, Andrea Davanzo, Andrew Wright, Chris Adams, Chris Needham, Emma Horrell, Fershad Irani, Hannah Smith, Hidde de Vries, Jeffrey Yasskin, Jennifer Strickland, Laurent Devernay Satyagraha, Len Dierickx, Łukasz Mastalerz, Mike Gifford, Nick Lewis, Nicola Bonotto, Oliver Winks, Ryan Sholin, Siddhesh Wagle, Susannah Hill, Tantek Çelik, Thorsten Jonas, Tim Frick, Tzviya Siegman.</p>
+			</section>
+		</section>
+	</body>
+</html>
