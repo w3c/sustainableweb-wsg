@@ -3075,12 +3075,31 @@
 							<li>All checks above are true.</li>
 						</ol>
 					</details>
-				</div>
-				<div class="summary">
+					<details> <!-- Enable users to manage their accounts and data -->
+						<summary id="data-ownership">Enable users to manage their accounts and data</summary>	
+						<p><strong>Applicability</strong></p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices">Promote responsible data practices</a>.</p>
+						<p><strong>Description</strong></p>
+						<p>Offer a mechanism for users of a product or service to allow the management of any information (data) or accounts (subscription or otherwise) they may hold. Best practices with such systems will include allowing the deletion of accounts and/or data without human intervention and providing single steps (with confirmation) to achieve this.</p>
+						<p>Machine testing such features will undoubtedly require internal access for a product or service, however, if the ability to create an account can be automated or undertaken, then the visibility of the source code within the account management system can be verified by tooling. As such, where internal access is required, gain permission, then check for the ability to delete accounts (and verify that this action works), if it does, pass the check.</p>
+						<p><strong>Examples</strong></p>
+						<ol>
+							<li>A Software as a Service provider has within the account manager, a profile section allowing customers to click a big red button to "delete account and data". Upon hitting confirm, this erases their details from the servers.</li>
+						</ol>
+						<p><strong>Tests</strong></p>
+						<p>Procedure</p>
+						<ol>
+							<li>Check that users can delete their accounts and data without human intervention.</li>
+						</ol>
+						<p>Expected Results</p>
+						<ol>
+							<li>All checks above are true.</li>
+						</ol>
+					</details>
 					<details> <!-- Provide a website archive containing outdated or old versions -->
 						<summary id="outdated-content">Provide a website archive containing outdated or old versions</summary>	
 						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures">Implement appropriate data management procedures</a>.</p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices">Promote responsible data practices</a>.</p>
 						<p><strong>Description</strong></p>
 						<p>Provide a mechanism for retrieving old information that may have expired in terms of currency, but may still have a practical use as a reference for individuals wishing to identify information that had prior use or relevance for a product or service. This technique is most useful when the information is content-focused or showcasing iterative change.</p>
 						<p>For machine testability, several criteria should be taken into account. Firstly the outdated material should be isolated either on a subdomain or a subfolder to avoid clashing with existing content. This material should also be reduced to a minimalist form (content only) to reduce sustainability impacts. Furthermore, all links should be checked to ensure that they resolve to a working reference.</p>
@@ -3095,27 +3114,6 @@
 							<li>Check if the mentioned content is being accessed rarely rather than regularly.</li>
 							<li>Check (if both of the above are true) that a website archive holds this material.</li>
 							<li>Check that the mentioned archive is slimmed down to further reduce sustainability impacts.</li>
-						</ol>
-						<p>Expected Results</p>
-						<ol>
-							<li>All checks above are true.</li>
-						</ol>
-					</details>
-					<details> <!-- Enable users to manage their accounts and data -->
-						<summary id="data-controllers">Enable users to manage their accounts and data</summary>	
-						<p><strong>Applicability</strong></p>
-						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures">Implement appropriate data management procedures</a>.</p>
-						<p><strong>Description</strong></p>
-						<p>Offer a mechanism for users of a product or service to allow the management of any information (data) or accounts (subscription or otherwise) they may hold. Best practices with such systems will include allowing the deletion of accounts and/or data without human intervention and providing single steps (with confirmation) to achieve this.</p>
-						<p>Machine testing such features will undoubtedly require internal access for a product or service, however, if the ability to create an account can be automated or undertaken, then the visibility of the source code within the account management system can be verified by tooling. As such, where internal access is required, gain permission, then check for the ability to delete accounts (and verify that this action works), if it does, pass the check.</p>
-						<p><strong>Examples</strong></p>
-						<ol>
-							<li>A Software as a Service provider has within the account manager, a profile section allowing customers to click a big red button to "delete account and data". Upon hitting confirm, this erases their details from the servers.</li>
-						</ol>
-						<p><strong>Tests</strong></p>
-						<p>Procedure</p>
-						<ol>
-							<li>Check that users can delete their accounts and data without human intervention.</li>
 						</ol>
 						<p>Expected Results</p>
 						<ol>
@@ -3951,7 +3949,7 @@
 								<td></td>
 
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/outdated-content.html">PASS</a></td>
-								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/data-controllers.html">PASS</a></td>
+								<td></td>
 								<td></td>
 								<td></td>
 								<td></td>

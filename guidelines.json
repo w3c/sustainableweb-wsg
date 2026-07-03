@@ -5080,16 +5080,17 @@
 					"id": "promote-responsible-data-practices",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#promote-responsible-data-practices",
 					"guideline": "Promote responsible data practices",
-					"subheading": "Provide publicly accessible versions of documents required by law in a sustainable, easy-to-consume format, while also observing ethical data retention practices.",
+					"subheading": "Respect user data rights and manage data lifecycle through minimized collection, user control, portability, deletion, and content archiving.",
 					"criteria": [
 						{
 							"title": "Data practices",
-							"description": "Maintain a publicly accessible privacy policy, terms and conditions, and any other documents as required by law in the jurisdictions in which the product or service operates. Adhere to the most restrictive data protection regulations, especially when providing services outside the organization's country. Provide documents in accessible formats and use clear, user-friendly language to ensure comprehension by all users. Avoid unnecessary jargon, technical language, and legalese. Support emerging legislation and implement best practices related to data privacy, sustainability, and responsible data management.",
+							"description": "Maintain publicly accessible privacy, legal, and policy documents in plain language and accessible formats. Follow strong data protection practices aligned with recognized international standards, apply stronger protections where risks to users are higher or safeguards are insufficient, and support good practices in privacy, accessibility, and sustainability through transparent data use and governance.",
 							"resources": [
 								{
 									"5 Essential Legal Pages Every Website Need": "https://www.codeconspirators.com/5-essential-legal-pages-every-website-need/",
 									"A privacy-friendly Do Not Track (DNT) Policy": "https://www.eff.org/dnt-policy",
 									"CodePen Terms of Service": "https://blog.codepen.io/legal/terms-of-service/",
+									"Data ethics and digital sustainability": "https://www.sciencedirect.com/science/article/pii/S2666659624000258",
 									"GPF - General Policy Framework (PDF) - 1.6 - Strategy (Data Collection)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"Learn How To Write a Privacy Policy in a Few Easy Steps": "https://blog.dataprot.net/how-to-write-a-privacy-policy",
 									"Privacy principles": "https://slack.com/intl/en-gb/trust/data-management/privacy-principles",
@@ -5099,49 +5100,48 @@
 						},
 						{
 							"title": "Data ownership",
-							"description": "Demonstrate measurable progress over time in regard to respecting data privacy and ownership. Specify how opt-out will be handled along with ownership rights. Data deletion or \"Right to be forgotten\" requests must immediately propagate to databases and local caches. Cached data must not persist after a user has revoked consent or deleted their account. Also provide the ability to download or export data created by or in relation to the user in a non-proprietary format.",
+							"description": "Respect user data rights, including access, correction, deletion, opt-out, and data portability. Provide clear user controls to manage accounts, data, and subscriptions. Only collect and retain personal data for a defined purpose and for no longer than necessary. Provide data export in open, commonly used formats. Ensure that deletion and consent changes apply across all systems, including databases, derived datasets, backups, and caches, within a reasonable timeframe.",
 							"resources": [
 								{
 									"10 CCPA Compliance Tips For Web Developers": "https://dataoverhaulers.medium.com/10-ccpa-compliance-tips-for-web-developers-1ce8382c7286",
 									"17 Countries with GDPR-like Data Privacy Laws": "https://insights.comforte.com/countries-with-gdpr-like-data-privacy-laws",
+									"AFNOR Spec 5.2.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
 									"Beyond GDPR: Data Protection Around The World": "https://www.thalesgroup.com/en/markets/digital-identity-and-security/government/magazine/beyond-gdpr-data-protection-around-world",
+									"Building Cybersecurity and Privacy into the UX Lifecycle": "https://www.uxmatters.com/mt/archives/2025/03/secure-ux-building-cybersecurity-and-privacy-into-the-ux-lifecycle.php",
 									"California Consumer Privacy Act": "https://oag.ca.gov/privacy/ccpa",
+									"Delete old user accounts and old data": "https://climateproductleaders.org/playbook/design-frugally/delete-old-user-accounts-and-old-data",
 									"Developer's Guide To GDPR": "https://fusionauth.io/articles/ciam/developers-guide-to-gdpr",
 									"GDPR Checklist": "https://gdprchecklist.io/",
 									"General Data Protection Regulation (GDPR)": "https://gdpr.eu/",
+									"GPF - General Policy Framework (PDF) - 1.6 - Strategy (Data Collection)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 5.8 - Content (Archive And Delete)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 7.2 - Back-End (Data Retention)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.8 - Hosting (Hot / Cold Data)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GR491 - 4-8042 - Customer Transparency": "https://gr491.isit-europe.org/en/crit.php?id=4-8042-hosting-the-activity-of-a-data-center-generates",
+									"GR491 - 5-3035 - Archiving and Management": "https://gr491.isit-europe.org/en/crit.php?id=5-3035-uxui-often-a-significant-amount-of-files-often",
+									"GreenIT - 0079 - Set up a data expiration and deletion policy": "https://rweb.greenit.fr/en/fiches/RWEB_0079-define-a-data-expiration-and-deletion-policy",
+									"GreenIT - 0114 - Set up a content end-of-life plan": "https://rweb.greenit.fr/en/fiches/RWEB_0114-set-up-a-content-end-of-life-plan",
 									"How To Protect Your Users With The Privacy By Design Framework": "https://www.smashingmagazine.com/2017/07/privacy-by-design-framework/",
 									"Is GDPR Good for the Environment?": "https://www.mightybytes.com/insights/is-gdpr-good-for-the-environment/",
 									"Learn Privacy": "https://web.dev/blog/introducing-learn-privacy?hl=en",
+									"OpQuast - 19 - Accounts and subscriptions opened online can be closed online by the same method.": "https://checklists.opquast.com/en/digital-quality/accounts-and-subscriptions-opened-online-can-be-closed-online",
 									"Privacy by design": "https://en.wikipedia.org/wiki/Privacy_by_design",
+									"Privacy UX: Privacy-Aware Design Framework": "https://www.smashingmagazine.com/2019/04/privacy-ux-aware-design-framework/",
 									"State Of GDPR Part 1 and Part 2": "https://www.smashingmagazine.com/2021/02/state-gdpr-2021-key-updates/",
 									"The environmental benefits of privacy-focussed web design": "https://rootwebdesign.studio/articles/the-environmental-benefits-of-privacy-focussed-web-design/",
 									"Ultimate CCPA Compliance Checklist": "https://securiti.ai/blog/ccpa-compliance-checklist/",
 									"Understanding Data Inequality": "https://www.mightybytes.com/insights/data-inequality/",
+									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
 									"United Nations SDGS - Goal 10 - Inequality": "https://sdgs.un.org/goals/goal10#targets_and_indicators",
 									"United Nations SDGS - Goal 13 - Climate Change": "https://sdgs.un.org/goals/goal13#targets_and_indicators",
 									"United Nations SDGS - Goal 16 - Sustainable Society": "https://sdgs.un.org/goals/goal16#targets_and_indicators",
 									"United Nations SDGS - Goal 17 - Global Partnership": "https://sdgs.un.org/goals/goal17#targets_and_indicators",
 									"Use Data Efficiently": "https://climateproductleaders.org/playbook/build-sustainable-ai-products/use-data-efficiently",
-									"What is Your Data Disposal Strategy?": "https://www.mightybytes.com/insights/what-is-your-data-disposal-strategy/"
+									"What is Your Data Disposal Strategy?": "https://www.mightybytes.com/insights/what-is-your-data-disposal-strategy/",
+									"Your right to get your data deleted": "https://ico.org.uk/for-the-public/your-right-to-get-your-data-deleted/"
 								}
 							]
-						}
-					],
-					"benefits": [
-						{
-							"Economic": "Prioritizing data privacy and other responsible data practices reduces associated risk and costs, increases resilience, and often fosters better relationships with customers and other affected parties."
-						}
-					],
-					"tags": ["AI", "Content", "Governance", "Privacy", "Social Equity"]
-				},
-				{
-					"id": "implement-appropriate-data-management-procedures",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#implement-appropriate-data-management-procedures",
-					"guideline": "Implement appropriate data management procedures",
-					"subheading": "Allow users to manage, control, and delete their data upon request, while making outdated content searchable via a lightweight and simple archive.",
-					"criteria": [
+						},
 						{
 							"title": "Outdated content",
 							"description": "Archive and delete outdated or otherwise expired product content and data via automated expiration dates and scheduled product audits. Publish the archiving schedule, ensuring a lightweight version of the old searchable content is maintained for those that may require it.",
@@ -5162,36 +5162,11 @@
 									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators"
 								}
 							]
-						},
-						{
-							"title": "Data controllers",
-							"description": "Allow users to control, manage, and delete their data, subscriptions, and accounts.",
-							"resources": [
-								{
-									"AFNOR Spec 5.2.4 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
-									"Building Cybersecurity and Privacy into the UX Lifecycle": "https://www.uxmatters.com/mt/archives/2025/03/secure-ux-building-cybersecurity-and-privacy-into-the-ux-lifecycle.php",
-									"Delete old user accounts and old data": "https://climateproductleaders.org/playbook/design-frugally/delete-old-user-accounts-and-old-data",
-									"GPF - General Policy Framework (PDF) - 1.6 - Strategy (Data Collection)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 5.8 - Content (Archive And Delete)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 7.2 - Back-End (Data Retention)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 8.8 - Hosting (Hot / Cold Data)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 4-8042 - Customer Transparency": "https://gr491.isit-europe.org/en/crit.php?id=4-8042-hosting-the-activity-of-a-data-center-generates",
-									"GR491 - 5-3035 - Archiving and Management": "https://gr491.isit-europe.org/en/crit.php?id=5-3035-uxui-often-a-significant-amount-of-files-often",
-									"GreenIT - 0079 - Set up a data expiration and deletion policy": "https://rweb.greenit.fr/en/fiches/RWEB_0079-define-a-data-expiration-and-deletion-policy",
-									"GreenIT - 0114 - Set up a content end-of-life plan": "https://rweb.greenit.fr/en/fiches/RWEB_0114-set-up-a-content-end-of-life-plan",
-									"How To Protect Your Users With The Privacy By Design Framework": "https://www.smashingmagazine.com/2017/07/privacy-by-design-framework/",
-									"Learn Privacy": "https://web.dev/blog/introducing-learn-privacy?hl=en",
-									"OpQuast - 19 - Accounts and subscriptions opened online can be closed online by the same method.": "https://checklists.opquast.com/en/digital-quality/accounts-and-subscriptions-opened-online-can-be-closed-online",
-									"Privacy UX: Privacy-Aware Design Framework": "https://www.smashingmagazine.com/2019/04/privacy-ux-aware-design-framework/",
-									"United Nations SDGS - Goal 3 - Health & Well-being": "https://sdgs.un.org/goals/goal3#targets_and_indicators",
-									"Your right to get your data deleted": "https://ico.org.uk/for-the-public/your-right-to-get-your-data-deleted/"
-								}
-							]
 						}
 					],
 					"benefits": [
 						{
-							"Economic": "Requiring less data reduces storage requirements, allowing organizations to scale down their hosting package or be charged less for pay-by-use infrastructure costs.",
+							"Economic": "Prioritizing data privacy and other responsible data practices reduces associated risk and costs, increases resilience, and often fosters better relationships with customers and other affected parties.",
 							"Environment": "Storing less data reduces the computing power required to maintain a service, reducing energy and infrastructure-related emissions.",
 							"Performance": "Moving older and less relevant content onto a smaller scaled-down version of your digital product or service will reduce your bandwidth usage. Archived information will have significantly fewer users, meaning this is unlikely to have a negative impact on their experience.",
 							"Privacy": "Improving data management supports better data protection practices."
