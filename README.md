@@ -68,12 +68,12 @@ If you would like to learn more about us and how to participate in this project,
 
 ## Statistics
 
- - **80** Guidelines covering UX, Web Development, Infrastructure, and Business/Product Strategy.
- - **226** Success criteria to meet the guidelines on various aspects of sustainability.
- - **142** Advisory Techniques within STAR providing guidance to meet WSG success criteria.
+ - **71** Guidelines covering UX, Web Development, Infrastructure, and Business/Product Strategy.
+ - **196** Success criteria to meet the guidelines on various aspects of sustainability.
+ - **138** Advisory Techniques within STAR providing guidance to meet WSG success criteria.
  - **2,500+** Resources (URLs) to reinforce and assist with implementation of WSG guidelines.
- - **500+** pages worth of sustainability material (**125+** of which exist within WSG).
- - **47** content filters based upon **4** different sustainability categories.
+ - **500+** pages worth of sustainability material (**100** of which exist within WSG).
+ - **35** content filters based upon **4** different sustainability categories.
  - **200+** contributors from over **25** nations around the world.
 
 ## Work
@@ -95,7 +95,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines</a> (WSG)</td>
 			<td>W3C Group Note Draft</td>
-			<td>11 Jun 2026</td>
+			<td>03 Jul 2026</td>
 		</tr>
 	</tbody>
 </table>
@@ -113,17 +113,17 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
 			<td>W3C Editors Draft</td>
-			<td>09 Jun 2026</td>
+			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/resources.html">WSG Resources</a></td>
 			<td>W3C Editors Draft</td>
-			<td>09 Jun 2026</td>
+			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws and Policies</a></td>
 			<td>W3C Editors Draft</td>
-			<td>09 Jun 2026</td>
+			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/impact.html">WSG Impact Measurement</a></td>
@@ -133,37 +133,37 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/benefits.html">WSG Benefits</a></td>
 			<td>W3C Editors Draft</td>
-			<td>09 Jun 2026</td>
+			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
 			<td>W3C Editors Draft</td>
-			<td>09 Jun 2026</td>
+			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">WSG Quick Reference</a></td>
 			<td>W3C Editors Draft</td>
-			<td>09 Jun 2026</td>
+			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
 			<td>JSON API</td>
-			<td>09 Jun 2026</td>
+			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/impact.json">WSG Impact API</a></td>
 			<td>W3C Editors Draft</td>
-			<td>26 June 2026</td>
+			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
 			<td>JSON API</td>
-			<td>09 Jun 2026</td>
+			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>
 			<td>Test Suite</td>
-			<td>14 May 2026</td>
+			<td>03 Jul 2026</td>
 		</tr>
 	</tbody>
 </table>
@@ -176,13 +176,17 @@ If you would like to contribute towards this specification, please refer to the 
 
 ## JSON APIs
 
-We have two JSON APIs which are kept in sync with the changes occurring within our [specification](https://w3c.github.io/sustainableweb-wsg/guidelines.json) and [STAR](https://w3c.github.io/sustainableweb-wsg/star.json).
+We have three JSON APIs which are kept in sync with the changes occurring within our [specification](https://w3c.github.io/sustainableweb-wsg/guidelines.json), [impact](https://w3c.github.io/sustainableweb-wsg/impact.json) and [STAR](https://w3c.github.io/sustainableweb-wsg/star.json).
 
 These documents are reachable via GitHub pages and can be queried using JavaScript to embed our data within your client of choice.
 
 **WSG** (*guidelines.json*)
 ```js
 category[1].guidelines[0].guideline = "Identify, assess, disclose, review, and mitigate sustainability impacts"
+```
+**WSG** (*impact.json*)
+```js
+category[1].guidelines[0].impactRatings[0].people = "Indeterminate"
 ```
 **STAR** (*star.json*)
 ```js
@@ -199,12 +203,6 @@ fetch("https://w3c.github.io/sustainableweb-wsg/guidelines.json")
 ```
 
 **Note:** To match a WSG guideline to a STAR technique, you can match the guideline `testable` anchor hash (WSG JSON API) to the technique `id` (STAR JSON API).
-
-## Impact API
-
-We currently have an Impact API under development that will replace existing scoring metrics within WSG. It will outsource the task of setting measurement scores to a JSON file that will be maintained by the Interest Group's measurability Task Force. Within this JSON file exists capability to set scores for each success criteria and provide a labeling system with set thresholds. The information about both the labeling system and scores will be fed back to the specification upon availability. Details behind how calculations are drawn can be provided within a dedicated resource.
-
-For details of how this will work in practice, see [this slide deck](https://drive.google.com/file/d/1wk5270ryJuTiu-47CBCfNMa2jnyRZP67/view?usp=sharing) and review the measurability Task Force [meeting minutes](https://github.com/w3c/sustainableweb-ig/tree/main/metrics).
 
 ## Test Suite
 
@@ -223,7 +221,6 @@ Key concepts of note include:
 Below are some handy links for contributors to our project:
 
  - [Charter Template](https://w3c.github.io/charter-drafts/charter-template.html) ([HTML Source](https://github.com/w3c/charter-drafts/blob/gh-pages/charter-template.html))
- - [GRI Notebook](GRI.ipynb) ([Spreadsheet](https://docs.google.com/spreadsheets/d/12nGydnSv24fvmvCM-665_pFGPG9u3RgTwe1sCz4eiGk/edit?usp=sharing))
  - [How to do Wide Review](https://www.w3.org/Guide/documentreview/)
  - [Policies and legal information](https://www.w3.org/policies/)
  - [Pubrules](https://www.w3.org/pubrules/) ([Documentation](https://www.w3.org/pubrules/doc/))

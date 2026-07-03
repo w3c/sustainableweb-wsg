@@ -13,13 +13,13 @@
 			.urls { background-color: var(--tocsidebar-bg); }
 			/* Fix for Specification Readability: https://github.com/w3c-cg/sustyweb/issues/92 */
 			h5 { font-weight: bold !important; }
-			.overflowFix, blockquote { width: 100%; }
+			.overflowFix, blockquote, .summary { width: 100%; }
 			.subheading { border-left: thick solid #d9d9d9; font-style: italic; padding: 0.5em 1em; }
 			.credit { font-size: small; }
 			.summary pre { border: 1px solid; overflow: visible !important; padding: 0.5em; page-break-inside: avoid; white-space: pre-wrap !important; word-wrap: break-word !important; }
 			.summary .subtitle:first-of-type { margin-top: 1em; }
 			.summary .subtitle { margin-top: 2.5em; }
-			/* Fix for Printing The Specification: https://github.com/w3c/sustyweb/issues/92 */
+			/* Fix for Printing The Specification: https://github.com/w3c-cg/sustyweb/issues/92 */
 			@media print {
 				.pageButtons, .filter, body { margin-left: 1.6em !important; padding-left: 1.6em !important; }
 				.switch { display: none; } }
@@ -1637,6 +1637,7 @@
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
 							<p class="subtitle"><strong>Example</strong></p>
+							<p>The below is a robots.txt formatted file.</p>
 							<pre class="nohighlight">
 								User-agent: *
 								Disallow: /cgi-bin/
@@ -1739,6 +1740,7 @@
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
 							<p class="subtitle"><strong>Example</strong></p>
+							<p>The below is PHP formatted code.</p>
 							<pre class="nohighlight">
 								$value = get_post_meta( int $post_id, string $key = '', bool $single = false ): mixed
 							</pre>
@@ -1839,6 +1841,7 @@
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
 							<p class="subtitle"><strong>Example</strong></p>
+							<p>The below is a .htaccess formatted file.</p>
 							<pre class="nohighlight">
 								&lt;IfModule mod_expires.c&gt;
 									ExpiresActive on
@@ -1875,6 +1878,7 @@
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
 							<p class="subtitle"><strong>Example</strong></p>
+							<p>The below is a .htaccess formatted file.</p>
 							<pre class="nohighlight">
 								&lt;IfModule mod_deflate.c&gt;
 									&lt;IfModule mod_setenvif.c&gt;
@@ -1916,6 +1920,7 @@
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
 							<p class="subtitle"><strong>Example</strong></p>
+							<p>The below is a .htaccess formatted file.</p>
 							<pre class="nohighlight">
 								ErrorDocument 404 /404.html
 							</pre>
@@ -2496,6 +2501,7 @@
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
 							<p class="subtitle"><strong>Example</strong></p>
+							<p>The below is a change.log plain text file.</p>
 							<pre class="nohighlight">
 								# Changelog - Website
 
@@ -2686,7 +2692,7 @@
 			</section>
 			<section> <!-- Establish responsible practices around AI and emerging or disruptive technologies -->
 				<h3>Establish responsible practices around AI and emerging or disruptive technologies</h3>
-				<p class="subheading">Ensure responsible use of automated systems by only using ethically sourced and suitably sized data, managing environmental impacts, supporting workforce adaptation, respecting user agent controls, and using post-quantum encryption only where justified.</p>
+				<p class="subheading">Ensure responsible use of automated systems by only using ethically sourced and suitably sized data and models, managing environmental impacts, supporting workforce adaptation, respecting user agent controls, and using post-quantum encryption only where justified.</p>
 				<section class="notoc" data-standard="SDGs" data-considerations="Privacy, Security" data-categories="AI, Content, E-Waste, Governance, Hardware, Networking, Performance, Social Equity, Software">
 					<h4 id="ai-and-data-collection">Success Criterion: AI and data collection</h4>
 					<p class="external"><a class="urls" href="https://w3c.github.io/sustainableweb-wsg/resources.html#ai-and-data-collection">Resources</a></p>
@@ -2853,6 +2859,7 @@
 						<details>
 							<summary>Show / Hide additional information to understand this guideline and its success criteria.</summary>
 							<p class="subtitle"><strong>Example</strong></p>
+							<p>The below is a JSON formatted file.</p>
 							<pre class="nohighlight">
 								[
 								{
@@ -2940,84 +2947,128 @@
 				<p>Guidelines within this specification that <a href="https://www.w3.org/mission/accessibility/">may relate to accessibility</a> are:</p>
 				<ul>
 					<li>All those listed within <a href="#user-experience-design">User Experience Design</a></li>
-					<li><a href="#minify-and-remove-unused-code">Minify and remove unused code</a></li>
-					<li><a href="#avoid-redundancy-and-duplication-in-code">Avoid redundancy and duplication in code</a></li>
-					<li><a href="#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a></li>
-					<li><a href="#ensure-code-follows-good-semantic-practices">Ensure code follows good semantic practices</a></li>
-					<li><a href="#defer-the-loading-of-non-critical-resources">Defer the loading of non-critical resources</a></li>
-					<li><a href="#structure-metadata-for-machine-readability">Structure metadata for machine readability</a></li>
-					<li><a href="#use-media-queries-that-support-sustainability-goals">Use media queries that support sustainability goals</a></li>
-					<li><a href="#ensure-layouts-work-for-different-devices-and-requirements">Ensure layouts work for different devices and requirements</a></li>
-					<li><a href="#use-sustainable-javascript-and-apis">Use sustainable JavaScript and APIs</a></li>
-					<li><a href="#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a></li>
-					<li><a href="#include-expected-and-beneficial-files">Include expected and beneficial files</a></li>
-					<li><a href="#use-the-most-efficient-solution-for-your-service">Use the most efficient solution for your service</a></li>
-					<li><a href="#use-the-latest-stable-language-version">Use the latest stable language version</a></li>
-					<li><a href="#optimize-caching-and-support-offline-access">Optimize caching and support offline access</a></li>
-					<li><a href="#setup-necessary-error-pages-and-redirection-links">Setup necessary error pages and redirection links</a></li>
-					<li><a href="#use-automation-wisely">Use automation wisely</a></li>
-					<li><a href="#use-content-delivery-networks-cdns-when-beneficial">Use Content Delivery Networks (CDNs) when beneficial</a></li>
-					<li><a href="#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a></li>
-					<li><a href="#have-an-ethical-and-sustainable-product-strategy">Have an ethical and sustainable product strategy</a></li>
-					<li><a href="#assign-a-sustainability-advocate">Assign a sustainability advocate</a></li>
-					<li><a href="#calculate-the-environmental-impact">Calculate the environmental impact</a></li>
-					<li><a href="#follow-a-product-management-and-maintenance-strategy">Follow a product management and maintenance strategy</a></li>
-					<li><a href="#implement-continuous-improvement-procedures">Implement continuous improvement procedures</a></li>
-					<li><a href="#evaluate-if-a-digital-product-or-service-is-necessary">Evaluate if a digital product or service is necessary</a></li>
-					<li><a href="#share-decision-making-power-with-affected-parties">Share decision-making power with affected parties</a></li>
-					<li><a href="#use-diversity-equity-justice-inclusion-deji-practices">Use Diversity, Equity, Justice, Inclusion (DEJI) practices</a></li>
-					<li><a href="#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies">Establish responsible practices around AI and emerging or disruptive technologies</a></li>
-					<li><a href="#define-performance-environmental-and-human-budgets">Define performance and environmental budgets</a></li>
-					<li><a href="#use-and-contribute-to-open-source">Use and contribute to open source</a></li>
+					<li><strong>Web Development:</strong>
+						<ul>
+							<li><a href="#avoid-redundancy-and-duplication-in-code">Avoid redundancy and duplication in code</a></li>
+							<li><a href="#defer-the-loading-of-non-critical-resources">Defer the loading of non-critical resources</a></li>
+							<li><a href="#ensure-code-follows-good-semantic-practices">Ensure code follows good semantic practices</a></li>
+							<li><a href="#ensure-layouts-work-for-different-devices-and-requirements">Ensure layouts work for different devices and requirements</a></li>
+							<li><a href="#include-expected-and-beneficial-files">Include expected and beneficial files</a></li>
+							<li><a href="#minify-and-remove-unused-code">Minify and remove unused code</a></li>
+							<li><a href="#structure-metadata-for-machine-readability">Structure metadata for machine readability</a></li>
+							<li><a href="#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a></li>
+							<li><a href="#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a></li>
+							<li><a href="#use-media-queries-that-support-sustainability-goals">Use media queries that support sustainability goals</a></li>
+							<li><a href="#use-sustainable-javascript-and-apis">Use sustainable JavaScript and APIs</a></li>
+							<li><a href="#use-the-latest-stable-language-version">Use the latest stable language version</a></li>
+							<li><a href="#use-the-most-efficient-solution-for-your-service">Use the most efficient solution for your service</a></li>
+						</ul>
+					</li>
+					<li><strong>Hosting, Infrastructure, and Systems:</strong>
+						<ul>
+							<li><a href="#optimize-caching-and-support-offline-access">Optimize caching and support offline access</a></li>
+							<li><a href="#setup-necessary-error-pages-and-redirection-links">Setup necessary error pages and redirection links</a></li>
+							<li><a href="#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a></li>
+							<li><a href="#use-automation-wisely">Use automation wisely</a></li>
+							<li><a href="#use-content-delivery-networks-cdns-when-beneficial">Use Content Delivery Networks (CDNs) when beneficial</a></li>
+						</ul>
+					</li>
+					<li><strong>Business Strategy and Product Management:</strong>
+						<ul>
+							<li><a href="#assign-a-sustainability-advocate">Assign a sustainability advocate</a></li>
+							<li><a href="#calculate-the-environmental-impact">Calculate the environmental impact</a></li>
+							<li><a href="#define-performance-environmental-and-human-budgets">Define performance and environmental budgets</a></li>
+							<li><a href="#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies">Establish responsible practices around AI and emerging or disruptive technologies</a></li>
+							<li><a href="#evaluate-if-a-digital-product-or-service-is-necessary">Evaluate if a digital product or service is necessary</a></li>
+							<li><a href="#follow-a-product-management-and-maintenance-strategy">Follow a product management and maintenance strategy</a></li>
+							<li><a href="#have-an-ethical-and-sustainable-product-strategy">Have an ethical and sustainable product strategy</a></li>
+							<li><a href="#implement-continuous-improvement-procedures">Implement continuous improvement procedures</a></li>
+							<li><a href="#share-decision-making-power-with-affected-parties">Share decision-making power with affected parties</a></li>
+							<li><a href="#use-and-contribute-to-open-source">Use and contribute to open source</a></li>
+						</ul>
+					</li>
 				</ul>
 			</section>
 			<section> <!-- Privacy -->
 				<h3>Privacy</h3>
 				<p>Guidelines within this specification that <a href="https://www.w3.org/mission/privacy/">may relate to privacy</a> are:</p>
 				<ul>
-					<li><a href="#identify-assess-disclose-review-and-mitigate-sustainability-impacts">Identify, assess, disclose, review, and mitigate sustainability impacts</a></li>
-					<li><a href="#understand-user-requirements-or-constraints">Understand user requirements or constraints</a></li>
-					<li><a href="#design-efficient-and-streamlined-user-journeys">Design efficient and streamlined user journeys</a></li>
-					<li><a href="#avoid-being-manipulative-or-deceptive">Avoid being manipulative or deceptive</a></li>
-					<li><a href="#avoid-unwanted-notifications">Avoid unwanted notifications</a></li>
-					<li><a href="#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a></li>
-					<li><a href="#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a></li>
-					<li><a href="#use-sustainable-javascript-and-apis">Use sustainable JavaScript and APIs</a></li>
-					<li><a href="#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a></li>
-					<li><a href="#use-the-most-efficient-solution-for-your-service">Use the most efficient solution for your service</a></li>
-					<li><a href="#have-an-ethical-and-sustainable-product-strategy">Have an ethical and sustainable product strategy</a></li>
-					<li><a href="#assign-a-sustainability-advocate">Assign a sustainability advocate</a></li>
-					<li><a href="#implement-continuous-improvement-procedures">Implement continuous improvement procedures</a></li>
-					<li><a href="#promote-responsible-data-practices">Promote responsible data practices</a></li>
-					<li><a href="#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies">Establish responsible practices around AI and emerging or disruptive technologies</a></li>
-					<li><a href="#plan-for-a-digital-product-or-service-s-care-and-end-of-life">Plan for a digital product or service's care and end-of-life</a></li>
+					<li><strong>User Experience Design:</strong>
+						<ul>
+							<li><a href="#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a></li>
+							<li><a href="#avoid-being-manipulative-or-deceptive">Avoid being manipulative or deceptive</a></li>
+							<li><a href="#avoid-unwanted-notifications">Avoid unwanted notifications</a></li>
+							<li><a href="#design-efficient-and-streamlined-user-journeys">Design efficient and streamlined user journeys</a></li>
+							<li><a href="#identify-assess-disclose-review-and-mitigate-sustainability-impacts">Identify, assess, disclose, review, and mitigate sustainability impacts</a></li>
+							<li><a href="#understand-user-requirements-or-constraints">Understand user requirements or constraints</a></li>
+						</ul>
+					</li>
+					<li><strong>Web Development:</strong>
+						<ul>
+							<li><a href="#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a></li>
+							<li><a href="#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a></li>
+							<li><a href="#use-sustainable-javascript-and-apis">Use sustainable JavaScript and APIs</a></li>
+							<li><a href="#use-the-most-efficient-solution-for-your-service">Use the most efficient solution for your service</a></li>
+						</ul>
+					</li>
+					<li><strong>Hosting, Infrastructure, and Systems:</strong>
+						<ul>
+							<li><a href="#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a></li>
+						</ul>
+					</li>
+					<li><strong>Business Strategy and Product Management:</strong>
+						<ul>
+							<li><a href="#assign-a-sustainability-advocate">Assign a sustainability advocate</a></li>
+							<li><a href="#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies">Establish responsible practices around AI and emerging or disruptive technologies</a></li>
+							<li><a href="#have-an-ethical-and-sustainable-product-strategy">Have an ethical and sustainable product strategy</a></li>
+							<li><a href="#implement-continuous-improvement-procedures">Implement continuous improvement procedures</a></li>
+							<li><a href="#plan-for-a-digital-product-or-service-s-care-and-end-of-life">Plan for a digital product or service's care and end-of-life</a></li>
+							<li><a href="#promote-responsible-data-practices">Promote responsible data practices</a></li>
+						</ul>
+					</li>
 				</ul>
 			</section>
 			<section> <!-- Security -->
 				<h3>Security</h3>
 				<p>Guidelines within this specification that <a href="https://www.w3.org/mission/security/">may relate to security</a> are:</p>
 				<ul>
-					<li><a href="#avoid-being-manipulative-or-deceptive">Avoid being manipulative or deceptive</a></li>
-					<li><a href="#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a></li>
-					<li><a href="#validate-usability-through-testing-and-real-world-usage">Validate usability through testing and real-world usage</a></li>
-        	<li><a href="#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a></li>
-					<li><a href="#ensure-code-follows-good-semantic-practices">Ensure code follows good semantic practices</a></li>
-					<li><a href="#use-sustainable-javascript-and-apis">Use sustainable JavaScript and APIs</a></li>
-					<li><a href="#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a></li>
-					<li><a href="#include-expected-and-beneficial-files">Include expected and beneficial files</a></li>
-					<li><a href="#use-the-most-efficient-solution-for-your-service">Use the most efficient solution for your service</a></li>
-					<li><a href="#use-the-latest-stable-language-version">Use the latest stable language version</a></li>
-					<li><a href="#use-automation-wisely">Use automation wisely</a></li>
-					<li><a href="#back-up-critical-data-at-routine-intervals">Back up critical data at routine intervals</a></li>
-					<li><a href="#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a></li>
-					<li><a href="#have-an-ethical-and-sustainable-product-strategy">Have an ethical and sustainable product strategy</a></li>
-					<li><a href="#follow-a-product-management-and-maintenance-strategy">Follow a product management and maintenance strategy</a></li>
-					<li><a href="#implement-continuous-improvement-procedures">Implement continuous improvement procedures</a></li>
-					<li><a href="#document-updates-and-evolutions">Document updates and evolutions</a></li>
-					<li><a href="#promote-responsible-data-practices">Promote responsible data practices</a></li>
-					<li><a href="#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies">Establish responsible practices around AI and emerging or disruptive technologies</a></li>
-					<li><a href="#plan-for-a-digital-product-or-service-s-care-and-end-of-life">Plan for a digital product or service's care and end-of-life</a></li>
-					<li><a href="#create-a-business-continuity-and-disaster-recovery-plan">Create a business continuity and disaster recovery plan</a></li>
+					<li><strong>User Experience Design:</strong>
+						<ul>
+							<li><a href="#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a></li>
+							<li><a href="#avoid-being-manipulative-or-deceptive">Avoid being manipulative or deceptive</a></li>
+							<li><a href="#validate-usability-through-testing-and-real-world-usage">Validate usability through testing and real-world usage</a></li>
+						</ul>
+					</li>
+					<li><strong>Web Development:</strong>
+						<ul>
+							<li><a href="#ensure-code-follows-good-semantic-practices">Ensure code follows good semantic practices</a></li>
+							<li><a href="#include-expected-and-beneficial-files">Include expected and beneficial files</a></li>
+							<li><a href="#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a></li>
+							<li><a href="#use-dependencies-sparingly-and-maintain-them">Use dependencies sparingly and maintain them</a></li>
+							<li><a href="#use-sustainable-javascript-and-apis">Use sustainable JavaScript and APIs</a></li>
+							<li><a href="#use-the-latest-stable-language-version">Use the latest stable language version</a></li>
+							<li><a href="#use-the-most-efficient-solution-for-your-service">Use the most efficient solution for your service</a></li>
+						</ul>
+					</li>
+					<li><strong>Hosting, Infrastructure, and Systems:</strong>
+						<ul>
+							<li><a href="#back-up-critical-data-at-routine-intervals">Back up critical data at routine intervals</a></li>
+							<li><a href="#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a></li>
+							<li><a href="#use-automation-wisely">Use automation wisely</a></li>
+						</ul>
+					</li>
+					<li><strong>Business Strategy and Product Management:</strong>
+						<ul>
+							<li><a href="#create-a-business-continuity-and-disaster-recovery-plan">Create a business continuity and disaster recovery plan</a></li>
+							<li><a href="#document-updates-and-evolutions">Document updates and evolutions</a></li>
+							<li><a href="#establish-responsible-practices-around-ai-and-emerging-or-disruptive-technologies">Establish responsible practices around AI and emerging or disruptive technologies</a></li>
+							<li><a href="#follow-a-product-management-and-maintenance-strategy">Follow a product management and maintenance strategy</a></li>
+							<li><a href="#have-an-ethical-and-sustainable-product-strategy">Have an ethical and sustainable product strategy</a></li>
+							<li><a href="#implement-continuous-improvement-procedures">Implement continuous improvement procedures</a></li>
+							<li><a href="#plan-for-a-digital-product-or-service-s-care-and-end-of-life">Plan for a digital product or service's care and end-of-life</a></li>
+							<li><a href="#promote-responsible-data-practices">Promote responsible data practices</a></li>
+						</ul>
+					</li>
 				</ul>
 			</section>
 		</section>
@@ -3050,11 +3101,11 @@
 			<p>Additional information about participation in the Sustainable Web Interest Group can be found <a href="https://github.com/w3c/sustainableweb-ig/">within the GitHub repository</a> of the Interest Group.</p>
 			<section> <!-- Draft Contributors -->
 				<h2>Participants active in the development of this document</h2>
-				<p>Addison Phillips, Alexander Dawson, Alisa Bonsignore, Andrea Davanzo, Andrew Wright, Andy Blum, Anne Faubry, Arnaud Levy, Barry Pollard, Ben Clifford, Berwyn Powell, Bhavani Shankar Garikapati, Brett Tackaberry, Brian Louis Ramirez, Brian Kardell, Chris Adams, Chris Augier, Chris Butterworth, Chris Lilley, Chris Needham, Chris Sater, Chris Wilson, Christian H Brown, Claire Thornewill, Crystal Preston-Watson, Daniel Appelquist, David Jeanmonod, Denis Roio, Dennis Lemm, Diogo Abrantes Da Silva, Dominique Hazael-Massieux, Dom Robinson, Elika Etemad, Eloisa Guerrero, Emily Trotter, Emma Horrell, Fershad Irani, Florian Rivoal, Francesco Fullone, François Burra, Gaël Duez, Glenda Sims, Hidde de Vries, Iain McClenaghan, Ian Jacobs, Ines Akrap, Ismael Velasco, Iulia Raluca Ionita, James Christie, Jeffrey Yasskin, Jennifer Strickland, Jens Oliver Meiert, Jeroen Hulscher, Jim McCool, Josh Kim, Julien Wilhelm, Kazuhito Kidachi, Kenneth G. Franqueiro, Laurent Devernay Satyagraha, Len Dierickx, Leon Brocard, Lewis Halstead, Łukasz Mastalerz, Marie Ototoi, Michelle Barker, Mike Gifford, Morgan Murrah, Nahuai Badiola, Neil Clark, Nick Doty, Nick Lewis, Nicola Bonotto, Nigel Megitt, Orie Steele, Owen Barton, Owen Rogers, Peter Krautzberger, Philippe Le Hégaret, Richard Ishida, Romuald Priol, Rose Newell, Rudolf Van Der Berg, Ryan Sholin, Sandy Dähnert, Sarah Zama, Sarven Capadisli, Shane Herath, Siddhesh Wagle, Simon Perdrisat, Simone Onofri, Sorca Duffy, Susannah Hill, Tantek Çelik, Tej Kalianda, Theresa O'Connor, Thibaud Colas, Thorsten Jonas, Tim Frick, Tzviya Siegman, Youen Chéné, Yuna Orsini, Zoe Lopez-Latorre.</p>
+				<p>Adam Newman, Addison Phillips, Alexander Dawson, Alisa Bonsignore, Andrea Davanzo, Andrew Wright, Andy Blum, Anne Faubry, Arnaud Levy, Barry Pollard, Ben Clifford, Berwyn Powell, Bhavani Shankar Garikapati, Brett Tackaberry, Brian Louis Ramirez, Brian Kardell, Chris Adams, Chris Augier, Chris Butterworth, Chris Lilley, Chris Needham, Chris Sater, Chris Wilson, Christian H Brown, Claire Thornewill, Crystal Preston-Watson, Daniel Appelquist, David Jeanmonod, Denis Roio, Dennis Lemm, Diogo Abrantes Da Silva, Dominique Hazael-Massieux, Dom Robinson, Elika Etemad, Eloisa Guerrero, Emily Trotter, Emma Horrell, Fershad Irani, Florian Rivoal, Francesco Fullone, François Burra, Gaël Duez, Glenda Sims, Hannah Smith, Hidde de Vries, Iain McClenaghan, Ian Jacobs, Ines Akrap, Ismael Velasco, Iulia Raluca Ionita, James Christie, Jeffrey Yasskin, Jennifer Strickland, Jens Oliver Meiert, Jeroen Hulscher, Jim McCool, Josh Kim, Julien Wilhelm, Kazuhito Kidachi, Kenneth G. Franqueiro, Laurent Devernay Satyagraha, Len Dierickx, Leon Brocard, Lewis Halstead, Łukasz Mastalerz, Marie Ototoi, Michelle Barker, Mike Gifford, Morgan Murrah, Nahuai Badiola, Neil Clark, Nick Doty, Nick Lewis, Nicola Bonotto, Nigel Megitt, Oliver Winks, Orie Steele, Owen Barton, Owen Rogers, Peter Krautzberger, Philippe Le Hégaret, Richard Ishida, Romuald Priol, Rose Newell, Rudolf Van Der Berg, Ryan Sholin, Sandy Dähnert, Sarah Zama, Sarven Capadisli, Shane Herath, Siddhesh Wagle, Simon Perdrisat, Simone Onofri, Sorca Duffy, Susannah Hill, Tantek Çelik, Tej Kalianda, Theresa O'Connor, Thibaud Colas, Thorsten Jonas, Tim Frick, Tzviya Siegman, Youen Chéné, Yuna Orsini, Zoe Lopez-Latorre.</p>
 			</section>
 			<section> <!-- Meeting, Slack, Wiki, Etc Contributors -->
 				<h2>Other active participants, or contributors to supporting resources</h2>
-				<p>Adam Newman, Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Anthony Vallée-Dubois, Antoine Abélard, Asim Hussain, Bee Flaherty, Boris Schapira, Brian Kardell, Brian Sharpe, Carine Bournez, Christophe Clouzeau, Christos Bacharakis, Danielle Subject, Denis Didier, Edward Bender, Elise West, Florence Maurice, Gerry McGovern, Greg McDonald, Hannah Smith, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Katya Dreyer-Oren, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nicholas Oliveira, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicolas Oren, Oliver Winks, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Samuel Pitoňák, Sandra Pallier, Sebastien Solere, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
+				<p>Aiste Rugeviciute, Alekh Gupta, Alicia Pritchett, Anthony Vallée-Dubois, Antoine Abélard, Asim Hussain, Bee Flaherty, Boris Schapira, Brian Sharpe, Carine Bournez, Christophe Clouzeau, Christos Bacharakis, Danielle Subject, Denis Didier, Edward Bender, Elise West, Florence Maurice, Gerry McGovern, Greg McDonald, Ignacio Rondini, Ivano Malavolta, James Cannings, James Gallagher, Jan Henckens, Jean Rigotti, Jon Gibbins, Juan Sotés, Julien Robitaille, Kate Mroczkowski, Katya Dreyer-Oren, Kimi Wei, Laila Tamani, Leah Goldfarb, Lenchi Danch, Loren Velasquez, Louise Towler, Luciene Bulhões Mattos, Luis Tiago, Manfred Jurgovsky, Marie Koesnodihardjo, Mark Butcher, Marketa Benisek, Mert Altinöz, Michelle Sanver, Moritz Guth, Nicholas Oliveira, Nick Oliveira, Nick Sollecito, Nicolas Lanthemann, Nicolas Oren, Patrick Hypscher, Pietro Jarre, Radu Micu, Rafael Lebre, Rebecca Brocton, Rick Butterfield, Rick Viscomi, Robin Whittleton, Samuel Pitoňák, Sandra Pallier, Sebastien Solere, Sylvain Tenier, Thierry Leboucq, Thomas Alexander Munch-Woolff, Tom Greenwood, Tom Howells, Torsten Beyer, Tristan Nitot, Yelle Lieder, Youcef Bekhti.</p>
 			</section>
 		</section>
 		<section class="appendix"> <!-- Changelog -->
@@ -3066,16 +3117,16 @@
 					<summary>Ongoing Release Notes</summary>
 					<p><strong>Additions:</strong></p>
 					<ul>
-						<li>None</li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/348">#348</a>] WSG Impact Measurement & Impact JSON API dataset launched.<br><span class="credit">@anewmandev, @AlexDawsonUK, @andreadavanzo, @awright1979-alt, @mrchrisadams, @chrisn, @ehorrell, @fershad, @hanopcan, @hidde, @jyasskin, @jenstrickland, @ldevernay, @astuanax, @lmastalerz, @mgifford, @the-sustainabledev, @nicolabonotto, @ohuu, @ryansholin, @systemstree, @susannah-hill, @tantek, @thorstenjonas, @timfrick, @TzviyaSiegman</span></li>
 					</ul>
 					<p><strong>Updates:</strong></p>
 					<ul>
 						<li>Added links to consideration section to W3C mission for a11y, security, and privacy.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>Summary supplement deprecated & removed as it's content merged into WSG introduction.<br><span class="credit">@AlexDawsonUK</span></li>
-						<li>Peer Review, Plain English, Tone & other content updates to UX Section.<br><span class="credit">@AlexDawsonUK, @andreadavanzo, @awright1979-alt, @bkardell, @ChristianHiBr, @CrystalPrestonWatson, @mylonelycomputer, @ehorrell, @fershad, @ines-akrap, @JamesChristie-SustainableUX, @jyasskin, @JeroenHulscher, @kazuhito-kidachi, @the-sustainabledev, @codewordcreative, @ryansholin, @Sarahz27, @systemstree, @hober, @timfrick, & @TzviyaSiegman</span></li>
-						<li>Peer Review, Plain English, Tone & other content updates to WebDev Section.<br><span class="credit">@AlexDawsonUK, @awright1979-alt, @CrystalPrestonWatson, @fershad, @hidde, @jyasskin, @kazuhito-kidachi, @Lewish1998, @lmastalerz, @codewordcreative, @Sarahz27, @csarven, @systemstree, @tkalianda, @hober, @thorstenjonas, @timfrick, & @TzviyaSiegman</span></li>
-						<li>Peer Review, Plain English, Tone & other content updates to Infrastructure Section.<br><span class="credit">@AlexDawsonUK, @fershad, @hidde, @ines-akrap, @JamesChristie-SustainableUX, @jyasskin, @Lewish1998, @lmastalerz, @mgifford, @codewordcreative, @ryansholin, @Sarahz27, @systemstree, @susannah-hill, @hober, & @TzviyaSiegman</span></li>
-						<li>Peer Review, Plain English, Tone & other content updates to Business Section.<br><span class="credit">@AlexDawsonUK, Alisa Bonsignore, @ChristianHiBr, @Jaromil, @mylonelycomputer, @fershad, @hidde, @ines-akrap, @jenstrickland, @kazuhito-kidachi, @lmastalerz, @mgifford, @the-sustainabledev, @codewordcreative, @simoneonofri, @systemstree, @hober, @timfrick, & @TzviyaSiegman</span></li>
+						<li>Peer Review, Plain English, Tone & other content updates to UX Section.<br><span class="credit">@AlexDawsonUK, @andreadavanzo, @awright1979-alt, @bkardell, @ChristianHiBr, @CrystalPrestonWatson, @mylonelycomputer, @ehorrell, @fershad, @hidde, @ines-akrap, @JamesChristie-SustainableUX, @jyasskin, @jenstrickland, @JeroenHulscher, @kazuhito-kidachi, @mgifford, @airbr, @the-sustainabledev, @codewordcreative, @ryansholin, @Sarahz27, @systemstree, @hober, @timfrick, & @TzviyaSiegman</span></li>
+						<li>Peer Review, Plain English, Tone & other content updates to WebDev Section.<br><span class="credit">@AlexDawsonUK, @awright1979-alt, @CrystalPrestonWatson, @fershad, @hidde, @jyasskin, @kazuhito-kidachi, @Lewish1998, @lmastalerz, @airbr, @codewordcreative, @Sarahz27, @csarven, @systemstree, @tkalianda, @hober, @thorstenjonas, @timfrick, & @TzviyaSiegman</span></li>
+						<li>Peer Review, Plain English, Tone & other content updates to Infrastructure Section.<br><span class="credit">@AlexDawsonUK, @fershad, @hidde, @ines-akrap, @JamesChristie-SustainableUX, @jyasskin, @Lewish1998, @lmastalerz, @mgifford, @airbr, @codewordcreative, @ryansholin, @Sarahz27, @systemstree, @susannah-hill, @hober, & @TzviyaSiegman</span></li>
+						<li>Peer Review, Plain English, Tone & other content updates to Business Section.<br><span class="credit">@AlexDawsonUK, Alisa Bonsignore, @ChristianHiBr, @Jaromil, @mylonelycomputer, @fershad, @hidde, @ines-akrap, @jenstrickland, @kazuhito-kidachi, @lmastalerz, @mgifford, @airbr, @the-sustainabledev, @codewordcreative, @simoneonofri, @systemstree, @hober, @timfrick, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/216">#216</a>] Quick Reference updated to be more accessible and print friendly with the PDF removed.<br><span class="credit">@AlexDawsonUK & @jenstrickland</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/243">#243</a>] Plain English introduction boxes are now expanded by default to maximize visibility.<br><span class="credit">@AlexDawsonUK, @codewordcreative & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/291">#291</a>] Introduction has been updated with new material from IG members and summary document.<br><span class="credit">@AlexDawsonUK, @AnneFaubry, @hidde, @mgifford, @Psychpsyo, @codewordcreative, @ryansholin, @timfrick, & @TzviyaSiegman</span></li>
@@ -3097,6 +3148,7 @@
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/247">#247</a>] Change to the paragraph preceeding GRI information for clarity.<br><span class="credit">@AlexDawsonUK & @ChristianHiBr</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/351">#351</a>] Cross-linking now automatically reveals a details elements contents.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/351">#351</a>] Numbering replaced with friendly ID's and URLs for better maintainability.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/353">#353</a>] Examples not in HTML, CSS, or JS now describe what format they are in.<br><span class="credit">@airbr</span></li>
 					</ul>
 					<!--
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/">#</a>] Change.<br><span class="credit">@Github</span></li>
@@ -3177,7 +3229,7 @@
 					<summary>Q2 2025 Release Notes (30<sup>th</sup> June 2025)</summary>
 					<p><strong>Additions:</strong></p>
 					<ul>
-						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/6#issuecomment-2580467320">#6</a>] New <a href="https://w3c.github.io/sustainableweb-wsg/resources.html">resources supplement</a> that will serve as the repository for sustainability links.<br><span class="credit">@AlexDawsonUK</span></li>
+						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/6">#6</a>] New <a href="https://w3c.github.io/sustainableweb-wsg/resources.html">resources supplement</a> that will serve as the repository for sustainability links.<br><span class="credit">@AlexDawsonUK</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/14">#14</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/58">#58</a>], [<a href="https://github.com/w3c/sustainableweb-wsg/pull/67">#67</a>], & [<a href="https://github.com/w3c/sustainableweb-wsg/pull/68">#68</a>] Guideline <a href="https://w3c.github.io/sustainableweb-ig/tagFilter.html">filters using data-attributes</a> (for full-document mode) available.<br><span class="credit">@airbr, @AlexDawsonUK, @ldevernay, @timfrick, & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/pull/41">#41</a>] Living changelog section has been added to WSG (Github releases will continue).<br><span class="credit">@AlexDawsonUK & @TzviyaSiegman</span></li>
 						<li>[<a href="https://github.com/w3c/sustainableweb-wsg/issues/53">#53</a>] New success criteria for <a href="https://www.w3.org/TR/web-sustainability-guidelines/#domain-names">4.1</a> providing coverage regarding the impact of domain names.<br><span class="credit">@codewordcreative & @exortech</span></li>
