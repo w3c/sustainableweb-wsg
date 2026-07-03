@@ -3058,6 +3058,37 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/iterative-consideration.html"
 				},
 				{
+					"id": "feature-changes",
+					"title": "Clearly label changes using a release notes feature",
+					"applicability": "This technique is **Advisory** to meet *success criteria* within [Implement continuous improvement procedures](https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures).",
+					"description": [
+						{
+							"1": "Provide a mechanism for users or users of a website or application to firstly identify when changes have taken place on a product or service and secondly be able to learn about the new features in more detail (if provided) so that they can quickly adjust themselves to changes that have been made for sustainability or other reasons (reducing confusion).",
+							"2": "Each product or service should have an associated set of release notes that should be regularly maintained, as such, version numbers within those notes should match the version number of the available versions of the product or service. In addition, release notes should be detailed and sectioned based on criteria such as additions, removals, changes, and fixes - not just a single bullet that offers little context. Links and images with more detail can also be helpful."
+						}
+					],
+					"examples": [
+						{
+							"1": "Providing a change.log document using the [changelog](https://keepachangelog.com/en/1.1.0/) semantics, and ensuring that it remains [human readable](https://common-changelog.org/) can help products and services parse versioning data successfully, using it to highlight product changes.",
+							"2": "GitHub provides release notes with versioning alongside for open source projects. Our own [Web Sustainability Guidelines](https://github.com/w3c/sustainableweb-wsg/releases) has a version history (releases) page that offers details on additions, updates, and fixes."
+						}
+					],
+					"tests": [
+						{
+							"procedure": [
+								{
+									"1": "Check that a changelog has been provided for each product or service.",
+									"2": "Check that modifications are categorized by the type of change.",
+									"3": "Check that significant changes such as new features are well documented externally.",
+									"4": "Check that the content is written in plain English for readability."
+								}
+							],
+							"expectedResults": "All checks above are true."
+						}
+					],
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/feature-changes.html"
+				},
+				{
 					"id": "sustainable-development-goals",
 					"title": "Align product or service compliance with the SDGs",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Establish if a digital product or service is necessary](https://www.w3.org/TR/web-sustainability-guidelines/#establish-if-a-digital-product-or-service-is-necessary).",

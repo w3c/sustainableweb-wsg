@@ -2899,6 +2899,33 @@
 					</details>
 				</div>
 				<div class="summary">
+					<details> <!-- Clearly label changes using a release notes feature -->
+						<summary id="feature-changes">Clearly label changes using a release notes feature</summary>	
+						<p><strong>Applicability</strong></p>
+						<p>This technique is <strong>Advisory</strong> to meet <a href="https://www.w3.org/TR/web-sustainability-guidelines/#document-updates-and-evolutions">Document updates and evolutions</a>.</p>
+						<p><strong>Description</strong></p>
+						<p>Provide a mechanism for users or users of a website or application to firstly identify when changes have taken place on a product or service and secondly be able to learn about the new features in more detail (if provided) so that they can quickly adjust themselves to changes that have been made for sustainability or other reasons (reducing confusion).</p>
+						<p>Each product or service should have an associated set of release notes that should be regularly maintained, as such, version numbers within those notes should match the version number of the available versions of the product or service. In addition, release notes should be detailed and sectioned based on criteria such as additions, removals, changes, and fixes - not just a single bullet that offers little context. Links and images with more detail can also be helpful.</p>
+						<p><strong>Examples</strong></p>
+						<ol>
+							<li>Providing a change.log document using the <a href="https://keepachangelog.com/en/1.1.0/">changelog</a> semantics, and ensuring that it remains <a href="https://common-changelog.org/">human readable</a> can help products and services parse versioning data successfully, using it to highlight product changes.</li>
+							<li>GitHub provides release notes with versioning alongside for open source projects. Our own <a href="https://github.com/w3c/sustainableweb-wsg/releases">Web Sustainability Guidelines</a> has a version history (releases) page that offers details on additions, updates, and fixes.</li>
+						</ol>
+						<p><strong>Tests</strong></p>
+						<p>Procedure</p>
+						<ol>
+							<li>Check that a changelog has been provided for each product or service.</li>
+							<li>Check that modifications are categorized by the type of change.</li>
+							<li>Check that significant changes such as new features are well documented externally.</li>
+							<li>Check that the content is written in plain English for readability.</li>
+						</ol>
+						<p>Expected Results</p>
+						<ol>
+							<li>All checks above are true.</li>
+						</ol>
+					</details>
+				</div>
+				<div class="summary">
 					<details> <!-- Align product or service compliance with the SDGs -->
 						<summary id="sustainable-development-goals">Align product or service compliance with the <abbr title="Sustainable Development Goals">SDGs</abbr></summary>	
 						<p><strong>Applicability</strong></p>
@@ -3723,7 +3750,7 @@
 								<td class="red">FAIL</td>
 								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/iterative-consideration.html">PASS</a></td>
 								<td class="red">FAIL</td>
-								<td class="red">FAIL</td>
+								<td><a href="https://w3c.github.io/sustainableweb-wsg/test-suite/feature-changes.html">PASS</a></td>
 								<td class="red">FAIL</td>
 							</tr>
 							<tr>

@@ -4714,14 +4714,14 @@
 					"tags": ["Accessibility", "AI", "Compatibility", "KPIs", "Performance", "Privacy", "Security", "Strategy", "UI"]
 				},
 				{
-					"id": "document-future-updates-and-evolutions",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#document-future-updates-and-evolutions",
-					"guideline": "Document future updates and evolutions",
+					"id": "document-updates-and-evolutions",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#document-updates-and-evolutions",
+					"guideline": "Document updates and evolutions",
 					"subheading": "Provide documentation to help users find their way whenever functionality changes.",
 					"criteria": [
 						{
 							"title": "Feature changes",
-							"description": "When a feature is added, updated, or removed to improve user experience, clear documentation of the changes is provided in a well structured, semantically versioned document.",
+							"description": "Provide clear, structured documentation when features are added, changed, or removed. Use a consistent versioning or change-tracking system to communicate the nature and impact of changes.",
 							"resources": [
 								{
 									"Common Changelog": "https://common-changelog.org/",
