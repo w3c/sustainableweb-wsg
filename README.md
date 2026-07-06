@@ -151,7 +151,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/impact.json">WSG Impact API</a></td>
+			<td><a href="https://w3c.github.io/sustainableweb-wsg/impact.json">WSG Impact JSON API</a></td>
 			<td>W3C Editors Draft</td>
 			<td>03 Jul 2026</td>
 		</tr>
@@ -184,7 +184,7 @@ These documents are reachable via GitHub pages and can be queried using JavaScri
 ```js
 category[1].guidelines[0].guideline = "Identify, assess, disclose, review, and mitigate sustainability impacts"
 ```
-**WSG** (*impact.json*)
+**WSG Impact** (*impact.json*)
 ```js
 category[1].guidelines[0].impactRatings[0].people = "Indeterminate"
 ```
@@ -227,7 +227,7 @@ Below are some handy links for contributors to our project:
  - [QA Framework](https://www.w3.org/TR/qaframe-spec/)
  - [Repository Templates](https://github.com/w3c/ash-nazg/tree/master/templates)
  - [ReSpec Documentation](https://respec.org/docs/)
- - [STAR Testability](https://docs.google.com/spreadsheets/d/1DKfIdm0mHkyzTVv41hogUdh41SnLkk9Uwkc8Nm6bqD4/edit?usp=sharing)
+ - [Spec Prod](https://w3c.github.io/spec-prod/) ([Specberus](https://github.com/w3c/specberus) / [Echidna](https://github.com/w3c/echidna/wiki/How-to-use-Echidna) )
  - [TAG Explainers](https://tag.w3.org/explainers/)
  - [The Art of Consensus](https://www.w3.org/Guide/)
  - [W3C Manual of Style](https://www.w3.org/Guide/manual-of-style/)

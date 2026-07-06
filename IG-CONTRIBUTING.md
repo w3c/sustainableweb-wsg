@@ -24,7 +24,7 @@ glance.html		- At-A-Glance
 guidelines.json		- WSG JSON API
 index.html		- WSG Guidelines
 impact.html		- WSG Impact Measurement
-impact.json		- WSG Impact API
+impact.json		- WSG Impact JSON API
 policies.html		- Laws and Policies
 quickref.html		- Quick Reference
 resources.html		- Resources (URLs)
