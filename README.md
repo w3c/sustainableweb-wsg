@@ -152,7 +152,7 @@ Links to relevant documents (based on the CG Draft Report) can be found below.
 		</tr>
 		<tr>
 			<td><a href="https://w3c.github.io/sustainableweb-wsg/impact.json">WSG Impact JSON API</a></td>
-			<td>W3C Editors Draft</td>
+			<td>JSON API</td>
 			<td>03 Jul 2026</td>
 		</tr>
 		<tr>
