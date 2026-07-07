@@ -73,7 +73,7 @@ If you would like to learn more about us and how to participate in this project,
  - **138** Advisory Techniques within STAR providing guidance to meet WSG success criteria.
  - **2,500+** Resources (URLs) to reinforce and assist with implementation of WSG guidelines.
  - **500+** pages worth of sustainability material (**100** of which exist within WSG).
- - **35** content filters based upon **4** different sustainability categories.
+ - **50** content filters based upon **4** different sustainability categories.
  - **200+** contributors from over **25** nations around the world.
 
 ## Work
