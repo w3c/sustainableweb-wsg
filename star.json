@@ -895,7 +895,7 @@
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Involve users early in the project](https://www.w3.org/TR/web-sustainability-guidelines/#involve-users-early-in-the-project).",
 					"description": [
 						{
-							"1": "Identify the way new features, product ideas, and user-interface components will be tested among various affected party groups such as those with with accessibility issues. The main location for such an outline will be through an affected party-focused testing and prototyping policy and as such once implemented publicly, a link to the policy should be available.",
+							"1": "Identify the way new features, product ideas, and user-interface components will be tested among various affected party groups such as those with accessibility issues. The main location for such an outline will be through an affected party-focused testing and prototyping policy and as such once implemented publicly, a link to the policy should be available.",
 							"2": "Machine detection could use heuristics to identify key policies within the text, however at a basic level, being able to identify the policy exists, potentially within the footer of a website or application along with other policies and legal documents, and then further analysis of individual headline elements of key sections of the document, should be enough to justify a passing criteria."
 						}
 					],
@@ -2483,7 +2483,7 @@
 					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/refresh-frequency.html"
 				},
 				{
-					"id": "Protocol efficiency",
+					"id": "protocol-efficiency",
 					"title": "Deliver content using the correct, most secure protocol",
 					"applicability": "This technique is **Advisory** to meet *success criteria* within [Assess the impact and requirements of data processing](https://www.w3.org/TR/web-sustainability-guidelines/#assess-the-impact-and-requirements-of-data-processing).",
 					"description": [
@@ -2508,7 +2508,7 @@
 							"expectedResults": "All checks above are true."
 						}
 					],
-					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/Protocol efficiency.html"
+					"testSuite": "https://w3c.github.io/sustainableweb-wsg/test-suite/protocol-efficiency.html"
 				},
 				{
 					"id": "global-cdns",
