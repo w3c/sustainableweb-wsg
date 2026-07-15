@@ -2567,7 +2567,7 @@
 					"criteria": [
 						{
 							"title": "Appropriate Implementation",
-							"description": "Choose implementation approaches that balance effort, performance, and environmental impact. Simpler solutions may reduce complexity and runtime impact but require more human effort, while prebuilt tools may reduce build time and development effort but increase ongoing resource use.",
+							"description": "Choose implementation approaches that balance effort, performance, and environmental impact. Simpler solutions may reduce complexity and runtime impact but require more human effort, while prebuilt tools may reduce build time and development effort but increase ongoing resource use. Consider the resource and maintenance impacts of AI-assisted development and automated tooling, and review and optimize generated output to avoid unnecessary complexity or inefficiency.",
 							"resources": [
 								{
 									"A Guide to Functional Requirements": "https://www.nuclino.com/articles/functional-requirements",
