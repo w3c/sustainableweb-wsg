@@ -3291,7 +3291,7 @@
 					"criteria": [
 						{
 							"title": "Task automation",
-							"description": "Automate recurring tasks such as deployment, testing, and compilation in alignment with continuous integration and continuous delivery (CI/CD) best practices to reduce manual effort and improve consistency. Favor automation tools and platforms with lower environmental impact, and avoid unnecessary duplication of automation systems.",
+							"description": "Automate recurring tasks such as deployment, testing, and compilation in alignment with continuous integration and continuous delivery (CI/CD) best practices to reduce manual effort and improve consistency. Consider the environmental impact of task automation and the respective resource use of different approaches, tools, and platforms. Avoid unnecessary complexity or duplication of automation systems.",
 							"resources": [
 								{
 									"AWS WAF - SEC11-BP02 - Automate testing throughout the development and release lifecycle": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_automate_testing_throughout_lifecycle.html",
