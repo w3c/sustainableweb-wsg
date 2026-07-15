@@ -1009,7 +1009,7 @@
 					"criteria": [
 						{
 							"title": "Need for notification",
-							"description": "Only send notifications that match user preferences or that the user has explicitly requested. Avoid unnecessary emails, SMS messages, and push notifications. Give users clear control over each notification type.",
+							"description": "Only send notifications that match user preferences or that the user has explicitly requested. Avoid unnecessary emails, SMS messages, and push notifications. Give users clear control over each notification type. When sending emails, use plain text instead of HTML when rich formatting is unnecessary.",
 							"resources": [
 								{
 									"Biased By Design": "https://biasedbydesign.com/",
