@@ -3334,10 +3334,14 @@
 							"resources": [
 								{
 									"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
+									"A view of cloud computing": "https://dl.acm.org/doi/10.1145/1721654.1721672",
 									"AWS WAF - SUS02-BP01 - Scale workload infrastructure dynamically": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a2.html",
 									"AWS WAF - SUS03-BP01 - Optimize software and architecture for asynchronous and scheduled jobs": "https://docs.aws.amazon.com/wellarchitected/latest/framework/sus_sus_software_a2.html",
+									"Carbon-Efficient Software Design and Development: A Systematic Literature Review": "https://arxiv.org/abs/2407.19901",
 									"Code of Conduct on Data Centre Energy Efficiency": "https://joint-research-centre.ec.europa.eu/document/download/0549a8bc-02da-4b05-896d-4728a4a54ab4_en?filename=Brochure",
 									"EMPower: The Case for a Cloud Power Control Plane (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final57.pdf",
+									"Energy-aware resource allocation heuristics for efficient management of data centers for Cloud computing": "https://www.sciencedirect.com/science/article/abs/pii/S0167739X11000689",
+									"Energy-Efficient Management of Data Center Resources for Cloud Computing": "https://arxiv.org/abs/1006.0308",
 									"GR491 - 3-8028 - Memory Usage": "https://gr491.isit-europe.org/en/crit.php?id=3-8028-hosting-the-management-of-the-consumption-of-physical",
 									"GR491 - 3-8029 - CPU Usage": "https://gr491.isit-europe.org/en/crit.php?id=3-8029-hosting-the-cpu-resources-available-to-virtual-machines",
 									"GR491 - 3-8031 - Unused CPU Cores": "https://gr491.isit-europe.org/en/crit.php?id=3-8031-hosting-hosted-services-do-not-always-have-the",
@@ -3345,7 +3349,8 @@
 									"How Green is Your Data Center?": "https://www.readyworks.com/blog/how-green-is-your-data-center-use-automation-to-simplify-esg-reporting",
 									"If only data centers would participate in demand response": "https://davidmytton.blog/if-only-data-centers-would-participate-in-demand-response/",
 									"Load shifting of computing can lower emissions and soak up surplus renewables. Except when it doesn't": "https://watttime.org/news-and-insights/load-shifting-of-computing-can-lower-emissions-and-soak-up-surplus-renewables-except-when-it-doesnt/",
-									"Microsoft Azure WAF - Sustainable workloads": "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-get-started"
+									"Microsoft Azure WAF - Sustainable workloads": "https://learn.microsoft.com/en-us/azure/well-architected/sustainability/sustainability-get-started",
+									"Optimize resource usage for sustainability": "https://docs.cloud.google.com/architecture/framework/sustainability/optimize-resource-usage"
 								}
 							]
 						},
