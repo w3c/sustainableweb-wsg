@@ -3330,7 +3330,7 @@
 						},
 						{
 							"title": "Automated scaling",
-							"description": "Use autoscaling to adjust server capacity based on demand. Implement buffering and throttling to manage load pressures. Scale resources up during high demand and scale down when demand drops to avoid overprovisioning.",
+							"description": "Manage workloads to ensure efficient resource use by isolating, limiting, and prioritizing processes where needed to prevent resource contention and unnecessary consumption. Use autoscaling to adjust server capacity based on demand. Implement buffering and throttling to manage load pressures. Scale resources up during high demand and scale down when demand drops to avoid overprovisioning. Regularly review infrastructure utilization and reduce allocated capacity when resources are consistently underused.",
 							"resources": [
 								{
 									"2020 Best Practice Guidelines for the EU Code of Conduct on Data Centre Energy Efficiency (PDF)": "https://e3p.jrc.ec.europa.eu/sites/default/files/2023-09/jrc119571_jrc119571_2020_best_practice_guidelines_v11.1.0a_br_ma_21_jan.pdf",
