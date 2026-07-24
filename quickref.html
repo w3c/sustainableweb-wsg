@@ -122,7 +122,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-a-design-system-for-interface-consistency">Use a design system for interface consistency</a></legend>
-					<label><input type="checkbox"><span>Use a design system for large projects or projects with many contributors to improve consistency, performance, and long-term sustainability. Use reusable components based on web standards, load only the components needed for each page or feature, and maintain the system through clear ownership, versioning, and updated documentation. Follow established design patterns and conventions.</span></label>
+					<label><input type="checkbox"><span>Use a design system for large projects or those with many contributors to improve consistency, performance, and long-term sustainability. Use reusable components based on web standards, load only the components needed for each page or feature, and maintain the system through clear ownership, versioning, and updated documentation. Follow established design patterns and conventions.</span></label>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#optimize-media-to-reduce-resource-use">Optimize media to reduce resource use</a></legend>
@@ -153,7 +153,7 @@
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-the-impact-of-downloadable-and-physical-documents">Reduce the impact of downloadable and physical documents</a></legend>
 					<label><input type="checkbox"><span>Design workflows to reduce the need for paper documents. When paper use is necessary, reduce paper use through efficient print layouts and minimal page counts. Include print style sheets and test them with real content. Encourage the use of digital formats instead of paper storage and archiving.</span></label>
-					<label><input type="checkbox"><span>Optimize and compress downloadable documents, provide them in accessible formats that suit different user needs, and choose open, widely supported formats (such as HTML) over proprietary file formats.</span></label>
+					<label><input type="checkbox"><span>Optimize and compress downloadable documents, provide them in accessible formats that suit different user needs, and choose open, widely supported formats (such as <abbr title="Hypertext Markup Language">HTML</abbr>) over proprietary file formats.</span></label>
 					<label><input type="checkbox"><span>Avoid duplicating work. When a document is reused, generate and store it once on the server so it can be reused efficiently, preferably on a cookie-free domain.</span></label>
 					<label><input type="checkbox"><span>Show users the document name, format, size, and a short summary before download. Let users choose the most suitable format and language. Avoid embedding documents directly in pages; instead provide download or browser-view links.</span></label>
 				</fieldset>
@@ -165,7 +165,7 @@
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#audit-and-test-for-bugs-or-issues-requiring-resolution">Audit and test for bugs or issues requiring resolution</a></legend>
 					<label><input type="checkbox"><span>Evaluate current user experience and check the codebase for bugs, identify performance issues, and account for accessibility, sustainability, or security problems at appropriate regular intervals, such as every month or quarter.</span></label>
 					<label><input type="checkbox"><span>Maintain an automated test suite that covers critical functionality and run it consistently during builds and releases to catch regressions early.</span></label>
-					<label><input type="checkbox"><span>Identify and resolve bottlenecks or issues in the underlying code or infrastructure which could impact sustainability and performance to encourage a smooth, frictionless user journey. Consider both simulated and real-world metrics. Monitor performance across every release cycle using appropriate tooling or through research and auditing.</span></label>
+					<label><input type="checkbox"><span>Identify and resolve bottlenecks or issues in the underlying code or infrastructure which could impact sustainability and performance to encourage a smooth, frictionless user journey. Account for both simulated and real-world metrics. Monitor performance across every release cycle using appropriate tooling or through research and auditing.</span></label>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#validate-usability-through-testing-and-real-world-usage">Validate usability through testing and real-world usage</a></legend>
@@ -173,7 +173,7 @@
 					<label><input type="checkbox"><span>Use usability testing, real user metrics, and user interviews throughout product development. Measure the impact of findings and check whether released features meet user needs and internal goals.</span></label>
 				</fieldset>
 				<fieldset>
-					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support">Cross-platform compatibility support</a></legend>
+					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#provide-cross-platform-compatibility-support">Provide cross-platform compatibility support</a></legend>
 					<label><input type="checkbox"><span>Document supported devices, operating systems, and browsers, including version ranges. Review and update it regularly to reflect current releases.</span></label>
 					<label><input type="checkbox"><span>Avoid planned obsolescence. Keep compatibility for as long as reasonably possible. Clearly explain whether updates are major changes that may affect performance or smaller updates that fix issues or improve security.</span></label>
 					<label><input type="checkbox"><span>Test for a wide range of user conditions, including slow, restricted or unstable connections, Virtual Private Network (<abbr title="Virtual Private Network">VPN</abbr>) use, different operating systems and browsers, and older or low-performance devices.</span></label>
@@ -205,7 +205,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#treat-third-parties-the-same-as-first-parties">Treat third parties the same as first parties</a></legend>
-					<label><input type="checkbox"><span>Review third-party content and/or services early in the design or ideation process, including plugins, widgets, feeds, maps, carousels, tracking scripts, and similar components. Use as few as possible, preferring lightweight options to reduce overall environmental impact, including GHG Protocol Scope 3 emissions. Ensure third-party providers enforce the same compliance, security, privacy, data retention limits, data deletion policies, and mandatory security update standards as the first party.</span></label>
+					<label><input type="checkbox"><span>Review third-party content and/or services early in the design or ideation process, including plugins, widgets, feeds, maps, carousels, tracking scripts, and similar components. Use as few as possible, preferring lightweight options to reduce overall environmental impact, including GHG Protocol Scope 3 emissions. Ensure third-party providers enforce the same compliance, security, privacy, data retention limits, data deletion policies, and mandatory security update standards as the first party. Account for long-term dependency risks when selecting third-party services, including data portability and transition options.</span></label>
 					<label><input type="checkbox"><span>Load third-party content only when the user interacts with it. Offer simple alternatives, such as linking to a form instead of embedding a widget.</span></label>
 					<label><input type="checkbox"><span>Serve assets such as content, icons, fonts, scripts, and widgets from infrastructure you control where practical, rather than embedding or depending on third-party services for their storage or delivery. This reduces dependency on external systems, improves reliability, and can reduce unnecessary network requests.</span></label>
 					<label><input type="checkbox"><span>Respect user preferences around third-party content and services. Provide clear controls to disable or opt out of non-essential third-party features.</span></label>
@@ -226,7 +226,7 @@
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#structure-metadata-for-machine-readability">Structure metadata for machine readability</a></legend>
 					<label><input type="checkbox"><span>Include a required title element and add optional HTML head elements where they improve usability, accessibility, or performance.</span></label>
 					<label><input type="checkbox"><span>Include relevant meta tags that are widely used by browsers, search engines, and other user agents.</span></label>
-					<label><input type="checkbox"><span>Use structured data, such as schema.org, implemented with JSON-LD, microdata, <abbr title="Resource Description Framework in Attributes">RDFa</abbr>, or microformats, to enable consistent interpretation and reuse of content by both humans and machines across tools and services.</span></label>
+					<label><input type="checkbox"><span>Use structured data, such as schema.org, implemented with <abbr title="JavaScript Object Notation for Linked Data">JSON-LD</abbr>, microdata, <abbr title="Resource Description Framework in Attributes">RDFa</abbr>, or microformats, to enable consistent interpretation and reuse of content by both humans and machines across tools and services.</span></label>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-media-queries-that-support-sustainability-goals">Use media queries that support sustainability goals</a></legend>
@@ -241,7 +241,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-sustainable-javascript-and-apis">Use sustainable JavaScript and <abbr title="Application Programming Interfaces">APIs</abbr></a></legend>
-					<label><input type="checkbox"><span>Write JavaScript that supports long-term application performance by reducing unnecessary calculations, limiting DOM updates, and minimizing network requests.</span></label>
+					<label><input type="checkbox"><span>Write JavaScript that supports long-term application performance by reducing unnecessary calculations, limiting <abbr title="Document Object Model">DOM</abbr> updates, and minimizing network requests.</span></label>
 					<label><input type="checkbox"><span>Leverage JavaScript APIs, such as Compression Streams, Page Visibility, or Vibration, when they help reduce energy use or improve efficiency.</span></label>
 					<label><input type="checkbox"><span>Only call client-side or server-side APIs when needed. Ensure only data required for the task is included in requests and responses.</span></label>
 				</fieldset>
@@ -258,10 +258,10 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service">Use the most efficient solution for your service</a></legend>
-					<label><input type="checkbox"><span>Choose implementation approaches that balance effort, performance, and environmental impact. Simpler solutions may reduce complexity and runtime impact but require more human effort, while prebuilt tools may reduce build time and development effort but increase ongoing resource use.</span></label>
+					<label><input type="checkbox"><span>Choose implementation approaches that balance effort, performance, and environmental impact. Simpler solutions may reduce complexity and runtime impact but require more human effort, while prebuilt tools may reduce build time and development effort but increase ongoing resource use. Sometimes AI-assisted development and automated tooling creates unnecessarily complex or inefficient code. Review and optimize generated output to reduce its complexity and increase its efficiency.</span></label>
 					<label><input type="checkbox"><span>Use the most performant approach for your use case. Most of the time, coding from scratch can provide the most performant results, but where a well-maintained existing solution is available it may be better optimized than what you can produce yourself. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, and environmental impact of third-party solutions.</span></label>
 					<label><input type="checkbox"><span>Deliver static content in place of dynamic content wherever possible. If code generation is required, favor the efficient tools, such as Static Site Generators (<abbr title="Static Site Generators">SSGs</abbr>). Be aware that dynamic <abbr title="Content Management System">CMS</abbr>-driven content typically involves greater server-side processing and relies on bulkier libraries compared to static approaches.</span></label>
-					<label><input type="checkbox"><span>Review plugins, extensions, and themes regularly to ensure they remain compatible with the platform and other components, efficient, and accessible.</span></label>
+					<label><input type="checkbox"><span>Review plugins, extensions, and themes regularly to ensure they remain compatible with the platform and other components, are efficient, and accessible.</span></label>
 					<label><input type="checkbox"><span>Use user interface components that are lightweight, focused, and efficient, avoiding unnecessary complexity that increases resource use, environmental impact, or maintenance burden.</span></label>
 				</fieldset>
 				<fieldset>
@@ -297,7 +297,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#reduce-data-transfer-with-compression">Reduce data transfer with compression</a></legend>
-					<label><input type="checkbox"><span>Reduce file size before uploading images, audio, and video by using efficient formats and quality settings. Avoid applying additional compression if the file is already appropriately sized for upload.</span></label>
+					<label><input type="checkbox"><span>Use server-side compression settings and tools to compress commonly used file types when appropriate. Ensure that compression reduces energy consumption, minimizes load times, saves bandwidth, and improves overall performance. Do not apply additional compression to files that are already appropriately sized for upload.</span></label>
 					<label><input type="checkbox"><span>Compress media files such as images, video, and audio before uploading anywhere to reduce storage and transfer requirements.</span></label>
 				</fieldset>
 				<fieldset>
@@ -312,9 +312,9 @@
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-automation-wisely">Use automation wisely</a></legend>
 					<label><input type="checkbox"><span>Automate recurring tasks such as deployment, testing, and compilation in alignment with continuous integration and continuous delivery (<abbr title="Continuous Integration">CI</abbr>/<abbr title="Continuous Delivery">CD</abbr>) best practices to reduce manual effort and improve consistency. Favor automation tools and platforms with lower environmental impact, and avoid unnecessary duplication of automation systems.</span></label>
-					<label><input type="checkbox"><span>Run automated tasks only when they are needed to avoid unnecessary resource use.</span></label>
+					<label><input type="checkbox"><span>Run automated tasks only when they are needed to avoid unnecessary resource use. Regularly review automated tasks to ensure they remain necessary, efficient, secure, and beneficial.</span></label>
 					<label><input type="checkbox"><span>Use autoscaling to adjust server capacity based on demand. Implement buffering and throttling to manage load pressures. Scale resources up during high demand and scale down when demand drops to avoid overprovisioning.</span></label>
-					<label><input type="checkbox"><span>Restrict unwanted and unnecessary third-party crawlers, user agents, bots, and scrapers using security controls, while ensuring content remains accessible to legitimate users, search engines, and helpful or authorized crawlers. Take into account that some scrapers may be used for beneficial purposes, including informing or training large language models.</span></label>
+					<label><input type="checkbox"><span>Restrict unwanted and unnecessary third-party crawlers, user agents, bots, and scrapers using security controls, while ensuring content remains accessible to legitimate users, search engines, and helpful or authorized crawlers. Take into account that some scrapers may be used for beneficial purposes, or to inform or train large language models.</span></label>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#define-the-frequency-of-data-refreshes">Define the frequency of data refreshes</a></legend>
@@ -357,7 +357,7 @@
 			<form>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#have-an-ethical-and-sustainable-product-strategy">Have an ethical and sustainable product strategy</a></legend>
-					<label><input type="checkbox"><span>Develop, publish, and maintain key organizational policies such as a code of ethics, product guidelines, accessibility, and sustainability statements. Include clear language for digital products, services, and emerging or disruptive technologies, such as <abbr title="Artificial Intelligence">AI</abbr>. Make these policies publicly accessible and keep them versioned for transparency.</span></label>
+					<label><input type="checkbox"><span>Develop, publish, and maintain key organizational policies such as a code of ethics, product guidelines, cloud sustainability strategy, and accessibility and sustainability statements. Use clear language to describe digital products, services, and emerging or disruptive technologies, such as <abbr title="Artificial Intelligence">AI</abbr>. Make these policies publicly accessible and keep them versioned for transparency.</span></label>
 					<label><input type="checkbox"><span>Publish web sustainability-related achievements, features, compliance updates, and other relevant information within a dedicated sustainability section.</span></label>
 					<label><input type="checkbox"><span>Provide evidence that sustainability policies and practices are actively implemented, monitored, and governed over time.</span></label>
 					<label><input type="checkbox"><span>Advocate for and comply with evidence-based legislation and standards that advance digital privacy, employment rights, transparency, accountability, responsible emerging technologies, and digital sustainability. Simultaneously make efforts to go beyond minimum expectations, especially in regard to avoiding unnecessary data collection to preserve an efficient and accessible user journey in compliance with accessibility and data protection requirements.</span></label>
@@ -414,7 +414,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#implement-continuous-improvement-procedures">Implement continuous improvement procedures</a></legend>
-					<label><input type="checkbox"><span>Embed continuous improvement practices that clearly report what is changing, why it is changing, and whether it improves environmental sustainability outcomes. Ensure that environmental and other ESG impacts are assessed alongside operational and business performance metrics.</span></label>
+					<label><input type="checkbox"><span>Embed continuous improvement practices that clearly report what is changing, why it is changing, and whether it improves environmental sustainability outcomes. Ensure that environmental and other <abbr title="Environment, Social, Governance">ESG</abbr> impacts are assessed alongside operational and business performance metrics.</span></label>
 					<label><input type="checkbox"><span>Review deliverables and update frequently to ensure project teams have enough time to conduct user research, identify and eliminate technical debt, and produce high-quality output as well as share what they learned.</span></label>
 					<label><input type="checkbox"><span>Display a track record of continuous improvement (iteration) processes to analyze the digital product or service. Simultaneously address any potential consequences of ongoing experimentation, such as technical debt, product performance, and emissions. Limit analytics to strictly necessary features that aid decision-making, encouraging user feedback, and comparing performance against organization goals and user needs.</span></label>
 					<label><input type="checkbox"><span>Regularly review all functionality across the product lifecycle. Justify and prioritize decisions to retain, change, add, or remove features based on environmental impact, user value, usage, and maintenance cost. This includes decommissioning unused or low-traffic functionality and content.</span></label>
@@ -425,7 +425,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#evaluate-if-a-digital-product-or-service-is-necessary">Evaluate if a digital product or service is necessary</a></legend>
-					<label><input type="checkbox"><span>Identify whether the product or service aligns with any relevant UN Sustainable Development Goals (<abbr title="United Nations">U.N.</abbr> (<abbr title="Sustainable Development Goals">SDG</abbr>) and, where applicable, include corresponding targets within a sustainability statement.</span></label>
+					<label><input type="checkbox"><span>Identify whether the product or service aligns with any relevant <abbr title="United Nations">U.N.</abbr> Sustainable Development Goals (<abbr title="Sustainable Development Goals">SDGs</abbr>) and, where applicable, include corresponding targets within a sustainability statement.</span></label>
 					<label><input type="checkbox"><span>Evaluate whether a product or service is needed based on desirability, feasibility, and viability.</span></label>
 					<label><input type="checkbox"><span>Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers.</span></label>
 				</fieldset>
@@ -447,7 +447,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-diversity-equity-justice-inclusion-deji-practices">Use Diversity, Equity, Justice, Inclusion (<abbr title="Diversity, Equity, Justice, Inclusion">DEJI</abbr>) practices</a></legend>
-					<label><input type="checkbox"><span>Publish clear commitments to DEIJ. Explain how the organization applies these commitments to reduce exclusion and support the long-term sustainability of access to the product for diverse and underserved or marginalized communities.</span></label>
+					<label><input type="checkbox"><span>Publish clear commitments to <abbr title="Diversity, Equity, Justice, Inclusion">DEIJ</abbr>. Explain how the organization applies these commitments to reduce exclusion and support the long-term sustainability of access to the product for diverse and underserved or marginalized communities.</span></label>
 					<label><input type="checkbox"><span>Provide DEIJ training and topics such as algorithmic bias, the digital divide, employment equity, mis- and disinformation.</span></label>
 					<label><input type="checkbox"><span>Track and publish measurable progress in DEIJ across hiring, leadership, and operations.</span></label>
 				</fieldset>
