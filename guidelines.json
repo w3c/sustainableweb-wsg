@@ -1581,7 +1581,7 @@
 					"criteria": [
 						{
 							"title": "Minified code",
-							"description": "Minify code and data files by removing unnecessary whitespace, comments, and non-essential characters. Apply this consistently across the system to reduce file size and improve loading efficiency. This helps reduce cumulative data transfer and processing overhead at scale, improving resource efficiency and lowering energy consumption.",
+							"description": "Minify code and data files by removing unnecessary whitespace, comments, attributes, and non-essential characters. Apply this consistently across the system to reduce file size and improve loading efficiency. This helps to reduce cumulative data transfer and processing overhead at scale, improving resource efficiency and reducing energy consumption. Ensure that minification does not introduce any errors.",
 							"resources": [
 								{
 									"Comparing HTML Minifiers": "https://meiert.com/blog/comparing-html-minifiers/",
