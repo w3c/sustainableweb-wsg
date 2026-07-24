@@ -3260,7 +3260,7 @@
 					"criteria": [
 						{
 							"title": "Unused environments",
-							"description": "Reduce the number of active environments by deactivating, offlining, or removing unused or redundant virtual and physical environments (e.g., containers and virtual machines) wherever this can be done without reducing required security, isolation, or compliance guarantees. Also evaluate running services in the same way. Similarly, codebases and setups for unused branches, environments, and services, and remove what is no longer needed.",
+							"description": "Reduce the number of active environments by deactivating, offlining, or removing unused or redundant virtual and physical environments (e.g., containers and virtual machines) wherever this can be done without reducing required security, isolation, or compliance guarantees. Optimize active environments by tailoring resource allocations to actual workload demand, sharing common services, and eliminating duplicate tasks while maintaining necessary isolation.",
 							"resources": [
 								{
 									"AWS WAF - SUS02-BP03 - Stop the creation and maintenance of unused assets": "https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_user_a4.html",
