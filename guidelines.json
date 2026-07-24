@@ -3800,7 +3800,7 @@
 						},
 						{
 							"title": "Optimized logging",
-							"description": "Manage logs through appropriate rotation, retention, compression, and backup practices to reduce storage and processing overhead. Schedule resource-intensive operations during low-activity periods, use resilient backups, including off-site storage where needed, and remove sensitive information where possible to minimize security and privacy risks. Use logs, monitoring, and alerts at an appropriate frequency and scope to provide value while avoiding unnecessary processing, storage, and network use. Use collected data to identify and reduce avoidable resource consumption, such as unnecessary automated requests.",
+							"description": "Manage logs with regular rotation, retention, compression, and backup practices to reduce storage and processing overhead. Schedule resource-intensive operations during low-activity periods, use resilient backups, including off-site storage where needed, and remove sensitive information where possible to minimize security and privacy risks. Use logs, monitoring, and alerts at a regular frequency and scope to provide value while avoiding unnecessary processing, storage, and network use. Use collected data to identify and reduce avoidable resource consumption, such as unnecessary automated requests.",
 							"resources": [
 								{
 									"An Engineer's Checklist of Logging Best Practices": "https://www.honeycomb.io/blog/engineers-checklist-logging-best-practices",
