@@ -606,7 +606,7 @@
 					"criteria": [
 						{
 							"title": "Design system",
-							"description": "Use a design system for large projects or projects with many contributors to improve consistency, performance, and long-term sustainability. Use reusable components based on web standards, load only the components needed for each page or feature, and maintain the system through clear ownership, versioning, and updated documentation. Follow established design patterns and conventions.",
+							"description": "Use a design system for large projects or those with many contributors to improve consistency, performance, and long-term sustainability. Use reusable components based on web standards, load only the components needed for each page or feature, and maintain the system through clear ownership, versioning, and updated documentation. Follow established design patterns and conventions.",
 							"resources": [
 								{
 									"4 Ways to Make Your Code More Reusable": "https://medium.com/@lanceharvieruntime/4-ways-to-make-your-code-more-reusable-bc20889c1e4",
@@ -1236,7 +1236,7 @@
 						},
 						{
 							"title": "Performance testing",
-							"description": "Identify and resolve bottlenecks or issues in the underlying code or infrastructure which could impact sustainability and performance to encourage a smooth, frictionless user journey. Consider both simulated and real-world metrics. Monitor performance across every release cycle using appropriate tooling or through research and auditing.",
+							"description": "Identify and resolve bottlenecks or issues in the underlying code or infrastructure which could impact sustainability and performance to encourage a smooth, frictionless user journey. Account for both simulated and real-world metrics. Monitor performance across every release cycle using appropriate tooling or through research and auditing.",
 							"resources": [
 								{
 									"2025 In Review: What's New In Web Performance": "https://www.debugbear.com/blog/2025-in-web-performance",
@@ -1743,7 +1743,7 @@
 					"criteria": [
 						{
 							"title": "Assess and reduce",
-							"description": "Review third-party content and/or services early in the design or ideation process, including plugins, widgets, feeds, maps, carousels, tracking scripts, and similar components. Use as few as possible, preferring lightweight options to reduce overall environmental impact, including GHG Protocol Scope 3 emissions. Ensure third-party providers enforce the same compliance, security, privacy, data retention limits, data deletion policies, and mandatory security update standards as the first party.",
+							"description": "Review third-party content and/or services early in the design or ideation process, including plugins, widgets, feeds, maps, carousels, tracking scripts, and similar components. Use as few as possible, preferring lightweight options to reduce overall environmental impact, including GHG Protocol Scope 3 emissions. Ensure third-party providers enforce the same compliance, security, privacy, data retention limits, data deletion policies, and mandatory security update standards as the first party. Account for long-term dependency risks when selecting third-party services, including data portability and transition options.",
 							"resources": [
 								{
 									"6 steps to reduce the carbon footprint of your website": "https://opensource.com/article/23/3/reduce-carbon-footprint-website",
@@ -2567,7 +2567,7 @@
 					"criteria": [
 						{
 							"title": "Appropriate Implementation",
-							"description": "Choose implementation approaches that balance effort, performance, and environmental impact. Simpler solutions may reduce complexity and runtime impact but require more human effort, while prebuilt tools may reduce build time and development effort but increase ongoing resource use.",
+							"description": "Choose implementation approaches that balance effort, performance, and environmental impact. Simpler solutions may reduce complexity and runtime impact but require more human effort, while prebuilt tools may reduce build time and development effort but increase ongoing resource use. Sometimes AI-assisted development and automated tooling creates unnecessarily complex or inefficient code. Review and optimize generated output to reduce its complexity and increase its efficiency.",
 							"resources": [
 								{
 									"A Guide to Functional Requirements": "https://www.nuclino.com/articles/functional-requirements",
@@ -2662,7 +2662,7 @@
 							"Security": "Maintaining a software product and restricting your use of third-party solutions to the essential will improve overall security."
 						}
 					],
-					"tags": ["Accessibility", "Compatibility", "Ideation", "Performance", "Privacy", "Security", "Software", "Strategy"]
+					"tags": ["Accessibility", "AI", "Compatibility", "Ideation", "Performance", "Privacy", "Security", "Software", "Strategy"]
 				},
 				{
 					"id": "use-the-latest-stable-language-version",
@@ -3124,7 +3124,7 @@
 					"criteria": [
 						{
 							"title": "Server-side compression",
-							"description": "Reduce file size before uploading images, audio, and video by using efficient formats and quality settings. Avoid applying additional compression if the file is already appropriately sized for upload.",
+							"description": "Use server-side compression settings and tools to compress commonly used file types when appropriate. Ensure that compression reduces energy consumption, minimizes load times, saves bandwidth, and improves overall performance. Do not apply additional compression to files that are already appropriately sized for upload.",
 							"resources": [
 								{
 									"10 Steps to Avoid Enormous Network Payloads": "https://www.debugbear.com/blog/avoid-enormous-network-payloads",
@@ -3311,7 +3311,7 @@
 						},
 						{
 							"title": "Necessary tasks",
-							"description": "Run automated tasks only when they are needed to avoid unnecessary resource use.",
+							"description": "Run automated tasks only when they are needed to avoid unnecessary resource use. Regularly review automated tasks to ensure they remain necessary, efficient, secure, and beneficial.",
 							"resources": [
 								{
 									"AWS WAF - SEC11-BP02 - Automate testing throughout the development and release lifecycle": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_automate_testing_throughout_lifecycle.html",
@@ -3858,7 +3858,7 @@
 					"criteria": [
 						{
 							"title": "Public documents",
-							"description": "Develop, publish, and maintain key organizational policies such as a code of ethics, product guidelines, accessibility, and sustainability statements. Include clear language for digital products, services, and emerging or disruptive technologies, such as AI. Make these policies publicly accessible and keep them versioned for transparency.",
+							"description": "Develop, publish, and maintain key organizational policies such as a code of ethics, product guidelines, cloud sustainability strategy, and accessibility and sustainability statements. Use clear language to describe digital products, services, and emerging or disruptive technologies, such as AI. Make these policies publicly accessible and keep them versioned for transparency.",
 							"resources": [
 								{
 									"#Tech4Bad: When Do We Say No?": "https://branch.climateaction.tech/issues/issue-3/tech4bad-when-do-we-say-no/",
