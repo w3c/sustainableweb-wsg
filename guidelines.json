@@ -3351,7 +3351,7 @@
 						},
 						{
 							"title": "Suspicious activity management",
-							"description": "Restrict unwanted and unnecessary third-party crawlers, user agents, bots, and scrapers using security controls, while ensuring content remains accessible to legitimate users, search engines, and helpful or authorized crawlers. Use appropriate CDN, hosting, or server-level controls to throttle or block unnecessary automated requests, and monitor logs to assess the effectiveness of these controls. Take into account that some scrapers may be used for beneficial purposes, or to inform or train large language models.",
+							"description": "Restrict unwanted and unnecessary third-party crawlers, user agents, bots, and scrapers using security controls, while ensuring content remains accessible to legitimate users, search engines, and helpful or authorized crawlers. Regularly monitor activity logs to evaluate control effectiveness and identify unexpected traffic patterns. Take into account that some scrapers may be used for beneficial purposes, or to inform or train large language models.",
 							"resources": [
 								{
 									"63% of Websites Receive AI Traffic": "https://ahrefs.com/blog/ai-traffic-study/",
