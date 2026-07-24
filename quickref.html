@@ -135,7 +135,7 @@
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#ensure-animation-is-proportionate-and-easy-to-control">Ensure animation is proportionate and easy to control</a></legend>
 					<label><input type="checkbox"><span>Use animation only when it supports the user experience or helps users understand content or actions.</span></label>
-					<label><input type="checkbox"><span>Limit the number and frequency of animations to reduce distraction, lower resource use, and avoid affecting device performance. Set a maximum number of replays or iterations.</span></label>
+					<label><input type="checkbox"><span>Limit the number and frequency of animations to reduce distraction, minimize resource use, and maintain expected device performance. Set a maximum number of replays or iterations.</span></label>
 					<label><input type="checkbox"><span>Let users start, pause, stop, or control animated and moving content.</span></label>
 					<label><input type="checkbox"><span>Keep interactive and animated content as lightweight as possible. Reduce rendering cost by accounting for formats, lengths, complexity, dimensions, quality, tooling, and implementation approach. Where multiple approaches are available, choose browser- or platform-native animation capabilities and minimize main-thread or layout-intensive work.</span></label>
 				</fieldset>
@@ -190,8 +190,8 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code">Minify and remove unused code</a></legend>
-					<label><input type="checkbox"><span>Minify code and data files by removing unnecessary whitespace, comments, and non-essential characters. Apply this consistently across the system to reduce file size and improve loading efficiency. This helps reduce cumulative data transfer and processing overhead at scale, improving resource efficiency and lowering energy consumption.</span></label>
-					<label><input type="checkbox"><span>Identify and remove unused or dead code, especially in <abbr title="Cascading Stylesheets">CSS</abbr> and JavaScript.</span></label>
+					<label><input type="checkbox"><span>Minify code and data files by removing unnecessary whitespace, comments, attributes, and non-essential characters. Apply this consistently across the system to reduce file size and improve loading efficiency. This helps to reduce cumulative data transfer and processing overhead at scale, improving resource efficiency and reducing energy consumption. Ensure that minification does not introduce any errors.</span></label>
+					<label><input type="checkbox"><span>Identify and remove unused or dead code, especially in CSS and JavaScript.</span></label>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#modularize-bandwidth-heavy-components">Modularize bandwidth-heavy components</a></legend>
@@ -258,7 +258,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-the-most-efficient-solution-for-your-service">Use the most efficient solution for your service</a></legend>
-					<label><input type="checkbox"><span>Choose implementation approaches that balance effort, performance, and environmental impact. Simpler solutions may reduce complexity and runtime impact but require more human effort, while prebuilt tools may reduce build time and development effort but increase ongoing resource use. Sometimes AI-assisted development and automated tooling creates unnecessarily complex or inefficient code. Review and optimize generated output to reduce its complexity and increase its efficiency.</span></label>
+					<label><input type="checkbox"><span>Choose implementation approaches that balance effort, performance, and environmental impact. Simpler solutions may reduce complexity and runtime impact but require more human effort, while prebuilt tools may reduce build time and development effort but increase ongoing resource use. Evaluate the environmental cost of build processes, asset transformations, and external dependencies, ensuring every layer delivers genuine user value.</span></label>
 					<label><input type="checkbox"><span>Use the most performant approach for your use case. Most of the time, coding from scratch can provide the most performant results, but where a well-maintained existing solution is available it may be better optimized than what you can produce yourself. Favor native components and file systems over <abbr title="What You See Is What You Get">WYSIWYG</abbr> editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, and environmental impact of third-party solutions.</span></label>
 					<label><input type="checkbox"><span>Deliver static content in place of dynamic content wherever possible. If code generation is required, favor the efficient tools, such as Static Site Generators (<abbr title="Static Site Generators">SSGs</abbr>). Be aware that dynamic <abbr title="Content Management System">CMS</abbr>-driven content typically involves greater server-side processing and relies on bulkier libraries compared to static approaches.</span></label>
 					<label><input type="checkbox"><span>Review plugins, extensions, and themes regularly to ensure they remain compatible with the platform and other components, are efficient, and accessible.</span></label>
@@ -307,7 +307,7 @@
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#avoid-maintaining-unnecessary-virtualized-environments-or-containers">Avoid maintaining unnecessary virtualized environments or containers</a></legend>
-					<label><input type="checkbox"><span>Reduce the number of active environments by deactivating, offlining, or removing unused or redundant virtual and physical environments (e.g., containers and virtual machines) wherever this can be done without reducing required security, isolation, or compliance guarantees. Also evaluate running services in the same way. Similarly, codebases and setups for unused branches, environments, and services, and remove what is no longer needed.</span></label>
+					<label><input type="checkbox"><span>Reduce the number of active environments by deactivating, offlining, or removing unused or redundant virtual and physical environments (e.g., containers and virtual machines) wherever this can be done without reducing required security, isolation, or compliance guarantees. Optimize active environments by tailoring resource allocations to actual workload demand, sharing common services, and eliminating duplicate tasks while maintaining necessary isolation.</span></label>
 				</fieldset>
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#use-automation-wisely">Use automation wisely</a></legend>
@@ -345,9 +345,9 @@
 				<fieldset>
 					<legend><a href="https://www.w3.org/TR/web-sustainability-guidelines/#store-data-according-to-the-needs-of-your-users">Store data according to the needs of your users</a></legend>
 					<label><input type="checkbox"><span>Regularly remove unused or obsolete data ("dark data") to reduce storage and energy costs, and manage whether and how long data is stored.</span></label>
-					<label><input type="checkbox"><span>Use classification and tagging policies to define and manage data lifecycle rules, including retention, expiration, and archival.</span></label>
+					<label><input type="checkbox"><span>Use classification and tagging policies to define and manage data lifecycle rules, including retention, expiration, and archiving. Align storage choices to how frequently data is accessed, shifting less frequently used data to energy-efficient storage.</span></label>
 					<label><input type="checkbox"><span>Store data only where it provides lasting operational, analytical, or legal value and cannot be easily regenerated or replaced. Remove or archive it when it becomes obsolete. Avoid unnecessary duplication and use efficient storage practices such as compression, caching, and storage optimization techniques.</span></label>
-					<label><input type="checkbox"><span>Manage logs with regular rotation, retention, compression, and backup practices, including scheduling resource-intensive operations during low-activity periods where practical to reduce energy demand and operational overhead. Use resilient backup strategies, including off-site storage when necessary for resilience or recovery, and remove sensitive information from logs wherever possible to minimize security and privacy risks.</span></label>
+					<label><input type="checkbox"><span>Manage logs with regular rotation, retention, compression, and backup practices to reduce storage and processing overhead. Schedule resource-intensive operations during low-activity periods, use resilient backups, including off-site storage where needed, and remove sensitive information where possible to minimize security and privacy risks. Use logs, monitoring, and alerts at a regular frequency and scope to provide value while avoiding unnecessary processing, storage, and network use. Use collected data to identify and reduce avoidable resource consumption, such as unnecessary automated requests.</span></label>
 					<label><input type="checkbox"><span>Make large, long-term assets easily downloadable so users do not need repeated server requests.</span></label>
 				</fieldset>
 			</form>
