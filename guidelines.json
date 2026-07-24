@@ -606,7 +606,7 @@
 					"criteria": [
 						{
 							"title": "Design system",
-							"description": "Use a design system for large projects or projects with many contributors to improve consistency, performance, and long-term sustainability. Use reusable components based on web standards, load only the components needed for each page or feature, and maintain the system through clear ownership, versioning, and updated documentation. Follow established design patterns and conventions.",
+							"description": "Use a design system for large projects or those with many contributors to improve consistency, performance, and long-term sustainability. Use reusable components based on web standards, load only the components needed for each page or feature, and maintain the system through clear ownership, versioning, and updated documentation. Follow established design patterns and conventions.",
 							"resources": [
 								{
 									"4 Ways to Make Your Code More Reusable": "https://medium.com/@lanceharvieruntime/4-ways-to-make-your-code-more-reusable-bc20889c1e4",
@@ -827,9 +827,9 @@
 					"benefits": [
 						{
 							"Economic": "Eliminating data-intensive media entirely and using alternatives such as transcripts reduce costs associated with hosting and data transfer.",
-							"Environment": "Reducing the battery drain associated with loading data-intensive content by preventing auto-loading or delaying it until the moment it is required reduces energy emissions associated with data transfer and renering.",
+							"Environment": "Reducing the battery drain associated with loading data-intensive content by preventing auto-loading or delaying it until the moment it is required reduces energy emissions associated with data transfer and rendering.",
 							"Performance": "Tailoring user experience to the device, situation, and environment of the user by having different resolutions and quality formats available reduces wasted bandwidth. This can boost performance for users who make choices to reduce the data downloaded.",
-							"Social Equity": "Providing alternatives to data-intensive media allows with limited bandwidth or older devices to access content."						}
+							"Social Equity": "Providing alternatives to data-intensive media allows users with limited bandwidth or older devices to access content."						}
 					],
 					"example": "<picture> \n  <source type=\"image/avif\" srcset=\"image.avif\">\n  <source type=\"image/webp\" srcset=\"image.webp\">\n  <img width=\"100px\" height=\"100px\" src=\"image.jpg\" alt=\"\" loading=\"lazy\"/>\n</picture>",
 					"tags": ["Accessibility", "Assets", "Content", "HTML", "Performance", "Software", "UI", "Usability"]
@@ -1191,7 +1191,7 @@
 									"Digital sustainability audits (PDF)": "https://openaccess.uoc.edu/items/ba34204e-8223-4857-b7db-6329518c81fb#page=1",
 									"Building a Greener Digital Future: Catchpoint Launches Carbon Control": "https://www.catchpoint.com/blog/building-a-greener-digital-future-catchpoint-launches-carbon-control",
 									"Front-End Performance Checklist 2021": "https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/",
-									"Hacksplaning": "https://www.hacksplaining.com/lessons",
+									"Hacksplaining": "https://www.hacksplaining.com/lessons",
 									"High Performance Browser Networking": "https://hpbn.co/",
 									"How UX design can help tackle climate change": "https://www.cyber-duck.co.uk/insights/how-sustainable-design-can-help-climate-change",
 									"Learn Accessibility": "https://web.dev/learn/accessibility?hl=en",
@@ -1236,7 +1236,7 @@
 						},
 						{
 							"title": "Performance testing",
-							"description": "Identify and resolve bottlenecks or issues in the underlying code or infrastructure which could impact sustainability and performance to encourage a smooth, frictionless user journey. Consider both simulated and real-world metrics. Monitor performance across every release cycle using appropriate tooling or through research and auditing.",
+							"description": "Identify and resolve bottlenecks or issues in the underlying code or infrastructure which could impact sustainability and performance to encourage a smooth, frictionless user journey. Account for both simulated and real-world metrics. Monitor performance across every release cycle using appropriate tooling or through research and auditing.",
 							"resources": [
 								{
 									"2025 In Review: What's New In Web Performance": "https://www.debugbear.com/blog/2025-in-web-performance",
@@ -1272,7 +1272,7 @@
 					],
 					"benefits": [
 						{
-							"Accessibility": "Tracking accessibility compliance information over time makes it easier for users to understand how acccessibility has been addressed in the past.",
+							"Accessibility": "Tracking accessibility compliance information over time makes it easier for users to understand how accessibility has been addressed in the past.",
 							"Conversion": "Increasing page load speed can measurably improve conversion rates, as users will be less likely to abandon a product or service if the content appears instantaneously.",
 							"Economic": "Performing ongoing regression testing improves security, which reduces risk and its associated costs.",
 							"Environment": "Carrying out regular service audits reduces technical debt, which improves performance and environmental sustainability. Regression analysis also supports continuous improvement and lowers resource use over time, which in turn reduces emissions.",
@@ -1362,9 +1362,9 @@
 					"tags": ["Accessibility", "Education", "Governance", "Ideation", "KPIs", "Research", "Social Equity", "Strategy", "UI", "Usability"]
 				},
 				{
-					"id": "cross-platform-compatibility-support",
-					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#cross-platform-compatibility-support",
-					"guideline": "Cross-platform compatibility support",
+					"id": "provide-cross-platform-compatibility-support",
+					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#provide-cross-platform-compatibility-support",
+					"guideline": "Provide cross-platform compatibility support",
 					"subheading": "Document compatibility, avoid unnecessary obsolescence, and test across devices, systems, and network conditions.",
 					"criteria": [
 						{
@@ -1642,7 +1642,7 @@
 							"description": "Split large or bandwidth-heavy components into smaller modules that load only when needed. Avoid excessive splitting, as it can increase overhead, reduce caching efficiency, and make code harder to maintain.",
 							"resources": [
 								{
-									"Bundling dependancies": "https://e18e.dev/blog/bundling-dependencies",
+									"Bundling dependencies": "https://e18e.dev/blog/bundling-dependencies",
 									"Code-split JavaScript": "https://web.dev/learn/performance/code-split-javascript?hl=en",
 									"Code splitting": "https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting",
 									"Code splitting - What, When and Why": "https://dev.to/thekashey/code-splitting-what-when-and-why-59op",
@@ -1743,7 +1743,7 @@
 					"criteria": [
 						{
 							"title": "Assess and reduce",
-							"description": "Review third-party content and/or services early in the design or ideation process, including plugins, widgets, feeds, maps, carousels, tracking scripts, and similar components. Use as few as possible, preferring lightweight options to reduce overall environmental impact, including GHG Protocol Scope 3 emissions. Ensure third-party providers enforce the same compliance, security, privacy, data retention limits, data deletion policies, and mandatory security update standards as the first party.",
+							"description": "Review third-party content and/or services early in the design or ideation process, including plugins, widgets, feeds, maps, carousels, tracking scripts, and similar components. Use as few as possible, preferring lightweight options to reduce overall environmental impact, including GHG Protocol Scope 3 emissions. Ensure third-party providers enforce the same compliance, security, privacy, data retention limits, data deletion policies, and mandatory security update standards as the first party. Account for long-term dependency risks when selecting third-party services, including data portability and transition options.",
 							"resources": [
 								{
 									"6 steps to reduce the carbon footprint of your website": "https://opensource.com/article/23/3/reduce-carbon-footprint-website",
@@ -2622,7 +2622,7 @@
 						},
 						{
 							"title": "Extensions and plugins",
-							"description": "Review plugins, extensions, and themes regularly to ensure they remain compatible with the platform and other components, efficient, and accessible.",
+							"description": "Review plugins, extensions, and themes regularly to ensure they remain compatible with the platform and other components, are efficient, and accessible.",
 							"resources": [
 								{
 									"AFNOR Spec 5.3.3 & 5.2.2 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
@@ -2662,7 +2662,7 @@
 							"Security": "Maintaining a software product and restricting your use of third-party solutions to the essential will improve overall security."
 						}
 					],
-					"tags": ["Accessibility", "Compatibility", "Ideation", "Performance", "Privacy", "Security", "Software", "Strategy"]
+					"tags": ["Accessibility", "AI", "Compatibility", "Ideation", "Performance", "Privacy", "Security", "Software", "Strategy"]
 				},
 				{
 					"id": "use-the-latest-stable-language-version",
@@ -2706,7 +2706,7 @@
 						{
 							"Economic": "Using the latest and more performant language version can help hosting companies to reduce their costs. That could be beneficial for the company and customers alike.",
 							"Environment": "Using the latest language version can improve efficiency and reduce data center energy consumption. Although do verify that benefits are worthwhile before major build upgrades.",
-							"Performance": "Updating the language version will often offer performance improvements. Compiled languages, such as C or Rust, can have greatly reduced execution times and energy usage for algorthims compared to the same algorithms written in interpreted languages, such as Python or JavaScript.",
+							"Performance": "Updating the language version will often offer performance improvements. Compiled languages, such as C or Rust, can have greatly reduced execution times and energy usage for algorithms compared to the same algorithms written in interpreted languages, such as Python or JavaScript.",
 							"Security": "Maintaining update and upgrade schedules is good for security, allowing you to reduce the risk of security vulnerabilities in older versions."
 						}
 					],
@@ -2785,7 +2785,7 @@
 						{
 							"Economic": "Optimizing the codebase to avoid pushing multiple additional demands to the server reduces bandwidth overheads, while also reducing the risk of stress failures and lost business.",
 							"Environment": "Filtering out unneeded data at a deeper level of the application can reduce energy usage, as it reduces the processing required for (de)serialization.",
-							"Performance": "Holding the data locally rather than remotely eliminates the need to wait for additional requests to process the query. Relational databases and other specialist data stores are usually heavily optimized for data filtering and retrieval. Performing transformations at this level of the application creduces processing time and delivers responses faster."
+							"Performance": "Holding the data locally rather than remotely eliminates the need to wait for additional requests to process the query. Relational databases and other specialist data stores are usually heavily optimized for data filtering and retrieval. Performing transformations at this level of the application reduces processing time and delivers responses faster."
 						}
 					],
 					"example": "$value = get_post_meta( int $post_id, string $key = '', bool $single = false ): mixed",
@@ -2811,7 +2811,7 @@
 								{
 									"#3 Metrics for Datacenter Efficiency: PUE, CUE, and WUE": "https://submer.com/blog/pue-cue-and-wue-what-do-these-three-metrics-represent-and-which-is-one-is-the-most-important/",
 									"A *May* update on the first E.E.D. day in Europe": "https://www.thegreenwebfoundation.org/news/a-may-update-on-the-first-e-e-d-day-in-europe/",
-									"Beyond PUE: Taclking IT's wasted terawatts (PDF)": "https://www.capex.net.co/wp-content/uploads/2020/02/Capex.pdf",
+									"Beyond PUE: Tackling IT's wasted terawatts (PDF)": "https://www.capex.net.co/wp-content/uploads/2020/02/Capex.pdf",
 									"Bridging the Sustainability Gap in Serverless through Observability and Carbon-Aware Pricing (PDF)": "https://hotcarbon.org/assets/2024/pdf/hotcarbon24-final164.pdf",
 									"Cloud PUE: Comparing AWS, Azure and GCP Global Regions": "https://thenewstack.io/cloud-pue-comparing-aws-azure-and-gcp-global-regions/",
 									"Data Centre Energy Use: Critical Review of Models and Results (PDF)": "https://www.iea-4e.org/wp-content/uploads/2025/05/Data-Centre-Energy-Use-Critical-Review-of-Models-and-Results.pdf",
@@ -2819,8 +2819,8 @@
 									"DC2 PARIS - Opcore Datacenter": "https://pue.dc2.opcore.eu/en/",
 									"GPF - General Policy Framework (PDF) - 8.1 - Hosting (Hosting Provider)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.5 - Hosting (Renewable Documentation)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GR491 - 1-8014 - Power Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8014-hosting-the-total-power-consumed-by-the-data",
-									"GR491 - 1-8016 - Water Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8016-hosting-the-total-water-consumed-by-the-data",
+									"GR491 - 1-8014 - Power Usage Effectiveness": "https://gr491.isit-europe.org/en/crit.php?id=1-8014-hosting-the-total-power-consumed-by-the-data",
+									"GR491 - 1-8016 - Water Usage Effectiveness": "https://gr491.isit-europe.org/en/crit.php?id=1-8016-hosting-the-total-water-consumed-by-the-data",
 									"GR491 - 1-8013 - Server Power Efficiency": "https://gr491.isit-europe.org/en/crit.php?id=1-8013-hosting-one-factor-in-reducing-the-hosting-footprint",
 									"Reading grid for environmental commitments of web hosting offers": "https://greenspector.com/en/comparison-of-web-hosting-offers-selected-for-their-environmental-commitments/",
 									"Stratix Rapportage Datacenters Impact en Feiten (PDF)": "https://www.stratix.nl/wp-content/uploads/2023/02/Stratix-Rapport-objectivering-datacenters-2022.pdf",
@@ -3124,7 +3124,7 @@
 					"criteria": [
 						{
 							"title": "Server-side compression",
-							"description": "Reduce file size before uploading images, audio, and video by using efficient formats and quality settings. Avoid applying additional compression if the file is already appropriately sized for upload.",
+							"description": "Use server-side compression settings and tools to compress commonly used file types when appropriate. Ensure that compression reduces energy consumption, minimizes load times, saves bandwidth, and improves overall performance. Do not apply additional compression to files that are already appropriately sized for upload.",
 							"resources": [
 								{
 									"10 Steps to Avoid Enormous Network Payloads": "https://www.debugbear.com/blog/avoid-enormous-network-payloads",
@@ -3311,7 +3311,7 @@
 						},
 						{
 							"title": "Necessary tasks",
-							"description": "Run automated tasks only when they are needed to avoid unnecessary resource use.",
+							"description": "Run automated tasks only when they are needed to avoid unnecessary resource use. Regularly review automated tasks to ensure they remain necessary, efficient, secure, and beneficial.",
 							"resources": [
 								{
 									"AWS WAF - SEC11-BP02 - Automate testing throughout the development and release lifecycle": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_appsec_automate_testing_throughout_lifecycle.html",
@@ -3341,7 +3341,7 @@
 									"GR491 - 3-8028 - Memory Usage": "https://gr491.isit-europe.org/en/crit.php?id=3-8028-hosting-the-management-of-the-consumption-of-physical",
 									"GR491 - 3-8029 - CPU Usage": "https://gr491.isit-europe.org/en/crit.php?id=3-8029-hosting-the-cpu-resources-available-to-virtual-machines",
 									"GR491 - 3-8031 - Unused CPU Cores": "https://gr491.isit-europe.org/en/crit.php?id=3-8031-hosting-hosted-services-do-not-always-have-the",
-									"GR491 - 3-8036 - Provisioning and Deprovisionning": "https://gr491.isit-europe.org/en/crit.php?id=3-8036-hosting-when-hosting-a-service-each-component-part",
+									"GR491 - 3-8036 - Provisioning and Deprovisioning": "https://gr491.isit-europe.org/en/crit.php?id=3-8036-hosting-when-hosting-a-service-each-component-part",
 									"How Green is Your Data Center?": "https://www.readyworks.com/blog/how-green-is-your-data-center-use-automation-to-simplify-esg-reporting",
 									"If only data centers would participate in demand response": "https://davidmytton.blog/if-only-data-centers-would-participate-in-demand-response/",
 									"Load shifting of computing can lower emissions and soak up surplus renewables. Except when it doesn't": "https://watttime.org/news-and-insights/load-shifting-of-computing-can-lower-emissions-and-soak-up-surplus-renewables-except-when-it-doesnt/",
@@ -3351,7 +3351,7 @@
 						},
 						{
 							"title": "Suspicious activity management",
-							"description": "Restrict unwanted and unnecessary third-party crawlers, user agents, bots, and scrapers using security controls, while ensuring content remains accessible to legitimate users, search engines, and helpful or authorized crawlers. Take into account that some scrapers may be used for beneficial purposes, including informing or training large language models.",
+							"description": "Restrict unwanted and unnecessary third-party crawlers, user agents, bots, and scrapers using security controls, while ensuring content remains accessible to legitimate users, search engines, and helpful or authorized crawlers. Take into account that some scrapers may be used for beneficial purposes, or to inform or train large language models.",
 							"resources": [
 								{
 									"63% of Websites Receive AI Traffic": "https://ahrefs.com/blog/ai-traffic-study/",
@@ -3609,8 +3609,8 @@
 									"GPF - General Policy Framework (PDF) - 8.5 - Hosting (Renewable Documentation)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 8.6 - Hosting (Local Datacenters)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 1-8003 - Datacenter Location": "https://gr491.isit-europe.org/en/crit.php?id=1-8003-hosting-data-centers-are-rarely-installed-in-the",
-									"GR491 - 1-8014 - Power Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8014-hosting-the-total-power-consumed-by-the-data",
-									"GR491 - 1-8016 - Water Usage Effectivness": "https://gr491.isit-europe.org/en/crit.php?id=1-8016-hosting-the-total-water-consumed-by-the-data",
+									"GR491 - 1-8014 - Power Usage Effectiveness": "https://gr491.isit-europe.org/en/crit.php?id=1-8014-hosting-the-total-power-consumed-by-the-data",
+									"GR491 - 1-8016 - Water Usage Effectiveness": "https://gr491.isit-europe.org/en/crit.php?id=1-8016-hosting-the-total-water-consumed-by-the-data",
 									"GR491 - 1-8013 - Server Power Efficiency": "https://gr491.isit-europe.org/en/crit.php?id=1-8013-hosting-one-factor-in-reducing-the-hosting-footprint",
 									"GR491 - 1-8017 - Datacenter Best Practices": "https://gr491.isit-europe.org/en/crit.php?id=1-8017-hosting-datacenter-business-give-more-and-more-rules",
 									"GR491 - 2-8020 - Datacenter Hub": "https://gr491.isit-europe.org/en/crit.php?id=2-8020-hosting-physical-trips-to-datacenters-are-by-nature",
@@ -3663,7 +3663,7 @@
 							"description": "Choose CDN providers that demonstrate credible, evidence-based web sustainability commitments.",
 							"resources": [
 								{
-									"Akaimi ESG Sustainability": "https://www.akamai.com/company/corporate-responsibility/sustainability",
+									"Akamai ESG Sustainability": "https://www.akamai.com/company/corporate-responsibility/sustainability",
 									"Carbon accounting in the Cloud (PDF)": "https://arxiv.org/pdf/2406.09645",
 									"Cloudflare Impact Report": "https://www.cloudflare.com/en-gb/impact/",
 									"GPF - General Policy Framework (PDF) - 8.5 - Hosting (Renewable Documentation)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
@@ -3853,7 +3853,7 @@
 					"criteria": [
 						{
 							"title": "Public documents",
-							"description": "Develop, publish, and maintain key organizational policies such as a code of ethics, product guidelines, accessibility, and sustainability statements. Include clear language for digital products, services, and emerging or disruptive technologies, such as AI. Make these policies publicly accessible and keep them versioned for transparency.",
+							"description": "Develop, publish, and maintain key organizational policies such as a code of ethics, product guidelines, cloud sustainability strategy, and accessibility and sustainability statements. Use clear language to describe digital products, services, and emerging or disruptive technologies, such as AI. Make these policies publicly accessible and keep them versioned for transparency.",
 							"resources": [
 								{
 									"#Tech4Bad: When Do We Say No?": "https://branch.climateaction.tech/issues/issue-3/tech4bad-when-do-we-say-no/",
@@ -3981,7 +3981,7 @@
 							"Operations": "Establishing ethical and sustainability policies can help to ensure product teams are more engaged in the work they are doing.",
 							"Privacy": "Reducing your emissions and explaining to your audience how you aim to keep to your sustainability commitments provides the opportunity to highlight other key issues of interest to your users, such as privacy and security. This can boost user trust in your brand.",
 							"Social Equity": "Highlighting intersectional social issues in documentation, storytelling, and marketing materials raises awareness of problems and potential solutions.",
-							"Transparency": "Maintaining clear and public-facing policies helps internal and external affected partys to better understand an organization's sustainability commitments, while making it easier to report on the impact of these efforts."
+							"Transparency": "Maintaining clear and public-facing policies helps internal and external affected parties to better understand an organization's sustainability commitments, while making it easier to report on the impact of these efforts."
 						}
 					],
 					"tags": ["Accessibility", "AI", "Education", "Ideation", "KPIs", "Privacy", "Research", "Security", "Social Equity", "Strategy"]
@@ -4305,7 +4305,7 @@
 									"13 SMART Goals Examples for Environmental Sustainability": "https://successindepth.com/smart-goals-for-sustainability/",
 									"20 Strategies For Balancing Business Sustainability With Profitability": "https://www.forbes.com/councils/forbesbusinesscouncil/2024/08/29/20-strategies-for-balancing-business-sustainability-with-profitability/",
 									"Align business models with sustainability goals": "https://climateproductleaders.org/playbook/discover-mindfully/align-business-models-with-sustainability-goals",
-									"B Corperation Standards": "https://www.bcorporation.net/en-us/standards/",
+									"B Corporation Standards": "https://www.bcorporation.net/en-us/standards/",
 									"Corporate Digital Responsibility": "https://www.sciencedirect.com/science/article/pii/S0148296319305946",
 									"Corporate Digital Responsibility (PDF)": "https://www.strategie-plan.gouv.fr/files/2025-01/fs-2020-corporate-digital-responsibility-juillet.pdf",
 									"Corporate Digital Responsibility Manifesto": "https://corporatedigitalresponsibility.net/cdr-manifesto",
@@ -4363,8 +4363,8 @@
 								{
 									"A Complete Guide to Starting a B Corp": "https://www.uschamber.com/co/start/strategy/b-corp-advantages-and-requirements",
 									"Are My Third Parties Green?": "https://aremythirdpartiesgreen.com/",
-									"B Corperation Certification": "https://www.bcorporation.net/en-us/certification/",
-									"B Corperation Standards": "https://www.bcorporation.net/en-us/standards/",
+									"B Corporation Certification": "https://www.bcorporation.net/en-us/certification/",
+									"B Corporation Standards": "https://www.bcorporation.net/en-us/standards/",
 									"Improving your BIA score": "https://bcorporation.uk/b-corp-certification/the-certification-process/improving-your-score/",
 									"Label numérique responsable (French)": "https://institutnr.org/label-numerique-responsable",
 									"PlanetMark": "https://www.planetmark.com/"
@@ -4501,7 +4501,7 @@
 					],
 					"benefits": [
 						{
-							"Environment": "Business models focused on the customer and the wider ecosystem rather than just financial indicators can benefit the environment such as through reducing overconsumption of resources and disencouraging incentives for unethical behavior, leading to a reduction of emissions.",
+							"Environment": "Business models focused on the customer and the wider ecosystem rather than just financial indicators can benefit the environment such as through reducing overconsumption of resources and discouraging incentives for unethical behavior, leading to a reduction of emissions.",
 							"Social Equity": "Adding social indicators (such as the shared value within digital services) can reduce negative social impacts such as impoverishment or exploitation."
 						}
 					],
@@ -4538,9 +4538,9 @@
 									"Developing Killer Website Maintenance Plans": "https://www.thundertech.com/blog-news/developing-website-maintenance-plans",
 									"Digitalization for sustainable maintenance services": "https://www.sciencedirect.com/science/article/pii/S2666954421000107",
 									"GPF - General Policy Framework (PDF) - 2.6 - Specifications (Design Review)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintainence & Decomissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintenance & Decommissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 3.4 - Architecture (Supplied Updates)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"Hacksplaning": "https://www.hacksplaining.com/lessons",
+									"Hacksplaining": "https://www.hacksplaining.com/lessons",
 									"OWASP Web Application Security Testing Checklist": "https://github.com/0xRadi/OWASP-Web-Checklist",
 									"Web security": "https://developer.mozilla.org/en-US/docs/Web/Security"
 								}
@@ -4585,7 +4585,7 @@
 									"Environmental Sustainability in Business Examples": "https://ecohedge.com/blog/environmental-sustainability-in-business-examples-a-guide/",
 									"GPF - General Policy Framework (PDF) - 1.4 - Strategy (Regular Reviews)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 2.6 - Specifications (Design Review)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintainence & Decomissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintenance & Decommissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 3.4 - Architecture (Supplied Updates)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"Guide To Sustainable Product Design": "https://ecochain.com/blog/guide-to-sustainable-product-design/",
 									"How to measure sustainable performance": "https://sievo.com/blog/sustainable-procurement-part6",
@@ -5502,7 +5502,7 @@
 									"AFNOR Spec 5.2.6 (French)": "https://www.boutique.afnor.org/en-gb/standard/afnor-spec-2201//fa203506/323315",
 									"End of life": "https://sustainabilityguide.eu/ecodesign/end-of-life/",
 									"GPF - General Policy Framework (PDF) - 1.6 - Strategy (Data Collection)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
-									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintainence & Decomissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintenance & Decommissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 7.2 - Back-End (Data Retention)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 4-8048 - End-Of-Life": "https://gr491.isit-europe.org/en/crit.php?id=4-8048-hosting-the-renewal-of-the-technical-park-is",
 									"GreenIT - 0115 - Have an end of life strategy for the website": "https://rweb.greenit.fr/en/fiches/RWEB_0115-have-an-end-of-life-strategy-for-the-website",
@@ -5542,7 +5542,7 @@
 									"Digital and metal study (French) (PDF)": "https://librairie.ademe.fr/economie-circulaire-et-dechets/7713-etude-numerique-et-metaux.html",
 									"Electronics and obsolescence in a circular economy": "https://www.eionet.europa.eu/etcs/etc-wmge/products/etc-wmge-reports/electronics-and-obsolescence-in-a-circular-economy",
 									"Future trends of Green All Optical Networks and ICT Infrastructure in a large context": "https://www.researchgate.net/publication/368690756_Future_trends_of_Green_All_Optical_Networks_and_ICT_Infrastructure_in_a_large_context_-_trends_to_2050",
-									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintainence & Decomissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintenance & Decommissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 1-8006 - Water Recovered Or Recycled": "https://gr491.isit-europe.org/en/crit.php?id=1-8006-hosting-the-treatment-of-waste-generated-by-a",
 									"GR491 - 4-8047 - Repair Over Replace": "https://gr491.isit-europe.org/en/crit.php?id=4-8047-hosting-the-repairability-of-equipment-and-the-effective",
 									"GR491 - 4-8048 - End-Of-Life": "https://gr491.isit-europe.org/en/crit.php?id=4-8048-hosting-the-renewal-of-the-technical-park-is",
@@ -5606,7 +5606,7 @@
 							"resources": [
 								{
 									"Digitization and the Environment": "https://www.societybyte.swiss/en/2020/04/09/digitization-and-the-environment-opportunities-risks-and-the-need-for-action/",
-									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintainence & Decomissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintenance & Decommissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 4-8047 - Repair Over Replace": "https://gr491.isit-europe.org/en/crit.php?id=4-8047-hosting-the-repairability-of-equipment-and-the-effective",
 									"GR491 - 4-8048 - End-Of-Life": "https://gr491.isit-europe.org/en/crit.php?id=4-8048-hosting-the-renewal-of-the-technical-park-is",
 									"The Fight for the Right to Repair Around the World": "https://www.repair.org/world",
@@ -5809,7 +5809,7 @@
 								{
 									"Disaster recovery plan": "https://www.ibm.com/docs/en/i/7.6.0?topic=system-example-disaster-recovery-plan",
 									"Downtime vs slowtime: Which costs you more?": "https://www.speedcurve.com/blog/downtime-vs-slowtime/",
-									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintainence & Decomissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
+									"GPF - General Policy Framework (PDF) - 2.7 - Specifications (Maintenance & Decommissioning)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GPF - General Policy Framework (PDF) - 3.4 - Architecture (Supplied Updates)": "https://www.arcep.fr/uploads/tx_gspublication/general_policy_framework_for_the_ecodesign_of_digital_services_version_2024.pdf",
 									"GR491 - 2-6010 - SLA and QoS": "https://gr491.isit-europe.org/en/crit.php?id=2-6010-architecture-the-state-of-the-art-technology-tends",
 									"How Should Web Designers Deal With Service Outages?": "https://speckyboy.com/web-designers-deal-with-service-outages/",
