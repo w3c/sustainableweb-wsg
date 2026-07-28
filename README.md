@@ -3,194 +3,21 @@ Welcome to the repository of the [Web Sustainability Guidelines (WSG)](https://w
 
 If you would like to learn more about us and how to participate in this project, please check the readme in the [W3C Sustainable Web Interest Group](https://github.com/w3c/sustainableweb-ig) repository.
 
-## Schedule
-<table>
-	<thead>
-		<tr>
-			<th>Date</th>
-			<th>Details</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Jan 15 2026</td>
-			<td>Existing W3C horizontal review updates ready for inclusion in WSG.</td>
-		</tr>
-		<tr>
-			<td>Feb 15 2026</td>
-			<td>Measurability Task Force scoring consensus and Impact API inclusion.</td>
-		</tr>
-		<tr>
-			<td rowspan="2">Mar 15 2026</td>
-			<td>Conformance Task Force review and updates to satisfy regulatory reporting.</td>
-		</tr>
-		<tr>
-			<td>Wide review and other W3C horizontal review updates are ready for inclusion in WSG.</td>
-		</tr>
-		<tr>
-			<td rowspan="2">Apr 15 2026</td>
-			<td>TAG updates ready for inclusion in WSG.</td>
-		</tr>
-		<tr>
-			<td>IG begins work on new charter (6 months planning).</td>
-		</tr>
-		<tr>
-			<td rowspan="2">May 15 2026</td>
-			<td>IG completes initial work on supplements prior to WSG submission.</td>
-		</tr>
-		<tr>
-			<td>IG finalizes workflow changes it can affect, publishing an approach so that other groups can adopt.</td>
-		</tr>
-		<tr>
-			<td rowspan="2">Jun 15 2026</td>
-			<td>WSG is submitted to W3C for NOTE status.</td>
-		</tr>
-		<tr>
-			<td>IG begins discussion of educational materials, outreach, tooling, etc, to broaden awareness.</td>
-		</tr>
-		<tr>
-			<td rowspan="2">Jul 15 2026</td>
-			<td>WSG is readied and submitted for STMT (statement) status (See reminder for Chairs/Editors).</td>
-		</tr>
-		<tr>
-			<td>Agree on finalized charter, submit to strategy team for review (HR / TiLT, etc), then submit to AC.</td>
-		</tr>
-		<tr>
-			<td>Oct 31 2026</td>
-			<td>Our charter ends.</td>
-		</tr>
-	</tbody>
-</table>
-
-**Note:** Horizontal review is ongoing and wide review from external parties have been accepted at all stages of WSGs development.
-
-**Reminder for Chairs/Editors:** 6.4.3 of W3C Process states that during the statement review period, notes must NOT be updated. As editing of any file WILL trigger a new spec release in Echidna (automated publishing), NO merges of PR's / direct edits should be allowed during this phase.
-
-## Statistics
-
- - **71** Guidelines covering UX, Web Development, Infrastructure, and Business/Product Strategy.
- - **196** Success criteria to meet the guidelines on various aspects of sustainability.
- - **138** Advisory Techniques within STAR providing guidance to meet WSG success criteria.
- - **2,500+** Resources (URLs) to reinforce and assist with implementation of WSG guidelines.
- - **500+** pages worth of sustainability material (**100** of which exist within WSG).
- - **50** content filters based upon **4** different sustainability categories.
- - **200+** contributors from over **25** nations around the world.
-
-## Work
-
-The chartered focus of the [W3C Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) is the development of Web Sustainability Guidelines (WSG) and its deliverables.
-
-Links to relevant documents (based on the CG Draft Report) can be found below.
-
-**Guidelines:**
-<table>
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Status</th>
-			<th>Date</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://www.w3.org/TR/web-sustainability-guidelines/">Web Sustainability Guidelines</a> (WSG)</td>
-			<td>W3C Group Note Draft</td>
-			<td>03 Jul 2026</td>
-		</tr>
-	</tbody>
-</table>
-
-**Other Deliverables:**
-<table>
-	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Status</th>
-			<th>Date</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.html">Sustainable Tooling And Reporting</a> (STAR)</td>
-			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
-		</tr>
-		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/resources.html">WSG Resources</a></td>
-			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
-		</tr>
-		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/policies.html">Web Sustainability Laws and Policies</a></td>
-			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
-		</tr>
-		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/impact.html">WSG Impact Measurement</a></td>
-			<td>W3C Editors Draft</td>
-			<td>26 June 2026</td>
-		</tr>
-		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/benefits.html">WSG Benefits</a></td>
-			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
-		</tr>
-		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/glance.html">WSG At A Glance</a></td>
-			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
-		</tr>
-		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/quickref.html">WSG Quick Reference</a></td>
-			<td>W3C Editors Draft</td>
-			<td>03 Jul 2026</td>
-		</tr>
-		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/guidelines.json">WSG JSON API</a></td>
-			<td>JSON API</td>
-			<td>03 Jul 2026</td>
-		</tr>
-		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/impact.json">WSG Impact JSON API</a></td>
-			<td>JSON API</td>
-			<td>03 Jul 2026</td>
-		</tr>
-		<tr>
-			<td><a href="https://w3c.github.io/sustainableweb-wsg/star.json">STAR JSON API</a></td>
-			<td>JSON API</td>
-			<td>03 Jul 2026</td>
-		</tr>
-		<tr>
-			<td><a href="https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite">STAR Test Suite</a></td>
-			<td>Test Suite</td>
-			<td>03 Jul 2026</td>
-		</tr>
-	</tbody>
-</table>
-
 ## Processes
 
 Work is planned in accordance with the [issues](https://github.com/w3c/sustainableweb-wsg/issues) requiring resolution.
 
 If you would like to contribute towards this specification, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) document for details and refer to the guidance on the [W3C Sustainable Web Interest Group](https://github.com/w3c/sustainableweb-ig) repository readme regarding participation.
 
-## JSON APIs
+## JSON API
 
-We have three JSON APIs which are kept in sync with the changes occurring within our [specification](https://w3c.github.io/sustainableweb-wsg/guidelines.json), [impact](https://w3c.github.io/sustainableweb-wsg/impact.json) and [STAR](https://w3c.github.io/sustainableweb-wsg/star.json).
+We have a JSON API which is kept in sync with the changes occurring within our [specification](https://w3c.github.io/sustainableweb-wsg/guidelines.json).
 
-These documents are reachable via GitHub pages and can be queried using JavaScript to embed our data within your client of choice.
+This document is reachable via GitHub pages and can be queried using JavaScript to embed our data within your client of choice.
 
 **WSG** (*guidelines.json*)
 ```js
 category[1].guidelines[0].guideline = "Identify, assess, disclose, review, and mitigate sustainability impacts"
-```
-**WSG Impact** (*impact.json*)
-```js
-category[1].guidelines[0].impactRatings[0].people = "Indeterminate"
-```
-**STAR** (*star.json*)
-```js
-category[1].techniques[0].title = "Produce a List of Factors To Monitor for Sustainability Impacts"
 ```
 
 One method of reaching the API could be through code similar to the below (customize to your requirements):
@@ -201,34 +28,3 @@ fetch("https://w3c.github.io/sustainableweb-wsg/guidelines.json")
   .then((data) => {
     console.log(`The First UX Guideline Title is ${data.category[1].guidelines[0].guideline}`); });
 ```
-
-**Note:** To match a WSG guideline to a STAR technique, you can match the guideline `testable` anchor hash (WSG JSON API) to the technique `id` (STAR JSON API).
-
-## Test Suite
-
-We have a [Test Suite](https://github.com/w3c/sustainableweb-wsg/tree/main/test-suite) which is used to showcase machine testability (as denoted in [STAR](https://w3c.github.io/sustainableweb-wsg/star.html)) for Web Sustainability Guidelines (WSG). The template structure for the file uses common W3C conventions for test cases to maintain interoperability for tooling that wishes to align our work with their own.
-
-Key concepts of note include:
-- Each title element contains a short identifier for the test.
-- The rel="author" link element contains details of who created that test.
-- The rel="help" link element links to the WSG guideline it relates to.
-- The name="flags" meta element identifies any requirements the test may have such as an external file (**asset**), scripting (**JavaScript**), user-involvement (**interaction**), or if it is trying to disprove something (**invalid**).
-- The name="assert" meta tag explains which **STAR** technique it relates to by title.
-- The conditions of passing are what requirements are necessary to pass the technique (and thus the success criteria).
-
-## Resources
-
-Below are some handy links for contributors to our project:
-
- - [Charter Template](https://w3c.github.io/charter-drafts/charter-template.html) ([HTML Source](https://github.com/w3c/charter-drafts/blob/gh-pages/charter-template.html))
- - [How to do Wide Review](https://www.w3.org/Guide/documentreview/)
- - [Policies and legal information](https://www.w3.org/policies/)
- - [Pubrules](https://www.w3.org/pubrules/) ([Documentation](https://www.w3.org/pubrules/doc/))
- - [QA Framework](https://www.w3.org/TR/qaframe-spec/)
- - [Repository Templates](https://github.com/w3c/ash-nazg/tree/master/templates)
- - [ReSpec Documentation](https://respec.org/docs/)
- - [Spec Prod](https://w3c.github.io/spec-prod/) ([Specberus](https://github.com/w3c/specberus) / [Echidna](https://github.com/w3c/echidna/wiki/How-to-use-Echidna) )
- - [TAG Explainers](https://tag.w3.org/explainers/)
- - [The Art of Consensus](https://www.w3.org/Guide/)
- - [W3C Manual of Style](https://www.w3.org/Guide/manual-of-style/)
- - [W3C Process for Busy People](https://github.com/w3c/wg-effectiveness/blob/main/process.md)

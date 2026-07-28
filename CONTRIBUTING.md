@@ -1,6 +1,6 @@
 # Contributing
 
-This repository is managed by the [W3C Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) and is being used to develop content for the [Web Sustainability Guidelines (WSG)](https://w3c.github.io/sustainableweb-wsg/) in addition to other deliverables.
+This repository is managed by the [W3C Sustainable Web Interest Group](https://www.w3.org/groups/ig/sustainableweb/) and is being used to develop content for the [Web Sustainability Guidelines (WSG)](https://www.w3.org/TR/web-sustainability-guidelines/).
 
 Contributions to this repository are intended to become part of Interest Group documents governed by the [Software and Document License](https://www.w3.org/copyright/software-license/). By committing here, you agree to that licensing of your contributions.
 
@@ -8,28 +8,18 @@ Contributions to this repository are intended to become part of Interest Group d
 
 ## Collaboration
 
-We welcome fresh contributions and understand that this may pose difficulties for those either unfamiliar with pull requests (on a technical level) or with collaborative efforts (wishing to discuss progress before submitting results). In such cases, contributors can (if they choose) work with any open format they prefer to collaborate using (referring to the guidelines and its supplements), and submit an issue request containing the URL to the document in question. The editor will work alongside the group chairs to translate these requested updates into the guidelines.
+We welcome contributions and understand that this may pose difficulties for those either unfamiliar with pull requests (on a technical level) or with collaborative efforts (wishing to discuss progress before submitting results). In such cases, contributors can (if they choose) work with open formats they prefer to collaborate using (referring to the guidelines), and submit an issue request containing the URL to the document and section as appropriate. The editor will work alongside the group chairs to translate these requested updates into the guidelines.
 
 > [!CAUTION]
 > While we appreciate that individuals may wish to use AI to assist with their contributions, please consider whether its use is appropriate, and ensure you clearly disclose where AI has been used and to what extent within your contribution.
 
 ## File Structure
 
-The structure of the repository has been created to ensure ease of maintenance. The base directory contains living editions of the [guidelines](https://w3c.github.io/sustainableweb-wsg/), [benefits](https://w3c.github.io/sustainableweb-wsg/benefits.html), [resources](https://w3c.github.io/sustainableweb-wsg/resources.html), [at-a-glance](https://w3c.github.io/sustainableweb-wsg/glance.html), [laws and policies](https://w3c.github.io/sustainableweb-wsg/policies.html), [quick reference](https://w3c.github.io/sustainableweb-wsg/quickref.html), [STAR](https://w3c.github.io/sustainableweb-wsg/star.html), [WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json), [STAR API](https://w3c.github.io/sustainableweb-wsg/star.json), and other deliverables such as our test suite.
+The structure of the repository has been created to ensure ease of maintenance. The base directory contains living editions of the [guidelines](https://www.w3.org/TR/web-sustainability-guidelines/) and [WSG JSON API](https://w3c.github.io/sustainableweb-wsg/guidelines.json).
 
 ```
-/test-suite/		- Test Suite and Assets
-benefits.html		- Benefits
-glance.html		- At-A-Glance
 guidelines.json		- WSG JSON API
 index.html		- WSG Guidelines
-impact.html		- WSG Impact Measurement
-impact.json		- WSG Impact JSON API
-policies.html		- Laws and Policies
-quickref.html		- Quick Reference
-resources.html		- Resources (URLs)
-star.html		- STAR
-star.json		- STAR JSON API
 ```
 
 You will notice duplication within the content of our work (as the JSON APIs for example must reflect the guidelines). This work is not currently auto-generated so while we appreciate it if individuals go to the effort to make adjustments to all affected files as required, time commitments may not allow for everyone to do so. As such, if you can only update a single document, as part of the approval process, a chair or editor will update all necessary documents to ensure parity with your change.
