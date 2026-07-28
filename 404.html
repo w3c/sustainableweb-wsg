@@ -6,7 +6,7 @@
 		<meta name="robots" content="noindex">
 	</head>
 	<body>
-		<p>If you are not redirected automatically, <a id="fallback" href="https://w3c.github.io/sustainableweb-wsg/README.html">click here</a>.</p>
+		<p>If you are not redirected automatically, <a id="fallback" href="https://w3c.github.io/sustainableweb-ig/">click here</a>.</p>
 		<script>
 		(function () {
 			const IG = "https://w3c.github.io/sustainableweb-ig/";
@@ -25,8 +25,8 @@
 			].includes(filename)) { destination = IG + "docs/" + filename; }
 			// 3. -> Files in Impact repository root
 			else if (["impact.html","impact.json"].includes(filename)) { destination = IMPACT + filename; }
-			// 4. Everything else -> WSG README
-			else { destination = WSG + "README.html"; }
+			// 4. Everything else -> IG README
+			else { destination = IG; }
 			// Preserve query string and fragment.
 			destination += window.location.search + window.location.hash;
 			// Update the anchor reference.
