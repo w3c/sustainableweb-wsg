@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Redirecting…</title>
+		<meta name="robots" content="noindex">
+	</head>
+	<body>
+		<p>If you are not redirected automatically, <a id="fallback" href="https://w3c.github.io/sustainableweb-wsg/README.html">click here</a>.</p>
+		<script>
+		(function () {
+			const IG = "https://w3c.github.io/sustainableweb-ig/";
+			const WSG = "https://w3c.github.io/sustainableweb-wsg/";
+			const IMPACT = "https://w3c.github.io/sustainableweb-impact/";
+			// Path relative to the repository root.
+			const pathParts = window.location.pathname.split("/").filter(Boolean);
+			const relativePath = pathParts.slice(1).join("/");
+			const filename = relativePath.split("/").pop();
+			let destination;
+			// 1. HTML files in test-suite/ -> IG/docs/test-suite/
+			if ( relativePath.startsWith("test-suite/") && filename.toLowerCase().endsWith(".html") )
+			{ destination = IG + "docs/test-suite/" + filename; }
+			// 2. -> Files in IG/docs/
+			else if (["benefits.html","glance.html","policies.html","quickref.html","resources.html","star.html","star.json"
+			].includes(filename)) { destination = IG + "docs/" + filename; }
+			// 3. -> Files in Impact repository root
+			else if (["impact.html","impact.json"].includes(filename)) { destination = IMPACT + filename; }
+			// 4. Everything else -> WSG README
+			else { destination = WSG + "README.html"; }
+			// Preserve query string and fragment.
+			destination += window.location.search + window.location.hash;
+			// Update the anchor reference.
+			document.getElementById("fallback").href = destination;
+			// Redirect the page.
+			window.location.replace(destination); })();
+		</script>
+	</body>
+</html>
