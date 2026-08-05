@@ -26,16 +26,16 @@ You will notice duplication within the content of our work (as the JSON APIs for
 
 ## Editorial Best Practices
 
-- Ensure both spelling (US-English) and grammar are correct.
-- Be in the tone for a W3C guideline specification ([Manual of Style](https://www.w3.org/guide/manual-of-style/)), not a strict Working Group REC track document (avoid [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) language).
-- Changes to content must be reflected in all other documents. Consider how changes may impact other repositories.
-- Content must have some web sustainability connection.
+- Ensure correct and consistent US English spelling and grammar.
+- Follow the style and tone of W3C guideline specifications ([Manual of Style](https://www.w3.org/guide/manual-of-style/)), not a Working Group REC track document (avoid [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) language).
+- Changes to content must be reflected across all other affected documents. Consider how changes may impact other repositories.
+- Content must have a clear connection to web sustainability.
 - Guidelines must explain the goals of Success Criteria.
-- Success Criteria must be in active voice.
-- Success Criteria should be as plain English as possible.
-- Success Criteria should be goal orientated, achievable, and (if possible) machine-testable.
-- Updates must aim to keep the context and intent of the original criteria.
-- Code must [validate](https://validator.w3.org/) and comply with [ReSpec](https://respec.org/docs/).
+- Success Criteria must use active voice.
+- Content must be formulated as clearly as possible, following plain language principles.
+- Success Criteria should be goal-oriented, achievable, and ideally machine-testable.
+- Updates must aim to remain consistent with the context and intent of the original criteria.
+- Contributions must pass [validation](https://validator.w3.org/) and comply with [ReSpec](https://respec.org/docs/).
 
 ## Pull Requests
 
