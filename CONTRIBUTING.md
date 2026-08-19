@@ -24,6 +24,19 @@ index.html		- WSG Guidelines
 
 You will notice duplication within the content of our work (as the JSON APIs for example must reflect the guidelines). This work is not currently auto-generated so while we appreciate it if individuals go to the effort to make adjustments to all affected files as required, time commitments may not allow for everyone to do so. As such, if you can only update a single document, as part of the approval process, a chair or editor will update all necessary documents to ensure parity with your change.
 
+## Editorial Best Practices
+
+- Ensure correct and consistent US English spelling and grammar.
+- Follow the style and tone of W3C guideline specifications ([Manual of Style](https://www.w3.org/guide/manual-of-style/)), not a Working Group REC track document (avoid [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) language).
+- Changes to content must be reflected across all other affected documents. Consider how changes may impact other repositories.
+- Content must have a clear connection to web sustainability.
+- Guidelines must explain the goals of Success Criteria.
+- Success Criteria must use active voice.
+- Content must be formulated as clearly as possible, following plain language principles.
+- Success Criteria should be goal-oriented, achievable, and ideally machine-testable.
+- Updates must aim to remain consistent with the context and intent of the original criteria.
+- Contributions must pass [validation](https://validator.w3.org/) and comply with [ReSpec](https://respec.org/docs/).
+
 ## Pull Requests
 
 If you would like to contribute towards the guidelines, our primary method is through Pull Requests (PRs).
