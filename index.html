@@ -67,19 +67,6 @@
 							<dd>
 								<a href="#acknowledgments">See acknowledgments</a>
 							</dd> `); }}); }
-			function editorRef() {
-				/* Editor Resolution */	
-				const ddToRemove = document.querySelector('dd[data-editor-id="49702"]');
-				if (ddToRemove) { ddToRemove.remove(); }
-				document.querySelectorAll('.head dt').forEach(dt => {
-					if (dt.textContent.trim() === 'Editors:') {
-						dt.textContent = "Editor:";
-						const htmlToInsert = `
-						<dt>Lead Editor:</dt>
-						<dd class="editor p-author h-card vcard" data-editor-id="49702">
-								<a class="u-url url p-name fn" href="https://alexanderdawson.com/">Alexander Dawson</a> (<span class="p-org org h-org">Invited Expert</span>)
-						</dd>`;
-						dt.insertAdjacentHTML('beforebegin', htmlToInsert); } } ); }
 		</script>
 		<script>
 			// Role-based Labeling & Filter System: https://github.com/w3c/sustainableweb-wsg/issues/14
@@ -395,7 +382,7 @@
 			noRecTrack: true,
 			shortName: "web-sustainability-guidelines",
 			latestVersion: "https://www.w3.org/TR/web-sustainability-guidelines/",
-			postProcess: [authorRef, editorRef, htmlInsert, addFilter, queryFilter]
+			postProcess: [authorRef, htmlInsert, addFilter, queryFilter]
 		}
 		</script>
 	</head>
