@@ -351,7 +351,7 @@
 						},
 						{
 							"title": "Maintaining compatibility",
-							"description": "Avoid planned obsolescence. Keep compatibility for as long as reasonably possible. Clearly explain whether updates are major changes that may affect performance or smaller updates that fix issues or improve security."
+							"description": "Avoid planned obsolescence. Maintain compatibility for as long as reasonably possible while ensuring components that remain in use continue to meet security and operational requirements. Clearly explain whether updates are major changes that may affect performance or smaller updates that fix issues or improve security."
 						},
 						{
 							"title": "User constraints",
@@ -604,7 +604,7 @@
 						},
 						{
 							"title": "Dependency necessity",
-							"description": "Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations, as this increases vulnerability and can negatively impact sustainability."
+							"description": "Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Maintain an inventory of dependencies, including their sources and versions, and review them regularly for security updates and vulnerabilities. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations without assessing the potential security, maintenance, and lifecycle impacts."
 						},
 						{
 							"title": "Dependency updates",
@@ -644,7 +644,7 @@
 						},
 						{
 							"title": "Optimized methodology",
-							"description": "Use the most performant approach for your use case. Most of the time, coding from scratch can provide the most performant results, but where a well-maintained existing solution is available it may be better optimized than what you can produce yourself. Favor native components and file systems over WYSIWYG editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, and environmental impact of third-party solutions."
+							"description": "Use the most performant and sustainable approach for your use case. Coding from scratch can often reduce environmental impact by avoiding unnecessary tooling, dependencies, and build steps. Where a well-maintained existing solution is available, evaluate whether it provides better performance, maintenance, and sustainability outcomes than a custom implementation. Do not replace established and trusted security-sensitive components with custom implementations unless the security, maintenance, and lifecycle impacts have been assessed. Favor native components and file systems over WYSIWYG editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, security, and environmental impact of third-party solutions."
 						},
 						{
 							"title": "Static over dynamic",
@@ -685,20 +685,20 @@
 					"subheading": "Optimize database use by minimizing and scoping queries, reducing repeated requests, and applying data governance practices.",
 					"criteria": [
 						{
-							"title": "Database queries",
+							"title": "Efficient database querying",
 							"description": "Optimize database queries to reduce load by retrieving required data in as few queries as possible, and by applying filtering and selection at the database level rather than in application or ORM code, especially for frequently accessed data."
 						},
 						{
-							"title": "Database queries",
+							"title": "Reuse of retrieved data",
 							"description": "Retrieve data only once per request or process and reuse it locally instead of repeating database queries."
 						},
 						{
-							"title": "Database queries",
+							"title": "Data minimization in queries",
 							"description": "Scope database queries to return only the fields and records that are required."
 						},
 						{
-							"title": "Database queries",
-							"description": "Apply data lifecycle and governance controls such as Time-to-Live (TTL), use of non-sensitive identifiers like UUIDs, de-identification, and minimization of stored data in line with purpose limitation principles."
+							"title": "Data lifecycle controls",
+							"description": "Apply data lifecycle and governance controls such as Time-to-Live (TTL), use of non-sensitive identifiers, de-identification, and minimization of stored data in line with purpose limitation principles."
 						}
 					],
 					"example": "$value = get_post_meta( int $post_id, string $key = '', bool $single = false ): mixed",
@@ -751,8 +751,12 @@
 					"subheading": "Use caching and offline capabilities to reduce network load, improve resilience, and balance performance with sustainability.",
 					"criteria": [
 						{
-							"title": "Caching resources",
-							"description": "Use caching to reduce processing time and repeated database queries, API calls, and network requests. Apply server-side caching for dynamic content and client-side caching for resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and minimize repeated requests for frequently used resources, balancing against added complexity and maintenance costs to improve how data is delivered."
+							"title": "Client-side caching",
+							"description": "Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behavior using both initial and repeat visits to ensure expected resources are being reused and behaving as expected."
+						},
+						{
+							"title": "Server-side caching",
+							"description": "Use server-side caching to reduce processing time and resource use. Apply caching at necessary layers of the delivery stack, including application, server, and edge caching where applicable. Ensure cached content is invalidated and/or refreshed when the underlying content changes. Where cached copies depend on user authorization, ensure cached copies are accessible only to authorized users and only while the applicable authorization state permits access. Balance efficiency gains against added complexity, maintenance requirements, and resource use."
 						},
 						{
 							"title": "Offline access",
@@ -760,7 +764,7 @@
 						}
 					],
 					"example": "<IfModule mod_expires.c>\r\n\tExpiresActive on\r\n\t# Default: Fallback\r\n\tExpiresDefault                                      \"access plus 1 year\"\r\n\t# Specific: Assets\r\n\tExpiresByType image\/x-icon                          \"access plus 1 week\"\r\n\tExpiresByType application\/rss+xml                   \"access plus 1 hour\"\r\n\tExpiresByType application\/json                      \"access\"\r\n<\/IfModule>",
-					"tags": ["Accessibility", "Assets", "HTML", "JavaScript", "Networking", "Performance", "Software"]
+					"tags": ["Accessibility", "Assets", "HTML", "JavaScript", "Networking", "Performance", "Security", "Software"]
 				},
 				{
 					"id": "reduce-data-transfer-with-compression",
@@ -788,15 +792,15 @@
 					"criteria": [
 						{
 							"title": "Error pages",
-							"description": "Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content."
+							"description": "Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content. Provide enough information to support users without exposing sensitive information, internal system details, or security-sensitive details."
 						},
 						{
 							"title": "Redirection",
-							"description": "Update broken and outdated links if they are no longer valid. Use redirects only when they clearly benefit users or preserve SEO value, and avoid long or unnecessary redirect chains. Apply proportionality so engineering and maintenance costs do not outweigh performance or SEO gains. Test redirects to prevent errors and loops, and choose the simplest effective approach."
+							"description": "Update broken and outdated internal and external links if they are no longer valid. Use redirects only when they benefit users or preserve SEO value, and avoid long or unnecessary redirect chains. Validate redirect destinations to prevent unsafe redirects and unintended access. Apply proportionality so engineering and maintenance costs do not outweigh performance or SEO gains. Test redirects to prevent errors and loops, and choose the simplest effective approach."
 						}
 					],
 					"example": "ErrorDocument 404 /404.html",
-					"tags": ["Accessibility", "Compatibility", "Content", "Marketing", "Networking", "UI", "Usability"]
+					"tags": ["Accessibility", "Compatibility", "Content", "Marketing", "Networking", "Security", "UI", "Usability"]
 				},
 				{
 					"id": "avoid-maintaining-unnecessary-virtualized-environments-or-containers",
@@ -809,7 +813,7 @@
 							"description": "Reduce the number of active environments by deactivating, offlining, or removing unused or redundant virtual and physical environments (e.g., containers and virtual machines) wherever this can be done without reducing required security, isolation, or compliance guarantees. Optimize active environments by tailoring resource allocations to actual workload demand, sharing common services, and eliminating duplicate tasks while maintaining necessary isolation."
 						}
 					],
-					"tags": ["AI", "Hardware", "Networking", "Performance", "Software"]
+					"tags": ["AI", "Hardware", "Networking", "Performance", "Security", "Software"]
 				},
 				{
 					"id": "use-automation-wisely",
@@ -889,7 +893,7 @@
 							"description": "Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources."
 						}
 					],
-					"tags": ["AI", "JavaScript", "Networking", "Performance"]
+					"tags": ["AI", "JavaScript", "Networking", "Performance", "Security"]
 				},
 				{
 					"id": "use-content-delivery-networks-cdns-when-beneficial",
@@ -910,7 +914,7 @@
 							"description": "Avoid deploying dynamic or frequently changing resources to a CDN, as browser mechanisms like cache partitioning and cross-origin resource sharing (CORS) can limit caching benefits and interaction performance, reducing resource efficiency, while workarounds may introduce security or privacy risks."
 						}
 					],
-					"tags": ["Accessibility", "AI", "Content", "Hardware", "Networking", "Performance"]
+					"tags": ["Accessibility", "AI", "Content", "Hardware", "Networking", "Performance", "Security"]
 				},
 				{
 					"id": "ensure-infrastructure-fits-project-requirements",
@@ -920,10 +924,10 @@
 					"criteria": [
 						{
 							"title": "Lowest requirements",
-							"description": "Select infrastructure that meets your requirements and customer agreements without over-provisioning. Favor standalone instances over multi-zone or distributed setups when requirements allow. Provision for average loads rather than peak loads to ensure efficient resource use."
+							"description": "Select infrastructure that meets your requirements and customer agreements without unnecessary over-provisioning. Favor simpler infrastructure configurations over more complex or distributed setups when availability, recovery, and security requirements allow. Provision capacity based on expected demand while continuing to meet the availability, recovery, security, and resilience requirements of the service."
 						}
 					],
-					"tags": ["E-Waste", "Hardware", "Performance"]
+					"tags": ["E-Waste", "Hardware", "Performance", "Security"]
 				},
 				{
 					"id": "store-data-according-to-the-needs-of-your-users",
@@ -1214,10 +1218,10 @@
 						},
 						{
 							"title": "Obstacle consideration",
-							"description": "Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers."
+							"description": "Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers. Reducing friction or simplification of user journeys must not result in the removal or weakening of necessary security or safety measures, or the introduction or increase of security or safety risks, particularly in relation to user verification and authentication mechanisms."
 						}
 					],
-					"tags": ["Accessibility", "AI", "E-Waste", "Ideation", "Reporting", "Software"]
+					"tags": ["Accessibility", "AI", "E-Waste", "Ideation", "Reporting", "Security", "Software"]
 				},
 				{
 					"id": "provide-a-supplier-standards-of-practice-document",
@@ -1340,7 +1344,7 @@
 						},
 						{
 							"title": "Quantum resilience",
-							"description": "Use post-quantum encryption only where there is a clear need to protect against “harvest now, decrypt later” attacks and long-term data confidentiality risks. Treat it as supplementary to rather than replacing existing encryption methods, using both during any transition. Apply caution when adopting post-quantum encryption in high-traffic services, as the bandwidth consumption, processing demand, design complexity, and migration risks may outweigh the security benefits."
+							"description": "Adopt post-quantum encryption where there is a clear need to protect against \"harvest now, decrypt later\" attacks and long-term data confidentiality risks. Assess the need based on data sensitivity, data lifetime, cryptographic dependencies, and migration requirements. Plan transitions so that cryptographic mechanisms can be updated over time while maintaining compatibility and reducing unnecessary migration impacts.Balance protection needs against resource use, processing demands, and operational complexity while meeting applicable security requirements."
 						}
 					],
 					"tags": ["Accessibility", "AI", "Content", "E-Waste", "Governance", "Hardware", "Networking", "Performance", "Privacy", "Security", "Social Equity", "Software"]
@@ -1468,7 +1472,7 @@
 					"criteria": [
 						{
 							"title": "Plan of action",
-							"description": "Create, maintain, regularly review, and test incident response plans to determine readiness and ensure systems and services can quickly recover from any incident."
+							"description": "Create, maintain, regularly review, and test incident response plans to determine readiness and ensure systems and services can quickly recover from incidents. Use outcomes from incidents and reviews, including identified residual risks, to improve future responses, and inform decisions around the continued operation, migration, or decommissioning of systems and services."
 						},
 						{
 							"title": "Audience awareness",
