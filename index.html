@@ -448,28 +448,42 @@
 			</section>
 			<section> <!-- Conformance -->
 				<h3>Conformance</h3>
-				<p class="ednote">The information in this section is a work in progress and is subject to change</p>
+				<p class="ednote">The information in this section is a work in progress and is subject to change.</p>
 				<p>This section defines requirements for conformance to WSG, including optional conformance claims and guidance to avoid greenwashing.</p>
 				<section> <!-- Requirements -->
 					<h4>Requirements</h4>
-					<p>Conformance to WSG, either partially or in full, means a specific set of WSG criteria is fulfilled. Conformance with WSG can be established for success criteria, guidelines, sections (role-based), or the entire specification.</p>
-					<h5 class="notoc">Partial conformance on the success criterion level</h5>
+					<p>Conformance to WSG means meeting defined success criteria and guidelines and demonstrating continuous, evidence-based improvement against the specification. Conformance can be established at the success criterion or guideline level. Overall WSG conformance is achieved when the applicable conformance threshold, detailed in 1.4.3, is met.</p>
+					<h5 class="notoc">Conformance at the success criterion level</h5>
 					<p>A digital product or service conforms to a specific success criterion when it meets the requirements in that success criterion.</p>
-					<h5 class="notoc">Partial conformance on the guideline level</h5>
-					<p>A digital product or service conforms to an individual guideline when it meets all of the success criteria in that guideline. If a success criterion cannot be applied, it does not affect conformance of that guideline.</p>
 					<p class="note">A success criterion may not be applicable. For example, if a product or service does not provide video content, then any success criterion for video would not be applicable to the product or service.</p>
+					<h5 class="notoc">Conformance at the guideline level</h5>
+					<p>A digital product or service conforms to an individual guideline when it meets all of the success criteria in that guideline. If a success criterion cannot be applied, it does not affect conformance of that guideline.</p>
 					<h5 class="notoc">Partial conformance on the section level</h5>
-					<p>Section-level (role-based) conformance can be achieved by conforming to all guidelines within one section. For example, if all guidelines in the Web Development section are met, the website or organization is considered partially conformant for that section.</p>
+					<p>Section-level (role-based) conformance can be achieved when the applicable conformance threshold is met within one section. For example, if an organization meets the conformance threshold for the applicable requirements in the Web Development section, the website or organization is considered partially conformant for that section.</p>
 					<p class="overflowFix">These are called:</p>
 					<ul>
-						<li>Partially conformant: User Experience</li>
+						<li>Partially conformant: User Experience Design</li>
 						<li>Partially conformant: Web Development</li>
-						<li>Partially conformant: Hosting and Infrastructure</li>
-						<li>Partially conformant: Business and Product</li>
+						<li>Partially conformant: Hosting, Infrastructure, and Systems</li>
+						<li>Partially conformant: Business Strategy and Product Management</li>
 					</ul>
-					<h5 class="notoc overflowFix">Full conformance</h5>
-					<p>A digital product or service fully conforms to WSG when it meets all success criteria across all guidelines.</p>
-					<p class="note">Full conformance may not be achievable for all products or services. Pragmatism and progress over perfection should be considered paramount when implementing and following these guidelines.</p>
+				</section>
+				<section> <!-- Continuous improvement -->
+					<h4>Continuous improvement</h4>
+					<p><strong>Partial conformance</strong> is the state in which an organization demonstrates continuous, evidence-based improvement against WSG but has not yet reached the conformance threshold as denoted in 1.4.3.</p>
+					<p>Continuous improvement means making evidence-based and transparently reported progress in meeting WSG success criteria and guidelines over successive reporting periods. Progress should be measured against a defined baseline and validated at regular intervals, with the expectation of measurable improvement from one reporting period to the next.</p>
+					<p>An organization demonstrating continuous improvement against WSG may claim <strong>Partial Conformance</strong> where it meets the applicable requirements for that claim.</p>
+					<p>Continuous improvement does not mean that every reporting period must result in every individual success criterion or guideline being met. Progress may occur through addressing additional success criteria, completing additional guidelines, or improving performance against previously addressed criteria.</p>
+				</section>
+				<section> <!-- Conformance threshold -->
+					<h4>Conformance threshold</h4>
+					<p><strong>WSG conformance</strong> is achieved when an organization meets or exceeds the conformance threshold for the applicable requirements. The same threshold applies to section-level conformance, based on the applicable requirements within that section.</p>
+					<p>The conformance threshold provides a defined boundary for making a WSG conformance claim without requiring every criterion in the specification to be met.</p>
+					<p>The threshold is <strong>80% of applicable WSG success criteria</strong>, whether calculated across the WSG as a whole or within an individual section.</p>
+					<p>For the purposes of a WSG conformance claim, the percentage of conformance is calculated from the applicable success criteria within the scope of the assessment. Where a section-level conformance claim is made, the percentage is calculated from the applicable success criteria within that section.</p>
+					<p>Section-level conformance percentages are calculated independently for each section. Meeting the conformance threshold for one section does not contribute to or establish conformance for another section, and section-level conformance does not by itself establish overall WSG conformance.</p>
+					<p>Success criteria that are demonstrably not applicable to the product or service may be excluded from the calculation. All exclusions must be documented and supported by evidence. You may not arbitrarily exclude success criteria simply to improve your rating.</p>
+					<p>The WSG specification may revise this threshold as implementation experience and evidence become available.</p>
 				</section>
 				<section> <!-- Claims -->
 					<h4>Claims</h4>
@@ -477,13 +491,17 @@
 					<ol>
 						<li><strong>Date</strong> of the claim.</li>
 						<li><strong>Guidelines title and <abbr title="Uniform Resource Locator">URI</abbr>:</strong> "Web Sustainability Guidelines at <a href="https://www.w3.org/TR/web-sustainability-guidelines/">https://www.w3.org/TR/web-sustainability-guidelines/</a>".</li>
-						<li><strong>Conformance details:</strong> A list of the success criteria, guidelines and/or sections in WSG that are met.</li>
+						<li><strong>Conformance details:</strong> a list of the success criteria and/or guidelines in WSG that are met, including the section(s) to which any conformance claim applies.</li>
+						<li>The applicable WSG conformance percentage and the basis on which it was calculated, including whether the percentage applies to WSG as a whole or to an individual section.</li>
 					</ol>
+					<p>Conformance claims <strong>must</strong> be supported by sufficient evidence to demonstrate that the claimed success criteria and/or guidelines have been met. Evidence <strong>should</strong> be appropriate to the nature of the claim and available for verification.</p>
 					<p>Implementers can conform to WSG <strong>without</strong> making a claim.</p>
 					<p>In addition to the conformance claim itself, it can be helpful to include:</p>
 					<ul>
 						<li>A <strong>statement of intent</strong> of which standards and regulations you commit to complying with.</li>
-						<li>Additional information is provided to assist users, including <strong>steps taken beyond this specification</strong> to improve web sustainability and metrics <strong>showing the impact</strong> of changes, <strong>with dates or time periods</strong> for any supporting data clearly stated.</li>
+						<li>Additional information to assist users, including <strong>steps taken beyond this specification</strong> to improve web sustainability.</li>
+						<li>Metrics <strong>showing the impact</strong> of changes, with <strong>dates or time periods</strong> for any supporting data clearly stated.</li>
+						<li><strong>Evidence demonstrating progress</strong> against the organization's defined baseline and reporting periods.</li>
 					</ul>
 					<div class="note">
 						<p>Recording claims and supporting evidence in a sustainability statement can help demonstrate compliance with reduction targets, internal scope accounting, or regulations.</p>
