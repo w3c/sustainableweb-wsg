@@ -1,7 +1,7 @@
 {
 	"title": "Web Sustainability Guidelines",
 	"edition": "Group Note Draft",
-	"lastModified": "2026-07-28",
+	"lastModified": "2026-08-25",
 	"category": [
 		{
 			"id": "1",
@@ -445,7 +445,7 @@
 							"id": "maintaining-compatibility",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#maintaining-compatibility",
 							"title": "Maintaining compatibility",
-							"description": "Avoid planned obsolescence. Keep compatibility for as long as reasonably possible. Clearly explain whether updates are major changes that may affect performance or smaller updates that fix issues or improve security."
+							"description": "Avoid planned obsolescence. Maintain compatibility for as long as reasonably possible while ensuring components that remain in use continue to meet security and operational requirements. Clearly explain whether updates are major changes that may affect performance or smaller updates that fix issues or improve security."
 						},
 						{
 							"id": "user-constraints",
@@ -603,8 +603,8 @@
 							"description": "Remove optional HTML elements, attribute quotes, and default attributes if doing so does not negatively impact accessibility, readability, functionality, or performance. Include them when they improve accessibility, maintain clarity without compromising performance, or ensure consistent browser rendering."
 						},
 						{
-							"id": "non-standard-code",
-							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#non-standard-code",
+							"id": "avoid-non-standard-code",
+							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-non-standard-code",
 							"title": "Avoid non-standard code",
 							"description": "Avoid deprecated, proprietary, or non-standard technologies unless there is a clear, justified need such as legacy compatibility or accessibility. Use polyfills only when necessary and review them regularly for removal."
 						},
@@ -762,7 +762,7 @@
 							"id": "dependency-necessity",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#dependency-necessity",
 							"title": "Dependency necessity",
-							"description": "Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations, as this increases vulnerability and can negatively impact sustainability."
+							"description": "Limit the use of external libraries and frameworks to what is necessary, as this reduces the amount of code that must be downloaded and parsed by the browser. Maintain an inventory of dependencies, including their sources and versions, and review them regularly for security updates and vulnerabilities. Prioritize plain code where possible. Review package size and evaluate whether individual modules can be imported instead of entire libraries, or whether a more performant alternative can be used. Do not replace established and trusted security libraries with custom implementations unless the custom implementation offers equivalent security assurance and ongoing maintenance and support."
 						},
 						{
 							"id": "dependency-updates",
@@ -812,7 +812,7 @@
 							"id": "optimized-methodology",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#optimized-methodology",
 							"title": "Optimized methodology",
-							"description": "Use the most performant approach for your use case. Most of the time, coding from scratch can provide the most performant results, but where a well-maintained existing solution is available it may be better optimized than what you can produce yourself. Favor native components and file systems over WYSIWYG editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, and environmental impact of third-party solutions."
+							"description": "Coding from scratch can reduce environmental impact by avoiding unnecessary tooling, dependencies, and build steps. Where a well-maintained existing solution is available, evaluate whether it provides better performance, maintenance, and sustainability outcomes than a custom implementation. Do not replace established and trusted security-sensitive components with custom implementations unless the custom implementation offers equivalent security assurance and ongoing maintenance and support. Favor native components and file systems over WYSIWYG editors, visual page builders, or heavy frameworks. Be mindful of the performance, maintenance, security, and environmental impact of third-party solutions."
 						},
 						{
 							"id": "static-over-dynamic",
@@ -851,7 +851,7 @@
 							"id": "language-choice",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#language-choice",
 							"title": "Language choice",
-							"description": "Use the best programming language for the task, recognizing that many tools and languages are optimized for specific types of work. Adoption effort is justified where benefits outweigh costs and there is a reasonable user base, provided it does not impact the wellbeing of those involved or become cost-prohibitive."
+							"description": "Use the best programming language for the task, recognizing that many tools and languages are optimized for specific types of work. Adoption effort is justified where benefits outweigh costs and there is a reasonable user base, provided it does not impact the well-being of those involved or become cost-prohibitive."
 						}
 					],
 					"tags": ["Accessibility", "Compatibility", "Performance", "Security"]
@@ -865,26 +865,26 @@
 						{
 							"id": "efficient-database-querying",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#efficient-database-querying",
-							"title": "Database queries",
+							"title": "Efficient database querying",
 							"description": "Optimize database queries to reduce load by retrieving required data in as few queries as possible, and by applying filtering and selection at the database level rather than in application or ORM code, especially for frequently accessed data."
 						},
 						{
 							"id": "reuse-of-retrieved-data",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#reuse-of-retrieved-data",
-							"title": "Database queries",
+							"title": "Reuse of retrieved data",
 							"description": "Retrieve data only once per request or process and reuse it locally instead of repeating database queries."
 						},
 						{
 							"id": "data-minimization-in-queries",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#data-minimization-in-queries",
-							"title": "Database queries",
+							"title": "Data minimization in queries",
 							"description": "Scope database queries to return only the fields and records that are required."
 						},
 						{
 							"id": "data-lifecycle-controls",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#data-lifecycle-controls",
-							"title": "Database queries",
-							"description": "Apply data lifecycle and governance controls such as Time-to-Live (TTL), use of non-sensitive identifiers like UUIDs, de-identification, and minimization of stored data in line with purpose limitation principles."
+							"title": "Data lifecycle controls",
+							"description": "Apply data lifecycle and governance controls such as Time-to-Live (TTL), use of non-sensitive identifiers, de-identification, and minimization of stored data in line with purpose limitation principles."
 						}
 					],
 					"example": "$value = get_post_meta( int $post_id, string $key = '', bool $single = false ): mixed",
@@ -949,10 +949,16 @@
 					"subheading": "Use caching and offline capabilities to reduce network load, improve resilience, and balance performance with sustainability.",
 					"criteria": [
 						{
-							"id": "caching-resources",
-							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#caching-resources",
-							"title": "Caching resources",
-							"description": "Use caching to reduce processing time and repeated database queries, API calls, and network requests. Apply server-side caching for dynamic content and client-side caching for resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and minimize repeated requests for frequently used resources, balancing against added complexity and maintenance costs to improve how data is delivered."
+							"id": "client-side-caching",
+							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#client-side-caching",
+							"title": "Client-side caching",
+							"description": "Use client-side caching to reduce repeated downloads of resources that do not change frequently. Control cache lifetimes, serve static versions for stable assets, and use cache-friendly approaches such as versioned filenames for resources that change over time. Maximize caching opportunities for frequently used resources. Verify caching behavior using both initial and repeat visits to ensure that resources are reused where intended without causing stale or inconsistent content or broken functionality. Ensure any content with authorization-based access restrictions does not remain accessible after logout or when the authorization state changes."
+						},
+						{
+							"id": "server-side-caching",
+							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#server-side-caching",
+							"title": "Server-side caching",
+							"description": "Use server-side caching to reduce processing time and resource use. Apply caching at delivery-stack layers where it provides a clear benefit, balancing performance gains against the overhead and complexity of maintaining cached content. Ensure cached content is invalidated and/or refreshed when the underlying content changes. Where cached copies depend on user authorization, ensure cached copies are accessible only to authorized users and only while the applicable authorization state permits access. Balance efficiency gains against added complexity, maintenance requirements, and resource use."
 						},
 						{
 							"id": "offline-access",
@@ -962,7 +968,7 @@
 						}
 					],
 					"example": "<IfModule mod_expires.c>\r\n\tExpiresActive on\r\n\t# Default: Fallback\r\n\tExpiresDefault                                      \"access plus 1 year\"\r\n\t# Specific: Assets\r\n\tExpiresByType image\/x-icon                          \"access plus 1 week\"\r\n\tExpiresByType application\/rss+xml                   \"access plus 1 hour\"\r\n\tExpiresByType application\/json                      \"access\"\r\n<\/IfModule>",
-					"tags": ["Accessibility", "Assets", "HTML", "JavaScript", "Networking", "Performance", "Software"]
+					"tags": ["Accessibility", "Assets", "HTML", "JavaScript", "Networking", "Performance", "Security", "Software"]
 				},
 				{
 					"id": "reduce-data-transfer-with-compression",
@@ -996,17 +1002,17 @@
 							"id": "error-pages",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#error-pages",
 							"title": "Error pages",
-							"description": "Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content."
+							"description": "Implement clear error handling and user-friendly error pages that explain what went wrong and guide users back to content. Provide only the information necessary to support users without exposing sensitive information, internal system details, or security-sensitive details."
 						},
 						{
 							"id": "redirection",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#redirection",
 							"title": "Redirection",
-							"description": "Update broken and outdated links if they are no longer valid. Use redirects only when they clearly benefit users or preserve SEO value, and avoid long or unnecessary redirect chains. Apply proportionality so engineering and maintenance costs do not outweigh performance or SEO gains. Test redirects to prevent errors and loops, and choose the simplest effective approach."
+							"description": "Update broken and outdated internal and external links if they are no longer valid. Use redirects only when they benefit users or preserve SEO value, and avoid long or unnecessary redirect chains. Validate redirect destinations to prevent unsafe redirects and unintended access. Apply proportionality so engineering and maintenance costs do not outweigh performance or SEO gains. Test redirects to prevent errors and loops, and choose the simplest effective approach."
 						}
 					],
 					"example": "ErrorDocument 404 /404.html",
-					"tags": ["Accessibility", "Compatibility", "Content", "Marketing", "Networking", "UI", "Usability"]
+					"tags": ["Accessibility", "Compatibility", "Content", "Marketing", "Networking", "Security", "UI", "Usability"]
 				},
 				{
 					"id": "avoid-maintaining-unnecessary-virtualized-environments-or-containers",
@@ -1021,7 +1027,7 @@
 							"description": "Reduce the number of active environments by deactivating, offlining, or removing unused or redundant virtual and physical environments (e.g., containers and virtual machines) wherever this can be done without reducing required security, isolation, or compliance guarantees. Optimize active environments by tailoring resource allocations to actual workload demand, sharing common services, and eliminating duplicate tasks while maintaining necessary isolation."
 						}
 					],
-					"tags": ["AI", "Hardware", "Networking", "Performance", "Software"]
+					"tags": ["AI", "Hardware", "Networking", "Performance", "Security", "Software"]
 				},
 				{
 					"id": "use-automation-wisely",
@@ -1123,7 +1129,7 @@
 							"description": "Perform data transformations, transfers, and processing between the layers of an application as close to the source as possible. This reduces unnecessary serialization overhead and avoids wasting resources."
 						}
 					],
-					"tags": ["AI", "JavaScript", "Networking", "Performance"]
+					"tags": ["AI", "JavaScript", "Networking", "Performance", "Security"]
 				},
 				{
 					"id": "use-content-delivery-networks-cdns-when-beneficial",
@@ -1150,7 +1156,7 @@
 							"description": "Avoid deploying dynamic or frequently changing resources to a CDN, as browser mechanisms like cache partitioning and cross-origin resource sharing (CORS) can limit caching benefits and interaction performance, reducing resource efficiency, while workarounds may introduce security or privacy risks."
 						}
 					],
-					"tags": ["Accessibility", "AI", "Content", "Hardware", "Networking", "Performance"]
+					"tags": ["Accessibility", "AI", "Content", "Hardware", "Networking", "Performance", "Security"]
 				},
 				{
 					"id": "ensure-infrastructure-fits-project-requirements",
@@ -1162,10 +1168,10 @@
 							"id": "lowest-requirements",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#lowest-requirements",
 							"title": "Lowest requirements",
-							"description": "Select infrastructure that meets your requirements and customer agreements without over-provisioning. Favor standalone instances over multi-zone or distributed setups when requirements allow. Provision for average loads rather than peak loads to ensure efficient resource use."
+							"description": "Select infrastructure that meets your requirements and customer agreements without unnecessary over-provisioning. Provision capacity based on expected demand, with allowances for exceptional and hostile demand, while simultaneously ensuring all availability, recovery, security, and resilience requirements can be met."
 						}
 					],
-					"tags": ["E-Waste", "Hardware", "Performance"]
+					"tags": ["E-Waste", "Hardware", "Performance", "Security"]
 				},
 				{
 					"id": "store-data-according-to-the-needs-of-your-users",
@@ -1210,7 +1216,7 @@
 		},
 		{
 			"id": "5",
-			"name": "Business Strategy And Product Management",
+			"name": "Business Strategy and Product Management",
 			"shortName": "Business and Product",
 			"guidelines": [
 				{
@@ -1536,10 +1542,10 @@
 							"id": "obstacle-consideration",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#obstacle-consideration",
 							"title": "Obstacle consideration",
-							"description": "Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers."
+							"description": "Remove or reduce barriers that prevent people from using a product or service, including accessibility, technical, geographic, and fairness-related barriers, without weakening necessary security, safety, or authentication measures."
 						}
 					],
-					"tags": ["Accessibility", "AI", "E-Waste", "Ideation", "Reporting", "Software"]
+					"tags": ["Accessibility", "AI", "E-Waste", "Ideation", "Reporting", "Security", "Software"]
 				},
 				{
 					"id": "provide-a-supplier-standards-of-practice-document",
@@ -1581,9 +1587,9 @@
 							"description": "Publicly commit to paying employees, contractors, and other affected parties a living wage."
 						},
 						{
-							"id": "incentivisation",
-							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#incentivisation",
-							"title": "Incentivisation",
+							"id": "incentivization",
+							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#incentivization",
+							"title": "Incentivization",
 							"description": "Embed incentives for affected parties such as workers and contractors into organizational practices to support impact goals, underpinned by clear policies that guide how incentives are designed and applied."
 						},
 						{
@@ -1698,7 +1704,7 @@
 							"id": "quantum-resilience",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#quantum-resilience",
 							"title": "Quantum resilience",
-							"description": "Use post-quantum encryption only where there is a clear need to protect against “harvest now, decrypt later” attacks and long-term data confidentiality risks. Treat it as supplementary to rather than replacing existing encryption methods, using both during any transition. Apply caution when adopting post-quantum encryption in high-traffic services, as the bandwidth consumption, processing demand, design complexity, and migration risks may outweigh the security benefits."
+							"description": "Assess the need for post-quantum cryptography based on data sensitivity, data lifetime, cryptographic dependencies, and migration requirements. Treat it as supplementary to rather than replacing existing encryption methods, using both during any transition. Apply caution when adopting post-quantum cryptography in high-traffic services, as the bandwidth consumption, processing demand, design complexity, and migration risks may outweigh the security benefits. Balance these considerations against the security benefits of post-quantum cryptography."
 						}
 					],
 					"tags": ["Accessibility", "AI", "Content", "E-Waste", "Governance", "Hardware", "Networking", "Performance", "Privacy", "Security", "Social Equity", "Software"]
@@ -1815,7 +1821,7 @@
 							"id": "human-budget",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#human-budget",
 							"title": "Human budget",
-							"description": "Define KPIs for engineering effort, development time, or sprints. Optimize workflows sustainably so work is done with care, while prioritizing worker health, wellbeing, and sustainable workloads."
+							"description": "Define KPIs for engineering effort, development time, or sprints. Optimize workflows sustainably so work is done with care, while prioritizing worker health, well-being, and sustainable workloads."
 						},
 						{
 							"id": "measurable-improvements",
@@ -1858,7 +1864,7 @@
 							"id": "plan-of-action",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#plan-of-action",
 							"title": "Plan of action",
-							"description": "Create, maintain, regularly review, and test incident response plans to determine readiness and ensure systems and services can quickly recover from any incident."
+							"description": "Create, maintain, regularly review, and test incident response plans to determine readiness and ensure systems and services can quickly recover from incidents. Use outcomes from incidents and reviews, including identified residual risks, to improve future responses, and inform decisions around the continued operation, migration, or decommissioning of systems and services."
 						},
 						{
 							"id": "audience-awareness",
