@@ -603,8 +603,8 @@
 							"description": "Remove optional HTML elements, attribute quotes, and default attributes if doing so does not negatively impact accessibility, readability, functionality, or performance. Include them when they improve accessibility, maintain clarity without compromising performance, or ensure consistent browser rendering."
 						},
 						{
-							"id": "non-standard-code",
-							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#non-standard-code",
+							"id": "avoid-non-standard-code",
+							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-non-standard-code",
 							"title": "Avoid non-standard code",
 							"description": "Avoid deprecated, proprietary, or non-standard technologies unless there is a clear, justified need such as legacy compatibility or accessibility. Use polyfills only when necessary and review them regularly for removal."
 						},
@@ -1216,7 +1216,7 @@
 		},
 		{
 			"id": "5",
-			"name": "Business Strategy And Product Management",
+			"name": "Business Strategy and Product Management",
 			"shortName": "Business and Product",
 			"guidelines": [
 				{
