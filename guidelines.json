@@ -488,13 +488,13 @@
 					"id": "minify-and-remove-unused-code",
 					"url": "https://www.w3.org/TR/web-sustainability-guidelines/#minify-and-remove-unused-code",
 					"guideline": "Minify and remove unused code",
-					"subheading": "Minify code and data, and remove unused characters to reduce file size and improve loading efficiency and maintainability.",
+					"subheading": "Minify code and data delivered to browsers while retaining human-readable source files for maintenance. Remove unused characters to reduce file size and improve loading efficiency.",
 					"criteria": [
 						{
 							"id": "minified-code",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#minified-code",
 							"title": "Minified code",
-							"description": "Minify code and data files by removing unnecessary whitespace, comments, attributes, and non-essential characters. Apply this consistently across the system to reduce file size and improve loading efficiency. This helps to reduce cumulative data transfer and processing overhead at scale, improving resource efficiency and reducing energy consumption. Ensure that minification does not introduce any errors."
+							"description": "Minify code and data files delivered to browsers by removing unnecessary whitespace, comments, attributes, and non-essential characters. Retain human-readable source files for maintenance and generate minified versions through your build or delivery process. Apply minification consistently to delivered files to reduce file size and improve loading efficiency. This helps to reduce cumulative data transfer and processing overhead at scale, improving resource efficiency and reducing energy consumption. Ensure that minification does not introduce any errors."
 						},
 						{
 							"id": "remove-redundancy",
