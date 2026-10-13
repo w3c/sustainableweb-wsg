@@ -603,9 +603,9 @@
 							"description": "Remove optional HTML elements, attribute quotes, and default attributes if doing so does not negatively impact accessibility, readability, functionality, or performance. Include them when they improve accessibility, maintain clarity without compromising performance, or ensure consistent browser rendering."
 						},
 						{
-							"id": "avoid-non-standard-code",
-							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#avoid-non-standard-code",
-							"title": "Avoid non-standard code",
+							"id": "non-standard-code",
+							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#non-standard-code",
+							"title": "Non-standard code",
 							"description": "Avoid deprecated, proprietary, or non-standard technologies unless there is a clear, justified need such as legacy compatibility or accessibility. Use polyfills only when necessary and review them regularly for removal."
 						},
 						{
@@ -1704,7 +1704,7 @@
 							"id": "quantum-resilience",
 							"url": "https://www.w3.org/TR/web-sustainability-guidelines/#quantum-resilience",
 							"title": "Quantum resilience",
-							"description": "Assess the need for post-quantum cryptography based on data sensitivity, data lifetime, cryptographic dependencies, and migration requirements. Treat it as supplementary to rather than replacing existing encryption methods, using both during any transition. Apply caution when adopting post-quantum cryptography in high-traffic services, as the bandwidth consumption, processing demand, design complexity, and migration risks may outweigh the security benefits. Balance these considerations against the security benefits of post-quantum cryptography."
+							"description": "Assess the need for post-quantum cryptography based on data sensitivity, data lifetime, cryptographic dependencies, and migration requirements. For information about migrating to post-quantum cryptography, refer to guidance provided by National Institute of Standards and Technology (NIST)."
 						}
 					],
 					"tags": ["Accessibility", "AI", "Content", "E-Waste", "Governance", "Hardware", "Networking", "Performance", "Privacy", "Security", "Social Equity", "Software"]
